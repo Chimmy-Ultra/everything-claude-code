@@ -1,0 +1,1141 @@
+<title>The Inverse Problem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,400..650;1,7..72,400..500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#F3F5F9; --surface:#FFFFFF; --plate:#E6EBF3; --ink:#161D2E; --muted:#56607A; --line:#D2D9E5;
+  --accent:#0A7F72; --accent-ink:#FFFFFF; --hl:rgba(255,178,46,.40); --hover:rgba(10,127,114,.09);
+  --tip-bg:#161D2E; --tip-ink:#EEF1F6; --tip-zh:#FFCB6B;
+  --outline:#161D2E; --ph-body:#C6D1E3; --shadow:rgba(22,29,46,.55); --cream:#FFF2D6;
+  --mantle:#EE8A62; --sun:#FFE27A;
+  --c-coral:#FF7A59; --c-amber:#FFB22E; --c-teal:#1FB5A3; --c-sky:#4A9FE3; --c-violet:#8A78E0; --c-pink:#F07A9E; --c-leaf:#6CC06A;
+  --font-display:'Bricolage Grotesque','Avenir Next','Segoe UI',sans-serif;
+  --font-body:'Literata',Georgia,'Noto Sans TC','PingFang TC','Microsoft JhengHei',serif;
+  --font-zh:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10141D; --surface:#171C28; --plate:#1B2231; --ink:#E5E8EF; --muted:#9BA5B9; --line:#2A3244;
+    --accent:#46CDBC; --accent-ink:#0B1A18; --hl:rgba(255,178,46,.30); --hover:rgba(70,205,188,.11);
+    --tip-bg:#EEF1F6; --tip-ink:#161D2E; --tip-zh:#0A7F72;
+    --outline:#0B0E15; --ph-body:#3A4760; --shadow:rgba(0,0,0,.62); --cream:#FFEBC2;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10141D; --surface:#171C28; --plate:#1B2231; --ink:#E5E8EF; --muted:#9BA5B9; --line:#2A3244;
+  --accent:#46CDBC; --accent-ink:#0B1A18; --hl:rgba(255,178,46,.30); --hover:rgba(70,205,188,.11);
+  --tip-bg:#EEF1F6; --tip-ink:#161D2E; --tip-zh:#0A7F72;
+  --outline:#0B0E15; --ph-body:#3A4760; --shadow:rgba(0,0,0,.62); --cream:#FFEBC2;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:19px;line-height:1.72;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.zh{font-family:var(--font-zh)}
+.wrap{max-width:920px;margin:0 auto;padding-inline:20px}
+.prose{max-width:680px;margin-inline:auto}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar-inner{max-width:920px;margin:0 auto;padding:10px 20px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.brand{font-family:var(--font-display);font-weight:700;font-size:17px;letter-spacing:-.01em}
+.controls{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-family:var(--font-zh);font-size:13px;color:var(--muted)}
+.controls label{display:flex;align-items:center;gap:6px}
+.controls select{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:4px 6px;font-size:13px;max-width:190px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;font-family:var(--font-zh)}
+.chip:hover{border-color:var(--accent)}
+.chip.stop{background:var(--c-coral);border-color:var(--c-coral);color:#1a0f0a;font-weight:700}
+.chip svg{width:14px;height:14px}
+
+/* hero */
+.hero{padding-block:56px 12px}
+.kicker{font-family:var(--font-mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(46px,8.4vw,88px);line-height:.98;letter-spacing:-.025em;margin:0;text-wrap:balance}
+.sub{font-style:italic;font-size:22px;color:var(--muted);margin:16px 0 0;max-width:44ch;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:22px;font-family:var(--font-mono);font-size:13px;color:var(--muted)}
+.band{margin-top:34px}
+.band canvas{display:block;width:100%;height:170px;border-radius:16px;background:#0e1020}
+.band p{font-size:14px;color:var(--muted);margin:10px 2px 0;line-height:1.6}
+
+/* how-to */
+.howto{margin:40px auto 0;max-width:680px;border:1px solid var(--line);background:var(--surface);border-radius:16px;padding:18px 20px;font-family:var(--font-zh);font-size:15px;line-height:1.7}
+.howto h3{margin:0 0 8px;font-size:15px;font-weight:700}
+.howto ul{margin:0;padding-left:1.1em;display:grid;gap:4px}
+.howto .demo-g{font-family:var(--font-body);text-decoration:underline dotted var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
+.howto .demo-s{font-family:var(--font-body);background:var(--hl);border-radius:4px;padding:0 3px}
+.howto .fine{color:var(--muted);font-size:13.5px;margin:10px 0 0}
+.howto .warn{color:var(--c-coral);font-size:13.5px;margin:8px 0 0}
+
+/* parts */
+.part{padding-block:56px 8px;border-top:1px solid var(--line);margin-top:56px}
+.part:first-of-type{border-top:0;margin-top:24px}
+.part-head{max-width:680px;margin:0 auto 22px;display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:end}
+.eyebrow{grid-column:1/-1;font-family:var(--font-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+.part-head h2{font-family:var(--font-display);font-weight:750;font-size:clamp(30px,4.6vw,40px);line-height:1.08;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.part-head .zh-sub{grid-column:1;font-family:var(--font-zh);color:var(--muted);font-size:15.5px;margin:6px 0 0}
+.listen{grid-row:2/4;grid-column:2;align-self:center;display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--accent);color:var(--accent);background:transparent;border-radius:999px;padding:7px 16px 7px 12px;font-family:var(--font-display);font-weight:600;font-size:15px;cursor:pointer}
+.listen:hover{background:var(--hover)}
+.listen.on{background:var(--accent);color:var(--accent-ink)}
+.listen svg{width:16px;height:16px}
+.listen .i-stop{display:none}.listen.on .i-play{display:none}.listen.on .i-stop{display:block}
+.prose p{margin:0 0 1.05em}
+.lede{font-size:21px}
+
+.s{border-radius:4px;cursor:pointer;transition:background-color .15s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.s:hover{background:var(--hover)}
+.s.speaking{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
+.g{text-decoration:underline dotted var(--accent);text-decoration-thickness:2px;text-underline-offset:4px;cursor:help;border-radius:3px}
+.g:hover{color:var(--accent)}
+
+/* tooltip */
+#tip{position:fixed;z-index:60;max-width:300px;background:var(--tip-bg);color:var(--tip-ink);border-radius:12px;padding:11px 14px 12px;font-family:var(--font-zh);font-size:14.5px;line-height:1.55;box-shadow:0 10px 30px rgba(0,0,0,.28);pointer-events:none}
+#tip b{display:block;font-family:var(--font-body);font-size:16px;font-weight:600;margin-bottom:2px}
+#tip .zh-m{display:block;color:var(--tip-zh);font-weight:700}
+#tip .note{display:block;margin-top:6px;opacity:.9;font-size:13.5px}
+
+/* figures */
+.fig{margin:34px auto 34px;max-width:880px;background:var(--plate);border-radius:20px;padding:18px 18px 14px}
+.fig svg{display:block;width:100%;height:auto}
+.fig figcaption{display:grid;gap:2px;padding:10px 4px 0;font-size:15px;line-height:1.55}
+.fig figcaption .en{font-style:italic}
+.fig figcaption .zh{color:var(--muted);font-size:14px}
+svg text{font-family:var(--font-mono);font-size:13px;fill:var(--muted)}
+svg .t-ink{fill:var(--ink)} svg .t-accent{fill:var(--accent)} svg .t-white{fill:#fff}
+svg .t-big{font-family:var(--font-display);font-size:24px;font-weight:700;fill:var(--ink)}
+svg .t-zh{font-family:var(--font-zh);font-size:14px}
+.f-coral{fill:var(--c-coral)}.f-amber{fill:var(--c-amber)}.f-teal{fill:var(--c-teal)}.f-sky{fill:var(--c-sky)}.f-violet{fill:var(--c-violet)}.f-pink{fill:var(--c-pink)}.f-leaf{fill:var(--c-leaf)}
+.f-cream{fill:var(--cream)}.f-surface{fill:var(--surface)}.f-ink{fill:var(--ink)}.f-accent{fill:var(--accent)}.f-shadow{fill:var(--shadow)}.f-mantle{fill:var(--mantle)}.f-sun{fill:var(--sun)}.f-outline{fill:var(--outline)}
+.st{stroke:var(--outline);stroke-width:2.2;stroke-linejoin:round}
+.st-thin{stroke:var(--outline);stroke-width:1.3;fill:none}
+.ln{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linecap:round}
+.ln-accent{fill:none;stroke:var(--accent);stroke-width:2.6;stroke-linecap:round}
+.dash{stroke-dasharray:7 6}
+.faint{fill:none;stroke:var(--muted);stroke-width:1.2;opacity:.65}
+
+/* Hadamard tests */
+.tests{max-width:680px;margin:6px auto 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.test{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px 14px}
+.test .n{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:.08em}
+.test b{display:block;font-family:var(--font-display);font-weight:650;font-size:17px;line-height:1.3;margin-top:2px}
+.test span{display:block;font-family:var(--font-zh);font-size:13.5px;color:var(--muted);margin-top:4px}
+
+/* CT interactive */
+.ct{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ct-panel{display:flex;flex-direction:column;gap:8px;min-width:0}
+.ct-cap b{display:block;font-family:var(--font-display);font-weight:650;font-size:15.5px;line-height:1.25}
+.ct-cap span{display:block;font-family:var(--font-zh);font-size:12.5px;color:var(--muted)}
+.ct canvas{display:block;width:100%;aspect-ratio:1/1;max-width:100%;border-radius:12px}
+#ct-ph{background:var(--surface)}
+#ct-rec{background:#000}
+.sino-wrap{position:relative;border-radius:12px;overflow:hidden;background:var(--surface);aspect-ratio:1/1}
+.sino-wrap canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:0;aspect-ratio:auto}
+.marker{position:absolute;top:0;bottom:0;width:2px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.35);transform:translateX(-1px)}
+.axis{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11.5px;color:var(--muted);margin-top:-2px}
+.ct-ctrl{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-top:16px}
+.ct-ctrl label{font-family:var(--font-mono);font-size:13px;color:var(--muted)}
+.ct-ctrl output{color:var(--ink);font-weight:500}
+.ct-ctrl input[type=range]{flex:1 1 220px;accent-color:var(--accent)}
+.run{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:8px 16px 8px 12px;font-family:var(--font-display);font-weight:650;font-size:15px;cursor:pointer}
+.run svg{width:16px;height:16px}
+
+/* speaking */
+.talk{max-width:680px;margin:0 auto;display:grid;gap:16px}
+.talk-intro{font-family:var(--font-zh);font-size:15.5px;line-height:1.75;color:var(--muted);margin:0 0 6px}
+.q{border:1px solid var(--line);background:var(--surface);border-radius:16px;padding:18px 20px}
+.q .qn{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;color:var(--accent)}
+.q .qt{font-family:var(--font-display);font-size:21px;font-weight:650;line-height:1.3;margin:4px 0 2px}
+.q .qz{font-family:var(--font-zh);font-size:14px;color:var(--muted);margin:0 0 12px}
+.frames{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:6px;font-size:17px}
+.frames li{padding-left:14px;border-left:3px solid var(--c-amber)}
+.blank{display:inline-block;min-width:3.2em;border-bottom:2px solid var(--muted);transform:translateY(-4px)}
+details{border-top:1px dashed var(--line);padding-top:10px}
+summary{cursor:pointer;font-family:var(--font-zh);font-size:14.5px;color:var(--accent);font-weight:500}
+details p{margin:10px 0 0;font-size:17.5px}
+
+/* notes */
+.notes{max-width:760px;margin:0 auto;display:grid;gap:0}
+.note-row{display:grid;grid-template-columns:190px 1fr;gap:6px 22px;padding:16px 0;border-top:1px solid var(--line)}
+.note-row:first-child{border-top:0}
+.note-row h3{font-family:var(--font-display);font-weight:700;font-size:20px;line-height:1.25;color:var(--accent);margin:2px 0 0}
+.note-row .why{font-family:var(--font-zh);font-size:15px;line-height:1.7;margin:0}
+.note-row .ex{margin:8px 0 0;font-size:17px}
+.note-row .ex-zh{font-family:var(--font-zh);font-size:13.5px;color:var(--muted);margin:2px 0 0}
+
+/* sources */
+.sources{max-width:680px;margin:0 auto;font-size:15px;line-height:1.6}
+.sources ul{padding-left:1.1em;display:grid;gap:8px;margin:0}
+.sources .zh{color:var(--muted);font-size:14px}
+footer{max-width:680px;margin:48px auto 0;padding-block:24px 64px;border-top:1px solid var(--line);font-family:var(--font-zh);font-size:13.5px;color:var(--muted);line-height:1.7}
+
+@media (max-width:720px){
+  body{font-size:18px}
+  .ct{grid-template-columns:1fr;max-width:360px;margin-inline:auto}
+  .tests{grid-template-columns:1fr}
+  .note-row{grid-template-columns:1fr}
+  .part-head{grid-template-columns:1fr}
+  .listen{grid-row:auto;grid-column:1;justify-self:start;margin-top:10px}
+  .fig{padding:12px 10px 10px;border-radius:16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Working Backwards</div>
+    <div class="controls">
+      <label for="voice">聲音 <select id="voice"><option value="">預設英文語音</option></select></label>
+      <label for="rate">速度 <select id="rate">
+        <option value="0.8">0.8×</option>
+        <option value="0.9" selected>0.9×</option>
+        <option value="1">1.0×</option>
+        <option value="1.1">1.1×</option>
+      </select></label>
+      <label for="pause"><input type="checkbox" id="pause"> 每句後停頓跟讀</label>
+      <button class="chip stop" id="stop" type="button" hidden>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg>停止
+      </button>
+      <button class="chip" id="theme" type="button">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg><span>深色</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+<header class="hero">
+  <p class="kicker">An easy read · The inverse problem</p>
+  <h1>Working<br>Backwards</h1>
+  <p class="sub">How we see inside things we can never open.</p>
+  <div class="meta"><span>約 15 分鐘</span><span>8 個小節</span><span>程度：中高級</span><span>讀＋說</span></div>
+  <div class="band">
+    <canvas id="hero-sino" role="img" aria-label="A colorful striped sinogram: the raw data a CT scanner records"></canvas>
+    <p><span class="zh">這片彩色條紋，就是 CT 掃描器實際「看到」的原始資料，由程式真的算出來。讀到第 3 節你就會知道，要怎麼從這些條紋倒推回身體裡面的樣子。</span></p>
+  </div>
+</header>
+
+<aside class="howto" aria-label="使用方式">
+  <h3>怎麼讀這篇</h3>
+  <ul>
+    <li>滑鼠移到有 <span class="demo-g">虛線底線</span> 的字上，會顯示中文和語感說明，點一下可以固定住。</li>
+    <li>點任何一句，會 <span class="demo-s">朗讀那一句</span>，方便跟著念。每節標題旁的 Listen 會讀完整節。</li>
+    <li>練口說的話，勾選右上角的「每句後停頓跟讀」，每句念完會停一段時間讓你跟著說。</li>
+  </ul>
+  <p class="fine">聲音是你電腦內建的英文語音，品質依系統而定。聽起來不自然的話，可以在右上角換一個聲音，名字有 Natural 或 Online 的通常比較好聽。</p>
+  <p class="warn" id="no-tts" hidden>這個瀏覽器不支援朗讀功能，其他功能都可以正常使用。</p>
+</aside>
+
+<!-- INTRO -->
+<section class="part" id="intro" aria-labelledby="h-intro">
+  <div class="part-head">
+    <p class="eyebrow">Start here</p>
+    <h2 id="h-intro">Effects first, causes later</h2>
+    <p class="zh-sub">先看到結果，再回頭找原因</p>
+    <button class="listen" type="button" data-play="intro"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p class="lede"><span class="s">Most of science runs in one direction.</span> <span class="s">You know the cause, and you predict the effect.</span> <span class="s">But some of the most useful questions <span class="g" data-zh="反方向進行" data-note="run 在這裡是「進行、運作」，不是跑步。the other way = 反過來的方向。">run the other way</span>.</span> <span class="s">You can see the effect, and you have to <span class="g" data-zh="弄清楚、想通" data-note="口語最常用的「搞懂」。比 understand 多了「花力氣去弄明白」的感覺。">figure out</span> what caused it.</span> <span class="s">Mathematicians call this an <em>inverse problem</em>, and once you learn to spot one, you'll find them everywhere.</span></p>
+  </div>
+</section>
+
+<!-- PART 1 -->
+<section class="part" id="p1" aria-labelledby="h-p1">
+  <div class="part-head">
+    <p class="eyebrow">Part 1 of 8</p>
+    <h2 id="h-p1">Two directions</h2>
+    <p class="zh-sub">順著做 vs. 倒著推</p>
+    <button class="listen" type="button" data-play="p1"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 250" role="img" aria-label="Ingredients on the left, a cake on the right. A solid arrow from ingredients to cake is labeled forward, easy. A dashed arrow back from cake to ingredients is labeled inverse, hard.">
+      <defs>
+        <marker id="ah-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="f-ink"/></marker>
+        <marker id="ah-acc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="f-accent"/></marker>
+      </defs>
+      <text x="140" y="46" text-anchor="middle">CAUSES</text>
+      <text x="515" y="46" text-anchor="middle">EFFECT</text>
+      <!-- egg -->
+      <ellipse cx="68" cy="150" rx="27" ry="35" class="f-cream st"/>
+      <ellipse cx="59" cy="136" rx="6" ry="10" fill="#fff" opacity=".7"/>
+      <!-- flour -->
+      <path d="M104 112L112 96H160L168 112V190Q168 197 161 197H111Q104 197 104 190Z" class="f-sky st"/>
+      <path d="M104 112H168" class="st-thin"/>
+      <text x="136" y="160" text-anchor="middle" class="t-white" style="font-size:11px;letter-spacing:.08em">FLOUR</text>
+      <!-- lemon -->
+      <ellipse cx="212" cy="160" rx="27" ry="20" class="f-amber st"/>
+      <circle cx="184" cy="160" r="4" class="f-amber st"/>
+      <circle cx="240" cy="160" r="4" class="f-amber st"/>
+      <path d="M216 141q10-15 24-9q-9 13-24 9z" class="f-leaf st"/>
+      <!-- sugar -->
+      <rect x="132" y="210" width="20" height="20" rx="3" class="f-surface st"/>
+      <rect x="158" y="214" width="16" height="16" rx="3" class="f-surface st"/>
+      <!-- arrows -->
+      <path d="M268 118H402" class="ln" marker-end="url(#ah-ink)"/>
+      <text x="335" y="102" text-anchor="middle" class="t-ink">forward · easy</text>
+      <path d="M402 172H268" class="ln-accent dash" marker-end="url(#ah-acc)"/>
+      <circle cx="335" cy="172" r="15" class="f-accent"/>
+      <text x="335" y="179" text-anchor="middle" style="font-family:var(--font-display);font-size:19px;font-weight:800;fill:var(--accent-ink)">?</text>
+      <text x="335" y="210" text-anchor="middle" class="t-accent">inverse · hard</text>
+      <!-- cake -->
+      <ellipse cx="515" cy="207" rx="92" ry="13" class="f-surface st"/>
+      <rect x="447" y="152" width="136" height="53" rx="8" class="f-pink st"/>
+      <rect x="449" y="173" width="132" height="8" class="f-cream"/>
+      <rect x="465" y="112" width="100" height="42" rx="8" class="f-pink st"/>
+      <path d="M465 122Q465 112 475 112H555Q565 112 565 122V128Q558 137 551 128Q543 139 535 128Q526 141 517 128Q508 137 499 128Q490 139 481 128Q473 135 465 128Z" class="f-cream st"/>
+      <circle cx="515" cy="102" r="10" class="f-coral st"/>
+      <path d="M515 92Q519 80 531 77" class="st-thin" style="stroke-width:2"/>
+    </svg>
+    <figcaption><span class="en">From recipe to cake is easy. From cake back to recipe is the hard part.</span><span class="zh">照著食譜做蛋糕很簡單；吃一口蛋糕去猜食譜，才是反問題。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s">Imagine you have a recipe.</span> <span class="s">You follow the steps, and <span class="g" data-zh="（結果）跑出一個蛋糕" data-note="把 out 放句首是口語的倒裝，有「噹噹！出來了」的畫面感。">out comes</span> a cake.</span> <span class="s">That's the <em>forward problem</em>: from causes to effects.</span> <span class="s">It's usually <span class="g" data-zh="直截了當、不複雜" data-note="比 easy 精確：不是輕鬆，而是步驟清楚、不用繞路。">straightforward</span>, even if the cake doesn't <span class="g" data-zh="（最後）結果變成" data-note="turn out 講「最後的結果」，常帶一點「做之前不確定」的味道。">turn out</span> perfect.</span></p>
+    <p><span class="s">Now <span class="g" data-zh="反過來看" data-note="把情況或角度整個顛倒過來，口語很常用。">flip it around</span>.</span> <span class="s">Someone hands you a slice of cake and asks, "What went into this?"</span> <span class="s">You can taste sugar, and maybe <span class="g" data-zh="一點點、淡淡的" data-note="常用於味道或語氣：a hint of sarcasm（一絲諷刺）。">a hint of</span> lemon.</span> <span class="s">But how many eggs?</span> <span class="s">How long was it in the oven?</span> <span class="s">You're <span class="g" data-zh="倒推" data-note="從結果一步步往回推，是這篇的關鍵片語。美式也常寫成 backward。">working backwards</span>, and suddenly the job is much harder.</span></p>
+    <p><span class="s">That's an inverse problem <span class="g" data-zh="簡單來說、一句話講完" data-note="放句首或句尾都可以，用來總結。">in a nutshell</span>.</span> <span class="s">The effect is <span class="g" data-zh="就在你眼前" data-note="right 在這裡加強語氣：「就」在眼前。">right in front of you</span>.</span> <span class="s">The cause is hidden, and you have to <span class="g" data-zh="拼湊出來" data-note="像拼圖一樣把線索拼起來，常用在推理、回憶。">piece it together</span> from clues.</span></p>
+  </div>
+</section>
+
+<!-- PART 2 -->
+<section class="part" id="p2" aria-labelledby="h-p2">
+  <div class="part-head">
+    <p class="eyebrow">Part 2 of 8</p>
+    <h2 id="h-p2">Why backwards is hard</h2>
+    <p class="zh-sub">倒推為什麼難：三個考驗</p>
+    <button class="listen" type="button" data-play="p2"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p><span class="s">In the early twentieth century, the French mathematician Jacques Hadamard <span class="g" data-zh="把它講清楚" data-note="spell out 是「一條一條講明白」，常用在規則、條件：Let me spell it out for you.">spelled out</span> what makes a problem behave nicely.</span> <span class="s">He called such a problem <span class="g" data-zh="適定的（數學術語）" data-note="反義詞是 ill-posed（不適定）。">well-posed</span>, and it has to pass three tests.</span> <span class="s">First, there has to be an answer.</span> <span class="s">Second, there should be only one.</span> <span class="s">Third, the answer shouldn't <span class="g" data-zh="亂跳、跳來跳去" data-note="形容數值、注意力、計畫不穩定。">jump around</span> when the data change a tiny bit.</span></p>
+  </div>
+  <div class="tests" role="list">
+    <div class="test" role="listitem"><div class="n">TEST 1</div><b>An answer exists</b><span>存在性：至少有一個答案</span></div>
+    <div class="test" role="listitem"><div class="n">TEST 2</div><b>Only one answer</b><span>唯一性：答案只有一個</span></div>
+    <div class="test" role="listitem"><div class="n">TEST 3</div><b>Small wobble, small change</b><span>穩定性：資料小變動，答案也只小變動</span></div>
+  </div>
+  <div class="prose">
+    <p><span class="s">Forward problems usually pass all three.</span> <span class="s">Inverse problems often fail at least one, and that's what makes them <span class="g" data-zh="棘手、要小心" data-note="比 difficult 口語，暗示「有陷阱」、容易出錯。">tricky</span>.</span></p>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 252" role="img" aria-label="Light shines from the left. A ball and a coin held face-on each cast the same round shadow on a wall.">
+      <g transform="translate(58 126)">
+        <circle r="24" class="f-amber"/>
+        <g class="ln" style="stroke:var(--c-amber);stroke-width:3">
+          <line y1="-31" y2="-41"/><line y1="-31" y2="-41" transform="rotate(45)"/><line y1="-31" y2="-41" transform="rotate(90)"/><line y1="-31" y2="-41" transform="rotate(135)"/>
+          <line y1="-31" y2="-41" transform="rotate(180)"/><line y1="-31" y2="-41" transform="rotate(225)"/><line y1="-31" y2="-41" transform="rotate(270)"/><line y1="-31" y2="-41" transform="rotate(315)"/>
+        </g>
+      </g>
+      <text x="58" y="190" text-anchor="middle">light</text>
+      <path d="M104 46H522M104 114H522M104 156H522M104 224H522" class="faint dash"/>
+      <path d="M504 12L598 32V222L504 244Z" class="f-surface st"/>
+      <ellipse cx="545" cy="80" rx="19" ry="34" class="f-shadow"/>
+      <ellipse cx="545" cy="190" rx="19" ry="34" class="f-shadow"/>
+      <text x="551" y="140" text-anchor="middle" class="t-ink" style="font-size:11.5px">same</text>
+      <text x="551" y="154" text-anchor="middle" class="t-ink" style="font-size:11.5px">shadow</text>
+      <circle cx="275" cy="80" r="34" class="f-coral st"/>
+      <circle cx="263" cy="68" r="9" fill="#fff" opacity=".55"/>
+      <text x="275" y="137" text-anchor="middle" class="t-ink">ball</text>
+      <ellipse cx="275" cy="190" rx="9" ry="34" class="f-amber st"/>
+      <ellipse cx="275" cy="190" rx="4" ry="27" class="st-thin"/>
+      <text x="318" y="194" class="t-ink">coin, face-on</text>
+    </svg>
+    <figcaption><span class="en">Two different causes, one identical effect.</span><span class="zh">球和正對光線的硬幣，投在牆上的影子一模一樣。只看影子，分不出是哪一個。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s">Think about shadows.</span> <span class="s">A ball <span class="g" data-zh="投下（影子）" data-note="影子的動詞固定用 cast：cast a shadow / cast a long shadow over（籠罩）。">casts</span> a round shadow.</span> <span class="s">But so does a coin <span class="g" data-zh="正面朝著（光）拿著" data-note="face-on 指正面對著某方向；反義是 edge-on（側面對著）。">held face-on</span> to the light.</span> <span class="s">If all you have is the shadow, you <span class="g" data-zh="分不出是哪一個" data-note="tell 在這裡是「分辨」，不是「告訴」。">can't tell which</span> one you're looking at.</span> <span class="s">More than one cause fits the same effect.</span></p>
+    <p><span class="s">The third test is <span class="g" data-zh="更不容易察覺、更陰險" data-note="sneaky 原本是「偷偷摸摸」，形容問題時表示「不知不覺害到你」。">sneakier</span>.</span> <span class="s">Real measurements always come with a little noise.</span> <span class="s">In many inverse problems, that tiny bit of noise gets <span class="g" data-zh="被放大成" data-note="blow up 可以是「爆炸」也可以是「放大」，這裡是放大（放大照片也叫 blow up）。">blown up into</span> huge errors in the answer.</span> <span class="s">It's like trying to sharpen a blurry photo: <span class="g" data-zh="用力過頭" data-note="字面是推太用力，引申為做得太過。">push too hard</span>, and you <span class="g" data-zh="最後落得、結果得到" data-note="強調「沒打算要，但結果就是這樣」。">end up with</span> a picture full of speckles.</span></p>
+  </div>
+</section>
+
+<!-- PART 3 -->
+<section class="part" id="p3" aria-labelledby="h-p3">
+  <div class="part-head">
+    <p class="eyebrow">Part 3 of 8</p>
+    <h2 id="h-p3">Seeing inside the body</h2>
+    <p class="zh-sub">CT 掃描：從一堆影子重建切面</p>
+    <button class="listen" type="button" data-play="p3"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p><span class="s">The most famous inverse problem <span class="g" data-zh="可能就在…裡" data-note="用 sitting 讓物品有「就擺在那裡」的畫面感，口語很常見。">might be sitting in</span> your local hospital.</span></p>
+    <p><span class="s">An X-ray picture is basically a shadow.</span> <span class="s">The rays pass through your body, and bone and tissue <span class="g" data-zh="吸收" data-note="比 absorb 口語，像海綿吸水。旅遊也常用：soak up the sun（好好曬太陽）。">soak up</span> some of them <span class="g" data-zh="一路上、過程中" data-note="也可以用來比喻：You'll learn a lot along the way.">along the way</span>.</span> <span class="s">Everything along each ray gets <span class="g" data-zh="被壓扁" data-note="squash A into B：把 A 硬擠成 B。">squashed</span> into a single number, so a rib in front and a rib behind end up <span class="g" data-zh="疊在一起" data-note="描述東西重疊在同一個位置。">on top of each other</span>.</span></p>
+    <p><span class="s">A CT scanner <span class="g" data-zh="繞過這個問題" data-note="get around 不是正面解決，而是找方法避開。">gets around this</span> by taking X-ray shadows from many angles, <span class="g" data-zh="繞整整一圈" data-note="all the way 強調「完整、到底」。">all the way around</span> you.</span> <span class="s">One angle on its own doesn't tell you much.</span> <span class="s">Put hundreds of them together, though, and a computer can work backwards to rebuild a cross-section, a "slice," of what's inside.</span></p>
+  </div>
+
+  <figure class="fig" id="ct-fig">
+    <div class="ct">
+      <div class="ct-panel">
+        <div class="ct-cap"><b>Inside the body</b><span>身體內部（醫生看不到這張）</span></div>
+        <canvas id="ct-ph" role="img" aria-label="A round body with four colored organs. Parallel X-ray beams cross it at the current angle, and the detector shows the shadow profile."></canvas>
+      </div>
+      <div class="ct-panel">
+        <div class="ct-cap"><b>What the scanner records</b><span>每轉一度，記下一直欄影子</span></div>
+        <div class="sino-wrap"><canvas id="ct-sino" role="img" aria-label="Sinogram being recorded column by column"></canvas><div class="marker" id="ct-mark"></div></div>
+        <div class="axis"><span>0°</span><span>beam angle</span><span>180°</span></div>
+      </div>
+      <div class="ct-panel">
+        <div class="ct-cap"><b>What the computer rebuilds</b><span>電腦倒推出來的切面</span></div>
+        <canvas id="ct-rec" role="img" aria-label="Grayscale reconstruction built from the angles recorded so far"></canvas>
+      </div>
+    </div>
+    <div class="ct-ctrl">
+      <button class="run" id="ct-run" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><span>Run the scan</span></button>
+      <label for="ct-angle">Angles scanned: <output id="ct-out" for="ct-angle">0°–90°</output></label>
+      <input type="range" id="ct-angle" min="0" max="179" value="90">
+    </div>
+    <figcaption><span class="en">Drag the slider. With only a few angles the rebuilt slice is streaky. With all 180 it comes out sharp.</span><span class="zh">這是真的在瀏覽器裡計算的「濾波反投影」，用的是虛構的簡化人體，不是真實病人的資料。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s"><span class="g" data-zh="說也有趣、巧的是" data-note="用來引出一個有點意外的事實。英式英文較常用；美式常說 Interestingly 或 Funny enough。">Funnily enough</span>, the math was ready long before the machine.</span> <span class="s">In 1917, the Austrian mathematician Johann Radon showed how to recover a function from its <span class="g" data-zh="線積分" data-note="沿著一條線把數值加總。一道 X 光量到的，正是沿路密度的線積分。">line integrals</span>, which is basically all of its shadows.</span> <span class="s">Decades later, the physicist Allan Cormack <span class="g" data-zh="算出來、想出來" data-note="work out 強調動腦計算、推導的過程，跟 figure out 很接近。">worked out</span> how this could be used for medical images, and the engineer Godfrey Hounsfield built the first <span class="g" data-zh="實際可用的" data-note="practical scanner：真的能在醫院用的機器，不只是理論。">practical</span> scanner at the British company EMI.</span> <span class="s">The first patient was scanned in London in October 1971.</span> <span class="s">In 1979, Cormack and Hounsfield shared the Nobel Prize in Physiology or Medicine.</span></p>
+  </div>
+</section>
+
+<!-- PART 4 -->
+<section class="part" id="p4" aria-labelledby="h-p4">
+  <div class="part-head">
+    <p class="eyebrow">Part 4 of 8</p>
+    <h2 id="h-p4">Listening to the Earth</h2>
+    <p class="zh-sub">用地震波「聽」出地心</p>
+    <button class="listen" type="button" data-play="p4"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p><span class="s">Nobody can dig down to the center of the Earth to take a look.</span> <span class="s">We can't even see through a few meters of rock, <span class="g" data-zh="更別說" data-note="前半句通常是否定，後面接「更不可能」的事。">let alone</span> thousands of kilometers of it.</span> <span class="s">So how do we know what's down there?</span> <span class="s">We listen.</span></p>
+    <p><span class="s">When a large earthquake hits, seismic waves travel through the planet and are <span class="g" data-zh="被（儀器）偵測到" data-note="pick up 用在訊號、聲音：The microphone picked up every word.">picked up by</span> instruments all over the world.</span> <span class="s">The waves speed up, slow down and bend <span class="g" data-zh="取決於" data-note="depending on + 名詞／子句，放句尾很自然。">depending on</span> what they pass through.</span> <span class="s">By comparing when and where they arrive, seismologists can work backwards to the structure inside.</span></p>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 372" role="img" aria-label="Cross-section of the Earth with mantle, liquid outer core and inner core. Waves from an earthquake at the top curve through the mantle. A shadow zone on the surface should get no direct waves, but a dashed wave bounces off the inner core and lands inside it.">
+      <circle cx="320" cy="195" r="155" class="f-mantle st"/>
+      <circle cx="320" cy="195" r="85" class="f-amber"/>
+      <circle cx="320" cy="195" r="85" class="st-thin"/>
+      <circle cx="320" cy="195" r="38" class="f-sun st-thin"/>
+      <path d="M469.7 235.1A155 155 0 0 1 419.6 313.7" fill="none" style="stroke:var(--c-violet);stroke-width:12;stroke-linecap:round"/>
+      <path d="M170.3 235.1A155 155 0 0 0 220.4 313.7" fill="none" style="stroke:var(--c-violet);stroke-width:12;stroke-linecap:round"/>
+      <g fill="none" style="stroke:var(--outline);stroke-width:1.8;opacity:.75">
+        <path d="M320 40Q357.6 91.6 419.6 76.3"/>
+        <path d="M320 40Q361.9 135.2 465.7 142"/>
+        <path d="M320 40Q378.2 146.1 472.6 221.9"/>
+      </g>
+      <path d="M320 40L349.1 170.6L451.5 277.1" class="ln-accent dash" style="stroke-width:2.8"/>
+      <circle cx="451.5" cy="277.1" r="6" class="f-accent"/>
+      <g transform="translate(320 40)">
+        <circle r="8" class="f-coral st"/>
+        <g class="ln" style="stroke:var(--c-coral);stroke-width:2.4"><line y1="-12" y2="-19"/><line y1="-12" y2="-19" transform="rotate(-50)"/><line y1="-12" y2="-19" transform="rotate(50)"/><line y1="-12" y2="-19" transform="rotate(-100)"/><line y1="-12" y2="-19" transform="rotate(100)"/></g>
+      </g>
+      <text x="344" y="26" class="t-ink">earthquake</text>
+      <text x="486" y="266" class="t-accent">faint waves</text>
+      <text x="486" y="281" class="t-accent">where none</text>
+      <text x="486" y="296" class="t-accent">were expected</text>
+      <text x="432" y="342" class="t-ink" style="fill:var(--c-violet)">shadow zone</text>
+      <text x="120" y="342" class="t-ink" style="fill:var(--c-violet)">shadow zone</text>
+      <path d="M150 104L206 134M150 188L262 200M150 262L296 212" class="faint"/>
+      <text x="20" y="100" class="t-ink">mantle</text>
+      <text x="20" y="184" class="t-ink">outer core</text>
+      <text x="20" y="200">(liquid)</text>
+      <text x="20" y="258" class="t-ink">inner core</text>
+      <text x="20" y="274">(Lehmann, 1936)</text>
+    </svg>
+    <figcaption><span class="en">Schematic, not to scale. The dashed line shows the idea behind Lehmann's explanation.</span><span class="zh">示意圖，比例不準。紫色的「陰影區」依照當時的模型應該收不到直達的波，偏偏收到了微弱的波。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s">In the 1930s, the Danish seismologist Inge Lehmann <span class="g" data-zh="注意到怪怪的地方" data-note="odd 比 strange 輕一點，是「有點不對勁」。">noticed something odd</span>.</span> <span class="s">Faint waves were <span class="g" data-zh="出現" data-note="show up 是口語的「出現」，人、東西、訊號都可以用。">showing up</span> in a zone where, according to <span class="g" data-zh="當時公認的模型" data-note="accepted 表示「大家普遍接受的」。">the accepted model</span>, there shouldn't have been any.</span> <span class="s">In 1936, she proposed an explanation: inside the Earth's core sits a smaller inner core, and the waves were <span class="g" data-zh="反彈、反射" data-note="bounce off 用在球、光、聲音、波都可以。">bouncing off</span> it.</span> <span class="s">Later work showed that this inner core is solid.</span> <span class="s" data-say="Her paper had a famously short title: just P prime.">Her paper had a <span class="g" data-zh="出了名地" data-note="famously short：以短出名。famously 也常帶一點幽默感。">famously</span> short title: just <i>P′</i>.</span></p>
+  </div>
+</section>
+
+<!-- PART 5 -->
+<section class="part" id="p5" aria-labelledby="h-p5">
+  <div class="part-head">
+    <p class="eyebrow">Part 5 of 8</p>
+    <h2 id="h-p5">Can you hear the shape of a drum?</h2>
+    <p class="zh-sub">聽聲音，能不能聽出鼓的形狀？</p>
+    <button class="listen" type="button" data-play="p5"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p><span class="s">Here's a question that <span class="g" data-zh="聽起來幾乎像個謎語" data-note="sound like + 名詞：聽起來像…。sound + 形容詞：That sounds fun.">sounds almost like a riddle</span>.</span> <span class="s">Suppose you could hear every note a drum can possibly make.</span> <span class="s">Could you <span class="g" data-zh="推算出" data-note="work out 帶有「動腦推導」的過程感。">work out</span> its exact shape?</span></p>
+    <p><span class="s">The mathematician Mark Kac asked this in a famous 1966 paper, "Can One Hear the Shape of a Drum?"</span> <span class="s">The sound tells you <span class="g" data-zh="相當多" data-note="quite a lot = 比你想的還多。">quite a lot</span>.</span> <span class="s">From the notes alone, you can work out the drum's area and even the length of its edge.</span> <span class="s">So it seemed <span class="g" data-zh="說得通、有道理的" data-note="看起來合理但還沒證實。比 possible 多了「可信」的感覺。">plausible</span> that the full set of notes <span class="g" data-zh="確定、釘死" data-note="pin down 把模糊的東西確定下來：pin down the cause / a date。">pins down</span> the shape completely.</span></p>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 280" role="img" aria-label="Two differently shaped drums, one purple and one teal, each with an identical row of note marks underneath, joined by an equals sign.">
+      <polygon points="70,50 190,50 190,100 240,100 240,150 130,150 130,120 70,120" class="f-violet st"/>
+      <path d="M256 70q10 14 0 28M270 62q16 22 0 44M284 54q22 30 0 60" class="faint" style="stroke:var(--c-violet);opacity:.9;stroke-width:2"/>
+      <polygon points="392,40 462,40 462,80 562,80 562,130 502,130 502,160 392,160" class="f-teal st"/>
+      <path d="M576 92q10 14 0 28M590 84q16 22 0 44" class="faint" style="stroke:var(--c-teal);opacity:.9;stroke-width:2"/>
+      <text x="150" y="178" text-anchor="middle" class="t-ink">drum A</text>
+      <text x="470" y="186" text-anchor="middle" class="t-ink">drum B</text>
+      <g id="spec-a" style="stroke:var(--c-violet);stroke-width:4;stroke-linecap:round"></g>
+      <g id="spec-b" style="stroke:var(--c-teal);stroke-width:4;stroke-linecap:round"></g>
+      <path d="M50 234H300M340 234H590" class="faint" style="opacity:1"/>
+      <text x="320" y="228" text-anchor="middle" class="t-big">=</text>
+      <text x="175" y="262" text-anchor="middle">notes it can make</text>
+      <text x="465" y="262" text-anchor="middle">notes it can make</text>
+    </svg>
+    <figcaption><span class="en">Schematic only. The real pair found in 1992 is built from seven identical right triangles each; see the sources below for the actual shapes.</span><span class="zh">示意圖：形狀和音高都不是真的數值。1992 年找到的真實例子，兩面鼓各由七個相同的直角三角形拼成，實際形狀請看文末來源。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s"><span class="g" data-zh="直到 1992 年才…" data-note="It took until X for Y to happen：強調等了很久。">It took until 1992</span> for the answer to arrive, and the answer was no.</span> <span class="s">Carolyn Gordon, David Webb and Scott Wolpert found two drums with different shapes that make exactly the same set of notes.</span> <span class="s">If all you could hear were the notes, you'd <span class="g" data-zh="沒有辦法…" data-note="have no way to + 動詞原形 / have no way of + V-ing 都可以。">have no way to</span> <span class="g" data-zh="分辨它們" data-note="tell A and B apart / tell A from B。">tell them apart</span>.</span> <span class="s">Even with perfect data, this inverse problem has more than one answer.</span></p>
+  </div>
+</section>
+
+<!-- PART 6 -->
+<section class="part" id="p6" aria-labelledby="h-p6">
+  <div class="part-head">
+    <p class="eyebrow">Part 6 of 8</p>
+    <h2 id="h-p6">The art of a good guess</h2>
+    <p class="zh-sub">資料不夠時，加一點合理的假設</p>
+    <button class="listen" type="button" data-play="p6"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p><span class="s">So if the data alone can't give us a single, stable answer, what do we do?</span> <span class="s">We add something the data don't contain: <span class="g" data-zh="合理的預期" data-note="sensible 是「明智、合理」，別跟 sensitive（敏感）搞混。">a sensible expectation</span> about what the answer should look like.</span></p>
+    <p><span class="s">Suppose you have a few measured points, and you want the curve they came from.</span> <span class="s">A wild zigzag can pass through <span class="g" data-zh="每一個（都）" data-note="single 加強語氣：一個都沒漏。">every single</span> point.</span> <span class="s">So can a gentle, smooth curve.</span> <span class="s">Both fit the data.</span> <span class="s">But in most real situations, the smooth one is <span class="g" data-zh="更可靠的選擇" data-note="bet 在口語常指「判斷、押寶」：Your best bet is to…（你最好的選擇是…）">a far better bet</span>.</span></p>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 280" role="img" aria-label="Nine measured points. A coral zigzag passes through all of them with wild loops. A teal smooth curve passes close to all of them.">
+      <path d="M40 266H600" class="faint"/>
+      <path id="fit-wild" fill="none" style="stroke:var(--c-coral);stroke-width:3;stroke-linejoin:round;stroke-linecap:round"/>
+      <path id="fit-calm" fill="none" style="stroke:var(--c-teal);stroke-width:4;stroke-linecap:round"/>
+      <g id="fit-pts" class="f-ink"></g>
+      <rect x="364" y="14" width="266" height="60" rx="10" class="f-surface" opacity=".9"/>
+      <path d="M378 34H406" style="stroke:var(--c-coral);stroke-width:3"/>
+      <text x="416" y="38" class="t-ink">fits every point, wildly</text>
+      <path d="M378 58H406" style="stroke:var(--c-teal);stroke-width:4"/>
+      <text x="416" y="62" class="t-ink">fits well, calmly</text>
+    </svg>
+    <figcaption><span class="en">Both curves explain the data. Regularization tells the math to prefer the calm one.</span><span class="zh">兩條線都「解釋得了」資料點；正則化就是告訴數學：選平穩的那條。（示意用的點，不是真實量測。）</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s">This idea has a name: <em>regularization</em>.</span> <span class="s">In effect, you tell the math, "Among all the answers that fit, give me the calmest one."</span> <span class="s">If you've studied statistics, you'll recognize <span class="g" data-zh="同樣的精神、概念" data-note="spirit 在這裡是「精神、核心想法」：in the spirit of…（本著…的精神）。">the same spirit</span> in a Bayesian prior.</span> <span class="s">It isn't cheating.</span> <span class="s">It's admitting that the data can't <span class="g" data-zh="單獨完成這件事" data-note="do the job = 完成任務，口語很常用：This tool will do the job.">do the job alone</span>, and <span class="g" data-zh="坦白說出、不隱瞞" data-note="upfront 當形容詞是「坦率的」：Be upfront with me.">being upfront</span> about what you assume.</span></p>
+  </div>
+</section>
+
+<!-- PART 7 -->
+<section class="part" id="p7" aria-labelledby="h-p7">
+  <div class="part-head">
+    <p class="eyebrow">Part 7 of 8</p>
+    <h2 id="h-p7">A photo of a black hole</h2>
+    <p class="zh-sub">黑洞照片其實是「算」出來的</p>
+    <button class="listen" type="button" data-play="p7"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+  <div class="prose">
+    <p><span class="s">On April 10, 2019, the Event Horizon Telescope team <span class="g" data-zh="向全世界公開" data-note="show the world：帶有「驕傲地公開」的語氣。">showed the world</span> the first image of a black hole: the giant one at the center of the galaxy M87.</span></p>
+    <p><span class="s">No single telescope is big enough to see it.</span> <span class="s">So the team <span class="g" data-zh="連結起來" data-note="link A and B / link A into B：把分散的東西串成一個。">linked</span> radio telescopes around the globe into one virtual telescope <span class="g" data-zh="大約" data-note="roughly 比 about 稍微正式一點，書面口語都常用。">roughly</span> the size of the Earth.</span> <span class="s"><span class="g" data-zh="問題是、麻煩在於" data-note="catch 在這裡是「隱藏的條件、陷阱」。問句 What's the catch? 超常用。">The catch is that</span> a telescope like this only collects scattered pieces of the full picture.</span> <span class="s">Everything in between has to be <span class="g" data-zh="填補" data-note="fill in 也有「代班、補上資訊」的意思：Can you fill me in?（跟我說一下狀況？）">filled in</span> by computation, which makes it a classic inverse problem.</span></p>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 256" role="img" aria-label="A globe with linked telescope dots, an arrow labeled fill in the gaps, and a glowing orange ring around a dark center that is brighter at the bottom.">
+      <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+        <marker id="ah-ink2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="f-ink"/></marker>
+      </defs>
+      <circle cx="150" cy="122" r="95" class="f-sky st"/>
+      <g fill="none" stroke="#fff" stroke-width="1.4" opacity=".5">
+        <ellipse cx="150" cy="122" rx="36" ry="95"/><ellipse cx="150" cy="122" rx="70" ry="95"/>
+        <path d="M55 122H245M66.3 77H233.7M66.3 167H233.7"/>
+      </g>
+      <g id="eht-links" style="stroke:var(--c-amber);stroke-width:1.6;opacity:.9"></g>
+      <g id="eht-dots"></g>
+      <path d="M266 122H404" class="ln dash" marker-end="url(#ah-ink2)"/>
+      <text x="335" y="106" text-anchor="middle" class="t-ink">fill in the gaps</text>
+      <text x="335" y="146" text-anchor="middle">by computation</text>
+      <rect x="420" y="37" width="170" height="170" rx="14" fill="#07070b"/>
+      <g transform="translate(505 122)">
+        <circle r="44" fill="none" stroke="#c9521b" stroke-width="22" filter="url(#glow)"/>
+        <path d="M-40 18A44 44 0 0 0 40 18" fill="none" stroke="#ffc35a" stroke-width="18" stroke-linecap="round" filter="url(#glow)"/>
+        <circle r="22" fill="#07070b" opacity=".85"/>
+      </g>
+      <text x="150" y="240" text-anchor="middle" class="t-ink">telescopes, linked</text>
+      <text x="505" y="232" text-anchor="middle" class="t-ink">the rebuilt image</text>
+    </svg>
+    <figcaption><span class="en">Schematic. The dots are not real telescope locations, and the ring is a drawing, not the published image.</span><span class="zh">示意圖：藍色地球上的點不是真實的望遠鏡位置，右邊的光環是手繪的，不是官方公布的照片。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s">To make sure the result <span class="g" data-zh="不只是他們的假設在作祟" data-note="X talking = 是 X 讓你這樣說／這樣看：That's the wine talking.（是酒在說話。）">wasn't just their assumptions talking</span>, the scientists split into four teams that worked independently, without talking to each other.</span> <span class="s">They all <span class="g" data-zh="最後都得到" data-note="end up with + 名詞：最後落得、最後拿到。">ended up with</span> the same basic picture: a bright, <span class="g" data-zh="一邊偏重、不對稱的" data-note="口語常用：a lopsided smile（歪嘴笑）、a lopsided game（一面倒的比賽）。">lopsided</span> ring around a dark center.</span></p>
+  </div>
+</section>
+
+<!-- PART 8 -->
+<section class="part" id="p8" aria-labelledby="h-p8">
+  <div class="part-head">
+    <p class="eyebrow">Part 8 of 8</p>
+    <h2 id="h-p8">You do this every day</h2>
+    <p class="zh-sub">其實你每天都在解反問題</p>
+    <button class="listen" type="button" data-play="p8"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><svg class="i-stop" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="3" width="10" height="10" rx="2" fill="currentColor"/></svg><span class="t">Listen</span></button>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 640 200" role="img" aria-label="Three everyday scenes: a stethoscope next to a speech bubble saying cough, a car next to a bubble saying clunk, and two friends at a table with a question mark above one of them.">
+      <!-- doctor -->
+      <path d="M72 50V82Q72 106 95 106Q118 106 118 82V50" fill="none" style="stroke:var(--outline);stroke-width:5;stroke-linecap:round"/>
+      <circle cx="72" cy="48" r="5" class="f-outline"/><circle cx="118" cy="48" r="5" class="f-outline"/>
+      <path d="M95 106V118" style="stroke:var(--outline);stroke-width:5"/>
+      <circle cx="95" cy="132" r="15" class="f-teal st"/>
+      <circle cx="95" cy="132" r="6" class="f-surface"/>
+      <path d="M134 34H196Q204 34 204 42V58Q204 66 196 66H150L140 76L142 66H134Q126 66 126 58V42Q126 34 134 34Z" class="f-surface st"/>
+      <text x="165" y="55" text-anchor="middle" class="t-ink">cough</text>
+      <!-- mechanic -->
+      <path d="M292 100L306 78H350L366 100Z" class="f-coral st"/>
+      <path d="M311 82H326V99H300ZM331 82H347L358 99H331Z" class="f-cream"/>
+      <rect x="262" y="99" width="124" height="34" rx="10" class="f-coral st"/>
+      <circle cx="292" cy="136" r="13" class="f-outline"/><circle cx="292" cy="136" r="5" class="f-surface"/>
+      <circle cx="356" cy="136" r="13" class="f-outline"/><circle cx="356" cy="136" r="5" class="f-surface"/>
+      <path d="M362 34H424Q432 34 432 42V58Q432 66 424 66H382L372 78L372 66H362Q354 66 354 58V42Q354 34 362 34Z" class="f-surface st"/>
+      <text x="393" y="55" text-anchor="middle" class="t-ink">clunk</text>
+      <!-- dinner -->
+      <circle cx="498" cy="104" r="22" class="f-amber st"/>
+      <circle cx="491" cy="100" r="2.6" class="f-outline"/><circle cx="505" cy="100" r="2.6" class="f-outline"/>
+      <path d="M491 112Q498 117 505 112" fill="none" style="stroke:var(--outline);stroke-width:2;stroke-linecap:round"/>
+      <circle cx="572" cy="104" r="22" class="f-pink st"/>
+      <circle cx="565" cy="101" r="2.6" class="f-outline"/><circle cx="579" cy="101" r="2.6" class="f-outline"/>
+      <path d="M566 113H578" style="stroke:var(--outline);stroke-width:2;stroke-linecap:round"/>
+      <path d="M470 140H600" style="stroke:var(--outline);stroke-width:4;stroke-linecap:round"/>
+      <ellipse cx="505" cy="136" rx="16" ry="4" class="f-surface st-thin"/>
+      <ellipse cx="566" cy="136" rx="16" ry="4" class="f-surface st-thin"/>
+      <circle cx="486" cy="72" r="3" class="f-surface st-thin"/>
+      <circle cx="478" cy="60" r="5" class="f-surface st"/>
+      <ellipse cx="470" cy="40" rx="22" ry="14" class="f-surface st"/>
+      <text x="470" y="46" text-anchor="middle" style="font-family:var(--font-display);font-size:17px;font-weight:800;fill:var(--accent)">?</text>
+      <text x="120" y="184" text-anchor="middle">a cough</text>
+      <text x="324" y="184" text-anchor="middle">a strange noise</text>
+      <text x="535" y="184" text-anchor="middle">a quiet friend</text>
+    </svg>
+    <figcaption><span class="en">Every one of these starts with an effect and asks for a cause.</span><span class="zh">咳嗽、怪聲、朋友突然安靜，都是先看到結果，再回頭猜原因。</span></figcaption>
+  </figure>
+
+  <div class="prose">
+    <p><span class="s">Inverse problems <span class="g" data-zh="不只是…才有的" data-note="aren't just for + 人：不是某些人的專利。">aren't just for</span> scientists.</span> <span class="s">A doctor hears a cough and thinks about what might be causing it.</span> <span class="s">A mechanic listens to a strange noise and guesses what's broken.</span> <span class="s">You notice a friend <span class="g" data-zh="突然安靜下來" data-note="go + 形容詞表示狀態改變，多半是突然的：go quiet、go red、go missing。">going quiet</span> at dinner and wonder <span class="g" data-zh="在想什麼、有什麼心事" data-note="What's on your mind? 是關心別人時很自然的問法。">what's on their mind</span>.</span></p>
+    <p><span class="s">Each time, you face the same troubles Hadamard <span class="g" data-zh="指出" data-note="point out 後面常接 that 子句：She pointed out that…">pointed out</span>.</span> <span class="s">The clues might not be enough.</span> <span class="s">Several causes could explain them.</span> <span class="s">And one small misreading could <span class="g" data-zh="把你帶往錯誤的方向" data-note="send someone off：把人打發到某處。這裡是比喻「讓你想偏」。">send you off in the wrong direction</span>.</span></p>
+    <p><span class="s">The scientific answer is also the everyday one.</span> <span class="s">Collect clues <span class="g" data-zh="從不只一個角度" data-note="呼應 CT：真的是從很多角度照。">from more than one angle</span>.</span> <span class="s">Use what you already know.</span> <span class="s">And <span class="g" data-zh="對結論保留一點彈性" data-note="hold something loosely：不要抓太緊，隨時準備修正。">hold your conclusion a little loosely</span>.</span> <span class="s">That's how a CT scanner sees inside you, and it's also how good doctors, detectives and friends think.</span></p>
+  </div>
+</section>
+
+<!-- SPEAKING -->
+<section class="part" id="talk" aria-labelledby="h-talk">
+  <div class="part-head">
+    <p class="eyebrow">Your turn</p>
+    <h2 id="h-talk">Say it out loud</h2>
+    <p class="zh-sub">輪到你說</p>
+  </div>
+  <div class="talk">
+    <p class="talk-intro">方法：先看題目，用下面的句型自己大聲說一次，說得不順也沒關係。接著打開範例，點句子聽，再跟著念一次。</p>
+
+    <div class="q">
+      <div class="qn">PROMPT 1</div>
+      <p class="qt"><span class="s">Explain the difference between a forward problem and an inverse problem. Use an example from your own life.</span></p>
+      <p class="qz">用你生活中的例子，說明順向問題和反問題的差別。</p>
+      <ul class="frames">
+        <li>A forward problem goes from <span class="blank"></span> to <span class="blank"></span>.</li>
+        <li>An inverse problem is the other way around: <span class="blank"></span>.</li>
+        <li>For example, when I <span class="blank"></span>, I'm working backwards from <span class="blank"></span> to <span class="blank"></span>.</li>
+      </ul>
+      <details>
+        <summary>看範例回答</summary>
+        <p><span class="s">A forward problem goes from causes to effects.</span> <span class="s">An inverse problem is the other way around: you see the effect and try to figure out the cause.</span> <span class="s">For example, when my code crashes, I'm working backwards from the error message to the bug that caused it.</span></p>
+      </details>
+    </div>
+
+    <div class="q">
+      <div class="qn">PROMPT 2</div>
+      <p class="qt"><span class="s">Why isn't one X-ray enough? How does a CT scanner get around this?</span></p>
+      <p class="qz">為什麼一張 X 光不夠？CT 怎麼解決這個問題？</p>
+      <ul class="frames">
+        <li>The problem with a single X-ray is that <span class="blank"></span>.</li>
+        <li>A CT scanner gets around this by <span class="blank"></span>.</li>
+        <li>Then a computer <span class="blank"></span>.</li>
+      </ul>
+      <details>
+        <summary>看範例回答</summary>
+        <p><span class="s">The problem with a single X-ray is that everything along each ray gets squashed into one number, so things end up on top of each other.</span> <span class="s">A CT scanner gets around this by taking X-rays from many angles.</span> <span class="s">Then a computer works backwards to rebuild a slice of what's inside.</span></p>
+      </details>
+    </div>
+
+    <div class="q">
+      <div class="qn">PROMPT 3</div>
+      <p class="qt"><span class="s">Pick one story, the Earth's core, the drum, or the black hole, and retell it in about thirty seconds.</span></p>
+      <p class="qz">挑一個故事，用 30 秒左右講給朋友聽。</p>
+      <ul class="frames">
+        <li>Back in <span class="blank"></span>, <span class="blank"></span> noticed / asked <span class="blank"></span>.</li>
+        <li>The tricky part was that <span class="blank"></span>.</li>
+        <li>In the end, it turned out that <span class="blank"></span>.</li>
+      </ul>
+      <details>
+        <summary>看範例回答（鼓的故事）</summary>
+        <p><span class="s">Back in 1966, Mark Kac asked whether you could hear the shape of a drum.</span> <span class="s">It seemed plausible, because the notes tell you quite a lot, like the drum's area.</span> <span class="s">The tricky part was proving it either way.</span> <span class="s">In the end, it turned out that the answer is no.</span> <span class="s">In 1992, three mathematicians found two different drums that play exactly the same notes.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- NOTES -->
+<section class="part" id="notes" aria-labelledby="h-notes">
+  <div class="part-head">
+    <p class="eyebrow">Natural English</p>
+    <h2 id="h-notes">語感筆記</h2>
+    <p class="zh-sub">這篇裡最值得帶走的 12 個說法。點英文例句可以聽發音。</p>
+  </div>
+  <div class="notes">
+    <div class="note-row"><h3>work backwards</h3><div><p class="why">倒推。重點在「一步一步往回推」，常接 from：從某個終點往回推。</p><p class="ex"><span class="s">Let's work backwards from the deadline and see when we need to start.</span></p><p class="ex-zh">我們從截止日往回推，看看什麼時候要開始。</p></div></div>
+    <div class="note-row"><h3>figure out / work out</h3><div><p class="why">都是「想出來」。figure out 偏「搞懂」，對象可以是人或情況（I can't figure him out.）；work out 更有「計算、推導」的味道，也可以表示事情最後「順利解決」。</p><p class="ex"><span class="s">Don't worry, it'll all work out.</span></p><p class="ex-zh">別擔心，最後都會沒事的。</p></div></div>
+    <div class="note-row"><h3>turn out / end up</h3><div><p class="why">turn out 看的是「結果揭曉」，常帶一點意外；end up 看的是「最後落在哪裡」，常是沒計畫的。</p><p class="ex"><span class="s">It turned out the museum was closed, so we ended up at a café.</span></p><p class="ex-zh">結果博物館沒開，我們最後跑去咖啡廳。</p></div></div>
+    <div class="note-row"><h3>let alone</h3><div><p class="why">前半句通常是否定，後面接「更不可能」的事。</p><p class="ex"><span class="s">I can barely order coffee in French, let alone ask for directions.</span></p><p class="ex-zh">我連用法文點咖啡都有困難，更別說問路了。</p></div></div>
+    <div class="note-row"><h3>pin down</h3><div><p class="why">把模糊的東西釘住、確定下來：原因、時間、某人的立場都可以。</p><p class="ex"><span class="s">It's hard to pin down exactly when the noise started.</span></p><p class="ex-zh">很難確定那個聲音到底是什麼時候開始的。</p></div></div>
+    <div class="note-row"><h3>tell … apart</h3><div><p class="why">tell 當「分辨」時，幾乎都跟 can / can't 一起出現。</p><p class="ex"><span class="s">I still can't tell the twins apart.</span></p><p class="ex-zh">我到現在還是分不出這對雙胞胎。</p></div></div>
+    <div class="note-row"><h3>The catch is…</h3><div><p class="why">好處講完之後，帶出隱藏的限制。問句 What's the catch? 非常常用。</p><p class="ex"><span class="s">The hotel is cheap. The catch is that it's an hour from the city.</span></p><p class="ex-zh">飯店很便宜，問題是離市區要一個小時。</p></div></div>
+    <div class="note-row"><h3>get around</h3><div><p class="why">不是正面解決，而是找路繞開。</p><p class="ex"><span class="s">We got around the language barrier with a translation app.</span></p><p class="ex-zh">我們用翻譯 app 繞過了語言障礙。</p></div></div>
+    <div class="note-row"><h3>… talking</h3><div><p class="why">把「說話的人」換成「背後的原因」：是某個東西讓你這樣說、這樣想。</p><p class="ex"><span class="s">Don't take it personally. That's just the jet lag talking.</span></p><p class="ex-zh">別放在心上，那只是時差害的。</p></div></div>
+    <div class="note-row"><h3>your best bet</h3><div><p class="why">口語給建議的句型，比 You should 柔和，帶「依我判斷」的語氣。</p><p class="ex"><span class="s">Your best bet is to take the train.</span></p><p class="ex-zh">你最好的選擇是搭火車。</p></div></div>
+    <div class="note-row"><h3>go + adjective</h3><div><p class="why">表示狀態「變成」，多半是突然的或不好的變化：go quiet、go wrong、go missing。</p><p class="ex"><span class="s">Everyone went quiet when the manager walked in.</span></p><p class="ex-zh">經理一走進來，大家都安靜了。</p></div></div>
+    <div class="note-row"><h3>soak up</h3><div><p class="why">原意是吸收，像海綿吸水。旅遊時很常用來說「好好感受」陽光、氣氛。</p><p class="ex"><span class="s">We spent the afternoon soaking up the sun on the beach.</span></p><p class="ex-zh">我們整個下午都在海灘上曬太陽。</p></div></div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="part" id="sources" aria-labelledby="h-src">
+  <div class="part-head">
+    <p class="eyebrow">Sources</p>
+    <h2 id="h-src">資料來源</h2>
+    <p class="zh-sub">文中的年份、人名和事件，都對照過下列來源（查詢日期 2026-09-28）。</p>
+  </div>
+  <div class="sources">
+    <ul>
+      <li>Hadamard 與「適定問題」：<a href="https://www2.math.uu.se/~cki26691/illposed2003.html">Uppsala University, Ill-Posed Problems</a></li>
+      <li>Radon 1917 年論文：<a href="https://geschichte.univie.ac.at/de/bilder/johann-radon-ueber-die-bestimmung-von-funktionen-durch-ihre-integralwerte-laengs-gewisser">Universität Wien, 650 plus</a></li>
+      <li>1979 年諾貝爾生理醫學獎（Cormack、Hounsfield）：<a href="https://www.nobelprize.org/prizes/medicine/1979/summary/">NobelPrize.org</a></li>
+      <li>1971 年 10 月第一位 CT 病人：<a href="https://www.smithsonianmag.com/innovation/fifty-years-ago-the-first-ct-scan-let-doctors-see-inside-a-living-skull-180978792/">Smithsonian Magazine</a></li>
+      <li>Lehmann 1936 年論文 “P′”：<a href="https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/Inner-Core/Lehmann-1936-extracts+interpretation.pdf">Harvard EPS 課程講義（論文節錄）</a>；內核是固體由後人確立：<a href="https://en.wikipedia.org/wiki/Earth%27s_inner_core">Wikipedia, Earth's inner core</a></li>
+      <li>Kac 1966 與 Gordon、Webb、Wolpert 1992：<a href="https://www.ams.org/publicoutreach/feature-column/fcarc-199706">AMS Feature Column</a>；真實的兩面鼓形狀：<a href="https://en.wikipedia.org/wiki/Hearing_the_shape_of_a_drum">Wikipedia, Hearing the shape of a drum</a></li>
+      <li>EHT 2019 年 4 月 10 日發表黑洞影像：<a href="https://www.eso.org/public/news/eso1907/">ESO 新聞稿</a>；四個獨立影像團隊：<a href="https://arxiv.org/abs/1906.11241">EHT Paper IV (arXiv:1906.11241)</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  插圖除了第 3 節的 CT 模擬（真的在瀏覽器裡計算）之外，都是示意圖，形狀和位置不代表真實數值。英文例句是為了學習而寫的句子，不是引用。
+</footer>
+
+</main>
+
+<div id="tip" hidden role="tooltip"></div>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  function css(n){ return getComputedStyle(root).getPropertyValue(n).trim(); }
+  var reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function store(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
+  function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+
+  /* ---------- theme ---------- */
+  var themeBtn = document.getElementById('theme');
+  var saved = load('ip-theme');
+  if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+  function isDark(){
+    var t = root.getAttribute('data-theme');
+    if (t) return t === 'dark';
+    return matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function syncThemeBtn(){
+    themeBtn.querySelector('span').textContent = isDark() ? '淺色' : '深色';
+    themeBtn.setAttribute('aria-label', isDark() ? '切換成淺色' : '切換成深色');
+  }
+  themeBtn.addEventListener('click', function(){
+    var next = isDark() ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    store('ip-theme', next);
+  });
+  var redrawers = [];
+  function redrawAll(){ syncThemeBtn(); redrawers.forEach(function(f){ f(); }); }
+  new MutationObserver(redrawAll).observe(root, {attributes:true, attributeFilter:['data-theme']});
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', redrawAll);
+  syncThemeBtn();
+
+  /* ---------- gloss tooltips ---------- */
+  var tip = document.getElementById('tip');
+  var pinned = null;
+  function place(el){
+    var r = el.getBoundingClientRect();
+    var tw = tip.offsetWidth, th = tip.offsetHeight;
+    var x = r.left + r.width/2 - tw/2;
+    x = Math.max(10, Math.min(x, window.innerWidth - tw - 10));
+    var y = r.top - th - 10;
+    if (y < 64) y = r.bottom + 10;
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  function showTip(el){
+    tip.replaceChildren();
+    var b = document.createElement('b'); b.textContent = el.textContent;
+    var z = document.createElement('span'); z.className = 'zh-m'; z.textContent = el.dataset.zh;
+    tip.append(b, z);
+    if (el.dataset.note){ var n = document.createElement('span'); n.className = 'note'; n.textContent = el.dataset.note; tip.append(n); }
+    tip.hidden = false; place(el);
+  }
+  function hideTip(){ tip.hidden = true; pinned = null; }
+  document.querySelectorAll('.g').forEach(function(el){
+    el.tabIndex = 0;
+    el.addEventListener('mouseenter', function(){ if (!pinned) showTip(el); });
+    el.addEventListener('mouseleave', function(){ if (!pinned) tip.hidden = true; });
+    el.addEventListener('focus', function(){ showTip(el); });
+    el.addEventListener('blur', function(){ if (pinned !== el) tip.hidden = true; });
+    el.addEventListener('click', function(e){
+      e.stopPropagation();
+      if (pinned === el){ hideTip(); } else { pinned = el; showTip(el); }
+    });
+    el.addEventListener('keydown', function(e){ if (e.key === 'Escape') hideTip(); });
+  });
+  document.addEventListener('click', function(){ if (pinned) hideTip(); });
+  window.addEventListener('scroll', function(){ if (pinned) place(pinned); else if (!tip.hidden) tip.hidden = true; }, {passive:true});
+
+  /* ---------- speech ---------- */
+  var synth = ('speechSynthesis' in window) ? window.speechSynthesis : null;
+  var voiceSel = document.getElementById('voice');
+  var rateSel = document.getElementById('rate');
+  var pauseChk = document.getElementById('pause');
+  var stopBtn = document.getElementById('stop');
+  var voices = [], token = 0, activeBtn = null, pauseTimer = null;
+
+  var savedRate = load('ip-rate'); if (savedRate) rateSel.value = savedRate;
+  pauseChk.checked = load('ip-pause') === '1';
+  rateSel.addEventListener('change', function(){ store('ip-rate', rateSel.value); });
+  pauseChk.addEventListener('change', function(){ store('ip-pause', pauseChk.checked ? '1' : '0'); });
+  voiceSel.addEventListener('change', function(){ store('ip-voice', voiceSel.value); });
+
+  function rank(v){
+    var s = /^en[-_]US/i.test(v.lang) ? 3 : /^en[-_]GB/i.test(v.lang) ? 2 : 1;
+    if (/natural|neural|online/i.test(v.name)) s += 5;
+    if (/google/i.test(v.name)) s += 2;
+    if (/samantha|aria|jenny|ava|guy|daniel/i.test(v.name)) s += 3;
+    return s;
+  }
+  function loadVoices(){
+    if (!synth) return;
+    var all = synth.getVoices().filter(function(v){ return /^en([-_]|$)/i.test(v.lang); });
+    if (!all.length) return;
+    var keep = voiceSel.value || load('ip-voice');
+    voices = all.sort(function(a,b){ return rank(b) - rank(a); });
+    voiceSel.replaceChildren.apply(voiceSel, voices.map(function(v){
+      var o = document.createElement('option'); o.value = v.voiceURI; o.textContent = v.name + ' (' + v.lang + ')'; return o;
+    }));
+    if (keep && voices.some(function(v){ return v.voiceURI === keep; })) voiceSel.value = keep;
+  }
+  function currentVoice(){
+    for (var i = 0; i < voices.length; i++) if (voices[i].voiceURI === voiceSel.value) return voices[i];
+    return voices[0] || null;
+  }
+  function sayText(el){ return (el.dataset.say || el.textContent).replace(/\s+/g, ' ').trim(); }
+  function clearMarks(){ document.querySelectorAll('.s.speaking').forEach(function(e){ e.classList.remove('speaking'); }); }
+  function setBtn(b, on){ b.classList.toggle('on', on); b.querySelector('.t').textContent = on ? 'Stop' : 'Listen'; b.setAttribute('aria-pressed', on ? 'true' : 'false'); }
+  function follow(el){
+    var r = el.getBoundingClientRect();
+    if (r.top < 80 || r.bottom > window.innerHeight - 40) el.scrollIntoView({block:'center', behavior: reduceMotion ? 'auto' : 'smooth'});
+  }
+  function stopAll(){
+    token++; clearTimeout(pauseTimer);
+    if (synth) synth.cancel();
+    clearMarks();
+    if (activeBtn){ setBtn(activeBtn, false); activeBtn = null; }
+    stopBtn.hidden = true;
+  }
+  function play(list, btn){
+    stopAll();
+    if (!synth || !list.length) return;
+    var my = ++token, i = 0;
+    activeBtn = btn || null;
+    if (btn) setBtn(btn, true);
+    stopBtn.hidden = false;
+    function finish(){
+      if (my !== token) return;
+      clearMarks();
+      if (activeBtn){ setBtn(activeBtn, false); activeBtn = null; }
+      stopBtn.hidden = true;
+    }
+    function next(){
+      if (my !== token) return;
+      clearMarks();
+      if (i >= list.length){ finish(); return; }
+      var el = list[i++];
+      el.classList.add('speaking'); follow(el);
+      var u = new SpeechSynthesisUtterance(sayText(el));
+      var v = currentVoice();
+      if (v){ u.voice = v; u.lang = v.lang; } else { u.lang = 'en-US'; }
+      u.rate = parseFloat(rateSel.value) || 0.9;
+      var t0 = 0;
+      u.onstart = function(){ t0 = performance.now(); };
+      u.onend = function(){
+        if (my !== token) return;
+        var dur = t0 ? performance.now() - t0 : 1800;
+        if (pauseChk.checked) pauseTimer = setTimeout(next, Math.min(10000, dur * 1.15 + 500));
+        else next();
+      };
+      u.onerror = function(){ if (my === token) next(); };
+      synth.speak(u);
+    }
+    setTimeout(next, 80);
+  }
+
+  if (!synth){
+    document.getElementById('no-tts').hidden = false;
+    document.querySelectorAll('.listen').forEach(function(b){ b.disabled = true; b.style.opacity = .45; });
+    voiceSel.disabled = true; rateSel.disabled = true; pauseChk.disabled = true;
+  } else {
+    loadVoices();
+    if ('onvoiceschanged' in synth) synth.addEventListener('voiceschanged', loadVoices);
+  }
+
+  document.querySelectorAll('.listen').forEach(function(btn){
+    btn.setAttribute('aria-pressed', 'false');
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      if (activeBtn === btn){ stopAll(); return; }
+      var sec = document.getElementById(btn.dataset.play);
+      play(Array.prototype.slice.call(sec.querySelectorAll('.prose .s')), btn);
+    });
+  });
+  document.addEventListener('click', function(e){
+    var s = e.target.closest && e.target.closest('.s');
+    if (!s || e.target.closest('.g') || !synth) return;
+    var sel = window.getSelection && String(window.getSelection());
+    if (sel && sel.length > 1) return;
+    play([s], null);
+  });
+  stopBtn.addEventListener('click', stopAll);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') stopAll(); });
+
+  /* ---------- CT simulation ---------- */
+  var NA = 180, NS = 128, DS = 2 / NS, NR = 112;
+  var PH = [
+    {x:0,     y:0,     r:.82, d:1.0, c:'--ph-body'},
+    {x:-.34,  y:-.16,  r:.25, d:.9,  c:'--c-teal'},
+    {x:.30,   y:.14,   r:.30, d:.6,  c:'--c-coral'},
+    {x:-.06,  y:.52,   r:.13, d:1.8, c:'--c-amber'},
+    {x:.30,   y:-.46,  r:.10, d:1.5, c:'--c-violet'}
+  ];
+  var COS = new Float64Array(NA), SIN = new Float64Array(NA);
+  for (var a = 0; a < NA; a++){ COS[a] = Math.cos(a * Math.PI / 180); SIN[a] = Math.sin(a * Math.PI / 180); }
+  var proj = [], pmax = 0;
+  for (a = 0; a < NA; a++){
+    var row = new Float64Array(NS);
+    for (var j = 0; j < NS; j++){
+      var s = -1 + (j + .5) * DS, sum = 0;
+      for (var k = 0; k < PH.length; k++){
+        var p = PH[k], c0 = p.x * COS[a] + p.y * SIN[a], q = p.r * p.r - (s - c0) * (s - c0);
+        if (q > 0) sum += p.d * 2 * Math.sqrt(q);
+      }
+      row[j] = sum; if (sum > pmax) pmax = sum;
+    }
+    proj.push(row);
+  }
+  // Ram-Lak filtered projections
+  var H = new Float64Array(2 * NS - 1);
+  for (var n = -(NS - 1); n <= NS - 1; n++){
+    H[n + NS - 1] = n === 0 ? 1 / (4 * DS * DS) : (n % 2 ? -1 / (Math.PI * Math.PI * n * n * DS * DS) : 0);
+  }
+  var filt = proj.map(function(row){
+    var out = new Float64Array(NS);
+    for (var j = 0; j < NS; j++){
+      var acc = 0;
+      for (var k = 0; k < NS; k++) acc += row[k] * H[j - k + NS - 1];
+      out[j] = acc * DS;
+    }
+    return out;
+  });
+
+  function viridis(t){
+    var st = [[68,1,84],[59,82,139],[33,145,140],[94,201,98],[253,231,37]];
+    t = Math.max(0, Math.min(1, t)) * 4;
+    var i = Math.min(3, Math.floor(t)), f = t - i, A = st[i], B = st[i + 1];
+    return [A[0] + (B[0] - A[0]) * f, A[1] + (B[1] - A[1]) * f, A[2] + (B[2] - A[2]) * f];
+  }
+
+  // hero: 0..360 degrees (second half is the first half mirrored)
+  (function(){
+    var cv = document.getElementById('hero-sino');
+    cv.width = 360; cv.height = NS;
+    var g = cv.getContext('2d'), im = g.createImageData(360, NS);
+    for (var col = 0; col < 360; col++){
+      var aa = col % 180, flip = col >= 180;
+      for (var j = 0; j < NS; j++){
+        var v = proj[aa][flip ? NS - 1 - j : j] / pmax, rgb = viridis(Math.pow(v, .85)), idx = (j * 360 + col) * 4;
+        im.data[idx] = rgb[0]; im.data[idx + 1] = rgb[1]; im.data[idx + 2] = rgb[2]; im.data[idx + 3] = 255;
+      }
+    }
+    g.putImageData(im, 0, 0);
+  })();
+
+  var phCv = document.getElementById('ct-ph');
+  var sinoCv = document.getElementById('ct-sino');
+  var recCv = document.getElementById('ct-rec');
+  var mark = document.getElementById('ct-mark');
+  var slider = document.getElementById('ct-angle');
+  var out = document.getElementById('ct-out');
+  var runBtn = document.getElementById('ct-run');
+  var angle = parseInt(slider.value, 10);
+
+  function rr(g, x, y, w, h, r){
+    g.beginPath(); g.moveTo(x + r, y); g.lineTo(x + w - r, y); g.quadraticCurveTo(x + w, y, x + w, y + r);
+    g.lineTo(x + w, y + h - r); g.quadraticCurveTo(x + w, y + h, x + w - r, y + h); g.lineTo(x + r, y + h);
+    g.quadraticCurveTo(x, y + h, x, y + h - r); g.lineTo(x, y + r); g.quadraticCurveTo(x, y, x + r, y); g.closePath();
+  }
+  function drawPhantom(){
+    var dpr = window.devicePixelRatio || 1, W = phCv.clientWidth;
+    if (!W) return;
+    var px = Math.round(W * dpr);
+    if (phCv.width !== px){ phCv.width = px; phCv.height = px; }
+    var g = phCv.getContext('2d');
+    g.setTransform(1, 0, 0, 1, 0, 0); g.clearRect(0, 0, px, px);
+    var S = px / 3.9;
+    g.translate(px / 2, px / 2); g.scale(S, S);
+    PH.forEach(function(p){ g.beginPath(); g.arc(p.x, p.y, p.r, 0, Math.PI * 2); g.fillStyle = css(p.c); g.fill(); });
+    g.lineWidth = 2 / S; g.strokeStyle = css('--outline'); g.globalAlpha = .5;
+    g.beginPath(); g.arc(0, 0, .82, 0, Math.PI * 2); g.stroke(); g.globalAlpha = 1;
+    g.rotate(angle * Math.PI / 180);
+    g.strokeStyle = css('--c-amber'); g.globalAlpha = .6; g.lineWidth = 1.5 / S;
+    for (var s = -.95; s < .96; s += .1){ g.beginPath(); g.moveTo(s, -1.36); g.lineTo(s, 1.13); g.stroke(); }
+    g.globalAlpha = 1;
+    g.fillStyle = css('--c-amber'); rr(g, -1.04, -1.48, 2.08, .11, .05); g.fill();
+    g.fillStyle = css('--ink'); rr(g, -1.04, 1.15, 2.08, .06, .03); g.fill();
+    var row = proj[angle], base = 1.25, amp = .42;
+    g.beginPath(); g.moveTo(-1, base);
+    for (var j = 0; j < NS; j++) g.lineTo(-1 + (j + .5) * DS, base + amp * row[j] / pmax);
+    g.lineTo(1, base); g.closePath();
+    g.fillStyle = css('--c-teal'); g.globalAlpha = .35; g.fill(); g.globalAlpha = 1;
+    g.strokeStyle = css('--c-teal'); g.lineWidth = 2.2 / S; g.stroke();
+  }
+  var sinoImg;
+  function drawSino(){
+    if (!sinoImg){ sinoCv.width = NA; sinoCv.height = NS; sinoImg = sinoCv.getContext('2d').createImageData(NA, NS); }
+    var d = sinoImg.data;
+    for (var a = 0; a < NA; a++){
+      for (var j = 0; j < NS; j++){
+        var idx = (j * NA + a) * 4;
+        if (a <= angle){
+          var rgb = viridis(Math.pow(proj[a][j] / pmax, .85));
+          d[idx] = rgb[0]; d[idx + 1] = rgb[1]; d[idx + 2] = rgb[2]; d[idx + 3] = 255;
+        } else { d[idx + 3] = 0; }
+      }
+    }
+    sinoCv.getContext('2d').putImageData(sinoImg, 0, 0);
+    mark.style.left = ((angle + .5) / NA * 100) + '%';
+  }
+  var acc = new Float64Array(NR * NR), accUpTo = -1, recImg;
+  function addAngle(a){
+    var cs = COS[a], sn = SIN[a], f = filt[a];
+    for (var yi = 0; yi < NR; yi++){
+      var y = -1 + (yi + .5) * 2 / NR;
+      for (var xi = 0; xi < NR; xi++){
+        var x = -1 + (xi + .5) * 2 / NR;
+        var t = (x * cs + y * sn + 1) / DS - .5, k = Math.floor(t);
+        if (k >= 0 && k < NS - 1){ var fr = t - k; acc[yi * NR + xi] += f[k] * (1 - fr) + f[k + 1] * fr; }
+      }
+    }
+  }
+  function drawRec(){
+    if (angle < accUpTo){ acc.fill(0); accUpTo = -1; }
+    for (var a = accUpTo + 1; a <= angle; a++) addAngle(a);
+    accUpTo = angle;
+    if (!recImg){ recCv.width = NR; recCv.height = NR; recImg = recCv.getContext('2d').createImageData(NR, NR); }
+    var d = recImg.data, scale = Math.PI / NA;
+    for (var i = 0; i < NR * NR; i++){
+      var v = Math.max(0, Math.min(1, acc[i] * scale / 2.9)), gv = Math.round(Math.pow(v, .9) * 255);
+      d[i * 4] = gv; d[i * 4 + 1] = gv; d[i * 4 + 2] = gv; d[i * 4 + 3] = 255;
+    }
+    recCv.getContext('2d').putImageData(recImg, 0, 0);
+  }
+  function renderCT(){
+    out.textContent = '0°–' + angle + '°';
+    drawPhantom(); drawSino(); drawRec();
+  }
+  var pending = false;
+  slider.addEventListener('input', function(){
+    stopRun();
+    angle = parseInt(slider.value, 10);
+    if (!pending){ pending = true; requestAnimationFrame(function(){ pending = false; renderCT(); }); }
+  });
+  var running = null;
+  function stopRun(){
+    if (running){ cancelAnimationFrame(running); running = null; }
+    runBtn.querySelector('span').textContent = 'Run the scan';
+  }
+  runBtn.addEventListener('click', function(){
+    if (running){ stopRun(); return; }
+    if (reduceMotion){ angle = 179; slider.value = 179; renderCT(); return; }
+    var start = null, from = 0, dur = 7000;
+    runBtn.querySelector('span').textContent = 'Pause';
+    function step(ts){
+      if (start === null) start = ts;
+      var a = Math.min(179, Math.round(from + (ts - start) / dur * 179));
+      if (a !== angle){ angle = a; slider.value = a; renderCT(); }
+      if (a < 179) running = requestAnimationFrame(step); else stopRun();
+    }
+    angle = 0; slider.value = 0; renderCT();
+    running = requestAnimationFrame(step);
+  });
+  renderCT();
+  redrawers.push(drawPhantom);
+  if ('ResizeObserver' in window) new ResizeObserver(function(){ drawPhantom(); }).observe(phCv);
+  else window.addEventListener('resize', drawPhantom);
+
+  /* ---------- drum spectra (schematic) ---------- */
+  var NS_SVG = 'http://www.w3.org/2000/svg';
+  var offs = [14, 44, 63, 97, 112, 140, 158, 176, 203, 219];
+  [['spec-a', 60], ['spec-b', 350]].forEach(function(pair){
+    var g = document.getElementById(pair[0]);
+    offs.forEach(function(o){
+      var l = document.createElementNS(NS_SVG, 'line');
+      l.setAttribute('x1', pair[1] + o); l.setAttribute('x2', pair[1] + o);
+      l.setAttribute('y1', 232); l.setAttribute('y2', 198);
+      g.appendChild(l);
+    });
+  });
+
+  /* ---------- curve fit (schematic points) ---------- */
+  var pts = [[70,139.5],[132,93.8],[194,89],[256,92.2],[318,139.1],[380,168.1],[442,199.7],[504,182.9],[566,160.8]];
+  var calm = '';
+  for (var x = 44; x <= 596; x += 4){
+    var y = 140 - 55 * Math.sin((x - 60) / 85);
+    calm += (x === 44 ? 'M' : 'L') + x + ' ' + y.toFixed(1);
+  }
+  document.getElementById('fit-calm').setAttribute('d', calm);
+  var wild = 'M' + pts[0][0] + ' ' + pts[0][1];
+  for (var i = 0; i < pts.length - 1; i++){
+    var mx = (pts[i][0] + pts[i + 1][0]) / 2, my = (pts[i][1] + pts[i + 1][1]) / 2 + (i % 2 ? 110 : -110);
+    wild += 'Q' + mx + ' ' + my + ' ' + pts[i + 1][0] + ' ' + pts[i + 1][1];
+  }
+  document.getElementById('fit-wild').setAttribute('d', wild);
+  var ptG = document.getElementById('fit-pts');
+  pts.forEach(function(pt){
+    var c = document.createElementNS(NS_SVG, 'circle');
+    c.setAttribute('cx', pt[0]); c.setAttribute('cy', pt[1]); c.setAttribute('r', 6);
+    ptG.appendChild(c);
+  });
+
+  /* ---------- EHT network (schematic dots) ---------- */
+  var sites = [[98,80],[190,68],[122,160],[208,148],[160,112],[80,128]];
+  var links = document.getElementById('eht-links'), dots = document.getElementById('eht-dots');
+  for (var s1 = 0; s1 < sites.length; s1++){
+    for (var s2 = s1 + 1; s2 < sites.length; s2++){
+      var ln = document.createElementNS(NS_SVG, 'line');
+      ln.setAttribute('x1', sites[s1][0]); ln.setAttribute('y1', sites[s1][1]);
+      ln.setAttribute('x2', sites[s2][0]); ln.setAttribute('y2', sites[s2][1]);
+      links.appendChild(ln);
+    }
+  }
+  sites.forEach(function(st){
+    var c = document.createElementNS(NS_SVG, 'circle');
+    c.setAttribute('cx', st[0]); c.setAttribute('cy', st[1]); c.setAttribute('r', 6.5);
+    c.setAttribute('class', 'f-amber st');
+    dots.appendChild(c);
+  });
+})();
+</script>
