@@ -1,0 +1,515 @@
+<title>Kokoro Voice Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#F2F4F8; --surface:#FFFFFF; --plate:#E3E8F1; --floor:#CBD3E2; --ink:#172033; --muted:#566079;
+  --line:#D3DAE6; --outline:#2A3346;
+  --accent:#0A7F72; --accent-ink:#FFFFFF;
+  --karen:#C24E2C; --karen-tint:#FFEDE6;
+  --wei:#2A6FB0; --wei-tint:#E4F0FB;
+  --variant:#9A6200; --hl:rgba(255,178,46,.40);
+  --shadow:0 1px 2px rgba(23,32,51,.06),0 8px 22px rgba(23,32,51,.07);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10141D; --surface:#171C28; --plate:#1E2635; --floor:#2A3448; --ink:#E6E9F0; --muted:#9AA4B8;
+    --line:#2A3345; --outline:#0B0E14;
+    --accent:#46CDBC; --accent-ink:#08201C;
+    --karen:#FF9477; --karen-tint:#2C1F1E;
+    --wei:#79BCF3; --wei-tint:#172538;
+    --variant:#FFC24F; --hl:rgba(255,178,46,.26);
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10141D; --surface:#171C28; --plate:#1E2635; --floor:#2A3448; --ink:#E6E9F0; --muted:#9AA4B8;
+  --line:#2A3345; --outline:#0B0E14;
+  --accent:#46CDBC; --accent-ink:#08201C;
+  --karen:#FF9477; --karen-tint:#2C1F1E;
+  --wei:#79BCF3; --wei-tint:#172538;
+  --variant:#FFC24F; --hl:rgba(255,178,46,.26);
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+:lang(zh-Hant),.zhf{font-family:var(--zh)}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:780px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand{font:700 15px/1 var(--display);letter-spacing:.01em;margin-right:auto}
+.brand small{font:500 12px var(--mono);color:var(--muted);margin-left:6px;letter-spacing:.04em}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font:500 13px/1.2 var(--zh);cursor:pointer}
+.chip select{border:0;background:transparent;font:600 13px var(--mono);cursor:pointer;padding:0}
+.chip input{accent-color:var(--accent);margin:0}
+
+.wrap{max-width:780px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 clamp(34px,6vw,52px)/1.05 var(--display);letter-spacing:-.02em;margin:.35em 0 .3em;text-wrap:balance}
+h2{font:750 26px/1.15 var(--display);letter-spacing:-.01em;margin:0 0 .35em;text-wrap:balance}
+.lead{font:400 16px/1.8 var(--zh);color:var(--muted);max-width:40em;margin:0}
+section{margin-top:44px}
+
+/* scene */
+.scene{margin:26px 0 0;background:var(--plate);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.scene svg{display:block;width:100%;height:auto}
+.scene figcaption{font:400 14px/1.6 var(--zh);color:var(--muted);padding:10px 16px 12px;background:var(--surface);border-top:1px solid var(--line)}
+.w-wall{fill:var(--plate)} .w-floor{fill:var(--floor)} .w-base{fill:var(--line)}
+.st{stroke:var(--outline);stroke-width:2.5;stroke-linejoin:round}
+.f-coral{fill:#FF7A59} .f-sky{fill:#4A9FE3} .f-violet{fill:#8A78E0} .f-teal{fill:#1FB5A3} .f-amber{fill:#FFB22E}
+.f-box{fill:#E3A762} .f-tape{fill:#C07A36} .f-skin1{fill:#F1C7A1} .f-skin2{fill:#E2B288}
+.f-hair1{fill:#6A3F2C} .f-hair2{fill:#1E222C} .f-pants{fill:#34405C} .f-leaf{fill:#6CC06A}
+.f-inside{fill:#2B3448} .f-dark{fill:#1B2130} .f-surface{fill:var(--surface)} .f-none{fill:none}
+.arm-o{stroke:var(--outline);stroke-width:15;stroke-linecap:round;fill:none}
+.arm-k{stroke:#FF7A59;stroke-width:10;stroke-linecap:round;fill:none}
+.plate{font:600 13px var(--mono);fill:#172033}
+.bub-t{font:700 15px var(--display);fill:var(--ink)}
+
+/* controls + legend */
+.bar{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;margin:18px 0 6px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:9px 18px;background:var(--accent);color:var(--accent-ink);font:700 15px/1 var(--display);cursor:pointer}
+.btn svg{width:14px;height:14px;fill:currentColor}
+.legend{display:flex;gap:6px 18px;flex-wrap:wrap;font:400 13px/1.5 var(--zh);color:var(--muted)}
+.legend b{font:500 14px var(--body);color:var(--ink)}
+
+/* dialogue */
+.dlg{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.line{display:flex;align-items:flex-start;gap:10px}
+.line.w{flex-direction:row-reverse}
+.av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:800 16px/1 var(--display);color:#fff;margin-top:2px}
+.k .av{background:#E0613F} .w .av{background:#3D8AD2}
+.bub{position:relative;max-width:min(560px,100%);padding:10px 14px 11px;border-radius:16px;cursor:pointer;border:1.5px solid transparent;transition:border-color .15s,box-shadow .15s}
+.k .bub{background:var(--karen-tint);border-top-left-radius:6px}
+.w .bub{background:var(--wei-tint);border-top-right-radius:6px}
+.bub:hover{border-color:var(--line)}
+.who{display:block;font:600 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.k .who{color:var(--karen)} .w .who{color:var(--wei)}
+.en{margin:0;font-size:18px;line-height:1.6}
+.zh{display:none;margin:4px 0 0;font:400 14.5px/1.6 var(--zh);color:var(--muted)}
+.show-zh .zh{display:block}
+.line.is-playing .bub{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.line.is-playing .en{background:linear-gradient(var(--hl),var(--hl)) no-repeat;background-size:100% 100%;border-radius:4px}
+.pl{flex:none;align-self:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+.pl svg{width:12px;height:12px;fill:currentColor}
+.ico-stop{display:none}
+.is-playing .ico-play{display:none} .is-playing .ico-stop{display:block}
+
+/* glosses */
+.g,.v{cursor:help;text-decoration:none;border-radius:3px}
+.g{border-bottom:2px dashed color-mix(in srgb,var(--accent) 75%,transparent)}
+.v{border-bottom:2px dashed var(--variant)}
+.v::after{content:attr(data-here);font:600 9.5px/1 var(--mono);color:var(--variant);vertical-align:super;margin-left:2px;letter-spacing:.04em}
+.g:hover,.g:focus-visible,.v:hover,.v:focus-visible{background:var(--hl)}
+#tip{position:fixed;z-index:50;max-width:min(320px,calc(100vw - 24px));background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px 12px;box-shadow:0 10px 30px rgba(0,0,0,.18);font:400 14px/1.55 var(--zh);pointer-events:none}
+#tip .t-zh{font-weight:700;font-size:15.5px}
+#tip .t-note{color:var(--muted);margin-top:3px}
+#tip table{border-collapse:collapse;margin-top:6px;width:100%}
+#tip td{padding:3px 0;border-top:1px solid var(--line);font-size:13.5px}
+#tip td:first-child{font:600 12px var(--mono);color:var(--muted);width:6.5em}
+#tip tr.here td{color:var(--variant);font-weight:700}
+
+/* voices */
+.sample{font:500 19px/1.5 var(--body);margin:0 0 14px;padding:12px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.voices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:620px){.voices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.vc{display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:12px;cursor:pointer;box-shadow:var(--shadow)}
+.vc .pl{grid-row:1/3;pointer-events:none}
+.vc-name{font:700 17px/1.2 var(--display)}
+.vc-tag{font:500 12px/1.4 var(--mono);color:var(--muted);letter-spacing:.03em}
+.vc-used{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-left:4px;vertical-align:2px}
+.vc.is-playing{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.vnote{font:400 14px/1.7 var(--zh);color:var(--muted);margin:12px 0 0}
+
+.err{margin-top:12px;padding:10px 14px;border-radius:12px;background:color-mix(in srgb,#E5484D 14%,var(--surface));font:400 14px/1.6 var(--zh)}
+footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);font:400 13px/1.8 var(--zh);color:var(--muted)}
+footer a{color:var(--accent)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <span class="brand">Everyday English <small>voice check</small></span>
+    <label class="chip" for="rate"><span>速度</span>
+      <select id="rate">
+        <option value="0.8">0.8×</option>
+        <option value="0.9">0.9×</option>
+        <option value="1" selected>1.0×</option>
+        <option value="1.1">1.1×</option>
+      </select>
+    </label>
+    <label class="chip" for="zh-toggle"><input type="checkbox" id="zh-toggle"> 中文翻譯</label>
+    <button class="chip" id="theme" type="button" aria-label="切換深淺色">深淺色</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="kicker">試聽 · Voice check</p>
+  <h1>Meet the Neighbor</h1>
+  <p class="lead" lang="zh-Hant">這頁用來試聽新的聲音。音檔是用開源語音模型 Kokoro 預先錄好的，不再用你電腦內建的語音，所以換電腦、換瀏覽器聽起來都一樣。點任何一句就會播那一句。</p>
+
+  <figure class="scene">
+    <svg viewBox="0 0 720 260" role="img" aria-labelledby="scene-t">
+      <title id="scene-t">Karen from 4B waves hello to Wei, who is carrying a moving box outside 4C.</title>
+      <rect class="w-wall" x="0" y="0" width="720" height="206"/>
+      <rect class="w-floor" x="0" y="206" width="720" height="54"/>
+      <rect class="w-base" x="0" y="200" width="720" height="8"/>
+      <!-- lamp -->
+      <circle class="f-amber" cx="196" cy="40" r="30" opacity=".22"/>
+      <path class="f-amber st" d="M181 46h30l-6-18h-18z"/>
+      <!-- door 4B -->
+      <rect class="f-violet st" x="46" y="44" width="104" height="158" rx="4"/>
+      <rect class="f-none st" x="60" y="58" width="76" height="52" rx="3" opacity=".45"/>
+      <rect class="st" x="78" y="124" width="40" height="22" rx="4" fill="#FFF4D6"/>
+      <text class="plate" x="98" y="140" text-anchor="middle">4B</text>
+      <circle class="f-amber st" cx="136" cy="134" r="5"/>
+      <!-- picture on the wall -->
+      <rect class="f-surface st" x="316" y="108" width="62" height="46" rx="3"/>
+      <rect class="f-sky" x="323" y="115" width="48" height="32"/>
+      <path class="f-leaf" d="M323 147l14-18 10 11 8-8 16 15z"/>
+      <circle class="f-amber" cx="360" cy="124" r="5"/>
+      <!-- open door 4C -->
+      <rect class="f-inside st" x="560" y="44" width="104" height="158" rx="4"/>
+      <path class="f-teal st" d="M560 44 L528 58 L528 194 L560 202 Z"/>
+      <rect class="st" x="672" y="96" width="40" height="22" rx="4" fill="#FFF4D6"/>
+      <text class="plate" x="692" y="112" text-anchor="middle">4C</text>
+      <!-- boxes -->
+      <rect class="f-box st" x="574" y="160" width="64" height="44" rx="3"/>
+      <rect class="f-tape" x="602" y="161" width="8" height="42"/>
+      <rect class="f-box st" x="584" y="122" width="48" height="38" rx="3"/>
+      <rect class="f-tape" x="604" y="123" width="8" height="36"/>
+      <rect class="f-box st" x="644" y="170" width="56" height="34" rx="3"/>
+      <rect class="f-tape" x="668" y="171" width="8" height="32"/>
+      <!-- Karen -->
+      <ellipse class="f-hair1 st" cx="250" cy="102" rx="24" ry="30"/>
+      <rect class="f-pants st" x="232" y="170" width="14" height="34" rx="4"/>
+      <rect class="f-pants st" x="254" y="170" width="14" height="34" rx="4"/>
+      <rect class="f-coral st" x="226" y="116" width="48" height="62" rx="16"/>
+      <path class="arm-o" d="M268 132 Q286 120 292 100"/>
+      <path class="arm-k" d="M268 132 Q286 120 292 100"/>
+      <circle class="f-skin1 st" cx="293" cy="95" r="7"/>
+      <circle class="f-skin1 st" cx="250" cy="92" r="19"/>
+      <path class="f-hair1 st" d="M231 90 q2-22 19-22 q17 0 19 22 q-9-11-19-11 q-10 0-19 11z"/>
+      <circle class="f-dark" cx="244" cy="95" r="2.2"/>
+      <circle class="f-dark" cx="257" cy="95" r="2.2"/>
+      <path class="f-none st" d="M244 102 q6 5 12 0" stroke-width="2"/>
+      <!-- Wei -->
+      <rect class="f-pants st" x="412" y="170" width="14" height="34" rx="4"/>
+      <rect class="f-pants st" x="434" y="170" width="14" height="34" rx="4"/>
+      <rect class="f-sky st" x="406" y="116" width="48" height="62" rx="16"/>
+      <circle class="f-skin2 st" cx="430" cy="92" r="19"/>
+      <path class="f-hair2 st" d="M411 91 q0-25 19-25 q19 0 19 25 q-6-9-19-10 q-13 1-19 10z"/>
+      <circle class="f-dark" cx="424" cy="96" r="2.2"/>
+      <circle class="f-dark" cx="437" cy="96" r="2.2"/>
+      <path class="f-none st" d="M425 103 q5 4 10 0" stroke-width="2"/>
+      <rect class="f-box st" x="398" y="126" width="64" height="44" rx="3"/>
+      <rect class="f-tape" x="426" y="127" width="8" height="42"/>
+      <circle class="f-skin2 st" cx="398" cy="148" r="6"/>
+      <circle class="f-skin2 st" cx="462" cy="148" r="6"/>
+      <!-- speech bubbles -->
+      <path class="f-surface st" d="M292 52 L278 74 L310 56 Z"/>
+      <rect class="f-surface st" x="282" y="20" width="102" height="38" rx="14"/>
+      <text class="bub-t" x="333" y="45" text-anchor="middle">Hi there!</text>
+      <path class="f-surface st" d="M466 58 L450 80 L486 62 Z"/>
+      <rect class="f-surface st" x="454" y="28" width="62" height="36" rx="14"/>
+      <text class="bub-t" x="485" y="52" text-anchor="middle">Hi!</text>
+    </svg>
+    <figcaption lang="zh-Hant">星期六早上，三樓走廊。Wei 上星期剛搬進 4C，住隔壁 4B 的 Karen 過來打招呼。</figcaption>
+  </figure>
+
+  <section id="dialogue" aria-labelledby="dlg-h">
+    <h2 id="dlg-h">Saying hi next door</h2>
+    <div class="bar">
+      <button class="btn" id="play-all" type="button">
+        <svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>
+        <svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg>
+        <span id="play-all-label">Play all</span>
+      </button>
+      <div class="legend" lang="zh-Hant">
+        <span><b class="g" style="cursor:default">moved in</b> 值得學的說法</span>
+        <span><b class="v" data-here="US" style="cursor:default">garbage</b> 各國說法不同</span>
+        <span>滑鼠移上去看說明</span>
+      </div>
+    </div>
+
+    <ol class="dlg" id="dlg">
+      <li class="line k" data-src="audio/dlg/01.mp3">
+        <span class="av" aria-hidden="true">K</span>
+        <div class="bub"><span class="who">Karen</span>
+          <p class="en">Hi there! <span class="g" tabindex="0" data-zh="你一定就是……吧" data-note="這裡的 must 是「猜測」，不是「必須」。看到有人在搬箱子，猜他就是新鄰居。">You must be</span> the new <span class="v" tabindex="0" data-here="US" data-zh="鄰居" data-note="只有拼法不同，唸法一樣。" data-var="US|neighbor;Canada|neighbour;UK|neighbour;Australia|neighbour">neighbor</span>. I'm Karen, from 4B.</p>
+          <p class="zh">嗨！你一定就是新鄰居吧。我是 Karen，住 4B。</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 1"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line w" data-src="audio/dlg/02.mp3">
+        <span class="av" aria-hidden="true">W</span>
+        <div class="bub"><span class="who">Wei</span>
+          <p class="en">Hi, Karen. I'm Wei. I just <span class="g" tabindex="0" data-zh="搬進來" data-note="move in 搬進來，move out 搬出去。I just moved in = 我剛搬來。">moved in</span> last week.</p>
+          <p class="zh">嗨，Karen。我是 Wei，上星期剛搬進來。</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 2"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line k" data-src="audio/dlg/03.mp3">
+        <span class="av" aria-hidden="true">K</span>
+        <div class="bub"><span class="who">Karen</span>
+          <p class="en">Oh, welcome! How are you <span class="g" tabindex="0" data-zh="安頓下來、適應新地方" data-note="How are you settling in? 是問新搬來、新到職的人最常見的一句。">settling in</span>?</p>
+          <p class="zh">喔，歡迎！安頓得還好嗎？</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 3"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line w" data-src="audio/dlg/04.mp3">
+        <span class="av" aria-hidden="true">W</span>
+        <div class="bub"><span class="who">Wei</span>
+          <p class="en">Pretty well, thanks. I'm still unpacking, though. There are boxes everywhere.</p>
+          <p class="zh">還不錯，謝謝。不過我還在拆箱，到處都是箱子。</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 4"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line k" data-src="audio/dlg/05.mp3">
+        <span class="av" aria-hidden="true">K</span>
+        <div class="bub"><span class="who">Karen</span>
+          <p class="en">Ha, I remember that feeling. If you need anything, just <span class="g" tabindex="0" data-zh="跟我說一聲" data-note="比 tell me 輕鬆客氣，日常非常常用：Let me know if you have any questions.">let me know</span>.</p>
+          <p class="zh">哈，我記得那種感覺。需要什麼的話，跟我說一聲就好。</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 5"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line w" data-src="audio/dlg/06.mp3">
+        <span class="av" aria-hidden="true">W</span>
+        <div class="bub"><span class="who">Wei</span>
+          <p class="en">That's really kind of you. Actually, do you know when they <span class="g" tabindex="0" data-zh="收走、來載" data-note="pick up 是「把東西或人接走」。也能用在接人：I'll pick you up at six.">pick up</span> the <span class="v" tabindex="0" data-here="US" data-zh="垃圾" data-note="同一個東西，各地習慣的字不一樣。" data-var="US|garbage / trash;Canada|garbage;UK|rubbish;Australia|rubbish">garbage</span>?</p>
+          <p class="zh">你人真好。對了，你知道垃圾什麼時候收嗎？</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 6"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line k" data-src="audio/dlg/07.mp3">
+        <span class="av" aria-hidden="true">K</span>
+        <div class="bub"><span class="who">Karen</span>
+          <p class="en">Tuesday mornings. Just put it out the night before.</p>
+          <p class="zh">星期二早上。前一天晚上拿出去放就好。</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 7"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line w" data-src="audio/dlg/08.mp3">
+        <span class="av" aria-hidden="true">W</span>
+        <div class="bub"><span class="who">Wei</span>
+          <p class="en">Got it. Thanks, that's really helpful.</p>
+          <p class="zh">了解，謝謝，這很有幫助。</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 8"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line k" data-src="audio/dlg/09.mp3">
+        <span class="av" aria-hidden="true">K</span>
+        <div class="bub"><span class="who">Karen</span>
+          <p class="en">No problem. Anyway, I'll let you get back to your boxes. See you around!</p>
+          <p class="zh">不客氣。好啦，不打擾你整理箱子了。之後見！</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 9"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+      <li class="line w" data-src="audio/dlg/10.mp3">
+        <span class="av" aria-hidden="true">W</span>
+        <div class="bub"><span class="who">Wei</span>
+          <p class="en">See you!</p>
+          <p class="zh">再見！</p>
+        </div>
+        <button class="pl" type="button" aria-label="Play line 10"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button>
+      </li>
+    </ol>
+    <p class="err" id="audio-err" lang="zh-Hant" hidden>音檔沒有載入成功。請重新整理頁面再試一次；如果還是不行，告訴我你用的瀏覽器。</p>
+  </section>
+
+  <section id="voices" aria-labelledby="v-h">
+    <h2 id="v-h">Compare the voices</h2>
+    <p class="lead" lang="zh-Hant" style="margin-bottom:14px">同一句話，六種聲音。之後的對話可以挑你喜歡的聲音來錄。</p>
+    <p class="sample">“Hi, I just moved in next door. It's really nice to meet you.”</p>
+    <div class="voices" id="voice-grid">
+      <button class="vc" type="button" data-src="audio/voices/af_heart.mp3"><span class="pl" aria-hidden="true"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span class="vc-name">Heart <span class="vc-used" style="color:var(--karen)">Karen</span></span><span class="vc-tag">US · female</span></button>
+      <button class="vc" type="button" data-src="audio/voices/af_bella.mp3"><span class="pl" aria-hidden="true"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span class="vc-name">Bella</span><span class="vc-tag">US · female</span></button>
+      <button class="vc" type="button" data-src="audio/voices/am_michael.mp3"><span class="pl" aria-hidden="true"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span class="vc-name">Michael <span class="vc-used" style="color:var(--wei)">Wei</span></span><span class="vc-tag">US · male</span></button>
+      <button class="vc" type="button" data-src="audio/voices/am_fenrir.mp3"><span class="pl" aria-hidden="true"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span class="vc-name">Fenrir</span><span class="vc-tag">US · male</span></button>
+      <button class="vc" type="button" data-src="audio/voices/bf_emma.mp3"><span class="pl" aria-hidden="true"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span class="vc-name">Emma</span><span class="vc-tag">UK · female</span></button>
+      <button class="vc" type="button" data-src="audio/voices/bm_george.mp3"><span class="pl" aria-hidden="true"><svg viewBox="0 0 12 12" class="ico-play"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span class="vc-name">George</span><span class="vc-tag">UK · male</span></button>
+    </div>
+    <p class="vnote" lang="zh-Hant">上面的對話裡，Karen 用 Heart，Wei 用 Michael。Emma 和 George 是英國口音。</p>
+  </section>
+
+  <footer lang="zh-Hant">
+    <p>聲音：開源語音模型 Kokoro（v1.0）預先產生的音檔，每句一個檔案。對話是為了學習而寫的，不是真實錄音。</p>
+    <p>各國用字參考：<a href="https://www.collinsdictionary.com/dictionary/english/garbage" target="_blank" rel="noopener">Collins Dictionary: garbage</a>、<a href="https://speakspeak.com/confusing-words/rubbish-trash-garbage" target="_blank" rel="noopener">Speakspeak: rubbish, trash, garbage</a>。</p>
+  </footer>
+</main>
+
+<div id="tip" role="tooltip" hidden></div>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const store = {
+    get(k){ try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v){ try { localStorage.setItem(k, v); } catch {} }
+  };
+
+  /* theme */
+  const savedTheme = store.get('vc-theme');
+  if (savedTheme === 'dark' || savedTheme === 'light') root.dataset.theme = savedTheme;
+  document.getElementById('theme').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    store.set('vc-theme', root.dataset.theme);
+  });
+
+  /* Chinese translation toggle */
+  const zhBox = document.getElementById('zh-toggle');
+  zhBox.checked = store.get('vc-zh') === '1';
+  const applyZh = () => document.body.classList.toggle('show-zh', zhBox.checked);
+  applyZh();
+  zhBox.addEventListener('change', () => { applyZh(); store.set('vc-zh', zhBox.checked ? '1' : '0'); });
+
+  /* gloss tooltip */
+  const tip = document.getElementById('tip');
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  let tipFor = null;
+  function showTip(el){
+    let html = `<div class="t-zh">${esc(el.dataset.zh || '')}</div>`;
+    if (el.dataset.note) html += `<div class="t-note">${esc(el.dataset.note)}</div>`;
+    if (el.dataset.var){
+      html += '<table>' + el.dataset.var.split(';').map(row => {
+        const [place, word] = row.split('|');
+        const here = place === el.dataset.here;
+        return `<tr${here ? ' class="here"' : ''}><td>${esc(place)}</td><td>${esc(word)}</td></tr>`;
+      }).join('') + '</table>';
+    }
+    tip.innerHTML = html;
+    tip.hidden = false;
+    tipFor = el;
+    const r = el.getBoundingClientRect();
+    const t = tip.getBoundingClientRect();
+    let x = Math.min(Math.max(12, r.left + r.width/2 - t.width/2), innerWidth - t.width - 12);
+    let y = r.bottom + 8;
+    if (y + t.height > innerHeight - 8) y = r.top - t.height - 8;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+  function hideTip(){ tip.hidden = true; tipFor = null; }
+  document.querySelectorAll('.en .g, .en .v').forEach(el => {
+    el.addEventListener('mouseenter', () => showTip(el));
+    el.addEventListener('mouseleave', hideTip);
+    el.addEventListener('focus', () => showTip(el));
+    el.addEventListener('blur', hideTip);
+  });
+  addEventListener('scroll', () => { if (tipFor) hideTip(); }, {passive:true});
+
+  /* audio */
+  const player = new Audio();
+  player.preload = 'auto';
+  const rateSel = document.getElementById('rate');
+  const savedRate = store.get('vc-rate');
+  if (savedRate && [...rateSel.options].some(o => o.value === savedRate)) rateSel.value = savedRate;
+  const rate = () => parseFloat(rateSel.value) || 1;
+  rateSel.addEventListener('change', () => {
+    player.defaultPlaybackRate = rate();
+    player.playbackRate = rate();
+    store.set('vc-rate', rateSel.value);
+  });
+  const errBox = document.getElementById('audio-err');
+  const blobCache = new Map();
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let token = 0, activeEl = null, allMode = false;
+
+  function mark(el){
+    if (activeEl) activeEl.classList.remove('is-playing');
+    activeEl = el;
+    if (el){
+      el.classList.add('is-playing');
+      if (el.classList.contains('line')) el.scrollIntoView({block:'nearest', behavior: reduced ? 'auto' : 'smooth'});
+    }
+  }
+
+  function playOnce(src, el, my){
+    return new Promise(resolve => {
+      let triedBlob = false;
+      const finish = ok => { player.onended = player.onerror = null; resolve(ok); };
+      const start = url => {
+        player.src = url;
+        player.defaultPlaybackRate = rate();
+        player.playbackRate = rate();
+        player.play().catch(err => { if (err && err.name === 'AbortError') return; fallback(); });
+      };
+      const fallback = async () => {
+        if (my !== token) return finish(false);
+        if (triedBlob) { errBox.hidden = false; return finish(false); }
+        triedBlob = true;
+        try {
+          let url = blobCache.get(src);
+          if (!url) {
+            const res = await fetch(src);
+            if (!res.ok) throw new Error(res.status);
+            url = URL.createObjectURL(await res.blob());
+            blobCache.set(src, url);
+          }
+          if (my === token) start(url); else finish(false);
+        } catch { errBox.hidden = false; finish(false); }
+      };
+      player.onended = () => finish(true);
+      player.onerror = fallback;
+      mark(el);
+      start(blobCache.get(src) || src);
+    });
+  }
+
+  const allBtn = document.getElementById('play-all');
+  const allLabel = document.getElementById('play-all-label');
+  function setAll(on){
+    allMode = on;
+    allBtn.classList.toggle('is-playing', on);
+    allLabel.textContent = on ? 'Stop' : 'Play all';
+  }
+  function stop(){
+    token++;
+    player.pause();
+    mark(null);
+    setAll(false);
+  }
+
+  async function playOne(el){
+    const wasActive = activeEl === el;
+    stop();
+    if (wasActive) return;
+    const my = token;
+    await playOnce(el.dataset.src, el, my);
+    if (my === token) mark(null);
+  }
+
+  async function playAll(){
+    if (allMode) { stop(); return; }
+    stop();
+    const my = token;
+    setAll(true);
+    const lines = [...document.querySelectorAll('#dlg .line')];
+    for (const el of lines){
+      if (my !== token) return;
+      const ok = await playOnce(el.dataset.src, el, my);
+      if (!ok || my !== token) break;
+      await new Promise(r => setTimeout(r, 350));
+    }
+    if (my === token) { mark(null); setAll(false); }
+  }
+
+  allBtn.addEventListener('click', playAll);
+  document.querySelectorAll('#dlg .line').forEach(li => {
+    li.querySelector('.bub').addEventListener('click', () => playOne(li));
+    li.querySelector('.pl').addEventListener('click', () => playOne(li));
+  });
+  document.querySelectorAll('#voice-grid .vc').forEach(b => b.addEventListener('click', () => playOne(b)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') { stop(); hideTip(); } });
+})();
+</script>
