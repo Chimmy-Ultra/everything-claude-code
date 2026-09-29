@@ -2,11 +2,11 @@
 # Setup: pip install kokoro-onnx lameenc numpy; apt-get install espeak-ng;
 # pass the folder holding kokoro-v1.0.onnx and voices-v1.0.bin (from the
 # github.com/thewh1teagle/kokoro-onnx releases, tag model-files-v1.0).
-#   python make_audio.py /path/to/model-folder
+#   python make_audio.py /path/to/model-folder   (existing files are kept; FORCE=1 redoes all)
 import os, re, sys
 import numpy as np, lameenc
 from kokoro_onnx import Kokoro, EspeakConfig
-from content import GROUPS, SCENES, VOICES
+from content import GROUPS, SCENES, READINGS, VOICES
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL = sys.argv[1] if len(sys.argv) > 1 else "."
@@ -16,7 +16,7 @@ k = Kokoro(os.path.join(MODEL, "kokoro-v1.0.onnx"), os.path.join(MODEL, "voices-
 
 def plain(markup):
     s = re.sub(r"\[[a-d]\d:([^\]]+)\]", r"\1", markup)
-    s = re.sub(r"\{([^|}]+)\|[^|}]+\|[^}]+\}", r"\1", s)
+    s = re.sub(r"\{([^|}]+)\|[^|}]*\|[^}]*\}", r"\1", s)
     return s.replace("“", '"').replace("”", '"')
 
 def spoken(text):
@@ -25,6 +25,8 @@ def spoken(text):
 
 def save(text, voice, lang, rel):
     path = os.path.join(HERE, "audio", rel)
+    if os.path.exists(path) and not os.environ.get("FORCE"):
+        return
     os.makedirs(os.path.dirname(path), exist_ok=True)
     s, sr = k.create(spoken(text), voice=voice, speed=1.0, lang=lang)
     x = np.concatenate([np.zeros(int(sr * .12), np.float32), s.astype(np.float32), np.zeros(int(sr * .2), np.float32)])
@@ -46,3 +48,11 @@ for sid, _, _, _, lines in SCENES:
     for i, (who, markup, _) in enumerate(lines, 1):
         voice, lang = VOICES[who]
         save(plain(markup), voice, lang, f"{sid}/{i:02d}.mp3")
+
+for rid, _, _, who, _, paras in READINGS:
+    voice, lang = VOICES[who]
+    i = 0
+    for sentences, _ in paras:
+        for sentence in sentences:
+            i += 1
+            save(plain(sentence), voice, lang, f"{rid}/{i:02d}.mp3")

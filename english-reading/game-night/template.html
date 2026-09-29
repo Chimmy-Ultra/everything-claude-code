@@ -168,31 +168,41 @@ h3 small{font:500 12px var(--mono);letter-spacing:.06em;color:var(--muted);text-
 #tip td:first-child{font:600 11.5px var(--mono);color:var(--muted);width:8.5em;padding-right:8px}
 #tip tr.here td{color:var(--variant);font-weight:700}
 
+.read{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px clamp(16px,4vw,36px) 12px}
+.read .scene-head .ic{background:var(--tile)}
+.hint{font:400 13.5px var(--body);color:var(--muted);font-style:italic}
+.read-body{max-width:68ch;margin-top:10px;font-size:19px;line-height:1.85}
+.para{margin:0 0 1.05em}
+.s{cursor:pointer;border-radius:4px;transition:background .15s}
+.s:hover{background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.s.is-playing{background:var(--hl)}
+.pzh{margin:-.5em 0 1.3em;font:400 15px/1.75 var(--zh);color:var(--muted)}
+.en-lead{font-family:var(--body);font-size:17px}
 .err{margin-top:12px;padding:10px 14px;border-radius:12px;background:color-mix(in srgb,#E5484D 14%,var(--surface));font:400 14px/1.6 var(--zh)}
 footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);font:400 13px/1.8 var(--zh);color:var(--muted)}
 footer h2{font:700 15px var(--zh);margin:0 0 4px;color:var(--ink)}
 footer ul{margin:4px 0 14px;padding-left:18px;columns:2 280px;column-gap:28px}
 footer a{color:var(--accent)}
-@media (max-width:560px){.en{font-size:17px}.cards{grid-template-columns:1fr}.sayings{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.nav,.brand{display:none}.en{font-size:17px}.cards{grid-template-columns:1fr}.sayings{grid-template-columns:1fr 1fr}}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 
 <header class="top">
   <div class="top-in">
     <span class="brand">Everyday English <small>scene 01</small></span>
-    <nav class="nav" aria-label="Sections"><a href="#words">單字圖鑑</a><a href="#s1">對話 1</a><a href="#s2">對話 2</a><a href="#s3">對話 3</a></nav>
-    <label class="chip" for="rate"><span>速度</span>
+    <nav class="nav" aria-label="Sections"><a href="#words">Words</a><a href="#dialogues">Dialogues</a><a href="#reading">Reading</a></nav>
+    <label class="chip" for="rate"><span>Speed</span>
       <select id="rate"><option value="0.8">0.8×</option><option value="0.9">0.9×</option><option value="1" selected>1.0×</option><option value="1.1">1.1×</option></select>
     </label>
-    <label class="chip" for="zh-toggle"><input type="checkbox" id="zh-toggle"> 中文翻譯</label>
-    <button class="chip" id="theme" type="button" aria-label="切換深淺色">深淺色</button>
+    <label class="chip" for="zh-toggle"><input type="checkbox" id="zh-toggle"> Chinese</label>
+    <button class="chip" id="theme" type="button" aria-label="Switch between light and dark">Light / Dark</button>
   </div>
 </header>
 
 <main class="wrap">
   <p class="kicker">Everyday English · Scene 01</p>
   <h1>Game Night at George's</h1>
-  <p class="lead">星期五晚上，Wei 第一次到朋友 George 家玩桌遊，Emma 也在。先看 {{N_WORDS}} 個單字和短句，再聽三段對話（共 {{N_LINES}} 句）。對話裡會一直用到圖鑑裡的字，等於再複習一次。大約 20～25 分鐘。</p>
+  <p class="lead en-lead">It's Friday night, and Wei is going to his friend George's flat for his first game night. Emma is there too. Learn {{N_WORDS}} words and phrases, listen to three short conversations ({{N_LINES}} lines), then read two short texts. You'll meet the same words again and again. About 40 minutes.</p>
 
   <figure class="hero-art">
     <svg viewBox="0 0 720 300" role="img" aria-labelledby="hero-t">
@@ -262,23 +272,23 @@ footer a{color:var(--accent)}
       <text class="bub-t" x="474" y="44" text-anchor="middle">Fancy a game?</text>
     </svg>
     <div class="cast">
-      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3E9B4A">G</span><b>George</b>主人 <i style="color:var(--george)">UK VOICE</i></span>
-      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#7A68D6">E</span><b>Emma</b>朋友 <i style="color:var(--emma)">UK VOICE</i></span>
-      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3D8AD2">W</span><b>Wei</b>剛搬來的新朋友 <i style="color:var(--wei)">US VOICE</i></span>
+      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3E9B4A">G</span><b>George</b>the host <i style="color:var(--george)">UK VOICE</i></span>
+      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#7A68D6">E</span><b>Emma</b>a friend <i style="color:var(--emma)">UK VOICE</i></span>
+      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3D8AD2">W</span><b>Wei</b>new in town <i style="color:var(--wei)">US VOICE</i></span>
     </div>
   </figure>
 
   <ul class="how">
-    <li>點單字或例句：聽發音</li>
-    <li>點對話的任何一句：播那一句</li>
-    <li>右上角：調速度、開中文翻譯</li>
+    <li>Click a word or an example to hear it.</li>
+    <li>Click any line or sentence to play it.</li>
+    <li>Top right: change the speed or show Chinese.</li>
   </ul>
 
   <section class="part" id="words" aria-labelledby="words-h">
     <div class="part-head">
       <p class="kicker">Word bank</p>
-      <h2 id="words-h">單字圖鑑</h2>
-      <p class="lead">用字以英式為主。<span style="color:var(--variant);font-weight:700">橘色</span>那行是美國（或其他地方）的說法，只列查得到可靠資料的。</p>
+      <h2 id="words-h">Words for game night</h2>
+      <p class="lead en-lead">British English comes first. The <span style="color:var(--variant);font-weight:700">orange</span> line shows what people say in the US or elsewhere, listed only when a reliable source backs it up.</p>
     </div>
     {{WORDS}}
   </section>
@@ -286,22 +296,32 @@ footer a{color:var(--accent)}
   <section class="part" id="dialogues" aria-labelledby="dlg-h">
     <div class="part-head">
       <p class="kicker">Dialogues</p>
-      <h2 id="dlg-h">三段對話</h2>
+      <h2 id="dlg-h">Three conversations</h2>
     </div>
     <div class="legend">
-      <span><b class="wb">counter</b> 圖鑑裡的字</span>
-      <span><b class="g">Hang on</b> 新的說法</span>
-      <span><b class="v" data-here="UK">go</b> 各國說法不同</span>
-      <span>滑鼠移上去看中文</span>
+      <span><b class="wb">counter</b> from the word bank</span>
+      <span><b class="g">Hang on</b> new word or phrase</span>
+      <span><b class="v" data-here="UK">go</b> different in other countries</span>
+      <span>Hover over a word to see the Chinese.</span>
     </div>
     {{SCENES}}
-    <p class="err" id="audio-err" hidden>音檔沒有載入成功。請重新整理頁面再試一次；如果還是不行，告訴我你用的瀏覽器。</p>
+    <p class="err" id="audio-err" hidden>The audio didn't load. Reload the page and try again. If it still doesn't work, tell Claude which browser you're using.</p>
+  </section>
+
+  <section class="part" id="reading" aria-labelledby="read-h">
+    <div class="part-head">
+      <p class="kicker">Reading</p>
+      <h2 id="read-h">Two short reads</h2>
+    </div>
+    {{READINGS}}
   </section>
 
   <footer>
-    <h2>各國用字的出處</h2>
+    <h2>Sources: British and American words</h2>
     <ul>{{SOURCES}}</ul>
-    <p>以上資料是透過搜尋結果確認的。聲音由開源語音模型 Kokoro（v1.0）預先產生，每句一個音檔。對話和例句是為了學習而寫的，Dragon Market 是虛構的遊戲。</p>
+    <h2>Sources: history of board games</h2>
+    <ul>{{READ_SOURCES}}</ul>
+    <p>These sources were checked through search results. The voices were made with the open-source Kokoro text-to-speech model (v1.0). The conversations, examples and diary were written for learners, and Dragon Market is a made-up game.</p>
   </footer>
 </main>
 
@@ -356,7 +376,7 @@ footer a{color:var(--accent)}
     tip.style.top = y + 'px';
   }
   function hideTip(){ tip.hidden = true; tipFor = null; }
-  document.querySelectorAll('.en .wb, .en .g').forEach(el => {
+  document.querySelectorAll('.wb[data-zh], .g[data-zh]').forEach(el => {
     el.addEventListener('mouseenter', () => showTip(el));
     el.addEventListener('mouseleave', hideTip);
     el.addEventListener('focus', () => showTip(el));
@@ -386,7 +406,7 @@ footer a{color:var(--accent)}
     activeEl = el;
     if (el){
       el.classList.add('is-playing');
-      if (el.classList.contains('line')) el.scrollIntoView({block:'nearest', behavior: reduced ? 'auto' : 'smooth'});
+      if (el.classList.contains('seq')) el.scrollIntoView({block:'nearest', behavior: reduced ? 'auto' : 'smooth'});
     }
   }
 
@@ -448,7 +468,7 @@ footer a{color:var(--accent)}
     stop();
     const my = token;
     setAll(btn);
-    const lines = [...document.querySelectorAll(`#${btn.dataset.scene} .line`)];
+    const lines = [...document.querySelectorAll(`#${btn.dataset.scene} .seq`)];
     for (const el of lines){
       if (my !== token) return;
       const ok = await playOnce(el.dataset.src, el, my);
@@ -464,6 +484,7 @@ footer a{color:var(--accent)}
     li.querySelector('.pl').addEventListener('click', () => playOne(li));
   });
   document.querySelectorAll('.playable').forEach(b => b.addEventListener('click', () => playOne(b)));
+  document.querySelectorAll('.read .s').forEach(s => s.addEventListener('click', () => playOne(s)));
   addEventListener('keydown', e => { if (e.key === 'Escape') { stop(); hideTip(); } });
 })();
 </script>

@@ -1,6 +1,6 @@
 # Builds game-night.html from content.py.  python build_page.py
 import html, os, re
-from content import GROUPS, SCENES, SOURCES, NAMES
+from content import GROUPS, SCENES, READINGS, SOURCES, READ_SOURCES, NAMES
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 E = html.escape
@@ -128,14 +128,14 @@ def word_cards():
                 f'<button class="ex playable" type="button" data-src="audio/w/{wid}e.mp3"><span class="pbtn">{PLAY}</span><span>{E(ex)}</span></button>'
                 f'<p class="exzh zh">{E(exzh)}</p>'
                 + (f'<p class="note">{E(note)}</p>' if note else "") + '</article>')
-        out.append(f'<div class="group" id="g-{gid}"><h3><span>{E(zh)}</span> <small>{E(en)} · {len(items)}</small></h3>'
+        out.append(f'<div class="group" id="g-{gid}"><h3><span>{E(en)}</span> <small>{len(items)}</small></h3>'
                    f'<div class="cards {"sayings" if gid == "talk" else ""}">{"".join(cards)}</div></div>')
     return "".join(out)
 
 # ---------- dialogues ----------
 def render_line(markup):
     out, pos = [], 0
-    pat = re.compile(r"\[([a-d]\d):([^\]]+)\]|\{([^|}]+)\|([^|}]+)\|([^}]+)\}")
+    pat = re.compile(r"\[([a-d]\d):([^\]]+)\]|\{([^|}]+)\|([^|}]*)\|([^}]*)\}")
     for m in pat.finditer(markup):
         out.append(E(markup[pos:m.start()]))
         if m.group(1):
@@ -145,7 +145,8 @@ def render_line(markup):
             extra = f' data-var="{var_attr(var)}" data-here="UK"' if var else ""
             out.append(f'<span class="{cls}" tabindex="0" data-en="{E(word, quote=True)}" data-zh="{E(zh, quote=True)}"{extra}>{E(text)}</span>')
         else:
-            out.append(f'<span class="g" tabindex="0" data-zh="{E(m.group(4), quote=True)}" data-note="{E(m.group(5), quote=True)}">{E(m.group(3))}</span>')
+            note = f' data-note="{E(m.group(5), quote=True)}"' if m.group(5) else ""
+            out.append(f'<span class="g" tabindex="0" data-zh="{E(m.group(4), quote=True)}"{note}>{E(m.group(3))}</span>')
         pos = m.end()
     out.append(E(markup[pos:]))
     return "".join(out)
@@ -157,7 +158,7 @@ def scenes():
         for i, (who, markup, zh) in enumerate(lines, 1):
             side = "me" if who == "W" else "them"
             lis.append(
-                f'<li class="line {side} p-{who}" data-src="audio/{sid}/{i:02d}.mp3"><span class="av" aria-hidden="true">{NAMES[who][0]}</span>'
+                f'<li class="line seq {side} p-{who}" data-src="audio/{sid}/{i:02d}.mp3"><span class="av" aria-hidden="true">{NAMES[who][0]}</span>'
                 f'<div class="bub"><span class="who">{NAMES[who]}</span><p class="en">{render_line(markup)}</p><p class="zh">{E(zh)}</p></div>'
                 f'<button class="pl" type="button" aria-label="Play line {i}">{PLAY}</button></li>')
         out.append(
@@ -167,11 +168,38 @@ def scenes():
             f'<ol class="dlg">{"".join(lis)}</ol></section>')
     return "".join(out)
 
+
+# ---------- readings ----------
+def plain_words(markup):
+    t = re.sub(r"\[[a-d]\d:([^\]]+)\]", r"\1", markup)
+    return re.sub(r"\{([^|}]+)\|[^|}]*\|[^}]*\}", r"\1", t)
+
+def readings():
+    out = []
+    for rid, kicker, title, who, ic, paras in READINGS:
+        words = sum(len(plain_words(" ".join(s)).split()) for s, _ in paras)
+        body, i = [], 0
+        for sentences, zh in paras:
+            spans = []
+            for sentence in sentences:
+                i += 1
+                spans.append(f'<span class="s seq" data-src="audio/{rid}/{i:02d}.mp3">{render_line(sentence)}</span>')
+            body.append(f'<p class="para">{" ".join(spans)}</p><p class="zh pzh">{E(zh)}</p>')
+        out.append(
+            f'<article class="read" id="{rid}" aria-labelledby="{rid}-h"><div class="scene-head">{icon(ic, 52)}<div>'
+            f'<p class="kicker">{E(kicker)}</p><h2 id="{rid}-h">{E(title)}</h2>'
+            f'<p class="intro">{words} words · about {round(words / 150)} min · read by {NAMES[who]}</p></div></div>'
+            f'<div class="bar"><button class="btn play-all" type="button" data-scene="{rid}">{PLAY}<span class="lbl">Play all</span></button>'
+            f'<span class="hint">Click any sentence to hear it.</span></div>'
+            f'<div class="read-body">{"".join(body)}</div></article>')
+    return "".join(out)
+
 n_words = sum(len(g[3]) for g in GROUPS)
 n_lines = sum(len(s[4]) for s in SCENES)
 tpl = open(os.path.join(HERE, "template.html"), encoding="utf-8").read()
-page = (tpl.replace("{{WORDS}}", word_cards()).replace("{{SCENES}}", scenes())
+page = (tpl.replace("{{WORDS}}", word_cards()).replace("{{SCENES}}", scenes()).replace("{{READINGS}}", readings())
         .replace("{{N_WORDS}}", str(n_words)).replace("{{N_LINES}}", str(n_lines))
-        .replace("{{SOURCES}}", "".join(f'<li><a href="{E(u, quote=True)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in SOURCES)))
+        .replace("{{SOURCES}}", "".join(f'<li><a href="{E(u, quote=True)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in SOURCES))
+        .replace("{{READ_SOURCES}}", "".join(f'<li><a href="{E(u, quote=True)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in READ_SOURCES)))
 open(os.path.join(HERE, "game-night.html"), "w", encoding="utf-8").write(page)
 print("words", n_words, "lines", n_lines, "bytes", len(page.encode()))
