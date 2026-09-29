@@ -1,0 +1,469 @@
+<title>Game Night at George's</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#F3F2F7; --surface:#FFFFFF; --plate:#E6E3EE; --ink:#1B1830; --muted:#5D5972;
+  --line:#DAD6E4; --outline:#2B2740; --tile:#EFECF7; --wall:#E6E3EE;
+  --accent:#0A7F72; --accent-ink:#FFFFFF; --wb:#0A6B61; --wb-bg:rgba(31,181,163,.13);
+  --george:#2E7D3A; --george-tint:#E7F3E6;
+  --emma:#5E4BBF; --emma-tint:#EEEBFA;
+  --wei:#2A6FB0; --wei-tint:#E4EFFA;
+  --variant:#9A6200; --hl:rgba(255,178,46,.40);
+  --shadow:0 1px 2px rgba(27,24,48,.05),0 6px 18px rgba(27,24,48,.06);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6;
+    --line:#302C42; --outline:#0C0A12; --tile:#DAD5E8; --wall:#3B3652;
+    --accent:#46CDBC; --accent-ink:#08201C; --wb:#6FDCCD; --wb-bg:rgba(70,205,188,.14);
+    --george:#86D48F; --george-tint:#1B2A20;
+    --emma:#B8ACF6; --emma-tint:#241F3C;
+    --wei:#7DBDF3; --wei-tint:#172639;
+    --variant:#FFC24F; --hl:rgba(255,178,46,.26);
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6;
+  --line:#302C42; --outline:#0C0A12; --tile:#DAD5E8; --wall:#3B3652;
+  --accent:#46CDBC; --accent-ink:#08201C; --wb:#6FDCCD; --wb-bg:rgba(70,205,188,.14);
+  --george:#86D48F; --george-tint:#1B2A20;
+  --emma:#B8ACF6; --emma-tint:#241F3C;
+  --wei:#7DBDF3; --wei-tint:#172639;
+  --variant:#FFC24F; --hl:rgba(255,178,46,.26);
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1000px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap}
+.brand{font:700 15px/1 var(--display);margin-right:auto}
+.brand small{font:500 12px var(--mono);color:var(--muted);margin-left:6px;letter-spacing:.04em}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{font:500 13px/1 var(--zh);color:var(--muted);text-decoration:none;padding:7px 10px;border-radius:999px}
+.nav a:hover{background:var(--plate);color:var(--ink)}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font:500 13px/1.2 var(--zh);cursor:pointer}
+.chip select{border:0;background:transparent;font:600 13px var(--mono);cursor:pointer;padding:0}
+.chip input{accent-color:var(--accent);margin:0}
+
+.wrap{max-width:1000px;margin:0 auto;padding-inline:20px;padding-block:26px 64px}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0}
+h1{font:800 clamp(36px,6.4vw,60px)/1.03 var(--display);letter-spacing:-.02em;margin:.3em 0 .25em;text-wrap:balance}
+h2{font:760 clamp(26px,3.6vw,32px)/1.1 var(--display);letter-spacing:-.01em;margin:0;text-wrap:balance}
+h3{font:700 20px/1.2 var(--zh);margin:0 0 12px;display:flex;align-items:baseline;gap:10px}
+h3 small{font:500 12px var(--mono);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.lead{font:400 16px/1.8 var(--zh);color:var(--muted);max-width:42em;margin:0}
+.part{margin-top:56px}
+.part-head{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+
+/* hero */
+.hero-art{margin:22px 0 0;background:var(--plate);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.hero-art svg{display:block;width:100%;height:auto}
+.cast{display:flex;flex-wrap:wrap;gap:10px 22px;padding:12px 16px;background:var(--surface);border-top:1px solid var(--line)}
+.cast>span{display:inline-flex;align-items:center;gap:8px;font:500 14px var(--zh);color:var(--muted)}
+.cast b{font:700 15px var(--display);color:var(--ink)}
+.cast i{font:normal 600 11px var(--mono);letter-spacing:.06em}
+.how{display:flex;flex-wrap:wrap;gap:8px 20px;margin:16px 0 0;padding:0;list-style:none;font:400 14px/1.6 var(--zh);color:var(--muted)}
+.how li{display:flex;align-items:center;gap:8px}
+
+/* svg shared */
+.st{stroke:var(--outline);stroke-width:2.5;stroke-linejoin:round}
+.ln{fill:none;stroke:var(--outline);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.ln.thin{stroke-width:2}
+.ln.dash{stroke-dasharray:3 4}
+.f-ink{fill:var(--outline)}
+.f-coral{fill:#FF7A59} .f-coral2{fill:#D65A3A} .f-sky{fill:#4A9FE3} .f-sky2{fill:#2C78BD}
+.f-violet{fill:#8A78E0} .f-teal{fill:#1FB5A3} .f-amber{fill:#FFB22E} .f-leaf{fill:#6CC06A} .f-leaf2{fill:#4E9C4C}
+.f-white{fill:#FFFFFF} .f-beige{fill:#F3DFB8} .f-box{fill:#E3A762} .f-box2{fill:#C98B4A} .f-grey{fill:#B4BACB}
+.f-yellow{fill:#FFD36E} .f-dark{fill:#1D1B2A} .f-wood{fill:#C98B55} .f-wood2{fill:#A96F3F} .f-wall{fill:var(--wall)}
+.f-skin1{fill:#F1C7A1} .f-skin2{fill:#E2B288} .f-hair-g{fill:#D07A3A} .f-hair-e{fill:#7A3B2E} .f-hair-w{fill:#1E222C}
+.f-george{fill:#4FAF5A} .f-surface{fill:var(--surface)} .f-none{fill:none}
+.bub-t{font:700 17px var(--display);fill:var(--ink)}
+
+/* word bank */
+.group{margin-top:26px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.card .head{display:flex;gap:12px;align-items:flex-start}
+.ic{flex:none;background:var(--tile);border-radius:12px;padding:4px;width:64px;height:64px}
+.hw{display:inline-flex;align-items:center;gap:8px;border:0;background:none;padding:0;cursor:pointer;text-align:left;font:760 21px/1.2 var(--display);border-radius:8px}
+.hw:hover{color:var(--accent)}
+.mean{margin:2px 0 0;font:500 15px/1.4 var(--zh)}
+.uk{font:600 9.5px/1 var(--mono);color:var(--variant);vertical-align:super;margin-left:3px;letter-spacing:.04em}
+.var{display:flex;align-items:baseline;gap:8px;margin-top:4px;font:500 14px/1.4 var(--body);color:var(--variant)}
+.pl-tag{font:600 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:5px;border:1px solid color-mix(in srgb,var(--variant) 55%,transparent)}
+.ex{display:flex;gap:8px;align-items:flex-start;width:100%;border:0;background:var(--plate);border-radius:10px;padding:8px 10px;cursor:pointer;text-align:left;font:400 15.5px/1.5 var(--body)}
+.ex:hover{background:color-mix(in srgb,var(--accent) 12%,var(--plate))}
+.exzh{margin:-2px 0 0 4px;font:400 13.5px/1.55 var(--zh);color:var(--muted)}
+.note{margin:0;font:400 13px/1.6 var(--zh);color:var(--muted);border-top:1px dashed var(--line);padding-top:7px}
+.pbtn{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink)}
+.ex .pbtn{width:22px;height:22px;margin-top:1px;background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.pbtn svg{width:9px;height:9px;fill:currentColor}
+.ico-stop{display:none}
+.is-playing .ico-play{display:none} .is-playing .ico-stop{display:block}
+.hw.is-playing,.ex.is-playing{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 30%,transparent)}
+.ex.is-playing{background:var(--hl)}
+.sayings{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.say{border-radius:20px 20px 20px 6px;gap:4px;padding:14px 16px}
+.say:nth-child(5n+1){background:color-mix(in srgb,#FF7A59 13%,var(--surface))}
+.say:nth-child(5n+2){background:color-mix(in srgb,#4A9FE3 13%,var(--surface))}
+.say:nth-child(5n+3){background:color-mix(in srgb,#FFB22E 16%,var(--surface))}
+.say:nth-child(5n+4){background:color-mix(in srgb,#8A78E0 14%,var(--surface))}
+.say:nth-child(5n+5){background:color-mix(in srgb,#6CC06A 15%,var(--surface))}
+.say .hw{font-size:20px}
+
+/* dialogue */
+.scene{margin-top:48px}
+.scene-head{display:flex;gap:14px;align-items:center}
+.scene-head .ic{width:68px;height:68px;padding:6px}
+.intro{margin:4px 0 0;font:400 14.5px/1.6 var(--zh);color:var(--muted)}
+.bar{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;margin:14px 0 4px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:9px 18px;background:var(--accent);color:var(--accent-ink);font:700 15px/1 var(--display);cursor:pointer}
+.btn svg{width:13px;height:13px;fill:currentColor}
+.legend{display:flex;gap:8px 18px;flex-wrap:wrap;font:400 13.5px/1.6 var(--zh);color:var(--muted);margin:0;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.legend b{font:500 15px var(--body);color:var(--ink);cursor:default}
+.dlg{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:11px;max-width:820px}
+.line{display:flex;align-items:flex-start;gap:10px}
+.line.me{flex-direction:row-reverse}
+.av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:800 16px/1 var(--display);color:#fff;margin-top:2px}
+.p-G .av{background:#3E9B4A} .p-E .av{background:#7A68D6} .p-W .av{background:#3D8AD2}
+.bub{max-width:min(620px,100%);padding:10px 14px 11px;border-radius:16px;cursor:pointer;border:1.5px solid transparent;transition:border-color .15s,box-shadow .15s}
+.them .bub{border-top-left-radius:6px} .me .bub{border-top-right-radius:6px}
+.p-G .bub{background:var(--george-tint)} .p-E .bub{background:var(--emma-tint)} .p-W .bub{background:var(--wei-tint)}
+.bub:hover{border-color:var(--line)}
+.who{display:block;font:600 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.p-G .who{color:var(--george)} .p-E .who{color:var(--emma)} .p-W .who{color:var(--wei)}
+.en{margin:0;font-size:18px;line-height:1.62}
+.zh{display:none}
+.bub .zh{margin:4px 0 0;font:400 14.5px/1.6 var(--zh);color:var(--muted)}
+.show-zh .zh{display:block}
+.line.is-playing .bub{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent)}
+.line.is-playing .en{background:var(--hl);border-radius:4px}
+.pl{flex:none;align-self:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;cursor:pointer}
+.pl svg{width:12px;height:12px;fill:currentColor}
+
+.wb{background:var(--wb-bg);color:var(--wb);font-weight:600;border-radius:4px;padding:0 2px;cursor:help}
+.g{border-bottom:2px dashed color-mix(in srgb,var(--accent) 75%,transparent);cursor:help}
+.v{border-bottom:2px dashed var(--variant)}
+.v::after{content:attr(data-here);font:600 9.5px/1 var(--mono);color:var(--variant);vertical-align:super;margin-left:2px;letter-spacing:.04em}
+.wb:hover,.wb:focus-visible,.g:hover,.g:focus-visible{background:var(--hl)}
+#tip{position:fixed;z-index:50;max-width:min(320px,calc(100vw - 24px));background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px 12px;box-shadow:0 10px 30px rgba(0,0,0,.2);font:400 14px/1.55 var(--zh);pointer-events:none}
+#tip .t-en{font:700 15px var(--display);margin-right:6px}
+#tip .t-zh{font-weight:700;font-size:15.5px}
+#tip .t-note{color:var(--muted);margin-top:3px}
+#tip table{border-collapse:collapse;margin-top:6px;width:100%}
+#tip td{padding:3px 0;border-top:1px solid var(--line);font-size:13.5px}
+#tip td:first-child{font:600 11.5px var(--mono);color:var(--muted);width:8.5em;padding-right:8px}
+#tip tr.here td{color:var(--variant);font-weight:700}
+
+.err{margin-top:12px;padding:10px 14px;border-radius:12px;background:color-mix(in srgb,#E5484D 14%,var(--surface));font:400 14px/1.6 var(--zh)}
+footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);font:400 13px/1.8 var(--zh);color:var(--muted)}
+footer h2{font:700 15px var(--zh);margin:0 0 4px;color:var(--ink)}
+footer ul{margin:4px 0 14px;padding-left:18px;columns:2 280px;column-gap:28px}
+footer a{color:var(--accent)}
+@media (max-width:560px){.en{font-size:17px}.cards{grid-template-columns:1fr}.sayings{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <span class="brand">Everyday English <small>scene 01</small></span>
+    <nav class="nav" aria-label="Sections"><a href="#words">單字圖鑑</a><a href="#s1">對話 1</a><a href="#s2">對話 2</a><a href="#s3">對話 3</a></nav>
+    <label class="chip" for="rate"><span>速度</span>
+      <select id="rate"><option value="0.8">0.8×</option><option value="0.9">0.9×</option><option value="1" selected>1.0×</option><option value="1.1">1.1×</option></select>
+    </label>
+    <label class="chip" for="zh-toggle"><input type="checkbox" id="zh-toggle"> 中文翻譯</label>
+    <button class="chip" id="theme" type="button" aria-label="切換深淺色">深淺色</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="kicker">Everyday English · Scene 01</p>
+  <h1>Game Night at George's</h1>
+  <p class="lead">星期五晚上，Wei 第一次到朋友 George 家玩桌遊，Emma 也在。先看 30 個單字和短句，再聽三段對話（共 35 句）。對話裡會一直用到圖鑑裡的字，等於再複習一次。大約 20～25 分鐘。</p>
+
+  <figure class="hero-art">
+    <svg viewBox="0 0 720 300" role="img" aria-labelledby="hero-t">
+      <title id="hero-t">Emma, George and Wei sit at a table with a board game, dice and cards. George asks: Fancy a game?</title>
+      <rect class="f-wall" x="0" y="0" width="720" height="300"/>
+      <!-- picture -->
+      <rect class="f-surface st" x="48" y="38" width="78" height="58" rx="4"/>
+      <rect class="f-sky" x="56" y="46" width="62" height="42"/>
+      <path class="f-leaf" d="M56 88l20-24 12 13 10-9 20 20z"/>
+      <circle class="f-amber" cx="104" cy="58" r="6"/>
+      <!-- shelf of games -->
+      <rect class="f-coral st" x="584" y="52" width="18" height="50" rx="2"/>
+      <rect class="f-amber st" x="604" y="60" width="22" height="42" rx="2"/>
+      <rect class="f-teal st" x="628" y="46" width="16" height="56" rx="2"/>
+      <rect class="f-violet st" x="646" y="64" width="26" height="38" rx="2"/>
+      <rect class="f-box st" x="674" y="70" width="30" height="32" rx="2"/>
+      <rect class="f-wood2 st" x="574" y="102" width="138" height="9" rx="2"/>
+      <!-- lamp -->
+      <path class="ln" d="M300 0v26"/>
+      <circle class="f-amber" cx="300" cy="50" r="34" opacity=".2"/>
+      <path class="f-amber st" d="M282 44h36l-8-18h-20z"/>
+      <!-- Emma -->
+      <ellipse class="f-hair-e st" cx="190" cy="112" rx="30" ry="40"/>
+      <rect class="f-violet st" x="148" y="140" width="84" height="96" rx="26"/>
+      <circle class="f-skin1 st" cx="190" cy="100" r="23"/>
+      <path class="f-hair-e st" d="M167 98q2-26 23-26q21 0 23 26q-11-13-23-13q-12 0-23 13z"/>
+      <circle class="f-dark" cx="183" cy="103" r="2.4"/><circle class="f-dark" cx="198" cy="103" r="2.4"/>
+      <path class="ln thin" d="M183 111q7 6 14 0"/>
+      <!-- George -->
+      <rect class="f-george st" x="316" y="132" width="92" height="104" rx="28"/>
+      <circle class="f-skin1 st" cx="362" cy="94" r="24"/>
+      <path class="f-hair-g st" d="M338 92q0-28 24-28q24 0 24 28q-8-12-24-12q-16 0-24 12z"/>
+      <path class="f-hair-g st" d="M340 98q2 26 22 28q20-2 22-28q-6 11-22 11q-16 0-22-11z"/>
+      <circle class="f-dark" cx="354" cy="97" r="2.4"/><circle class="f-dark" cx="370" cy="97" r="2.4"/>
+      <path class="ln thin" d="M355 109q7 4 14 0"/>
+      <!-- Wei -->
+      <rect class="f-sky st" x="492" y="140" width="84" height="96" rx="26"/>
+      <circle class="f-skin2 st" cx="534" cy="100" r="23"/>
+      <path class="f-hair-w st" d="M511 99q0-28 23-28q23 0 23 28q-7-11-23-12q-16 1-23 12z"/>
+      <circle class="f-dark" cx="527" cy="104" r="2.4"/><circle class="f-dark" cx="542" cy="104" r="2.4"/>
+      <path class="ln thin" d="M528 112q6 5 12 0"/>
+      <!-- table -->
+      <path class="f-wood st" d="M40 236h640l-36-40H76z"/>
+      <rect class="f-wood2 st" x="40" y="236" width="640" height="20" rx="2"/>
+      <rect class="f-wood2 st" x="70" y="256" width="16" height="44"/>
+      <rect class="f-wood2 st" x="634" y="256" width="16" height="44"/>
+      <!-- board on the table -->
+      <path class="f-beige st" d="M268 230h188l-18-28H286z"/>
+      <path class="f-none" stroke="#1FB5A3" stroke-width="5" stroke-dasharray="10 6" d="M280 224h164l-12-17H292z"/>
+      <ellipse class="f-coral st" cx="332" cy="216" rx="8" ry="4"/>
+      <ellipse class="f-sky st" cx="392" cy="212" rx="8" ry="4"/>
+      <!-- dice -->
+      <rect class="f-white st" x="470" y="208" width="18" height="18" rx="4"/>
+      <circle class="f-dark" cx="479" cy="217" r="2.2"/>
+      <rect class="f-coral st" x="492" y="214" width="18" height="18" rx="4" transform="rotate(12 501 223)"/>
+      <circle class="f-white" cx="497" cy="219" r="2"/><circle class="f-white" cx="505" cy="227" r="2"/>
+      <!-- cards -->
+      <rect class="f-violet st" x="204" y="210" width="34" height="22" rx="3" transform="rotate(-8 221 221)"/>
+      <rect class="f-white st" x="210" y="206" width="34" height="22" rx="3" transform="rotate(4 227 217)"/>
+      <!-- hands -->
+      <circle class="f-skin1 st" cx="164" cy="222" r="9"/><circle class="f-skin1 st" cx="250" cy="226" r="9"/>
+      <circle class="f-skin1 st" cx="330" cy="232" r="9"/><circle class="f-skin1 st" cx="396" cy="232" r="9"/>
+      <circle class="f-skin2 st" cx="516" cy="232" r="9"/><circle class="f-skin2 st" cx="566" cy="224" r="9"/>
+      <!-- speech bubble -->
+      <path class="f-surface st" d="M408 58L386 80L430 62Z"/>
+      <rect class="f-surface st" x="394" y="16" width="160" height="44" rx="16"/>
+      <text class="bub-t" x="474" y="44" text-anchor="middle">Fancy a game?</text>
+    </svg>
+    <div class="cast">
+      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3E9B4A">G</span><b>George</b>主人 <i style="color:var(--george)">UK VOICE</i></span>
+      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#7A68D6">E</span><b>Emma</b>朋友 <i style="color:var(--emma)">UK VOICE</i></span>
+      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3D8AD2">W</span><b>Wei</b>剛搬來的新朋友 <i style="color:var(--wei)">US VOICE</i></span>
+    </div>
+  </figure>
+
+  <ul class="how">
+    <li>點單字或例句：聽發音</li>
+    <li>點對話的任何一句：播那一句</li>
+    <li>右上角：調速度、開中文翻譯</li>
+  </ul>
+
+  <section class="part" id="words" aria-labelledby="words-h">
+    <div class="part-head">
+      <p class="kicker">Word bank</p>
+      <h2 id="words-h">單字圖鑑</h2>
+      <p class="lead">用字以英式為主。<span style="color:var(--variant);font-weight:700">橘色</span>那行是美國（或其他地方）的說法，只列查得到可靠資料的。</p>
+    </div>
+    <div class="group" id="g-things"><h3><span>桌上的東西</span> <small>On the table · 8</small></h3><div class="cards "><article class="card" id="a1"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-violet st" x="8" y="18" width="48" height="36" rx="4"/><rect class="f-amber st" x="8" y="18" width="48" height="12" rx="4"/><path class="f-coral2 st" d="M16 40 v6 a6 2.7 0 0 0 12 0 v-6"/><ellipse class="f-coral st" cx="22" cy="40" rx="6" ry="2.7"/><rect class="f-white st" x="33" y="35" width="14" height="12" rx="3.5"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a1.mp3"><span>board game</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">桌遊</p></div></div><button class="ex playable" type="button" data-src="audio/w/a1e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>George has loads of board games.</span></button><p class="exzh zh">George 有一大堆桌遊。</p></article><article class="card" id="a2"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-beige st" x="8" y="8" width="48" height="48" rx="4"/><rect class="f-teal" x="12" y="12" width="7" height="7" rx="1.5"/><rect class="f-coral" x="12" y="48" width="7" height="7" rx="1.5"/><rect class="f-amber" x="21" y="12" width="7" height="7" rx="1.5"/><rect class="f-sky" x="21" y="48" width="7" height="7" rx="1.5"/><rect class="f-teal" x="30" y="12" width="7" height="7" rx="1.5"/><rect class="f-coral" x="30" y="48" width="7" height="7" rx="1.5"/><rect class="f-amber" x="39" y="12" width="7" height="7" rx="1.5"/><rect class="f-sky" x="39" y="48" width="7" height="7" rx="1.5"/><rect class="f-teal" x="48" y="12" width="7" height="7" rx="1.5"/><rect class="f-coral" x="48" y="48" width="7" height="7" rx="1.5"/><rect class="f-amber" x="12" y="21" width="7" height="7" rx="1.5"/><rect class="f-sky" x="48" y="21" width="7" height="7" rx="1.5"/><rect class="f-teal" x="12" y="30" width="7" height="7" rx="1.5"/><rect class="f-coral" x="48" y="30" width="7" height="7" rx="1.5"/><rect class="f-amber" x="12" y="39" width="7" height="7" rx="1.5"/><rect class="f-sky" x="48" y="39" width="7" height="7" rx="1.5"/><path class="f-sky2 st" d="M27 30 v6 a5 2.25 0 0 0 10 0 v-6"/><ellipse class="f-sky st" cx="32" cy="30" rx="5" ry="2.25"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a2.mp3"><span>board</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">遊戲圖板</p></div></div><button class="ex playable" type="button" data-src="audio/w/a2e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Can you put the board in the middle?</span></button><p class="exzh zh">可以把圖板放中間嗎？</p></article><article class="card" id="a3"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-white st" x="7" y="26" width="27" height="27" rx="6"/><circle class="f-dark" cx="14" cy="33" r="2.7"/><circle class="f-dark" cx="20.5" cy="39.5" r="2.7"/><circle class="f-dark" cx="27" cy="46" r="2.7"/><g transform="rotate(14 44 26)"><rect class="f-coral st" x="31" y="13" width="26" height="26" rx="6"/><circle class="f-white" cx="38" cy="20" r="2.7"/><circle class="f-white" cx="50" cy="20" r="2.7"/><circle class="f-white" cx="38" cy="32" r="2.7"/><circle class="f-white" cx="50" cy="32" r="2.7"/></g></svg><div><button class="hw playable" type="button" data-src="audio/w/a3.mp3"><span>dice</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">骰子</p></div></div><button class="ex playable" type="button" data-src="audio/w/a3e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Roll the dice and move your counter.</span></button><p class="exzh zh">擲骰子，然後移動你的棋子。</p><p class="note">一顆骰子口語也說 a dice，正式的單數是 a die。</p></article><article class="card" id="a4"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-sky2 st" d="M10 38 v6 a13 5.8500000000000005 0 0 0 26 0 v-6"/><ellipse class="f-sky st" cx="23" cy="38" rx="13" ry="5.8500000000000005"/><path class="f-coral2 st" d="M29 28 v6 a13 5.8500000000000005 0 0 0 26 0 v-6"/><ellipse class="f-coral st" cx="42" cy="28" rx="13" ry="5.8500000000000005"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a4.mp3"><span>counter<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">棋子</p><div class="var"><span class="pl-tag">US</span>piece</div></div></div><button class="ex playable" type="button" data-src="audio/w/a4e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Pick a counter. What colour do you want?</span></button><p class="exzh zh">挑一個棋子。你要什麼顏色？</p></article><article class="card" id="a5"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-violet st" x="19" y="14" width="28" height="38" rx="3.5" transform="rotate(9 33.0 33.0)"/><rect class="f-violet st" x="17" y="12" width="28" height="38" rx="3.5" transform="rotate(-5 31.0 31.0)"/><rect class="f-white st" x="18" y="10" width="28" height="38" rx="3.5"/><path class="f-coral" transform="translate(0 -2)" d="M32 38C22 31 22 23 27 22C30 21 32 24 32 25C32 24 34 21 37 22C42 23 42 31 32 38Z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a5.mp3"><span>pack of cards<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">一副牌</p><div class="var"><span class="pl-tag">US</span>deck of cards</div></div></div><button class="ex playable" type="button" data-src="audio/w/a5e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>I&#x27;ll shuffle the pack.</span></button><p class="exzh zh">我來洗牌。</p></article><article class="card" id="a6"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-sky st" x="23" y="12" width="18" height="30" rx="3.5" transform="rotate(-36 32 58)"/><rect class="f-amber st" x="23" y="12" width="18" height="30" rx="3.5" transform="rotate(-12 32 58)"/><rect class="f-leaf st" x="23" y="12" width="18" height="30" rx="3.5" transform="rotate(12 32 58)"/><rect class="f-coral st" x="23" y="12" width="18" height="30" rx="3.5" transform="rotate(36 32 58)"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a6.mp3"><span>hand</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">手牌</p></div></div><button class="ex playable" type="button" data-src="audio/w/a6e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>No peeking at other people&#x27;s hands!</span></button><p class="exzh zh">不准偷看別人的手牌！</p></article><article class="card" id="a7"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-beige st" x="10" y="10" width="14" height="14" rx="2"/><rect class="f-beige st" x="10" y="25" width="14" height="14" rx="2"/><rect class="f-beige st" x="10" y="40" width="14" height="14" rx="2"/><rect class="f-beige st" x="25" y="10" width="14" height="14" rx="2"/><rect class="f-amber st" x="25" y="25" width="14" height="14" rx="2"/><rect class="f-beige st" x="25" y="40" width="14" height="14" rx="2"/><rect class="f-beige st" x="40" y="10" width="14" height="14" rx="2"/><rect class="f-beige st" x="40" y="25" width="14" height="14" rx="2"/><rect class="f-beige st" x="40" y="40" width="14" height="14" rx="2"/><path class="f-sky2 st" d="M27 30 v6 a5 2.25 0 0 0 10 0 v-6"/><ellipse class="f-sky st" cx="32" cy="30" rx="5" ry="2.25"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a7.mp3"><span>square</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">格子</p></div></div><button class="ex playable" type="button" data-src="audio/w/a7e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Move your counter five squares.</span></button><p class="exzh zh">棋子往前走五格。</p></article><article class="card" id="a8"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-white st" x="14" y="8" width="36" height="48" rx="4"/><rect class="f-coral st" x="14" y="8" width="36" height="9" rx="4"/><path class="ln" d="M21 25v14M26 25v14M31 25v14M36 25v14M18 36l22-8"/><path class="f-amber st" d="M42 41l2.4 4.8 5.3.8-3.8 3.7.9 5.3-4.8-2.5-4.8 2.5.9-5.3-3.8-3.7 5.3-.8z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/a8.mp3"><span>points</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">分數</p></div></div><button class="ex playable" type="button" data-src="audio/w/a8e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>First to ten points wins.</span></button><p class="exzh zh">先拿到十分的人贏。</p></article></div></div><div class="group" id="g-actions"><h3><span>動作</span> <small>Actions · 8</small></h3><div class="cards "><article class="card" id="b1"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-beige st" x="7" y="32" width="50" height="24" rx="3"/><path class="f-coral2 st" d="M15 42 v6 a5 2.25 0 0 0 10 0 v-6"/><ellipse class="f-coral st" cx="20" cy="42" rx="5" ry="2.25"/><rect class="f-violet st" x="36" y="37" width="12" height="14" rx="3.5"/><path class="ln" d="M44 6v16"/><path class="f-ink" d="M38 20h12l-6 8z"/><path class="f-amber" d="M16 10l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b1.mp3"><span>set up</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">擺好（遊戲）</p></div></div><button class="ex playable" type="button" data-src="audio/w/b1e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Right, let&#x27;s set up.</span></button><p class="exzh zh">好，我們來把遊戲擺好。</p></article><article class="card" id="b2"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="ln" d="M6 22h12M4 32h14M8 42h10"/><g transform="rotate(-18 38 32)"><rect class="f-white st" x="22" y="16" width="32" height="32" rx="7"/><circle class="f-dark" cx="30" cy="24" r="2.7"/><circle class="f-dark" cx="46" cy="24" r="2.7"/><circle class="f-dark" cx="38" cy="32" r="2.7"/><circle class="f-dark" cx="30" cy="40" r="2.7"/><circle class="f-dark" cx="46" cy="40" r="2.7"/></g></svg><div><button class="hw playable" type="button" data-src="audio/w/b2.mp3"><span>roll</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">擲（骰子）</p></div></div><button class="ex playable" type="button" data-src="audio/w/b2e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Come on, Wei, roll!</span></button><p class="exzh zh">快點，Wei，擲啊！</p></article><article class="card" id="b3"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-sky st" x="10" y="22" width="20" height="30" rx="3.5" transform="rotate(-14 20.0 37.0)"/><rect class="f-coral st" x="34" y="22" width="20" height="30" rx="3.5" transform="rotate(14 44.0 37.0)"/><path class="ln" d="M18 16c6-9 22-9 28 0"/><path class="f-ink" d="M42 10l7 7-9 2z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b3.mp3"><span>shuffle</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">洗牌</p></div></div><button class="ex playable" type="button" data-src="audio/w/b3e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Shuffle the cards before you deal.</span></button><p class="exzh zh">發牌前先洗牌。</p></article><article class="card" id="b4"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-violet st" x="24" y="38" width="16" height="20" rx="3.5"/><rect class="f-white st" x="6" y="12" width="14" height="19" rx="3.5" transform="rotate(-24 13.0 21.5)"/><rect class="f-white st" x="25" y="5" width="14" height="19" rx="3.5"/><rect class="f-white st" x="44" y="12" width="14" height="19" rx="3.5" transform="rotate(24 51.0 21.5)"/><path class="ln dash" d="M28 36l-12-6M32 35V26M36 36l12-6"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b4.mp3"><span>deal</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">發牌</p></div></div><button class="ex playable" type="button" data-src="audio/w/b4e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Emma, you deal. Five cards each.</span></button><p class="exzh zh">Emma，你發牌。每人五張。</p></article><article class="card" id="b5"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-violet st" x="16" y="34" width="30" height="22" rx="3.5"/><rect class="f-violet st" x="14" y="30" width="30" height="22" rx="3.5"/><rect class="f-white st" x="18" y="8" width="26" height="20" rx="3.5" transform="rotate(-8 31.0 18.0)"/><path class="ln" d="M52 36V14"/><path class="f-ink" d="M46 17h12l-6-8z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b5.mp3"><span>draw a card</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">抽一張牌</p></div></div><button class="ex playable" type="button" data-src="audio/w/b5e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>You draw a card from the pack.</span></button><p class="exzh zh">你從牌堆抽一張牌。</p><p class="note">draw 在這裡是「抽」。下面的 a draw 是「平手」，同一個字。</p></article><article class="card" id="b6"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-sky st" x="6" y="20" width="20" height="28" rx="3.5"/><rect class="f-coral st" x="38" y="20" width="20" height="28" rx="3.5"/><path class="ln" d="M22 14c6-6 14-6 20 0"/><path class="f-ink" d="M38 8l7 8-10 1z"/><path class="ln" d="M42 54c-6 6-14 6-20 0"/><path class="f-ink" d="M26 60l-7-8 10-1z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b6.mp3"><span>swap</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">交換</p></div></div><button class="ex playable" type="button" data-src="audio/w/b6e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Do you want to swap cards?</span></button><p class="exzh zh">要不要換牌？</p></article><article class="card" id="b7"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-amber st" d="M12 50l8-12h32l-8 12z"/><path class="ln dash" d="M32 14v16"/><path class="f-ink" d="M26 28h12l-6 7z"/><path class="f-sky2 st" d="M24 9 v6 a8 3.6 0 0 0 16 0 v-6"/><ellipse class="f-sky st" cx="32" cy="9" rx="8" ry="3.6"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b7.mp3"><span>land on</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">停在（某一格）</p></div></div><button class="ex playable" type="button" data-src="audio/w/b7e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>If you land on a red square, you miss a go.</span></button><p class="exzh zh">停在紅色格子的話，就要暫停一回合。</p></article><article class="card" id="b8"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-box st" d="M12 30h40v24H12z"/><path class="f-box2 st" d="M12 30l-6-8h40l6 8z"/><rect class="f-white st" x="22" y="8" width="14" height="18" rx="3.5" transform="rotate(-10 29.0 17.0)"/><path class="ln" d="M46 6v14"/><path class="f-ink" d="M40 18h12l-6 8z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/b8.mp3"><span>tidy away<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">收好</p><div class="var"><span class="pl-tag">US</span>put away</div></div></div><button class="ex playable" type="button" data-src="audio/w/b8e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Let&#x27;s tidy the game away.</span></button><p class="exzh zh">我們把遊戲收好吧。</p></article></div></div><div class="group" id="g-game"><h3><span>局面</span> <small>During the game · 9</small></h3><div class="cards "><article class="card" id="c1"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-sky2 st" d="M22 34 v6 a10 4.5 0 0 0 20 0 v-6"/><ellipse class="f-sky st" cx="32" cy="34" rx="10" ry="4.5"/><path class="ln" d="M14 30a18 18 0 1 1 6 16"/><path class="f-ink" d="M10 42l12 2-4 10z"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c1.mp3"><span>your go<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">輪到你</p><div class="var"><span class="pl-tag">US</span>turn</div></div></div><button class="ex playable" type="button" data-src="audio/w/c1e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>It&#x27;s your go.</span></button><p class="exzh zh">輪到你了。</p></article><article class="card" id="c2"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-sky2 st" d="M12 38 v6 a14 6.3 0 0 0 28 0 v-6"/><ellipse class="f-sky st" cx="26" cy="38" rx="14" ry="6.3"/><circle class="f-coral st" cx="44" cy="20" r="13"/><rect class="f-white" x="38.5" y="13" width="4" height="14" rx="1"/><rect class="f-white" x="45.5" y="13" width="4" height="14" rx="1"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c2.mp3"><span>miss a go<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">暫停一回合</p><div class="var"><span class="pl-tag">US</span>lose a turn</div></div></div><button class="ex playable" type="button" data-src="audio/w/c2e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Oh no, I miss a go.</span></button><p class="exzh zh">糟了，我要暫停一回合。</p></article><article class="card" id="c3"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-teal st" d="M6 16h52v36H6z"/><path class="f-white st" d="M9 14c8-3 16-3 23 2v34c-7-5-15-5-23-2z"/><path class="f-white st" d="M55 14c-8-3-16-3-23 2v34c7-5 15-5 23-2z"/><path class="ln thin" d="M14 22h13M14 28h13M14 34h10M37 22h13M37 28h13M37 34h10"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c3.mp3"><span>the rules</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">規則</p></div></div><button class="ex playable" type="button" data-src="audio/w/c3e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Can you explain the rules?</span></button><p class="exzh zh">可以解釋一下規則嗎？</p></article><article class="card" id="c4"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-amber st" d="M20 8h24v14a12 12 0 0 1-24 0z"/><path class="ln" d="M20 12h-7c0 9 3 12 8 13M44 12h7c0 9-3 12-8 13"/><rect class="f-amber st" x="28" y="34" width="8" height="10"/><rect class="f-violet st" x="18" y="44" width="28" height="10" rx="2"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c4.mp3"><span>win</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">贏</p></div></div><button class="ex playable" type="button" data-src="audio/w/c4e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>If I draw a gold card, I win.</span></button><p class="exzh zh">只要抽到金色的牌，我就贏了。</p></article><article class="card" id="c5"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="ln" d="M32 10v38M12 18h40"/><path class="f-violet st" d="M22 52h20v6H22z"/><path class="f-sky st" d="M4 34h16a8 5 0 0 1-16 0z"/><path class="f-coral st" d="M44 34h16a8 5 0 0 1-16 0z"/><path class="ln thin" d="M12 18l-8 16M12 18l8 16M52 18l-8 16M52 18l8 16"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c5.mp3"><span>a draw<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">平手</p><div class="var"><span class="pl-tag">US, Canada</span>a tie</div></div></div><button class="ex playable" type="button" data-src="audio/w/c5e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Last week it was a draw.</span></button><p class="exzh zh">上星期是平手。</p></article><article class="card" id="c6"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect class="f-white st" x="20" y="26" width="26" height="32" rx="3.5" transform="rotate(6 33.0 42.0)"/><path class="f-coral" transform="translate(1 12) scale(.8) translate(8 8)" d="M32 38C22 31 22 23 27 22C30 21 32 24 32 25C32 24 34 21 37 22C42 23 42 31 32 38Z"/><path class="f-white st" d="M14 16c8-10 26-10 34 0c-8 10-26 10-34 0z"/><circle class="f-dark" cx="38" cy="16" r="4.5"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c6.mp3"><span>cheat<span class="uk">UK</span></span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">作弊的人</p><div class="var"><span class="pl-tag">US, Canada</span>cheater</div></div></div><button class="ex playable" type="button" data-src="audio/w/c6e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>I&#x27;m watching you, you cheat!</span></button><p class="exzh zh">我在盯著你喔，你這個作弊鬼！</p><p class="note">cheat 也是動詞「作弊」：Don&#x27;t cheat!</p></article><article class="card" id="c7"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="f-grey st" d="M14 22a8 8 0 0 1 8-10a10 10 0 0 1 19 1a7 7 0 0 1 9 9z"/><path class="f-amber st" d="M34 22l-4 7h5l-3 7"/><circle class="f-yellow st" cx="32" cy="44" r="15"/><circle class="f-dark" cx="26" cy="43" r="2"/><circle class="f-dark" cx="38" cy="43" r="2"/><path class="ln thin" d="M22 37l7 3M42 37l-7 3M26 53c4-4 8-4 12 0"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c7.mp3"><span>sore loser</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">輸不起的人</p></div></div><button class="ex playable" type="button" data-src="audio/w/c7e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Don&#x27;t be a sore loser, George.</span></button><p class="exzh zh">別輸不起嘛，George。</p></article><article class="card" id="c8"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="ln" d="M32 34c2 10 6 16 12 22"/><circle class="f-leaf st" cx="24" cy="22" r="10"/><circle class="f-leaf st" cx="40" cy="22" r="10"/><circle class="f-leaf st" cx="24" cy="38" r="10"/><circle class="f-leaf st" cx="40" cy="38" r="10"/><circle class="f-leaf2" cx="32" cy="30" r="5"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c8.mp3"><span>beginner&#x27;s luck</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">新手運</p></div></div><button class="ex playable" type="button" data-src="audio/w/c8e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>That was just beginner&#x27;s luck.</span></button><p class="exzh zh">那只是新手運而已。</p></article><article class="card" id="c9"><div class="head"><svg class="ic" viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><path class="ln" d="M14 30a18 18 0 0 1 32-11"/><path class="f-ink" d="M50 10l-1 13-11-4z"/><path class="ln" d="M50 34a18 18 0 0 1-32 11"/><path class="f-ink" d="M14 54l1-13 11 4z"/><rect class="f-white st" x="23" y="23" width="18" height="18" rx="4"/><circle class="f-dark" cx="28" cy="28" r="2.7"/><circle class="f-dark" cx="36" cy="36" r="2.7"/></svg><div><button class="hw playable" type="button" data-src="audio/w/c9.mp3"><span>rematch</span><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span></button><p class="mean">再比一場</p></div></div><button class="ex playable" type="button" data-src="audio/w/c9e.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Rematch? Best of three?</span></button><p class="exzh zh">再來一場？三戰兩勝？</p></article></div></div><div class="group" id="g-talk"><h3><span>桌邊常講的話</span> <small>Table talk · 5</small></h3><div class="cards sayings"><article class="card say" id="d1"><button class="hw playable" type="button" data-src="audio/w/d1.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Fancy a game?<span class="uk">UK</span></span></button><p class="mean">要不要玩一局？</p><div class="var"><span class="pl-tag">US</span>Want to play a game?</div></article><article class="card say" id="d2"><button class="hw playable" type="button" data-src="audio/w/d2.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Whose go is it?<span class="uk">UK</span></span></button><p class="mean">輪到誰了？</p><div class="var"><span class="pl-tag">US</span>Whose turn is it?</div></article><article class="card say" id="d3"><button class="hw playable" type="button" data-src="audio/w/d3.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>No peeking!</span></button><p class="mean">不准偷看！</p></article><article class="card say" id="d4"><button class="hw playable" type="button" data-src="audio/w/d4.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Best of three?</span></button><p class="mean">三戰兩勝？</p></article><article class="card say" id="d5"><button class="hw playable" type="button" data-src="audio/w/d5.mp3"><span class="pbtn"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></span><span>Well played!</span></button><p class="mean">打得好！</p></article></div></div>
+  </section>
+
+  <section class="part" id="dialogues" aria-labelledby="dlg-h">
+    <div class="part-head">
+      <p class="kicker">Dialogues</p>
+      <h2 id="dlg-h">三段對話</h2>
+    </div>
+    <div class="legend">
+      <span><b class="wb">counter</b> 圖鑑裡的字</span>
+      <span><b class="g">Hang on</b> 新的說法</span>
+      <span><b class="v" data-here="UK">go</b> 各國說法不同</span>
+      <span>滑鼠移上去看中文</span>
+    </div>
+    <section class="scene" id="s1" aria-labelledby="s1-h"><div class="scene-head"><svg class="ic" viewBox="0 0 64 64" width="52" height="52" aria-hidden="true"><rect class="f-violet st" x="8" y="18" width="48" height="36" rx="4"/><rect class="f-amber st" x="8" y="18" width="48" height="12" rx="4"/><path class="f-coral2 st" d="M16 40 v6 a6 2.7 0 0 0 12 0 v-6"/><ellipse class="f-coral st" cx="22" cy="40" rx="6" ry="2.7"/><rect class="f-white st" x="33" y="35" width="14" height="12" rx="3.5"/></svg><div><p class="kicker">Part 1 of 3</p><h2 id="s1-h">Fancy a game?</h2><p class="intro">星期五晚上，Wei 帶著零食到 George 家。</p></div></div><div class="bar"><button class="btn play-all" type="button" data-scene="s1"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg><span class="lbl">Play all</span></button></div><ol class="dlg"><li class="line them p-G" data-src="audio/s1/01.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Come in, come in! Emma&#x27;s already here.</p><p class="zh">進來進來！Emma 已經到了。</p></div><button class="pl" type="button" aria-label="Play line 1"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s1/02.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Hi, everyone. <span class="g" tabindex="0" data-zh="謝謝你們邀請我" data-note="到別人家作客時的標準開場，要走的時候也可以再說一次。">Thanks for having me</span>. I brought some snacks.</p><p class="zh">嗨，大家好。謝謝你們邀請我。我帶了一些零食。</p></div><button class="pl" type="button" aria-label="Play line 2"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s1/03.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Oh, lovely! So, George, what are we playing tonight?</p><p class="zh">喔，太好了！George，我們今晚玩什麼？</p></div><button class="pl" type="button" aria-label="Play line 3"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s1/04.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">I&#x27;ve got loads of <span class="wb" tabindex="0" data-en="board game" data-zh="桌遊">board games</span>, but I was thinking Dragon Market. <span class="wb v" tabindex="0" data-en="Fancy a game?" data-zh="要不要玩一局？" data-var="UK|Fancy a game?;US|Want to play a game?" data-here="UK">Fancy a game</span>, Wei?</p><p class="zh">我有一大堆桌遊，不過我在想玩 Dragon Market。Wei，要不要玩一局？</p></div><button class="pl" type="button" aria-label="Play line 4"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s1/05.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Sure, but I&#x27;ve never played it before.</p><p class="zh">好啊，不過我從來沒玩過。</p></div><button class="pl" type="button" aria-label="Play line 5"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s1/06.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Don&#x27;t worry, it&#x27;s really easy. You&#x27;ll <span class="g" tabindex="0" data-zh="很快就會上手" data-note="pick up 在這裡是「學會」，指玩著玩著自然就會，不用特別去學。">pick it up in no time</span>.</p><p class="zh">別擔心，很簡單。你很快就會上手。</p></div><button class="pl" type="button" aria-label="Play line 6"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s1/07.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Right, let&#x27;s <span class="wb" tabindex="0" data-en="set up" data-zh="擺好（遊戲）">set up</span>. Emma, can you put the <span class="wb" tabindex="0" data-en="board" data-zh="遊戲圖板">board</span> in the middle?</p><p class="zh">好，我們來把遊戲擺好。Emma，可以把圖板放中間嗎？</p></div><button class="pl" type="button" aria-label="Play line 7"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s1/08.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Sure. Wei, pick a <span class="wb v" tabindex="0" data-en="counter" data-zh="棋子" data-var="UK|counter;US|piece" data-here="UK">counter</span>. What colour do you want?</p><p class="zh">好。Wei，挑一個棋子。你要什麼顏色？</p></div><button class="pl" type="button" aria-label="Play line 8"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s1/09.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Um, the blue one, I guess.</p><p class="zh">嗯……藍色的吧。</p></div><button class="pl" type="button" aria-label="Play line 9"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s1/10.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Blue for Wei. And I&#x27;ll <span class="wb" tabindex="0" data-en="shuffle" data-zh="洗牌">shuffle</span> the <span class="wb v" tabindex="0" data-en="pack of cards" data-zh="一副牌" data-var="UK|pack of cards;US|deck of cards" data-here="UK">pack</span>.</p><p class="zh">藍色給 Wei。那我來洗牌。</p></div><button class="pl" type="button" aria-label="Play line 10"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li></ol></section><section class="scene" id="s2" aria-labelledby="s2-h"><div class="scene-head"><svg class="ic" viewBox="0 0 64 64" width="52" height="52" aria-hidden="true"><path class="f-teal st" d="M6 16h52v36H6z"/><path class="f-white st" d="M9 14c8-3 16-3 23 2v34c-7-5-15-5-23-2z"/><path class="f-white st" d="M55 14c-8-3-16-3-23 2v34c7-5 15-5 23-2z"/><path class="ln thin" d="M14 22h13M14 28h13M14 34h10M37 22h13M37 28h13M37 34h10"/></svg><div><p class="kicker">Part 2 of 3</p><h2 id="s2-h">How do you play?</h2><p class="intro">George 講解規則。Wei 第一次聽到 go 這個用法。</p></div></div><div class="bar"><button class="btn play-all" type="button" data-scene="s2"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg><span class="lbl">Play all</span></button></div><ol class="dlg"><li class="line me p-W" data-src="audio/s2/01.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">So, can you explain <span class="wb" tabindex="0" data-en="the rules" data-zh="規則">the rules</span>?</p><p class="zh">所以，可以解釋一下規則嗎？</p></div><button class="pl" type="button" aria-label="Play line 1"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s2/02.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Okay. On your <span class="wb v" tabindex="0" data-en="your go" data-zh="輪到你" data-var="UK|go / turn;US|turn" data-here="UK">go</span>, you <span class="wb" tabindex="0" data-en="roll" data-zh="擲（骰子）">roll</span> the <span class="wb" tabindex="0" data-en="dice" data-zh="骰子">dice</span> and move your <span class="wb v" tabindex="0" data-en="counter" data-zh="棋子" data-var="UK|counter;US|piece" data-here="UK">counter</span>.</p><p class="zh">好。輪到你的時候，你擲骰子，然後移動你的棋子。</p></div><button class="pl" type="button" aria-label="Play line 2"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s2/03.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Sorry, my... go?</p><p class="zh">不好意思，我的……go？</p></div><button class="pl" type="button" aria-label="Play line 3"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s2/04.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Your turn. We say “go” as well.</p><p class="zh">就是 turn，輪到你。我們也會說 go。</p></div><button class="pl" type="button" aria-label="Play line 4"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s2/05.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Ah, got it.</p><p class="zh">喔，懂了。</p></div><button class="pl" type="button" aria-label="Play line 5"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s2/06.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">If you <span class="wb" tabindex="0" data-en="land on" data-zh="停在（某一格）">land on</span> a market <span class="wb" tabindex="0" data-en="square" data-zh="格子">square</span>, you <span class="wb" tabindex="0" data-en="draw a card" data-zh="抽一張牌">draw a card</span> from the <span class="wb v" tabindex="0" data-en="pack of cards" data-zh="一副牌" data-var="UK|pack of cards;US|deck of cards" data-here="UK">pack</span>.</p><p class="zh">如果你停在市集格，就從牌堆抽一張牌。</p></div><button class="pl" type="button" aria-label="Play line 6"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s2/07.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">And you can <span class="wb" tabindex="0" data-en="swap" data-zh="交換">swap</span> cards with other players, if they agree.</p><p class="zh">而且只要對方同意，你可以跟別人換牌。</p></div><button class="pl" type="button" aria-label="Play line 7"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s2/08.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Every card is worth <span class="wb" tabindex="0" data-en="points" data-zh="分數">points</span>. First to ten points <span class="wb" tabindex="0" data-en="win" data-zh="贏">wins</span>.</p><p class="zh">每張牌都有分數。先拿到十分的人贏。</p></div><button class="pl" type="button" aria-label="Play line 8"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s2/09.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Oh, and <span class="g" tabindex="0" data-zh="小心、注意" data-note="提醒別人注意會出問題的東西，比 be careful of 口語。">watch out for</span> the red squares. If you land on one, you <span class="wb v" tabindex="0" data-en="miss a go" data-zh="暫停一回合" data-var="UK|miss a go;US|lose a turn" data-here="UK">miss a go</span>.</p><p class="zh">喔，還有小心紅色的格子。停在上面的話，就要暫停一回合。</p></div><button class="pl" type="button" aria-label="Play line 9"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s2/10.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Right. Roll, move, draw a card... Okay, I think I&#x27;ve got it.</p><p class="zh">好。擲骰子、移動、抽牌……好，我想我懂了。</p></div><button class="pl" type="button" aria-label="Play line 10"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s2/11.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Great. Emma, you <span class="wb" tabindex="0" data-en="deal" data-zh="發牌">deal</span>. Five cards each.</p><p class="zh">很好。Emma，你發牌。每人五張。</p></div><button class="pl" type="button" aria-label="Play line 11"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s2/12.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">And <span class="wb" tabindex="0" data-en="No peeking!" data-zh="不准偷看！">no peeking</span> at other people&#x27;s <span class="wb" tabindex="0" data-en="hand" data-zh="手牌">hands</span>!</p><p class="zh">還有，不准偷看別人的手牌！</p></div><button class="pl" type="button" aria-label="Play line 12"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li></ol></section><section class="scene" id="s3" aria-labelledby="s3-h"><div class="scene-head"><svg class="ic" viewBox="0 0 64 64" width="52" height="52" aria-hidden="true"><path class="f-amber st" d="M20 8h24v14a12 12 0 0 1-24 0z"/><path class="ln" d="M20 12h-7c0 9 3 12 8 13M44 12h7c0 9-3 12-8 13"/><rect class="f-amber st" x="28" y="34" width="8" height="10"/><rect class="f-violet st" x="18" y="44" width="28" height="10" rx="2"/></svg><div><p class="kicker">Part 3 of 3</p><h2 id="s3-h">Best of three?</h2><p class="intro">玩到最後，Wei 只差一分。</p></div></div><div class="bar"><button class="btn play-all" type="button" data-scene="s3"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg><span class="lbl">Play all</span></button></div><ol class="dlg"><li class="line them p-E" data-src="audio/s3/01.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Right, <span class="wb v" tabindex="0" data-en="Whose go is it?" data-zh="輪到誰了？" data-var="UK|Whose go is it?;US|Whose turn is it?" data-here="UK">whose go is it</span>?</p><p class="zh">好，輪到誰了？</p></div><button class="pl" type="button" aria-label="Play line 1"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s3/02.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Mine. <span class="g" tabindex="0" data-zh="等一下" data-note="很口語的「等一下」，意思跟 wait a second 差不多。">Hang on</span>... Emma, were you looking at my cards?</p><p class="zh">我。等一下……Emma，你剛剛在偷看我的牌嗎？</p></div><button class="pl" type="button" aria-label="Play line 2"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s3/03.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">No! You&#x27;re holding them the wrong way round.</p><p class="zh">才沒有！是你把牌拿反了。</p></div><button class="pl" type="button" aria-label="Play line 3"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s3/04.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Hmm. I&#x27;m watching you, you <span class="wb v" tabindex="0" data-en="cheat" data-zh="作弊的人" data-var="UK|cheat;US, Canada|cheater" data-here="UK">cheat</span>.</p><p class="zh">哼。我在盯著你喔，你這個作弊鬼。</p></div><button class="pl" type="button" aria-label="Play line 4"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s3/05.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Okay, my go. I&#x27;ve got nine points. If I draw a gold card, I win.</p><p class="zh">好，換我。我有九分。只要抽到金色的牌，我就贏了。</p></div><button class="pl" type="button" aria-label="Play line 5"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s3/06.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Four... market square! And it&#x27;s... gold! Ten points!</p><p class="zh">四……市集格！然後是……金色的！十分！</p></div><button class="pl" type="button" aria-label="Play line 6"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s3/07.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en"><span class="g" tabindex="0" data-zh="不會吧" data-note="表示很驚訝、不敢相信。語氣是開心還是不爽，要聽聲音判斷。">No way</span>! <span class="wb" tabindex="0" data-en="Well played!" data-zh="打得好！">Well played</span>, Wei!</p><p class="zh">不會吧！打得好，Wei！</p></div><button class="pl" type="button" aria-label="Play line 7"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s3/08.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en"><span class="wb" tabindex="0" data-en="beginner&#x27;s luck" data-zh="新手運">Beginner&#x27;s luck</span>. That&#x27;s all it was.</p><p class="zh">新手運而已啦。</p></div><button class="pl" type="button" aria-label="Play line 8"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-E" data-src="audio/s3/09.mp3"><span class="av" aria-hidden="true">E</span><div class="bub"><span class="who">Emma</span><p class="en">Don&#x27;t be a <span class="wb" tabindex="0" data-en="sore loser" data-zh="輸不起的人">sore loser</span>, George. Last week it was <span class="wb v" tabindex="0" data-en="a draw" data-zh="平手" data-var="UK, Australia|a draw;US, Canada|a tie" data-here="UK">a draw</span>, and you complained all night.</p><p class="zh">別輸不起嘛，George。上星期是平手，你就抱怨了一整晚。</p></div><button class="pl" type="button" aria-label="Play line 9"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s3/10.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en">Fine. <span class="wb" tabindex="0" data-en="rematch" data-zh="再比一場">Rematch</span>? <span class="wb" tabindex="0" data-en="Best of three?" data-zh="三戰兩勝？">Best of three</span>?</p><p class="zh">好啦。再來一場？三戰兩勝？</p></div><button class="pl" type="button" aria-label="Play line 10"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s3/11.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">I&#x27;d love to, but it&#x27;s nearly eleven. Next week?</p><p class="zh">我很想，不過快十一點了。下星期？</p></div><button class="pl" type="button" aria-label="Play line 11"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line them p-G" data-src="audio/s3/12.mp3"><span class="av" aria-hidden="true">G</span><div class="bub"><span class="who">George</span><p class="en"><span class="g" tabindex="0" data-zh="一言為定" data-note="這裡的 Deal 不是發牌，是「就這麼說定了」。">Deal</span>. Come on, let&#x27;s <span class="wb v" tabindex="0" data-en="tidy away" data-zh="收好" data-var="UK|tidy away;US|put away" data-here="UK">tidy it away</span>.</p><p class="zh">一言為定。來吧，把遊戲收好。</p></div><button class="pl" type="button" aria-label="Play line 12"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li><li class="line me p-W" data-src="audio/s3/13.mp3"><span class="av" aria-hidden="true">W</span><div class="bub"><span class="who">Wei</span><p class="en">Thanks, guys. That was really fun.</p><p class="zh">謝謝大家，今晚真的很好玩。</p></div><button class="pl" type="button" aria-label="Play line 13"><svg viewBox="0 0 12 12" class="ico-play" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg><svg viewBox="0 0 12 12" class="ico-stop" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg></button></li></ol></section>
+    <p class="err" id="audio-err" hidden>音檔沒有載入成功。請重新整理頁面再試一次；如果還是不行，告訴我你用的瀏覽器。</p>
+  </section>
+
+  <footer>
+    <h2>各國用字的出處</h2>
+    <ul><li><a href="https://dictionary.cambridge.org/dictionary/english/counter" target="_blank" rel="noopener">Cambridge Dictionary: counter</a></li><li><a href="https://www.ldoceonline.com/Board+games-topic/counter" target="_blank" rel="noopener">Longman: counter (board games)</a></li><li><a href="https://dictionary.cambridge.org/dictionary/english/pack-of-cards" target="_blank" rel="noopener">Cambridge Dictionary: pack of cards</a></li><li><a href="https://dictionary.cambridge.org/us/dictionary/english/deck-of-cards" target="_blank" rel="noopener">Cambridge Dictionary: deck of cards</a></li><li><a href="https://www.oxfordlearnersdictionaries.com/us/definition/english/go_2" target="_blank" rel="noopener">Oxford Learner&#x27;s: go (noun)</a></li><li><a href="https://forum.wordreference.com/threads/board-games-miss-a-turn-miss-a-go-go-forward-go-back.1110953/" target="_blank" rel="noopener">WordReference: miss a turn / miss a go</a></li><li><a href="https://en.wikipedia.org/wiki/Tie_(draw)" target="_blank" rel="noopener">Wikipedia: Tie (draw)</a></li><li><a href="https://www.oxfordlearnersdictionaries.com/us/definition/english/cheat_2" target="_blank" rel="noopener">Oxford Learner&#x27;s: cheat (noun)</a></li><li><a href="https://www.oxfordlearnersdictionaries.com/definition/english/cheater" target="_blank" rel="noopener">Oxford Learner&#x27;s: cheater</a></li><li><a href="https://dictionary.cambridge.org/dictionary/english/tidy-away" target="_blank" rel="noopener">Cambridge Dictionary: tidy something away</a></li><li><a href="https://dictionary.cambridge.org/dictionary/english/fancy" target="_blank" rel="noopener">Cambridge Dictionary: fancy</a></li><li><a href="https://dictionaryblog.cambridge.org/2023/09/06/ways-of-saying-want/" target="_blank" rel="noopener">Cambridge Dictionary blog: ways of saying ‘want’</a></li><li><a href="https://grammarist.com/usage/dice-die/" target="_blank" rel="noopener">Grammarist: dice vs. die</a></li></ul>
+    <p>以上資料是透過搜尋結果確認的。聲音由開源語音模型 Kokoro（v1.0）預先產生，每句一個音檔。對話和例句是為了學習而寫的，Dragon Market 是虛構的遊戲。</p>
+  </footer>
+</main>
+
+<div id="tip" role="tooltip" hidden></div>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const store = {
+    get(k){ try { return localStorage.getItem(k); } catch { return null; } },
+    set(k, v){ try { localStorage.setItem(k, v); } catch {} }
+  };
+
+  const savedTheme = store.get('gn-theme');
+  if (savedTheme === 'dark' || savedTheme === 'light') root.dataset.theme = savedTheme;
+  document.getElementById('theme').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    store.set('gn-theme', root.dataset.theme);
+  });
+
+  const zhBox = document.getElementById('zh-toggle');
+  zhBox.checked = store.get('gn-zh') === '1';
+  const applyZh = () => document.body.classList.toggle('show-zh', zhBox.checked);
+  applyZh();
+  zhBox.addEventListener('change', () => { applyZh(); store.set('gn-zh', zhBox.checked ? '1' : '0'); });
+
+  /* tooltips */
+  const tip = document.getElementById('tip');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  let tipFor = null;
+  function showTip(el){
+    let html = el.dataset.en
+      ? `<div><span class="t-en">${esc(el.dataset.en)}</span><span class="t-zh">${esc(el.dataset.zh)}</span></div>`
+      : `<div class="t-zh">${esc(el.dataset.zh || '')}</div>`;
+    if (el.dataset.note) html += `<div class="t-note">${esc(el.dataset.note)}</div>`;
+    if (el.dataset.var){
+      html += '<table>' + el.dataset.var.split(';').map(row => {
+        const [place, word] = row.split('|');
+        const here = place.split(',')[0] === el.dataset.here;
+        return `<tr${here ? ' class="here"' : ''}><td>${esc(place)}</td><td>${esc(word)}</td></tr>`;
+      }).join('') + '</table>';
+    }
+    tip.innerHTML = html;
+    tip.hidden = false;
+    tipFor = el;
+    const r = el.getBoundingClientRect(), t = tip.getBoundingClientRect();
+    const x = Math.min(Math.max(12, r.left + r.width/2 - t.width/2), innerWidth - t.width - 12);
+    let y = r.bottom + 8;
+    if (y + t.height > innerHeight - 8) y = r.top - t.height - 8;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+  function hideTip(){ tip.hidden = true; tipFor = null; }
+  document.querySelectorAll('.en .wb, .en .g').forEach(el => {
+    el.addEventListener('mouseenter', () => showTip(el));
+    el.addEventListener('mouseleave', hideTip);
+    el.addEventListener('focus', () => showTip(el));
+    el.addEventListener('blur', hideTip);
+  });
+  addEventListener('scroll', () => { if (tipFor) hideTip(); }, {passive:true});
+
+  /* audio */
+  const player = new Audio();
+  player.preload = 'auto';
+  const rateSel = document.getElementById('rate');
+  const savedRate = store.get('gn-rate');
+  if (savedRate && [...rateSel.options].some(o => o.value === savedRate)) rateSel.value = savedRate;
+  const rate = () => parseFloat(rateSel.value) || 1;
+  rateSel.addEventListener('change', () => {
+    player.defaultPlaybackRate = rate();
+    player.playbackRate = rate();
+    store.set('gn-rate', rateSel.value);
+  });
+  const errBox = document.getElementById('audio-err');
+  const blobCache = new Map();
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let token = 0, activeEl = null, allBtn = null;
+
+  function mark(el){
+    if (activeEl) activeEl.classList.remove('is-playing');
+    activeEl = el;
+    if (el){
+      el.classList.add('is-playing');
+      if (el.classList.contains('line')) el.scrollIntoView({block:'nearest', behavior: reduced ? 'auto' : 'smooth'});
+    }
+  }
+
+  function playOnce(src, el, my){
+    return new Promise(resolve => {
+      let triedBlob = false;
+      const finish = ok => { player.onended = player.onerror = null; resolve(ok); };
+      const start = url => {
+        player.src = url;
+        player.defaultPlaybackRate = rate();
+        player.playbackRate = rate();
+        player.play().catch(err => { if (err && err.name === 'AbortError') return; fallback(); });
+      };
+      const fallback = async () => {
+        if (my !== token) return finish(false);
+        if (triedBlob) { errBox.hidden = false; return finish(false); }
+        triedBlob = true;
+        try {
+          let url = blobCache.get(src);
+          if (!url) {
+            const res = await fetch(src);
+            if (!res.ok) throw new Error(res.status);
+            url = URL.createObjectURL(await res.blob());
+            blobCache.set(src, url);
+          }
+          if (my === token) start(url); else finish(false);
+        } catch { errBox.hidden = false; finish(false); }
+      };
+      player.onended = () => finish(true);
+      player.onerror = fallback;
+      mark(el);
+      start(blobCache.get(src) || src);
+    });
+  }
+
+  function setAll(btn){
+    if (allBtn && allBtn !== btn){ allBtn.classList.remove('is-playing'); allBtn.querySelector('.lbl').textContent = 'Play all'; }
+    allBtn = btn;
+    if (btn){ btn.classList.add('is-playing'); btn.querySelector('.lbl').textContent = 'Stop'; }
+  }
+  function stop(){
+    token++;
+    player.pause();
+    mark(null);
+    setAll(null);
+  }
+
+  async function playOne(el){
+    const wasActive = activeEl === el;
+    stop();
+    if (wasActive) return;
+    const my = token;
+    await playOnce(el.dataset.src, el, my);
+    if (my === token) mark(null);
+  }
+
+  async function playAll(btn){
+    if (allBtn === btn) { stop(); return; }
+    stop();
+    const my = token;
+    setAll(btn);
+    const lines = [...document.querySelectorAll(`#${btn.dataset.scene} .line`)];
+    for (const el of lines){
+      if (my !== token) return;
+      const ok = await playOnce(el.dataset.src, el, my);
+      if (!ok || my !== token) break;
+      await new Promise(r => setTimeout(r, 350));
+    }
+    if (my === token) { mark(null); setAll(null); }
+  }
+
+  document.querySelectorAll('.play-all').forEach(b => b.addEventListener('click', () => playAll(b)));
+  document.querySelectorAll('.dlg .line').forEach(li => {
+    li.querySelector('.bub').addEventListener('click', () => playOne(li));
+    li.querySelector('.pl').addEventListener('click', () => playOne(li));
+  });
+  document.querySelectorAll('.playable').forEach(b => b.addEventListener('click', () => playOne(b)));
+  addEventListener('keydown', e => { if (e.key === 'Escape') { stop(); hideTip(); } });
+})();
+</script>
