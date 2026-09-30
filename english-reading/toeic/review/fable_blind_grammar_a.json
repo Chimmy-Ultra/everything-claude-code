@@ -1,0 +1,266 @@
+[
+ {
+  "id": "g-pos-01",
+  "format": "gap",
+  "stem": "All shipping charges on the March invoice were ______ calculated by the new billing software.",
+  "options": {
+   "A": "automatic",
+   "B": "automation",
+   "C": "automatically",
+   "D": "automate"
+  }
+ },
+ {
+  "id": "g-pos-02",
+  "format": "gap",
+  "stem": "The terms of the new rental agreement seem ______ to both parties, so the contract will be signed on Friday.",
+  "options": {
+   "A": "acceptable",
+   "B": "acceptance",
+   "C": "accept",
+   "D": "acceptably"
+  }
+ },
+ {
+  "id": "g-pos-03",
+  "format": "gap",
+  "stem": "The ______ of the Tamsin Road factory will create about 200 new jobs in the region next year.",
+  "options": {
+   "A": "expand",
+   "B": "expansive",
+   "C": "expanded",
+   "D": "expansion"
+  }
+ },
+ {
+  "id": "g-pos-04",
+  "format": "gap",
+  "stem": "The safety ______ who visited the plant on Monday recommended replacing two of the older machines.",
+  "options": {
+   "A": "inspection",
+   "B": "inspector",
+   "C": "inspect",
+   "D": "inspected"
+  }
+ },
+ {
+  "id": "g-pos-05",
+  "format": "gap",
+  "stem": "The factory avoided a very ______ shutdown last month by replacing worn parts before they failed.",
+  "options": {
+   "A": "costly",
+   "B": "cost",
+   "C": "costing",
+   "D": "costs"
+  }
+ },
+ {
+  "id": "g-pos-06",
+  "format": "gap",
+  "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice.",
+  "options": {
+   "A": "considerable",
+   "B": "consideration",
+   "C": "considerably",
+   "D": "considerate"
+  }
+ },
+ {
+  "id": "g-tense-01",
+  "format": "gap",
+  "stem": "Shortly before the building was sold, all of the security cameras in its parking garage ______, so they are still under warranty.",
+  "options": {
+   "A": "have been replaced",
+   "B": "replaced",
+   "C": "have replaced",
+   "D": "were replaced"
+  }
+ },
+ {
+  "id": "g-tense-02",
+  "format": "gap",
+  "stem": "Our technicians ______ the network problem at the moment, so e-mail may be slow this morning.",
+  "options": {
+   "A": "investigate",
+   "B": "are investigating",
+   "C": "investigated",
+   "D": "have investigated"
+  }
+ },
+ {
+  "id": "g-tense-03",
+  "format": "gap",
+  "stem": "Once the legal team ______ its review, Mr. Haddad will send the revised contract to the client.",
+  "options": {
+   "A": "completes",
+   "B": "will complete",
+   "C": "completed",
+   "D": "was completing"
+  }
+ },
+ {
+  "id": "g-tense-04",
+  "format": "gap",
+  "stem": "Brenmoor Foods ______ its delivery network to more than forty cities since the spring of 2021.",
+  "options": {
+   "A": "expands",
+   "B": "will expand",
+   "C": "has expanded",
+   "D": "expanded"
+  }
+ },
+ {
+  "id": "g-tense-05",
+  "format": "gap",
+  "stem": "By the time the renovation of the Brisholm Hotel lobby was completed in May, the owners ______ nearly two million dollars on the project.",
+  "options": {
+   "A": "have spent",
+   "B": "will have spent",
+   "C": "are spending",
+   "D": "had spent"
+  }
+ },
+ {
+  "id": "g-connect-01",
+  "format": "gap",
+  "stem": "The monthly staff meeting was moved to the larger conference room ______ the growing number of attendees.",
+  "options": {
+   "A": "because",
+   "B": "because of",
+   "C": "despite",
+   "D": "although"
+  }
+ },
+ {
+  "id": "g-connect-02",
+  "format": "gap",
+  "stem": "Visitors must wear a hard hat at all times ______ they are on the construction site.",
+  "options": {
+   "A": "during",
+   "B": "meanwhile",
+   "C": "throughout",
+   "D": "while"
+  }
+ },
+ {
+  "id": "g-connect-03",
+  "format": "gap",
+  "stem": "Our main supplier charges more than most of its competitors; ______, we have decided to keep ordering from it because its parts rarely fail.",
+  "options": {
+   "A": "however",
+   "B": "therefore",
+   "C": "whereas",
+   "D": "in spite of"
+  }
+ },
+ {
+  "id": "g-connect-04",
+  "format": "gap",
+  "stem": "Orders placed after 3 p.m. will not be shipped until the next business day ______ customers pay extra for same-day shipping.",
+  "options": {
+   "A": "if",
+   "B": "because",
+   "C": "unless",
+   "D": "whether"
+  }
+ },
+ {
+  "id": "g-connect-05",
+  "format": "gap",
+  "stem": "______ the company spent far less on advertising in June, sales of its new desk lamp still rose by 20 percent.",
+  "options": {
+   "A": "Because",
+   "B": "Even though",
+   "C": "Despite",
+   "D": "Nevertheless"
+  }
+ },
+ {
+  "id": "g-prep-01",
+  "format": "gap",
+  "stem": "The online system for first-quarter expense claims opens on March 20, and every claim must be submitted ______ April 5.",
+  "options": {
+   "A": "by",
+   "B": "until",
+   "C": "since",
+   "D": "within"
+  }
+ },
+ {
+  "id": "g-prep-02",
+  "format": "gap",
+  "stem": "The main entrance of the building will be closed ______ three days while new floor tiles are installed.",
+  "options": {
+   "A": "during",
+   "B": "since",
+   "C": "by",
+   "D": "for"
+  }
+ },
+ {
+  "id": "g-prep-03",
+  "format": "gap",
+  "stem": "______ completion of the training course, each participant will receive a certificate signed by the director.",
+  "options": {
+   "A": "Until",
+   "B": "Since",
+   "C": "Upon",
+   "D": "Within"
+  }
+ },
+ {
+  "id": "g-prep-04",
+  "format": "gap",
+  "stem": "______ the merger with Kessling Freight last year, Orvane Shipping has doubled the size of its fleet.",
+  "options": {
+   "A": "During",
+   "B": "Since",
+   "C": "Until",
+   "D": "Within"
+  }
+ },
+ {
+  "id": "g-participle-01",
+  "format": "gap",
+  "stem": "Customers can download the ______ price list from our Web site starting next Monday.",
+  "options": {
+   "A": "updated",
+   "B": "update",
+   "C": "updating",
+   "D": "updates"
+  }
+ },
+ {
+  "id": "g-participle-02",
+  "format": "gap",
+  "stem": "Companies ______ in the Westbrook trade fair will be listed in the official catalog.",
+  "options": {
+   "A": "participated",
+   "B": "participate",
+   "C": "participation",
+   "D": "participating"
+  }
+ },
+ {
+  "id": "g-participle-03",
+  "format": "gap",
+  "stem": "______ in only six months, the new distribution center in Haverford can process 20,000 orders a day.",
+  "options": {
+   "A": "Building",
+   "B": "Build",
+   "C": "Built",
+   "D": "Builder"
+  }
+ },
+ {
+  "id": "g-participle-04",
+  "format": "gap",
+  "stem": "Although the sales figures for the company's new line of kitchen appliances were ______, the board decided to keep the products on the market.",
+  "options": {
+   "A": "disappointed",
+   "B": "disappointing",
+   "C": "disappoint",
+   "D": "disappointment"
+  }
+ }
+]
