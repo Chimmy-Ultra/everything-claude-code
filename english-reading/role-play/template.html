@@ -1,0 +1,681 @@
+<title>Game Night Role-Play</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: one 720px column. Setup (scene, part, preview) → the scene plays as a chat → summary. Same tokens as Game Night. */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#F3F2F7; --surface:#FFFFFF; --plate:#E6E3EE; --ink:#1B1830; --muted:#5D5972; --line:#DAD6E4;
+  --accent:#0A7F72; --accent-ink:#FFFFFF; --accent-bg:rgba(31,181,163,.13);
+  --george:#2E7D3A; --george-tint:#E7F3E6;
+  --emma:#5E4BBF; --emma-tint:#EEEBFA;
+  --wei:#2A6FB0; --wei-tint:#E4EFFA;
+  --good:#1F7A3A; --good-bg:#E3F3E6; --warn:#9A6200; --warn-bg:#FBF0DA; --bad:#B23A3A; --bad-bg:#FBE6E4;
+  --shadow:0 1px 2px rgba(27,24,48,.05),0 6px 18px rgba(27,24,48,.06);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42;
+    --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+    --george:#86D48F; --george-tint:#1B2A20;
+    --emma:#B8ACF6; --emma-tint:#241F3C;
+    --wei:#7DBDF3; --wei-tint:#172639;
+    --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42;
+  --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+  --george:#86D48F; --george-tint:#1B2A20;
+  --emma:#B8ACF6; --emma-tint:#241F3C;
+  --wei:#7DBDF3; --wei-tint:#172639;
+  --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+.zh,[lang="zh-Hant"]{font-family:var(--zh)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:760px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap}
+.brand{font:700 15px/1 var(--display);margin-right:auto}
+.brand small{font:500 12px var(--mono);color:var(--muted);margin-left:6px;letter-spacing:.04em;text-transform:uppercase}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font:500 13px/1.2 var(--display)}
+.chip select{border:0;background:transparent;font:600 13px var(--mono);cursor:pointer;padding:0}
+
+main{max-width:760px;margin:0 auto;padding-inline:clamp(16px,4vw,20px);padding-block:24px 96px}
+h1{font:800 clamp(30px,6vw,44px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
+h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
+.lede{margin:0;max-width:60ch;color:var(--muted)}
+.lede strong{color:var(--ink);font-weight:600}
+.label{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+
+.setup{display:grid;gap:28px;margin-top:28px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:22px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:14px/1.45 var(--display);min-width:0}
+.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--accent-bg);color:var(--accent);font:700 12px var(--mono);margin-bottom:6px}
+.steps b{display:block;font-weight:700;margin-bottom:2px}
+.steps span{color:var(--muted);font-family:var(--zh);font-size:13px}
+
+.pick{display:grid;gap:8px}
+.scenes{grid-template-columns:repeat(3,minmax(0,1fr))}
+.roles{grid-template-columns:repeat(3,minmax(0,1fr))}
+.opt{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+.opt:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
+.opt[aria-checked="true"]{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-bg)}
+.opt .k{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.opt .t{font:700 16px/1.25 var(--display)}
+.opt .d{font:13px/1.35 var(--display);color:var(--muted)}
+.role .t{display:flex;align-items:center;gap:8px}
+.av{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;font:700 13px var(--display);color:var(--surface)}
+.p-G .av,.av.p-G{background:var(--george)} .p-E .av,.av.p-E{background:var(--emma)} .p-W .av,.av.p-W{background:var(--wei)}
+
+.toggles{display:flex;flex-wrap:wrap;gap:8px 18px;font:14px/1.4 var(--display)}
+.toggles label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+.toggles input{accent-color:var(--accent);width:18px;height:18px;margin:0}
+.toggles .off{color:var(--muted)}
+.ai-note{font:13px/1.5 var(--zh);color:var(--muted);margin:8px 0 0;max-width:62ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:10px 20px;font:600 15px/1.2 var(--display);border:1.5px solid var(--line);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:default}
+.go{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.go .btn.primary{padding:13px 28px;font-size:17px}
+
+/* transcript (preview and play) */
+.dlg{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.ln{display:flex;gap:10px;align-items:flex-end;max-width:92%}
+.ln.me{flex-direction:row-reverse;margin-left:auto}
+.bub{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:9px 14px;box-shadow:var(--shadow)}
+.ln.me .bub{border-radius:16px 16px 4px 16px}
+.p-G .bub{background:var(--george-tint)} .p-E .bub{background:var(--emma-tint)} .p-W .bub{background:var(--wei-tint)}
+.who{display:block;font:700 12px/1 var(--display);margin-bottom:4px}
+.p-G .who{color:var(--george)} .p-E .who{color:var(--emma)} .p-W .who{color:var(--wei)}
+.bub .en{margin:0}
+.bub .zh{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.bub .hid{font:italic 14px var(--display);color:var(--muted)}
+.ln.playing .bub{outline:2px solid var(--accent);outline-offset:2px}
+.pl{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;padding:0}
+.pl svg{width:11px;height:11px;fill:currentColor}
+.preview .ln.me .bub{border-style:dashed;background:var(--surface);box-shadow:none}
+.preview .ln.me .en{font:500 15px/1.4 var(--zh)}
+.preview-wrap{background:var(--plate);border-radius:16px;padding:16px;max-height:420px;overflow:auto}
+
+/* your turn */
+.turn{background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;padding:16px;box-shadow:0 0 0 4px var(--accent-bg);display:grid;gap:12px}
+.turn-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.turn-head .label{margin:0}
+.clock{font:600 14px var(--mono);font-variant-numeric:tabular-nums;color:var(--muted)}
+.clock.started{color:var(--accent)}
+.say{margin:0;font:700 clamp(20px,4.6vw,24px)/1.35 var(--zh)}
+.hint{margin:0;font:500 15px/1.4 var(--mono);color:var(--accent);background:var(--accent-bg);border-radius:8px;padding:6px 10px}
+textarea{width:100%;min-height:76px;resize:vertical;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);padding:10px 12px;font:18px/1.45 var(--body)}
+textarea:focus{border-color:var(--accent);outline:none}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row .sp{flex:1}
+.tip{margin:0;font:13px/1.45 var(--zh);color:var(--muted)}
+
+/* check */
+.check{display:grid;gap:10px;margin:2px 0 0 38px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.check .script{display:flex;gap:8px;align-items:flex-start}
+.check .script p{margin:0;min-width:0}
+.check .script small{display:block;font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.times{font:13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.verdict{display:grid;gap:6px}
+.pill{justify-self:start;display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font:600 13px/1.4 var(--display)}
+.v-clear{background:var(--good-bg);color:var(--good)} .v-small_fix{background:var(--warn-bg);color:var(--warn)} .v-unclear,.v-stuck{background:var(--bad-bg);color:var(--bad)} .v-wait{background:var(--plate);color:var(--muted)}
+.fixed{margin:0;font-size:16px}
+.fixed ins{text-decoration:none;background:var(--good-bg);color:var(--good);border-radius:4px;padding:0 3px;font-weight:600}
+.fixed del{color:var(--bad);opacity:.8}
+.notes{margin:0;padding-left:18px;font:14px/1.5 var(--zh)}
+.self{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:14px var(--display)}
+.self .btn{padding:6px 14px;font-size:14px}
+.self .btn[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-bg)}
+
+.playbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px))}
+.playbar-in{max-width:760px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.playbar .where{font:600 13px var(--mono);color:var(--muted);margin-right:auto}
+
+/* summary */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+.stat b{display:block;font:700 26px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.stat span{font:12px/1.35 var(--display);color:var(--muted)}
+.stat em{display:block;font:600 12px var(--mono);font-style:normal;margin-top:4px}
+.up{color:var(--good)} .down{color:var(--bad)}
+.recap{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:8px}
+.recap li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:grid;gap:4px;min-width:0}
+.recap .q{font:14px var(--zh);color:var(--muted)}
+.recap .a{margin:0}
+.recap .meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.coach{margin:0 0 18px;font:15px/1.6 var(--zh);max-width:62ch}
+.hist{font:13px var(--mono);color:var(--muted);margin:8px 0 0;font-variant-numeric:tabular-nums}
+
+.playbar .btn{padding:7px 14px;font-size:14px}
+@media (max-width:560px){
+  .scenes{grid-template-columns:1fr}
+  .scenes .opt{flex-direction:row;align-items:baseline;gap:10px;padding:10px 14px}
+  .scenes .opt .d{margin-left:auto}
+  .roles .opt{padding:10px}
+  .roles .opt .d{font-size:12px}
+  .steps{gap:6px}
+  .steps li{padding:10px;font-size:13px}
+  .steps span{font-size:12px}
+  .brand small{display:none}
+  .top-in,.playbar-in{flex-wrap:nowrap}
+  .playbar{padding-inline:16px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .check{margin-left:0}
+  .ln{max-width:100%}
+}
+@media (prefers-reduced-motion:no-preference){
+  .ln.enter{animation:rise .25s ease-out}
+  @keyframes rise{from{transform:translateY(6px);opacity:.4}to{transform:none;opacity:1}}
+}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Game Night Role-Play <small>Speaking</small></span>
+  <label class="chip" for="speed">Speed <select id="speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option></select></label>
+</div></header>
+
+<main>
+  <section id="setup">
+    <h1>Play a part at George's table</h1>
+    <p class="lede">The others speak. When it is your turn, you see what your character means in Chinese, and you say it in English. <strong>Your sentence does not have to match the script.</strong> The goal is to get the meaning across correctly and to start talking without a long pause.</p>
+    <ol class="steps">
+      <li><b>Listen</b><span>聽其他人講話</span></li>
+      <li><b>Say it your way</b><span>看中文意思，用自己的英文說出來</span></li>
+      <li><b>Check the meaning</b><span>意思有到、文法沒錯就過</span></li>
+    </ol>
+
+    <div class="setup">
+      <div>
+        <p class="label" id="scene-l">Scene</p>
+        <div class="pick scenes" role="radiogroup" aria-labelledby="scene-l" id="scenes"></div>
+      </div>
+      <div>
+        <p class="label" id="role-l">Your part</p>
+        <div class="pick roles" role="radiogroup" aria-labelledby="role-l" id="roles"></div>
+      </div>
+      <div>
+        <p class="label">Options</p>
+        <div class="toggles">
+          <label for="opt-text"><input type="checkbox" id="opt-text" checked> Show what the others say</label>
+          <label for="opt-ai" id="opt-ai-l"><input type="checkbox" id="opt-ai" checked> Claude checks my lines</label>
+        </div>
+        <p class="ai-note zh" id="ai-note">Claude 只看兩件事：意思有沒有傳達到、有沒有會被聽出來的錯。說法跟劇本不同沒關係。會用到你自己的 Claude 額度，第一次會先問你。</p>
+      </div>
+      <div>
+        <p class="label">What you will do</p>
+        <div class="preview-wrap"><ol class="dlg preview" id="preview"></ol></div>
+        <p class="hist" id="hist"></p>
+      </div>
+      <div class="go">
+        <button class="btn primary" type="button" id="start">Start the scene</button>
+        <p class="tip">Tip: tap the mic on your phone keyboard and say your line out loud. 用鍵盤的語音輸入直接講。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="play" hidden aria-live="polite">
+    <p class="label" id="play-k"></p>
+    <h2 id="play-h"></h2>
+    <p class="lede" id="play-intro"></p>
+    <ol class="dlg" id="chat" style="margin-top:20px"></ol>
+  </section>
+
+  <section id="done" hidden>
+    <p class="label" id="done-k"></p>
+    <h1 id="done-h">Scene done</h1>
+    <div class="stats" id="stats"></div>
+    <p class="coach" id="coach"></p>
+    <div class="go" style="margin-bottom:26px">
+      <button class="btn primary" type="button" id="again">Play it again</button>
+      <button class="btn" type="button" id="change">Choose another part</button>
+    </div>
+    <p class="label">Your lines</p>
+    <ol class="recap" id="recap"></ol>
+  </section>
+</main>
+
+<div class="playbar" id="bar" hidden><div class="playbar-in">
+  <span class="where" id="where"></span>
+  <button class="btn ghost" type="button" id="skip">Skip audio</button>
+  <button class="btn ghost" type="button" id="quit">End scene</button>
+</div></div>
+
+<script>
+const DATA = {{DATA}};
+const NAMES = DATA.names;
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
+const $ = s => document.querySelector(s);
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("gn-roleplay:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("gn-roleplay:" + k, JSON.stringify(v)); } catch {} },
+};
+
+const prefs = Object.assign({ scene: 0, role: "W", showText: true, useAI: true, speed: 1 }, store.get("prefs", {}));
+if (!DATA.scenes[prefs.scene]) prefs.scene = 0;
+prefs.speed = Number(prefs.speed) || 1;
+if (!NAMES[prefs.role]) prefs.role = "W";
+let sample = null;          // Claude, when this view can ask it
+let run = null;
+
+// ---------- audio ----------
+const au = new Audio();
+au.preload = "auto";
+const BASES = ["audio/", "../game-night/audio/"];
+let base = 0, audioDead = false, stopAudio = null;
+
+function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+function readTime(text) { return 700 + text.split(/\s+/).length * 330; }
+
+function play(src, text) {
+  if (stopAudio) stopAudio();
+  if (audioDead) return wait(readTime(text));
+  return new Promise(resolve => {
+    let settled = false;
+    const finish = () => { if (settled) return; settled = true; au.onended = au.onerror = null; stopAudio = null; resolve(); };
+    stopAudio = () => { au.pause(); finish(); };
+    const attempt = () => {
+      au.onended = finish;
+      au.onerror = () => {
+        if (base < BASES.length - 1) { base++; attempt(); }
+        else { audioDead = true; wait(readTime(text)).then(finish); }
+      };
+      au.src = BASES[base] + src;
+      au.defaultPlaybackRate = au.playbackRate = prefs.speed;
+      au.play().catch(err => { if (err && err.name === "NotAllowedError") wait(readTime(text)).then(finish); });
+    };
+    attempt();
+  });
+}
+
+// ---------- setup ----------
+function scene() { return DATA.scenes[prefs.scene]; }
+function count(sc, who) { return sc.lines.filter(l => l.who === who).length; }
+function savePrefs() { store.set("prefs", prefs); }
+
+function radio(host, items, current, onPick) {
+  host.textContent = "";
+  items.forEach((it, i) => {
+    const b = el("button", "opt " + (it.cls || ""));
+    b.type = "button"; b.setAttribute("role", "radio");
+    b.setAttribute("aria-checked", String(it.value === current));
+    b.tabIndex = it.value === current ? 0 : -1;
+    b.append(it.node);
+    b.onclick = () => onPick(it.value);
+    b.onkeydown = e => {
+      const d = e.key === "ArrowRight" || e.key === "ArrowDown" ? 1 : e.key === "ArrowLeft" || e.key === "ArrowUp" ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      const next = items[(i + d + items.length) % items.length];
+      onPick(next.value);
+      host.querySelector('[aria-checked="true"]')?.focus();
+    };
+    host.append(b);
+  });
+}
+
+function renderSetup() {
+  const sc = scene();
+  radio($("#scenes"), DATA.scenes.map((s, i) => {
+    const f = document.createDocumentFragment();
+    f.append(el("span", "k", "Part " + (i + 1)), el("span", "t", s.title), el("span", "d", s.lines.length + " lines"));
+    return { value: i, node: f };
+  }), prefs.scene, v => { prefs.scene = v; savePrefs(); renderSetup(); });
+
+  radio($("#roles"), ["G", "E", "W"].map(w => {
+    const f = document.createDocumentFragment();
+    const t = el("span", "t"); const a = el("span", "av", NAMES[w][0]); t.append(a, NAMES[w]);
+    const n = count(sc, w);
+    f.append(t, el("span", "d", n + " line" + (n === 1 ? "" : "s") + " to say"));
+    return { value: w, node: f, cls: "role p-" + w };
+  }), prefs.role, v => { prefs.role = v; savePrefs(); renderSetup(); });
+
+  const pv = $("#preview"); pv.textContent = "";
+  sc.lines.forEach(l => {
+    const mine = l.who === prefs.role;
+    const li = el("li", "ln p-" + l.who + (mine ? " me" : ""));
+    li.append(el("span", "av", NAMES[l.who][0]));
+    const b = el("div", "bub");
+    b.append(el("span", "who", mine ? "You, as " + NAMES[l.who] : NAMES[l.who]));
+    if (mine) { const p = el("p", "en", l.zh); p.lang = "zh-Hant"; b.append(p); }
+    else b.append(el("p", "en", l.en));
+    li.append(b); pv.append(li);
+  });
+
+  const h = store.get("hist:" + sc.id + ":" + prefs.role, []);
+  $("#hist").textContent = h.length
+    ? "Last time: " + fmtS(h[h.length - 1].median) + " to start a line (median), " + h[h.length - 1].clear + "/" + h[h.length - 1].n + " clear · played " + h.length + "×"
+    : "";
+  $("#opt-text").checked = prefs.showText;
+  $("#opt-ai").checked = prefs.useAI;
+  $("#speed").value = String(prefs.speed);
+}
+
+function renderAI() {
+  const box = $("#opt-ai"), lab = $("#opt-ai-l"), note = $("#ai-note");
+  box.disabled = !sample;
+  lab.classList.toggle("off", !sample);
+  note.textContent = sample ? AI_ON : AI_OFF;
+}
+const AI_ON = "Claude 只看兩件事：意思有沒有傳達到、有沒有會被聽出來的錯。說法跟劇本不同沒關係。會用到你自己的 Claude 額度，第一次會先問你。";
+const AI_OFF = "Claude 檢查只在 claude.ai 裡打開這個頁面時能用。沒有的話，你看完劇本版本後自己判斷意思有沒有到。";
+
+$("#opt-text").onchange = e => { prefs.showText = e.target.checked; savePrefs(); };
+$("#opt-ai").onchange = e => { prefs.useAI = e.target.checked; savePrefs(); };
+$("#speed").onchange = e => { prefs.speed = Number(e.target.value) || 1; au.playbackRate = prefs.speed; savePrefs(); };
+
+// ---------- play ----------
+function show(id) { for (const s of ["setup", "play", "done"]) $("#" + s).hidden = s !== id; $("#bar").hidden = id !== "play"; window.scrollTo(0, 0); }
+
+function start() {
+  const sc = scene();
+  au.src = BASES[base] + sc.lines[0].src;   // touch the element inside the tap so later plays are allowed
+  au.load();
+  run = { sc, role: prefs.role, i: 0, results: [], ai: prefs.useAI && !!sample, token: {} };
+  $("#play-k").textContent = "Part " + (prefs.scene + 1) + " · you are " + NAMES[run.role];
+  $("#play-h").textContent = sc.title;
+  $("#play-intro").textContent = sc.intro;
+  $("#chat").textContent = "";
+  show("play");
+  step(run.token);
+}
+
+function bubble(l, mine) {
+  const li = el("li", "ln enter p-" + l.who + (mine ? " me" : ""));
+  li.append(el("span", "av", NAMES[l.who][0]));
+  const b = el("div", "bub");
+  b.append(el("span", "who", mine ? "You, as " + NAMES[l.who] : NAMES[l.who]));
+  li.append(b);
+  return { li, b };
+}
+
+function playBtn(l, li) {
+  const p = el("button", "pl"); p.type = "button"; p.innerHTML = PLAY; p.setAttribute("aria-label", "Play: " + l.en);
+  p.onclick = () => { li?.classList.add("playing"); play(l.src, l.en).then(() => li?.classList.remove("playing")); };
+  return p;
+}
+
+async function step(token) {
+  const sc = run.sc;
+  while (run && run.token === token && run.i < sc.lines.length) {
+    const l = sc.lines[run.i];
+    $("#where").textContent = "Line " + (run.i + 1) + " of " + sc.lines.length;
+    if (l.who === run.role) { turn(l); return; }
+    const { li, b } = bubble(l, false);
+    const en = el("p", "en", l.en);
+    if (!prefs.showText) {
+      en.hidden = true;
+      const r = el("button", "hid", "Show text"); r.type = "button";
+      r.style.cssText = "border:0;background:none;padding:0";
+      r.onclick = () => { en.hidden = false; r.remove(); };
+      b.append(r);
+    }
+    const zh = el("p", "zh", l.zh); zh.lang = "zh-Hant"; zh.hidden = !prefs.showText;
+    b.append(en, zh);
+    li.append(playBtn(l, li));
+    $("#chat").append(li);
+    li.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    li.classList.add("playing");
+    $("#skip").disabled = false;
+    await play(l.src, l.en);
+    li.classList.remove("playing");
+    $("#skip").disabled = true;
+    if (!run || run.token !== token) return;
+    run.i++;
+  }
+  if (run && run.token === token) finish();
+}
+
+function fmtS(ms) { return ms == null ? "–" : (ms / 1000).toFixed(1) + " s"; }
+
+function hintText(l, level) {
+  if (level === 1 && l.keys.length) return "Key words: " + l.keys.join(" · ");
+  const w = l.en.split(/\s+/);
+  const n = level === 1 ? 1 : Math.max(2, Math.ceil(w.length / 2));
+  return "Starts: " + w.slice(0, n).join(" ") + " …";
+}
+
+function turn(l) {
+  const li = el("li", "enter");
+  const card = el("div", "turn");
+  const head = el("div", "turn-head");
+  const clock = el("span", "clock", "0.0 s");
+  head.append(el("p", "label", "Your turn · " + NAMES[l.who]), clock);
+  const say = el("p", "say", l.zh); say.lang = "zh-Hant";
+  const hint = el("p", "hint"); hint.hidden = true;
+  const ta = el("textarea"); ta.id = "answer-" + run.i; ta.setAttribute("aria-label", "Say it in English");
+  ta.placeholder = "Say it in English…"; ta.autocapitalize = "sentences"; ta.spellcheck = false;
+  const row = el("div", "row");
+  const hb = el("button", "btn ghost", "Hint"); hb.type = "button";
+  const sb = el("button", "btn ghost", "I'm stuck"); sb.type = "button";
+  const db = el("button", "btn primary", "Done"); db.type = "button";
+  row.append(hb, sb, el("span", "sp"), db);
+  card.append(head, say, hint, ta, row);
+  li.append(card);
+  $("#chat").append(li);
+  li.scrollIntoView({ block: "center", behavior: "smooth" });
+  ta.focus({ preventScroll: true });
+
+  const t0 = performance.now();
+  let first = null, hints = 0;
+  const tick = run.tick = setInterval(() => { if (first == null) clock.textContent = fmtS(performance.now() - t0); }, 100);
+  ta.addEventListener("input", () => {
+    if (first == null && ta.value.trim()) { first = performance.now() - t0; clock.textContent = "started at " + fmtS(first); clock.classList.add("started"); }
+  });
+  hb.onclick = () => {
+    hints = Math.min(2, hints + 1);
+    hint.hidden = false; hint.textContent = hintText(l, hints);
+    if (hints === 2) hb.disabled = true;
+    ta.focus();
+  };
+  const submit = stuck => {
+    clearInterval(tick);
+    const answer = ta.value.trim();
+    const res = { i: run.i, zh: l.zh, en: l.en, src: l.src, answer, start: stuck || !answer ? null : first, total: performance.now() - t0, hints, stuck: stuck || !answer, verdict: null, fixed: null, notes: [] };
+    run.results.push(res);
+    li.remove();
+    checked(l, res);
+  };
+  db.onclick = () => submit(false);
+  sb.onclick = () => submit(true);
+  ta.addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); submit(false); } });
+}
+
+function checked(l, res) {
+  const { li, b } = bubble(l, true);
+  const p = el("p", "en", res.stuck ? "(stuck)" : res.answer);
+  if (res.stuck) p.className = "en hid";
+  b.append(p);
+  $("#chat").append(li);
+
+  const box = el("div", "check");
+  const sc = el("div", "script");
+  const t = el("p"); t.append(el("small", null, res.stuck ? "One way to say it" : "The script says"), document.createTextNode(l.en));
+  sc.append(playBtn(l, null), t);
+  const times = el("span", "times", res.stuck ? "no answer" : "started " + fmtS(res.start) + " · done " + fmtS(res.total) + (res.hints ? " · " + res.hints + " hint" + (res.hints > 1 ? "s" : "") : ""));
+  const v = el("div", "verdict");
+  box.append(sc, times, v);
+  const nx = el("button", "btn primary", run.i + 1 < run.sc.lines.length ? "Next" : "Finish"); nx.type = "button";
+  const row = el("div", "row"); row.append(el("span", "sp"), nx);
+  box.append(row);
+  const wrap = el("li"); wrap.append(box);
+  $("#chat").append(wrap);
+  wrap.scrollIntoView({ block: "nearest", behavior: "smooth" });
+
+  if (res.stuck) { res.verdict = "stuck"; v.append(el("span", "pill v-stuck", "Stuck: listen, then try it next round")); }
+  else if (run.ai) askClaude(l, res, v);
+  else selfCheck(res, v);
+
+  play(l.src, l.en);
+  const token = run.token;
+  nx.onclick = () => { if (!run || run.token !== token) return; nx.disabled = true; run.i++; step(token); };
+  nx.focus({ preventScroll: true });
+}
+
+function selfCheck(res, v) {
+  const s = el("div", "self");
+  s.append(el("span", null, "Did your meaning get across?"));
+  const y = el("button", "btn", "Yes"), n = el("button", "btn", "Not quite");
+  for (const [bt, val] of [[y, "clear"], [n, "unclear"]]) {
+    bt.type = "button"; bt.setAttribute("aria-pressed", "false");
+    bt.onclick = () => { res.verdict = val; y.setAttribute("aria-pressed", String(val === "clear")); n.setAttribute("aria-pressed", String(val === "unclear")); };
+  }
+  s.append(y, n);
+  v.append(s);
+}
+
+const LABEL = { clear: "Clear: the meaning gets across", small_fix: "Small fix", unclear: "Unclear: a listener might not follow" };
+
+async function askClaude(l, res, v) {
+  const pill = el("span", "pill v-wait", "Checking…");
+  v.append(pill);
+  const sc = run.sc;
+  const before = sc.lines.slice(Math.max(0, res.i - 4), res.i).map(x => NAMES[x.who] + ": " + x.en).join("\n") || "(this is the first line)";
+  const prompt = [
+    "You are checking one line from a Chinese-speaking English learner in a spoken role-play.",
+    "The learner's goal is to express the meaning correctly and fluently. They do NOT need to sound native or match the script.",
+    "",
+    "Scene: " + sc.title + ". " + sc.intro,
+    "Conversation just before:",
+    before,
+    "",
+    "The learner plays " + NAMES[l.who] + ". The meaning they had to express (in Chinese): " + l.zh,
+    "Script version (only one possible answer, not required): " + l.en,
+    "What the learner said (may come from phone voice typing): " + res.answer,
+    "",
+    "Choose a verdict:",
+    '- "clear": the meaning comes across and there is no grammar or word error a listener would notice. Different wording from the script is fine. Leaving out small fillers is fine.',
+    '- "small_fix": the meaning comes across, but there is a grammar or word error.',
+    '- "unclear": a listener would misunderstand or not understand, or an important part of the meaning is missing.',
+    "Ignore capitalization and punctuation. Never suggest more natural or idiomatic wording for a sentence that is already correct.",
+    '"fixed": the learner\'s own sentence with the fewest changes needed to make it correct and clear. Keep their words wherever possible. If the verdict is "clear", repeat their sentence unchanged.',
+    '"notes": 0 to 2 short notes in Traditional Chinese (each under 40 characters), only about errors that matter. If a word looks like voice typing misheard it, say which word may have been mispronounced.',
+    'Reply with only JSON: {"verdict":"clear|small_fix|unclear","fixed":"...","notes":["..."]}',
+  ].join("\n");
+  try {
+    const out = await sample.json(prompt, { modelTier: "quick" });
+    const verdict = ["clear", "small_fix", "unclear"].includes(out?.verdict) ? out.verdict : null;
+    if (!verdict) throw { code: "invalid_json" };
+    res.verdict = verdict;
+    res.fixed = typeof out.fixed === "string" ? out.fixed.trim() : null;
+    res.notes = Array.isArray(out.notes) ? out.notes.filter(x => typeof x === "string" && x.trim()).slice(0, 2) : [];
+    pill.className = "pill v-" + verdict; pill.textContent = LABEL[verdict];
+    if (verdict !== "clear" && res.fixed && norm(res.fixed) !== norm(res.answer)) v.append(diffLine(res.answer, res.fixed));
+    if (res.notes.length) { const ul = el("ul", "notes"); ul.lang = "zh-Hant"; res.notes.forEach(n => ul.append(el("li", null, n))); v.append(ul); }
+  } catch (e) {
+    pill.remove();
+    if (e && (e.code === "not_granted" || e.code === "sampling_disabled" || e.code === "not_declared" || e.code === "capability_disabled" || e.code === "capability_removed")) {
+      sample = null; if (run) run.ai = false; renderAI();
+    } else if (e && e.code === "rate_limited") {
+      v.append(el("span", "tip", "Claude is busy right now. Check this one yourself; later lines will try again."));
+    } else {
+      v.append(el("span", "tip", "Claude could not check this line. Check it yourself:"));
+    }
+    selfCheck(res, v);
+  }
+}
+
+// ---------- word diff ----------
+function norm(s) { return s.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, " ").replace(/\s+/g, " ").trim(); }
+function diffLine(a, b) {
+  const A = a.split(/\s+/), B = b.split(/\s+/);
+  const k = w => norm(w);
+  const m = A.length, n = B.length, L = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = m - 1; i >= 0; i--) for (let j = n - 1; j >= 0; j--) L[i][j] = k(A[i]) === k(B[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const p = el("p", "fixed"); let i = 0, j = 0;
+  const add = (node) => { if (p.childNodes.length) p.append(" "); p.append(node); };
+  while (i < m || j < n) {
+    if (i < m && j < n && k(A[i]) === k(B[j])) { add(document.createTextNode(B[j])); i++; j++; }
+    else if (j < n && (i >= m || L[i][j + 1] >= L[i + 1][j])) { add(el("ins", null, B[j])); j++; }
+    else { add(el("del", null, A[i])); i++; }
+  }
+  return p;
+}
+
+// ---------- summary ----------
+function median(xs) { if (!xs.length) return null; const s = [...xs].sort((a, b) => a - b); const h = s.length >> 1; return s.length % 2 ? s[h] : (s[h - 1] + s[h]) / 2; }
+
+function finish() {
+  if (stopAudio) stopAudio();
+  clearInterval(run.tick);
+  const r = run.results, sc = run.sc, role = run.role;
+  const key = "hist:" + sc.id + ":" + role;
+  const hist = store.get(key, []);
+  const prev = hist[hist.length - 1];
+  const now = {
+    date: Date.now(), n: r.length,
+    median: median(r.filter(x => x.start != null).map(x => x.start)),
+    clear: r.filter(x => x.verdict === "clear").length,
+    hints: r.reduce((s, x) => s + x.hints, 0),
+    stuck: r.filter(x => x.stuck).length,
+  };
+  hist.push(now); store.set(key, hist.slice(-12));
+
+  $("#done-k").textContent = "Part " + (DATA.scenes.indexOf(sc) + 1) + " · " + sc.title + " · you were " + NAMES[role];
+  const stats = $("#stats"); stats.textContent = "";
+  const cmp = (cur, old, lowerBetter, fmt) => {
+    if (old == null || cur == null) return null;
+    const d = cur - old; if (Math.abs(d) < 1e-9) return el("em", null, "same as last time");
+    const better = lowerBetter ? d < 0 : d > 0;
+    return el("em", better ? "up" : "down", (d > 0 ? "+" : "−") + fmt(Math.abs(d)) + " vs last time");
+  };
+  const tile = (big, small, em) => { const t = el("div", "stat"); t.append(el("b", null, big), el("span", null, small)); if (em) t.append(em); stats.append(t); };
+  tile(fmtS(now.median), "to start a line (median)", cmp(now.median, prev?.median, true, fmtS));
+  tile(now.clear + "/" + now.n, "lines with a clear meaning", cmp(now.clear, prev?.clear, false, String));
+  tile(String(now.hints), "hints used", cmp(now.hints, prev?.hints, true, String));
+  tile(String(now.stuck), "lines you got stuck on", cmp(now.stuck, prev?.stuck, true, String));
+
+  const coach = $("#coach");
+  if (!prev) coach.textContent = "第一次演這個角色。流利是練出來的：再演一次，這次試著在看到中文後就馬上開口，先講出意思，錯了再修。";
+  else if (now.median != null && prev.median != null && now.median < prev.median) coach.textContent = "比上次更快開口了。繼續同一個角色再演一兩次，直到每句都能不太停頓地講出來，再換下一個角色。";
+  else coach.textContent = "這次沒有比上次快也沒關係。卡住的句子先聽一次劇本版本，再演一輪，通常第二、三輪就會順很多。";
+
+  const rc = $("#recap"); rc.textContent = "";
+  r.forEach(x => {
+    const li = el("li");
+    const q = el("span", "q", x.zh); q.lang = "zh-Hant";
+    const a = el("p", "a", x.stuck ? "(stuck)" : x.answer);
+    const meta = el("div", "meta");
+    const vv = x.verdict || "wait";
+    meta.append(el("span", "pill v-" + vv, { clear: "Clear", small_fix: "Small fix", unclear: "Unclear", stuck: "Stuck", wait: "Not checked" }[vv]));
+    if (x.start != null) meta.append(el("span", "times", "started " + fmtS(x.start)));
+    li.append(q, a);
+    if (x.verdict !== "clear" && x.fixed && !x.stuck && norm(x.fixed) !== norm(x.answer)) li.append(diffLine(x.answer, x.fixed));
+    const s = el("span", "times", "Script: " + x.en);
+    li.append(meta, s);
+    rc.append(li);
+  });
+  run = null;
+  show("done");
+}
+
+$("#start").onclick = start;
+$("#skip").onclick = () => { if (stopAudio) stopAudio(); };
+$("#quit").onclick = () => { if (!run) return; run.token = null; if (stopAudio) stopAudio(); if (run.results.length) { run.token = {}; finish(); } else { clearInterval(run.tick); run = null; renderSetup(); show("setup"); } };
+$("#again").onclick = start;
+$("#change").onclick = () => { renderSetup(); show("setup"); };
+
+renderSetup();
+renderAI();
+if (window.claude?.use) {
+  claude.use("sample").then(s => { sample = s || null; renderAI(); }).catch(() => { sample = null; renderAI(); });
+}
+</script>
