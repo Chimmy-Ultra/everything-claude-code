@@ -137,6 +137,13 @@ h2{font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;colo
 .wrongs li{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 8px;padding:4px 8px;border-radius:6px}
 .wrongs li>span:last-child{flex:1 1 12em;min-width:0}
 .wrongs li.mine{background:var(--bad-soft)}
+.wrongs details{display:inline}
+.wrongs summary{display:inline;cursor:pointer;color:var(--accent);font-size:13px}
+.wrongs details[open] p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.graphic{margin:0 0 14px}
+.graphic table{min-width:0}
+.graphic caption{font:700 14px var(--sans);text-align:left;padding:10px 10px 4px}
+.graphic td{font:400 15px var(--serif)}
 .wrongs .o{font-family:var(--serif);font-weight:600;max-width:100%}
 .full{font:400 17px/1.6 var(--serif);border-top:1px dashed var(--line);padding-top:10px}
 .full .zh{display:block;font:400 15px/1.6 var(--sans);color:var(--muted);margin-top:2px}
@@ -585,13 +592,15 @@ function flagForm(after, item, flagBtn) {
   after.after(box); ta.focus();
 }
 
-function wrongList(ops, wrong, answerIdx, chosen, letterOf) {
+function wrongList(ops, wrong, answerIdx, chosen, letterOf, more) {
   const ul = el("ul", "wrongs");
   const idx = ops.map((_, i) => i).filter(i => i !== answerIdx);
   idx.sort((a, b) => (b === chosen) - (a === chosen) || letterOf(a).localeCompare(letterOf(b)));
   for (const i of idx) {
     const li = el("li", i === chosen ? "mine" : "");
-    li.append(el("span", "o", "(" + letterOf(i) + ") " + ops[i]), zh(el("span", null, wrong[i] || "")));
+    const why = zh(el("span", null, wrong[i] || ""));
+    if (more && more[i]) { const d = el("details", "wmore"); d.append(el("summary", null, "為什麼"), zh(el("p", null, more[i]))); why.append(" ", d); }
+    li.append(el("span", "o", "(" + letterOf(i) + ") " + ops[i]), why);
     ul.append(li);
   }
   return ul;
@@ -602,7 +611,7 @@ function explainGap(item, chosen, order = optionOrder(item, 0)) {
   const letterOf = i => L[order.indexOf(i)];
   const top = el("div"); top.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", e.point)));
   const why = el("div"); why.append(el("span", "k", "為什麼是 (" + letterOf(item.answer) + ") " + item.options[item.answer]), zh(el("p", null, e.why)));
-  const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList(item.options, e.wrong, item.answer, chosen, letterOf));
+  const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList(item.options, e.wrong, item.answer, chosen, letterOf, e.wrongMore));
   const full = el("p", "full en"); full.append(item.stem.replace("______", item.options[item.answer])); full.append(zh(el("span", "zh", e.zh)));
   box.append(top, why, others, full, moreRow(item, box, { chosen }));
   return box;
@@ -666,6 +675,7 @@ function listenCard(app, item, card) {
   for (const v of [0.85, 1, 1.15]) { const b = btn(null, v + "×"); b.setAttribute("aria-pressed", String(P.settings.listenSpeed === v)); b.onclick = () => { P.settings.listenSpeed = v; au.playbackRate = v; saveProfile(); speed.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); }; speed.append(b); }
   player.append(play, state, speed);
   app.append(player);
+  if (item.graphic) app.append(graphicTable(item.graphic));
   const qr = item.format === "qr";
   let played = false, playing = false, answeredAll = false;
   state.textContent = qr ? "按播放，聽一句話和三個回應。" : "按播放。題目和選項可以邊聽邊看。";
@@ -718,7 +728,7 @@ function listenCard(app, item, card) {
       const top = el("div"); top.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", q.explain.point)));
       const optText = i => qr ? item.audio.lines[i + 1].text : q.options[i];
       const why = el("div"); why.append(el("span", "k", "為什麼是 (" + letterOf(q.answer) + ")" + (qr ? "" : " " + q.options[q.answer])), zh(el("p", null, q.explain.why)));
-      const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList([...Array(order.length).keys()].map(optText), q.explain.wrong, q.answer, oi, letterOf));
+      const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList([...Array(order.length).keys()].map(optText), q.explain.wrong, q.answer, oi, letterOf, q.explain.wrongMore));
       box.append(top, why, others, moreRow(item, box, { qi, vocab: q.explain.vocab, chosenText: optText(oi) }));
       after.append(resultLine(item, ok, null, rec), box);
       if (Object.keys(done).length === qs.length) finishListen();
@@ -747,6 +757,14 @@ function listenCard(app, item, card) {
     if (ev.size) tail.append(el("p", "small muted", "黃底的句子是答案的根據。"));
     nextButton(tail);
   }
+}
+
+function graphicTable(g) {
+  const box = el("div", "tbl graphic"), t = el("table");
+  if (g.caption) t.append(el("caption", null, g.caption));
+  const hr = el("tr"); for (const h of g.head || []) hr.append(el("th", null, h)); const th = el("thead"); th.append(hr); t.append(th);
+  const tb = el("tbody"); for (const r of g.rows || []) { const tr = el("tr"); for (const c of r) tr.append(el("td", null, c)); tb.append(tr); } t.append(tb);
+  box.append(t); return box;
 }
 
 // ================================================================ recording an answer

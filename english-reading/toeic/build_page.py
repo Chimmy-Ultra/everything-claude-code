@@ -18,6 +18,8 @@ def check_explain(where, ex, n_opts, answer):
         if i == answer and x is not None: errors.append(f"{where}: wrong[{i}] must be None (it is the answer)")
         if i != answer and (not isinstance(x, str) or not x.strip()): errors.append(f"{where}: wrong[{i}] missing")
         if isinstance(x, str) and len(x) > LIMITS["wrong"]: warnings.append(f"{where}: wrong[{i}] is {len(x)} chars")
+    wm = ex.get("wrongMore")
+    if wm is not None and (not isinstance(wm, list) or len(wm) != n_opts or wm[answer] is not None): errors.append(f"{where}: wrongMore must match options with None at the answer")
     for pair in ex.get("vocab") or []:
         if not (isinstance(pair, list) and len(pair) == 2): errors.append(f"{where}: vocab entries must be [word, 中文]")
 
@@ -37,6 +39,8 @@ for it in ITEMS:
         if not it["explain"].get("zh"): errors.append(f"{i}: explain.zh missing")
     else:
         lines = it["audio"]["lines"]
+        g = it.get("graphic")
+        if g is not None and not (isinstance(g.get("head"), list) and all(isinstance(r, list) and len(r) == len(g["head"]) for r in g.get("rows", []))): errors.append(f"{i}: graphic rows must match head")
         if len(it.get("transcriptZh", [])) != len(lines): errors.append(f"{i}: transcriptZh length differs from lines")
         for ln in lines:
             if not os.path.exists(os.path.join(HERE, it["audio"]["dir"], ln["file"])): errors.append(f"{i}: missing audio {ln['file']} (run make_audio.py)")
