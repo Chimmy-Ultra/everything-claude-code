@@ -117,7 +117,11 @@ h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
 .pl svg{width:11px;height:11px;fill:currentColor}
 .preview .ln.me .bub{border-style:dashed;background:var(--surface);box-shadow:none}
 .preview .ln.me .en{font:500 15px/1.4 var(--zh)}
-.preview-wrap{background:var(--plate);border-radius:16px;padding:16px;max-height:420px;overflow:auto}
+.pv-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.pv-head .label{margin:0}
+.pv-head .btn{padding:6px 14px;font-size:14px}
+.pv-head .btn[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.preview-wrap{position:relative;background:var(--plate);border-radius:16px;padding:16px;max-height:420px;overflow:auto}
 
 /* your turn */
 .turn{background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;padding:16px;box-shadow:0 0 0 4px var(--accent-bg);display:grid;gap:12px}
@@ -225,7 +229,7 @@ textarea:focus{border-color:var(--accent);outline:none}
         <p class="ai-note zh" id="ai-note">Claude 只看兩件事：意思有沒有傳達到、有沒有會被聽出來的錯。說法跟劇本不同沒關係。會用到你自己的 Claude 額度，第一次會先問你。</p>
       </div>
       <div>
-        <p class="label">What you will do</p>
+        <div class="pv-head"><p class="label">What you will do</p><button class="btn ghost" type="button" id="pv-play" aria-pressed="false">Play the whole scene</button></div>
         <div class="preview-wrap"><ol class="dlg preview" id="preview"></ol></div>
         <p class="hist" id="hist"></p>
       </div>
@@ -364,7 +368,9 @@ function renderSetup() {
     if (mine) { const p = el("p", "en", l.zh); p.lang = "zh-Hant"; b.append(p); }
     else b.append(el("p", "en", l.en));
     li.append(b); pv.append(li);
+    li.dataset.i = String(sc.lines.indexOf(l));
   });
+  stopPreview();
 
   const h = store.get("hist:" + sc.id + ":" + prefs.role, []);
   $("#hist").textContent = h.length
@@ -388,10 +394,38 @@ $("#opt-text").onchange = e => { prefs.showText = e.target.checked; savePrefs();
 $("#opt-ai").onchange = e => { prefs.useAI = e.target.checked; savePrefs(); };
 $("#speed").onchange = e => { prefs.speed = Number(e.target.value) || 1; au.playbackRate = prefs.speed; savePrefs(); };
 
+// ---------- preview: hear the whole scene before playing a part ----------
+let pvToken = null;
+function stopPreview() {
+  if (!pvToken) return;
+  pvToken = null;
+  if (stopAudio) stopAudio();
+  document.querySelectorAll("#preview .playing").forEach(x => x.classList.remove("playing"));
+  const b = $("#pv-play"); b.textContent = "Play the whole scene"; b.setAttribute("aria-pressed", "false");
+}
+async function playPreview() {
+  if (pvToken) return stopPreview();
+  const token = pvToken = {}, sc = scene(), wrap = $(".preview-wrap");
+  const b = $("#pv-play"); b.textContent = "Stop"; b.setAttribute("aria-pressed", "true");
+  for (const li of document.querySelectorAll("#preview .ln")) {
+    const l = sc.lines[Number(li.dataset.i)];
+    li.classList.add("playing");
+    wrap.scrollTo({ top: li.offsetTop - wrap.clientHeight / 2 + li.offsetHeight / 2, behavior: "smooth" });
+    await play(l.src, l.en);
+    li.classList.remove("playing");
+    if (pvToken !== token) return;
+    await wait(250);
+    if (pvToken !== token) return;
+  }
+  stopPreview();
+}
+$("#pv-play").onclick = playPreview;
+
 // ---------- play ----------
 function show(id) { for (const s of ["setup", "play", "done"]) $("#" + s).hidden = s !== id; $("#bar").hidden = id !== "play"; window.scrollTo(0, 0); }
 
 function start() {
+  stopPreview();
   const sc = scene();
   au.src = BASES[base] + sc.lines[0].src;   // touch the element inside the tap so later plays are allowed
   au.load();

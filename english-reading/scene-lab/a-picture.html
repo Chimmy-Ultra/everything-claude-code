@@ -128,6 +128,8 @@ h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
 .reply{margin-left:40px;font:13px var(--display);color:var(--muted)}
 .reply b{color:var(--you);font-weight:600}
 .col .label{margin:0}
+.line.now p,.reply.now b{outline:2px solid var(--accent);outline-offset:2px;border-radius:10px}
+#visit-play[aria-pressed="true"]{background:var(--surface);color:var(--accent)}
 .who-l{display:flex;align-items:center;gap:8px}
 .who-l .av{width:30px;height:30px;border-radius:50%;overflow:hidden;flex:none}
 .who-l .av:empty{display:none}
@@ -175,6 +177,7 @@ h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
 
   <h2 style="margin-top:44px">The visit, step by step</h2>
   <p class="lede">Barista lines are on the left with a reply you can use; your own sentences are on the right. Tap ▶ to hear any line.</p>
+  <button class="btn primary" type="button" id="visit-play" aria-pressed="false" style="margin-top:16px">Play the whole visit</button>
   <ol class="steps" id="steps"></ol>
 </main>
 
@@ -198,7 +201,7 @@ function play(src, btn) {
   au.onended = au.onerror = () => { if (btn) btn.classList.remove("on"); };
   return au.play().catch(() => {});
 }
-function pbtn(src, label) { const b = el("button", "pl"); b.type = "button"; b.innerHTML = PLAY; b.setAttribute("aria-label", label || "Play"); b.onclick = () => play(src, b); return b; }
+function pbtn(src, label) { const b = el("button", "pl"); b.type = "button"; b.innerHTML = PLAY; b.setAttribute("aria-label", label || "Play"); b.onclick = () => { stopVisit(); play(src, b); }; return b; }
 const OBJ = DATA.objects, BY = Object.fromEntries(OBJ.map(o => [o.id, o]));
 const PH = {}; for (const it of DATA.intents) for (const p of it.phrases) PH[p.id] = p;
 const BA = Object.fromEntries(DATA.barista.map(b => [b.id, b]));
@@ -298,6 +301,34 @@ OBJ.forEach((o, i) => {
 });
 
 // ---------- steps ----------
+const VISIT = [];   // every barista line and its reply, in order
+let visitToken = null;
+function waitEnd() { return new Promise(r => { const done = () => { au.removeEventListener("ended", done); au.removeEventListener("error", done); au.removeEventListener("pause", done); r(); }; au.addEventListener("ended", done); au.addEventListener("error", done); au.addEventListener("pause", done); }); }
+function stopVisit() {
+  if (!visitToken) return;
+  visitToken = null; au.pause();
+  document.querySelectorAll(".now").forEach(x => x.classList.remove("now"));
+  const b = $("#visit-play"); b.textContent = "Play the whole visit"; b.setAttribute("aria-pressed", "false");
+}
+async function playVisit() {
+  if (visitToken) return stopVisit();
+  if (quiz) stopQuiz();
+  const token = visitToken = {};
+  const b = $("#visit-play"); b.textContent = "Stop"; b.setAttribute("aria-pressed", "true");
+  au.pause();
+  for (const x of VISIT) {
+    x.el.classList.add("now");
+    x.el.scrollIntoView({ block: "center", behavior: "smooth" });
+    const ended = waitEnd();
+    play(x.src, x.el.querySelector(".pl"));
+    await ended;
+    x.el.classList.remove("now");
+    if (visitToken !== token) return;
+    await new Promise(r => setTimeout(r, 300));
+    if (visitToken !== token) return;
+  }
+  stopVisit();
+}
 function who(key, text) {
   const p = el("p", "label who-l"), a = el("span", "av"); a.setAttribute("aria-hidden", "true");
   if (DATA.avatars && DATA.avatars[key]) a.innerHTML = DATA.avatars[key];
@@ -316,6 +347,7 @@ for (const s of DATA.steps) {
       const b = BA[id], row = el("div", "line"), p = el("p", null, b.en), sm = el("small", null, b.zh); sm.lang = "zh-Hant"; p.append(sm);
       row.append(pbtn("b/" + id + ".mp3", "Play barista line"), p); hear.append(row);
       const r = el("div", "reply"); r.append("You: "); r.append(el("b", null, b.reply)); r.append(" "); r.append(pbtn("r/" + id + ".mp3", "Play reply")); hear.append(r);
+      VISIT.push({ src: "b/" + id + ".mp3", el: row }, { src: "r/" + id + ".mp3", el: r });
     }
     const say = el("div", "col say"); say.append(who("Y", "You can say"));
     for (const id of s.say) {
@@ -327,5 +359,6 @@ for (const s of DATA.steps) {
   $("#steps").append(li);
 }
 
+$("#visit-play").onclick = playVisit;
 intro();
 </script>
