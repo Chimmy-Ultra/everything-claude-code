@@ -1,0 +1,310 @@
+[
+ {
+  "id": "g-voice-01",
+  "format": "gap",
+  "stem": "The new security badges ______ to all employees by the end of next week.",
+  "options": {
+   "A": "will distribute",
+   "B": "are distributing",
+   "C": "will be distributed",
+   "D": "distributed"
+  }
+ },
+ {
+  "id": "g-voice-02",
+  "format": "gap",
+  "stem": "Shipping costs for our overseas orders ______ by nearly eight percent since the start of the year.",
+  "options": {
+   "A": "have raised",
+   "B": "have risen",
+   "C": "have been risen",
+   "D": "have been raising"
+  }
+ },
+ {
+  "id": "g-voice-03",
+  "format": "gap",
+  "stem": "Ms. Okafor ______ a two-week paid sabbatical by the board of directors in recognition of her ten years of service.",
+  "options": {
+   "A": "granted",
+   "B": "has granted",
+   "C": "was granting",
+   "D": "was granted"
+  }
+ },
+ {
+  "id": "g-agree-01",
+  "format": "gap",
+  "stem": "Every conference room on the fourth floor ______ a projector and a video camera.",
+  "options": {
+   "A": "has",
+   "B": "have",
+   "C": "having",
+   "D": "to have"
+  }
+ },
+ {
+  "id": "g-agree-02",
+  "format": "gap",
+  "stem": "Approving refund requests from overseas customers usually ______ longer than approving domestic ones.",
+  "options": {
+   "A": "take",
+   "B": "taking",
+   "C": "have taken",
+   "D": "takes"
+  }
+ },
+ {
+  "id": "g-agree-03",
+  "format": "gap",
+  "stem": "Neither the lease agreement nor the two service contracts ______ renewal until next spring.",
+  "options": {
+   "A": "requires",
+   "B": "require",
+   "C": "requiring",
+   "D": "to require"
+  }
+ },
+ {
+  "id": "g-relative-01",
+  "format": "gap",
+  "stem": "Customers ______ subscriptions expire this month will receive a renewal reminder by email.",
+  "options": {
+   "A": "who",
+   "B": "whom",
+   "C": "whose",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-relative-02",
+  "format": "gap",
+  "stem": "Mr. Varga reviewed the five bids for the office renovation, two of ______ came in under budget.",
+  "options": {
+   "A": "which",
+   "B": "whom",
+   "C": "what",
+   "D": "whose"
+  }
+ },
+ {
+  "id": "g-relative-03",
+  "format": "gap",
+  "stem": "The Dunmore plant, ______ Brenvale Foods acquired in 2019, now produces all of the company's packaging.",
+  "options": {
+   "A": "where",
+   "B": "when",
+   "C": "what",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-pronoun-01",
+  "format": "gap",
+  "stem": "Venlow Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.",
+  "options": {
+   "A": "it",
+   "B": "its",
+   "C": "it's",
+   "D": "itself"
+  }
+ },
+ {
+  "id": "g-pronoun-02",
+  "format": "gap",
+  "stem": "The delivery times offered by Tarrow Freight are considerably shorter than ______ of its main competitors.",
+  "options": {
+   "A": "that",
+   "B": "these",
+   "C": "those",
+   "D": "them"
+  }
+ },
+ {
+  "id": "g-pronoun-03",
+  "format": "gap",
+  "stem": "Mr. Patel's reimbursement request was approved within a day, but ______ took almost two weeks because a receipt was missing.",
+  "options": {
+   "A": "mine",
+   "B": "my",
+   "C": "me",
+   "D": "myself"
+  }
+ },
+ {
+  "id": "g-toing-01",
+  "format": "gap",
+  "stem": "The board has decided ______ the opening of the Leeds branch until the renovation is complete.",
+  "options": {
+   "A": "postpone",
+   "B": "postponing",
+   "C": "postponed",
+   "D": "to postpone"
+  }
+ },
+ {
+  "id": "g-toing-02",
+  "format": "gap",
+  "stem": "In addition to ______ the monthly newsletter, Ms. Hollis manages the company's social media accounts.",
+  "options": {
+   "A": "edit",
+   "B": "editing",
+   "C": "edited",
+   "D": "have edited"
+  }
+ },
+ {
+  "id": "g-toing-03",
+  "format": "gap",
+  "stem": "Ms. Brandt let the two new technicians ______ the server upgrade on their own last weekend.",
+  "options": {
+   "A": "carry out",
+   "B": "to carry out",
+   "C": "carrying out",
+   "D": "carried out"
+  }
+ },
+ {
+  "id": "g-compare-01",
+  "format": "gap",
+  "stem": "For large orders, shipping by rail is much ______ than shipping by air.",
+  "options": {
+   "A": "cheap",
+   "B": "cheapest",
+   "C": "cheaper",
+   "D": "more cheaply"
+  }
+ },
+ {
+  "id": "g-compare-02",
+  "format": "gap",
+  "stem": "The earlier the invitations are sent out, ______ guests are likely to attend the product launch.",
+  "options": {
+   "A": "more",
+   "B": "the most",
+   "C": "most",
+   "D": "the more"
+  }
+ },
+ {
+  "id": "g-compare-03",
+  "format": "gap",
+  "stem": "In the customer survey, the battery life of the Dorvan X5 tablet was rated superior ______ that of every competing model.",
+  "options": {
+   "A": "than",
+   "B": "to",
+   "C": "from",
+   "D": "as"
+  }
+ },
+ {
+  "id": "g-quantity-01",
+  "format": "gap",
+  "stem": "We have not received ______ information about the new parking rules from the building management office.",
+  "options": {
+   "A": "much",
+   "B": "many",
+   "C": "several",
+   "D": "a few"
+  }
+ },
+ {
+  "id": "g-quantity-02",
+  "format": "gap",
+  "stem": "______ of the applicants for the graphic designer position currently live outside Linden Falls.",
+  "options": {
+   "A": "Almost",
+   "B": "Every",
+   "C": "Most",
+   "D": "Much"
+  }
+ },
+ {
+  "id": "g-quantity-03",
+  "format": "gap",
+  "stem": "Halvern Medical ordered ______ new laboratory equipment last month, and most of it has already been installed.",
+  "options": {
+   "A": "several",
+   "B": "many",
+   "C": "a number of",
+   "D": "a great deal of"
+  }
+ },
+ {
+  "id": "g-parallel-01",
+  "format": "gap",
+  "stem": "According to staff feedback, the new office chairs are both comfortable ______ easy to adjust.",
+  "options": {
+   "A": "or",
+   "B": "and",
+   "C": "nor",
+   "D": "but"
+  }
+ },
+ {
+  "id": "g-parallel-02",
+  "format": "gap",
+  "stem": "Ms. Grant ______ approved the new marketing plan nor rejected it, saying she needed more time to review it.",
+  "options": {
+   "A": "neither",
+   "B": "either",
+   "C": "both",
+   "D": "not only"
+  }
+ },
+ {
+  "id": "g-parallel-03",
+  "format": "gap",
+  "stem": "Ms. Ahn's duties include scheduling client meetings, ______ travel arrangements for the sales team, and updating the customer database.",
+  "options": {
+   "A": "make",
+   "B": "to make",
+   "C": "making",
+   "D": "made"
+  }
+ },
+ {
+  "id": "g-mandative-01",
+  "format": "gap",
+  "stem": "The finance director has requested that each department head ______ a revised budget by March 15.",
+  "options": {
+   "A": "submitting",
+   "B": "will submit",
+   "C": "to submit",
+   "D": "submit"
+  }
+ },
+ {
+  "id": "g-mandative-02",
+  "format": "gap",
+  "stem": "It is essential that the draft agreement ______ shared with anyone outside the company before it is signed.",
+  "options": {
+   "A": "not be",
+   "B": "not being",
+   "C": "will not be",
+   "D": "not to be"
+  }
+ },
+ {
+  "id": "g-conditional-01",
+  "format": "gap",
+  "stem": "______ the supplier notified us of the delay earlier, we would have found another vendor in time.",
+  "options": {
+   "A": "Should",
+   "B": "Had",
+   "C": "Were",
+   "D": "Unless"
+  }
+ },
+ {
+  "id": "g-conditional-02",
+  "format": "gap",
+  "stem": "Not until the new inventory software was installed ______ the error rate in our warehouse begin to fall.",
+  "options": {
+   "A": "was",
+   "B": "has",
+   "C": "did",
+   "D": "had"
+  }
+ }
+]

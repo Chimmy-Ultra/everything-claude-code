@@ -185,26 +185,26 @@ ITEMS = [
     {
         "id": "g-pronoun-01", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 1,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Pelham Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.",
+        "stem": "Venlow Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.",
         "options": ["it", "its", "it's", "itself"],
         "answer": 1,
         "explain": {
             "point": "名詞前用所有格 its；it's = it is / it has",
-            "why": "空格後面是名詞 return policy，需要「它的」，指 Pelham Logistics，用所有格 its。",
+            "why": "空格後面是名詞 return policy，需要「它的」，指 Venlow Logistics，用所有格 its。",
             "wrong": [
                 "it 是主格或受格，不能放在名詞前面",
                 None,
                 "it's 是 it is 或 it has 的縮寫，不是所有格",
                 "反身代名詞不能放在名詞前面",
             ],
-            "zh": "Pelham 物流更新了退貨政策，允許顧客在收貨後 60 天內換貨。",
+            "zh": "Venlow 物流更新了退貨政策，允許顧客在收貨後 60 天內換貨。",
             "vocab": [["return policy", "退貨政策"], ["exchange", "換貨"]],
         },
     },
     {
         "id": "g-pronoun-02", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "The delivery times offered by Kestrel Freight are considerably shorter than ______ of its main competitors.",
+        "stem": "The delivery times offered by Tarrow Freight are considerably shorter than ______ of its main competitors.",
         "options": ["that", "these", "those", "them"],
         "answer": 2,
         "explain": {
@@ -216,7 +216,7 @@ ITEMS = [
                 None,
                 "受格 them 不能接 of 來代替前面的名詞",
             ],
-            "zh": "Kestrel 貨運的運送時間比它主要競爭對手的短得多。",
+            "zh": "Tarrow 貨運的運送時間比它主要競爭對手的短得多。",
             "vocab": [["delivery time", "運送時間、交期"], ["freight", "貨運"], ["competitor", "競爭對手"]],
         },
     },
@@ -378,7 +378,7 @@ ITEMS = [
     {
         "id": "g-quantity-02", "type": "grammar", "format": "gap", "unit": "quantity", "level": 1,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "______ of the applicants for the graphic designer position currently live outside Brookfield.",
+        "stem": "______ of the applicants for the graphic designer position currently live outside Linden Falls.",
         "options": ["Almost", "Every", "Most", "Much"],
         "answer": 2,
         "explain": {
@@ -390,7 +390,7 @@ ITEMS = [
                 None,
                 "much 接不可數名詞，applicants 可數",
             ],
-            "zh": "應徵平面設計師職缺的人，大部分目前住在 Brookfield 以外的地方。",
+            "zh": "應徵平面設計師職缺的人，大部分目前住在 Linden Falls 以外的地方。",
             "vocab": [["applicant", "應徵者"], ["position", "職位、職缺"]],
         },
     },
@@ -498,7 +498,7 @@ ITEMS = [
         "options": ["not be", "not being", "will not be", "not to be"],
         "answer": 0,
         "explain": {
-            "point": "essential that + 原形；否定加 not，被動用 not be p.p.",
+            "point": "essential that + 原形；否定加 not：not be p.p.",
             "why": "It is essential that 表示必要，that 子句用原形；否定直接在前面加 not，被動就是 not be shared。",
             "wrong": [
                 None,
@@ -523,7 +523,7 @@ ITEMS = [
             "wrong": [
                 "Should 後面接原形，也不配 would have",
                 None,
-                "Were 開頭要接 to V，也不配 would have",
+                "Were 後面不能接帶受詞的過去式 notified us",
                 "unless 是「除非」，語意不通，也不配 would have",
             ],
             "zh": "要是供應商早點通知我們會延誤，我們就能及時找到另一家廠商了。",
