@@ -1,0 +1,57 @@
+{
+  "answers": {
+    "g-agree-01": {
+      "answer": "A",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The head of the subject is the plural 'projectors'; 'in every conference room on the fourth floor' is a prepositional modifier, so the auxiliary must be plural 'have' (present perfect passive 'have been replaced'). 'has' agrees only with the attractor nouns 'room'/'floor'; 'having' and 'to have' leave the sentence without a finite verb. No British/American variation applies because the head noun is an ordinary plural, not a collective noun.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "Agreement across a long prepositional phrase with a singular 'every + noun' attractor next to the blank is a standard Part 5 trap, and the have/has/having/to have option set looks like the real test.",
+      "fix": "",
+      "tooClose": false
+    },
+    "g-pronoun-01": {
+      "answer": "B",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "A possessive determiner is needed before the noun phrase 'return policy', and the company is treated as singular ('has updated'), so 'its'. 'it' cannot modify a noun, 'theirs' is an independent possessive pronoun and cannot come before a noun, and 'itself' is reflexive. Because 'their' is not offered, the British plural or collective 'their' reading does not create a second key.",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 4,
+      "why": "It is a typical company-name + possessive determiner item, one of the easiest Part 5 types; the 'theirs' distractor is a little unusual because real sets tend to keep to one pronoun family (it/its/itself/it's), but it is still plausible.",
+      "fix": "",
+      "tooClose": false
+    },
+    "g-parallel-02": {
+      "answer": "A",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The later 'nor explained' requires the correlative 'neither ... nor', giving 'has neither approved ... nor explained'. 'either' pairs with 'or', 'both' with 'and', and 'not only' with 'but (also)', so none of them fits with 'nor'. The meaning also works: the director has not approved the requests and has not said why they are held up.",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "It is the classic correlative-conjunction item keyed by the second half of the pair, with the standard four correlative starters as options.",
+      "fix": "",
+      "tooClose": false
+    },
+    "g-parallel-03": {
+      "answer": "C",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "'and' joins two verb phrases under the modal 'must': 'must register ... and keep', so the base form is required. 'to keep' would be an infinitive after the modal-governed coordination ('must ... and to keep' is ungrammatical, and a purpose reading needs 'in order to' without 'and'); 'keeping' and 'kept' are not parallel with the bare 'register'.",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "Parallel base verbs after a modal, split by a moderately long object and time phrase, with 'to keep' as the main lure, matches ordinary real Part 5 parallelism items.",
+      "fix": "",
+      "tooClose": false
+    }
+  },
+  "overall": "All four items have a single defensible key (A, B, A, C) and read like authentic Part 5 sentences, with natural business contexts and test-like option sets. Difficulty sits at the easy-to-medium end, as it does on the real test for these points: the agreement item is the most demanding because of the singular attractor next to the blank, and the pronoun item's 'theirs' distractor is the only slightly non-standard choice. None of them is a recognisable copy of a published ETS item."
+}
