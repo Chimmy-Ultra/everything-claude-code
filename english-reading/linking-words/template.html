@@ -79,7 +79,7 @@ h2{font:760 clamp(24px,3.4vw,30px)/1.1 var(--display);letter-spacing:-.01em;marg
 /* svg */
 .st{stroke:var(--outline);stroke-width:2.5;stroke-linejoin:round}
 .ln{fill:none;stroke:var(--outline);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.ln.thin{stroke-width:2} .ln.wide{stroke-width:5}
+.ln.thin{stroke-width:2} .ln.wide{stroke-width:5} .ln.white{stroke:#fff;stroke-width:5}
 .f-ink{fill:var(--outline)} .f-white{fill:#FFFFFF}
 .f-coral{fill:#FF7A59} .f-sky{fill:#4A9FE3} .f-violet{fill:#8A78E0} .f-teal{fill:#1FB5A3} .f-amber{fill:#FFB22E}
 .ic{flex:none;background:var(--tile);border-radius:14px;padding:6px;width:64px;height:64px}
@@ -114,6 +114,40 @@ h2{font:760 clamp(24px,3.4vw,30px)/1.1 var(--display);letter-spacing:-.01em;marg
 .is-playing .ico-play{display:none} .is-playing .ico-stop{display:block}
 .hw.is-playing{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 30%,transparent)}
 
+/* tricky */
+.sec{font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:30px 0 12px}
+.big-cards{display:flex;flex-direction:column;gap:16px}
+.card.big{padding:20px clamp(16px,3vw,26px) 16px;gap:12px}
+.card.big .hw{font-size:30px}
+.why{background:color-mix(in srgb,#FFB22E 13%,var(--surface));border-radius:12px;padding:10px 14px}
+.why p{margin:0;font:400 15px/1.7 var(--zh)}
+.why-h{font:600 11px/1 var(--mono)!important;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 6px!important}
+.cmp{display:grid;gap:10px}
+.cols-2{grid-template-columns:1fr 1fr} .cols-3{grid-template-columns:1fr 1fr 1fr}
+@media (max-width:760px){.cols-2,.cols-3{grid-template-columns:1fr}}
+.cmp-item{border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
+.cmp-btn{display:flex;flex-direction:column;gap:6px;width:100%;border:0;background:none;padding:0;text-align:left;cursor:pointer}
+.cmp-label{font:600 11.5px/1 var(--mono);letter-spacing:.06em;color:var(--start);text-transform:uppercase}
+.cmp-en{display:flex;gap:8px;align-items:flex-start;font:400 17px/1.5 var(--body)}
+.cmp-en .pbtn{width:22px;height:22px;margin-top:2px}
+.cmp-btn.is-playing{background:var(--hl);border-radius:8px}
+.cmp-item .zh{margin:4px 0 0 30px}
+.ex-h{margin:4px 0 0;font:600 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.exs.two{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+@media (max-width:760px){.exs.two{grid-template-columns:1fr}}
+.donts{border-top:1px dashed var(--line);padding-top:10px}
+.dont{margin:2px 0;font:400 16px/1.6 var(--body)}
+.dont s{color:var(--muted);text-decoration-color:var(--no);text-decoration-thickness:2px}
+.arrow{color:var(--muted);margin:0 4px}
+
+/* basics */
+.brows{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:10px}
+@media (max-width:560px){.brows{grid-template-columns:1fr}}
+.brow{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.brow-h{display:flex;align-items:center;gap:10px}
+.hw.small{font-size:20px}
+.brow .ex{font-size:15.5px;padding:4px 6px}
+
 /* traps */
 .traps{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:14px}
 @media (max-width:560px){.traps{grid-template-columns:1fr}}
@@ -132,7 +166,7 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);font:40
 <header class="top">
   <div class="top-in">
     <span class="brand">Everyday English <small>linking words</small></span>
-    <nav class="nav" aria-label="Sections">{{NAV}}</nav>
+    <nav class="nav" aria-label="Sections"><a href="#map">Map</a><a href="#tricky">Tricky</a><a href="#useful">Useful</a><a href="#basics">Basics</a><a href="#traps">Traps</a></nav>
     <label class="chip" for="rate"><span>Speed</span>
       <select id="rate"><option value="0.8">0.8×</option><option value="0.9">0.9×</option><option value="1" selected>1.0×</option><option value="1.1">1.1×</option></select>
     </label>
@@ -144,7 +178,7 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);font:40
 <main class="wrap">
   <p class="kicker">Everyday English · Grammar you can hear</p>
   <h1>Everyday Linking Words</h1>
-  <p class="lead">Linking words tie your ideas together: <i>but</i>, <i>because</i>, <i>although</i>, <i>however</i>… This page has {{N_WORDS}} of the most useful ones, {{N_EX}} example sentences you can listen to, and {{N_TRAPS}} common traps. Start with the map below. It explains why <i>but</i> and <i>however</i> are used differently.</p>
+  <p class="lead">Linking words tie your ideas together. Some are easy, and some trip up almost every learner, so they don't all get the same space. The {{N_TRICKY}} tricky ones get comparisons, a longer explanation and eight or more examples each. The {{N_USEFUL}} useful ones get four examples, and the {{N_BASIC}} basics get a quick review. That's {{N_EX}} example sentences to listen to, plus {{N_TRAPS}} common traps. Start with the map. It explains why <i>but</i> and <i>however</i> work differently.</p>
 
   <section class="map" id="map" aria-labelledby="map-h">
     <h2 id="map-h">Four ways to link ideas</h2>
@@ -173,10 +207,23 @@ footer{margin-top:60px;padding-top:16px;border-top:1px solid var(--line);font:40
     </div>
   </section>
 
-  {{GROUPS}}
+  <section class="group" id="tricky" aria-labelledby="tricky-h">
+    <div class="group-h">{{ICON_TRICKY}}<div><h2 id="tricky-h">The tricky ones</h2><p class="sub">{{N_TRICKY}} linking words that are easy to get wrong · most of the page</p></div></div>
+    {{TRICKY}}
+  </section>
+
+  <section class="group" id="useful" aria-labelledby="useful-h">
+    <div class="group-h">{{ICON_USEFUL}}<div><h2 id="useful-h">Useful ones</h2><p class="sub">{{N_USEFUL}} linking words · four examples each</p></div></div>
+    <div class="cards">{{USEFUL}}</div>
+  </section>
+
+  <section class="group" id="basics" aria-labelledby="basics-h">
+    <div class="group-h">{{ICON_BASICS}}<div><h2 id="basics-h">The basics: quick review</h2><p class="sub">{{N_BASIC}} linking words you already know · two examples each</p></div></div>
+    <div class="brows">{{BASICS}}</div>
+  </section>
 
   <section class="group" id="traps" aria-labelledby="traps-h">
-    <div class="group-h">{{TRAP_ICON}}<div><h2 id="traps-h">Common traps</h2><p class="sub">Mistakes that are easy to make when you think in Chinese</p></div></div>
+    <div class="group-h">{{ICON_TRAPS}}<div><h2 id="traps-h">Common traps</h2><p class="sub">Mistakes that are easy to make when you think in Chinese</p></div></div>
     <div class="traps">{{TRAPS}}</div>
   </section>
 

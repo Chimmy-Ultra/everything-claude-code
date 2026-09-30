@@ -3,10 +3,11 @@
 # pass the folder holding kokoro-v1.0.onnx and voices-v1.0.bin (from the
 # github.com/thewh1teagle/kokoro-onnx releases, tag model-files-v1.0).
 #   python make_audio.py /path/to/model-folder   (existing files are kept; FORCE=1 redoes all)
-import os, sys
+import os, re, sys
 import numpy as np, lameenc
 from kokoro_onnx import Kokoro, EspeakConfig
 from content import GROUPS, TRAPS
+from tiers import NEW, EXTRA, TRICKY, MORE_TRAPS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL = sys.argv[1] if len(sys.argv) > 1 else "."
@@ -16,7 +17,9 @@ k = Kokoro(os.path.join(MODEL, "kokoro-v1.0.onnx"), os.path.join(MODEL, "voices-
 EMMA, GEORGE = "bf_emma", "bm_george"
 
 def plain(text):
-    return text.replace("**", "").replace("“", '"').replace("”", '"').replace("…", "...")
+    text = text.replace("**", "").replace("“", '"').replace("”", '"').replace("…", "...")
+    # The model reads "Wei" as "why"; "Way" gives the right /weɪ/.
+    return re.sub(r"\bWei\b", "Way", text)
 
 def save(text, voice, rel):
     path = os.path.join(HERE, "audio", rel)
@@ -36,6 +39,19 @@ for _, _, _, items in GROUPS:
         for n, (ex, _) in enumerate(examples, 1):
             save(ex, EMMA if n % 2 else GEORGE, f"ex/{wid}-{n}.mp3")
 
-for i, (_, rights, _) in enumerate(TRAPS, 1):
+for i, (_, rights, _) in enumerate(TRAPS + MORE_TRAPS, 1):
     for j, right in enumerate(rights, 1):
         save(right, GEORGE, f"trap/{i}-{j}.mp3")
+
+for wid, (word, _, _, _, _, examples) in NEW.items():
+    save(word.replace(" / ", ", "), EMMA, f"w/{wid}.mp3")
+    for n, (ex, _) in enumerate(examples, 1):
+        save(ex, EMMA if n % 2 else GEORGE, f"ex/{wid}-{n}.mp3")
+
+for wid, examples in EXTRA.items():
+    for n, (ex, _) in enumerate(examples, 7):
+        save(ex, EMMA if n % 2 else GEORGE, f"ex/{wid}-{n}.mp3")
+
+for wid, _, _, compare, _ in TRICKY:
+    for n, (_, ex, _) in enumerate(compare, 1):
+        save(ex, GEORGE, f"cmp/{wid}-{n}.mp3")

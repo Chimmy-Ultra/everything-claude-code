@@ -1,0 +1,99 @@
+<title>Everyday English Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&display=swap">
+<style>
+*{box-sizing:border-box}
+:root{
+  --bg:#F3F2F7; --surface:#FFFFFF; --tile:#EFECF7; --ink:#1B1830; --muted:#5D5972; --line:#DAD6E4; --outline:#2B2740;
+  --accent:#0A7F72; --shadow:0 1px 2px rgba(27,24,48,.05),0 8px 22px rgba(27,24,48,.07);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13111C; --surface:#1B1827; --tile:#DAD5E8; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#0C0A12;
+    --accent:#46CDBC; --shadow:0 1px 0 rgba(0,0,0,.35); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13111C; --surface:#1B1827; --tile:#DAD5E8; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#0C0A12;
+  --accent:#46CDBC; --shadow:0 1px 0 rgba(0,0,0,.35); color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding-inline:20px;padding-block:40px 64px}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0}
+h1{font:800 clamp(36px,6vw,56px)/1.03 var(--display);letter-spacing:-.02em;margin:.3em 0 .2em;text-wrap:balance}
+.lead{color:var(--muted);max-width:40em;margin:0}
+h2{font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:40px 0 12px}
+.list{display:grid;gap:12px}
+.item{display:grid;grid-template-columns:auto 1fr auto;gap:4px 18px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.item:hover{border-color:var(--accent);transform:translateY(-1px)}
+.item:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+.ic{grid-row:1/3;width:60px;height:60px;border-radius:14px;background:var(--tile);padding:6px}
+.name{font:760 22px/1.2 var(--display)}
+.what{grid-column:2;margin:0;font-size:15px;color:var(--muted)}
+.meta{grid-row:1/3;grid-column:3;display:flex;flex-direction:column;align-items:flex-end;gap:6px;font:500 12px var(--mono);color:var(--muted);text-align:right}
+.pill{padding:3px 8px;border-radius:999px;border:1.5px solid currentColor;letter-spacing:.05em;text-transform:uppercase;font-size:10.5px;font-weight:600}
+.p-scene{color:#C4512F} .p-grammar{color:#6A55C8} .p-reading{color:#0E8A7C} .p-tool{color:var(--muted)}
+.soon{border-style:dashed;box-shadow:none;background:transparent}
+.soon:hover{transform:none;border-color:var(--line)}
+.st{stroke:var(--outline);stroke-width:2.5;stroke-linejoin:round}
+.ln{fill:none;stroke:var(--outline);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.f-coral{fill:#FF7A59} .f-sky{fill:#4A9FE3} .f-violet{fill:#8A78E0} .f-teal{fill:#1FB5A3} .f-amber{fill:#FFB22E} .f-white{fill:#FFFFFF} .f-ink{fill:var(--outline)}
+@media (max-width:600px){.item{grid-template-columns:auto 1fr}.meta{grid-row:auto;grid-column:1/-1;flex-direction:row;align-items:center;justify-content:flex-start}.ic{width:52px;height:52px}}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<main class="wrap">
+  <p class="kicker">Everyday English</p>
+  <h1>Your English Library</h1>
+  <p class="lead">Everything we've made so far, in one place. Each page opens in a new tab.</p>
+
+  <h2>Scenes</h2>
+  <div class="list">
+    <a class="item" href="https://claude.ai/artifact/58LDN9BAnuFwBC27k4kYiN" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><rect class="f-white st" x="7" y="26" width="27" height="27" rx="6"/><circle class="f-ink" cx="14" cy="33" r="2.7"/><circle class="f-ink" cx="20.5" cy="39.5" r="2.7"/><circle class="f-ink" cx="27" cy="46" r="2.7"/><g transform="rotate(14 44 26)"><rect class="f-coral st" x="31" y="13" width="26" height="26" rx="6"/><circle class="f-white" cx="38" cy="20" r="2.7"/><circle class="f-white" cx="50" cy="20" r="2.7"/><circle class="f-white" cx="38" cy="32" r="2.7"/><circle class="f-white" cx="50" cy="32" r="2.7"/></g></svg>
+      <span class="name">Game Night at George's</span>
+      <p class="what">Scene 01. A 30-word illustrated word bank, three recorded conversations and two short reads (Wei's diary and a short history of board games).</p>
+      <span class="meta"><span class="pill p-scene">Scene 01</span>about 40 min</span>
+    </a>
+    <div class="item soon" aria-disabled="true">
+      <svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><rect class="f-white st" x="10" y="14" width="44" height="36" rx="6"/><path class="ln" d="M20 40V26M28 40V22M36 40V30M44 40V18"/></svg>
+      <span class="name">TOEIC Listening Practice</span>
+      <p class="what">Coming next: an original mock test in the official four-part format, with an exam mode and a review mode.</p>
+      <span class="meta"><span class="pill p-tool">Planned</span></span>
+    </div>
+  </div>
+
+  <h2>Grammar</h2>
+  <div class="list">
+    <a class="item" href="https://claude.ai/artifact/DAXHXmSFGKUNz8t3tZUaNY" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><rect class="f-teal st" x="6" y="22" width="22" height="22" rx="5"/><rect class="f-amber st" x="36" y="22" width="22" height="22" rx="5"/><circle class="f-white st" cx="32" cy="33" r="9"/><path class="ln" d="M32 28v10M27 33h10"/></svg>
+      <span class="name">Everyday Linking Words</span>
+      <p class="what">32 linking words sorted by difficulty. The tricky ones (although, however, even if, unless, in case…) get comparisons and 8+ examples; the basics get a quick review. Plus the traps Chinese speakers fall into.</p>
+      <span class="meta"><span class="pill p-grammar">Grammar</span></span>
+    </a>
+  </div>
+
+  <h2>Reading</h2>
+  <div class="list">
+    <a class="item" href="https://claude.ai/artifact/ANrckgbpUQcM3amiFJwfzn" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><circle class="f-sky st" cx="24" cy="28" r="14"/><path class="ln" d="M34 38l12 12"/><path class="f-violet st" d="M44 10l12 6v12l-12 6-12-6V16z"/></svg>
+      <span class="name">The Inverse Problem</span>
+      <p class="what">A popular-science read: how CT scans, earthquakes and a black-hole photo all work backwards from effects to causes. Includes a live CT simulation.</p>
+      <span class="meta"><span class="pill p-reading">Reading</span>about 15 min</span>
+    </a>
+  </div>
+
+  <h2>Tools</h2>
+  <div class="list">
+    <a class="item" href="https://claude.ai/artifact/DogGg6MdsxsJdtziS7pAoR" target="_blank" rel="noopener">
+      <svg class="ic" viewBox="0 0 64 64" aria-hidden="true"><path class="f-coral st" d="M10 26h10l12-10v32L20 38H10z"/><path class="ln" d="M40 24c4 4 4 12 0 16M46 18c8 8 8 20 0 28"/></svg>
+      <span class="name">Voice Check</span>
+      <p class="what">Compare the six recorded voices, including Emma and George, the British voices used in the scenes.</p>
+      <span class="meta"><span class="pill p-tool">Tool</span></span>
+    </a>
+  </div>
+</main>
