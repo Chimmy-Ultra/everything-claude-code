@@ -1,0 +1,997 @@
+<title>TOEIC 練習室</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one 680px phone-first column; views (home, session, summary, bank, stats, settings) swap in place.
+   Palette and type follow the learner's 多益文法考點 page so the two read as one set. */
+:root{
+  --bg:#EEF1F5; --surface:#FFFFFF; --surface-2:#F5F7FA; --ink:#172234; --muted:#5A6679; --line:#D6DCE5;
+  --accent:#2753A3; --accent-ink:#FFFFFF; --accent-soft:#E3EAF7;
+  --ok:#1D7550; --ok-soft:#E2F2EA; --bad:#B03A3A; --bad-soft:#F8E6E6; --warn:#8A5A00; --warn-soft:#FBF0DA;
+  --hi:#FFE680; --claude:#8A4B12; --claude-soft:#F7EBDD;
+  --shadow:0 1px 2px rgba(23,34,52,.06),0 6px 18px rgba(23,34,52,.06);
+  --serif:"Source Serif 4","Noto Serif TC",Georgia,"Times New Roman",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F141C; --surface:#161D28; --surface-2:#1C2432; --ink:#E4E9F1; --muted:#9AA6B8; --line:#2A3445;
+    --accent:#8DB0F0; --accent-ink:#0F141C; --accent-soft:#1F2C44;
+    --ok:#6FD3A2; --ok-soft:#173327; --bad:#F19A9A; --bad-soft:#3A1E22; --warn:#F2C66B; --warn-soft:#33290F;
+    --hi:#5E4E14; --claude:#F0B27A; --claude-soft:#35261A;
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F141C; --surface:#161D28; --surface-2:#1C2432; --ink:#E4E9F1; --muted:#9AA6B8; --line:#2A3445;
+  --accent:#8DB0F0; --accent-ink:#0F141C; --accent-soft:#1F2C44;
+  --ok:#6FD3A2; --ok-soft:#173327; --bad:#F19A9A; --bad-soft:#3A1E22; --warn:#F2C66B; --warn-soft:#33290F;
+  --hi:#5E4E14; --claude:#F0B27A; --claude-soft:#35261A;
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:680px;margin:0 auto;padding-inline:16px;padding-block:0 88px}
+.en{font-family:var(--serif)}
+.mono{font-family:var(--mono)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:680px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;min-height:52px}
+.bar h1{font:900 17px/1.2 var(--sans);margin:0;letter-spacing:.02em}
+.bar .sp{flex:1}
+.link{border:0;background:none;padding:6px 4px;color:var(--accent);font-weight:500}
+.sync{font:500 12px var(--mono);color:var(--muted);white-space:nowrap}
+.progress{font:600 14px var(--mono);font-variant-numeric:tabular-nums}
+.dots{display:inline-flex;gap:3px;vertical-align:middle}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--muted)}
+
+/* shared blocks */
+h2{font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:28px 0 10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 16px;font-weight:500;min-height:42px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.ghost{background:transparent}
+.btn.sm{min-height:34px;padding:5px 12px;font-size:14px}
+.btn:disabled{opacity:.45;cursor:default}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.row .sp{flex:1}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:4px;font:600 12px/1.4 var(--sans);border-radius:6px;padding:1px 7px;background:var(--surface-2);color:var(--muted)}
+.badge.claude{background:var(--claude-soft);color:var(--claude)}
+.badge.bank{background:var(--bad-soft);color:var(--bad)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);border-radius:10px;padding:8px 16px;font-size:14px;z-index:30;box-shadow:var(--shadow)}
+
+/* home */
+.due{display:flex;align-items:center;gap:14px;margin-top:18px;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.due.none{border-color:var(--line);box-shadow:none}
+.due b{font:900 34px/1 var(--mono);color:var(--accent);font-variant-numeric:tabular-nums}
+.due div{flex:1;min-width:0}
+.quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.quick button{display:grid;gap:2px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.quick button b{font:900 18px/1.3 var(--sans)}
+.quick button span{font-size:13px;color:var(--muted)}
+.quick .mix{grid-column:1/-1;background:var(--accent-soft);border-color:transparent}
+.units{display:grid;gap:6px}
+.unit{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:center;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 14px}
+.unit b{font-weight:700;font-size:15px}
+.unit .st{grid-column:1;font:500 12px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.unit .go{grid-row:1/3;grid-column:2;color:var(--muted);font-size:13px}
+.group-h{font:700 14px var(--sans);margin:14px 0 6px;color:var(--ink)}
+.resume{margin-top:16px;display:flex;gap:10px;align-items:center;background:var(--warn-soft);border-color:transparent}
+.resume div{flex:1;min-width:0}
+.nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:26px}
+.nav button{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 6px;font-weight:700}
+.nav button span{display:block;font:500 12px var(--mono);color:var(--muted)}
+.import{margin-top:16px;background:var(--accent-soft);border-color:transparent}
+
+/* question */
+.qhead{display:flex;align-items:center;gap:8px;margin:18px 0 10px;flex-wrap:wrap}
+.stem{font:400 20px/1.6 var(--serif);margin:0 0 14px}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--ink);margin:0 2px}
+.blank.fill{min-width:0;border-bottom-color:var(--ok);font-weight:600;color:var(--ok);padding:0 2px}
+.opts{display:grid;gap:8px}
+.opt{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;text-align:left;min-height:52px;padding:10px 14px;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;font:400 17px/1.4 var(--serif)}
+.opt .l{font:600 14px var(--mono);color:var(--muted)}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.right .l{color:var(--ok)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .l{color:var(--bad)}
+.opt.dim{opacity:.55}
+.opt.now{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.guess{display:inline-flex;align-items:center;gap:8px;font-size:14px;margin:0 0 10px;cursor:pointer;user-select:none}
+.guess input{width:18px;height:18px;accent-color:var(--warn);margin:0}
+.pace{height:5px;background:var(--line);border-radius:99px;overflow:hidden;margin:0 0 12px}
+.pace i{display:block;height:100%;background:var(--accent);width:100%;transition:width .2s linear}
+.pace.over i{background:var(--bad)}
+.nextbar{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom,0px));margin-top:16px;display:flex;justify-content:flex-end}
+.nextbar .btn{box-shadow:var(--shadow);min-width:9em}
+
+/* explanation */
+.result{display:flex;align-items:center;gap:8px;margin:16px 0 8px;flex-wrap:wrap}
+.result b{font:900 17px var(--sans)}
+.result .ok{color:var(--ok)} .result .no{color:var(--bad)}
+.result .sp{flex:1}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:3px 10px;font-size:13px}
+.icon-btn[aria-pressed="true"]{border-color:var(--warn);color:var(--warn);background:var(--warn-soft)}
+.exp{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+.exp .k{font:700 12px var(--mono);letter-spacing:.06em;color:var(--accent);margin-bottom:2px;display:block}
+.exp p{margin:0}
+.exp .rule{font-weight:700}
+.wrongs{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:15px}
+.wrongs li{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 8px;padding:4px 8px;border-radius:6px}
+.wrongs li>span:last-child{flex:1 1 12em;min-width:0}
+.wrongs li.mine{background:var(--bad-soft)}
+.wrongs .o{font-family:var(--serif);font-weight:600;max-width:100%}
+.full{font:400 17px/1.6 var(--serif);border-top:1px dashed var(--line);padding-top:10px}
+.full .zh{display:block;font:400 15px/1.6 var(--sans);color:var(--muted);margin-top:2px}
+.more{display:flex;gap:8px;flex-wrap:wrap}
+.vocab{margin:0;padding:0;list-style:none;display:grid;gap:2px;font-size:15px}
+.vocab b{font-family:var(--serif)}
+.ask{display:grid;gap:8px}
+.ask textarea{width:100%;min-height:60px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);padding:8px 10px;resize:vertical}
+.ask .ans{background:var(--claude-soft);border-radius:10px;padding:10px 12px;white-space:pre-wrap}
+.flagbox{display:grid;gap:6px}
+.flagbox textarea,.note textarea{width:100%;min-height:52px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);padding:8px 10px;resize:vertical}
+
+/* listening */
+.player{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:12px;flex-wrap:wrap}
+.player .play{width:52px;height:52px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex:none}
+.player .play svg{width:18px;height:18px;fill:currentColor}
+.player .state{flex:1;min-width:0;font-size:14px}
+.speed{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.speed button{border:0;background:transparent;padding:4px 8px;font:600 12px var(--mono)}
+.speed button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.qr-opts{grid-template-columns:repeat(3,minmax(0,1fr))}
+.qr-opts .opt{grid-template-columns:1fr;justify-items:center;font:700 22px var(--mono)}
+.lq{margin:18px 0 8px;font:600 17px/1.5 var(--serif)}
+.lq .n{font:600 13px var(--mono);color:var(--muted);margin-right:6px}
+.script{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.script li{display:grid;grid-template-columns:28px minmax(0,1fr) 30px;gap:8px;align-items:start;padding:6px 8px;border-radius:8px}
+.script li.ev{background:var(--hi)}
+.script .who{font:700 12px var(--mono);color:var(--muted);padding-top:3px}
+.script .t{font:400 16px/1.5 var(--serif)}
+.script .t small{display:block;font:400 14px/1.5 var(--sans);color:var(--muted)}
+.mini{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;padding:0}
+.mini svg{width:9px;height:9px;fill:currentColor}
+.divider{margin:24px 0 8px;text-align:center;font:700 14px var(--sans);color:var(--muted)}
+
+/* summary */
+.score{display:flex;align-items:baseline;gap:12px;margin:22px 0 4px}
+.score b{font:900 56px/1 var(--mono);font-variant-numeric:tabular-nums}
+.score span{color:var(--muted)}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.list li{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.list .head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:10px 14px}
+.list .head .s{font:400 15px/1.5 var(--serif);min-width:0}
+.list .head .m{grid-column:1;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted)}
+.list .head .ch{grid-row:1/3;grid-column:2;color:var(--muted);font-size:13px}
+.list .body{padding:0 12px 12px;display:grid;gap:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{font:600 12px var(--mono);color:var(--muted);background:var(--surface-2)}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+th.n{text-align:right}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.tbl table{min-width:420px}
+
+/* bank + settings */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.search{width:100%;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:8px 12px;margin-bottom:12px}
+.set{display:grid;gap:4px;padding:14px 0;border-bottom:1px solid var(--line)}
+.set:last-child{border-bottom:0}
+.set label{font-weight:700}
+.set p{margin:0;font-size:14px;color:var(--muted)}
+.empty{padding:24px 12px;text-align:center;color:var(--muted)}
+@media (max-width:420px){.stem{font-size:18px}.opt{font-size:16px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="bar"><div class="bar-in" id="bar"></div></header>
+<div class="wrap" id="app"></div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script type="application/json" id="bank">{"units": {"pos": {"zh": "詞性判斷", "group": "grammar"}, "tense": {"zh": "動詞時態", "group": "grammar"}, "voice": {"zh": "主動與被動", "group": "grammar"}, "participle": {"zh": "分詞：-ing 與 -ed", "group": "grammar"}, "connect": {"zh": "連接詞、介系詞、連接副詞", "group": "grammar"}, "agree": {"zh": "主詞與動詞一致", "group": "grammar"}, "relative": {"zh": "關係代名詞", "group": "grammar"}, "pronoun": {"zh": "代名詞", "group": "grammar"}, "prep": {"zh": "介系詞：時間、期限與常用片語", "group": "grammar"}, "toing": {"zh": "to 的陷阱與動詞後接的形式", "group": "grammar"}, "mandative": {"zh": "要求與建議：that 子句用原形", "group": "grammar"}, "conditional": {"zh": "假設語氣與倒裝", "group": "grammar"}, "compare": {"zh": "比較", "group": "grammar"}, "quantity": {"zh": "數量詞與可數名詞", "group": "grammar"}, "parallel": {"zh": "平行結構與成對連接詞", "group": "grammar"}, "collocation": {"zh": "搭配詞", "group": "vocab"}, "synonym": {"zh": "近義辨析", "group": "vocab"}, "business": {"zh": "商業字彙", "group": "vocab"}, "family": {"zh": "同字根不同義", "group": "vocab"}, "qr-wh": {"zh": "應答：wh 問句", "group": "listen"}, "qr-yesno": {"zh": "應答：Yes/No 與附加問句", "group": "listen"}, "qr-indirect": {"zh": "應答：間接回答", "group": "listen"}, "conv-topic": {"zh": "對話：主旨與場合", "group": "listen"}, "conv-detail": {"zh": "對話：細節", "group": "listen"}, "conv-intent": {"zh": "對話：意圖與推論", "group": "listen"}, "conv-next": {"zh": "對話：下一步", "group": "listen"}, "talk-topic": {"zh": "短講：主旨", "group": "listen"}, "talk-detail": {"zh": "短講：細節", "group": "listen"}, "talk-next": {"zh": "短講：下一步", "group": "listen"}}, "items": [{"id": "g-pos-01", "type": "grammar", "format": "gap", "unit": "pos", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "All shipping charges on the March invoice were ______ calculated by the new billing software.", "options": ["automatic", "automation", "automatically", "automate"], "answer": 2, "explain": {"point": "be 動詞和過去分詞之間放副詞", "why": "空格在 were 和過去分詞 calculated 之間，修飾「計算」這個動作，要用副詞 automatically。", "wrong": ["形容詞，不能插在 were 和 calculated 之間修飾動詞", "名詞「自動化」，放在 were 和 calculated 之間不成句", null, "原形動詞，were 後面不能再接原形"], "zh": "三月那張發票上的所有運費，都是由新的帳務軟體自動計算的。", "vocab": [["shipping charge", "運費"], ["invoice", "發票、請款單"], ["billing software", "帳務軟體"]]}}, {"id": "g-pos-02", "type": "grammar", "format": "gap", "unit": "pos", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The terms of the new rental agreement seem ______ to both parties, so the contract will be signed on Friday.", "options": ["acceptable", "acceptance", "accept", "acceptably"], "answer": 0, "explain": {"point": "連綴動詞 seem 後面接形容詞", "why": "seem 是連綴動詞，後面要接形容詞，描述主詞 the terms 的狀態，所以選 acceptable（可接受的）。", "wrong": [null, "名詞「接受」，不能用來描述條款的狀態", "原形動詞，seem 後面不能直接接", "副詞不能放在連綴動詞後面描述主詞"], "zh": "新租約的條款雙方似乎都能接受，所以合約會在星期五簽訂。", "vocab": [["terms", "（合約）條款"], ["rental agreement", "租約"], ["party", "（合約的）一方"]]}}, {"id": "g-pos-03", "type": "grammar", "format": "gap", "unit": "pos", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The ______ of the Tamsin Road factory will create about 200 new jobs in the region next year.", "options": ["expand", "expansive", "expanded", "expansion"], "answer": 3, "explain": {"point": "冠詞 the 後、of 前的位置用名詞", "why": "空格前面是冠詞 the、後面接 of，整個片語又是 will create 的主詞，所以要用名詞 expansion。", "wrong": ["動詞，不能放在 the 後面當主詞", "形容詞，the 後面缺了它要修飾的名詞", "過去分詞，後面沒有名詞可以修飾", null], "zh": "Tamsin 路工廠的擴建工程，明年將在當地創造約 200 個新的工作機會。", "vocab": [["expansion", "擴建、擴張"], ["region", "地區"]]}}, {"id": "g-pos-04", "type": "grammar", "format": "gap", "unit": "pos", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The safety ______ who visited the plant on Monday recommended replacing two of the older machines.", "options": ["inspection", "inspector", "inspect", "inspected"], "answer": 1, "explain": {"point": "人和事的名詞：inspector 是人，inspection 是事", "why": "空格要放名詞；後面的 who 只能指人，來廠裡、提出建議的也是人，所以用指人的 inspector。", "wrong": ["「檢查」這件事，不能用 who，也不會來訪", null, "動詞，不能放在 The safety 後面當主詞", "過去分詞，後面沒有名詞，也不能當主詞"], "zh": "星期一來廠裡的安全檢查員，建議汰換其中兩台較舊的機器。", "vocab": [["plant", "工廠"], ["inspector", "檢查員、稽查員"], ["recommend", "建議"]]}}, {"id": "g-pos-05", "type": "grammar", "format": "gap", "unit": "pos", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The factory avoided a very ______ shutdown last month by replacing worn parts before they failed.", "options": ["costly", "cost", "costing", "costs"], "answer": 0, "explain": {"point": "very 後、名詞前用形容詞；costly 是形容詞", "why": "空格在 very 後面、名詞 shutdown 前面，要用形容詞。costly 雖然是 -ly 結尾，其實是形容詞，意思是「代價高的」。", "wrong": [null, "名詞或動詞，不能被 very 修飾", "-ing 形在這裡不當形容詞，a very costing 不成立", "複數名詞或動詞，不能放在 a very 後面"], "zh": "這家工廠上個月趕在磨損的零件故障前先換掉，避免了一次代價非常高昂的停工。", "vocab": [["shutdown", "停工、停機"], ["worn", "磨損的"], ["costly", "代價高的、昂貴的"]]}}, {"id": "g-pos-06", "type": "grammar", "format": "gap", "unit": "pos", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice.", "options": ["considerable", "consideration", "considerably", "considerate"], "answer": 2, "explain": {"point": "副詞修飾比較級形容詞：considerably easier", "why": "make it 後面描述狀態的形容詞已經是 easier，空格是在修飾 easier；修飾形容詞要用副詞 considerably。", "wrong": ["形容詞不能修飾另一個形容詞 easier", "名詞，放在 it 和 easier 之間不成句", null, "形容詞「體貼的」，不能修飾 easier"], "zh": "新的預約系統讓員工臨時訂會議室變得容易許多。", "vocab": [["booking system", "預約系統"], ["reserve", "預訂"], ["on short notice", "臨時、事前通知很短"]]}}, {"id": "g-tense-01", "type": "grammar", "format": "gap", "unit": "tense", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "Shortly before the building was sold, all of the security cameras in its parking garage ______, so they are still under warranty.", "options": ["have been replaced", "replaced", "have replaced", "were replaced"], "answer": 3, "explain": {"point": "明確的過去時間用過去式；主詞承受動作又沒受詞用被動", "why": "句首 Shortly before the building was sold 是明確的過去時間，用過去式；攝影機是被換的，後面也沒有受詞，所以用 were replaced。", "wrong": ["被動對了，但句首有明確的過去時間，不能用現在完成式", "主動，攝影機不會自己換；replace 後面也缺受詞", "主動又是現在完成式，語態和時態都不對", null], "zh": "就在大樓出售前不久，大樓停車場裡所有的監視攝影機都換新了，所以現在還在保固期內。", "vocab": [["security camera", "監視攝影機"], ["parking garage", "（室內或多層的）停車場"], ["under warranty", "在保固期內"]]}}, {"id": "g-tense-02", "type": "grammar", "format": "gap", "unit": "tense", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Our technicians ______ the network problem at the moment, so e-mail may be slow this morning.", "options": ["investigate", "are investigating", "investigated", "have investigated"], "answer": 1, "explain": {"point": "at the moment 表示正在進行，用現在進行式", "why": "at the moment 是「此刻」，查網路問題是現在正在進行的事，所以用現在進行式 are investigating。", "wrong": ["現在簡單式講習慣或固定行程，不講此刻正在做的事", null, "過去式，和 at the moment 對不上", "現在完成式講已做到的結果，不表示此刻正在查"], "zh": "我們的技術人員目前正在查網路問題，所以今天早上電子郵件可能會比較慢。", "vocab": [["technician", "技術人員"], ["investigate", "調查、查明"]]}}, {"id": "g-tense-03", "type": "grammar", "format": "gap", "unit": "tense", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Once the legal team ______ its review, Mr. Haddad will send the revised contract to the client.", "options": ["completes", "will complete", "completed", "was completing"], "answer": 0, "explain": {"point": "時間子句用現在式表示未來，主句用 will", "why": "Once 引導時間子句；主句 will send 講的是未來，但時間子句裡要用現在式 completes，不用 will。", "wrong": [null, "時間子句裡就算講未來，也不用 will", "過去式，和主句 will send 的未來時間對不上", "過去進行式，時間是過去，和主句對不上"], "zh": "法務團隊一審完，Haddad 先生就會把修改後的合約寄給客戶。", "vocab": [["legal team", "法務團隊"], ["review", "審閱"], ["revised", "修改過的"]]}}, {"id": "g-tense-04", "type": "grammar", "format": "gap", "unit": "tense", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Brenmoor Foods ______ its delivery network to more than forty cities since the spring of 2021.", "options": ["expands", "will expand", "has expanded", "expanded"], "answer": 2, "explain": {"point": "since 加時間點，主句用現在完成式", "why": "since the spring of 2021 表示從過去某個時間點延續到現在，所以主句用現在完成式 has expanded。", "wrong": ["現在簡單式，不能配 since 加時間點", "未來式，since 講的是從過去到現在", null, "過去式只講過去，不能配 since 延續到現在"], "zh": "自 2021 年春天以來，Brenmoor Foods 已經把配送網擴展到四十多個城市。", "vocab": [["delivery network", "配送網"], ["expand", "擴展、擴大"]]}}, {"id": "g-tense-05", "type": "grammar", "format": "gap", "unit": "tense", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "By the time the renovation of the Brisholm Hotel lobby was completed in May, the owners ______ nearly two million dollars on the project.", "options": ["have spent", "will have spent", "are spending", "had spent"], "answer": 3, "explain": {"point": "by the time + 過去式 → 主句用過去完成式 had p.p.", "why": "by the time 子句是過去式 was completed，主句講「到那時已經花掉」，要用過去完成式 had spent。", "wrong": ["現在完成式，對不上五月這個過去的時間點", "未來完成式要配 by the time + 現在式", "現在進行式，時間是現在，也沒有「已經」", null], "zh": "到 Brisholm 飯店大廳在五月整修完成時，業主已經在這項工程上花了將近兩百萬美元。", "vocab": [["renovation", "整修、翻新"], ["lobby", "大廳"], ["owner", "業主"]]}}, {"id": "g-connect-01", "type": "grammar", "format": "gap", "unit": "connect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The monthly staff meeting was moved to the larger conference room ______ the growing number of attendees.", "options": ["because", "because of", "despite", "although"], "answer": 1, "explain": {"point": "接名詞用介系詞，再看句意是原因還是讓步", "why": "空格後 the growing number of attendees 是名詞片語，要用介系詞；人數變多才改到較大的會議室，是因果，所以用 because of。", "wrong": ["連接詞，後面要接子句，這裡接的是名詞片語", null, "介系詞沒錯，但表讓步；人數變多正是換大會議室的原因", "連接詞要接子句，而且表讓步，意思也不對"], "zh": "由於出席人數越來越多，每月的員工會議改到較大的會議室舉行。", "vocab": [["attendee", "出席者"], ["conference room", "會議室"], ["growing", "越來越多的、成長中的"]]}}, {"id": "g-connect-02", "type": "grammar", "format": "gap", "unit": "connect", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Visitors must wear a hard hat at all times ______ they are on the construction site.", "options": ["during", "meanwhile", "throughout", "while"], "answer": 3, "explain": {"point": "接子句用連接詞 while", "why": "空格後面 they are on the construction site 有主詞和動詞，是完整的子句，所以用連接詞 while。", "wrong": ["介系詞，後面只能接名詞", "連接副詞，不能直接連接兩個子句", "介系詞，後面要接名詞，不接子句", null], "zh": "訪客在工地時必須全程戴著安全帽。", "vocab": [["hard hat", "安全帽"], ["construction site", "工地"], ["at all times", "隨時、全程"]]}}, {"id": "g-connect-03", "type": "grammar", "format": "gap", "unit": "connect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Our main supplier charges more than most of its competitors; ______, we have decided to keep ordering from it because its parts rarely fail.", "options": ["however", "therefore", "whereas", "in spite of"], "answer": 0, "explain": {"point": "分號後用連接副詞，再看前後是轉折還是因果", "why": "分號後、逗號前要用連接副詞；前句收費較高，後句卻決定繼續向它訂貨，是轉折，所以用 however。", "wrong": [null, "連接副詞，但表因果；收費高不是繼續訂貨的理由", "連接詞，不能單獨夾在分號和逗號之間", "介系詞，後面要接名詞，不能單獨放在這裡"], "zh": "我們的主要供應商收費比大多數同業高，不過因為它的零件很少故障，我們還是決定繼續向它訂貨。", "vocab": [["supplier", "供應商"], ["competitor", "競爭對手"], ["order from", "向……訂貨"], ["fail", "（零件、機器）故障"]]}}, {"id": "g-connect-04", "type": "grammar", "format": "gap", "unit": "connect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Orders placed after 3 p.m. will not be shipped until the next business day ______ customers pay extra for same-day shipping.", "options": ["if", "because", "unless", "whether"], "answer": 2, "explain": {"point": "unless 引出例外條件：除非……，否則……", "why": "前半句是規則：三點後的訂單隔天才出貨；加價選當日出貨正是這條規則的例外，所以用 unless。", "wrong": ["條件方向相反：付了當日出貨的錢反而等到隔天", "因果不通：付當日出貨的錢不會造成延後", null, "whether 表「不論」時要配 or not；補上了句意也不通"], "zh": "下午三點以後下的訂單，除非顧客加價選擇當日出貨，否則要到下一個工作天才會出貨。", "vocab": [["business day", "工作天"], ["same-day shipping", "當日出貨"], ["pay extra", "加付費用"]]}}, {"id": "g-connect-05", "type": "grammar", "format": "gap", "unit": "connect", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "______ the company spent far less on advertising in June, sales of its new desk lamp still rose by 20 percent.", "options": ["Because", "Even though", "Despite", "Nevertheless"], "answer": 1, "explain": {"point": "讓步又接子句，用連接詞 even though", "why": "空格後面是子句，要用連接詞；廣告費少很多、銷量卻仍成長，是讓步關係，still 也是線索，所以用 Even though。", "wrong": ["連接詞，但表因果，和 still 的讓步意思矛盾", null, "意思對，但它是介系詞，不能接子句", "連接副詞，不能連接兩個子句；也該放在後一句開頭"], "zh": "儘管公司六月的廣告支出少了很多，新款桌燈的銷量仍然成長了百分之二十。", "vocab": [["advertising", "廣告"], ["desk lamp", "桌燈"], ["rise by", "上升（多少幅度）"]]}}, {"id": "g-prep-01", "type": "grammar", "format": "gap", "unit": "prep", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The online system for first-quarter expense claims opens on March 20, and every claim must be submitted ______ April 5.", "options": ["by", "until", "since", "within"], "answer": 0, "explain": {"point": "by 是期限：一次性的動作最晚在這之前完成", "why": "must be submitted 是一次性的動作，April 5 是最晚期限，所以用 by。March 20 開放只是背景，不代表送出要持續到 April 5。", "wrong": [null, "until 表示狀態持續到那時，不配一次性的送出", "since 標的是「從那時起」的起點，不能表示截止期限", "within 後面接一段期間，不接日期"], "zh": "第一季費用申請的線上系統在三月二十日開放，每一筆申請都必須在四月五日前送出。", "vocab": [["expense claim", "費用申請、報帳"], ["first-quarter", "第一季的"], ["submit", "提交、送出"]]}}, {"id": "g-prep-02", "type": "grammar", "format": "gap", "unit": "prep", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The main entrance of the building will be closed ______ three days while new floor tiles are installed.", "options": ["during", "since", "by", "for"], "answer": 3, "explain": {"point": "for 加時間長度，during 加事件或期間名稱", "why": "three days 是時間長度，說明正門要關多久，所以用 for。", "wrong": ["during 後面接事件或期間的名稱，不接長度", "since 接時間點，搭配現在完成式", "by 是期限，後面接時間點", null], "zh": "大樓鋪設新地磚期間，正門將關閉三天。", "vocab": [["main entrance", "正門"], ["floor tile", "地磚"], ["install", "安裝、鋪設"]]}}, {"id": "g-prep-03", "type": "grammar", "format": "gap", "unit": "prep", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "______ completion of the training course, each participant will receive a certificate signed by the director.", "options": ["Until", "Since", "Upon", "Within"], "answer": 2, "explain": {"point": "upon 加名詞，表示「一……就」", "why": "收到證書是課程一完成就發生的一次性動作，upon completion 正好表示「一完成就」。", "wrong": ["until 表示持續到那時，不配一次性的收到", "since 搭配現在完成式，不配 will receive", null, "within 後面接一段期間，completion 不是期間"], "zh": "一完成訓練課程，每位學員都會收到一張由主任簽名的證書。", "vocab": [["completion", "完成"], ["participant", "參加者、學員"], ["certificate", "證書"]]}}, {"id": "g-prep-04", "type": "grammar", "format": "gap", "unit": "prep", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "______ the merger with Kessling Freight last year, Orvane Shipping has doubled the size of its fleet.", "options": ["During", "Since", "Until", "Within"], "answer": 1, "explain": {"point": "since 接過去的時間點，搭配現在完成式", "why": "主句是現在完成式 has doubled，講的是從去年合併到現在的變化，起點要用 since。", "wrong": ["during 只講去年那段期間，不配現在完成式", null, "until 講到合併那時為止，但 has doubled 延續到現在", "within 後面接一段期間，the merger 不是期間"], "zh": "自從去年和 Kessling 貨運合併以來，Orvane 航運的船隊規模已經擴大了一倍。", "vocab": [["merger", "合併"], ["fleet", "船隊"], ["double", "變成兩倍"]]}}, {"id": "g-participle-01", "type": "grammar", "format": "gap", "unit": "participle", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Customers can download the ______ price list from our Web site starting next Monday.", "options": ["updated", "update", "updating", "updates"], "answer": 0, "explain": {"point": "名詞前的分詞：被動用 -ed", "why": "價目表是「被更新」的，放在名詞 price list 前面表示被動，要用 -ed 的 updated。", "wrong": [null, "原形動詞不能修飾名詞；當名詞也沒有 update price list 的說法", "-ing 表主動，價目表不會自己去更新", "動詞不能修飾名詞；updates price list 也不是複合名詞"], "zh": "顧客從下週一起可以在我們的網站下載更新後的價目表。", "vocab": [["price list", "價目表"], ["download", "下載"]]}}, {"id": "g-participle-02", "type": "grammar", "format": "gap", "unit": "participle", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Companies ______ in the Westbrook trade fair will be listed in the official catalog.", "options": ["participated", "participate", "participation", "participating"], "answer": 3, "explain": {"point": "名詞後的分詞片語：主動用 -ing", "why": "句子的動詞是 will be listed，空格只能是修飾 Companies 的分詞；公司是主動參加，所以用 participating。", "wrong": ["-ed 表被動，但公司是主動參加的", "原形動詞，句子已經有動詞 will be listed", "名詞，不能接在 Companies 後面修飾它", null], "zh": "參加 Westbrook 商展的公司會被列在官方型錄裡。", "vocab": [["trade fair", "商展"], ["catalog", "型錄、目錄"], ["participate in", "參加"]]}}, {"id": "g-participle-03", "type": "grammar", "format": "gap", "unit": "participle", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "______ in only six months, the new distribution center in Haverford can process 20,000 orders a day.", "options": ["Building", "Build", "Built", "Builder"], "answer": 2, "explain": {"point": "分詞構句：主詞被動承受用 -ed", "why": "句首分詞片語的主詞就是主句的 the new distribution center；物流中心是「被蓋」的，所以用 Built。", "wrong": ["-ing 表主動，物流中心不會自己蓋", "原形動詞放句首是祈使句，和主句接不起來", null, "名詞「建造者」，不能帶出分詞片語"], "zh": "位於 Haverford 的新物流中心只花六個月就蓋好，每天可以處理兩萬張訂單。", "vocab": [["distribution center", "物流中心"], ["process", "處理"], ["order", "訂單"]]}}, {"id": "g-participle-04", "type": "grammar", "format": "gap", "unit": "participle", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "Although the sales figures for the company's new line of kitchen appliances were ______, the board decided to keep the products on the market.", "options": ["disappointed", "disappointing", "disappoint", "disappointment"], "answer": 1, "explain": {"point": "情緒動詞：事物讓人有感覺用 -ing", "why": "主詞是 the sales figures（銷售數字），是「讓人失望」的事物，不是感到失望的人，所以用 disappointing。", "wrong": ["-ed 是人「感到」失望，數字不會有感覺", null, "原形動詞，不能放在 were 後面", "名詞要說 a disappointment，少了冠詞不成立"], "zh": "雖然公司新系列廚房家電的銷售數字令人失望，董事會還是決定讓這些產品繼續在市面上販售。", "vocab": [["sales figures", "銷售數字"], ["kitchen appliance", "廚房家電"], ["board", "董事會"]]}}, {"id": "g-voice-01", "type": "grammar", "format": "gap", "unit": "voice", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The new security badges ______ to all employees by the end of next week.", "options": ["will distribute", "are distributing", "will be distributed", "distributed"], "answer": 2, "explain": {"point": "主詞承受動作、後面沒有受詞 → 被動 be + p.p.", "why": "識別證是被發放的一方，後面沒有受詞，要用被動；by the end of next week 是未來，所以用 will be distributed。", "wrong": ["主動要接受詞，而且識別證不會自己發放", "主動進行式，識別證不會自己發放，後面也缺受詞", null, "少了 be 就不是被動；當過去式又缺受詞、對不上 next week"], "zh": "新的識別證將在下週結束前發給所有員工。", "vocab": [["security badge", "識別證、門禁卡"], ["distribute", "分發、發放"]]}}, {"id": "g-voice-02", "type": "grammar", "format": "gap", "unit": "voice", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Shipping costs for our overseas orders ______ by nearly eight percent since the start of the year.", "options": ["have raised", "have risen", "have been risen", "have been raising"], "answer": 1, "explain": {"point": "rise 不及物、沒有被動；raise 及物，要接受詞", "why": "空格後的 by nearly eight percent 不是受詞，運費是自己「上漲」，用不及物的 rise：have risen。", "wrong": ["raise 是及物動詞，後面要有受詞", null, "rise 是不及物動詞，沒有被動", "raise 的完成進行式是主動，後面缺受詞"], "zh": "自年初以來，我們海外訂單的運費上漲了將近百分之八。", "vocab": [["shipping cost", "運費"], ["overseas", "海外的"]]}}, {"id": "g-voice-03", "type": "grammar", "format": "gap", "unit": "voice", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "Ms. Okafor ______ a two-week paid sabbatical by the board of directors in recognition of her ten years of service.", "options": ["granted", "has granted", "was granting", "was granted"], "answer": 3, "explain": {"point": "授與動詞的被動，後面仍可接受詞：be granted + 名詞", "why": "by the board of directors 表示給假的是董事會，Okafor 女士是得到的人，用被動；grant 是授與動詞，被動後仍接 a sabbatical。", "wrong": ["主動表示「她給出」假期，和 by the board 衝突", "主動表示她給出假期，但給假的是董事會", "主動進行式，主客顛倒，也配不上 by the board", null], "zh": "Okafor 女士獲董事會給予兩週的帶薪長假，以表揚她十年來的服務。", "vocab": [["sabbatical", "（帶薪）長假"], ["board of directors", "董事會"], ["in recognition of", "為了表揚"]]}}, {"id": "g-agree-01", "type": "grammar", "format": "gap", "unit": "agree", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The projectors in every conference room on the fourth floor ______ been replaced with newer models.", "options": ["have", "has", "having", "to have"], "answer": 0, "explain": {"point": "動詞跟真正的主詞一致，不跟介系詞片語裡的名詞", "why": "主詞是複數的 The projectors；in every conference room on the fourth floor 是修飾它的介系詞片語，所以用 have。", "wrong": [null, "被 every conference room 帶偏；主詞 projectors 是複數", "分詞不能當主要動詞，句子會缺動詞", "不定詞不能當句子的主要動詞"], "zh": "四樓每間會議室的投影機都已經換成較新的機型了。", "vocab": [["projector", "投影機"], ["conference room", "會議室"], ["replace A with B", "把 A 換成 B"]]}}, {"id": "g-agree-02", "type": "grammar", "format": "gap", "unit": "agree", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Approving refund requests from overseas customers usually ______ longer than approving domestic ones.", "options": ["take", "taking", "have taken", "takes"], "answer": 3, "explain": {"point": "動名詞當主詞，動詞用單數", "why": "真正的主詞是動名詞 Approving，不是 requests 或 customers，所以用單數 takes。", "wrong": ["複數形，把 customers 誤當成主詞", "taking 不是完整動詞，句子會缺主要動詞", "have 要配複數主詞，這裡的主詞是單數的動名詞片語", null], "zh": "核准海外顧客的退款申請，通常比核准國內的花更多時間。", "vocab": [["refund", "退款"], ["approve", "核准"], ["domestic", "國內的"]]}}, {"id": "g-agree-03", "type": "grammar", "format": "gap", "unit": "agree", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "Neither the lease agreement nor the two service contracts ______ renewal until next spring.", "options": ["requires", "require", "requiring", "to require"], "answer": 1, "explain": {"point": "neither A nor B：動詞跟比較靠近的 B", "why": "neither A nor B 的動詞跟比較靠近的 B 一致；B 是複數的 the two service contracts，所以用 require。", "wrong": ["單數形，跟到 A（lease agreement）了", null, "分詞不能當句子的主要動詞", "不定詞不能當句子的主要動詞"], "zh": "租約和那兩份服務合約都要到明年春天才需要續約。", "vocab": [["lease agreement", "租約"], ["service contract", "服務合約"], ["renewal", "續約"]]}}, {"id": "g-relative-01", "type": "grammar", "format": "gap", "unit": "relative", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Customers ______ subscriptions expire this month will receive a renewal reminder by email.", "options": ["who", "whom", "whose", "which"], "answer": 2, "explain": {"point": "名詞屬於先行詞、後面子句完整 → 所有格 whose", "why": "subscriptions expire this month 已是完整子句，subscriptions 是顧客的訂閱，所以用所有格 whose。", "wrong": ["who 要補子句缺的主詞或受詞，但後面子句已完整", "whom 當受詞，但後面的子句並不缺受詞", null, "先行詞 Customers 是人，不能用 which"], "zh": "訂閱在本月到期的顧客，會收到一封續訂提醒電子郵件。", "vocab": [["subscription", "訂閱"], ["expire", "到期"], ["renewal", "續訂、續約"]]}}, {"id": "g-relative-02", "type": "grammar", "format": "gap", "unit": "relative", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Mr. Varga reviewed the five bids for the office renovation, two of ______ came in under budget.", "options": ["which", "whom", "what", "whose"], "answer": 0, "explain": {"point": "介系詞 + 關係代名詞：事物用 which，人用 whom", "why": "逗號後補充說明前面的 bids，two of 的 of 是介系詞，後面指事物要用 which：two of which。", "wrong": [null, "whom 指人，bids 是事物", "what 前面不能有先行詞，這裡有 bids", "whose 後面要接名詞，這裡直接接動詞 came"], "zh": "Varga 先生審閱了五份辦公室整修工程的報價，其中兩份低於預算。", "vocab": [["bid", "投標、報價"], ["renovation", "整修"], ["under budget", "低於預算"]]}}, {"id": "g-relative-03", "type": "grammar", "format": "gap", "unit": "relative", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "The Dunmore plant, ______ Brenvale Foods acquired in 2019, now produces all of the company's packaging.", "options": ["where", "when", "what", "which"], "answer": 3, "explain": {"point": "子句缺受詞用 which；where 後面接完整子句", "why": "acquired 是及物動詞，後面沒有受詞，缺的正是 plant；逗號後補充說明事物，用 which。", "wrong": ["where 後面要接完整子句，但 acquired 缺受詞", "when 指時間，先行詞 plant 不是時間", "what 前面不能有先行詞，這裡有 plant", null], "zh": "Brenvale 食品在 2019 年收購的 Dunmore 工廠，現在生產公司全部的包裝材料。", "vocab": [["plant", "工廠"], ["acquire", "收購"], ["packaging", "包裝材料"]]}}, {"id": "g-pronoun-01", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Venlow Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.", "options": ["it", "its", "theirs", "itself"], "answer": 1, "explain": {"point": "所有格放在名詞前；單數的公司用 its（它的）", "why": "空格後面是名詞 return policy，要表示「它的」退貨政策，指的是單數的 Venlow Logistics，所以用所有格 its。", "wrong": ["it 是主格或受格，不能直接放在名詞前面", null, "theirs 是所有代名詞，要單獨使用，後面不能再接名詞", "反身代名詞不能放在名詞前面當所有格用"], "zh": "Venlow 物流更新了自家的退貨政策，允許在到貨後 60 天內換貨。", "vocab": [["return policy", "退貨政策"], ["exchange", "換貨"], ["delivery", "送達、到貨"]]}}, {"id": "g-pronoun-02", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The delivery times offered by Tarrow Freight are considerably shorter than ______ of its main competitors.", "options": ["that", "these", "those", "them"], "answer": 2, "explain": {"point": "代替前面的名詞：複數用 those of，單數用 that of", "why": "比的是運送時間和運送時間，代替複數的 delivery times 要用 those：those of its main competitors。", "wrong": ["that 代替單數名詞，delivery times 是複數", "these 不用來接 of 代替前面提過的名詞", null, "受格 them 不能接 of 來代替前面的名詞"], "zh": "Tarrow 貨運的運送時間比它主要競爭對手的短得多。", "vocab": [["delivery time", "運送時間、交期"], ["freight", "貨運"], ["competitor", "競爭對手"]]}}, {"id": "g-pronoun-03", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Mr. Patel's reimbursement request was approved within a day, but ______ took almost two weeks because a receipt was missing.", "options": ["mine", "my", "me", "myself"], "answer": 0, "explain": {"point": "後面沒有名詞、表示「某人的東西」→ 所有代名詞", "why": "空格後直接接動詞 took，沒有名詞；意思是「我的申請」，用所有代名詞 mine。", "wrong": [null, "所有格 my 後面一定要接名詞", "受格 me 不能當主詞", "反身代名詞不能當主詞"], "zh": "Patel 先生的報帳申請一天內就核准了，我的卻因為少了一張收據，拖了將近兩個星期。", "vocab": [["reimbursement", "報帳、費用核銷"], ["receipt", "收據"]]}}, {"id": "g-toing-01", "type": "grammar", "format": "gap", "unit": "toing", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The board has decided ______ the opening of the Leeds branch until the renovation is complete.", "options": ["postpone", "postponing", "postponed", "to postpone"], "answer": 3, "explain": {"point": "decide 後面接 to V", "why": "decide 屬於後面接 to V 的動詞，所以是 decided to postpone。", "wrong": ["原形不能直接接在 decided 後面", "decide 後面不接 Ving", "過去分詞不能直接接在 decided 後面", null], "zh": "董事會已決定把里茲分店的開幕延到整修完成之後。", "vocab": [["postpone", "延後"], ["branch", "分店"], ["renovation", "整修"]]}}, {"id": "g-toing-02", "type": "grammar", "format": "gap", "unit": "toing", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "In addition to ______ the monthly newsletter, Ms. Hollis manages the company's social media accounts.", "options": ["edit", "editing", "edited", "have edited"], "answer": 1, "explain": {"point": "in addition to 的 to 是介系詞，後面接 Ving", "why": "in addition to 的 to 是介系詞（後面可以放名詞），動詞要改成 Ving：editing。", "wrong": ["把 to 當成不定詞；介系詞 to 後面不接原形", null, "過去分詞不能當介系詞的受詞", "介系詞後面不接 have + p.p."], "zh": "除了編輯每月的電子報之外，Hollis 女士也負責管理公司的社群媒體帳號。", "vocab": [["newsletter", "電子報"], ["in addition to", "除了……之外（還）"]]}}, {"id": "g-toing-03", "type": "grammar", "format": "gap", "unit": "toing", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Ms. Brandt let the two new technicians ______ the server upgrade on their own last weekend.", "options": ["carry out", "to carry out", "carrying out", "carried out"], "answer": 0, "explain": {"point": "使役動詞 let + 受詞 + 原形動詞", "why": "let 是使役動詞，受詞 the two new technicians 後面接原形：carry out。", "wrong": [null, "let 後面不接 to；allow 才接 to V", "let + 受詞後面不接 Ving", "技術人員是執行的人，不能用過去分詞"], "zh": "上週末 Brandt 女士讓兩位新來的技術人員自己完成伺服器升級。", "vocab": [["technician", "技術人員"], ["carry out", "執行、完成"], ["on one's own", "獨自、自己"]]}}, {"id": "g-compare-01", "type": "grammar", "format": "gap", "unit": "compare", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "For large orders, shipping by rail is much ______ than shipping by air.", "options": ["cheap", "cheapest", "cheaper", "more cheaply"], "answer": 2, "explain": {"point": "看到 than → 比較級；much 可以加強比較級", "why": "空格後面有 than，要用比較級；前面的 much 用來加強比較級：much cheaper。", "wrong": ["原級不能接 than", "最高級不和 than 連用", null, "這裡 is 後面要用形容詞描述 shipping，more cheaply 是副詞"], "zh": "大量訂單用鐵路運送，比空運便宜得多。", "vocab": [["shipping", "運送、出貨"], ["by rail", "以鐵路運輸"]]}}, {"id": "g-compare-02", "type": "grammar", "format": "gap", "unit": "compare", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The earlier the invitations are sent out, ______ guests are likely to attend the product launch.", "options": ["more", "the most", "most", "the more"], "answer": 3, "explain": {"point": "the + 比較級, the + 比較級：越……越……", "why": "前半句是 The earlier ...，後半句要對應 the + 比較級：the more guests，意思是「寄得越早，來的人越多」。", "wrong": ["少了 the，接不上前半句的 The earlier", "最高級不能用在「越……越……」句型", "most 是「大部分」，接不上 The earlier 的句型", null], "zh": "邀請函寄得越早，可能出席產品發表會的來賓就越多。", "vocab": [["invitation", "邀請函"], ["product launch", "產品發表會"]]}}, {"id": "g-compare-03", "type": "grammar", "format": "gap", "unit": "compare", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "In the customer survey, the battery life of the Dorvan X5 tablet was rated superior ______ that of every competing model.", "options": ["than", "to", "from", "as"], "answer": 1, "explain": {"point": "superior 後面接 to，不接 than", "why": "superior 本身就是「比……好」，後面固定接 to：superior to that of every competing model。", "wrong": ["superior 雖然有比較的意思，但不接 than", null, "superior 不和 from 搭配", "as 用在 as ... as 原級比較，不接 superior"], "zh": "在顧客調查中，Dorvan X5 平板的電池續航力被評為優於所有競爭機型。", "vocab": [["superior to", "優於"], ["battery life", "電池續航力"], ["competing", "競爭的"]]}}, {"id": "g-quantity-01", "type": "grammar", "format": "gap", "unit": "quantity", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "We have not received ______ information about the new parking rules from the building management office.", "options": ["much", "many", "several", "a few"], "answer": 0, "explain": {"point": "不可數名詞前用 much；many、several、a few 接複數", "why": "information 是不可數名詞，選項中只有 much 能接；not ... much 表示「沒收到多少」。", "wrong": [null, "many 接複數可數名詞，information 不可數", "several 是「好幾個」，只接複數名詞", "a few 接複數名詞；不可數要用 a little"], "zh": "關於新的停車規定，我們還沒從大樓管理處收到多少資訊。", "vocab": [["building management office", "大樓管理處"], ["parking rules", "停車規定"]]}}, {"id": "g-quantity-02", "type": "grammar", "format": "gap", "unit": "quantity", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "______ of the applicants for the graphic designer position currently live outside Linden Falls.", "options": ["Almost", "Every", "Most", "Much"], "answer": 2, "explain": {"point": "most of the + 複數名詞；almost 是副詞，不能直接接 of", "why": "空格後面是 of the applicants，選項中能接 of the 加複數名詞的只有 Most：大部分應徵者。", "wrong": ["almost 是副詞，要說 almost all of", "every 後面直接接單數名詞，不能接 of", null, "much 接不可數名詞，applicants 可數"], "zh": "應徵平面設計師職缺的人，大部分目前住在 Linden Falls 以外的地方。", "vocab": [["applicant", "應徵者"], ["position", "職位、職缺"]]}}, {"id": "g-quantity-03", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Halvern Medical ordered ______ new laboratory equipment last month, and most of it has already been installed.", "options": ["several", "many", "a number of", "a great deal of"], "answer": 3, "explain": {"point": "equipment 不可數：a great deal of + 不可數名詞", "why": "equipment 是不可數名詞（後面 most of it 也用單數 it），選項中只有 a great deal of 接不可數名詞。", "wrong": ["several 要接複數名詞，equipment 沒有複數形", "many 只接可數複數名詞，equipment 不可數", "a number of 接可數複數；不可數用 an amount of", null], "zh": "Halvern 醫療上個月訂購了大量新的實驗室設備，其中大部分已經安裝好了。", "vocab": [["laboratory", "實驗室"], ["equipment", "設備（不可數）"], ["install", "安裝"]]}}, {"id": "g-parallel-01", "type": "grammar", "format": "gap", "unit": "parallel", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "According to staff feedback, the new office chairs are both comfortable ______ easy to adjust.", "options": ["or", "and", "nor", "but"], "answer": 1, "explain": {"point": "both A and B：both 固定搭配 and", "why": "前面有 both，後面固定用 and 連接兩個形容詞：both comfortable and easy to adjust。", "wrong": ["or 搭配 either，不搭配 both", null, "nor 搭配 neither，不搭配 both", "but (also) 搭配 not only，不搭配 both"], "zh": "根據員工的意見，新的辦公椅既舒適又容易調整。", "vocab": [["feedback", "意見、回饋"], ["adjust", "調整"]]}}, {"id": "g-parallel-02", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The regional director has ______ approved the budget requests from the sales and marketing departments nor explained why they are on hold.", "options": ["neither", "either", "both", "not only"], "answer": 0, "explain": {"point": "看到 nor，前面跟它成對的是 neither", "why": "句子後段的 nor explained 要跟 neither 成對；中間 sales and marketing 的 and 只連接兩個部門，不是 both 的另一半。", "wrong": [null, "either 要配 or，這句後面是 nor", "both 要配 and；這裡的 and 只連接兩個部門，後面還有 nor", "not only 要配 but also，不配 nor"], "zh": "地區總監既沒有核准業務部和行銷部的預算申請，也沒有說明這些申請為什麼被擱置。", "vocab": [["regional director", "地區總監"], ["budget request", "預算申請"], ["on hold", "暫緩、擱置"]]}}, {"id": "g-parallel-03", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Customers who want the extended warranty must register the product online within 30 days of purchase and ______ the original receipt.", "options": ["to keep", "keeping", "keep", "kept"], "answer": 2, "explain": {"point": "and 連接的兩個動詞共用 must，都要用原形", "why": "and 連接的是 register 和空格，兩個動詞都接在 must 後面，所以用原形 keep；within 30 days of purchase 只是插在中間的修飾語。", "wrong": ["must 後面接原形，不接 to V；也跟 register 不平行", "跟 register 不平行；and 連接的不是前面的 purchase", null, "過去式不能接在 must 後面，也跟 register 不平行"], "zh": "想享有延長保固的顧客，必須在購買後 30 天內上網登錄產品，並保留原始收據。", "vocab": [["extended warranty", "延長保固"], ["register", "登錄、註冊"], ["receipt", "收據"]]}}, {"id": "g-mandative-01", "type": "grammar", "format": "gap", "unit": "mandative", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The finance director has requested that each department head ______ a revised budget by March 15.", "options": ["submitting", "will submit", "to submit", "submit"], "answer": 3, "explain": {"point": "request that + 主詞 + 原形動詞", "why": "requested that 表示要求，that 子句的動詞用原形；主詞 each department head 雖是單數，仍用 submit。", "wrong": ["Ving 不能當 that 子句的動詞", "要求的內容用原形，不加 will", "that 子句不用 to V；拿掉 that 才能接人 + to V", null], "zh": "財務總監要求每位部門主管在 3 月 15 日前提交修訂後的預算。", "vocab": [["finance director", "財務總監"], ["department head", "部門主管"], ["submit", "提交"]]}}, {"id": "g-mandative-02", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "It is essential that the draft agreement ______ shared with anyone outside the company before it is signed.", "options": ["not be", "not being", "will not be", "not to be"], "answer": 0, "explain": {"point": "essential that + 原形；否定加 not：not be p.p.", "why": "It is essential that 表示必要，that 子句用原形；否定直接在前面加 not，被動就是 not be shared。", "wrong": [null, "Ving 不能當 that 子句的動詞", "表示必要的 that 子句用原形，不加 will", "that 子句不用 to V；要說 for ... not to be"], "zh": "合約草案在簽署之前，務必不能和公司以外的任何人分享。", "vocab": [["draft agreement", "合約草案"], ["essential", "必要的、非常重要的"]]}}, {"id": "g-conditional-01", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "______ the supplier notified us of the delay earlier, we would have found another vendor in time.", "options": ["Should", "Had", "Were", "Unless"], "answer": 1, "explain": {"point": "與過去事實相反的倒裝：Had + 主詞 + p.p.", "why": "主句是 would have found，與過去事實相反；if 子句是 had notified，省略 if 就倒裝成 Had the supplier notified。", "wrong": ["Should 後面接原形，也不配 would have", null, "Were 後面不能接帶受詞的過去式 notified us", "unless 是「除非」，語意不通，也不配 would have"], "zh": "要是供應商早點通知我們會延誤，我們就能及時找到另一家廠商了。", "vocab": [["supplier", "供應商"], ["vendor", "廠商"], ["in time", "及時"]]}}, {"id": "g-conditional-02", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "Not until the new inventory software was installed ______ the error rate in our warehouse begin to fall.", "options": ["was", "has", "did", "had"], "answer": 2, "explain": {"point": "Not until 放句首，主句倒裝：did + 主詞 + 原形", "why": "Not until ... 放在句首，後面的主句要倒裝；說的是過去的事，動詞又是原形 begin，所以用 did。", "wrong": ["was 後面不能接原形 begin", "has 要接 p.p.（begun），而且這是過去的事", null, "had 要接 p.p.（begun），不接原形 begin"], "zh": "直到新的庫存軟體安裝好之後，我們倉庫的出錯率才開始下降。", "vocab": [["inventory", "庫存"], ["error rate", "錯誤率"], ["warehouse", "倉庫"]]}}, {"id": "v-collocation-01", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Our printing supplier worked late every night to ______ the deadline for the trade show brochures.", "options": ["meet", "match", "catch", "suit"], "answer": 0, "explain": {"point": "搭配詞：meet a deadline（趕上期限）", "why": "deadline 的動詞搭配是 meet；meet the deadline 就是在期限內完成。", "wrong": [null, "match 是「和…相配」，不和 deadline 搭配", "catch 搭 the bus、the train，不說 catch a deadline", "suit 是「適合某人」，不和 deadline 搭配"], "zh": "我們的印刷廠每天晚上都加班，好趕上商展手冊的交件期限。", "vocab": [["deadline", "截止期限"], ["trade show", "商展"], ["brochure", "宣傳手冊"]]}}, {"id": "v-collocation-02", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The revised travel policy will ______ effect on July 1, so trips booked after that date must follow the new rules.", "options": ["come", "take", "go", "make"], "answer": 1, "explain": {"point": "搭配詞：take effect（生效）", "why": "規定「開始生效」固定說 take effect；come、go 也能表示生效，但要說 come／go into effect，這裡沒有 into。", "wrong": ["要說 come into effect，少了 into", null, "要說 go into effect，少了 into", "make 不和 effect 搭配成「生效」"], "zh": "修訂後的差旅規定將於 7 月 1 日生效，因此在那天之後預訂的出差行程都必須遵守新規則。", "vocab": [["take effect", "生效"], ["revised", "修訂過的"], ["policy", "規定、政策"]]}}, {"id": "v-collocation-03", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The office manager will ______ an order for new printer cartridges before the end of the day.", "options": ["set", "lay", "place", "position"], "answer": 2, "explain": {"point": "搭配詞：place an order（下訂單）", "why": "下訂單的固定說法是 place an order，後面用 for 接訂購的東西。", "wrong": ["set 搭配 a goal、a date；訂貨不說 set an order", "lay 是「放平、鋪」，不和 order 搭配", null, "position 是「把東西擺到定位」，不和 order 搭配"], "zh": "辦公室經理今天下班前會下單訂購新的印表機墨水匣。", "vocab": [["order", "訂單"], ["cartridge", "墨水匣、碳粉匣"]]}}, {"id": "v-collocation-04", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Our accountant recommends that we ______ a close eye on cash flow during the slow summer months.", "options": ["hold", "take", "set", "keep"], "answer": 3, "explain": {"point": "搭配詞：keep a close eye on（密切注意）", "why": "「密切注意某事」固定說 keep a close eye on，on 後面接要注意的事，這裡是 cash flow。", "wrong": ["hold 搭配 a meeting，不說 hold an eye on", "take 搭配 a look at，不說 take an eye on", "set eyes on 是「看見」，不能加 a close", null], "zh": "我們的會計師建議，在生意清淡的夏季幾個月裡要密切注意現金流。", "vocab": [["accountant", "會計師"], ["cash flow", "現金流"]]}}, {"id": "v-collocation-05", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The new flexible schedule aims to ______ a balance between client visits and time in the office.", "options": ["pull", "run", "strike", "lift"], "answer": 2, "explain": {"point": "搭配詞：strike a balance（取得平衡）", "why": "「在 A 和 B 之間取得平衡」固定說 strike a balance between A and B；pull、run、lift 都沒有這個用法。", "wrong": ["pull 是「拉」，不說 pull a balance", "run 搭 a business，不說 run a balance between", null, "lift 搭 a ban（解除禁令），不和 balance 搭配"], "zh": "新的彈性班表是為了在拜訪客戶和待在辦公室的時間之間取得平衡。", "vocab": [["flexible schedule", "彈性班表"], ["strike a balance", "取得平衡"], ["client visit", "拜訪客戶"]]}}, {"id": "v-collocation-06", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The plan to open a second branch was approved by an ______ majority of shareholders at Tuesday's meeting.", "options": ["overflowing", "overpowering", "overriding", "overwhelming"], "answer": 3, "explain": {"point": "搭配詞：overwhelming majority（壓倒性多數）", "why": "「壓倒性多數」固定說 overwhelming majority；其他三個字各有自己的搭配。", "wrong": ["overflowing 是「滿出來」，搭 inbox、crowd", "overpowering 形容氣味或感覺太強烈", "overriding 是「首要的」，搭 concern", null], "zh": "開設第二家分店的計畫在星期二的會議上以壓倒性多數獲得股東通過。", "vocab": [["branch", "分店、分行"], ["majority", "多數"], ["shareholder", "股東"]]}}, {"id": "v-synonym-01", "type": "vocab", "format": "gap", "unit": "synonym", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Sales representatives earn a ______ of 4 percent on every contract they sign, in addition to their base salary.", "options": ["wage", "pension", "commission", "allowance"], "answer": 2, "explain": {"point": "commission 佣金：按成交金額抽成", "why": "每簽一份合約就抽 4%，這種按業績計算的錢是佣金 commission；底薪 base salary 另外算。", "wrong": ["wage 是按時數或按週計的固定工資，不按合約抽成", "pension 是退休後才領的退休金，不按合約抽成", null, "allowance 是交通、住房等固定津貼，不按合約抽成"], "zh": "業務代表除了底薪之外，每簽一份合約還能拿到 4% 的佣金。", "vocab": [["sales representative", "業務代表"], ["commission", "佣金"], ["base salary", "底薪"]]}}, {"id": "v-synonym-02", "type": "vocab", "format": "gap", "unit": "synonym", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The IT department ______ projectors to staff who meet clients off-site, free of charge and for up to two weeks at a time.", "options": ["rents", "lends", "borrows", "donates"], "answer": 1, "explain": {"point": "lend 借出；rent 收費出租；borrow 借入", "why": "資訊部把投影機給員工用，免費（free of charge）又有期限（最多兩週），這是「借出」lends。", "wrong": ["rent 出租要收租金，和 free of charge 矛盾", null, "borrow 是向別人借入，方向相反", "donate 是捐出、不收回，和「最多兩週」矛盾"], "zh": "資訊部免費把投影機借給需要到外面見客戶的員工，每次最多借兩週。", "vocab": [["free of charge", "免費"], ["off-site", "在公司以外的地點"], ["at a time", "每次"]]}}, {"id": "v-synonym-03", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Guests who ______ additional charges, such as room service or minibar purchases, must settle them at checkout.", "options": ["suffer", "undergo", "endure", "incur"], "answer": 3, "explain": {"point": "incur charges／expenses：產生（費用）", "why": "房客自己消費而產生費用，固定說 incur charges；suffer、undergo、endure 雖然都有「承受」之意，都不接 charges。", "wrong": ["suffer 搭 losses、damage 等不幸遭受的事，不接消費", "undergo 搭 surgery、training 等過程，不接費用", "endure 是「忍受」痛苦或延誤，不接費用", null], "zh": "有額外消費（例如客房服務或迷你吧）的房客，必須在退房時結清。", "vocab": [["incur", "產生、招致（費用）"], ["minibar", "（客房）迷你吧"], ["settle", "結清（帳款）"]]}}, {"id": "v-synonym-04", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "The new advisory committee ______ five managers, each from a different department of the company.", "options": ["consists", "comprises", "composes", "constitutes"], "answer": 1, "explain": {"point": "comprise = consist of（由…組成）", "why": "主詞是整體、後面直接接成員，用 comprises；consists 要加 of。", "wrong": ["要說 consists of five managers，少了 of", null, "compose 要用被動：is composed of", "constitute 方向相反，是成員構成整體"], "zh": "新的顧問委員會由五位經理組成，每人來自公司不同的部門。", "vocab": [["advisory committee", "顧問委員會"], ["department", "部門"]]}}, {"id": "v-synonym-05", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Showroom visits ______ increased after the renovation, jumping 40 percent in the first week and staying at that level for the rest of the year.", "options": ["markedly", "slightly", "steadily", "temporarily"], "answer": 0, "explain": {"point": "副詞看全句：markedly 明顯地、大幅地", "why": "跳升 40% 是大幅增加；第一週就跳上去、之後維持到年底，所以不是 slightly、steadily 或 temporarily，而是 markedly。", "wrong": [null, "slightly 是「稍微」，但 40% 不是小幅", "steadily 是穩定逐步上升，但這裡是一週內跳升後持平", "temporarily 是暫時，但之後到年底都維持在那個水準"], "zh": "展示間整修後來客數明顯增加，第一週就跳升 40%，而且那一年剩下的時間都維持在這個水準。", "vocab": [["showroom", "展示間"], ["renovation", "整修"], ["markedly", "明顯地"]]}}, {"id": "v-synonym-06", "type": "vocab", "format": "gap", "unit": "synonym", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "The landlord has agreed to ______ our lease for another two years at the same monthly rent.", "options": ["extend", "expand", "enlarge", "stretch"], "answer": 0, "explain": {"point": "extend 延長時間；expand／enlarge 擴大範圍", "why": "for another two years 是期限往後延，只有 extend 能指延長租約。", "wrong": [null, "expand 是規模或範圍擴大，不是延長期限", "enlarge 是尺寸放大，用在照片、空間", "stretch 用在預算、布料，不說延租約"], "zh": "房東同意以同樣的月租再把我們的租約延長兩年。", "vocab": [["landlord", "房東"], ["lease", "租約"], ["rent", "租金"]]}}, {"id": "v-business-01", "type": "vocab", "format": "gap", "unit": "business", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Your flight times and the address of each hotel are listed in the ______ the travel agent sent today.", "options": ["inventory", "itinerary", "agenda", "warranty"], "answer": 1, "explain": {"point": "itinerary：行程表（航班、住宿）", "why": "旅行社寄來、列出航班時間和飯店地址的，是行程表 itinerary。", "wrong": ["inventory 是庫存清單，不會列航班和飯店", null, "agenda 是會議議程，不列航班", "warranty 是產品保固書，跟行程無關"], "zh": "你的航班時間和每間飯店的地址，都列在旅行社今天寄來的行程表裡。", "vocab": [["itinerary", "行程表"], ["travel agent", "旅行社（人員）"]]}}, {"id": "v-business-02", "type": "vocab", "format": "gap", "unit": "business", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The furniture supplier has sent us the ______ for the 40 office chairs, and it is payable within 30 days.", "options": ["receipt", "estimate", "refund", "invoice"], "answer": 3, "explain": {"point": "invoice：請款單（付款前寄的）", "why": "payable within 30 days 表示還沒付、要在期限內付，這張單據是請款單 invoice。", "wrong": ["receipt 是付款後的收據，不會再「應付」", "estimate 是估價單，不是付款依據", "refund 是退款，不是要付的錢", null], "zh": "家具供應商已經寄來 40 張辦公椅的請款單，須在 30 天內付款。", "vocab": [["supplier", "供應商"], ["invoice", "請款單、帳單"], ["payable", "應付的"]]}}, {"id": "v-business-03", "type": "vocab", "format": "gap", "unit": "business", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Because of the storm warning, the product launch has been ______ until next Thursday.", "options": ["postponed", "abandoned", "expired", "concluded"], "answer": 0, "explain": {"point": "postpone … until：延期到某時", "why": "until next Thursday 表示改到之後的日期再辦，這是延期 postponed。", "wrong": [null, "abandon 是放棄，不會有新的日期", "expire 是證件、合約到期，不用在活動", "conclude 是結束，不接 until 未來日期"], "zh": "由於暴風雨警報，新產品發表會延到下星期四舉行。", "vocab": [["storm warning", "暴風雨警報"], ["product launch", "產品發表會"]]}}, {"id": "v-business-04", "type": "vocab", "format": "gap", "unit": "business", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The cost of your staff uniform will be ______ from your first month's salary.", "options": ["reduced", "declined", "deducted", "devoted"], "answer": 2, "explain": {"point": "deduct A from B：從 B 扣除 A", "why": "費用從薪水裡扣掉，說 be deducted from your salary；from 是線索。", "wrong": ["reduce 是「減少」，不說把費用從薪水 reduce", "decline 是「下降」（不及物）或「婉拒」，都不是扣錢", null, "devote 是「奉獻」，要接 to"], "zh": "你的員工制服費用會從第一個月的薪水中扣除。", "vocab": [["uniform", "制服"], ["deduct", "扣除"], ["salary", "薪水"]]}}, {"id": "v-business-05", "type": "vocab", "format": "gap", "unit": "business", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Staff who drive their own cars to client meetings will be ______ for fuel at a fixed rate.", "options": ["rewarded", "reimbursed", "recruited", "reserved"], "answer": 1, "explain": {"point": "reimburse：歸還員工代墊的費用", "why": "員工先自付油錢、公司再按固定費率還錢，這是 reimbursed（報銷）。", "wrong": ["reward 是獎勵表現，不是歸還代墊的錢", null, "recruit 是招募人才，跟油錢無關", "reserve 是預訂或保留，不是還錢"], "zh": "開自己的車去拜訪客戶的員工，油錢會按固定費率報銷。", "vocab": [["reimburse", "報銷、償還"], ["fuel", "燃料、油錢"], ["fixed rate", "固定費率"]]}}, {"id": "v-business-06", "type": "vocab", "format": "gap", "unit": "business", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "Since the delay was caused by its own error, the shipping company agreed to ______ the extra cost.", "options": ["absorb", "adopt", "attach", "acquire"], "answer": 0, "explain": {"point": "absorb the cost：自行吸收費用", "why": "延誤是物流公司自己的錯，所以由它吸收多出來的費用：absorb the extra cost。", "wrong": [null, "adopt 接 policy、plan，是「採用」", "attach 接 file，是「附上」", "acquire 接公司、技能，是「取得」"], "zh": "由於延誤是物流公司自己的錯，他們同意自行吸收額外的費用。", "vocab": [["shipping company", "物流公司"], ["absorb", "吸收（費用）"]]}}, {"id": "v-family-01", "type": "vocab", "format": "gap", "unit": "family", "level": 1, "source": "hand", "reviewed": true, "v": 1, "stem": "Moving to the smaller warehouse will save the company a ______ amount of money each year.", "options": ["considerate", "considerable", "considering", "considered"], "answer": 1, "explain": {"point": "considerable 相當多的；considerate 體貼的", "why": "修飾 amount of money，意思是「相當多的」，用 considerable。", "wrong": ["considerate 是「體貼的」，形容人", null, "considering 是介系詞「就…而言」", "considered 是「深思熟慮的」，形容意見"], "zh": "搬到比較小的倉庫，每年能為公司省下一大筆錢。", "vocab": [["warehouse", "倉庫"], ["considerable", "相當多的"]]}}, {"id": "v-family-02", "type": "vocab", "format": "gap", "unit": "family", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "Please keep this folder locked because it contains ______ information about employee salaries.", "options": ["sensible", "sensory", "senseless", "sensitive"], "answer": 3, "explain": {"point": "sensitive 敏感的；sensible 明智的", "why": "薪資資料不能外流、要鎖起來，是「敏感的」資訊，用 sensitive。", "wrong": ["sensible 是「明智的、合理的」，不表示要保密", "sensory 是「感官的」，如視覺、聽覺", "senseless 是「無意義的」，跟要鎖起來無關", null], "zh": "請把這個資料夾鎖好，因為裡面有員工薪資的敏感資料。", "vocab": [["folder", "資料夾"], ["salary", "薪資"]]}}, {"id": "v-family-03", "type": "vocab", "format": "gap", "unit": "family", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "After the break, Ms. Lin and Mr. Hale will present the sales figures for their ______ regions.", "options": ["respective", "respectful", "respectable", "respected"], "answer": 0, "explain": {"point": "respective 各自的；respectful 有禮貌的", "why": "兩人各自報告自己負責地區的業績，「各自的」用 respective。", "wrong": [null, "respectful 是「有禮貌的」，形容人或態度", "respectable 是「體面的、像樣的」，不表示「各自的」", "respected 是「受尊敬的」，形容人"], "zh": "休息過後，林女士和 Hale 先生會分別報告各自地區的業績數字。", "vocab": [["sales figures", "業績數字"], ["region", "地區、區域"]]}}, {"id": "v-family-04", "type": "vocab", "format": "gap", "unit": "family", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The supervisor praised the new interns for being ______ and always finishing their tasks ahead of schedule.", "options": ["industrial", "industrialized", "industrious", "industrializing"], "answer": 2, "explain": {"point": "industrious 勤奮的；industrial 工業的", "why": "稱讚實習生總是提前完成工作，是說他們「勤奮」，用 industrious。", "wrong": ["industrial 是「工業的」，形容區域、設備", "industrialized 是「已工業化的」，形容國家", null, "industrializing 是「工業化中的」，形容國家"], "zh": "主管稱讚新來的實習生很勤奮，總是提前完成工作。", "vocab": [["supervisor", "主管"], ["intern", "實習生"], ["ahead of schedule", "提前"]]}}, {"id": "v-family-05", "type": "vocab", "format": "gap", "unit": "family", "level": 2, "source": "hand", "reviewed": true, "v": 1, "stem": "The safety manual was rewritten in plain language so that it would be ______ to every new employee.", "options": ["comprehensive", "comprehending", "comprehensible", "comprehended"], "answer": 2, "explain": {"point": "comprehensible 易懂的；comprehensive 全面的", "why": "用淺白的語言改寫，是為了讓新人看得懂；「對某人來說易懂」是 comprehensible to。", "wrong": ["comprehensive 是「全面的」，而且不接 to 某人", "comprehending 是「正在理解」，主詞要是人", null, "comprehended 是被動「被理解」，不接 to"], "zh": "安全手冊用淺白的語言重寫，好讓每位新員工都看得懂。", "vocab": [["manual", "手冊"], ["plain language", "淺白的語言"]]}}, {"id": "v-family-06", "type": "vocab", "format": "gap", "unit": "family", "level": 3, "source": "hand", "reviewed": true, "v": 1, "stem": "The hardware store stocks screws in every ______ size, so builders rarely have to order parts.", "options": ["imaginative", "imaginary", "imagining", "imaginable"], "answer": 3, "explain": {"point": "imaginable 想得到的；imaginative 有創意的", "why": "every imaginable size 是「所有想得到的尺寸」，強調貨色齊全。", "wrong": ["imaginative 是「有想像力的」，形容人或設計", "imaginary 是「虛構的」，但店裡真的有貨", "imagining 是動詞 -ing，不當形容詞用", null], "zh": "這家五金行的螺絲什麼尺寸都有，所以營造商很少需要另外訂零件。", "vocab": [["hardware store", "五金行"], ["stock", "有庫存、進貨"], ["screw", "螺絲"]]}}, {"id": "l-qr-01", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 1, "source": "hand", "reviewed": true, "v": 1, "accent": "us", "audio": {"dir": "audio/l-qr-01", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "W", "voice": "af_sarah", "text": "Where's the orientation for the new interns being held?"}, {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Mostly business students."}, {"file": "b.mp3", "who": "M", "voice": "am_michael", "text": "In the training room next to the cafeteria."}, {"file": "c.mp3", "who": "M", "voice": "am_michael", "text": "It starts at nine thirty."}]}, "transcriptZh": ["新進實習生的說明會在哪裡舉行？", "大多是商科的學生。", "在員工餐廳旁邊的訓練教室。", "九點半開始。"], "questions": [{"q": null, "options": null, "answer": 1, "explain": {"point": "Where 問地點：找說出「在哪裡」的回應", "why": "問 where's the orientation being held → 回 in the training room next to the cafeteria：給出地點。", "evidence": [2], "wrong": ["答錯問句類型：講實習生是哪些人，不是地點", null, "答錯問句類型：回答開始時間，不是地點"], "vocab": [["orientation", "新人說明會"], ["intern", "實習生"], ["cafeteria", "員工餐廳"]]}}]}, {"id": "l-qr-02", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "mixed", "audio": {"dir": "audio/l-qr-02", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "M", "voice": "bm_george", "text": "I can't open the quarterly sales spreadsheet on the shared drive."}, {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Sales were up again this quarter."}, {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "I'll drive you there after lunch."}, {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "Martin was editing it a few minutes ago."}]}, "transcriptZh": ["我打不開共用磁碟上那份季度業績試算表。", "這一季業績又成長了。", "午餐後我開車載你過去。", "Martin 幾分鐘前還在編輯那個檔案。"], "questions": [{"q": null, "options": null, "answer": 2, "explain": {"point": "敘述句：沒有疑問詞，要找合理的接話", "why": "說打不開試算表 → 回 Martin was editing it：暗示有人正在用、檔案被鎖住，所以才打不開。", "evidence": [3], "wrong": ["同字陷阱：重複 sales 和 quarter，講的是業績", "同字陷阱：drive 在這裡是開車，不是磁碟", null], "vocab": [["spreadsheet", "試算表"], ["shared drive", "共用磁碟"], ["quarterly", "每季的"]]}}]}, {"id": "l-qr-03", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "uk", "audio": {"dir": "audio/l-qr-03", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "M", "voice": "bm_lewis", "text": "Are you taking the train to the trade fair, or driving?"}, {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "Parking near the exhibition centre is really expensive."}, {"file": "b.mp3", "who": "W", "voice": "bf_emma", "text": "The fair opens on Thursday."}, {"file": "c.mp3", "who": "W", "voice": "bf_emma", "text": "I've already trained the new staff."}]}, "transcriptZh": ["你去商展是搭火車還是開車？", "展覽中心附近停車真的很貴。", "商展星期四開幕。", "我已經訓練過新員工了。"], "questions": [{"q": null, "options": null, "answer": 0, "explain": {"point": "選擇疑問句：回答不一定直接說選哪一個", "why": "問搭火車還是開車 → 回展覽中心附近停車很貴：暗示不想開車，會搭火車。", "evidence": [1], "wrong": [null, "同字陷阱：重複 fair，回答的是開幕時間", "同字陷阱：trained 是訓練員工，不是搭火車"], "vocab": [["trade fair", "商展"], ["exhibition centre", "展覽中心（英式拼法）"]]}}]}, {"id": "l-qr-04", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 1, "source": "hand", "reviewed": true, "v": 1, "accent": "us", "audio": {"dir": "audio/l-qr-04", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "Haven't the new name badges come in yet?"}, {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Yes, I came in through the side door."}, {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "Please write your name on the list."}, {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "No, they should be here by Friday."}]}, "transcriptZh": ["新的名牌還沒送到嗎？", "對，我是從側門進來的。", "請把你的名字寫在名單上。", "還沒，應該星期五前會到。"], "questions": [{"q": null, "options": null, "answer": 2, "explain": {"point": "否定問句：照一般 Yes/No 問句回答", "why": "問名牌還沒到嗎 → 回 No, they should be here by Friday：還沒到，come in 改述成 be here。", "evidence": [3], "wrong": ["同字陷阱：came in 講的是自己進門，不是到貨", "同字陷阱：重複 name，沒回答到了沒", null], "vocab": [["name badge", "名牌、識別證"], ["come in", "（貨品）送到"]]}}]}, {"id": "l-qr-05", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 1, "source": "hand", "reviewed": true, "v": 1, "accent": "uk", "audio": {"dir": "audio/l-qr-05", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "W", "voice": "bf_emma", "text": "You're presenting at tomorrow's budget meeting, aren't you?"}, {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "That's right, I'll be the first speaker."}, {"file": "b.mp3", "who": "M", "voice": "bm_george", "text": "Thanks, it's a lovely present."}, {"file": "c.mp3", "who": "M", "voice": "bm_george", "text": "It went better than I expected."}]}, "transcriptZh": ["明天的預算會議你要上台報告，對吧？", "沒錯，我是第一個上台的。", "謝謝，這份禮物好漂亮。", "結果比我預期的好。"], "questions": [{"q": null, "options": null, "answer": 0, "explain": {"point": "附加問句：照一般 Yes/No 問句來回答", "why": "問明天要報告吧 → 回 That's right（＝yes），再用 I'll be the first speaker 改述 presenting。", "evidence": [1], "wrong": [null, "同字陷阱：present 在這裡是禮物", "時態不對：會議明天才開，不能說已經進行得如何"], "vocab": [["present", "報告（動詞）；禮物（名詞）"], ["budget", "預算"]]}}]}, {"id": "l-qr-06", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "us", "audio": {"dir": "audio/l-qr-06", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "W", "voice": "af_sarah", "text": "When will the new price list be ready?"}, {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Monica is still checking the numbers."}, {"file": "b.mp3", "who": "M", "voice": "am_michael", "text": "Yes, the prices are quite reasonable."}, {"file": "c.mp3", "who": "M", "voice": "am_michael", "text": "I made a list of new clients."}]}, "transcriptZh": ["新的價目表什麼時候會好？", "Monica 還在核對數字。", "是的，價格相當合理。", "我列了一份新客戶名單。"], "questions": [{"q": null, "options": null, "answer": 0, "explain": {"point": "間接回答：不給時間，改說「還在處理中」", "why": "問 when will it be ready → 回 Monica is still checking the numbers：間接表示還沒好、要再等。", "evidence": [1], "wrong": [null, "答錯問句類型：when 問句不能用 Yes 回", "同字陷阱：重複 new 和 list，講的是別的名單"], "vocab": [["price list", "價目表"], ["check", "核對"]]}}]}, {"id": "l-qr-07", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "mixed", "audio": {"dir": "audio/l-qr-07", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "M", "voice": "bm_george", "text": "Would you like me to send the contract to the client today?"}, {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "At the post office on Main Street."}, {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "The lawyers haven't finished going over it."}, {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "She's been our client for years."}]}, "transcriptZh": ["要我今天把合約寄給客戶嗎？", "在 Main Street 的郵局。", "律師還沒看完。", "她當我們的客戶很多年了。"], "questions": [{"q": null, "options": null, "answer": 1, "explain": {"point": "間接回答：不說 yes/no，用理由表示「先別寄」", "why": "問要不要今天寄 → 回 the lawyers haven't finished going over it：還沒審完，意思是先別寄。", "evidence": [2], "wrong": ["答錯問句類型：問要不要寄，卻回答地點", null, "同字陷阱：重複 client，沒回應要不要寄"], "vocab": [["contract", "合約"], ["go over", "仔細看過、審閱"]]}}]}, {"id": "l-qr-08", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "mixed", "audio": {"dir": "audio/l-qr-08", "gapMs": 900, "lines": [{"file": "q.mp3", "who": "W", "voice": "af_bella", "text": "How do I get to the staff kitchen from here?"}, {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "Yes, the kitchen was just cleaned."}, {"file": "b.mp3", "who": "M", "voice": "bm_george", "text": "I usually take the bus."}, {"file": "c.mp3", "who": "M", "voice": "bm_george", "text": "Sorry, it's only my first week."}]}, "transcriptZh": ["請問從這裡要怎麼走到員工茶水間？", "是的，茶水間剛打掃過。", "我通常搭公車。", "抱歉，我才來第一個星期。"], "questions": [{"q": null, "options": null, "answer": 2, "explain": {"point": "間接回答：用「我也不熟」的理由回應", "why": "問 how do I get to the kitchen → 回 it's only my first week：間接表示自己也不知道怎麼走。", "evidence": [3], "wrong": ["答錯問句類型：how 問句不能用 Yes 回", "講的是通勤方式，不是從這裡怎麼走", null], "vocab": [["staff kitchen", "員工茶水間"], ["first week", "（上班的）第一週"]]}}]}, {"id": "l-conv-01", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "us", "audio": {"dir": "audio/l-conv-01", "gapMs": 500, "lines": [{"file": "01.mp3", "who": "M", "voice": "am_michael", "text": "Hi Paula, do you have a minute? I heard our department is moving to the fifth floor next month."}, {"file": "02.mp3", "who": "W", "voice": "af_sarah", "text": "That's right. There's more space up there, and we'll finally have our own meeting rooms."}, {"file": "03.mp3", "who": "M", "voice": "am_michael", "text": "Great. Do we need to pack up our own desks?"}, {"file": "04.mp3", "who": "W", "voice": "af_sarah", "text": "Just your personal things. A moving company will handle the furniture and computers."}, {"file": "05.mp3", "who": "M", "voice": "am_michael", "text": "Okay. And when does everything need to be packed?"}, {"file": "06.mp3", "who": "W", "voice": "af_sarah", "text": "By Thursday the 14th. I'll give everyone boxes and labels tomorrow morning.", "say": "By Thursday the fourteenth. I'll give everyone boxes and labels tomorrow morning."}, {"file": "07.mp3", "who": "M", "voice": "am_michael", "text": "I'll be at a client's office all day tomorrow. Could you leave mine on my chair?"}]}, "transcriptZh": ["嗨 Paula，有空嗎？我聽說我們部門下個月要搬到五樓。", "沒錯。樓上空間比較大，我們終於會有自己的會議室了。", "太好了。我們要自己打包辦公桌嗎？", "只要打包個人物品就好。家具和電腦會由搬家公司處理。", "好。那東西要在什麼時候之前打包好？", "14 號星期四之前。我明天早上會發紙箱和標籤給大家。", "我明天一整天都在客戶的辦公室。可以把我的那份放在我椅子上嗎？"], "questions": [{"q": "What are the speakers mainly discussing?", "options": ["Hiring a moving company", "Their team's relocation", "Buying new office furniture", "Booking a meeting room"], "answer": 1, "explain": {"point": "主旨題：答案通常在前一兩句", "why": "男方說 our department is moving to the fifth floor → 選項改述成 their team's relocation。", "evidence": [0], "wrong": ["同字陷阱：搬家公司只是細節，不是主題", null, "同字陷阱：家具是要搬，不是要買", "同字陷阱：會議室是新樓層的好處，不是主題"], "vocab": [["department", "部門"], ["relocation", "搬遷"]]}}, {"q": "According to the woman, what will a moving company do?", "options": ["Pack employees' personal items", "Hand out boxes and labels", "Transport office equipment", "Set up the new meeting rooms"], "answer": 2, "explain": {"point": "細節題：鎖定題目裡的 moving company", "why": "女方說搬家公司會 handle the furniture and computers → 改述成 transport office equipment。", "evidence": [3], "wrong": ["個人物品要員工自己打包，不歸搬家公司", "張冠李戴：紙箱和標籤是女方要發的", null, "同字陷阱：會議室是新樓層的好處，沒人說要布置"], "vocab": [["handle", "處理、負責"], ["equipment", "設備"]]}}, {"q": "What does the man ask the woman to do?", "options": ["Set aside some packing materials for him", "Visit a client with him", "Postpone the packing deadline", "Pack up his personal items"], "answer": 0, "explain": {"point": "請求題：聽 Could you…；mine 要往前一句找", "why": "mine 指前一句的 boxes and labels；leave mine on my chair → 改述成 set aside packing materials。", "evidence": [5, 6], "wrong": [null, "同字陷阱：client 是他明天自己要去拜訪的", "他只問了期限，沒要求延後", "個人物品要自己打包，他沒請她代勞"], "vocab": [["set aside", "留下、預留"], ["label", "標籤"]]}}]}, {"id": "l-conv-02", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "mixed", "audio": {"dir": "audio/l-conv-02", "gapMs": 500, "lines": [{"file": "01.mp3", "who": "W", "voice": "bf_emma", "text": "Hello, I'd like to order sandwiches for a training session this Friday. There'll be 18 of us.", "say": "Hello, I'd like to order sandwiches for a training session this Friday. There'll be eighteen of us."}, {"file": "02.mp3", "who": "M", "voice": "am_michael", "text": "Sure. Each of our platters serves six, so you'd need three. They're $45 each.", "say": "Sure. Each of our platters serves six, so you'd need three. They're forty-five dollars each."}, {"file": "03.mp3", "who": "W", "voice": "bf_emma", "text": "That's fine. Could you deliver them by 11:30?", "say": "That's fine. Could you deliver them by eleven thirty?"}, {"file": "04.mp3", "who": "M", "voice": "am_michael", "text": "I'm afraid our driver doesn't start deliveries until noon on Fridays. But you're welcome to come and get them earlier."}, {"file": "05.mp3", "who": "W", "voice": "bf_emma", "text": "Well, our office is just around the corner, so I'll send my assistant to collect them."}, {"file": "06.mp3", "who": "M", "voice": "am_michael", "text": "Perfect. I'll have everything ready at the front counter by eleven."}]}, "transcriptZh": ["你好，我想為這星期五的訓練課程訂三明治。我們一共 18 個人。", "好的。我們的拼盤一盤六人份，所以您需要三盤。每盤 45 美元。", "可以。能在 11 點半前送到嗎？", "不好意思，我們的司機星期五要到中午才開始外送。不過歡迎您提早過來拿。", "嗯，我們辦公室就在轉角，那我請助理過去拿。", "太好了。我會在 11 點前把東西都放在前面櫃台準備好。"], "questions": [{"q": "Where does the man most likely work?", "options": ["At a training center", "At a courier company", "At a catering business", "At an office supply store"], "answer": 2, "explain": {"point": "場所題：從「我們的」產品和服務推工作地點", "why": "男方說 each of our platters serves six 並報每盤價格 → 他在賣餐點拼盤，改述成 a catering business。", "evidence": [1], "wrong": ["同字陷阱：training session 是女方公司的活動", "聯想陷阱：有司機外送，但他賣的是餐點", null, "沒有人提到辦公用品"], "vocab": [["platter", "拼盤、大淺盤"], ["catering", "餐飲外燴"]]}}, {"q": "What problem does the man mention?", "options": ["The order cannot arrive in time", "The platters are sold out", "The price has gone up", "The kitchen closes at noon"], "answer": 0, "explain": {"point": "細節題：找男方提到的「問題」", "why": "男方說 driver doesn't start deliveries until noon（她要 11:30 前）→ 改述成 cannot arrive in time。", "evidence": [2, 3], "wrong": [null, "同字陷阱：platter 出現過，但沒說賣完", "價格只報了一次，沒說漲價", "同字陷阱：noon 是開始外送的時間"], "vocab": [["I'm afraid", "恐怕（委婉帶出壞消息）"], ["in time", "來得及、及時"]]}}, {"q": "What does the woman decide to do?", "options": ["Order a larger platter", "Move the session to the afternoon", "Wait for the noon delivery", "Have a staff member pick up the food"], "answer": 3, "explain": {"point": "細節題：找女方最後的決定", "why": "女方說 I'll send my assistant to collect them → 改述成 have a staff member pick up the food。", "evidence": [4], "wrong": ["同字陷阱：platter 出現過，但她沒要換大份", "沒有人提到要改訓練時間", "同字陷阱：noon 外送是男方說的，她沒選", null], "vocab": [["collect", "去拿、領取"], ["around the corner", "就在附近"]]}}]}, {"id": "l-conv-03", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "uk", "audio": {"dir": "audio/l-conv-03", "gapMs": 500, "lines": [{"file": "01.mp3", "who": "M", "voice": "bm_lewis", "text": "Lucy, the print shop needs the final brochure by tomorrow morning. Could we go through it together this afternoon?"}, {"file": "02.mp3", "who": "W", "voice": "bf_emma", "text": "I'd like to, but I've got a dentist appointment at three."}, {"file": "03.mp3", "who": "M", "voice": "bm_lewis", "text": "Then how about straight after lunch? It shouldn't take more than half an hour."}, {"file": "04.mp3", "who": "W", "voice": "bf_emma", "text": "That works. And we can skip the back page. Tom went over it yesterday."}, {"file": "05.mp3", "who": "M", "voice": "bm_lewis", "text": "The page with all the prices? Oh, good. That'll save us some time."}, {"file": "06.mp3", "who": "W", "voice": "bf_emma", "text": "So we only need to check the photos and headings. I'll bring a printed copy so we can mark changes by hand."}, {"file": "07.mp3", "who": "M", "voice": "bm_lewis", "text": "Great. I'll book a meeting room for one o'clock, then."}]}, "transcriptZh": ["Lucy，印刷廠明天早上就要拿到手冊的定稿。我們今天下午可以一起看一遍嗎？", "我是很想，可是我三點要去看牙醫。", "那吃完午餐馬上看怎麼樣？應該不會超過半小時。", "可以。而且封底那頁可以跳過，Tom 昨天已經看過了。", "就是列了所有價格的那一頁？喔，太好了，這樣能省一點時間。", "所以我們只要檢查照片和標題就好。我會帶一份印出來的稿子，我們可以直接用筆標出要改的地方。", "好。那我來訂一點的會議室。"], "questions": [{"q": "What does the woman imply when she says, \"I've got a dentist appointment at three\"?", "options": ["She cannot work on the brochure today", "She thinks the deadline should be extended", "She would prefer to meet tomorrow morning", "She will not be free later in the afternoon"], "answer": 3, "explain": {"point": "引句題：看這句話在回應對方的什麼提議", "why": "男方約今天下午，她回三點要看牙醫 → 意思是下午晚一點沒空，改述成 not free later in the afternoon。", "evidence": [0, 1], "wrong": ["後來兩人約午餐後一起看，她今天還是能處理", "沒有人提議延後交稿時間", "印刷廠明早就要，明早才看來不及", null], "vocab": [["go through", "從頭看一遍"], ["appointment", "預約"]]}}, {"q": "What has Tom already done?", "options": ["Taken the photos for the brochure", "Booked a meeting room", "Reviewed the cost information", "Printed a copy of the brochure"], "answer": 2, "explain": {"point": "細節題：兩句接起來看，並分清誰做了什麼", "why": "女方說 Tom went over 封底，男方確認那頁是 all the prices → 改述成 reviewed the cost information。", "evidence": [3, 4], "wrong": ["同字陷阱：photos 是他們還要檢查的部分", "張冠李戴：要訂會議室的是男方", null, "張冠李戴：要帶印好稿子的是女方"], "vocab": [["go over", "仔細看過、檢查"], ["back page", "封底"]]}}, {"q": "What does the man say he will do?", "options": ["Reserve a room for their meeting", "Call the print shop", "Bring a printed copy", "Check the prices again"], "answer": 0, "explain": {"point": "細節題：聽男方說 I'll… 的那一句", "why": "男方說 I'll book a meeting room for one o'clock → book 改述成 reserve a room for their meeting。", "evidence": [6], "wrong": [null, "同字陷阱：print shop 只在開頭提到期限", "張冠李戴：要帶印好稿子的是女方", "價格頁 Tom 看過了，他們決定跳過"], "vocab": [["book", "預訂"], ["heading", "標題"]]}}]}, {"id": "l-conv-04", "type": "listen", "format": "conv", "unit": "conv-next", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "mixed", "audio": {"dir": "audio/l-conv-04", "gapMs": 500, "lines": [{"file": "01.mp3", "who": "W", "voice": "af_bella", "text": "Hi, is this the IT help desk? My laptop keeps shutting down after about twenty minutes.", "say": "Hi, is this the I T help desk? My laptop keeps shutting down after about twenty minutes."}, {"file": "02.mp3", "who": "M", "voice": "bm_george", "text": "That sounds like the battery. Is it one of the models the company handed out last year, or an older one?"}, {"file": "03.mp3", "who": "W", "voice": "af_bella", "text": "An older one. I've had it for four years. We were promised new laptops this spring, but I'm not holding my breath."}, {"file": "04.mp3", "who": "M", "voice": "bm_george", "text": "Well, a new battery should fix the problem for now. We keep spares here, but I'll need the model number to find the right one."}, {"file": "05.mp3", "who": "W", "voice": "af_bella", "text": "Where would I find that?"}, {"file": "06.mp3", "who": "M", "voice": "bm_george", "text": "On a silver sticker on the bottom. Read it out to me, and I'll bring a battery up to your desk this afternoon.", "say": "On a silver sticker on the bottom. Reed it out to me, and I'll bring a battery up to your desk this afternoon."}, {"file": "07.mp3", "who": "W", "voice": "af_bella", "text": "All right, just a second. I'll turn it over."}]}, "transcriptZh": ["你好，請問是 IT 服務台嗎？我的筆電用大概二十分鐘就一直自動關機。", "聽起來是電池的問題。是公司去年發的那幾款，還是比較舊的？", "比較舊的，我已經用了四年。公司答應過今年春天要換新筆電，但我不抱什麼期望。", "那先換一顆新電池應該就能解決。我們這裡有備品，但我需要型號才能找到對的那一顆。", "型號要去哪裡找？", "在底部的一張銀色貼紙上。你念給我聽，我今天下午就把電池送到你的座位。", "好，等我一下，我把它翻過來。"], "questions": [{"q": "What does the woman mean when she says, \"I'm not holding my breath\"?", "options": ["She is not feeling well", "She doubts the new laptops will arrive as promised", "She has been on hold for a long time", "She would rather keep her old laptop"], "answer": 1, "explain": {"point": "引句題：用前後文判斷慣用語的意思", "why": "not holding my breath 指「不抱期望」；接在 promised new laptops this spring 後面 → 她不信新筆電會照承諾送來。", "evidence": [2], "wrong": ["字面陷阱：不是真的憋氣或身體不舒服", null, "同字陷阱：hold 出現過，但她沒說電話等很久", "她只說用了四年，沒說想留著舊的"], "vocab": [["not hold one's breath", "不抱期望"], ["promise", "承諾、答應"]]}}, {"q": "What does the man offer to do this afternoon?", "options": ["Deliver a part to her workspace", "Lend her a newer laptop", "Order a battery from a supplier", "Update her software"], "answer": 0, "explain": {"point": "細節題：找男方說下午能做的事", "why": "男方說 I'll bring a battery up to your desk → 改述成 deliver a part to her workspace。", "evidence": [5], "wrong": [null, "聯想陷阱：新筆電是春天的事，他沒說要借", "同字陷阱：battery 出現過，但備品就在這裡", "沒有人提到更新軟體"], "vocab": [["spare", "備品"], ["for now", "暫時、眼下先"]]}}, {"q": "What will the woman most likely do next?", "options": ["Take her laptop to the help desk", "Wait for a new laptop", "Replace the battery herself", "Check the underside of her laptop"], "answer": 3, "explain": {"point": "下一步題：答案常在最後一兩句", "why": "男方說型號在 on the bottom，女方說 I'll turn it over → 改述成 check the underside of her laptop。", "evidence": [5, 6], "wrong": ["方向相反：是男方要把電池送上樓", "聯想陷阱：新筆電是春天的事，不是接下來", "同字陷阱：電池下午才由男方送來，她現在換不了", null], "vocab": [["model number", "型號"], ["turn over", "翻過來"], ["underside", "底面"]]}}]}, {"id": "l-talk-01", "type": "listen", "format": "talk", "unit": "talk-topic", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "uk", "audio": {"dir": "audio/l-talk-01", "gapMs": 500, "lines": [{"file": "01.mp3", "who": "M", "voice": "bm_george", "text": "Good morning, everyone. This is building management with an update about the lifts on the east side."}, {"file": "02.mp3", "who": "M", "voice": "bm_george", "text": "Starting on Monday, a contractor will be replacing those lifts, and the work should take about two weeks."}, {"file": "03.mp3", "who": "M", "voice": "bm_george", "text": "While the work is going on, please use the lifts by the main entrance, or take the stairs."}, {"file": "04.mp3", "who": "M", "voice": "bm_george", "text": "Those lifts will be very busy between half past eight and nine, so if you can, try to come in a little earlier."}, {"file": "05.mp3", "who": "M", "voice": "bm_george", "text": "If you work on the east side and can't manage the stairs, reception can give you a pass for the goods lift at the back."}, {"file": "06.mp3", "who": "M", "voice": "bm_george", "text": "Maps of the temporary routes will also be posted beside each staircase. Thank you for your patience."}]}, "transcriptZh": ["大家早安。這是大樓管理處的通知，關於東側的電梯。", "從星期一開始，承包商會更換那幾部電梯，工程大約需要兩個星期。", "施工期間，請搭乘大門旁邊的電梯，或是走樓梯。", "那幾部電梯在八點半到九點之間會非常擁擠，所以可以的話，請盡量早一點到。", "如果您在東側上班、走樓梯有困難，可以到櫃台領取後方貨梯的通行證。", "每座樓梯旁邊也會張貼臨時動線的地圖。謝謝大家耐心配合。"], "questions": [{"q": "What is the announcement mainly about?", "options": ["The opening of a new entrance", "A change in office hours", "The installation of new elevators", "A fire safety drill"], "answer": 2, "explain": {"point": "主旨題：答案通常在開頭", "why": "承包商要 replace 東側的 lifts → 改述成 installation of new elevators（lift＝elevator）。", "evidence": [0, 1], "wrong": ["同字陷阱：main entrance 本來就有，不是新開", "只建議早點到，上班時間沒變", null, "聯想陷阱：走樓梯是施工期間的替代方式，不是演習"], "vocab": [["lift", "（英）電梯＝elevator"], ["contractor", "承包商"]]}}, {"q": "Why does the speaker ask listeners to come in earlier?", "options": ["The building will close early", "The remaining elevators will be crowded", "The main entrance will be closed", "Reception will give out passes only in the morning"], "answer": 1, "explain": {"point": "原因題：so 前面是理由；those lifts 要往前找", "why": "those lifts 指前一句大門旁的電梯，very busy 改述成 crowded → 還能搭的電梯會很擠。", "evidence": [2, 3], "wrong": ["聯想陷阱：earlier 是請大家早到，不是大樓早關", null, "同字陷阱：大門旁的電梯照常使用", "櫃台發通行證是另一件事，沒說只在早上"], "vocab": [["half past eight", "八點半"], ["busy", "（地方）擁擠、人多"]]}}, {"q": "What can some listeners get from reception?", "options": ["A map of alternative routes", "A parking permit", "A revised work schedule", "Access to a service elevator"], "answer": 3, "explain": {"point": "細節題：注意限定對象，並聽出強改述", "why": "櫃台可給 a pass for the goods lift → 改述成 access to a service elevator（goods lift＝貨梯）。", "evidence": [4], "wrong": ["地圖是貼在樓梯旁，不是去櫃台拿", "聯想陷阱：pass 是貨梯通行證，不是停車證", "只建議早點到，沒有新的時間表", null], "vocab": [["goods lift", "（英）貨梯＝service elevator"], ["reception", "櫃台、接待處"]]}}]}, {"id": "l-talk-02", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 2, "source": "hand", "reviewed": true, "v": 1, "accent": "us", "audio": {"dir": "audio/l-talk-02", "gapMs": 500, "lines": [{"file": "01.mp3", "who": "W", "voice": "af_sarah", "text": "Hi, this is Nora Blake from the Riverside Business Forum, calling for Mr. Wei.", "say": "Hi, this is Nora Blake from the Riverside Business Forum, calling for Mister Way."}, {"file": "02.mp3", "who": "W", "voice": "af_sarah", "text": "I'm confirming your talk on Thursday, May 8th, at 2 p.m. in Room 4B.", "say": "I'm confirming your talk on Thursday, May eighth, at two P M in Room four B."}, {"file": "03.mp3", "who": "W", "voice": "af_sarah", "text": "Please note that it will now run 40 minutes instead of 30. Another speaker had to cancel, so we've given you part of that time.", "say": "Please note that it will now run forty minutes instead of thirty. Another speaker had to cancel, so we've given you part of that time."}, {"file": "04.mp3", "who": "W", "voice": "af_sarah", "text": "Could you email me your slides by Monday? Our technician will load them onto the laptop in the room before you arrive."}, {"file": "05.mp3", "who": "W", "voice": "af_sarah", "text": "Also, the garage next to the venue fills up early on forum days."}, {"file": "06.mp3", "who": "W", "voice": "af_sarah", "text": "If you'd like a reserved space, just let me know by Wednesday and I'll send you a pass. See you next week!"}]}, "transcriptZh": ["嗨，我是 Riverside 商業論壇的 Nora Blake，要找 Wei 先生。", "跟您確認，您的演講是在 5 月 8 日星期四下午兩點，地點在 4B 會議室。", "請留意，演講時間會從 30 分鐘改成 40 分鐘。另一位講者必須取消，所以我們把那段時間分了一部分給您。", "可以請您在星期一前把投影片寄給我嗎？我們的技術人員會在您到之前先放進會議室的筆電。", "還有，論壇那幾天，會場隔壁的停車場很早就會停滿。", "如果您需要保留車位，星期三前跟我說一聲，我會把停車證寄給您。下週見！"], "questions": [{"q": "Who most likely is Mr. Wei?", "options": ["A guest speaker", "An event organizer", "A technician", "A parking attendant"], "answer": 0, "explain": {"point": "推論題：從 your talk 推聽者的身分", "why": "說 I'm confirming your talk → Mr. Wei 是要來演講的人，改述成 a guest speaker。", "evidence": [1], "wrong": [null, "張冠李戴：論壇主辦方的人是打電話的 Nora", "同字陷阱：technician 是論壇負責放投影片的人", "聯想陷阱：停車場只是附帶提到"], "vocab": [["confirm", "確認"], ["forum", "論壇"]]}}, {"q": "What change does the speaker mention?", "options": ["The talk has moved to Monday", "The talk will be held in a different room", "Mr. Wei will share his session with another speaker", "Mr. Wei will have more time to speak"], "answer": 3, "explain": {"point": "細節題：聽「改變」的訊號 instead of", "why": "說 40 minutes instead of 30 → 改述成 he will have more time to speak。", "evidence": [2], "wrong": ["同字陷阱：Monday 是交投影片的期限", "4B 會議室只是確認，沒有更換", "曲解：另一位講者是取消，時間分給了他", null], "vocab": [["instead of", "取代、而不是"], ["slides", "投影片"], ["technician", "技術人員"]]}}, {"q": "Why does the speaker mention the garage next to the venue?", "options": ["To explain why the talk was extended", "To give directions to Room 4B", "To suggest that Mr. Wei reserve parking in advance", "To ask Mr. Wei to pick up a parking pass"], "answer": 2, "explain": {"point": "意圖題：看這句話接著引出什麼", "why": "先說停車場 fills up early，接著說要車位就 let me know by Wednesday → 用意是建議他提早預約車位。", "evidence": [4, 5], "wrong": ["演講延長是前面另一件事，跟停車場無關", "沒有提到怎麼走到 4B 會議室", null, "停車證是她寄過去，不用自己去拿"], "vocab": [["venue", "會場"], ["fill up", "客滿、停滿"], ["reserved", "保留的、預約的"]]}}]}]}</script>
+<script>
+"use strict";
+// ================================================================ data
+const DATA = JSON.parse(document.getElementById("bank").textContent);
+const UNITS = DATA.units;                     // id -> {zh, group}
+const GRAMMAR_URL = "https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ";
+const INTERVALS = [1, 3, 7, 14];              // Leitner days per level (our own setting, not a research number)
+const WEAK = 0.7;                             // units under this accuracy get picked more often (our setting)
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
+const STOP = '<svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg>';
+const L = "ABCD";
+
+let ITEMS = DATA.items.slice();               // hand-written items, plus Claude-added ones merged at load
+let BY = {};
+function index() { BY = Object.fromEntries(ITEMS.map(x => [x.id, x])); }
+index();
+
+// ================================================================ helpers
+const $ = s => document.querySelector(s);
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function zh(e) { e.lang = "zh-Hant"; return e; }
+function btn(cls, text, fn) { const b = el("button", cls, text); b.type = "button"; if (fn) b.onclick = fn; return b; }
+function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+function day(d = new Date()) { const z = n => String(n).padStart(2, "0"); return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate()); }
+function addDays(n) { const d = new Date(); d.setDate(d.getDate() + n); return day(d); }
+function fmtS(ms) { return ms == null ? "–" : Math.round(ms / 1000) + " 秒"; }
+function pct(a, b) { return b ? Math.round(a / b * 100) + "%" : "–"; }
+function toast(t) { const e = $("#toast"); e.textContent = t; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 1800); }
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function seeded(seed) { let a = seed; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function shuffle(a, rnd = Math.random) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function unitName(u) { return (UNITS[u] && UNITS[u].zh) || u; }
+function isGap(item) { return item.format === "gap"; }
+function qKeys(item) { return isGap(item) || item.format === "qr" ? [item.id] : item.questions.map((_, i) => item.id + ":" + i); }
+function qOf(key) { const [id, q] = key.split(":"); const item = BY[id]; if (!item) return null; return { item, qi: q == null ? 0 : Number(q) }; }
+function unitOfKey(key) { const x = qOf(key); return x ? x.item.unit : ""; }
+
+// ================================================================ storage: db when this is the owner in claude.ai, else localStorage
+const Store = {
+  mode: "local", db: null, queue: {},
+  lsGet(coll) { try { return JSON.parse(localStorage.getItem("toeic:" + coll) || "{}"); } catch { return {}; } },
+  lsPut(coll, map) { try { localStorage.setItem("toeic:" + coll, JSON.stringify(map)); } catch {} },
+  async init() {
+    if (!window.claude?.use) return;
+    try {
+      const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+      if (db && user && await user.isOwner()) { this.db = db; this.mode = "db"; }
+    } catch {}
+  },
+  async list(coll) {
+    if (this.mode === "local") return this.lsGet(coll);
+    const snap = await this.db.collection(coll).get();
+    return Object.fromEntries(snap.docs.map(d => [d.id, d.data()]));
+  },
+  async getProfile() {
+    if (this.mode === "local") return this.lsGet("profile").main || null;
+    const s = await this.db.doc("toeic/profile").get();
+    return s.exists ? s.data() : null;
+  },
+  put(coll, id, data) {           // one write at a time per document
+    const key = coll + "/" + id;
+    if (this.mode === "local") { const m = this.lsGet(coll); m[id] = data; this.lsPut(coll, m); return Promise.resolve(); }
+    const prev = this.queue[key] || Promise.resolve();
+    const path = coll === "profile" ? "toeic/profile" : coll + "/" + id;
+    const p = prev.then(() => this.db.doc(path).set(JSON.parse(JSON.stringify(data)))).catch(e => {
+      if (e && e.code === "quota_exceeded") toast("帳號儲存空間滿了，這筆沒存到");
+      else if (e && e.code === "unavailable") return wait(800 + Math.random() * 800).then(() => this.db.doc(path).set(data)).catch(() => {});
+    });
+    this.queue[key] = p; return p;
+  },
+};
+// collections (db paths are owner-only, see capabilities): toeic/profile, toeic_bank/<key>, toeic_attempts/<session>, toeic_marks/<itemId>, toeic_added/<itemId>
+
+let P = null;    // profile
+let B = {};      // wrong bank, key -> entry
+let M = {};      // marks, itemId -> {starred, note, flagged, flagNote, at}
+function freshProfile() { return { settings: { pace: 0, listenSpeed: 1, strictListen: false, theme: "system" }, totals: { n: 0, ok: 0, guess: 0 }, units: {}, streak: { days: 0, lastDay: "" }, seen: {} }; }
+function saveProfile() { return Store.put("profile", "main", P); }
+function saveBank(key) { return Store.put("toeic_bank", key, B[key]); }
+function saveMark(id) { M[id].at = Date.now(); return Store.put("toeic_marks", id, M[id]); }
+
+async function load() {
+  await Store.init();
+  try {
+    P = await Store.getProfile();
+    B = await Store.list("toeic_bank");
+    M = await Store.list("toeic_marks");
+    const added = await Store.list("toeic_added");
+    for (const [id, x] of Object.entries(added)) {
+      if (x.retired || BY[id] || !x.type || !x.explain && !x.questions) continue;
+      ITEMS.push({ ...x, id, source: x.source || "claude", reviewed: false });
+    }
+    index();
+  } catch (e) {
+    Store.mode = "local"; P = Store.lsGet("profile").main || null; B = Store.lsGet("toeic_bank"); M = Store.lsGet("toeic_marks");
+  }
+  P = Object.assign(freshProfile(), P || {});
+  P.settings = Object.assign(freshProfile().settings, P.settings || {});
+  applyTheme();
+  // db is empty but this browser has older local records: offer to bring them over once
+  if (Store.mode === "db" && !Object.keys(B).length && !P.totals.n) {
+    const lp = Store.lsGet("profile").main, lb = Store.lsGet("toeic_bank");
+    if ((lp && lp.totals && lp.totals.n) || Object.keys(lb).length) importOffer = { lp, lb, lm: Store.lsGet("toeic_marks") };
+  }
+}
+let importOffer = null;
+async function doImport() {
+  const { lp, lb, lm } = importOffer; importOffer = null;
+  if (lp) { P = Object.assign(freshProfile(), lp); await saveProfile(); }
+  for (const [k, v] of Object.entries(lb)) { B[k] = v; await saveBank(k); }
+  for (const [k, v] of Object.entries(lm || {})) { M[k] = v; await saveMark(k); }
+  toast("本機紀錄已匯入帳號"); home();
+}
+
+function applyTheme() {
+  const t = P.settings.theme;
+  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  else document.documentElement.removeAttribute("data-theme");
+}
+
+// ================================================================ audio: one element for the whole page
+const au = new Audio(); au.preload = "auto";
+let playTok = null, playDone = null;
+function stopAudio() { playTok = null; au.pause(); if (playDone) { const d = playDone; playDone = null; d(false); } }
+function playOne(src) {
+  return new Promise(res => {
+    playDone = res;
+    au.onended = () => { playDone = null; res(true); };
+    au.onerror = () => { playDone = null; res(false); };
+    au.src = src; au.playbackRate = P.settings.listenSpeed;
+    au.play().catch(() => { playDone = null; res(false); });
+  });
+}
+async function playLines(item, idxs, gap, onLine) {
+  stopAudio();
+  const tok = playTok = {};
+  let okAll = true;
+  for (let n = 0; n < idxs.length; n++) {
+    const i = idxs[n], ln = item.audio.lines[i];
+    onLine && onLine(i);
+    const ok = await playOne(item.audio.dir + "/" + ln.file);
+    if (playTok !== tok) { onLine && onLine(-1); return null; }
+    if (!ok) okAll = false;
+    if (n < idxs.length - 1) { await wait(gap); if (playTok !== tok) { onLine && onLine(-1); return null; } }
+  }
+  playTok = null; onLine && onLine(-1);
+  return okAll;
+}
+
+// ================================================================ top bar and views
+let view = "home";
+function bar(left, title, right) {
+  const b = $("#bar"); b.textContent = "";
+  if (left) b.append(left);
+  const h = el("h1", null, title); b.append(h, el("span", "sp"));
+  if (right) b.append(right);
+}
+function back(label, fn) { return btn("link", "‹ " + label, fn); }
+function show(v) { view = v; stopAudio(); clearInterval(paceTimer); window.scrollTo(0, 0); $("#app").textContent = ""; }
+
+// ================================================================ stats helpers
+function unitStat(u) { return P.units[u] || { n: 0, ok: 0, guess: 0, msSum: 0, msN: 0 }; }
+function dueKeys() { const t = day(); return Object.keys(B).filter(k => { const e = B[k]; return e && !e.graduatedAt && !e.removedAt && e.due <= t && qOf(k); }); }
+function activeBank(k) { const e = B[k]; return e && !e.graduatedAt && !e.removedAt; }
+function unitsIn(group) { return Object.keys(UNITS).filter(u => UNITS[u].group === group && ITEMS.some(x => x.unit === u)); }
+
+// ================================================================ home
+function home() {
+  show("home");
+  const app = $("#app");
+  bar(null, "TOEIC 練習室", el("span", "sync", Store.mode === "db" ? "已同步到帳號" : "本機儲存"));
+
+  if (importOffer) {
+    const c = el("div", "card import");
+    c.append(el("p", null, "這個瀏覽器裡有之前的練習紀錄，要匯入到帳號嗎？匯入後手機和電腦都看得到。"));
+    const r = el("div", "row"); r.append(btn("btn primary sm", "匯入", doImport), btn("btn ghost sm", "不用", () => { importOffer = null; home(); }));
+    c.append(r); app.append(c);
+  }
+
+  const saved = loadSession();
+  if (saved) {
+    const c = el("div", "card resume");
+    const d = el("div"); d.append(el("b", null, "繼續上次的場次？"), el("div", "small", saved.label + " · 做到第 " + (saved.results.length) + " 題"));
+    c.append(d, btn("btn primary sm", "繼續", () => { S = saved; runCard(); }), btn("btn ghost sm", "放棄", () => { clearSession(); home(); }));
+    app.append(c);
+  }
+
+  const due = dueKeys();
+  const d = el("button", "card due" + (due.length ? "" : " none"));
+  d.type = "button"; d.style.width = "100%"; d.style.textAlign = "left";
+  const txt = el("div");
+  if (due.length) { txt.append(el("div", null, "今日待複習"), el("div", "small muted", "錯題庫裡到期的題，答對才會往後排。")); d.onclick = () => startReview(due); }
+  else { txt.append(el("div", null, "錯題庫沒有到期的題"), el("div", "small muted", Object.keys(B).some(activeBank) ? "下次到期：" + nextDue() : "答錯或勾「我是猜的」的題會進來。")); d.disabled = true; }
+  d.append(el("b", null, String(due.length)), txt);
+  app.append(d);
+
+  app.append(el("h2", null, "快速開始"));
+  const q = el("div", "quick");
+  const mk = (cls, title, sub, fn) => { const b = btn(cls); b.append(el("b", null, title), el("span", null, sub)); b.onclick = fn; return b; };
+  q.append(
+    mk("", "文法 10 題", "Part 5 型單句填空", () => startSet({ type: "grammar", n: 10, label: "文法 10 題" })),
+    mk("", "字彙 10 題", "搭配詞、近義、商業字", () => startSet({ type: "vocab", n: 10, label: "字彙 10 題" })),
+    mk("", "聽力 5 題", "應答、對話、短講", () => startSet({ type: "listen", n: 5, label: "聽力 5 題" })),
+    mk("", "我的收藏", countStars() + " 題", () => startStarred()),
+    mk("mix", "綜合 20 題", "文法 10 · 字彙 6 · 聽力 4，聽力放最後", () => startMixed()));
+  app.append(q);
+
+  const added = ITEMS.filter(x => x.source !== "hand" && !P.seen[qKeys(x)[0]]);
+  if (added.length) {
+    app.append(el("h2", null, "Claude 給你的加練"));
+    const b = btn("unit"); b.append(el("b", null, added.length + " 題新題"), el("span", "go", "開始 ›"), el("span", "st", "Claude 出題・未審核"));
+    b.onclick = () => startList(added.map(x => x.id), "Claude 加練"); app.append(b);
+  }
+
+  app.append(el("h2", null, "依考點練習"));
+  for (const [g, title] of [["grammar", "文法"], ["vocab", "字彙"], ["listen", "聽力"]]) {
+    const us = unitsIn(g); if (!us.length) continue;
+    app.append(el("div", "group-h", title));
+    const box = el("div", "units");
+    for (const u of us) {
+      const s = unitStat(u), b = btn("unit");
+      b.append(el("b", null, unitName(u)), el("span", "go", ITEMS.filter(x => x.unit === u).length + " 題 ›"),
+        el("span", "st", s.n ? "做過 " + s.n + " · 正確 " + pct(s.ok, s.n) + " · 猜對 " + s.guess : "還沒做過"));
+      b.onclick = () => startSet({ unit: u, n: 10, label: unitName(u), showUnit: true });
+      box.append(b);
+    }
+    app.append(box);
+  }
+
+  const nav = el("div", "nav");
+  const nb = (t, s, fn) => { const b = btn(null, t, fn); b.append(el("span", null, s)); return b; };
+  nav.append(nb("錯題庫", String(Object.keys(B).filter(activeBank).length), bankView), nb("統計", P.streak.days ? "連續 " + P.streak.days + " 天" : "–", statsView), nb("設定", "", settingsView));
+  app.append(nav);
+}
+function nextDue() { const ds = Object.values(B).filter(e => e && !e.graduatedAt && !e.removedAt).map(e => e.due).sort(); return ds[0] || "–"; }
+function countStars() { return Object.values(M).filter(m => m && m.starred).length; }
+
+// ================================================================ building a session
+let S = null;
+function newSession(cards, label, opts = {}) {
+  S = { id: "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), label, cards, i: 0, results: [], startedAt: Date.now(), review: !!opts.review, showUnit: !!opts.showUnit, listenAt: opts.listenAt ?? -1 };
+  saveSession(); runCard();
+}
+function saveSession() { try { localStorage.setItem("toeic:current", JSON.stringify(S)); } catch {} }
+function loadSession() { try { const s = JSON.parse(localStorage.getItem("toeic:current") || "null"); return s && s.cards && s.i < s.cards.length && s.cards.every(c => BY[c.id]) ? s : null; } catch { return null; } }
+function clearSession() { try { localStorage.removeItem("toeic:current"); } catch {} }
+
+// Priority: never seen first, then seen longest ago; weak units come up earlier. Items active in the bank go to review instead.
+function pick(filter, n, countQs) {
+  const now = Date.now();
+  const pool = ITEMS.filter(x => filter(x) && !qKeys(x).every(activeBank));
+  const scored = pool.map(x => {
+    const seen = Math.max(0, ...qKeys(x).map(k => P.seen[k] || 0));
+    const s = unitStat(x.unit), weak = s.n >= 3 && s.ok / s.n < WEAK;
+    return { x, score: (seen ? 1 : 0) * 1e13 + seen - (weak ? 7 * 864e5 : 0) + Math.random() * 36e5, seenAt: seen, now };
+  }).sort((a, b) => a.score - b.score);
+  const out = []; let count = 0;
+  for (const { x } of scored) {
+    if (count >= n) break;
+    const qn = countQs ? (x.format === "gap" || x.format === "qr" ? 1 : x.questions.length) : 1;
+    out.push(x); count += qn;
+  }
+  return out;
+}
+function cardFor(x, qs) { return { id: x.id, qs: qs || (x.format === "gap" || x.format === "qr" ? [0] : x.questions.map((_, i) => i)) }; }
+function startSet({ type, unit, n, label, showUnit }) {
+  const f = x => (type ? x.type === type : true) && (unit ? x.unit === unit : true);
+  const items = pick(f, n, type === "listen" || (unit && UNITS[unit]?.group === "listen"));
+  if (!items.length) { toast("這個範圍目前沒有可以練的題（可能都在錯題庫裡）"); return; }
+  newSession(shuffle(items).map(x => cardFor(x)), label, { showUnit });
+}
+function startMixed() {
+  const g = pick(x => x.type === "grammar", 10), v = pick(x => x.type === "vocab", 6), l = pick(x => x.type === "listen", 4, true);
+  const gv = shuffle(g.concat(v));
+  newSession(gv.concat(l).map(x => cardFor(x)), "綜合 20 題", { listenAt: l.length ? gv.length : -1 });
+}
+function startList(ids, label) { newSession(ids.filter(id => BY[id]).map(id => cardFor(BY[id])), label); }
+function startStarred() {
+  const ids = Object.keys(M).filter(id => M[id] && M[id].starred && BY[id]);
+  if (!ids.length) { toast("還沒有收藏的題。解析上方的 ☆ 可以收藏"); return; }
+  startList(shuffle(ids), "我的收藏");
+}
+function startReview(keys) {
+  const byItem = {};
+  for (const k of keys) { const x = qOf(k); if (!x) continue; (byItem[x.item.id] = byItem[x.item.id] || []).push(x.qi); }
+  const cards = shuffle(Object.entries(byItem).map(([id, qs]) => cardFor(BY[id], qs.sort())));
+  newSession(cards, "錯題複習", { review: true, showUnit: true });
+}
+
+// ================================================================ one card
+let paceTimer = null;
+function runCard() {
+  if (S.i >= S.cards.length) return summary();
+  show("session");
+  const card = S.cards[S.i], item = BY[card.id];
+  bar(back("離開", () => { saveSession(); home(); }), "", el("span", "progress", (S.i + 1) + " / " + S.cards.length));
+  const app = $("#app");
+  if (S.listenAt === S.i) app.append(el("div", "divider", "🎧 接下來是聽力，戴上耳機"));
+  const head = el("div", "qhead");
+  if (S.showUnit || S.review) head.append(el("span", "badge", unitName(item.unit)));
+  if (S.review) { const e = B[qKeys(item)[card.qs[0]]] || B[item.id]; if (e) head.append(el("span", "badge bank", (e.wrongCount ? "錯過 " + e.wrongCount + " 次" : "上次是猜的") + " · 這題考的是規則")); }
+  if (item.source !== "hand") head.append(el("span", "badge claude", "Claude 出題・未審核"));
+  const dots = el("span", "dots"); for (let i = 1; i <= 3; i++) dots.append(el("i", i <= item.level ? "on" : "")); dots.title = "難度 " + item.level;
+  head.append(el("span", "sp"), dots); head.querySelector(".sp").style.flex = "1";
+  app.append(head);
+  if (isGap(item)) gapCard(app, item, card); else listenCard(app, item, card);
+}
+
+function optionOrder(item, qi, sid) { const n = isGap(item) ? item.options.length : item.questions[qi].options.length; const idx = [...Array(n).keys()]; return sid ? shuffle(idx, seeded(hash(item.id + ":" + qi + ":" + sid))) : idx; }
+
+function gapCard(app, item, card) {
+  const parts = item.stem.split("______");
+  const stem = el("p", "stem en");
+  stem.append(parts[0]); const blank = el("span", "blank", " "); stem.append(blank); stem.append(parts.slice(1).join("______"));
+  app.append(stem);
+  const pace = P.settings.pace;
+  let bar_ = null;
+  if (pace) { bar_ = el("div", "pace"); bar_.append(el("i")); app.append(bar_); }
+  const g = guessToggle(); app.append(g.el);
+  const opts = el("div", "opts"), order = optionOrder(item, 0, S.id), buttons = [];
+  order.forEach((oi, pos) => {
+    const b = btn("opt"); b.append(el("span", "l", L[pos]), el("span", "en", item.options[oi]));
+    b.dataset.oi = oi; b.onclick = () => answer(oi); opts.append(b); buttons.push(b);
+  });
+  app.append(opts);
+  const after = el("div"); app.append(after);
+  const t0 = performance.now();
+  if (pace) {
+    paceTimer = setInterval(() => { const left = 1 - (performance.now() - t0) / (pace * 1000); bar_.firstChild.style.width = Math.max(0, left * 100) + "%"; if (left <= 0) { bar_.classList.add("over"); clearInterval(paceTimer); } }, 200);
+  }
+  keys.answer = pos => buttons[pos] && !buttons[pos].disabled && buttons[pos].click();
+  keys.guess = () => g.toggle();
+  function answer(oi) {
+    clearInterval(paceTimer);
+    const ms = performance.now() - t0, ok = oi === item.answer, guess = g.value();
+    for (const b of buttons) { b.disabled = true; const x = Number(b.dataset.oi); b.classList.add(x === item.answer ? "right" : x === oi ? "wrong" : "dim"); }
+    g.el.remove();
+    blank.textContent = item.options[item.answer]; blank.className = "blank fill";
+    const r = record(item, 0, oi, ok, guess, ms, pace ? ms > pace * 1000 : false);
+    after.append(resultLine(item, ok, ms, r), explainGap(item, oi, order));
+    nextButton(after);
+  }
+}
+
+function guessToggle() {
+  const lab = el("label", "guess"), box = el("input"); box.type = "checkbox"; box.id = "guess-" + S.i;
+  lab.htmlFor = box.id; lab.append(box, "我是猜的");
+  return { el: lab, value: () => box.checked, toggle: () => { box.checked = !box.checked; } };
+}
+
+function resultLine(item, ok, ms, rec) {
+  const r = el("div", "result");
+  r.append(el("b", ok ? "ok" : "no", ok ? (rec.guess ? "✔ 猜對了" : "✔ 答對了") : "✘ 答錯了"));
+  if (ms != null) r.append(el("span", "muted small", fmtS(ms) + (rec.timedOut ? " · 超過自訂節奏" : "")));
+  if (rec.banked) r.append(el("span", "badge bank", rec.review ? "留在錯題庫" : "已加入錯題庫"));
+  if (rec.graduated) r.append(el("span", "badge", "從錯題庫畢業"));
+  else if (rec.review && !rec.banked && B[rec.key]) r.append(el("span", "badge", "下次複習 " + B[rec.key].due.slice(5).replace("-", "/")));
+  r.append(el("span", "sp"));
+  const m = M[item.id] || {};
+  const star = btn("icon-btn", m.starred ? "★ 收藏" : "☆ 收藏"); star.setAttribute("aria-pressed", String(!!m.starred));
+  star.onclick = () => { M[item.id] = Object.assign(M[item.id] || {}, { starred: !(M[item.id] || {}).starred }); saveMark(item.id); star.textContent = M[item.id].starred ? "★ 收藏" : "☆ 收藏"; star.setAttribute("aria-pressed", String(M[item.id].starred)); };
+  keys.star = () => star.click();
+  const flag = btn("icon-btn", m.flagged ? "⚑ 已回報" : "⚑ 有問題"); flag.setAttribute("aria-pressed", String(!!m.flagged));
+  flag.onclick = () => flagForm(r, item, flag);
+  r.append(star, flag);
+  return r;
+}
+function flagForm(after, item, flagBtn) {
+  if (after.nextSibling && after.nextSibling.classList && after.nextSibling.classList.contains("flagbox")) return;
+  const box = el("div", "flagbox card"), ta = el("textarea"); ta.id = "flag-" + item.id; ta.placeholder = "哪裡有問題？例如：B 好像也對、翻譯怪怪的";
+  ta.value = (M[item.id] || {}).flagNote || "";
+  const r = el("div", "row");
+  r.append(btn("btn primary sm", "送出", () => { M[item.id] = Object.assign(M[item.id] || {}, { flagged: true, flagNote: ta.value.trim() }); saveMark(item.id); flagBtn.textContent = "⚑ 已回報"; flagBtn.setAttribute("aria-pressed", "true"); box.remove(); toast("收到了，Claude 下次會看這題"); }),
+    btn("btn ghost sm", "取消", () => box.remove()));
+  box.append(zh(el("label", "small", "告訴 Claude 這題哪裡不對")), ta, r);
+  after.after(box); ta.focus();
+}
+
+function wrongList(ops, wrong, answerIdx, chosen, letterOf) {
+  const ul = el("ul", "wrongs");
+  const idx = ops.map((_, i) => i).filter(i => i !== answerIdx);
+  idx.sort((a, b) => (b === chosen) - (a === chosen) || letterOf(a).localeCompare(letterOf(b)));
+  for (const i of idx) {
+    const li = el("li", i === chosen ? "mine" : "");
+    li.append(el("span", "o", "(" + letterOf(i) + ") " + ops[i]), zh(el("span", null, wrong[i] || "")));
+    ul.append(li);
+  }
+  return ul;
+}
+
+function explainGap(item, chosen, order = optionOrder(item, 0)) {
+  const e = item.explain, box = el("div", "exp");
+  const letterOf = i => L[order.indexOf(i)];
+  const top = el("div"); top.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", e.point)));
+  const why = el("div"); why.append(el("span", "k", "為什麼是 (" + letterOf(item.answer) + ") " + item.options[item.answer]), zh(el("p", null, e.why)));
+  const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList(item.options, e.wrong, item.answer, chosen, letterOf));
+  const full = el("p", "full en"); full.append(item.stem.replace("______", item.options[item.answer])); full.append(zh(el("span", "zh", e.zh)));
+  box.append(top, why, others, full, moreRow(item, box, { chosen }));
+  return box;
+}
+
+function moreRow(item, box, ctx) {
+  const row = el("div", "more");
+  const extra = el("div"); extra.hidden = true;
+  const vb = btn("btn sm ghost", "詞彙 ▾");
+  const voc = ctx.vocab || item.explain?.vocab || [];
+  if (voc.length) {
+    vb.onclick = () => { const on = extra.dataset.k !== "v" || extra.hidden; extra.textContent = ""; extra.dataset.k = "v"; extra.hidden = !on; if (on) { const ul = el("ul", "vocab"); for (const [w, z] of voc) { const li = el("li"); li.append(el("b", null, w), " ", zh(el("span", null, z))); ul.append(li); } extra.append(ul); } };
+    row.append(vb);
+  }
+  if (item.type === "grammar") { const a = el("a", "btn sm ghost", "文法頁：" + unitName(item.unit) + " ↗"); a.href = GRAMMAR_URL; a.target = "_blank"; a.rel = "noopener"; row.append(a); }
+  if (sample) {
+    const ab = btn("btn sm ghost", "問 Claude ▾");
+    ab.onclick = () => { const on = extra.dataset.k !== "a" || extra.hidden; extra.textContent = ""; extra.dataset.k = "a"; extra.hidden = !on; if (on) extra.append(askBox(item, ctx)); };
+    row.append(ab);
+  }
+  const wrap = el("div"); wrap.style.display = "grid"; wrap.style.gap = "8px"; wrap.append(row, extra);
+  return wrap;
+}
+
+// ================================================================ ask Claude (only on a tap; marked as unreviewed)
+let sample = null;
+function askBox(item, ctx) {
+  const box = el("div", "ask"), ta = el("textarea"); ta.id = "ask-" + item.id + "-" + (ctx.qi || 0);
+  ta.placeholder = "還想問什麼？例如：為什麼 C 不行？";
+  const out = el("div", "ans"); out.hidden = true;
+  const note = el("span", "badge claude", "Claude 即時回答・未審核");
+  const go = btn("btn primary sm", "問", async () => {
+    const q = ta.value.trim(); if (!q) return;
+    go.disabled = true; out.hidden = false; out.textContent = "思考中…";
+    const prompt = [
+      "你是多益老師。學生剛做完一題，想問一個問題。用繁體中文（台灣用語）回答，三句以內，只回答他問的事，不要推翻下面的標準答案；如果你認為標準答案有問題，只說「這題可能有爭議，建議按『有問題』回報」並說明原因。",
+      "題目資料：" + JSON.stringify(ctx.qi != null && !isGap(item) ? { transcript: item.audio.lines.map(l => l.who + ": " + l.text), question: item.questions[ctx.qi] } : { stem: item.stem, options: item.options, answer: item.options[item.answer], explain: item.explain }),
+      "學生選的是：" + (ctx.chosenText || (ctx.chosen != null && item.options ? item.options[ctx.chosen] : "（未記錄）")),
+      "學生的問題：" + q,
+    ].join("\n");
+    try {
+      await sample(prompt, { modelTier: "quick", cache: false, onText: ({ text }) => { out.textContent = text; } });
+    } catch (e) {
+      out.textContent = e && e.text ? e.text : (e && e.code === "rate_limited" ? "Claude 現在比較忙，等一下再問。" : e && (e.code === "not_granted" || e.code === "sampling_disabled") ? "這個頁面沒有被允許使用 Claude。" : "這次沒有問到，再試一次。");
+      if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) sample = null;
+    }
+    go.disabled = false;
+  });
+  const r = el("div", "row"); r.append(note, el("span", "sp"), go);
+  box.append(ta, r, out);
+  setTimeout(() => ta.focus(), 0);
+  return box;
+}
+
+// ================================================================ listening card
+function listenCard(app, item, card) {
+  const strict = P.settings.strictListen;
+  const player = el("div", "player"), play = btn("play"); play.innerHTML = PLAY; play.setAttribute("aria-label", "播放");
+  const state = el("div", "state");
+  const speed = el("div", "speed");
+  for (const v of [0.85, 1, 1.15]) { const b = btn(null, v + "×"); b.setAttribute("aria-pressed", String(P.settings.listenSpeed === v)); b.onclick = () => { P.settings.listenSpeed = v; au.playbackRate = v; saveProfile(); speed.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); }; speed.append(b); }
+  player.append(play, state, speed);
+  app.append(player);
+  const qr = item.format === "qr";
+  let played = false, playing = false, answeredAll = false;
+  state.textContent = qr ? "按播放，聽一句話和三個回應。" : "按播放。題目和選項可以邊聽邊看。";
+  if (strict) state.textContent += " 嚴格模式：只能播一次。";
+  const all = item.audio.lines.map((_, i) => i);
+  const qs = card.qs, done = {};
+  const blocks = [];
+  let qrButtons = [];
+  async function run() {
+    if (playing) { stopAudio(); return; }
+    if (strict && played && !answeredAll) return;
+    playing = true; play.innerHTML = STOP; play.setAttribute("aria-label", "停止");
+    const ok = await playLines(item, all, item.audio.gapMs || 600, i => {
+      if (qr) qrButtons.forEach((b, k) => b.classList.toggle("now", i === k + 1));
+      state.textContent = i < 0 ? "" : qr ? (i === 0 ? "問句" : "回應 " + L[i - 1]) : "第 " + (i + 1) + " / " + all.length + " 句";
+    });
+    playing = false; play.innerHTML = PLAY; play.setAttribute("aria-label", "重播");
+    if (ok === false) state.textContent = "有音檔沒有載入。可以再按一次播放。";
+    else if (ok) state.textContent = strict && !answeredAll ? "播完了，請作答。" : "播完了，可以重播。";
+    if (ok !== null || !strict) { played = true; qrButtons.forEach(b => { if (!b.dataset.done) b.disabled = false; }); }
+    if (strict && !answeredAll && ok !== false) { play.disabled = true; }
+  }
+  play.onclick = run;
+  keys.replay = () => !play.disabled && run();
+  const t0 = performance.now();
+  for (const qi of qs) {
+    const q = item.questions[qi], blk = el("div");
+    if (!qr) { const p = el("p", "lq en"); p.append(el("span", "n", (qs.length > 1 ? (qs.indexOf(qi) + 1) + "." : "")), q.q); blk.append(p); }
+    const g = guessToggle(); blk.append(g.el);
+    const opts = el("div", "opts" + (qr ? " qr-opts" : "")), buttons = [];
+    const order = qr ? [0, 1, 2] : optionOrder(item, qi, S.id);
+    order.forEach((oi, pos) => {
+      const b = btn("opt"); b.append(el("span", "l", L[pos])); if (!qr) b.append(el("span", "en", q.options[oi]));
+      b.dataset.oi = oi; b.onclick = () => answerQ(oi); if (qr) b.disabled = true; opts.append(b); buttons.push(b);
+    });
+    if (qr) qrButtons = buttons;
+    blk.append(opts);
+    const after = el("div"); blk.append(after);
+    blocks.push({ qi, buttons, g });
+    app.append(blk);
+    function answerQ(oi) {
+      if (done[qi] != null) return;
+      done[qi] = oi;
+      const ok = oi === q.answer, guess = g.value();
+      for (const b of buttons) { b.disabled = true; b.dataset.done = "1"; const x = Number(b.dataset.oi); b.classList.remove("now"); b.classList.add(x === q.answer ? "right" : x === oi ? "wrong" : "dim"); }
+      g.el.remove();
+      const rec = record(item, qi, oi, ok, guess, null, false);
+      const letterOf = i => L[order.indexOf(i)];
+      const box = el("div", "exp");
+      const top = el("div"); top.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", q.explain.point)));
+      const optText = i => qr ? item.audio.lines[i + 1].text : q.options[i];
+      const why = el("div"); why.append(el("span", "k", "為什麼是 (" + letterOf(q.answer) + ")" + (qr ? "" : " " + q.options[q.answer])), zh(el("p", null, q.explain.why)));
+      const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList([...Array(order.length).keys()].map(optText), q.explain.wrong, q.answer, oi, letterOf));
+      box.append(top, why, others, moreRow(item, box, { qi, vocab: q.explain.vocab, chosenText: optText(oi) }));
+      after.append(resultLine(item, ok, null, rec), box);
+      if (Object.keys(done).length === qs.length) finishListen();
+      else keys.answer = pos => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.buttons[pos] && !nb.buttons[pos].disabled && nb.buttons[pos].click(); };
+    }
+  }
+  keys.answer = pos => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.buttons[pos] && !nb.buttons[pos].disabled && nb.buttons[pos].click(); };
+  keys.guess = () => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.g.toggle(); };
+  const tail = el("div"); app.append(tail);
+  function finishListen() {
+    answeredAll = true; play.disabled = false;
+    const ev = new Set(qs.flatMap(qi => item.questions[qi].explain.evidence || []));
+    const h = el("div", "row"); h.style.margin = "18px 0 8px";
+    const zb = btn("btn sm ghost", "顯示中文 ▾");
+    h.append(el("b", null, "逐字稿"), el("span", "sp"), zb);
+    const ul = el("ul", "script");
+    item.audio.lines.forEach((ln, i) => {
+      const li = el("li", ev.has(i) ? "ev" : "");
+      const t = el("div", "t en"); t.append(ln.text); const z = zh(el("small", null, (item.transcriptZh || [])[i] || "")); z.hidden = true; t.append(z);
+      const lab = qr ? (i === 0 ? "Q" : L[i - 1]) : ln.who;
+      const mb = btn("mini"); mb.innerHTML = PLAY; mb.setAttribute("aria-label", "重播這一句"); mb.onclick = () => playLines(item, [i], 0);
+      li.append(el("span", "who", lab), t, mb); ul.append(li);
+    });
+    zb.onclick = () => { const on = zb.textContent.includes("▾"); ul.querySelectorAll("small").forEach(s => s.hidden = !on); zb.textContent = on ? "隱藏中文 ▴" : "顯示中文 ▾"; };
+    tail.append(h, ul);
+    if (ev.size) tail.append(el("p", "small muted", "黃底的句子是答案的根據。"));
+    nextButton(tail);
+  }
+}
+
+// ================================================================ recording an answer
+function record(item, qi, chosen, ok, guess, ms, timedOut) {
+  const key = qKeys(item)[isGap(item) || item.format === "qr" ? 0 : qi];
+  const res = { key, id: item.id, qi, unit: item.unit, type: item.type, chosen, ok, guess, ms, timedOut, v: item.v || 1, source: item.source };
+  S.results.push(res);
+  P.seen[key] = Date.now();
+  const u = P.units[item.unit] = P.units[item.unit] || { n: 0, ok: 0, guess: 0, msSum: 0, msN: 0 };
+  u.n++; if (ok) u.ok++; if (ok && guess) u.guess++; if (ms != null) { u.msSum += ms; u.msN++; }
+  P.totals.n++; if (ok) P.totals.ok++; if (ok && guess) P.totals.guess++;
+  // wrong bank
+  const now = Date.now(), e = B[key], solid = ok && !guess;
+  const hist = { at: now, ok, chosen, guess };
+  if (e && !e.graduatedAt && !e.removedAt) {
+    if (solid) { if (e.level >= 3) { e.graduatedAt = now; res.graduated = true; } else { e.level++; e.due = addDays(INTERVALS[e.level]); } }
+    else { e.level = 0; e.due = addDays(INTERVALS[0]); if (!ok) e.wrongCount = (e.wrongCount || 0) + 1; res.banked = true; }
+    e.lastAt = now; e.v = res.v; e.history = (e.history || []).concat(hist).slice(-10);
+    res.review = true; saveBank(key);
+  } else if (!ok || guess) {          // wrong, or right but guessed; right on time or late but sure stays out
+    B[key] = { reason: ok ? "guess" : "wrong", level: 0, due: addDays(INTERVALS[0]), wrongCount: ok ? 0 : 1, enteredAt: now, lastAt: now, v: res.v, history: [hist] };
+    res.banked = true; saveBank(key);
+  }
+  saveSession();
+  if (S.results.length % 5 === 0) saveAttempt(false);
+  return res;
+}
+function saveAttempt(final) {
+  const r = S.results;
+  return Store.put("toeic_attempts", S.id, { startedAt: S.startedAt, endedAt: final ? Date.now() : null, mode: S.label, items: r.map(x => ({ id: x.key, ok: x.ok, chosen: x.chosen, guess: x.guess, ms: x.ms == null ? null : Math.round(x.ms), timedOut: x.timedOut, v: x.v })), summary: { n: r.length, ok: r.filter(x => x.ok).length } });
+}
+
+function nextButton(host) {
+  const nb = el("div", "nextbar");
+  const b = btn("btn primary", S.i + 1 < S.cards.length ? "下一題 →" : "看總結 →", () => { S.i++; saveSession(); runCard(); });
+  nb.append(b); host.append(nb);
+  keys.next = () => b.click();
+  setTimeout(() => b.scrollIntoView({ block: "nearest", behavior: "smooth" }), 50);
+}
+
+// ================================================================ summary
+function summary() {
+  show("summary");
+  clearSession();
+  const r = S.results;
+  const t = day();
+  if (P.streak.lastDay !== t) { P.streak.days = P.streak.lastDay === addDays(-1) ? P.streak.days + 1 : 1; P.streak.lastDay = t; }
+  saveProfile(); saveAttempt(true);
+  bar(back("首頁", home), S.label, null);
+  const app = $("#app");
+  const ok = r.filter(x => x.ok).length;
+  const sc = el("div", "score"); sc.append(el("b", null, ok + " / " + r.length), el("span", null, "用時 " + Math.max(1, Math.round((Date.now() - S.startedAt) / 60000)) + " 分鐘"));
+  app.append(sc);
+  const avg = type => { const xs = r.filter(x => x.type === type && x.ms != null); return xs.length ? fmtS(xs.reduce((s, x) => s + x.ms, 0) / xs.length) : null; };
+  const line = [["文法", avg("grammar")], ["字彙", avg("vocab")]].filter(x => x[1]).map(x => x[0] + "平均 " + x[1]).join(" · ");
+  if (line) app.append(el("p", "muted small", line));
+  const banked = r.filter(x => x.banked && !x.review).length, timed = r.filter(x => x.timedOut).length;
+  const notes = [];
+  if (banked) notes.push("已加入錯題庫 " + banked + " 題");
+  if (timed) notes.push("超過自訂節奏 " + timed + " 題");
+  if (notes.length) app.append(el("p", "small", notes.join(" · ")));
+
+  const wrong = r.filter(x => !x.ok), guessed = r.filter(x => x.ok && x.guess);
+  if (wrong.length) { app.append(el("h2", null, "錯的題")); app.append(resultList(wrong)); }
+  if (guessed.length) { app.append(el("h2", null, "猜對的題")); app.append(resultList(guessed)); }
+
+  const byUnit = {};
+  for (const x of r) { const u = byUnit[x.unit] = byUnit[x.unit] || [0, 0]; u[1]++; if (x.ok) u[0]++; }
+  app.append(el("h2", null, "這場的考點"));
+  const tb = el("div", "tbl"), table = el("table");
+  table.innerHTML = '<thead><tr><th>考點</th><th class="n">對 / 總</th></tr></thead>';
+  const body = el("tbody");
+  for (const [u, [a, n]] of Object.entries(byUnit)) { const tr = el("tr"); tr.append(el("td", null, unitName(u)), el("td", "n", a + " / " + n)); body.append(tr); }
+  table.append(body); tb.append(table); app.append(tb);
+
+  const row = el("div", "row"); row.style.marginTop = "22px";
+  const again = wrong.concat(guessed);
+  if (again.length) row.append(btn("btn primary", "再練這場錯的", () => { const cards = {}; for (const x of again) (cards[x.id] = cards[x.id] || []).push(x.qi); newSession(Object.entries(cards).map(([id, qs]) => cardFor(BY[id], qs)), "再練錯的"); }));
+  row.append(btn("btn", "回首頁", home));
+  app.append(row);
+}
+function resultList(rs) {
+  const ul = el("ul", "list");
+  for (const x of rs) {
+    const item = BY[x.id]; if (!item) continue;
+    ul.append(itemRow(item, x.qi, { chosen: x.chosen, meta: [unitName(item.unit)] }));
+  }
+  return ul;
+}
+function stemText(item, qi) {
+  if (isGap(item)) return item.stem.replace("______", "[" + item.options[item.answer] + "]");
+  if (item.format === "qr") return item.audio.lines[0].text;
+  return item.questions[qi].q;
+}
+function itemRow(item, qi, { chosen, meta, bankKey }) {
+  const li = el("li"), head = btn("head");
+  const s = el("span", "s en", stemText(item, qi));
+  const m = el("span", "m"); for (const t of meta) m.append(el("span", "badge", t));
+  if (item.source !== "hand") m.append(el("span", "badge claude", "Claude 出題・未審核"));
+  if ((M[item.id] || {}).note) m.append(el("span", null, "📝"));
+  const ch = el("span", "ch", "▾");
+  head.append(s, ch, m);
+  const body = el("div", "body"); body.hidden = true;
+  head.onclick = () => {
+    body.hidden = !body.hidden; ch.textContent = body.hidden ? "▾" : "▴";
+    if (!body.hidden && !body.childNodes.length) fillRowBody(body, item, qi, chosen, bankKey);
+  };
+  li.append(head, body);
+  return li;
+}
+function fillRowBody(body, item, qi, chosen, bankKey) {
+  if (isGap(item)) body.append(explainGap(item, chosen ?? -1));
+  else {
+    const q = item.questions[qi], box = el("div", "exp");
+    if (item.format !== "qr") { const p = el("p", "en"); p.append(q.q); box.append(p); }
+    box.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", q.explain.point)));
+    const ans = item.format === "qr" ? item.audio.lines[q.answer + 1].text : q.options[q.answer];
+    const w = el("div"); w.append(el("span", "k", "答案 · " + ans), zh(el("p", null, q.explain.why))); box.append(w);
+    const ul = el("ul", "script");
+    item.audio.lines.forEach((ln, i) => { const li = el("li", (q.explain.evidence || []).includes(i) ? "ev" : ""); const t = el("div", "t en", ln.text); const mb = btn("mini"); mb.innerHTML = PLAY; mb.onclick = () => playLines(item, [i], 0); li.append(el("span", "who", item.format === "qr" ? (i ? L[i - 1] : "Q") : ln.who), t, mb); ul.append(li); });
+    box.append(ul);
+    body.append(box);
+  }
+  const note = el("div", "note"), ta = el("textarea"); ta.id = "note-" + item.id + "-" + qi; ta.placeholder = "筆記（自動儲存）";
+  ta.value = (M[item.id] || {}).note || "";
+  let t = null;
+  ta.oninput = () => { clearTimeout(t); t = setTimeout(() => { M[item.id] = Object.assign(M[item.id] || {}, { note: ta.value }); saveMark(item.id); }, 1000); };
+  note.append(ta); body.append(note);
+  if (bankKey && B[bankKey] && !B[bankKey].removedAt && !B[bankKey].graduatedAt) {
+    body.append(btn("btn sm ghost", "移出錯題庫", ev => { B[bankKey].removedAt = Date.now(); saveBank(bankKey); ev.target.replaceWith(el("span", "small muted", "已移出。在「全部」裡還找得到。")); }));
+  }
+}
+
+// ================================================================ wrong bank
+let bankFilter = "due", bankGroup = "unit", bankQuery = "";
+function bankView() {
+  show("bank");
+  bar(back("首頁", home), "錯題庫", null);
+  const app = $("#app");
+  const f = el("div", "filters");
+  for (const [k, t] of [["due", "待複習"], ["all", "全部"], ["guess", "猜對的"], ["grad", "已畢業"]]) { const c = btn("chip", t, () => { bankFilter = k; bankView(); }); c.setAttribute("aria-pressed", String(bankFilter === k)); f.append(c); }
+  f.append(el("span", "sp")); f.lastChild.style.flex = "1";
+  for (const [k, t] of [["unit", "依考點"], ["date", "依日期"]]) { const c = btn("chip", t, () => { bankGroup = k; bankView(); }); c.setAttribute("aria-pressed", String(bankGroup === k)); f.append(c); }
+  app.append(f);
+  const s = el("input", "search"); s.type = "search"; s.id = "bank-search"; s.placeholder = "搜尋題目、筆記、考點"; s.value = bankQuery;
+  app.append(s);
+  const listHost = el("div"); app.append(listHost);
+  const render = () => {
+    listHost.textContent = "";
+    const t = day(), q = bankQuery.toLowerCase();
+    let keys_ = Object.keys(B).filter(k => qOf(k));
+    keys_ = keys_.filter(k => { const e = B[k];
+      if (bankFilter === "due") return !e.graduatedAt && !e.removedAt && e.due <= t;
+      if (bankFilter === "guess") return !e.graduatedAt && !e.removedAt && e.reason === "guess";
+      if (bankFilter === "grad") return !!e.graduatedAt;
+      return true; });
+    if (q) keys_ = keys_.filter(k => { const { item, qi } = qOf(k); return (stemText(item, qi) + " " + ((M[item.id] || {}).note || "") + " " + unitName(item.unit)).toLowerCase().includes(q); });
+    if (!keys_.length) { listHost.append(el("p", "empty", bankFilter === "due" ? "沒有到期的題。" : "這裡沒有題。")); return; }
+    const rowFor = k => { const { item, qi } = qOf(k), e = B[k];
+      const meta = [e.wrongCount ? "錯 " + e.wrongCount + " 次" : "猜對", e.graduatedAt ? "已畢業" : e.removedAt ? "已移出" : "下次 " + e.due.slice(5).replace("-", "/")];
+      if (bankGroup === "date") meta.unshift(unitName(item.unit));
+      return itemRow(item, qi, { meta, bankKey: k }); };
+    if (bankGroup === "date") {
+      const ul = el("ul", "list"); keys_.sort((a, b) => B[b].enteredAt - B[a].enteredAt).forEach(k => ul.append(rowFor(k))); listHost.append(ul);
+    } else {
+      const groups = {}; for (const k of keys_) (groups[unitOfKey(k)] = groups[unitOfKey(k)] || []).push(k);
+      for (const [u, ks] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+        const last = Math.max(...ks.map(k => B[k].lastAt || 0));
+        listHost.append(el("div", "group-h", unitName(u) + "　" + ks.length + " 題 · 最近 " + day(new Date(last)).slice(5).replace("-", "/")));
+        const ul = el("ul", "list"); ks.forEach(k => ul.append(rowFor(k))); listHost.append(ul);
+      }
+    }
+  };
+  s.oninput = () => { bankQuery = s.value; render(); };
+  render();
+}
+
+// ================================================================ stats
+function statsView() {
+  show("stats");
+  bar(back("首頁", home), "統計", null);
+  const app = $("#app");
+  const t = P.totals;
+  const sc = el("div", "score"); sc.append(el("b", null, pct(t.ok, t.n)), el("span", null, "總正確率 · 做過 " + t.n + " 題 · 猜對 " + t.guess + " 題"));
+  app.append(sc);
+  if (P.streak.days) app.append(el("p", "small muted", "連續練習 " + P.streak.days + " 天（最近一天 " + P.streak.lastDay + "）"));
+  app.append(el("p", "small muted", "「猜對」多的考點，代表還不穩，比正確率更能看出弱點。"));
+  for (const [g, title] of [["grammar", "文法"], ["vocab", "字彙"], ["listen", "聽力"]]) {
+    const us = unitsIn(g); if (!us.length) continue;
+    app.append(el("h2", null, title));
+    const tb = el("div", "tbl"), table = el("table");
+    table.innerHTML = '<thead><tr><th>考點</th><th class="n">做過</th><th class="n">正確率</th><th class="n">猜對</th><th class="n">平均</th></tr></thead>';
+    const body = el("tbody");
+    for (const u of us) { const s = unitStat(u), tr = el("tr");
+      tr.append(el("td", null, unitName(u)), el("td", "n", String(s.n)), el("td", "n", pct(s.ok, s.n)), el("td", "n", String(s.guess)), el("td", "n", s.msN ? fmtS(s.msSum / s.msN) : "–")); body.append(tr); }
+    table.append(body); tb.append(table); app.append(tb);
+  }
+}
+
+// ================================================================ settings
+function settingsView() {
+  show("settings");
+  bar(back("首頁", home), "設定", null);
+  const app = $("#app"), c = el("div", "card");
+  const set = (label, desc, control) => { const d = el("div", "set"); const l = el("label", null, label); if (control.id) l.htmlFor = control.id; d.append(l, zh(el("p", null, desc)), control); c.append(d); };
+  const pace = el("select"); pace.id = "set-pace";
+  for (const [v, t] of [[0, "關閉"], [20, "每題 20 秒"], [30, "每題 30 秒"], [45, "每題 45 秒"]]) { const o = el("option", null, t); o.value = v; if (P.settings.pace === v) o.selected = true; pace.append(o); }
+  pace.onchange = () => { P.settings.pace = Number(pace.value); saveProfile(); };
+  set("自訂節奏", "文法和字彙題上方出現倒數條，時間到不會跳題，只記為超時。秒數是你自己設的，不是官方時間。", pace);
+  const strict = el("input"); strict.type = "checkbox"; strict.id = "set-strict"; strict.checked = P.settings.strictListen;
+  strict.onchange = () => { P.settings.strictListen = strict.checked; saveProfile(); };
+  set("聽力嚴格模式", "每題音檔只播一次，作答後才能重播。關閉時可以無限重播。", strict);
+  const theme = el("select"); theme.id = "set-theme";
+  for (const [v, t] of [["system", "跟系統"], ["light", "淺色"], ["dark", "深色"]]) { const o = el("option", null, t); o.value = v; if (P.settings.theme === v) o.selected = true; theme.append(o); }
+  theme.onchange = () => { P.settings.theme = theme.value; applyTheme(); saveProfile(); };
+  set("外觀", "淺色或深色。", theme);
+  app.append(c);
+  const info = el("div", "card"); info.style.marginTop = "14px";
+  info.append(zh(el("p", "small", "紀錄存在：" + (Store.mode === "db" ? "你的 claude.ai 帳號（手機和電腦同步）" : "這個瀏覽器（換裝置看不到）") + "。")),
+    zh(el("p", "small", "聽力音檔是 Kokoro 合成的美式和英式語音。正式考試還會有澳洲和加拿大口音，這裡沒有。")),
+    zh(el("p", "small", "所有題目都是原創的，不是考古題。題庫共 " + DATA.items.length + " 題" + (ITEMS.length > DATA.items.length ? "，另有 Claude 加的 " + (ITEMS.length - DATA.items.length) + " 題" : "") + "。桌機快捷鍵：1–4 或 A–D 作答、Enter 下一題、G 切換「我是猜的」、R 重播、S 收藏。")));
+  app.append(info);
+}
+
+// ================================================================ keyboard (desktop)
+const keys = {};
+document.addEventListener("keydown", e => {
+  if (view !== "session" || e.target.closest("textarea,input,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  const pos = "1234".indexOf(k) >= 0 ? "1234".indexOf(k) : "abcd".indexOf(k);
+  if (pos >= 0 && keys.answer) { keys.answer(pos); e.preventDefault(); }
+  else if (k === "enter" && keys.next && document.querySelector(".nextbar")) { keys.next(); e.preventDefault(); }
+  else if (k === "g" && keys.guess) keys.guess();
+  else if (k === "r" && keys.replay) keys.replay();
+  else if (k === "s" && keys.star) keys.star();
+});
+const _runCard = runCard;
+runCard = function () { for (const k of Object.keys(keys)) delete keys[k]; return _runCard(); };
+
+// ================================================================ start
+(async () => {
+  bar(null, "TOEIC 練習室", null);
+  $("#app").append(el("p", "empty", "載入中…"));
+  await load();
+  home();
+  if (window.claude?.use) claude.use("sample").then(s => { sample = s || null; }).catch(() => {});
+})();
+</script>

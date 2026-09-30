@@ -8,7 +8,7 @@ ITEMS = [
     # ------------------------------------------------------------------ qr (Part 2)
     {
         "id": "l-qr-01", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-01", "gapMs": 900,
             "lines": [
@@ -31,8 +31,8 @@ ITEMS = [
         }],
     },
     {
-        "id": "l-qr-02", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-qr-02", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-02", "gapMs": 900,
             "lines": [
@@ -55,8 +55,8 @@ ITEMS = [
         }],
     },
     {
-        "id": "l-qr-03", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "id": "l-qr-03", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-03", "gapMs": 900,
             "lines": [
@@ -80,7 +80,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-04", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-04", "gapMs": 900,
             "lines": [
@@ -104,7 +104,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-05", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-05", "gapMs": 900,
             "lines": [
@@ -128,7 +128,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-06", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-06", "gapMs": 900,
             "lines": [
@@ -152,7 +152,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-07", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-07", "gapMs": 900,
             "lines": [
@@ -176,7 +176,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-08", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-08", "gapMs": 900,
             "lines": [
@@ -202,7 +202,7 @@ ITEMS = [
     # ------------------------------------------------------------------ conv (Part 3)
     {
         "id": "l-conv-01", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-conv-01", "gapMs": 500,
             "lines": [
@@ -266,7 +266,7 @@ ITEMS = [
     },
     {
         "id": "l-conv-02", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-02", "gapMs": 500,
             "lines": [
@@ -285,7 +285,7 @@ ITEMS = [
             "你好，我想為這星期五的訓練課程訂三明治。我們一共 18 個人。",
             "好的。我們的拼盤一盤六人份，所以您需要三盤。每盤 45 美元。",
             "可以。能在 11 點半前送到嗎？",
-            "不好意思，我們星期五的外送司機中午才開始送。不過歡迎您提早過來拿。",
+            "不好意思，我們的司機星期五要到中午才開始外送。不過歡迎您提早過來拿。",
             "嗯，我們辦公室就在轉角，那我請助理過去拿。",
             "太好了。我會在 11 點前把東西都放在前面櫃台準備好。",
         ],
@@ -311,7 +311,7 @@ ITEMS = [
                     "why": "男方說 driver doesn't start deliveries until noon（她要 11:30 前）→ 改述成 cannot arrive in time。",
                     "evidence": [2, 3],
                     "wrong": [None, "同字陷阱：platter 出現過，但沒說賣完", "價格只報了一次，沒說漲價", "同字陷阱：noon 是開始外送的時間"],
-                    "vocab": [["I'm afraid", "恐怕（委婉拒絕）"], ["in time", "來得及、及時"]],
+                    "vocab": [["I'm afraid", "恐怕（委婉帶出壞消息）"], ["in time", "來得及、及時"]],
                 },
             },
             {
@@ -329,8 +329,8 @@ ITEMS = [
         ],
     },
     {
-        "id": "l-conv-03", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "id": "l-conv-03", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-conv-03", "gapMs": 500,
             "lines": [
@@ -385,15 +385,15 @@ ITEMS = [
                     "point": "細節題：聽男方說 I'll… 的那一句",
                     "why": "男方說 I'll book a meeting room for one o'clock → book 改述成 reserve a room for their meeting。",
                     "evidence": [6],
-                    "wrong": [None, "同字陷阱：print shop 只在開頭提到期限", "張冠李戴：要帶印好稿子的是女方", "價格 Tom 看過了，他們正要跳過"],
+                    "wrong": [None, "同字陷阱：print shop 只在開頭提到期限", "張冠李戴：要帶印好稿子的是女方", "價格頁 Tom 看過了，他們決定跳過"],
                     "vocab": [["book", "預訂"], ["heading", "標題"]],
                 },
             },
         ],
     },
     {
-        "id": "l-conv-04", "type": "listen", "format": "conv", "unit": "conv-next", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-conv-04", "type": "listen", "format": "conv", "unit": "conv-next", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-04", "gapMs": 500,
             "lines": [
@@ -410,7 +410,7 @@ ITEMS = [
         "transcriptZh": [
             "你好，請問是 IT 服務台嗎？我的筆電用大概二十分鐘就一直自動關機。",
             "聽起來是電池的問題。是公司去年發的那幾款，還是比較舊的？",
-            "比較舊的，我已經用了四年。公司說今年春天會換新筆電，但我不抱什麼期望。",
+            "比較舊的，我已經用了四年。公司答應過今年春天要換新筆電，但我不抱什麼期望。",
             "那先換一顆新電池應該就能解決。我們這裡有備品，但我需要型號才能找到對的那一顆。",
             "型號要去哪裡找？",
             "在底部的一張銀色貼紙上。你念給我聽，我今天下午就把電池送到你的座位。",
@@ -449,7 +449,7 @@ ITEMS = [
                     "point": "下一步題：答案常在最後一兩句",
                     "why": "男方說型號在 on the bottom，女方說 I'll turn it over → 改述成 check the underside of her laptop。",
                     "evidence": [5, 6],
-                    "wrong": ["方向相反：是男方要把電池送上樓", "聯想陷阱：新筆電是春天的事，不是接下來", "同字陷阱：battery 出現過，但由男方送來", None],
+                    "wrong": ["方向相反：是男方要把電池送上樓", "聯想陷阱：新筆電是春天的事，不是接下來", "同字陷阱：電池下午才由男方送來，她現在換不了", None],
                     "vocab": [["model number", "型號"], ["turn over", "翻過來"], ["underside", "底面"]],
                 },
             },
@@ -459,7 +459,7 @@ ITEMS = [
     # ------------------------------------------------------------------ talk (Part 4)
     {
         "id": "l-talk-01", "type": "listen", "format": "talk", "unit": "talk-topic", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-talk-01", "gapMs": 500,
             "lines": [
@@ -486,9 +486,9 @@ ITEMS = [
                 "answer": 2,
                 "explain": {
                     "point": "主旨題：答案通常在開頭",
-                    "why": "說要更換 those lifts → 改述成 installation of new elevators（lift＝elevator）。",
+                    "why": "承包商要 replace 東側的 lifts → 改述成 installation of new elevators（lift＝elevator）。",
                     "evidence": [0, 1],
-                    "wrong": ["同字陷阱：main entrance 本來就有，不是新開", "只建議早點到，上班時間沒變", None, "聯想陷阱：只叫大家走樓梯，沒提到演習"],
+                    "wrong": ["同字陷阱：main entrance 本來就有，不是新開", "只建議早點到，上班時間沒變", None, "聯想陷阱：走樓梯是施工期間的替代方式，不是演習"],
                     "vocab": [["lift", "（英）電梯＝elevator"], ["contractor", "承包商"]],
                 },
             },
@@ -520,7 +520,7 @@ ITEMS = [
     },
     {
         "id": "l-talk-02", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-talk-02", "gapMs": 500,
             "lines": [

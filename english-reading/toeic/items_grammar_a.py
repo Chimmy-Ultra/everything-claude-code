@@ -121,12 +121,12 @@ ITEMS = [
     # ---------------- tense 動詞時態 ----------------
     {
         "id": "g-tense-01", "type": "grammar", "format": "gap", "unit": "tense", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Shortly before the building was sold, all of the security cameras in its parking garage ______, so they are still under warranty.",
         "options": ["have been replaced", "replaced", "have replaced", "were replaced"],
         "answer": 3,
         "explain": {
-            "point": "明確的過去時間用過去式；主詞被動承受用被動",
+            "point": "明確的過去時間用過去式；主詞承受動作又沒受詞用被動",
             "why": "句首 Shortly before the building was sold 是明確的過去時間，用過去式；攝影機是被換的，後面也沒有受詞，所以用 were replaced。",
             "wrong": [
                 "被動對了，但句首有明確的過去時間，不能用現在完成式",
@@ -218,7 +218,7 @@ ITEMS = [
     # ---------------- connect 連接詞、介系詞、連接副詞 ----------------
     {
         "id": "g-connect-01", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The monthly staff meeting was moved to the larger conference room ______ the growing number of attendees.",
         "options": ["because", "because of", "despite", "although"],
         "answer": 1,
@@ -256,7 +256,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-03", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Our main supplier charges more than most of its competitors; ______, we have decided to keep ordering from it because its parts rarely fail.",
         "options": ["however", "therefore", "whereas", "in spite of"],
         "answer": 0,
@@ -275,18 +275,18 @@ ITEMS = [
     },
     {
         "id": "g-connect-04", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Orders placed after 3 p.m. will not be shipped until the next business day ______ customers pay extra for same-day shipping.",
         "options": ["if", "because", "unless", "whether"],
         "answer": 2,
         "explain": {
-            "point": "unless 表示例外：除非……，否則不……",
-            "why": "前半句說隔天才出貨，後半句是付費選當日出貨，正好是「不隔天出貨」的例外條件，所以用 unless。",
+            "point": "unless 引出例外條件：除非……，否則……",
+            "why": "前半句是規則：三點後的訂單隔天才出貨；加價選當日出貨正是這條規則的例外，所以用 unless。",
             "wrong": [
                 "條件方向相反：付了當日出貨的錢反而等到隔天",
                 "因果不通：付當日出貨的錢不會造成延後",
                 None,
-                "whether 引導副詞子句時要配 or not",
+                "whether 表「不論」時要配 or not；補上了句意也不通",
             ],
             "zh": "下午三點以後下的訂單，除非顧客加價選擇當日出貨，否則要到下一個工作天才會出貨。",
             "vocab": [["business day", "工作天"], ["same-day shipping", "當日出貨"], ["pay extra", "加付費用"]],
@@ -315,7 +315,7 @@ ITEMS = [
     # ---------------- prep 介系詞：時間、期限與常用片語 ----------------
     {
         "id": "g-prep-01", "type": "grammar", "format": "gap", "unit": "prep", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The online system for first-quarter expense claims opens on March 20, and every claim must be submitted ______ April 5.",
         "options": ["by", "until", "since", "within"],
         "answer": 0,
@@ -325,7 +325,7 @@ ITEMS = [
             "wrong": [
                 None,
                 "until 表示狀態持續到那時，不配一次性的送出",
-                "since 搭配完成式，講從過去延續到現在",
+                "since 標的是「從那時起」的起點，不能表示截止期限",
                 "within 後面接一段期間，不接日期",
             ],
             "zh": "第一季費用申請的線上系統在三月二十日開放，每一筆申請都必須在四月五日前送出。",

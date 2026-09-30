@@ -68,7 +68,7 @@ ITEMS = [
     # ------------------------------------------------------------ agree
     {
         "id": "g-agree-01", "type": "grammar", "format": "gap", "unit": "agree", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The projectors in every conference room on the fourth floor ______ been replaced with newer models.",
         "options": ["have", "has", "having", "to have"],
         "answer": 0,
@@ -184,12 +184,12 @@ ITEMS = [
     # ------------------------------------------------------------ pronoun
     {
         "id": "g-pronoun-01", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Venlow Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.",
         "options": ["it", "its", "theirs", "itself"],
         "answer": 1,
         "explain": {
-            "point": "空格後面接名詞 → 用所有格 its（它的）",
+            "point": "所有格放在名詞前；單數的公司用 its（它的）",
             "why": "空格後面是名詞 return policy，要表示「它的」退貨政策，指的是單數的 Venlow Logistics，所以用所有格 its。",
             "wrong": [
                 "it 是主格或受格，不能直接放在名詞前面",
@@ -435,7 +435,7 @@ ITEMS = [
     },
     {
         "id": "g-parallel-02", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The regional director has ______ approved the budget requests from the sales and marketing departments nor explained why they are on hold.",
         "options": ["neither", "either", "both", "not only"],
         "answer": 0,
@@ -454,7 +454,7 @@ ITEMS = [
     },
     {
         "id": "g-parallel-03", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Customers who want the extended warranty must register the product online within 30 days of purchase and ______ the original receipt.",
         "options": ["to keep", "keeping", "keep", "kept"],
         "answer": 2,

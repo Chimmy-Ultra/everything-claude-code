@@ -134,9 +134,10 @@ h2{font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;colo
 .exp p{margin:0}
 .exp .rule{font-weight:700}
 .wrongs{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:15px}
-.wrongs li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;padding:3px 8px;border-radius:6px}
+.wrongs li{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 8px;padding:4px 8px;border-radius:6px}
+.wrongs li>span:last-child{flex:1 1 12em;min-width:0}
 .wrongs li.mine{background:var(--bad-soft)}
-.wrongs .o{font-family:var(--serif);font-weight:600;white-space:nowrap}
+.wrongs .o{font-family:var(--serif);font-weight:600;max-width:100%}
 .full{font:400 17px/1.6 var(--serif);border-top:1px dashed var(--line);padding-top:10px}
 .full .zh{display:block;font:400 15px/1.6 var(--sans);color:var(--muted);margin-top:2px}
 .more{display:flex;gap:8px;flex-wrap:wrap}
