@@ -31,6 +31,8 @@
 .msg.you{flex-direction:row-reverse;margin-left:auto}
 .av{flex:none;display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;font:700 13px var(--display);color:var(--surface)}
 .msg.b .av{background:var(--barista)} .msg.you .av{background:var(--you)}
+.av{overflow:hidden;width:36px;height:36px}
+.av svg{width:100%;height:100%;display:block}
 .bub{min-width:0;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:9px 14px;background:var(--barista-tint)}
 .msg.you .bub{border-radius:16px 16px 4px 16px;background:var(--you-tint)}
 .bub p{margin:0}
@@ -215,7 +217,10 @@ function renderGoals() {
 }
 function addMsg(who, text, meta) {
   const li = el("li", "msg " + (who === "b" ? "b" : "you"));
-  li.append(el("span", "av", who === "b" ? "B" : "Y"));
+  const av = el("span", "av"); av.setAttribute("aria-hidden", "true");
+  const key = who === "b" ? "B" : "Y";
+  if (DATA.avatars && DATA.avatars[key]) av.innerHTML = DATA.avatars[key]; else av.textContent = key;
+  li.append(av);
   const b = el("div", "bub"); b.append(el("span", "who", who === "b" ? "Barista" : "You"));
   const p = el("p", null, text); b.append(p);
   if (meta) b.append(el("div", "t", meta));

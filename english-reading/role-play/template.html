@@ -81,6 +81,11 @@ h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
 .role .t{display:flex;align-items:center;gap:8px}
 .av{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;font:700 13px var(--display);color:var(--surface)}
 .p-G .av,.av.p-G{background:var(--george)} .p-E .av,.av.p-E{background:var(--emma)} .p-W .av,.av.p-W{background:var(--wei)}
+.av{overflow:hidden}
+.av svg{width:100%;height:100%;display:block}
+.role .av{width:40px;height:40px}
+.ln .av{width:34px;height:34px}
+.role .bio{font:13px/1.4 var(--display);color:var(--muted)}
 
 .toggles{display:flex;flex-wrap:wrap;gap:8px 18px;font:14px/1.4 var(--display)}
 .toggles label{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
@@ -263,6 +268,7 @@ const DATA = {{DATA}};
 const NAMES = DATA.names;
 const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
 const $ = s => document.querySelector(s);
+function avatar(who) { const a = document.createElement("span"); a.className = "av"; a.setAttribute("aria-hidden", "true"); if (DATA.avatars[who]) a.innerHTML = DATA.avatars[who]; else a.textContent = NAMES[who][0]; return a; }
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 const store = {
   get(k, d) { try { const v = localStorage.getItem("gn-roleplay:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
@@ -342,9 +348,9 @@ function renderSetup() {
 
   radio($("#roles"), ["G", "E", "W"].map(w => {
     const f = document.createDocumentFragment();
-    const t = el("span", "t"); const a = el("span", "av", NAMES[w][0]); t.append(a, NAMES[w]);
+    const t = el("span", "t"); t.append(avatar(w), NAMES[w]);
     const n = count(sc, w);
-    f.append(t, el("span", "d", n + " line" + (n === 1 ? "" : "s") + " to say"));
+    f.append(t, el("span", "bio", DATA.bios[w]), el("span", "d", n + " line" + (n === 1 ? "" : "s") + " to say"));
     return { value: w, node: f, cls: "role p-" + w };
   }), prefs.role, v => { prefs.role = v; savePrefs(); renderSetup(); });
 
@@ -352,7 +358,7 @@ function renderSetup() {
   sc.lines.forEach(l => {
     const mine = l.who === prefs.role;
     const li = el("li", "ln p-" + l.who + (mine ? " me" : ""));
-    li.append(el("span", "av", NAMES[l.who][0]));
+    li.append(avatar(l.who));
     const b = el("div", "bub");
     b.append(el("span", "who", mine ? "You, as " + NAMES[l.who] : NAMES[l.who]));
     if (mine) { const p = el("p", "en", l.zh); p.lang = "zh-Hant"; b.append(p); }
@@ -400,7 +406,7 @@ function start() {
 
 function bubble(l, mine) {
   const li = el("li", "ln enter p-" + l.who + (mine ? " me" : ""));
-  li.append(el("span", "av", NAMES[l.who][0]));
+  li.append(avatar(l.who));
   const b = el("div", "bub");
   b.append(el("span", "who", mine ? "You, as " + NAMES[l.who] : NAMES[l.who]));
   li.append(b);

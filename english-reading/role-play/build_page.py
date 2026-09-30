@@ -4,7 +4,7 @@ import json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "game-night"))
-from content import SCENES, NAMES
+from content import SCENES, NAMES, BIOS
 
 def plain(markup):
     s = re.sub(r"\[[a-d]\d:([^\]]+)\]", r"\1", markup)
@@ -14,8 +14,13 @@ def keys(markup):
     # Word-bank terms and new phrases in the line: the words worth hinting at.
     return [m.group(1) or m.group(2) for m in re.finditer(r"\[[a-d]\d:([^\]]+)\]|\{([^|}]+)\|", markup)]
 
+AV_PATH = os.path.join(HERE, "..", "avatars", "avatars.json")
+AVATARS = json.load(open(AV_PATH, encoding="utf-8")) if os.path.exists(AV_PATH) else {}
+
 data = {
     "names": NAMES,
+    "bios": BIOS,
+    "avatars": {k: v for k, v in AVATARS.items() if k in NAMES},
     "scenes": [
         {"id": sid, "title": title, "intro": intro,
          "lines": [{"who": who, "en": plain(markup), "zh": zh, "keys": keys(markup), "src": f"{sid}/{i:02d}.mp3"}

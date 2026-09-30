@@ -62,6 +62,10 @@
 .reply{margin-left:40px;font:13px var(--display);color:var(--muted)}
 .reply b{color:var(--you);font-weight:600}
 .col .label{margin:0}
+.who-l{display:flex;align-items:center;gap:8px}
+.who-l .av{width:30px;height:30px;border-radius:50%;overflow:hidden;flex:none}
+.who-l .av:empty{display:none}
+.who-l .av svg{width:100%;height:100%;display:block}
 .muted{color:var(--muted);font:14px var(--display);margin:0}
 @media (max-width:620px){.cols{grid-template-columns:1fr}}
 </style>
@@ -213,6 +217,11 @@ OBJ.forEach((o, i) => {
 });
 
 // ---------- steps ----------
+function who(key, text) {
+  const p = el("p", "label who-l"), a = el("span", "av"); a.setAttribute("aria-hidden", "true");
+  if (DATA.avatars && DATA.avatars[key]) a.innerHTML = DATA.avatars[key];
+  p.append(a, text); return p;
+}
 function fill(p) { return p.parts.map(x => typeof x === "string" ? x : x[0]).join(""); }
 for (const s of DATA.steps) {
   const li = el("li", "step");
@@ -221,13 +230,13 @@ for (const s of DATA.steps) {
     li.append(el("p", "muted", "Nobody talks yet. Look for the queue (5), the menu board (1) and the display case (7) in the picture."));
   } else {
     const cols = el("div", "cols");
-    const hear = el("div", "col hear"); hear.append(el("p", "label", "You hear"));
+    const hear = el("div", "col hear"); hear.append(who("B", "The barista says"));
     for (const id of s.hear) {
       const b = BA[id], row = el("div", "line"), p = el("p", null, b.en), sm = el("small", null, b.zh); sm.lang = "zh-Hant"; p.append(sm);
       row.append(pbtn("b/" + id + ".mp3", "Play barista line"), p); hear.append(row);
       const r = el("div", "reply"); r.append("You: "); r.append(el("b", null, b.reply)); r.append(" "); r.append(pbtn("r/" + id + ".mp3", "Play reply")); hear.append(r);
     }
-    const say = el("div", "col say"); say.append(el("p", "label", "You say"));
+    const say = el("div", "col say"); say.append(who("Y", "You can say"));
     for (const id of s.say) {
       const p0 = PH[id], row = el("div", "line"), p = el("p", null, fill(p0)), sm = el("small", null, p0.zh); sm.lang = "zh-Hant"; p.append(sm);
       row.append(pbtn("p/" + id + "-0.mp3", "Play"), p); say.append(row);

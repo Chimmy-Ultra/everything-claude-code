@@ -19,11 +19,13 @@ def read(name):
     return open(p, encoding="utf-8").read() if os.path.exists(p) else ""
 
 hot = json.loads(read("cafe-hotspots.json") or "{}")
+avatars = json.loads(read(os.path.join("..", "avatars", "avatars.json")) or "{}")
 data = {
     "objects": [{"id": i, "word": w, "zh": z, "ex": e, "exzh": ez, "var": v, "at": hot.get(i)} for i, w, z, e, ez, v in OBJECTS],
     "intents": [{"id": i, "zh": z, "en": e, "phrases": [{"id": p, "parts": parts(c), "zh": pz, "note": n} for p, c, pz, n in items]}
                 for i, z, e, items in INTENTS],
     "barista": [{"id": b, "en": l, "zh": z, "reply": r} for b, l, z, r in BARISTA],
+    "avatars": {k: v for k, v in avatars.items() if k in ("B", "Y")},
     "steps": [{"en": e, "zh": z, "hear": h, "say": s} for e, z, h, s in STEPS],
 }
 n_frames = sum(len(i[3]) for i in INTENTS)

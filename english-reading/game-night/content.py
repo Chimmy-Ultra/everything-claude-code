@@ -3,6 +3,9 @@
 
 VOICES = {"G": ("bm_george", "en-gb"), "E": ("bf_emma", "en-gb"), "W": ("am_michael", "en-us")}
 NAMES = {"G": "George", "E": "Emma", "W": "Wei"}
+BIOS = {"G": "The host. Has a whole shelf of board games, and hates losing.",
+        "E": "George's friend. Knows the rules, and teases George when he loses.",
+        "W": "His first game night. He learned English back home, so some British words are new."}
 
 # id, headword, 中文, example, example 中文, variants [(place, word)], note
 GROUPS = [
