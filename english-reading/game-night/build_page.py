@@ -1,6 +1,6 @@
 # Builds game-night.html from content.py.  python build_page.py
 import html, json, os, re
-from content import GROUPS, SCENES, READINGS, SOURCES, READ_SOURCES, NAMES, BIOS
+from content import GROUPS, SCENES, READINGS, SOURCES, READ_SOURCES, NAMES
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 E = html.escape
@@ -200,14 +200,11 @@ def readings():
             f'<div class="read-body">{"".join(body)}</div></article>')
     return "".join(out)
 
-def cast():
-    return "".join(f'<div class="person p-{w}"><span class="av av-lg" aria-hidden="true">{avatar(w)}</span>'
-                   f'<div><b>{NAMES[w]}</b><p>{E(bio)}</p></div></div>' for w, bio in BIOS.items())
-
 n_words = sum(len(g[3]) for g in GROUPS)
 n_lines = sum(len(s[4]) for s in SCENES)
 tpl = open(os.path.join(HERE, "template.html"), encoding="utf-8").read()
-page = (tpl.replace("{{WORDS}}", word_cards()).replace("{{SCENES}}", scenes()).replace("{{CAST}}", cast()).replace("{{READINGS}}", readings())
+page = (tpl.replace("{{WORDS}}", word_cards()).replace("{{SCENES}}", scenes()).replace("{{READINGS}}", readings())
+        .replace("{{AV_G}}", avatar("G")).replace("{{AV_E}}", avatar("E")).replace("{{AV_W}}", avatar("W"))
         .replace("{{N_WORDS}}", str(n_words)).replace("{{N_LINES}}", str(n_lines))
         .replace("{{SOURCES}}", "".join(f'<li><a href="{E(u, quote=True)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in SOURCES))
         .replace("{{READ_SOURCES}}", "".join(f'<li><a href="{E(u, quote=True)}" target="_blank" rel="noopener">{E(t)}</a></li>' for t, u in READ_SOURCES)))
