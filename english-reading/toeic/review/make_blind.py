@@ -4,7 +4,8 @@ import importlib, json, os, sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, HERE)
 name = sys.argv[1]
-items = importlib.import_module(name).ITEMS
+only = set(sys.argv[2].split(",")) if len(sys.argv) > 2 else None   # optional: just these ids (a re-review round)
+items = [it for it in importlib.import_module(name).ITEMS if not only or it["id"] in only]
 out = []
 for it in items:
     b = {"id": it["id"], "format": it["format"]}
@@ -18,6 +19,6 @@ for it in items:
             b.update(transcript=[f'{ln["who"]}: {ln["text"]}' for ln in lines],
                      questions=[{"q": q["q"], "options": {"ABCD"[i]: o for i, o in enumerate(q["options"])}} for q in it["questions"]])
     out.append(b)
-path = os.path.join(HERE, "review", f"blind_{name.replace('items_', '')}.json")
+path = os.path.join(HERE, "review", f"blind_{name.replace('items_', '')}{'_round2' if only else ''}.json")
 json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(path, len(out))

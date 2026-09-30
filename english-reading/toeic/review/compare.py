@@ -4,8 +4,9 @@ import importlib, json, os, sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, HERE)
 name = sys.argv[1]; short = name.replace("items_", "")
-items = importlib.import_module(name).ITEMS
-solved = json.load(open(os.path.join(HERE, "review", f"solved_{short}.json"), encoding="utf-8"))["answers"]
+suffix = sys.argv[2] if len(sys.argv) > 2 else ""          # e.g. _round2
+solved = json.load(open(os.path.join(HERE, "review", f"solved_{short}{suffix}.json"), encoding="utf-8"))["answers"]
+items = [it for it in importlib.import_module(name).ITEMS if any(k == it["id"] or k.startswith(it["id"] + ":") for k in solved)]
 agree = 0; rows = []
 for it in items:
     keys = [(it["id"], it["answer"])] if it["format"] == "gap" else \
