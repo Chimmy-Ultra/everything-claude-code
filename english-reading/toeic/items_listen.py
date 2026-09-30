@@ -355,13 +355,13 @@ ITEMS = [
         "questions": [
             {
                 "q": "What does the woman imply when she says, \"I've got a dentist appointment at three\"?",
-                "options": ["She is asking for the day off", "She thinks the deadline should be extended", "She wants the man to recommend a dentist", "She will not be free later in the afternoon"],
+                "options": ["She cannot work on the brochure today", "She thinks the deadline should be extended", "She would prefer to meet tomorrow morning", "She will not be free later in the afternoon"],
                 "answer": 3,
                 "explain": {
                     "point": "引句題：看這句話在回應對方的什麼提議",
                     "why": "男方約今天下午，她回三點要看牙醫 → 意思是下午晚一點沒空，改述成 not free later in the afternoon。",
                     "evidence": [0, 1],
-                    "wrong": ["她只是三點有事，不是整天請假", "沒有人提議延後交稿時間", "同字陷阱：重複 dentist，但不是要他推薦", None],
+                    "wrong": ["後來兩人約午餐後一起看，她今天還是能處理", "沒有人提議延後交稿時間", "印刷廠明早就要，明早才看來不及", None],
                     "vocab": [["go through", "從頭看一遍"], ["appointment", "預約"]],
                 },
             },

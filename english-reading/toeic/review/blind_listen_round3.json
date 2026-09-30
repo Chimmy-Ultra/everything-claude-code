@@ -1,0 +1,44 @@
+[
+ {
+  "id": "l-conv-03",
+  "format": "conv",
+  "transcript": [
+   "M: Lucy, the print shop needs the final brochure by tomorrow morning. Could we go through it together this afternoon?",
+   "W: I'd like to, but I've got a dentist appointment at three.",
+   "M: Then how about straight after lunch? It shouldn't take more than half an hour.",
+   "W: That works. And we can skip the back page. Tom went over it yesterday.",
+   "M: The page with all the prices? Oh, good. That'll save us some time.",
+   "W: So we only need to check the photos and headings. I'll bring a printed copy so we can mark changes by hand.",
+   "M: Great. I'll book a meeting room for one o'clock, then."
+  ],
+  "questions": [
+   {
+    "q": "What does the woman imply when she says, \"I've got a dentist appointment at three\"?",
+    "options": {
+     "A": "She cannot work on the brochure today",
+     "B": "She thinks the deadline should be extended",
+     "C": "She would prefer to meet tomorrow morning",
+     "D": "She will not be free later in the afternoon"
+    }
+   },
+   {
+    "q": "What has Tom already done?",
+    "options": {
+     "A": "Taken the photos for the brochure",
+     "B": "Booked a meeting room",
+     "C": "Reviewed the cost information",
+     "D": "Printed a copy of the brochure"
+    }
+   },
+   {
+    "q": "What does the man say he will do?",
+    "options": {
+     "A": "Reserve a room for their meeting",
+     "B": "Call the print shop",
+     "C": "Bring a printed copy",
+     "D": "Check the prices again"
+    }
+   }
+  ]
+ }
+]

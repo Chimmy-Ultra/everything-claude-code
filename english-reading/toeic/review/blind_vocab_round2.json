@@ -1,0 +1,68 @@
+[
+ {
+  "id": "v-collocation-02",
+  "format": "gap",
+  "stem": "The revised travel policy will ______ effect on July 1, so trips booked after that date must follow the new rules.",
+  "options": {
+   "A": "come",
+   "B": "take",
+   "C": "go",
+   "D": "make"
+  }
+ },
+ {
+  "id": "v-collocation-05",
+  "format": "gap",
+  "stem": "The new flexible schedule aims to ______ a balance between client visits and time in the office.",
+  "options": {
+   "A": "pull",
+   "B": "run",
+   "C": "strike",
+   "D": "lift"
+  }
+ },
+ {
+  "id": "v-synonym-01",
+  "format": "gap",
+  "stem": "Sales representatives earn a ______ of 4 percent on every contract they sign, in addition to their base salary.",
+  "options": {
+   "A": "wage",
+   "B": "pension",
+   "C": "commission",
+   "D": "allowance"
+  }
+ },
+ {
+  "id": "v-synonym-02",
+  "format": "gap",
+  "stem": "The IT department ______ projectors to staff who meet clients off-site, free of charge and for up to two weeks at a time.",
+  "options": {
+   "A": "rents",
+   "B": "lends",
+   "C": "borrows",
+   "D": "donates"
+  }
+ },
+ {
+  "id": "v-synonym-03",
+  "format": "gap",
+  "stem": "Guests who ______ additional charges, such as room service or minibar purchases, must settle them at checkout.",
+  "options": {
+   "A": "suffer",
+   "B": "undergo",
+   "C": "endure",
+   "D": "incur"
+  }
+ },
+ {
+  "id": "v-synonym-05",
+  "format": "gap",
+  "stem": "Showroom visits ______ increased after the renovation, jumping 40 percent in the first week and staying at that level for the rest of the year.",
+  "options": {
+   "A": "markedly",
+   "B": "slightly",
+   "C": "steadily",
+   "D": "temporarily"
+  }
+ }
+]

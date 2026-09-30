@@ -1,12 +1,13 @@
 # Vocabulary items for the TOEIC 練習室 (DESIGN.md sections 5 and 7).
 # 24 hand-written gap items: 6 each of collocation / synonym / business / family.
-# All content is original. reviewed stays False until a human reviewer signs off.
+# All content is original. reviewed is True only after the review steps in DESIGN.md (appendix);
+# items rewritten in a review round stay False until they pass a new blind review.
 
 ITEMS = [
     # ---------------------------------------------------------------- collocation
     {
         "id": "v-collocation-01", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Our printing supplier worked late every night to ______ the deadline for the trade show brochures.",
         "options": ["meet", "match", "catch", "suit"],
         "answer": 0,
@@ -34,27 +35,27 @@ ITEMS = [
     },
     {
         "id": "v-collocation-03", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The office manager will ______ an order for new printer cartridges before the end of the day.",
         "options": ["set", "lay", "place", "position"],
         "answer": 2,
         "explain": {
             "point": "搭配詞：place an order（下訂單）",
             "why": "下訂單的固定說法是 place an order，後面用 for 接訂購的東西。",
-            "wrong": ["set 搭配 a goal、a date，不說 set an order", "lay 是「放平、鋪」，不和 order 搭配", None, "position 是「把東西擺到定位」，不和 order 搭配"],
+            "wrong": ["set 搭配 a goal、a date；訂貨不說 set an order", "lay 是「放平、鋪」，不和 order 搭配", None, "position 是「把東西擺到定位」，不和 order 搭配"],
             "zh": "辦公室經理今天下班前會下單訂購新的印表機墨水匣。",
             "vocab": [["order", "訂單"], ["cartridge", "墨水匣、碳粉匣"]],
         },
     },
     {
         "id": "v-collocation-04", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Our accountant recommends that we ______ a close eye on cash flow during the slow summer months.",
         "options": ["hold", "take", "set", "keep"],
         "answer": 3,
         "explain": {
-            "point": "搭配詞：keep an eye on（密切注意）",
-            "why": "「密切留意」的固定說法是 keep a close eye on；要看到後面的 on 才確定。",
+            "point": "搭配詞：keep a close eye on（密切注意）",
+            "why": "「密切注意某事」固定說 keep a close eye on，on 後面接要注意的事，這裡是 cash flow。",
             "wrong": ["hold 搭配 a meeting，不說 hold an eye on", "take 搭配 a look at，不說 take an eye on", "set eyes on 是「看見」，不能加 a close", None],
             "zh": "我們的會計師建議，在生意清淡的夏季幾個月裡要密切注意現金流。",
             "vocab": [["accountant", "會計師"], ["cash flow", "現金流"]],
@@ -69,14 +70,14 @@ ITEMS = [
         "explain": {
             "point": "搭配詞：strike a balance（取得平衡）",
             "why": "「在 A 和 B 之間取得平衡」固定說 strike a balance between A and B；pull、run、lift 都不和 balance 搭配。",
-            "wrong": ["pull 是「拉」，不說 pull a balance", "run 搭 a business、a meeting，不接 balance", None, "lift 搭 a ban（解除禁令），不和 balance 搭配"],
+            "wrong": ["pull 是「拉」，不說 pull a balance", "run 搭 a business，不說 run a balance between", None, "lift 搭 a ban（解除禁令），不和 balance 搭配"],
             "zh": "新的彈性班表是為了在拜訪客戶和待在辦公室的時間之間取得平衡。",
             "vocab": [["flexible schedule", "彈性班表"], ["strike a balance", "取得平衡"], ["client visit", "拜訪客戶"]],
         },
     },
     {
-        "id": "v-collocation-06", "type": "vocab", "format": "gap", "unit": "collocation", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-06", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The plan to open a second branch was approved by an ______ majority of shareholders at Tuesday's meeting.",
         "options": ["overflowing", "overpowering", "overriding", "overwhelming"],
         "answer": 3,
@@ -127,14 +128,14 @@ ITEMS = [
         "explain": {
             "point": "incur charges／expenses：產生（費用）",
             "why": "房客自己消費而產生費用，固定說 incur charges；suffer、undergo、endure 雖然都有「承受」之意，都不接 charges。",
-            "wrong": ["suffer 搭 losses、damage 等不幸遭受的事，不接消費", "undergo 搭 surgery、training 等要經歷的過程", "endure 是「忍受」痛苦或延誤，不接費用", None],
+            "wrong": ["suffer 搭 losses、damage 等不幸遭受的事，不接消費", "undergo 搭 surgery、training 等過程，不接費用", "endure 是「忍受」痛苦或延誤，不接費用", None],
             "zh": "有額外消費（例如客房服務或迷你吧）的房客，必須在退房時結清。",
             "vocab": [["incur", "產生、招致（費用）"], ["minibar", "（客房）迷你吧"], ["settle", "結清（帳款）"]],
         },
     },
     {
-        "id": "v-synonym-04", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-synonym-04", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The new advisory committee ______ five managers, each from a different department of the company.",
         "options": ["consists", "comprises", "composes", "constitutes"],
         "answer": 1,
@@ -161,8 +162,8 @@ ITEMS = [
         },
     },
     {
-        "id": "v-synonym-06", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-synonym-06", "type": "vocab", "format": "gap", "unit": "synonym", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The landlord has agreed to ______ our lease for another two years at the same monthly rent.",
         "options": ["extend", "expand", "enlarge", "stretch"],
         "answer": 0,
@@ -177,22 +178,22 @@ ITEMS = [
 
     # ---------------------------------------------------------------- business
     {
-        "id": "v-business-01", "type": "vocab", "format": "gap", "unit": "business", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-business-01", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Your flight times and the address of each hotel are listed in the ______ the travel agent sent today.",
         "options": ["inventory", "itinerary", "agenda", "warranty"],
         "answer": 1,
         "explain": {
             "point": "itinerary：行程表（航班、住宿）",
             "why": "旅行社寄來、列出航班時間和飯店地址的，是行程表 itinerary。",
-            "wrong": ["inventory 是庫存清單", None, "agenda 是會議議程，不列航班", "warranty 是產品保固書"],
+            "wrong": ["inventory 是庫存清單，不會列航班和飯店", None, "agenda 是會議議程，不列航班", "warranty 是產品保固書，跟行程無關"],
             "zh": "你的航班時間和每間飯店的地址，都列在旅行社今天寄來的行程表裡。",
             "vocab": [["itinerary", "行程表"], ["travel agent", "旅行社（人員）"]],
         },
     },
     {
-        "id": "v-business-02", "type": "vocab", "format": "gap", "unit": "business", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-business-02", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The furniture supplier has sent us the ______ for the 40 office chairs, and it is payable within 30 days.",
         "options": ["receipt", "estimate", "refund", "invoice"],
         "answer": 3,
@@ -201,12 +202,12 @@ ITEMS = [
             "why": "payable within 30 days 表示還沒付、要在期限內付，這張單據是請款單 invoice。",
             "wrong": ["receipt 是付款後的收據，不會再「應付」", "estimate 是估價單，不是付款依據", "refund 是退款，不是要付的錢", None],
             "zh": "家具供應商已經寄來 40 張辦公椅的請款單，須在 30 天內付款。",
-            "vocab": [["supplier", "供應商"], ["invoice", "請款單、發票"], ["payable", "應付的"]],
+            "vocab": [["supplier", "供應商"], ["invoice", "請款單、帳單"], ["payable", "應付的"]],
         },
     },
     {
         "id": "v-business-03", "type": "vocab", "format": "gap", "unit": "business", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Because of the storm warning, the product launch has been ______ until next Thursday.",
         "options": ["postponed", "abandoned", "expired", "concluded"],
         "answer": 0,
@@ -220,35 +221,35 @@ ITEMS = [
     },
     {
         "id": "v-business-04", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The cost of your staff uniform will be ______ from your first month's salary.",
         "options": ["reduced", "declined", "deducted", "devoted"],
         "answer": 2,
         "explain": {
             "point": "deduct A from B：從 B 扣除 A",
             "why": "費用從薪水裡扣掉，說 be deducted from your salary；from 是線索。",
-            "wrong": ["reduce 是「減少」，不說把費用從薪水 reduce", "decline 是「下降、婉拒」，不能這樣用被動", None, "devote 是「奉獻」，要接 to"],
+            "wrong": ["reduce 是「減少」，不說把費用從薪水 reduce", "decline 是「下降」（不及物）或「婉拒」，都不是扣錢", None, "devote 是「奉獻」，要接 to"],
             "zh": "你的員工制服費用會從第一個月的薪水中扣除。",
             "vocab": [["uniform", "制服"], ["deduct", "扣除"], ["salary", "薪水"]],
         },
     },
     {
         "id": "v-business-05", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Staff who drive their own cars to client meetings will be ______ for fuel at a fixed rate.",
         "options": ["rewarded", "reimbursed", "recruited", "reserved"],
         "answer": 1,
         "explain": {
             "point": "reimburse：歸還員工代墊的費用",
             "why": "員工先自付油錢、公司再按固定費率還錢，這是 reimbursed（報銷）。",
-            "wrong": ["reward 是獎勵表現，不是歸還代墊的錢", None, "recruit 是招募人才", "reserve 是預訂或保留"],
+            "wrong": ["reward 是獎勵表現，不是歸還代墊的錢", None, "recruit 是招募人才，跟油錢無關", "reserve 是預訂或保留，不是還錢"],
             "zh": "開自己的車去拜訪客戶的員工，油錢會按固定費率報銷。",
             "vocab": [["reimburse", "報銷、償還"], ["fuel", "燃料、油錢"], ["fixed rate", "固定費率"]],
         },
     },
     {
         "id": "v-business-06", "type": "vocab", "format": "gap", "unit": "business", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Since the delay was caused by its own error, the shipping company agreed to ______ the extra cost.",
         "options": ["absorb", "adopt", "attach", "acquire"],
         "answer": 0,
@@ -264,7 +265,7 @@ ITEMS = [
     # ---------------------------------------------------------------- family
     {
         "id": "v-family-01", "type": "vocab", "format": "gap", "unit": "family", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Moving to the smaller warehouse will save the company a ______ amount of money each year.",
         "options": ["considerate", "considerable", "considering", "considered"],
         "answer": 1,
@@ -277,36 +278,36 @@ ITEMS = [
         },
     },
     {
-        "id": "v-family-02", "type": "vocab", "format": "gap", "unit": "family", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-02", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Please keep this folder locked because it contains ______ information about employee salaries.",
         "options": ["sensible", "sensory", "senseless", "sensitive"],
         "answer": 3,
         "explain": {
             "point": "sensitive 敏感的；sensible 明智的",
             "why": "薪資資料不能外流、要鎖起來，是「敏感的」資訊，用 sensitive。",
-            "wrong": ["sensible 是「明智的、合理的」", "sensory 是「感官的」，如視覺、聽覺", "senseless 是「無意義的」", None],
+            "wrong": ["sensible 是「明智的、合理的」，不表示要保密", "sensory 是「感官的」，如視覺、聽覺", "senseless 是「無意義的」，跟要鎖起來無關", None],
             "zh": "請把這個資料夾鎖好，因為裡面有員工薪資的敏感資料。",
             "vocab": [["folder", "資料夾"], ["salary", "薪資"]],
         },
     },
     {
-        "id": "v-family-03", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-03", "type": "vocab", "format": "gap", "unit": "family", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "After the break, Ms. Lin and Mr. Hale will present the sales figures for their ______ regions.",
         "options": ["respective", "respectful", "respectable", "respected"],
         "answer": 0,
         "explain": {
             "point": "respective 各自的；respectful 有禮貌的",
             "why": "兩人各自報告自己負責地區的業績，「各自的」用 respective。",
-            "wrong": [None, "respectful 是「有禮貌的」，形容人或態度", "respectable 是「體面的、像樣的」", "respected 是「受尊敬的」，形容人"],
+            "wrong": [None, "respectful 是「有禮貌的」，形容人或態度", "respectable 是「體面的、像樣的」，不表示「各自的」", "respected 是「受尊敬的」，形容人"],
             "zh": "休息過後，林女士和 Hale 先生會分別報告各自地區的業績數字。",
             "vocab": [["sales figures", "業績數字"], ["region", "地區、區域"]],
         },
     },
     {
         "id": "v-family-04", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The supervisor praised the new interns for being ______ and always finishing their tasks ahead of schedule.",
         "options": ["industrial", "industrialized", "industrious", "industrializing"],
         "answer": 2,
@@ -319,8 +320,8 @@ ITEMS = [
         },
     },
     {
-        "id": "v-family-05", "type": "vocab", "format": "gap", "unit": "family", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-05", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The safety manual was rewritten in plain language so that it would be ______ to every new employee.",
         "options": ["comprehensive", "comprehending", "comprehensible", "comprehended"],
         "answer": 2,
@@ -334,7 +335,7 @@ ITEMS = [
     },
     {
         "id": "v-family-06", "type": "vocab", "format": "gap", "unit": "family", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The hardware store stocks screws in every ______ size, so builders rarely have to order parts.",
         "options": ["imaginative", "imaginary", "imagining", "imaginable"],
         "answer": 3,
