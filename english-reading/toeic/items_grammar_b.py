@@ -10,18 +10,18 @@ ITEMS = [
     # ------------------------------------------------------------ voice
     {
         "id": "g-voice-01", "type": "grammar", "format": "gap", "unit": "voice", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The new security badges ______ to all employees by the end of next week.",
         "options": ["will distribute", "are distributing", "will be distributed", "distributed"],
         "answer": 2,
         "explain": {
             "point": "主詞承受動作、後面沒有受詞 → 被動 be + p.p.",
-            "why": "識別證是被發放的一方，空格後直接接 to all employees，沒有受詞，所以用被動 will be distributed。",
+            "why": "識別證是被發放的一方，後面沒有受詞，要用被動；by the end of next week 是未來，所以用 will be distributed。",
             "wrong": [
                 "主動要接受詞，而且識別證不會自己發放",
-                "主動進行式，後面同樣缺受詞",
+                "主動進行式，識別證不會自己發放，後面也缺受詞",
                 None,
-                "當過去式主動用，缺受詞，也對不上 next week",
+                "少了 be 就不是被動；當過去式又缺受詞、對不上 next week",
             ],
             "zh": "新的識別證將在下週結束前發給所有員工。",
             "vocab": [["security badge", "識別證、門禁卡"], ["distribute", "分發、發放"]],
@@ -29,7 +29,7 @@ ITEMS = [
     },
     {
         "id": "g-voice-02", "type": "grammar", "format": "gap", "unit": "voice", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Shipping costs for our overseas orders ______ by nearly eight percent since the start of the year.",
         "options": ["have raised", "have risen", "have been risen", "have been raising"],
         "answer": 1,
@@ -40,7 +40,7 @@ ITEMS = [
                 "raise 是及物動詞，後面要有受詞",
                 None,
                 "rise 是不及物動詞，沒有被動",
-                "raise 的主動進行式，後面同樣缺受詞",
+                "raise 的完成進行式是主動，後面缺受詞",
             ],
             "zh": "自年初以來，我們海外訂單的運費上漲了將近百分之八。",
             "vocab": [["shipping cost", "運費"], ["overseas", "海外的"]],
@@ -48,7 +48,7 @@ ITEMS = [
     },
     {
         "id": "g-voice-03", "type": "grammar", "format": "gap", "unit": "voice", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Ms. Okafor ______ a two-week paid sabbatical by the board of directors in recognition of her ten years of service.",
         "options": ["granted", "has granted", "was granting", "was granted"],
         "answer": 3,
@@ -57,7 +57,7 @@ ITEMS = [
             "why": "by the board of directors 表示給假的是董事會，Okafor 女士是得到的人，用被動；grant 是授與動詞，被動後仍接 a sabbatical。",
             "wrong": [
                 "主動表示「她給出」假期，和 by the board 衝突",
-                "同樣是主動，給假的是董事會，不是她",
+                "主動表示她給出假期，但給假的是董事會",
                 "主動進行式，主客顛倒，也配不上 by the board",
                 None,
             ],
@@ -67,27 +67,27 @@ ITEMS = [
     },
     # ------------------------------------------------------------ agree
     {
-        "id": "g-agree-01", "type": "grammar", "format": "gap", "unit": "agree", "level": 1,
+        "id": "g-agree-01", "type": "grammar", "format": "gap", "unit": "agree", "level": 2,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Every conference room on the fourth floor ______ a projector and a video camera.",
-        "options": ["has", "have", "having", "to have"],
+        "stem": "The projectors in every conference room on the fourth floor ______ been replaced with newer models.",
+        "options": ["have", "has", "having", "to have"],
         "answer": 0,
         "explain": {
-            "point": "every + 單數名詞，動詞也用單數",
-            "why": "主詞是 Every conference room，every 後面接單數名詞，動詞也用單數 has。",
+            "point": "動詞跟真正的主詞一致，不跟介系詞片語裡的名詞",
+            "why": "主詞是複數的 The projectors；in every conference room on the fourth floor 是修飾它的介系詞片語，所以用 have。",
             "wrong": [
                 None,
-                "have 是複數形，跟單數主詞不一致",
-                "having 是分詞，句子會缺主要動詞",
-                "to have 是不定詞，不能當主要動詞",
+                "被 every conference room 帶偏；主詞 projectors 是複數",
+                "分詞不能當主要動詞，句子會缺動詞",
+                "不定詞不能當句子的主要動詞",
             ],
-            "zh": "四樓的每一間會議室都有一台投影機和一台視訊攝影機。",
-            "vocab": [["conference room", "會議室"], ["projector", "投影機"]],
+            "zh": "四樓每間會議室的投影機都已經換成較新的機型了。",
+            "vocab": [["projector", "投影機"], ["conference room", "會議室"], ["replace A with B", "把 A 換成 B"]],
         },
     },
     {
         "id": "g-agree-02", "type": "grammar", "format": "gap", "unit": "agree", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Approving refund requests from overseas customers usually ______ longer than approving domestic ones.",
         "options": ["take", "taking", "have taken", "takes"],
         "answer": 3,
@@ -97,7 +97,7 @@ ITEMS = [
             "wrong": [
                 "複數形，把 customers 誤當成主詞",
                 "taking 不是完整動詞，句子會缺主要動詞",
-                "have 配複數主詞；usually 講常態也不用完成式",
+                "have 要配複數主詞，這裡的主詞是單數的動名詞片語",
                 None,
             ],
             "zh": "核准海外顧客的退款申請，通常比核准國內的花更多時間。",
@@ -106,7 +106,7 @@ ITEMS = [
     },
     {
         "id": "g-agree-03", "type": "grammar", "format": "gap", "unit": "agree", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Neither the lease agreement nor the two service contracts ______ renewal until next spring.",
         "options": ["requires", "require", "requiring", "to require"],
         "answer": 1,
@@ -126,15 +126,15 @@ ITEMS = [
     # ------------------------------------------------------------ relative
     {
         "id": "g-relative-01", "type": "grammar", "format": "gap", "unit": "relative", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Customers ______ subscriptions expire this month will receive a renewal reminder by email.",
         "options": ["who", "whom", "whose", "which"],
         "answer": 2,
         "explain": {
-            "point": "空格後直接接名詞 → 所有格 whose",
-            "why": "空格後面直接接名詞 subscriptions，意思是「顧客的訂閱」，要用所有格 whose。",
+            "point": "名詞屬於先行詞、後面子句完整 → 所有格 whose",
+            "why": "subscriptions expire this month 已是完整子句，subscriptions 是顧客的訂閱，所以用所有格 whose。",
             "wrong": [
-                "who 後面要直接接動詞，這裡接的是名詞",
+                "who 要補子句缺的主詞或受詞，但後面子句已完整",
                 "whom 當受詞，但後面的子句並不缺受詞",
                 None,
                 "先行詞 Customers 是人，不能用 which",
@@ -145,7 +145,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-02", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Mr. Varga reviewed the five bids for the office renovation, two of ______ came in under budget.",
         "options": ["which", "whom", "what", "whose"],
         "answer": 0,
@@ -164,7 +164,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-03", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The Dunmore plant, ______ Brenvale Foods acquired in 2019, now produces all of the company's packaging.",
         "options": ["where", "when", "what", "which"],
         "answer": 3,
@@ -186,24 +186,24 @@ ITEMS = [
         "id": "g-pronoun-01", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 1,
         "source": "hand", "reviewed": False, "v": 1,
         "stem": "Venlow Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.",
-        "options": ["it", "its", "it's", "itself"],
+        "options": ["it", "its", "theirs", "itself"],
         "answer": 1,
         "explain": {
-            "point": "名詞前用所有格 its；it's = it is / it has",
-            "why": "空格後面是名詞 return policy，需要「它的」，指 Venlow Logistics，用所有格 its。",
+            "point": "空格後面接名詞 → 用所有格 its（它的）",
+            "why": "空格後面是名詞 return policy，要表示「它的」退貨政策，指的是單數的 Venlow Logistics，所以用所有格 its。",
             "wrong": [
-                "it 是主格或受格，不能放在名詞前面",
+                "it 是主格或受格，不能直接放在名詞前面",
                 None,
-                "it's 是 it is 或 it has 的縮寫，不是所有格",
-                "反身代名詞不能放在名詞前面",
+                "theirs 是所有代名詞，要單獨使用，後面不能再接名詞",
+                "反身代名詞不能放在名詞前面當所有格用",
             ],
-            "zh": "Venlow 物流更新了退貨政策，允許顧客在收貨後 60 天內換貨。",
-            "vocab": [["return policy", "退貨政策"], ["exchange", "換貨"]],
+            "zh": "Venlow 物流更新了自家的退貨政策，允許在到貨後 60 天內換貨。",
+            "vocab": [["return policy", "退貨政策"], ["exchange", "換貨"], ["delivery", "送達、到貨"]],
         },
     },
     {
         "id": "g-pronoun-02", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The delivery times offered by Tarrow Freight are considerably shorter than ______ of its main competitors.",
         "options": ["that", "these", "those", "them"],
         "answer": 2,
@@ -222,7 +222,7 @@ ITEMS = [
     },
     {
         "id": "g-pronoun-03", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Mr. Patel's reimbursement request was approved within a day, but ______ took almost two weeks because a receipt was missing.",
         "options": ["mine", "my", "me", "myself"],
         "answer": 0,
@@ -242,7 +242,7 @@ ITEMS = [
     # ------------------------------------------------------------ toing
     {
         "id": "g-toing-01", "type": "grammar", "format": "gap", "unit": "toing", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The board has decided ______ the opening of the Leeds branch until the renovation is complete.",
         "options": ["postpone", "postponing", "postponed", "to postpone"],
         "answer": 3,
@@ -261,7 +261,7 @@ ITEMS = [
     },
     {
         "id": "g-toing-02", "type": "grammar", "format": "gap", "unit": "toing", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "In addition to ______ the monthly newsletter, Ms. Hollis manages the company's social media accounts.",
         "options": ["edit", "editing", "edited", "have edited"],
         "answer": 1,
@@ -280,7 +280,7 @@ ITEMS = [
     },
     {
         "id": "g-toing-03", "type": "grammar", "format": "gap", "unit": "toing", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Ms. Brandt let the two new technicians ______ the server upgrade on their own last weekend.",
         "options": ["carry out", "to carry out", "carrying out", "carried out"],
         "answer": 0,
@@ -300,7 +300,7 @@ ITEMS = [
     # ------------------------------------------------------------ compare
     {
         "id": "g-compare-01", "type": "grammar", "format": "gap", "unit": "compare", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "For large orders, shipping by rail is much ______ than shipping by air.",
         "options": ["cheap", "cheapest", "cheaper", "more cheaply"],
         "answer": 2,
@@ -311,7 +311,7 @@ ITEMS = [
                 "原級不能接 than",
                 "最高級不和 than 連用",
                 None,
-                "is 後面要接形容詞，more cheaply 是副詞",
+                "這裡 is 後面要用形容詞描述 shipping，more cheaply 是副詞",
             ],
             "zh": "大量訂單用鐵路運送，比空運便宜得多。",
             "vocab": [["shipping", "運送、出貨"], ["by rail", "以鐵路運輸"]],
@@ -319,7 +319,7 @@ ITEMS = [
     },
     {
         "id": "g-compare-02", "type": "grammar", "format": "gap", "unit": "compare", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The earlier the invitations are sent out, ______ guests are likely to attend the product launch.",
         "options": ["more", "the most", "most", "the more"],
         "answer": 3,
@@ -337,8 +337,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-compare-03", "type": "grammar", "format": "gap", "unit": "compare", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-compare-03", "type": "grammar", "format": "gap", "unit": "compare", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "In the customer survey, the battery life of the Dorvan X5 tablet was rated superior ______ that of every competing model.",
         "options": ["than", "to", "from", "as"],
         "answer": 1,
@@ -358,13 +358,13 @@ ITEMS = [
     # ------------------------------------------------------------ quantity
     {
         "id": "g-quantity-01", "type": "grammar", "format": "gap", "unit": "quantity", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "We have not received ______ information about the new parking rules from the building management office.",
         "options": ["much", "many", "several", "a few"],
         "answer": 0,
         "explain": {
             "point": "不可數名詞前用 much；many、several、a few 接複數",
-            "why": "information 是不可數名詞，前面只能用 much；not ... much 表示「沒收到多少」。",
+            "why": "information 是不可數名詞，選項中只有 much 能接；not ... much 表示「沒收到多少」。",
             "wrong": [
                 None,
                 "many 接複數可數名詞，information 不可數",
@@ -377,13 +377,13 @@ ITEMS = [
     },
     {
         "id": "g-quantity-02", "type": "grammar", "format": "gap", "unit": "quantity", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ of the applicants for the graphic designer position currently live outside Linden Falls.",
         "options": ["Almost", "Every", "Most", "Much"],
         "answer": 2,
         "explain": {
             "point": "most of the + 複數名詞；almost 是副詞，不能直接接 of",
-            "why": "空格後面是 of the applicants，能接 of the 加複數名詞的只有 Most：大部分應徵者。",
+            "why": "空格後面是 of the applicants，選項中能接 of the 加複數名詞的只有 Most：大部分應徵者。",
             "wrong": [
                 "almost 是副詞，要說 almost all of",
                 "every 後面直接接單數名詞，不能接 of",
@@ -396,16 +396,16 @@ ITEMS = [
     },
     {
         "id": "g-quantity-03", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Halvern Medical ordered ______ new laboratory equipment last month, and most of it has already been installed.",
         "options": ["several", "many", "a number of", "a great deal of"],
         "answer": 3,
         "explain": {
             "point": "equipment 不可數：a great deal of + 不可數名詞",
-            "why": "equipment 是不可數名詞（後面 most of it 也用單數 it），只能用接不可數名詞的 a great deal of。",
+            "why": "equipment 是不可數名詞（後面 most of it 也用單數 it），選項中只有 a great deal of 接不可數名詞。",
             "wrong": [
                 "several 要接複數名詞，equipment 沒有複數形",
-                "many 接可數複數；不可數要用 much",
+                "many 只接可數複數名詞，equipment 不可數",
                 "a number of 接可數複數；不可數用 an amount of",
                 None,
             ],
@@ -416,7 +416,7 @@ ITEMS = [
     # ------------------------------------------------------------ parallel
     {
         "id": "g-parallel-01", "type": "grammar", "format": "gap", "unit": "parallel", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "According to staff feedback, the new office chairs are both comfortable ______ easy to adjust.",
         "options": ["or", "and", "nor", "but"],
         "answer": 1,
@@ -436,45 +436,45 @@ ITEMS = [
     {
         "id": "g-parallel-02", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Ms. Grant ______ approved the new marketing plan nor rejected it, saying she needed more time to review it.",
+        "stem": "The regional director has ______ approved the budget requests from the sales and marketing departments nor explained why they are on hold.",
         "options": ["neither", "either", "both", "not only"],
         "answer": 0,
         "explain": {
-            "point": "neither A nor B：看到 nor 就配 neither",
-            "why": "後面用 nor 連接 rejected，前面就要配 neither；approved 和 rejected 兩個動詞形式一致。",
+            "point": "看到 nor，前面跟它成對的是 neither",
+            "why": "句子後段的 nor explained 要跟 neither 成對；中間 sales and marketing 的 and 只連接兩個部門，不是 both 的另一半。",
             "wrong": [
                 None,
-                "either 要搭配 or，不搭配 nor",
-                "both 要搭配 and，不搭配 nor",
-                "not only 要搭配 but also，不搭配 nor",
+                "either 要配 or，這句後面是 nor",
+                "both 要配 and；這裡的 and 只連接兩個部門，後面還有 nor",
+                "not only 要配 but also，不配 nor",
             ],
-            "zh": "Grant 女士既沒有核准新的行銷企劃，也沒有否決，說她需要更多時間審閱。",
-            "vocab": [["marketing plan", "行銷企劃"], ["reject", "否決、駁回"]],
+            "zh": "地區總監既沒有核准業務部和行銷部的預算申請，也沒有說明這些申請為什麼被擱置。",
+            "vocab": [["regional director", "地區總監"], ["budget request", "預算申請"], ["on hold", "暫緩、擱置"]],
         },
     },
     {
         "id": "g-parallel-03", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Ms. Ahn's duties include scheduling client meetings, ______ travel arrangements for the sales team, and updating the customer database.",
-        "options": ["make", "to make", "making", "made"],
+        "stem": "Customers who want the extended warranty must register the product online within 30 days of purchase and ______ the original receipt.",
+        "options": ["to keep", "keeping", "keep", "kept"],
         "answer": 2,
         "explain": {
-            "point": "and 連接的項目形式一致：Ving, Ving, and Ving",
-            "why": "列舉的另外兩項是 scheduling 和 updating，中間這一項也要用 Ving：making travel arrangements。",
+            "point": "and 連接的兩個動詞共用 must，都要用原形",
+            "why": "and 連接的是 register 和空格，兩個動詞都接在 must 後面，所以用原形 keep；within 30 days of purchase 只是插在中間的修飾語。",
             "wrong": [
-                "原形跟 scheduling、updating 不平行",
-                "to V 跟前後的 Ving 不平行",
+                "must 後面接原形，不接 to V；也跟 register 不平行",
+                "跟 register 不平行；and 連接的不是前面的 purchase",
                 None,
-                "過去式或過去分詞，跟前後的 Ving 不一致",
+                "過去式不能接在 must 後面，也跟 register 不平行",
             ],
-            "zh": "Ahn 女士的職責包括安排客戶會議、為業務團隊安排差旅，以及更新客戶資料庫。",
-            "vocab": [["duty", "職責"], ["travel arrangements", "差旅安排"], ["database", "資料庫"]],
+            "zh": "想享有延長保固的顧客，必須在購買後 30 天內上網登錄產品，並保留原始收據。",
+            "vocab": [["extended warranty", "延長保固"], ["register", "登錄、註冊"], ["receipt", "收據"]],
         },
     },
     # ------------------------------------------------------------ mandative
     {
         "id": "g-mandative-01", "type": "grammar", "format": "gap", "unit": "mandative", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The finance director has requested that each department head ______ a revised budget by March 15.",
         "options": ["submitting", "will submit", "to submit", "submit"],
         "answer": 3,
@@ -493,7 +493,7 @@ ITEMS = [
     },
     {
         "id": "g-mandative-02", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "It is essential that the draft agreement ______ shared with anyone outside the company before it is signed.",
         "options": ["not be", "not being", "will not be", "not to be"],
         "answer": 0,
@@ -513,7 +513,7 @@ ITEMS = [
     # ------------------------------------------------------------ conditional
     {
         "id": "g-conditional-01", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ the supplier notified us of the delay earlier, we would have found another vendor in time.",
         "options": ["Should", "Had", "Were", "Unless"],
         "answer": 1,
@@ -532,7 +532,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-02", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Not until the new inventory software was installed ______ the error rate in our warehouse begin to fall.",
         "options": ["was", "has", "did", "had"],
         "answer": 2,

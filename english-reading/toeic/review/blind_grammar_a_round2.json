@@ -1,0 +1,57 @@
+[
+ {
+  "id": "g-tense-01",
+  "format": "gap",
+  "stem": "Shortly before the building was sold, all of the security cameras in its parking garage ______, so they are still under warranty.",
+  "options": {
+   "A": "have been replaced",
+   "B": "replaced",
+   "C": "have replaced",
+   "D": "were replaced"
+  }
+ },
+ {
+  "id": "g-connect-01",
+  "format": "gap",
+  "stem": "The monthly staff meeting was moved to the larger conference room ______ the growing number of attendees.",
+  "options": {
+   "A": "because",
+   "B": "because of",
+   "C": "despite",
+   "D": "although"
+  }
+ },
+ {
+  "id": "g-connect-03",
+  "format": "gap",
+  "stem": "Our main supplier charges more than most of its competitors; ______, we have decided to keep ordering from it because its parts rarely fail.",
+  "options": {
+   "A": "however",
+   "B": "therefore",
+   "C": "whereas",
+   "D": "in spite of"
+  }
+ },
+ {
+  "id": "g-connect-04",
+  "format": "gap",
+  "stem": "Orders placed after 3 p.m. will not be shipped until the next business day ______ customers pay extra for same-day shipping.",
+  "options": {
+   "A": "if",
+   "B": "because",
+   "C": "unless",
+   "D": "whether"
+  }
+ },
+ {
+  "id": "g-prep-01",
+  "format": "gap",
+  "stem": "The online system for first-quarter expense claims opens on March 20, and every claim must be submitted ______ April 5.",
+  "options": {
+   "A": "by",
+   "B": "until",
+   "C": "since",
+   "D": "within"
+  }
+ }
+]

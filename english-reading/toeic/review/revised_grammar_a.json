@@ -1,0 +1,10 @@
+{
+  "changed": ["g-connect-03", "g-connect-04", "g-connect-01", "g-prep-01", "g-tense-01"],
+  "notes": {
+    "g-connect-03": "The options are now two conjunctive adverbs (however, therefore) plus a conjunction and a preposition (whereas, in spite of), so grammar leaves two candidates and meaning decides. The stem now sets up an expected 'therefore' (the supplier charges more) that 'keep ordering from it' later in the clause reverses; the answer changed from therefore to however, still at A. The old 'raised its prices' was also dropped because it gave away v-synonym-01 (raise vs rise).",
+    "g-connect-04": "This applies the calibrator's fix: all four options are conjunctions (if, because, unless, whether), so the part of speech no longer decides. 'Express delivery' became 'pay extra for same-day shipping', so the clue that rules out 'if' and 'because' is in the sentence ('same-day' vs 'not until the next business day'). 'whether' fails because an adverbial clause with it needs 'or not'.",
+    "g-connect-01": "This applies the calibrator's fix: 'therefore' and 'so that' became 'despite' and 'although', so two prepositions compete and cause vs concession decides. The scenario also moved from a product launch moved because of weather to a meeting moved to a larger room because of more attendees, because v-business-03 ('Because of the storm warning, the product launch...') cued the old answer.",
+    "g-prep-01": "'at the latest' is gone, so only the one-time action 'must be submitted' separates by from until. A first clause ('opens on March 20') now makes the date read like the end of a period, which makes 'until' a real lure. It stays level 1 because the clue is right before the blank.",
+    "g-tense-01": "The simple past item with 'two weeks ago' next to the blank became a tense-plus-voice item: the definite past time 'Shortly before the building was sold' opens the sentence, far from the blank. 'so they are still under warranty' right after the blank pulls toward 'have been replaced'. The options form a 2x2 grid of voice and tense (were replaced / have been replaced / replaced / have replaced), and the item is now level 3."
+  }
+}
