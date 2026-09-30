@@ -2,7 +2,8 @@
 """TOEIC 練習室：手寫文法題（b 批）。
 
 單元：voice 3、agree 3、relative 3、pronoun 3、toing 3、compare 3、
-quantity 3、parallel 3、mandative 2、conditional 2，共 28 題。
+quantity 3、parallel 3、mandative 2、conditional 2，共 28 題；
+第三輪再加 relative、agree、quantity、mandative、compare、toing、pronoun、conditional 各 1 題，共 36 題。
 schema 見 DESIGN.md 第 5 節；reviewed 由審核者改成 True。
 """
 
@@ -29,17 +30,17 @@ ITEMS = [
     },
     {
         "id": "g-voice-02", "type": "grammar", "format": "gap", "unit": "voice", "level": 2,
-        "source": "hand", "reviewed": True, "v": 1,
+        "source": "hand", "reviewed": False, "v": 2,
         "stem": "Shipping costs for our overseas orders ______ by nearly eight percent since the start of the year.",
-        "options": ["have raised", "have risen", "have been risen", "have been raising"],
+        "options": ["have raised", "have risen", "are rising", "have been raising"],
         "answer": 1,
         "explain": {
-            "point": "rise 不及物、沒有被動；raise 及物，要接受詞",
-            "why": "空格後的 by nearly eight percent 不是受詞，運費是自己「上漲」，用不及物的 rise：have risen。",
+            "point": "rise 不及物；raise 及物要接受詞；since 配完成式",
+            "why": "空格後的 by nearly eight percent 不是受詞，運費是自己「上漲」，用不及物的 rise；since 要配完成式：have risen。",
             "wrong": [
                 "raise 是及物動詞，後面要有受詞",
                 None,
-                "rise 是不及物動詞，沒有被動",
+                "rise 用對了，但 since 要配完成式，不配進行式",
                 "raise 的完成進行式是主動，後面缺受詞",
             ],
             "zh": "自年初以來，我們海外訂單的運費上漲了將近百分之八。",
@@ -243,7 +244,7 @@ ITEMS = [
     {
         "id": "g-toing-01", "type": "grammar", "format": "gap", "unit": "toing", "level": 1,
         "source": "hand", "reviewed": True, "v": 1,
-        "stem": "The board has decided ______ the opening of the Leeds branch until the renovation is complete.",
+        "stem": "The board has decided ______ the opening of the Harwyn Street branch until the renovation is complete.",
         "options": ["postpone", "postponing", "postponed", "to postpone"],
         "answer": 3,
         "explain": {
@@ -255,7 +256,7 @@ ITEMS = [
                 "過去分詞不能直接接在 decided 後面",
                 None,
             ],
-            "zh": "董事會已決定把里茲分店的開幕延到整修完成之後。",
+            "zh": "董事會已決定把 Harwyn 街分店的開幕延到整修完成之後。",
             "vocab": [["postpone", "延後"], ["branch", "分店"], ["renovation", "整修"]],
         },
     },
@@ -547,6 +548,215 @@ ITEMS = [
             ],
             "zh": "直到新的庫存軟體安裝好之後，我們倉庫的出錯率才開始下降。",
             "vocab": [["inventory", "庫存"], ["error rate", "錯誤率"], ["warehouse", "倉庫"]],
+        },
+    },
+    # ============================================ 第三輪新增（附錄二規則）
+    # ------------------------------------------------------------ relative
+    {
+        "id": "g-relative-04", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "Out of more than forty applications, the hiring committee has invited back only the three candidates ______ it believes are best qualified to run the new Dunhallow distribution center.",
+        "options": ["whom", "who", "whose", "which"],
+        "answer": 1,
+        "explain": {
+            "point": "中間插入 it believes 時，先拿掉再看缺什麼",
+            "why": "拿掉插入的 it believes，就是 candidates ___ are best qualified；關係代名詞當 are 的主詞，要用主格 who。",
+            "wrong": [
+                "受格，但它是後面 are 的主詞，不是 believes 的受詞",
+                None,
+                "whose 後面要接名詞，這裡接的是 it believes",
+                "先行詞 candidates 是人，不能用 which",
+            ],
+            "wrongMore": [
+                "candidates whom it believes 讀起來像「委員會相信的人」，但 believes 後面接的是子句 (that) they are best qualified；子句缺的是 are 的主詞，所以用 who。",
+                None,
+                None,
+                None,
+            ],
+            "zh": "在四十多份申請中，招聘委員會只請其中三位它認為最有資格管理 Dunhallow 新物流中心的人選回來參加下一輪。",
+            "vocab": [["hiring committee", "招聘委員會"], ["candidate", "人選、候選人"], ["qualified", "有資格的、能勝任的"]],
+        },
+    },
+    # ------------------------------------------------------------ agree
+    {
+        "id": "g-agree-04", "type": "grammar", "format": "gap", "unit": "agree", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "Each of the regional sales offices, including the three that opened in Asia last year, ______ required to submit a quarterly budget report to head office.",
+        "options": ["are", "have", "is", "being"],
+        "answer": 2,
+        "explain": {
+            "point": "each of the + 複數名詞：主詞是 each，動詞用單數",
+            "why": "主詞是句首的 Each，不是 offices 或 the three；each 是單數，被動 be required 要用 is。",
+            "wrong": [
+                "被 offices 和 the three 帶偏；主詞 Each 是單數",
+                "have required 缺 been；主詞 Each 也要配單數",
+                None,
+                "分詞不能當主要動詞，句子會缺動詞",
+            ],
+            "wrongMore": [
+                "空格前的 the three 和 offices 都讓人想用複數；但真正的主詞是句首的 Each，of the regional sales offices 和逗號之間的 including ... 都只是修飾和插入語。",
+                None,
+                None,
+                None,
+            ],
+            "zh": "每一個區域業務辦事處，包括去年在亞洲新開的三個，都必須向總公司提交季度預算報告。",
+            "vocab": [["regional sales office", "區域業務辦事處"], ["quarterly", "每季的"], ["head office", "總公司"]],
+        },
+    },
+    # ------------------------------------------------------------ quantity
+    {
+        "id": "g-quantity-04", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "Since the warehouse switched to barcode scanning in March, customers have reported ______ shipping and billing errors than they did in all of last year.",
+        "options": ["less", "fewer", "fewest", "little"],
+        "answer": 1,
+        "explain": {
+            "point": "可數複數的「較少」用 fewer，不可數用 less",
+            "why": "有 than 要用比較級；被修飾的中心名詞是可數複數的 errors（shipping and billing 只是修飾），所以用 fewer。",
+            "wrong": [
+                "less 接不可數；正式書面語的可數複數用 fewer",
+                None,
+                "最高級不和 than 連用",
+                "原級不能接 than，而且只接不可數名詞",
+            ],
+            "wrongMore": [
+                "空格後先看到 shipping，像不可數名詞，容易選 less；但被修飾的中心名詞是 errors（可數複數）。口語常聽到 less errors，正式書面英文要用 fewer。",
+                None,
+                None,
+                None,
+            ],
+            "zh": "自從倉庫三月改用條碼掃描以來，顧客回報的出貨和帳單錯誤，已經比去年一整年還少。",
+            "vocab": [["barcode scanning", "條碼掃描"], ["billing error", "帳單錯誤"], ["report", "回報、通報"]],
+        },
+    },
+    # ------------------------------------------------------------ mandative
+    {
+        "id": "g-mandative-03", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "In light of several duplicate payments last year, the external auditors have strongly recommended in their final report that the accounts payable team ______ every invoice over $5,000 against the original purchase order.",
+        "options": ["checks", "checked", "is checking", "check"],
+        "answer": 3,
+        "explain": {
+            "point": "recommend that + 主詞 + 原形（主詞單數也不加 -s）",
+            "why": "recommended that 表示建議該怎麼做，that 子句用原形；主詞 the accounts payable team 雖是單數，仍用 check。",
+            "wrong": [
+                "主詞單數容易加 -s，但建議的內容要用原形",
+                "過去式，建議的內容要用原形",
+                "進行式講正在做，不是建議的做法",
+                None,
+            ],
+            "wrongMore": [
+                "空格前緊鄰的是單數的 the accounts payable team，很自然會配 checks；但決定形式的是前面隔了一段的 have strongly recommended ... that，建議的內容一律用原形 check。",
+                None,
+                None,
+                None,
+            ],
+            "zh": "鑑於去年發生了幾筆重複付款，外部稽核人員在最終報告中強烈建議，應付帳款小組要把每張超過五千美元的發票和原始採購單逐一核對。",
+            "vocab": [["external auditor", "外部稽核人員"], ["accounts payable", "應付帳款"], ["purchase order", "採購單"]],
+        },
+    },
+    # ------------------------------------------------------------ compare
+    {
+        "id": "g-compare-04", "type": "grammar", "format": "gap", "unit": "compare", "level": 1,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "Although it weighs about the same, the new Quelsa X2 vacuum cleaner is nearly twice ______ powerful as the model it replaces.",
+        "options": ["more", "so", "as", "much"],
+        "answer": 2,
+        "explain": {
+            "point": "倍數 + as + 原級 + as：twice as powerful as",
+            "why": "空格後面是 powerful as the model，要湊成 as ... as；倍數 twice 放在第一個 as 前面：twice as powerful as。",
+            "wrong": [
+                "more 要配 than；後面是 as，不是 than",
+                "so ... as 只用在否定句 not so ... as",
+                None,
+                "much 修飾比較級，不能夾在 twice 和原級之間",
+            ],
+            "wrongMore": [
+                "twice more powerful 單看很順，但要讀到後面的 as the model 才知道句型是 as ... as；more 要配 than，不配 as。",
+                None,
+                None,
+                None,
+            ],
+            "zh": "雖然重量差不多，新的 Quelsa X2 吸塵器吸力卻幾乎是舊機型的兩倍。",
+            "vocab": [["vacuum cleaner", "吸塵器"], ["powerful", "（機器）強力的"], ["replace", "取代"]],
+        },
+    },
+    # ------------------------------------------------------------ toing
+    {
+        "id": "g-toing-04", "type": "grammar", "format": "gap", "unit": "toing", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "The automated sorting machines installed at the Tamberly warehouse last spring have contributed significantly ______ the time it takes to process customer returns.",
+        "options": ["to reduce", "reducing", "for reducing", "to reducing"],
+        "answer": 3,
+        "explain": {
+            "point": "contribute to 的 to 是介系詞，後面接 Ving",
+            "why": "contribute to 的 to 是介系詞（可說 contribute to the drop），後面的動詞要用 Ving：to reducing。",
+            "wrong": [
+                "把 to 當成不定詞；contribute to 的 to 是介系詞",
+                "少了 to；contribute 要說 contribute to",
+                "contribute 不接 for",
+                None,
+            ],
+            "wrongMore": [
+                "中間隔了 significantly，to reduce the time 單看像「為了縮短時間」；但這個 to 是前面 contributed 帶的介系詞，機器是「有助於縮短」，要用 to reducing。",
+                None,
+                None,
+                None,
+            ],
+            "zh": "去年春天在 Tamberly 倉庫裝設的自動分揀機，大幅縮短了處理顧客退貨所需的時間。",
+            "vocab": [["sorting machine", "分揀機"], ["contribute to", "有助於、促成"], ["customer return", "顧客退貨"]],
+        },
+    },
+    # ------------------------------------------------------------ pronoun
+    {
+        "id": "g-pronoun-04", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "______ who registered for the leadership workshop before the early deadline of May 3 are entitled to a 20 percent discount on the printed course materials.",
+        "options": ["Those", "Anyone", "Whoever", "Them"],
+        "answer": 0,
+        "explain": {
+            "point": "those who + 複數動詞：「……的那些人」",
+            "why": "句子的主要動詞是 are，主詞要是複數；those who 表示「……的那些人」，所以用 Those。",
+            "wrong": [
+                None,
+                "anyone 是單數，要配 is，不配 are",
+                "whoever 本身就含 who，後面不能再接 who",
+                "受格不能當主詞，them who 也不成立",
+            ],
+            "wrongMore": [
+                None,
+                "Anyone who registered ... 前半句完全通順，要讀到隔了一長串的 are entitled 才知道主詞要複數；用 anyone 就要說 anyone who registered ... is entitled。",
+                None,
+                None,
+            ],
+            "zh": "在 5 月 3 日早鳥截止日前報名領導力工作坊的人，購買紙本課程教材可享八折優惠。",
+            "vocab": [["register for", "報名"], ["early deadline", "早鳥截止日"], ["be entitled to", "有權享有"]],
+        },
+    },
+    # ------------------------------------------------------------ conditional
+    {
+        "id": "g-conditional-03", "type": "grammar", "format": "gap", "unit": "conditional", "level": 1,
+        "source": "hand", "reviewed": False, "v": 1,
+        "stem": "______ you have any questions about your new account, please contact our customer service team, which is available from 9 a.m. to 6 p.m. on weekdays.",
+        "options": ["Should", "Would", "Unless", "Had"],
+        "answer": 0,
+        "explain": {
+            "point": "Should + 主詞 + 原形 = If ... should，信件常用",
+            "why": "省略 If 的倒裝：If you should have any questions → Should you have any questions。",
+            "wrong": [
+                None,
+                "Would you have ... 是問句，接不上 please contact",
+                "變成「除非有問題，否則請聯絡」，意思顛倒",
+                "Had 倒裝要接 p.p.，不接原形 have",
+            ],
+            "wrongMore": [
+                None,
+                "Would you have any questions about your new account 前半像一個問句，但後面沒有問號，還接了 please contact 的祈使句，兩句接不起來；條件句倒裝只能用 Should。",
+                None,
+                None,
+            ],
+            "zh": "如果您對新帳戶有任何疑問，請聯絡我們的客服團隊，服務時間為平日上午九點到下午六點。",
+            "vocab": [["account", "帳戶"], ["customer service", "客服"], ["weekday", "平日"]],
         },
     },
 ]

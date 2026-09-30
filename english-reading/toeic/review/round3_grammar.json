@@ -1,0 +1,52 @@
+{
+ "changed": [
+  "g-tense-02",
+  "g-voice-02",
+  "g-connect-03",
+  "g-participle-01",
+  "g-pos-06",
+  "g-toing-01"
+ ],
+ "new": [
+  "g-pos-07",
+  "g-pos-08",
+  "g-tense-06",
+  "g-connect-06",
+  "g-participle-05",
+  "g-prep-05",
+  "g-prep-06",
+  "g-prep-07",
+  "g-relative-04",
+  "g-agree-04",
+  "g-quantity-04",
+  "g-mandative-03",
+  "g-compare-04",
+  "g-toing-04",
+  "g-pronoun-04",
+  "g-conditional-03"
+ ],
+ "notes": {
+  "g-tense-02": "Cue 'at the moment' replaced by sentence-initial 'Currently'; simple present 'investigate' is now the near-miss (currently + simple present works for states, not a one-off repair). Level 1->2.",
+  "g-voice-02": "Non-existent 'have been risen' replaced by real form 'are rising' (right verb, wrong tense for 'since').",
+  "g-connect-03": "Semicolon split into two sentences; options capitalized; 'Therefore' is the near-miss (grammatical, wrong direction).",
+  "g-participle-01": "'Web site' -> 'website' only; stays reviewed.",
+  "g-pos-06": "consider- family replaced by dramatic/drama/dramatically/dramatize; stem lengthened; 'made it dramatic' is the near-miss.",
+  "g-toing-01": "Leeds -> invented 'Harwyn Street branch' (stem and zh); stays reviewed.",
+  "g-pos-07": "Adverb in end position: find X easily vs find X easy (object complement); 'without calling ... for directions' shows find = locate. Band medium.",
+  "g-pos-08": "Main-verb slot: 'The results ... indicating that ...' reads fine locally, but the sentence then has no finite verb. Band medium.",
+  "g-tense-06": "Future perfect; relative clause 'who joined' + 'for thirty-two years' lure 'has been', only 'when she retires at the end of next month' at the end decides. Band hard.",
+  "g-connect-06": "provided that vs unless in a two-clause stem; the opening Because-clause (dock unstaffed) rules out 'unless'. Band hard.",
+  "g-participle-05": "Reduced passive relative: 'were hired' fits the first half, ruled out by the later main verb 'have recommended'. Band medium.",
+  "g-prep-05": "Formal phrase in accordance with (the guidelines); near-miss 'in response to'. Band easy.",
+  "g-prep-06": "Verb + preposition attribute A to B with a long A; near-miss 'from' (shipments from delays) fits locally. Band medium.",
+  "g-prep-07": "Correspondence phrase on behalf of; near-miss 'in favor of', ruled out by 'our annual awards dinner'. Band easy.",
+  "g-relative-04": "Classic who vs whom with inserted 'it believes' (candidates who it believes are...). Reviewer please judge: some usage guides tolerate 'whom' here; standard answer is who. Band hard.",
+  "g-agree-04": "Each of the + plural with a long insertion ('including the three that opened...'); lure 'are'. Band medium.",
+  "g-quantity-04": "fewer vs less with the head noun 'errors' separated by 'shipping and billing'; less is informal with count nouns. Band medium.",
+  "g-mandative-03": "recommend that + base form with singular subject; -s form 'checks' is the lure; no 'should' option. Reviewer please judge BrE covert-mandative tolerance. Band hard.",
+  "g-compare-04": "twice as ... as; near-miss 'more' (twice more powerful) ruled out by the later 'as'. Band easy.",
+  "g-toing-04": "Verb + preposition contribute to + V-ing; adverb 'significantly' separates verb and blank so 'to reduce' looks like a purpose infinitive. Band medium.",
+  "g-pronoun-04": "Those who + plural verb; 'Anyone who registered ...' fits until the distant 'are'. Band medium.",
+  "g-conditional-03": "Formal-letter inversion 'Should you have any questions'; near-miss 'Would' (reads as a question until 'please contact'). Band easy."
+ }
+}

@@ -1,0 +1,244 @@
+[
+ {
+  "id": "g-pos-06",
+  "format": "gap",
+  "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice, so the front desk no longer handles most requests by phone.",
+  "options": {
+   "A": "dramatic",
+   "B": "drama",
+   "C": "dramatically",
+   "D": "dramatize"
+  }
+ },
+ {
+  "id": "g-tense-02",
+  "format": "gap",
+  "stem": "Currently, our technicians ______ the cause of this morning's network outage, so e-mail and shared files may load slowly until early afternoon.",
+  "options": {
+   "A": "investigate",
+   "B": "are investigating",
+   "C": "investigated",
+   "D": "have investigated"
+  }
+ },
+ {
+  "id": "g-connect-03",
+  "format": "gap",
+  "stem": "Our main supplier charges more than most of its competitors. ______, we have decided to keep ordering from it because its parts rarely fail.",
+  "options": {
+   "A": "However",
+   "B": "Therefore",
+   "C": "Whereas",
+   "D": "In spite of"
+  }
+ },
+ {
+  "id": "g-participle-01",
+  "format": "gap",
+  "stem": "Customers can download the ______ price list from our website starting next Monday.",
+  "options": {
+   "A": "updated",
+   "B": "update",
+   "C": "updating",
+   "D": "updates"
+  }
+ },
+ {
+  "id": "g-pos-07",
+  "format": "gap",
+  "stem": "Thanks to the new signs posted along Merrow Road, most first-time visitors can now find the Pembry Conference Center ______ without calling the front desk for directions.",
+  "options": {
+   "A": "easy",
+   "B": "ease",
+   "C": "easiness",
+   "D": "easily"
+  }
+ },
+ {
+  "id": "g-pos-08",
+  "format": "gap",
+  "stem": "The results of last month's customer survey ______ that most shoppers would pay slightly more for faster delivery, especially those living outside major cities.",
+  "options": {
+   "A": "indication",
+   "B": "indicate",
+   "C": "indicative",
+   "D": "indicating"
+  }
+ },
+ {
+  "id": "g-tense-06",
+  "format": "gap",
+  "stem": "Ms. Delgado, who joined Halloway Engineering as a junior engineer straight out of university, ______ with the firm for thirty-two years when she retires at the end of next month.",
+  "options": {
+   "A": "has been",
+   "B": "had been",
+   "C": "will have been",
+   "D": "was"
+  }
+ },
+ {
+  "id": "g-connect-06",
+  "format": "gap",
+  "stem": "Because the loading dock is staffed only until 5 p.m., the warehouse will accept deliveries after 6 p.m. ______ the driver has arranged access with the night supervisor in advance.",
+  "options": {
+   "A": "unless",
+   "B": "provided that",
+   "C": "so that",
+   "D": "even if"
+  }
+ },
+ {
+  "id": "g-participle-05",
+  "format": "gap",
+  "stem": "The consultants ______ last spring to review the company's operations have recommended closing two of its five regional offices by the end of the year.",
+  "options": {
+   "A": "hiring",
+   "B": "were hired",
+   "C": "hire",
+   "D": "hired"
+  }
+ },
+ {
+  "id": "g-prep-05",
+  "format": "gap",
+  "stem": "All chemicals used in the Rennick Street laboratory must be labeled and stored ______ the guidelines set out in section 4 of the safety manual that every new employee receives.",
+  "options": {
+   "A": "in response to",
+   "B": "in addition to",
+   "C": "in accordance with",
+   "D": "on behalf of"
+  }
+ },
+ {
+  "id": "g-prep-06",
+  "format": "gap",
+  "stem": "In her quarterly report, the logistics manager attributes most of the drop in second-quarter shipments ______ delays at the Port of Castrell, which was closed for nine days in May.",
+  "options": {
+   "A": "to",
+   "B": "from",
+   "C": "for",
+   "D": "with"
+  }
+ },
+ {
+  "id": "g-prep-07",
+  "format": "gap",
+  "stem": "I am writing ______ the Norrell Valley Business Association to invite you to speak at our annual awards dinner on October 14.",
+  "options": {
+   "A": "on behalf of",
+   "B": "in favor of",
+   "C": "in charge of",
+   "D": "in case of"
+  }
+ },
+ {
+  "id": "g-voice-02",
+  "format": "gap",
+  "stem": "Shipping costs for our overseas orders ______ by nearly eight percent since the start of the year.",
+  "options": {
+   "A": "have raised",
+   "B": "have risen",
+   "C": "are rising",
+   "D": "have been raising"
+  }
+ },
+ {
+  "id": "g-toing-01",
+  "format": "gap",
+  "stem": "The board has decided ______ the opening of the Harwyn Street branch until the renovation is complete.",
+  "options": {
+   "A": "postpone",
+   "B": "postponing",
+   "C": "postponed",
+   "D": "to postpone"
+  }
+ },
+ {
+  "id": "g-relative-04",
+  "format": "gap",
+  "stem": "Out of more than forty applications, the hiring committee has invited back only the three candidates ______ it believes are best qualified to run the new Dunhallow distribution center.",
+  "options": {
+   "A": "whom",
+   "B": "who",
+   "C": "whose",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-agree-04",
+  "format": "gap",
+  "stem": "Each of the regional sales offices, including the three that opened in Asia last year, ______ required to submit a quarterly budget report to head office.",
+  "options": {
+   "A": "are",
+   "B": "have",
+   "C": "is",
+   "D": "being"
+  }
+ },
+ {
+  "id": "g-quantity-04",
+  "format": "gap",
+  "stem": "Since the warehouse switched to barcode scanning in March, customers have reported ______ shipping and billing errors than they did in all of last year.",
+  "options": {
+   "A": "less",
+   "B": "fewer",
+   "C": "fewest",
+   "D": "little"
+  }
+ },
+ {
+  "id": "g-mandative-03",
+  "format": "gap",
+  "stem": "In light of several duplicate payments last year, the external auditors have strongly recommended in their final report that the accounts payable team ______ every invoice over $5,000 against the original purchase order.",
+  "options": {
+   "A": "checks",
+   "B": "checked",
+   "C": "is checking",
+   "D": "check"
+  }
+ },
+ {
+  "id": "g-compare-04",
+  "format": "gap",
+  "stem": "Although it weighs about the same, the new Quelsa X2 vacuum cleaner is nearly twice ______ powerful as the model it replaces.",
+  "options": {
+   "A": "more",
+   "B": "so",
+   "C": "as",
+   "D": "much"
+  }
+ },
+ {
+  "id": "g-toing-04",
+  "format": "gap",
+  "stem": "The automated sorting machines installed at the Tamberly warehouse last spring have contributed significantly ______ the time it takes to process customer returns.",
+  "options": {
+   "A": "to reduce",
+   "B": "reducing",
+   "C": "for reducing",
+   "D": "to reducing"
+  }
+ },
+ {
+  "id": "g-pronoun-04",
+  "format": "gap",
+  "stem": "______ who registered for the leadership workshop before the early deadline of May 3 are entitled to a 20 percent discount on the printed course materials.",
+  "options": {
+   "A": "Those",
+   "B": "Anyone",
+   "C": "Whoever",
+   "D": "Them"
+  }
+ },
+ {
+  "id": "g-conditional-03",
+  "format": "gap",
+  "stem": "______ you have any questions about your new account, please contact our customer service team, which is available from 9 a.m. to 6 p.m. on weekdays.",
+  "options": {
+   "A": "Should",
+   "B": "Would",
+   "C": "Unless",
+   "D": "Had"
+  }
+ }
+]

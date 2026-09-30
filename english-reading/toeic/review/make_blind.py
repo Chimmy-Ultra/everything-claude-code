@@ -16,6 +16,7 @@ for it in items:
         if it["format"] == "qr":
             b.update(heard=lines[0]["text"], responses={"ABC"[i]: ln["text"] for i, ln in enumerate(lines[1:4])})
         else:
+            if it.get("graphic"): b["graphic"] = it["graphic"]
             b.update(transcript=[f'{ln["who"]}: {ln["text"]}' for ln in lines],
                      questions=[{"q": q["q"], "options": {"ABCD"[i]: o for i, o in enumerate(q["options"])}} for q in it["questions"]])
     out.append(b)

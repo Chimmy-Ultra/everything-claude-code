@@ -199,6 +199,109 @@ ITEMS = [
             },
         }],
     },
+    # Round 3 Part 2 items: each has at least one wrong response that fits the question type
+    # and can only be ruled out by the context; all four keys are indirect.
+    {
+        "id": "l-qr-09", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "audio": {
+            "dir": "audio/l-qr-09", "gapMs": 900,
+            "lines": [
+                {"file": "q.mp3", "who": "W", "voice": "af_sarah", "text": "Who's going to lead the safety training now that Ms. Harlan has retired?",
+                 "say": "Who's going to lead the safety training now that Miz Harlan has retired?"},
+                {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "Ms. Harlan will be leading it.", "say": "Miz Harlan will be leading it."},
+                {"file": "b.mp3", "who": "M", "voice": "bm_george", "text": "That's on the agenda for Monday's meeting."},
+                {"file": "c.mp3", "who": "M", "voice": "bm_george", "text": "It was very useful last year."},
+            ],
+        },
+        "transcriptZh": ["既然 Harlan 女士退休了，安全訓練要由誰來帶？", "由 Harlan 女士來帶。", "那件事排在星期一開會的議程上。", "去年的訓練很有用。"],
+        "questions": [{
+            "q": None, "options": None, "answer": 1,
+            "explain": {
+                "point": "Who 問人：回答也可以是「還沒決定」",
+                "why": "問 Harlan 退休後誰來帶 → 回 on the agenda for Monday's meeting：間接表示還沒定，星期一開會才決定。",
+                "evidence": [2],
+                "wrong": ["語境矛盾：Harlan 已經退休，不可能再帶", None, "只評論去年的訓練，沒回答由誰帶"],
+                "wrongMore": ["這句的形式完全符合 who 問句（說出一個人），只能靠問句後半的 now that Ms. Harlan has retired 排除。", None, None],
+                "vocab": [["now that", "既然、由於"], ["retire", "退休"], ["agenda", "議程"]],
+            },
+        }],
+    },
+    {
+        "id": "l-qr-10", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "audio": {
+            "dir": "audio/l-qr-10", "gapMs": 900,
+            "lines": [
+                {"file": "q.mp3", "who": "W", "voice": "af_bella", "text": "Why is the parking garage closed today?"},
+                {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Because I usually take the train."},
+                {"file": "b.mp3", "who": "M", "voice": "am_michael", "text": "Until six this evening."},
+                {"file": "c.mp3", "who": "M", "voice": "am_michael", "text": "Didn't you see the e-mail from the building manager?"},
+            ],
+        },
+        "transcriptZh": ["停車場今天為什麼關閉？", "因為我平常都搭火車。", "到今天傍晚六點。", "你沒看到大樓管理員寄的電子郵件嗎？"],
+        "questions": [{
+            "q": None, "options": None, "answer": 2,
+            "explain": {
+                "point": "Why 問原因：反問句也能是答案",
+                "why": "問停車場為什麼關 → 反問 didn't you see the e-mail：暗示原因信裡已經寫了。",
+                "evidence": [3],
+                "wrong": ["答非所問：Because 句型對，但講的是自己怎麼通勤", "答錯問句類型：回答關到幾點，不是原因", None],
+                "wrongMore": ["聽到 why 就找 because 會選這個；要解釋的是「停車場為什麼關」，不是「我為什麼不開車」。", None, None],
+                "vocab": [["parking garage", "室內停車場"], ["building manager", "大樓管理員"]],
+            },
+        }],
+    },
+    {
+        "id": "l-qr-11", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "audio": {
+            "dir": "audio/l-qr-11", "gapMs": 900,
+            "lines": [
+                {"file": "q.mp3", "who": "M", "voice": "bm_george", "text": "The quarterly figures still don't add up."},
+                {"file": "a.mp3", "who": "M", "voice": "bm_lewis", "text": "Sales rose four percent this quarter."},
+                {"file": "b.mp3", "who": "M", "voice": "bm_lewis", "text": "Good, then we can send them to the board."},
+                {"file": "c.mp3", "who": "M", "voice": "bm_lewis", "text": "Did you include the April returns?"},
+            ],
+        },
+        "transcriptZh": ["這一季的數字還是對不起來。", "這一季業績成長了百分之四。", "很好，那我們可以把它們送交董事會了。", "你有把四月的退貨算進去嗎？"],
+        "questions": [{
+            "q": None, "options": None, "answer": 2,
+            "explain": {
+                "point": "敘述句：回應可以是追問可能的原因",
+                "why": "說數字 still don't add up（對不起來）→ 反問有沒有算進四月的退貨：指出可能漏算的地方。",
+                "evidence": [3],
+                "wrong": ["只報業績成長，沒回應數字對不起來的問題", "語境矛盾：數字還有錯，不能說好、可以送出", None],
+                "wrongMore": [None, "Good, then… 的語氣和句型都像正常接話；只有聽懂 still don't add up 是「還有錯」才能排除。", None],
+                "vocab": [["add up", "（數字）對得起來"], ["quarterly figures", "季度數字"], ["returns", "退貨"]],
+            },
+        }],
+    },
+    {
+        "id": "l-qr-12", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "audio": {
+            "dir": "audio/l-qr-12", "gapMs": 900,
+            "lines": [
+                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "Could you show the new designer how to use the booking system?"},
+                {"file": "a.mp3", "who": "W", "voice": "af_sarah", "text": "She used the same one at her last job."},
+                {"file": "b.mp3", "who": "W", "voice": "af_sarah", "text": "Yes, the booking fee is included."},
+                {"file": "c.mp3", "who": "W", "voice": "af_sarah", "text": "The new logo design looks great."},
+            ],
+        },
+        "transcriptZh": ["你可以教新來的設計師怎麼用預約系統嗎？", "她在上一份工作就用過同一套。", "可以，預約手續費已經含在裡面了。", "新的標誌設計看起來很棒。"],
+        "questions": [{
+            "q": None, "options": None, "answer": 0,
+            "explain": {
+                "point": "請求句：用理由間接表示「不需要」",
+                "why": "請她教新設計師用預約系統 → 回她在上一份工作用過同一套：暗示已經會用，不必教。",
+                "evidence": [1],
+                "wrong": [None, "同字陷阱：Yes 形式可以，但講的是手續費", "同字陷阱：designer／design，講的是標誌好不好看"],
+                "wrongMore": [None, "Could you… 用 Yes 回是可以的，所以不能只看開頭；後半講預約手續費，跟教人用系統無關。", None],
+                "vocab": [["booking system", "預約系統"], ["the same one", "同一套（系統）"]],
+            },
+        }],
+    },
 
     # ------------------------------------------------------------------ conv (Part 3)
     {
@@ -456,6 +559,149 @@ ITEMS = [
             },
         ],
     },
+    {
+        # Three speakers: W1 = Rachel, M = Victor, W2 = Hannah (Rachel names both in line 1 and Hannah again in line 6).
+        "id": "l-conv-05", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "audio": {
+            "dir": "audio/l-conv-05", "gapMs": 500,
+            "lines": [
+                {"file": "01.mp3", "who": "W1", "voice": "af_sarah", "text": "Victor, Hannah, thanks for joining me. The buyers from Brenridge Foods have confirmed they'll visit next week, and they mainly want to see our new packaging line in action."},
+                {"file": "02.mp3", "who": "M", "voice": "am_michael", "text": "That's great, but the line will be shut down on Monday and Tuesday for its first scheduled maintenance."},
+                {"file": "03.mp3", "who": "W1", "voice": "af_sarah", "text": "Then how about Friday? That would give us a few extra days to prepare."},
+                {"file": "04.mp3", "who": "W2", "voice": "af_bella", "text": "That day won't work. The painters have the whole production floor booked, and visitors aren't allowed in while they're working."},
+                {"file": "05.mp3", "who": "M", "voice": "am_michael", "text": "Wednesday or Thursday, then. I'd go with Thursday. The maintenance crew sometimes runs a day over."},
+                {"file": "06.mp3", "who": "W1", "voice": "af_sarah", "text": "Thursday it is. I'll let the buyers know this afternoon. Hannah, can you take care of the safety gear?"},
+                {"file": "07.mp3", "who": "W2", "voice": "af_bella", "text": "Sure. We'll need helmets and glasses for the visitors, and our spare sets are pretty worn out."},
+                {"file": "08.mp3", "who": "W1", "voice": "af_sarah", "text": "Then order new ones today. The supplier usually takes three days to deliver."},
+                {"file": "09.mp3", "who": "W2", "voice": "af_bella", "text": "Will do. I'll call them as soon as we're done here."},
+            ],
+        },
+        "transcriptZh": [
+            "Victor、Hannah，謝謝你們過來。Brenridge 食品的採購已經確定下週要來參訪，他們主要是想看我們新的包裝生產線實際運作。",
+            "太好了，不過那條線星期一和星期二會停機，做第一次定期保養。",
+            "那星期五呢？這樣我們還能多幾天準備。",
+            "那天不行。油漆工把整個生產廠區都排滿了，他們施工的時候訪客不能進去。",
+            "那就星期三或星期四。我會選星期四，保養人員有時候會拖一天。",
+            "那就星期四。我今天下午會通知採購。Hannah，安全裝備可以交給你處理嗎？",
+            "沒問題。訪客需要安全帽和護目鏡，我們備用的那幾套都很舊了。",
+            "那今天就訂新的。供應商通常要三天才能送到。",
+            "好的。我們這邊一開完我就打給他們。",
+        ],
+        "questions": [
+            {
+                "q": "What do the visitors mainly want to do?",
+                "options": ["Place a large order", "Watch some new equipment operate", "Meet the maintenance crew", "Tour a freshly painted area"],
+                "answer": 1,
+                "explain": {
+                    "point": "目的題：答案在開頭，注意 mainly",
+                    "why": "開頭說買方 mainly want to see our new packaging line in action → 改述成看新設備運作。",
+                    "evidence": [0],
+                    "wrong": ["聯想陷阱：來的是採購，但沒說要下訂單", None, "同字陷阱：保養是停機的原因，不是參訪目的", "同字陷阱：油漆施工時訪客反而不能進去"],
+                    "vocab": [["in action", "實際運作中"], ["packaging line", "包裝生產線"]],
+                },
+            },
+            {
+                "q": "Why can't the visit take place on Friday?",
+                "options": ["The packaging line will be under maintenance", "The buyers have another appointment", "Part of the facility will be closed to visitors", "The new safety gear will not be ready"],
+                "answer": 2,
+                "explain": {
+                    "point": "跨說話者：that day 要回頭找前一人說的 Friday",
+                    "why": "Rachel 提議 Friday，Hannah 說 that day 油漆工包下整個廠區、訪客不能進 → 改述成廠區有一部分不開放。",
+                    "evidence": [2, 3],
+                    "wrong": ["時間錯置：生產線保養是星期一、二", "沒有人提到採購另有行程", None, "安全裝備今天訂、三天就到，不是原因"],
+                    "vocab": [["booked", "被預訂、排滿"], ["production floor", "生產廠區"], ["facility", "廠房、設施"]],
+                },
+            },
+            {
+                "q": "What will Hannah most likely do next?",
+                "options": ["Tell the buyers about the new date", "Contact a vendor", "Reschedule the painters", "Inspect the packaging line"],
+                "answer": 1,
+                "explain": {
+                    "point": "三人對話：先分清誰是 Hannah，them 往前找",
+                    "why": "Rachel 叫 Hannah 今天向 the supplier 訂貨；Hannah 說 I'll call them → 打給供應商，改述成 contact a vendor。",
+                    "evidence": [7, 8],
+                    "wrong": ["張冠李戴：通知採購是 Rachel 說她要做的", None, "油漆工的時間沒有要改", "沒有人說要她去檢查生產線"],
+                    "vocab": [["supplier", "供應商"], ["vendor", "廠商"], ["worn out", "磨損、用舊了"]],
+                },
+            },
+        ],
+    },
+    {
+        "id": "l-conv-06", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 3,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "graphic": {
+            "caption": "Eastbrook Small Business Forum — Saturday Workshops",
+            "head": ["Time", "Workshop", "Room"],
+            "rows": [
+                ["9:00 A.M.", "Building an Online Presence", "Room 101"],
+                ["10:30 A.M.", "Writing Strong Proposals", "Room 204"],
+                ["1:00 P.M.", "Negotiating Contracts", "Room 115"],
+                ["2:30 P.M.", "Leading Remote Teams", "Room 310"],
+            ],
+        },
+        "audio": {
+            "dir": "audio/l-conv-06", "gapMs": 500,
+            "lines": [
+                {"file": "01.mp3", "who": "W", "voice": "af_sarah", "text": "Omar, are you going to the workshop on contracts after lunch? I've heard the speaker is excellent."},
+                {"file": "02.mp3", "who": "M", "voice": "bm_george", "text": "I'd like to, but my manager asked me to go to the one right after it. She thinks it'll help with our new work-from-home policy."},
+                {"file": "03.mp3", "who": "W", "voice": "af_sarah", "text": "Oh, that makes sense. By the way, have you picked up your badge yet? They wouldn't let me into the morning session without mine."},
+                {"file": "04.mp3", "who": "M", "voice": "bm_george", "text": "Not yet. Is the registration desk still in the main lobby?"},
+                {"file": "05.mp3", "who": "W", "voice": "af_sarah", "text": "No, they moved it upstairs this morning. It's right next to the elevators now."},
+                {"file": "06.mp3", "who": "M", "voice": "bm_george", "text": "Thanks. I'll head up there and get it now. Let's meet for coffee between sessions."},
+                {"file": "07.mp3", "who": "W", "voice": "af_sarah", "text": "Sounds good. I'll be in the café downstairs."},
+            ],
+        },
+        "transcriptZh": [
+            "Omar，你午餐後要去合約那場工作坊嗎？聽說講者很棒。",
+            "我是想去，可是主管要我去緊接在它後面的那一場。她覺得那場對我們新的在家工作制度有幫助。",
+            "喔，有道理。對了，你拿到識別證了嗎？早上那場他們不讓我沒戴識別證就進去。",
+            "還沒。報到處還在一樓大廳嗎？",
+            "不在了，今天早上搬到樓上，現在就在電梯旁邊。",
+            "謝謝。我現在就上去拿。兩場中間我們一起喝杯咖啡吧。",
+            "好啊。我會在樓下的咖啡廳。",
+        ],
+        "questions": [
+            {
+                "q": "Why will the man not attend the contracts workshop?",
+                "options": ["He has not picked up his badge", "His supervisor wants him at a different session", "He heard the speaker is not very good", "He has to meet with a client"],
+                "answer": 1,
+                "explain": {
+                    "point": "原因題：but 後面才是真正的理由",
+                    "why": "男方說 I'd like to, but my manager asked me to go to the one right after it → 改述成主管要他去別場。",
+                    "evidence": [1],
+                    "wrong": ["沒拿識別證是真的，但他說的理由是主管的安排", None, "方向相反：女方說講者很棒", "沒有人提到客戶"],
+                    "wrongMore": ["這件事對話裡有、也屬實，但不是他不去合約那場的原因；原因在 but 後面的 my manager asked me…。", None, None, None],
+                    "vocab": [["I'd like to, but…", "我是想，但是……（委婉拒絕）"], ["supervisor", "主管"]],
+                },
+            },
+            {
+                "q": "Look at the graphic. Which room will the man go to for his workshop?",
+                "options": ["Room 101", "Room 204", "Room 115", "Room 310"],
+                "answer": 3,
+                "explain": {
+                    "point": "圖表題：音檔給位置線索，再到表上換成答案",
+                    "why": "合約那場在下午 1:00；他去 the one right after it，表上是 2:30 的 Leading Remote Teams（呼應在家工作），在 Room 310。",
+                    "evidence": [0, 1],
+                    "wrong": ["101 是早上 9:00 那場", "204 是早上 10:30 那場，在合約那場之前", "張冠李戴：115 是女方要去的合約那場", None],
+                    "wrongMore": [None, None, "只聽到 contracts 就直接對表會選這個；男方說的是合約那場「後面」的那一場。", None],
+                    "vocab": [["right after", "緊接在……之後"], ["remote team", "遠距團隊"]],
+                },
+            },
+            {
+                "q": "What will the man most likely do next?",
+                "options": ["Go to the main lobby", "Pick up his conference pass", "Get coffee at the café", "Call his manager"],
+                "answer": 1,
+                "explain": {
+                    "point": "下一步題：it 指前面說的 badge",
+                    "why": "男方說 I'll head up there and get it now，it 指女方問的 badge、there 是樓上報到處 → 改述成去拿識別證。",
+                    "evidence": [2, 4, 5],
+                    "wrong": ["陷阱：報到處已經搬到樓上，不在大廳", None, "喝咖啡是兩場之間的事，不是現在", "主管的安排是之前的事，沒說要打給她"],
+                    "vocab": [["badge", "識別證"], ["registration desk", "報到處"], ["pass", "通行證"]],
+                },
+            },
+        ],
+    },
 
     # ------------------------------------------------------------------ talk (Part 4)
     {
@@ -512,7 +758,7 @@ ITEMS = [
                 "answer": 3,
                 "explain": {
                     "point": "細節題：注意限定對象，並聽出強改述",
-                    "why": "櫃台可給 a pass for the freight elevator → 改述成 access to a service elevator（freight elevator＝貨梯）。",
+                    "why": "櫃台可給 a pass for the freight elevator（貨梯）→ 改述成 access to a service elevator。",
                     "evidence": [4],
                     "wrong": ["地圖是貼在樓梯旁，不是去櫃台拿", "聯想陷阱：pass 是貨梯通行證，不是停車證", "只建議早點到，沒有新的時間表", None],
                     "vocab": [["freight elevator", "貨梯＝service elevator"], ["front desk", "櫃台、服務台"]],
@@ -580,6 +826,69 @@ ITEMS = [
                     "evidence": [4, 5],
                     "wrong": ["演講延長是前面另一件事，跟停車場無關", "沒有提到怎麼走到 4B 會議室", None, "停車證是她寄過去，不用自己去拿"],
                     "vocab": [["venue", "會場"], ["fill up", "客滿、停滿"], ["reserved", "保留的、預約的"]],
+                },
+            },
+        ],
+    },
+    {
+        "id": "l-talk-03", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 2,
+        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "audio": {
+            "dir": "audio/l-talk-03", "gapMs": 500,
+            "lines": [
+                {"file": "01.mp3", "who": "W", "voice": "af_bella", "text": "Good morning, everyone. As you know, our store is switching to a new inventory system at the end of the month."},
+                {"file": "02.mp3", "who": "W", "voice": "af_bella", "text": "Everyone must complete a training session before then, and on the schedule I handed out, you'll see that each session lasts six hours. That's not a typo."},
+                {"file": "03.mp3", "who": "W", "voice": "af_bella", "text": "The trainer from the software company wants to cover everything, from ordering to returns, in a single day."},
+                {"file": "04.mp3", "who": "W", "voice": "af_bella", "text": "Sessions are on the 12th, 14th, and 19th. Please sign up for one on the sheet by the break room door by Friday.",
+                 "say": "Sessions are on the twelfth, fourteenth, and nineteenth. Please sign up for one on the sheet by the break room door by Friday."},
+                {"file": "05.mp3", "who": "W", "voice": "af_bella", "text": "Since you'll be off the sales floor all day, I'll make sure the store stays covered."},
+                {"file": "06.mp3", "who": "W", "voice": "af_bella", "text": "And lunch that day is on us."},
+            ],
+        },
+        "transcriptZh": [
+            "大家早。大家都知道，我們店月底要換成新的庫存系統。",
+            "在那之前每個人都要上完一場訓練；在我發下去的時間表上，你們會看到每一場要六個小時。那不是打錯字。",
+            "軟體公司派來的講師想在一天之內把所有東西都教完，從訂貨到退貨都包括在內。",
+            "訓練在 12 號、14 號和 19 號。請在星期五前，到休息室門邊的登記表上報名其中一場。",
+            "因為你們那天整天都不在賣場，我會確保店裡有人顧。",
+            "還有，那天的午餐由公司請客。",
+        ],
+        "questions": [
+            {
+                "q": "Who most likely are the listeners?",
+                "options": ["Software trainers", "Store employees", "Job applicants", "Regular customers"],
+                "answer": 1,
+                "explain": {
+                    "point": "身分題：從 our store 和 sales floor 推",
+                    "why": "our store 要換系統、you'll be off the sales floor → 聽眾是在店裡賣場工作的人，即 store employees。",
+                    "evidence": [0, 4],
+                    "wrong": ["同字陷阱：trainer 是軟體公司派來的人", None, "她是對現有員工說要受訓，不是應徵者", "沒有任何對顧客說話的線索"],
+                    "vocab": [["inventory", "庫存"], ["sales floor", "賣場"]],
+                },
+            },
+            {
+                "q": "What does the speaker mean when she says, \"That's not a typo\"?",
+                "options": ["A printing error will be fixed", "The sessions really will last that long", "The training dates might change", "The new system is easy to learn"],
+                "answer": 1,
+                "explain": {
+                    "point": "引句題：not a typo＝看起來像打錯，其實是真的",
+                    "why": "六小時長得出奇，她先說 not a typo，再解釋講師要一天教完全部 → 意思是真的要上那麼久。",
+                    "evidence": [1, 2],
+                    "wrong": ["字面陷阱：她說的是「不是」打錯字", None, "日期是固定的三天，沒說會改", "要花一整天教完，暗示內容很多"],
+                    "vocab": [["typo", "打錯字"], ["cover", "涵蓋、講到"]],
+                },
+            },
+            {
+                "q": "What are listeners asked to do by Friday?",
+                "options": ["Complete their training", "Choose a session date", "Test the new system", "Turn in their work schedules"],
+                "answer": 1,
+                "explain": {
+                    "point": "細節題：鎖定題目裡的 by Friday",
+                    "why": "說 please sign up for one（三個日期選一場）by Friday → 改述成 choose a session date。",
+                    "evidence": [3],
+                    "wrong": ["期限錯置：上完訓練的期限是月底", None, "沒有要他們先試用系統", "顧店的安排由她處理，不用員工交班表"],
+                    "wrongMore": ["complete a training session before then 的 then 指月底換系統的時候；星期五只是報名的期限。", None, None, None],
+                    "vocab": [["sign up", "報名、登記"], ["break room", "員工休息室"]],
                 },
             },
         ],
