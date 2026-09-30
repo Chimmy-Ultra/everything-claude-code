@@ -1,0 +1,996 @@
+<title>TOEIC 練習室</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one 680px phone-first column; views (home, session, summary, bank, stats, settings) swap in place.
+   Palette and type follow the learner's 多益文法考點 page so the two read as one set. */
+:root{
+  --bg:#EEF1F5; --surface:#FFFFFF; --surface-2:#F5F7FA; --ink:#172234; --muted:#5A6679; --line:#D6DCE5;
+  --accent:#2753A3; --accent-ink:#FFFFFF; --accent-soft:#E3EAF7;
+  --ok:#1D7550; --ok-soft:#E2F2EA; --bad:#B03A3A; --bad-soft:#F8E6E6; --warn:#8A5A00; --warn-soft:#FBF0DA;
+  --hi:#FFE680; --claude:#8A4B12; --claude-soft:#F7EBDD;
+  --shadow:0 1px 2px rgba(23,34,52,.06),0 6px 18px rgba(23,34,52,.06);
+  --serif:"Source Serif 4","Noto Serif TC",Georgia,"Times New Roman",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F141C; --surface:#161D28; --surface-2:#1C2432; --ink:#E4E9F1; --muted:#9AA6B8; --line:#2A3445;
+    --accent:#8DB0F0; --accent-ink:#0F141C; --accent-soft:#1F2C44;
+    --ok:#6FD3A2; --ok-soft:#173327; --bad:#F19A9A; --bad-soft:#3A1E22; --warn:#F2C66B; --warn-soft:#33290F;
+    --hi:#5E4E14; --claude:#F0B27A; --claude-soft:#35261A;
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F141C; --surface:#161D28; --surface-2:#1C2432; --ink:#E4E9F1; --muted:#9AA6B8; --line:#2A3445;
+  --accent:#8DB0F0; --accent-ink:#0F141C; --accent-soft:#1F2C44;
+  --ok:#6FD3A2; --ok-soft:#173327; --bad:#F19A9A; --bad-soft:#3A1E22; --warn:#F2C66B; --warn-soft:#33290F;
+  --hi:#5E4E14; --claude:#F0B27A; --claude-soft:#35261A;
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:680px;margin:0 auto;padding-inline:16px;padding-block:0 88px}
+.en{font-family:var(--serif)}
+.mono{font-family:var(--mono)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:680px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;min-height:52px}
+.bar h1{font:900 17px/1.2 var(--sans);margin:0;letter-spacing:.02em}
+.bar .sp{flex:1}
+.link{border:0;background:none;padding:6px 4px;color:var(--accent);font-weight:500}
+.sync{font:500 12px var(--mono);color:var(--muted);white-space:nowrap}
+.progress{font:600 14px var(--mono);font-variant-numeric:tabular-nums}
+.dots{display:inline-flex;gap:3px;vertical-align:middle}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--muted)}
+
+/* shared blocks */
+h2{font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:28px 0 10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 16px;font-weight:500;min-height:42px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.ghost{background:transparent}
+.btn.sm{min-height:34px;padding:5px 12px;font-size:14px}
+.btn:disabled{opacity:.45;cursor:default}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.row .sp{flex:1}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:4px;font:600 12px/1.4 var(--sans);border-radius:6px;padding:1px 7px;background:var(--surface-2);color:var(--muted)}
+.badge.claude{background:var(--claude-soft);color:var(--claude)}
+.badge.bank{background:var(--bad-soft);color:var(--bad)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);border-radius:10px;padding:8px 16px;font-size:14px;z-index:30;box-shadow:var(--shadow)}
+
+/* home */
+.due{display:flex;align-items:center;gap:14px;margin-top:18px;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.due.none{border-color:var(--line);box-shadow:none}
+.due b{font:900 34px/1 var(--mono);color:var(--accent);font-variant-numeric:tabular-nums}
+.due div{flex:1;min-width:0}
+.quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.quick button{display:grid;gap:2px;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.quick button b{font:900 18px/1.3 var(--sans)}
+.quick button span{font-size:13px;color:var(--muted)}
+.quick .mix{grid-column:1/-1;background:var(--accent-soft);border-color:transparent}
+.units{display:grid;gap:6px}
+.unit{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:center;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 14px}
+.unit b{font-weight:700;font-size:15px}
+.unit .st{grid-column:1;font:500 12px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.unit .go{grid-row:1/3;grid-column:2;color:var(--muted);font-size:13px}
+.group-h{font:700 14px var(--sans);margin:14px 0 6px;color:var(--ink)}
+.resume{margin-top:16px;display:flex;gap:10px;align-items:center;background:var(--warn-soft);border-color:transparent}
+.resume div{flex:1;min-width:0}
+.nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:26px}
+.nav button{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 6px;font-weight:700}
+.nav button span{display:block;font:500 12px var(--mono);color:var(--muted)}
+.import{margin-top:16px;background:var(--accent-soft);border-color:transparent}
+
+/* question */
+.qhead{display:flex;align-items:center;gap:8px;margin:18px 0 10px;flex-wrap:wrap}
+.stem{font:400 20px/1.6 var(--serif);margin:0 0 14px}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--ink);margin:0 2px}
+.blank.fill{min-width:0;border-bottom-color:var(--ok);font-weight:600;color:var(--ok);padding:0 2px}
+.opts{display:grid;gap:8px}
+.opt{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:center;text-align:left;min-height:52px;padding:10px 14px;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;font:400 17px/1.4 var(--serif)}
+.opt .l{font:600 14px var(--mono);color:var(--muted)}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.right .l{color:var(--ok)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .l{color:var(--bad)}
+.opt.dim{opacity:.55}
+.opt.now{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.guess{display:inline-flex;align-items:center;gap:8px;font-size:14px;margin:0 0 10px;cursor:pointer;user-select:none}
+.guess input{width:18px;height:18px;accent-color:var(--warn);margin:0}
+.pace{height:5px;background:var(--line);border-radius:99px;overflow:hidden;margin:0 0 12px}
+.pace i{display:block;height:100%;background:var(--accent);width:100%;transition:width .2s linear}
+.pace.over i{background:var(--bad)}
+.nextbar{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom,0px));margin-top:16px;display:flex;justify-content:flex-end}
+.nextbar .btn{box-shadow:var(--shadow);min-width:9em}
+
+/* explanation */
+.result{display:flex;align-items:center;gap:8px;margin:16px 0 8px;flex-wrap:wrap}
+.result b{font:900 17px var(--sans)}
+.result .ok{color:var(--ok)} .result .no{color:var(--bad)}
+.result .sp{flex:1}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:3px 10px;font-size:13px}
+.icon-btn[aria-pressed="true"]{border-color:var(--warn);color:var(--warn);background:var(--warn-soft)}
+.exp{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+.exp .k{font:700 12px var(--mono);letter-spacing:.06em;color:var(--accent);margin-bottom:2px;display:block}
+.exp p{margin:0}
+.exp .rule{font-weight:700}
+.wrongs{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:15px}
+.wrongs li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;padding:3px 8px;border-radius:6px}
+.wrongs li.mine{background:var(--bad-soft)}
+.wrongs .o{font-family:var(--serif);font-weight:600;white-space:nowrap}
+.full{font:400 17px/1.6 var(--serif);border-top:1px dashed var(--line);padding-top:10px}
+.full .zh{display:block;font:400 15px/1.6 var(--sans);color:var(--muted);margin-top:2px}
+.more{display:flex;gap:8px;flex-wrap:wrap}
+.vocab{margin:0;padding:0;list-style:none;display:grid;gap:2px;font-size:15px}
+.vocab b{font-family:var(--serif)}
+.ask{display:grid;gap:8px}
+.ask textarea{width:100%;min-height:60px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);padding:8px 10px;resize:vertical}
+.ask .ans{background:var(--claude-soft);border-radius:10px;padding:10px 12px;white-space:pre-wrap}
+.flagbox{display:grid;gap:6px}
+.flagbox textarea,.note textarea{width:100%;min-height:52px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);padding:8px 10px;resize:vertical}
+
+/* listening */
+.player{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:12px;flex-wrap:wrap}
+.player .play{width:52px;height:52px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex:none}
+.player .play svg{width:18px;height:18px;fill:currentColor}
+.player .state{flex:1;min-width:0;font-size:14px}
+.speed{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.speed button{border:0;background:transparent;padding:4px 8px;font:600 12px var(--mono)}
+.speed button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.qr-opts{grid-template-columns:repeat(3,minmax(0,1fr))}
+.qr-opts .opt{grid-template-columns:1fr;justify-items:center;font:700 22px var(--mono)}
+.lq{margin:18px 0 8px;font:600 17px/1.5 var(--serif)}
+.lq .n{font:600 13px var(--mono);color:var(--muted);margin-right:6px}
+.script{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.script li{display:grid;grid-template-columns:28px minmax(0,1fr) 30px;gap:8px;align-items:start;padding:6px 8px;border-radius:8px}
+.script li.ev{background:var(--hi)}
+.script .who{font:700 12px var(--mono);color:var(--muted);padding-top:3px}
+.script .t{font:400 16px/1.5 var(--serif)}
+.script .t small{display:block;font:400 14px/1.5 var(--sans);color:var(--muted)}
+.mini{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;padding:0}
+.mini svg{width:9px;height:9px;fill:currentColor}
+.divider{margin:24px 0 8px;text-align:center;font:700 14px var(--sans);color:var(--muted)}
+
+/* summary */
+.score{display:flex;align-items:baseline;gap:12px;margin:22px 0 4px}
+.score b{font:900 56px/1 var(--mono);font-variant-numeric:tabular-nums}
+.score span{color:var(--muted)}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.list li{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.list .head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:10px 14px}
+.list .head .s{font:400 15px/1.5 var(--serif);min-width:0}
+.list .head .m{grid-column:1;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted)}
+.list .head .ch{grid-row:1/3;grid-column:2;color:var(--muted);font-size:13px}
+.list .body{padding:0 12px 12px;display:grid;gap:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left}
+th{font:600 12px var(--mono);color:var(--muted);background:var(--surface-2)}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+th.n{text-align:right}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.tbl table{min-width:420px}
+
+/* bank + settings */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.search{width:100%;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:8px 12px;margin-bottom:12px}
+.set{display:grid;gap:4px;padding:14px 0;border-bottom:1px solid var(--line)}
+.set:last-child{border-bottom:0}
+.set label{font-weight:700}
+.set p{margin:0;font-size:14px;color:var(--muted)}
+.empty{padding:24px 12px;text-align:center;color:var(--muted)}
+@media (max-width:420px){.stem{font-size:18px}.opt{font-size:16px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="bar"><div class="bar-in" id="bar"></div></header>
+<div class="wrap" id="app"></div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script type="application/json" id="bank">{{BANK}}</script>
+<script>
+"use strict";
+// ================================================================ data
+const DATA = JSON.parse(document.getElementById("bank").textContent);
+const UNITS = DATA.units;                     // id -> {zh, group}
+const GRAMMAR_URL = "https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ";
+const INTERVALS = [1, 3, 7, 14];              // Leitner days per level (our own setting, not a research number)
+const WEAK = 0.7;                             // units under this accuracy get picked more often (our setting)
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
+const STOP = '<svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" rx="1"/></svg>';
+const L = "ABCD";
+
+let ITEMS = DATA.items.slice();               // hand-written items, plus Claude-added ones merged at load
+let BY = {};
+function index() { BY = Object.fromEntries(ITEMS.map(x => [x.id, x])); }
+index();
+
+// ================================================================ helpers
+const $ = s => document.querySelector(s);
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function zh(e) { e.lang = "zh-Hant"; return e; }
+function btn(cls, text, fn) { const b = el("button", cls, text); b.type = "button"; if (fn) b.onclick = fn; return b; }
+function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+function day(d = new Date()) { const z = n => String(n).padStart(2, "0"); return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate()); }
+function addDays(n) { const d = new Date(); d.setDate(d.getDate() + n); return day(d); }
+function fmtS(ms) { return ms == null ? "–" : Math.round(ms / 1000) + " 秒"; }
+function pct(a, b) { return b ? Math.round(a / b * 100) + "%" : "–"; }
+function toast(t) { const e = $("#toast"); e.textContent = t; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 1800); }
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function seeded(seed) { let a = seed; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function shuffle(a, rnd = Math.random) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function unitName(u) { return (UNITS[u] && UNITS[u].zh) || u; }
+function isGap(item) { return item.format === "gap"; }
+function qKeys(item) { return isGap(item) || item.format === "qr" ? [item.id] : item.questions.map((_, i) => item.id + ":" + i); }
+function qOf(key) { const [id, q] = key.split(":"); const item = BY[id]; if (!item) return null; return { item, qi: q == null ? 0 : Number(q) }; }
+function unitOfKey(key) { const x = qOf(key); return x ? x.item.unit : ""; }
+
+// ================================================================ storage: db when this is the owner in claude.ai, else localStorage
+const Store = {
+  mode: "local", db: null, queue: {},
+  lsGet(coll) { try { return JSON.parse(localStorage.getItem("toeic:" + coll) || "{}"); } catch { return {}; } },
+  lsPut(coll, map) { try { localStorage.setItem("toeic:" + coll, JSON.stringify(map)); } catch {} },
+  async init() {
+    if (!window.claude?.use) return;
+    try {
+      const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+      if (db && user && await user.isOwner()) { this.db = db; this.mode = "db"; }
+    } catch {}
+  },
+  async list(coll) {
+    if (this.mode === "local") return this.lsGet(coll);
+    const snap = await this.db.collection(coll).get();
+    return Object.fromEntries(snap.docs.map(d => [d.id, d.data()]));
+  },
+  async getProfile() {
+    if (this.mode === "local") return this.lsGet("profile").main || null;
+    const s = await this.db.doc("toeic/profile").get();
+    return s.exists ? s.data() : null;
+  },
+  put(coll, id, data) {           // one write at a time per document
+    const key = coll + "/" + id;
+    if (this.mode === "local") { const m = this.lsGet(coll); m[id] = data; this.lsPut(coll, m); return Promise.resolve(); }
+    const prev = this.queue[key] || Promise.resolve();
+    const path = coll === "profile" ? "toeic/profile" : coll + "/" + id;
+    const p = prev.then(() => this.db.doc(path).set(JSON.parse(JSON.stringify(data)))).catch(e => {
+      if (e && e.code === "quota_exceeded") toast("帳號儲存空間滿了，這筆沒存到");
+      else if (e && e.code === "unavailable") return wait(800 + Math.random() * 800).then(() => this.db.doc(path).set(data)).catch(() => {});
+    });
+    this.queue[key] = p; return p;
+  },
+};
+// collections (db paths are owner-only, see capabilities): toeic/profile, toeic_bank/<key>, toeic_attempts/<session>, toeic_marks/<itemId>, toeic_added/<itemId>
+
+let P = null;    // profile
+let B = {};      // wrong bank, key -> entry
+let M = {};      // marks, itemId -> {starred, note, flagged, flagNote, at}
+function freshProfile() { return { settings: { pace: 0, listenSpeed: 1, strictListen: false, theme: "system" }, totals: { n: 0, ok: 0, guess: 0 }, units: {}, streak: { days: 0, lastDay: "" }, seen: {} }; }
+function saveProfile() { return Store.put("profile", "main", P); }
+function saveBank(key) { return Store.put("toeic_bank", key, B[key]); }
+function saveMark(id) { M[id].at = Date.now(); return Store.put("toeic_marks", id, M[id]); }
+
+async function load() {
+  await Store.init();
+  try {
+    P = await Store.getProfile();
+    B = await Store.list("toeic_bank");
+    M = await Store.list("toeic_marks");
+    const added = await Store.list("toeic_added");
+    for (const [id, x] of Object.entries(added)) {
+      if (x.retired || BY[id] || !x.type || !x.explain && !x.questions) continue;
+      ITEMS.push({ ...x, id, source: x.source || "claude", reviewed: false });
+    }
+    index();
+  } catch (e) {
+    Store.mode = "local"; P = Store.lsGet("profile").main || null; B = Store.lsGet("toeic_bank"); M = Store.lsGet("toeic_marks");
+  }
+  P = Object.assign(freshProfile(), P || {});
+  P.settings = Object.assign(freshProfile().settings, P.settings || {});
+  applyTheme();
+  // db is empty but this browser has older local records: offer to bring them over once
+  if (Store.mode === "db" && !Object.keys(B).length && !P.totals.n) {
+    const lp = Store.lsGet("profile").main, lb = Store.lsGet("toeic_bank");
+    if ((lp && lp.totals && lp.totals.n) || Object.keys(lb).length) importOffer = { lp, lb, lm: Store.lsGet("toeic_marks") };
+  }
+}
+let importOffer = null;
+async function doImport() {
+  const { lp, lb, lm } = importOffer; importOffer = null;
+  if (lp) { P = Object.assign(freshProfile(), lp); await saveProfile(); }
+  for (const [k, v] of Object.entries(lb)) { B[k] = v; await saveBank(k); }
+  for (const [k, v] of Object.entries(lm || {})) { M[k] = v; await saveMark(k); }
+  toast("本機紀錄已匯入帳號"); home();
+}
+
+function applyTheme() {
+  const t = P.settings.theme;
+  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  else document.documentElement.removeAttribute("data-theme");
+}
+
+// ================================================================ audio: one element for the whole page
+const au = new Audio(); au.preload = "auto";
+let playTok = null, playDone = null;
+function stopAudio() { playTok = null; au.pause(); if (playDone) { const d = playDone; playDone = null; d(false); } }
+function playOne(src) {
+  return new Promise(res => {
+    playDone = res;
+    au.onended = () => { playDone = null; res(true); };
+    au.onerror = () => { playDone = null; res(false); };
+    au.src = src; au.playbackRate = P.settings.listenSpeed;
+    au.play().catch(() => { playDone = null; res(false); });
+  });
+}
+async function playLines(item, idxs, gap, onLine) {
+  stopAudio();
+  const tok = playTok = {};
+  let okAll = true;
+  for (let n = 0; n < idxs.length; n++) {
+    const i = idxs[n], ln = item.audio.lines[i];
+    onLine && onLine(i);
+    const ok = await playOne(item.audio.dir + "/" + ln.file);
+    if (playTok !== tok) { onLine && onLine(-1); return null; }
+    if (!ok) okAll = false;
+    if (n < idxs.length - 1) { await wait(gap); if (playTok !== tok) { onLine && onLine(-1); return null; } }
+  }
+  playTok = null; onLine && onLine(-1);
+  return okAll;
+}
+
+// ================================================================ top bar and views
+let view = "home";
+function bar(left, title, right) {
+  const b = $("#bar"); b.textContent = "";
+  if (left) b.append(left);
+  const h = el("h1", null, title); b.append(h, el("span", "sp"));
+  if (right) b.append(right);
+}
+function back(label, fn) { return btn("link", "‹ " + label, fn); }
+function show(v) { view = v; stopAudio(); clearInterval(paceTimer); window.scrollTo(0, 0); $("#app").textContent = ""; }
+
+// ================================================================ stats helpers
+function unitStat(u) { return P.units[u] || { n: 0, ok: 0, guess: 0, msSum: 0, msN: 0 }; }
+function dueKeys() { const t = day(); return Object.keys(B).filter(k => { const e = B[k]; return e && !e.graduatedAt && !e.removedAt && e.due <= t && qOf(k); }); }
+function activeBank(k) { const e = B[k]; return e && !e.graduatedAt && !e.removedAt; }
+function unitsIn(group) { return Object.keys(UNITS).filter(u => UNITS[u].group === group && ITEMS.some(x => x.unit === u)); }
+
+// ================================================================ home
+function home() {
+  show("home");
+  const app = $("#app");
+  bar(null, "TOEIC 練習室", el("span", "sync", Store.mode === "db" ? "已同步到帳號" : "本機儲存"));
+
+  if (importOffer) {
+    const c = el("div", "card import");
+    c.append(el("p", null, "這個瀏覽器裡有之前的練習紀錄，要匯入到帳號嗎？匯入後手機和電腦都看得到。"));
+    const r = el("div", "row"); r.append(btn("btn primary sm", "匯入", doImport), btn("btn ghost sm", "不用", () => { importOffer = null; home(); }));
+    c.append(r); app.append(c);
+  }
+
+  const saved = loadSession();
+  if (saved) {
+    const c = el("div", "card resume");
+    const d = el("div"); d.append(el("b", null, "繼續上次的場次？"), el("div", "small", saved.label + " · 做到第 " + (saved.results.length) + " 題"));
+    c.append(d, btn("btn primary sm", "繼續", () => { S = saved; runCard(); }), btn("btn ghost sm", "放棄", () => { clearSession(); home(); }));
+    app.append(c);
+  }
+
+  const due = dueKeys();
+  const d = el("button", "card due" + (due.length ? "" : " none"));
+  d.type = "button"; d.style.width = "100%"; d.style.textAlign = "left";
+  const txt = el("div");
+  if (due.length) { txt.append(el("div", null, "今日待複習"), el("div", "small muted", "錯題庫裡到期的題，答對才會往後排。")); d.onclick = () => startReview(due); }
+  else { txt.append(el("div", null, "錯題庫沒有到期的題"), el("div", "small muted", Object.keys(B).some(activeBank) ? "下次到期：" + nextDue() : "答錯或勾「我是猜的」的題會進來。")); d.disabled = true; }
+  d.append(el("b", null, String(due.length)), txt);
+  app.append(d);
+
+  app.append(el("h2", null, "快速開始"));
+  const q = el("div", "quick");
+  const mk = (cls, title, sub, fn) => { const b = btn(cls); b.append(el("b", null, title), el("span", null, sub)); b.onclick = fn; return b; };
+  q.append(
+    mk("", "文法 10 題", "Part 5 型單句填空", () => startSet({ type: "grammar", n: 10, label: "文法 10 題" })),
+    mk("", "字彙 10 題", "搭配詞、近義、商業字", () => startSet({ type: "vocab", n: 10, label: "字彙 10 題" })),
+    mk("", "聽力 5 題", "應答、對話、短講", () => startSet({ type: "listen", n: 5, label: "聽力 5 題" })),
+    mk("", "我的收藏", countStars() + " 題", () => startStarred()),
+    mk("mix", "綜合 20 題", "文法 10 · 字彙 6 · 聽力 4，聽力放最後", () => startMixed()));
+  app.append(q);
+
+  const added = ITEMS.filter(x => x.source !== "hand" && !P.seen[qKeys(x)[0]]);
+  if (added.length) {
+    app.append(el("h2", null, "Claude 給你的加練"));
+    const b = btn("unit"); b.append(el("b", null, added.length + " 題新題"), el("span", "go", "開始 ›"), el("span", "st", "Claude 出題・未審核"));
+    b.onclick = () => startList(added.map(x => x.id), "Claude 加練"); app.append(b);
+  }
+
+  app.append(el("h2", null, "依考點練習"));
+  for (const [g, title] of [["grammar", "文法"], ["vocab", "字彙"], ["listen", "聽力"]]) {
+    const us = unitsIn(g); if (!us.length) continue;
+    app.append(el("div", "group-h", title));
+    const box = el("div", "units");
+    for (const u of us) {
+      const s = unitStat(u), b = btn("unit");
+      b.append(el("b", null, unitName(u)), el("span", "go", ITEMS.filter(x => x.unit === u).length + " 題 ›"),
+        el("span", "st", s.n ? "做過 " + s.n + " · 正確 " + pct(s.ok, s.n) + " · 猜對 " + s.guess : "還沒做過"));
+      b.onclick = () => startSet({ unit: u, n: 10, label: unitName(u), showUnit: true });
+      box.append(b);
+    }
+    app.append(box);
+  }
+
+  const nav = el("div", "nav");
+  const nb = (t, s, fn) => { const b = btn(null, t, fn); b.append(el("span", null, s)); return b; };
+  nav.append(nb("錯題庫", String(Object.keys(B).filter(activeBank).length), bankView), nb("統計", P.streak.days ? "連續 " + P.streak.days + " 天" : "–", statsView), nb("設定", "", settingsView));
+  app.append(nav);
+}
+function nextDue() { const ds = Object.values(B).filter(e => e && !e.graduatedAt && !e.removedAt).map(e => e.due).sort(); return ds[0] || "–"; }
+function countStars() { return Object.values(M).filter(m => m && m.starred).length; }
+
+// ================================================================ building a session
+let S = null;
+function newSession(cards, label, opts = {}) {
+  S = { id: "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), label, cards, i: 0, results: [], startedAt: Date.now(), review: !!opts.review, showUnit: !!opts.showUnit, listenAt: opts.listenAt ?? -1 };
+  saveSession(); runCard();
+}
+function saveSession() { try { localStorage.setItem("toeic:current", JSON.stringify(S)); } catch {} }
+function loadSession() { try { const s = JSON.parse(localStorage.getItem("toeic:current") || "null"); return s && s.cards && s.i < s.cards.length && s.cards.every(c => BY[c.id]) ? s : null; } catch { return null; } }
+function clearSession() { try { localStorage.removeItem("toeic:current"); } catch {} }
+
+// Priority: never seen first, then seen longest ago; weak units come up earlier. Items active in the bank go to review instead.
+function pick(filter, n, countQs) {
+  const now = Date.now();
+  const pool = ITEMS.filter(x => filter(x) && !qKeys(x).every(activeBank));
+  const scored = pool.map(x => {
+    const seen = Math.max(0, ...qKeys(x).map(k => P.seen[k] || 0));
+    const s = unitStat(x.unit), weak = s.n >= 3 && s.ok / s.n < WEAK;
+    return { x, score: (seen ? 1 : 0) * 1e13 + seen - (weak ? 7 * 864e5 : 0) + Math.random() * 36e5, seenAt: seen, now };
+  }).sort((a, b) => a.score - b.score);
+  const out = []; let count = 0;
+  for (const { x } of scored) {
+    if (count >= n) break;
+    const qn = countQs ? (x.format === "gap" || x.format === "qr" ? 1 : x.questions.length) : 1;
+    out.push(x); count += qn;
+  }
+  return out;
+}
+function cardFor(x, qs) { return { id: x.id, qs: qs || (x.format === "gap" || x.format === "qr" ? [0] : x.questions.map((_, i) => i)) }; }
+function startSet({ type, unit, n, label, showUnit }) {
+  const f = x => (type ? x.type === type : true) && (unit ? x.unit === unit : true);
+  const items = pick(f, n, type === "listen" || (unit && UNITS[unit]?.group === "listen"));
+  if (!items.length) { toast("這個範圍目前沒有可以練的題（可能都在錯題庫裡）"); return; }
+  newSession(shuffle(items).map(x => cardFor(x)), label, { showUnit });
+}
+function startMixed() {
+  const g = pick(x => x.type === "grammar", 10), v = pick(x => x.type === "vocab", 6), l = pick(x => x.type === "listen", 4, true);
+  const gv = shuffle(g.concat(v));
+  newSession(gv.concat(l).map(x => cardFor(x)), "綜合 20 題", { listenAt: l.length ? gv.length : -1 });
+}
+function startList(ids, label) { newSession(ids.filter(id => BY[id]).map(id => cardFor(BY[id])), label); }
+function startStarred() {
+  const ids = Object.keys(M).filter(id => M[id] && M[id].starred && BY[id]);
+  if (!ids.length) { toast("還沒有收藏的題。解析上方的 ☆ 可以收藏"); return; }
+  startList(shuffle(ids), "我的收藏");
+}
+function startReview(keys) {
+  const byItem = {};
+  for (const k of keys) { const x = qOf(k); if (!x) continue; (byItem[x.item.id] = byItem[x.item.id] || []).push(x.qi); }
+  const cards = shuffle(Object.entries(byItem).map(([id, qs]) => cardFor(BY[id], qs.sort())));
+  newSession(cards, "錯題複習", { review: true, showUnit: true });
+}
+
+// ================================================================ one card
+let paceTimer = null;
+function runCard() {
+  if (S.i >= S.cards.length) return summary();
+  show("session");
+  const card = S.cards[S.i], item = BY[card.id];
+  bar(back("離開", () => { saveSession(); home(); }), "", el("span", "progress", (S.i + 1) + " / " + S.cards.length));
+  const app = $("#app");
+  if (S.listenAt === S.i) app.append(el("div", "divider", "🎧 接下來是聽力，戴上耳機"));
+  const head = el("div", "qhead");
+  if (S.showUnit || S.review) head.append(el("span", "badge", unitName(item.unit)));
+  if (S.review) { const e = B[qKeys(item)[card.qs[0]]] || B[item.id]; if (e) head.append(el("span", "badge bank", (e.wrongCount ? "錯過 " + e.wrongCount + " 次" : "上次是猜的") + " · 這題考的是規則")); }
+  if (item.source !== "hand") head.append(el("span", "badge claude", "Claude 出題・未審核"));
+  const dots = el("span", "dots"); for (let i = 1; i <= 3; i++) dots.append(el("i", i <= item.level ? "on" : "")); dots.title = "難度 " + item.level;
+  head.append(el("span", "sp"), dots); head.querySelector(".sp").style.flex = "1";
+  app.append(head);
+  if (isGap(item)) gapCard(app, item, card); else listenCard(app, item, card);
+}
+
+function optionOrder(item, qi, sid) { const n = isGap(item) ? item.options.length : item.questions[qi].options.length; const idx = [...Array(n).keys()]; return sid ? shuffle(idx, seeded(hash(item.id + ":" + qi + ":" + sid))) : idx; }
+
+function gapCard(app, item, card) {
+  const parts = item.stem.split("______");
+  const stem = el("p", "stem en");
+  stem.append(parts[0]); const blank = el("span", "blank", " "); stem.append(blank); stem.append(parts.slice(1).join("______"));
+  app.append(stem);
+  const pace = P.settings.pace;
+  let bar_ = null;
+  if (pace) { bar_ = el("div", "pace"); bar_.append(el("i")); app.append(bar_); }
+  const g = guessToggle(); app.append(g.el);
+  const opts = el("div", "opts"), order = optionOrder(item, 0, S.id), buttons = [];
+  order.forEach((oi, pos) => {
+    const b = btn("opt"); b.append(el("span", "l", L[pos]), el("span", "en", item.options[oi]));
+    b.dataset.oi = oi; b.onclick = () => answer(oi); opts.append(b); buttons.push(b);
+  });
+  app.append(opts);
+  const after = el("div"); app.append(after);
+  const t0 = performance.now();
+  if (pace) {
+    paceTimer = setInterval(() => { const left = 1 - (performance.now() - t0) / (pace * 1000); bar_.firstChild.style.width = Math.max(0, left * 100) + "%"; if (left <= 0) { bar_.classList.add("over"); clearInterval(paceTimer); } }, 200);
+  }
+  keys.answer = pos => buttons[pos] && !buttons[pos].disabled && buttons[pos].click();
+  keys.guess = () => g.toggle();
+  function answer(oi) {
+    clearInterval(paceTimer);
+    const ms = performance.now() - t0, ok = oi === item.answer, guess = g.value();
+    for (const b of buttons) { b.disabled = true; const x = Number(b.dataset.oi); b.classList.add(x === item.answer ? "right" : x === oi ? "wrong" : "dim"); }
+    g.el.remove();
+    blank.textContent = item.options[item.answer]; blank.className = "blank fill";
+    const r = record(item, 0, oi, ok, guess, ms, pace ? ms > pace * 1000 : false);
+    after.append(resultLine(item, ok, ms, r), explainGap(item, oi, order));
+    nextButton(after);
+  }
+}
+
+function guessToggle() {
+  const lab = el("label", "guess"), box = el("input"); box.type = "checkbox"; box.id = "guess-" + S.i;
+  lab.htmlFor = box.id; lab.append(box, "我是猜的");
+  return { el: lab, value: () => box.checked, toggle: () => { box.checked = !box.checked; } };
+}
+
+function resultLine(item, ok, ms, rec) {
+  const r = el("div", "result");
+  r.append(el("b", ok ? "ok" : "no", ok ? (rec.guess ? "✔ 猜對了" : "✔ 答對了") : "✘ 答錯了"));
+  if (ms != null) r.append(el("span", "muted small", fmtS(ms) + (rec.timedOut ? " · 超過自訂節奏" : "")));
+  if (rec.banked) r.append(el("span", "badge bank", rec.review ? "留在錯題庫" : "已加入錯題庫"));
+  if (rec.graduated) r.append(el("span", "badge", "從錯題庫畢業"));
+  else if (rec.review && !rec.banked && B[rec.key]) r.append(el("span", "badge", "下次複習 " + B[rec.key].due.slice(5).replace("-", "/")));
+  r.append(el("span", "sp"));
+  const m = M[item.id] || {};
+  const star = btn("icon-btn", m.starred ? "★ 收藏" : "☆ 收藏"); star.setAttribute("aria-pressed", String(!!m.starred));
+  star.onclick = () => { M[item.id] = Object.assign(M[item.id] || {}, { starred: !(M[item.id] || {}).starred }); saveMark(item.id); star.textContent = M[item.id].starred ? "★ 收藏" : "☆ 收藏"; star.setAttribute("aria-pressed", String(M[item.id].starred)); };
+  keys.star = () => star.click();
+  const flag = btn("icon-btn", m.flagged ? "⚑ 已回報" : "⚑ 有問題"); flag.setAttribute("aria-pressed", String(!!m.flagged));
+  flag.onclick = () => flagForm(r, item, flag);
+  r.append(star, flag);
+  return r;
+}
+function flagForm(after, item, flagBtn) {
+  if (after.nextSibling && after.nextSibling.classList && after.nextSibling.classList.contains("flagbox")) return;
+  const box = el("div", "flagbox card"), ta = el("textarea"); ta.id = "flag-" + item.id; ta.placeholder = "哪裡有問題？例如：B 好像也對、翻譯怪怪的";
+  ta.value = (M[item.id] || {}).flagNote || "";
+  const r = el("div", "row");
+  r.append(btn("btn primary sm", "送出", () => { M[item.id] = Object.assign(M[item.id] || {}, { flagged: true, flagNote: ta.value.trim() }); saveMark(item.id); flagBtn.textContent = "⚑ 已回報"; flagBtn.setAttribute("aria-pressed", "true"); box.remove(); toast("收到了，Claude 下次會看這題"); }),
+    btn("btn ghost sm", "取消", () => box.remove()));
+  box.append(zh(el("label", "small", "告訴 Claude 這題哪裡不對")), ta, r);
+  after.after(box); ta.focus();
+}
+
+function wrongList(ops, wrong, answerIdx, chosen, letterOf) {
+  const ul = el("ul", "wrongs");
+  const idx = ops.map((_, i) => i).filter(i => i !== answerIdx);
+  idx.sort((a, b) => (b === chosen) - (a === chosen) || letterOf(a).localeCompare(letterOf(b)));
+  for (const i of idx) {
+    const li = el("li", i === chosen ? "mine" : "");
+    li.append(el("span", "o", "(" + letterOf(i) + ") " + ops[i]), zh(el("span", null, wrong[i] || "")));
+    ul.append(li);
+  }
+  return ul;
+}
+
+function explainGap(item, chosen, order = optionOrder(item, 0)) {
+  const e = item.explain, box = el("div", "exp");
+  const letterOf = i => L[order.indexOf(i)];
+  const top = el("div"); top.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", e.point)));
+  const why = el("div"); why.append(el("span", "k", "為什麼是 (" + letterOf(item.answer) + ") " + item.options[item.answer]), zh(el("p", null, e.why)));
+  const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList(item.options, e.wrong, item.answer, chosen, letterOf));
+  const full = el("p", "full en"); full.append(item.stem.replace("______", item.options[item.answer])); full.append(zh(el("span", "zh", e.zh)));
+  box.append(top, why, others, full, moreRow(item, box, { chosen }));
+  return box;
+}
+
+function moreRow(item, box, ctx) {
+  const row = el("div", "more");
+  const extra = el("div"); extra.hidden = true;
+  const vb = btn("btn sm ghost", "詞彙 ▾");
+  const voc = ctx.vocab || item.explain?.vocab || [];
+  if (voc.length) {
+    vb.onclick = () => { const on = extra.dataset.k !== "v" || extra.hidden; extra.textContent = ""; extra.dataset.k = "v"; extra.hidden = !on; if (on) { const ul = el("ul", "vocab"); for (const [w, z] of voc) { const li = el("li"); li.append(el("b", null, w), " ", zh(el("span", null, z))); ul.append(li); } extra.append(ul); } };
+    row.append(vb);
+  }
+  if (item.type === "grammar") { const a = el("a", "btn sm ghost", "文法頁：" + unitName(item.unit) + " ↗"); a.href = GRAMMAR_URL; a.target = "_blank"; a.rel = "noopener"; row.append(a); }
+  if (sample) {
+    const ab = btn("btn sm ghost", "問 Claude ▾");
+    ab.onclick = () => { const on = extra.dataset.k !== "a" || extra.hidden; extra.textContent = ""; extra.dataset.k = "a"; extra.hidden = !on; if (on) extra.append(askBox(item, ctx)); };
+    row.append(ab);
+  }
+  const wrap = el("div"); wrap.style.display = "grid"; wrap.style.gap = "8px"; wrap.append(row, extra);
+  return wrap;
+}
+
+// ================================================================ ask Claude (only on a tap; marked as unreviewed)
+let sample = null;
+function askBox(item, ctx) {
+  const box = el("div", "ask"), ta = el("textarea"); ta.id = "ask-" + item.id + "-" + (ctx.qi || 0);
+  ta.placeholder = "還想問什麼？例如：為什麼 C 不行？";
+  const out = el("div", "ans"); out.hidden = true;
+  const note = el("span", "badge claude", "Claude 即時回答・未審核");
+  const go = btn("btn primary sm", "問", async () => {
+    const q = ta.value.trim(); if (!q) return;
+    go.disabled = true; out.hidden = false; out.textContent = "思考中…";
+    const prompt = [
+      "你是多益老師。學生剛做完一題，想問一個問題。用繁體中文（台灣用語）回答，三句以內，只回答他問的事，不要推翻下面的標準答案；如果你認為標準答案有問題，只說「這題可能有爭議，建議按『有問題』回報」並說明原因。",
+      "題目資料：" + JSON.stringify(ctx.qi != null && !isGap(item) ? { transcript: item.audio.lines.map(l => l.who + ": " + l.text), question: item.questions[ctx.qi] } : { stem: item.stem, options: item.options, answer: item.options[item.answer], explain: item.explain }),
+      "學生選的是：" + (ctx.chosenText || (ctx.chosen != null && item.options ? item.options[ctx.chosen] : "（未記錄）")),
+      "學生的問題：" + q,
+    ].join("\n");
+    try {
+      await sample(prompt, { modelTier: "quick", cache: false, onText: ({ text }) => { out.textContent = text; } });
+    } catch (e) {
+      out.textContent = e && e.text ? e.text : (e && e.code === "rate_limited" ? "Claude 現在比較忙，等一下再問。" : e && (e.code === "not_granted" || e.code === "sampling_disabled") ? "這個頁面沒有被允許使用 Claude。" : "這次沒有問到，再試一次。");
+      if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) sample = null;
+    }
+    go.disabled = false;
+  });
+  const r = el("div", "row"); r.append(note, el("span", "sp"), go);
+  box.append(ta, r, out);
+  setTimeout(() => ta.focus(), 0);
+  return box;
+}
+
+// ================================================================ listening card
+function listenCard(app, item, card) {
+  const strict = P.settings.strictListen;
+  const player = el("div", "player"), play = btn("play"); play.innerHTML = PLAY; play.setAttribute("aria-label", "播放");
+  const state = el("div", "state");
+  const speed = el("div", "speed");
+  for (const v of [0.85, 1, 1.15]) { const b = btn(null, v + "×"); b.setAttribute("aria-pressed", String(P.settings.listenSpeed === v)); b.onclick = () => { P.settings.listenSpeed = v; au.playbackRate = v; saveProfile(); speed.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); }; speed.append(b); }
+  player.append(play, state, speed);
+  app.append(player);
+  const qr = item.format === "qr";
+  let played = false, playing = false, answeredAll = false;
+  state.textContent = qr ? "按播放，聽一句話和三個回應。" : "按播放。題目和選項可以邊聽邊看。";
+  if (strict) state.textContent += " 嚴格模式：只能播一次。";
+  const all = item.audio.lines.map((_, i) => i);
+  const qs = card.qs, done = {};
+  const blocks = [];
+  let qrButtons = [];
+  async function run() {
+    if (playing) { stopAudio(); return; }
+    if (strict && played && !answeredAll) return;
+    playing = true; play.innerHTML = STOP; play.setAttribute("aria-label", "停止");
+    const ok = await playLines(item, all, item.audio.gapMs || 600, i => {
+      if (qr) qrButtons.forEach((b, k) => b.classList.toggle("now", i === k + 1));
+      state.textContent = i < 0 ? "" : qr ? (i === 0 ? "問句" : "回應 " + L[i - 1]) : "第 " + (i + 1) + " / " + all.length + " 句";
+    });
+    playing = false; play.innerHTML = PLAY; play.setAttribute("aria-label", "重播");
+    if (ok === false) state.textContent = "有音檔沒有載入。可以再按一次播放。";
+    else if (ok) state.textContent = strict && !answeredAll ? "播完了，請作答。" : "播完了，可以重播。";
+    if (ok !== null || !strict) { played = true; qrButtons.forEach(b => { if (!b.dataset.done) b.disabled = false; }); }
+    if (strict && !answeredAll && ok !== false) { play.disabled = true; }
+  }
+  play.onclick = run;
+  keys.replay = () => !play.disabled && run();
+  const t0 = performance.now();
+  for (const qi of qs) {
+    const q = item.questions[qi], blk = el("div");
+    if (!qr) { const p = el("p", "lq en"); p.append(el("span", "n", (qs.length > 1 ? (qs.indexOf(qi) + 1) + "." : "")), q.q); blk.append(p); }
+    const g = guessToggle(); blk.append(g.el);
+    const opts = el("div", "opts" + (qr ? " qr-opts" : "")), buttons = [];
+    const order = qr ? [0, 1, 2] : optionOrder(item, qi, S.id);
+    order.forEach((oi, pos) => {
+      const b = btn("opt"); b.append(el("span", "l", L[pos])); if (!qr) b.append(el("span", "en", q.options[oi]));
+      b.dataset.oi = oi; b.onclick = () => answerQ(oi); if (qr) b.disabled = true; opts.append(b); buttons.push(b);
+    });
+    if (qr) qrButtons = buttons;
+    blk.append(opts);
+    const after = el("div"); blk.append(after);
+    blocks.push({ qi, buttons, g });
+    app.append(blk);
+    function answerQ(oi) {
+      if (done[qi] != null) return;
+      done[qi] = oi;
+      const ok = oi === q.answer, guess = g.value();
+      for (const b of buttons) { b.disabled = true; b.dataset.done = "1"; const x = Number(b.dataset.oi); b.classList.remove("now"); b.classList.add(x === q.answer ? "right" : x === oi ? "wrong" : "dim"); }
+      g.el.remove();
+      const rec = record(item, qi, oi, ok, guess, null, false);
+      const letterOf = i => L[order.indexOf(i)];
+      const box = el("div", "exp");
+      const top = el("div"); top.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", q.explain.point)));
+      const optText = i => qr ? item.audio.lines[i + 1].text : q.options[i];
+      const why = el("div"); why.append(el("span", "k", "為什麼是 (" + letterOf(q.answer) + ")" + (qr ? "" : " " + q.options[q.answer])), zh(el("p", null, q.explain.why)));
+      const others = el("div"); others.append(el("span", "k", "其他選項"), wrongList([...Array(order.length).keys()].map(optText), q.explain.wrong, q.answer, oi, letterOf));
+      box.append(top, why, others, moreRow(item, box, { qi, vocab: q.explain.vocab, chosenText: optText(oi) }));
+      after.append(resultLine(item, ok, null, rec), box);
+      if (Object.keys(done).length === qs.length) finishListen();
+      else keys.answer = pos => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.buttons[pos] && !nb.buttons[pos].disabled && nb.buttons[pos].click(); };
+    }
+  }
+  keys.answer = pos => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.buttons[pos] && !nb.buttons[pos].disabled && nb.buttons[pos].click(); };
+  keys.guess = () => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.g.toggle(); };
+  const tail = el("div"); app.append(tail);
+  function finishListen() {
+    answeredAll = true; play.disabled = false;
+    const ev = new Set(qs.flatMap(qi => item.questions[qi].explain.evidence || []));
+    const h = el("div", "row"); h.style.margin = "18px 0 8px";
+    const zb = btn("btn sm ghost", "顯示中文 ▾");
+    h.append(el("b", null, "逐字稿"), el("span", "sp"), zb);
+    const ul = el("ul", "script");
+    item.audio.lines.forEach((ln, i) => {
+      const li = el("li", ev.has(i) ? "ev" : "");
+      const t = el("div", "t en"); t.append(ln.text); const z = zh(el("small", null, (item.transcriptZh || [])[i] || "")); z.hidden = true; t.append(z);
+      const lab = qr ? (i === 0 ? "Q" : L[i - 1]) : ln.who;
+      const mb = btn("mini"); mb.innerHTML = PLAY; mb.setAttribute("aria-label", "重播這一句"); mb.onclick = () => playLines(item, [i], 0);
+      li.append(el("span", "who", lab), t, mb); ul.append(li);
+    });
+    zb.onclick = () => { const on = zb.textContent.includes("▾"); ul.querySelectorAll("small").forEach(s => s.hidden = !on); zb.textContent = on ? "隱藏中文 ▴" : "顯示中文 ▾"; };
+    tail.append(h, ul);
+    if (ev.size) tail.append(el("p", "small muted", "黃底的句子是答案的根據。"));
+    nextButton(tail);
+  }
+}
+
+// ================================================================ recording an answer
+function record(item, qi, chosen, ok, guess, ms, timedOut) {
+  const key = qKeys(item)[isGap(item) || item.format === "qr" ? 0 : qi];
+  const res = { key, id: item.id, qi, unit: item.unit, type: item.type, chosen, ok, guess, ms, timedOut, v: item.v || 1, source: item.source };
+  S.results.push(res);
+  P.seen[key] = Date.now();
+  const u = P.units[item.unit] = P.units[item.unit] || { n: 0, ok: 0, guess: 0, msSum: 0, msN: 0 };
+  u.n++; if (ok) u.ok++; if (ok && guess) u.guess++; if (ms != null) { u.msSum += ms; u.msN++; }
+  P.totals.n++; if (ok) P.totals.ok++; if (ok && guess) P.totals.guess++;
+  // wrong bank
+  const now = Date.now(), e = B[key], solid = ok && !guess;
+  const hist = { at: now, ok, chosen, guess };
+  if (e && !e.graduatedAt && !e.removedAt) {
+    if (solid) { if (e.level >= 3) { e.graduatedAt = now; res.graduated = true; } else { e.level++; e.due = addDays(INTERVALS[e.level]); } }
+    else { e.level = 0; e.due = addDays(INTERVALS[0]); if (!ok) e.wrongCount = (e.wrongCount || 0) + 1; res.banked = true; }
+    e.lastAt = now; e.v = res.v; e.history = (e.history || []).concat(hist).slice(-10);
+    res.review = true; saveBank(key);
+  } else if (!ok || guess) {          // wrong, or right but guessed; right on time or late but sure stays out
+    B[key] = { reason: ok ? "guess" : "wrong", level: 0, due: addDays(INTERVALS[0]), wrongCount: ok ? 0 : 1, enteredAt: now, lastAt: now, v: res.v, history: [hist] };
+    res.banked = true; saveBank(key);
+  }
+  saveSession();
+  if (S.results.length % 5 === 0) saveAttempt(false);
+  return res;
+}
+function saveAttempt(final) {
+  const r = S.results;
+  return Store.put("toeic_attempts", S.id, { startedAt: S.startedAt, endedAt: final ? Date.now() : null, mode: S.label, items: r.map(x => ({ id: x.key, ok: x.ok, chosen: x.chosen, guess: x.guess, ms: x.ms == null ? null : Math.round(x.ms), timedOut: x.timedOut, v: x.v })), summary: { n: r.length, ok: r.filter(x => x.ok).length } });
+}
+
+function nextButton(host) {
+  const nb = el("div", "nextbar");
+  const b = btn("btn primary", S.i + 1 < S.cards.length ? "下一題 →" : "看總結 →", () => { S.i++; saveSession(); runCard(); });
+  nb.append(b); host.append(nb);
+  keys.next = () => b.click();
+  setTimeout(() => b.scrollIntoView({ block: "nearest", behavior: "smooth" }), 50);
+}
+
+// ================================================================ summary
+function summary() {
+  show("summary");
+  clearSession();
+  const r = S.results;
+  const t = day();
+  if (P.streak.lastDay !== t) { P.streak.days = P.streak.lastDay === addDays(-1) ? P.streak.days + 1 : 1; P.streak.lastDay = t; }
+  saveProfile(); saveAttempt(true);
+  bar(back("首頁", home), S.label, null);
+  const app = $("#app");
+  const ok = r.filter(x => x.ok).length;
+  const sc = el("div", "score"); sc.append(el("b", null, ok + " / " + r.length), el("span", null, "用時 " + Math.max(1, Math.round((Date.now() - S.startedAt) / 60000)) + " 分鐘"));
+  app.append(sc);
+  const avg = type => { const xs = r.filter(x => x.type === type && x.ms != null); return xs.length ? fmtS(xs.reduce((s, x) => s + x.ms, 0) / xs.length) : null; };
+  const line = [["文法", avg("grammar")], ["字彙", avg("vocab")]].filter(x => x[1]).map(x => x[0] + "平均 " + x[1]).join(" · ");
+  if (line) app.append(el("p", "muted small", line));
+  const banked = r.filter(x => x.banked && !x.review).length, timed = r.filter(x => x.timedOut).length;
+  const notes = [];
+  if (banked) notes.push("已加入錯題庫 " + banked + " 題");
+  if (timed) notes.push("超過自訂節奏 " + timed + " 題");
+  if (notes.length) app.append(el("p", "small", notes.join(" · ")));
+
+  const wrong = r.filter(x => !x.ok), guessed = r.filter(x => x.ok && x.guess);
+  if (wrong.length) { app.append(el("h2", null, "錯的題")); app.append(resultList(wrong)); }
+  if (guessed.length) { app.append(el("h2", null, "猜對的題")); app.append(resultList(guessed)); }
+
+  const byUnit = {};
+  for (const x of r) { const u = byUnit[x.unit] = byUnit[x.unit] || [0, 0]; u[1]++; if (x.ok) u[0]++; }
+  app.append(el("h2", null, "這場的考點"));
+  const tb = el("div", "tbl"), table = el("table");
+  table.innerHTML = '<thead><tr><th>考點</th><th class="n">對 / 總</th></tr></thead>';
+  const body = el("tbody");
+  for (const [u, [a, n]] of Object.entries(byUnit)) { const tr = el("tr"); tr.append(el("td", null, unitName(u)), el("td", "n", a + " / " + n)); body.append(tr); }
+  table.append(body); tb.append(table); app.append(tb);
+
+  const row = el("div", "row"); row.style.marginTop = "22px";
+  const again = wrong.concat(guessed);
+  if (again.length) row.append(btn("btn primary", "再練這場錯的", () => { const cards = {}; for (const x of again) (cards[x.id] = cards[x.id] || []).push(x.qi); newSession(Object.entries(cards).map(([id, qs]) => cardFor(BY[id], qs)), "再練錯的"); }));
+  row.append(btn("btn", "回首頁", home));
+  app.append(row);
+}
+function resultList(rs) {
+  const ul = el("ul", "list");
+  for (const x of rs) {
+    const item = BY[x.id]; if (!item) continue;
+    ul.append(itemRow(item, x.qi, { chosen: x.chosen, meta: [unitName(item.unit)] }));
+  }
+  return ul;
+}
+function stemText(item, qi) {
+  if (isGap(item)) return item.stem.replace("______", "[" + item.options[item.answer] + "]");
+  if (item.format === "qr") return item.audio.lines[0].text;
+  return item.questions[qi].q;
+}
+function itemRow(item, qi, { chosen, meta, bankKey }) {
+  const li = el("li"), head = btn("head");
+  const s = el("span", "s en", stemText(item, qi));
+  const m = el("span", "m"); for (const t of meta) m.append(el("span", "badge", t));
+  if (item.source !== "hand") m.append(el("span", "badge claude", "Claude 出題・未審核"));
+  if ((M[item.id] || {}).note) m.append(el("span", null, "📝"));
+  const ch = el("span", "ch", "▾");
+  head.append(s, ch, m);
+  const body = el("div", "body"); body.hidden = true;
+  head.onclick = () => {
+    body.hidden = !body.hidden; ch.textContent = body.hidden ? "▾" : "▴";
+    if (!body.hidden && !body.childNodes.length) fillRowBody(body, item, qi, chosen, bankKey);
+  };
+  li.append(head, body);
+  return li;
+}
+function fillRowBody(body, item, qi, chosen, bankKey) {
+  if (isGap(item)) body.append(explainGap(item, chosen ?? -1));
+  else {
+    const q = item.questions[qi], box = el("div", "exp");
+    if (item.format !== "qr") { const p = el("p", "en"); p.append(q.q); box.append(p); }
+    box.append(el("span", "k", "考點 · " + unitName(item.unit)), zh(el("p", "rule", q.explain.point)));
+    const ans = item.format === "qr" ? item.audio.lines[q.answer + 1].text : q.options[q.answer];
+    const w = el("div"); w.append(el("span", "k", "答案 · " + ans), zh(el("p", null, q.explain.why))); box.append(w);
+    const ul = el("ul", "script");
+    item.audio.lines.forEach((ln, i) => { const li = el("li", (q.explain.evidence || []).includes(i) ? "ev" : ""); const t = el("div", "t en", ln.text); const mb = btn("mini"); mb.innerHTML = PLAY; mb.onclick = () => playLines(item, [i], 0); li.append(el("span", "who", item.format === "qr" ? (i ? L[i - 1] : "Q") : ln.who), t, mb); ul.append(li); });
+    box.append(ul);
+    body.append(box);
+  }
+  const note = el("div", "note"), ta = el("textarea"); ta.id = "note-" + item.id + "-" + qi; ta.placeholder = "筆記（自動儲存）";
+  ta.value = (M[item.id] || {}).note || "";
+  let t = null;
+  ta.oninput = () => { clearTimeout(t); t = setTimeout(() => { M[item.id] = Object.assign(M[item.id] || {}, { note: ta.value }); saveMark(item.id); }, 1000); };
+  note.append(ta); body.append(note);
+  if (bankKey && B[bankKey] && !B[bankKey].removedAt && !B[bankKey].graduatedAt) {
+    body.append(btn("btn sm ghost", "移出錯題庫", ev => { B[bankKey].removedAt = Date.now(); saveBank(bankKey); ev.target.replaceWith(el("span", "small muted", "已移出。在「全部」裡還找得到。")); }));
+  }
+}
+
+// ================================================================ wrong bank
+let bankFilter = "due", bankGroup = "unit", bankQuery = "";
+function bankView() {
+  show("bank");
+  bar(back("首頁", home), "錯題庫", null);
+  const app = $("#app");
+  const f = el("div", "filters");
+  for (const [k, t] of [["due", "待複習"], ["all", "全部"], ["guess", "猜對的"], ["grad", "已畢業"]]) { const c = btn("chip", t, () => { bankFilter = k; bankView(); }); c.setAttribute("aria-pressed", String(bankFilter === k)); f.append(c); }
+  f.append(el("span", "sp")); f.lastChild.style.flex = "1";
+  for (const [k, t] of [["unit", "依考點"], ["date", "依日期"]]) { const c = btn("chip", t, () => { bankGroup = k; bankView(); }); c.setAttribute("aria-pressed", String(bankGroup === k)); f.append(c); }
+  app.append(f);
+  const s = el("input", "search"); s.type = "search"; s.id = "bank-search"; s.placeholder = "搜尋題目、筆記、考點"; s.value = bankQuery;
+  app.append(s);
+  const listHost = el("div"); app.append(listHost);
+  const render = () => {
+    listHost.textContent = "";
+    const t = day(), q = bankQuery.toLowerCase();
+    let keys_ = Object.keys(B).filter(k => qOf(k));
+    keys_ = keys_.filter(k => { const e = B[k];
+      if (bankFilter === "due") return !e.graduatedAt && !e.removedAt && e.due <= t;
+      if (bankFilter === "guess") return !e.graduatedAt && !e.removedAt && e.reason === "guess";
+      if (bankFilter === "grad") return !!e.graduatedAt;
+      return true; });
+    if (q) keys_ = keys_.filter(k => { const { item, qi } = qOf(k); return (stemText(item, qi) + " " + ((M[item.id] || {}).note || "") + " " + unitName(item.unit)).toLowerCase().includes(q); });
+    if (!keys_.length) { listHost.append(el("p", "empty", bankFilter === "due" ? "沒有到期的題。" : "這裡沒有題。")); return; }
+    const rowFor = k => { const { item, qi } = qOf(k), e = B[k];
+      const meta = [e.wrongCount ? "錯 " + e.wrongCount + " 次" : "猜對", e.graduatedAt ? "已畢業" : e.removedAt ? "已移出" : "下次 " + e.due.slice(5).replace("-", "/")];
+      if (bankGroup === "date") meta.unshift(unitName(item.unit));
+      return itemRow(item, qi, { meta, bankKey: k }); };
+    if (bankGroup === "date") {
+      const ul = el("ul", "list"); keys_.sort((a, b) => B[b].enteredAt - B[a].enteredAt).forEach(k => ul.append(rowFor(k))); listHost.append(ul);
+    } else {
+      const groups = {}; for (const k of keys_) (groups[unitOfKey(k)] = groups[unitOfKey(k)] || []).push(k);
+      for (const [u, ks] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+        const last = Math.max(...ks.map(k => B[k].lastAt || 0));
+        listHost.append(el("div", "group-h", unitName(u) + "　" + ks.length + " 題 · 最近 " + day(new Date(last)).slice(5).replace("-", "/")));
+        const ul = el("ul", "list"); ks.forEach(k => ul.append(rowFor(k))); listHost.append(ul);
+      }
+    }
+  };
+  s.oninput = () => { bankQuery = s.value; render(); };
+  render();
+}
+
+// ================================================================ stats
+function statsView() {
+  show("stats");
+  bar(back("首頁", home), "統計", null);
+  const app = $("#app");
+  const t = P.totals;
+  const sc = el("div", "score"); sc.append(el("b", null, pct(t.ok, t.n)), el("span", null, "總正確率 · 做過 " + t.n + " 題 · 猜對 " + t.guess + " 題"));
+  app.append(sc);
+  if (P.streak.days) app.append(el("p", "small muted", "連續練習 " + P.streak.days + " 天（最近一天 " + P.streak.lastDay + "）"));
+  app.append(el("p", "small muted", "「猜對」多的考點，代表還不穩，比正確率更能看出弱點。"));
+  for (const [g, title] of [["grammar", "文法"], ["vocab", "字彙"], ["listen", "聽力"]]) {
+    const us = unitsIn(g); if (!us.length) continue;
+    app.append(el("h2", null, title));
+    const tb = el("div", "tbl"), table = el("table");
+    table.innerHTML = '<thead><tr><th>考點</th><th class="n">做過</th><th class="n">正確率</th><th class="n">猜對</th><th class="n">平均</th></tr></thead>';
+    const body = el("tbody");
+    for (const u of us) { const s = unitStat(u), tr = el("tr");
+      tr.append(el("td", null, unitName(u)), el("td", "n", String(s.n)), el("td", "n", pct(s.ok, s.n)), el("td", "n", String(s.guess)), el("td", "n", s.msN ? fmtS(s.msSum / s.msN) : "–")); body.append(tr); }
+    table.append(body); tb.append(table); app.append(tb);
+  }
+}
+
+// ================================================================ settings
+function settingsView() {
+  show("settings");
+  bar(back("首頁", home), "設定", null);
+  const app = $("#app"), c = el("div", "card");
+  const set = (label, desc, control) => { const d = el("div", "set"); const l = el("label", null, label); if (control.id) l.htmlFor = control.id; d.append(l, zh(el("p", null, desc)), control); c.append(d); };
+  const pace = el("select"); pace.id = "set-pace";
+  for (const [v, t] of [[0, "關閉"], [20, "每題 20 秒"], [30, "每題 30 秒"], [45, "每題 45 秒"]]) { const o = el("option", null, t); o.value = v; if (P.settings.pace === v) o.selected = true; pace.append(o); }
+  pace.onchange = () => { P.settings.pace = Number(pace.value); saveProfile(); };
+  set("自訂節奏", "文法和字彙題上方出現倒數條，時間到不會跳題，只記為超時。秒數是你自己設的，不是官方時間。", pace);
+  const strict = el("input"); strict.type = "checkbox"; strict.id = "set-strict"; strict.checked = P.settings.strictListen;
+  strict.onchange = () => { P.settings.strictListen = strict.checked; saveProfile(); };
+  set("聽力嚴格模式", "每題音檔只播一次，作答後才能重播。關閉時可以無限重播。", strict);
+  const theme = el("select"); theme.id = "set-theme";
+  for (const [v, t] of [["system", "跟系統"], ["light", "淺色"], ["dark", "深色"]]) { const o = el("option", null, t); o.value = v; if (P.settings.theme === v) o.selected = true; theme.append(o); }
+  theme.onchange = () => { P.settings.theme = theme.value; applyTheme(); saveProfile(); };
+  set("外觀", "淺色或深色。", theme);
+  app.append(c);
+  const info = el("div", "card"); info.style.marginTop = "14px";
+  info.append(zh(el("p", "small", "紀錄存在：" + (Store.mode === "db" ? "你的 claude.ai 帳號（手機和電腦同步）" : "這個瀏覽器（換裝置看不到）") + "。")),
+    zh(el("p", "small", "聽力音檔是 Kokoro 合成的美式和英式語音。正式考試還會有澳洲和加拿大口音，這裡沒有。")),
+    zh(el("p", "small", "所有題目都是原創的，不是考古題。題庫共 " + DATA.items.length + " 題" + (ITEMS.length > DATA.items.length ? "，另有 Claude 加的 " + (ITEMS.length - DATA.items.length) + " 題" : "") + "。桌機快捷鍵：1–4 或 A–D 作答、Enter 下一題、G 切換「我是猜的」、R 重播、S 收藏。")));
+  app.append(info);
+}
+
+// ================================================================ keyboard (desktop)
+const keys = {};
+document.addEventListener("keydown", e => {
+  if (view !== "session" || e.target.closest("textarea,input,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  const pos = "1234".indexOf(k) >= 0 ? "1234".indexOf(k) : "abcd".indexOf(k);
+  if (pos >= 0 && keys.answer) { keys.answer(pos); e.preventDefault(); }
+  else if (k === "enter" && keys.next && document.querySelector(".nextbar")) { keys.next(); e.preventDefault(); }
+  else if (k === "g" && keys.guess) keys.guess();
+  else if (k === "r" && keys.replay) keys.replay();
+  else if (k === "s" && keys.star) keys.star();
+});
+const _runCard = runCard;
+runCard = function () { for (const k of Object.keys(keys)) delete keys[k]; return _runCard(); };
+
+// ================================================================ start
+(async () => {
+  bar(null, "TOEIC 練習室", null);
+  $("#app").append(el("p", "empty", "載入中…"));
+  await load();
+  home();
+  if (window.claude?.use) claude.use("sample").then(s => { sample = s || null; }).catch(() => {});
+})();
+</script>
