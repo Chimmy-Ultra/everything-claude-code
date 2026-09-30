@@ -1,0 +1,44 @@
+{
+  "answers": {
+    "l-conv-03:0": {
+      "answer": "D",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The man proposes 'this afternoon'; she says 'I'd like to, but ... at three', meaning the later part of the afternoon is out. He immediately suggests 'straight after lunch', and she agrees, which confirms that the implication was limited availability later, not a refusal for the whole day. A is contradicted because they do meet today (1:00). B and C are never suggested; tomorrow morning is the print deadline.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "This is the standard TOEIC implied-meaning format ('What does the woman imply when she says ...'). The quoted line only makes sense in context, and the next turn disambiguates it. A ('cannot work on it today') is a good distractor for listeners who stop at 'but I've got a dentist appointment'.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-03:1": {
+      "answer": "C",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "Woman: 'we can skip the back page. Tom went over it yesterday.' Man: 'The page with all the prices?' So Tom reviewed (went over) the price page, which is the cost information. Photos (A) are what they still need to check. The man books the room (B). The woman brings the printed copy (D).",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The answer is split across two speakers and paraphrased twice ('went over' → 'reviewed', 'prices' → 'cost information'), which is typical Part 3 design. Each distractor reuses a detail from the conversation that belongs to someone else. 'Pricing information' would be a marginally tighter paraphrase than 'cost information', but the current wording is acceptable.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-03:2": {
+      "answer": "A",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "Man's last line: 'I'll book a meeting room for one o'clock.' Book = reserve. C (bring a printed copy) is what the woman says she will do. B and D are not mentioned as his actions; Tom already covered the prices.",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "This is the standard 'what will the man do' question answered in the final turn, with a light paraphrase (book → reserve). The main distractor is the other speaker's commitment. It is typical of the easier third question in a real Part 3 set.",
+      "fix": "",
+      "tooClose": false
+    }
+  },
+  "overall": "All three questions have a single key clearly supported by the transcript, and the questions follow the order of the conversation. Length (7 turns), register and question mix (implied meaning, a detail paraphrased across speakers, next action) closely match a real Part 3 set. The distractors reuse conversation details belonging to the wrong speaker, as ETS items do. The set sits at easy-to-medium overall; the only non-standard feature is that it opens with the implied-meaning question rather than a gist question, which is acceptable."
+}

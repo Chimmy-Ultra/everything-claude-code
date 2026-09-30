@@ -1,0 +1,83 @@
+{
+  "answers": {
+    "v-collocation-02": {
+      "answer": "B",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "'take effect' is the fixed collocation (policy will take effect on July 1). 'come' and 'go' only work with 'into' ('come into effect', 'go into effect'); with no 'into' in the stem, 'come effect' / 'go effect' are ungrammatical in both British and American English. 'make effect' is not a collocation.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "Policy/regulation start dates with 'take effect' are a staple TOEIC collocation. The come/go distractors are a good trap for test-takers who half-remember 'come into effect' / 'go into effect', and the missing 'into' keeps the key unique. Natural business sentence of typical Part 5 length.",
+      "fix": "",
+      "tooClose": false
+    },
+    "v-collocation-05": {
+      "answer": "C",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "'strike a balance between X and Y' is the standard idiom (BrE and AmE). 'pull a balance' and 'lift a balance' do not exist. 'run a balance' exists only in the banking sense (carry a balance on a card) and cannot take 'between X and Y'.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 4,
+      "why": "TOEIC does test idioms like 'strike a balance', and the sentence context is realistic. But the distractors are not close in meaning (pull/run/lift), so the item tests only whether the test-taker knows the idiom and has no near-miss option. Real items more often use a tempting wrong verb. That is acceptable here, because obvious alternatives such as 'find', 'achieve' and 'maintain' would also be correct.",
+      "fix": "",
+      "tooClose": false
+    },
+    "v-synonym-01": {
+      "answer": "C",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "A percentage earned per contract on top of base salary is a commission. A wage is base pay (and 'in addition to their base salary' rules it out); a pension is retirement income; an allowance is a fixed sum for expenses, not a percentage of sales.",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "Matches the easier end of Part 5 vocabulary: common business noun, clear context cue ('4 percent on every contract', 'in addition to their base salary'), and distractors from the same pay/compensation word family.",
+      "fix": "",
+      "tooClose": false
+    },
+    "v-synonym-02": {
+      "answer": "B",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The department gives projectors temporarily and free to staff, so it lends them. 'rents' conflicts with 'free of charge'; 'borrows ... to staff' has the wrong direction (you borrow from someone); 'donates' conflicts with 'for up to two weeks at a time' (a donation is permanent).",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 4,
+      "why": "Lend/borrow/rent confusion is a classic TOEIC vocabulary target. The stem needs two cues ('free of charge' and 'for up to two weeks') to rule out rents and donates. That makes it clearly correct but somewhat heavily scaffolded, so it sits at the easy end.",
+      "fix": "",
+      "tooClose": false
+    },
+    "v-synonym-03": {
+      "answer": "D",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "'incur charges/costs/expenses' is the standard collocation. 'suffer' takes losses, damage or a penalty. There is a narrow British technical/informal usage ('tax suffered', 'suffer bank charges'), but it implies something imposed on you, which does not fit voluntary room-service or minibar purchases, and it would not be accepted as a Part 5 key. 'undergo' (surgery, changes) and 'endure' (hardship) do not collocate with charges.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "'incur' is a high-value TOEIC word, and the distractors are all 'experience something' verbs that a learner translating from L1 might choose. The 'such as room service or minibar purchases' example cleverly makes the 'suffer' reading implausible. This is authentic hotel/travel context.",
+      "fix": "",
+      "tooClose": false
+    },
+    "v-synonym-05": {
+      "answer": "A",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "A 40 percent jump is a marked increase. 'slightly' conflicts with 40 percent; 'steadily' implies gradual continuous growth, which conflicts with a sudden jump in week one followed by a plateau; 'temporarily' conflicts with 'staying at that level for the rest of the year'. 'Visits markedly increased' (adverb before the verb) is less common than 'increased markedly' but fully grammatical.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 4,
+      "why": "Adverb-meaning items like this are common in Part 5. But the continuation clause is built so that each distractor is refuted in turn (40% vs slightly, jumping vs steadily, staying vs temporarily). That feels somewhat engineered, and test-takers can get it by elimination even without knowing 'markedly'. Real items usually rely on one cue.",
+      "fix": "",
+      "tooClose": false
+    }
+  },
+  "overall": "All six items have exactly one defensible key; no ambiguity was found after substituting every option, including British usages such as 'suffer (bank) charges' and 'come/go into effect', which fail here because the stem has no 'into'. Difficulty sits in the easy-to-medium range of real Part 5 vocabulary items, and all are in authentic business contexts. The main style caveat is over-scaffolding in v-synonym-02 and v-synonym-05, and v-collocation-05's distractors being far from the key, which makes those slightly easier than the harder real items, where distractors are semantically close."
+}
