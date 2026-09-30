@@ -1,0 +1,34 @@
+{
+ "changed": [
+  "v-synonym-02",
+  "v-synonym-04",
+  "v-family-01"
+ ],
+ "new": [
+  "v-collocation-07",
+  "v-collocation-08",
+  "v-collocation-09",
+  "v-synonym-07",
+  "v-synonym-08",
+  "v-synonym-09",
+  "v-business-07",
+  "v-business-08",
+  "v-family-07",
+  "v-family-08"
+ ],
+ "notes": {
+  "v-synonym-02": "Dropped 'free of charge'; the clue is now 'borrowers' in the second clause, so 'rents' (also temporary, also returned) is a real trap. Level 1->2.",
+  "v-synonym-04": "'composes' replaced by 'conforms' (needs 'to', means 'agree with rules'); consists/comprises/constitutes remain the test.",
+  "v-family-01": "Rewritten on confident/confidential/confiding/confided ('keep every detail strictly ___'); no overlap with g-pos-06 or any other item.",
+  "v-collocation-07": "fell short of the target; near-miss 'ran' (run short of = supply runs out), ruled out only by 'the target'. Medium.",
+  "v-collocation-08": "lodge a formal complaint; distractors house/host/board are all lodging verbs like 'lodge'. Hard.",
+  "v-collocation-09": "bear in mind that ...; near-misses take (into account) and carry (synonym of bear). Easy.",
+  "v-synonym-07": "abide by the safety rules vs comply/adhere/conform, all meaning 'obey'; the preposition 'by' decides. Medium.",
+  "v-synonym-08": "suspend production for two weeks ... resume; terminate/abandon/conclude are permanent. Medium.",
+  "v-synonym-09": "waive the cancellation fee; exempt/spare/relieve mean the same but take a person object. Hard.",
+  "v-business-07": "a deposit of 15 percent ... balance due upon delivery; near-miss 'rebate' (also a percentage of price). Medium.",
+  "v-business-08": "reconcile bank statements with the ledger and investigate discrepancies; near-miss 'consolidate ... with'. Hard.",
+  "v-family-07": "attentive to guests' needs vs attendant/attended/attending; 'attendant' tempts in a hotel stem. Medium.",
+  "v-family-08": "a complimentary copy of the book; near-misses complementary (spelling) and completed (completed copy of a form). Easy."
+ }
+}

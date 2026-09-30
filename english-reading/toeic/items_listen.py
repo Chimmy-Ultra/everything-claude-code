@@ -1,5 +1,6 @@
 # Listening items for the TOEIC 練習室 (DESIGN.md sections 3, 5 and 7).
-# 8 qr (Part 2 style), 4 conv (Part 3 style, 3 questions each), 2 talk (Part 4 style, 3 questions each).
+# 12 qr (Part 2 style), 6 conv (Part 3 style, 3 questions each; l-conv-05 has three speakers, l-conv-06 a graphic),
+# 3 talk (Part 4 style, 3 questions each). Scripts are written in US English even when a British voice reads them.
 # All content is original. `say` overrides the TTS text wherever the displayed text has digits, times,
 # prices, abbreviations or the name "Wei". reviewed stays False until the items pass a blind review
 # and every mp3 has been heard.
@@ -56,12 +57,12 @@ ITEMS = [
     },
     {
         "id": "l-qr-03", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-03", "gapMs": 900,
             "lines": [
                 {"file": "q.mp3", "who": "M", "voice": "bm_lewis", "text": "Are you taking the train to the trade fair, or driving?"},
-                {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "Parking near the exhibition centre is really expensive."},
+                {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "Parking near the exhibition center is really expensive."},
                 {"file": "b.mp3", "who": "W", "voice": "bf_emma", "text": "The fair opens on Thursday."},
                 {"file": "c.mp3", "who": "W", "voice": "bf_emma", "text": "I've already trained the new staff."},
             ],
@@ -74,7 +75,7 @@ ITEMS = [
                 "why": "問搭火車還是開車 → 回展覽中心附近停車很貴：暗示不想開車，會搭火車。",
                 "evidence": [1],
                 "wrong": [None, "同字陷阱：重複 fair，回答的是開幕時間", "同字陷阱：trained 是訓練員工，不是搭火車"],
-                "vocab": [["trade fair", "商展"], ["exhibition centre", "展覽中心（英式拼法）"]],
+                "vocab": [["trade fair", "商展"], ["exhibition center", "展覽中心"]],
             },
         }],
     },
@@ -459,15 +460,16 @@ ITEMS = [
     # ------------------------------------------------------------------ talk (Part 4)
     {
         "id": "l-talk-01", "type": "listen", "format": "talk", "unit": "talk-topic", "level": 2,
-        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
         "audio": {
             "dir": "audio/l-talk-01", "gapMs": 500,
             "lines": [
-                {"file": "01.mp3", "who": "M", "voice": "bm_george", "text": "Good morning, everyone. This is building management with an update about the lifts on the east side."},
-                {"file": "02.mp3", "who": "M", "voice": "bm_george", "text": "Starting on Monday, a contractor will be replacing those lifts, and the work should take about two weeks."},
-                {"file": "03.mp3", "who": "M", "voice": "bm_george", "text": "While the work is going on, please use the lifts by the main entrance, or take the stairs."},
-                {"file": "04.mp3", "who": "M", "voice": "bm_george", "text": "Those lifts will be very busy between half past eight and nine, so if you can, try to come in a little earlier."},
-                {"file": "05.mp3", "who": "M", "voice": "bm_george", "text": "If you work on the east side and can't manage the stairs, reception can give you a pass for the goods lift at the back."},
+                {"file": "01.mp3", "who": "M", "voice": "bm_george", "text": "Good morning, everyone. This is building management with an update about the elevators on the east side."},
+                {"file": "02.mp3", "who": "M", "voice": "bm_george", "text": "Starting on Monday, a contractor will be replacing those elevators, and the work should take about two weeks."},
+                {"file": "03.mp3", "who": "M", "voice": "bm_george", "text": "While the work is going on, please use the elevators by the main entrance, or take the stairs."},
+                {"file": "04.mp3", "who": "M", "voice": "bm_george", "text": "Those elevators will be very busy between 8:30 and 9:00, so if you can, try to come in a little earlier.",
+                 "say": "Those elevators will be very busy between eight thirty and nine, so if you can, try to come in a little earlier."},
+                {"file": "05.mp3", "who": "M", "voice": "bm_george", "text": "If you work on the east side and can't manage the stairs, the front desk can give you a pass for the freight elevator at the back."},
                 {"file": "06.mp3", "who": "M", "voice": "bm_george", "text": "Maps of the temporary routes will also be posted beside each staircase. Thank you for your patience."},
             ],
         },
@@ -486,34 +488,34 @@ ITEMS = [
                 "answer": 2,
                 "explain": {
                     "point": "主旨題：答案通常在開頭",
-                    "why": "承包商要 replace 東側的 lifts → 改述成 installation of new elevators（lift＝elevator）。",
+                    "why": "承包商要 replace 東側的 elevators → 改述成 installation of new elevators：換掉舊的＝裝新的。",
                     "evidence": [0, 1],
                     "wrong": ["同字陷阱：main entrance 本來就有，不是新開", "只建議早點到，上班時間沒變", None, "聯想陷阱：走樓梯是施工期間的替代方式，不是演習"],
-                    "vocab": [["lift", "（英）電梯＝elevator"], ["contractor", "承包商"]],
+                    "vocab": [["replace", "更換、替換"], ["contractor", "承包商"]],
                 },
             },
             {
                 "q": "Why does the speaker ask listeners to come in earlier?",
-                "options": ["The building will close early", "The remaining elevators will be crowded", "The main entrance will be closed", "Reception will give out passes only in the morning"],
+                "options": ["The building will close early", "The remaining elevators will be crowded", "The main entrance will be closed", "The front desk will give out passes only in the morning"],
                 "answer": 1,
                 "explain": {
-                    "point": "原因題：so 前面是理由；those lifts 要往前找",
-                    "why": "those lifts 指前一句大門旁的電梯，very busy 改述成 crowded → 還能搭的電梯會很擠。",
+                    "point": "原因題：so 前面是理由；those elevators 要往前找",
+                    "why": "those elevators 指前一句大門旁的電梯，very busy 改述成 crowded → 還能搭的電梯會很擠。",
                     "evidence": [2, 3],
                     "wrong": ["聯想陷阱：earlier 是請大家早到，不是大樓早關", None, "同字陷阱：大門旁的電梯照常使用", "櫃台發通行證是另一件事，沒說只在早上"],
-                    "vocab": [["half past eight", "八點半"], ["busy", "（地方）擁擠、人多"]],
+                    "vocab": [["remaining", "剩下的、其餘的"], ["busy", "（地方）擁擠、人多"]],
                 },
             },
             {
-                "q": "What can some listeners get from reception?",
+                "q": "What can some listeners get from the front desk?",
                 "options": ["A map of alternative routes", "A parking permit", "A revised work schedule", "Access to a service elevator"],
                 "answer": 3,
                 "explain": {
                     "point": "細節題：注意限定對象，並聽出強改述",
-                    "why": "櫃台可給 a pass for the goods lift → 改述成 access to a service elevator（goods lift＝貨梯）。",
+                    "why": "櫃台可給 a pass for the freight elevator → 改述成 access to a service elevator（freight elevator＝貨梯）。",
                     "evidence": [4],
                     "wrong": ["地圖是貼在樓梯旁，不是去櫃台拿", "聯想陷阱：pass 是貨梯通行證，不是停車證", "只建議早點到，沒有新的時間表", None],
-                    "vocab": [["goods lift", "（英）貨梯＝service elevator"], ["reception", "櫃台、接待處"]],
+                    "vocab": [["freight elevator", "貨梯＝service elevator"], ["front desk", "櫃台、服務台"]],
                 },
             },
         ],
