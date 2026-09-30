@@ -1,0 +1,333 @@
+<title>Barista Missions</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: pick a mission card → a chat with the barista beside a sticky goal checklist → a debrief. */
+{{BASE_CSS}}
+.missions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+.mission{display:grid;gap:8px;align-content:start;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:16px;min-width:0}
+.mission:hover{border-color:var(--accent)}
+.mission .k{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.mission .t{font:700 19px/1.2 var(--display)}
+.mission .s{font:14px/1.5 var(--zh);color:var(--muted)}
+.mission ul{margin:0;padding-left:18px;font:14px/1.5 var(--display)}
+.mission .go{justify-self:start;margin-top:4px}
+.note-box{background:var(--plate);border-radius:14px;padding:14px 16px;font:14px/1.6 var(--zh);max-width:70ch}
+.note-box b{font-weight:700}
+
+.play{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:18px;align-items:start;margin-top:18px}
+.goals{position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:10px}
+.goals ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.goals li{display:grid;grid-template-columns:22px 1fr;gap:8px;font:14px/1.4 var(--display);align-items:start}
+.goals li .box{width:20px;height:20px;border:1.5px solid var(--line);border-radius:6px;display:grid;place-items:center;font:700 13px var(--mono);color:var(--accent-ink)}
+.goals li.met .box{background:var(--good);border-color:var(--good)}
+.goals li.met span:last-child{color:var(--muted);text-decoration:line-through}
+.goals .situ{margin:0;font:13px/1.5 var(--zh);color:var(--muted)}
+
+.chat{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:90%}
+.msg.you{flex-direction:row-reverse;margin-left:auto}
+.av{flex:none;display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;font:700 13px var(--display);color:var(--surface)}
+.msg.b .av{background:var(--barista)} .msg.you .av{background:var(--you)}
+.bub{min-width:0;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:9px 14px;background:var(--barista-tint)}
+.msg.you .bub{border-radius:16px 16px 4px 16px;background:var(--you-tint)}
+.bub p{margin:0}
+.bub .who{display:block;font:700 12px/1 var(--display);margin-bottom:4px;color:var(--barista)}
+.msg.you .who{color:var(--you)}
+.bub .t{font:12px var(--mono);color:var(--muted);margin-top:4px}
+.typing{font:italic 15px var(--display);color:var(--muted)}
+.composer{margin-top:16px;display:grid;gap:8px;background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;padding:12px;box-shadow:0 0 0 4px var(--accent-bg)}
+.composer textarea{width:100%;min-height:64px;resize:vertical;border:0;background:transparent;font:18px/1.45 var(--body);padding:4px}
+.composer textarea:focus{outline:none}
+.composer .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.composer .sp{flex:1}
+.hint{margin:0;font:500 14px/1.45 var(--display);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:6px 10px}
+.hint i{font-style:normal;border-bottom:2px solid currentColor}
+.err{font:14px/1.5 var(--display);color:var(--bad)}
+
+.debrief{display:grid;gap:16px;margin-top:8px}
+.dgoals{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.dgoals li{display:flex;gap:8px;align-items:baseline;font:15px/1.4 var(--display)}
+.ok{color:var(--good);font-weight:700} .no{color:var(--bad);font-weight:700}
+.fix{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:4px}
+.fix .said{margin:0;color:var(--muted);text-decoration:line-through;text-decoration-color:var(--bad)}
+.fix .better{margin:0;font-weight:600}
+.fix .why{margin:0;font:14px/1.5 var(--zh);color:var(--muted)}
+.good{background:var(--good-bg);color:var(--good);border-radius:12px;padding:10px 14px;font:15px/1.6 var(--zh);margin:0}
+.nextup{background:var(--surface);border:1px dashed var(--accent);border-radius:12px;padding:12px 14px;margin:0;font:15px/1.6 var(--zh)}
+.stat-line{font:13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;margin:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+@media (max-width:720px){
+  .missions{grid-template-columns:1fr}
+  .play{grid-template-columns:1fr}
+  .goals{position:static;order:-1}
+  .msg{max-width:100%}
+}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Barista Missions <small>Scene Lab · C</small></span>
+  <label class="chip" for="voice"><input type="checkbox" id="voice" checked style="accent-color:var(--accent);margin:0"> Read aloud</label>
+</div></header>
+
+<main>
+  <section id="pick">
+    <p class="kicker">Demo C · Missions</p>
+    <h1>Get what you came for</h1>
+    <p class="lede">Claude plays the barista. You get a mission and talk your way through it in your own words, typed or said with your phone's voice keyboard. <strong>Nobody corrects you mid-way.</strong> If the barista doesn't understand, they ask, the way a real one would. Each mission has one surprise. At the end you get a short debrief.</p>
+    <div class="missions" id="missions"></div>
+    <div class="note-box" id="need" lang="zh-Hant"></div>
+  </section>
+
+  <section id="play" hidden>
+    <p class="kicker" id="m-k"></p>
+    <h2 id="m-h"></h2>
+    <div class="play">
+      <div>
+        <ol class="chat" id="chat" aria-live="polite"></ol>
+        <div class="composer" id="composer">
+          <p class="hint" id="hint" hidden></p>
+          <textarea id="say" aria-label="What you say" placeholder="Type or use the mic on your keyboard…" autocapitalize="sentences" spellcheck="false"></textarea>
+          <div class="row">
+            <button class="btn ghost" type="button" id="hint-b">Hint</button>
+            <button class="btn ghost" type="button" id="end-b">Finish</button>
+            <span class="sp"></span>
+            <button class="btn primary" type="button" id="send">Say it</button>
+          </div>
+          <p class="err" id="err" hidden></p>
+        </div>
+      </div>
+      <aside class="goals" aria-label="Mission goals">
+        <p class="label" style="margin:0">Your mission</p>
+        <p class="situ" id="m-situ" lang="zh-Hant"></p>
+        <ol id="goals"></ol>
+      </aside>
+    </div>
+  </section>
+
+  <section id="done" hidden>
+    <p class="kicker" id="d-k"></p>
+    <h1>Debrief</h1>
+    <div class="debrief" id="debrief"></div>
+    <div class="row" style="margin-top:22px">
+      <button class="btn primary" type="button" id="retry">Try this mission again</button>
+      <button class="btn" type="button" id="back">Other missions</button>
+    </div>
+  </section>
+</main>
+
+<script>
+const DATA = {{DATA}};
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("scene-lab-c:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("scene-lab-c:" + k, JSON.stringify(v)); } catch {} },
+};
+const PHRASE = {};
+for (const it of DATA.intents) for (const p of it.phrases) PHRASE[p.id] = p;
+function frame(id) {   // the phrase with its slot shown as a blank, for hints
+  const p = PHRASE[id]; const f = document.createDocumentFragment();
+  for (const x of p.parts) { if (typeof x === "string") f.append(x); else f.append(el("i", null, " " + x[0] + " ")); }
+  return f;
+}
+
+const MISSIONS = [
+  { id: "m1", title: "Morning latte", zh: "上班前買一杯拿鐵帶走。你喜歡燕麥奶。",
+    open: "Hi there, what can I get you?",
+    goals: ["Order a medium latte", "Get it with oat milk, or another milk you're happy with", "Take it away", "Pay by card"],
+    hints: ["p1", "p4", "p8", "p10"],
+    twist: "You have run out of oat milk. When the customer asks for oat milk, apologise and offer soy or almond instead.",
+    tell: "燕麥奶剛好沒了" },
+  { id: "m2", title: "An hour of work", zh: "你要在店裡用筆電工作一小時。點一杯喝的、一樣吃的。",
+    open: "Hiya, what can I get for you?",
+    goals: ["Order a drink and something to eat", "Say you're staying in", "Get the Wi-Fi password", "Find out where the toilet is"],
+    hints: ["p1", "p7", "p13", "p14"],
+    twist: "The card machine is broken today, so it's cash only. Tell the customer when they are about to pay, and help them sort it out (there is a cash machine next door).",
+    tell: "今天刷卡機壞了" },
+  { id: "m3", title: "Wrong drink", zh: "你點了大杯卡布奇諾、不加糖、外帶。拿到的卻是一杯小杯拿鐵。",
+    open: "Here you go, one small latte!",
+    goals: ["Say politely that something is wrong", "Say what you actually ordered", "Leave with the right drink"],
+    hints: ["p18", "p19", "p19"],
+    twist: "At first you misunderstand the problem: you think the customer wants sugar and offer some. Only after they explain again do you understand and remake the drink.",
+    tell: "店員一開始會誤會你的意思" },
+];
+
+let sample = null, m = null;
+
+// ---------- voice (browser speech, optional) ----------
+const canSpeak = "speechSynthesis" in window;
+let voiceOn = canSpeak && store.get("voice", true);
+$("#voice").checked = voiceOn; $("#voice").disabled = !canSpeak;
+$("#voice").onchange = e => { voiceOn = e.target.checked; store.set("voice", voiceOn); if (!voiceOn && canSpeak) speechSynthesis.cancel(); };
+function speak(text) {
+  if (!voiceOn || !canSpeak) return;
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    const vs = speechSynthesis.getVoices();
+    u.voice = vs.find(v => v.lang === "en-GB") || vs.find(v => v.lang && v.lang.startsWith("en")) || null;
+    u.lang = u.voice ? u.voice.lang : "en-GB"; u.rate = 0.95;
+    speechSynthesis.speak(u);
+  } catch {}
+}
+
+// ---------- pick ----------
+function renderPick() {
+  const host = $("#missions"); host.textContent = "";
+  const best = store.get("best", {});
+  MISSIONS.forEach((x, i) => {
+    const c = el("article", "mission");
+    const ul = el("ul"); x.goals.forEach(g => ul.append(el("li", null, g)));
+    const s = el("p", "s", x.zh); s.lang = "zh-Hant"; s.style.margin = "0";
+    const b = el("button", "btn primary go", "Start"); b.type = "button"; b.disabled = !sample;
+    b.onclick = () => start(x);
+    const k = el("span", "k", "Mission " + (i + 1) + (best[x.id] ? " · best " + best[x.id] + "/" + x.goals.length : ""));
+    c.append(k, el("span", "t", x.title), s, ul, b);
+    host.append(c);
+  });
+  const need = $("#need"); need.textContent = "";
+  if (sample) {
+    need.append(el("b", null, "要知道的："), "店員由 Claude 扮演，每說一句會用到一點你的 Claude 額度，第一次會先問你。店員的聲音是瀏覽器內建的語音，可以在右上角關掉。");
+  } else {
+    need.append(el("b", null, "這個 demo 需要 Claude。"), "請在 claude.ai 裡打開這個頁面，店員才能回話。");
+  }
+}
+
+// ---------- play ----------
+function start(x) {
+  m = { x, turns: [{ role: "b", text: x.open }], met: [], hint: 0, waits: [], t0: 0, first: null, busy: false, ctl: null };
+  $("#m-k").textContent = "Mission " + (MISSIONS.indexOf(x) + 1);
+  $("#m-h").textContent = x.title;
+  $("#m-situ").textContent = x.zh;
+  $("#chat").textContent = ""; $("#err").hidden = true; $("#hint").hidden = true; $("#say").value = "";
+  renderGoals();
+  for (const s of ["pick", "done"]) $("#" + s).hidden = true;
+  $("#play").hidden = false; window.scrollTo(0, 0);
+  addMsg("b", x.open); speak(x.open);
+  armTurn();
+}
+function renderGoals() {
+  const ol = $("#goals"); ol.textContent = "";
+  m.x.goals.forEach((g, i) => { const li = el("li", m.met.includes(i) ? "met" : ""); li.append(el("span", "box", m.met.includes(i) ? "✓" : ""), el("span", null, g)); ol.append(li); });
+}
+function addMsg(who, text, meta) {
+  const li = el("li", "msg " + (who === "b" ? "b" : "you"));
+  li.append(el("span", "av", who === "b" ? "B" : "Y"));
+  const b = el("div", "bub"); b.append(el("span", "who", who === "b" ? "Barista" : "You"));
+  const p = el("p", null, text); b.append(p);
+  if (meta) b.append(el("div", "t", meta));
+  li.append(b); $("#chat").append(li);
+  li.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  return p;
+}
+function armTurn() {
+  m.t0 = performance.now(); m.first = null;
+  $("#say").focus({ preventScroll: true });
+}
+$("#say").addEventListener("input", () => { if (m && m.first == null && $("#say").value.trim()) m.first = performance.now() - m.t0; });
+$("#say").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); } });
+$("#send").onclick = () => send();
+$("#hint-b").onclick = () => {
+  const open = m.x.goals.map((_, i) => i).filter(i => !m.met.includes(i));
+  if (!open.length) return;
+  const h = $("#hint"); h.textContent = ""; h.append("Try: "); h.append(frame(m.x.hints[open[0]])); h.hidden = false;
+  m.hint++; $("#say").focus();
+};
+$("#end-b").onclick = () => debrief();
+
+function transcript() { return m.turns.map(t => (t.role === "b" ? "Barista: " : "Customer: ") + t.text).join("\n"); }
+
+async function send() {
+  const text = $("#say").value.trim();
+  if (!text || m.busy) return;
+  const wait = m.first; m.waits.push(wait == null ? performance.now() - m.t0 : wait);
+  m.turns.push({ role: "c", text });
+  addMsg("you", text, wait != null ? "started after " + (wait / 1000).toFixed(1) + " s" : null);
+  $("#say").value = ""; $("#hint").hidden = true; $("#err").hidden = true;
+  m.busy = true; $("#send").disabled = true;
+  const p = addMsg("b", "…"); p.className = "typing";
+  const prompt = [
+    "You are role-playing a friendly barista in a small British café, talking to a Chinese-speaking customer who is practising English.",
+    "Stay in character. Speak simple, clear everyday English (about CEFR A2-B1), one or two short sentences per turn, like a real barista at a busy counter.",
+    "Never correct the customer's English and never explain grammar. If you genuinely cannot understand what they mean, ask a short natural clarifying question, as a real barista would. If you can understand them, carry on normally even if their English has mistakes.",
+    "Prices: latte, cappuccino and flat white £3.80 (medium), £4.20 (large); tea £2.50; croissant £2.60; muffin £2.90.",
+    "Surprise for this conversation (keep it in character, bring it in naturally at the right moment): " + m.x.twist,
+    "The customer's goals (they can see these; do not mention them):",
+    ...m.x.goals.map((g, i) => i + ": " + g),
+    "", "Conversation so far:", transcript(), "",
+    'Reply with only JSON: {"reply": "what you say next", "met": [indices of goals the customer has clearly achieved so far in the whole conversation], "over": true if the interaction has naturally ended (drink handed over and nothing else is needed), else false}',
+  ].join("\n");
+  try {
+    m.ctl = new AbortController();
+    const out = await sample.json(prompt, { modelTier: "quick", cache: false, signal: m.ctl.signal });
+    const reply = typeof out?.reply === "string" && out.reply.trim() ? out.reply.trim() : null;
+    if (!reply) throw { code: "invalid_json" };
+    p.className = ""; p.textContent = reply;
+    m.turns.push({ role: "b", text: reply }); speak(reply);
+    if (Array.isArray(out.met)) { for (const i of out.met) { const n = Number(i); if (Number.isInteger(n) && n >= 0 && n < m.x.goals.length && !m.met.includes(n)) m.met.push(n); } renderGoals(); }
+    if (out.over || m.met.length === m.x.goals.length) { $("#end-b").textContent = "See debrief"; $("#end-b").className = "btn primary"; $("#send").className = "btn ghost"; }
+  } catch (e) {
+    p.closest("li").remove();
+    m.turns.pop();
+    $("#say").value = text;
+    const err = $("#err"); err.hidden = false;
+    err.textContent = e?.code === "rate_limited" ? "Claude is busy. Wait a moment and send again."
+      : e?.code === "not_granted" || e?.code === "sampling_disabled" ? "Claude isn't allowed on this page, so the barista can't answer."
+      : "The barista didn't answer. Send it again.";
+  } finally {
+    m.busy = false; $("#send").disabled = false; armTurn();
+  }
+}
+
+async function debrief() {
+  if (m.ctl) m.ctl.abort();
+  if (canSpeak) speechSynthesis.cancel();
+  const x = m.x;
+  $("#play").hidden = true; $("#done").hidden = false; window.scrollTo(0, 0);
+  $("#d-k").textContent = "Mission " + (MISSIONS.indexOf(x) + 1) + " · " + x.title;
+  const host = $("#debrief"); host.textContent = "";
+  const ul = el("ul", "dgoals");
+  x.goals.forEach((g, i) => { const li = el("li"); li.append(el("span", m.met.includes(i) ? "ok" : "no", m.met.includes(i) ? "✓" : "✗"), el("span", null, g)); ul.append(li); });
+  host.append(ul);
+  const waits = m.waits.filter(v => v != null).sort((a, b) => a - b);
+  if (waits.length) host.append(el("p", "stat-line", m.waits.length + " turns · started talking after " + (waits[waits.length >> 1] / 1000).toFixed(1) + " s (median) · " + m.hint + " hint" + (m.hint === 1 ? "" : "s")));
+  const best = store.get("best", {}); best[x.id] = Math.max(best[x.id] || 0, m.met.length); store.set("best", best);
+  const said = m.turns.filter(t => t.role === "c");
+  if (!said.length) return;
+  const wait = el("p", "tip", "Claude is reading the conversation…"); host.append(wait);
+  const prompt = [
+    "A Chinese-speaking English learner just did a café role-play. Their goal is to express meaning correctly and fluently, not to sound native.",
+    "Mission goals: " + x.goals.join("; "),
+    "Conversation:", transcript(), "",
+    "Give feedback in Traditional Chinese (except English example sentences).",
+    '"fixes": up to 3 of the customer\'s sentences that had an error a listener would notice or that were unclear. For each: "said" (their sentence, exactly), "better" (their sentence with the fewest changes to make it correct and clear, keeping their words), "why" (one short reason in Chinese). Do NOT include sentences that were already correct just because a more natural phrasing exists. An empty list is fine.',
+    '"good": one sentence in Chinese about something they did well (be specific, quote their words).',
+    '"next": one sentence in Chinese naming one useful café sentence frame to practise next, with the English frame.',
+    'Reply with only JSON: {"fixes":[{"said":"","better":"","why":""}],"good":"","next":""}',
+  ].join("\n");
+  try {
+    const out = await sample.json(prompt, { cache: false });
+    wait.remove();
+    const fixes = Array.isArray(out?.fixes) ? out.fixes.filter(f => f && typeof f.said === "string" && typeof f.better === "string").slice(0, 3) : [];
+    if (typeof out?.good === "string" && out.good) { const g = el("p", "good", out.good); g.lang = "zh-Hant"; host.append(g); }
+    host.append(el("p", "label", fixes.length ? "Worth fixing" : "Nothing that blocked your meaning"));
+    for (const f of fixes) {
+      const d = el("div", "fix"); d.append(el("p", "said", f.said), el("p", "better", f.better));
+      if (f.why) { const w = el("p", "why", f.why); w.lang = "zh-Hant"; d.append(w); }
+      host.append(d);
+    }
+    if (typeof out?.next === "string" && out.next) { const n = el("p", "nextup", out.next); n.lang = "zh-Hant"; host.append(n); }
+  } catch (e) {
+    wait.textContent = "Claude couldn't write the debrief this time. Your goals above are still counted.";
+  }
+}
+$("#retry").onclick = () => start(m.x);
+$("#back").onclick = () => { $("#done").hidden = true; $("#pick").hidden = false; renderPick(); };
+
+renderPick();
+if (window.claude?.use) claude.use("sample").then(s => { sample = s || null; renderPick(); }).catch(() => {});
+if (canSpeak) speechSynthesis.getVoices();
+</script>

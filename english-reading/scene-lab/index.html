@@ -1,0 +1,250 @@
+<title>Scene Lab</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: a one-page decision brief. Three demo cards side by side, a comparison table, a recommendation, sources. */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#F3F2F7; --surface:#FFFFFF; --plate:#E6E3EE; --ink:#1B1830; --muted:#5D5972; --line:#DAD6E4; --outline:#2B2740;
+  --accent:#0A7F72; --accent-ink:#FFFFFF; --accent-bg:rgba(31,181,163,.13);
+  --barista:#B4532A; --barista-tint:#FBEDE5; --you:#2A6FB0; --you-tint:#E4EFFA;
+  --good:#1F7A3A; --good-bg:#E3F3E6; --warn:#9A6200; --warn-bg:#FBF0DA; --bad:#B23A3A; --bad-bg:#FBE6E4;
+  --paper:#FBF7EF;
+  --shadow:0 1px 2px rgba(27,24,48,.05),0 6px 18px rgba(27,24,48,.06);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#2B2740;
+    --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+    --barista:#F2A27E; --barista-tint:#2E1E18; --you:#7DBDF3; --you-tint:#172639;
+    --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+    --paper:#EFE9DC;
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#2B2740;
+  --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+  --barista:#F2A27E; --barista-tint:#2E1E18; --you:#7DBDF3; --you-tint:#172639;
+  --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+  --paper:#EFE9DC;
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+[lang="zh-Hant"],.zh{font-family:var(--zh)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:880px;margin:0 auto;padding:10px clamp(16px,4vw,20px);display:flex;align-items:center;gap:8px 12px}
+.brand{font:700 15px/1 var(--display);margin-right:auto;min-width:0}
+.brand small{font:500 12px var(--mono);color:var(--muted);margin-left:6px;letter-spacing:.04em;text-transform:uppercase}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font:500 13px/1.2 var(--display);white-space:nowrap}
+.chip select{border:0;background:transparent;font:600 13px var(--mono);cursor:pointer;padding:0}
+
+main{max-width:880px;margin:0 auto;padding-inline:clamp(16px,4vw,20px);padding-block:24px 80px}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+h1{font:800 clamp(30px,6vw,44px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
+h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
+.lede{margin:0;max-width:62ch;color:var(--muted)}
+.lede strong{color:var(--ink);font-weight:600}
+.label{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:9px 18px;font:600 15px/1.2 var(--display);border:1.5px solid var(--line);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:default}
+.pl{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:inline-grid;place-items:center;padding:0;color:var(--ink)}
+.pl svg{width:11px;height:11px;fill:currentColor}
+.pl.on{border-color:var(--accent);color:var(--accent)}
+.uk{font:600 10px/1 var(--mono);letter-spacing:.05em;border:1px solid currentColor;border-radius:4px;padding:2px 4px;color:var(--warn);vertical-align:2px;margin-left:6px}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font:600 13px/1.4 var(--display)}
+.tip{margin:0;font:13px/1.5 var(--zh);color:var(--muted)}
+@media (max-width:560px){.brand small{display:none}}
+
+body{font-family:var(--zh);font-size:16px;line-height:1.7}
+.lede{font-family:var(--zh)}
+.demos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0 8px}
+.demo{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.thumb{background:var(--paper);border-bottom:1px solid var(--line);aspect-ratio:16/10;display:grid;place-items:center;overflow:hidden;max-width:100%}
+.thumb svg{width:100%;height:100%;display:block}
+.thumb .mock{width:84%;display:grid;gap:7px}
+.mock .f{background:#FFFFFF;border:1.5px solid #2B2740;border-radius:10px;padding:6px 10px;font:600 13px/1.3 "Literata",Georgia,serif;color:#2B2740}
+.mock .f i{font-style:normal;color:#0A7F72;border-bottom:2px solid #0A7F72}
+.mock .chips{display:flex;gap:4px;flex-wrap:wrap}
+.mock .chips span{font:500 10px "Bricolage Grotesque",system-ui,sans-serif;border:1px solid #DAD6E4;border-radius:99px;padding:1px 7px;color:#5D5972;background:#F3F2F7}
+.mock .chips span.on{border-color:#0A7F72;color:#0A7F72;background:#E3F5F2}
+.mock .b,.mock .y{font:500 12px/1.35 "Literata",Georgia,serif;padding:6px 10px;border-radius:12px;max-width:80%;color:#2B2740}
+.mock .b{background:#FBEDE5;border-radius:12px 12px 12px 3px}
+.mock .y{background:#E4EFFA;border-radius:12px 12px 3px 12px;justify-self:end}
+.mock .g{font:600 11px "IBM Plex Mono",monospace;color:#1F7A3A}
+.demo .body{padding:16px;display:grid;gap:10px;align-content:start;flex:1}
+.demo .k{font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.demo h2{margin:0;font:700 21px/1.2 var(--display)}
+.demo dl{margin:0;display:grid;gap:8px}
+.demo dt{font:600 12px var(--mono);letter-spacing:.04em;color:var(--muted)}
+.demo dd{margin:0;font-size:14.5px;line-height:1.6}
+.demo .open{margin-top:auto;justify-self:start}
+a.btn{text-decoration:none;color:inherit}
+a.btn.primary{color:var(--accent-ink)}
+
+section{margin-top:44px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+thead th{font:600 12px var(--mono);letter-spacing:.04em;color:var(--muted);background:var(--plate)}
+tbody th{font:600 14px var(--zh);width:22%}
+.take{background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;padding:18px 20px;display:grid;gap:10px;max-width:72ch}
+.take p{margin:0}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:600 14px var(--display)}
+.flow span{background:var(--accent-bg);color:var(--accent);border-radius:99px;padding:4px 12px}
+.flow b{color:var(--muted);font-weight:400}
+.research{display:grid;gap:12px;max-width:72ch}
+.research p{margin:0}
+.src{margin:10px 0 0;padding-left:20px;font-size:14px;line-height:1.6}
+.src a{color:var(--accent)}
+.qs{margin:0;padding-left:20px;display:grid;gap:6px;max-width:72ch}
+@media (max-width:820px){.demos{grid-template-columns:1fr}.thumb{aspect-ratio:16/9}}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Scene Lab <small>3 demos</small></span>
+</div></header>
+
+<main>
+  <p class="kicker">Scene Lab · 情境學英文的三種做法</p>
+  <h1>同一間咖啡店，三種學法</h1>
+  <p class="lede">三個 demo 用的是同一個情境（在咖啡店點一杯、付錢、找位子、處理出錯），差別只在「怎麼學」。每個都可以直接玩。明天看完告訴我哪一個比較有感覺，或想怎麼組合。</p>
+
+  <div class="demos">
+    <article class="demo">
+      <div class="thumb"><svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inside a small cafe"><style>
+.cs-st{stroke:var(--outline,#2B2740);stroke-width:2.5;stroke-linejoin:round}
+.cs-ln{fill:none;stroke:var(--outline,#2B2740);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cs-thin{stroke-width:2}
+.cs-dash{stroke-dasharray:4 5}
+.cs-chalk{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cs-f-ink{fill:var(--outline,#2B2740)}
+.cs-f-coral{fill:#FF7A59} .cs-f-coral2{fill:#D65A3A} .cs-f-sky{fill:#4A9FE3} .cs-f-sky2{fill:#2C78BD}
+.cs-f-violet{fill:#8A78E0} .cs-f-teal{fill:#1FB5A3} .cs-f-teal2{fill:#168C7E} .cs-f-amber{fill:#FFB22E} .cs-f-amber2{fill:#E0921A}
+.cs-f-leaf{fill:#6CC06A} .cs-f-leaf2{fill:#4E9C4C} .cs-f-white{fill:#FFFFFF} .cs-f-beige{fill:#F3DFB8}
+.cs-f-grey{fill:#B4BACB} .cs-f-grey2{fill:#8D93A8} .cs-f-dark{fill:#1D1B2A} .cs-f-wood{fill:#C98B55} .cs-f-wood2{fill:#A96F3F}
+.cs-f-wall{fill:#F7F0E3} .cs-f-floor{fill:#E8D4B5} .cs-f-floor2{fill:#D9BF98} .cs-f-board{fill:#3E4A5C}
+.cs-f-glass{fill:#DDF0FA;fill-opacity:.7} .cs-f-skin1{fill:#F1C7A1} .cs-f-skin2{fill:#C98C63} .cs-f-skin3{fill:#E2B288}
+.cs-f-hair1{fill:#7A3B2E} .cs-f-hair2{fill:#1E222C} .cs-f-hair3{fill:#D07A3A} .cs-f-cream{fill:#FFF3D6} .cs-f-brown{fill:#6B4A2B}
+.cs-f-none{fill:none}
+</style><rect class="cs-f-wall" x="0" y="0" width="960" height="600" rx="0"/><rect class="cs-f-floor" x="0" y="330" width="960" height="270" rx="0"/><rect class="cs-f-floor2" x="0" y="330" width="960" height="8" rx="0"/><path class="cs-ln cs-thin" style="stroke:#D9BF98" d="M0 400h960M0 470h960M0 540h960"/><path class="cs-ln cs-thin" style="stroke:#E4D9C5" d="M0 300h960"/><g id="obj-c1"><rect class="cs-f-wood cs-st" x="290" y="22" width="290" height="128" rx="8"/><rect class="cs-f-board cs-st" x="300" y="32" width="270" height="108" rx="4"/><path class="cs-f-white cs-st" d="M322 44h18v10a9 7 0 0 1-18 0z"/><path class="cs-f-none cs-st" d="M340 47h5a4 4 0 0 1 0 8h-5"/><path class="cs-chalk" d="M356 52h58"/><path class="cs-chalk" d="M430 46c0 8 12 8 12 0s-12-8-12 0z"/><path class="cs-f-white cs-st" d="M316 72h16v8a8 6 0 0 1-16 0z"/><path class="cs-chalk" d="M344 78h60"/><path class="cs-chalk" d="M510 78h10M526 78h10M542 78h10"/><path class="cs-f-white cs-st" d="M318 93l3 14h10l3-14z"/><path class="cs-chalk" d="M344 101h74"/><path class="cs-chalk" d="M510 101h10M526 101h10M542 101h10"/><path class="cs-f-white cs-st" d="M316 120h16v3h-16zM318 123l2 8h12l2-8z"/><path class="cs-chalk" d="M344 124h88"/><path class="cs-chalk" d="M510 124h10M526 124h10M542 124h10"/></g><g id="obj-c16"><path class="cs-ln cs-thin" d="M816 20v40M876 20v40"/><rect class="cs-f-wood cs-st" x="800" y="60" width="92" height="84" rx="6"/><rect class="cs-f-board cs-st" x="808" y="68" width="76" height="68" rx="4"/><path class="cs-chalk" d="M822 96a34 34 0 0 1 48 0M831 106a22 22 0 0 1 30 0M840 116a10 10 0 0 1 12 0"/><circle class="cs-f-white" cx="846" cy="125" r="3.2"/><path class="cs-chalk" d="M818 80h56" style="stroke-dasharray:6 6"/></g><rect class="cs-f-wood2 cs-st" x="380" y="240" width="540" height="62" rx="3"/><rect class="cs-f-wood cs-st" x="376" y="236" width="548" height="12" rx="3"/><g id="obj-c4"><rect class="cs-f-grey cs-st" x="672" y="168" width="118" height="72" rx="6"/><rect class="cs-f-grey2 cs-st" x="668" y="150" width="126" height="22" rx="5"/><path class="cs-f-white cs-st" d="M690 150v-6h14v6z"/><path class="cs-f-white cs-st" d="M712 150v-6h14v6z"/><rect class="cs-f-dark cs-st" x="676" y="226" width="110" height="14" rx="3"/><circle class="cs-f-coral cs-st" cx="768" cy="190" r="10"/><circle class="cs-f-white" cx="768" cy="190" r="3"/><rect class="cs-f-dark cs-st" x="684" y="180" width="20" height="12" rx="3"/><rect class="cs-f-dark cs-st" x="716" y="180" width="20" height="12" rx="3"/><rect class="cs-f-dark cs-st" x="690" y="192" width="8" height="16" rx="3"/><rect class="cs-f-dark cs-st" x="722" y="192" width="8" height="16" rx="3"/><path class="cs-f-white cs-st" d="M700 210h18v10a9 6 0 0 1-18 0z"/><path class="cs-ln cs-thin" d="M792 176l16 12v22"/><path class="cs-f-sky cs-st" d="M672 210h14v14h-14z"/></g><g id="obj-c3"><rect class="cs-f-teal cs-st" x="586" y="200" width="62" height="112" rx="14"/><rect class="cs-f-teal cs-st" x="574" y="214" width="16" height="66" rx="8"/><rect class="cs-f-teal cs-st" x="644" y="214" width="16" height="66" rx="8"/><circle class="cs-f-skin3 cs-st" cx="582" cy="284" r="8"/><circle class="cs-f-skin3 cs-st" cx="652" cy="284" r="8"/><path class="cs-f-amber cs-st" d="M598 226h38v84h-38z"/><path class="cs-ln cs-thin" d="M604 226l13-20M636 226l-13-20"/><rect class="cs-f-amber2 cs-st" x="606" y="268" width="22" height="20" rx="3"/><circle class="cs-f-skin3 cs-st" cx="617" cy="178" r="26"/><path class="cs-f-hair2 cs-st" d="M591 176a26 26 0 0 1 52 0z"/><rect class="cs-f-coral cs-st" x="588" y="156" width="58" height="14" rx="6"/><path class="cs-f-coral cs-st" d="M588 168h-14v-8h14z"/><circle class="cs-f-dark" cx="609" cy="182" r="2.6"/><circle class="cs-f-dark" cx="625" cy="182" r="2.6"/><path class="cs-ln cs-thin" d="M611 192q6 5 12 0"/></g><g id="obj-c2"><rect class="cs-f-teal cs-st" x="160" y="318" width="750" height="96" rx="4"/><path class="cs-ln cs-thin" d="M300 330v72M440 330v72M580 330v72M720 330v72M860 330v72"/><rect class="cs-f-wood cs-st" x="150" y="300" width="770" height="22" rx="5"/></g><g id="obj-c7"><rect class="cs-f-wood2 cs-st" x="178" y="292" width="138" height="20" rx="3"/><rect class="cs-f-glass cs-st" x="184" y="224" width="126" height="70" rx="8"/><rect class="cs-f-grey cs-st" x="184" y="218" width="126" height="10" rx="4"/><path class="cs-ln cs-thin" d="M186 254h122"/><circle class="cs-f-wood cs-st" cx="206" cy="244" r="8"/><circle class="cs-f-wood cs-st" cx="226" cy="244" r="8"/><path class="cs-f-beige cs-st" d="M270 254l-3-10h22l-3 10z"/><path class="cs-f-coral cs-st" d="M266 244q6-12 30-2z"/></g><g id="obj-c8"><path class="cs-f-amber cs-st" d="M196 290c-2-28 22-42 51-42s53 14 51 42c-12-11-30-14-51-14s-39 3-51 14z"/><path class="cs-ln cs-thin" d="M226 258c-4 8-4 15-2 21M268 258c4 8 4 15 2 21M242 251c-1 9 0 18 2 26M252 251c1 9 0 18-2 26"/></g><g id="obj-c15"><rect class="cs-f-grey cs-st" x="432" y="264" width="84" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="440" y="270" width="44" height="10" rx="2"/><rect class="cs-f-dark" x="440" y="286" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="440" y="297" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="455" y="286" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="455" y="297" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="470" y="286" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="470" y="297" width="10" height="7" rx="2"/><rect class="cs-f-coral cs-st" x="492" y="286" width="16" height="18" rx="3"/><rect class="cs-f-dark cs-st" x="450" y="232" width="52" height="34" rx="5"/><rect class="cs-f-sky" x="456" y="238" width="40" height="22" rx="3"/><path class="cs-chalk" d="M462 244h18M462 252h26" style="stroke-width:2.5"/><rect class="cs-f-grey2 cs-st" x="444" y="262" width="64" height="6" rx="2"/></g><g id="obj-c14"><path class="cs-f-white cs-st" d="M500 268v-64l6 6 6-6 6 6 6-6v64z"/><path class="cs-ln cs-thin cs-dash" d="M506 222h14M506 232h14M506 242h10M506 252h14"/><rect class="cs-f-grey2 cs-st" x="494" y="262" width="36" height="8" rx="2"/></g><g id="obj-c6"><rect class="cs-f-dark cs-st" x="530" y="262" width="38" height="50" rx="6"/><rect class="cs-f-sky" x="536" y="268" width="26" height="14" rx="2"/><rect class="cs-f-grey" x="537" y="287" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="537" y="294" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="537" y="301" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="546" y="287" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="546" y="294" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="546" y="301" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="555" y="287" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="555" y="294" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="555" y="301" width="6" height="5" rx="1"/><path class="cs-f-coral cs-st" d="M536 300h26v6h-26z"/></g><g id="obj-c9"><path class="cs-f-white cs-st" d="M700 312l6-62h40l6 62z"/><path class="cs-f-wood cs-st" d="M704 274h44l-2 22h-40z"/><rect class="cs-f-dark cs-st" x="702" y="240" width="48" height="12" rx="4"/><path class="cs-f-dark cs-st" d="M716 240h20v-6h-20z"/><circle class="cs-f-coral" cx="726" cy="285" r="5"/></g><g id="obj-c10"><rect class="cs-f-white cs-st" x="760" y="304" width="50" height="9" rx="3"/><rect class="cs-f-white cs-st" x="760" y="296" width="50" height="9" rx="3"/><rect class="cs-f-white cs-st" x="760" y="288" width="50" height="9" rx="3"/><rect class="cs-f-white cs-st" x="760" y="280" width="50" height="9" rx="3"/><ellipse class="cs-f-white cs-st" cx="785" cy="280" rx="25" ry="7"/><rect class="cs-f-dark cs-st" x="777" y="275" width="16" height="6" rx="2"/></g><g id="obj-c18"><rect class="cs-f-coral cs-st" x="814" y="300" width="96" height="14" rx="4"/><rect class="cs-f-coral2 cs-st" x="810" y="292" width="10" height="22" rx="3"/><rect class="cs-f-coral2 cs-st" x="904" y="292" width="10" height="22" rx="3"/><path class="cs-f-beige cs-st" d="M846 302l4-42h32l4 42z"/><path class="cs-f-wood cs-st" d="M851 282h26l2 20h-30z"/><path class="cs-ln cs-thin" d="M864 262l8-22"/><rect class="cs-f-teal cs-st" x="848" y="256" width="34" height="8" rx="3"/></g><g id="obj-c5"><rect class="cs-f-dark cs-st" x="207.44" y="494" width="15.08" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="229.48" y="494" width="15.08" height="48" rx="5"/><rect class="cs-f-brown cs-st" x="205.12" y="536" width="18.56" height="10" rx="4"/><rect class="cs-f-brown cs-st" x="228.32" y="536" width="18.56" height="10" rx="4"/><rect class="cs-f-sky cs-st" x="197.0" y="392" width="58" height="108" rx="14"/><rect class="cs-f-sky cs-st" x="185.0" y="404" width="16" height="66.96" rx="8"/><rect class="cs-f-sky cs-st" x="251.0" y="404" width="16" height="66.96" rx="8"/><circle class="cs-f-skin1 cs-st" cx="193.0" cy="470.96" r="8"/><circle class="cs-f-skin1 cs-st" cx="259.0" cy="470.96" r="8"/><circle class="cs-f-skin1 cs-st" cx="226" cy="372" r="24"/><path class="cs-f-hair3 cs-st" d="M202 382 v-12 a24 24 0 0 1 48 0 v12 h-8 v-12 a16 16 0 0 0 -32 0 v12 z"/><circle class="cs-f-dark" cx="224" cy="374" r="2.6"/><circle class="cs-f-dark" cx="240" cy="374" r="2.6"/><path class="cs-ln cs-thin" d="M226 384 q6 5 12 0"/><rect class="cs-f-dark cs-st" x="287.44" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="309.48" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-brown cs-st" x="285.12" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-brown cs-st" x="308.32" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-coral cs-st" x="277.0" y="388" width="58" height="110" rx="14"/><rect class="cs-f-coral cs-st" x="265.0" y="400" width="16" height="68.2" rx="8"/><rect class="cs-f-coral cs-st" x="331.0" y="400" width="16" height="68.2" rx="8"/><circle class="cs-f-skin2 cs-st" cx="273.0" cy="468.2" r="8"/><circle class="cs-f-skin2 cs-st" cx="339.0" cy="468.2" r="8"/><circle class="cs-f-skin2 cs-st" cx="306" cy="368" r="24"/><path class="cs-f-hair2 cs-st" d="M282 364 a24 24 0 0 1 48 0 v-2 a24 24 0 0 0 -48 0 z"/><circle class="cs-f-dark" cx="304" cy="370" r="2.6"/><circle class="cs-f-dark" cx="320" cy="370" r="2.6"/><path class="cs-ln cs-thin" d="M306 380 q6 5 12 0"/><rect class="cs-f-dark cs-st" x="367.44" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="389.48" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-brown cs-st" x="365.12" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-brown cs-st" x="388.32" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-leaf cs-st" x="357.0" y="386" width="58" height="112" rx="14"/><rect class="cs-f-leaf cs-st" x="345.0" y="398" width="16" height="69.44" rx="8"/><rect class="cs-f-leaf cs-st" x="411.0" y="398" width="16" height="69.44" rx="8"/><circle class="cs-f-skin1 cs-st" cx="353.0" cy="467.44" r="8"/><circle class="cs-f-skin1 cs-st" cx="419.0" cy="467.44" r="8"/><circle class="cs-f-skin1 cs-st" cx="386" cy="366" r="24"/><path class="cs-f-hair1 cs-st" d="M362 364 a24 24 0 0 1 48 0 z"/><circle class="cs-f-hair1 cs-st" cx="386" cy="338" r="9"/><circle class="cs-f-dark" cx="384" cy="368" r="2.6"/><circle class="cs-f-dark" cx="400" cy="368" r="2.6"/><path class="cs-ln cs-thin" d="M386 378 q6 5 12 0"/></g><rect class="cs-f-wood cs-st" x="30" y="384" width="124" height="14" rx="3"/><rect class="cs-f-wood2 cs-st" x="40" y="398" width="12" height="140" rx="3"/><rect class="cs-f-wood2 cs-st" x="132" y="398" width="12" height="140" rx="3"/><rect class="cs-f-wood cs-st" x="30" y="450" width="124" height="8" rx="2"/><g id="obj-c12"><path class="cs-f-white cs-st" d="M56 342l8-16h36l-2 16z"/><rect class="cs-f-violet cs-st" x="46" y="338" width="52" height="46" rx="5"/><rect class="cs-f-white cs-st" x="56" y="352" width="32" height="6" rx="2"/><rect class="cs-f-white cs-st" x="56" y="364" width="32" height="6" rx="2"/></g><g id="obj-c13"><rect class="cs-f-glass cs-st" x="108" y="342" width="40" height="42" rx="6"/><rect class="cs-f-white" x="112" y="360" width="32" height="21" rx="4"/><rect class="cs-f-cream" x="114" y="362" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="126" y="368" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="136" y="362" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="120" y="374" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="132" y="374" width="7" height="7" rx="1"/><rect class="cs-f-dark cs-st" x="112" y="334" width="32" height="10" rx="3"/><rect class="cs-f-grey2 cs-st" x="104" y="344" width="48" height="3" rx="1"/></g><g id="obj-c17"><rect class="cs-f-violet cs-st" x="866" y="392" width="52" height="30" rx="8"/><rect class="cs-f-violet cs-st" x="870" y="422" width="10" height="118" rx="4"/><rect class="cs-f-violet cs-st" x="908" y="422" width="10" height="118" rx="4"/><rect class="cs-f-violet cs-st" x="860" y="470" width="60" height="14" rx="4"/><rect class="cs-f-violet cs-st" x="642" y="392" width="52" height="30" rx="8"/><rect class="cs-f-violet cs-st" x="646" y="420" width="8" height="24" rx="3"/><rect class="cs-f-violet cs-st" x="682" y="420" width="8" height="24" rx="3"/><rect class="cs-f-violet cs-st" x="636" y="444" width="64" height="14" rx="4"/><rect class="cs-f-violet cs-st" x="640" y="458" width="10" height="82" rx="4"/><rect class="cs-f-violet cs-st" x="686" y="458" width="10" height="82" rx="4"/><rect class="cs-f-wood2 cs-st" x="772" y="460" width="16" height="76" rx="3"/><ellipse class="cs-f-wood2 cs-st" cx="780" cy="538" rx="44" ry="9"/><ellipse class="cs-f-wood cs-st" cx="780" cy="442" rx="82" ry="22"/><circle class="cs-f-skin1 cs-st" cx="892" cy="400" r="21"/><path class="cs-f-hair1 cs-st" d="M871 398a21 21 0 0 1 42 0z"/><rect class="cs-f-amber cs-st" x="866" y="420" width="52" height="60" rx="14"/><rect class="cs-f-amber cs-st" x="852" y="432" width="16" height="40" rx="8"/><circle class="cs-f-skin1 cs-st" cx="860" cy="476" r="7"/><rect class="cs-f-dark cs-st" x="840" y="470" width="44" height="20" rx="8"/><rect class="cs-f-dark cs-st" x="838" y="486" width="14" height="52" rx="5"/><rect class="cs-f-brown cs-st" x="830" y="530" width="24" height="10" rx="4"/><circle class="cs-f-dark" cx="886" cy="403" r="2.6"/><circle class="cs-f-dark" cx="900" cy="403" r="2.6"/><path class="cs-ln cs-thin" d="M887 412q6 5 12 0"/></g><g id="obj-c11"><path class="cs-f-none cs-st" d="M790 416h8a10 10 0 0 1 0 20h-8"/><rect class="cs-f-white cs-st" x="754" y="404" width="40" height="38" rx="6"/><rect class="cs-f-coral cs-st" x="754" y="404" width="40" height="8" rx="3"/><path class="cs-ln cs-thin" d="M766 396c-4-6 4-8 0-14M780 396c-4-6 4-8 0-14"/></g></svg></div>
+      <div class="body">
+        <span class="k">Demo A · 圖解</span>
+        <h2>Café, Illustrated</h2>
+        <dl>
+          <dt>你會做什麼</dt><dd>點圖上的編號，聽單字、看例句。「Find it」模式是聽到單字後去圖上找。下面把整個點餐流程拆成 6 步，每步列出店員會說的話和你可以回的話。</dd>
+          <dt>練到的</dt><dd>認得場景裡的東西和常聽到的句子（輸入為主）。</dd>
+          <dt>限制</dt><dd>主要是看和聽，你自己開口的部分最少。學到的多是「東西叫什麼」，不太練「怎麼講出你要的」。</dd>
+        </dl>
+        <a class="btn primary open" href="https://claude.ai/artifact/6ZAh8bGdo2RdE4ayGajFfL" target="_blank" rel="noopener">打開 Demo A</a>
+      </div>
+    </article>
+    <article class="demo">
+      <div class="thumb"><div class="mock">
+        <div class="f">Can I get it with <i>oat milk</i>?</div>
+        <div class="chips"><span class="on">oat milk</span><span>soy milk</span><span>an extra shot</span></div>
+        <div class="f">Sorry, I asked for <i>a large</i>.</div>
+        <div class="chips"><span>oat milk</span><span class="on">a large</span><span>no sugar</span></div>
+      </div></div>
+      <div class="body">
+        <span class="k">Demo B · 句型</span>
+        <h2>Café Phrase Map</h2>
+        <dl>
+          <dt>你會做什麼</dt><dd>21 個句型，依「你想做的事」分成六組（點東西、改做法、內用外帶、付錢、問問題、出狀況）。點空格下面的字就換詞並播放整句。Recall 模式給你中文，你說英文，計時並自評，想不起來的句型下次會更常出現。</dd>
+          <dt>練到的</dt><dd>把整句當成一塊記起來，要用時直接拿出來，開口比較快。</dd>
+          <dt>限制</dt><dd>題目是固定的，不練臨場反應。對方說了意料之外的話，這裡練不到。</dd>
+        </dl>
+        <a class="btn primary open" href="https://claude.ai/artifact/QFq6dd4QU7mSXq4zShWvoJ" target="_blank" rel="noopener">打開 Demo B</a>
+      </div>
+    </article>
+    <article class="demo">
+      <div class="thumb"><div class="mock">
+        <div class="b">Hi there, what can I get you?</div>
+        <div class="y">Medium latte with oat milk, please</div>
+        <div class="b">Sorry, we're out of oat milk. Soy or almond?</div>
+        <div class="g">✓ Order a medium latte</div>
+      </div></div>
+      <div class="body">
+        <span class="k">Demo C · 任務對話</span>
+        <h2>Barista Missions</h2>
+        <dl>
+          <dt>你會做什麼</dt><dd>拿到一個任務（例如外帶一杯燕麥奶拿鐵、刷卡），跟 Claude 扮的店員自由對話。每個任務有一個意外（燕麥奶沒了、刷卡機壞了、店員誤會你）。過程中不糾正你；店員聽不懂時會像真人一樣反問。結束後給最多三個「最小修改」和下一步建議。</dd>
+          <dt>練到的</dt><dd>在真實流程裡把意思講清楚、臨場應變。店員有沒有聽懂，就是最直接的回饋。</dd>
+          <dt>限制</dt><dd>要在 claude.ai 裡開才能用，每句都會用到你的 Claude 額度。店員的聲音是瀏覽器內建語音，品質看你的裝置。</dd>
+        </dl>
+        <a class="btn primary open" href="https://claude.ai/artifact/MNtaUjg3H7if7aoxXpCUxL" target="_blank" rel="noopener">打開 Demo C</a>
+      </div>
+    </article>
+  </div>
+
+  <section>
+    <h2>放在一起比</h2>
+    <div class="tbl"><table>
+      <thead><tr><th></th><th>A · 圖解</th><th>B · 句型</th><th>C · 任務對話</th></tr></thead>
+      <tbody>
+        <tr><th>主要在練</th><td>聽、認得</td><td>快速講出固定句型</td><td>在情境裡講清楚、應變</td></tr>
+        <tr><th>你開口的量</th><td>很少</td><td>中等（一句一句）</td><td>最多（整段對話）</td></tr>
+        <tr><th>回饋從哪來</th><td>對或錯（找圖）</td><td>自己對答案</td><td>店員的反應，加上結束後的講評</td></tr>
+        <tr><th>需要 Claude</th><td>不用</td><td>不用</td><td>要，會用到額度</td></tr>
+        <tr><th>音檔</th><td>Kokoro 錄好的英國口音</td><td>Kokoro 錄好的英國口音</td><td>瀏覽器語音（即時生成）</td></tr>
+        <tr><th>做新情境的成本</th><td>最高：要重畫一張圖</td><td>中：寫句型、錄音</td><td>最低：寫任務和意外就好</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>我的看法</h2>
+    <div class="take">
+      <p>你說想「針對某個情境學習英語表達」，目標是正確表達、講得順。三個裡最貼近這個目標的是 <b>C</b>，因為只有它逼你在情境裡自己組句子，而且聽不懂就會被反問。</p>
+      <p>不過 C 單獨用會有一個問題：不知道怎麼講的時候只能卡住。B 剛好補這個洞，它就是 C 裡按 Hint 時給你的那些句型。A 最適合當第一次接觸新情境時的「地圖」。</p>
+      <p>所以如果要做成一套，我會建議每個情境都走這條路：</p>
+      <div class="flow"><span>A 看圖認場景</span><b>→</b><span>B 背句型</span><b>→</b><span>C 實戰任務</span><b>→</b><span>C 同任務再來一次</span></div>
+      <p>最後一步「同一個任務再來一次」是有根據的：同樣的任務重複做，第二、三次通常會更順（見下面的 4/3/2 研究）。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>查到的資料</h2>
+    <div class="research">
+      <p><b>圖解英語這類書</b>（例如《21世紀情境式英語圖解字典》、《All-in-One 全方位情境式英語圖解字典》、《彩繪圖解英語會話》）做法很一致：一個場景畫成一張圖，物品編號對照單字，再配上該場景的會話。Demo A 就是照這個形式做的。</p>
+      <p><b>圖片輔助記單字</b>：有幾篇小規模的課堂研究發現，用圖解字典教單字的組別，測驗表現比一般字典組好。這些多是單一學校、樣本小的研究，可以當參考，不算定論。</p>
+      <p><b>語塊（lexical chunks）</b>：語塊指的是整串記住、整串拿出來用的字組。相關研究的主張是，用語塊講話可以減輕臨場組句的負擔，所以講得比較順。也有研究讓學生做語塊訓練後，口說流利度測驗進步。Demo B 就是照這個想法做的。</p>
+      <p><b>任務型教學（TBLT）與角色扮演</b>：讓學習者為了完成一件真實的事去用語言，有研究顯示對口說有幫助，不過我找到的多是個別課堂的研究。Demo C 就是這個方向。</p>
+      <p><b>重複同一個任務（4/3/2）</b>：Nation 的 4/3/2 活動是把同一段話講三次，時間越來越短（4、3、2 分鐘）。研究觀察到重複後語速變快、停頓變少。Demo C 的「再來一次」和 role-play 頁面的計時，都是參考這個。</p>
+      <ol class="src">
+        <li><a href="https://web20.lib.cgu.edu.tw/detail/27972" target="_blank" rel="noopener">圖解英語書目（長庚大學圖書館）</a>、<a href="https://www.eslite.com/product/10072302132683115455002" target="_blank" rel="noopener">生活英語輕鬆學：圖解單字 X 情境會話 X 聽力實戰（誠品）</a></li>
+        <li><a href="https://jls.tu.edu.iq/index.php/JLS/article/view/1088" target="_blank" rel="noopener">Visualizing Vocabulary: pictorial aids and university-level vocabulary learning</a>、<a href="https://journal.ikipsiliwangi.ac.id/project/article/view/26752" target="_blank" rel="noopener">The Use of Picture Dictionary to Enhance Students' Vocabulary Mastery</a></li>
+        <li><a href="https://oro.open.ac.uk/66895" target="_blank" rel="noopener">The teaching and learning of lexical chunks in an online language classroom (Open University)</a>、<a href="https://web.aou.edu.lb/research/online-journals/Pages/calr-issue-6.aspx" target="_blank" rel="noopener">Spoken lexical chunks used by successful learners at B2 level</a></li>
+        <li><a href="https://riset.unisma.ac.id/index.php/JREALL/article/view/25444" target="_blank" rel="noopener">Task-based vs. cooperative role-playing in vocational EFL contexts</a></li>
+        <li><a href="https://jer.or.id/index.php/jer/article/view/3785" target="_blank" rel="noopener">The Impact of the 4/3/2 Speaking Technique on EFL Students' Speaking Fluency</a>、<a href="https://so01.tci-thaijo.org/index.php/OJED/article/view/247820" target="_blank" rel="noopener">Task Repetition Using the 4/3/2 Technique</a></li>
+      </ol>
+      <p class="tip">這些資料是從搜尋結果的摘要整理的，我沒有逐篇讀全文。要拿來做正式決定的話，建議挑一兩篇看原文。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>明天想問你的</h2>
+    <ol class="qs">
+      <li>三個裡哪一個你最想繼續玩？還是照上面那條路合成一套？</li>
+      <li>下一個情境要什麼？例如飯店入住、機場、看醫生、租屋，或是工作上的會議。</li>
+      <li>要不要把每個情境都做成「A → B → C」三頁一組，放進 English Library？</li>
+    </ol>
+  </section>
+</main>
