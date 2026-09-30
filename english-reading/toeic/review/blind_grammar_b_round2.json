@@ -1,0 +1,46 @@
+[
+ {
+  "id": "g-agree-01",
+  "format": "gap",
+  "stem": "The projectors in every conference room on the fourth floor ______ been replaced with newer models.",
+  "options": {
+   "A": "have",
+   "B": "has",
+   "C": "having",
+   "D": "to have"
+  }
+ },
+ {
+  "id": "g-pronoun-01",
+  "format": "gap",
+  "stem": "Venlow Logistics has updated ______ return policy to allow exchanges within 60 days of delivery.",
+  "options": {
+   "A": "it",
+   "B": "its",
+   "C": "theirs",
+   "D": "itself"
+  }
+ },
+ {
+  "id": "g-parallel-02",
+  "format": "gap",
+  "stem": "The regional director has ______ approved the budget requests from the sales and marketing departments nor explained why they are on hold.",
+  "options": {
+   "A": "neither",
+   "B": "either",
+   "C": "both",
+   "D": "not only"
+  }
+ },
+ {
+  "id": "g-parallel-03",
+  "format": "gap",
+  "stem": "Customers who want the extended warranty must register the product online within 30 days of purchase and ______ the original receipt.",
+  "options": {
+   "A": "to keep",
+   "B": "keeping",
+   "C": "keep",
+   "D": "kept"
+  }
+ }
+]
