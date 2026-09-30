@@ -3,17 +3,6 @@
 # `say` overrides the TTS text wherever the displayed text has digits, times, prices,
 # abbreviations or the name "Wei". reviewed stays False until every mp3 has been heard.
 
-
-def _qr(voice_q, who_q, voice_r, who_r, q, a, b, c):
-    """Audio lines for a Part 2 item: the question in one voice, three responses in another."""
-    return [
-        {"file": "q.mp3", "who": who_q, "voice": voice_q, "text": q},
-        {"file": "a.mp3", "who": who_r, "voice": voice_r, "text": a},
-        {"file": "b.mp3", "who": who_r, "voice": voice_r, "text": b},
-        {"file": "c.mp3", "who": who_r, "voice": voice_r, "text": c},
-    ]
-
-
 ITEMS = [
     # ------------------------------------------------------------------ qr (Part 2)
     {
@@ -21,11 +10,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-01", "gapMs": 900,
-            "lines": _qr("af_sarah", "W", "am_michael", "M",
-                         "Where should I leave these boxes of paper?",
-                         "Yes, they came this morning.",
-                         "I read about it in the paper.",
-                         "Just put them by the copier."),
+            "lines": [
+                {"file": "q.mp3", "who": "W", "voice": "af_sarah", "text": "Where should I leave these boxes of paper?"},
+                {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Yes, they came this morning."},
+                {"file": "b.mp3", "who": "M", "voice": "am_michael", "text": "I read about it in the paper."},
+                {"file": "c.mp3", "who": "M", "voice": "am_michael", "text": "Just put them by the copier."},
+            ],
         },
         "transcriptZh": ["這幾箱紙我該放在哪裡？", "是的，它們今天早上送到的。", "我是在報紙上看到的。", "放在影印機旁邊就好。"],
         "questions": [{
@@ -44,11 +34,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-02", "gapMs": 900,
-            "lines": _qr("bm_george", "M", "bf_emma", "W",
-                         "Who's in charge of ordering supplies for the new office?",
-                         "Mostly pens and printer ink.",
-                         "Rachel at reception handles that.",
-                         "The new office is really bright."),
+            "lines": [
+                {"file": "q.mp3", "who": "M", "voice": "bm_george", "text": "Who's in charge of ordering supplies for the new office?"},
+                {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "Mostly pens and printer ink."},
+                {"file": "b.mp3", "who": "W", "voice": "bf_emma", "text": "Rachel at reception handles that."},
+                {"file": "c.mp3", "who": "W", "voice": "bf_emma", "text": "The new office is really bright."},
+            ],
         },
         "transcriptZh": ["新辦公室的用品是誰負責訂的？", "大多是筆和印表機墨水。", "櫃台的 Rachel 負責那件事。", "新辦公室採光很好。"],
         "questions": [{
@@ -67,11 +58,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-03", "gapMs": 900,
-            "lines": _qr("am_michael", "M", "bf_emma", "W",
-                         "Why was the client meeting moved to the afternoon?",
-                         "Their flight was delayed.",
-                         "In the large meeting room.",
-                         "Yes, it went very well."),
+            "lines": [
+                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "Why was the client meeting moved to the afternoon?"},
+                {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "Their flight was delayed."},
+                {"file": "b.mp3", "who": "W", "voice": "bf_emma", "text": "In the large meeting room."},
+                {"file": "c.mp3", "who": "W", "voice": "bf_emma", "text": "Yes, it went very well."},
+            ],
         },
         "transcriptZh": ["跟客戶的會議為什麼改到下午？", "他們的班機延誤了。", "在大會議室。", "是的，進行得很順利。"],
         "questions": [{
@@ -90,11 +82,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-04", "gapMs": 900,
-            "lines": _qr("am_michael", "M", "af_bella", "W",
-                         "Is the printer upstairs working again?",
-                         "Our team is working on a new project.",
-                         "Yes, someone repaired it an hour ago.",
-                         "Double-sided, please."),
+            "lines": [
+                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "Is the printer upstairs working again?"},
+                {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Our team is working on a new project."},
+                {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "Yes, someone repaired it an hour ago."},
+                {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "Double-sided, please."},
+            ],
         },
         "transcriptZh": ["樓上那台印表機又能用了嗎？", "我們團隊正在做一個新專案。", "可以了，一個小時前有人修好了。", "麻煩印雙面。"],
         "questions": [{
@@ -113,11 +106,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-05", "gapMs": 900,
-            "lines": _qr("bf_emma", "W", "bm_lewis", "M",
-                         "You've already booked the hotel for the sales conference, haven't you?",
-                         "The conference was very useful.",
-                         "A double room, please.",
-                         "Yes, I reserved rooms for everyone yesterday."),
+            "lines": [
+                {"file": "q.mp3", "who": "W", "voice": "bf_emma", "text": "You've already booked the hotel for the sales conference, haven't you?"},
+                {"file": "a.mp3", "who": "M", "voice": "bm_lewis", "text": "The conference was very useful."},
+                {"file": "b.mp3", "who": "M", "voice": "bm_lewis", "text": "A double room, please."},
+                {"file": "c.mp3", "who": "M", "voice": "bm_lewis", "text": "Yes, I reserved rooms for everyone yesterday."},
+            ],
         },
         "transcriptZh": ["業務會議的飯店你已經訂好了，對吧？", "那場會議很有收穫。", "一間雙人房，謝謝。", "對，我昨天就幫大家訂好房間了。"],
         "questions": [{
@@ -136,11 +130,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-06", "gapMs": 900,
-            "lines": _qr("af_sarah", "W", "am_michael", "M",
-                         "When will the new price list be ready?",
-                         "Monica is still checking the numbers.",
-                         "Yes, the prices are quite reasonable.",
-                         "I made a list of new clients."),
+            "lines": [
+                {"file": "q.mp3", "who": "W", "voice": "af_sarah", "text": "When will the new price list be ready?"},
+                {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Monica is still checking the numbers."},
+                {"file": "b.mp3", "who": "M", "voice": "am_michael", "text": "Yes, the prices are quite reasonable."},
+                {"file": "c.mp3", "who": "M", "voice": "am_michael", "text": "I made a list of new clients."},
+            ],
         },
         "transcriptZh": ["新的價目表什麼時候會好？", "Monica 還在核對數字。", "是的，價格相當合理。", "我列了一份新客戶名單。"],
         "questions": [{
@@ -159,11 +154,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-07", "gapMs": 900,
-            "lines": _qr("bm_george", "M", "af_bella", "W",
-                         "Would you like me to send the contract to the client today?",
-                         "At the post office on Main Street.",
-                         "The lawyers haven't finished going over it.",
-                         "She's been our client for years."),
+            "lines": [
+                {"file": "q.mp3", "who": "M", "voice": "bm_george", "text": "Would you like me to send the contract to the client today?"},
+                {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "At the post office on Main Street."},
+                {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "The lawyers haven't finished going over it."},
+                {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "She's been our client for years."},
+            ],
         },
         "transcriptZh": ["要我今天把合約寄給客戶嗎？", "在 Main Street 的郵局。", "律師還沒看完。", "她當我們的客戶很多年了。"],
         "questions": [{
@@ -182,11 +178,12 @@ ITEMS = [
         "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-08", "gapMs": 900,
-            "lines": _qr("af_bella", "W", "bm_george", "M",
-                         "How do I get to the staff kitchen from here?",
-                         "Yes, the kitchen was just cleaned.",
-                         "I usually take the bus.",
-                         "Sorry, it's only my first week."),
+            "lines": [
+                {"file": "q.mp3", "who": "W", "voice": "af_bella", "text": "How do I get to the staff kitchen from here?"},
+                {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "Yes, the kitchen was just cleaned."},
+                {"file": "b.mp3", "who": "M", "voice": "bm_george", "text": "I usually take the bus."},
+                {"file": "c.mp3", "who": "M", "voice": "bm_george", "text": "Sorry, it's only my first week."},
+            ],
         },
         "transcriptZh": ["請問從這裡要怎麼走到員工茶水間？", "是的，茶水間剛打掃過。", "我通常搭公車。", "抱歉，我才來第一個星期。"],
         "questions": [{
