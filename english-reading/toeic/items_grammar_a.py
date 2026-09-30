@@ -5,7 +5,7 @@ ITEMS = [
     # ---------------- pos 詞性判斷 ----------------
     {
         "id": "g-pos-01", "type": "grammar", "format": "gap", "unit": "pos", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "All shipping charges on the March invoice were ______ calculated by the new billing software.",
         "options": ["automatic", "automation", "automatically", "automate"],
         "answer": 2,
@@ -24,7 +24,7 @@ ITEMS = [
     },
     {
         "id": "g-pos-02", "type": "grammar", "format": "gap", "unit": "pos", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The terms of the new rental agreement seem ______ to both parties, so the contract will be signed on Friday.",
         "options": ["acceptable", "acceptance", "accept", "acceptably"],
         "answer": 0,
@@ -43,7 +43,7 @@ ITEMS = [
     },
     {
         "id": "g-pos-03", "type": "grammar", "format": "gap", "unit": "pos", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The ______ of the Tamsin Road factory will create about 200 new jobs in the region next year.",
         "options": ["expand", "expansive", "expanded", "expansion"],
         "answer": 3,
@@ -62,13 +62,13 @@ ITEMS = [
     },
     {
         "id": "g-pos-04", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The safety ______ who visited the plant on Monday recommended replacing two of the older machines.",
         "options": ["inspection", "inspector", "inspect", "inspected"],
         "answer": 1,
         "explain": {
             "point": "人和事的名詞：inspector 是人，inspection 是事",
-            "why": "空格要放名詞；後面用 who 接著說他來廠裡、提出建議，這是人做的事，所以用指人的 inspector。",
+            "why": "空格要放名詞；後面的 who 只能指人，來廠裡、提出建議的也是人，所以用指人的 inspector。",
             "wrong": [
                 "「檢查」這件事，不能用 who，也不會來訪",
                 None,
@@ -81,7 +81,7 @@ ITEMS = [
     },
     {
         "id": "g-pos-05", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The factory avoided a very ______ shutdown last month by replacing worn parts before they failed.",
         "options": ["costly", "cost", "costing", "costs"],
         "answer": 0,
@@ -99,8 +99,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-pos-06", "type": "grammar", "format": "gap", "unit": "pos", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-pos-06", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice.",
         "options": ["considerable", "consideration", "considerably", "considerate"],
         "answer": 2,
@@ -121,7 +121,7 @@ ITEMS = [
     # ---------------- tense 動詞時態 ----------------
     {
         "id": "g-tense-01", "type": "grammar", "format": "gap", "unit": "tense", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Ms. Okafor ______ the Lisbon branch two weeks ago to meet the new regional sales team.",
         "options": ["visits", "has visited", "will visit", "visited"],
         "answer": 3,
@@ -140,7 +140,7 @@ ITEMS = [
     },
     {
         "id": "g-tense-02", "type": "grammar", "format": "gap", "unit": "tense", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Our technicians ______ the network problem at the moment, so e-mail may be slow this morning.",
         "options": ["investigate", "are investigating", "investigated", "have investigated"],
         "answer": 1,
@@ -148,10 +148,10 @@ ITEMS = [
             "point": "at the moment 表示正在進行，用現在進行式",
             "why": "at the moment 是「此刻」，查網路問題是現在正在進行的事，所以用現在進行式 are investigating。",
             "wrong": [
-                "現在簡單式講習慣或固定行程，不講此刻",
+                "現在簡單式講習慣或固定行程，不講此刻正在做的事",
                 None,
                 "過去式，和 at the moment 對不上",
-                "現在完成式講到目前的結果，不配 at the moment",
+                "現在完成式講已做到的結果，不表示此刻正在查",
             ],
             "zh": "我們的技術人員目前正在查網路問題，所以今天早上電子郵件可能會比較慢。",
             "vocab": [["technician", "技術人員"], ["investigate", "調查、查明"]],
@@ -159,7 +159,7 @@ ITEMS = [
     },
     {
         "id": "g-tense-03", "type": "grammar", "format": "gap", "unit": "tense", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Once the legal team ______ its review, Mr. Haddad will send the revised contract to the client.",
         "options": ["completes", "will complete", "completed", "was completing"],
         "answer": 0,
@@ -178,7 +178,7 @@ ITEMS = [
     },
     {
         "id": "g-tense-04", "type": "grammar", "format": "gap", "unit": "tense", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Brenmoor Foods ______ its delivery network to more than forty cities since the spring of 2021.",
         "options": ["expands", "will expand", "has expanded", "expanded"],
         "answer": 2,
@@ -197,7 +197,7 @@ ITEMS = [
     },
     {
         "id": "g-tense-05", "type": "grammar", "format": "gap", "unit": "tense", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "By the time the renovation of the Merriden Hotel lobby was completed in May, the owners ______ nearly two million dollars on the project.",
         "options": ["have spent", "will have spent", "are spending", "had spent"],
         "answer": 3,
@@ -218,7 +218,7 @@ ITEMS = [
     # ---------------- connect 連接詞、介系詞、連接副詞 ----------------
     {
         "id": "g-connect-01", "type": "grammar", "format": "gap", "unit": "connect", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The outdoor product launch was moved into the main hall ______ the forecast of strong winds.",
         "options": ["because", "because of", "therefore", "so that"],
         "answer": 1,
@@ -237,7 +237,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-02", "type": "grammar", "format": "gap", "unit": "connect", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Visitors must wear a hard hat at all times ______ they are on the construction site.",
         "options": ["during", "meanwhile", "throughout", "while"],
         "answer": 3,
@@ -256,7 +256,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-03", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The supplier has raised its prices twice this year; ______, we are now requesting quotes from other companies.",
         "options": ["therefore", "because", "due to", "although"],
         "answer": 0,
@@ -265,8 +265,8 @@ ITEMS = [
             "why": "空格在分號後、逗號前，要用連接副詞；前句漲價是原因、後句找別家報價是結果，所以用 therefore。",
             "wrong": [
                 None,
-                "連接詞，後面要直接接子句，不能加逗號",
-                "介系詞，後面要接名詞，不能接逗號",
+                "連接詞，不能單獨夾在分號和逗號之間；因果也反了",
+                "介系詞，後面要接名詞，這裡接的是子句",
                 "連接詞，且表讓步，和前後的因果不合",
             ],
             "zh": "供應商今年已經漲價兩次，因此我們現在正在向其他公司索取報價。",
@@ -275,7 +275,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-04", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Orders placed after 3 p.m. will not be shipped until the next business day ______ customers choose express delivery.",
         "options": ["without", "otherwise", "unless", "despite"],
         "answer": 2,
@@ -294,7 +294,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-05", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ the company spent far less on advertising in June, sales of its new desk lamp still rose by 20 percent.",
         "options": ["Because", "Even though", "Despite", "Nevertheless"],
         "answer": 1,
@@ -305,7 +305,7 @@ ITEMS = [
                 "連接詞，但表因果，和 still 的讓步意思矛盾",
                 None,
                 "意思對，但它是介系詞，不能接子句",
-                "意思對，但它是連接副詞，不能連接兩個子句",
+                "連接副詞，不能連接兩個子句；也該放在後一句開頭",
             ],
             "zh": "儘管公司六月的廣告支出少了很多，新款桌燈的銷量仍然成長了百分之二十。",
             "vocab": [["advertising", "廣告"], ["desk lamp", "桌燈"], ["rise by", "上升（多少幅度）"]],
@@ -315,7 +315,7 @@ ITEMS = [
     # ---------------- prep 介系詞：時間、期限與常用片語 ----------------
     {
         "id": "g-prep-01", "type": "grammar", "format": "gap", "unit": "prep", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Travel expense reports for the first quarter must be submitted to Ms. Varga ______ April 5 at the latest.",
         "options": ["by", "until", "since", "within"],
         "answer": 0,
@@ -334,7 +334,7 @@ ITEMS = [
     },
     {
         "id": "g-prep-02", "type": "grammar", "format": "gap", "unit": "prep", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The main entrance of the building will be closed ______ three days while new floor tiles are installed.",
         "options": ["during", "since", "by", "for"],
         "answer": 3,
@@ -353,7 +353,7 @@ ITEMS = [
     },
     {
         "id": "g-prep-03", "type": "grammar", "format": "gap", "unit": "prep", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ completion of the training course, each participant will receive a certificate signed by the director.",
         "options": ["Until", "Since", "Upon", "Within"],
         "answer": 2,
@@ -372,7 +372,7 @@ ITEMS = [
     },
     {
         "id": "g-prep-04", "type": "grammar", "format": "gap", "unit": "prep", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ the merger with Kessling Freight last year, Orvane Shipping has doubled the size of its fleet.",
         "options": ["During", "Since", "Until", "Within"],
         "answer": 1,
@@ -382,7 +382,7 @@ ITEMS = [
             "wrong": [
                 "during 只講去年那段期間，不配現在完成式",
                 None,
-                "until 表示持續到那時，時間方向相反",
+                "until 講到合併那時為止，但 has doubled 延續到現在",
                 "within 後面接一段期間，the merger 不是期間",
             ],
             "zh": "自從去年和 Kessling 貨運合併以來，Orvane 航運的船隊規模已經擴大了一倍。",
@@ -393,7 +393,7 @@ ITEMS = [
     # ---------------- participle 分詞：-ing 與 -ed ----------------
     {
         "id": "g-participle-01", "type": "grammar", "format": "gap", "unit": "participle", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Customers can download the ______ price list from our Web site starting next Monday.",
         "options": ["updated", "update", "updating", "updates"],
         "answer": 0,
@@ -402,9 +402,9 @@ ITEMS = [
             "why": "價目表是「被更新」的，放在名詞 price list 前面表示被動，要用 -ed 的 updated。",
             "wrong": [
                 None,
-                "原形動詞或名詞，不能這樣修飾 price list",
+                "原形動詞不能修飾名詞；當名詞也沒有 update price list 的說法",
                 "-ing 表主動，價目表不會自己去更新",
-                "複數名詞或動詞，不能放在 the 和名詞之間",
+                "動詞不能修飾名詞；updates price list 也不是複合名詞",
             ],
             "zh": "顧客從下週一起可以在我們的網站下載更新後的價目表。",
             "vocab": [["price list", "價目表"], ["download", "下載"]],
@@ -412,7 +412,7 @@ ITEMS = [
     },
     {
         "id": "g-participle-02", "type": "grammar", "format": "gap", "unit": "participle", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Companies ______ in the Westbrook trade fair will be listed in the official catalog.",
         "options": ["participated", "participate", "participation", "participating"],
         "answer": 3,
@@ -431,7 +431,7 @@ ITEMS = [
     },
     {
         "id": "g-participle-03", "type": "grammar", "format": "gap", "unit": "participle", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ in only six months, the new distribution center in Haverford can process 20,000 orders a day.",
         "options": ["Building", "Build", "Built", "Builder"],
         "answer": 2,
@@ -450,7 +450,7 @@ ITEMS = [
     },
     {
         "id": "g-participle-04", "type": "grammar", "format": "gap", "unit": "participle", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Although the sales figures for the company's new line of kitchen appliances were ______, the board decided to keep the products on the market.",
         "options": ["disappointed", "disappointing", "disappoint", "disappointment"],
         "answer": 1,
