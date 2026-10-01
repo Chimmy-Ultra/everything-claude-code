@@ -15,7 +15,7 @@
 
 ITEMS = [
     # ------------------------------------------------------------------ l-conv-11  conv-topic, factory
-    # W = bf_emma? no: W = af_bella (supervisor), M = Dev (bm_george). Nobody says "inspection" or "defect detection".
+    # W = a supervisor (af_bella), M = Dev (bm_george). Nobody says "inspection" or "defect detection".
     # Q1 topic (C): assembled from lines 1-3 (returns + sampling + camera). Q2 detail (D): "caught every crack but
     # one" -> nearly every flaw. Q3 (A, second half): "it" (line 7) = the one-page summary; (B) is the man's job.
     {
@@ -171,7 +171,7 @@ ITEMS = [
                     "point": "主旨題：問題加上解決辦法",
                     "why": "地圖 too delicate to … take out of the building 是問題；Could the library scan them instead 是辦法 → 改述成讓學生能研究不能外借的資料。",
                     "evidence": [0, 2, 3],
-                    "wrong": ["提到但不是問的：五點關門是 Joel 的困難，沒人提議延長", None, "同字陷阱：thesis 出現過，但沒人談簡報的時間", "題目沒有談選題：Joel 的主題一開始就定了"],
+                    "wrong": ["提到但不是問的：五點關門是 Joel 的困難，沒人提議延長", None, "同字陷阱：thesis 出現過，但沒人談簡報的時間", "沒有人談選題：Joel 的論文主題早已確定"],
                     "wrongMore": [
                         "the reading room closes at five 確實出現；但那只是 Joel 的困難，後面談的是改用掃描，沒有人提議延長開放時間。",
                         None,
