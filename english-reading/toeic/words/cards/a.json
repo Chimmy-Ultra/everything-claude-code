@@ -67,8 +67,8 @@
    {
     "w": "comply",
     "note": [
-     "Also followed by with; slightly more formal and common in legal or regulatory contexts.",
-     "後面接 with；稍微更正式，常見於法規情境。"
+     "Followed by with (comply with); slightly more formal and common in legal or regulatory contexts.",
+     "後面接 with（comply with）；稍微更正式，常見於法規情境。"
     ]
    },
    {
@@ -82,11 +82,11 @@
   "ant": [
    {
     "w": "violate",
-    "zh": "違反"
+    "zh": "違反（規定；與 abide by 的「遵守」相對）"
    },
    {
     "w": "disobey",
-    "zh": "不服從"
+    "zh": "不服從（命令；與 abide by 的「遵守」相對）"
    }
   ],
   "confuse": []
@@ -179,7 +179,7 @@
   "ant": [
    {
     "w": "emit",
-    "zh": "釋放、發出（光、熱等）"
+    "zh": "釋放、發出（光、熱等；僅與「吸收光、熱」這個義項相對）"
    }
   ],
   "confuse": []
@@ -210,8 +210,8 @@
     "這棟建築物最終能否驗收取決於檢查員的報告。"
    ],
    [
-    "The supplier sent a letter of <em>acceptance</em> within two days of our order.",
-    "供應商在我們下訂單兩天內寄來了接受函。"
+    "The university sent her a letter of <em>acceptance</em> in April.",
+    "大學在四月寄給她錄取通知書。"
    ]
   ],
   "coll": [
@@ -289,7 +289,7 @@
    ],
    [
     "All entrances are wheelchair <em>accessible</em>.",
-    "所有入口都有輪椅無障礙設施。"
+    "所有入口都可供輪椅通行。"
    ],
    [
     "The report uses plain language to make the data <em>accessible</em> to non-specialists.",
@@ -562,7 +562,7 @@
   "ant": [
    {
     "w": "deviate",
-    "zh": "偏離"
+    "zh": "偏離（deviate from）"
    },
    {
     "w": "violate",
@@ -589,8 +589,8 @@
     "暴風雨過後，政府針對該地區發布了旅遊警示。"
    ],
    [
-    "He works as an <em>advisory</em> consultant on pension plans.",
-    "他擔任退休金計畫的諮詢顧問。"
+    "The bank offers a free <em>advisory</em> service to first-time home buyers.",
+    "銀行為首次購屋者提供免費的諮詢服務。"
    ],
    [
     "A weather <em>advisory</em> warned drivers to avoid the mountain road.",
@@ -653,8 +653,8 @@
    {
     "w": "consultative",
     "note": [
-     "Formal; describes a group or process that gives advice or asks for opinions before a decision.",
-     "較正式；形容在決策前提供意見或徵詢意見的團體或過程。"
+     "Formal; stresses asking others for their views before deciding (a consultative process); advisory stresses giving advice.",
+     "較正式；強調決策前徵詢他人意見（consultative process）；advisory 則強調提供建議。"
     ]
    }
   ],
@@ -867,11 +867,6 @@
     "w": "alertness",
     "pos": "n.",
     "zh": "警覺性"
-   },
-   {
-    "w": "alertly",
-    "pos": "adv.",
-    "zh": "警覺地"
    }
   ],
   "syn": [
@@ -900,7 +895,7 @@
   "ant": [
    {
     "w": "inattentive",
-    "zh": "不專心的"
+    "zh": "不專心的（與形容詞 alert 的「警覺」相對）"
    }
   ],
   "confuse": [
@@ -1057,13 +1052,6 @@
      "Device is broader and covers any piece of equipment, especially electronic; appliance is for home or kitchen machines.",
      "device 範圍較廣，指任何設備，尤其電子產品；appliance 多指家用或廚房機器。"
     ]
-   },
-   {
-    "w": "gadget",
-    "note": [
-     "A small, clever or novel device; informal.",
-     "小巧或新奇的裝置；口語。"
-    ]
    }
   ],
   "ant": [],
@@ -1196,8 +1184,8 @@
     "全校師生聚集在禮堂參加晨間集會。"
    ],
    [
-    "The city's legislative <em>assembly</em> will vote on the budget next week.",
-    "市議會將於下週就預算案進行表決。"
+    "The state's legislative <em>assembly</em> will vote on the budget next week.",
+    "州議會將於下週就預算案進行表決。"
    ]
   ],
   "coll": [
@@ -1255,7 +1243,7 @@
   "ant": [
    {
     "w": "disassembly",
-    "zh": "拆解"
+    "zh": "拆解（僅與「組裝」義相對）"
    }
   ],
   "confuse": []
@@ -1806,7 +1794,7 @@
  {
   "w": "automatic",
   "pos": "adj.",
-  "zh": "自動的；理所當然的",
+  "zh": "自動的；自然而然發生的",
   "def": [
    "Working by itself without direct human control; happening as a normal result.",
    "無需人直接操控、自行運作的；作為正常結果自然發生的。"
@@ -2542,12 +2530,7 @@
     ]
    }
   ],
-  "ant": [
-   {
-    "w": "confirmation",
-    "zh": "確認"
-   }
-  ],
+  "ant": [],
   "confuse": []
  },
  {
@@ -2673,7 +2656,7 @@
    ],
    [
     "printer cartridge",
-    "印表機匣"
+    "印表機卡匣"
    ],
    [
     "replace the cartridge",
@@ -3085,11 +3068,6 @@
     "w": "uncharitable",
     "pos": "adj.",
     "zh": "不寬容的、刻薄的"
-   },
-   {
-    "w": "charitably",
-    "pos": "adv.",
-    "zh": "寬厚地"
    }
   ],
   "syn": [
@@ -3098,13 +3076,6 @@
     "note": [
      "Formal; describes generous giving, often large-scale, to improve society.",
      "較正式；形容慷慨捐助，常為大規模、以改善社會為目的。"
-    ]
-   },
-   {
-    "w": "nonprofit",
-    "note": [
-     "Describes an organisation that does not distribute profit to owners; not every nonprofit is charitable.",
-     "形容不將利潤分配給所有者的組織；不是所有非營利組織都屬慈善。"
     ]
    }
   ],
@@ -3178,7 +3149,7 @@
   "ant": [
    {
     "w": "check-in",
-    "zh": "登記入住、報到"
+    "zh": "登記入住、報到（僅與「退房」義相對）"
    }
   ],
   "confuse": []
@@ -3186,7 +3157,7 @@
  {
   "w": "cleaner",
   "pos": "n.",
-  "zh": "清潔工；清潔劑；洗衣店",
+  "zh": "清潔工；清潔劑；乾洗店（the cleaner's）",
   "def": [
    "A person whose job is to clean buildings; a substance used for cleaning.",
    "以打掃建築物為業的人；用來清潔的物質。"
@@ -3500,15 +3471,7 @@
     "zh": "臨床醫師"
    }
   ],
-  "syn": [
-   {
-    "w": "surgery",
-    "note": [
-     "British; a doctor's or dentist's place of work where patients are seen.",
-     "英式用法；醫師或牙醫看診的地點。"
-    ]
-   }
-  ],
+  "syn": [],
   "ant": [],
   "confuse": [
    {
@@ -3516,6 +3479,13 @@
     "note": [
      "A hospital is larger and has beds for patients who stay overnight; a clinic is smaller and usually for day visits.",
      "hospital 較大，設有床位供病人住院；clinic 較小，通常只供當日看診。"
+    ]
+   },
+   {
+    "w": "surgery",
+    "note": [
+     "In British English a doctor's or dentist's surgery is a clinic; in American English surgery means an operation.",
+     "英式英語中 surgery 可指醫師或牙醫的診所；美式英語中 surgery 指外科手術。"
     ]
    }
   ]
@@ -3605,7 +3575,7 @@
   "ant": [
    {
     "w": "start",
-    "zh": "開始"
+    "zh": "開始、開工（與「完工」相對，如 start date / completion date）"
    }
   ],
   "confuse": [
@@ -3636,7 +3606,7 @@
     "我的經理稱讚我簡報條理清楚。"
    ],
    [
-    "Thank you for the kind <em>compliments</em> about our service.",
+    "Thank you for the kind <em>compliments</em> on our service.",
     "謝謝你對我們服務的美言。"
    ],
    [
@@ -4112,11 +4082,7 @@
   "ant": [
    {
     "w": "denial",
-    "zh": "否認、否決"
-   },
-   {
-    "w": "cancellation",
-    "zh": "取消"
+    "zh": "否認、否決（與「證實」相對，如 confirmation or denial of a rumour）"
    }
   ],
   "confuse": []
@@ -4148,7 +4114,7 @@
    ],
    [
     "New recruits quickly <em>conform</em> to the company's way of working.",
-    "新進員工很快就適應公司的工作方式。"
+    "新進員工很快就依循公司的工作方式行事。"
    ]
   ],
   "coll": [
@@ -4186,7 +4152,7 @@
    {
     "w": "conformance",
     "pos": "n.",
-    "zh": "符合性（常見於標準規範）"
+    "zh": "符合性（技術、標準文件用語；一般多用 conformity）"
    },
    {
     "w": "conformist",

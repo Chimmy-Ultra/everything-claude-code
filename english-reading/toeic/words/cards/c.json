@@ -474,8 +474,8 @@
     "當地業者正在為市中心更好的停車環境進行游說。"
    ],
    [
-    "A powerful <em>lobby</em> of farmers opposed the new law.",
-    "一個有力的農民遊說團體反對這項新法。"
+    "A powerful farm <em>lobby</em> opposed the new law.",
+    "一個勢力龐大的農業遊說團體反對這項新法。"
    ]
   ],
   "coll": [
@@ -516,8 +516,8 @@
    {
     "w": "foyer",
     "note": [
-     "Entrance hall of a theatre, hotel or house; sounds a little more formal than lobby.",
-     "劇院、飯店或住宅的入口大廳；比 lobby 稍正式。"
+     "Entrance hall of a theatre, hotel or house; foyer suits theatres and homes, lobby suits hotels and offices.",
+     "劇院、飯店或住宅的入口大廳；foyer 常用於劇院和住宅，飯店與辦公大樓則通常說 lobby。"
     ]
    }
   ],
@@ -534,7 +534,7 @@
   ],
   "ex": [
    [
-    "Our <em>logo</em> must appear in the top corner of every slide.",
+    "Our <em>logo</em> must appear in the top left corner of every slide.",
     "我們的標誌必須出現在每張投影片的左上角。"
    ],
    [
@@ -572,8 +572,8 @@
     "重新設計標誌"
    ],
    [
-    "a logo on the packaging",
-    "包裝上的標誌"
+    "logo design",
+    "標誌設計"
    ]
   ],
   "family": [],
@@ -627,7 +627,7 @@
    ],
    [
     "The printer has a <em>manual</em> feed for special paper.",
-    "這台印表機有供特殊紙張使用的手動進紙孔。"
+    "這台印表機有供特殊紙張使用的手動進紙槽。"
    ],
    [
     "The factory is replacing <em>manual</em> checks with automatic sensors.",
@@ -667,8 +667,8 @@
    {
     "w": "handbook",
     "note": [
-     "A smaller reference book; a manual gives step-by-step instructions for using or doing something.",
-     "較小的參考書；manual 提供操作或做事的逐步說明。"
+     "A guide with general information or rules, such as an employee handbook; a manual gives step-by-step instructions for using or doing something.",
+     "提供一般資訊或規定的指南，如員工手冊；manual 則是操作或做事的逐步說明。"
     ]
    }
   ],
@@ -973,8 +973,8 @@
    {
     "w": "bulletin",
     "note": [
-     "A short official notice or report, often internal; a newsletter is longer and issued on a schedule.",
-     "簡短的官方公告或報告，常為內部使用；newsletter 篇幅較長，定期發行。"
+     "A short official notice or update, often internal; a newsletter is a regular publication that usually has several items.",
+     "簡短的官方公告或消息更新，常為內部使用；newsletter 是定期發行、通常含多則內容的刊物。"
     ]
    }
   ],
@@ -1399,8 +1399,8 @@
    {
     "w": "induction",
     "note": [
-     "British term for the process of introducing a new employee to the job.",
-     "英式用語，指帶領新員工認識工作的過程。"
+     "Used mainly in British English (also Australian) for the process of introducing a new employee to the job.",
+     "主要用於英式（及澳洲）英語，指帶領新員工認識工作的過程。"
     ]
    },
    {
@@ -1534,8 +1534,8 @@
     "戶外座位"
    ],
    [
-    "outdoor event",
-    "戶外活動"
+    "outdoor gear",
+    "戶外裝備"
    ],
    [
     "outdoor furniture",
@@ -1557,8 +1557,8 @@
    {
     "w": "open-air",
     "note": [
-     "Describes a place with no roof, such as a market or theatre; outdoor is the more general word.",
-     "形容沒有屋頂的場所，如市集或劇場；outdoor 較通用。"
+     "Describes events or places in the open air, such as a market, concert or theatre; outdoor is the more general word.",
+     "形容在戶外露天進行或存在的活動、場所，如市集、音樂會或劇場；outdoor 較通用。"
     ]
    }
   ],
@@ -1812,8 +1812,8 @@
     "請把支票的受款人開成 Hartman Supplies。"
    ],
    [
-    "Accounts <em>payable</em> will process your claim next week.",
-    "應付帳款部門下週會處理您的申請。"
+    "Accounts <em>payable</em> will process your invoice next week.",
+    "應付帳款部門下週會處理您的發票。"
    ],
    [
     "A deposit of 20 percent is <em>payable</em> upon booking.",
@@ -2037,7 +2037,7 @@
    ],
    [
     "Our <em>portfolio</em> includes hotels in twelve countries.",
-    "我們的產品組合包含十二個國家的飯店。"
+    "我們旗下的資產組合包含十二個國家的飯店。"
    ],
    [
     "She built an online <em>portfolio</em> to show her photography.",
@@ -2746,8 +2746,8 @@
    {
     "w": "recipe",
     "note": [
-     "Recipe means cooking instructions; the p in receipt is silent and the words are not related.",
-     "recipe 是食譜；兩者意思無關。"
+     "Recipe means cooking instructions; the p in receipt is silent.",
+     "recipe 是食譜；receipt 的 p 不發音。"
     ]
    }
   ]
@@ -2830,8 +2830,8 @@
    {
     "w": "receipt",
     "note": [
-     "Receipt is a proof of payment; the two words look alike but are unrelated in meaning.",
-     "receipt 是付款證明；兩字外形相近，意思無關。"
+     "Receipt is a proof of payment; the two words look alike but have different meanings.",
+     "receipt 是付款證明；兩字外形相近，但意思不同。"
     ]
    }
   ]
@@ -2999,10 +2999,6 @@
    {
     "w": "throw away",
     "zh": "丟棄"
-   },
-   {
-    "w": "discard",
-    "zh": "丟棄、棄置"
    }
   ],
   "confuse": []
@@ -3371,8 +3367,8 @@
     "聽到貨物安全抵達，我們鬆了一口氣。"
    ],
    [
-    "Extra staff were brought in to <em>relieve</em> the night shift.",
-    "公司調來額外人手接替夜班。"
+    "A second guard arrives at six to <em>relieve</em> the night guard.",
+    "第二位警衛在六點到班，接替夜班警衛。"
    ],
    [
     "The medicine <em>relieves</em> pain within thirty minutes.",
@@ -3432,10 +3428,6 @@
   "ant": [
    {
     "w": "aggravate",
-    "zh": "使惡化"
-   },
-   {
-    "w": "worsen",
     "zh": "使惡化"
    }
   ],
@@ -3646,8 +3638,8 @@
     "我們下週會送出訂單的其餘部分。"
    ],
    [
-    "Please pay the <em>remainder</em> of the balance by the end of the month.",
-    "請在月底前付清剩餘款項。"
+    "Please pay the <em>remainder</em> of the fee by the end of the month.",
+    "請在月底前付清費用的餘額。"
    ],
    [
     "The <em>remainder</em> of the budget will go to staff training.",
@@ -3864,10 +3856,6 @@
    }
   ],
   "ant": [
-   {
-    "w": "expiration",
-    "zh": "到期"
-   },
    {
     "w": "cancellation",
     "zh": "取消"
