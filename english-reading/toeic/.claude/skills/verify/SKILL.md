@@ -14,6 +14,7 @@ contents → chapter → lesson → Skip → answer a wrong option → dock (Les
 
 Gotchas
 - `ERR_CERT_AUTHORITY_INVALID` console errors are Google Fonts blocked by the sandbox proxy, not the page.
-- The gloss tip can cover the next dotted word; click elsewhere (`page.mouse.click(5,5)`) before tapping another.
+- The gloss tip ignores clicks except its "Word card →" link, and picks the on-screen spot that hides the fewest dotted words; dense listening transcripts can still have some overlap (covered words stay tappable).
+- Listening audio has gaps between clips (`au.paused` is true there); sample over a few seconds instead of one check.
 - Size buttons disable at the ends; click while enabled, not a fixed count.
 - `db`/`user` capabilities only exist inside claude.ai; locally the page uses localStorage.

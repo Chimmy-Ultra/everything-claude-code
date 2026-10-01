@@ -63,7 +63,7 @@ button.row:hover .t{color:var(--accent)}
 .colophon button:hover{color:var(--ink)}
 
 /* the spread */
-#session{font-size:var(--fs,14.5px);max-width:34rem;margin:0 auto;padding-bottom:5.5rem}
+#session{font-size:var(--fs,14.5px);max-width:34rem;margin:0 auto;padding-bottom:calc(var(--dockh,64px) + 1.5rem)}
 /* the dock: tools for the answered question, pinned to the bottom edge */
 #dock{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--paper);border-top:1px solid var(--rule);padding:0 20px calc(10px + env(safe-area-inset-bottom,0px))}
 .dk-bar,.dk-panel{max-width:34rem;margin:0 auto}
@@ -176,7 +176,7 @@ button.row:hover .t{color:var(--accent)}
 .next{display:flex;justify-content:flex-end;margin-top:1.4em}
 .next button{font:italic 500 1.08em var(--en);color:var(--accent)}
 .next button:hover{text-decoration:underline;text-underline-offset:4px}
-.tip{position:absolute;z-index:20;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(20,28,24,.12);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
+.tip{position:absolute;z-index:20;pointer-events:none;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(20,28,24,.12);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
 .tip .hw{font:italic 500 17px var(--en)}
 .tip .pos{font-style:italic;color:var(--soft);margin-left:.5em}
 .tip .ipa{color:var(--soft);margin-left:.5em;font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en);font-size:.95em}
@@ -254,7 +254,7 @@ button.row:hover .t{color:var(--accent)}
 .wnav{display:flex;justify-content:space-between;gap:1em;margin-top:2.4em;font-style:italic}
 .wnav button{color:var(--accent)}
 .tip .more{margin-top:6px;font-size:13.5px}
-.tip .more button{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.tip .more button{pointer-events:auto;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 
 /* summary, review shelf, statistics, settings */
 .score{font:400 clamp(40px,8vw,56px)/1 var(--en);margin:.5em 0 .1em;font-variant-numeric:lining-nums}
@@ -740,11 +740,19 @@ function tipFor(span) {
   const g = (tipItem?.gloss || [])[Number(span.dataset.g)]; if (!g) return;
   const t = $("#tip"), r = span.getBoundingClientRect();
   t.innerHTML = `<div><span class="hw">${esc(g.hw)}</span><span class="pos">${esc(g.pos)}</span>${g.ipa ? `<span class="ipa">${esc(g.ipa)}</span>` : ""}</div><div class="mean">${esc(g.zh)}</div><div class="ex">${esc(g.ex)}</div>`;
-  const card = wordCard(g.hw);
-  if (card) { const m = el("div", "more"); m.append(btn(null, "Word card →", () => { t.hidden = true; openWordSheet(card.w); })); t.append(m); }
+  const card = wordCard(g.card || g.hw);
+  if (card) { const m = el("div", "more"); m.append(btn(null, card.w === String(g.hw).toLowerCase() ? "Word card →" : "Word card: " + card.w + " →", () => { t.hidden = true; openWordSheet(card.w); })); t.append(m); }
   t.hidden = false;
-  const w = t.offsetWidth, x = Math.min(Math.max(16, r.left + r.width / 2 - w / 2 + scrollX), document.documentElement.clientWidth - w - 16);
-  t.style.left = x + "px"; t.style.top = (r.bottom + scrollY + 6) + "px";
+  const w = t.offsetWidth, h = t.offsetHeight, vw = document.documentElement.clientWidth;
+  const x = Math.min(Math.max(16, r.left + r.width / 2 - w / 2), vw - w - 16);
+  // the on-screen place that hides the fewest other dotted words: under the word, above it, under or above its sentence
+  const hidden = top => [...document.querySelectorAll(".gl")].filter(o => { if (o === span) return false; const q = o.getBoundingClientRect(); return q.left < x + w && q.right > x && q.top < top + h && q.bottom > top; }).length;
+  const block = (span.closest("p, li") || span).getBoundingClientRect();
+  const floor = innerHeight - (($("#dock").hidden ? 0 : $("#dock").offsetHeight) + 8);
+  const spots = [r.bottom + 6, r.top - h - 6, block.bottom + 6, block.top - h - 6].filter(y => y > 8 && y + h < floor);
+  let top = r.bottom + 6, best = Infinity;
+  for (const y of spots) { const n = hidden(y); if (n < best) { best = n; top = y; } if (!n) break; }
+  t.style.left = (x + scrollX) + "px"; t.style.top = (top + scrollY) + "px";
 }
 document.addEventListener("click", e => { const g = e.target.closest(".gl"); if (g) tipFor(g); else if (!e.target.closest("#tip")) $("#tip").hidden = true; });
 document.addEventListener("focusin", e => { if (e.target.classList?.contains("gl")) tipFor(e.target); });
@@ -776,6 +784,8 @@ function togglePanel(cls, make) {
 }
 // The dock appears once a question is answered: star, report, grammar page, Ask Claude, 中, and Next.
 let dockCtx = {};
+// keep the bottom of the page readable above the dock, however tall the dock grows (Ask Claude, Report)
+try { new ResizeObserver(() => { const d = $("#dock"); document.documentElement.style.setProperty("--dockh", (d.hidden ? 0 : d.offsetHeight) + "px"); }).observe($("#dock")); } catch {}
 function dockFor(item, ctx) {
   dockCtx = ctx;
   const dk = $("#dock"), id = S.id + ":" + S.i;

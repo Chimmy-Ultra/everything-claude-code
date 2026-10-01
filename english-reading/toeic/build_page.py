@@ -111,6 +111,15 @@ for f in sorted(glob.glob(os.path.join(HERE, "words", "cards", "*.json"))):
         if c["items"]: WORDS.append(c)
         else: print("word card left out (no question uses it):", c["w"])
 WORDS.sort(key=lambda c: c["w"])
+# Point each tap-to-gloss entry at a word card: its own headword, or else a card word inside the phrase
+# ("under warranty" -> warranty), read right to left because the head noun usually comes last.
+_head = {f: h for h, fs in _forms.items() for f in fs}
+_cards = {c["w"] for c in WORDS}
+for it in ITEMS:
+    for g in it.get("gloss", []):
+        toks = _re.findall(r"[a-z]+(?:-[a-z]+)?", (g["hw"] + " " + g["w"]).lower())
+        hit = g["hw"].lower() if g["hw"].lower() in _cards else next((_head.get(t, t) for t in reversed(toks) if _head.get(t, t) in _cards), None)
+        if hit: g["card"] = hit
 
 for w in warnings: print("warning:", w)
 if errors:

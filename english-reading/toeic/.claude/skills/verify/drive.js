@@ -34,12 +34,19 @@ const log = (...a) => console.log(...a);
   log('  ask answer:', JSON.stringify(await p.locator('.askOut').textContent()));
   // 6 word gloss tip -> Word card
   const gl = p.locator('#session .gl'); log('6 glossed words in stem:', await gl.count());
-  let opened = false;
-  await gl.nth(0).click(); await p.waitForTimeout(150); await p.screenshot({ path: SP + '/6-tip-covers.png' });
-  log('  tip covers next glossed word:', await p.evaluate(() => { const t = document.getElementById('tip').getBoundingClientRect(); return [...document.querySelectorAll('#session .gl')].slice(1).some(g => { const r = g.getBoundingClientRect(); return r.left < t.right && r.right > t.left && r.top < t.bottom && r.bottom > t.top; }); }));
-  for (let i = 0; i < await gl.count(); i++) { await p.mouse.click(5, 5); await p.waitForTimeout(80); await gl.nth(i).click(); await p.waitForTimeout(100); if (await p.locator('#tip .more button').count()) { await p.locator('#tip .more button').click(); opened = true; break; } }
-  log('  a tip offered "Word card →" and opened the sheet:', opened && await p.locator('#sheet .word').isVisible());
-  if (opened) { await p.screenshot({ path: SP + '/6-wordsheet.png' }); await p.locator('#sheet .head button').click(); }
+  const coverCheck = () => p.evaluate(() => { const tip = document.getElementById('tip'); if (tip.hidden) return false; const t = tip.getBoundingClientRect(); return [...document.querySelectorAll('#session .gl')].some(g => { if (g.textContent === tip.querySelector('.hw')?.textContent) return false; const r = g.getBoundingClientRect(); return r.left < t.right && r.right > t.left && r.top < t.bottom && r.bottom > t.top; }); });
+  let covered = 0, cardBtn = null;
+  for (let i = 0; i < await gl.count(); i++) { await gl.nth(i).click({ timeout: 3000 }); await p.waitForTimeout(80); if (await coverCheck()) covered++; if (!cardBtn && await p.locator('#tip .more button').count()) cardBtn = await p.locator('#tip .more button').textContent(); }
+  log('  tapped every dotted word in a row; tip covered another dotted word', covered, 'times; card link seen:', cardBtn);
+  await p.screenshot({ path: SP + '/6-tip.png' });
+  if (cardBtn) { await p.locator('#tip .more button').click().catch(() => {}); }
+  // dock panel: the end of the notes can be scrolled clear of the dock
+  await p.locator('#dkTools .tool.claude').click().catch(() => {});
+  await p.waitForTimeout(150);
+  await p.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight)); await p.waitForTimeout(150);
+  log('  with Ask open, last note line clears the dock:', await p.evaluate(() => { const last = [...document.querySelectorAll('#session .rightp .ann > *')].pop(); return last.getBoundingClientRect().bottom <= document.getElementById('dock').getBoundingClientRect().top; }));
+  await p.screenshot({ path: SP + '/6-dock-open.png' });
+  await p.locator('#dkTools .tool.claude').click().catch(() => {});
   // 7 Next via dock, then leave, reload, resume
   await p.locator('#dkNext button').click(); await p.waitForTimeout(300);
   log('7 next card page', await p.locator('.pg').textContent());
