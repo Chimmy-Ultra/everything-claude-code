@@ -25,7 +25,7 @@
     },
     {
       "head": ["within, for, during, since", "within、for、during、since 的分別"],
-      "body": ["<em>within</em> means inside a period. <em>for</em> takes a length of time, <em>during</em> takes the name of an event, <em>since</em> takes a starting point.", "<em>within</em> 表示在一段期間之內。<em>for</em> 接時間長度，<em>during</em> 接事件名稱，<em>since</em> 接起點。"],
+      "body": ["<em>within</em> means inside a period. <em>for</em> takes a length of time, <em>during</em> takes a named event or period, <em>since</em> takes a starting point.", "<em>within</em> 表示在一段期間之內。<em>for</em> 接時間長度，<em>during</em> 接事件或時段名稱，<em>since</em> 接起點。"],
       "ex": [
         ["Returns must be made <em>within</em> 30 days of purchase.", "退貨必須在購買後三十天內辦理。"],
         ["The generator ran <em>for</em> three hours <em>during</em> the power cut.", "停電期間，發電機運轉了三個小時。"],
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "head": ["as of, prior to, following, upon", "as of、prior to、following、upon 的用法"],
+      "head": ["as of, prior to, following, upon", "as of、prior to、following、upon 的意思"],
       "body": ["<em>as of</em> gives the date something starts to apply. <em>prior to</em> means before, <em>following</em> means after, and <em>upon</em> means as soon as.", "<em>as of</em> 表示自某日起生效。<em>prior to</em> 等於 before，<em>following</em> 等於 after，<em>upon</em> 表示「一……就」。"],
       "ex": [
         ["The new policy takes effect <em>as of</em> July 1.", "新政策自七月一日起生效。"],
@@ -62,7 +62,7 @@
   ],
   "pairs": [
     {"right": "Please return the form by Friday.", "wrong": "Please return the form until Friday.", "why": ["Returning the form happens once, so it needs a deadline word: <em>by</em>.", "交回表格是一次性的動作，要用表示期限的 <em>by</em>。"]},
-    {"right": "The meeting lasted for three hours.", "wrong": "The meeting lasted during three hours.", "why": ["<em>three hours</em> is a length of time, so use <em>for</em>. <em>during</em> needs the name of an event.", "three hours 是時間長度，用 <em>for</em>。<em>during</em> 後面要接事件名稱。"]},
+    {"right": "The meeting lasted for three hours.", "wrong": "The meeting lasted during three hours.", "why": ["<em>three hours</em> is a length of time, so use <em>for</em>. <em>during</em> goes with a named event or period, not a number of hours.", "three hours 是時間長度，用 <em>for</em>。<em>during</em> 後面接事件或時段名稱，不接幾個小時這種長度。"]},
     {"right": "We have worked here since 2019.", "wrong": "We have worked here for 2019.", "why": ["<em>2019</em> is a starting point, so use <em>since</em> with the present perfect.", "2019 是起點，要用 <em>since</em>，搭配現在完成式。"]}
   ],
   "lists": [
@@ -77,7 +77,7 @@
   ],
   "traps": [
     ["<em>in time</em> means early enough to catch or join something. <em>on time</em> means exactly at the scheduled moment.", "<em>in time</em> 表示及時，趕得上。<em>on time</em> 表示準時，不早不晚。"],
-    ["<em>since</em> goes with the present perfect and a starting point (<em>since March</em>). <em>for</em> goes with a length (<em>for six months</em>).", "<em>since</em> 搭配現在完成式和起點（<em>since March</em>）。<em>for</em> 搭配長度（<em>for six months</em>）。"],
-    ["<em>upon</em> and <em>on</em> + <em>-ing</em> mean the same: <em>Upon receiving your payment</em> and <em>On receiving your payment</em> both mean 'as soon as we receive it'.", "<em>upon</em> 和 <em>on</em> 加 Ving 意思相同：<em>Upon receiving your payment</em> 和 <em>On receiving your payment</em> 都表示一收到款項就……"]
+    ["<em>since</em> usually goes with a perfect tense and a starting point (<em>since March</em>). <em>for</em> goes with a length (<em>for six months</em>).", "<em>since</em> 通常搭配完成式和起點（<em>since March</em>）。<em>for</em> 搭配長度（<em>for six months</em>）。"],
+    ["<em>upon</em> and <em>on</em> + <em>-ing</em> mean the same: <em>Upon receiving your payment</em> and <em>On receiving your payment</em> both mean 'as soon as we receive it'.", "<em>upon</em> 和 <em>on</em> 加 <em>-ing</em> 意思相同：<em>Upon receiving your payment</em> 和 <em>On receiving your payment</em> 都表示一收到款項就……"]
   ]
 }

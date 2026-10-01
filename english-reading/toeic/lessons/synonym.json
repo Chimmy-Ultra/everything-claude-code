@@ -9,7 +9,7 @@
   "rules": [
     {
       "head": ["Same idea, different verb pattern", "意思相同，動詞句型不同"],
-      "body": ["Forbid takes a person and to + verb. Prohibit, ban and prevent take a person and from + -ing. Allow, permit and enable take to + verb. The structure after the blank often decides the answer.", "forbid 接人加 to + 動詞；prohibit、ban、prevent 接人加 from + -ing；allow、permit、enable 接 to + 動詞。空格後的結構常常就是答案。"],
+      "body": ["Forbid takes a person and to + verb. Prohibit, ban and prevent take an object and from + -ing. Allow, permit and enable take to + verb. The structure after the blank often decides the answer.", "forbid 接人加 to + 動詞；prohibit、ban、prevent 接受詞加 from + -ing；allow、permit、enable 接 to + 動詞。空格後的結構常常就是答案。"],
       "ex": [
         ["Company policy <em>forbids</em> employees <em>to</em> share their passwords.", "公司規定禁止員工分享密碼。"],
         ["The new rule <em>prohibits</em> visitors <em>from</em> taking photographs.", "新規定禁止訪客拍照。"],
@@ -18,7 +18,7 @@
     },
     {
       "head": ["Following rules: the preposition decides", "遵守規定：看介系詞"],
-      "body": ["Comply goes with with, abide with by, adhere and conform with to. All four mean “follow a rule”, but each needs its own small word. Observe takes the rule directly.", "comply 搭 with，abide 搭 by，adhere、conform 搭 to，都是「遵守」，但各有各的小字。observe 則直接接受詞。"],
+      "body": ["Comply goes with with, abide with by, adhere and conform usually with to. All four mean “follow a rule”, but each has its own usual small word. Observe takes the rule directly.", "comply 搭 with，abide 搭 by，adhere、conform 通常搭 to，都是「遵守」，但各有各慣用的小字。observe 則直接接受詞。"],
       "ex": [
         ["All contractors must <em>comply with</em> the safety code.", "所有承包商都必須遵守安全規範。"],
         ["Staff are expected to <em>abide by</em> the dress code.", "員工須遵守服裝規定。"],
@@ -27,7 +27,7 @@
     },
     {
       "head": ["Cost, charge, spend, pay: who is the subject?", "cost、charge、spend、pay：看主詞是誰"],
-      "body": ["A thing costs a person an amount. A seller charges a customer an amount. A person spends money on something and pays an amount for it. The subject tells you which verb fits.", "東西 cost 人金額；賣方 charge 顧客金額；人 spend 錢在某物上，也為某物 pay 金額。看主詞是什麼，就知道用哪個字。"],
+      "body": ["A thing costs a person an amount. A seller charges a customer an amount. A person spends money or time on something and pays an amount for it. The subject tells you which verb fits.", "東西 cost 人金額；賣方 charge 顧客金額；人 spend 錢或時間在某事上，也為某物 pay 金額。看主詞是什麼，就知道用哪個字。"],
       "ex": [
         ["The repair <em>cost</em> us two hundred dollars.", "這次維修花了我們兩百美元。"],
         ["The hotel <em>charges</em> guests a fee for late checkout.", "飯店對延後退房的房客收費。"],
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "head": ["Follow a rule or give it up", "遵守規定與免除"],
+      "head": ["Follow a rule or be excused from it", "遵守規定與免除"],
       "items": [
         ["comply with", "遵守"],
         ["abide by", "遵守"],
@@ -113,12 +113,12 @@
     {
       "head": ["Pay and money terms", "薪資與金錢用詞"],
       "items": [
-        ["wage: paid by the hour or week", "工資，按時或按週"],
-        ["salary: fixed pay by month or year", "薪水，按月或按年"],
+        ["wage: paid by the hour or week", "工資，按時薪或週薪計"],
+        ["salary: fixed pay by month or year", "薪水，按月薪或年薪計"],
         ["commission: share of sales made", "佣金，按業績抽成"],
-        ["allowance: fixed extra for expenses", "津貼，固定額外給付"],
+        ["allowance: fixed extra for expenses", "津貼，為特定開銷固定加給"],
         ["pension: income after retirement", "退休金"],
-        ["incur costs or expenses", "產生費用"]
+        ["bonus: extra pay for results", "獎金，依表現額外給付"]
       ]
     }
   ],

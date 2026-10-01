@@ -9,7 +9,7 @@
   "rules": [
     {
       "head": ["Basic if-patterns", "基本 if 句型"],
-      "body": ["Unreal present: <em>if</em> + past, <em>would</em> + base verb, with <em>were</em> for every subject. Unreal past: <em>if</em> + <em>had</em> + past participle, <em>would have</em> + past participle.", "與現在事實相反：<em>if</em> + 過去式，主句 <em>would</em> + 原形，be 動詞一律用 <em>were</em>。與過去事實相反：<em>if</em> + <em>had</em> + 過去分詞，主句 <em>would have</em> + 過去分詞。"],
+      "body": ["Unreal present: <em>if</em> + past, <em>would</em> + base verb, with <em>were</em> for every subject in formal English. Unreal past: <em>if</em> + <em>had</em> + past participle, <em>would have</em> + past participle.", "與現在事實相反：<em>if</em> + 過去式，主句 <em>would</em> + 原形，正式英文中 be 動詞一律用 <em>were</em>。與過去事實相反：<em>if</em> + <em>had</em> + 過去分詞，主句 <em>would have</em> + 過去分詞。"],
       "ex": [
         ["If I <em>were</em> in charge, I would hire more staff.", "如果我是負責人，我會多聘一些人。"],
         ["If we <em>had known</em> about the delay, we would have changed the schedule.", "如果我們早知道會延誤，就會改行程了。"]
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "head": ["Without, but for, otherwise", "Without、but for、otherwise 的用法"],
+      "head": ["Without, but for, otherwise", "Without、but for、otherwise 表示「如果沒有」"],
       "body": ["These words carry the 'if' meaning themselves. The other clause uses <em>would</em> or <em>could have</em>.", "這幾個字本身就帶有「如果」的意思。另一半句子用 <em>would</em> 或 <em>could have</em>。"],
       "ex": [
         ["<em>Without</em> your help, we could not have finished the project.", "沒有你的幫忙，我們不可能完成這個計畫。"],
@@ -48,12 +48,12 @@
       ]
     },
     {
-      "head": ["wish, as if, it's time", "wish、as if、it's time 的用法"],
-      "body": ["After <em>wish</em> and unreal <em>as if</em>, the verb steps back one tense: past for the present. <em>It's time</em> + past means it should already have been done.", "<em>wish</em> 和表示不符事實的 <em>as if</em> 後面，動詞往過去退一格：現在的事用過去式。<em>It's time</em> 加過去式，表示早就該做了。"],
+      "head": ["wish, as if, it's time", "wish、as if、it's time 後的動詞形式"],
+      "body": ["After <em>wish</em> and unreal <em>as if</em>, the verb steps back one tense: past for the present. <em>It's time</em> + past means the moment to act has come.", "<em>wish</em> 和表示不符事實的 <em>as if</em> 後面，動詞往過去退一格：現在的事用過去式。<em>It's time</em> 加過去式，表示現在該做這件事了。"],
       "ex": [
         ["I wish I <em>had</em> more time to prepare for the presentation.", "真希望我有更多時間準備簡報。"],
         ["He talks as if he <em>were</em> the CEO.", "他講話的樣子好像他是執行長一樣。"],
-        ["It's time we <em>updated</em> the company website.", "我們早就該更新公司網站了。"]
+        ["It's time we <em>updated</em> the company website.", "我們該更新公司網站了。"]
       ]
     },
     {
@@ -74,6 +74,6 @@
   "traps": [
     ["<em>Only</em> before the subject does not trigger inversion: <em>Only employees with badges may enter</em>. Inversion follows an opening <em>Only</em> + time or condition phrase.", "<em>Only</em> 直接修飾主詞時不倒裝：<em>Only employees with badges may enter</em>。句首是 <em>Only</em> + 時間或條件片語時才倒裝。"],
     ["<em>in case</em> means 'as a precaution'; <em>if</em> means 'on the condition that'. <em>Bring an umbrella in case it rains</em> and <em>bring an umbrella if it rains</em> are different instructions.", "<em>in case</em> 是「以防萬一」；<em>if</em> 是「如果」。<em>Bring an umbrella in case it rains</em> 和 <em>bring an umbrella if it rains</em> 是不同的指示。"],
-    ["Do not combine <em>if</em> with an inverted form. Use <em>If you should need help</em> or <em>Should you need help</em>, never both.", "<em>if</em> 不能和倒裝形式並用。要寫 <em>If you should need help</em> 或 <em>Should you need help</em>，不能兩個一起用。"]
+    ["Do not put <em>if</em> before an inverted form. Write <em>If you should need help</em> or <em>Should you need help</em>, not <em>If should you need help</em>.", "倒裝句前面不能再加 <em>if</em>。要寫 <em>If you should need help</em> 或 <em>Should you need help</em>，不能寫成 <em>If should you need help</em>。"]
   ]
 }

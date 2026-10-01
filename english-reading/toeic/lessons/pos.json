@@ -34,13 +34,13 @@
     },
     {
       "head": ["Check whether a main verb is missing", "先檢查有沒有主要動詞"],
-      "body": ["If the sentence has no main verb yet, the blank is the verb. If a main verb is already there, the blank is a noun, adjective or adverb.", "句子還沒有主要動詞，空格就要填動詞；已經有了，空格就是名詞、形容詞或副詞。"],
+      "body": ["If the sentence has no main verb yet, the blank is the verb. If a main verb is already there, the blank is usually a noun, adjective or adverb.", "句子還沒有主要動詞，空格就要填動詞；已經有了，空格通常是名詞、形容詞或副詞。"],
       "ex": [["Ms. Ito <em>approves</em> all travel requests.", "伊藤女士核准所有的出差申請。"], ["The <em>approval</em> of travel requests takes two days.", "出差申請的核准需要兩天。"]]
     }
   ],
   "pairs": [
     {"right": "The company remains profitable.", "wrong": "The company remains profitably.", "why": ["Remain links the subject to a description, so it takes an adjective.", "remain 是連綴動詞，後面描述主詞的狀態，要用形容詞。"]},
-    {"right": "Attendance at the seminar was higher than expected.", "wrong": "Attendees at the seminar was higher than expected.", "why": ["The sentence measures how many came, so the noun is attendance. Attendees names people and needs a plural verb.", "這句在講出席人數，要用 attendance。attendees 指人，而且是複數，動詞也對不上。"]},
+    {"right": "Attendance at the seminar was higher than expected.", "wrong": "Attendees at the seminar were higher than expected.", "why": ["The sentence measures how many came, so the noun is attendance. Attendees names the people, and people cannot be higher than expected.", "這句在講出席人數，要用 attendance。attendees 指的是人，人不能「比預期高」。"]},
     {"right": "All employees must follow the safety regulations.", "wrong": "All employees must follow the safe regulations.", "why": ["Safety regulations are rules about safety. Safe regulations would mean rules that are not dangerous.", "safety regulations 是安全規範；safe regulations 會變成「不危險的規範」，意思不通。"]}
   ],
   "lists": [

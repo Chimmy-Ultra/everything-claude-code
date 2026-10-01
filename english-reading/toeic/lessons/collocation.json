@@ -28,16 +28,16 @@
     },
     {
       "head": ["Adverb + adjective or verb: not interchangeable", "副詞搭配：不能隨意替換"],
-      "body": ["Adverbs such as highly, strongly, greatly and heavily all mean “very”, but each keeps its own partners. Learn the common pairs instead of guessing from the meaning.", "highly、strongly、greatly、heavily 都有「很」的意思，但各有固定夥伴。要記常見搭配，不要憑字義猜。"],
+      "body": ["Adverbs such as highly, strongly, greatly and heavily all add strength, but each keeps its own partners. Learn the common pairs instead of guessing from the meaning.", "highly、strongly、greatly、heavily 都有加強語氣的作用，但各有固定夥伴。要記常見搭配，不要憑字義猜。"],
       "ex": [
-        ["This model is <em>highly</em> recommended by our technicians.", "這款機型深受我們技師推薦。"],
+        ["This model is <em>highly</em> recommended by our technicians.", "我們的技師高度推薦這款機型。"],
         ["We <em>strongly</em> advise customers to back up their files.", "我們強烈建議顧客備份檔案。"],
         ["The firm depends <em>heavily</em> on a few large clients.", "這家公司非常依賴少數幾個大客戶。"]
       ]
     },
     {
       "head": ["Same meaning in Chinese, different verb in English", "中文同一個詞，英文不同動詞"],
-      "body": ["Say “提出” in Chinese and you can mean raise, submit, lodge or propose. The noun decides which: a concern is raised, a form is submitted, a complaint is filed, a plan is proposed.", "中文都說「提出」，英文可能是 raise、submit、lodge、propose。看名詞：疑慮用 raise，表格用 submit，申訴用 file，計畫用 propose。"],
+      "body": ["Say “提出” in Chinese and you can mean raise, submit, file or propose. The noun decides which: a concern is raised, a form is submitted, a complaint is filed, a plan is proposed.", "中文都說「提出」，英文可能是 raise、submit、file、propose。看名詞：疑慮用 raise，表格用 submit，申訴用 file，計畫用 propose。"],
       "ex": [
         ["Several staff <em>raised</em> concerns about the new schedule.", "數位員工對新班表提出疑慮。"],
         ["Applicants must <em>submit</em> the form by Friday.", "申請人必須在星期五前提交表格。"]
@@ -45,7 +45,7 @@
     },
     {
       "head": ["Time and manner phrases are fixed too", "時間與方式片語也是固定的"],
-      "body": ["Phrases about timing keep one preposition and one noun: in advance, on time, ahead of schedule, at short notice. Changing any word breaks the phrase.", "表示時間的片語，介系詞和名詞都是固定的：in advance、on time、ahead of schedule、at short notice。換掉任一個字就不對。"],
+      "body": ["Phrases about timing keep their own preposition and noun: in advance, on time, ahead of schedule, at short notice. Changing one word often breaks the phrase.", "表示時間的片語，介系詞和名詞都是固定的：in advance、on time、ahead of schedule、at short notice。換掉其中一個字，常常就不對了。"],
       "ex": [
         ["The caterer can deliver <em>at short notice</em> if we call before noon.", "如果我們中午前打電話，外燴業者可以臨時送餐。"],
         ["Please book your room <em>well in advance</em>.", "請提早預訂您的房間。"]
@@ -61,10 +61,10 @@
     }
   ],
   "pairs": [
-    {"right": "The two firms reached an agreement on delivery dates.", "wrong": "The two firms got an agreement on delivery dates.", "why": ["An agreement is reached, not got or made in this sense.", "協議是用 reach 達成的，這裡不用 get。"]},
+    {"right": "The two firms reached an agreement on delivery dates.", "wrong": "The two firms got an agreement on delivery dates.", "why": ["An agreement is reached, not got.", "協議是用 reach 達成的，這裡不用 get。"]},
     {"right": "The contract came into effect on March 1.", "wrong": "The contract came effect on March 1.", "why": ["Come needs into before effect. Take effect needs no preposition.", "come 後面要有 into；take effect 則不需要介系詞。"]},
     {"right": "Please pay attention to the safety notice.", "wrong": "Please pay attention on the safety notice.", "why": ["The fixed phrase is pay attention to.", "固定說法是 pay attention to。"]},
-    {"right": "The software is highly competitive in this market.", "wrong": "The software is strongly competitive in this market.", "why": ["Highly goes with competitive. Strongly goes with verbs like recommend and support.", "competitive 搭 highly；strongly 多搭 recommend、support 這類動詞。"]}
+    {"right": "The firm depends heavily on a few large clients.", "wrong": "The firm depends highly on a few large clients.", "why": ["Depend goes with heavily. Highly goes with words like recommended and competitive.", "depend 搭 heavily；highly 多搭 recommended、competitive 這類字。"]}
   ],
   "lists": [
     {
@@ -105,19 +105,19 @@
       "head": ["Adverb + adjective or verb", "副詞 + 形容詞或動詞"],
       "items": [
         ["highly recommended", "高度推薦"],
-        ["highly competitive", "高度競爭的"],
+        ["highly competitive", "競爭力強、競爭激烈"],
         ["strongly recommend", "強烈建議"],
-        ["greatly appreciated", "非常感謝"],
-        ["heavily discounted", "大幅折扣的"],
+        ["greatly appreciated", "十分感激"],
+        ["heavily discounted", "大幅打折的"],
         ["closely monitor", "密切監控"],
         ["readily available", "隨時可得"],
         ["widely used", "廣泛使用"],
         ["fully refundable", "可全額退款"],
-        ["rise sharply", "急遽上升"]
+        ["carefully review", "仔細審查"]
       ]
     },
     {
-      "head": ["Phrases built on a noun", "以名詞為核心的片語"],
+      "head": ["More set phrases with verbs", "其他動詞慣用語"],
       "items": [
         ["bear in mind", "記住、留意"],
         ["keep an eye on", "留意、看管"],
@@ -131,8 +131,8 @@
     }
   ],
   "traps": [
-    ["Do not translate word by word from Chinese. Do a decision and do a mistake feel natural in Chinese, but English says make a decision and make a mistake.", "不要逐字從中文翻。「做決定」「犯錯」中文都用「做／犯」，但英文是 make a decision、make a mistake。"],
+    ["Do not translate word by word from Chinese. English says make a decision and make a mistake, not do a decision or do a mistake.", "不要逐字從中文翻。英文是 make a decision、make a mistake，不是 do a decision、do a mistake。"],
     ["Options that look like synonyms are usually other words' partners. If an option goes naturally with a different noun, it is probably the trap.", "意思相近的選項，通常是別的名詞的搭配。如果某個選項明顯屬於另一個名詞，它多半是陷阱。"],
-    ["A phrase can be right with a different small word. Come into effect is fine, but come effect is not. Read the words just before and after the blank.", "同一個片語少了小字就不對。come into effect 可以，come effect 不行。要看空格前後的字。"]
+    ["A phrase goes wrong when a small word is missing or changed. Come into effect is fine, but come effect is not. Read the words just before and after the blank.", "片語少了小字或換了小字就不對。come into effect 可以，come effect 不行。要看空格前後的字。"]
   ]
 }

@@ -14,7 +14,7 @@
       "問這個名詞是做動作還是承受動作。做動作用 -ing，承受用 -ed。"
     ],
     [
-      "If the blank opens the sentence, the subject after the comma must be the one doing or receiving the action.",
+      "If the blank opens the sentence, the subject after the comma should be the one doing or receiving the action.",
       "空格在句首時，逗號後面的主詞要是做或承受這個動作的人或物。"
     ]
   ],
@@ -172,7 +172,7 @@
   ],
   "traps": [
     [
-      "The subject of an opening participle phrase must match the main subject. In the sentence beginning When reviewing the report, errors were found, errors cannot review, so it is wrong.",
+      "The subject of an opening participle phrase should match the main subject. In the sentence beginning When reviewing the report, errors were found, errors cannot review, so it is wrong.",
       "句首分詞片語的主詞要和主句主詞相同。When reviewing the report, errors were found 是錯的，因為 errors 不會自己審閱。"
     ],
     [
@@ -180,8 +180,8 @@
       "分詞本身不表示時間。the attached file 不是「正在被附上」。要看主動或被動，不是看時間。"
     ],
     [
-      "If the sentence already has a main verb, the blank cannot be another finite verb. Look for a participle that describes the noun.",
-      "句子已經有主要動詞，空格就不能再放一個動詞，要找修飾名詞的分詞。"
+      "If the sentence already has a main verb and no conjunction, the blank cannot be another finite verb. Look for a participle that describes the noun.",
+      "句子已經有主要動詞、也沒有連接詞時，空格就不能再放一個動詞，要找修飾名詞的分詞。"
     ]
   ]
 }

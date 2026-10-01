@@ -25,7 +25,7 @@
     },
     {
       "head": ["The + superlative", "the 加最高級"],
-      "body": ["A superlative takes <em>the</em> and usually a group: <em>of all, in the region, among, ever</em>. <em>One of the</em> + superlative is followed by a plural noun.", "最高級前面有 <em>the</em>，後面常有範圍：<em>of all、in the region、among、ever</em>。<em>one of the</em> 加最高級，後面接複數名詞。"],
+      "body": ["A superlative usually takes <em>the</em>, and often a phrase that sets the group: <em>of all, in the region, among</em>. <em>One of the</em> + superlative is followed by a plural noun.", "最高級前面通常有 <em>the</em>，後面常有指出範圍的片語：<em>of all、in the region、among</em>。<em>one of the</em> 加最高級，後面接複數名詞。"],
       "ex": [
         ["This is <em>the most</em> popular product in our catalog.", "這是我們型錄上最受歡迎的產品。"],
         ["Taipei is one of <em>the largest</em> markets in the region.", "台北是這個地區最大的市場之一。"]
@@ -33,7 +33,7 @@
     },
     {
       "head": ["The more …, the more …", "越……越……"],
-      "body": ["<em>the</em> + comparative, <em>the</em> + comparative. The first part is the cause, the second part is the result. Both parts need <em>the</em>.", "<em>the</em> + 比較級，<em>the</em> + 比較級。前半是條件，後半是結果。兩邊都要有 <em>the</em>。"],
+      "body": ["<em>the</em> + comparative, <em>the</em> + comparative. The first part is the condition, the second part is the result. Both parts need <em>the</em>.", "<em>the</em> + 比較級，<em>the</em> + 比較級。前半是條件，後半是結果。兩邊都要有 <em>the</em>。"],
       "ex": [
         ["<em>The sooner</em> you register, <em>the more</em> you save.", "越早報名，省得越多。"],
         ["<em>The earlier</em> the team starts, <em>the sooner</em> it finishes.", "團隊越早開始，就越早完成。"]
@@ -49,7 +49,7 @@
     },
     {
       "head": ["Fixed comparison patterns", "固定的比較搭配"],
-      "body": ["<em>any other</em> takes a singular noun. <em>superior, inferior, senior, junior, prior</em> take <em>to</em>, not <em>than</em>. <em>prefer A to B</em>. Between two things, use <em>the</em> + comparative.", "<em>any other</em> 後面接單數名詞。<em>superior、inferior、senior、junior、prior</em> 後面接 <em>to</em>，不接 <em>than</em>。<em>prefer A to B</em>。兩者之間用 <em>the</em> + 比較級。"],
+      "body": ["<em>any other</em> takes a singular noun. <em>superior, inferior, senior, junior, prior</em> take <em>to</em>, not <em>than</em>. <em>prefer A to B</em>. Choosing one of two, formal English uses <em>the</em> + comparative.", "<em>any other</em> 後面接單數名詞。<em>superior、inferior、senior、junior、prior</em> 後面接 <em>to</em>，不接 <em>than</em>。<em>prefer A to B</em>。從兩者中選一個時，正式英文用 <em>the</em> + 比較級。"],
       "ex": [
         ["This laptop is lighter than <em>any other</em> model on the market.", "這台筆電比市面上任何其他型號都輕。"],
         ["Their customer service is <em>superior to</em> ours.", "他們的客服比我們的好。"],
@@ -64,11 +64,11 @@
     {"right": "Our prices are lower than those of our competitors.", "wrong": "Our prices are lower than our competitors.", "why": ["Compare prices with prices: <em>those of</em> stands for <em>the prices of</em>.", "要拿價格比價格：<em>those of</em> 代表 <em>the prices of</em>。"]}
   ],
   "lists": [
-    {"head": ["Adjectives followed by to", "後面接 to 的形容詞"], "items": [
+    {"head": ["Words followed by to", "後面接 to 的字"], "items": [
       ["superior to", "優於"], ["inferior to", "劣於"], ["senior to", "職位高於"], ["junior to", "職位低於"],
       ["prior to", "在……之前"], ["similar to", "類似於"], ["prefer A to B", "喜歡 A 勝過 B"], ["equal to", "等於"]
     ]},
-    {"head": ["Words that strengthen a comparative", "加強比較級的字"], "items": [
+    {"head": ["Words that go before a comparative", "放在比較級前面的字"], "items": [
       ["much cheaper", "便宜得多"], ["far more reliable", "可靠得多"], ["even better", "甚至更好"], ["still higher", "仍然更高"],
       ["a lot faster", "快很多"], ["significantly lower", "明顯較低"], ["considerably larger", "大得多"], ["slightly smaller", "稍微小一點"]
     ]}

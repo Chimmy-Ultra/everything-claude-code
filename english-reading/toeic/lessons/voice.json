@@ -93,8 +93,8 @@
         "raise 與 rise、lay 與 lie"
       ],
       "body": [
-        "Raise and lay need an object. Rise and lie do not, and they have no passive. If no object follows, rise is the verb that fits.",
-        "raise、lay 後面要有受詞；rise、lie 不需要受詞，也沒有被動。後面沒有受詞時，選 rise。"
+        "Raise and lay need an object. Rise and lie do not, and they have no passive. In an active sentence with no object, rise is the verb that fits.",
+        "raise、lay 後面要有受詞；rise、lie 不需要受詞，也沒有被動。主動句後面沒有受詞時，選 rise。"
       ],
       "ex": [
         [
@@ -189,8 +189,8 @@
       "right": "Mr. Chen was awarded a bonus.",
       "wrong": "Mr. Chen awarded a bonus.",
       "why": [
-        "Mr. Chen received the bonus, so the verb is passive. A bonus is the object left over after the passive.",
-        "陳先生是得到獎金的人，要用被動。a bonus 是被動後剩下的那個受詞。"
+        "Here Mr. Chen is the one who receives the bonus, so the verb is passive. Active awarded would mean he gave it to someone. A bonus is the object left over after the passive.",
+        "這裡陳先生是得到獎金的人，所以要用被動。主動的 awarded 會變成他頒發獎金給別人。a bonus 是被動後剩下的那個受詞。"
       ]
     }
   ],

@@ -41,7 +41,7 @@
       ]
     },
     {
-      "head": ["make, let, have, help, get", "make、let、have、help、get 的用法"],
+      "head": ["make, let, have, help, get", "make、let、have、help、get 後接什麼"],
       "body": ["<em>make, let, have</em> + object + base verb. <em>help</em> + object takes a base verb or <em>to</em> + verb. <em>get</em> + object takes <em>to</em> + verb.", "<em>make、let、have</em> + 受詞 + 原形動詞。<em>help</em> + 受詞之後，接原形或 <em>to</em> + 動詞都可以。<em>get</em> + 受詞 + <em>to</em> + 動詞。"],
       "ex": [
         ["The director had her assistant <em>book</em> the flights.", "主任請她的助理訂機票。"],
@@ -74,13 +74,13 @@
       ["expect to receive", "預期收到"], ["offer to help", "主動提議幫忙"], ["refuse to sign", "拒絕簽名"], ["fail to meet", "未能達到"]
     ]},
     {"head": ["<em>to</em> as a preposition", "<em>to</em> 當介系詞"], "items": [
-      ["look forward to meeting", "期待見面"], ["be committed to improving", "致力於改善"], ["be dedicated to serving", "專心為……服務"], ["be used to working", "習慣於工作"],
+      ["look forward to meeting", "期待見面"], ["be committed to improving", "致力於改善"], ["be dedicated to serving", "致力於服務"], ["be used to working", "習慣於工作"],
       ["in addition to managing", "除了管理之外"], ["contribute to reducing", "有助於減少"], ["object to changing", "反對更改"], ["with a view to expanding", "為了擴張"]
     ]}
   ],
   "traps": [
     ["Seeing <em>to</em> before the blank does not mean a base verb follows. Test with a noun: <em>look forward to the meeting</em> works, so <em>-ing</em> follows.", "看到空格前有 <em>to</em>，不代表後面接原形動詞。用名詞測試：<em>look forward to the meeting</em> 說得通，所以後面接 <em>-ing</em>。"],
     ["<em>stop, forget, try</em> change meaning with the form. <em>stop to check</em> means pause in order to check; <em>stop checking</em> means quit checking.", "<em>stop、forget、try</em> 接不同形式，意思不同。<em>stop to check</em> 是停下來去檢查；<em>stop checking</em> 是不再檢查。"],
-    ["<em>recommend</em> and <em>suggest</em> take <em>-ing</em> or a that-clause. The verb in that clause is in the base form.", "<em>recommend</em> 和 <em>suggest</em> 後面接 <em>-ing</em> 或 that 子句。that 子句裡的動詞用原形。"]
+    ["<em>recommend</em> and <em>suggest</em> take <em>-ing</em> or a that-clause. After a request, the verb in that clause is usually in the base form: <em>suggest that she apply</em>.", "<em>recommend</em> 和 <em>suggest</em> 後面接 <em>-ing</em> 或 that 子句。表示要求時，that 子句裡的動詞通常用原形：<em>suggest that she apply</em>。"]
   ]
 }

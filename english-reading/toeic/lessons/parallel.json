@@ -20,7 +20,7 @@
       "head": ["Same form on both sides", "兩邊的形式要一致"],
       "body": ["After <em>and, or, but</em>, each item has the same form as the one before: noun with noun, adjective with adjective, base verb with base verb, <em>-ing</em> with <em>-ing</em>.", "用 <em>and</em>、<em>or</em>、<em>but</em> 連接時，每一項和前一項的形式要相同：名詞配名詞、形容詞配形容詞、原形動詞配原形動詞、<em>-ing</em> 配 <em>-ing</em>。"],
       "ex": [
-        ["The job requires creativity, patience, and <em>attention</em> to detail.", "這份工作需要創意、耐心和對細節的注意。"],
+        ["The job requires creativity, patience, and <em>attention</em> to detail.", "這份工作需要創意、耐心和對細節的關注。"],
         ["Our goal is to design, test, and <em>install</em> the system by June.", "我們的目標是在六月前設計、測試並安裝這套系統。"],
         ["The course is practical, affordable, and <em>easy</em> to follow.", "這門課很實用、價格合理，也容易跟上。"]
       ]
@@ -30,7 +30,7 @@
       "body": ["With <em>neither … nor</em> and <em>either … or</em>, the verb agrees with the noun closer to it.", "用 <em>neither … nor</em> 和 <em>either … or</em> 時，動詞和離它比較近的那個名詞一致。"],
       "ex": [
         ["<em>Neither</em> the director <em>nor</em> her assistants were available.", "主任和她的助理們都沒空。"],
-        ["<em>Either</em> the manager <em>or</em> the supervisors are expected to attend.", "經理或主管們其中之一要出席。"]
+        ["<em>Either</em> the manager <em>or</em> the supervisors are expected to attend.", "經理或主管們，要有一方出席。"]
       ]
     },
     {
