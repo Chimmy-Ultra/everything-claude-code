@@ -3,44 +3,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Noto+Serif+TC:wght@400;500;700&display=swap">
 <style>
-/* Layout: one reading column like a printed page, with a margin column for notes on wide screens. */
+/* Layout: one reading column like a printed page; while answering, only the question and its options are on the page. */
 :root{
-  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E8ECE5;
+  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --faint:#8E958F; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E6EAE3;
   --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1D221F; color-scheme:dark}
+  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1E2420; color-scheme:dark}
 }
-:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1D221F; color-scheme:dark}
+:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1E2420; color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font:400 17px/1.8 var(--en),var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 72px;font-variant-numeric:oldstyle-nums}
-:lang(zh), .zh{font-family:var(--zh)}
 .book{max-width:34rem;margin:0 auto}
-.wide,.frame{max-width:34rem;margin:0 auto}
-@media (min-width:980px){.frame{max-width:50rem}}
-@media (min-width:980px){.wide{max-width:50rem;display:grid;grid-template-columns:minmax(0,34rem) minmax(0,13rem);column-gap:3rem}}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
-a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
-.sc{font-family:var(--en);font-variant-caps:all-small-caps;letter-spacing:.09em;font-size:1.02em}
+.sc{font-family:var(--en);font-variant-caps:all-small-caps;letter-spacing:.09em}
 .link{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
-.link:hover{text-decoration-thickness:2px}
 
-/* masthead */
-.mast{padding-block:56px 8px;text-align:left}
+/* contents */
+.mast{padding-block:56px 8px}
 .mast .sc{color:var(--soft);font-size:15px}
 h1{font:500 clamp(34px,7vw,46px)/1.15 var(--zh);margin:.15em 0 0;letter-spacing:.02em}
-h1 .en{font-family:var(--en);font-weight:500;letter-spacing:0}
-
-/* home */
-.note{margin:28px 0 0;max-width:32em}
-.note + .note{margin-top:10px}
+.note{margin:28px 0 0;font-family:var(--zh)}
+.note + .note{margin-top:6px}
 .quiet{color:var(--soft)}
 .toc{margin-top:44px;display:grid;gap:34px}
 .part h2{font:500 15px/1.4 var(--zh);color:var(--soft);margin:0 0 10px;letter-spacing:.12em}
-.part h2 .sc{margin-left:.6em;letter-spacing:.09em}
+.part h2 .sc{margin-left:.6em}
 .part ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
 .part li{border-bottom:1px solid var(--rule)}
 .row{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;align-items:baseline;gap:0 .6em;width:100%;padding:11px 0;text-align:left;font-family:var(--zh)}
@@ -49,103 +41,94 @@ h1 .en{font-family:var(--en);font-weight:500;letter-spacing:0}
 .row .c{color:var(--soft);font:400 15px var(--en);font-variant-numeric:lining-nums tabular-nums}
 button.row .t{color:var(--accent)}
 button.row:hover .t{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
-.colophon{margin-top:56px;font-size:14px;color:var(--soft);border-top:1px solid var(--rule);padding-top:14px}
+.colophon{margin-top:56px;font:14px var(--zh);color:var(--faint)}
 
 /* question page */
-.head{display:flex;justify-content:space-between;gap:16px;padding-block:28px 10px;border-bottom:1px solid var(--rule);font-size:14px;color:var(--soft);font-family:var(--zh)}
-.head .pg{font-family:var(--en);font-variant-numeric:lining-nums}
-.back{color:var(--soft)}
-.back:hover{color:var(--ink)}
-.stem{font:400 clamp(20px,4.4vw,23px)/1.7 var(--en);margin:34px 0 26px;text-wrap:pretty;hanging-punctuation:first}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:28px 10px;font:14px var(--zh);color:var(--faint)}
+.head button{color:var(--faint)}
+.head button:hover{color:var(--ink)}
+.head .pg{font-family:var(--en);font-variant-numeric:lining-nums;margin-left:14px}
+.stem{font:400 clamp(20px,4.4vw,23px)/1.75 var(--en);margin:30px 0 26px;text-wrap:pretty}
 .blank{display:inline-block;min-width:4.6em;border-bottom:1.5px solid var(--ink);text-align:center;line-height:1.2;color:var(--accent);font-style:italic}
+.gl{text-decoration:underline dotted var(--faint);text-underline-offset:5px;text-decoration-thickness:1px;cursor:help}
 .opts{list-style:none;margin:0;padding:0;display:grid;gap:2px}
 .opt{display:grid;grid-template-columns:2.4em minmax(0,1fr);align-items:baseline;width:100%;text-align:left;padding:7px 0;font:400 19px/1.5 var(--en)}
 .opt .l{position:relative;display:inline-grid;place-items:center;width:1.7em;height:1.7em;font-size:16px;color:var(--soft)}
+.opt .l svg{position:absolute;left:-7px;top:-6px;width:calc(100% + 14px);height:calc(100% + 12px);overflow:visible;pointer-events:none}
+.opt .l path{fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
 .opt:not(:disabled):hover .w{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 .opt:disabled{cursor:default}
-.opt.right .l{color:var(--accent);font-weight:600}
-.opt.right .l::after{content:"";position:absolute;inset:-1px -3px;border:1.6px solid var(--accent);border-radius:52% 46% 50% 48%;transform:rotate(-8deg)}
-.opt.right .w{color:var(--accent)}
+.opt.right .l,.opt.right .w{color:var(--accent)}
 .opt.picked-wrong .w{text-decoration:line-through;text-decoration-color:var(--pencil);text-decoration-thickness:1.6px;color:var(--soft)}
 .opt.picked-wrong .l{color:var(--pencil)}
-.opt.dim .w{color:var(--soft)}
-.unsure{margin-top:14px;padding-top:12px;border-top:1px dashed var(--rule)}
-.unsure button{font:italic 400 18px var(--en);color:var(--soft)}
-.unsure button:not(:disabled):hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
-.unsure.on button{color:var(--accent)}
+.opt.dim .w,.opt.dim .l{color:var(--faint)}
+.unsure{margin-top:10px;padding-left:2.4em}
+.unsure button{font:italic 400 15px var(--en);color:var(--faint)}
+.unsure button:not(:disabled):hover{color:var(--soft)}
+.unsure button:disabled{cursor:default}
 
 /* the annotation */
-.ann{margin-top:38px;padding-top:6px}
-.verdict{font:500 21px/1.5 var(--zh);margin:0 0 4px}
-.verdict .en{font-family:var(--en);font-style:italic;font-weight:500}
-.verdict.ok{color:var(--accent)} .verdict.no{color:var(--pencil)}
-.ann .sub{margin:0 0 22px;color:var(--soft);font-family:var(--zh);font-size:15.5px}
-.ann h3{font:500 13.5px/1.4 var(--zh);letter-spacing:.14em;color:var(--soft);margin:26px 0 6px}
-.ann p{margin:0;font-family:var(--zh);max-width:32em}
-.point{font:500 18.5px/1.65 var(--zh)}
-.en-i{font-family:var(--en);font-style:italic;letter-spacing:0}
-.others{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-family:var(--zh)}
-.others li{display:grid;grid-template-columns:5.4em minmax(0,1fr);gap:.6em;align-items:baseline}
-.others .w{font:italic 400 17px var(--en);color:var(--soft)}
-.trans{font-size:16px;color:var(--soft)}
-.ann .see{margin-top:28px;font-size:15.5px;color:var(--soft);font-family:var(--zh)}
-.margin{font-family:var(--zh);font-size:15px;color:var(--soft);margin-top:30px;padding-top:12px;border-top:1px solid var(--rule)}
-@media (min-width:980px){.margin{margin-top:118px;border-top:0;padding-top:0;border-left:1px solid var(--rule);padding-left:18px;align-self:start}}
-.margin h4{font:500 13px/1.4 var(--zh);letter-spacing:.14em;margin:0 0 8px}
-.margin dl{margin:0;display:grid;gap:8px}
-.margin dt{font:italic 500 16.5px var(--en);color:var(--ink)}
-.margin dd{margin:0}
-.next{display:flex;justify-content:flex-end;margin-top:36px;border-top:1px solid var(--rule);padding-top:16px}
-.next button{font:500 17px var(--zh);color:var(--accent)}
+.ann{margin-top:34px;border-top:1px solid var(--rule);padding-top:22px;display:grid;gap:16px}
+.ann p{margin:0;max-width:34em}
+.para{cursor:pointer}
+.para .zh[hidden],.trans[hidden]{display:none}
+.para .zh{display:block;font:15.5px/1.75 var(--zh);color:var(--soft);margin-top:4px}
+.point{font:500 19px/1.6 var(--en)}
+.why{font-size:17.5px}
+.why em,.wr em,.point em{font-style:italic}
+.wr{display:grid;grid-template-columns:6.2em minmax(0,1fr);gap:.8em;align-items:baseline;font-size:16.5px;color:var(--soft)}
+.wr .w{font-style:italic;color:var(--faint)}
+.wr.mine .w{color:var(--pencil)}
+.wr.mine{color:var(--ink)}
+.wr .para{min-width:0}
+.trans{font:15.5px/1.75 var(--zh);color:var(--soft)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px;margin-top:6px;font-size:14px;color:var(--faint)}
+.foot a,.foot button{color:var(--faint);text-decoration:none}
+.foot a:hover,.foot button:hover{color:var(--soft)}
+.foot .zhb{font-family:var(--zh);font-size:13px;border:1px solid var(--rule);border-radius:3px;padding:0 5px;line-height:1.6}
+.foot .zhb[aria-pressed="true"]{color:var(--soft);border-color:var(--faint)}
+.next{display:flex;justify-content:flex-end;margin-top:30px}
+.next button{font:italic 500 18px var(--en);color:var(--accent)}
 .next button:hover{text-decoration:underline;text-underline-offset:4px}
-.end{padding-block:48px}
-.end p{font-family:var(--zh);max-width:32em}
+.tip{position:absolute;z-index:3;background:var(--ink);color:var(--paper);font:14.5px/1.5 var(--zh);padding:4px 10px;border-radius:4px;max-width:14em;pointer-events:none}
+.end{padding-block:56px}
 @media (prefers-reduced-motion: no-preference){
-  .ann{animation:rise .35s ease-out}
-  @keyframes rise{from{opacity:.001;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .opt.right .l path{animation:draw .5s ease-out both}
+  @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+  .ann{animation:rise .4s .15s ease-out both}
+  @keyframes rise{from{opacity:.001;transform:translateY(5px)}to{opacity:1;transform:none}}
 }
 </style>
 
 <main>
-  <!-- contents -->
   <section id="home" class="book">
     <header class="mast">
       <div class="sc">A workbook for TOEIC Parts 2–5</div>
       <h1>TOEIC 練習室</h1>
     </header>
-
     <p class="note">上次讀到〈詞性判斷〉第 2 題。<button class="link" id="resume" type="button">接著讀</button></p>
-    <p class="note quiet">今天沒有要複習的題。答錯的題和選了 <span class="en-i">I'm not sure</span> 的題，會在一天、三天、一週、兩週後回來找你。</p>
-
     <nav class="toc" aria-label="目錄" id="toc"></nav>
-
-    <p class="colophon">這是設計示範。題目和解說取自題庫；進度與複習狀態是示範用的，只有第一章可以作答。</p>
+    <p class="colophon">設計示範：只有第一章可以作答。</p>
   </section>
 
-  <!-- a page of questions -->
-  <section id="page" hidden>
-    <div class="frame head">
-      <button class="back" id="back" type="button">← 目錄</button>
-      <span><span id="chap">第一章　詞性判斷</span>　<span class="pg" id="pg"></span></span>
+  <section id="page" class="book" hidden>
+    <div class="head">
+      <button id="back" type="button">← 詞性判斷</button>
+      <span><button id="snd" type="button" aria-pressed="true">sound on</button><span class="pg" id="pg"></span></span>
     </div>
-    <div class="wide">
-      <div>
-        <p class="stem" id="stem"></p>
-        <ol class="opts" id="opts"></ol>
-        <div class="unsure" id="unsure"><button type="button" id="unsureBtn">I'm not sure</button></div>
-        <div class="ann" id="ann" hidden></div>
-      </div>
-      <aside class="margin" id="margin" hidden></aside>
-    </div>
-    <div class="frame next" id="nextWrap" hidden><button type="button" id="next"></button></div>
+    <p class="stem" id="stem"></p>
+    <ol class="opts" id="opts"></ol>
+    <div class="unsure"><button type="button" id="unsureBtn">I'm not sure</button></div>
+    <div class="ann" id="ann" hidden></div>
+    <div class="next" id="nextWrap" hidden><button type="button" id="next"></button></div>
   </section>
 
   <section id="end" class="book end" hidden>
-    <div class="sc quiet">End of sample</div>
-    <p>示範到這裡。正式版每一章讀完，會告訴你這一章答對幾題、哪幾題會回來複習，然後回到目錄。</p>
+    <p class="sc quiet">End of sample</p>
     <p><button class="link" id="home2" type="button">回到目錄</button></p>
   </section>
 </main>
+<div class="tip" id="tip" hidden></div>
 
 <script>
 const PARTS = [
@@ -156,25 +139,45 @@ const PARTS = [
 const NUM = "一二三四五六七八九十";
 const cn = n => n <= 10 ? NUM[n-1] : n < 20 ? "十" + NUM[n-11] : String(n);
 
+// Each explanation line is [English, Chinese]. Chinese stays hidden until asked for.
 const ITEMS = [
   {stem:"The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
    options:["access","accessibly","accessible","accessibility"], answer:2,
-   point:"make + 受詞 + 形容詞：受詞再長，後面還是接形容詞。",
-   why:"makes 的受詞是 the items that customers order most often，一路讀到這裡，後面還缺一個字說明這些商品「變得怎樣」，所以要形容詞 accessible。",
-   wrong:["far more access to the pickers 單看是通順的名詞片語。但往前找會看到 makes the items…，這個位置要說明 items 的狀態，只能用形容詞。","副詞不能說明受詞的狀態。",null,"名詞不能說明 the items 變得怎樣。"],
+   point:["<em>make</em> + object + adjective, however long the object is.","make + 受詞 + 形容詞：受詞再長，後面還是接形容詞。"],
+   why:["The object of <em>makes</em> is the whole phrase <em>the items that customers order most often</em>. The blank says what those items become, so it needs an adjective: <em>accessible</em>.","makes 的受詞是 the items that customers order most often，空格說明這些商品變得怎樣，要形容詞 accessible。"],
+   wrong:[["<em>far more access to the pickers</em> sounds fine on its own, but the blank belongs to <em>makes the items ___</em>. A noun can't say what the items become.","far more access to the pickers 單看通順，但空格接在 makes the items 後面，名詞不能說明商品變得怎樣。"],
+          ["An adverb can't say what the items become.","副詞不能說明受詞的狀態。"], null,
+          ["Also a noun. <em>Makes the items accessibility</em> doesn't work.","也是名詞，makes the items accessibility 說不通。"]],
    zh:"Pellridge 倉庫的新配置，讓顧客最常訂購的商品對早班揀貨員來說好拿得多。",
-   vocab:[["layout","配置、布局"],["picker","揀貨員"],["shift","班次"]]},
+   gloss:{layout:"配置、布局", pickers:"揀貨員", shift:"班次"}},
   {stem:"______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
    options:["Applications","Apply","Applying","Applied"], answer:0,
-   point:"句子已經有動詞了，空格要當主詞，所以用名詞。",
-   why:"這句的動詞在很後面：will be accepted。從空格到 Avenue 整段都是主詞，被受理的是「申請書」，要名詞 Applications。",
-   wrong:[null,"Apply for the … position 是徵才廣告常見的開頭，前半句單看完全對。但讀到 will be accepted 就知道它需要主詞，祈使句沒有位置給這個動詞。","當主詞時意思是「申請這個動作會被受理」，不通；被受理的是申請書。","過去式和過去分詞都不能當主詞。"],
+   point:["The sentence already has its verb, so the blank is the subject: a noun.","句子已經有動詞，空格要當主詞，用名詞。"],
+   why:["The main verb comes late: <em>will be accepted</em>. Everything from the blank to <em>Avenue</em> is the subject. What gets accepted? <em>Applications</em>.","主要動詞在後面：will be accepted。從空格到 Avenue 都是主詞。被受理的是什麼？申請書 Applications。"],
+   wrong:[null,
+          ["<em>Apply for the … position</em> is a common job-ad opening. But then <em>will be accepted</em> has no subject.","Apply for the … position 是徵才廣告常見的開頭，但這樣 will be accepted 就沒有主詞。"],
+          ["As a subject, it means the act of applying gets accepted. It's the applications that do.","當主詞時意思是「申請這個動作」被受理；被受理的是申請書。"],
+          ["A past form can't be the subject.","過去式或過去分詞不能當主詞。"]],
    zh:"副分行經理一職（工作地點在我們位於 Corliss Avenue 的新辦公室）的申請，在本月底前都可以透過線上系統送出。",
-   vocab:[["assistant branch manager","副分行經理"],["portal","入口網站、線上系統"]]},
+   gloss:{"assistant branch manager":"副分行經理", portal:"入口網站、線上系統"}},
 ];
 const L = "ABCD";
 const $ = id => document.getElementById(id);
-let at = 0;
+const CIRCLE = '<svg viewBox="0 0 48 40" aria-hidden="true"><path pathLength="1" d="M31 5C17 3 5 10 5 21c0 10 12 15 23 14 11-1 16-8 15-16C42 10 34 5 23 6"/></svg>';
+let at = 0, sound = true, ctx = null;
+try { sound = localStorage.getItem("book-sound") !== "off"; } catch (e) {}
+
+function tone(ok){
+  if (!sound) return;
+  try {
+    ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+    const t = ctx.currentTime, g = ctx.createGain(), o = ctx.createOscillator();
+    o.type = "sine"; o.frequency.value = ok ? 880 : 392;
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(ok ? 0.07 : 0.05, t + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + (ok ? 0.45 : 0.25));
+    o.connect(g).connect(ctx.destination); o.start(t); o.stop(t + 0.5);
+  } catch (e) {}
+}
 
 function toc(){
   const nav = $("toc"); nav.textContent = "";
@@ -193,15 +196,25 @@ function toc(){
   });
 }
 
-function show(id){ ["home","page","end"].forEach(x => $(x).hidden = x !== id); window.scrollTo(0, 0); }
+function show(id){ ["home","page","end"].forEach(x => $(x).hidden = x !== id); $("tip").hidden = true; window.scrollTo(0, 0); }
+function setSnd(){ $("snd").textContent = sound ? "sound on" : "sound off"; $("snd").setAttribute("aria-pressed", sound); }
+
+function stemHTML(it, filled){
+  let [a, b] = it.stem.split("______");
+  const blank = `<span class="blank">${filled ? it.options[it.answer] : "&nbsp;"}</span>`;
+  if (filled) for (const w of Object.keys(it.gloss)) {
+    const re = new RegExp(`\\b(${w})\\b`);
+    a = a.replace(re, `<span class="gl" tabindex="0" data-zh="${it.gloss[w]}">$1</span>`);
+    b = b.replace(re, `<span class="gl" tabindex="0" data-zh="${it.gloss[w]}">$1</span>`);
+  }
+  return a + blank + b;
+}
 
 function open(i){
   at = i; const it = ITEMS[i];
-  show("page");
+  show("page"); setSnd();
   $("pg").textContent = `${i+1} / 10`;
-  const [a, b] = it.stem.split("______");
-  $("stem").innerHTML = "";
-  $("stem").append(a, Object.assign(document.createElement("span"), {className:"blank", id:"blank", innerHTML:"&nbsp;"}), b);
+  $("stem").innerHTML = stemHTML(it, false);
   const ol = $("opts"); ol.textContent = "";
   it.options.forEach((w, k) => {
     const li = document.createElement("li");
@@ -210,43 +223,56 @@ function open(i){
     btn.onclick = () => answer(k);
     li.append(btn); ol.append(li);
   });
-  $("unsure").className = "unsure"; $("unsureBtn").disabled = false; $("unsureBtn").onclick = () => answer(-1);
-  $("ann").hidden = true; $("margin").hidden = true; $("nextWrap").hidden = true;
+  $("unsureBtn").disabled = false; $("unsureBtn").hidden = false;
+  $("ann").hidden = true; $("nextWrap").hidden = true;
 }
+
+const para = ([en, zh], cls) => `<p class="para ${cls || ""}" tabindex="0">${en}<span class="zh" hidden>${zh}</span></p>`;
 
 function answer(k){
   const it = ITEMS[at], ok = k === it.answer;
-  const btns = [...$("opts").querySelectorAll(".opt")];
-  btns.forEach((b, j) => {
+  [...$("opts").querySelectorAll(".opt")].forEach((b, j) => {
     b.disabled = true;
-    if (j === it.answer) b.classList.add("right");
+    if (j === it.answer) { b.classList.add("right"); b.querySelector(".l").insertAdjacentHTML("beforeend", CIRCLE); }
     else if (j === k) b.classList.add("picked-wrong");
     else b.classList.add("dim");
   });
-  $("unsureBtn").disabled = true; if (k < 0) $("unsure").classList.add("on");
-  $("blank").textContent = it.options[it.answer];
+  $("unsureBtn").hidden = true;
+  if (k !== -1) tone(ok);
+  $("stem").innerHTML = stemHTML(it, true);
 
-  const ans = `<span class="en">(${L[it.answer]}) ${it.options[it.answer]}</span>`;
-  let head;
-  if (ok) head = `<p class="verdict ok">對了。</p><p class="sub">這題不會回到複習裡。</p>`;
-  else if (k < 0) head = `<p class="verdict">答案是 ${ans}。</p><p class="sub">這題明天會再出現一次。</p>`;
-  else head = `<p class="verdict no">答案是 ${ans}。</p><p class="sub">這題明天會再出現一次。</p>`;
-
-  let body = `<h3>要點</h3><p class="point">${it.point}</p><h3>怎麼看出來</h3><p>${it.why}</p>`;
-  if (!ok && k >= 0) body += `<h3>你選的 <span class="en-i">${it.options[k]}</span></h3><p>${it.wrong[k]}</p>`;
-  const rest = it.options.map((w, j) => [w, j]).filter(([, j]) => j !== it.answer && j !== k);
-  body += `<h3>${!ok && k >= 0 ? "另外兩個" : "其他選項"}</h3><ul class="others">` +
-    rest.map(([w, j]) => `<li><span class="w">${w}</span><span>${it.wrong[j]}</span></li>`).join("") + `</ul>`;
-  body += `<h3>譯文</h3><p class="trans">${it.zh}</p>`;
-  body += `<p class="see">想多讀一點，見《多益文法考點》第一章〈<a href="https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ" target="_blank" rel="noopener">詞性判斷</a>〉。</p>`;
-  $("ann").innerHTML = head + body; $("ann").hidden = false;
-
-  $("margin").innerHTML = `<h4>這題的字</h4><dl>` + it.vocab.map(([w, m]) => `<div><dt>${w}</dt><dd>${m}</dd></div>`).join("") + `</dl>`;
-  $("margin").hidden = false;
-  $("next").textContent = at + 1 < ITEMS.length ? "下一題 →" : "讀完這一章 →";
+  const order = [k, ...it.options.map((_, j) => j)].filter((j, n, a) => j >= 0 && j !== it.answer && a.indexOf(j) === n);
+  let h = para(it.point, "point") + para(it.why, "why");
+  h += order.map(j => `<div class="wr ${j === k ? "mine" : ""}"><span class="w">${it.options[j]}</span>${para(it.wrong[j])}</div>`).join("");
+  h += `<p class="trans" hidden id="trans">${it.zh}</p>`;
+  h += `<div class="foot"><a href="https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ" target="_blank" rel="noopener"><span class="sc">See also</span> 詞性判斷</a><button class="zhb" id="zhb" type="button" aria-pressed="false" aria-label="顯示中文">中</button></div>`;
+  $("ann").innerHTML = h; $("ann").hidden = false;
+  $("zhb").onclick = () => {
+    const on = $("zhb").getAttribute("aria-pressed") !== "true";
+    $("zhb").setAttribute("aria-pressed", on);
+    $("ann").querySelectorAll(".zh").forEach(z => z.hidden = !on); $("trans").hidden = !on;
+  };
+  $("ann").querySelectorAll(".para").forEach(p => {
+    const t = () => { const z = p.querySelector(".zh"); z.hidden = !z.hidden; };
+    p.onclick = t; p.onkeydown = e => { if (e.key === "Enter") t(); };
+  });
+  $("next").textContent = at + 1 < ITEMS.length ? "Next →" : "End of chapter →";
   $("nextWrap").hidden = false;
 }
 
+// word glosses: tap or focus a dotted word in the sentence
+function tipFor(el){
+  const t = $("tip"), r = el.getBoundingClientRect();
+  t.textContent = el.dataset.zh; t.hidden = false;
+  const w = t.offsetWidth, x = Math.min(Math.max(8, r.left + r.width / 2 - w / 2 + scrollX), document.documentElement.clientWidth - w - 8);
+  t.style.left = x + "px"; t.style.top = (r.bottom + scrollY + 6) + "px";
+}
+document.addEventListener("click", e => { const g = e.target.closest(".gl"); if (g) tipFor(g); else $("tip").hidden = true; });
+document.addEventListener("focusin", e => { if (e.target.classList?.contains("gl")) tipFor(e.target); });
+document.addEventListener("focusout", e => { if (e.target.classList?.contains("gl")) $("tip").hidden = true; });
+
+$("unsureBtn").onclick = () => answer(-1);
+$("snd").onclick = () => { sound = !sound; setSnd(); try { localStorage.setItem("book-sound", sound ? "on" : "off"); } catch (e) {} };
 $("next").onclick = () => at + 1 < ITEMS.length ? open(at + 1) : show("end");
 $("back").onclick = () => show("home");
 $("home2").onclick = () => show("home");
