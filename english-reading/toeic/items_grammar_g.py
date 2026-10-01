@@ -24,7 +24,7 @@ ITEMS = [
                 "whom 是受格，後面不能直接接修飾過的名詞",
             ],
             "wrongMore": [
-                "who's recently updated 可以讀成 who has recently updated …，前幾個字完全合理。但後面 and unusually detailed résumé lists 少了受詞冠詞，也沒有東西接 updated；讀到 résumé 才發現它是被修飾的名詞，要用 whose。",
+                "who's recently updated 可以讀成 who has recently updated …，前幾個字完全合理。但後面接的是 and unusually detailed résumé lists；讀到 résumé 才發現 updated、detailed 都在修飾這個名詞，所以要用 whose。",
                 "the finalist who recently updated … 局部是漂亮的主詞 + 動詞。但 updated 之後沒有受詞，反而接 and unusually detailed résumé lists；這一串是 whose 的名詞片語 recently updated and unusually detailed résumé，不是 who 的動詞片語。",
                 None,
                 None,
@@ -199,8 +199,8 @@ ITEMS = [
                 "who's 是 who is / who has，不能接名詞，也不能指事物",
             ],
             "wrongMore": [
-                "of which 是事物的所有格用法，所以眼熟；但要寫成 the combined enrollment of which，把名詞放在前面。空格後面直接接名詞，所以用 whose。",
                 None,
+                "of which 是事物的所有格用法，所以眼熟；但要寫成 the combined enrollment of which，把名詞放在前面。空格後面直接接名詞，所以用 whose。",
                 None,
                 None,
             ],
@@ -440,14 +440,14 @@ ITEMS = [
             "wrong": [
                 "whose 後面要接名詞",
                 "whom 是受格，而且沒有助動詞",
-                "who 當主詞很自然；但 been pressing 缺 has",
                 None,
+                "who 當主詞很自然；但 been pressing 缺 has",
             ],
             "wrongMore": [
                 None,
                 None,
-                "The regional director, who, according to the minutes …, been pressing … 前面的 who 完全正確，所以最誘人。但插入語之後只有 been pressing，沒有 has / have，動詞不完整，所以空格要多放 has。",
                 None,
+                "The regional director, who, according to the minutes …, been pressing … 前面的 who 完全正確，所以最誘人。但插入語之後只有 been pressing，沒有 has / have，動詞不完整，所以空格要多放 has。",
             ],
             "zh": "根據三月會議紀錄，一直向董事會施壓要求核准新預算的區域主管，預計將在星期五提出修訂計畫。",
             "vocab": [["minutes", "會議紀錄"], ["pressing", "施壓"], ["approve", "核准"]],

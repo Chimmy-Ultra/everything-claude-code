@@ -1,12 +1,12 @@
 {
   "g-relative-08": {
     "point": [
-      "A noun follows the blank: <em>whose</em>, not <em>who's</em>.",
-      "空格後接名詞：用 whose，不是 who's。"
+      "A possessive before a noun: <em>whose</em>.",
+      "名詞前的所有格：whose。"
     ],
     "why": [
-      "<em>résumé</em> follows the blank directly and means \"his résumé\", so the possessive <em>whose</em> is needed. <em>Who's</em> means <em>who is</em> or <em>who has</em> and cannot be followed by a noun.",
-      "résumé 直接接在空格後，意思是「他的履歷」，要用所有格 whose。who's 是 who is 或 who has，後面不能接名詞。"
+      "<em>recently updated and unusually detailed</em> only modify the noun <em>résumé</em>, which belongs to the finalist. A possessive is needed: <em>whose</em>. <em>Who</em> and <em>who's</em> would have to be followed by a verb.",
+      "recently updated and unusually detailed 只是修飾名詞 résumé，而 résumé 屬於 finalist，所以要用所有格 whose。who 和 who's 後面要接動詞。"
     ],
     "gloss": [
       {
@@ -71,30 +71,30 @@
       "which 可以指前面整個子句。"
     ],
     "why": [
-      "The blank refers to the whole announcement that crossings would be suspended, not to one noun. After a comma that is <em>which</em>. <em>It</em> would join two sentences with only a comma, and <em>that</em> cannot follow a comma.",
-      "空格指的是整個「暫停通行」的消息，不是單一名詞。逗號後用 which。it 會讓兩句只靠逗號相連，that 不能接在逗號後。"
+      "The blank refers to the whole event: the caterer withdrew. After a comma that is <em>which</em>. <em>It</em> and <em>that</em> would leave two full sentences joined by only a comma, and <em>what</em> has no noun to refer to.",
+      "空格指的是整件事：承辦商退出。逗號後用 which。it 和 that 會讓兩個完整句子只靠逗號相連，what 沒有可指的名詞。"
     ],
     "gloss": [
       {
-        "w": "suspended",
-        "hw": "suspend",
-        "pos": "v.",
-        "zh": "暫停",
-        "ex": "Service was suspended during the storm."
-      },
-      {
-        "w": "ramp",
-        "hw": "ramp",
+        "w": "caterer",
+        "hw": "caterer",
         "pos": "n.",
-        "zh": "坡道",
-        "ex": "The ramp was closed for repairs."
+        "zh": "外燴業者",
+        "ex": "The caterer prepared lunch for two hundred guests."
       },
       {
-        "w": "in turn",
-        "hw": "in turn",
-        "pos": "phr.",
-        "zh": "接著、因而",
-        "ex": "Costs rose, which in turn raised prices."
+        "w": "gala",
+        "hw": "gala",
+        "pos": "n.",
+        "zh": "晚宴、盛會",
+        "ex": "The gala raised funds for the museum."
+      },
+      {
+        "w": "lowest bidder",
+        "hw": "lowest bidder",
+        "pos": "n.",
+        "zh": "最低標廠商",
+        "ex": "The contract went to the lowest bidder."
       }
     ]
   },
@@ -298,12 +298,12 @@
   },
   "g-relative-17": {
     "point": [
-      "<em>none of which</em> for three or more; <em>neither</em> is for two.",
-      "三個以上用 none of which；neither 只用於兩個。"
+      "<em>none of which</em> for three or more; <em>both</em>, <em>neither</em> and <em>either</em> are for two.",
+      "三個以上用 none of which；both、neither、either 只用於兩個。"
     ],
     "why": [
-      "The board received <em>three proposals</em>, so <em>neither</em> is out: it means one of two. After the comma, a relative form is also needed to join the clause. That gives <em>none of which</em>.",
-      "董事會收到 three proposals，所以不能用 neither（只指兩者）。逗號後也需要關係詞來連接子句，所以是 none of which。"
+      "The board received <em>three proposals</em>, so <em>both</em>, <em>neither</em> and <em>either</em> are out: they refer to two. The second round of tenders shows that none met the ceiling: <em>none of which</em>.",
+      "董事會收到 three proposals，所以 both、neither、either 都不行，它們指兩者。第二輪招標說明沒有一份符合上限：none of which。"
     ],
     "gloss": [
       {
@@ -321,11 +321,11 @@
         "ex": "The budget ceiling was set in March."
       },
       {
-        "w": "finance committee",
-        "hw": "finance committee",
+        "w": "tenders",
+        "hw": "tender",
         "pos": "n.",
-        "zh": "財務委員會",
-        "ex": "The finance committee reviews all large costs."
+        "zh": "投標",
+        "ex": "The city invited tenders for the new bridge."
       }
     ]
   },
@@ -463,133 +463,133 @@
   },
   "g-relative-22": {
     "point": [
-      "A person as subject after a comma: <em>who</em>.",
-      "逗號後的人當主詞：who。"
+      "A person as subject, even with an inserted clause: <em>who</em>.",
+      "人當主詞，即使中間插入子句：who。"
     ],
     "why": [
-      "Take out <em>after eleven years with the city's tourism board</em>: <em>now oversees</em> has no subject. The blank supplies it, and for a person after a comma that is <em>who</em>. <em>That</em> cannot follow a comma.",
-      "拿掉 after eleven years with the city's tourism board：now oversees 沒有主詞。空格要補上，逗號後的人是 who。that 不能接在逗號後。"
+      "Take out <em>the board believes</em>: <em>will oversee</em> has no subject. The blank supplies it, so it is <em>who</em>, not <em>whom</em>. <em>That</em> cannot follow a comma.",
+      "拿掉 the board believes：will oversee 沒有主詞。空格要補上主詞，所以是 who，不是 whom。that 不能接在逗號後。"
     ],
     "gloss": [
       {
-        "w": "tourism board",
-        "hw": "tourism board",
+        "w": "apprenticeship",
+        "hw": "apprenticeship",
         "pos": "n.",
-        "zh": "觀光局",
-        "ex": "The tourism board runs a visitor center."
+        "zh": "學徒訓練",
+        "ex": "The apprenticeship lasts three years."
       },
       {
-        "w": "oversees",
+        "w": "oversee",
         "hw": "oversee",
         "pos": "v.",
         "zh": "監督",
-        "ex": "She oversees all hiring."
+        "ex": "She will oversee the whole project."
       },
       {
-        "w": "volunteers",
-        "hw": "volunteer",
+        "w": "staffing plans",
+        "hw": "staffing plan",
         "pos": "n.",
-        "zh": "志工",
-        "ex": "Volunteers handed out the programs."
+        "zh": "人力配置計畫",
+        "ex": "Managers must submit staffing plans by Friday."
       }
     ]
   },
   "g-relative-23": {
     "point": [
-      "An object is missing: <em>which</em>; <em>where</em> needs a full clause.",
-      "缺受詞：which；where 後要接完整子句。"
+      "After a comma, <em>which</em> can refer to a whole clause.",
+      "逗號後 which 可以指前面整個子句。"
     ],
     "why": [
-      "<em>commissioned</em> needs an object, but <em>the retailer … commissioned in the northern region</em> has none. The blank is that object and refers to the center: <em>which</em>. <em>Where</em> would leave <em>commissioned</em> without an object.",
-      "commissioned 需要受詞，但 the retailer … commissioned in the northern region 沒有。空格就是這個受詞，指 center：which。where 會讓 commissioned 沒有受詞。"
+      "The blank refers to the whole action: releasing the schedule without consulting anyone. It does not refer to <em>the shift supervisors</em>. After a comma, that needs <em>which</em>. <em>Who</em> points only to people.",
+      "空格指的是整件事：沒有諮詢就發布時程，不是指 the shift supervisors。逗號後指整個前句要用 which。who 只能指人。"
     ],
     "gloss": [
       {
-        "w": "distribution center",
-        "hw": "distribution center",
+        "w": "revised schedule",
+        "hw": "revised schedule",
         "pos": "n.",
-        "zh": "配送中心",
-        "ex": "The distribution center ships to forty stores."
+        "zh": "修訂時程",
+        "ex": "The revised schedule starts next week."
       },
       {
-        "w": "commissioned",
-        "hw": "commission",
-        "pos": "v.",
-        "zh": "委託興建、啟用",
-        "ex": "The city commissioned a new library."
+        "w": "shift supervisors",
+        "hw": "shift supervisor",
+        "pos": "n.",
+        "zh": "輪班主管",
+        "ex": "Shift supervisors attend a short briefing."
       },
       {
-        "w": "process",
-        "hw": "process",
-        "pos": "v.",
-        "zh": "處理",
-        "ex": "Staff process claims within a week."
+        "w": "loading dock",
+        "hw": "loading dock",
+        "pos": "n.",
+        "zh": "裝卸碼頭",
+        "ex": "Trucks wait at the loading dock."
       }
     ]
   },
   "g-relative-24": {
     "point": [
-      "A passive clause with no agent: <em>by whom</em>.",
-      "被動子句缺動作者：by whom。"
+      "Preposition + <em>whose</em> + noun: <em>to whose</em>.",
+      "介系詞 + whose + 名詞：to whose。"
     ],
     "why": [
-      "<em>had been drafted</em> is passive, and the clause has no <em>by</em> phrase. The consultants are the ones who drafted it, so the blank supplies the agent: <em>by whom</em>. <em>Whom</em> alone leaves the passive without its preposition.",
-      "had been drafted 是被動，子句裡沒有 by 片語。顧問是起草的人，所以空格補上動作者：by whom。單用 whom，被動句就缺了介系詞。"
+      "<em>attention</em> follows the blank, so a possessive is needed. But <em>had first been brought</em> has no <em>to</em>: things are brought <em>to</em> someone's attention. The preposition goes first: <em>to whose</em>.",
+      "attention 接在空格後，所以需要所有格。但 had first been brought 後面沒有 to：事情是被提請某人注意（to）。介系詞要放前面：to whose。"
     ],
     "gloss": [
       {
-        "w": "trial protocol",
-        "hw": "trial protocol",
+        "w": "discrepancy",
+        "hw": "discrepancy",
         "pos": "n.",
-        "zh": "試驗計畫書",
-        "ex": "The trial protocol lists every step."
+        "zh": "差異",
+        "ex": "The audit found a discrepancy in the totals."
       },
       {
-        "w": "consent forms",
-        "hw": "consent form",
+        "w": "freight invoices",
+        "hw": "freight invoice",
         "pos": "n.",
-        "zh": "同意書",
-        "ex": "Patients sign consent forms first."
+        "zh": "貨運發票",
+        "ex": "Freight invoices are paid within thirty days."
       },
       {
-        "w": "drafted",
-        "hw": "draft",
-        "pos": "v.",
-        "zh": "起草",
-        "ex": "Legal drafted the contract in May."
+        "w": "corrective step",
+        "hw": "corrective step",
+        "pos": "n.",
+        "zh": "改正措施",
+        "ex": "No corrective step was taken."
       }
     ]
   },
   "g-relative-25": {
     "point": [
-      "<em>What</em> starts a noun clause with a missing object.",
-      "What 開頭的名詞子句，缺受詞。"
+      "A relative pronoun and its auxiliary: <em>who has</em>.",
+      "關係代名詞與助動詞：who has。"
     ],
     "why": [
-      "<em>needs most from the new reporting tool</em> has no object, and no noun comes before the blank. The blank is that object and also starts the subject of <em>is</em>: <em>What</em>. <em>That</em> needs a complete clause after it.",
-      "needs most from the new reporting tool 沒有受詞，空格前面也沒有名詞。空格就是這個受詞，同時開頭當 is 的主詞：What。That 後面要接完整子句。"
+      "Take out <em>according to the minutes of the March meeting</em>: <em>been pressing</em> has no auxiliary. The blank must give both the subject and the auxiliary: <em>who has</em>. <em>Who</em> alone leaves <em>been</em> without <em>has</em>.",
+      "拿掉 according to the minutes of the March meeting：been pressing 沒有助動詞。空格要同時給主詞和助動詞：who has。單用 who，been 就缺了 has。"
     ],
     "gloss": [
       {
-        "w": "reporting tool",
-        "hw": "reporting tool",
+        "w": "minutes",
+        "hw": "minutes",
         "pos": "n.",
-        "zh": "報表工具",
-        "ex": "The reporting tool exports to a spreadsheet."
+        "zh": "會議紀錄",
+        "ex": "The minutes were sent to all staff."
       },
       {
-        "w": "regional managers",
-        "hw": "regional manager",
-        "pos": "n.",
-        "zh": "區域經理",
-        "ex": "Regional managers visit each branch monthly."
+        "w": "pressing",
+        "hw": "press",
+        "pos": "v.",
+        "zh": "施壓、催促",
+        "ex": "The union kept pressing the board."
       },
       {
-        "w": "figures",
-        "hw": "figure",
-        "pos": "n.",
-        "zh": "數據",
-        "ex": "The figures were updated on Monday."
+        "w": "approve",
+        "hw": "approve",
+        "pos": "v.",
+        "zh": "核准",
+        "ex": "The board will approve the budget in May."
       }
     ]
   }

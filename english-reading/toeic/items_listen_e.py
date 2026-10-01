@@ -87,7 +87,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "medium"},
                 "explain": {
                     "point": "數字題：四十瓶抓到三十八瓶",
-                    "why": "男方問 Did they test it；她答 forty of our own cracked bottles … It caught thirty-eight → 兩個數字相比，幾乎全部找出來。",
+                    "why": "forty cracked bottles … It caught thirty-eight → 兩個數字相比，幾乎全部找出來。",
                     "evidence": [3, 4],
                     "wrong": ["同字陷阱：every 出現過，但三十八瓶不是全部", "數字錯誤：只漏掉兩瓶，不是一半", "語境矛盾：測試結果沒有提到拖慢產線", None],
                     "wrongMore": [
@@ -111,7 +111,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨句：it 和 them 要回頭找",
-                    "why": "他說廠長 won't look at it unless the finance office has checked the numbers；她答 I'll take it over to them first thing tomorrow → it 是摘要，them 是財務室。",
+                    "why": "廠長 won't look at it unless the finance office has checked；她答 I'll take it over to them → 把摘要拿給財務室。",
                     "evidence": [6, 7, 8],
                     "wrong": [None, "順序錯置：廠長要等財務室核對後才會看", "沒有人提到第二次測試", "同字陷阱：經銷商的報告是她已經讀過的"],
                     "wrongMore": [
@@ -175,7 +175,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "主旨題：問題加上解決辦法",
-                    "why": "地圖 too delicate to … take out of the building 是問題；Could the library scan them instead 是辦法 → 改述成讓學生能研究不能外借的資料。",
+                    "why": "too delicate to … take out 是問題；scan them instead 是辦法 → 如何研究不能外借的資料。",
                     "evidence": [0, 2, 3],
                     "wrong": ["提到但不是問的：五點關門是 Joel 的困難，沒人提議延長", None, "同字陷阱：thesis 出現過，但沒人談簡報的時間", "沒有人談選題：Joel 的論文主題早已確定"],
                     "wrongMore": [
@@ -223,7 +223,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨說話者：it 指前面提到的信",
-                    "why": "Dunmore 要 a short letter of support；Lang 說 Joel, could you draft it tonight? I'll sign it；Joel 答 Of course → 他寫信，讓教授簽名。",
+                    "why": "a short letter of support；Lang 說 Joel, could you draft it tonight?；Joel 答 Of course → 他寫信讓教授簽名。",
                     "evidence": [6, 7, 8],
                     "wrong": ["張冠李戴：館員說不能拍照，這是被禁止的事", "沒有人要 Joel 自己排名單；館員說的是把他往前移", "同字陷阱：draft 出現過，但 draft it 是起草那封信", None],
                     "wrongMore": [
@@ -294,7 +294,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "原因題：理由要從兩句接起來",
-                    "why": "他說 My wife and our daughter are coming along after all；女方接 Then you'll want more than one bed → 同行的人變多，所以要換房。",
+                    "why": "coming along after all；接 Then you'll want more than one bed → 同行的人變多，所以換房。",
                     "evidence": [2, 3],
                     "wrong": ["提到但不是問的：價格是他不要起居區的理由", None, "提到但不是問的：安靜是女方介紹新房間的描述", "沒有人說班機提早：只說中午降落，想早點入住"],
                     "wrongMore": [
@@ -412,7 +412,7 @@ ITEMS = [
                 "ldbs": {"L": False, "D": False, "B": False, "S": False, "band": "easy"},
                 "explain": {
                     "point": "原因題：開頭的問題就是答案",
-                    "why": "他說 my first flight sat on the runway for an hour, so I missed my connection → 前一班延誤，沒趕上下一班。",
+                    "why": "sat on the runway for an hour, so I missed my connection → 前一班延誤，沒趕上下一班。",
                     "evidence": [0],
                     "wrong": ["沒有人說行李遺失：行李的事只談怎麼轉運", "沒有人提到天氣或取消：是延誤造成錯過轉機", "晚餐是他選班機的限制，不是來櫃檯的原因", None],
                     "wrongMore": [None, None, None, None],
@@ -450,7 +450,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨句推論：他的疑慮加上她的保證",
-                    "why": "行李已 checked all the way through，他沒時間 go to baggage claim；她說 Our baggage team will handle it → 地勤會把行李轉到新班機。",
+                    "why": "他沒時間 go to baggage claim；她說 Our baggage team will handle it → 地勤把行李轉到新班機。",
                     "evidence": [4, 6, 7],
                     "wrong": ["方向相反：他沒時間去提領行李，她說不用", "沒有人提到把行李放在櫃檯等他", None, "沒有人提到把行李送到餐廳"],
                     "wrongMore": [
@@ -511,7 +511,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "目的題：第二句的猜測被第三句否定",
-                    "why": "男方猜 Did she find a typo；女方答 No, it's nothing like that，說副標題 sounds like it's written for professional chefs → 作者不滿意封面呈現書的方式。",
+                    "why": "猜 a typo 被 No, it's nothing like that 否定；副標題 written for professional chefs → 作者不滿意封面呈現方式。",
                     "evidence": [0, 1, 2],
                     "wrong": [None, "提到但不是問的：錯字是男方的猜測，被女方否定", "沒有人提到作者要見業務團隊", "沒有人提到延後印刷：星期四是檔案的期限"],
                     "wrongMore": [
@@ -535,7 +535,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "引句題：tall order 是「很難辦到」",
-                    "why": "她問 Could you make the change and still have the files ready by Thursday；他答 That's a tall order，接著說印刷廠要收費 → 這個要求不好辦。",
+                    "why": "她問能否改完又趕上星期四；他答 That's a tall order，再說要收費 → 這個要求很難辦到。",
                     "evidence": [4, 5],
                     "wrong": ["字面陷阱：照字面把 order 讀成訂單量", "語境矛盾：他說改字只要一個小時", None, "沒有人說業務團隊會拒絕"],
                     "wrongMore": [
@@ -559,7 +559,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨說話者：他報費用，她把決定交給作者",
-                    "why": "他說 Four hundred dollars, plus an extra day；她答 it depends on the author. If she pays the fee herself, we'll go ahead → 看作者願不願意負擔費用。",
+                    "why": "Four hundred dollars；她答 it depends on the author. If she pays the fee herself → 看作者肯不肯付費。",
                     "evidence": [5, 7, 8],
                     "wrong": ["提到但不是問的：業務團隊是副標題原本的來源，沒說由它決定", None, "提到但不是問的：多一天是代價，她沒說要印刷廠提早", "提到但不是問的：星期四是原本的期限，她沒說由它決定"],
                     "wrongMore": [
@@ -645,7 +645,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "引句題：eggs in one basket 是不要只靠一個",
-                    "why": "Gus 說要 move all our seafood orders to Harbor Fresh；Theo 接著說 If they have one bad week, we have no fish at all → 只靠一家有風險。",
+                    "why": "Gus 要 move all our seafood orders；Theo 說 one bad week, we have no fish → 只靠一家有風險。",
                     "evidence": [4, 5],
                     "wrong": ["字面陷阱：照字面讀成要買更多雞蛋", None, "語境矛盾：Gus 說 Harbor Fresh 比較便宜", "提到但不是問的：十四份是 Gus 回答今晚能做的量"],
                     "wrongMore": [
@@ -669,7 +669,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨說話者：誰提出需求、誰答應",
-                    "why": "Gus 說 I'll need your weekend reservation numbers early in the week；Theo 答 I'll give you the count every Tuesday morning → 每週提供預期客人數。",
+                    "why": "Gus 要 weekend reservation numbers early in the week；Theo 答 every Tuesday morning → 每週提供客人數。",
                     "evidence": [7, 8],
                     "wrong": ["沒有人提到週末菜單", "提到但不是問的：價格是 Gus 支持 Harbor Fresh 的理由", None, "張冠李戴：兩家分單的方案是 Elena 提的"],
                     "wrongMore": [
@@ -864,7 +864,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "條件句：If … 後面有兩個選擇",
-                    "why": "他問 Will four tables fit；她答 If fewer fit, you can go ahead with fewer, or withdraw and get your fee back → 要不要繼續由他決定。",
+                    "why": "Will four tables fit；她答 go ahead with fewer, or withdraw and get your fee back → 由他決定。",
                     "evidence": [4, 5],
                     "wrong": ["方向相反：她說他可以選擇繼續，不是被拒絕", "同字陷阱：fee 出現過，但是退費，不是加收", "沒有人說放不下會拖長時間：三週是一般的時間", None],
                     "wrongMore": [
@@ -888,7 +888,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "下一步題：「馬上回來」交代接下來做什麼",
-                    "why": "表格需要 a drawing of the sidewalk；他說 I have the building plans in my car. I'll bring them in → 先去車上拿文件。",
+                    "why": "表格要 a drawing；他說 the building plans in my car. I'll bring them in → 先去車上拿文件。",
                     "evidence": [6, 7, 8],
                     "wrong": [None, "方向相反：他問過要不要去銀行，女方說櫃檯可以刷卡", "沒有人說他要自己丈量：丈量是檢查員的工作", "沒有人要撤回：他說 I'll apply"],
                     "wrongMore": [
