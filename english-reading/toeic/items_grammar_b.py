@@ -631,8 +631,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ mandative
     {
-        "id": "g-mandative-03", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-mandative-03", "type": "grammar", "format": "gap", "unit": "mandative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "In light of several duplicate payments last year, the external auditors have strongly recommended in their final report that the accounts payable team ______ every invoice over $5,000 against the original purchase order.",
         "options": ["checking", "checked", "is checking", "check"],
         "answer": 3,

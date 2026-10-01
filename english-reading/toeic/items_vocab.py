@@ -150,8 +150,8 @@ ITEMS = [
         },
     },
     {
-        "id": "v-synonym-02", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2,
+        "id": "v-synonym-02", "type": "vocab", "format": "gap", "unit": "synonym", "level": 1,
+        "source": "hand", "reviewed": True, "v": 2,
         "stem": "The IT department ______ laptops and projectors to staff who meet clients off-site, and borrowers must return the equipment within two weeks.",
         "options": ["returns", "lends", "borrows", "donates"],
         "answer": 1,
@@ -466,8 +466,8 @@ ITEMS = [
         },
     },
     {
-        "id": "v-family-07", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-07", "type": "vocab", "format": "gap", "unit": "family", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Reviewers often praise the reception staff at the Tollmere Inn for being ______ to guests' needs, and many mention that requests are handled within minutes.",
         "options": ["attentive", "attendant", "attended", "attending"],
         "answer": 0,

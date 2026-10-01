@@ -99,8 +99,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-pos-06", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2,
+        "id": "g-pos-06", "type": "grammar", "format": "gap", "unit": "pos", "level": 1,
+        "source": "hand", "reviewed": True, "v": 2,
         "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice, so the receptionists no longer handle most requests by phone.",
         "options": ["dramatic", "drama", "dramatically", "dramatize"],
         "answer": 2,
@@ -489,8 +489,8 @@ ITEMS = [
     # ================= 第三輪新增（附錄二規則）=================
     # ---------------- pos ----------------
     {
-        "id": "g-pos-07", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-pos-07", "type": "grammar", "format": "gap", "unit": "pos", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Thanks to the new signs posted along Merrow Road, most first-time visitors can now find the Pembry Conference Center ______ without calling ahead for directions.",
         "options": ["easy", "ease", "easiness", "easily"],
         "answer": 3,
@@ -540,8 +540,8 @@ ITEMS = [
     },
     # ---------------- tense ----------------
     {
-        "id": "g-tense-06", "type": "grammar", "format": "gap", "unit": "tense", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-tense-06", "type": "grammar", "format": "gap", "unit": "tense", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Ms. Delgado, who joined Halloway Engineering as a junior engineer straight out of college, ______ with the firm for thirty-two years when she retires at the end of next month.",
         "options": ["has been", "had been", "will have been", "was"],
         "answer": 2,
@@ -566,8 +566,8 @@ ITEMS = [
     },
     # ---------------- connect ----------------
     {
-        "id": "g-connect-06", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-connect-06", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Because the loading dock is staffed only until 5 p.m., the warehouse will accept deliveries after that time ______ the driver has arranged access with the night supervisor in advance.",
         "options": ["unless", "provided that", "so that", "even if"],
         "answer": 1,
@@ -619,7 +619,7 @@ ITEMS = [
     # ---------------- prep ----------------
     {
         "id": "g-prep-05", "type": "grammar", "format": "gap", "unit": "prep", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "All chemicals used in the Rennick Street laboratory must be labeled and stored ______ the guidelines set out in section 4 of the safety manual that every new employee receives.",
         "options": ["in response to", "in addition to", "in accordance with", "in exchange for"],
         "answer": 2,
