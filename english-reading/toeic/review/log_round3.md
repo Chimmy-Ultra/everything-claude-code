@@ -1,6 +1,6 @@
 # Round 3: fixes and explanation check
 
-Inputs: DESIGN.md §1, §3, §5, §7 and both appendices; review/round3_grammar.json, round3_vocab.json and round3_listen.json (44 new or changed ids); review/fable2_solved.json (independent blind review: 52/52 keys agree, mustFix empty); the 多益文法考點 page for terminology (Ving, to V, p.p., 原形, 連接副詞).
+Inputs: DESIGN.md §1, §3, §5, §7 and both appendices; review/round3_grammar.json, round3_vocab.json and round3_listen.json (44 new or changed ids); review/consult2_solved.json (independent blind review: 52/52 keys agree, mustFix empty); the 多益文法考點 page for terminology (Ving, to V, p.p., 原形, 連接副詞).
 
 Result: **8 items had their stem or options changed** and go back to blind review (`review/round3_fixed.json`). **25 explanation fields** were changed: 17 in those 8 items and 8 in items that keep their stem. **17 levels** now follow the blind band. **36 items** are `reviewed: True`; the 8 reblind items stay `False`. No answer index, audio script (`text`/`say`), evidence index or `accent` changed, and nothing in `audio/` was touched. `v` was not bumped because none of these versions has been published yet; this follows log_final_explanations.md.
 
@@ -19,7 +19,7 @@ Result: **8 items had their stem or options changed** and go back to blind revie
 
 l-talk-01 still says "the front desk". Its script was left alone because the audio is already recorded, so "front desk" now appears in that one item only.
 
-Levels of the reblind items were left as they were, for the new blind review to set. Their Fable bands were: g-prep-05 medium (level 1), g-connect-06 medium (3), g-mandative-03 hard (3; likely lower now that the -s lure is gone), v-synonym-02 easy (2), g-tense-06 medium (3), g-pos-06 easy (2), g-pos-07 easy (2), v-family-07 easy (2).
+Levels of the reblind items were left as they were, for the new blind review to set. Their consultant-review bands were: g-prep-05 medium (level 1), g-connect-06 medium (3), g-mandative-03 hard (3; likely lower now that the -s lure is gone), v-synonym-02 easy (2), g-tense-06 medium (3), g-pos-06 easy (2), g-pos-07 easy (2), v-family-07 easy (2).
 
 ## Step 2: explanation check (items whose stem was not changed)
 
@@ -36,7 +36,7 @@ Levels of the reblind items were left as they were, for the new blind review to 
 
 The following were checked and left unchanged: point/why rule and application, wrong/wrongMore reasons with None at the key, zh/transcriptZh, vocab glosses, evidence indexes, and `say` on every line with digits, times or Ms. (l-qr-09, l-talk-01, l-talk-03). This covers g-tense-02, g-voice-02, g-connect-03, g-participle-01, g-participle-05, g-agree-04, g-quantity-04, g-compare-04, g-toing-01, g-toing-04, g-pronoun-04, g-conditional-03, v-synonym-04, v-family-01, v-collocation-07, v-collocation-08, v-synonym-07, v-synonym-08, v-business-08, v-family-08, l-qr-03, l-qr-09 to l-qr-12, l-conv-05, l-conv-06 (q0 and q2), l-talk-01 and l-talk-03.
 
-## Levels from the Fable band (easy 1 / medium 2 / hard 3; conv/talk take their hardest question's band)
+## Levels from the consultant-review band (easy 1 / medium 2 / hard 3; conv/talk take their hardest question's band)
 
 | id | level |
 |---|---|
@@ -80,6 +80,6 @@ A Python check ran over all 123 items and found 0 errors. It covered:
 
 ## Not done (outside this round's fix list)
 
-- **Too easy:** fable2 shouldFix says g-tense-02, g-participle-01, g-toing-01, g-prep-07, v-business-07 and v-family-01 are too easy. They are untouched; their levels now say so.
+- **Too easy:** consult2 shouldFix says g-tense-02, g-participle-01, g-toing-01, g-prep-07, v-business-07 and v-family-01 are too easy. They are untouched; their levels now say so.
 - **v-business-07 setting:** the editor note says a logistics firm receiving part of a purchase price reads oddly; a supplier would read better.
 - **Topic overlap:** v-collocation-09 (parking garage closed on Saturday) overlaps l-qr-10. The reviewer said to vary it only if convenient.
