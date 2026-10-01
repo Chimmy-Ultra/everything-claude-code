@@ -16,7 +16,7 @@ ITEMS = [
     # (B) answers a seat preference (right topic, wrong question). Key (C) is a direct answer.
     {
         "id": "l-qr-18", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-18", "gapMs": 900,
             "lines": [
@@ -47,23 +47,23 @@ ITEMS = [
         }],
     },
     # l-qr-19  qr-wh, self-test hard. Condition: the list "has doubled from a hundred".
-    # near-correct: (A) "A hundred should do it." is a number (form-correct) but is the old figure.
+    # near-correct: (A) "The list is still a hundred." repeats the figure but contradicts "has doubled".
     # (C) repeats chairs. Key (B) is indirect: the replies are not in yet, so the count is not fixed.
     {
         "id": "l-qr-19", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-19", "gapMs": 900,
             "lines": [
                 {"file": "q.mp3", "who": "M", "voice": "bm_lewis", "text": "How many chairs should we set up for the awards dinner, now that the guest list has doubled from a hundred?"},
-                {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "A hundred should do it."},
+                {"file": "a.mp3", "who": "W", "voice": "bf_emma", "text": "The list is still a hundred."},
                 {"file": "b.mp3", "who": "W", "voice": "bf_emma", "text": "The final replies aren't due until Friday."},
                 {"file": "c.mp3", "who": "W", "voice": "bf_emma", "text": "The chairs are stacked in the storage room."},
             ],
         },
         "transcriptZh": [
             "既然頒獎晚宴的賓客名單已經從一百人加倍了，我們要擺幾張椅子？",
-            "一百張應該夠了。",
+            "名單還是一百人。",
             "最後的回覆要到星期五才截止。",
             "椅子都疊放在儲藏室裡。",
         ],
@@ -84,8 +84,8 @@ ITEMS = [
     # near-correct: (B) "Yes" + repeats factory; (C) "No" is a form-correct opening but the inspectors are due
     # Friday, not last week. Key (A) is indirect: not even shipped, so No.
     {
-        "id": "l-qr-20", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "id": "l-qr-20", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-20", "gapMs": 900,
             "lines": [
@@ -118,22 +118,22 @@ ITEMS = [
             },
         }],
     },
-    # l-qr-21  qr-yesno, self-test easy (the batch's easy qr). Direct key; the others answer how many / where.
+    # l-qr-21  qr-yesno, self-test easy (the batch's easy qr). Direct key; the others comment on the candidates / answer where.
     {
         "id": "l-qr-21", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-21", "gapMs": 900,
             "lines": [
                 {"file": "q.mp3", "who": "W", "voice": "bf_emma", "text": "Do you have the schedule for next week's interviews?"},
-                {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "Only two candidates so far."},
+                {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "The candidates were very impressive."},
                 {"file": "b.mp3", "who": "M", "voice": "bm_george", "text": "In the second-floor meeting room."},
                 {"file": "c.mp3", "who": "M", "voice": "bm_george", "text": "Yes, I'll e-mail it to you right now."},
             ],
         },
         "transcriptZh": [
             "你有下週面試的時程表嗎？",
-            "目前只有兩位應徵者。",
+            "那些應徵者都很出色。",
             "在二樓的會議室。",
             "有，我現在就用電子郵件寄給你。",
         ],
@@ -142,11 +142,11 @@ ITEMS = [
             "ldbs": {"L": False, "D": False, "B": False, "S": False, "band": "easy"},
             "explain": {
                 "point": "Do you have 問句：直接回 Yes",
-                "why": "問有沒有下週面試的行程表 → 回 Yes, I'll e-mail it to you：有，而且馬上寄。另外兩個回答的是人數和地點。",
+                "why": "問有沒有下週面試的行程表 → 回 Yes, I'll e-mail it to you：有，而且馬上寄。另外兩個回答的是應徵者的評價和地點。",
                 "evidence": [3],
-                "wrong": ["答錯問句類型：講的是人數，不是有沒有時程表", "答錯問句類型：講的是地點，不是有沒有時程表", None],
+                "wrong": ["答非所問：講的是應徵者的評價，不是有沒有時程表", "答錯問句類型：講的是地點，不是有沒有時程表", None],
                 "wrongMore": [None, None, None],
-                "vocab": [["schedule", "時程表"], ["candidate", "應徵者"], ["interview", "面試"]],
+                "vocab": [["schedule", "時程表"], ["candidate", "應徵者"], ["impressive", "令人印象深刻的"]],
             },
         }],
     },
@@ -154,7 +154,7 @@ ITEMS = [
     # a different question); (C) repeats location. Key (B) is indirect: it depends on the branch.
     {
         "id": "l-qr-22", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-22", "gapMs": 900,
             "lines": [
@@ -189,8 +189,8 @@ ITEMS = [
     # the topic has to be assembled from lines 1-3. Q2 asks for the function of the reception-desk remark.
     # Q3: Monday is the trial, Thursday is the owner meeting.
     {
-        "id": "l-conv-09", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-conv-09", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-09", "gapMs": 500,
             "lines": [
@@ -272,17 +272,17 @@ ITEMS = [
         ],
     },
     # l-conv-10  conv-intent, three speakers: W = Rosa (bf_emma, UK), M1 = Tom (am_michael, US), M2 = Gareth (bm_george, UK).
-    # Rosa names both men in line 1 and again in lines 6 and 8; Tom is named in line 8, Gareth in line 6.
+    # Rosa names both men in line 1; Tom (line 2) addresses her as "Rosa". Gareth is named in line 6, Tom in line 8.
     # Q1 is the batch's easy conv question. Q2: the quote is idiomatic ("belongs in a museum" = very old); (A) is the
     # literal reading. Q3: Rosa proposes eight, Gareth objects (eight thirty), settles on eight forty-five, Rosa agrees.
     {
         "id": "l-conv-10", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-10", "gapMs": 500,
             "lines": [
                 {"file": "01.mp3", "who": "W", "voice": "bf_emma", "text": "Tom, Gareth, thanks for staying late. Our presentation for the client is at nine tomorrow, and I'm worried about the demo video."},
-                {"file": "02.mp3", "who": "M1", "voice": "am_michael", "text": "It plays fine on my laptop. The trouble is the projector in their boardroom, which only accepts an older file type."},
+                {"file": "02.mp3", "who": "M1", "voice": "am_michael", "text": "Rosa, it plays fine on my laptop. The trouble is the projector in their boardroom, which only accepts an older file type."},
                 {"file": "03.mp3", "who": "M2", "voice": "bm_george", "text": "I saw that projector last spring. It belongs in a museum."},
                 {"file": "04.mp3", "who": "W", "voice": "bf_emma", "text": "So can we convert the video tonight?"},
                 {"file": "05.mp3", "who": "M1", "voice": "am_michael", "text": "I can, with free software. It takes about two hours to run, though, so I'd have to start it before I leave."},
@@ -294,7 +294,7 @@ ITEMS = [
         },
         "transcriptZh": [
             "Tom、Gareth，謝謝你們留下來加班。我們明天九點要對客戶簡報，我擔心示範影片。",
-            "它在我的筆電上播得很順。問題出在他們會議室的投影機，它只接受比較舊的檔案格式。",
+            "Rosa，它在我的筆電上播得很順。問題出在他們會議室的投影機，它只接受比較舊的檔案格式。",
             "我去年春天看過那台投影機。它根本該放進博物館。",
             "那我們今晚可以把影片轉檔嗎？",
             "可以，用免費軟體就行。不過它要跑大約兩小時，所以我離開前就得先開始。",
@@ -306,14 +306,14 @@ ITEMS = [
         "questions": [
             {
                 "q": "What is Rosa worried about?",
-                "options": ["Whether a video will play properly", "Whether the client will accept the price", "Whether the staff will finish early", "Whether the room has enough seats"],
+                "options": ["Whether a video will play properly", "Whether the software will cost too much", "Whether the file conversion will take too long", "Whether the building will open early enough"],
                 "answer": 0,
                 "ldbs": {"L": False, "D": False, "B": False, "S": False, "band": "easy"},
                 "explain": {
                     "point": "問題題：worried about 後面就是答案",
                     "why": "Rosa 在開頭說 I'm worried about the demo video，Tom 接著說投影機只收舊格式 → 她擔心影片播不順。",
                     "evidence": [0, 1],
-                    "wrong": [None, "沒有人提到價格", "方向相反：她請大家留下來晚一點", "沒有人提到座位"],
+                    "wrong": [None, "方向相反：Tom 說用免費軟體就行", "張冠李戴：兩小時轉檔是 Tom 說的作業時間，不是 Rosa 擔心的事", "張冠李戴：大樓八點半才開門是 Gareth 提到的，不是 Rosa 擔心的事"],
                     "vocab": [["demo", "示範"], ["worried", "擔心"]],
                 },
             },
@@ -363,7 +363,7 @@ ITEMS = [
     # Q3 sequence: look over the plan (line 5) comes before ordering (Thursday) and before calling back (line 7).
     {
         "id": "l-talk-05", "type": "listen", "format": "talk", "unit": "talk-next", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-talk-05", "gapMs": 500,
             "lines": [

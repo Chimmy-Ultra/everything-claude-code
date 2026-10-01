@@ -35,12 +35,12 @@
   "l-qr-21": {
     "q": [{
       "point": ["A direct answer: Yes, plus an action.", "直接回答：Yes，再加一個動作。"],
-      "why": ["She asks whether he has the schedule. <em>Yes, I'll e-mail it to you right now</em> answers her and offers the file. The other replies talk about numbers and places.", "她問他有沒有時程表。回答 Yes, I'll e-mail it to you right now 回答了問題，還提供檔案。其他回答講的是人數和地點。"]
+      "why": ["She asks whether he has the schedule. <em>Yes, I'll e-mail it to you right now</em> answers her and offers the file. The other replies talk about the candidates and a place.", "她問他有沒有時程表。回答 Yes, I'll e-mail it to you right now 回答了問題，還提供檔案。其他回答講的是應徵者的評價和地點。"]
     }],
     "gloss": [
       {"w": "candidates", "hw": "candidate", "pos": "n.", "zh": "應徵者", "ex": "We have five candidates for the job."},
       {"w": "interviews", "hw": "interview", "pos": "n.", "zh": "面試", "ex": "The interviews start at nine."},
-      {"w": "so far", "hw": "so far", "pos": "phr.", "zh": "到目前為止", "ex": "We have sold ten tickets so far."}
+      {"w": "impressive", "hw": "impressive", "pos": "adj.", "zh": "令人印象深刻的", "ex": "Her presentation was very impressive."}
     ]
   },
   "l-qr-22": {
