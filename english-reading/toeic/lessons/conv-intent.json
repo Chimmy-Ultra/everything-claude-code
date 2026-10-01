@@ -1,8 +1,8 @@
 {
   "unit": "conv-intent",
   "lead": [
-    "Some questions quote a line and ask what the speaker means or implies. The words are usually simple. The meaning comes from the situation, so the lines before and after the quote matter.",
-    "有些題目引用一句話，問說話者的意思或暗示。字面通常很簡單，意思要從情境來看，所以引句前後的話很重要。"
+    "Some questions quote a line and ask what the speaker means or implies. The words can be simple. The meaning comes from the situation, so the lines before and after the quote matter.",
+    "有些題目引用一句話，問說話者的意思或暗示。字面可能很簡單，意思要從情境來看，所以引句前後的話很重要。"
   ],
   "steps": [
     [
@@ -34,8 +34,8 @@
       ],
       "ex": [
         [
-          "'I have another call at ten.' = <em>I can't attend at ten.</em>",
-          "「我十點還有另一通電話。」＝十點我不能參加。"
+          "'It's already half past five.' = <em>We should finish soon.</em>",
+          "「現在已經五點半了。」＝我們該收尾了。"
         ]
       ]
     },
@@ -130,11 +130,11 @@
   ],
   "pairs": [
     {
-      "right": "Q: What does the woman imply when she says, \"I have another call at ten\"? [Man: Can you join the budget meeting at ten?] / A: She cannot attend at that time.",
-      "wrong": "Q: What does the woman imply when she says, \"I have another call at ten\"? [Man: Can you join the budget meeting at ten?] / A: She wants to make a phone call.",
+      "right": "Q: What does the woman imply when she says, \"I had pasta yesterday\"? [Man: Do you want to try the new Italian place for lunch?] / A: She would prefer something else.",
+      "wrong": "Q: What does the woman imply when she says, \"I had pasta yesterday\"? [Man: Do you want to try the new Italian place for lunch?] / A: She wants to eat pasta again.",
       "why": [
-        "The wrong option takes the words literally. In this situation the line is a polite refusal.",
-        "錯誤選項照字面理解。在這個情境下，那句話是委婉拒絕。"
+        "The wrong option takes the words as a wish. Here the line is a polite way to say no.",
+        "錯誤選項把字面當成願望。這句話其實是委婉說不。"
       ]
     },
     {
@@ -190,8 +190,8 @@
           "關於這個專案可以推論出什麼？"
         ],
         [
-          "What does the woman most likely mean?",
-          "女子最可能是什麼意思？"
+          "What does the woman most likely mean when she says, \"…\"?",
+          "女子說「……」最可能是什麼意思？"
         ]
       ]
     },

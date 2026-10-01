@@ -29,8 +29,8 @@
         "抓關鍵字，聽它旁邊的句子"
       ],
       "body": [
-        "If the question asks why a shipment is late, wait for 'shipment' or 'late'. The reason is usually in that sentence or the next one.",
-        "若題目問貨為什麼延遲，就等 shipment 或 late 出現，原因通常在那一句或下一句。"
+        "If the question asks why a shipment is late, wait for 'shipment' or 'late'. The reason is often in that sentence or the next one.",
+        "若題目問貨為什麼延遲，就等 shipment 或 late 出現，原因常在那一句或下一句。"
       ],
       "ex": [
         [
@@ -50,8 +50,8 @@
       ],
       "ex": [
         [
-          "Man: We could meet at two. Woman: I have a client then. <em>Make it four.</em>",
-          "男：我們兩點見面吧。女：我那時有客戶。改四點。"
+          "Man: We could meet at two. Woman: I have a client then. <em>Let's make it four.</em>",
+          "男：我們兩點見面吧。女：我那時有客戶。我們改四點吧。"
         ]
       ]
     },
@@ -118,19 +118,19 @@
       ],
       "ex": [
         [
-          "Audio: 'I'll take the 2 p.m. session.' Graphic: find the <em>2 p.m. row</em> and read the room.",
-          "音檔：我選下午兩點那場。圖表：找到下午兩點那一列，讀出教室。"
+          "Audio: 'I'll catch the 9:15 train.' Graphic: find the <em>9:15 row</em> and read the platform.",
+          "音檔：我搭九點十五分那班車。圖表：找到 9:15 那一列，讀出月台。"
         ]
       ]
     }
   ],
   "pairs": [
     {
-      "right": "Q: What does the woman decide to do? [Man: We can't deliver before noon. Woman: Then I'll send my assistant to pick it up.] / A: Send someone to collect an order.",
-      "wrong": "Q: What does the woman decide to do? [Man: We can't deliver before noon. Woman: Then I'll send my assistant to pick it up.] / A: Postpone the event until noon.",
+      "right": "Q: What does the woman decide to do? [Man: We can't deliver before Friday. Woman: Then I'll come and pick it up myself.] / A: Collect an order herself.",
+      "wrong": "Q: What does the woman decide to do? [Man: We can't deliver before Friday. Woman: Then I'll come and pick it up myself.] / A: Move a delivery to Friday.",
       "why": [
-        "'Noon' is a word from the audio, but it is the delivery limit. The woman decides on a pickup.",
-        "noon 是音檔裡的字，但那是送貨時間的限制。女子決定的是派人去取貨。"
+        "'Friday' is the earliest delivery date, but the woman decides to collect the order herself.",
+        "Friday 是最快的送貨日，但女子決定自己去取貨。"
       ]
     },
     {
@@ -186,8 +186,8 @@
           "女子說她需要什麼？"
         ],
         [
-          "Look at the graphic. Which room will the man go to?",
-          "看圖表。男子會去哪個房間？"
+          "Look at the graphic. Which platform will the woman use?",
+          "看圖表。女子會使用哪個月台？"
         ]
       ]
     },

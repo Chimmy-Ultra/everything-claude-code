@@ -1,8 +1,8 @@
 {
   "unit": "talk-detail",
   "lead": [
-    "Detail questions on a talk ask for a specific fact: a time, a reason, a change or a request. The speaker says it once, so you need to know what to listen for before the talk plays.",
-    "短講的細節題問特定資訊：時間、原因、變動或請求。說話者只說一次，所以要在播放前就知道該聽什麼。"
+    "Detail questions on a talk ask for a specific fact: a time, a reason, a change or a request. The talk plays once, so you need to know what to listen for before the talk plays.",
+    "短講的細節題問特定資訊：時間、原因、變動或請求。談話只播一次，所以要在播放前就知道該聽什麼。"
   ],
   "steps": [
     [
@@ -117,29 +117,29 @@
         "圖表與數字"
       ],
       "body": [
-        "With a graphic, the talk gives one clue and the graphic gives the other: a time you hear, a room you see. If the talk gives parts, work out the total.",
-        "有圖表時，談話給一個線索，圖表給另一個：聽到時間，看到房間。若談話給的是部分數字，要自己算出總數。"
+        "With a graphic, the talk gives one clue and the graphic gives the other: a time you hear, a name or number you see. If the talk gives parts, work out the total.",
+        "有圖表時，談話給一個線索，圖表給另一個：聽到時間，看到名稱或號碼。若談話給的是部分數字，要自己算出總數。"
       ],
       "ex": [
         [
-          "Talk: 'The session starts at ten.' Graphic: find the <em>10:00 row</em>, then read the room.",
-          "談話：課程十點開始。圖表：找到 10:00 那一列，再讀房間。"
+          "Talk: 'The shuttle leaves at ten.' Graphic: find the <em>10:00 row</em>, then read the stop.",
+          "談話：接駁車十點出發。圖表：找到 10:00 那一列，再讀站名。"
         ]
       ]
     }
   ],
   "pairs": [
     {
-      "right": "Q: What change does the speaker mention? [Woman: The workshop will now run ninety minutes instead of sixty.] / A: A longer session.",
-      "wrong": "Q: What change does the speaker mention? [Woman: The workshop will now run ninety minutes instead of sixty.] / A: A new location.",
+      "right": "Q: What change does the speaker mention? [Woman: The staff meeting will now start at ten instead of nine.] / A: A later start time.",
+      "wrong": "Q: What change does the speaker mention? [Woman: The staff meeting will now start at ten instead of nine.] / A: A longer meeting.",
       "why": [
-        "The talk changes the length. A new location is never mentioned.",
-        "談話中改的是時間長度，從未提到新地點。"
+        "The talk changes the start time. A longer meeting is never mentioned.",
+        "談話中改的是開始時間，從未提到會議變長。"
       ]
     },
     {
-      "right": "Q: What are listeners asked to do by Friday? [Man: Please hand your timesheets to payroll by Friday.] / A: Submit their timesheets.",
-      "wrong": "Q: What are listeners asked to do by Friday? [Man: Please hand your timesheets to payroll by Friday.] / A: Attend a payroll meeting.",
+      "right": "Q: What are listeners asked to do by Thursday? [Man: Please hand your timesheets to payroll by Thursday.] / A: Submit their timesheets.",
+      "wrong": "Q: What are listeners asked to do by Thursday? [Man: Please hand your timesheets to payroll by Thursday.] / A: Attend a payroll meeting.",
       "why": [
         "'Payroll' is a word from the talk, but the request is to hand in timesheets.",
         "payroll 是談話中的字，但請求是交工時表。"
@@ -162,24 +162,24 @@
       ],
       "items": [
         [
-          "Who most likely is Mr. Wei?",
-          "Wei 先生最可能是誰？"
+          "Who most likely is Ms. Costa?",
+          "Costa 女士最可能是誰？"
         ],
         [
           "What change does the speaker mention?",
           "說話者提到什麼變動？"
         ],
         [
-          "Why does the speaker mention the garage?",
-          "說話者為什麼提到停車場？"
+          "Why does the speaker mention the weather?",
+          "說話者為什麼提到天氣？"
         ],
         [
           "What are listeners asked to do?",
           "聽眾被要求做什麼？"
         ],
         [
-          "What does the speaker say about the studio?",
-          "說話者對工作室說了什麼？"
+          "What does the speaker say about the new schedule?",
+          "說話者對新時程說了什麼？"
         ],
         [
           "What does the speaker mean when she says, \"…\"?",

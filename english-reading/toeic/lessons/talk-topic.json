@@ -34,11 +34,11 @@
       ],
       "ex": [
         [
-          "<em>Thank you for calling</em> Westfield Dental. Our office is closed today.",
-          "感謝來電 Westfield 牙科。本診所今天休診。（診所的語音留言）"
+          "<em>Thank you for calling</em> Westfield Dental. Our office is closed today. (a clinic's recorded message)",
+          "感謝來電 Westfield 牙科。本診所今天休診。（診所的錄音訊息）"
         ],
         [
-          "<em>Attention, passengers</em> on Flight 82. Boarding will begin shortly.",
+          "<em>Attention, passengers</em> on Flight 82. Boarding will begin shortly. (an airport announcement)",
           "82 號班機的旅客請注意，即將開始登機。（機場廣播）"
         ]
       ]
@@ -49,8 +49,8 @@
         "主題在前，細節在後"
       ],
       "body": [
-        "The first sentences usually say what the talk is about. Later sentences add times, places and instructions. Hold on to the first idea.",
-        "前幾句通常說明談話的主題，之後才補上時間、地點和指示。記住最先出現的那個想法。"
+        "The first sentences often say what the talk is about. Later sentences add times, places and instructions. Hold on to the first idea.",
+        "前幾句常會說明談話的主題，之後才補上時間、地點和指示。記住最先出現的那個想法。"
       ],
       "ex": [
         [
@@ -85,13 +85,13 @@
         "細節不是主旨"
       ],
       "body": [
-        "An option that matches one time, place or name is usually too narrow. Ask whether it covers the whole talk.",
-        "只符合一個時間、地點或名字的選項通常範圍太小。要問它是否涵蓋整段談話。"
+        "An option that matches one time, place or name is often too narrow. Ask whether it covers the whole talk.",
+        "只符合一個時間、地點或名字的選項常常範圍太小。要問它是否涵蓋整段談話。"
       ],
       "ex": [
         [
-          "Talk: road work, a two-week delay and detours. Topic: <em>a construction schedule</em>. 'The detour map' is a detail.",
-          "談話：道路施工、延誤兩週、改道。主旨：施工時程。「改道地圖」是細節。"
+          "Talk: road work, a delay and detours. Topic: <em>a construction schedule</em>. 'The detour map' is a detail.",
+          "談話：道路施工、延誤、改道。主旨：施工時程。「改道地圖」是細節。"
         ]
       ]
     },
@@ -130,27 +130,27 @@
   ],
   "pairs": [
     {
-      "right": "Q: What is the announcement mainly about? [Man: Starting Monday, the east entrance closes for repairs. Please use the south entrance.] / A: A temporary entrance closure.",
-      "wrong": "Q: What is the announcement mainly about? [Man: Starting Monday, the east entrance closes for repairs. Please use the south entrance.] / A: The hours of the south entrance.",
+      "right": "Q: What is the announcement mainly about? [Man: Starting Monday, the staff cafeteria closes for painting. Please use the café across the street.] / A: A temporary cafeteria closure.",
+      "wrong": "Q: What is the announcement mainly about? [Man: Starting Monday, the staff cafeteria closes for painting. Please use the café across the street.] / A: The hours of a nearby café.",
       "why": [
-        "The south entrance is only the alternative. The main message is that the east entrance is closing.",
-        "南入口只是替代方案，主要訊息是東入口要關閉。"
+        "The café is only the alternative. The main message is that the cafeteria is closing.",
+        "對面的咖啡館只是替代方案，主要訊息是員工餐廳要關閉。"
       ]
     },
     {
-      "right": "Q: Why is the speaker calling? [Woman: This is Ben from Delta Print. Your business cards are ready for pickup.] / A: To say an order is ready.",
-      "wrong": "Q: Why is the speaker calling? [Woman: This is Ben from Delta Print. Your business cards are ready for pickup.] / A: To ask for payment.",
+      "right": "Q: Why is the speaker calling? [Man: This is Ben from Delta Print. Your business cards are ready for pickup.] / A: To say an order is ready.",
+      "wrong": "Q: Why is the speaker calling? [Man: This is Ben from Delta Print. Your business cards are ready for pickup.] / A: To ask for payment.",
       "why": [
         "Payment is never mentioned. The call is to say the order can be picked up.",
         "沒有提到付款。這通電話是通知訂單可以取貨。"
       ]
     },
     {
-      "right": "Q: Who is the speaker? [Man: Welcome aboard. I'll be your guide today. Our first stop is the old harbor.] / A: A tour guide.",
-      "wrong": "Q: Who is the speaker? [Man: Welcome aboard. I'll be your guide today. Our first stop is the old harbor.] / A: A ship captain.",
+      "right": "Q: Who is the speaker? [Man: Good morning, class. Please open your textbooks to page ten. Today we'll practice writing business e-mails.] / A: An instructor.",
+      "wrong": "Q: Who is the speaker? [Man: Good morning, class. Please open your textbooks to page ten. Today we'll practice writing business e-mails.] / A: A bookstore clerk.",
       "why": [
-        "'Aboard' pulls toward a captain, but 'your guide' and 'first stop' name the role.",
-        "aboard 讓人想到船長，但 your guide 和 first stop 才點出身分。"
+        "'Textbooks' pulls toward a bookstore, but 'class' and 'we'll practice' name the role.",
+        "textbooks 讓人想到書店，但 class 和 we'll practice 才點出身分。"
       ]
     }
   ],

@@ -79,3 +79,6 @@ Fable 指出第一版偏簡單。原因在出題規則（詳見 DESIGN.md 附錄
 The page was renamed The Workbook and redesigned as a printed workbook at the learner's request. All 192 questions got English notes (`en/*.json`, style in `en/STYLE.md`): grammar and listening show only the rule and how to see it; vocabulary also shows how each other option word is used. The reviewed Chinese stays as a hidden twin.
 - Seven writer agents drafted the notes from the reviewed Chinese explanations; five other agents reviewed every entry against the items and made 34 fixes (logs: `en_review_*.md`). No answer key was questioned.
 - Word-card phonetics come from the CMU Pronouncing Dictionary (`en/ipa.py`); two phrases it lacks (barcode scanning, minibar) show no phonetics rather than a guess.
+
+## Chapter lessons (2026-10-01)
+Every chapter now opens with a short lesson (`lessons/<unit>.json`, style in `lessons/STYLE.md`, checked by `lessons/check.py`), with a Skip link to go straight to the questions and a Lesson button in the question dock. Grammar lessons build on the learner's older 多益文法考點 handout (frequency claims dropped). Four writer agents drafted 28 lessons; four other agents reviewed them (logs `lessons_review_*.md`): they fixed overstated rules, "wrong" examples that some standard English accepts, misgrouped list items and glosses, and listening examples that leaked practice-set answers.

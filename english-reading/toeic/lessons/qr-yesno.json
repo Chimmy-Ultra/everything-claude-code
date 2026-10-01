@@ -134,8 +134,8 @@
       ],
       "ex": [
         [
-          "Will you <em>present</em> the results? Here <em>present</em> is a verb, not a gift.",
-          "Will you present the results? 這裡的 present 是動詞「報告」，不是禮物。"
+          "Is the <em>plant</em> open on Saturday? Here <em>plant</em> means a factory, not something in a pot.",
+          "Is the plant open on Saturday? 這裡的 plant 是「工廠」，不是盆栽。"
         ],
         [
           "Will you <em>book</em> the hotel? Here <em>book</em> means reserve, not a thing to read.",
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "right": "Q: Haven't the samples arrived yet? / A: No, they're due on Friday.",
+      "right": "Q: Haven't the samples arrived yet? / A: No, the courier is running late.",
       "wrong": "Q: Haven't the samples arrived yet? / A: Yes, I sampled the new menu.",
       "why": [
         "The wrong response plays on 'sample' and says nothing about delivery.",
@@ -202,12 +202,12 @@
           "我下午可以用投影機嗎？"
         ],
         [
-          "Haven't the name badges come in yet?",
-          "名牌還沒到嗎？"
+          "Hasn't the new catalog been printed yet?",
+          "新型錄還沒印好嗎？"
         ],
         [
-          "You're presenting tomorrow, aren't you?",
-          "你明天要報告，對吧？"
+          "You're joining the site visit, aren't you?",
+          "你會參加實地參訪，對吧？"
         ],
         [
           "The store opens at nine, doesn't it?",
@@ -262,8 +262,8 @@
   ],
   "traps": [
     [
-      "Echo words. A response repeats a word from the question (name, present, book) but deals with something else. Ask whether it talks about the same event.",
-      "重複字。回應重複問句裡的字（name、present、book），卻在談別的事。要問自己它是否在談同一件事。"
+      "Echo words. A response repeats a word from the question (plant, book, order) but deals with something else. Ask whether it talks about the same event.",
+      "重複字。回應重複問句裡的字（plant、book、order），卻在談別的事。要問自己它是否在談同一件事。"
     ],
     [
       "Wrong tense. A question about tomorrow answered with 'It went well', or a question about now answered about last year. Check the time first.",

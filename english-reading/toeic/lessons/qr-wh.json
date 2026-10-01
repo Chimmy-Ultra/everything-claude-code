@@ -1,8 +1,8 @@
 {
   "unit": "qr-wh",
   "lead": [
-    "Part 2 plays one question, then three spoken responses. A Wh- question begins with who, what, where, when, why, how or which. Choose the response that gives that kind of information.",
-    "第 2 部分先播一個問句，再播三個回應。Wh 問句以 who、what、where、when、why、how 或 which 開頭，要選出給出對應資訊的回應。"
+    "Part 2 plays one question or statement, then three spoken responses. A Wh- question begins with who, what, where, when, why, how or which. Choose the response that gives that kind of information.",
+    "第 2 部分先播一個問句或陳述句，再播三個回應。Wh 問句以 who、what、where、when、why、how 或 which 開頭，要選出給出對應資訊的回應。"
   ],
   "steps": [
     [
@@ -138,8 +138,8 @@
           "Q: 預算什麼時候要交？／A: 去問 Park 女士。"
         ],
         [
-          "Q: Where is the sales report? / A: <em>It should be on the shared drive.</em>",
-          "Q: 業績報告在哪裡？／A: 應該在共用磁碟上。"
+          "Q: Where is the sales report? / A: <em>It should be in the shared folder.</em>",
+          "Q: 業績報告在哪裡？／A: 應該在共用資料夾裡。"
         ]
       ]
     }
@@ -270,8 +270,8 @@
       "音近字是誘答。回應用了只是聽起來像問句的字，例如 copy 和 coffee，就是錯的。要看意思。"
     ],
     [
-      "Yes or No does not answer a true Wh- question. When a response starts with Yes or No after who, where, when, why or how, cross it out first.",
-      "Yes 或 No 無法回答真正的 Wh 問句。遇到 who、where、when、why、how 的問句，回應若以 Yes 或 No 開頭，先劃掉。"
+      "Yes or No does not answer a true Wh- question. When a response starts with Yes or No after who, where, when, why or how, be suspicious of it.",
+      "Yes 或 No 無法回答真正的 Wh 問句。遇到 who、where、when、why、how 的問句，回應若以 Yes 或 No 開頭，要特別存疑。"
     ],
     [
       "Wrong time or person. The question is about tomorrow, but the response is about last week, or it answers for a different person. Check the tense and the subject.",

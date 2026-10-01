@@ -29,8 +29,8 @@
         "主旨涵蓋整段對話"
       ],
       "body": [
-        "The correct option sums up the full conversation. An option that matches only one sentence is a detail, and it is usually a wrong answer.",
-        "正確選項概括整段對話。只符合其中一句的選項是細節，通常是錯誤答案。"
+        "The correct option sums up the full conversation. An option that matches only one sentence is a detail, and it is often a wrong answer.",
+        "正確選項概括整段對話。只符合其中一句的選項是細節，常是錯誤答案。"
       ],
       "ex": [
         [
@@ -61,8 +61,8 @@
         "選項會換個說法"
       ],
       "body": [
-        "The audio and the option rarely share the same words. Match meaning, not words. An option that copies words from the audio needs a second look.",
-        "音檔和選項很少用同樣的字。要比對意思，不是字面。直接抄音檔字詞的選項要再多看一眼。"
+        "The audio and the option often use different words. Match meaning, not words. An option that copies words from the audio needs a second look.",
+        "音檔和選項常用不同的字。要比對意思，不是字面。直接抄音檔字詞的選項要再多看一眼。"
       ],
       "ex": [
         [
@@ -86,8 +86,8 @@
       ],
       "ex": [
         [
-          "Man: Your room key works from three o'clock. <em>Setting: a hotel.</em>",
-          "男：您的房卡下午三點起可以使用。場合：飯店。"
+          "Man: Your room will be ready at three o'clock. <em>Setting: a hotel.</em>",
+          "男：您的房間下午三點會準備好。場合：飯店。"
         ],
         [
           "Woman: Would you like to see the dessert menu? <em>Setting: a restaurant.</em>",
@@ -122,11 +122,11 @@
       ]
     },
     {
-      "right": "Q: Where is the conversation most likely taking place? [Man: Your room key works from three o'clock. Woman: Is breakfast included?] / A: At a hotel.",
-      "wrong": "Q: Where is the conversation most likely taking place? [Man: Your room key works from three o'clock. Woman: Is breakfast included?] / A: At a restaurant.",
+      "right": "Q: Where is the conversation most likely taking place? [Man: Your room will be ready at three o'clock. Woman: Is breakfast included?] / A: At a hotel.",
+      "wrong": "Q: Where is the conversation most likely taking place? [Man: Your room will be ready at three o'clock. Woman: Is breakfast included?] / A: At a restaurant.",
       "why": [
-        "'Breakfast' pulls toward a restaurant, but 'room key' and 'from three o'clock' point to a hotel.",
-        "breakfast 讓人想到餐廳，但 room key 和 from three o'clock 指向飯店。"
+        "'Breakfast' pulls toward a restaurant, but 'your room' and 'ready at three o'clock' point to a hotel.",
+        "breakfast 讓人想到餐廳，但 your room 和 ready at three o'clock 指向飯店。"
       ]
     },
     {
@@ -170,7 +170,7 @@
           "說話者最可能在哪裡工作？"
         ],
         [
-          "Who is the man most likely?",
+          "Who most likely is the man?",
           "男子最可能是誰？"
         ],
         [

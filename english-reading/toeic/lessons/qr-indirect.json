@@ -1,8 +1,8 @@
 {
   "unit": "qr-indirect",
   "lead": [
-    "Some Part 2 items have no Wh- word and no yes/no pattern: a statement, a choice question or a request. The correct response is often indirect. It gives a fact, a reason or a suggestion that fits the speaker's point.",
-    "第 2 部分有些題目沒有 Wh 疑問詞，也不是 Yes/No 句型：可能是陳述句、選擇問句或請求。正確回應常是間接的，用事實、理由或建議回應說話者的重點。"
+    "Some Part 2 items have no Wh- word and no yes/no pattern: a statement, a choice question or a request. A correct response can be indirect. It gives a fact, a reason or a suggestion that fits the speaker's point.",
+    "第 2 部分有些題目沒有 Wh 疑問詞，也不是 Yes/No 句型：可能是陳述句、選擇問句或請求。正確回應也可能是間接的，用事實、理由或建議回應說話者的重點。"
   ],
   "steps": [
     [
@@ -34,8 +34,8 @@
           "投影機壞了。／我來打給資訊部。"
         ],
         [
-          "We got the contract. / <em>That's wonderful news. Who told you?</em>",
-          "我們拿到合約了。／真是好消息，誰告訴你的？"
+          "We got the contract. / <em>That's wonderful news. When did you hear?</em>",
+          "我們拿到合約了。／真是好消息，你什麼時候得知的？"
         ]
       ]
     },
@@ -54,7 +54,7 @@
           "Q: 我們星期一還是星期二開會？／A: 我都可以。"
         ],
         [
-          "Q: Would you prefer the aisle or the window seat? / A: <em>I like to stretch my legs.</em>",
+          "Q: Would you prefer the aisle or the window seat? / A: <em>I like to stretch my legs.</em> (implies the aisle)",
           "Q: 你要靠走道還是靠窗的位子？／A: 我喜歡伸展雙腿。（暗示走道）"
         ]
       ]
@@ -70,7 +70,7 @@
       ],
       "ex": [
         [
-          "Q: Are you joining us for dinner? / A: <em>I have an early flight tomorrow.</em>",
+          "Q: Are you joining us for dinner? / A: <em>I have an early flight tomorrow.</em> (implies no)",
           "Q: 你要和我們一起吃晚餐嗎？／A: 我明天一早的班機。（暗示不去）"
         ],
         [
@@ -125,8 +125,8 @@
         "請求、提議與建議"
       ],
       "body": [
-        "'Could you…?', 'Would you like…?' and 'Why don't we…?' ask you to accept or decline an action. A reply usually says yes or no, often with a reason.",
-        "Could you…?、Would you like…?、Why don't we…? 是要你接受或婉拒一個行動。回應通常表示願意或不願意，常附上理由。"
+        "'Could you…?', 'Would you like…?' and 'Why don't we…?' ask you to accept or decline an action. A reply accepts or declines, often with a reason.",
+        "Could you…?、Would you like…?、Why don't we…? 是要你接受或婉拒一個行動。回應是接受或婉拒，常附上理由。"
       ],
       "ex": [
         [
@@ -250,8 +250,8 @@
   ],
   "traps": [
     [
-      "Word echo and sound-alike. 'Book' answered with 'book me a flight', or 'sales' with 'sail', repeats a sound but ignores the point. Choose by meaning.",
-      "重複字與音近字。對 book 回答 book me a flight，或對 sales 回答 sail，只是重複聲音、沒回應重點。要看意思。"
+      "Word echo and sound-alike. 'Book' answered with 'book me a flight', or 'right' with 'write', repeats a sound but ignores the point. Choose by meaning.",
+      "重複字與音近字。對 book 回答 book me a flight，或對 right 回答 write，只是重複聲音、沒回應重點。要看意思。"
     ],
     [
       "Do not reject a response only because it has no yes or no. Test it: would a coworker reply this way?",
