@@ -850,10 +850,12 @@ function toggleForm(box, cls, make) { const f = box.querySelector("." + cls); if
 function reportForm(item, repBtn) {
   const f = el("div", "report"), inp = el("input"); inp.id = "report-" + item.id; inp.placeholder = "What's wrong with this question?"; inp.value = (M[item.id] || {}).flagNote || "";
   const send = () => { M[item.id] = Object.assign(M[item.id] || {}, { flagged: true, flagNote: inp.value.trim() }); saveMark(item.id); if (repBtn.querySelector(".lbl")) { setLabel(repBtn, "Reported"); repBtn.setAttribute("aria-pressed", "true"); } else repBtn.textContent = "Reported"; f.remove(); toast("Noted."); };
-  inp.onkeydown = e => { if (e.key === "Enter") send(); };
+  inp.onkeydown = e => { if (e.key === "Enter" && !typing(e)) send(); };
   f.append(inp, btn(null, "Send", send)); return f;
 }
 
+// Enter that confirms an input-method candidate (Chinese typing) is not a send
+const typing = e => e.isComposing || e.keyCode === 229;
 // Ask Claude: the strongest tier the viewer's plan allows; shown only when the page may use Claude
 let sample = null;
 function askForm(item, ctx) {
@@ -881,7 +883,7 @@ function askForm(item, ctx) {
     }
     go.disabled = false;
   };
-  go.onclick = run; inp.onkeydown = e => { if (e.key === "Enter") run(); };
+  go.onclick = run; inp.onkeydown = e => { if (e.key === "Enter" && !typing(e)) run(); };
   f.append(inp, go, out); return f;
 }
 
