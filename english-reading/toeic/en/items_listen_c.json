@@ -1,0 +1,127 @@
+{
+  "l-qr-18": {
+    "q": [{
+      "point": ["A which-question with a condition: rule out the contradicted answer.", "帶條件的 which 問句：刪掉與條件矛盾的回答。"],
+      "why": ["The question says <em>the morning departure has been canceled</em>. <em>The one that leaves right after lunch</em> names a different flight, so it fits.", "問句說 the morning departure has been canceled。回答 The one that leaves right after lunch 指的是另一班飛機，所以符合。"]
+    }],
+    "gloss": [
+      {"w": "departure", "hw": "departure", "pos": "n.", "zh": "出發的班次", "ex": "Our departure is scheduled for noon."},
+      {"w": "canceled", "hw": "cancel", "pos": "v.", "zh": "取消", "ex": "They canceled the meeting yesterday."},
+      {"w": "aisle seat", "hw": "aisle seat", "pos": "n.", "zh": "走道座位", "ex": "I always book an aisle seat."}
+    ]
+  },
+  "l-qr-19": {
+    "q": [{
+      "point": ["How many: the answer can be that the number is not final yet.", "How many：回答可以是人數還沒確定。"],
+      "why": ["The guest list <em>doubled from a hundred</em>, so the final number is still open. <em>The final replies aren't due until Friday</em> says the count is not fixed.", "賓客名單已從一百人加倍，最後人數還沒定。回答 The final replies aren't due until Friday 表示人數還沒確定。"]
+    }],
+    "gloss": [
+      {"w": "set up", "hw": "set up", "pos": "phr.", "zh": "布置、擺設", "ex": "We set up the room early."},
+      {"w": "guest list", "hw": "guest list", "pos": "n.", "zh": "賓客名單", "ex": "She checked the guest list twice."},
+      {"w": "replies", "hw": "reply", "pos": "n.", "zh": "回覆（出席與否）", "ex": "Please send your reply by Friday."}
+    ]
+  },
+  "l-qr-20": {
+    "q": [{
+      "point": ["A yes/no question answered indirectly: the parts have not left yet.", "Yes/No 問句的間接回答：零件還沒出貨。"],
+      "why": ["The parts must arrive before the inspectors come on Friday. <em>The supplier hasn't even shipped them yet</em> means they will not make it, so the answer is no.", "零件要在檢查員星期五來之前到。回答 The supplier hasn't even shipped them yet 表示來不及，所以答案是不會。"]
+    }],
+    "gloss": [
+      {"w": "replacement parts", "hw": "replacement part", "pos": "n.", "zh": "替換零件", "ex": "We ordered a replacement part today."},
+      {"w": "inspectors", "hw": "inspector", "pos": "n.", "zh": "檢查員", "ex": "The inspector visits every spring."},
+      {"w": "shipped", "hw": "ship", "pos": "v.", "zh": "出貨、寄出", "ex": "The order shipped on Monday."}
+    ]
+  },
+  "l-qr-21": {
+    "q": [{
+      "point": ["A direct answer: Yes, plus an action.", "直接回答：Yes，再加一個動作。"],
+      "why": ["She asks whether he has the schedule. <em>Yes, I'll e-mail it to you right now</em> answers her and offers the file. The other replies talk about numbers and places.", "她問他有沒有時程表。回答 Yes, I'll e-mail it to you right now 回答了問題，還提供檔案。其他回答講的是人數和地點。"]
+    }],
+    "gloss": [
+      {"w": "candidates", "hw": "candidate", "pos": "n.", "zh": "應徵者", "ex": "We have five candidates for the job."},
+      {"w": "interviews", "hw": "interview", "pos": "n.", "zh": "面試", "ex": "The interviews start at nine."},
+      {"w": "so far", "hw": "so far", "pos": "phr.", "zh": "到目前為止", "ex": "We have sold ten tickets so far."}
+    ]
+  },
+  "l-qr-22": {
+    "q": [{
+      "point": ["A yes/no question can get the answer: it depends.", "Yes/No 問句可以回答：看情況。"],
+      "why": ["He asks about an <em>extra charge</em> for a different location. <em>That depends on which branch you choose</em> means the charge changes by branch, so it is neither yes nor no.", "他問換地點還車有沒有額外費用。回答 That depends on which branch you choose 表示費用要看分店，所以不是單純的 Yes 或 No。"]
+    }],
+    "gloss": [
+      {"w": "extra charge", "hw": "extra charge", "pos": "n.", "zh": "額外費用", "ex": "There is no extra charge for delivery."},
+      {"w": "depends", "hw": "depend", "pos": "v.", "zh": "取決於", "ex": "It depends on the weather."},
+      {"w": "branch", "hw": "branch", "pos": "n.", "zh": "分店", "ex": "The downtown branch opens at nine."}
+    ]
+  },
+  "l-conv-09": {
+    "q": [
+      {
+        "point": ["Main topic: join the problem and the fix.", "主旨：把問題和對策串起來。"],
+        "why": ["The woman gives the problem first, patients who <em>didn't show up</em>. Then comes the fix: <em>A text message would reach more of them</em>. Together they are about getting people to keep their visits.", "女方先說問題：病患 didn't show up。接著是對策：A text message would reach more of them。合起來是要讓更多人準時來看診。"]
+      },
+      {
+        "point": ["Why mention something: look for the point behind it.", "為什麼提到某事：找它背後的意思。"],
+        "why": ["He asks <em>What would it cost, though?</em> and adds that the owner <em>already turned down a new reception desk</em>. He is hinting that the owner does not like to spend money.", "他問 What would it cost, though?，再說老闆 already turned down a new reception desk。他在暗示老闆不愛花錢。"]
+      },
+      {
+        "point": ["Match the action to the right day and person.", "把動作對到正確的日子和人。"],
+        "why": ["<em>Let's start the trial on Monday</em> is the trial. <em>I'll bring it up with the owner at Thursday's meeting</em> is his task at the meeting: he will present the idea to the owner.", "Let's start the trial on Monday 是試用。I'll bring it up with the owner at Thursday's meeting 才是他在星期四要做的事：向老闆提出這個想法。"]
+      }
+    ],
+    "gloss": [
+      {"w": "no-show", "hw": "no-show", "pos": "n.", "zh": "沒到的人", "ex": "Each no-show wastes an hour."},
+      {"w": "turned down", "hw": "turn down", "pos": "phr.", "zh": "拒絕", "ex": "She turned down the job offer."},
+      {"w": "free up", "hw": "free up", "pos": "phr.", "zh": "空出（時間）", "ex": "That will free up some time."},
+      {"w": "trial", "hw": "trial", "pos": "n.", "zh": "試用", "ex": "We started a trial last week."},
+      {"w": "reception desk", "hw": "reception desk", "pos": "n.", "zh": "櫃檯", "ex": "Please check in at the reception desk."}
+    ]
+  },
+  "l-conv-10": {
+    "q": [
+      {
+        "point": ["The words after worried point to the problem.", "worried 後面的字就是問題所在。"],
+        "why": ["Rosa says <em>I'm worried about the demo video</em>. Tom then says the client's projector <em>only accepts an older file type</em>, so the video may not play.", "Rosa 說 I'm worried about the demo video。Tom 接著說客戶的投影機 only accepts an older file type，所以影片可能播不出來。"]
+      },
+      {
+        "point": ["An idiom: it means the projector is very old.", "慣用說法：意思是投影機很老舊。"],
+        "why": ["Tom says the projector <em>only accepts an older file type</em>. Gareth adds <em>It belongs in a museum</em>. He means it is badly out of date, not that it should go to a museum.", "Tom 說投影機 only accepts an older file type。Gareth 接著說 It belongs in a museum，意思是它太過時，不是真的要放進博物館。"]
+      },
+      {
+        "point": ["Follow the change: proposal, objection, agreement.", "跟著變化走：提議、反對、同意。"],
+        "why": ["Rosa asks for <em>eight</em>. Gareth says the building opens at <em>eight thirty</em> and suggests <em>eight forty-five</em>. Rosa agrees with <em>That works</em>, so it is a quarter to nine.", "Rosa 提議 eight。Gareth 說大樓 eight thirty 才開，改提 eight forty-five。Rosa 回 That works，所以是八點四十五分。"]
+      }
+    ],
+    "gloss": [
+      {"w": "boardroom", "hw": "boardroom", "pos": "n.", "zh": "董事會議室", "ex": "The meeting is in the boardroom."},
+      {"w": "file type", "hw": "file type", "pos": "n.", "zh": "檔案格式", "ex": "This printer accepts every file type."},
+      {"w": "convert", "hw": "convert", "pos": "v.", "zh": "轉檔、轉換", "ex": "Please convert the file to PDF."},
+      {"w": "belongs in a museum", "hw": "belong in a museum", "pos": "phr.", "zh": "老舊過時（俚語）", "ex": "That old phone belongs in a museum."},
+      {"w": "lobby", "hw": "lobby", "pos": "n.", "zh": "大廳", "ex": "Wait for me in the lobby."}
+    ]
+  },
+  "l-talk-05": {
+    "q": [
+      {
+        "point": ["Purpose: the reason and the offer, taken together.", "目的：把原因和提議合起來看。"],
+        "why": ["She says <em>The Garden Room is no longer available</em>, then <em>I can offer you the Skyline Room instead</em>. The call is to suggest another venue for his dinner.", "她說 The Garden Room is no longer available，接著說 I can offer you the Skyline Room instead。來電是為了替他的晚宴建議另一個場地。"]
+      },
+      {
+        "point": ["A drawback: listen for what follows but.", "缺點題：聽 but 後面接什麼。"],
+        "why": ["She says the room is bigger, <em>but it has no built-in microphone system</em>. That means it does not come with sound equipment.", "她說房間比較大，but it has no built-in microphone system。意思是它沒有附音響設備。"]
+      },
+      {
+        "point": ["Sequence: before and once show what comes first.", "順序：before 和 once 顯示誰先誰後。"],
+        "why": ["<em>Before you order anything, please look over the floor plan</em> comes first. The call is for <em>once you've seen the plan</em>, so it comes after. Reviewing the layout is the first step.", "Before you order anything, please look over the floor plan 排在第一。打電話是 once you've seen the plan，在之後。所以先看房間配置。"]
+      }
+    ],
+    "gloss": [
+      {"w": "no longer available", "hw": "no longer available", "pos": "phr.", "zh": "不再能使用", "ex": "That model is no longer available."},
+      {"w": "burst", "hw": "burst", "pos": "v.", "zh": "爆裂、破裂", "ex": "A pipe burst in the basement."},
+      {"w": "built-in", "hw": "built-in", "pos": "adj.", "zh": "內建的", "ex": "The phone has a built-in camera."},
+      {"w": "floor plan", "hw": "floor plan", "pos": "n.", "zh": "平面圖", "ex": "Please check the floor plan first."},
+      {"w": "hold", "hw": "hold", "pos": "v.", "zh": "保留（位子、房間）", "ex": "Can you hold a table for us?"}
+    ]
+  },
+  "_flags": []
+}
