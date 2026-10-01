@@ -1,0 +1,75 @@
+{
+  "unit": "mandative",
+  "lead": ["The options are one verb in several forms (<em>submit, submits, submitted, will submit</em>). After a word of request, advice or necessity plus <em>that</em>, the verb takes the base form, whatever the subject.", "選項是同一個動詞的幾種形式（<em>submit、submits、submitted、will submit</em>）。表示要求、建議或必要的字加上 <em>that</em> 之後，動詞用原形，不管主詞是誰。"],
+  "steps": [
+    ["Look before <em>that</em> for a verb, adjective or noun of request, advice, demand or necessity.", "看 <em>that</em> 前面，有沒有表示要求、建議、堅持或必要的動詞、形容詞或名詞。"],
+    ["If there is one, choose the base form, even after a singular subject such as <em>every employee</em>.", "有的話就選原形，即使主詞是 <em>every employee</em> 這種單數。"],
+    ["For a passive, choose <em>be</em> + past participle. For a negative, choose <em>not</em> + base form.", "被動選 <em>be</em> + 過去分詞，否定選 <em>not</em> + 原形。"]
+  ],
+  "rules": [
+    {
+      "head": ["Verbs that call for the base form", "要求用原形的動詞"],
+      "body": ["<em>request, require, recommend, suggest, insist, ask, demand, propose, urge, advise</em>. In the that-clause, the verb stays in the base form for every subject and every tense.", "<em>request、require、recommend、suggest、insist、ask、demand、propose、urge、advise</em>。that 子句的動詞不管主詞和時態，都用原形。"],
+      "ex": [
+        ["The manager requested that every employee <em>submit</em> the form by Friday.", "經理要求每位員工在星期五前提交表格。"],
+        ["The consultant recommended that the company <em>hire</em> more engineers.", "顧問建議公司聘請更多工程師。"]
+      ]
+    },
+    {
+      "head": ["Adjectives: essential, vital, necessary", "形容詞：essential、vital、necessary"],
+      "body": ["<em>It is essential / necessary / important / imperative / vital / critical that …</em> works the same way: the that-clause takes the base form.", "<em>It is essential / necessary / important / imperative / vital / critical that …</em> 也一樣：that 子句用原形。"],
+      "ex": [
+        ["It is essential that the client <em>receive</em> the documents today.", "客戶今天一定要收到文件。"],
+        ["It is important that all visitors <em>wear</em> a badge at all times.", "所有訪客都必須隨時配戴識別證。"]
+      ]
+    },
+    {
+      "head": ["Nouns: recommendation, request, requirement", "名詞：recommendation、request、requirement"],
+      "body": ["Nouns with the same meaning also call for the base form when <em>that</em> follows them: <em>recommendation, request, requirement, suggestion, demand</em>.", "意思相同的名詞，後面接 <em>that</em> 時也用原形：<em>recommendation、request、requirement、suggestion、demand</em>。"],
+      "ex": [
+        ["The recommendation that the office <em>remain</em> open on weekends was accepted.", "辦公室週末照常營業的建議被採納了。"],
+        ["The requirement that each applicant <em>provide</em> two references is clearly stated.", "每位申請人都要提供兩封推薦信，這項要求寫得很清楚。"]
+      ]
+    },
+    {
+      "head": ["Passive and negative forms", "被動與否定的形式"],
+      "body": ["Passive: <em>be</em> + past participle. Negative: put <em>not</em> before the base form, with no <em>do</em> or <em>does</em>.", "被動用 <em>be</em> + 過去分詞。否定把 <em>not</em> 放在原形前面，不加 <em>do</em> 或 <em>does</em>。"],
+      "ex": [
+        ["Our policy requires that each order <em>be checked</em> twice.", "我們的規定要求每筆訂單都要檢查兩次。"],
+        ["The board suggested that the plan <em>not be</em> approved until the budget is final.", "董事會建議預算確定之前先不要核准這個計畫。"]
+      ]
+    },
+    {
+      "head": ["British variant with should", "英式用法：加 should"],
+      "body": ["British English often keeps <em>should</em>: <em>that every employee should submit</em>. The meaning is the same. The bare base form is the usual American choice. <em>should</em> is followed by the base form too.", "英式英文常在前面加 <em>should</em>：<em>that every employee should submit</em>，意思相同。美式英文常用不加 should 的原形。<em>should</em> 後面當然也是原形。"],
+      "ex": [
+        ["British: The manager requested that every employee <em>should submit</em> the form by Friday.", "英式：經理要求每位員工在星期五前提交表格。"],
+        ["British: It is essential that the client <em>should receive</em> the documents today.", "英式：客戶今天一定要收到文件。"]
+      ]
+    },
+    {
+      "head": ["When the base form is not used", "不用原形的情況"],
+      "body": ["<em>suggest</em> meaning 'show' and <em>insist</em> meaning 'state as true' only report a fact. The verb then takes its normal tense and agreement.", "<em>suggest</em> 表示「顯示」、<em>insist</em> 表示「堅稱是事實」時，只是陳述事實。動詞用一般的時態和單複數變化。"],
+      "ex": [
+        ["The report suggests that demand <em>is</em> rising.", "報告顯示需求正在上升。"],
+        ["He insisted that he <em>had sent</em> the email.", "他堅稱自己已經寄出那封電子郵件。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "We ask that each guest check out by 11 a.m.", "wrong": "We ask that each guest checks out by 11 a.m.", "why": ["<em>ask that</em> calls for the base form, even after the singular <em>each guest</em>.", "<em>ask that</em> 後面用原形，即使主詞是單數的 <em>each guest</em>。"]},
+    {"right": "It is vital that the report be finished today.", "wrong": "It is vital that the report is finished today.", "why": ["<em>vital</em> expresses necessity, so the passive becomes <em>be finished</em>.", "<em>vital</em> 表示必要，被動要用 <em>be finished</em>。"]},
+    {"right": "The data suggests that sales are falling.", "wrong": "The data suggests that sales be falling.", "why": ["Here <em>suggests</em> means 'shows', so it reports a fact and uses a normal tense.", "這裡的 <em>suggests</em> 是「顯示」的意思，只陳述事實，所以用一般時態。"]}
+  ],
+  "lists": [
+    {"head": ["Typical patterns", "常見句型"], "items": [
+      ["request that you submit", "要求你提交"], ["require that staff attend", "要求員工出席"], ["recommend that she apply", "建議她申請"], ["insist that the fee be waived", "堅持免收費用"],
+      ["demand that it be repaired", "要求修理"], ["propose that the team meet", "提議團隊開會"], ["advise that visitors register", "建議訪客登記"], ["essential that he be informed", "他一定要被告知"]
+    ]}
+  ],
+  "traps": [
+    ["The options often put the base form next to the <em>-s</em> form. A singular subject pulls you toward <em>-s</em>, but after a request word the base form is correct.", "選項常把原形和 <em>-s</em> 形式放在一起。單數主詞會讓人想選 <em>-s</em>，但在要求類的字之後，原形才對。"],
+    ["Do not match the tense of the main verb. <em>requested</em> is past, yet the that-clause still takes <em>submit</em>, not <em>submitted</em> or <em>will submit</em>.", "不要配合主要動詞的時態。<em>requested</em> 是過去式，但 that 子句仍用 <em>submit</em>，不是 <em>submitted</em> 或 <em>will submit</em>。"],
+    ["Decide by meaning. The same verb gives a base form when it asks for action and a normal tense when it reports a fact.", "用句意判斷。同一個動詞，要求行動時用原形，陳述事實時用一般時態。"]
+  ]
+}

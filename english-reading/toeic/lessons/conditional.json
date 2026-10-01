@@ -1,0 +1,79 @@
+{
+  "unit": "conditional",
+  "lead": ["The blank opens the sentence and a subject follows, with options like <em>Should, Had, Were, If, Unless</em>. Or the other half of the sentence contains <em>would</em> or <em>could have</em>.", "空格在句首，後面接主詞，選項像 <em>Should、Had、Were、If、Unless</em>。或是句子的另一半有 <em>would</em>、<em>could have</em>。"],
+  "steps": [
+    ["If the blank opens the sentence and a subject follows, test the inverted forms: <em>Should</em>, <em>Had</em>, <em>Were</em>.", "空格在句首、後面接主詞時，先想倒裝形式：<em>Should</em>、<em>Had</em>、<em>Were</em>。"],
+    ["Read the verb after the subject: base form, past participle, or <em>to</em> + verb.", "看主詞後面的動詞：原形、過去分詞，還是 <em>to</em> + 動詞。"],
+    ["Match it with the other clause: <em>would</em> + base verb, <em>would have</em> + past participle, or a request.", "和另一半句子配對：<em>would</em> + 原形、<em>would have</em> + 過去分詞，或一個請求句。"]
+  ],
+  "rules": [
+    {
+      "head": ["Basic if-patterns", "基本 if 句型"],
+      "body": ["Unreal present: <em>if</em> + past, <em>would</em> + base verb, with <em>were</em> for every subject. Unreal past: <em>if</em> + <em>had</em> + past participle, <em>would have</em> + past participle.", "與現在事實相反：<em>if</em> + 過去式，主句 <em>would</em> + 原形，be 動詞一律用 <em>were</em>。與過去事實相反：<em>if</em> + <em>had</em> + 過去分詞，主句 <em>would have</em> + 過去分詞。"],
+      "ex": [
+        ["If I <em>were</em> in charge, I would hire more staff.", "如果我是負責人，我會多聘一些人。"],
+        ["If we <em>had known</em> about the delay, we would have changed the schedule.", "如果我們早知道會延誤，就會改行程了。"]
+      ]
+    },
+    {
+      "head": ["Should + subject + base verb", "Should 加主詞加原形"],
+      "body": ["<em>Should you have …</em> means 'if you happen to have …'. <em>if</em> is dropped and <em>should</em> moves to the front. A base verb follows the subject. Business letters use it often.", "<em>Should you have …</em> 等於 <em>if you happen to have …</em>，省略 <em>if</em>，把 <em>should</em> 移到句首，主詞後面接原形。商業書信常用。"],
+      "ex": [
+        ["<em>Should</em> you have any questions, please contact our support team.", "如有任何問題，請聯絡我們的客服團隊。"],
+        ["<em>Should</em> the shipment arrive late, notify the warehouse manager.", "萬一貨物延遲抵達，請通知倉庫經理。"]
+      ]
+    },
+    {
+      "head": ["Had + subject + past participle", "Had 加主詞加過去分詞"],
+      "body": ["Same meaning as <em>if</em> + <em>had</em> + past participle: an unreal past. The other clause uses <em>would have</em> + past participle.", "等於 <em>if</em> + <em>had</em> + 過去分詞，表示與過去事實相反。另一半用 <em>would have</em> + 過去分詞。"],
+      "ex": [
+        ["<em>Had</em> we received the order earlier, we would have shipped it on time.", "如果我們早點收到訂單，就能準時出貨了。"],
+        ["<em>Had</em> the client approved the design, the team would have started work in May.", "如果客戶核准了設計，團隊五月就開工了。"]
+      ]
+    },
+    {
+      "head": ["Were + subject + to + verb", "Were 加主詞加 to + 動詞"],
+      "body": ["Same meaning as <em>if</em> + subject + <em>were to</em> + verb. It describes an unlikely or purely imagined future in a formal tone. The other clause uses <em>would</em>.", "等於 <em>if</em> + 主詞 + <em>were to</em> + 動詞，表示可能性很低或純屬想像的未來，語氣正式。另一半用 <em>would</em>。"],
+      "ex": [
+        ["<em>Were</em> the company to expand into Europe, it would need more engineers.", "如果公司要擴展到歐洲，就需要更多工程師。"],
+        ["<em>Were</em> the vendor to raise its prices, we would look for another supplier.", "萬一供應商調漲價格，我們就會另找供應商。"]
+      ]
+    },
+    {
+      "head": ["Without, but for, otherwise", "Without、but for、otherwise 的用法"],
+      "body": ["These words carry the 'if' meaning themselves. The other clause uses <em>would</em> or <em>could have</em>.", "這幾個字本身就帶有「如果」的意思。另一半句子用 <em>would</em> 或 <em>could have</em>。"],
+      "ex": [
+        ["<em>Without</em> your help, we could not have finished the project.", "沒有你的幫忙，我們不可能完成這個計畫。"],
+        ["We left early; <em>otherwise</em>, we would have missed the train.", "我們提早出發，否則就趕不上火車了。"]
+      ]
+    },
+    {
+      "head": ["wish, as if, it's time", "wish、as if、it's time 的用法"],
+      "body": ["After <em>wish</em> and unreal <em>as if</em>, the verb steps back one tense: past for the present. <em>It's time</em> + past means it should already have been done.", "<em>wish</em> 和表示不符事實的 <em>as if</em> 後面，動詞往過去退一格：現在的事用過去式。<em>It's time</em> 加過去式，表示早就該做了。"],
+      "ex": [
+        ["I wish I <em>had</em> more time to prepare for the presentation.", "真希望我有更多時間準備簡報。"],
+        ["He talks as if he <em>were</em> the CEO.", "他講話的樣子好像他是執行長一樣。"],
+        ["It's time we <em>updated</em> the company website.", "我們早就該更新公司網站了。"]
+      ]
+    },
+    {
+      "head": ["Negative word first, then inversion", "否定詞在句首，後面倒裝"],
+      "body": ["<em>Only after, Not until, Rarely, Seldom, Never, Under no circumstances</em> at the start force the main clause to invert: the auxiliary goes before the subject.", "<em>Only after、Not until、Rarely、Seldom、Never、Under no circumstances</em> 放在句首時，主句要倒裝：助動詞放到主詞前面。"],
+      "ex": [
+        ["<em>Only after</em> the contract is signed <em>will</em> we begin production.", "合約簽訂之後，我們才會開始生產。"],
+        ["<em>Not until</em> the report was published <em>did</em> the public learn of the problem.", "直到報告發表，大眾才知道這個問題。"],
+        ["<em>Rarely have</em> we received so many positive comments.", "我們很少收到這麼多正面的評價。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "Should you need assistance, please call us.", "wrong": "Should you needed assistance, please call us.", "why": ["<em>should</em> is followed by the base verb, not by a past form.", "<em>should</em> 後面接原形動詞，不接過去式。"]},
+    {"right": "Had I known about the traffic, I would have left earlier.", "wrong": "Had I know about the traffic, I would have left earlier.", "why": ["<em>Had</em> at the start needs a past participle: <em>known</em>.", "句首的 <em>Had</em> 後面要接過去分詞 <em>known</em>。"]},
+    {"right": "Only after the inspection will the factory reopen.", "wrong": "Only after the inspection the factory will reopen.", "why": ["With <em>Only after</em> at the start, the main clause inverts: <em>will the factory reopen</em>.", "<em>Only after</em> 放在句首，主句要倒裝成 <em>will the factory reopen</em>。"]}
+  ],
+  "traps": [
+    ["<em>Only</em> before the subject does not trigger inversion: <em>Only employees with badges may enter</em>. Inversion follows an opening <em>Only</em> + time or condition phrase.", "<em>Only</em> 直接修飾主詞時不倒裝：<em>Only employees with badges may enter</em>。句首是 <em>Only</em> + 時間或條件片語時才倒裝。"],
+    ["<em>in case</em> means 'as a precaution'; <em>if</em> means 'on the condition that'. <em>Bring an umbrella in case it rains</em> and <em>bring an umbrella if it rains</em> are different instructions.", "<em>in case</em> 是「以防萬一」；<em>if</em> 是「如果」。<em>Bring an umbrella in case it rains</em> 和 <em>bring an umbrella if it rains</em> 是不同的指示。"],
+    ["Do not combine <em>if</em> with an inverted form. Use <em>If you should need help</em> or <em>Should you need help</em>, never both.", "<em>if</em> 不能和倒裝形式並用。要寫 <em>If you should need help</em> 或 <em>Should you need help</em>，不能兩個一起用。"]
+  ]
+}

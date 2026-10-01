@@ -1,0 +1,317 @@
+{
+  "unit": "connect",
+  "lead": [
+    "The options have similar meanings but belong to different word classes: although, despite, however. What comes after the blank decides the class: a clause, a noun, or a comma.",
+    "選項意思相近但詞性不同，例如 although、despite、however。空格後面接什麼（子句、名詞或逗號）決定該用哪一類。"
+  ],
+  "steps": [
+    [
+      "Look at what follows the blank: a full clause, a noun or -ing phrase, or a comma after a full stop.",
+      "看空格後面：完整子句、名詞或 Ving，還是句號後面接逗號。"
+    ],
+    [
+      "Pick the word class that fits that shape.",
+      "選出符合這個形狀的詞類。"
+    ],
+    [
+      "Among words of that class, choose by meaning: contrast, reason, time, condition, addition or purpose.",
+      "同一類的字裡，再用意思選：對比、原因、時間、條件、補充或目的。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "A clause follows: conjunction",
+        "後面接子句：連接詞"
+      ],
+      "body": [
+        "A clause has its own subject and verb. Conjunctions that introduce one: although, because, while, unless, as soon as, so that.",
+        "子句有自己的主詞和動詞。引導子句的連接詞：although、because、while、unless、as soon as、so that。"
+      ],
+      "ex": [
+        [
+          "<em>Although</em> the budget was limited, the project was completed on time.",
+          "雖然預算有限，計畫仍準時完成。"
+        ],
+        [
+          "You will not receive a refund <em>unless</em> you keep the receipt.",
+          "除非你保留收據，否則無法退款。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "A noun or -ing follows: preposition",
+        "後面接名詞或 Ving：介系詞"
+      ],
+      "body": [
+        "Prepositions take a noun or an -ing form, never a clause: despite, because of, due to, during, prior to, in addition to.",
+        "介系詞後面接名詞或 -ing，不接子句：despite、because of、due to、during、prior to、in addition to。"
+      ],
+      "ex": [
+        [
+          "<em>Despite</em> the limited budget, the project was completed on time.",
+          "儘管預算有限，計畫仍準時完成。"
+        ],
+        [
+          "<em>Prior to</em> joining our company, Mr. Kim worked in marketing.",
+          "加入本公司之前，金先生從事行銷工作。"
+        ],
+        [
+          "<em>In addition to</em> managing the team, Ms. Ortiz handles several client accounts.",
+          "除了管理團隊，Ortiz 女士也負責幾個客戶。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "After a full stop or semicolon: linking adverb",
+        "句號或分號後：連接副詞"
+      ],
+      "body": [
+        "However, therefore, as a result and meanwhile link two sentences, usually followed by a comma. They cannot join two clauses with only a comma.",
+        "however、therefore、as a result、meanwhile 連接兩個句子，後面通常有逗號。不能只用逗號連接兩個子句。"
+      ],
+      "ex": [
+        [
+          "The budget was limited; <em>however</em>, the project was completed on time.",
+          "預算有限，然而計畫仍準時完成。"
+        ],
+        [
+          "Sales dropped in March. <em>As a result</em>, the company revised its forecast.",
+          "三月銷售下滑，因此公司修正了預測。"
+        ],
+        [
+          "The printer is being repaired. <em>In the meantime</em>, please use the one on the second floor.",
+          "印表機正在維修，這段期間請使用二樓那台。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "A blank at the start of a sentence",
+        "空格在句首"
+      ],
+      "body": [
+        "Read the sentence before it and decide how the two relate. Opposite: however. Result: therefore, as a result. Extra point: in addition, moreover. Order in time: afterward, meanwhile.",
+        "先讀前一句，判斷兩句的關係。相反用 however，結果用 therefore、as a result，補充用 in addition、moreover，時間順序用 afterward、meanwhile。"
+      ],
+      "ex": [
+        [
+          "The old system was slow. <em>Therefore</em>, the team installed a new one.",
+          "舊系統很慢，所以團隊安裝了新系統。"
+        ],
+        [
+          "Ms. Cruz handles billing. <em>In addition</em>, she trains new staff.",
+          "Cruz 女士負責帳務，此外她也訓練新進員工。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Reason: because or because of",
+        "原因：because 或 because of"
+      ],
+      "body": [
+        "Because takes a clause. Because of, due to and owing to take a noun. Since and as can also give a reason when a clause follows.",
+        "because 接子句；because of、due to、owing to 接名詞。since 和 as 後面接子句時也可以表示原因。"
+      ],
+      "ex": [
+        [
+          "The flight was delayed <em>because of</em> heavy fog.",
+          "航班因為濃霧而延誤。"
+        ],
+        [
+          "The flight was delayed <em>because</em> the fog was heavy.",
+          "航班延誤是因為霧很濃。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Time: while or during",
+        "時間：while 或 during"
+      ],
+      "body": [
+        "While, when and once take a clause. During, prior to and following take a noun. Before, after and until work with both.",
+        "while、when、once 接子句；during、prior to、following 接名詞；before、after、until 兩種都可以。"
+      ],
+      "ex": [
+        [
+          "Please turn off your phone <em>during</em> the presentation.",
+          "簡報期間請關機。"
+        ],
+        [
+          "Please turn off your phone <em>while</em> the presentation is in progress.",
+          "簡報進行時請關機。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Condition, purpose and whether",
+        "條件、目的與 whether"
+      ],
+      "body": [
+        "Unless means if not. So that gives a purpose and takes a clause; in order to takes a base verb. Whether ... or not means regardless of the answer.",
+        "unless 是 if not。so that 表示目的，接子句；in order to 接原形動詞。whether ... or not 表示不論結果。"
+      ],
+      "ex": [
+        [
+          "<em>Whether</em> you attend in person or online, please register in advance.",
+          "無論你是親自出席還是線上參加，都請提前報名。"
+        ],
+        [
+          "Please arrive early <em>so that</em> the session can start on time.",
+          "請提早到，這樣場次才能準時開始。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Despite the rain, the event continued.",
+      "wrong": "Despite it rained, the event continued.",
+      "why": [
+        "Despite is a preposition and cannot take a clause. For a clause, use although.",
+        "despite 是介系詞，後面不能接子句。要接子句就改用 although。"
+      ]
+    },
+    {
+      "right": "Even though the store was busy, the staff stayed calm.",
+      "wrong": "Even the store was busy, the staff stayed calm.",
+      "why": [
+        "Even is an adverb and cannot join clauses. Use even though or even if.",
+        "even 是副詞，不能連接子句，要用 even though 或 even if。"
+      ]
+    },
+    {
+      "right": "The store closed early due to the storm.",
+      "wrong": "The store closed early due to the storm was coming.",
+      "why": [
+        "Due to is a preposition, so only a noun can follow it.",
+        "due to 是介系詞，後面只能接名詞。"
+      ]
+    },
+    {
+      "right": "The budget was limited. However, the project was completed.",
+      "wrong": "The budget was limited, however the project was completed.",
+      "why": [
+        "However cannot join two clauses with a comma. Use a full stop or a semicolon.",
+        "however 不能用逗號連接兩個子句，要用句號或分號。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Contrast",
+        "讓步、對比"
+      ],
+      "items": [
+        [
+          "although, though, even though + clause",
+          "雖然（接子句）"
+        ],
+        [
+          "while + clause",
+          "然而、雖然（接子句）"
+        ],
+        [
+          "despite, in spite of + noun",
+          "儘管（接名詞）"
+        ],
+        [
+          "however, nevertheless, nonetheless",
+          "然而（句首加逗號）"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Reason and result",
+        "原因與結果"
+      ],
+      "items": [
+        [
+          "because, since, as + clause",
+          "因為（接子句）"
+        ],
+        [
+          "because of, due to, owing to + noun",
+          "因為（接名詞）"
+        ],
+        [
+          "therefore, consequently, thus",
+          "因此（句首加逗號）"
+        ],
+        [
+          "as a result",
+          "結果、因此（句首加逗號）"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Time",
+        "時間"
+      ],
+      "items": [
+        [
+          "when, while, once, as soon as + clause",
+          "當……時、一旦（接子句）"
+        ],
+        [
+          "during, prior to, following + noun",
+          "期間、在……之前、在……之後"
+        ],
+        [
+          "before, after, until + clause or noun",
+          "之前、之後、直到"
+        ],
+        [
+          "meanwhile, in the meantime, afterward",
+          "同時、這段期間、之後"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Condition and addition",
+        "條件與補充"
+      ],
+      "items": [
+        [
+          "if, unless, provided that, as long as + clause",
+          "如果、除非、只要（接子句）"
+        ],
+        [
+          "in the event of + noun",
+          "萬一發生（接名詞）"
+        ],
+        [
+          "in addition to, besides, as well as + noun",
+          "除了……之外（接名詞）"
+        ],
+        [
+          "moreover, furthermore, additionally",
+          "此外（句首加逗號）"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Before, after and until work as both conjunction and preposition. Look at what follows, not at the word.",
+      "before、after、until 既是連接詞也是介系詞。看後面接什麼，不要看這個字本身。"
+    ],
+    [
+      "Since can mean from a time until now, or because. A point in time after it suggests the first; a reason suggests the second.",
+      "since 可以是「自從」或「因為」。後面是時間點通常是前者，是理由通常是後者。"
+    ],
+    [
+      "Although and despite mean the same. When two options share a meaning, the shape after the blank is the only difference, so check that first.",
+      "although 和 despite 意思相同。兩個選項意思一樣時，差別只在空格後面的形狀，先看這個。"
+    ]
+  ]
+}

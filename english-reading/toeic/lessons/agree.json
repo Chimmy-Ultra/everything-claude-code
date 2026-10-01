@@ -1,0 +1,207 @@
+{
+  "unit": "agree",
+  "lead": [
+    "The options are singular and plural forms of one verb: is and are, has and have, requires and require. The real subject decides, and it is often hidden behind extra words.",
+    "選項是同一個動詞的單數和複數，例如 is/are、has/have、requires/require。真正的主詞決定答案，它常被多餘的字擋住。"
+  ],
+  "steps": [
+    [
+      "Find the real subject. Cross out phrases with of, with and along with, and any clause between commas.",
+      "找出真正的主詞，劃掉 of、with、along with 的片語和逗號之間的插入語。"
+    ],
+    [
+      "Decide whether that subject is singular or plural.",
+      "判斷這個主詞是單數還是複數。"
+    ],
+    [
+      "Match the verb to it, not to the noun nearest the blank.",
+      "動詞跟主詞一致，不要跟離空格最近的名詞一致。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Words between subject and verb",
+        "主詞和動詞之間的插入語"
+      ],
+      "body": [
+        "The subject is the head noun. A phrase after it with of, in or for does not change the verb.",
+        "主詞是中心名詞。後面 of、in、for 引導的片語不會改變動詞。"
+      ],
+      "ex": [
+        [
+          "The list of approved vendors <em>is</em> posted on the website.",
+          "核准廠商的名單公告在網站上。"
+        ],
+        [
+          "The quality of the products <em>has</em> improved.",
+          "產品的品質已經提升了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Each, every, one of",
+        "each、every、one of 用單數"
+      ],
+      "body": [
+        "Each, every, either and neither take a singular verb, even in each of the + plural noun. One of the + plural noun also takes a singular verb.",
+        "each、every、either、neither 用單數動詞，each of the + 複數名詞也一樣。one of the + 複數名詞也用單數動詞。"
+      ],
+      "ex": [
+        [
+          "Each of the hotel rooms <em>is</em> equipped with a coffee maker.",
+          "每間飯店客房都配有咖啡機。"
+        ],
+        [
+          "One of our suppliers <em>has</em> raised its prices.",
+          "我們的其中一家供應商調漲了價格。"
+        ],
+        [
+          "Every employee <em>receives</em> a copy of the handbook.",
+          "每位員工都會收到一本員工手冊。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "The number of, a number of",
+        "the number of 與 a number of"
+      ],
+      "body": [
+        "The number of + plural noun takes a singular verb, because the subject is number. A number of + plural noun means many and takes a plural verb.",
+        "the number of + 複數名詞，主詞是 number，用單數動詞。a number of + 複數名詞表示「許多」，用複數動詞。"
+      ],
+      "ex": [
+        [
+          "The number of applicants <em>has</em> increased this year.",
+          "今年應徵者的人數增加了。"
+        ],
+        [
+          "A number of applicants <em>have</em> requested an interview.",
+          "有許多應徵者要求面試。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "A as well as B, either A or B",
+        "A as well as B 與 either A or B"
+      ],
+      "body": [
+        "With as well as, along with and together with, the verb agrees with A. With either ... or, neither ... nor and not only ... but also, it agrees with the noun closer to it.",
+        "as well as、along with、together with：動詞跟 A。either ... or、neither ... nor、not only ... but also：動詞跟離得比較近的名詞。"
+      ],
+      "ex": [
+        [
+          "Ms. Chen, along with her colleagues, <em>is</em> attending the conference.",
+          "陳女士和她的同事們正在參加研討會。"
+        ],
+        [
+          "Neither the manager nor the assistants <em>were</em> informed of the change.",
+          "經理和助理們都沒有被通知這項變更。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "-ing subjects and amounts",
+        "動名詞主詞與金額"
+      ],
+      "body": [
+        "An -ing form or a to-phrase used as the subject takes a singular verb. So do amounts of money, time and distance treated as one unit.",
+        "動名詞或 to 不定詞當主詞，用單數動詞。金額、時間、距離視為一個整體時，也用單數。"
+      ],
+      "ex": [
+        [
+          "Reducing costs <em>is</em> our top priority this year.",
+          "降低成本是我們今年的首要目標。"
+        ],
+        [
+          "Five hundred dollars <em>is</em> a reasonable price for this service.",
+          "五百美元對這項服務來說是合理的價格。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "There is and there are",
+        "there is 與 there are"
+      ],
+      "body": [
+        "After there, the verb agrees with the noun that follows it. The subject comes after the verb, so read ahead.",
+        "there 之後，動詞跟後面的名詞一致。主詞在動詞後面，要往後看。"
+      ],
+      "ex": [
+        [
+          "There <em>are</em> several options available for delivery.",
+          "有好幾種送貨方式可以選擇。"
+        ],
+        [
+          "There <em>is</em> a spare key at the front desk.",
+          "櫃台有一把備用鑰匙。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Most of, all of, some of",
+        "most of、all of、some of 看 of 後面"
+      ],
+      "body": [
+        "After the majority of, most of, all of and some of, the verb agrees with the noun after of: a singular noun or a mass noun takes a singular verb, a plural noun a plural one.",
+        "the majority of、most of、all of、some of 之後，動詞跟 of 後面的名詞一致：單數或不可數名詞用單數動詞，複數名詞用複數動詞。"
+      ],
+      "ex": [
+        [
+          "Most of the information <em>is</em> outdated.",
+          "大部分資訊已經過時。"
+        ],
+        [
+          "Most of the reports <em>are</em> ready for review.",
+          "大部分報告都已準備好供審閱。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "The quality of the products has improved.",
+      "wrong": "The quality of the products have improved.",
+      "why": [
+        "The subject is quality, not products.",
+        "主詞是 quality，不是 products。"
+      ]
+    },
+    {
+      "right": "Each of the managers has a parking space.",
+      "wrong": "Each of the managers have a parking space.",
+      "why": [
+        "The subject is each, which is singular.",
+        "主詞是 each，是單數。"
+      ]
+    },
+    {
+      "right": "The director, as well as the staff, was surprised.",
+      "wrong": "The director, as well as the staff, were surprised.",
+      "why": [
+        "With as well as, the verb agrees with the first noun, the director.",
+        "A as well as B，動詞跟 A，也就是 the director。"
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "A verb in a relative clause matches the noun before who, which or that: the report that was submitted, the reports that were submitted.",
+      "關係子句的動詞要跟 who、which、that 前面的名詞一致：the report that was submitted、the reports that were submitted。"
+    ],
+    [
+      "In the present tense, a singular subject takes the verb with -s (it requires) and a plural subject takes the verb without it (they require). The -s is the reverse of nouns.",
+      "現在式中，單數主詞用有 -s 的動詞（it requires），複數主詞用沒有 -s 的動詞（they require）。和名詞的 -s 正好相反。"
+    ],
+    [
+      "The noun nearest the verb is often not the subject. In the list of vendors is, vendors is closest but list is the subject.",
+      "離動詞最近的名詞常常不是主詞。在 the list of vendors is 裡，vendors 最近，但主詞是 list。"
+    ]
+  ]
+}

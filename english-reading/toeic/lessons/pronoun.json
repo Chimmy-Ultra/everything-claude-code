@@ -1,0 +1,191 @@
+{
+  "unit": "pronoun",
+  "lead": [
+    "The options are different forms of one pronoun: she, her, hers, herself, or its, it's, their, theirs. The job the word does in the sentence decides the form.",
+    "選項是同一個代名詞的不同格，例如 she、her、hers、herself，或 its、it's、their、theirs。這個字在句中的功能決定答案。"
+  ],
+  "steps": [
+    [
+      "Ask what the blank does: subject, object, owner before a noun, or an owned thing standing alone.",
+      "判斷空格的功能：主詞、受詞、名詞前的所有格，還是單獨使用、代表某人的東西。"
+    ],
+    [
+      "Find who or what it points to, and check singular or plural, person or company.",
+      "找出它指的是誰或什麼，確認單複數，是人還是公司。"
+    ],
+    [
+      "If the subject and the object are the same person, think of the reflexive form.",
+      "如果主詞和受詞是同一個人，想到反身代名詞。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Four forms",
+        "四種格"
+      ],
+      "body": [
+        "Subject form (she) does the action. Object form (her) follows a verb or preposition. Possessive (her) goes before a noun. Possessive pronoun (hers) stands alone and means her plus a noun.",
+        "主格（she）做動作；受格（her）接在動詞或介系詞後；所有格（her）放在名詞前；所有代名詞（hers）單獨使用，等於 her 加名詞。"
+      ],
+      "ex": [
+        [
+          "Mr. Wong asked us to contact <em>him</em> directly.",
+          "黃先生請我們直接聯絡他。"
+        ],
+        [
+          "Please submit <em>your</em> expense report by Friday.",
+          "請在星期五前提交你的費用報告。"
+        ],
+        [
+          "This laptop is mine, and that one is <em>hers</em>.",
+          "這台筆電是我的，那台是她的。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Reflexive: herself, themselves",
+        "反身代名詞"
+      ],
+      "body": [
+        "Use it when the subject and the object are the same person. At the end of a clause it stresses that the person did it personally. By oneself means alone.",
+        "主詞和受詞是同一人時使用。放在句尾強調是本人親自做的。by oneself 表示獨自。"
+      ],
+      "ex": [
+        [
+          "New staff should familiarize <em>themselves</em> with the safety rules.",
+          "新進員工應熟悉安全規定。"
+        ],
+        [
+          "Ms. Lopez designed the entire website <em>herself</em>.",
+          "Lopez 女士親自設計了整個網站。"
+        ],
+        [
+          "The interns organized the event <em>by themselves</em>.",
+          "實習生們獨自籌辦了這場活動。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Its and it's",
+        "its 與 it's"
+      ],
+      "body": [
+        "Its shows ownership. It's means it is or it has. A company is usually singular, so it takes it and its.",
+        "its 是所有格（它的），it's 是 it is 或 it has。公司通常視為單數，用 it 和 its。"
+      ],
+      "ex": [
+        [
+          "The company announced <em>its</em> quarterly results on Monday.",
+          "公司在星期一公布了季度成果。"
+        ],
+        [
+          "<em>It's</em> too early to confirm the schedule.",
+          "現在要確認時程還太早。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "That of and those of",
+        "that of 與 those of"
+      ],
+      "body": [
+        "In a comparison, that of and those of stand in for a noun already mentioned, so it is not repeated. That replaces a singular noun, those a plural one.",
+        "比較句裡，that of、those of 代替前面出現過的名詞，避免重複。單數用 that，複數用 those。"
+      ],
+      "ex": [
+        [
+          "Our prices are lower than <em>those</em> of our competitors.",
+          "我們的價格比競爭對手低。"
+        ],
+        [
+          "The climate in the south is milder than <em>that</em> of the north.",
+          "南部的氣候比北部溫和。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Another, other, others",
+        "another、other、others 的差別"
+      ],
+      "body": [
+        "Another + singular noun means one more. Other + plural noun means more of them. Others stands alone for other people or things. The others means all the rest.",
+        "another + 單數名詞是「另一個」；other + 複數名詞；others 單獨使用，指其他的人或東西；the others 指剩下的全部。"
+      ],
+      "ex": [
+        [
+          "Some employees prefer to work from home; <em>others</em> prefer the office.",
+          "有些員工喜歡在家工作，其他人喜歡辦公室。"
+        ],
+        [
+          "If this room is not available, we can use <em>another</em> one.",
+          "如果這間會議室不能用，我們可以用另一間。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Each other, one another, neither",
+        "each other、one another、neither 的用法"
+      ],
+      "body": [
+        "Each other and one another mean the action goes both ways, and either can be used. Neither means not the one and not the other, and takes a singular verb.",
+        "each other 和 one another 表示動作是互相的，通常兩者皆可。neither 表示兩者都不，用單數動詞。"
+      ],
+      "ex": [
+        [
+          "Team members are encouraged to support <em>one another</em>.",
+          "鼓勵團隊成員互相支援。"
+        ],
+        [
+          "Two vendors sent quotes, and <em>neither</em> was within budget.",
+          "有兩家廠商寄來報價，但都不在預算內。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "The firm updated its website.",
+      "wrong": "The firm updated it's website.",
+      "why": [
+        "Its is the possessive. It's means it is.",
+        "its 才是所有格。it's 是 it is。"
+      ]
+    },
+    {
+      "right": "She finished the report by herself.",
+      "wrong": "She finished the report by her.",
+      "why": [
+        "By oneself means alone, so it needs the reflexive form.",
+        "by oneself 表示獨自，要用反身代名詞。"
+      ]
+    },
+    {
+      "right": "Our rates are lower than those of other banks.",
+      "wrong": "Our rates are lower than them of other banks.",
+      "why": [
+        "The word stands in for the plural noun rates, so it is those.",
+        "這個字代替前面的複數名詞 rates，要用 those。"
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "A blank with no noun after it, meaning something that belongs to someone, takes mine, yours, hers, ours or theirs. If a noun follows, use my, your, her, our or their.",
+      "空格後面沒有名詞、表示某人的東西時，用 mine、yours、hers、ours、theirs。後面有名詞就用 my、your、her、our、their。"
+    ],
+    [
+      "Her has two jobs: object and possessive. A noun after it means possessive. If it ends the phrase after a verb or preposition, it is the object.",
+      "her 有兩種功能：受格和所有格。後面有名詞就是所有格；接在動詞或介系詞後面結束片語，就是受格。"
+    ],
+    [
+      "In a Part 6 passage, look back for what the pronoun points to: a company (it, its), a group (they, their) or one woman (she, her).",
+      "Part 6 的代名詞題要往前找它指的是誰：公司（it、its）、一群人（they、their），還是一位女士（she、her）。"
+    ]
+  ]
+}

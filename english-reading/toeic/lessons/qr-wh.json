@@ -1,0 +1,281 @@
+{
+  "unit": "qr-wh",
+  "lead": [
+    "Part 2 plays one question, then three spoken responses. A Wh- question begins with who, what, where, when, why, how or which. Choose the response that gives that kind of information.",
+    "第 2 部分先播一個問句，再播三個回應。Wh 問句以 who、what、where、when、why、how 或 which 開頭，要選出給出對應資訊的回應。"
+  ],
+  "steps": [
+    [
+      "Catch the first word and hold it in your head: who, where, when, why, how.",
+      "抓住第一個字並記住它：who、where、when、why、how。"
+    ],
+    [
+      "Listen to the rest for the subject and verb. They tell you what the answer is about.",
+      "聽完整句的主詞和動詞，它們決定答案講的是什麼。"
+    ],
+    [
+      "Match each response to the question word. Cross out any that give the wrong kind of information.",
+      "把每個回應跟疑問詞對照，劃掉資訊類型不對的。"
+    ],
+    [
+      "If two responses fit, check the tense and the subject. The right one fits the situation.",
+      "若有兩個都像，再核對時態和主詞，要符合情境的那個。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Who: a person, a name, a job",
+        "Who：人、名字、職稱"
+      ],
+      "body": [
+        "A who question wants a person or a team. The answer can be a name, a job title or a department. It does not need to repeat the question.",
+        "Who 問的是人或團隊。答案可以是名字、職稱或部門，不必重複問句的字。"
+      ],
+      "ex": [
+        [
+          "Q: <em>Who</em> is organizing the retirement party? / A: <em>Nadia from Accounting.</em>",
+          "Q: 誰在籌辦退休派對？／A: 會計部的 Nadia。"
+        ],
+        [
+          "Q: <em>Who</em> should I send the invoice to? / A: <em>The finance department.</em>",
+          "Q: 發票要寄給誰？／A: 財務部。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Where and when: a place, a time",
+        "Where 與 when：地點、時間"
+      ],
+      "body": [
+        "Where wants a place, and when wants a time or a date. Time words: tomorrow, by Friday, after lunch. Place words: in the, at the, next to.",
+        "Where 問地點，when 問時間或日期。時間詞如 tomorrow、by Friday、after lunch；地點詞如 in the、at the、next to。"
+      ],
+      "ex": [
+        [
+          "Q: <em>Where</em> do we keep the spare keys? / A: <em>In the top drawer</em> at the front desk.",
+          "Q: 備用鑰匙放哪裡？／A: 在櫃檯最上面的抽屜。"
+        ],
+        [
+          "Q: <em>When</em> does the supplier deliver? / A: <em>Usually before noon.</em>",
+          "Q: 供應商何時送貨？／A: 通常在中午前。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Why: a reason",
+        "Why：原因"
+      ],
+      "body": [
+        "A why question wants a reason. The response may start with because, to or so that, or it may simply state the cause with no linking word.",
+        "Why 問原因。回應可以用 because、to 或 so that 開頭，也可以直接講原因、不用連接詞。"
+      ],
+      "ex": [
+        [
+          "Q: <em>Why</em> was the flight to Osaka canceled? / A: <em>Because of the typhoon.</em>",
+          "Q: 飛大阪的班機為什麼取消？／A: 因為颱風。"
+        ],
+        [
+          "Q: <em>Why</em> is the lobby closed? / A: <em>They're polishing the floors.</em>",
+          "Q: 大廳為什麼關閉？／A: 他們正在給地板上蠟。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "How plus a word: amount, number, length",
+        "How 加字：金額、數量、長度"
+      ],
+      "body": [
+        "The word after how sets the answer. How much: price. How many: a number. How long: a period of time. How often: a repeated schedule. How soon: time from now.",
+        "how 後面的字決定答案。How much 問價錢，how many 問數量，how long 問一段時間，how often 問頻率，how soon 問多快。"
+      ],
+      "ex": [
+        [
+          "Q: <em>How often</em> do you inspect the machines? / A: <em>Every Monday.</em>",
+          "Q: 你們多久檢查一次機器？／A: 每個星期一。"
+        ],
+        [
+          "Q: <em>How many</em> chairs do we need? / A: <em>About forty.</em>",
+          "Q: 我們需要幾張椅子？／A: 大約四十張。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "How, what, which: method or choice",
+        "How、what、which：方法或選擇"
+      ],
+      "body": [
+        "Plain how asks for a method. What or which plus a noun asks you to name or pick something. Answers are often short phrases such as 'by e-mail'.",
+        "單獨的 how 問方法；what 或 which 加名詞則要你說出或挑選某樣東西。答案常是短語，例如 by e-mail。"
+      ],
+      "ex": [
+        [
+          "Q: <em>How</em> should I submit the form? / A: <em>By e-mail</em> is fine.",
+          "Q: 表格要怎麼提交？／A: 用電子郵件就可以。"
+        ],
+        [
+          "Q: <em>Which</em> printer is out of paper? / A: <em>The one near reception.</em>",
+          "Q: 哪台印表機沒紙了？／A: 接待處旁邊那台。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Responses that skip the key word",
+        "不直接給答案的回應"
+      ],
+      "body": [
+        "A good response does not always start with the expected word. It can point to a person or a document, or say the answer is not known yet. It still deals with the question.",
+        "好的回應不一定以預期的字開頭。它可以指向某人或某份文件，或說答案還不知道，但仍然回應了問題。"
+      ],
+      "ex": [
+        [
+          "Q: When is the budget due? / A: <em>Ask Ms. Park.</em>",
+          "Q: 預算什麼時候要交？／A: 去問 Park 女士。"
+        ],
+        [
+          "Q: Where is the sales report? / A: <em>It should be on the shared drive.</em>",
+          "Q: 業績報告在哪裡？／A: 應該在共用磁碟上。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: Where should I leave the delivery? / A: At the loading dock, please.",
+      "wrong": "Q: Where should I leave the delivery? / A: It arrived this morning.",
+      "why": [
+        "Where asks for a place. The wrong response gives a time.",
+        "Where 問地點，錯誤回應卻給時間。"
+      ]
+    },
+    {
+      "right": "Q: Who is chairing tomorrow's meeting? / A: Ms. Rivera is.",
+      "wrong": "Q: Who is chairing tomorrow's meeting? / A: The chairs are in the storage room.",
+      "why": [
+        "The wrong response repeats a similar word (chair) but names no person.",
+        "錯誤回應重複相近的字 chair，卻沒有說出是誰。"
+      ]
+    },
+    {
+      "right": "Q: How long is the training? / A: About two hours.",
+      "wrong": "Q: How long is the training? / A: It's on the third floor.",
+      "why": [
+        "How long asks for a length of time. The wrong response gives a place.",
+        "How long 問時間長度，錯誤回應給的是地點。"
+      ]
+    },
+    {
+      "right": "Q: Why is the printer out of service? / A: The technician is replacing a part.",
+      "wrong": "Q: Why is the printer out of service? / A: Yes, it is out of service.",
+      "why": [
+        "Why wants a reason. Yes does not give one.",
+        "Why 要的是原因，Yes 沒有給出原因。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical wordings: people, places, times",
+        "常見問法：人、地點、時間"
+      ],
+      "items": [
+        [
+          "Who's in charge of the new account?",
+          "誰負責這個新客戶？"
+        ],
+        [
+          "Who should I contact about the invoice?",
+          "發票的事我該聯絡誰？"
+        ],
+        [
+          "Where can I find the stationery?",
+          "文具放在哪裡？"
+        ],
+        [
+          "Where is the conference being held?",
+          "研討會在哪裡舉行？"
+        ],
+        [
+          "When is the report due?",
+          "報告什麼時候要交？"
+        ],
+        [
+          "When does the next shuttle leave?",
+          "下一班接駁車何時出發？"
+        ],
+        [
+          "What time does the store open?",
+          "商店幾點開門？"
+        ],
+        [
+          "Which floor is the HR office on?",
+          "人資辦公室在幾樓？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Typical wordings: reasons, amounts, methods",
+        "常見問法：原因、數量、方法"
+      ],
+      "items": [
+        [
+          "Why was the meeting postponed?",
+          "會議為什麼延期？"
+        ],
+        [
+          "Why hasn't the package arrived yet?",
+          "包裹為什麼還沒到？"
+        ],
+        [
+          "How much does express shipping cost?",
+          "快遞運費多少？"
+        ],
+        [
+          "How many people are attending?",
+          "有多少人出席？"
+        ],
+        [
+          "How long will the repair take?",
+          "修理要多久？"
+        ],
+        [
+          "How often do the buses run?",
+          "公車多久一班？"
+        ],
+        [
+          "How do I book a meeting room?",
+          "我要怎麼預約會議室？"
+        ],
+        [
+          "What's the best way to reach you?",
+          "怎麼聯絡你最方便？"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Right word, wrong question. A response repeats a word from the question but gives the wrong kind of information. Check the question word first, not the echo.",
+      "字對、題型錯。回應重複問句裡的字，給的資訊類型卻不對。先對照疑問詞，不要被重複的字吸引。"
+    ],
+    [
+      "Sound-alikes are bait. A response built on a word that only sounds like one in the question, such as 'copy' and 'coffee', is wrong. Choose by meaning.",
+      "音近字是誘答。回應用了只是聽起來像問句的字，例如 copy 和 coffee，就是錯的。要看意思。"
+    ],
+    [
+      "Yes or No does not answer a true Wh- question. When a response starts with Yes or No after who, where, when, why or how, cross it out first.",
+      "Yes 或 No 無法回答真正的 Wh 問句。遇到 who、where、when、why、how 的問句，回應若以 Yes 或 No 開頭，先劃掉。"
+    ],
+    [
+      "Wrong time or person. The question is about tomorrow, but the response is about last week, or it answers for a different person. Check the tense and the subject.",
+      "時間或人物不對。問的是明天，回應卻講上週，或在回答另一個人。要核對時態和主詞。"
+    ]
+  ]
+}

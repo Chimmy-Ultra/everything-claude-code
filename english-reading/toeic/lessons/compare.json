@@ -1,0 +1,81 @@
+{
+  "unit": "compare",
+  "lead": ["The options are one adjective or adverb in several degrees (<em>fast, faster, fastest</em>), or small words such as <em>than, as, to</em>. A signal word elsewhere in the sentence tells you which.", "選項是同一個形容詞或副詞的不同級別（<em>fast、faster、fastest</em>），或 <em>than、as、to</em> 這類小字。句子裡的線索字會告訴你該選哪一個。"],
+  "steps": [
+    ["Search the sentence for <em>than</em>, <em>as</em>, <em>the</em>, <em>of all</em>, or <em>in</em> + a group.", "在句子裡找 <em>than</em>、<em>as</em>、<em>the</em>、<em>of all</em>，或 <em>in</em> 加一個範圍。"],
+    ["<em>than</em> needs a comparative. <em>as … as</em> needs the plain form. <em>the</em> + a group needs a superlative.", "<em>than</em> 配比較級。<em>as … as</em> 中間用原級。<em>the</em> 加範圍配最高級。"],
+    ["If the options are small words, ask which word goes with the adjective: <em>superior to</em>, <em>prefer … to</em>.", "選項若是小字，就看哪個字跟前面的形容詞搭配：<em>superior to</em>、<em>prefer … to</em>。"]
+  ],
+  "rules": [
+    {
+      "head": ["as … as with the plain form", "as … as 中間用原級"],
+      "body": ["Put the plain adjective between the two <em>as</em>, never a comparative. The negative is <em>not as … as</em>.", "兩個 <em>as</em> 中間放原級形容詞，不放比較級。否定用 <em>not as … as</em>。"],
+      "ex": [
+        ["This model is <em>as</em> efficient <em>as</em> the previous one.", "這個型號和上一代一樣有效率。"],
+        ["The new office is not <em>as</em> large <em>as</em> the old one.", "新辦公室沒有舊的那麼大。"]
+      ]
+    },
+    {
+      "head": ["Comparative + than", "比較級加 than"],
+      "body": ["Short adjectives take <em>-er</em>; long ones take <em>more</em>. Strengthen a comparative with <em>much, far, even, still, significantly</em>, never with <em>very</em>.", "短的形容詞加 <em>-er</em>，長的用 <em>more</em>。要加強比較級，用 <em>much、far、even、still、significantly</em>，不能用 <em>very</em>。"],
+      "ex": [
+        ["The new printer is <em>much</em> faster than the old one.", "新印表機比舊的快很多。"],
+        ["Shipping by air is <em>significantly more</em> expensive than shipping by sea.", "空運比海運貴得多。"]
+      ]
+    },
+    {
+      "head": ["The + superlative", "the 加最高級"],
+      "body": ["A superlative takes <em>the</em> and usually a group: <em>of all, in the region, among, ever</em>. <em>One of the</em> + superlative is followed by a plural noun.", "最高級前面有 <em>the</em>，後面常有範圍：<em>of all、in the region、among、ever</em>。<em>one of the</em> 加最高級，後面接複數名詞。"],
+      "ex": [
+        ["This is <em>the most</em> popular product in our catalog.", "這是我們型錄上最受歡迎的產品。"],
+        ["Taipei is one of <em>the largest</em> markets in the region.", "台北是這個地區最大的市場之一。"]
+      ]
+    },
+    {
+      "head": ["The more …, the more …", "越……越……"],
+      "body": ["<em>the</em> + comparative, <em>the</em> + comparative. The first part is the cause, the second part is the result. Both parts need <em>the</em>.", "<em>the</em> + 比較級，<em>the</em> + 比較級。前半是條件，後半是結果。兩邊都要有 <em>the</em>。"],
+      "ex": [
+        ["<em>The sooner</em> you register, <em>the more</em> you save.", "越早報名，省得越多。"],
+        ["<em>The earlier</em> the team starts, <em>the sooner</em> it finishes.", "團隊越早開始，就越早完成。"]
+      ]
+    },
+    {
+      "head": ["Multiples", "倍數表達"],
+      "body": ["Use <em>twice as</em> + plain adjective + <em>as</em>, or <em>three times as</em> + plain adjective + <em>as</em>. The adjective stays in the plain form.", "用 <em>twice as</em> + 原級 + <em>as</em>，或 <em>three times as</em> + 原級 + <em>as</em>。形容詞維持原級。"],
+      "ex": [
+        ["Our revenue this year was <em>twice as</em> high <em>as</em> last year's.", "我們今年的營收是去年的兩倍。"],
+        ["The new warehouse is <em>three times as</em> large <em>as</em> the old one.", "新倉庫的大小是舊倉庫的三倍。"]
+      ]
+    },
+    {
+      "head": ["Fixed comparison patterns", "固定的比較搭配"],
+      "body": ["<em>any other</em> takes a singular noun. <em>superior, inferior, senior, junior, prior</em> take <em>to</em>, not <em>than</em>. <em>prefer A to B</em>. Between two things, use <em>the</em> + comparative.", "<em>any other</em> 後面接單數名詞。<em>superior、inferior、senior、junior、prior</em> 後面接 <em>to</em>，不接 <em>than</em>。<em>prefer A to B</em>。兩者之間用 <em>the</em> + 比較級。"],
+      "ex": [
+        ["This laptop is lighter than <em>any other</em> model on the market.", "這台筆電比市面上任何其他型號都輕。"],
+        ["Their customer service is <em>superior to</em> ours.", "他們的客服比我們的好。"],
+        ["Of the two proposals, Ms. Hall's is <em>the more</em> practical.", "兩份提案之中，Hall 女士的比較實際。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "The new model is much lighter.", "wrong": "The new model is very lighter.", "why": ["<em>very</em> cannot strengthen a comparative. Use <em>much</em>, <em>far</em> or <em>even</em>.", "<em>very</em> 不能修飾比較級，要用 <em>much</em>、<em>far</em> 或 <em>even</em>。"]},
+    {"right": "This plan is superior to the old one.", "wrong": "This plan is superior than the old one.", "why": ["<em>superior</em> is followed by <em>to</em>, not <em>than</em>.", "<em>superior</em> 後面接 <em>to</em>，不接 <em>than</em>。"]},
+    {"right": "It is cheaper than any other model.", "wrong": "It is cheaper than any other models.", "why": ["<em>any other</em> is followed by a singular noun.", "<em>any other</em> 後面接單數名詞。"]},
+    {"right": "Our prices are lower than those of our competitors.", "wrong": "Our prices are lower than our competitors.", "why": ["Compare prices with prices: <em>those of</em> stands for <em>the prices of</em>.", "要拿價格比價格：<em>those of</em> 代表 <em>the prices of</em>。"]}
+  ],
+  "lists": [
+    {"head": ["Adjectives followed by to", "後面接 to 的形容詞"], "items": [
+      ["superior to", "優於"], ["inferior to", "劣於"], ["senior to", "職位高於"], ["junior to", "職位低於"],
+      ["prior to", "在……之前"], ["similar to", "類似於"], ["prefer A to B", "喜歡 A 勝過 B"], ["equal to", "等於"]
+    ]},
+    {"head": ["Words that strengthen a comparative", "加強比較級的字"], "items": [
+      ["much cheaper", "便宜得多"], ["far more reliable", "可靠得多"], ["even better", "甚至更好"], ["still higher", "仍然更高"],
+      ["a lot faster", "快很多"], ["significantly lower", "明顯較低"], ["considerably larger", "大得多"], ["slightly smaller", "稍微小一點"]
+    ]}
+  ],
+  "traps": [
+    ["Do not double the degree: <em>more cheaper</em> and <em>most easiest</em> are wrong. Use <em>-er</em> or <em>more</em>, <em>-est</em> or <em>most</em>, never both.", "不要把級別加倍：<em>more cheaper</em> 和 <em>most easiest</em> 都是錯的。<em>-er</em> 和 <em>more</em> 擇一，<em>-est</em> 和 <em>most</em> 也擇一。"],
+    ["Compare like with like. Prices go with prices (<em>those of our competitors</em>), not with companies.", "比較的對象要同一類。價格比價格（<em>those of our competitors</em>），不是價格比公司。"],
+    ["<em>than</em> points to a comparative. <em>the</em> + a group (<em>of all</em>, <em>in the company</em>) points to a superlative. Check these signals before the adjective itself.", "<em>than</em> 指向比較級。<em>the</em> 加範圍（<em>of all</em>、<em>in the company</em>）指向最高級。先找這些線索，再看形容詞。"]
+  ]
+}

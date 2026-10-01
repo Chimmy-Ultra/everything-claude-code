@@ -1,0 +1,71 @@
+{
+  "unit": "parallel",
+  "lead": ["The sentence has <em>both, either, neither</em> or <em>not only</em>, or a list joined by <em>and</em> or <em>or</em>. Find the partner word or the other items, and make the blank match them.", "句子裡有 <em>both、either、neither</em>、<em>not only</em>，或用 <em>and</em>、<em>or</em> 連接的列舉。找出成對的另一半或其他項目，讓空格跟它們一致。"],
+  "steps": [
+    ["If you see <em>both, either, neither</em> or <em>not only</em>, find the partner: <em>and, or, nor, but also</em>.", "看到 <em>both、either、neither</em> 或 <em>not only</em>，就找它的另一半：<em>and、or、nor、but also</em>。"],
+    ["In a list, name the form of the other items: noun, adjective, base verb, <em>-ing</em>, or <em>to</em> + verb.", "遇到列舉，先判斷其他項目的形式：名詞、形容詞、原形動詞、<em>-ing</em>，或 <em>to</em> + 動詞。"],
+    ["Choose the option with the same form, and the same pattern after the partner word.", "選形式相同的選項，而且成對連接詞兩邊的結構也要一致。"]
+  ],
+  "rules": [
+    {
+      "head": ["Paired conjunctions", "成對連接詞"],
+      "body": ["<em>both A and B, either A or B, neither A nor B, not only A but also B, whether A or B</em>. The first word fixes the second. They cannot be mixed.", "<em>both A and B、either A or B、neither A nor B、not only A but also B、whether A or B</em>。前一個字決定後一個字，不能混用。"],
+      "ex": [
+        ["The new model is <em>both</em> lighter <em>and</em> cheaper.", "新型號更輕，也更便宜。"],
+        ["You can pay <em>either</em> by credit card <em>or</em> by bank transfer.", "你可以用信用卡或銀行轉帳付款。"],
+        ["The software is <em>not only</em> fast <em>but also</em> easy to use.", "這款軟體不但快，而且好用。"]
+      ]
+    },
+    {
+      "head": ["Same form on both sides", "兩邊的形式要一致"],
+      "body": ["After <em>and, or, but</em>, each item has the same form as the one before: noun with noun, adjective with adjective, base verb with base verb, <em>-ing</em> with <em>-ing</em>.", "用 <em>and</em>、<em>or</em>、<em>but</em> 連接時，每一項和前一項的形式要相同：名詞配名詞、形容詞配形容詞、原形動詞配原形動詞、<em>-ing</em> 配 <em>-ing</em>。"],
+      "ex": [
+        ["The job requires creativity, patience, and <em>attention</em> to detail.", "這份工作需要創意、耐心和對細節的注意。"],
+        ["Our goal is to design, test, and <em>install</em> the system by June.", "我們的目標是在六月前設計、測試並安裝這套系統。"],
+        ["The course is practical, affordable, and <em>easy</em> to follow.", "這門課很實用、價格合理，也容易跟上。"]
+      ]
+    },
+    {
+      "head": ["Neither … nor and either … or: the verb", "neither … nor 和 either … or 的動詞"],
+      "body": ["With <em>neither … nor</em> and <em>either … or</em>, the verb agrees with the noun closer to it.", "用 <em>neither … nor</em> 和 <em>either … or</em> 時，動詞和離它比較近的那個名詞一致。"],
+      "ex": [
+        ["<em>Neither</em> the director <em>nor</em> her assistants were available.", "主任和她的助理們都沒空。"],
+        ["<em>Either</em> the manager <em>or</em> the supervisors are expected to attend.", "經理或主管們其中之一要出席。"]
+      ]
+    },
+    {
+      "head": ["Repeat the same structure", "重複相同的結構"],
+      "body": ["When each item begins with the same pattern, repeat it each time: <em>how to … and how to …</em>, <em>what … and what …</em>.", "每一項開頭的句型相同時，每一項都要重複：<em>how to … and how to …</em>、<em>what … and what …</em>。"],
+      "ex": [
+        ["The training covers <em>how to</em> write reports and <em>how to</em> give presentations.", "訓練內容包括如何寫報告和如何做簡報。"],
+        ["The report explains <em>what</em> went wrong and <em>what</em> should change next quarter.", "報告說明了哪裡出了問題，以及下一季應該改變什麼。"]
+      ]
+    },
+    {
+      "head": ["rather than and instead of", "rather than 和 instead of"],
+      "body": ["<em>rather than</em> joins two items of the same form. <em>instead of</em> is a preposition, so a noun or <em>-ing</em> follows it.", "<em>rather than</em> 連接兩個形式相同的項目。<em>instead of</em> 是介系詞，後面接名詞或 <em>-ing</em>。"],
+      "ex": [
+        ["Many customers choose to pay online <em>rather than</em> visit a branch.", "許多顧客選擇線上付款，而不是去分行辦理。"],
+        ["The team met by video call <em>instead of</em> traveling to Osaka.", "團隊用視訊會議開會，而不是飛到大阪。"]
+      ]
+    },
+    {
+      "head": ["Not only at the start of a sentence", "Not only 放在句首"],
+      "body": ["When <em>not only</em> opens the sentence, the first clause inverts: auxiliary before subject. The second clause stays normal: <em>but it also …</em>.", "<em>not only</em> 放在句首時，前半句要倒裝：助動詞放到主詞前面。後半句維持正常語序：<em>but it also …</em>。"],
+      "ex": [
+        ["<em>Not only does</em> the app save time, but it also reduces costs.", "這個 App 不但省時間，還能降低成本。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "The course is both practical and affordable.", "wrong": "The course is both practical or affordable.", "why": ["<em>both</em> always pairs with <em>and</em>.", "<em>both</em> 一定搭配 <em>and</em>。"]},
+    {"right": "The app is reliable, affordable, and easy to use.", "wrong": "The app is reliable, affordable, and ease of use.", "why": ["The first two items are adjectives, so the third must be an adjective phrase too.", "前兩項是形容詞，第三項也要是形容詞片語。"]},
+    {"right": "The manager asked us to review the file, correct the errors, and send it back.", "wrong": "The manager asked us to review the file, correct the errors, and sending it back.", "why": ["The three verbs share <em>to</em> and stay in the base form.", "三個動詞共用 <em>to</em>，都用原形。"]},
+    {"right": "Neither the printer nor the scanner is working.", "wrong": "Neither the printer or the scanner is working.", "why": ["<em>neither</em> pairs with <em>nor</em>, not <em>or</em>.", "<em>neither</em> 搭配 <em>nor</em>，不是 <em>or</em>。"]}
+  ],
+  "traps": [
+    ["Check the partner word first: <em>both</em> needs <em>and</em>, <em>neither</em> needs <em>nor</em>, <em>either</em> needs <em>or</em>, <em>not only</em> needs <em>but also</em>. The blank can sit on either half of the pair.", "先檢查成對的另一半：<em>both</em> 配 <em>and</em>，<em>neither</em> 配 <em>nor</em>，<em>either</em> 配 <em>or</em>，<em>not only</em> 配 <em>but also</em>。空格可能在成對的任何一半。"],
+    ["Parallel does not mean the same length. <em>quick service</em> and <em>a wide range of products</em> are both noun phrases, so they match.", "平行不是長度相同。<em>quick service</em> 和 <em>a wide range of products</em> 都是名詞片語，所以是平行的。"],
+    ["In <em>to design, test, and install</em>, the later verbs share <em>to</em> and stay in the base form. An <em>-ing</em> or past form there breaks the pattern.", "在 <em>to design, test, and install</em> 中，後面的動詞共用 <em>to</em>，維持原形。換成 <em>-ing</em> 或過去式就破壞了平行。"]
+  ]
+}

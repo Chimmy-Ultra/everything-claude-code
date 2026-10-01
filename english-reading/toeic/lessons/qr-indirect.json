@@ -1,0 +1,269 @@
+{
+  "unit": "qr-indirect",
+  "lead": [
+    "Some Part 2 items have no Wh- word and no yes/no pattern: a statement, a choice question or a request. The correct response is often indirect. It gives a fact, a reason or a suggestion that fits the speaker's point.",
+    "第 2 部分有些題目沒有 Wh 疑問詞，也不是 Yes/No 句型：可能是陳述句、選擇問句或請求。正確回應常是間接的，用事實、理由或建議回應說話者的重點。"
+  ],
+  "steps": [
+    [
+      "Decide what the speaker wants: information, a choice, help, or a reaction to news.",
+      "判斷說話者要什麼：資訊、選擇、協助，還是對消息的反應。"
+    ],
+    [
+      "Imagine a natural reply from a coworker. Then look for the response that does that job.",
+      "想像同事會怎麼自然地回應，再找出做到這件事的回應。"
+    ],
+    [
+      "Cross out responses that echo a word or answer a different question. A response that only implies the answer can be right.",
+      "劃掉只重複字或答非所問的回應。只是暗示答案的回應也可能是對的。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Statements: react to the problem or news",
+        "陳述句：回應問題或消息"
+      ],
+      "body": [
+        "A statement is not a question, so there is nothing to answer. A good reply reacts: it offers help, asks a follow-up question or gives a reason.",
+        "陳述句不是問句，沒有東西要「回答」。好的回應是反應：提供協助、追問，或說明原因。"
+      ],
+      "ex": [
+        [
+          "The projector isn't working. / <em>I'll call the IT desk.</em>",
+          "投影機壞了。／我來打給資訊部。"
+        ],
+        [
+          "We got the contract. / <em>That's wonderful news. Who told you?</em>",
+          "我們拿到合約了。／真是好消息，誰告訴你的？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Choice questions: name one or imply one",
+        "選擇問句：選一個或暗示一個"
+      ],
+      "body": [
+        "For 'A or B?', the response can name one, say either is fine, or give a fact that points to one without naming it.",
+        "面對 A or B? 的問句，回應可以直接選一個、說都可以，或給一個暗示選擇的事實。"
+      ],
+      "ex": [
+        [
+          "Q: Should we meet on Monday or Tuesday? / A: <em>Either works for me.</em>",
+          "Q: 我們星期一還是星期二開會？／A: 我都可以。"
+        ],
+        [
+          "Q: Would you prefer the aisle or the window seat? / A: <em>I like to stretch my legs.</em>",
+          "Q: 你要靠走道還是靠窗的位子？／A: 我喜歡伸展雙腿。（暗示走道）"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Indirect answers: a fact that implies yes or no",
+        "間接回答：用事實暗示 yes 或 no"
+      ],
+      "body": [
+        "Instead of yes or no, the speaker gives a fact that makes the answer clear. Ask what that fact means for the question.",
+        "說話者不說 yes 或 no，而是給一個讓答案顯而易見的事實。想想這個事實對問題代表什麼。"
+      ],
+      "ex": [
+        [
+          "Q: Are you joining us for dinner? / A: <em>I have an early flight tomorrow.</em>",
+          "Q: 你要和我們一起吃晚餐嗎？／A: 我明天一早的班機。（暗示不去）"
+        ],
+        [
+          "Q: Is the new software easy to use? / A: <em>I'm still reading the manual.</em>",
+          "Q: 新軟體好用嗎？／A: 我還在讀說明書。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Sending you elsewhere",
+        "把問題指向別處"
+      ],
+      "body": [
+        "'Ask Jenna', 'check the website' and 'it's on the schedule' give no direct answer. They are natural when the speaker does not know or the answer is in a document.",
+        "Ask Jenna、check the website、it's on the schedule 沒有直接回答，但在說話者不知道或答案在文件裡時很自然。"
+      ],
+      "ex": [
+        [
+          "Q: How much is the conference fee? / A: <em>It's on the registration page.</em>",
+          "Q: 研討會費用多少？／A: 報名頁面上有寫。"
+        ],
+        [
+          "Q: Who is in charge of the Denver account? / A: <em>You should ask Mr. Alvarez.</em>",
+          "Q: 誰負責丹佛那個客戶？／A: 你該問 Alvarez 先生。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Not known or not ready yet",
+        "還不知道或還沒好"
+      ],
+      "body": [
+        "'I'm still waiting', 'it hasn't been decided' and 'let me check' are valid responses when the answer does not exist yet.",
+        "當答案還不存在時，I'm still waiting、it hasn't been decided、let me check 都是合理的回應。"
+      ],
+      "ex": [
+        [
+          "Q: Has the client replied? / A: <em>I'm still waiting for her e-mail.</em>",
+          "Q: 客戶回覆了嗎？／A: 我還在等她的電子郵件。"
+        ],
+        [
+          "Q: When will the schedule be final? / A: <em>The managers are still discussing it.</em>",
+          "Q: 時程什麼時候確定？／A: 主管們還在討論。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Requests, offers and suggestions",
+        "請求、提議與建議"
+      ],
+      "body": [
+        "'Could you…?', 'Would you like…?' and 'Why don't we…?' ask you to accept or decline an action. A reply usually says yes or no, often with a reason.",
+        "Could you…?、Would you like…?、Why don't we…? 是要你接受或婉拒一個行動。回應通常表示願意或不願意，常附上理由。"
+      ],
+      "ex": [
+        [
+          "Q: Could you cover my shift on Friday? / A: <em>Sure, I'm free that day.</em>",
+          "Q: 你星期五可以代我的班嗎？／A: 好，我那天有空。"
+        ],
+        [
+          "Q: Why don't we order lunch in? / A: <em>I'd rather go out for some air.</em>",
+          "Q: 我們何不叫午餐進來吃？／A: 我寧可出去透透氣。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: The conference room is booked this afternoon. / A: Then we could use the one on the third floor.",
+      "wrong": "Q: The conference room is booked this afternoon. / A: Please book me a flight to Boston.",
+      "why": [
+        "The wrong response echoes 'book' but has nothing to do with the room problem.",
+        "錯誤回應重複 book，卻和會議室的問題無關。"
+      ]
+    },
+    {
+      "right": "Q: Would you like the earlier train or the later one? / A: I have a meeting at nine tomorrow.",
+      "wrong": "Q: Would you like the earlier train or the later one? / A: The train station is on Main Street.",
+      "why": [
+        "The right response implies the earlier train. The wrong one repeats 'train' and gives a place.",
+        "正確回應暗示搭較早的車；錯誤回應只重複 train，還給了地點。"
+      ]
+    },
+    {
+      "right": "Q: Did Mr. Lopez approve the budget? / A: He's still reading it.",
+      "wrong": "Q: Did Mr. Lopez approve the budget? / A: Yes, it's under budget.",
+      "why": [
+        "The wrong response reuses 'budget' in a different sense and does not say whether he approved it.",
+        "錯誤回應換了 budget 的用法，也沒說他有沒有核准。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical statements and questions",
+        "常見的句子與問法"
+      ],
+      "items": [
+        [
+          "The printer is out of paper again.",
+          "印表機又沒紙了。"
+        ],
+        [
+          "I can't find the sales report.",
+          "我找不到業績報告。"
+        ],
+        [
+          "Would you prefer coffee or tea?",
+          "你想喝咖啡還是茶？"
+        ],
+        [
+          "Should I call the client or send an e-mail?",
+          "我該打電話給客戶還是寄電子郵件？"
+        ],
+        [
+          "Why don't we reschedule the meeting?",
+          "我們何不重新安排會議？"
+        ],
+        [
+          "Could you give me a hand with these boxes?",
+          "你可以幫我搬這些箱子嗎？"
+        ],
+        [
+          "Would you like me to book the room?",
+          "要我幫你訂房間嗎？"
+        ],
+        [
+          "I think the report needs more charts.",
+          "我覺得報告需要更多圖表。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Typical indirect responses",
+        "常見的間接回應"
+      ],
+      "items": [
+        [
+          "I'm still waiting to hear back.",
+          "我還在等回音。"
+        ],
+        [
+          "Ask the manager.",
+          "去問經理。"
+        ],
+        [
+          "It's on the website.",
+          "網站上有。"
+        ],
+        [
+          "I haven't decided yet.",
+          "我還沒決定。"
+        ],
+        [
+          "Let me check the schedule.",
+          "我看一下時程。"
+        ],
+        [
+          "That would be great.",
+          "那太好了。"
+        ],
+        [
+          "Either one is fine.",
+          "哪個都可以。"
+        ],
+        [
+          "I'd rather not.",
+          "我寧可不要。"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Word echo and sound-alike. 'Book' answered with 'book me a flight', or 'sales' with 'sail', repeats a sound but ignores the point. Choose by meaning.",
+      "重複字與音近字。對 book 回答 book me a flight，或對 sales 回答 sail，只是重複聲音、沒回應重點。要看意思。"
+    ],
+    [
+      "Do not reject a response only because it has no yes or no. Test it: would a coworker reply this way?",
+      "不要只因回應沒有 yes 或 no 就排除它。試試看：同事會這樣回應嗎？"
+    ],
+    [
+      "A choice question answered with Yes or No does not fit. 'A or B?' needs a pick, 'either', or a fact that points to one.",
+      "選擇問句用 Yes 或 No 回答不合。A or B? 需要選一個、說 either，或給暗示選擇的事實。"
+    ],
+    [
+      "A response that answers a question nobody asked, such as giving a time when the speaker made a request, is wrong. Match the reply to the speaker's purpose.",
+      "回答沒人問的問題就是錯的，例如對方提出請求，你卻給一個時間。回應要符合說話者的目的。"
+    ]
+  ]
+}
