@@ -231,6 +231,7 @@ button.row:hover .t{color:var(--accent)}
 .word .pos{font-style:italic;color:var(--soft);font-size:1.05em}
 .word .ipa{color:var(--soft);font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en)}
 .say{color:var(--accent);font-size:.95em}
+.word .exs .say{margin-left:.35em;font-size:.85em}
 .word .mean{font-family:var(--zh);color:var(--soft);margin:.4em 0 0}
 .word .def{font-size:1.1em;margin:.8em 0 0}
 .word .exs{list-style:none;margin:.4em 0 0;padding:0;display:grid;gap:.55em}
@@ -573,10 +574,9 @@ function wordBody(w, nav) {
   const hr = el("div", "hwrow"); hr.append(el("h1", null, c.w), el("span", "pos", c.pos));
   if (c.ipa) hr.append(el("span", "ipa", c.ipa));
   if (canSpeak) { const sp = btn("say", "▸ say", () => speak(c.w)); sp.setAttribute("aria-label", "Say " + c.w); hr.append(sp); }
-  box.append(hr);
-  const zt = el("div", "zhbar"), zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  const zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese"); zb.style.marginLeft = "auto";
   zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); box.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
-  zt.append(zb); box.append(zt);
+  hr.append(zb); box.append(hr);
   const mean = el("p", "mean zh", c.zh); mean.hidden = true; box.append(mean);
   box.append(para(c.def, "def"));
   box.append(sectionH("Examples"));
@@ -603,7 +603,7 @@ function wordBody(w, nav) {
   const its = (c.items || []).filter(id => BY[id]);
   if (its.length) {
     box.append(sectionH("In the questions"));
-    const ul = el("ul", "qlist"); for (const id of its.slice(0, 5)) ul.append(el("li", null, stemText(BY[id], 0))); box.append(ul);
+    const ul = el("ul", "qlist"); for (const id of its.slice(0, 5)) { const it = BY[id]; ul.append(el("li", null, isGap(it) ? it.stem.replace("______", "_____") : stemText(it, 0))); } box.append(ul);
     const p = el("p", "note"); p.append(btn("link", "Practise " + (its.length > 1 ? "these " + its.length : "this question"), () => startList(its, c.w))); box.append(p);
   }
   return box;
