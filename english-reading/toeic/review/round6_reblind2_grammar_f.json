@@ -1,0 +1,79 @@
+[
+ {
+  "id": "g-prep-11",
+  "format": "gap",
+  "stem": "The two cranes on the eastern quay, which failed their annual safety inspection in March, must stay parked with their booms lowered ______ the end of next month, when the contractor expects to finish replacing the brake assemblies.",
+  "options": {
+   "A": "by",
+   "B": "until",
+   "C": "after",
+   "D": "from"
+  }
+ },
+ {
+  "id": "g-prep-12",
+  "format": "gap",
+  "stem": "A passenger whose checked bag was damaged on a flight must lodge a written claim at the airline's baggage office ______ seven days, excluding public holidays, of receiving it, or the carrier may reject the claim.",
+  "options": {
+   "A": "in",
+   "B": "after",
+   "C": "within",
+   "D": "over"
+  }
+ },
+ {
+  "id": "g-prep-13",
+  "format": "gap",
+  "stem": "The finance department reconciles the corporate card statements ______ the end of every month, once the last late transactions have been posted at midnight on the final day, and then sends the totals to the auditors.",
+  "options": {
+   "A": "at",
+   "B": "on",
+   "C": "in",
+   "D": "toward"
+  }
+ },
+ {
+  "id": "g-prep-14",
+  "format": "gap",
+  "stem": "Pumps 3 and 4 at the Orsden plant ran without a recorded fault ______ what the plant log calls the stabilization period, a stretch of nine weeks that ended when a clogged intake screen stopped Pump 3 in July.",
+  "options": {
+   "A": "since",
+   "B": "from",
+   "C": "between",
+   "D": "for"
+  }
+ },
+ {
+  "id": "g-prep-17",
+  "format": "gap",
+  "stem": "The refinery cut its weekly output on Friday ______ the outage at Harbor Point, which had begun the previous Monday, rather than waiting for the regulator to order a cut.",
+  "options": {
+   "A": "in anticipation of",
+   "B": "in response to",
+   "C": "in contrast to",
+   "D": "in return for"
+  }
+ },
+ {
+  "id": "g-prep-18",
+  "format": "gap",
+  "stem": "The 12-inch valve fittings ordered on the third have been ______ stock at the Harlow warehouse ever since the supplier's plant was shut by a strike, and the order is now due to ship from the Bexley depot.",
+  "options": {
+   "A": "in",
+   "B": "off",
+   "C": "from",
+   "D": "out of"
+  }
+ },
+ {
+  "id": "g-prep-19",
+  "format": "gap",
+  "stem": "Under the revised travel rules, mileage claims filed ______ the first of next month will be reimbursed at the new rate of sixty cents per mile, whereas claims filed earlier will still be paid at the old rate.",
+  "options": {
+   "A": "against",
+   "B": "by",
+   "C": "before",
+   "D": "as of"
+  }
+ }
+]

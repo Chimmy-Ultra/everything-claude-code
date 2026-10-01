@@ -18,14 +18,14 @@ ITEMS = [{'id': 'g-prep-11',
   'stem': 'The two cranes on the eastern quay, which failed their annual safety inspection in '
           'March, must stay parked with their booms lowered ______ the end of next month, when the '
           'contractor expects to finish replacing the brake assemblies.',
-  'options': ['by', 'until', 'since', 'from'],
+  'options': ['by', 'until', 'after', 'from'],
   'answer': 1,
   'explain': {'point': 'stay + 持續的狀態 → until；by 只用於一次完成的動作',
               'why': '決定線索是空格前的 must stay parked：吊車要一直維持停放，直到維修完成才結束，所以用 until。when the contractor '
                      'expects to finish 也說明狀態在那時結束。',
               'wrong': ['must … by 是常見期限句型；但 stay parked 是持續狀態',
                         None,
-                        'since 接過去的起點；這裡是未來的終點',
+                        'after 表之後；但維修到月底才完成，停放要持續到那時',
                         'from 表起點，與「到維修完成為止」相反'],
               'wrongMore': ['must … by the end of next month 單看是通順的期限句型，所以 by 很眼熟。但 by '
                             '只配「做一次就完成」的動作（submit、finish）；這題的動詞是 stay parked，是要持續維持的狀態，持續到某個時間點要用 '
@@ -50,7 +50,7 @@ ITEMS = [{'id': 'g-prep-11',
   'stem': 'A passenger whose checked bag was damaged on a flight must lodge a written claim at the '
           "airline's baggage office ______ seven days, excluding public holidays, of receiving it, "
           'or the carrier may reject the claim.',
-  'options': ['in', 'after', 'within', 'by'],
+  'options': ['in', 'after', 'within', 'over'],
   'answer': 2,
   'explain': {'point': 'within + 一段時間 + of + 起算事件：自……起算的期限內',
               'why': '決定線索是離空格很遠的 of receiving it：within seven days of … 表示自收到行李起七天之內。句尾 or the '
@@ -58,7 +58,7 @@ ITEMS = [{'id': 'g-prep-11',
               'wrong': ['in seven days 看似期限；但後面不能接 of receiving',
                         'after seven days 與 or … may reject 的邏輯相反',
                         None,
-                        'by 後面不接 days … of 這種起算結構'],
+                        'over 不接 days … of 這種起算結構'],
               'wrongMore': ['must lodge a claim in seven days 單看是通順的，in + '
                             '一段時間表示從現在起算的「七天之後」。但這題的七天是從 receiving it 起算，結構是 within … of …；in '
                             '後面不能接 of receiving。',
@@ -81,28 +81,29 @@ ITEMS = [{'id': 'g-prep-11',
   'v': 1,
   'ldbs': 'L D B',
   'stem': 'The finance department reconciles the corporate card statements ______ the end of every '
-          'month, never earlier, because late transactions continue to be posted until midnight on '
-          'the last day.',
-  'options': ['at', 'by', 'on', 'in'],
+          'month, once the last late transactions have been posted at midnight on the final day, '
+          'and then sends the totals to the auditors.',
+  'options': ['at', 'on', 'in', 'toward'],
   'answer': 0,
-  'explain': {'point': 'at the end of：正好在那個時間點；by 表示最晚期限',
-              'why': '決定線索在空格之後：never earlier，以及 late transactions continue to be posted until '
-                     'midnight on the last day。對帳只能在月底那一刻才做，不是之前，所以用 at。',
+  'explain': {'point': 'at the end of：正好在月底那個時間點',
+              'why': '決定線索在空格之後：once the last late transactions have been posted at midnight on '
+                     'the final day。對帳要等到月底最後一刻才做，所以用 at the end of。',
               'wrong': [None,
-                        'by the end of 是常見說法；但 never earlier 排除',
                         'on the end of 不成立',
-                        'in the end of 不成立；in the end 是另一個片語'],
+                        'in the end of 不成立；in the end 是另一個片語',
+                        'toward the end of 表接近月底；但要等最後一筆入帳'],
               'wrongMore': [None,
-                            'reconciles … by the end of every month 單看是通順的，by the end of '
-                            '是常見說法，表示「最晚在月底前」。但後面接了 never '
-                            'earlier，又說最後一天午夜前還會入帳，所以對帳只能在月底才做；要表示正好在那個時間點，用 at。',
                             None,
-                            None],
-              'zh': '財務部門在每個月底（絕不提早）核對公司信用卡對帳單，因為遲到的交易會一直入帳到最後一天的午夜。',
+                            None,
+                            'reconciles … toward the end of every month 局部通順，toward the end of '
+                            '是常見說法，表示「接近月底時」。但句子說要等 once the last late transactions have been '
+                            'posted at midnight on the final day '
+                            '才對帳，也就是月底最後一刻，不是接近月底；要表示正好在那個時間點，用 at。'],
+              'zh': '財務部門在每個月底、最後一天午夜最後一批遲到的交易入帳之後，核對公司信用卡對帳單，然後把總額送交查帳人員。',
               'vocab': [['reconcile', '核對、調節'],
                         ['statement', '對帳單'],
                         ['transaction', '交易'],
-                        ['post', '入帳']]}},
+                        ['auditor', '查帳人員']]}},
  {'id': 'g-prep-14',
   'type': 'grammar',
   'format': 'gap',
@@ -111,27 +112,29 @@ ITEMS = [{'id': 'g-prep-11',
   'source': 'hand',
   'reviewed': False,
   'v': 1,
-  'ldbs': 'L D B',
-  'stem': 'Pumps 3 and 4 at the Orsden water plant ran without a recorded fault ______ the first '
-          'six months of the year, a record that ended only when a clogged intake screen stopped '
-          'Pump 3 in July.',
-  'options': ['by', 'since', 'from', 'for'],
+  'ldbs': 'L D',
+  'stem': 'Pumps 3 and 4 at the Orsden plant ran without a recorded fault ______ what the '
+          'plant log calls the stabilization period, a stretch of nine weeks that ended when a '
+          'clogged intake screen stopped Pump 3 in July.',
+  'options': ['since', 'from', 'between', 'for'],
   'answer': 3,
-  'explain': {'point': 'for + 一段時間（the first six months）',
-              'why': '動詞是過去式 ran，句尾又說紀錄在七月中斷：這是一段已經結束的期間，用 for。the first six months '
-                     '是時間長度，不是起點，也不是期限。',
-              'wrong': ['by 局部像期限；但 ran without a fault 是持續的狀態',
-                        'since 局部可讀；但 ran 與 ended in July 說明期間已結束',
-                        'from 表起點，不接一段期間',
+  'explain': {'point': 'for + 一段時間（a stretch of nine weeks）',
+              'why': '決定線索在空格之後：a stretch of nine weeks 說明這是一段已結束的時間長度，動詞又是過去式 ran，所以用 for。since 與 '
+                     'from 都表起點，不表長度。',
+              'wrong': ['since 局部可讀；但 ran 是過去式，期間已在七月結束',
+                        'from 局部可讀；但它表起點，後面沒有 to … 的終點',
+                        'between 要接 and 連接兩個時間點',
                         None],
-              'wrongMore': ['ran without a recorded fault by the first six months of the year '
-                            '局部像期限，因為 by 常接時間。但 by 要配「做一次就完成」的動作；這裡描述的是一段持續的無故障狀態。',
-                            'ran without a fault since the first six months 局部讀來像「從那時起一直沒故障」。但 '
-                            'since 要配到現在仍持續的狀態（通常是現在完成式），這裡的動詞是過去式 ran，句尾又說紀錄在七月中斷，所以不能用 since。',
+              'wrongMore': ['ran without a recorded fault since what the log calls the '
+                            'stabilization period 局部像「從那時起一直沒故障」。但 since 要配到現在仍持續的狀態，這裡動詞是過去式 '
+                            'ran，句尾又說紀錄在七月中斷，而且 a stretch of nine weeks 是時間長度，不是起點。',
+                            'ran … from what the log calls the stabilization period 局部像是起點。但 from '
+                            '要配終點（from … to …），這裡沒有；a stretch of nine weeks 說的是長度，要用 for。',
                             None,
                             None],
-              'zh': '奧斯登水廠的三號與四號泵浦在今年前六個月都沒有故障紀錄，這項紀錄直到七月進水濾網堵塞使三號泵浦停機才中斷。',
+              'zh': '奧斯登水廠的三號與四號泵浦在廠內紀錄所稱的穩定期（為期九週）都沒有故障紀錄，這段期間直到七月進水濾網堵塞使三號泵浦停機才結束。',
               'vocab': [['recorded fault', '有紀錄的故障'],
+                        ['stabilization period', '穩定期'],
                         ['clogged', '堵塞的'],
                         ['intake screen', '進水濾網']]}},
  {'id': 'g-prep-15',
@@ -205,27 +208,25 @@ ITEMS = [{'id': 'g-prep-11',
   'reviewed': False,
   'v': 1,
   'ldbs': 'L D B',
-  'stem': 'The refinery has trimmed its weekly output ______ the outage at Harbor Point that began '
-          'last week, rather than waiting for the regulator to order a cut.',
+  'stem': 'The refinery cut its weekly output on Friday ______ the outage at Harbor Point, which '
+          'had begun the previous Monday, rather than waiting for the regulator to order a cut.',
   'options': ['in anticipation of', 'in response to', 'in contrast to', 'in return for'],
   'answer': 1,
   'explain': {'point': 'in response to + 已發生的事：作為回應',
-              'why': '決定線索在空格之後：that began last week，停電已經發生，煉油廠是對它作出反應，所以用 in response to。rather '
-                     'than waiting 也說明是主動回應。',
-              'wrong': ['in anticipation of 表預期尚未發生的事；但停電已開始',
+              'why': '決定線索在空格之後：which had begun the previous Monday，停電比星期五的減產更早開始，煉油廠是對它作出反應，所以用 '
+                     'in response to。',
+              'wrong': ['in anticipation of 表預期尚未發生的事；但停電早已開始',
                         None,
                         'in contrast to 表對比，不表原因',
                         'in return for 表交換，不表對事件的反應'],
-              'wrongMore': ['trimmed output in anticipation of … 是真實說法，表示為預期中的事先行減產，所以看起來合理。但 '
-                            'outage 後面的 that began last week 說明停電已經發生；anticipation 要接尚未發生的事。',
+              'wrongMore': ['cut output in anticipation of … 是真實說法，表示為預期中的事先行減產，所以看起來合理。但 outage '
+                            '後面的 which had begun the previous Monday 說明停電在星期五之前就已經開始；anticipation '
+                            '要接尚未發生的事。',
                             None,
                             None,
                             None],
-              'zh': '煉油廠已針對上週開始的哈柏角停電事件調降每週產量，而不是等監管機關下令減產。',
-              'vocab': [['refinery', '煉油廠'],
-                        ['trim', '削減'],
-                        ['outage', '停電、停機'],
-                        ['regulator', '監管機關']]}},
+              'zh': '煉油廠在星期五針對前一個星期一開始的哈柏角停電事件調降每週產量，而不是等監管機關下令減產。',
+              'vocab': [['refinery', '煉油廠'], ['outage', '停電、停機'], ['regulator', '監管機關']]}},
  {'id': 'g-prep-18',
   'type': 'grammar',
   'format': 'gap',
@@ -235,28 +236,26 @@ ITEMS = [{'id': 'g-prep-11',
   'reviewed': False,
   'v': 1,
   'ldbs': 'L D',
-  'stem': 'The 12-inch valve fittings that the crew ordered on the third have been ______ stock at '
-          'the Harlow warehouse ever since a strike halted production, so the supervisor has asked '
-          'the Bexley depot to fill the order.',
-  'options': ['in', 'off', 'by', 'out of'],
+  'stem': 'The 12-inch valve fittings ordered on the third have been ______ stock at '
+          "the Harlow warehouse ever since the supplier's plant was shut by a strike, and the "
+          'order is now due to ship from the Bexley depot.',
+  'options': ['in', 'off', 'from', 'out of'],
   'answer': 3,
   'explain': {'point': 'out of stock：缺貨；in stock：有現貨',
-              'why': 'ever since a strike halted production 說明沒有貨，所以才請 Bexley depot 出貨，要用 out of '
-                     'stock。',
-              'wrong': ['in stock 是常見說法；但與 asked the Bexley depot 矛盾',
+              'why': "ever since the supplier's plant was shut by a strike 與 the order is now due "
+                     'to ship from the Bexley depot 都說明這裡沒有貨，要用 out of stock。',
+              'wrong': ['in stock 是常見說法；但與後文矛盾',
                         'off stock 不是固定說法',
-                        'by stock 不是固定說法',
+                        'from stock 只用於 supply from stock，不接 have been',
                         None],
               'wrongMore': ['have been in stock at the warehouse 單看是通順的，in stock 也是常用片語。但 ever '
-                            'since a strike halted production 與 asked the Bexley depot to fill the '
-                            'order 都說明這裡沒有貨，所以要 out of stock。',
+                            "since the supplier's plant was shut 與 due to ship from the Bexley "
+                            'depot 都說明這裡沒有貨，所以要 out of stock。',
                             None,
                             None,
                             None],
-              'zh': '工班在三號訂購的十二吋閥門接頭，自從罷工使生產停擺以來，哈洛倉庫就一直缺貨，所以主管已請貝克斯利配送站出貨來補這張訂單。',
-              'vocab': [['valve fitting', '閥門接頭'],
-                        ['halt', '使停止'],
-                        ['fill the order', '出貨、滿足訂單']]}},
+              'zh': '工班在三號訂購的十二吋閥門接頭，自從供應商的工廠因罷工關閉以來，哈洛倉庫就一直缺貨，這張訂單現在要改由貝克斯利配送站出貨。',
+              'vocab': [['valve fitting', '閥門接頭'], ['supplier', '供應商'], ['depot', '配送站']]}},
  {'id': 'g-prep-19',
   'type': 'grammar',
   'format': 'gap',
@@ -269,12 +268,12 @@ ITEMS = [{'id': 'g-prep-11',
   'stem': 'Under the revised travel rules, mileage claims filed ______ the first of next month '
           'will be reimbursed at the new rate of sixty cents per mile, whereas claims filed '
           'earlier will still be paid at the old rate.',
-  'options': ['since', 'by', 'before', 'as of'],
+  'options': ['against', 'by', 'before', 'as of'],
   'answer': 3,
   'explain': {'point': 'as of + 日期：自該日起適用',
               'why': '決定線索在句尾：whereas claims filed earlier will still be paid at the old '
                      'rate。新費率只從那個日期起適用，所以用 as of。by 與 before 的範圍會包含較早的申請，與 whereas 矛盾。',
-              'wrong': ['since 接過去的起點；這裡是未來日期',
+              'wrong': ['against 表反對或抵靠，不表時間起點',
                         'by 是常見期限說法；但與 filed earlier 的對比矛盾',
                         'before 會把較早的申請算進新費率，與 whereas 矛盾',
                         None],

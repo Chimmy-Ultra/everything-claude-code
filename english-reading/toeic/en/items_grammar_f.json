@@ -81,12 +81,12 @@
  },
  "g-prep-13": {
   "point": [
-   "<em>at</em> the end of: exactly then; <em>by</em> means no later than.",
-   "at the end of：正好在那時；by 表示最晚期限。"
+   "<em>at</em> the end of: exactly at that point.",
+   "at the end of：正好在那個時間點。"
   ],
   "why": [
-   "<em>never earlier</em> and <em>late transactions continue to be posted until midnight on the last day</em> show the work is done at the end, not before. <em>by</em> would allow earlier. The word is <em>at</em>.",
-   "never earlier 與 late transactions continue to be posted until midnight on the last day 說明工作在月底才做，不是之前。by 會允許提早。所以用 at。"
+   "<em>once the last late transactions have been posted at midnight on the final day</em> means the work waits for the very end of the month: <em>at</em>. <em>toward</em> would mean only near it.",
+   "once the last late transactions have been posted at midnight on the final day 表示要等到月底最後一刻：at。toward 只表示接近。"
   ],
   "gloss": [
    {
@@ -118,8 +118,8 @@
    "for + 一段時間。"
   ],
   "why": [
-   "<em>ran</em> is past tense, and the record <em>ended only when</em> a screen clogged in July: a finished period. <em>the first six months</em> is a length, so <em>for</em>. <em>since</em> needs a state that continues now.",
-   "ran 是過去式，而且紀錄在七月濾網堵塞時才中斷：這是已結束的一段期間。the first six months 是長度，所以用 for。since 要配到現在仍持續的狀態。"
+   "<em>a stretch of nine weeks</em> is a length of time that has ended, and the verb is past tense (<em>ran</em>). So <em>for</em>. <em>since</em> and <em>from</em> give a starting point, not a length.",
+   "a stretch of nine weeks 是已結束的時間長度，動詞又是過去式 ran。所以用 for。since 與 from 給的是起點，不是長度。"
   ],
   "gloss": [
    {
@@ -128,6 +128,13 @@
     "pos": "phr.",
     "zh": "有紀錄的故障",
     "ex": "Each recorded fault is reviewed on Monday."
+   },
+   {
+    "w": "stabilization period",
+    "hw": "stabilization period",
+    "pos": "phr.",
+    "zh": "穩定期",
+    "ex": "The stabilization period lasts six weeks."
    },
    {
     "w": "clogged",
@@ -220,12 +227,12 @@
  },
  "g-prep-17": {
   "point": [
-   "<em>in response to</em> + an event that already happened.",
-   "in response to + 已經發生的事。"
+   "<em>in response to</em> + an event that came earlier.",
+   "in response to + 較早發生的事。"
   ],
   "why": [
-   "<em>that began last week</em> puts the outage in the past, and the refinery reacted to it: <em>in response to</em>. <em>rather than waiting for the regulator</em> also shows a reaction.",
-   "that began last week 把停電放在過去，煉油廠是對它作出反應：in response to。rather than waiting for the regulator 也顯示是反應。"
+   "<em>which had begun the previous Monday</em> puts the outage before the Friday cut, and the refinery reacted to it: <em>in response to</em>. <em>in anticipation of</em> needs an event still to come.",
+   "which had begun the previous Monday 把停電放在星期五減產之前，煉油廠是對它作出反應：in response to。in anticipation of 要接尚未發生的事。"
   ],
   "gloss": [
    {
@@ -234,13 +241,6 @@
     "pos": "n.",
     "zh": "煉油廠",
     "ex": "The refinery processes oil from three fields."
-   },
-   {
-    "w": "trimmed",
-    "hw": "trim",
-    "pos": "v.",
-    "zh": "削減",
-    "ex": "The firm trimmed its costs by ten percent."
    },
    {
     "w": "outage",
@@ -264,8 +264,8 @@
    "out of stock：缺貨。"
   ],
   "why": [
-   "<em>ever since a strike halted production</em> and <em>asked the Bexley depot to fill the order</em> both show the fittings are not available here. The phrase is <em>out of stock</em>.",
-   "ever since a strike halted production 與 asked the Bexley depot to fill the order 都顯示這裡沒有貨。片語是 out of stock。"
+   "<em>ever since the supplier's plant was shut by a strike</em> and <em>the order is now due to ship from the Bexley depot</em> both show there is no stock here. The phrase is <em>out of stock</em>.",
+   "ever since the supplier's plant was shut by a strike 與 the order is now due to ship from the Bexley depot 都顯示這裡沒有貨。片語是 out of stock。"
   ],
   "gloss": [
    {
@@ -276,18 +276,18 @@
     "ex": "We stock several valve fittings."
    },
    {
-    "w": "halted",
-    "hw": "halt",
+    "w": "shut",
+    "hw": "shut",
     "pos": "v.",
-    "zh": "使停止",
-    "ex": "Heavy snow halted deliveries for two days."
+    "zh": "關閉",
+    "ex": "The plant was shut for repairs."
    },
    {
-    "w": "fill the order",
-    "hw": "fill the order",
-    "pos": "phr.",
-    "zh": "出貨、滿足訂單",
-    "ex": "The depot can fill the order today."
+    "w": "ship",
+    "hw": "ship",
+    "pos": "v.",
+    "zh": "出貨",
+    "ex": "Orders ship within two working days."
    }
   ]
  },
