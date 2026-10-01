@@ -6,12 +6,12 @@
         "why": ["<em>No trains will run on the Harbor Line</em> and <em>Replacement buses are boarding now</em>: passengers travel a different way for now.", "no trains will run on the Harbor Line 加上 Replacement buses are boarding now：旅客暫時要用別的方式搭車。"]
       },
       {
-        "point": ["<em>Only on paper</em> means not real in practice.", "only on paper 的意思是實際上不存在。"],
-        "why": ["<em>Some trains still appear on the departure board.</em> Then <em>Those trains exist only on paper</em>: they are listed, but they will not run.", "Some trains still appear on the departure board。接著 Those trains exist only on paper：班次有列出，但不會開。"]
+        "point": ["<em>Only on paper</em> is a warning not to trust the board.", "only on paper 是提醒別相信看板。"],
+        "why": ["<em>Some trains still appear on the departure board.</em> <em>Those trains exist only on paper</em>, so passengers should not rely on the screens. Staff say to <em>check with them</em> first.", "Some trains still appear on the departure board。Those trains exist only on paper，所以旅客不該相信螢幕。工作人員說要先 check with them。"]
       },
       {
         "point": ["The arrangement follows <em>After that</em>.", "安排在 After that 之後。"],
-        "why": ["<em>The buses will run until 10:00 tonight. After that, please use the taxi stand.</em> <em>The railway will cover the fare</em>: it pays for private transportation.", "The buses will run until 10:00 tonight。After that, please use the taxi stand。The railway will cover the fare：鐵路公司負擔私人交通費。"]
+        "why": ["<em>The buses will run until 10:00 tonight. After that, please use the taxi stand.</em> <em>The railway will cover the fare</em>: it pays for a hired car once the buses have stopped.", "The buses will run until 10:00 tonight。After that, please use the taxi stand。The railway will cover the fare：公車收班後，鐵路公司負擔計程車費。"]
       }
     ],
     "gloss": [
@@ -25,8 +25,8 @@
   "l-talk-07": {
     "q": [
       {
-        "point": ["The reason for a change follows <em>But</em>.", "改變的原因在 But 之後。"],
-        "why": ["Crews first said 9:00. <em>But a tow company arrived early, so they now hope to open the bridge fully by 8:30.</em> Help arriving early is the cause.", "工作人員起初說 9:00。But a tow company arrived early, so they now hope to open the bridge fully by 8:30。救援提早到是原因。"]
+        "point": ["Link the cause to the new estimate.", "把原因和新的估計連起來。"],
+        "why": ["Crews first said 9:00. <em>But a tow company arrived early.</em> <em>They now hope to open the bridge fully by 8:30.</em> The early help explains the earlier estimate.", "工作人員起初說 9:00。But a tow company arrived early。They now hope to open the bridge fully by 8:30。救援提早到，所以估計提前。"]
       },
       {
         "point": ["The reason comes after <em>But</em>.", "原因在 But 之後。"],
@@ -94,8 +94,8 @@
   "l-talk-10": {
     "q": [
       {
-        "point": ["The reason follows <em>because</em>.", "理由在 because 之後。"],
-        "why": ["<em>Please wear the badge all day, because you'll need it to get into lunch.</em> Getting into lunch means being admitted to a meal.", "Please wear the badge all day, because you'll need it to get into lunch。get into lunch 就是獲准進去用餐。"]
+        "point": ["The reason is spread over two sentences.", "理由分散在相鄰兩句。"],
+        "why": ["<em>Please wear the badge all day.</em> At lunch, <em>staff will check each badge</em>. The badge shows they are entitled to the meal.", "Please wear the badge all day。午餐時 staff will check each badge。名牌用來證明有資格用餐。"]
       },
       {
         "point": ["Sessions swap times, but rooms stay with sessions.", "場次對調時間，教室跟著場次。"],
@@ -117,8 +117,8 @@
   "l-talk-11": {
     "q": [
       {
-        "point": ["Guide and tour show who the listeners are.", "guide 和 tour 顯示聽眾是誰。"],
-        "why": ["<em>I'll be your guide for this 45-minute tour</em>. The speaker leads the visit, so the listeners are people taking it.", "I'll be your guide for this 45-minute tour。說話者帶領參觀，所以聽眾是參加參觀的人。"]
+        "point": ["Combine the welcome with the shop offer.", "把歡迎詞和買豆邀請合起來看。"],
+        "why": ["<em>I'll be your guide for this 45-minute tour</em> shows a visit. <em>If you'd like to buy beans</em> shows outsiders, not staff: visitors being shown around.", "I'll be your guide for this 45-minute tour 表示是參觀。If you'd like to buy beans 表示是外來訪客，不是員工。"]
       },
       {
         "point": ["The new plan follows <em>Normally … but</em>.", "新安排在 Normally … but 之後。"],

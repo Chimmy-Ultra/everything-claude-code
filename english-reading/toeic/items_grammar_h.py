@@ -13,8 +13,8 @@ reviewed 一律 False，待審核。
 ITEMS = [
     # ------------------------------------------------------------ 真實未來條件
     {
-        "id": "g-conditional-07", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "id": "g-conditional-07", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "If the shipment of replacement valves that the supplier promised for Tuesday ______ the Brantwood plant by Friday afternoon, the second shift will resume production on Monday as originally planned.",
         "options": ["reaches", "had reached", "reaching", "would reach"],
         "answer": 0,
@@ -40,8 +40,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-conditional-08", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-conditional-08", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "The Alderbrook Hotel will hold a block of rooms for the delegation until the end of February and then release it to the general public, ______ the coordinator has confirmed the booking in writing by that date.",
         "options": ["if", "unless", "as long as", "in case"],
         "answer": 1,
@@ -66,7 +66,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-09", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Under the new policy, employees keep their seniority and pension entitlements ______ they transfer to the Northgate office before the restructuring takes effect in January, while those who apply after that date start again at entry level.",
         "options": ["as if", "unless", "until", "provided that"],
         "answer": 3,
@@ -93,8 +93,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-conditional-10", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-conditional-10", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "The launch event for the new ferry service on Harlan Quay will be moved into the exhibition hall on Saturday unless the rain that has been forecast for the whole weekend ______ before noon.",
         "options": ["will stop", "does not stop", "stops", "stopped"],
         "answer": 2,
@@ -119,8 +119,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ 與現在事實相反
     {
-        "id": "g-conditional-11", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-conditional-11", "type": "grammar", "format": "gap", "unit": "conditional", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "The municipal recycling center, which handles waste from all eleven city districts, has only one crew and no budget for another; if it ______ able to run a second shift, its backlog would be cleared by December.",
         "options": ["being", "to be", "will be", "were"],
         "answer": 3,
@@ -147,8 +147,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-conditional-12", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "id": "g-conditional-12", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "The bank's call center ______ most customer queries within a single call if its agents had direct access to the account-verification database, which at present only the fraud team can open.",
         "options": ["would resolve", "will resolve", "would have resolved", "has resolved"],
         "answer": 0,
@@ -174,7 +174,7 @@ ITEMS = [
     # ------------------------------------------------------------ 與過去事實相反、混合條件句
     {
         "id": "g-conditional-13", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "If the airline's operations center ______ the crew shortage when the first roster was filed in the spring, the cancellations that stranded some two thousand passengers in July would have been avoided.",
         "options": ["identified", "would have identified", "had identified", "has identified"],
         "answer": 2,
@@ -199,7 +199,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-14", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "If the Hollis University Library had accepted the donation of the digitized archive in 2019, as the city council urged at the time, its reading room ______ the busiest in the county now, seven years later.",
         "options": ["would have been", "would be", "will be", "had been"],
         "answer": 1,
@@ -223,8 +223,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-conditional-15", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-conditional-15", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "If the retailer were not so heavily dependent on a single carrier, its deliveries to the northern stores ______ so badly disrupted by the three-day strike last September, when several of those stores ran out of stock.",
         "options": ["would not have", "had not been", "not have been", "would not have been"],
         "answer": 3,
@@ -253,7 +253,7 @@ ITEMS = [
     # ------------------------------------------------------------ But for / Without
     {
         "id": "g-conditional-16", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "______ the emergency loan that the regional development bank arranged for the mill in March, the company would have been forced to shut the plant and lay off all two hundred employees before the summer holidays began.",
         "options": ["Whereas", "Because of", "But for", "Unless"],
         "answer": 2,
@@ -277,8 +277,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-conditional-17", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "id": "g-conditional-17", "type": "grammar", "format": "gap", "unit": "conditional", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Without the forty volunteers who staff the information desk every weekend, the museum ______ able to keep its galleries open on both weekend days, as it has done every week since January.",
         "options": ["would not be", "would not have", "were not", "not being"],
         "answer": 0,
@@ -306,8 +306,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ 省略 if 的倒裝
     {
-        "id": "g-conditional-18", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "id": "g-conditional-18", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "______ the main backup generator at the Ashcombe data center, which is tested every month, fail during the storm season, the cooling system would shut down within minutes and all hosted services would go offline.",
         "options": ["Although", "Should", "Even though", "Whenever"],
         "answer": 1,
@@ -335,7 +335,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-19", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "______ the lease on the Harbor Street premises, which the clinic has held since 2009, not due to expire in March, the practice would have no reason to consider relocating.",
         "options": ["Whether", "Were", "Since", "Provided"],
         "answer": 1,
@@ -363,7 +363,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-20", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "Had the printer's production manager, whom the publisher consulted only after the first run, ______ the revised page proofs before the deadline, the errata slip tucked into every copy would have been unnecessary.",
         "options": ["received", "receive", "receiving", "have received"],
         "answer": 0,
@@ -391,7 +391,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-21", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "______ the planning tribunal, as the developers had repeatedly requested, had approved the permit on the first appeal, construction of the tower would have begun last year.",
         "options": ["Had", "Should", "If", "Were"],
         "answer": 2,
@@ -417,7 +417,7 @@ ITEMS = [
     # ------------------------------------------------------------ if only / it's time / as though
     {
         "id": "g-conditional-22", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "If only the venue, which opened in 1998, ______ a larger loading area, exhibitors' trucks would not have to queue for up to two hours at the single rear dock every morning.",
         "options": ["has", "had", "would have", "will have"],
         "answer": 1,
@@ -442,7 +442,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-23", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "The dean told the board that it is high time the admissions office, whose acceptance rate has fallen for three consecutive years and whose overseas intake has fallen faster, ______ the way it assesses foreign applicants.",
         "options": ["has reviewed", "will review", "reviewed", "is reviewing"],
         "answer": 2,
@@ -470,7 +470,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-24", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "The invitation to the gala dinner is worded as though the evening ______ a private function for sponsors, although tickets will be sold to the general public from Monday.",
         "options": ["has been", "is being", "had been", "were"],
         "answer": 3,

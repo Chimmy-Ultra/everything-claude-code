@@ -34,27 +34,34 @@
  },
  "g-connect-10": {
   "point": [
-   "A full clause follows a comma: use the conjunction <em>although</em>.",
-   "逗號後接完整子句：用連接詞 although。"
+   "<em>despite</em> can take a noun with its own -ing form.",
+   "despite 可以接帶有自己 -ing 的名詞片語。"
   ],
   "why": [
-   "After the blank comes a full clause: subject <em>the seating capacity that the fire marshal had approved in April</em> and verb <em>was</em>. Only a comma comes before it, so a conjunction is needed. <em>Although</em> also fits the contrast.",
-   "空格後是完整子句：主詞 the seating capacity that the fire marshal had approved in April，動詞 was。前面只有逗號，所以需要連接詞。although 也符合對比的意思。"
+   "<em>The review panel having rejected its first two proposals</em> has no finite verb: <em>having rejected</em> is a participle. The only main verb is <em>won</em>, after the comma. So the blank needs a preposition: <em>Despite</em>.",
+   "the review panel having rejected its first two proposals 沒有定式動詞，having rejected 是分詞。唯一的主要動詞 won 在逗號之後。所以空格要用介系詞 Despite。"
   ],
   "gloss": [
    {
-    "w": "fire marshal",
-    "hw": "fire marshal",
+    "w": "review panel",
+    "hw": "review panel",
     "pos": "phr.",
-    "zh": "消防安全主管",
-    "ex": "The fire marshal inspected the hall before opening night."
+    "zh": "評審小組",
+    "ex": "The review panel meets on the first Monday."
    },
    {
-    "w": "seating capacity",
-    "hw": "seating capacity",
-    "pos": "phr.",
-    "zh": "座位容量",
-    "ex": "The seating capacity of the hall is five hundred."
+    "w": "tender",
+    "hw": "tender",
+    "pos": "n.",
+    "zh": "招標",
+    "ex": "The firm submitted a tender for the road project."
+   },
+   {
+    "w": "bid",
+    "hw": "bid",
+    "pos": "n.",
+    "zh": "標案、出價",
+    "ex": "The lowest bid won the contract."
    }
   ]
  },
@@ -126,12 +133,12 @@
  },
  "g-connect-13": {
   "point": [
-   "<em>while</em> + -ing links two actions of one subject.",
-   "while + Ving 連接同一主詞的兩個動作。"
+   "A clause follows: use the conjunction <em>while</em>.",
+   "後面是子句：用連接詞 while。"
   ],
   "why": [
-   "<em>Boarding</em> has its own object: <em>passengers who need wheelchair assistance</em>. So it is a verb form, and its doer is <em>the two agents</em>. <em>While</em> + -ing means \"at the same time as\" and fits.",
-   "boarding 有自己的受詞 passengers who need wheelchair assistance，所以它是動詞形式，動作者是 the two agents。while + Ving 表示「在……的同時」，符合句意。"
+   "After the <em>who</em> clause, <em>passengers who need wheelchair assistance</em> gets its verb: <em>are boarding</em>. A full clause follows the blank, so a time conjunction is needed: <em>while</em>.",
+   "who 子句之後，passengers who need wheelchair assistance 的動詞 are boarding 出現了。空格後是完整子句，所以需要時間連接詞 while。"
   ],
   "gloss": [
    {
@@ -156,8 +163,8 @@
    "名詞後面沒有動詞：用介系詞 during。"
   ],
   "why": [
-   "<em>The quarterly audit</em> is a noun phrase. The words <em>when every production system is frozen</em> only add detail about the audit; they do not give it a verb. A time word before a noun phrase must be a preposition: <em>during</em>.",
-   "the quarterly audit 是名詞片語。when every production system is frozen 只是補充說明 audit，並沒有替它提供動詞。時間詞後面接名詞片語，必須用介系詞 during。"
+   "<em>The quarterly audit</em> is a noun phrase. The <em>when</em> clause after it only adds detail, and the real verb <em>may deploy</em> comes at the end. A time word before a noun phrase must be a preposition: <em>During</em>.",
+   "the quarterly audit 是名詞片語。後面的 when 子句只是補充說明，真正的動詞 may deploy 在句尾。名詞片語前的時間詞必須是介系詞 During。"
   ],
   "gloss": [
    {
@@ -218,12 +225,12 @@
  },
  "g-connect-16": {
   "point": [
-   "A noun follows: use the preposition <em>after</em>.",
-   "後面接名詞：用介系詞 after。"
+   "Before a clause use the conjunction <em>after</em>.",
+   "接子句用連接詞 after。"
   ],
   "why": [
-   "<em>The wedding reception that the hotel hosts every Saturday evening</em> is a noun phrase, so the time word before it must be a preposition. <em>After</em> takes a noun; it fits the order of events.",
-   "the wedding reception that the hotel hosts every Saturday evening 是名詞片語，前面的時間詞必須是介系詞。after 可以接名詞，也符合事情先後。"
+   "After the relative clause, the subject <em>the wedding reception</em> gets its verb: <em>has ended</em>. A full clause follows the blank, so a conjunction is needed: <em>After</em>.",
+   "關係子句之後，主詞 the wedding reception 的動詞 has ended 才出現。空格後是完整子句，所以需要連接詞 After。"
   ],
   "gloss": [
    {
@@ -255,8 +262,8 @@
    "unless + 子句 = if not；without + 名詞。"
   ],
   "why": [
-   "<em>The sender, or the accountant …, has submitted</em> has a subject and a verb, so a clause follows. The meaning is: if no recall request is submitted, the bank cannot reverse the transfer. That is <em>unless</em>.",
-   "the sender, or the accountant …, has submitted 有主詞也有動詞，所以後面是子句。意思是：若沒有提交撤回申請，銀行就不能撤銷匯款。這是 unless。"
+   "<em>Whose account was debited in error</em> only describes <em>the sender</em>; the verb of the clause is <em>has submitted</em>. So a clause follows the blank. The meaning is: if no recall request is submitted, the bank cannot reverse the transfer. That is <em>unless</em>.",
+   "whose account was debited in error 只修飾 the sender，子句的動詞是 has submitted，所以空格後是子句。意思是：若沒有提交撤回申請，銀行就不能撤銷匯款。這是 unless。"
   ],
   "gloss": [
    {
@@ -267,11 +274,11 @@
     "ex": "The wire transfer arrived within two hours."
    },
    {
-    "w": "on the sender's behalf",
-    "hw": "on behalf of",
-    "pos": "phr.",
-    "zh": "代表寄款人",
-    "ex": "She signed the form on behalf of her manager."
+    "w": "debited",
+    "hw": "debit",
+    "pos": "v.",
+    "zh": "扣款",
+    "ex": "The bank debited the wrong account."
    },
    {
     "w": "recall request",
@@ -284,49 +291,49 @@
  },
  "g-connect-18": {
   "point": [
-   "<em>unless</em> can be followed by a past participle.",
-   "unless 後面可以接過去分詞（省略 it is）。"
+   "<em>unless</em> can introduce a clause with a gerund subject.",
+   "unless 可以引導以動名詞當主詞的子句。"
   ],
   "why": [
-   "<em>Authorized in writing by the facilities office</em> is a shortened clause: <em>unless</em> (it is) <em>authorized</em>. The meaning is \"except when it is authorized in writing\", which is <em>unless</em>.",
-   "authorized in writing by the facilities office 是縮短的子句：unless (it is) authorized。意思是「除非獲得書面授權」，所以用 unless。"
+   "<em>Repairing the damaged unit</em> is the subject of <em>proves</em>, so a clause follows the blank. The meaning is \"except if repair proves impossible\", which is <em>unless</em>. A preposition would leave <em>proves</em> without a subject.",
+   "repairing the damaged unit 是 proves 的主詞，所以空格後是子句。意思是「除非修不好」，這是 unless。若用介系詞，proves 就沒有主詞了。"
   ],
   "gloss": [
    {
-    "w": "authorized",
-    "hw": "authorize",
-    "pos": "v.",
-    "zh": "授權",
-    "ex": "Only managers may authorize overtime pay."
-   },
-   {
-    "w": "facilities office",
-    "hw": "facilities office",
-    "pos": "phr.",
-    "zh": "設施管理處",
-    "ex": "Call the facilities office to book the hall."
-   },
-   {
-    "w": "log",
-    "hw": "log",
+    "w": "refund",
+    "hw": "refund",
     "pos": "n.",
-    "zh": "紀錄",
-    "ex": "The guard keeps a log of all visitors."
+    "zh": "退款",
+    "ex": "You can request a full refund within thirty days."
+   },
+   {
+    "w": "repairing",
+    "hw": "repair",
+    "pos": "v.",
+    "zh": "修理",
+    "ex": "Technicians repair most units on site."
+   },
+   {
+    "w": "replacing",
+    "hw": "replace",
+    "pos": "v.",
+    "zh": "更換",
+    "ex": "We replace worn filters every year."
    }
   ]
  },
  "g-connect-19": {
   "point": [
-   "Two clauses joined by only a comma need a conjunction: <em>whereas</em>.",
-   "只用逗號連接兩個子句，要用連接詞：whereas。"
+   "Two clauses with a comma between: open the first with <em>whereas</em>.",
+   "兩個子句中間有逗號：第一個子句用 whereas 開頭。"
   ],
   "why": [
-   "A comma separates two full clauses: <em>applications … rose by 14 percent</em> and <em>applications … fell</em>. A comma alone cannot join them, so a conjunction is needed. <em>Whereas</em> also shows the contrast between urban and rural branches.",
-   "逗號隔開兩個完整子句：applications … rose by 14 percent 和 applications … fell。只靠逗號不能連接它們，所以需要連接詞。whereas 也表示都會與鄉村分行的對比。"
+   "A comma separates two full clauses: <em>mortgage applications … rose</em> and <em>those … fell</em>. A comma alone cannot join them, so the first needs a conjunction. <em>Whereas</em> also shows the contrast between urban and rural branches.",
+   "逗號隔開兩個完整子句：mortgage applications … rose 和 those … fell。只靠逗號不能連接它們，所以第一個子句需要連接詞。whereas 也表示都會與鄉村分行的對比。"
   ],
   "gloss": [
    {
-    "w": "Mortgage applications",
+    "w": "mortgage applications",
     "hw": "mortgage application",
     "pos": "n.",
     "zh": "房貸申請",

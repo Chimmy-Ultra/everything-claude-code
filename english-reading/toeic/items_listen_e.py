@@ -24,7 +24,7 @@ ITEMS = [
     # plant manager only reads it once the finance office has checked the numbers; "it" = the summary, "them" = finance.
     {
         "id": "l-conv-11", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-11", "gapMs": 500,
             "lines": [
@@ -102,7 +102,7 @@ ITEMS = [
             {
                 "q": "What will the woman do tomorrow morning?",
                 "options": [
-                    "Bring her cost figures to a different department for checking",
+                    "Have the accounting staff check her cost figures",
                     "Present the proposal to the plant manager",
                     "Arrange a second test with the vendor",
                     "Ask the distributor for another report",
@@ -133,8 +133,8 @@ ITEMS = [
     # Q3 (D, second half): Dunmore wants a letter, Lang asks Joel to draft it, Joel agrees; (C) "first draft" is the
     # same-word trap (his thesis draft).
     {
-        "id": "l-conv-12", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-conv-12", "type": "listen", "format": "conv", "unit": "conv-topic", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-12", "gapMs": 500,
             "lines": [
@@ -244,7 +244,7 @@ ITEMS = [
     # -> Family Room, Fri-Sat = $195. (B) $175 is the same room's Sun-Thu rate; (A) $140 / (D) $260 other rows.
     {
         "id": "l-conv-13", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "graphic": {
             "caption": "Lakeview Hotel — Nightly Room Rates",
             "head": ["Room", "Beds", "Sun–Thu", "Fri–Sat"],
@@ -361,7 +361,7 @@ ITEMS = [
     # handle it (line 8) -> staff move it to the new flight; (A) collect it is the option he rules out.
     {
         "id": "l-conv-14", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "graphic": {
             "caption": "Afternoon and Evening Departures",
             "head": ["Flight", "Destination", "Departs", "Arrives", "Gate"],
@@ -471,8 +471,8 @@ ITEMS = [
     # literal reading, (B) contradicts "takes me an hour". Q3 (B): he gives the cost, she says it depends on whether
     # the author pays the fee.
     {
-        "id": "l-conv-15", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-conv-15", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-15", "gapMs": 500,
             "lines": [
@@ -582,7 +582,7 @@ ITEMS = [
     # Q3 (C): Gus needs weekend booking numbers early in the week; Theo says he will give the count every Tuesday.
     {
         "id": "l-conv-16", "type": "listen", "format": "conv", "unit": "conv-intent", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-16", "gapMs": 500,
             "lines": [
@@ -691,7 +691,7 @@ ITEMS = [
     # better hurry -> he will contact his physician's office.
     {
         "id": "l-conv-17", "type": "listen", "format": "conv", "unit": "conv-next", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-17", "gapMs": 500,
             "lines": [
@@ -800,8 +800,8 @@ ITEMS = [
     # -> the choice is his. Q3 (A): he asks about cards (and offers a bank for cash), she says cards are fine and the form
     # needs a drawing, he has the building plans in his car and will bring them in -> fetches a document.
     {
-        "id": "l-conv-18", "type": "listen", "format": "conv", "unit": "conv-next", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-conv-18", "type": "listen", "format": "conv", "unit": "conv-next", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-18", "gapMs": 500,
             "lines": [

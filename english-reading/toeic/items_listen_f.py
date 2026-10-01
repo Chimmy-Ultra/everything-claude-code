@@ -10,7 +10,7 @@
 # reviewed stays False until the items pass a blind review and every mp3 has been heard.
 # Scenes (new against l-talk-01..05): rail-replacement announcement, radio traffic report, internet provider
 # phone menu, self-storage advertisement, customer-service workshop opening, coffee roastery tour.
-# Self-test summary: 18 questions = 4 easy (first question of 06, 09, 10, 11), 5 medium, 9 hard; at most one
+# Self-test summary: 18 questions = 2 easy (first question of 06 and 09), 6 medium, 10 hard; at most one
 # easy per set. No answer needs arithmetic; no key repeats a content word from the audio.
 # Implied-meaning questions: l-talk-06 q2 ("Those trains exist only on paper."), l-talk-08 q1 ("You don't need to
 # stay on the line"), l-talk-09 q3 ("... your garage can finally be a garage again."), l-talk-07 q2 (purpose).
@@ -70,13 +70,13 @@ ITEMS = [
             },
             {
                 "q": "Why does the speaker say, \"Those trains exist only on paper\"?",
-                "options": ["To say that paper timetables are available at the station", "To promise that the board will be fixed soon", "To warn that some trains will run later than listed", "To stress that the listed trains are not really operating"],
+                "options": ["To say that paper timetables are available at the station", "To promise that the board will be fixed soon", "To warn that some trains will run later than listed", "To caution passengers against relying on what the screens show"],
                 "answer": 3,
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
-                    "point": "引句題：on paper 是說只存在於紙面",
-                    "why": "Some trains still appear on the departure board，接著 exist only on paper → 看板上列的班次其實不會開。",
-                    "evidence": [0, 3],
+                    "point": "引句題：on paper 是提醒別信看板",
+                    "why": "看板上還列著班次，但 exist only on paper；接著 check with them → 提醒別相信螢幕上的資訊。",
+                    "evidence": [3, 4],
                     "wrong": ["字面陷阱：把 on paper 讀成紙本時刻表", "語境矛盾：沒有說看板會很快修好", "語境矛盾：整晚沒有列車，不是晚點", None],
                     "wrongMore": [
                         "on paper 字面上是「印在紙上」，所以聽起來合理；但這句接在「看板上還顯示列車」之後，意思是班次只存在於紙面，實際不會開。",
@@ -89,19 +89,19 @@ ITEMS = [
             },
             {
                 "q": "What will the railway company do for passengers arriving after the buses stop?",
-                "options": ["Keep the replacement buses running all night", "Refund their unused tickets", "Cover the cost of private transportation", "Extend the validity of their passes"],
+                "options": ["Keep the replacement buses running all night", "Refund their unused tickets", "Pay for a hired car once the coaches have finished", "Cover the fare for the replacement buses"],
                 "answer": 2,
-                "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
+                "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "細節題：After that 後面才是安排",
                     "why": "After that … taxi stand；The railway will cover the fare → 鐵路公司負擔計程車費。",
                     "evidence": [5, 6],
-                    "wrong": ["時間錯置：公車只開到 10:00", "提到但不是問的：車票仍有效，沒說退款", None, "提到但不是問的：remain valid 只指在公車上有效"],
+                    "wrong": ["時間錯置：公車只開到 10:00", "提到但不是問的：車票仍有效，沒說退款", None, "同字陷阱：cover the fare 是指計程車，不是公車"],
                     "wrongMore": [
                         "until 10:00 tonight 說明公車有收班時間，之後才改搭計程車。",
                         None,
                         None,
-                        "remain valid 指票和通行證在公車上仍可使用，沒有說會延長期限。",
+                        "cover the fare 確實出現，但後面接的是 those taxis；公車收班之後才輪到計程車，而公車本來就可用車票搭乘。",
                     ],
                     "vocab": [["cover the fare", "負擔車資"], ["remain valid", "仍然有效"]],
                 },
@@ -118,44 +118,46 @@ ITEMS = [
         "audio": {
             "dir": "audio/l-talk-07", "gapMs": 500,
             "lines": [
-                {"file": "01.mp3", "who": "M", "voice": "am_eric", "text": "Good morning, this is Dale Fenner with your 7:40 traffic report. Eastgate Bridge is backed up.",
-                 "say": "Good morning, this is Dale Fenner with your seven forty traffic report. Eastgate Bridge is backed up."},
-                {"file": "02.mp3", "who": "M", "voice": "am_eric", "text": "A delivery truck broke down in the left lane, so only one lane is open each way."},
+                {"file": "01.mp3", "who": "M", "voice": "am_eric", "text": "This is Dale Fenner with your 7:40 traffic report. Eastgate Bridge is backed up.",
+                 "say": "This is Dale Fenner with your seven forty traffic report. Eastgate Bridge is backed up."},
+                {"file": "02.mp3", "who": "M", "voice": "am_eric", "text": "A truck broke down in the left lane, so only one lane is open each way."},
                 {"file": "03.mp3", "who": "M", "voice": "am_eric", "text": "Crews first said they would clear it by 9:00.",
                  "say": "Crews first said they would clear it by nine o'clock."},
-                {"file": "04.mp3", "who": "M", "voice": "am_eric", "text": "But a tow company arrived early, so they now hope to open the bridge fully by 8:30.",
-                 "say": "But a tow company arrived early, so they now hope to open the bridge fully by eight thirty."},
-                {"file": "05.mp3", "who": "M", "voice": "am_eric", "text": "Many drivers are turning onto Orchard Road to get around the bridge."},
-                {"file": "06.mp3", "who": "M", "voice": "am_eric", "text": "But a water main repair there has closed a lane, so it's slow going as well."},
-                {"file": "07.mp3", "who": "M", "voice": "am_eric", "text": "Tonight's concert will bring heavy traffic near the stadium after 5:00.",
+                {"file": "04.mp3", "who": "M", "voice": "am_eric", "text": "But a tow company arrived early."},
+                {"file": "05.mp3", "who": "M", "voice": "am_eric", "text": "They now hope to open the bridge fully by 8:30.",
+                 "say": "They now hope to open the bridge fully by eight thirty."},
+                {"file": "06.mp3", "who": "M", "voice": "am_eric", "text": "Many drivers are turning onto Orchard Road to get around the bridge."},
+                {"file": "07.mp3", "who": "M", "voice": "am_eric", "text": "But a water main repair there has closed a lane, so it's slow going as well."},
+                {"file": "08.mp3", "who": "M", "voice": "am_eric", "text": "If you can, leave your car at the Lakeside lot and take the Route 12 bus this morning.",
+                 "say": "If you can, leave your car at the Lakeside lot and take the Route twelve bus this morning."},
+                {"file": "09.mp3", "who": "M", "voice": "am_eric", "text": "Rides are free until noon, and I'll update you again at 8:15.",
+                 "say": "Rides are free until noon, and I'll update you again at eight fifteen."},
+                {"file": "10.mp3", "who": "M", "voice": "am_eric", "text": "Tonight's concert will bring heavy traffic near the stadium after 5:00.",
                  "say": "Tonight's concert will bring heavy traffic near the stadium after five o'clock."},
-                {"file": "08.mp3", "who": "M", "voice": "am_eric", "text": "If you can, leave your car at the Lakeside lot and take the Route 12 bus.",
-                 "say": "If you can, leave your car at the Lakeside lot and take the Route twelve bus."},
-                {"file": "09.mp3", "who": "M", "voice": "am_eric", "text": "Rides are free until noon. I'll update you again at 8:15.",
-                 "say": "Rides are free until noon. I'll update you again at eight fifteen."},
             ],
         },
         "transcriptZh": [
-            "早安，我是 Dale Fenner，為您帶來 7:40 的路況報導。Eastgate 橋塞車了。",
-            "一輛貨運卡車在左線拋錨，所以每個方向只開放一個車道。",
+            "我是 Dale Fenner，為您帶來 7:40 的路況報導。Eastgate 橋塞車了。",
+            "一輛卡車在左線拋錨，所以每個方向只開放一個車道。",
             "工作人員起初說 9:00 前會清除。",
-            "但是拖吊公司提早抵達，所以他們現在希望 8:30 前讓橋完全通車。",
+            "但是拖吊公司提早抵達。",
+            "他們現在希望 8:30 前讓橋完全通車。",
             "很多駕駛改走 Orchard 路，想繞過這座橋。",
             "但是那裡因為自來水主管線維修封閉了一個車道，所以一樣走得很慢。",
+            "可以的話，今天早上把車停在 Lakeside 停車場，搭乘 12 路公車。",
+            "中午前搭乘免費，8:15 我會再為您更新。",
             "今晚的演唱會會讓體育場附近 5:00 以後車流很多。",
-            "可以的話，把車停在 Lakeside 停車場，搭乘 12 路公車。",
-            "中午前搭乘免費。8:15 我會再為您更新。",
         ],
         "questions": [
             {
                 "q": "What caused the crews to change their estimate?",
-                "options": ["Drivers began using Orchard Road", "Help for the truck arrived ahead of schedule", "A repair on another road was finished", "The truck's driver solved the problem"],
+                "options": ["Drivers began using Orchard Road", "A recovery firm reached the scene sooner than anticipated", "A repair on another road was finished", "The truck's driver solved the problem"],
                 "answer": 1,
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
-                    "point": "原因題：But 之後才是改變估計的原因",
-                    "why": "But a tow company arrived early, so they now hope … by 8:30 → 救援提早到，改述成協助提早抵達。",
-                    "evidence": [2, 3],
+                    "point": "原因題：把原因和新估計兩句串起來",
+                    "why": "first said … 9:00；But a tow company arrived early；They now hope … 8:30 → 拖車提早到，估計才提前。",
+                    "evidence": [2, 3, 4],
                     "wrong": ["提到但不是問的：改走 Orchard Road 與估計時間無關", None, "提到但不是問的：water main 維修在 Orchard Road", "沒有提到司機修好：來的是拖吊公司"],
                     "wrongMore": [None, None, "a water main repair 是 Orchard Road 上的維修，還沒完成（has closed a lane），和橋上的清理時間無關。", None],
                     "vocab": [["tow company", "拖吊公司"], ["fully open", "完全通車"], ["clear", "排除（障礙）"]],
@@ -169,7 +171,7 @@ ITEMS = [
                 "explain": {
                     "point": "意圖題：But 之後才是提到它的原因",
                     "why": "turning onto Orchard Road 後，But a water main repair … slow going as well → 提醒改道也一樣慢。",
-                    "evidence": [4, 5],
+                    "evidence": [5, 6],
                     "wrong": [None, "字面陷阱：他只說很多人改走，沒有推薦", "沒有說 Orchard Road 造成橋上塞車", "提到但不是問的：體育場的車流是演唱會造成的"],
                     "wrongMore": [
                         None,
@@ -187,13 +189,13 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "建議題：If you can 後面才是他的建議",
-                    "why": "If you can, leave your car at the Lakeside lot and take the Route 12 bus → 停車後改搭公車。",
-                    "evidence": [7],
+                    "why": "If you can, leave your car at the Lakeside lot and take the Route 12 bus this morning → 停車後改搭公車。",
+                    "evidence": [7, 8],
                     "wrong": ["張冠李戴：下一次更新是主播自己要做的事", "提到但不是問的：Orchard Road 一樣塞", "同字陷阱：noon 是免費搭乘的期限", None],
                     "wrongMore": [
                         "I'll update you again 是主播自己的安排，不是對聽眾的建議。",
                         None,
-                        "until noon 出現在 Rides are free until noon，是免費搭乘的期限；他沒有叫人拖到中午才出門。",
+                        "until noon 出現在 Rides are free until noon，是同一趟早上搭公車的免費期限；他沒有叫人拖到中午才出門。",
                         None,
                     ],
                     "vocab": [["lot", "停車場"], ["update", "最新消息"]],
@@ -258,15 +260,15 @@ ITEMS = [
                 },
             },
             {
-                "q": "What will callers who are not using the phone number on their account be asked to do?",
-                "options": ["Wait for a text message about service", "Enter an identification number from their statement", "Wait for a return call within the hour", "Skip the identification step"],
+                "q": "After choosing a menu option, what will callers who are not using the phone number on their account be asked to do?",
+                "options": ["Report a connection problem", "Enter an identification number from their statement", "Cancel a technician visit", "Skip the identification step"],
                 "answer": 1,
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "條件句：skip this step 是給另一群人的",
                     "why": "key in your account number 是對大家說的；skip this step 只免除用登記電話的人 → 其他人要輸入帳號。",
                     "evidence": [5, 6],
-                    "wrong": ["提到但不是問的：簡訊是通知停電地區修復用的", None, "時間錯置：回電是選 9 之後的事", "張冠李戴：可以略過的是用登記電話的人"],
+                    "wrong": ["提到但不是問的：回報連線問題是按 1 的選項", None, "提到但不是問的：取消技術人員到府是按 2 的選項", "張冠李戴：可以略過的是用登記電話的人"],
                     "wrongMore": [
                         None,
                         None,
@@ -413,18 +415,21 @@ ITEMS = [
             "lines": [
                 {"file": "01.mp3", "who": "W", "voice": "bf_emma", "text": "Good morning, everyone, and welcome to our customer service workshop. I'm Helen Ford, and I'll be hosting today."},
                 {"file": "02.mp3", "who": "W", "voice": "bf_emma", "text": "You'll find a name badge and a printed schedule in the folder on your chair."},
-                {"file": "03.mp3", "who": "W", "voice": "bf_emma", "text": "Please wear the badge all day, because you'll need it to get into lunch."},
-                {"file": "04.mp3", "who": "W", "voice": "bf_emma", "text": "One change to that schedule: our data presenter is stuck at the airport, so the two afternoon sessions will switch times."},
-                {"file": "05.mp3", "who": "W", "voice": "bf_emma", "text": "Each session keeps its original room, so please check the schedule carefully after lunch."},
-                {"file": "06.mp3", "who": "W", "voice": "bf_emma", "text": "We'd also love your opinions. A short survey will be e-mailed at 4:00, and everyone who completes it by Friday enters a prize drawing.",
+                {"file": "03.mp3", "who": "W", "voice": "bf_emma", "text": "Please wear the badge all day."},
+                {"file": "04.mp3", "who": "W", "voice": "bf_emma", "text": "Lunch is in the courtyard at 12:30, where staff will check each badge.",
+                 "say": "Lunch is in the courtyard at twelve thirty, where staff will check each badge."},
+                {"file": "05.mp3", "who": "W", "voice": "bf_emma", "text": "One change to that schedule: our data presenter is stuck at the airport, so the two afternoon sessions will switch times."},
+                {"file": "06.mp3", "who": "W", "voice": "bf_emma", "text": "Each session keeps its original room, so please check the schedule carefully after lunch."},
+                {"file": "07.mp3", "who": "W", "voice": "bf_emma", "text": "We'd also love your opinions. A short survey will be e-mailed at 4:00, and everyone who completes it by Friday enters a prize drawing.",
                  "say": "We'd also love your opinions. A short survey will be emailed at four o'clock, and everyone who completes it by Friday enters a prize drawing."},
-                {"file": "07.mp3", "who": "W", "voice": "bf_emma", "text": "Now, let's begin. Please turn to the person beside you and introduce yourself."},
+                {"file": "08.mp3", "who": "W", "voice": "bf_emma", "text": "Now, let's begin. Please turn to the person beside you and introduce yourself."},
             ],
         },
         "transcriptZh": [
             "各位早安，歡迎參加我們的客戶服務工作坊。我是 Helen Ford，今天由我主持。",
             "您椅子上的資料夾裡有一個名牌和一份紙本行程表。",
-            "請整天都戴著名牌，因為您需要它才能進去用午餐。",
+            "請整天都戴著名牌。",
+            "午餐在 12:30 於中庭供應，工作人員會在那裡檢查每個人的名牌。",
             "行程表有一項更動：我們的數據主講人被困在機場，所以下午的兩場課程要對調時間。",
             "每一場課程的教室維持原定，所以午餐後請仔細確認行程表。",
             "我們也想聽聽您的意見。4:00 會用電子郵件寄出一份簡短問卷，星期五前填完的人都可以參加抽獎。",
@@ -433,13 +438,13 @@ ITEMS = [
         "questions": [
             {
                 "q": "Why are listeners asked to wear their badges all day?",
-                "options": ["To get into the afternoon sessions", "To enter a prize drawing", "To be admitted to a meal", "To be matched with a partner for an activity"],
+                "options": ["To get into the afternoon sessions", "To enter a prize drawing", "To show that they are entitled to a meal", "To be matched with a partner for an activity"],
                 "answer": 2,
-                "ldbs": {"L": True, "D": False, "B": False, "S": False, "band": "easy"},
+                "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
-                    "point": "原因題：because 後面就是理由",
-                    "why": "Please wear the badge all day, because you'll need it to get into lunch → get into lunch 即可以用餐。",
-                    "evidence": [2],
+                    "point": "原因題：要把相鄰兩句串起來",
+                    "why": "wear the badge all day；Lunch … staff will check each badge → 名牌用來證明有資格用餐。",
+                    "evidence": [2, 3],
                     "wrong": ["提到但不是問的：下午場次只是行程更動的背景", "提到但不是問的：抽獎要填問卷，與名牌無關", None, "沒有提到配對：只說轉向旁邊的人自我介紹"],
                     "wrongMore": [None, None, None, None],
                     "vocab": [["name badge", "名牌"], ["hosting", "主持"], ["admitted", "獲准進入"]],
@@ -453,7 +458,7 @@ ITEMS = [
                 "explain": {
                     "point": "圖表題：場次對調時間，教室跟著場次",
                     "why": "Room B 是 Using Data；sessions will switch times，Each session keeps its original room → 改到 3:00。",
-                    "evidence": [3, 4],
+                    "evidence": [4, 5],
                     "wrong": ["9:30 是 Writing Clear Replies，在 Room A", "11:00 是 Handling Difficult Calls，在 Room C", "看表沒看音檔：1:30 是 Room B 原本的時間，但兩場已對調", None],
                     "wrongMore": [
                         None,
@@ -472,7 +477,7 @@ ITEMS = [
                 "explain": {
                     "point": "細節題：抽獎條件和期限一起說",
                     "why": "completes it by Friday enters a prize drawing，it 指 A short survey → 週五前填問卷。",
-                    "evidence": [5],
+                    "evidence": [6],
                     "wrong": [None, "提到但不是問的：對調場次是行程更動，與抽獎無關", "順序錯置：自我介紹是講完話後的下一步，與抽獎無關", "時間錯置：4:00 是寄出問卷的時間，期限是星期五"],
                     "wrongMore": [
                         None,
@@ -518,15 +523,15 @@ ITEMS = [
         "questions": [
             {
                 "q": "Who most likely are the listeners?",
-                "options": ["Employees of the roastery", "People on a guided visit", "Coffee growers", "Shop customers"],
+                "options": ["Employees of the roastery", "Visitors being shown around a workplace", "Coffee growers", "Shop customers"],
                 "answer": 1,
-                "ldbs": {"L": False, "D": False, "B": False, "S": False, "band": "easy"},
+                "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
-                    "point": "身分題：guide 與 tour 點出聽眾是參觀者",
-                    "why": "I'll be your guide for this 45-minute tour → 說話者是導覽員，聽眾是參加導覽的人。",
-                    "evidence": [0],
-                    "wrong": ["沒有提到他們在這裡工作：guide 帶領的是參觀者", None, "沒有提到咖啡農", "同字陷阱：shop 出現，但店是參觀後才開放的選項"],
-                    "wrongMore": [None, None, None, None],
+                    "point": "身分題：導覽加上買豆邀請，聽眾是訪客",
+                    "why": "guide for this 45-minute tour，加上 If you'd like to buy beans → 是被帶著參觀、可能購買的訪客。",
+                    "evidence": [0, 4],
+                    "wrong": ["沒有依據：員工不會被邀請買咖啡豆", None, "沒有提到咖啡農", "同字陷阱：shop 出現，但店是參觀後才開放的選項"],
+                    "wrongMore": ["新進員工也可能參加導覽；但後面說 If you'd like to buy beans, our shop will open，是對外來訪客說的。", None, None, None],
                     "vocab": [["roastery", "烘豆工坊"], ["guide", "導覽員"]],
                 },
             },

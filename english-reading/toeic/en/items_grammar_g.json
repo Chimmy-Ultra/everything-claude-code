@@ -500,8 +500,8 @@
       "逗號後 which 可以指前面整個子句。"
     ],
     "why": [
-      "The blank refers to the whole action: releasing the schedule without consulting anyone. It does not refer to <em>the shift supervisors</em>. After a comma, that needs <em>which</em>. <em>Who</em> points only to people.",
-      "空格指的是整件事：沒有諮詢就發布時程，不是指 the shift supervisors。逗號後指整個前句要用 which。who 只能指人。"
+      "The blank refers to the whole action: releasing the schedule without consulting anyone. That action <em>proved a costly oversight</em>; people cannot, so it is not <em>the shift supervisors</em>. After a comma: <em>which</em>.",
+      "空格指的是整件事：沒有諮詢就發布時程。這件事 proved a costly oversight，人不會是疏忽，所以不是指 the shift supervisors。逗號後：which。"
     ],
     "gloss": [
       {
@@ -562,34 +562,27 @@
   },
   "g-relative-25": {
     "point": [
-      "A relative pronoun and its auxiliary: <em>who has</em>.",
-      "關係代名詞與助動詞：who has。"
+      "Each coordinated relative clause takes the case of its own clause.",
+      "並列的關係子句各自決定格。"
     ],
     "why": [
-      "Take out <em>according to the minutes of the March meeting</em>: <em>been pressing</em> has no auxiliary. The blank must give both the subject and the auxiliary: <em>who has</em>. <em>Who</em> alone leaves <em>been</em> without <em>has</em>.",
-      "拿掉 according to the minutes of the March meeting：been pressing 沒有助動詞。空格要同時給主詞和助動詞：who has。單用 who，been 就缺了 has。"
+      "The first clause has <em>whom</em> as the object of <em>trained</em>. After <em>and</em>, the blank starts a new relative clause with the verb <em>have led</em>, so it is a subject: <em>who</em>, not <em>whom</em>.",
+      "第一個子句的 whom 是 trained 的受詞。and 之後是新的關係子句，動詞是 have led，空格是主詞：who，不是 whom。"
     ],
     "gloss": [
       {
-        "w": "minutes",
-        "hw": "minutes",
+        "w": "since April alone",
+        "hw": "since April alone",
+        "pos": "phr.",
+        "zh": "光是四月以來",
+        "ex": "Sales doubled since April alone."
+      },
+      {
+        "w": "reading sessions",
+        "hw": "reading session",
         "pos": "n.",
-        "zh": "會議紀錄",
-        "ex": "The minutes were sent to all staff."
-      },
-      {
-        "w": "pressing",
-        "hw": "press",
-        "pos": "v.",
-        "zh": "施壓、催促",
-        "ex": "The union kept pressing the board."
-      },
-      {
-        "w": "approve",
-        "hw": "approve",
-        "pos": "v.",
-        "zh": "核准",
-        "ex": "The board will approve the budget in May."
+        "zh": "閱讀活動",
+        "ex": "Reading sessions run every Saturday."
       }
     ]
   }

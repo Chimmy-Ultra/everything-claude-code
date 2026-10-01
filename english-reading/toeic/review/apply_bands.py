@@ -15,8 +15,14 @@ for k, b in band.items():
 path = os.path.join(HERE, name + ".py"); s = open(path, encoding="utf-8").read()
 for i, ks in level.items():
     lv = max(ks.values())                       # a conversation or talk takes its hardest question's band
-    pat = re.compile(r'("id": "%s",[^\n]*?"level": )(\d)(,[^\n]*\n[^\n]*?"reviewed": )(?:False|True)' % re.escape(i))
-    s, n = pat.subn(lambda m: m.group(1) + str(lv) + m.group(3) + "True", s)
-    if n != 1: sys.exit(f"{i}: id/level/reviewed layout not found")
+    # the item's block runs from its "id" key to the next item's "id" key; either quote style
+    start = re.search(r'["\']id["\']: ["\']%s["\']' % re.escape(i), s)
+    if not start: sys.exit(f"{i}: id not found")
+    nxt = re.compile(r'["\']id["\']: ["\']').search(s, start.end())
+    end = nxt.start() if nxt else len(s)
+    block, n1 = re.subn(r'(["\']level["\']: )\d', lambda m: m.group(1) + str(lv), s[start.start():end], count=1)
+    block, n2 = re.subn(r'(["\']reviewed["\']: )(?:False|True)', lambda m: m.group(1) + "True", block, count=1)
+    if n1 != 1 or n2 != 1: sys.exit(f"{i}: level/reviewed not found")
+    s = s[:start.start()] + block + s[end:]
     print(i, lv)
 open(path, "w", encoding="utf-8").write(s)
