@@ -1,0 +1,90 @@
+[
+ {
+  "id": "g-pos-06",
+  "format": "gap",
+  "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice, so the receptionists no longer handle most requests by phone.",
+  "options": {
+   "A": "dramatic",
+   "B": "drama",
+   "C": "dramatically",
+   "D": "dramatize"
+  }
+ },
+ {
+  "id": "g-pos-07",
+  "format": "gap",
+  "stem": "Thanks to the new signs posted along Merrow Road, most first-time visitors can now find the Pembry Conference Center ______ without calling ahead for directions.",
+  "options": {
+   "A": "easy",
+   "B": "ease",
+   "C": "easiness",
+   "D": "easily"
+  }
+ },
+ {
+  "id": "g-tense-06",
+  "format": "gap",
+  "stem": "Ms. Delgado, who joined Halloway Engineering as a junior engineer straight out of college, ______ with the firm for thirty-two years when she retires at the end of next month.",
+  "options": {
+   "A": "has been",
+   "B": "had been",
+   "C": "will have been",
+   "D": "was"
+  }
+ },
+ {
+  "id": "g-connect-06",
+  "format": "gap",
+  "stem": "Because the loading dock is staffed only until 5 p.m., the warehouse will accept deliveries after that time ______ the driver has arranged access with the night supervisor in advance.",
+  "options": {
+   "A": "unless",
+   "B": "provided that",
+   "C": "so that",
+   "D": "even if"
+  }
+ },
+ {
+  "id": "g-prep-05",
+  "format": "gap",
+  "stem": "All chemicals used in the Rennick Street laboratory must be labeled and stored ______ the guidelines set out in section 4 of the safety manual that every new employee receives.",
+  "options": {
+   "A": "in response to",
+   "B": "in addition to",
+   "C": "in accordance with",
+   "D": "in exchange for"
+  }
+ },
+ {
+  "id": "g-mandative-03",
+  "format": "gap",
+  "stem": "In light of several duplicate payments last year, the external auditors have strongly recommended in their final report that the accounts payable team ______ every invoice over $5,000 against the original purchase order.",
+  "options": {
+   "A": "checking",
+   "B": "checked",
+   "C": "is checking",
+   "D": "check"
+  }
+ },
+ {
+  "id": "v-synonym-02",
+  "format": "gap",
+  "stem": "The IT department ______ laptops and projectors to staff who meet clients off-site, and borrowers must return the equipment within two weeks.",
+  "options": {
+   "A": "returns",
+   "B": "lends",
+   "C": "borrows",
+   "D": "donates"
+  }
+ },
+ {
+  "id": "v-family-07",
+  "format": "gap",
+  "stem": "Reviewers often praise the reception staff at the Tollmere Inn for being ______ to guests' needs, and many mention that requests are handled within minutes.",
+  "options": {
+   "A": "attentive",
+   "B": "attendant",
+   "C": "attended",
+   "D": "attending"
+  }
+ }
+]

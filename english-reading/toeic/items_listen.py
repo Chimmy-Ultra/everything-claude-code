@@ -57,7 +57,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-03", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 2, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-03", "gapMs": 900,
             "lines": [
@@ -202,8 +202,8 @@ ITEMS = [
     # Round 3 Part 2 items: each has at least one wrong response that fits the question type
     # and can only be ruled out by the context; all four keys are indirect.
     {
-        "id": "l-qr-09", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-qr-09", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-09", "gapMs": 900,
             "lines": [
@@ -229,7 +229,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-10", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-10", "gapMs": 900,
             "lines": [
@@ -253,8 +253,8 @@ ITEMS = [
         }],
     },
     {
-        "id": "l-qr-11", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "id": "l-qr-11", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-11", "gapMs": 900,
             "lines": [
@@ -279,7 +279,7 @@ ITEMS = [
     },
     {
         "id": "l-qr-12", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-12", "gapMs": 900,
             "lines": [
@@ -562,7 +562,7 @@ ITEMS = [
     {
         # Three speakers: W1 = Rachel, M = Victor, W2 = Hannah (Rachel names both in line 1 and Hannah again in line 6).
         "id": "l-conv-05", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-conv-05", "gapMs": 500,
             "lines": [
@@ -628,8 +628,8 @@ ITEMS = [
         ],
     },
     {
-        "id": "l-conv-06", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-conv-06", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "graphic": {
             "caption": "Eastbrook Small Business Forum — Saturday Workshops",
             "head": ["Time", "Workshop", "Room"],
@@ -683,7 +683,7 @@ ITEMS = [
                     "point": "圖表題：音檔給位置線索，再到表上換成答案",
                     "why": "合約那場在下午 1:00；他去 the one right after it，表上是 2:30 的 Leading Remote Teams（呼應在家工作），在 Room 310。",
                     "evidence": [0, 1],
-                    "wrong": ["101 是早上 9:00 那場", "204 是早上 10:30 那場，在合約那場之前", "張冠李戴：115 是女方要去的合約那場", None],
+                    "wrong": ["101 是早上 9:00 那場", "204 是早上 10:30 那場，在合約那場之前", "同字陷阱：115 是合約那場，他去的是下一場", None],
                     "wrongMore": [None, None, "只聽到 contracts 就直接對表會選這個；男方說的是合約那場「後面」的那一場。", None],
                     "vocab": [["right after", "緊接在……之後"], ["remote team", "遠距團隊"]],
                 },
@@ -706,7 +706,7 @@ ITEMS = [
     # ------------------------------------------------------------------ talk (Part 4)
     {
         "id": "l-talk-01", "type": "listen", "format": "talk", "unit": "talk-topic", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 2, "accent": "uk",
         "audio": {
             "dir": "audio/l-talk-01", "gapMs": 500,
             "lines": [
@@ -832,7 +832,7 @@ ITEMS = [
     },
     {
         "id": "l-talk-03", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-talk-03", "gapMs": 500,
             "lines": [

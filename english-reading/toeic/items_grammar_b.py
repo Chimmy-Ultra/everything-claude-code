@@ -30,7 +30,7 @@ ITEMS = [
     },
     {
         "id": "g-voice-02", "type": "grammar", "format": "gap", "unit": "voice", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2,
+        "source": "hand", "reviewed": True, "v": 2,
         "stem": "Shipping costs for our overseas orders ______ by nearly eight percent since the start of the year.",
         "options": ["have raised", "have risen", "are rising", "have been raising"],
         "answer": 1,
@@ -554,7 +554,7 @@ ITEMS = [
     # ------------------------------------------------------------ relative
     {
         "id": "g-relative-04", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Out of more than forty applications, the hiring committee has invited back only the three candidates ______ it believes are best qualified to run the new Dunhallow distribution center.",
         "options": ["whom", "who", "whose", "which"],
         "answer": 1,
@@ -573,14 +573,14 @@ ITEMS = [
                 None,
                 None,
             ],
-            "zh": "在四十多份申請中，招聘委員會只請其中三位它認為最有資格管理 Dunhallow 新物流中心的人選回來參加下一輪。",
+            "zh": "在四十多份申請中，招聘委員會只請三位人選回來參加下一輪；委員會認為他們最有資格經營 Dunhallow 新的物流中心。",
             "vocab": [["hiring committee", "招聘委員會"], ["candidate", "人選、候選人"], ["qualified", "有資格的、能勝任的"]],
         },
     },
     # ------------------------------------------------------------ agree
     {
         "id": "g-agree-04", "type": "grammar", "format": "gap", "unit": "agree", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Each of the regional sales offices, including the three that opened in Asia last year, ______ required to submit a quarterly budget report to head office.",
         "options": ["are", "have", "is", "being"],
         "answer": 2,
@@ -605,8 +605,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ quantity
     {
-        "id": "g-quantity-04", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-quantity-04", "type": "grammar", "format": "gap", "unit": "quantity", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Since the warehouse switched to barcode scanning in March, customers have reported ______ shipping and billing errors than they did in all of last year.",
         "options": ["less", "fewer", "fewest", "little"],
         "answer": 1,
@@ -634,19 +634,19 @@ ITEMS = [
         "id": "g-mandative-03", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3,
         "source": "hand", "reviewed": False, "v": 1,
         "stem": "In light of several duplicate payments last year, the external auditors have strongly recommended in their final report that the accounts payable team ______ every invoice over $5,000 against the original purchase order.",
-        "options": ["checks", "checked", "is checking", "check"],
+        "options": ["checking", "checked", "is checking", "check"],
         "answer": 3,
         "explain": {
-            "point": "recommend that + 主詞 + 原形（主詞單數也不加 -s）",
-            "why": "recommended that 表示建議該怎麼做，that 子句用原形；主詞 the accounts payable team 雖是單數，仍用 check。",
+            "point": "recommend that + 主詞 + 原形動詞",
+            "why": "recommended 後面接的是 that 子句，子句要有自己的動詞；建議的內容用原形，主詞 the accounts payable team 是單數也用 check。",
             "wrong": [
-                "主詞單數容易加 -s，但建議的內容要用原形",
+                "recommend 可直接接 Ving，但接了 that + 主詞就要用原形",
                 "過去式，建議的內容要用原形",
                 "進行式講正在做，不是建議的做法",
                 None,
             ],
             "wrongMore": [
-                "空格前緊鄰的是單數的 the accounts payable team，很自然會配 checks；但決定形式的是前面隔了一段的 have strongly recommended ... that，建議的內容一律用原形 check。",
+                "recommend checking every invoice（直接接 Ving）是對的說法，所以 checking 看起來很眼熟；但這句是 recommended that + 主詞，that 子句要有動詞，the team checking 不成句，建議的內容要用原形 check。",
                 None,
                 None,
                 None,
@@ -657,8 +657,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ compare
     {
-        "id": "g-compare-04", "type": "grammar", "format": "gap", "unit": "compare", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-compare-04", "type": "grammar", "format": "gap", "unit": "compare", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Although it weighs about the same, the new Quelsa X2 vacuum cleaner is nearly twice ______ powerful as the model it replaces.",
         "options": ["more", "so", "as", "much"],
         "answer": 2,
@@ -683,8 +683,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ toing
     {
-        "id": "g-toing-04", "type": "grammar", "format": "gap", "unit": "toing", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-toing-04", "type": "grammar", "format": "gap", "unit": "toing", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The automated sorting machines installed at the Tamberly warehouse last spring have contributed significantly ______ the time it takes to process customer returns.",
         "options": ["to reduce", "reducing", "for reducing", "to reducing"],
         "answer": 3,
@@ -710,7 +710,7 @@ ITEMS = [
     # ------------------------------------------------------------ pronoun
     {
         "id": "g-pronoun-04", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ who registered for the leadership workshop before the early deadline of May 3 are entitled to a 20 percent discount on the printed course materials.",
         "options": ["Those", "Anyone", "Whoever", "Them"],
         "answer": 0,
@@ -735,8 +735,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ conditional
     {
-        "id": "g-conditional-03", "type": "grammar", "format": "gap", "unit": "conditional", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-conditional-03", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "______ you have any questions about your new account, please contact our customer service team, which is available from 9 a.m. to 6 p.m. on weekdays.",
         "options": ["Should", "Would", "Unless", "Had"],
         "answer": 0,

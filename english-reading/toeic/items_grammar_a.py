@@ -101,7 +101,7 @@ ITEMS = [
     {
         "id": "g-pos-06", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
         "source": "hand", "reviewed": False, "v": 2,
-        "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice, so the front desk no longer handles most requests by phone.",
+        "stem": "The new booking system has made it ______ easier for staff to reserve meeting rooms on short notice, so the receptionists no longer handle most requests by phone.",
         "options": ["dramatic", "drama", "dramatically", "dramatize"],
         "answer": 2,
         "explain": {
@@ -119,7 +119,7 @@ ITEMS = [
                 None,
                 None,
             ],
-            "zh": "新的預約系統讓員工臨時訂會議室變得容易許多，所以櫃台現在大多不必再用電話處理預約。",
+            "zh": "新的預約系統讓員工臨時訂會議室變得容易許多，所以接待人員現在大多不必再用電話處理預約。",
             "vocab": [["booking system", "預約系統"], ["reserve", "預訂"], ["on short notice", "臨時、事前通知很短"]],
         },
     },
@@ -145,8 +145,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-tense-02", "type": "grammar", "format": "gap", "unit": "tense", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2,
+        "id": "g-tense-02", "type": "grammar", "format": "gap", "unit": "tense", "level": 1,
+        "source": "hand", "reviewed": True, "v": 2,
         "stem": "Currently, our technicians ______ the cause of this morning's network outage, so e-mail and shared files may load slowly until early afternoon.",
         "options": ["investigate", "are investigating", "investigated", "have investigated"],
         "answer": 1,
@@ -267,8 +267,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-03", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 2,
+        "id": "g-connect-03", "type": "grammar", "format": "gap", "unit": "connect", "level": 1,
+        "source": "hand", "reviewed": True, "v": 2,
         "stem": "Our main supplier charges more than most of its competitors. ______, we have decided to keep ordering from it because its parts rarely fail.",
         "options": ["However", "Therefore", "Whereas", "In spite of"],
         "answer": 0,
@@ -491,12 +491,12 @@ ITEMS = [
     {
         "id": "g-pos-07", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Thanks to the new signs posted along Merrow Road, most first-time visitors can now find the Pembry Conference Center ______ without calling the front desk for directions.",
+        "stem": "Thanks to the new signs posted along Merrow Road, most first-time visitors can now find the Pembry Conference Center ______ without calling ahead for directions.",
         "options": ["easy", "ease", "easiness", "easily"],
         "answer": 3,
         "explain": {
             "point": "完整子句後修飾動詞用副詞；find 在這裡是「找到」",
-            "why": "find 在這裡是「找到」地方，空格說明找到的方式，修飾動詞要用副詞 easily；後面的 without calling ... for directions 也說明在講找路。",
+            "why": "find 在這裡是「找到」地方，空格說明找到的方式，修飾動詞用副詞 easily；後面的 without calling ahead for directions 也說明在講找路。",
             "wrong": [
                 "find + 受詞 + 形容詞是「覺得……」，這裡 find 是找到",
                 "名詞，要說 with ease 才能修飾動詞",
@@ -504,24 +504,24 @@ ITEMS = [
                 None,
             ],
             "wrongMore": [
-                "find the center easy 會變成「覺得會議中心很簡單」，句意不通；後面 without calling the front desk for directions 說明是在講「找不找得到路」，所以要用副詞修飾 find。",
+                "find the center easy 會變成「覺得會議中心很簡單」，句意不通；後面 without calling ahead for directions 說明是在講「找不找得到路」，所以要用副詞修飾 find。",
                 None,
                 None,
                 None,
             ],
-            "zh": "多虧 Merrow 路沿途新設的指標，大多數第一次來的訪客現在不必打電話向櫃台問路，就能輕鬆找到 Pembry 會議中心。",
-            "vocab": [["sign", "指標、標示牌"], ["first-time visitor", "第一次來的訪客"], ["directions", "路線指引"]],
+            "zh": "多虧 Merrow 路沿途新設的指標，大多數第一次來的訪客現在不必先打電話問路，就能輕鬆找到 Pembry 會議中心。",
+            "vocab": [["sign", "指標、標示牌"], ["call ahead", "事先打電話"], ["directions", "路線指引"]],
         },
     },
     {
-        "id": "g-pos-08", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "g-pos-08", "type": "grammar", "format": "gap", "unit": "pos", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The results of last month's customer survey ______ that most shoppers would pay slightly more for faster delivery, especially those living outside major cities.",
         "options": ["indication", "indicate", "indicative", "indicating"],
         "answer": 1,
         "explain": {
             "point": "句子缺主要動詞，空格就要填動詞",
-            "why": "主詞 The results 後面整句沒有別的動詞，空格要當主要動詞；results 是複數，所以用 indicate。",
+            "why": "主詞 The results 缺主要動詞（would pay 屬於 that 子句），空格要當主要動詞；results 是複數，所以用 indicate。",
             "wrong": [
                 "名詞，放在主詞後面不能當動詞",
                 None,
@@ -542,7 +542,7 @@ ITEMS = [
     {
         "id": "g-tense-06", "type": "grammar", "format": "gap", "unit": "tense", "level": 3,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Ms. Delgado, who joined Halloway Engineering as a junior engineer straight out of university, ______ with the firm for thirty-two years when she retires at the end of next month.",
+        "stem": "Ms. Delgado, who joined Halloway Engineering as a junior engineer straight out of college, ______ with the firm for thirty-two years when she retires at the end of next month.",
         "options": ["has been", "had been", "will have been", "was"],
         "answer": 2,
         "explain": {
@@ -568,12 +568,12 @@ ITEMS = [
     {
         "id": "g-connect-06", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
         "source": "hand", "reviewed": False, "v": 1,
-        "stem": "Because the loading dock is staffed only until 5 p.m., the warehouse will accept deliveries after 6 p.m. ______ the driver has arranged access with the night supervisor in advance.",
+        "stem": "Because the loading dock is staffed only until 5 p.m., the warehouse will accept deliveries after that time ______ the driver has arranged access with the night supervisor in advance.",
         "options": ["unless", "provided that", "so that", "even if"],
         "answer": 1,
         "explain": {
             "point": "provided that「只要、前提是」引出條件",
-            "why": "碼頭五點後沒人值班，晚上收貨得先安排；「事先和夜班主管約好」是收貨的前提，所以用 provided that。",
+            "why": "碼頭五點後沒人值班，五點後收貨得先安排；「事先和夜班主管約好」是收貨的前提，所以用 provided that。",
             "wrong": [
                 "意思相反：變成約好了反而不收",
                 None,
@@ -586,14 +586,14 @@ ITEMS = [
                 None,
                 None,
             ],
-            "zh": "由於卸貨碼頭只有到下午五點有人值班，晚上六點以後送來的貨，只要司機事先和夜班主管約好進場，倉庫就會收。",
+            "zh": "由於卸貨碼頭只有到下午五點有人值班，五點以後送來的貨，只要司機事先和夜班主管約好進場，倉庫就會收。",
             "vocab": [["loading dock", "卸貨碼頭"], ["night supervisor", "夜班主管"], ["in advance", "事先"]],
         },
     },
     # ---------------- participle ----------------
     {
         "id": "g-participle-05", "type": "grammar", "format": "gap", "unit": "participle", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The consultants ______ last spring to review the company's operations have recommended closing two of its five regional offices by the end of the year.",
         "options": ["hiring", "were hired", "hire", "hired"],
         "answer": 3,
@@ -621,7 +621,7 @@ ITEMS = [
         "id": "g-prep-05", "type": "grammar", "format": "gap", "unit": "prep", "level": 1,
         "source": "hand", "reviewed": False, "v": 1,
         "stem": "All chemicals used in the Rennick Street laboratory must be labeled and stored ______ the guidelines set out in section 4 of the safety manual that every new employee receives.",
-        "options": ["in response to", "in addition to", "in accordance with", "on behalf of"],
+        "options": ["in response to", "in addition to", "in accordance with", "in exchange for"],
         "answer": 2,
         "explain": {
             "point": "in accordance with「依照（規定、指示）」",
@@ -630,7 +630,7 @@ ITEMS = [
                 "「回應、因應」某事，不表示照規定去做",
                 "「除了……之外」，意思接不上",
                 None,
-                "「代表」某人或團體，規定不能被代表",
+                "「換取」某物，規定不是拿來交換的東西",
             ],
             "wrongMore": [
                 "in response to the guidelines 單看很順，但它是「回應、因應」，例如 in response to your letter；要說照著規定做，要用 in accordance with。",
@@ -644,7 +644,7 @@ ITEMS = [
     },
     {
         "id": "g-prep-06", "type": "grammar", "format": "gap", "unit": "prep", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "In her quarterly report, the logistics manager attributes most of the drop in second-quarter shipments ______ delays at the Port of Castrell, which was closed for nine days in May.",
         "options": ["to", "from", "for", "with"],
         "answer": 0,
@@ -663,13 +663,13 @@ ITEMS = [
                 None,
                 None,
             ],
-            "zh": "物流經理在季報中把第二季出貨量下滑的主因歸於 Castrell 港的延誤；該港五月曾關閉九天。",
+            "zh": "物流經理在季報中，把第二季出貨量的下滑大多歸因於 Castrell 港的延誤；該港五月曾關閉九天。",
             "vocab": [["attribute A to B", "把 A 歸因於 B"], ["shipment", "出貨、出貨量"], ["logistics", "物流"]],
         },
     },
     {
         "id": "g-prep-07", "type": "grammar", "format": "gap", "unit": "prep", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "I am writing ______ the Norrell Valley Business Association to invite you to speak at our annual awards dinner on October 14.",
         "options": ["on behalf of", "in favor of", "in charge of", "in case of"],
         "answer": 0,
@@ -688,7 +688,7 @@ ITEMS = [
                 None,
                 None,
             ],
-            "zh": "我謹代表 Norrell Valley 商業協會寫信，邀請您在 10 月 14 日我們的年度頒獎晚宴上致詞。",
+            "zh": "我謹代表 Norrell Valley 商業協會寫信，邀請您於 10 月 14 日在本會的年度頒獎晚宴上致詞。",
             "vocab": [["on behalf of", "代表"], ["association", "協會"], ["awards dinner", "頒獎晚宴"]],
         },
     },
