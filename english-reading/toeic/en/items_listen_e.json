@@ -13,22 +13,22 @@
       },
       {
         "point": [
-          "<em>Every … but one</em> means almost all.",
-          "every … but one 的意思是幾乎全部。"
+          "Compare the two numbers: forty and thirty-eight.",
+          "比較兩個數字：四十和三十八。"
         ],
         "why": [
-          "She says the test rig <em>caught every crack but one</em>. Only one crack was missed, so nearly every flaw was identified.",
-          "她說測試機台 caught every crack but one。只漏掉一個裂縫，所以幾乎每個瑕疵都被找出來。"
+          "He asks <em>Did they test it?</em> She answers <em>forty of our own cracked bottles</em> and <em>It caught thirty-eight</em>. Only two were missed, so nearly all the faulty bottles were found.",
+          "他問 Did they test it?，她答 forty of our own cracked bottles、It caught thirty-eight。只漏掉兩瓶，所以幾乎全部有瑕疵的瓶子都找出來了。"
         ]
       },
       {
         "point": [
-          "Trace <em>it</em> back to the one-page summary.",
-          "把 it 追回 one-page summary。"
+          "Trace <em>it</em> and <em>them</em> back to their nouns.",
+          "把 it 和 them 追回前面的名詞。"
         ],
         "why": [
-          "She offers <em>a one-page summary</em> of the figures. He says <em>Send it to me tonight</em>, and she replies <em>I'll e-mail it before I leave</em>. She will send him the cost document.",
-          "她提出把數字做成 a one-page summary。他說 Send it to me tonight，她回 I'll e-mail it before I leave。她會把費用文件寄給他。"
+          "He says the plant manager <em>won't look at it unless the finance office has checked the numbers first</em>. She replies <em>I'll take it over to them first thing tomorrow</em>: <em>it</em> is the summary, <em>them</em> the finance office.",
+          "他說廠長 won't look at it unless the finance office has checked the numbers first。她答 I'll take it over to them first thing tomorrow：it 是摘要，them 是財務室。"
         ]
       }
     ],
@@ -55,11 +55,11 @@
         "ex": "Boxes move along the conveyor to packing."
       },
       {
-        "w": "steep",
-        "hw": "steep",
-        "pos": "adj.",
-        "zh": "（價格）很高",
-        "ex": "The fee is steep for a small firm."
+        "w": "finance office",
+        "hw": "finance office",
+        "pos": "n.",
+        "zh": "財務室",
+        "ex": "The finance office approves every purchase."
       },
       {
         "w": "figures",
@@ -94,12 +94,12 @@
       },
       {
         "point": [
-          "A condition, then <em>one</em> points back.",
-          "先有條件，one 再指回前面。"
+          "Trace <em>it</em> back to the letter.",
+          "把 it 追回前面的信。"
         ],
         "why": [
-          "Mr. Dunmore will move the request <em>if you write a short letter of support</em>. She replies <em>I'll write one this afternoon</em>, so <em>one</em> is the letter: a written recommendation.",
-          "Dunmore 先生說 if you write a short letter of support 才會把申請往前移。她回 I'll write one this afternoon，one 就是那封信，也就是書面推薦。"
+          "Mr. Dunmore asks for <em>a short letter of support</em>. She says <em>Joel, could you draft it tonight?</em> and he answers <em>Of course</em>. Joel will write the letter for his professor to sign.",
+          "Dunmore 先生要 a short letter of support。她說 Joel, could you draft it tonight?，他答 Of course。Joel 會寫信讓教授簽名。"
         ]
       }
     ],
@@ -145,22 +145,22 @@
     "q": [
       {
         "point": [
-          "Reason: look at the next sentence.",
-          "原因題：看下一句。"
+          "Reason: join two turns.",
+          "原因題：把兩句話接起來。"
         ],
         "why": [
-          "He says <em>My wife and our daughter are coming along after all</em>, so he needs <em>two beds</em>. More people will stay than he first planned.",
-          "他說 My wife and our daughter are coming along after all，所以需要 two beds。住的人比原本計畫的多。"
+          "He says <em>My wife and our daughter are coming along after all</em>. She replies <em>Then you'll want more than one bed</em>. More guests are traveling with him.",
+          "他說 My wife and our daughter are coming along after all。她接 Then you'll want more than one bed。同行的客人變多了。"
         ]
       },
       {
         "point": [
-          "Graphic: cross out rows with two clues.",
-          "圖表題：用兩個線索刪掉列。"
+          "Graphic: two clues give the row, the day gives the column.",
+          "圖表題：兩個線索定列，日期定欄。"
         ],
         "why": [
-          "He needs <em>two beds</em>, which leaves two rows. He does not want <em>a separate sitting area</em>, which removes the Executive Suite. The Family Room is $175.",
-          "他需要 two beds，表上剩兩列。他不要 a separate sitting area，所以 Executive Suite 出局。Family Room 是 $175。"
+          "He needs two beds but not <em>a separate sitting area</em>, so the row is the Family Room. He stays <em>this Friday night</em>, so use the Fri–Sat column: $195.",
+          "他要兩張床但不要 a separate sitting area，所以是 Family Room。他住 this Friday night，所以看 Fri–Sat 欄：$195。"
         ]
       },
       {
@@ -236,12 +236,12 @@
       },
       {
         "point": [
-          "<em>No need to collect</em> means it is moved for him.",
-          "no need to collect 表示行李會替他轉運。"
+          "Join his worry with her promise.",
+          "把他的疑慮和她的保證接起來。"
         ],
         "why": [
-          "She says <em>Your checked bag will be moved over for you, so you don't need to collect it</em>. The bag goes to the new flight without any action from him.",
-          "她說 Your checked bag will be moved over for you, so you don't need to collect it。行李會自動轉到新班機，他不用做任何事。"
+          "His suitcase is checked through, and he says <em>I don't have time to go to baggage claim</em>. She answers <em>Our baggage team will handle it from here</em>. Airline staff will move the suitcase to his new flight.",
+          "他的行李已託運到底，他說 I don't have time to go to baggage claim。她答 Our baggage team will handle it from here。地勤會把行李轉到新班機。"
         ]
       }
     ],
@@ -268,11 +268,11 @@
         "ex": "We land at six tonight."
       },
       {
-        "w": "checked bag",
-        "hw": "checked bag",
+        "w": "baggage claim",
+        "hw": "baggage claim",
         "pos": "n.",
-        "zh": "託運行李",
-        "ex": "Each checked bag costs thirty dollars."
+        "zh": "行李提領處",
+        "ex": "Meet me at the baggage claim."
       },
       {
         "w": "boarding pass",
@@ -287,12 +287,12 @@
     "q": [
       {
         "point": [
-          "Purpose: the first sentence.",
-          "目的題：看第一句。"
+          "Purpose: a guess is corrected.",
+          "目的題：猜測被更正。"
         ],
         "why": [
-          "She opens with <em>She wants a different subtitle on the cover</em>. She is telling him about a change the author has requested.",
-          "她一開始就說 She wants a different subtitle on the cover。她是在告訴他作者要求的修改。"
+          "He guesses <em>Did she find a typo?</em> She answers <em>No, it's nothing like that</em> and says the subtitle sounds <em>written for professional chefs</em>. The author is not satisfied with how the cover presents the book.",
+          "他猜 Did she find a typo?，她答 No, it's nothing like that，說副標題 sounds written for professional chefs。作者不滿意封面呈現這本書的方式。"
         ]
       },
       {
@@ -301,18 +301,18 @@
           "慣用語：tall order 是很難辦到。"
         ],
         "why": [
-          "She asks if he can make the change and still meet Thursday. He answers <em>That's a tall order</em>, then lists a fee and an extra day. The request is hard to fulfill.",
-          "她問他能不能改完又趕上星期四。他答 That's a tall order，接著列出費用和多一天。這個要求不好辦到。"
+          "She asks if he can make the change and still meet Thursday. He answers <em>That's a tall order</em>, then mentions a fee. The words take only an hour, so the request is hard because of cost and timing.",
+          "她問他能不能改完又趕上星期四。他答 That's a tall order，再提到費用。改字只要一小時，所以難處在費用和時程。"
         ]
       },
       {
         "point": [
-          "He suggests, she refuses, then names her plan.",
-          "他提議、她拒絕，再說出自己的計畫。"
+          "He gives the cost; she hands the decision to someone.",
+          "他報出費用，她把決定交給別人。"
         ],
         "why": [
-          "He offers to <em>ask them to waive the fee</em>. She says <em>Don't bother</em> and plans to <em>call the author</em> to see whether she will keep the subtitle. She will ask the author to reconsider.",
-          "他提議 ask them to waive the fee。她說 Don't bother，改成 call the author，看作者願不願意保留副標題。她會請作者重新考慮。"
+          "He says <em>Four hundred dollars, plus an extra day</em>. She replies <em>it depends on the author. If she pays the fee herself, we'll go ahead</em>. The change depends on whether the author will cover the charge.",
+          "他說 Four hundred dollars, plus an extra day。她答 it depends on the author. If she pays the fee herself, we'll go ahead。要不要改，看作者願不願意負擔費用。"
         ]
       }
     ],
@@ -339,11 +339,11 @@
         "ex": "Finishing by noon is a tall order."
       },
       {
-        "w": "waive",
-        "hw": "waive",
-        "pos": "v.",
-        "zh": "免除（費用）",
-        "ex": "The bank agreed to waive the fee."
+        "w": "typo",
+        "hw": "typo",
+        "pos": "n.",
+        "zh": "錯字",
+        "ex": "I found a typo on page two."
       }
     ]
   },
@@ -351,12 +351,12 @@
     "q": [
       {
         "point": [
-          "Problem: the first sentence.",
-          "問題題：看第一句。"
+          "Problem: the first sentence, not a late delivery.",
+          "問題題：看第一句，不是遲到。"
         ],
         "why": [
-          "Elena says <em>half of today's fish never arrived</em>. The vendor's delivery came up short.",
-          "Elena 說 half of today's fish never arrived。供應商的送貨數量不足。"
+          "Elena says <em>half of today's fish never arrived</em>. The fish did not come late; part of the order was never delivered.",
+          "Elena 說 half of today's fish never arrived。不是晚到，而是訂單有一部分根本沒送到。"
         ]
       },
       {
@@ -371,12 +371,12 @@
       },
       {
         "point": [
-          "Follow the change of plan to the final request.",
-          "跟著計畫的改變，找出最後的指派。"
+          "Who asks, and who agrees.",
+          "誰提出需求、誰答應。"
         ],
         "why": [
-          "Gus first wants one supplier, but Elena prefers to <em>keep both suppliers</em>. Then she tells him, <em>please send me the new order sheet by Friday</em>. He will prepare the revised order form.",
-          "Gus 先想只用一家，但 Elena 想 keep both suppliers。接著她對他說 please send me the new order sheet by Friday。他要準備修改後的訂貨單。"
+          "Gus says <em>I'll need your weekend reservation numbers early in the week</em>. Theo answers <em>I'll give you the count every Tuesday morning</em>. He agrees to give a weekly update on guest numbers.",
+          "Gus 說 I'll need your weekend reservation numbers early in the week。Theo 答 I'll give you the count every Tuesday morning。他答應每週提供客人人數。"
         ]
       }
     ],
@@ -422,12 +422,12 @@
     "q": [
       {
         "point": [
-          "Problem: <em>car</em> becomes <em>vehicle</em>.",
-          "問題題：car 換成 vehicle。"
+          "Reason: <em>car</em> becomes <em>vehicle</em>.",
+          "原因題：car 換成 vehicle。"
         ],
         "why": [
-          "He says <em>my car goes into the shop that morning</em>. So he will not have his vehicle on the day of the session.",
-          "他說 my car goes into the shop that morning。所以療程那天早上他沒有車可用。"
+          "He says <em>my car goes into the shop that morning</em>. So he will not have his vehicle on the day of the session. The insurance question comes later.",
+          "他說 my car goes into the shop that morning。所以療程那天早上他沒有車可用。保險的問題是後面才問的。"
         ]
       },
       {
@@ -496,12 +496,12 @@
       },
       {
         "point": [
-          "A reason after <em>because</em>.",
-          "because 後面是理由。"
+          "An <em>if</em> clause gives two choices.",
+          "if 子句給了兩個選擇。"
         ],
         "why": [
-          "She says an inspector measures the sidewalk <em>because five feet must stay clear for people walking by</em>. The inspector checks that enough room is left for pedestrians.",
-          "她說檢查員要丈量人行道，because five feet must stay clear for people walking by。檢查員要確認留有足夠空間給行人。"
+          "He asks <em>Will four tables fit?</em> She answers <em>If fewer fit, you can go ahead with fewer, or withdraw and get your fee back</em>. Either way, the decision is his.",
+          "他問 Will four tables fit?，她答 If fewer fit, you can go ahead with fewer, or withdraw and get your fee back。不論哪一種，決定權都在他。"
         ]
       },
       {

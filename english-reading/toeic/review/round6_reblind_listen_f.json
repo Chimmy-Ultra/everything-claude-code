@@ -1,0 +1,323 @@
+[
+ {
+  "id": "l-talk-06",
+  "format": "talk",
+  "transcript": [
+   "M: Attention, passengers at Carrow Central. Because of a signal failure near Dunhaven, no trains will run on the Harbor Line this evening.",
+   "M: Replacement buses are boarding now on the station forecourt, outside the east exit.",
+   "M: The buses stop at every station, so allow extra time for your journey. Your tickets and passes remain valid.",
+   "M: Some trains still appear on the departure board. Those trains exist only on paper.",
+   "M: Staff in yellow jackets are on the concourse, so please check with them before you go to a platform.",
+   "M: The buses will run until 10:00 tonight. After that, please use the taxi stand outside the north exit.",
+   "M: The railway will cover the fare for those taxis. We apologize for the inconvenience."
+  ],
+  "questions": [
+   {
+    "q": "What is the announcement mainly about?",
+    "options": {
+     "A": "A temporary change in how passengers travel",
+     "B": "New rules for exchanging tickets",
+     "C": "Directions to the station's east exit",
+     "D": "The cause of a signal problem"
+    }
+   },
+   {
+    "q": "Why does the speaker say, \"Those trains exist only on paper\"?",
+    "options": {
+     "A": "To say that paper timetables are available at the station",
+     "B": "To promise that the board will be fixed soon",
+     "C": "To warn that some trains will run later than listed",
+     "D": "To stress that the listed trains are not really operating"
+    }
+   },
+   {
+    "q": "What will the railway company do for passengers arriving after the buses stop?",
+    "options": {
+     "A": "Keep the replacement buses running all night",
+     "B": "Refund their unused tickets",
+     "C": "Cover the cost of private transportation",
+     "D": "Extend the validity of their passes"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-07",
+  "format": "talk",
+  "transcript": [
+   "M: Good morning, this is Dale Fenner with your 7:40 traffic report. Eastgate Bridge is backed up.",
+   "M: A delivery truck broke down in the left lane, so only one lane is open each way.",
+   "M: Crews first said they would clear it by 9:00.",
+   "M: But a tow company arrived early, so they now hope to open the bridge fully by 8:30.",
+   "M: Many drivers are turning onto Orchard Road to get around the bridge.",
+   "M: But a water main repair there has closed a lane, so it's slow going as well.",
+   "M: Tonight's concert will bring heavy traffic near the stadium after 5:00.",
+   "M: If you can, leave your car at the Lakeside lot and take the Route 12 bus.",
+   "M: Rides are free until noon. I'll update you again at 8:15."
+  ],
+  "questions": [
+   {
+    "q": "What caused the crews to change their estimate?",
+    "options": {
+     "A": "Drivers began using Orchard Road",
+     "B": "Help for the truck arrived ahead of schedule",
+     "C": "A repair on another road was finished",
+     "D": "The truck's driver solved the problem"
+    }
+   },
+   {
+    "q": "Why does the speaker mention Orchard Road?",
+    "options": {
+     "A": "To warn that another route is also slow",
+     "B": "To recommend a faster way around the bridge",
+     "C": "To explain what caused the bridge delay",
+     "D": "To explain why the stadium area will be busy tonight"
+    }
+   },
+   {
+    "q": "What does the speaker advise listeners to do?",
+    "options": {
+     "A": "Wait for the next report before leaving home",
+     "B": "Take Orchard Road instead of the bridge",
+     "C": "Put off their trips until noon",
+     "D": "Switch to public transportation for part of the trip"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-08",
+  "format": "talk",
+  "transcript": [
+   "W: Thank you for calling Brightline Internet.",
+   "W: If you are calling about the outage in the Marlow area, you don't need to stay on the line.",
+   "W: Crews expect to restore service by 3:00, and we'll send you a text message when it's done.",
+   "W: To report a connection problem, press 1. To change or cancel a technician visit, press 2. For billing, press 3.",
+   "W: Business customers, press 0.",
+   "W: After you choose, you'll be asked to key in your account number, which is at the top of your monthly bill.",
+   "W: If you're calling from the phone number on your account, you can skip this step.",
+   "W: Our wait time is currently about 10 minutes. If you'd rather not hold, press 9.",
+   "W: We'll then call you back within the hour."
+  ],
+  "questions": [
+   {
+    "q": "Why does the speaker say, \"You don't need to stay on the line\"?",
+    "options": {
+     "A": "To explain that the phone line is not working",
+     "B": "To suggest that callers phone back after 3:00",
+     "C": "To signal that the problem is already being handled",
+     "D": "To say that the wait time is short"
+    }
+   },
+   {
+    "q": "What will callers who are not using the phone number on their account be asked to do?",
+    "options": {
+     "A": "Wait for a text message about service",
+     "B": "Enter an identification number from their statement",
+     "C": "Wait for a return call within the hour",
+     "D": "Skip the identification step"
+    }
+   },
+   {
+    "q": "What does the speaker offer callers who do not want to hold?",
+    "options": {
+     "A": "A chance to be contacted by phone later",
+     "B": "A text message about the outage",
+     "C": "A direct line to the business desk",
+     "D": "A technician visit within the hour"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-09",
+  "format": "talk",
+  "graphic": {
+   "caption": "Cedar Row Storage: Monthly Rates",
+   "head": [
+    "Unit",
+    "Size",
+    "Regular price",
+    "First month (new customers)"
+   ],
+   "rows": [
+    [
+     "Small",
+     "5 × 5 ft",
+     "$39.00",
+     "$19.50"
+    ],
+    [
+     "Medium",
+     "5 × 10 ft",
+     "$62.00",
+     "$31.00"
+    ],
+    [
+     "Large",
+     "10 × 10 ft",
+     "$95.00",
+     "$47.50"
+    ],
+    [
+     "Extra large",
+     "10 × 20 ft",
+     "$140.00",
+     "$70.00"
+    ]
+   ]
+  },
+  "transcript": [
+   "M: Running out of room at home? Cedar Row Storage has the space you need, and it's closer than you think.",
+   "M: We rent secure, indoor units by the month, in four sizes, with no long-term contract.",
+   "M: Clearing out a two-bedroom apartment? Our second-largest unit holds everything, from the sofa to the last box of books.",
+   "M: Most of our customers come to us because of their garage. With us, your garage can finally be a garage again.",
+   "M: And if you sign up before the end of the month, you'll pay our special first-month rate.",
+   "M: Visit us on Mill Street, or reserve a unit online at any hour.",
+   "M: Units go quickly, so reserve yours today."
+  ],
+  "questions": [
+   {
+    "q": "What is being advertised?",
+    "options": {
+     "A": "A moving company",
+     "B": "A furniture store",
+     "C": "An apartment complex",
+     "D": "A service for keeping belongings"
+    }
+   },
+   {
+    "q": "Look at the graphic. How much will a customer who signs up this month pay for the first month of the unit the speaker describes?",
+    "options": {
+     "A": "$31.00",
+     "B": "$47.50",
+     "C": "$70.00",
+     "D": "$95.00"
+    }
+   },
+   {
+    "q": "Why does the speaker say, \"Your garage can finally be a garage again\"?",
+    "options": {
+     "A": "To say that the company is building new garages",
+     "B": "To offer a service that stores customers' cars",
+     "C": "To suggest that renting a unit will free up space at home",
+     "D": "To explain that the units are cheaper than a garage"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-10",
+  "format": "talk",
+  "graphic": {
+   "caption": "Customer Service Workshop: Printed Schedule",
+   "head": [
+    "Time",
+    "Session",
+    "Room"
+   ],
+   "rows": [
+    [
+     "9:30 A.M.",
+     "Writing Clear Replies",
+     "Room A"
+    ],
+    [
+     "11:00 A.M.",
+     "Handling Difficult Calls",
+     "Room C"
+    ],
+    [
+     "1:30 P.M.",
+     "Using Data in Presentations",
+     "Room B"
+    ],
+    [
+     "3:00 P.M.",
+     "Planning Your Next Project",
+     "Room D"
+    ]
+   ]
+  },
+  "transcript": [
+   "W: Good morning, everyone, and welcome to our customer service workshop. I'm Helen Ford, and I'll be hosting today.",
+   "W: You'll find a name badge and a printed schedule in the folder on your chair.",
+   "W: Please wear the badge all day, because you'll need it to get into lunch.",
+   "W: One change to that schedule: our data presenter is stuck at the airport, so the two afternoon sessions will switch times.",
+   "W: Each session keeps its original room, so please check the schedule carefully after lunch.",
+   "W: We'd also love your opinions. A short survey will be e-mailed at 4:00, and everyone who completes it by Friday enters a prize drawing.",
+   "W: Now, let's begin. Please turn to the person beside you and introduce yourself."
+  ],
+  "questions": [
+   {
+    "q": "Why are listeners asked to wear their badges all day?",
+    "options": {
+     "A": "To get into the afternoon sessions",
+     "B": "To enter a prize drawing",
+     "C": "To be admitted to a meal",
+     "D": "To be matched with a partner for an activity"
+    }
+   },
+   {
+    "q": "Look at the graphic. When will the session in Room B begin?",
+    "options": {
+     "A": "9:30 A.M.",
+     "B": "11:00 A.M.",
+     "C": "1:30 P.M.",
+     "D": "3:00 P.M."
+    }
+   },
+   {
+    "q": "What can listeners do to enter a prize drawing?",
+    "options": {
+     "A": "Answer a questionnaire by the end of the week",
+     "B": "Switch to a rescheduled session",
+     "C": "Introduce themselves to a neighbor",
+     "D": "Reply to an e-mail before 4:00"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-11",
+  "format": "talk",
+  "transcript": [
+   "W: Welcome to the Alder Lane Roastery, everyone. I'm Marisol, and I'll be your guide for this 45-minute tour.",
+   "W: Normally we begin with a tasting, but the tasting room is booked today, so we'll finish there instead.",
+   "W: We'll follow the beans from storage to packing. The roasting room is our third stop, and it gets very loud.",
+   "W: Before we enter it, please take a pair of earplugs from the basket in the hallway.",
+   "W: Photos are welcome, but please turn off your flash. If you'd like to buy beans, our shop will open after the tasting.",
+   "W: Before we set off, I need everyone's name on the visitor sheet. It's on the clipboard right here.",
+   "W: Once everyone's name is down, we'll head to the storage room."
+  ],
+  "questions": [
+   {
+    "q": "Who most likely are the listeners?",
+    "options": {
+     "A": "Employees of the roastery",
+     "B": "People on a guided visit",
+     "C": "Coffee growers",
+     "D": "Shop customers"
+    }
+   },
+   {
+    "q": "What change does the speaker mention?",
+    "options": {
+     "A": "The tour will begin with a tasting",
+     "B": "The tour will be shorter than usual",
+     "C": "The tasting will come later in the visit than usual",
+     "D": "The roasting room will be closed to visitors"
+    }
+   },
+   {
+    "q": "What will the listeners most likely do next?",
+    "options": {
+     "A": "Collect ear protection",
+     "B": "Sample some coffee",
+     "C": "Go to the storage room",
+     "D": "Register their attendance"
+    }
+   }
+  ]
+ }
+]

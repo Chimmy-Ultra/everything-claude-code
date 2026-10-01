@@ -3,15 +3,15 @@
     "q": [
       {
         "point": ["The opening sentences give the topic.", "開頭幾句就點出主題。"],
-        "why": ["<em>No trains will run on the Harbor Line</em> and <em>Replacement buses are boarding now</em>: train service is interrupted and buses take its place.", "no trains will run on the Harbor Line 加上 Replacement buses are boarding now：列車服務中斷，由公車取代。"]
+        "why": ["<em>No trains will run on the Harbor Line</em> and <em>Replacement buses are boarding now</em>: passengers travel a different way for now.", "no trains will run on the Harbor Line 加上 Replacement buses are boarding now：旅客暫時要用別的方式搭車。"]
       },
       {
-        "point": ["<em>Hasn't caught up</em> means the information is out of date.", "hasn't caught up 的意思是資訊已經過時。"],
-        "why": ["The sentence before says <em>Some trains still appear on the departure board</em>. The board <em>hasn't caught up yet</em>, so what it shows may be old. Staff are the ones to ask.", "前一句說 Some trains still appear on the departure board。看板 hasn't caught up yet，所以上面的資訊可能是舊的，要問工作人員。"]
+        "point": ["<em>Only on paper</em> means not real in practice.", "only on paper 的意思是實際上不存在。"],
+        "why": ["<em>Some trains still appear on the departure board.</em> Then <em>Those trains exist only on paper</em>: they are listed, but they will not run.", "Some trains still appear on the departure board。接著 Those trains exist only on paper：班次有列出，但不會開。"]
       },
       {
-        "point": ["Combine the normal time with the multiplier.", "把平常時間和倍數合起來算。"],
-        "why": ["The train <em>normally reaches Dunhaven in 30 minutes</em>. Later: <em>allow twice the normal travel time</em>. Twice 30 minutes is about one hour.", "火車 normally reaches Dunhaven in 30 minutes。後面說 allow twice the normal travel time。30 分鐘的兩倍約是一小時。"]
+        "point": ["The arrangement follows <em>After that</em>.", "安排在 After that 之後。"],
+        "why": ["<em>The buses will run until 10:00 tonight. After that, please use the taxi stand.</em> <em>The railway will cover the fare</em>: it pays for private transportation.", "The buses will run until 10:00 tonight。After that, please use the taxi stand。The railway will cover the fare：鐵路公司負擔私人交通費。"]
       }
     ],
     "gloss": [
@@ -19,22 +19,22 @@
       {"w": "forecourt", "hw": "forecourt", "pos": "n.", "zh": "站前廣場", "ex": "Taxis wait in the forecourt of the station."},
       {"w": "concourse", "hw": "concourse", "pos": "n.", "zh": "站內大廳", "ex": "Please wait on the concourse until the platform is announced."},
       {"w": "remain valid", "hw": "remain valid", "pos": "phr.", "zh": "仍然有效", "ex": "Your pass will remain valid until June."},
-      {"w": "inconvenience", "hw": "inconvenience", "pos": "n.", "zh": "不便", "ex": "We apologize for any inconvenience this causes."}
+      {"w": "cover the fare", "hw": "cover the fare", "pos": "phr.", "zh": "負擔車資", "ex": "The company will cover the fare for your trip."}
     ]
   },
   "l-talk-07": {
     "q": [
       {
-        "point": ["Compare the first estimate with the new one.", "比較最初的估計和新的估計。"],
-        "why": ["Crews <em>first said they would clear the truck by 9:00</em>. <em>But</em> they <em>now hope to have the bridge fully open by 8:30</em>. The estimate has moved earlier.", "工作人員 first said they would clear the truck by 9:00。But 他們 now hope to have the bridge fully open by 8:30。估計提前了。"]
+        "point": ["The reason for a change follows <em>But</em>.", "改變的原因在 But 之後。"],
+        "why": ["Crews first said 9:00. <em>But a tow company arrived early, so they now hope to open the bridge fully by 8:30.</em> Help arriving early is the cause.", "工作人員起初說 9:00。But a tow company arrived early, so they now hope to open the bridge fully by 8:30。救援提早到是原因。"]
       },
       {
         "point": ["The reason comes after <em>But</em>.", "原因在 But 之後。"],
-        "why": ["Drivers are <em>turning onto Orchard Road to get around the bridge</em>. <em>But</em> a repair there <em>has closed a lane</em>, so it is <em>slow going as well</em>. He mentions it as a warning.", "駕駛 turning onto Orchard Road to get around the bridge。But 那裡的維修 has closed a lane，所以 slow going as well。他提到它是為了提醒。"]
+        "why": ["Drivers are <em>turning onto Orchard Road to get around the bridge</em>. <em>But</em> a repair there has closed a lane, so it is <em>slow going as well</em>. He mentions it as a warning.", "駕駛 turning onto Orchard Road to get around the bridge。But 那裡的維修 has closed a lane，所以 slow going as well。他提到它是為了提醒。"]
       },
       {
         "point": ["Advice follows <em>If you can</em>.", "建議在 If you can 之後。"],
-        "why": ["<em>If you can, leave your car at the Lakeside lot and take the Route 12 bus</em> is his advice: public transportation for part of the trip. <em>I'll be back</em> is his own plan.", "If you can, leave your car at the Lakeside lot and take the Route 12 bus 是他的建議：部分路程改搭大眾運輸。I'll be back 是他自己的安排。"]
+        "why": ["<em>If you can, leave your car at the Lakeside lot and take the Route 12 bus</em> is his advice: public transportation for part of the trip. <em>I'll update you again</em> is his own plan.", "If you can, leave your car at the Lakeside lot and take the Route 12 bus 是他的建議：部分路程改搭大眾運輸。I'll update you again 是他自己的安排。"]
       }
     ],
     "gloss": [
@@ -42,22 +42,22 @@
       {"w": "tow company", "hw": "tow company", "pos": "n.", "zh": "拖吊公司", "ex": "The tow company arrived within ten minutes."},
       {"w": "water main", "hw": "water main", "pos": "n.", "zh": "自來水主管線", "ex": "A broken water main flooded the street."},
       {"w": "slow going", "hw": "slow going", "pos": "phr.", "zh": "進展緩慢", "ex": "The road work made it slow going today."},
-      {"w": "update", "hw": "update", "pos": "n.", "zh": "最新消息", "ex": "I will send you another update at noon."}
+      {"w": "update", "hw": "update", "pos": "v.", "zh": "提供最新消息", "ex": "I will update you again at noon."}
     ]
   },
   "l-talk-08": {
     "q": [
       {
-        "point": ["A time phrase leads to the expected result.", "時間片語帶出預期的結果。"],
-        "why": ["The speaker mentions <em>the outage in the Marlow area</em>. Then: <em>Crews expect to restore service by 3:00</em>. The service problem will be fixed by then.", "說話者提到 the outage in the Marlow area。接著 Crews expect to restore service by 3:00。服務問題那時會修好。"]
+        "point": ["The next sentence explains the quote.", "下一句解釋這句話的原因。"],
+        "why": ["<em>You don't need to stay on the line</em> is followed by <em>Crews expect to restore service by 3:00</em>. Callers need not wait because the problem is already being handled.", "you don't need to stay on the line 後面接 Crews expect to restore service by 3:00。來電者不必等，因為問題已在處理。"]
       },
       {
         "point": ["A condition applies to one group of callers.", "條件只適用於某一群來電者。"],
-        "why": ["<em>Key in your account number</em> applies to callers who choose an option. Only callers on <em>the phone number on your account</em> can <em>skip this step</em>. Everyone else enters the number from the bill.", "key in your account number 適用於選了選項的人。只有用 the phone number on your account 來電的人可以 skip this step。其他人要輸入帳單上的號碼。"]
+        "why": ["<em>Key in your account number</em> applies to callers who choose an option. Only callers on <em>the phone number on your account</em> can <em>skip this step</em>. Everyone else enters the number.", "key in your account number 適用於選了選項的人。只有用 the phone number on your account 來電的人可以 skip this step。其他人要輸入號碼。"]
       },
       {
         "point": ["The alternative comes after <em>If you'd rather not hold</em>.", "替代方案在 If you'd rather not hold 之後。"],
-        "why": ["<em>If you'd rather not hold, press 9, and we'll call you back</em>. The offer is a later phone call from the company.", "If you'd rather not hold, press 9, and we'll call you back。這個提議是公司之後打電話聯絡。"]
+        "why": ["<em>If you'd rather not hold, press 9.</em> Then <em>We'll then call you back within the hour.</em> The offer is a later phone call from the company.", "If you'd rather not hold, press 9。接著 We'll then call you back within the hour。這個提議是公司之後打電話聯絡。"]
       }
     ],
     "gloss": [
@@ -75,12 +75,12 @@
         "why": ["<em>Running out of room at home?</em> is the need. <em>We rent secure, indoor units by the month</em> is the service: space to keep belongings.", "Running out of room at home? 是需求。We rent secure, indoor units by the month 是服務：存放物品的空間。"]
       },
       {
-        "point": ["Find the row from the audio, then apply the offer.", "先從音檔找出那一列，再套用優惠。"],
-        "why": ["<em>Second-largest unit</em> is Large, at $95.00. <em>Your first month is half price</em> for sign-ups before month end, so the first month costs $47.50.", "Second-largest unit 是 Large，$95.00。Your first month is half price 適用於月底前註冊，所以第一個月是 $47.50。"]
+        "point": ["Find the row from the audio, then the right column.", "先從音檔找出那一列，再找對的欄。"],
+        "why": ["<em>Second-largest unit</em> is Large. <em>Sign up before the end of the month</em> gives <em>our special first-month rate</em>, so read the First month column: $47.50.", "Second-largest unit 是 Large。Sign up before the end of the month 適用 our special first-month rate，所以看 First month 欄：$47.50。"]
       },
       {
         "point": ["Read the quote as a meaning, not as words.", "把引句當成意思來讀，不要照字面。"],
-        "why": ["<em>A garage full of boxes</em> is the problem. <em>With us, your garage can finally be a garage again</em> means the boxes move to a rented unit and the space at home is free.", "a garage full of boxes 是問題。With us, your garage can finally be a garage again 的意思是箱子搬去租的單位，家裡的空間空出來。"]
+        "why": ["The ad says <em>Running out of room at home?</em> and offers units for belongings. <em>Your garage can finally be a garage again</em> means the space at home is free.", "廣告先問 Running out of room at home?，並提供存放物品的單位。Your garage can finally be a garage again 的意思是家裡的空間空出來。"]
       }
     ],
     "gloss": [
@@ -99,11 +99,11 @@
       },
       {
         "point": ["Sessions swap times, but rooms stay with sessions.", "場次對調時間，教室跟著場次。"],
-        "why": ["<em>The two afternoon sessions will switch times</em>, and <em>each session keeps its original room</em>. The 3:00 session, Planning Your Next Project, moves to 1:30 and stays in Room D.", "The two afternoon sessions will switch times，each session keeps its original room。3:00 的 Planning Your Next Project 移到 1:30，仍在 Room D。"]
+        "why": ["On the schedule, Room B is Using Data. <em>The two afternoon sessions will switch times</em> and <em>each session keeps its original room</em>, so the Room B session moves to 3:00.", "表上 Room B 是 Using Data。The two afternoon sessions will switch times，each session keeps its original room，所以 Room B 的場次改到 3:00。"]
       },
       {
         "point": ["The condition for the drawing comes with the deadline.", "抽獎的條件和期限一起說。"],
-        "why": ["<em>Everyone who completes it by Friday enters a prize drawing.</em> <em>It</em> is the <em>short survey</em>, introduced by <em>We'd also love your opinions</em>.", "Everyone who completes it by Friday enters a prize drawing。It 指 short survey，前一句是 We'd also love your opinions。"]
+        "why": ["<em>A short survey will be e-mailed at 4:00</em>, but the deadline is <em>by Friday</em>. <em>Everyone who completes it</em> enters the drawing, so the task is answering the survey by the end of the week.", "A short survey will be e-mailed at 4:00，但期限是 by Friday。Everyone who completes it 才能抽獎，所以要在週五前填完問卷。"]
       }
     ],
     "gloss": [
@@ -126,7 +126,7 @@
       },
       {
         "point": ["<em>Before</em> marks the first step.", "Before 標出第一個步驟。"],
-        "why": ["<em>Before we set off, I need everyone's name on the visitor sheet.</em> Only <em>once everyone's name is down</em> do they <em>head to the storage room</em>. Writing names comes first.", "Before we set off, I need everyone's name on the visitor sheet。once everyone's name is down 才 head to the storage room。先寫名字。"]
+        "why": ["<em>Before we set off, I need everyone's name on the visitor sheet.</em> That is registering. Only <em>once everyone's name is down</em> do they <em>head to the storage room</em>.", "Before we set off, I need everyone's name on the visitor sheet。這就是登記。once everyone's name is down 才 head to the storage room。"]
       }
     ],
     "gloss": [
