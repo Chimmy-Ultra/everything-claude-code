@@ -108,7 +108,8 @@ for f in sorted(glob.glob(os.path.join(HERE, "words", "cards", "*.json"))):
         for e in word_check.check_card(c): errors.append("word " + e)
         fs = _forms.get(c["w"], {c["w"]})
         c = dict(c, ipa=ipa(c["w"]) or "", items=[i for i, t in _tok.items() if t & fs][:12])
-        WORDS.append(c)
+        if c["items"]: WORDS.append(c)
+        else: print("word card left out (no question uses it):", c["w"])
 WORDS.sort(key=lambda c: c["w"])
 
 for w in warnings: print("warning:", w)
