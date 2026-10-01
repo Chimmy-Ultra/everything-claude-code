@@ -7,6 +7,14 @@ from items_listen import ITEMS as LISTEN
 
 ITEMS = GRAMMAR_A + GRAMMAR_B + VOCAB + LISTEN
 
+# Round 4 (written under WRITING_RULES.md) lives in its own files; they join the bank once they exist.
+import importlib
+for _name in ("items_grammar_c", "items_vocab_b", "items_listen_b"):
+    try:
+        ITEMS = ITEMS + importlib.import_module(_name).ITEMS
+    except ModuleNotFoundError as _e:
+        if _e.name != _name: raise
+
 # unit id -> (中文名稱, group). Grammar names follow the 多益文法考點 page.
 UNITS = {
     "pos": ("詞性判斷", "grammar"),
