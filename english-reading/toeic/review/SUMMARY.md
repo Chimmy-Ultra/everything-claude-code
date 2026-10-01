@@ -96,3 +96,21 @@ Every chapter now opens with a short lesson (`lessons/<unit>.json`, style in `le
 - Names were then made unique across stories (14 stories renamed, English and Chinese together), since several characters and companies had been reused by different writers.
 - Each part can show a small "who wrote this" line. The labels live in the page's own database on the owner's account, not in this repository; Settings can hide them.
 
+## Round 6: the learner's weak spots (2026-10-01)
+The learner named four grammar chapters and listening as weak spots. 126 new questions, written under WRITING_RULES.md and blind-reviewed by general models (each batch solved without the key; keys matched in every pass).
+
+| Batch | File | Questions | Blind bands (easy / medium / hard) | Review passes |
+|---|---|---|---|---|
+| Conjunctions, Prepositions and Linking Adverbs | items_grammar_e | 18 | 2 / 12 / 4 | 2 |
+| Prepositions of Time and Set Phrases | items_grammar_f | 12 | 1 / 8 / 3 | 4 |
+| Relative Pronouns | items_grammar_g | 18 | 3 / 10 / 5 | 3 |
+| Conditionals and Inversion | items_grammar_h | 18 | 2 / 11 / 5 | 3 |
+| Part 2 responses | items_listen_d | 18 | 3 / 11 / 4 | 2 |
+| Part 3 conversations | items_listen_e | 8 sets, 24 | sets: 3 medium / 5 hard | 2 |
+| Part 4 talks | items_listen_f | 6 sets, 18 | sets: 2 medium / 4 hard | 3 |
+
+- Every option a reviewer found defensible was replaced (g-connect-13 "throughout", g-prep-14 "during", g-conditional-11/15/17 real-condition readings, l-talk-10 two-reading stem, among others); re-reviews found none left. Where a wrong option was excluded only by meaning, it was swapped for one excluded by grammar (g-prep-13, g-connect-15, g-connect-22), which made a few items easier.
+- Difficulty came out lower than the writers' self-tests in every batch. Grammar hard shares are 22–28%, below the 30% target; several talk questions stay one-sentence retrieval, and l-talk-07 still has two easy questions. Kept rather than rewritten again.
+- Audio: Kokoro, checked with Whisper. Part 2: four name or spelling differences (Lena/Lina, they're/they are, morning/mornings), and "Ms." read as letters, fixed with a spoken form. Conversations: two name/spelling differences. Talks: none flagged.
+- Bank now: 172 grammar, 61 vocabulary, 69 listening sets (127 questions), 360 questions.
+
