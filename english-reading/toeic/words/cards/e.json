@@ -2,7 +2,7 @@
   {
     "w": "accordingly",
     "pos": "adv.",
-    "zh": "因此；相應地、照著情況",
+    "zh": "因此；據此、配合情況",
     "def": [
       "In a way that suits the situation; for that reason.",
       "以符合情況的方式；因此。"
@@ -10,11 +10,11 @@
     "ex": [
       [
         "The deadline has moved, so please adjust your schedule <em>accordingly</em>.",
-        "截止日期已經改了，所以請相應調整你的時程。"
+        "截止日期已經改了，所以請據此調整你的時程。"
       ],
       [
-        "The forecast calls for heavy rain, so dress <em>accordingly</em> when you visit the site.",
-        "預報會下大雨，所以到現場參觀時請穿著合宜。"
+        "Fees vary by room size, and each client is billed <em>accordingly</em>.",
+        "費用依場地大小而異，每位客戶也依此計費。"
       ],
       [
         "The contract was never signed. <em>Accordingly</em>, the supplier has no duty to deliver.",
@@ -25,8 +25,8 @@
         "我們預期十二月需求較高，並已據此安排門市人力。"
       ],
       [
-        "Please inform your team of the new policy so they can act <em>accordingly</em>.",
-        "請告知你的團隊新政策，讓他們能據此行事。"
+        "Customers whose orders arrived damaged are <em>accordingly</em> entitled to a full refund.",
+        "收到的訂單有毀損的顧客，因此有權獲得全額退款。"
       ]
     ],
     "coll": [
@@ -40,7 +40,7 @@
       ],
       [
         "adjust accordingly",
-        "相應調整"
+        "據此調整"
       ],
       [
         "dress accordingly",
@@ -249,9 +249,9 @@
         "zh": "影印；複製"
       },
       {
-        "w": "copying",
+        "w": "copy",
         "pos": "n.",
-        "zh": "影印、複製（作業）"
+        "zh": "影本、副本"
       }
     ],
     "syn": [
@@ -265,8 +265,8 @@
       {
         "w": "photocopier",
         "note": [
-          "Same machine; used more in British English, while Americans usually say copier or copy machine.",
-          "同一種機器；較常見於英式英語，美國人通常說 copier 或 copy machine。"
+          "Same machine; a longer, more formal word. Americans usually say copier or copy machine; photocopier is more common in British English.",
+          "同一種機器；字較長、較正式。美國人通常說 copier 或 copy machine，photocopier 在英式英語較常見。"
         ]
       }
     ],
@@ -477,16 +477,16 @@
         "瓦斯外洩期間，飯店經理把住客疏散到附近的會議中心。"
       ],
       [
-        "Residents were ordered to <em>evacuate</em> before the typhoon reached the coast.",
-        "颱風登陸海岸前，居民被命令撤離。"
+        "Please <em>evacuate</em> by the nearest exit and gather in the parking lot.",
+        "請由最近的出口撤離，並到停車場集合。"
       ],
       [
-        "Everyone must <em>evacuate</em> the floor calmly and use the stairs, not the elevators.",
-        "大家必須冷靜地撤離樓層，走樓梯，不要搭電梯。"
+        "<em>Evacuating</em> the stadium took only twenty minutes thanks to clear signs.",
+        "多虧標示清楚，疏散整座體育場只花了二十分鐘。"
       ],
       [
-        "The airline had to <em>evacuate</em> the terminal after a security threat.",
-        "接獲安全威脅後，航空公司必須疏散航廈內的人員。"
+        "The terminal was <em>evacuated</em> for two hours after a security threat.",
+        "接獲安全威脅後，航廈被疏散了兩個小時。"
       ]
     ],
     "coll": [
@@ -558,15 +558,15 @@
       ],
       [
         "The inspector listed several fire <em>hazards</em> in the warehouse.",
-        "檢查人員列出倉庫內幾項火災隱患。"
+        "檢查人員列出倉庫內幾項火災危險因素。"
       ],
       [
         "Employees should report any <em>hazard</em> to their supervisor immediately.",
         "員工應立即向主管回報任何危險。"
       ],
       [
-        "Wet floors in the kitchen are a serious safety <em>hazard</em>.",
-        "廚房濕滑的地板是嚴重的安全隱患。"
+        "The company was fined for ignoring a known safety <em>hazard</em> on the loading dock.",
+        "這家公司因為無視裝卸碼頭上一項已知的安全危害而被罰款。"
       ],
       [
         "I won't <em>hazard</em> a guess about next year's sales figures.",
@@ -576,11 +576,11 @@
     "coll": [
       [
         "a safety hazard",
-        "安全隱患"
+        "安全危害"
       ],
       [
         "a fire hazard",
-        "火災隱患"
+        "火災危險因素"
       ],
       [
         "a health hazard",
@@ -659,8 +659,8 @@
         "稽核人員將調查延誤的原因。"
       ],
       [
-        "He called the agency to <em>inquire</em> how much a corporate package would cost.",
-        "他打電話給旅行社，詢問企業方案的價格。"
+        "When I <em>inquired</em> how much a corporate package would cost, the agency sent a price list.",
+        "我詢問企業方案的價格時，旅行社寄來了一份價目表。"
       ]
     ],
     "coll": [
@@ -713,8 +713,8 @@
       {
         "w": "query",
         "note": [
-          "To question whether something is correct or to put a question to an authority; often about a detail.",
-          "指質疑某事是否正確，或向主管單位提問；常針對細節。"
+          "Often means to question whether a detail is correct, or to check something; also very common as a noun.",
+          "常指質疑某個細節是否正確、或加以查證；也很常當名詞用。"
         ]
       }
     ],
@@ -743,7 +743,7 @@
         "施工噪音不應該干擾早上的會議。"
       ],
       [
-        "Our manager rarely <em>interferes</em> in how the teams organize their own tasks.",
+        "Our manager rarely <em>interferes</em> in the way the teams organize their own tasks.",
         "我們經理很少干涉各團隊如何安排自己的工作。"
       ],
       [
@@ -751,8 +751,8 @@
         "壅塞的車流整個星期都影響到配送時程。"
       ],
       [
-        "Strong winds <em>interfered</em> with the signal, and the video call dropped.",
-        "強風干擾了訊號，視訊通話就斷了。"
+        "If the weather <em>interferes</em>, we will move the outdoor reception inside.",
+        "如果天氣造成妨礙，我們就把戶外招待會移到室內。"
       ],
       [
         "Please do not <em>interfere</em> with the equipment; call maintenance instead.",
@@ -777,8 +777,8 @@
         "干擾訊號"
       ],
       [
-        "without interfering",
-        "不加干涉地"
+        "interfere in someone's affairs",
+        "干涉某人的事務"
       ]
     ],
     "family": [
@@ -848,7 +848,7 @@
         "抱歉打斷一下，你兩點的客戶到了。"
       ],
       [
-        "A power cut <em>interrupted</em> production at the plant for three hours.",
+        "A power outage <em>interrupted</em> production at the plant for three hours.",
         "停電使工廠的生產中斷了三個小時。"
       ],
       [
@@ -856,8 +856,8 @@
         "在提問時間開始前，請不要打斷講者。"
       ],
       [
-        "Frequent phone calls <em>interrupted</em> her work all afternoon.",
-        "頻繁的電話整個下午都打斷她的工作。"
+        "The video call was <em>interrupted</em> twice by a bad connection.",
+        "視訊通話因為連線不良被中斷了兩次。"
       ],
       [
         "A fire drill <em>interrupted</em> the training session just after lunch.",
@@ -1034,8 +1034,8 @@
         "請不要被低價誤導；維護成本很高。"
       ],
       [
-        "The chart <em>misled</em> investors by cutting off the vertical axis.",
-        "這張圖表截掉了縱軸，誤導了投資人。"
+        "Some investors felt they had been <em>misled</em> about the risks of the fund.",
+        "有些投資人覺得自己對這檔基金的風險受到了誤導。"
       ],
       [
         "I did not intend to <em>mislead</em> you about the delivery date.",
@@ -1117,8 +1117,8 @@
         "我好像把儲藏室的鑰匙放到不知哪裡去了。"
       ],
       [
-        "Someone <em>misplaced</em> the signed contract, so we asked the client for another copy.",
-        "有人把簽好的合約放不見了，所以我們向客戶要了另一份。"
+        "The signed contract was <em>misplaced</em> during the office move, so we asked the client for another copy.",
+        "簽好的合約在辦公室搬遷時不知放到哪裡去了，所以我們向客戶要了另一份。"
       ],
       [
         "The airline <em>misplaced</em> my luggage and promised to deliver it to the hotel.",
@@ -1178,17 +1178,12 @@
       {
         "w": "mislay",
         "note": [
-          "Nearly the same meaning; mislay is a little more formal and old-fashioned, and misplace is the usual choice.",
-          "意思幾乎相同；mislay 稍嫌正式老派，一般多用 misplace。"
+          "Nearly the same meaning; mislay is less common and sounds more formal, and misplace is the usual choice.",
+          "意思幾乎相同；mislay 較少用、聽起來較正式，一般多用 misplace。"
         ]
       }
     ],
-    "ant": [
-      {
-        "w": "find",
-        "zh": "找到"
-      }
-    ],
+    "ant": [],
     "confuse": [
       {
         "w": "displace",
@@ -1248,7 +1243,7 @@
       ],
       [
         "certificate of occupancy",
-        "使用許可證"
+        "使用執照（建物）"
       ]
     ],
     "family": [
@@ -1273,19 +1268,11 @@
         "zh": "無人使用的"
       }
     ],
-    "syn": [
-      {
-        "w": "tenancy",
-        "note": [
-          "Tenancy means renting under an agreement; occupancy simply means using the space, paid or not.",
-          "tenancy 指依租約承租；occupancy 只是使用空間，不論是否付費。"
-        ]
-      }
-    ],
+    "syn": [],
     "ant": [
       {
         "w": "vacancy",
-        "zh": "空房；空缺"
+        "zh": "空房、空置（相對於入住）"
       }
     ],
     "confuse": [
@@ -1315,20 +1302,20 @@
     ],
     "ex": [
       [
-        "The previous <em>occupant</em> of the office left several boxes in the storage room.",
+        "The office's previous <em>occupant</em> left several boxes in the storage room.",
         "這間辦公室的前一位使用者在儲藏室留下了幾個箱子。"
       ],
       [
-        "Each <em>occupant</em> of the building received a notice about the water shutoff.",
-        "大樓的每位住戶都收到停水通知。"
+        "Building <em>occupants</em> were notified in advance of the water shutoff.",
+        "大樓住戶事先接獲停水通知。"
       ],
       [
         "All <em>occupants</em> of the vehicle must wear seat belts.",
         "車內所有乘員都必須繫安全帶。"
       ],
       [
-        "The lease names Ms. Chen as the sole <em>occupant</em> of the apartment.",
-        "租約載明陳小姐是這間公寓唯一的住戶。"
+        "The lease lists Ms. Chen as the sole <em>occupant</em>.",
+        "租約上載明陳小姐是唯一的住戶。"
       ],
       [
         "The sprinklers protect the <em>occupants</em> if a fire breaks out on the third floor.",
@@ -1424,16 +1411,16 @@
         "請在下方欄位填寫姓名、地址與職業。"
       ],
       [
-        "It is common for people to change <em>occupation</em> more than once in their careers.",
-        "人們在職涯中不只一次轉換職業是很常見的。"
+        "It is common to change <em>occupations</em> more than once during a career.",
+        "在職涯中不只一次轉換職業是很常見的。"
       ],
       [
         "The union ended its <em>occupation</em> of the factory after talks began.",
         "談判開始後，工會結束了對工廠的佔據。"
       ],
       [
-        "Gardening is her favorite weekend <em>occupation</em>.",
-        "園藝是她週末最愛做的事。"
+        "Nursing is a demanding <em>occupation</em> with long shifts and little rest.",
+        "護理是一份辛苦的職業，輪班時間長，休息時間少。"
       ],
       [
         "Many <em>occupations</em> now require basic data skills.",
@@ -1450,7 +1437,7 @@
         "技術性職業"
       ],
       [
-        "change occupation",
+        "change occupations",
         "轉換職業"
       ],
       [
@@ -1458,8 +1445,8 @@
         "目前職業"
       ],
       [
-        "occupation and income",
-        "職業與收入"
+        "state your occupation",
+        "填寫你的職業"
       ]
     ],
     "family": [
@@ -1525,8 +1512,8 @@
         "修車廠向我收了根本沒做的維修費。"
       ],
       [
-        "Customers complained that the taxi driver had <em>overcharged</em> them for the airport trip.",
-        "顧客抱怨計程車司機去機場多收了他們的車資。"
+        "Complaints about taxi drivers <em>overcharging</em> tourists have increased this year.",
+        "今年關於計程車司機向觀光客多收車資的投訴增加了。"
       ],
       [
         "If you think you were <em>overcharged</em>, send us your receipt and we will check.",
@@ -1538,7 +1525,7 @@
       ],
       [
         "Some hotels <em>overcharge</em> guests for minibar items they did not use.",
-        "有些飯店對住客沒用過的小冰箱商品也收費。"
+        "有些飯店會向住客多收他們沒用過的小冰箱商品的費用。"
       ]
     ],
     "coll": [
@@ -1767,8 +1754,8 @@
     "pos": "n., v.",
     "zh": "專利；取得專利",
     "def": [
-      "A legal right to be the only person who makes or sells a new invention.",
-      "獨家製造或銷售某項新發明的法定權利。"
+      "A legal right to be the only person or company that makes or sells a new invention.",
+      "獨家製造或銷售某項新發明的法定權利（專利權）。"
     ],
     "ex": [
       [
@@ -1788,8 +1775,8 @@
         "專利明年到期，屆時其他公司就能製造類似的裝置。"
       ],
       [
-        "The box is marked <em>patent</em> pending while the application is reviewed.",
-        "申請審查期間，盒子上標示著專利申請中。"
+        "The box is marked \"<em>patent</em> pending\" while the application is under review.",
+        "申請審查期間，盒子上標示著「專利申請中」。"
       ]
     ],
     "coll": [
@@ -1957,8 +1944,8 @@
         "這場研討會籌辦得不好，許多場次都延遲開始。"
       ],
       [
-        "Employees who are <em>poorly</em> trained are more likely to make mistakes.",
-        "訓練不足的員工比較容易出錯。"
+        "The meeting went <em>poorly</em>, so we rescheduled it for next week.",
+        "會議進行得不順利，所以我們改到下週再開。"
       ],
       [
         "The software performed <em>poorly</em> when more than fifty users logged in.",
@@ -1969,8 +1956,8 @@
         "與資深同事相比，初階員工的薪水通常偏低。"
       ],
       [
-        "Sales did <em>poorly</em> in the first quarter, but the numbers improved by June.",
-        "第一季銷售表現不佳，但到六月數字已有起色。"
+        "<em>Poorly</em> written instructions caused several customers to assemble the desk incorrectly.",
+        "寫得不好的說明書，導致好幾位顧客把書桌組裝錯了。"
       ]
     ],
     "coll": [
@@ -2048,8 +2035,8 @@
         "執行長演講之前先播放了一段公司歷史的影片。"
       ],
       [
-        "Sales fell in the quarter that <em>preceded</em> the product launch.",
-        "產品上市前的那一季，銷售量下滑。"
+        "Compare this quarter's profit with that of the <em>preceding</em> quarter.",
+        "請把本季利潤與前一季的利潤做比較。"
       ],
       [
         "The chapter that <em>precedes</em> this one explains how to set up an account.",
@@ -2097,11 +2084,6 @@
         "w": "precedence",
         "pos": "n.",
         "zh": "優先（take precedence）"
-      },
-      {
-        "w": "unprecedented",
-        "pos": "adj.",
-        "zh": "前所未有的"
       }
     ],
     "syn": [
@@ -2139,7 +2121,7 @@
   {
     "w": "prospective",
     "pos": "adj.",
-    "zh": "預期的、未來的、有望的",
+    "zh": "潛在的、預期的、未來的",
     "def": [
       "Likely to become something, or likely to happen, in the future.",
       "未來可能成為某種身分，或可能發生的。"
@@ -2158,8 +2140,8 @@
         "有意購買者可於週六十點到四點間看屋。"
       ],
       [
-        "Please send our <em>prospective</em> suppliers a copy of the quality standards.",
-        "請把品質標準的副本寄給我們的潛在供應商。"
+        "The <em>prospective</em> supplier must submit product samples before the end of the month.",
+        "這家潛在供應商必須在月底前提交產品樣品。"
       ],
       [
         "She is a <em>prospective</em> candidate for the regional manager position.",
@@ -2197,11 +2179,6 @@
         "w": "prospect",
         "pos": "n.",
         "zh": "前景；潛在對象"
-      },
-      {
-        "w": "prospectus",
-        "pos": "n.",
-        "zh": "公開說明書；招生簡章"
       }
     ],
     "syn": [
@@ -2325,16 +2302,7 @@
         ]
       }
     ],
-    "ant": [
-      {
-        "w": "dismissal",
-        "zh": "解僱"
-      },
-      {
-        "w": "layoff",
-        "zh": "裁員"
-      }
-    ],
+    "ant": [],
     "confuse": []
   },
   {
@@ -2633,8 +2601,8 @@
         "員工流動率高會很花錢，因為每位新進人員都要訓練。"
       ],
       [
-        "The company reported an annual <em>turnover</em> of twelve million dollars.",
-        "該公司公布年營業額為一千兩百萬美元。"
+        "The firm reported an annual <em>turnover</em> of two million pounds last year.",
+        "該公司公布去年的年營業額為兩百萬英鎊。"
       ],
       [
         "Inventory <em>turnover</em> improved after we cut the number of slow-moving items.",
@@ -2645,7 +2613,7 @@
         "這間餐廳翻桌速度快，所以候位時間短。"
       ],
       [
-        "A new bonus scheme helped cut employee <em>turnover</em> by fifteen percent.",
+        "A new bonus program helped cut employee <em>turnover</em> by fifteen percent.",
         "新的獎金制度幫助把員工離職率降低了百分之十五。"
       ]
     ],
@@ -2660,7 +2628,7 @@
       ],
       [
         "annual turnover",
-        "年營業額"
+        "年營業額（英式用法）"
       ],
       [
         "the turnover rate",
@@ -2701,7 +2669,7 @@
     "ant": [
       {
         "w": "retention",
-        "zh": "留任；留住（員工）"
+        "zh": "員工留任（與人員流動率相對）"
       }
     ],
     "confuse": [
@@ -2905,19 +2873,19 @@
       {
         "w": "move out",
         "note": [
-          "Informal; used for homes and offices when you stop living or working there.",
-          "口語；用於不再住在或使用某住處、辦公室時。"
+          "Everyday phrasal verb; used for homes and offices when you stop living or working there.",
+          "日常的片語動詞；用於不再住在或使用某住處、辦公室時。"
         ]
       }
     ],
     "ant": [
       {
         "w": "occupy",
-        "zh": "佔用；入住"
+        "zh": "佔用、入住（指空間）"
       },
       {
         "w": "move in",
-        "zh": "搬入"
+        "zh": "搬入（指住處、辦公室）"
       }
     ],
     "confuse": [
@@ -3010,13 +2978,6 @@
           "Allowed by law or reasonable and genuine; often used for businesses, claims and reasons.",
           "合法，或合理且真實；常用於企業、主張與理由。"
         ]
-      },
-      {
-        "w": "legal",
-        "note": [
-          "Only means allowed by law; valid can also describe tickets, arguments and points.",
-          "只表示法律允許；valid 也能形容票券、論點與看法。"
-        ]
       }
     ],
     "ant": [
@@ -3026,7 +2987,7 @@
       },
       {
         "w": "expired",
-        "zh": "已過期的"
+        "zh": "已過期的（指票券、證件等）"
       }
     ],
     "confuse": [
