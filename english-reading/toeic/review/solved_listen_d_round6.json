@@ -1,0 +1,174 @@
+{
+ "answers": {
+  "l-qr-23": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "When question answered directly by a start date. A answers 'where' (stops outside entrance); B is Yes to a wh-question. Neither can be a cooperative reply to 'when does it begin running'.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fails (no distractor is form-correct; A and B are wrong-type answers); D, B, S all fail",
+   "style": 3,
+   "why": "L: direct answer, no conditional in the question, distractors are plainly wrong question types (where / Yes).",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-qr-24": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Accounting hasn't sent us the bill yet' is an indirect but cooperative reply (cost unknown). B answers 'how many' (guests) not 'how much'; 'sixty guests' cannot be a cost. C reuses 'luncheon' and evaluates the event instead of giving a cost.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (C same-word luncheon; B number-shaped); D fails (no side condition, evidence is one sentence); B passes (correct reply is indirect); S fails",
+   "style": 4,
+   "why": "L and B pass: correct reply is indirect, and one number-shaped / one same-word distractor. D fails: no condition in the question.",
+   "fix": "", "tooClose": false, "editorNote": "B is a good how-much vs how-many near miss, legal trap."
+  },
+  "l-qr-25": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Her whole family lives in this city' is a direct reason for declining. A (Because she was never offered the job) contradicts 'turn down', which presupposes an offer. C reuses 'transfer' and is irrelevant.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A is form-correct 'Because...' reply; C same-word transfer); D passes (the 'turn down' detail excludes A); B fails (A is not something a strong learner would sincerely believe, it is an obvious contradiction once heard); S fails",
+   "style": 4,
+   "why": "L and D pass but B and S fail: A is excluded by 'turn down' but is not a convincing lure.",
+   "fix": "", "tooClose": false, "editorNote": "A is a legal trap (contradicts the presupposition of 'turn down')."
+  },
+  "l-qr-26": {
+   "answer": "C", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "Nine plus three hours is noon. A repeats the original time (contradicts 'delayed'). B (six o'clock) is nine minus three, the wrong direction; a delay cannot move the call earlier.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A and B are time answers in correct form); D passes (the delay detail in the question excludes them); B fails (not a belief-type lure); S passes weakly (arithmetic step)",
+   "style": 2,
+   "why": "L and D pass; B fails. The 'difficulty' comes from arithmetic on numbers heard in the question, not from listening.",
+   "fix": "Unnatural as spoken English: the asker already states the original time and the delay, then asks the time. Replace with a natural question ('Is the client call tomorrow still at nine o'clock?') whose answer 'It's been pushed back to noon' or 'Not until after lunch' works without arithmetic.",
+   "tooClose": false, "editorNote": "Relies on arithmetic (9 + 3 = 12) heard once in a spoken question; puzzle reasoning rather than listening. B is a legal trap but a mere sum error."
+  },
+  "l-qr-27": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Indirect where-answer: ask at the front desk, Lena signed for them. B is about the fabric's origin; C reuses 'courier' and gives a time. Neither answers where.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (C same-word courier; B reuses 'fabric' topic); D fails (no condition, one-sentence evidence); B passes (correct reply is indirect); S fails",
+   "style": 4,
+   "why": "L and B pass: indirect reply plus same-word distractor. D fails.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-qr-28": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Rental truck booked for Thursday is a direct how-answer given the van is in the shop. A is form-correct (By + vehicle) but contradicts 'now that the company van is in the repair shop'. C reuses 'display boards' and gives dimensions.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A form-correct); D passes (the 'now that' clause excludes A); B fails (A is obvious once the clause is heard); S fails",
+   "style": 4,
+   "why": "L and D pass; B and S fail: the exclusion is a single contradiction with the conditional clause.",
+   "fix": "", "tooClose": false, "editorNote": "A is the classic form-correct / context-wrong trap; legal."
+  },
+  "l-qr-29": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Yes/No question answered directly: 'Yes, but only on Saturdays.' A reuses 'ground floor' and talks about repainting; C is a customer ordering coffee. A could only work by assuming the repainting closes the cafe, which is an assumption not in the stem and does not answer weekends.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fails (distractors are same-word/off-topic, not form-correct answers); D, B, S fail",
+   "style": 3,
+   "why": "L fails: direct Yes with a qualification; both distractors are obviously off-topic. Plain easy item.",
+   "fix": "", "tooClose": false, "editorNote": "A (repainted) is a legal same-word trap; it would need an unstated assumption about closure to work."
+  },
+  "l-qr-30": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Sorry, I thought Hana was handling that' is a natural indirect no-and-explanation. A is 'Yes' followed by an unrelated remark about the speaker's travel, which does not confirm or explain anything about booking; B talks about a past call, not the interpreter.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A is Yes with same-word Tokyo); D fails (no condition, one sentence); B passes (correct reply is indirect, Sorry/thought); S fails",
+   "style": 4,
+   "why": "L and B pass: Yes + same-word Tokyo lure, indirect correct reply. D fails.",
+   "fix": "", "tooClose": false, "editorNote": "A is the weakest lure: 'Yes' then an irrelevant remark. Not natural without a stretch (e.g. 'I've been to Tokyo, so I know interpreters matter'), so treated as a legal trap."
+  },
+  "l-qr-31": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'It'll take until after lunch' implies the floor will not be done before the clients arrive at noon, so the answer is effectively No. B is Yes followed by an unrelated remark about past client impressions; C is No followed by an irrelevant remark about the lobby's floor level (reuses 'lobby'). Neither confirms or denies the promise in a way that fits a cooperative answer.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L passes (B Yes and C No are both form-correct, and C reuses lobby/clients); D passes (needs the 'noon' condition from the stem to infer 'after lunch' means late); B passes (correct reply is indirect, inferred); S fails",
+   "style": 5,
+   "why": "L, D and B pass: two form-correct distractors, correct reply is an indirect inference needing the 'at noon' detail.",
+   "fix": "", "tooClose": false, "editorNote": "B ('Yes, the clients were very impressed last time') reads as a non sequitur after Yes; treated as legal trap. Slight risk it passes as a rapport remark, so keep an eye on it."
+  },
+  "l-qr-32": {
+   "answer": "B", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Only in the morning' is consistent with finance holding the whole afternoon. A starts with Yes (still free) but then says 'I reserved it', which is contradictory, and its two-to-four slot sits inside the afternoon finance has booked. C reuses 'finance' and is off-topic.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A is Yes plus same-word reserved); D passes (the 'whole afternoon' condition is needed to see that only morning is free and to reject A); B fails (the correct reply is a direct partial answer); S fails",
+   "style": 3,
+   "why": "L and D pass; B and S fail.",
+   "fix": "", "tooClose": false, "editorNote": "Stem is a little odd: 'still free ... now that finance reserved it for the whole afternoon' makes the asker know the answer already. A would be defensible only if the speaker were the finance person (assumption), but 'Yes' still conflicts, so legal trap."
+  },
+  "l-qr-33": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Our warehouse partner only handles air freight' is an indirect reason sea shipping is not an option. A, 'Yes, because the show starts tomorrow', contradicts 'isn't until next quarter' and is not a reason for sea freight. B reuses 'display units' with an irrelevant fact about Milan.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L passes (A is a form-correct Yes + because answer, B same-word); D passes (the 'next quarter' condition excludes A); B passes (correct reply is indirect, reason implying no); S fails",
+   "style": 4,
+   "why": "L, D and B pass: form-correct Yes+because lure excluded by the stem's condition; correct reply is a reason implying 'no'.",
+   "fix": "", "tooClose": false, "editorNote": "A is a legal trap (contradicted by 'next quarter')."
+  },
+  "l-qr-34": {
+   "answer": "A", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Ms. Kemp offered to cover for me' implies Yes, she is still taking the afternoon off, and the inspection is handled. B uses Yes then past-tense 'was very thorough', which contradicts an inspection that is still upcoming tomorrow at three. C uses No then an irrelevant weather remark.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L passes (B Yes and C No are both form-correct, B reuses inspection); D passes (the three o'clock inspection detail excludes B and gives A its meaning); B passes (correct reply is indirect); S fails",
+   "style": 4,
+   "why": "L, D and B pass: two form-correct tag-question distractors; correct reply is indirect and needs the inspection detail.",
+   "fix": "", "tooClose": false, "editorNote": "Stacked tag question plus 'even with' clause is a bit heavy for speech but acceptable. B and C are legal traps."
+  },
+  "l-qr-35": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Natural follow-up: check the original estimate. C ('that's less than I expected') is a natural-sounding but opposite-direction reply, contradicting 'higher'. B reuses 'print shop' with irrelevant location.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (C is a fluent opposite-direction reply, B same-word); D fails (no distance; one sentence); B passes (correct reply is an indirect action response); S fails",
+   "style": 4,
+   "why": "L and B pass: statement stem, indirect action reply, fluent opposite-direction lure. D fails.",
+   "fix": "", "tooClose": false, "editorNote": "C is a legal trap (direction opposite)."
+  },
+  "l-qr-36": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Asking whether the long waiting times caused the drop is a natural follow-up. A ('Wonderful') is the opposite direction of a drop in scores. C reuses 'survey' with irrelevant duration.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A is a fluent opposite-direction reply; C same-word survey); D fails (no distance); B passes (correct reply is an indirect follow-up question); S fails",
+   "style": 4,
+   "why": "L and B pass: statement stem, correct reply is a follow-up question, one opposite-direction and one same-word lure. D fails.",
+   "fix": "", "tooClose": false, "editorNote": "A could be ironic, but the exercise avoids intonation tricks; read literally it is the opposite direction, legal trap."
+  },
+  "l-qr-37": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Sure, it's in the top drawer' accepts the request. A reuses 'laptop' with sales talk; B reuses 'hour' with a past-tense duration that does not answer a request.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fails (distractors are same-word but not form-correct responses to a request, easily rejected); D fails; B fails; S fails",
+   "style": 3,
+   "why": "L fails: direct Sure reply, no condition, two same-word distractors that clearly do not respond to a request.",
+   "fix": "", "tooClose": false, "editorNote": "Fine as the batch's easy entry point; would still sit at the easy end of Part 2."
+  },
+  "l-qr-38": {
+   "answer": "A", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "With over two hundred registered and a studio seating sixty, checking whether the main hall is free is the sensible indirect choice. B picks the studio, which contradicts the capacity facts in the stem. C reuses 'registered' as 'registration closes' and does not choose a venue.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L passes (B is a direct choice of a venue, C same-word); D passes (the 'sixty vs two hundred' detail inside the stem excludes B); B passes (correct reply is indirect, B is the lure a learner would pick); S fails (only a simple comparison)",
+   "style": 3,
+   "why": "L, D and B pass: B is form-correct, excluded only by the capacity detail; correct reply is indirect.",
+   "fix": "Stem is long (about 27 words, with a mid-sentence relative clause); consider trimming for spoken naturalness, for example 'Should we hold the demo in the main hall or the studio, now that over two hundred people have registered?'.",
+   "tooClose": false,
+   "editorNote": "B is a legal trap only because 200 > 60 is stated in the stem; mild arithmetic comparison, not puzzle-level."
+  },
+  "l-qr-39": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Marketing has already used up its budget' is a reason implying the split will not work. A answers 'Why don't we' as a why-question with 'Because the dinner started at eight', which does not address the proposal; C reuses 'bill' with an irrelevant detail.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A Because-reply form-correct, C same-word bill); D fails (no condition); B passes (correct reply is an indirect rejection by reason); S fails",
+   "style": 4,
+   "why": "L and B pass: suggestion stem with a reason-implies-no reply; A exploits the Why don't we form. D fails.",
+   "fix": "", "tooClose": false, "editorNote": "B assumes Marketing is one of the two departments, a natural context inference, not a flaw."
+  },
+  "l-qr-40": {
+   "answer": "C", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Let's just do it by phone this afternoon' answers an either/or question with a third option, a common Part 2 pattern. A and B each reuse a word (budget, lunch) with unrelated content.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A budget and B lunch are same-word lures); D fails (no condition); B passes (correct reply is a third option, not a choice from the two); S fails",
+   "style": 4,
+   "why": "L and B pass: the correct reply declines both options; two same-word lures. D fails.",
+   "fix": "Consider changing A so it cannot read as an indirect 'no need to review' (for example, 'The budget spreadsheet is on the shared drive' also risks it; a plainly unrelated same-word line is safer).",
+   "tooClose": false,
+   "editorNote": "A ('The budget was approved in March') could pass as an indirect 'no need to go over it' reply, but that needs an assumption that approval makes a review unnecessary. Not given in the stem, so not ambiguous; recommend replacing."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": ["l-qr-26", "l-qr-40"],
+ "overall": "Clean batch: no response is a defensible second answer, so no mustFix. Weaknesses: l-qr-26 is arithmetic-based (9 + 3) and the stem is unnatural because the asker states the data; l-qr-40 option A can read as an indirect 'no need to review'. Band counts: easy 3 (23, 29, 37), medium 11 (24, 25, 26, 27, 28, 30, 32, 35, 36, 39, 40), hard 4 (31, 33, 34, 38). Easy is 17 percent, within the 25 percent cap, but hard is 22 percent, a little under the 25 percent target. Many 'now that' conditions are used (26, 28, 32, 33, 38; five of 18 items) and most distractors are weak: the contradicted lure is generally one clause away, so hard is limited by B and S failing. Items 25, 28 and 32 could be pushed to hard with a lure a strong learner would sincerely believe. The batch lacks the 'one natural second answer' near-misses that make real hard Part 2 items."
+}

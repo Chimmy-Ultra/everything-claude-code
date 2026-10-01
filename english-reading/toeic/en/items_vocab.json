@@ -1,0 +1,1558 @@
+{
+  "v-collocation-01": {
+    "point": [
+      "<em>meet</em> a deadline.",
+      "meet a deadline：趕上期限。"
+    ],
+    "why": [
+      "The supplier <em>worked late every night</em> so the brochures would be ready on time. The verb that goes with <em>the deadline</em> is <em>meet</em>.",
+      "印刷廠每晚加班，是為了讓手冊準時完成。和 the deadline 搭配的動詞是 meet。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>match</em> means to go well with something, or to be equal to it. <em>The new curtains match the carpet.</em>",
+        "match 是「和…相配」或「與…相等」。例：<em>The new curtains match the carpet.</em>"
+      ],
+      [
+        "<em>catch</em> a bus, a train or a flight; also to notice something. <em>She ran to catch the 8:15 train.</em>",
+        "catch 搭 bus、train、flight，也有「注意到」的意思。例：<em>She ran to catch the 8:15 train.</em>"
+      ],
+      [
+        "<em>suit</em> someone means to be right or convenient for them. <em>Does Thursday at ten suit you?</em>",
+        "suit 某人是「適合、方便某人」。例：<em>Does Thursday at ten suit you?</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "trade show",
+        "hw": "trade show",
+        "pos": "n.",
+        "zh": "商展",
+        "ex": "We booked a booth at the trade show."
+      },
+      {
+        "w": "brochures",
+        "hw": "brochure",
+        "pos": "n.",
+        "zh": "宣傳手冊",
+        "ex": "The brochure lists all our services."
+      },
+      {
+        "w": "supplier",
+        "hw": "supplier",
+        "pos": "n.",
+        "zh": "供應商",
+        "ex": "Our supplier delivers every Monday."
+      }
+    ]
+  },
+  "v-collocation-02": {
+    "point": [
+      "<em>take</em> effect.",
+      "take effect：生效。"
+    ],
+    "why": [
+      "The policy starts to apply <em>on July 1</em>. The fixed phrase for this is <em>take effect</em>, and the sentence has no <em>into</em>.",
+      "規定從 7 月 1 日起適用。固定說法是 take effect，而這句裡沒有 into。"
+    ],
+    "usage": [
+      [
+        "<em>come into effect</em> means the same, but it needs <em>into</em>. <em>The new law comes into effect next month.</em>",
+        "come into effect 意思相同，但一定要有 into。例：<em>The new law comes into effect next month.</em>"
+      ],
+      null,
+      [
+        "<em>go into effect</em> also means to start applying. <em>The ban goes into effect on Monday.</em>",
+        "go into effect 也是「開始生效」。例：<em>The ban goes into effect on Monday.</em>"
+      ],
+      [
+        "<em>make</em> goes with <em>a decision, an effort, a profit</em>. <em>We made a decision before lunch.</em>",
+        "make 搭 a decision、an effort、a profit。例：<em>We made a decision before lunch.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "revised",
+        "hw": "revise",
+        "pos": "adj.",
+        "zh": "修訂過的",
+        "ex": "Please read the revised contract."
+      },
+      {
+        "w": "policy",
+        "hw": "policy",
+        "pos": "n.",
+        "zh": "規定、政策",
+        "ex": "The policy covers all full-time staff."
+      },
+      {
+        "w": "booked",
+        "hw": "book",
+        "pos": "v.",
+        "zh": "預訂",
+        "ex": "We booked the conference room for Friday."
+      }
+    ]
+  },
+  "v-collocation-03": {
+    "point": [
+      "<em>place</em> an order.",
+      "place an order：下訂單。"
+    ],
+    "why": [
+      "The manager needs new printer cartridges, so she will order them. The fixed phrase is <em>place an order for</em>, and the sentence continues with <em>for new printer cartridges</em>.",
+      "經理需要新的墨水匣，所以要訂購。固定說法是 place an order for，句子接著就是 for new printer cartridges。"
+    ],
+    "usage": [
+      [
+        "<em>set</em> a goal, a date or a price: you decide it. <em>We set a date for the launch.</em>",
+        "set 搭 goal、date、price，是「訂定」。例：<em>We set a date for the launch.</em>"
+      ],
+      [
+        "<em>lay</em> something down means to put it flat; <em>lay off</em> means to dismiss workers. <em>Please lay the documents on my desk.</em>",
+        "lay 是「把東西平放」；lay off 是「裁員」。例：<em>Please lay the documents on my desk.</em>"
+      ],
+      null,
+      [
+        "<em>position</em> something means to put it in a particular place. <em>The designer positioned the logo at the top.</em>",
+        "position 是「把東西放在特定位置」。例：<em>The designer positioned the logo at the top.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "cartridges",
+        "hw": "cartridge",
+        "pos": "n.",
+        "zh": "墨水匣、碳粉匣",
+        "ex": "The printer needs a new cartridge."
+      },
+      {
+        "w": "before the end of the day",
+        "hw": "before the end of the day",
+        "pos": "phr.",
+        "zh": "今天下班前",
+        "ex": "Please send the files before the end of the day."
+      }
+    ]
+  },
+  "v-collocation-04": {
+    "point": [
+      "<em>keep</em> a close eye on.",
+      "keep a close eye on：密切注意。"
+    ],
+    "why": [
+      "The accountant wants the team to watch <em>cash flow</em> carefully during <em>the slow summer months</em>. The fixed phrase is <em>keep a close eye on</em>.",
+      "會計師要團隊在生意清淡的夏季密切注意 cash flow。固定說法是 keep a close eye on。"
+    ],
+    "usage": [
+      [
+        "<em>hold</em> a meeting, an event or a position. <em>We hold a staff meeting every Monday.</em>",
+        "hold 搭 meeting、event、position。例：<em>We hold a staff meeting every Monday.</em>"
+      ],
+      [
+        "<em>take</em> a look at something, or <em>take</em> a break. <em>Can you take a look at this contract?</em>",
+        "take 搭 a look at、a break。例：<em>Can you take a look at this contract?</em>"
+      ],
+      [
+        "<em>set eyes on</em> means to see, usually for the first time. <em>She loved the house the moment she set eyes on it.</em>",
+        "set eyes on 是「看見」，通常指第一次看到。例：<em>She loved the house the moment she set eyes on it.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "accountant",
+        "hw": "accountant",
+        "pos": "n.",
+        "zh": "會計師",
+        "ex": "Our accountant checks the books monthly."
+      },
+      {
+        "w": "recommends",
+        "hw": "recommend",
+        "pos": "v.",
+        "zh": "建議",
+        "ex": "The consultant recommends a smaller budget."
+      },
+      {
+        "w": "cash flow",
+        "hw": "cash flow",
+        "pos": "n.",
+        "zh": "現金流",
+        "ex": "Cash flow is tight this quarter."
+      }
+    ]
+  },
+  "v-collocation-05": {
+    "point": [
+      "<em>strike</em> a balance between…",
+      "strike a balance between…：在…之間取得平衡。"
+    ],
+    "why": [
+      "The new schedule balances two things: <em>client visits</em> and <em>time in the office</em>. The fixed phrase is <em>strike a balance between</em>, so the verb is <em>strike</em>.",
+      "新班表要平衡兩件事：client visits 和 time in the office。固定說法是 strike a balance between，所以動詞是 strike。"
+    ],
+    "usage": [
+      [
+        "<em>pull</em> means to draw something toward you. <em>He pulled the door open.</em>",
+        "pull 是「拉」。例：<em>He pulled the door open.</em>"
+      ],
+      [
+        "<em>run</em> a business, a team or a test. <em>She runs a small design studio.</em>",
+        "run 搭 business、team、test，是「經營、執行」。例：<em>She runs a small design studio.</em>"
+      ],
+      null,
+      [
+        "<em>lift</em> something up, or <em>lift</em> a ban or a restriction. <em>The city lifted the parking ban.</em>",
+        "lift 是「舉起」，或「解除」禁令、限制。例：<em>The city lifted the parking ban.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "flexible",
+        "hw": "flexible",
+        "pos": "adj.",
+        "zh": "彈性的",
+        "ex": "We offer flexible working hours."
+      },
+      {
+        "w": "aims to",
+        "hw": "aim to",
+        "pos": "phr.",
+        "zh": "目標是、旨在",
+        "ex": "We aim to reply within one business day."
+      },
+      {
+        "w": "client visits",
+        "hw": "client visit",
+        "pos": "n.",
+        "zh": "拜訪客戶",
+        "ex": "Client visits take up most of my week."
+      }
+    ]
+  },
+  "v-collocation-06": {
+    "point": [
+      "<em>overwhelming</em> majority.",
+      "overwhelming majority：壓倒性多數。"
+    ],
+    "why": [
+      "Most of the shareholders voted yes at the meeting, a very large majority. The fixed phrase for that is <em>an overwhelming majority</em>.",
+      "會議上絕大多數股東投贊成票。形容這種多數的固定說法是 an overwhelming majority。"
+    ],
+    "usage": [
+      [
+        "<em>overflowing</em> means so full that things spill out. <em>The overflowing bin needs to be emptied.</em>",
+        "overflowing 是「滿到溢出來」。例：<em>The overflowing bin needs to be emptied.</em>"
+      ],
+      [
+        "<em>overpowering</em> describes a smell, feeling or force that is too strong. <em>The overpowering smell of paint filled the room.</em>",
+        "overpowering 形容氣味、感覺或力量太強烈。例：<em>The overpowering smell of paint filled the room.</em>"
+      ],
+      [
+        "<em>overriding</em> means more important than anything else. <em>Safety is our overriding concern.</em>",
+        "overriding 是「比什麼都重要的」。例：<em>Safety is our overriding concern.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "branch",
+        "hw": "branch",
+        "pos": "n.",
+        "zh": "分店、分行",
+        "ex": "The bank opened a new branch downtown."
+      },
+      {
+        "w": "majority",
+        "hw": "majority",
+        "pos": "n.",
+        "zh": "多數",
+        "ex": "A majority of staff prefer the new schedule."
+      },
+      {
+        "w": "shareholders",
+        "hw": "shareholder",
+        "pos": "n.",
+        "zh": "股東",
+        "ex": "Shareholders will vote on the merger."
+      }
+    ]
+  },
+  "v-collocation-07": {
+    "point": [
+      "<em>fall short of</em> a target.",
+      "fall short of：未達到目標。"
+    ],
+    "why": [
+      "<em>Although</em> orders rose sharply, revenue still did not reach <em>the target</em>. The phrase for missing a goal is <em>fall short of</em>; the past form is <em>fell</em>.",
+      "雖然訂單大增，營收仍沒達到 the target。未達目標的說法是 fall short of，過去式是 fell。"
+    ],
+    "usage": [
+      [
+        "<em>run short of</em> something means to have too little of it left. <em>We are running short of printer paper.</em>",
+        "run short of 是「某物快不夠用」。例：<em>We are running short of printer paper.</em>"
+      ],
+      null,
+      [
+        "<em>cut</em> something <em>short</em> means to end it early. <em>A fire alarm cut the meeting short.</em>",
+        "cut … short 是「提前結束」。例：<em>A fire alarm cut the meeting short.</em>"
+      ],
+      [
+        "<em>draw</em> attention, a conclusion or a picture. <em>The new ad drew a lot of attention.</em>",
+        "draw 搭 attention、conclusion、picture。例：<em>The new ad drew a lot of attention.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "sharply",
+        "hw": "sharply",
+        "pos": "adv.",
+        "zh": "大幅地",
+        "ex": "Prices rose sharply last month."
+      },
+      {
+        "w": "revenue",
+        "hw": "revenue",
+        "pos": "n.",
+        "zh": "營收",
+        "ex": "Revenue grew by five percent."
+      },
+      {
+        "w": "quarter",
+        "hw": "quarter",
+        "pos": "n.",
+        "zh": "季度",
+        "ex": "Sales were strong in the first quarter."
+      }
+    ]
+  },
+  "v-collocation-08": {
+    "point": [
+      "<em>lodge</em> a complaint.",
+      "lodge a complaint：正式提出申訴。"
+    ],
+    "why": [
+      "Customers with a damaged delivery must make a formal complaint <em>in writing</em>. <em>Lodge</em> means to submit something officially, and it goes with <em>a formal complaint</em>.",
+      "貨品受損的顧客必須以書面正式提出申訴。lodge 是「正式提出」，和 a formal complaint 搭配。"
+    ],
+    "usage": [
+      [
+        "<em>house</em> means to provide a home or space for someone or something. <em>The new building will house our legal team.</em>",
+        "house 當動詞是「為…提供住處或空間」。例：<em>The new building will house our legal team.</em>"
+      ],
+      [
+        "<em>host</em> an event or a party: to organize it for guests. <em>The hotel will host the awards dinner.</em>",
+        "host 搭 event、party，是「主辦」並招待賓客。例：<em>The hotel will host the awards dinner.</em>"
+      ],
+      null,
+      [
+        "<em>board</em> a plane, a train or a ship: to get on it. <em>Passengers may board the train now.</em>",
+        "board 是「登上」飛機、火車或船。例：<em>Passengers may board the train now.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "in writing",
+        "hw": "in writing",
+        "pos": "phr.",
+        "zh": "以書面",
+        "ex": "Please confirm the offer in writing."
+      },
+      {
+        "w": "attaching",
+        "hw": "attach",
+        "pos": "v.",
+        "zh": "附上",
+        "ex": "Attach the receipt to your claim form."
+      },
+      {
+        "w": "packaging",
+        "hw": "packaging",
+        "pos": "n.",
+        "zh": "包裝",
+        "ex": "The packaging protects the glass."
+      }
+    ]
+  },
+  "v-collocation-09": {
+    "point": [
+      "<em>bear</em> in mind that…",
+      "bear in mind that…：記住、留意。"
+    ],
+    "why": [
+      "The writer asks guests to keep one fact in mind: <em>the visitor parking garage will be closed on Saturday</em>. The phrase is <em>bear in mind that</em>, and <em>that</em> introduces the fact.",
+      "作者要來賓記住一件事：訪客停車場星期六關閉。說法是 bear in mind that，that 後面接要記住的事。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>take</em> something <em>into account</em> means to consider it. <em>Please take the cost into account.</em>",
+        "take … into account 是「把…納入考量」。例：<em>Please take the cost into account.</em>"
+      ],
+      [
+        "<em>put</em> means to place something somewhere. <em>Please put the boxes in the storage room.</em>",
+        "put 是「把東西放在某處」。例：<em>Please put the boxes in the storage room.</em>"
+      ],
+      [
+        "<em>carry</em> means to hold and move something, or to have it with you. <em>Staff must carry their ID badges.</em>",
+        "carry 是「攜帶、搬運」。例：<em>Staff must carry their ID badges.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "open house",
+        "hw": "open house",
+        "pos": "n.",
+        "zh": "開放參觀日",
+        "ex": "The school holds an open house in May."
+      },
+      {
+        "w": "attending",
+        "hw": "attend",
+        "pos": "v.",
+        "zh": "參加",
+        "ex": "Over fifty guests are attending the dinner."
+      },
+      {
+        "w": "lot",
+        "hw": "lot",
+        "pos": "n.",
+        "zh": "停車場",
+        "ex": "Please park in the lot behind the office."
+      }
+    ]
+  },
+  "v-synonym-01": {
+    "point": [
+      "<em>commission</em>: pay as a share of sales.",
+      "commission 佣金：按成交金額抽成。"
+    ],
+    "why": [
+      "Reps get <em>4 percent on every contract they sign</em>, on top of <em>their base salary</em>. Pay that is a share of each sale is a <em>commission</em>.",
+      "業務每簽一份合約抽 4%，另外還有底薪。按每筆成交抽成的錢是 commission。"
+    ],
+    "usage": [
+      [
+        "<em>wage</em> is pay for hours or days worked, often paid weekly. <em>The hourly wage rose to $18.</em>",
+        "wage 是按時數或天數計的工資。例：<em>The hourly wage rose to $18.</em>"
+      ],
+      [
+        "<em>pension</em> is money paid regularly after someone retires. <em>He receives a pension from his former employer.</em>",
+        "pension 是退休後定期領的退休金。例：<em>He receives a pension from his former employer.</em>"
+      ],
+      null,
+      [
+        "<em>allowance</em> is a set amount given for a cost such as travel or housing. <em>The company pays a monthly travel allowance.</em>",
+        "allowance 是為交通、住房等費用給的固定津貼。例：<em>The company pays a monthly travel allowance.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "Sales representatives",
+        "hw": "sales representative",
+        "pos": "n.",
+        "zh": "業務代表",
+        "ex": "Each sales representative covers one region."
+      },
+      {
+        "w": "base salary",
+        "hw": "base salary",
+        "pos": "n.",
+        "zh": "底薪",
+        "ex": "Her base salary is paid monthly."
+      },
+      {
+        "w": "in addition to",
+        "hw": "in addition to",
+        "pos": "phr.",
+        "zh": "除了…之外",
+        "ex": "In addition to salary, staff get a bonus."
+      }
+    ]
+  },
+  "v-synonym-02": {
+    "point": [
+      "<em>lend</em> = give for a time; <em>borrow</em> = take for a time.",
+      "lend 借出；borrow 借入。"
+    ],
+    "why": [
+      "The IT department gives laptops to staff and wants them back <em>within two weeks</em>. The next clause calls staff <em>borrowers</em>, so the department <em>lends</em> the equipment.",
+      "資訊部把筆電交給員工，兩週內要收回。後句稱員工為 borrowers，所以資訊部是借出，用 lends。"
+    ],
+    "usage": [
+      [
+        "<em>return</em> means to give something back, or to come back. <em>Please return the projector to the IT desk.</em>",
+        "return 是「歸還」或「回來」。例：<em>Please return the projector to the IT desk.</em>"
+      ],
+      null,
+      [
+        "<em>borrow</em> means to take something from someone for a short time. <em>May I borrow your charger?</em>",
+        "borrow 是「向人借入」。例：<em>May I borrow your charger?</em>"
+      ],
+      [
+        "<em>donate</em> means to give something for free, with nothing coming back. <em>The firm donated old computers to a school.</em>",
+        "donate 是「捐出」，不會收回。例：<em>The firm donated old computers to a school.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "off-site",
+        "hw": "off-site",
+        "pos": "adj.",
+        "zh": "在公司以外的地點",
+        "ex": "The team held an off-site workshop."
+      },
+      {
+        "w": "borrowers",
+        "hw": "borrower",
+        "pos": "n.",
+        "zh": "借用人",
+        "ex": "Borrowers must sign for each item."
+      },
+      {
+        "w": "projectors",
+        "hw": "projector",
+        "pos": "n.",
+        "zh": "投影機",
+        "ex": "The projector in room B is broken."
+      }
+    ]
+  },
+  "v-synonym-03": {
+    "point": [
+      "<em>incur</em> charges or costs.",
+      "incur charges：產生費用。"
+    ],
+    "why": [
+      "Guests who use <em>room service or minibar</em> create extra charges that they must pay. The verb for bringing a cost on yourself is <em>incur</em>.",
+      "使用 room service 或 minibar 的房客會產生額外費用，要自己付。「招致費用」的動詞是 incur。"
+    ],
+    "usage": [
+      [
+        "<em>suffer</em> a loss, an injury or a delay: something bad happens to you. <em>The company suffered a heavy loss last year.</em>",
+        "suffer 搭 loss、injury、delay，是「遭受」不好的事。例：<em>The company suffered a heavy loss last year.</em>"
+      ],
+      [
+        "<em>undergo</em> a process, test or change. <em>All new staff undergo a week of training.</em>",
+        "undergo 搭 process、test、change，是「經歷」。例：<em>All new staff undergo a week of training.</em>"
+      ],
+      [
+        "<em>endure</em> means to put up with something painful or difficult. <em>Travelers endured a long delay at the airport.</em>",
+        "endure 是「忍受」痛苦或困難。例：<em>Travelers endured a long delay at the airport.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "room service",
+        "hw": "room service",
+        "pos": "n.",
+        "zh": "客房送餐服務",
+        "ex": "We ordered room service for breakfast."
+      },
+      {
+        "w": "minibar",
+        "hw": "minibar",
+        "pos": "n.",
+        "zh": "（客房）迷你吧",
+        "ex": "The minibar is stocked with drinks."
+      },
+      {
+        "w": "settle",
+        "hw": "settle",
+        "pos": "v.",
+        "zh": "結清（帳款）",
+        "ex": "Please settle your bill at the front desk."
+      },
+      {
+        "w": "checkout",
+        "hw": "checkout",
+        "pos": "n.",
+        "zh": "退房",
+        "ex": "Checkout is at eleven in the morning."
+      }
+    ]
+  },
+  "v-synonym-04": {
+    "point": [
+      "<em>comprise</em> = consist of.",
+      "comprise = consist of：由…組成。"
+    ],
+    "why": [
+      "The sentence names the whole, <em>the new advisory committee</em>, and puts its members, <em>five managers</em>, right after the verb. With no <em>of</em>, the verb is <em>comprises</em>.",
+      "句子先說整體 the new advisory committee，成員 five managers 緊接在動詞後。沒有 of，所以用 comprises。"
+    ],
+    "usage": [
+      [
+        "<em>consist of</em> means to be made up of; it needs <em>of</em>. <em>The team consists of six engineers.</em>",
+        "consist of 是「由…組成」，要有 of。例：<em>The team consists of six engineers.</em>"
+      ],
+      null,
+      [
+        "<em>conform to</em> means to follow a rule or standard. <em>All products must conform to safety standards.</em>",
+        "conform to 是「符合」規定或標準。例：<em>All products must conform to safety standards.</em>"
+      ],
+      [
+        "<em>constitute</em> means to make up a whole, so the members are the subject. <em>Women constitute half of our workforce.</em>",
+        "constitute 是「構成」整體，主詞是成員。例：<em>Women constitute half of our workforce.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "advisory committee",
+        "hw": "advisory committee",
+        "pos": "n.",
+        "zh": "顧問委員會",
+        "ex": "The advisory committee meets every quarter."
+      },
+      {
+        "w": "department",
+        "hw": "department",
+        "pos": "n.",
+        "zh": "部門",
+        "ex": "The marketing department is on the third floor."
+      }
+    ]
+  },
+  "v-synonym-05": {
+    "point": [
+      "Read the whole sentence: <em>markedly</em> = by a large amount.",
+      "看全句：markedly 是明顯地、大幅地。"
+    ],
+    "why": [
+      "Visits went up by 40 percent (<em>jumping 40 percent</em>) in the first week, a large rise, and stayed <em>at that level</em> for the rest of the year. So the adverb is <em>markedly</em>.",
+      "來客數跳升 40%，是大幅增加，而且之後維持在那個水準到年底。所以副詞是 markedly。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>slightly</em> means by a small amount. <em>Prices rose slightly in March.</em>",
+        "slightly 是「稍微」。例：<em>Prices rose slightly in March.</em>"
+      ],
+      [
+        "<em>steadily</em> means at an even pace over time. <em>Sales have grown steadily since January.</em>",
+        "steadily 是「穩定、逐步地」。例：<em>Sales have grown steadily since January.</em>"
+      ],
+      [
+        "<em>temporarily</em> means for a short time only. <em>The store is temporarily closed for cleaning.</em>",
+        "temporarily 是「暫時地」。例：<em>The store is temporarily closed for cleaning.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "Showroom",
+        "hw": "showroom",
+        "pos": "n.",
+        "zh": "展示間",
+        "ex": "The showroom displays our newest models."
+      },
+      {
+        "w": "renovation",
+        "hw": "renovation",
+        "pos": "n.",
+        "zh": "整修",
+        "ex": "The renovation took three months."
+      },
+      {
+        "w": "jumping",
+        "hw": "jump",
+        "pos": "v.",
+        "zh": "跳升",
+        "ex": "Orders jumped after the new ad ran."
+      }
+    ]
+  },
+  "v-synonym-06": {
+    "point": [
+      "<em>extend</em> a period of time.",
+      "extend 延長時間。"
+    ],
+    "why": [
+      "The rent stays the same <em>for another two years</em>, so the lease gets longer in time. The verb for making a period longer is <em>extend</em>.",
+      "租金不變，租約再多兩年，也就是期限變長。讓期間變長的動詞是 extend。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>expand</em> means to grow bigger in size, amount or reach. <em>The firm plans to expand into Asia.</em>",
+        "expand 是規模、數量或範圍變大。例：<em>The firm plans to expand into Asia.</em>"
+      ],
+      [
+        "<em>enlarge</em> means to make something bigger, such as a photo or a room. <em>We enlarged the photo for the poster.</em>",
+        "enlarge 是把照片、空間等放大。例：<em>We enlarged the photo for the poster.</em>"
+      ],
+      [
+        "<em>stretch</em> means to pull something longer, or to make it last. <em>We must stretch the budget to cover repairs.</em>",
+        "stretch 是「拉長」，或讓預算等撐久一點。例：<em>We must stretch the budget to cover repairs.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "landlord",
+        "hw": "landlord",
+        "pos": "n.",
+        "zh": "房東",
+        "ex": "The landlord fixed the heating."
+      },
+      {
+        "w": "lease",
+        "hw": "lease",
+        "pos": "n.",
+        "zh": "租約",
+        "ex": "We signed a three-year lease."
+      }
+    ]
+  },
+  "v-synonym-07": {
+    "point": [
+      "<em>abide by</em> the rules.",
+      "abide by the rules：遵守規定。"
+    ],
+    "why": [
+      "The blank is followed by <em>by the safety rules</em>. Of the four words that mean to obey, only <em>abide</em> takes <em>by</em>: <em>abide by</em>.",
+      "空格後面是 by the safety rules。四個「遵守」的字裡，只有 abide 接 by：abide by。"
+    ],
+    "usage": [
+      [
+        "<em>comply with</em> a rule, request or law. <em>All vendors must comply with the new regulations.</em>",
+        "comply with 是「遵守」規則、要求或法律。例：<em>All vendors must comply with the new regulations.</em>"
+      ],
+      [
+        "<em>adhere to</em> a rule, plan or schedule. <em>Please adhere to the agreed timeline.</em>",
+        "adhere to 是「遵守」規則、計畫或時程。例：<em>Please adhere to the agreed timeline.</em>"
+      ],
+      null,
+      [
+        "<em>conform to</em> a rule or standard. <em>The packaging must conform to export standards.</em>",
+        "conform to 是「符合」規則或標準。例：<em>The packaging must conform to export standards.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "subcontractors",
+        "hw": "subcontractor",
+        "pos": "n.",
+        "zh": "分包商",
+        "ex": "The subcontractor finished the wiring."
+      },
+      {
+        "w": "posted",
+        "hw": "post",
+        "pos": "v.",
+        "zh": "張貼",
+        "ex": "Notices are posted on the wall."
+      },
+      {
+        "w": "hard hat",
+        "hw": "hard hat",
+        "pos": "n.",
+        "zh": "安全帽",
+        "ex": "Visitors must wear a hard hat."
+      }
+    ]
+  },
+  "v-synonym-08": {
+    "point": [
+      "<em>suspend</em> = stop for a time.",
+      "suspend 暫停（之後會恢復）。"
+    ],
+    "why": [
+      "The plant stops production <em>for two weeks</em>, and <em>normal operations will resume on September 1</em>. A stop that ends and then restarts is <em>suspend</em>.",
+      "工廠停產兩週，9 月 1 日正常營運恢復。先停下來、之後再恢復的是 suspend。"
+    ],
+    "usage": [
+      [
+        "<em>terminate</em> means to end something for good, such as a contract. <em>The company terminated the agreement.</em>",
+        "terminate 是「終止」，例如合約。例：<em>The company terminated the agreement.</em>"
+      ],
+      [
+        "<em>abandon</em> means to give something up completely. <em>They abandoned the project after the budget was cut.</em>",
+        "abandon 是「完全放棄」。例：<em>They abandoned the project after the budget was cut.</em>"
+      ],
+      [
+        "<em>conclude</em> means to finish, or to reach a decision. <em>The talks concluded on Friday.</em>",
+        "conclude 是「結束」或「下結論」。例：<em>The talks concluded on Friday.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "packaging line",
+        "hw": "packaging line",
+        "pos": "n.",
+        "zh": "包裝生產線",
+        "ex": "The packaging line runs two shifts."
+      },
+      {
+        "w": "installed",
+        "hw": "install",
+        "pos": "v.",
+        "zh": "安裝",
+        "ex": "The technician installed the new printer."
+      },
+      {
+        "w": "resume",
+        "hw": "resume",
+        "pos": "v.",
+        "zh": "恢復、重新開始",
+        "ex": "Work will resume on Monday."
+      }
+    ]
+  },
+  "v-synonym-09": {
+    "point": [
+      "<em>waive</em> a fee or a rule.",
+      "waive + 費用／規定：免除。"
+    ],
+    "why": [
+      "The blank is followed directly by the thing that is dropped: <em>the cancellation fee</em>. Only <em>waive</em> takes a fee as its object; the hotel agrees not to charge it.",
+      "空格後直接接被免掉的東西：the cancellation fee。只有 waive 以費用當受詞；飯店同意不收這筆費用。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>exempt</em> someone <em>from</em> a rule or charge. <em>The law exempts small firms from this tax.</em>",
+        "exempt 人 from 規定或費用。例：<em>The law exempts small firms from this tax.</em>"
+      ],
+      [
+        "<em>spare</em> someone something unpleasant. <em>The early flight spared us a long wait.</em>",
+        "spare 人 + 麻煩事，是「讓人免去」。例：<em>The early flight spared us a long wait.</em>"
+      ],
+      [
+        "<em>relieve</em> someone <em>of</em> a duty or burden; also to ease pain. <em>The assistant relieved the manager of routine tasks.</em>",
+        "relieve 人 of 責任或負擔；也有「緩解」之意。例：<em>The assistant relieved the manager of routine tasks.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "cancellation fee",
+        "hw": "cancellation fee",
+        "pos": "n.",
+        "zh": "取消費",
+        "ex": "A cancellation fee applies after Monday."
+      },
+      {
+        "w": "provided that",
+        "hw": "provided that",
+        "pos": "phr.",
+        "zh": "只要、前提是",
+        "ex": "You may enter provided that you sign in."
+      },
+      {
+        "w": "written confirmation",
+        "hw": "written confirmation",
+        "pos": "n.",
+        "zh": "書面證明",
+        "ex": "We need written confirmation of the order."
+      }
+    ]
+  },
+  "v-business-01": {
+    "point": [
+      "<em>itinerary</em>: a plan of a trip.",
+      "itinerary：行程表。"
+    ],
+    "why": [
+      "The document came from the travel agent and lists <em>flight times and the address of each hotel</em>. A trip plan with times and places is an <em>itinerary</em>.",
+      "這份文件來自旅行社，列出航班時間和每間飯店的地址。列出時間與地點的旅程計畫就是 itinerary。"
+    ],
+    "usage": [
+      [
+        "<em>inventory</em> is the list or stock of goods a business holds. <em>We count our inventory every December.</em>",
+        "inventory 是公司持有的庫存或庫存清單。例：<em>We count our inventory every December.</em>"
+      ],
+      null,
+      [
+        "<em>agenda</em> is the list of topics for a meeting. <em>The agenda has five items.</em>",
+        "agenda 是會議的議程。例：<em>The agenda has five items.</em>"
+      ],
+      [
+        "<em>warranty</em> is a written promise to repair or replace a product. <em>The printer has a two-year warranty.</em>",
+        "warranty 是產品的保固。例：<em>The printer has a two-year warranty.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "travel agent",
+        "hw": "travel agent",
+        "pos": "n.",
+        "zh": "旅行社人員",
+        "ex": "Our travel agent booked the flights."
+      },
+      {
+        "w": "listed",
+        "hw": "list",
+        "pos": "v.",
+        "zh": "列出",
+        "ex": "All fees are listed on the form."
+      }
+    ]
+  },
+  "v-business-02": {
+    "point": [
+      "<em>invoice</em>: a bill sent before payment.",
+      "invoice：付款前寄出的請款單。"
+    ],
+    "why": [
+      "The supplier sent the document for the 40 chairs, and it is <em>payable within 30 days</em>. A bill that asks you to pay is an <em>invoice</em>.",
+      "供應商寄來 40 張椅子的單據，要在 30 天內付款。要求你付款的單據是 invoice。"
+    ],
+    "usage": [
+      [
+        "<em>receipt</em> is proof that you have already paid. <em>Keep the receipt in case you return the item.</em>",
+        "receipt 是已付款的收據。例：<em>Keep the receipt in case you return the item.</em>"
+      ],
+      [
+        "<em>estimate</em> is an approximate price given before work begins. <em>The contractor gave us a written estimate.</em>",
+        "estimate 是開工前給的概略報價。例：<em>The contractor gave us a written estimate.</em>"
+      ],
+      [
+        "<em>refund</em> is money given back to a customer. <em>She asked for a refund after the order arrived damaged.</em>",
+        "refund 是退還給顧客的錢。例：<em>She asked for a refund after the order arrived damaged.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "supplier",
+        "hw": "supplier",
+        "pos": "n.",
+        "zh": "供應商",
+        "ex": "Our supplier delivers every Monday."
+      },
+      {
+        "w": "payable",
+        "hw": "payable",
+        "pos": "adj.",
+        "zh": "應付的",
+        "ex": "The fee is payable by check."
+      }
+    ]
+  },
+  "v-business-03": {
+    "point": [
+      "<em>postpone</em> … <em>until</em>: move to a later date.",
+      "postpone … until：延期到某時。"
+    ],
+    "why": [
+      "The launch is moved to <em>next Thursday</em>, a later date, because of <em>the storm warning</em>. Moving an event to a later time is <em>postponed</em>.",
+      "因為 the storm warning，發表會改到 next Thursday。把活動挪到之後舉行就是 postponed。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>abandon</em> means to give something up completely. <em>The firm abandoned the plan to open a new store.</em>",
+        "abandon 是「完全放棄」。例：<em>The firm abandoned the plan to open a new store.</em>"
+      ],
+      [
+        "<em>expire</em> means to reach the end of a valid period. <em>My passport expires in May.</em>",
+        "expire 是證件、合約等「到期」。例：<em>My passport expires in May.</em>"
+      ],
+      [
+        "<em>conclude</em> means to finish, or to end a talk or deal. <em>The meeting concluded at noon.</em>",
+        "conclude 是「結束」會議或交易。例：<em>The meeting concluded at noon.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "storm warning",
+        "hw": "storm warning",
+        "pos": "n.",
+        "zh": "暴風雨警報",
+        "ex": "A storm warning is in effect tonight."
+      },
+      {
+        "w": "product launch",
+        "hw": "product launch",
+        "pos": "n.",
+        "zh": "產品發表會",
+        "ex": "The product launch drew many reporters."
+      }
+    ]
+  },
+  "v-business-04": {
+    "point": [
+      "<em>deduct</em> A <em>from</em> B.",
+      "deduct A from B：從 B 扣除 A。"
+    ],
+    "why": [
+      "The uniform cost is taken <em>from your first month's salary</em>. The word <em>from</em> points to <em>deducted</em>: <em>be deducted from</em>.",
+      "制服費用從第一個月的薪水中扣。from 是線索，指向 deducted：be deducted from。"
+    ],
+    "usage": [
+      [
+        "<em>reduce</em> means to make something smaller or less. <em>We reduced our energy use by ten percent.</em>",
+        "reduce 是「減少」。例：<em>We reduced our energy use by ten percent.</em>"
+      ],
+      [
+        "<em>decline</em> means to say no politely, or to become lower. <em>She declined the invitation.</em>",
+        "decline 是「婉拒」或「下降」。例：<em>She declined the invitation.</em>"
+      ],
+      null,
+      [
+        "<em>devote</em> time or effort <em>to</em> something. <em>He devoted the morning to the budget.</em>",
+        "devote 時間或心力 to 某事。例：<em>He devoted the morning to the budget.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "staff uniform",
+        "hw": "staff uniform",
+        "pos": "n.",
+        "zh": "員工制服",
+        "ex": "The staff uniform includes a name badge."
+      },
+      {
+        "w": "salary",
+        "hw": "salary",
+        "pos": "n.",
+        "zh": "薪水",
+        "ex": "Her salary is paid on the 25th."
+      }
+    ]
+  },
+  "v-business-05": {
+    "point": [
+      "<em>reimburse</em>: pay back money someone spent.",
+      "reimburse：歸還員工代墊的費用。"
+    ],
+    "why": [
+      "Staff pay for <em>fuel</em> with their own cars, and the company pays them back <em>at a fixed rate</em>. Paying back money an employee spent is <em>reimbursed</em>.",
+      "員工開自己的車、先付油錢，公司再按固定費率還給他們。把員工代墊的錢還回去就是 reimbursed。"
+    ],
+    "usage": [
+      [
+        "<em>reward</em> means to give something for good work. <em>The firm rewarded her for finding the error.</em>",
+        "reward 是「獎勵」表現好。例：<em>The firm rewarded her for finding the error.</em>"
+      ],
+      null,
+      [
+        "<em>recruit</em> means to find and hire new people. <em>We plan to recruit ten engineers.</em>",
+        "recruit 是「招募」新人。例：<em>We plan to recruit ten engineers.</em>"
+      ],
+      [
+        "<em>reserve</em> means to book something in advance, or to keep it for someone. <em>I reserved a table for six.</em>",
+        "reserve 是「預訂」或「保留」。例：<em>I reserved a table for six.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "fuel",
+        "hw": "fuel",
+        "pos": "n.",
+        "zh": "燃料、油錢",
+        "ex": "Fuel costs rose again this year."
+      },
+      {
+        "w": "fixed rate",
+        "hw": "fixed rate",
+        "pos": "n.",
+        "zh": "固定費率",
+        "ex": "We charge a fixed rate per hour."
+      }
+    ]
+  },
+  "v-business-06": {
+    "point": [
+      "<em>absorb</em> a cost: pay it yourself.",
+      "absorb the cost：自行吸收費用。"
+    ],
+    "why": [
+      "The delay was <em>its own error</em>, so the shipping company takes the <em>extra cost</em> on itself instead of charging the customer. That is <em>absorb</em>.",
+      "延誤是物流公司自己的錯，所以多出來的費用由它自己承擔，不向客戶收。這就是 absorb。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>adopt</em> means to start using a plan, policy or method. <em>The firm adopted a new return policy.</em>",
+        "adopt 是「採用」計畫、政策或方法。例：<em>The firm adopted a new return policy.</em>"
+      ],
+      [
+        "<em>attach</em> a file or document to an email or a form. <em>Please attach your resume to the form.</em>",
+        "attach 是把檔案或文件「附上」。例：<em>Please attach your resume to the form.</em>"
+      ],
+      [
+        "<em>acquire</em> means to get a company, a skill or an asset. <em>The firm acquired a smaller rival.</em>",
+        "acquire 是「取得」公司、技能或資產。例：<em>The firm acquired a smaller rival.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "shipping company",
+        "hw": "shipping company",
+        "pos": "n.",
+        "zh": "物流公司",
+        "ex": "The shipping company delivers overnight."
+      },
+      {
+        "w": "was caused by",
+        "hw": "cause",
+        "pos": "phr.",
+        "zh": "是由…造成",
+        "ex": "The delay was caused by heavy snow."
+      }
+    ]
+  },
+  "v-business-07": {
+    "point": [
+      "<em>deposit</em>: part of the price paid first.",
+      "deposit 訂金：先付一部分。"
+    ],
+    "why": [
+      "Pellham receives <em>15 percent of the purchase price when the agreement is signed</em>, and <em>the balance</em> is due on delivery. A first part-payment is a <em>deposit</em>.",
+      "Pellham 在簽約時先收價款的 15%，餘款 the balance 交貨時付。先付的一部分款項是 deposit。"
+    ],
+    "usage": [
+      [
+        "<em>dividend</em> is a share of profit paid to shareholders. <em>The company paid a quarterly dividend.</em>",
+        "dividend 是公司發給股東的股利。例：<em>The company paid a quarterly dividend.</em>"
+      ],
+      [
+        "<em>rebate</em> is part of the price returned to the buyer after payment. <em>Buyers get a rebate on qualifying purchases.</em>",
+        "rebate 是付款後退還給買方的一部分錢。例：<em>Buyers get a rebate on qualifying purchases.</em>"
+      ],
+      [
+        "<em>premium</em> is the regular payment for insurance, or an extra charge. <em>The insurance premium rises every year.</em>",
+        "premium 是保費，或額外加價。例：<em>The insurance premium rises every year.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "Under the terms of",
+        "hw": "under the terms of",
+        "pos": "phr.",
+        "zh": "依照…的條款",
+        "ex": "Under the terms of the lease, rent is monthly."
+      },
+      {
+        "w": "balance",
+        "hw": "balance",
+        "pos": "n.",
+        "zh": "餘款",
+        "ex": "Please pay the balance by Friday."
+      },
+      {
+        "w": "upon delivery",
+        "hw": "upon delivery",
+        "pos": "phr.",
+        "zh": "交貨時",
+        "ex": "Payment is due upon delivery."
+      }
+    ]
+  },
+  "v-business-08": {
+    "point": [
+      "<em>reconcile</em> A <em>with</em> B: check that two records match.",
+      "reconcile A with B：核對兩份帳使其相符。"
+    ],
+    "why": [
+      "The team compares <em>bank statements</em> with <em>its internal ledger</em> and looks into <em>any discrepancies</em>. Checking that two sets of records agree is <em>reconcile</em>.",
+      "會計組把 bank statements 和 internal ledger 比對，並查明任何不符之處。確認兩份紀錄一致就是 reconcile。"
+    ],
+    "usage": [
+      [
+        "<em>consolidate</em> means to combine several things into one. <em>The firm consolidated three offices into one.</em>",
+        "consolidate 是把幾個合併成一個。例：<em>The firm consolidated three offices into one.</em>"
+      ],
+      null,
+      [
+        "<em>liquidate</em> means to sell assets for cash, or to close a business and pay its debts. <em>The owner liquidated the stock.</em>",
+        "liquidate 是變賣資產，或清算結束公司。例：<em>The owner liquidated the stock.</em>"
+      ],
+      [
+        "<em>appraise</em> means to judge the value of something. <em>An expert will appraise the building.</em>",
+        "appraise 是替東西估價。例：<em>An expert will appraise the building.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "ledger",
+        "hw": "ledger",
+        "pos": "n.",
+        "zh": "分類帳",
+        "ex": "Enter each payment in the ledger."
+      },
+      {
+        "w": "discrepancies",
+        "hw": "discrepancy",
+        "pos": "n.",
+        "zh": "不一致、差異",
+        "ex": "We found a discrepancy in the totals."
+      },
+      {
+        "w": "bank statements",
+        "hw": "bank statement",
+        "pos": "n.",
+        "zh": "銀行對帳單",
+        "ex": "The bank statement arrives monthly."
+      }
+    ]
+  },
+  "v-family-01": {
+    "point": [
+      "<em>confidential</em> = secret; <em>confident</em> = sure.",
+      "confidential 機密的；confident 有信心的。"
+    ],
+    "why": [
+      "Details of the merger must not leak before it is announced. <em>Keep … strictly confidential</em> means to keep every detail strictly secret.",
+      "合併案公布前，細節不能外洩。keep … strictly confidential 是把每個細節嚴格保密。"
+    ],
+    "usage": [
+      [
+        "<em>confident</em> means sure of yourself or of something. <em>She is confident that the team will win.</em>",
+        "confident 是「有信心的」。例：<em>She is confident that the team will win.</em>"
+      ],
+      null,
+      [
+        "<em>confiding</em> describes someone who shares private feelings with others. <em>She spoke in a confiding tone.</em>",
+        "confiding 形容人愛吐露心事、信任別人。例：<em>She spoke in a confiding tone.</em>"
+      ],
+      [
+        "<em>confided</em> is the past of <em>confide</em>: to tell a secret to someone. <em>She confided her plans to her manager.</em>",
+        "confided 是 confide 的過去式，是向人透露祕密。例：<em>She confided her plans to her manager.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "merger",
+        "hw": "merger",
+        "pos": "n.",
+        "zh": "合併",
+        "ex": "The merger created a larger firm."
+      },
+      {
+        "w": "negotiations",
+        "hw": "negotiation",
+        "pos": "n.",
+        "zh": "協商、談判",
+        "ex": "Negotiations lasted three weeks."
+      },
+      {
+        "w": "strictly",
+        "hw": "strictly",
+        "pos": "adv.",
+        "zh": "嚴格地",
+        "ex": "Smoking is strictly forbidden here."
+      }
+    ]
+  },
+  "v-family-02": {
+    "point": [
+      "<em>sensitive</em> = private or delicate; <em>sensible</em> = wise.",
+      "sensitive 敏感的；sensible 明智的。"
+    ],
+    "why": [
+      "The folder holds <em>employee salaries</em> and must be kept <em>locked</em>. Private information that should not be shared is <em>sensitive</em>.",
+      "這個資料夾裡有 employee salaries，必須上鎖。不該外流的私密資料就是 sensitive。"
+    ],
+    "usage": [
+      [
+        "<em>sensible</em> means wise and practical. <em>Wearing a hard hat is a sensible precaution.</em>",
+        "sensible 是「明智、合理的」。例：<em>Wearing a hard hat is a sensible precaution.</em>"
+      ],
+      [
+        "<em>sensory</em> relates to the senses, such as sight and hearing. <em>The exhibit offers a sensory experience.</em>",
+        "sensory 是「感官的」，如視覺、聽覺。例：<em>The exhibit offers a sensory experience.</em>"
+      ],
+      [
+        "<em>senseless</em> means without sense or purpose. <em>The delay was a senseless waste of time.</em>",
+        "senseless 是「沒有意義的」。例：<em>The delay was a senseless waste of time.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "locked",
+        "hw": "lock",
+        "pos": "v.",
+        "zh": "上鎖",
+        "ex": "Please keep the cabinet locked."
+      },
+      {
+        "w": "salaries",
+        "hw": "salary",
+        "pos": "n.",
+        "zh": "薪資",
+        "ex": "Salaries are paid on the 25th."
+      }
+    ]
+  },
+  "v-family-03": {
+    "point": [
+      "<em>respective</em> = each person's own.",
+      "respective 各自的。"
+    ],
+    "why": [
+      "Ms. Lin and Mr. Hale each present figures for <em>their</em> own region. <em>Respective</em> means each person's own, so it fits <em>their respective regions</em>.",
+      "林女士和 Hale 先生各自報告自己地區的數字。respective 是「各自的」，所以用 their respective regions。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>respectful</em> means showing respect to others. <em>The staff were respectful to all customers.</em>",
+        "respectful 是「有禮貌、尊重人的」。例：<em>The staff were respectful to all customers.</em>"
+      ],
+      [
+        "<em>respectable</em> means good enough to be approved of. <em>The firm posted a respectable profit.</em>",
+        "respectable 是「像樣、體面的」。例：<em>The firm posted a respectable profit.</em>"
+      ],
+      [
+        "<em>respected</em> means admired by others. <em>She is a respected scientist.</em>",
+        "respected 是「受人尊敬的」。例：<em>She is a respected scientist.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "sales figures",
+        "hw": "sales figure",
+        "pos": "n.",
+        "zh": "業績數字",
+        "ex": "The sales figures look strong this month."
+      },
+      {
+        "w": "regions",
+        "hw": "region",
+        "pos": "n.",
+        "zh": "地區",
+        "ex": "Our largest region is the north."
+      }
+    ]
+  },
+  "v-family-04": {
+    "point": [
+      "<em>industrious</em> = hardworking; <em>industrial</em> = of industry.",
+      "industrious 勤奮的；industrial 工業的。"
+    ],
+    "why": [
+      "The interns <em>always finish their tasks ahead of schedule</em>, which shows they work hard. The word for hardworking people is <em>industrious</em>.",
+      "實習生總是提前完成工作，表示他們工作很努力。形容勤奮的人用 industrious。"
+    ],
+    "usage": [
+      [
+        "<em>industrial</em> means related to industry and factories. <em>The company runs an industrial park.</em>",
+        "industrial 是「工業的」。例：<em>The company runs an industrial park.</em>"
+      ],
+      [
+        "<em>industrialized</em> describes a country with many factories and industries. <em>Japan is an industrialized country.</em>",
+        "industrialized 形容「已工業化的」國家。例：<em>Japan is an industrialized country.</em>"
+      ],
+      null,
+      [
+        "<em>industrializing</em> describes a country that is building up its industries. <em>Many industrializing economies need new roads.</em>",
+        "industrializing 形容「工業化中的」國家。例：<em>Many industrializing economies need new roads.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "praised",
+        "hw": "praise",
+        "pos": "v.",
+        "zh": "稱讚",
+        "ex": "The manager praised her careful work."
+      },
+      {
+        "w": "interns",
+        "hw": "intern",
+        "pos": "n.",
+        "zh": "實習生",
+        "ex": "Two interns joined the team in June."
+      },
+      {
+        "w": "ahead of schedule",
+        "hw": "ahead of schedule",
+        "pos": "phr.",
+        "zh": "提前",
+        "ex": "The project finished ahead of schedule."
+      }
+    ]
+  },
+  "v-family-05": {
+    "point": [
+      "<em>comprehensible to</em> someone: easy to understand.",
+      "comprehensible to 某人：易懂的。"
+    ],
+    "why": [
+      "The manual was rewritten <em>in plain language</em> so that every new employee can understand it. <em>Comprehensible to</em> means easy for someone to understand.",
+      "手冊用淺白的語言重寫，好讓每位新員工看得懂。comprehensible to 是「對某人來說易懂」。"
+    ],
+    "usage": [
+      [
+        "<em>comprehensive</em> means complete and covering everything. <em>The report gives a comprehensive review of sales.</em>",
+        "comprehensive 是「全面的」。例：<em>The report gives a comprehensive review of sales.</em>"
+      ],
+      [
+        "<em>comprehending</em> is the -ing form of <em>comprehend</em>, to understand. <em>Comprehending the rules took her a week.</em>",
+        "comprehending 是 comprehend（理解）的 -ing 形。例：<em>Comprehending the rules took her a week.</em>"
+      ],
+      null,
+      [
+        "<em>comprehended</em> is the past form of <em>comprehend</em>, to understand. <em>She quickly comprehended the problem.</em>",
+        "comprehended 是 comprehend 的過去式。例：<em>She quickly comprehended the problem.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "rewritten",
+        "hw": "rewrite",
+        "pos": "v.",
+        "zh": "改寫",
+        "ex": "The report was rewritten for clarity."
+      },
+      {
+        "w": "plain language",
+        "hw": "plain language",
+        "pos": "n.",
+        "zh": "淺白的語言",
+        "ex": "The contract uses plain language."
+      }
+    ]
+  },
+  "v-family-06": {
+    "point": [
+      "<em>every imaginable</em> + noun: every possible kind.",
+      "every imaginable：所有想得到的。"
+    ],
+    "why": [
+      "The store carries screws in <em>every</em> size one could think of, so builders <em>rarely have to order parts</em>. <em>Every imaginable size</em> means every size you can think of.",
+      "這家店的螺絲什麼尺寸都有，所以營造商很少要另外訂零件。every imaginable size 是所有想得到的尺寸。"
+    ],
+    "usage": [
+      [
+        "<em>imaginative</em> means full of new, creative ideas. <em>The team came up with an imaginative design.</em>",
+        "imaginative 是「有想像力、有創意的」。例：<em>The team came up with an imaginative design.</em>"
+      ],
+      [
+        "<em>imaginary</em> means not real; it exists only in the mind. <em>The map shows an imaginary line between the two regions.</em>",
+        "imaginary 是「虛構的」，只存在於想像中。例：<em>The map shows an imaginary line between the two regions.</em>"
+      ],
+      [
+        "<em>imagine</em> means to form a picture in your mind; <em>imagining</em> is its -ing form. <em>I am imagining a bigger office.</em>",
+        "imagining 是 imagine（想像）的 -ing 形。例：<em>I am imagining a bigger office.</em>"
+      ],
+      null
+    ],
+    "gloss": [
+      {
+        "w": "stocks",
+        "hw": "stock",
+        "pos": "v.",
+        "zh": "備有庫存",
+        "ex": "The store stocks over a thousand items."
+      },
+      {
+        "w": "screws",
+        "hw": "screw",
+        "pos": "n.",
+        "zh": "螺絲",
+        "ex": "Please order two boxes of screws."
+      },
+      {
+        "w": "rarely",
+        "hw": "rarely",
+        "pos": "adv.",
+        "zh": "很少",
+        "ex": "Our trains are rarely late."
+      }
+    ]
+  },
+  "v-family-07": {
+    "point": [
+      "<em>attentive to</em>: careful to meet needs.",
+      "attentive to：周到、留心。"
+    ],
+    "why": [
+      "Reviewers praise the staff for how they treat <em>guests' needs</em>, and <em>requests are handled within minutes</em>. <em>Being attentive to</em> needs means noticing and meeting them.",
+      "評論稱讚員工對 guests' needs 的態度，要求幾分鐘內就處理好。being attentive to 就是留意並滿足需求。"
+    ],
+    "usage": [
+      null,
+      [
+        "<em>attendant</em> as an adjective means going along with something. <em>The plan has attendant risks.</em>",
+        "attendant 當形容詞是「伴隨而來的」。例：<em>The plan has attendant risks.</em>"
+      ],
+      [
+        "<em>attend</em> means to be present at an event; <em>attended</em> is its past form. <em>Over 200 people attended the seminar.</em>",
+        "attended 是 attend（出席）的過去式。例：<em>Over 200 people attended the seminar.</em>"
+      ],
+      [
+        "<em>attend to</em> means to deal with something; <em>attending</em> is the -ing form. <em>She is attending to a customer.</em>",
+        "attend to 是「處理、照料」；attending 是 -ing 形。例：<em>She is attending to a customer.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "Reviewers",
+        "hw": "reviewer",
+        "pos": "n.",
+        "zh": "評論者",
+        "ex": "Reviewers liked the new menu."
+      },
+      {
+        "w": "reception staff",
+        "hw": "reception staff",
+        "pos": "n.",
+        "zh": "接待人員",
+        "ex": "The reception staff greet every guest."
+      },
+      {
+        "w": "handled",
+        "hw": "handle",
+        "pos": "v.",
+        "zh": "處理",
+        "ex": "Complaints are handled by the manager."
+      }
+    ]
+  },
+  "v-family-08": {
+    "point": [
+      "<em>complimentary</em> = free; <em>complementary</em> = matching well.",
+      "complimentary 免費贈送的；complementary 互補的。"
+    ],
+    "why": [
+      "Everyone who registers before May 1 receives a book, collected at <em>the registration desk</em>. A copy given as a free gift is <em>complimentary</em>.",
+      "五月一日前報名的人都會拿到一本書，到 the registration desk 領取。免費贈送的書是 complimentary。"
+    ],
+    "usage": [
+      [
+        "<em>complementary</em> means going well together or filling each other's gaps. <em>Our skills are complementary.</em>",
+        "complementary 是「互補的」。例：<em>Our skills are complementary.</em>"
+      ],
+      null,
+      [
+        "<em>compliment</em> means to praise someone; <em>complimented</em> is its past form. <em>She complimented him on his speech.</em>",
+        "complimented 是 compliment（稱讚）的過去式。例：<em>She complimented him on his speech.</em>"
+      ],
+      [
+        "<em>completed</em> means finished or filled in. <em>Please return the completed form.</em>",
+        "completed 是「完成的、填好的」。例：<em>Please return the completed form.</em>"
+      ]
+    ],
+    "gloss": [
+      {
+        "w": "keynote speaker",
+        "hw": "keynote speaker",
+        "pos": "n.",
+        "zh": "主講人",
+        "ex": "The keynote speaker opened the conference."
+      },
+      {
+        "w": "registration desk",
+        "hw": "registration desk",
+        "pos": "n.",
+        "zh": "報到櫃台",
+        "ex": "Badges are at the registration desk."
+      },
+      {
+        "w": "picked up",
+        "hw": "pick up",
+        "pos": "phr.",
+        "zh": "領取",
+        "ex": "Please pick up your badge at the desk."
+      }
+    ]
+  },
+  "_flags": []
+}

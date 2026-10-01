@@ -1,0 +1,264 @@
+<title>Café Phrase Map</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: intents as sections of sentence-frame cards (Map), or one prompt at a time (Recall). */
+{{BASE_CSS}}
+.seg{display:inline-flex;background:var(--plate);border-radius:999px;padding:4px;gap:4px;margin:22px 0 26px}
+.seg button{border:0;background:transparent;border-radius:999px;padding:8px 18px;font:600 14px/1 var(--display);color:var(--muted)}
+.seg button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+
+.intents{display:grid;gap:30px}
+.intent-h{display:flex;align-items:baseline;gap:10px;margin:0 0 12px}
+.intent-h h2{margin:0}
+.intent-h span{font:500 14px var(--zh);color:var(--muted)}
+.frames{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.frame{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:8px;align-content:start;min-width:0}
+.frame .top-row{display:flex;gap:10px;align-items:flex-start}
+.frame .en{margin:0;font:500 19px/1.4 var(--body);flex:1;min-width:0}
+.slot{color:var(--accent);font-weight:600;border-bottom:2px solid var(--accent);padding:0 1px}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opts button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:3px 10px;font:500 13px/1.4 var(--display)}
+.opts button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-bg);color:var(--accent)}
+.frame .zh{margin:0;font-size:14px;color:var(--muted)}
+.frame .note{margin:0;font:13px/1.5 var(--zh);color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+
+/* recall */
+.recall{max-width:560px}
+.progress{height:6px;background:var(--plate);border-radius:99px;overflow:hidden;margin:0 0 18px}
+.progress i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);display:grid;gap:14px}
+.card .tag{font:600 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:10px}
+.card .ask{margin:0;font:700 clamp(22px,5vw,28px)/1.35 var(--zh)}
+.card .fill{margin:0;font:500 16px var(--display);color:var(--muted)}
+.card .fill b{color:var(--accent);font-family:var(--mono)}
+.clock{font:600 14px var(--mono);font-variant-numeric:tabular-nums;text-transform:none;letter-spacing:0}
+.answer{display:flex;gap:10px;align-items:center;background:var(--accent-bg);border-radius:12px;padding:12px 14px}
+.answer p{margin:0;font:600 20px/1.35 var(--body);flex:1;min-width:0}
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.rate button{border:1.5px solid var(--line);background:var(--surface);border-radius:12px;padding:10px 6px;font:600 14px/1.25 var(--display)}
+.rate button small{display:block;font:12px var(--zh);color:var(--muted);font-weight:400}
+.rate .r3{border-color:var(--good)} .rate .r2{border-color:var(--warn)} .rate .r1{border-color:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 18px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+.stat b{display:block;font:700 26px/1.1 var(--display);font-variant-numeric:tabular-nums}
+.stat span{font:12px/1.35 var(--display);color:var(--muted)}
+.missed{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:8px}
+.missed li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:flex;gap:10px;align-items:center}
+.missed li div{flex:1;min-width:0}
+.missed .z{display:block;font:13px var(--zh);color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Café Phrase Map <small>Scene Lab · B</small></span>
+  <label class="chip" for="speed">Speed <select id="speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option></select></label>
+</div></header>
+
+<main>
+  <p class="kicker">Demo B · Sentence frames</p>
+  <h1>Say what you need at a café</h1>
+  <p class="lede">{{N_FRAMES}} sentence frames, grouped by what you want to do. <strong>Each frame does one job, and the word in the slot changes.</strong> Tap a word under a frame to swap it and hear the whole sentence. Then switch to Recall: you see the Chinese, you say the English, and you check.</p>
+
+  <div class="seg" role="tablist" aria-label="Mode">
+    <button type="button" role="tab" id="tab-map" aria-selected="true" aria-controls="map">Map</button>
+    <button type="button" role="tab" id="tab-recall" aria-selected="false" aria-controls="recall">Recall</button>
+  </div>
+
+  <section id="map" role="tabpanel" aria-labelledby="tab-map"><div class="intents" id="intents"></div></section>
+
+  <section id="recall" role="tabpanel" aria-labelledby="tab-recall" hidden><div class="recall">
+    <div id="r-intro">
+      <h2>Ten quick prompts</h2>
+      <p class="lede" style="margin-bottom:18px">Say the English out loud, then tap <strong>Show</strong>. The clock shows how long you took. Frames you miss come back sooner next time.</p>
+      <button class="btn primary" type="button" id="r-start">Start</button>
+      <p class="tip" id="r-last" style="margin-top:12px"></p>
+    </div>
+    <div id="r-run" hidden>
+      <div class="progress"><i id="r-bar"></i></div>
+      <div class="card">
+        <div class="tag"><span id="r-tag"></span><span class="clock" id="r-clock">0.0 s</span></div>
+        <p class="ask" id="r-ask" lang="zh-Hant"></p>
+        <p class="fill" id="r-fill"></p>
+        <button class="btn primary" type="button" id="r-show">Show</button>
+        <div id="r-ans" hidden>
+          <div class="answer"><p id="r-en"></p><button class="pl" type="button" id="r-play" aria-label="Play"></button></div>
+          <p class="tip" id="r-note" style="margin-top:8px"></p>
+        </div>
+        <div class="rate" id="r-rate" hidden>
+          <button type="button" class="r3" data-v="3">Got it<small>講出來了</small></button>
+          <button type="button" class="r2" data-v="2">Almost<small>差一點</small></button>
+          <button type="button" class="r1" data-v="1">Missed<small>想不起來</small></button>
+        </div>
+      </div>
+    </div>
+    <div id="r-done" hidden>
+      <h2>Done</h2>
+      <div class="stats" id="r-stats"></div>
+      <p class="label" id="r-miss-l">Say these again</p>
+      <ul class="missed" id="r-missed"></ul>
+      <div class="row"><button class="btn primary" type="button" id="r-again">Ten more</button><button class="btn" type="button" id="r-map">Back to the map</button></div>
+    </div>
+  </div></section>
+</main>
+
+<script>
+const DATA = {{DATA}};
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("scene-lab-b:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("scene-lab-b:" + k, JSON.stringify(v)); } catch {} },
+};
+let speed = Number(store.get("speed", 1)) || 1;
+$("#speed").value = String(speed);
+$("#speed").onchange = e => { speed = Number(e.target.value) || 1; store.set("speed", speed); };
+
+const au = new Audio(); let current = null;
+function play(src, btn) {
+  if (current) current.classList.remove("on");
+  current = btn || null; if (btn) btn.classList.add("on");
+  au.src = "audio/" + src; au.defaultPlaybackRate = au.playbackRate = speed;
+  au.onended = au.onerror = () => { if (btn) btn.classList.remove("on"); };
+  au.play().catch(() => {});
+}
+function playBtn(getSrc, label) { const b = el("button", "pl"); b.type = "button"; b.innerHTML = PLAY; b.setAttribute("aria-label", label); b.onclick = () => play(getSrc(), b); return b; }
+// "Can I get a {latte|tea}, please?" → parts
+function fill(p, n) { return p.parts.map(x => typeof x === "string" ? x : x[n]).join(""); }
+
+// ---------- map ----------
+function renderMap() {
+  const host = $("#intents");
+  for (const it of DATA.intents) {
+    const sec = el("section");
+    const h = el("div", "intent-h"); h.append(el("h2", null, it.en)); const z = el("span", null, it.zh); z.lang = "zh-Hant"; h.append(z);
+    const grid = el("div", "frames");
+    for (const p of it.phrases) {
+      let n = 0;
+      const card = el("article", "frame");
+      const row = el("div", "top-row");
+      const en = el("p", "en");
+      const draw = () => {
+        en.textContent = "";
+        for (const x of p.parts) { if (typeof x === "string") en.append(x); else en.append(el("span", "slot", x[n])); }
+      };
+      draw();
+      row.append(en, playBtn(() => "p/" + p.id + "-" + n + ".mp3", "Play"));
+      card.append(row);
+      const slot = p.parts.find(x => typeof x !== "string");
+      if (slot) {
+        const opts = el("div", "opts"); opts.setAttribute("aria-label", "Swap the word");
+        slot.forEach((w, i) => {
+          const b = el("button", null, w); b.type = "button"; b.setAttribute("aria-pressed", String(i === 0));
+          b.onclick = () => { n = i; draw(); opts.querySelectorAll("button").forEach((x, j) => x.setAttribute("aria-pressed", String(j === i))); play("p/" + p.id + "-" + i + ".mp3", row.querySelector(".pl")); };
+          opts.append(b);
+        });
+        card.append(opts);
+      }
+      const zh = el("p", "zh", p.zh); zh.lang = "zh-Hant"; card.append(zh);
+      if (p.note) { const nt = el("p", "note", p.note); nt.lang = "zh-Hant"; card.append(nt); }
+      grid.append(card);
+    }
+    sec.append(h, grid); host.append(sec);
+  }
+}
+
+// ---------- tabs ----------
+function tab(which) {
+  for (const t of ["map", "recall"]) { $("#tab-" + t).setAttribute("aria-selected", String(t === which)); $("#" + t).hidden = t !== which; }
+  store.set("tab", which);
+}
+$("#tab-map").onclick = () => tab("map");
+$("#tab-recall").onclick = () => tab("recall");
+document.querySelector(".seg").onkeydown = e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { const t = $("#tab-map").getAttribute("aria-selected") === "true" ? "recall" : "map"; tab(t); $("#tab-" + t).focus(); } };
+
+// ---------- recall ----------
+// every (phrase, option) is one prompt; box 1..4, lower boxes come up more often
+const ITEMS = [];
+for (const it of DATA.intents) for (const p of it.phrases) {
+  const slot = p.parts.find(x => typeof x !== "string");
+  (slot || [null]).forEach((w, n) => ITEMS.push({ key: p.id + "-" + n, p, n, w, intent: it }));
+}
+let boxes = store.get("boxes", {});
+let r = null;
+
+function pick(k) {
+  const pool = ITEMS.map(x => ({ x, w: [0, 8, 4, 2, 1][boxes[x.key] || 1] * (0.6 + Math.random()) }));
+  pool.sort((a, b) => b.w - a.w);
+  const seen = new Set(), out = [];
+  for (const { x } of pool) { if (seen.has(x.p.id)) continue; seen.add(x.p.id); out.push(x); if (out.length === k) break; }
+  return out.sort(() => Math.random() - .5);
+}
+function fmt(ms) { return (ms / 1000).toFixed(1) + " s"; }
+
+function startRecall() {
+  r = { list: pick(10), i: 0, res: [] };
+  $("#r-intro").hidden = true; $("#r-done").hidden = true; $("#r-run").hidden = false;
+  next();
+}
+function next() {
+  const x = r.list[r.i];
+  $("#r-bar").style.width = (r.i / r.list.length * 100) + "%";
+  $("#r-tag").textContent = x.intent.en + " · " + (r.i + 1) + "/" + r.list.length;
+  $("#r-ask").textContent = x.p.zh;
+  $("#r-fill").textContent = "";
+  if (x.w) { $("#r-fill").append("Use: "); $("#r-fill").append(el("b", null, x.w)); }
+  $("#r-ans").hidden = true; $("#r-rate").hidden = true; $("#r-show").hidden = false;
+  $("#r-show").focus({ preventScroll: true });
+  r.t0 = performance.now(); r.shown = null;
+  clearInterval(r.tick);
+  r.tick = setInterval(() => { $("#r-clock").textContent = fmt(performance.now() - r.t0); }, 100);
+}
+$("#r-show").onclick = () => {
+  const x = r.list[r.i];
+  clearInterval(r.tick); r.shown = performance.now() - r.t0; $("#r-clock").textContent = fmt(r.shown);
+  $("#r-en").textContent = fill(x.p, x.n);
+  $("#r-note").textContent = x.p.note || ""; $("#r-note").lang = "zh-Hant";
+  $("#r-ans").hidden = false; $("#r-rate").hidden = false; $("#r-show").hidden = true;
+  play("p/" + x.key + ".mp3", $("#r-play"));
+  $("#r-rate button").focus({ preventScroll: true });
+};
+$("#r-play").innerHTML = PLAY;
+$("#r-play").onclick = () => play("p/" + r.list[r.i].key + ".mp3", $("#r-play"));
+$("#r-rate").onclick = e => {
+  const b = e.target.closest("button[data-v]"); if (!b) return;
+  const v = Number(b.dataset.v), x = r.list[r.i];
+  const box = boxes[x.key] || 1;
+  boxes[x.key] = v === 3 ? Math.min(4, box + 1) : v === 1 ? 1 : box;
+  store.set("boxes", boxes);
+  r.res.push({ x, v, ms: r.shown });
+  r.i++;
+  if (r.i < r.list.length) next(); else done();
+};
+function done() {
+  $("#r-bar").style.width = "100%";
+  $("#r-run").hidden = true; $("#r-done").hidden = false;
+  const times = r.res.map(x => x.ms).sort((a, b) => a - b);
+  const med = times[times.length >> 1];
+  const got = r.res.filter(x => x.v === 3).length;
+  const st = $("#r-stats"); st.textContent = "";
+  for (const [b, s] of [[got + "/" + r.res.length, "said without help"], [fmt(med), "to answer (median)"], [String(r.res.filter(x => x.v === 1).length), "missed"]]) {
+    const t = el("div", "stat"); t.append(el("b", null, b), el("span", null, s)); st.append(t);
+  }
+  const ul = $("#r-missed"); ul.textContent = "";
+  const miss = r.res.filter(x => x.v < 3);
+  $("#r-miss-l").hidden = !miss.length;
+  for (const { x } of miss) {
+    const li = el("li"); const d = el("div"); d.append(fill(x.p, x.n)); const z = el("span", "z", x.p.zh); z.lang = "zh-Hant"; d.append(z);
+    li.append(playBtn(() => "p/" + x.key + ".mp3", "Play"), d); ul.append(li);
+  }
+  store.set("last", { got, n: r.res.length, med });
+  lastLine();
+}
+function lastLine() { const l = store.get("last", null); $("#r-last").textContent = l ? "Last round: " + l.got + "/" + l.n + " without help, " + fmt(l.med) + " median." : ""; }
+$("#r-start").onclick = startRecall;
+$("#r-again").onclick = startRecall;
+$("#r-map").onclick = () => { $("#r-done").hidden = true; $("#r-intro").hidden = false; tab("map"); };
+
+renderMap();
+lastLine();
+if (store.get("tab", "map") === "recall") tab("recall");
+</script>

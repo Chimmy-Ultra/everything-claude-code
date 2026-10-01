@@ -1,0 +1,210 @@
+{
+  "v-collocation-14": {
+    "point": ["a <em>valid</em> passport; <em>valid</em> for six months.", "a valid passport（有效的護照）；valid for six months。"],
+    "why": ["The subject of <em>will not be ______</em> is <em>passports</em>, set apart by a long clause. A passport is valid or expired, so <em>valid for at least six months</em> fits.", "will not be ______ 的主詞是 passports，被一長串插入語隔開。護照不是有效就是過期，所以用 valid for at least six months。"],
+    "usage": [
+      ["<em>effective</em> means working well, or in force from a date. <em>The new fee is effective from May 1.</em>", "effective 指有效果，或從某日起生效。"],
+      ["<em>active</em> means in use or in operation. <em>The account has been active since 2019.</em>", "active 指使用中、運作中。"],
+      null,
+      ["<em>legal</em> means allowed by law, or about law. <em>The firm hired a legal adviser.</em>", "legal 指合法的，或與法律有關的。"]
+    ],
+    "gloss": [
+      {"w": "gate agent", "hw": "gate agent", "pos": "phr.", "zh": "登機門地勤人員", "ex": "The gate agent checked every boarding pass."},
+      {"w": "boarding pass", "hw": "boarding pass", "pos": "phr.", "zh": "登機證", "ex": "Please show your boarding pass at the gate."},
+      {"w": "refused boarding", "hw": "refuse boarding", "pos": "phr.", "zh": "被拒絕登機", "ex": "Late passengers were refused boarding at the gate."}
+    ]
+  },
+  "v-collocation-15": {
+    "point": ["<em>in urgent need of</em> something.", "in urgent need of 某物（急需）。"],
+    "why": ["The fixed phrase is <em>in urgent need of</em>. The ramp has already damaged two trucks, so repair cannot wait; <em>urgent</em> is the adjective that goes with <em>need</em>.", "固定說法是 in urgent need of。斜坡已經壓壞兩台推車，修理不能等；和 need 搭配的形容詞是 urgent。"],
+    "usage": [
+      null,
+      ["<em>rapid</em> describes speed or change. <em>The firm saw rapid growth in 2023.</em>", "rapid 形容速度或變化。"],
+      ["<em>prompt</em> describes a quick action or reply. <em>Thank you for your prompt reply.</em>", "prompt 形容迅速的行動或回覆。"],
+      ["<em>hasty</em> describes a quick, careless action. <em>He regretted his hasty decision.</em>", "hasty 形容倉促、草率的行動。"]
+    ],
+    "gloss": [
+      {"w": "cracked", "hw": "cracked", "pos": "adj.", "zh": "有裂縫的", "ex": "The cracked window was replaced on Monday."},
+      {"w": "loading dock", "hw": "loading dock", "pos": "phr.", "zh": "裝卸碼頭", "ex": "Trucks wait at the loading dock each morning."},
+      {"w": "pallet trucks", "hw": "pallet truck", "pos": "phr.", "zh": "棧板推車", "ex": "The pallet truck lifted the heavy crate."}
+    ]
+  },
+  "v-collocation-16": {
+    "point": ["<em>poorly attended</em>: few people came.", "poorly attended：到場的人很少。"],
+    "why": ["<em>poorly attended</em> is the set phrase for an event that few people came to. The result, <em>canceled the afternoon session</em>, fits low attendance.", "poorly attended 是「到場人數少」的固定說法。結果 canceled the afternoon session 也符合出席率低。"],
+    "usage": [
+      ["<em>mildly</em> describes a gentle degree of feeling or taste. <em>The speaker was mildly surprised.</em>", "mildly 形容感覺或味道的程度溫和。"],
+      ["<em>hardly</em> means almost not; it goes before a verb or <em>anyone</em>. <em>Hardly anyone attended the talk.</em>", "hardly 是幾乎不，放在動詞或 anyone 前。"],
+      ["<em>weakly</em> describes a lack of strength. <em>The plan was weakly supported.</em>", "weakly 形容力量或支持薄弱。"],
+      null
+    ],
+    "gloss": [
+      {"w": "data privacy", "hw": "data privacy", "pos": "phr.", "zh": "資料隱私", "ex": "Data privacy rules changed last year."},
+      {"w": "in advance", "hw": "in advance", "pos": "phr.", "zh": "事先", "ex": "Please book your seat well in advance."},
+      {"w": "organizers", "hw": "organizer", "pos": "n.", "zh": "主辦者", "ex": "The organizers booked a larger room."}
+    ]
+  },
+  "v-collocation-17": {
+    "point": ["a <em>trip hazard</em>: something people may trip on.", "trip hazard：會絆倒人的東西。"],
+    "why": ["<em>hazard</em> is a thing that can cause harm: <em>trip hazard</em>, <em>fire hazard</em>. The cable lies across a corridor, so it must be <em>taped down or rerouted</em>.", "hazard 是可能造成傷害的東西：trip hazard、fire hazard。電線橫過走廊，所以要 taped down or rerouted。"],
+    "usage": [
+      ["<em>danger</em> is the possibility of harm; it is often followed by <em>of</em> or <em>to</em>. <em>There is a danger of fire.</em>", "danger 是可能發生傷害的狀態，常接 of 或 to。"],
+      null,
+      ["<em>harm</em> is damage or injury itself. <em>The spill did no harm to staff.</em>", "harm 是傷害本身。"],
+      ["<em>threat</em> is a sign that something bad may happen. <em>The storm is a threat to the harvest.</em>", "threat 是可能出事的威脅。"]
+    ],
+    "gloss": [
+      {"w": "corridor", "hw": "corridor", "pos": "n.", "zh": "走廊", "ex": "The corridor leads to the main office."},
+      {"w": "taped down", "hw": "tape down", "pos": "phr.", "zh": "用膠帶貼平", "ex": "Please tape down the loose cable."},
+      {"w": "rerouted", "hw": "reroute", "pos": "v.", "zh": "改道", "ex": "Traffic was rerouted around the closed bridge."}
+    ]
+  },
+  "v-synonym-14": {
+    "point": ["<em>inquire whether</em> or <em>inquire about</em>.", "inquire whether／about：詢問。"],
+    "why": ["<em>whether pets will be permitted</em> is an indirect question, placed after the inserted <em>by telephone and by e-mail</em>. <em>inquire</em> can introduce it.", "whether pets will be permitted 是間接問句，被插入的 by telephone and by e-mail 隔在空格之後。能引出它的是 inquire。"],
+    "usage": [
+      ["<em>request</em> something, or request that someone do it; it does not take <em>whether</em>. <em>Tenants requested a copy of the lease.</em>", "request 接名詞或 that 子句，不接 whether。"],
+      null,
+      ["<em>insist</em> on something, or insist that it is true. <em>She insisted that the fee was wrong.</em>", "insist 接 on 或 that 子句。"],
+      ["<em>demand</em> something, or demand that it be done. <em>The union demanded a pay rise.</em>", "demand 接名詞或 that 子句。"]
+    ],
+    "gloss": [
+      {"w": "prospective", "hw": "prospective", "pos": "adj.", "zh": "潛在的、未來的", "ex": "We contacted several prospective clients."},
+      {"w": "toured", "hw": "tour", "pos": "v.", "zh": "參觀", "ex": "Visitors toured the new factory on Friday."}
+    ]
+  },
+  "v-synonym-15": {
+    "point": ["<em>vacate</em> a place: leave it empty.", "vacate 某場所：搬離、騰空。"],
+    "why": ["The tenant leaves a place, <em>the unit</em>, on <em>the last day of the contract</em> and returns the keys. Leaving a rented place at the end of a lease is <em>vacate</em>.", "租客要離開的是場所 the unit，時間是合約最後一天，還要交還鑰匙。租約結束時搬離用 vacate。"],
+    "usage": [
+      ["<em>evict</em> a person: the landlord makes a tenant leave. <em>The landlord evicted the tenant for unpaid rent.</em>", "evict 是房東趕走房客。"],
+      ["<em>relocate</em> people or things to a new place, or move to one; it does not take the place you leave. <em>The firm will relocate its staff to Leeds.</em>", "relocate 是把人或物搬到新地點，或自己搬過去；不接要離開的場所。"],
+      ["<em>expel</em> a person from a school or group. <em>The school expelled two students.</em>", "expel 是把人逐出學校或團體。"],
+      null
+    ],
+    "gloss": [
+      {"w": "Under the terms of", "hw": "under the terms of", "pos": "phr.", "zh": "依照…的條款", "ex": "Under the terms of the contract, payment is monthly."},
+      {"w": "under way", "hw": "under way", "pos": "phr.", "zh": "進行中", "ex": "Work on the new office is under way."}
+    ]
+  },
+  "v-synonym-16": {
+    "point": ["<em>mislead</em> someone <em>into</em> doing something.", "mislead 人 into Ving：誤導某人去做或相信。"],
+    "why": ["The pattern ends in <em>into believing</em>, after the inserted <em>particularly those who glance only at the large type</em>. <em>mislead</em> is the verb used with <em>into</em>.", "句型到句尾才出現 into believing，前面隔著插入語 particularly those who glance only at the large type。和 into 搭配的是 mislead。"],
+    "usage": [
+      null,
+      ["<em>misinform</em> someone <em>about</em> something, or that something is true. <em>The notice misinformed staff about the deadline.</em>", "misinform 人 about 事，或接 that 子句。"],
+      ["<em>misdirect</em> means send in the wrong direction or use wrongly. <em>The courier misdirected the parcel.</em>", "misdirect 是送錯方向或用錯地方。"],
+      ["<em>misplace</em> means put something where you cannot find it. <em>She misplaced the contract.</em>", "misplace 是把東西放到找不到的地方。"]
+    ],
+    "gloss": [
+      {"w": "ambiguous", "hw": "ambiguous", "pos": "adj.", "zh": "含糊的、有歧義的", "ex": "The ambiguous clause caused a dispute."},
+      {"w": "wording", "hw": "wording", "pos": "n.", "zh": "措辭", "ex": "The wording of the notice was unclear."},
+      {"w": "glance", "hw": "glance", "pos": "v.", "zh": "瞄一眼", "ex": "Most readers only glance at the headline."}
+    ]
+  },
+  "v-synonym-17": {
+    "point": ["<em>interfere with</em> something: get in its way.", "interfere with：妨礙，不及物。"],
+    "why": ["<em>with the recording sessions</em> comes after the inserted <em>as it did twice last month</em>. <em>interfere</em> is the verb that takes <em>with</em>.", "with the recording sessions 出現在插入語 as it did twice last month 之後。和 with 搭配的是 interfere。"],
+    "usage": [
+      ["<em>disturb</em> takes a direct object, with no <em>with</em>. <em>The noise disturbed the audience.</em>", "disturb 直接接受詞，不接 with。"],
+      ["<em>interrupt</em> takes a direct object. <em>A phone call interrupted the meeting.</em>", "interrupt 直接接受詞。"],
+      null,
+      ["<em>intervene</em> in a situation, to change its course. <em>The manager intervened in the dispute.</em>", "intervene in 某情況，是介入。"]
+    ],
+    "gloss": [
+      {"w": "machinery", "hw": "machinery", "pos": "n.", "zh": "機具、機械", "ex": "The machinery is serviced every spring."},
+      {"w": "recording sessions", "hw": "recording session", "pos": "phr.", "zh": "錄音時段", "ex": "The recording session lasted six hours."}
+    ]
+  },
+  "v-business-12": {
+    "point": ["<em>overcharge</em>: the seller bills too much.", "overcharge：收費的一方多收。"],
+    "why": ["The company had been paying the subcontractor's invoices, so the subcontractor was the one billing. Billing too much is <em>overcharged</em>; the payer would be <em>overpaid</em>.", "公司一直在付分包商的發票，所以開單收錢的是分包商。收太多是 overcharged；付太多的一方才是 overpaid。"],
+    "usage": [
+      ["<em>overpay</em>: the payer gives more than needed. <em>The firm overpaid the supplier by $500.</em>", "overpay：付款的一方多付。"],
+      ["<em>overspend</em> means spend more than the budget allows. <em>The department overspent by 10 percent.</em>", "overspend 是花超過預算。"],
+      null,
+      ["<em>overdrawn</em> describes a bank account with less than zero in it. <em>The account was overdrawn by $200.</em>", "overdrawn 形容帳戶透支。"]
+    ],
+    "gloss": [
+      {"w": "audit", "hw": "audit", "pos": "n.", "zh": "稽核、查帳", "ex": "The annual audit begins in March."},
+      {"w": "subcontractor", "hw": "subcontractor", "pos": "n.", "zh": "分包商", "ex": "The subcontractor finished the wiring on Friday."},
+      {"w": "invoices", "hw": "invoice", "pos": "n.", "zh": "發票、請款單", "ex": "Each invoice must show a purchase order number."}
+    ]
+  },
+  "v-business-13": {
+    "point": ["<em>staff turnover</em>: the rate at which staff leave.", "staff turnover：員工離職補人的比率。"],
+    "why": ["The figure falls and the <em>recruitment budget</em> is cut: fewer people leave, so less hiring is needed. The rate of staff leaving and being replaced is <em>turnover</em>.", "數字下降，招募預算也縮減：離職的人少，需要補的人就少。員工離職與補充的比率是 turnover。"],
+    "usage": [
+      null,
+      ["<em>turnout</em> is how many people come to an event or vote. <em>Turnout at the fair was low.</em>", "turnout 是到場或投票的人數。"],
+      ["<em>turnaround</em> is the time taken to finish a job, or a reversal in results. <em>The lab has a two-day turnaround.</em>", "turnaround 是完成工作的時間，或情勢逆轉。"],
+      ["<em>takeover</em> is one company gaining control of another. <em>The takeover was announced on Monday.</em>", "takeover 是一家公司取得另一家的控制權。"]
+    ],
+    "gloss": [
+      {"w": "flexible hours", "hw": "flexible hours", "pos": "phr.", "zh": "彈性工時", "ex": "We offer flexible hours to all new parents."},
+      {"w": "recruitment", "hw": "recruitment", "pos": "n.", "zh": "招募", "ex": "Recruitment costs rose again this year."},
+      {"w": "accordingly", "hw": "accordingly", "pos": "adv.", "zh": "相應地", "ex": "Sales fell, so prices were cut accordingly."}
+    ]
+  },
+  "v-business-14": {
+    "point": ["<em>patent</em>: protects how an invention works.", "patent：保護發明運作方式的專利。"],
+    "why": ["The aim is that rivals <em>could not manufacture a valve that works in the same way</em>. A <em>patent</em> protects how an invention works; the others protect creative works, brand names, or permission.", "目的是讓對手不能 manufacture a valve that works in the same way。專利保護發明的運作方式；其他三個保護作品、品牌或是授權。"],
+    "usage": [
+      ["<em>copyright</em> protects the owner of a written, visual or musical work. <em>The photo is under copyright.</em>", "copyright 保護文字、圖像或音樂作品的擁有者。"],
+      ["<em>license</em> is official permission to do something. <em>The firm holds a license to export.</em>", "license 是做某事的正式許可。"],
+      ["<em>trademark</em> protects a brand name or logo. <em>The company registered the trademark in 2020.</em>", "trademark 保護品牌名稱或標誌。"],
+      null
+    ],
+    "gloss": [
+      {"w": "prototype", "hw": "prototype", "pos": "n.", "zh": "原型機", "ex": "The prototype passed its first test."},
+      {"w": "trade fair", "hw": "trade fair", "pos": "phr.", "zh": "貿易展", "ex": "She met buyers at the trade fair."},
+      {"w": "valve", "hw": "valve", "pos": "n.", "zh": "閥門", "ex": "The valve controls the flow of water."}
+    ]
+  },
+  "v-family-11": {
+    "point": ["<em>precede</em> means come before; <em>succeed</em> means come after.", "precede 是在…之前；succeed 是在…之後。"],
+    "why": ["The safety steps are done <em>before any maintenance work begins</em>, so the lockout check comes first. <em>precede</em> means come before.", "安全步驟要在 before any maintenance work begins 之前完成，所以 lockout check 排在前面。precede 就是在…之前。"],
+    "usage": [
+      ["<em>succeed</em> someone or something means come after it. <em>Ms. Cho succeeded Mr. Lim as director.</em>", "succeed 某人或某事，是接在其後。"],
+      null,
+      ["<em>proceed</em> to the next step, or proceed with a plan; it takes no direct object. <em>Please proceed to gate 12.</em>", "proceed 接 to 或 with，不接受詞。"],
+      ["<em>exceed</em> a number or limit means go beyond it. <em>Costs exceeded the budget.</em>", "exceed 是超過數量或限度。"]
+    ],
+    "gloss": [
+      {"w": "switched off", "hw": "switch off", "pos": "phr.", "zh": "關掉電源", "ex": "Please switch off the machine before cleaning."},
+      {"w": "cleared", "hw": "clear", "pos": "v.", "zh": "淨空", "ex": "Staff cleared the area before the test."},
+      {"w": "lockout check", "hw": "lockout check", "pos": "phr.", "zh": "上鎖掛牌檢查", "ex": "A lockout check protects workers from accidents."}
+    ]
+  },
+  "v-family-12": {
+    "point": ["<em>defective</em>: faulty from the start.", "defective：本來就有瑕疵。"],
+    "why": ["The appliance <em>stops working</em> because of a fault it had <em>when it left the factory</em>. A product that has a fault of its own is <em>defective</em>.", "電器因為出廠時就有的毛病而 stops working。產品本身有毛病就是 defective。"],
+    "usage": [
+      ["<em>defiant</em> describes a person who openly refuses to obey. <em>The defiant staff ignored the order.</em>", "defiant 形容公然不服從的人。"],
+      ["<em>defaced</em> means with the surface spoiled, such as by graffiti; it describes looks, not function. <em>Someone defaced the poster with a marker.</em>", "defaced 是表面被塗污或刮花，指外觀，不是功能。"],
+      null,
+      ["<em>defensive</em> means protecting against attack, or quick to feel criticized. <em>He became defensive when asked about the error.</em>", "defensive 是防禦的，或容易覺得被批評。"]
+    ],
+    "gloss": [
+      {"w": "appliance", "hw": "appliance", "pos": "n.", "zh": "家用電器", "ex": "Each appliance comes with a two-year warranty."},
+      {"w": "free of charge", "hw": "free of charge", "pos": "phr.", "zh": "免費", "ex": "The repair is free of charge for one year."},
+      {"w": "provided that", "hw": "provided that", "pos": "phr.", "zh": "只要、前提是", "ex": "You may enter provided that you show a pass."}
+    ]
+  },
+  "v-family-13": {
+    "point": ["<em>occupancy</em>: how many people a space may hold.", "occupancy：空間可容納的人數。"],
+    "why": ["<em>to 180 guests</em> gives the number of people allowed in the room, which is what a fire code sets. That number is the room's <em>occupancy</em>.", "to 180 guests 給的是房間允許的人數，這正是防火法規會規定的。這個人數就是房間的 occupancy。"],
+    "usage": [
+      null,
+      ["<em>occupation</em> is a person's job, or the act of taking over a place. <em>Please state your occupation on the form.</em>", "occupation 是職業，或佔用場所的行為。"],
+      ["<em>occupant</em> is a person who lives in or uses a space. <em>The occupant of the flat must sign.</em>", "occupant 是居住或使用空間的人。"],
+      ["<em>occupier</em> is a person who occupies land or a building, mostly in British English. <em>The occupier is responsible for repairs.</em>", "occupier 是佔用土地或建物的人，多見於英式英文。"]
+    ],
+    "gloss": [
+      {"w": "fire code", "hw": "fire code", "pos": "phr.", "zh": "防火法規", "ex": "The fire code requires two exits."},
+      {"w": "banquet room", "hw": "banquet room", "pos": "phr.", "zh": "宴會廳", "ex": "The banquet room seats two hundred people."},
+      {"w": "registration", "hw": "registration", "pos": "n.", "zh": "報名", "ex": "Registration closes on Friday at noon."}
+    ]
+  },
+  "_flags": []
+}

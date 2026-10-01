@@ -1,0 +1,25 @@
+{
+  "id": "s03",
+  "title": [
+    "Forty Boxes Short",
+    "少了四十箱"
+  ],
+  "paras": [
+    [
+      "The {{container|container}} from Vietnam backed up to {{dock|Dock}} 4 at seven in the morning, and Tomas Reyes was already waiting with a clipboard. He ran the Eastside {{warehouse|warehouse}}, and this {{shipment|shipment}} of ceramic mugs was supposed to fill the empty shelves before the weekend sale.",
+      "早上七點，來自越南的貨櫃倒車靠上了四號裝卸碼頭，托馬斯．雷耶斯早已拿著寫字板等在那裡。他負責管理東城倉庫，而這批陶瓷馬克杯應該要在週末特賣前把空蕩蕩的貨架補滿。"
+    ],
+    [
+      "His crew began to {{unload|unload}} it, pallet by pallet. Halfway through, a worker named Lena called out. At the back, a tall {{stack|stack}} of boxes had tipped over on the road, and a dozen of them were crushed. Tomas took photos before anyone touched them.",
+      "他的人開始一個棧板接一個棧板地卸貨。做到一半，一位叫莉娜的員工喊了起來：貨櫃最裡面有一疊箱子在路上倒了，有十幾箱被壓壞。托馬斯在任何人動手之前先拍了照。"
+    ],
+    [
+      "Then came the count. The driver from the {{freight|freight}} company wanted a signature, but Tomas checked the paperwork first. The packing list said 1,200 boxes, and his crew had counted 1,160. \"That's a {{discrepancy|discrepancy}} of forty,\" Lena said. \"And that's with the crushed ones included.\"",
+      "接著開始清點。貨運公司的司機想請他簽收，但托馬斯先核對了文件。裝箱單上寫著一千兩百箱，他的人卻只數出一千一百六十箱。「差了四十箱，」莉娜說，「而且這還把壓壞的算進去了。」"
+    ],
+    [
+      "Tomas signed, but he wrote \"40 missing, 12 damaged\" beside his name and called the freight company's office. By noon, a dispatcher had found the answer: forty boxes had gone onto a second truck by mistake. That evening, Tomas entered the shortage in the {{inventory|inventory}} system so the store managers would know what they really had. The missing boxes arrived the next morning, and the numbers finally matched.",
+      "托馬斯簽了收，但在簽名旁寫下「缺四十箱，損壞十二箱」，並打電話給貨運公司的辦公室。中午前，調度員查出了原因：有四十箱被誤裝上另一輛卡車。當天傍晚，托馬斯把短少的數量輸入庫存系統，好讓各門市店長知道實際有多少貨。缺的那幾箱隔天早上送到了，數字終於對上了。"
+    ]
+  ]
+}

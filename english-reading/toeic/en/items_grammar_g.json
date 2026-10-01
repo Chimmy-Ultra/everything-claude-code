@@ -1,0 +1,589 @@
+{
+  "g-relative-08": {
+    "point": [
+      "A possessive before a noun: <em>whose</em>.",
+      "名詞前的所有格：whose。"
+    ],
+    "why": [
+      "<em>recently updated and unusually detailed</em> only modify the noun <em>résumé</em>, which belongs to the finalist. A possessive is needed: <em>whose</em>. <em>Who</em> and <em>who's</em> would have to be followed by a verb.",
+      "recently updated and unusually detailed 只是修飾名詞 résumé，而 résumé 屬於 finalist，所以要用所有格 whose。who 和 who's 後面要接動詞。"
+    ],
+    "gloss": [
+      {
+        "w": "finalist",
+        "hw": "finalist",
+        "pos": "n.",
+        "zh": "入圍者",
+        "ex": "Each finalist gave a ten-minute talk."
+      },
+      {
+        "w": "customs compliance",
+        "hw": "customs compliance",
+        "pos": "n.",
+        "zh": "海關合規",
+        "ex": "She manages customs compliance for the firm."
+      },
+      {
+        "w": "shortlist",
+        "hw": "shortlist",
+        "pos": "n.",
+        "zh": "短名單",
+        "ex": "Three names are on the shortlist."
+      }
+    ]
+  },
+  "g-relative-09": {
+    "point": [
+      "After a comma, <em>which</em> can be the subject; <em>where</em> needs a full clause.",
+      "逗號後 which 可以當主詞；where 後要接完整子句。"
+    ],
+    "why": [
+      "Take out <em>despite its age and its cramped doors</em>: the verb <em>handles</em> has no subject. The blank must supply it, and after a comma that is <em>which</em>. <em>Where</em> would need a subject of its own.",
+      "拿掉 despite its age and its cramped doors：handles 沒有主詞。空格要補上主詞，逗號後是 which。where 需要自己的主詞。"
+    ],
+    "gloss": [
+      {
+        "w": "hangar",
+        "hw": "hangar",
+        "pos": "n.",
+        "zh": "機庫",
+        "ex": "The aircraft stayed in the hangar overnight."
+      },
+      {
+        "w": "cramped",
+        "hw": "cramped",
+        "pos": "adj.",
+        "zh": "狹窄的",
+        "ex": "The cramped office had no storage space."
+      },
+      {
+        "w": "regional fleet",
+        "hw": "regional fleet",
+        "pos": "n.",
+        "zh": "區域機隊",
+        "ex": "The regional fleet has twelve aircraft."
+      }
+    ]
+  },
+  "g-relative-10": {
+    "point": [
+      "<em>which</em> can refer to a whole clause.",
+      "which 可以指前面整個子句。"
+    ],
+    "why": [
+      "The blank refers to the whole event: the caterer withdrew. After a comma that is <em>which</em>. <em>It</em> and <em>that</em> would leave two full sentences joined by only a comma, and <em>what</em> has no noun to refer to.",
+      "空格指的是整件事：承辦商退出。逗號後用 which。it 和 that 會讓兩個完整句子只靠逗號相連，what 沒有可指的名詞。"
+    ],
+    "gloss": [
+      {
+        "w": "caterer",
+        "hw": "caterer",
+        "pos": "n.",
+        "zh": "外燴業者",
+        "ex": "The caterer prepared lunch for two hundred guests."
+      },
+      {
+        "w": "gala",
+        "hw": "gala",
+        "pos": "n.",
+        "zh": "晚宴、盛會",
+        "ex": "The gala raised funds for the museum."
+      },
+      {
+        "w": "lowest bidder",
+        "hw": "lowest bidder",
+        "pos": "n.",
+        "zh": "最低標廠商",
+        "ex": "The contract went to the lowest bidder."
+      }
+    ]
+  },
+  "g-relative-11": {
+    "point": [
+      "<em>what</em> = the thing that; no noun before it.",
+      "what = the thing that；前面沒有名詞。"
+    ],
+    "why": [
+      "No noun comes before the blank, and <em>had recommended</em> has no object. The blank is that missing object and means <em>the thing that</em>: <em>what</em>. <em>That</em> needs a complete clause after it.",
+      "空格前面沒有名詞，而 had recommended 缺受詞。空格就是這個受詞，意思是 the thing that：what。that 後面要接完整子句。"
+    ],
+    "gloss": [
+      {
+        "w": "credit committee",
+        "hw": "credit committee",
+        "pos": "n.",
+        "zh": "信貸委員會",
+        "ex": "The credit committee meets every Tuesday."
+      },
+      {
+        "w": "external auditors",
+        "hw": "external auditor",
+        "pos": "n.",
+        "zh": "外部稽核人員",
+        "ex": "External auditors review the accounts yearly."
+      },
+      {
+        "w": "risk department",
+        "hw": "risk department",
+        "pos": "n.",
+        "zh": "風險部門",
+        "ex": "The risk department reports to the board."
+      }
+    ]
+  },
+  "g-relative-12": {
+    "point": [
+      "A preposition's object is missing: preposition + <em>whom</em>.",
+      "缺介系詞的受詞：介系詞 + whom。"
+    ],
+    "why": [
+      "<em>collaborated on every title</em> needs <em>with</em> + a person, and the clause has no <em>with</em>. The blank must supply both the preposition and the person: <em>with whom</em>. Bare <em>whom</em> leaves <em>collaborated</em> without its preposition.",
+      "collaborated on every title 需要 with + 人，子句裡沒有 with。空格要同時補上介系詞和人：with whom。單用 whom，collaborated 就缺了介系詞。"
+    ],
+    "gloss": [
+      {
+        "w": "translator",
+        "hw": "translator",
+        "pos": "n.",
+        "zh": "譯者",
+        "ex": "The translator finished the novel in June."
+      },
+      {
+        "w": "collaborated",
+        "hw": "collaborate",
+        "pos": "v.",
+        "zh": "合作",
+        "ex": "The two firms collaborated on the design."
+      },
+      {
+        "w": "successor",
+        "hw": "successor",
+        "pos": "n.",
+        "zh": "接班人",
+        "ex": "She will train her successor."
+      }
+    ]
+  },
+  "g-relative-13": {
+    "point": [
+      "<em>situations where</em> + a complete clause.",
+      "situations where + 完整子句。"
+    ],
+    "why": [
+      "The clause <em>a supplier cannot … deliver within the agreed period</em> is complete; nothing is missing, so <em>which</em> and <em>whom</em> have no gap to fill. <em>Where</em> follows <em>situations</em> and takes a full clause.",
+      "子句 a supplier cannot … deliver within the agreed period 是完整的，沒有缺口，所以 which 和 whom 沒有位置。where 接在 situations 後，後面是完整子句。"
+    ],
+    "gloss": [
+      {
+        "w": "beyond its control",
+        "hw": "beyond one's control",
+        "pos": "phr.",
+        "zh": "超出其控制範圍",
+        "ex": "The delay was beyond our control."
+      },
+      {
+        "w": "extend",
+        "hw": "extend",
+        "pos": "v.",
+        "zh": "延長",
+        "ex": "We may extend the deadline by a week."
+      },
+      {
+        "w": "without penalty",
+        "hw": "without penalty",
+        "pos": "phr.",
+        "zh": "不受罰",
+        "ex": "Guests may cancel without penalty."
+      }
+    ]
+  },
+  "g-relative-14": {
+    "point": [
+      "A complete clause needs preposition + <em>which</em>.",
+      "完整子句要用 介系詞 + which。"
+    ],
+    "why": [
+      "<em>the inspectors interviewed … more than sixty drivers</em> has a subject and an object, so nothing is missing for <em>which</em> to fill. The clause needs a preposition that gives the time: <em>during which</em>.",
+      "the inspectors interviewed … more than sixty drivers 有主詞也有受詞，which 沒有缺口可填。子句需要表示時間的介系詞：during which。"
+    ],
+    "gloss": [
+      {
+        "w": "compliance audit",
+        "hw": "compliance audit",
+        "pos": "n.",
+        "zh": "合規稽核",
+        "ex": "The compliance audit covered all branches."
+      },
+      {
+        "w": "maintenance logs",
+        "hw": "maintenance log",
+        "pos": "n.",
+        "zh": "維修紀錄",
+        "ex": "Maintenance logs are stored for five years."
+      },
+      {
+        "w": "depots",
+        "hw": "depot",
+        "pos": "n.",
+        "zh": "車場",
+        "ex": "The firm runs four depots in the region."
+      }
+    ]
+  },
+  "g-relative-15": {
+    "point": [
+      "A possessive before a noun: <em>whose</em>.",
+      "名詞前的所有格：whose。"
+    ],
+    "why": [
+      "<em>combined enrollment</em> follows the blank with no article. It belongs to the campuses, so the possessive <em>whose</em> is needed; it works for things too. <em>Of which</em> would need <em>the … of which</em>.",
+      "combined enrollment 接在空格後，沒有冠詞。它屬於這些校區，所以用所有格 whose，事物也可以用。of which 要寫成 the … of which。"
+    ],
+    "gloss": [
+      {
+        "w": "satellite campuses",
+        "hw": "satellite campus",
+        "pos": "n.",
+        "zh": "衛星校區",
+        "ex": "The college opened a satellite campus downtown."
+      },
+      {
+        "w": "enrollment",
+        "hw": "enrollment",
+        "pos": "n.",
+        "zh": "註冊人數",
+        "ex": "Enrollment rose by ten percent."
+      },
+      {
+        "w": "exceeds",
+        "hw": "exceed",
+        "pos": "v.",
+        "zh": "超過",
+        "ex": "Demand exceeds supply this season."
+      }
+    ]
+  },
+  "g-relative-16": {
+    "point": [
+      "Quantity + <em>of whom</em> after a comma.",
+      "逗號後：數量 + of whom。"
+    ],
+    "why": [
+      "A full sentence ends at the comma, and the blank starts a new clause about the <em>nurses</em> with the verb <em>had</em>. <em>Many of whom</em> both joins the clause and points back to them. <em>Many of them</em> would leave only a comma between two sentences.",
+      "逗號前是完整句子，空格要開一個指 nurses 的新子句，動詞是 had。many of whom 同時連接並指回護理師。many of them 會讓兩句只靠逗號相連。"
+    ],
+    "gloss": [
+      {
+        "w": "staffing agency",
+        "hw": "staffing agency",
+        "pos": "n.",
+        "zh": "人力仲介公司",
+        "ex": "The staffing agency found us two temps."
+      },
+      {
+        "w": "intensive care",
+        "hw": "intensive care",
+        "pos": "n.",
+        "zh": "加護病房",
+        "ex": "He works in intensive care."
+      },
+      {
+        "w": "orientation",
+        "hw": "orientation",
+        "pos": "n.",
+        "zh": "新進人員訓練",
+        "ex": "Orientation takes place on the first day."
+      }
+    ]
+  },
+  "g-relative-17": {
+    "point": [
+      "<em>none of which</em> for three or more; <em>both</em>, <em>neither</em> and <em>either</em> are for two.",
+      "三個以上用 none of which；both、neither、either 只用於兩個。"
+    ],
+    "why": [
+      "The board received <em>three proposals</em>, so <em>both</em>, <em>neither</em> and <em>either</em> are out: they refer to two. The second round of tenders shows that none met the ceiling: <em>none of which</em>.",
+      "董事會收到 three proposals，所以 both、neither、either 都不行，它們指兩者。第二輪招標說明沒有一份符合上限：none of which。"
+    ],
+    "gloss": [
+      {
+        "w": "proposals",
+        "hw": "proposal",
+        "pos": "n.",
+        "zh": "提案",
+        "ex": "We received six proposals for the contract."
+      },
+      {
+        "w": "budget ceiling",
+        "hw": "budget ceiling",
+        "pos": "n.",
+        "zh": "預算上限",
+        "ex": "The budget ceiling was set in March."
+      },
+      {
+        "w": "tenders",
+        "hw": "tender",
+        "pos": "n.",
+        "zh": "投標",
+        "ex": "The city invited tenders for the new bridge."
+      }
+    ]
+  },
+  "g-relative-18": {
+    "point": [
+      "<em>whichever</em> chooses one from a set.",
+      "whichever 從一組選項中擇一。"
+    ],
+    "why": [
+      "The sentence gives two dates and asks for the later one. <em>Whichever is later</em> means <em>the one that is later</em>, chosen from those two dates. <em>Whoever</em> is for people, and <em>whenever</em> and <em>wherever</em> do not fit.",
+      "句子給了兩個日期，要選較晚的那個。whichever is later 的意思是從這兩個日期中選 the one that is later。whoever 指人，whenever 和 wherever 不合。"
+    ],
+    "gloss": [
+      {
+        "w": "extended warranty",
+        "hw": "extended warranty",
+        "pos": "n.",
+        "zh": "延長保固",
+        "ex": "The extended warranty covers three more years."
+      },
+      {
+        "w": "detected",
+        "hw": "detect",
+        "pos": "v.",
+        "zh": "發現",
+        "ex": "The sensor detected a small leak."
+      },
+      {
+        "w": "proof of purchase",
+        "hw": "proof of purchase",
+        "pos": "n.",
+        "zh": "購買證明",
+        "ex": "Please keep your proof of purchase."
+      }
+    ]
+  },
+  "g-relative-19": {
+    "point": [
+      "<em>whatever</em> = anything that; no noun before it.",
+      "whatever = anything that；前面沒有名詞。"
+    ],
+    "why": [
+      "<em>offer guests</em> already has its object, so the blank opens a new noun clause meaning <em>anything that</em>. <em>they judge</em> is inserted, and <em>will resolve</em> needs a subject: <em>whatever</em>. <em>That</em> would point back to <em>guests</em>.",
+      "offer guests 已經有受詞，所以空格開啟一個意思是 anything that 的名詞子句。they judge 是插入語，will resolve 缺主詞：whatever。that 會指回 guests。"
+    ],
+    "gloss": [
+      {
+        "w": "complimentary",
+        "hw": "complimentary",
+        "pos": "adj.",
+        "zh": "免費招待的",
+        "ex": "Guests receive a complimentary breakfast."
+      },
+      {
+        "w": "duty manager",
+        "hw": "duty manager",
+        "pos": "n.",
+        "zh": "值班經理",
+        "ex": "Call the duty manager after hours."
+      },
+      {
+        "w": "complaint",
+        "hw": "complaint",
+        "pos": "n.",
+        "zh": "投訴",
+        "ex": "We handled the complaint within a day."
+      }
+    ]
+  },
+  "g-relative-20": {
+    "point": [
+      "A noun + past participle can replace <em>that were</em> + participle.",
+      "名詞後的過去分詞可取代 that were + 分詞。"
+    ],
+    "why": [
+      "The main verb is <em>will be returned</em> at the end, so the blank cannot hold another finite verb. The documents are filed by someone, so the blank is a past participle: <em>filed</em>, meaning <em>that are filed</em>.",
+      "主要動詞是句尾的 will be returned，所以空格不能再放有時態的動詞。文件是被人提交的，所以用過去分詞 filed，意思是 that are filed。"
+    ],
+    "gloss": [
+      {
+        "w": "court registry",
+        "hw": "court registry",
+        "pos": "n.",
+        "zh": "法院書記處",
+        "ex": "File the form at the court registry."
+      },
+      {
+        "w": "filing deadline",
+        "hw": "filing deadline",
+        "pos": "n.",
+        "zh": "提交期限",
+        "ex": "The filing deadline is Friday."
+      },
+      {
+        "w": "claimant",
+        "hw": "claimant",
+        "pos": "n.",
+        "zh": "申請人",
+        "ex": "The claimant sent two letters."
+      }
+    ]
+  },
+  "g-relative-21": {
+    "point": [
+      "A noun + <em>-ing</em> can replace <em>who</em> + verb.",
+      "名詞後的 -ing 可取代 who + 動詞。"
+    ],
+    "why": [
+      "The main verb is <em>have been reporting</em>, so the blank cannot hold another finite verb. The technicians do the calibrating, and <em>the quarterly calibration</em> is the object: <em>performing</em>, meaning <em>who perform</em>.",
+      "主要動詞是 have been reporting，所以空格不能再放有時態的動詞。技術員是執行校正的人，the quarterly calibration 是受詞：performing，意思是 who perform。"
+    ],
+    "gloss": [
+      {
+        "w": "calibration",
+        "hw": "calibration",
+        "pos": "n.",
+        "zh": "校正",
+        "ex": "Calibration takes about two hours."
+      },
+      {
+        "w": "extruders",
+        "hw": "extruder",
+        "pos": "n.",
+        "zh": "擠出機",
+        "ex": "Two extruders were shut down."
+      },
+      {
+        "w": "decade",
+        "hw": "decade",
+        "pos": "n.",
+        "zh": "十年",
+        "ex": "He has worked here for a decade."
+      }
+    ]
+  },
+  "g-relative-22": {
+    "point": [
+      "A person as subject, even with an inserted clause: <em>who</em>.",
+      "人當主詞，即使中間插入子句：who。"
+    ],
+    "why": [
+      "Take out <em>the board believes</em>: <em>will oversee</em> has no subject. The blank supplies it, so it is <em>who</em>, not <em>whom</em>. <em>That</em> cannot follow a comma.",
+      "拿掉 the board believes：will oversee 沒有主詞。空格要補上主詞，所以是 who，不是 whom。that 不能接在逗號後。"
+    ],
+    "gloss": [
+      {
+        "w": "apprenticeship",
+        "hw": "apprenticeship",
+        "pos": "n.",
+        "zh": "學徒訓練",
+        "ex": "The apprenticeship lasts three years."
+      },
+      {
+        "w": "oversee",
+        "hw": "oversee",
+        "pos": "v.",
+        "zh": "監督",
+        "ex": "She will oversee the whole project."
+      },
+      {
+        "w": "staffing plans",
+        "hw": "staffing plan",
+        "pos": "n.",
+        "zh": "人力配置計畫",
+        "ex": "Managers must submit staffing plans by Friday."
+      }
+    ]
+  },
+  "g-relative-23": {
+    "point": [
+      "After a comma, <em>which</em> can refer to a whole clause.",
+      "逗號後 which 可以指前面整個子句。"
+    ],
+    "why": [
+      "The blank refers to the whole action: releasing the schedule without consulting anyone. That action <em>proved a costly oversight</em>; people cannot, so it is not <em>the shift supervisors</em>. After a comma: <em>which</em>.",
+      "空格指的是整件事：沒有諮詢就發布時程。這件事 proved a costly oversight，人不會是疏忽，所以不是指 the shift supervisors。逗號後：which。"
+    ],
+    "gloss": [
+      {
+        "w": "revised schedule",
+        "hw": "revised schedule",
+        "pos": "n.",
+        "zh": "修訂時程",
+        "ex": "The revised schedule starts next week."
+      },
+      {
+        "w": "shift supervisors",
+        "hw": "shift supervisor",
+        "pos": "n.",
+        "zh": "輪班主管",
+        "ex": "Shift supervisors attend a short briefing."
+      },
+      {
+        "w": "loading dock",
+        "hw": "loading dock",
+        "pos": "n.",
+        "zh": "裝卸碼頭",
+        "ex": "Trucks wait at the loading dock."
+      }
+    ]
+  },
+  "g-relative-24": {
+    "point": [
+      "Preposition + <em>whose</em> + noun: <em>to whose</em>.",
+      "介系詞 + whose + 名詞：to whose。"
+    ],
+    "why": [
+      "<em>attention</em> follows the blank, so a possessive is needed. But <em>had first been brought</em> has no <em>to</em>: things are brought <em>to</em> someone's attention. The preposition goes first: <em>to whose</em>.",
+      "attention 接在空格後，所以需要所有格。但 had first been brought 後面沒有 to：事情是被提請某人注意（to）。介系詞要放前面：to whose。"
+    ],
+    "gloss": [
+      {
+        "w": "discrepancy",
+        "hw": "discrepancy",
+        "pos": "n.",
+        "zh": "差異",
+        "ex": "The audit found a discrepancy in the totals."
+      },
+      {
+        "w": "freight invoices",
+        "hw": "freight invoice",
+        "pos": "n.",
+        "zh": "貨運發票",
+        "ex": "Freight invoices are paid within thirty days."
+      },
+      {
+        "w": "corrective step",
+        "hw": "corrective step",
+        "pos": "n.",
+        "zh": "改正措施",
+        "ex": "No corrective step was taken."
+      }
+    ]
+  },
+  "g-relative-25": {
+    "point": [
+      "Each coordinated relative clause takes the case of its own clause.",
+      "並列的關係子句各自決定格。"
+    ],
+    "why": [
+      "The first clause has <em>whom</em> as the object of <em>trained</em>. After <em>and</em>, the blank starts a new relative clause with the verb <em>have led</em>, so it is a subject: <em>who</em>, not <em>whom</em>.",
+      "第一個子句的 whom 是 trained 的受詞。and 之後是新的關係子句，動詞是 have led，空格是主詞：who，不是 whom。"
+    ],
+    "gloss": [
+      {
+        "w": "since April alone",
+        "hw": "since April alone",
+        "pos": "phr.",
+        "zh": "光是四月以來",
+        "ex": "Sales doubled since April alone."
+      },
+      {
+        "w": "reading sessions",
+        "hw": "reading session",
+        "pos": "n.",
+        "zh": "閱讀活動",
+        "ex": "Reading sessions run every Saturday."
+      }
+    ]
+  }
+}

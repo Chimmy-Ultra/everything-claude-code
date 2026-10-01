@@ -1,0 +1,145 @@
+[
+ {
+  "id": "v-collocation-07",
+  "format": "gap",
+  "stem": "Although online orders rose sharply in the second quarter, total revenue still ______ short of the target that the board had set in January.",
+  "options": {
+   "A": "ran",
+   "B": "fell",
+   "C": "cut",
+   "D": "drew"
+  }
+ },
+ {
+  "id": "v-collocation-08",
+  "format": "gap",
+  "stem": "Customers who wish to ______ a formal complaint about a damaged delivery should do so in writing within fourteen days, attaching photographs of the packaging if possible.",
+  "options": {
+   "A": "house",
+   "B": "host",
+   "C": "lodge",
+   "D": "board"
+  }
+ },
+ {
+  "id": "v-collocation-09",
+  "format": "gap",
+  "stem": "Please ______ in mind that the visitor parking garage will be closed on Saturday for repairs, so guests attending the open house should use the lot on Carver Street.",
+  "options": {
+   "A": "bear",
+   "B": "take",
+   "C": "put",
+   "D": "carry"
+  }
+ },
+ {
+  "id": "v-synonym-02",
+  "format": "gap",
+  "stem": "The IT department ______ laptops and projectors to staff who meet clients off-site, and borrowers must return the equipment within two weeks.",
+  "options": {
+   "A": "rents",
+   "B": "lends",
+   "C": "borrows",
+   "D": "donates"
+  }
+ },
+ {
+  "id": "v-synonym-04",
+  "format": "gap",
+  "stem": "The new advisory committee ______ five managers, each from a different department of the company.",
+  "options": {
+   "A": "consists",
+   "B": "comprises",
+   "C": "conforms",
+   "D": "constitutes"
+  }
+ },
+ {
+  "id": "v-synonym-07",
+  "format": "gap",
+  "stem": "All subcontractors working at the Varrick site must ______ by the safety rules posted at the entrance, and anyone found without a hard hat will be asked to leave.",
+  "options": {
+   "A": "comply",
+   "B": "adhere",
+   "C": "abide",
+   "D": "conform"
+  }
+ },
+ {
+  "id": "v-synonym-08",
+  "format": "gap",
+  "stem": "The Corvale plant will ______ production for two weeks in August while the new packaging line is installed, and normal operations will resume on September 1.",
+  "options": {
+   "A": "terminate",
+   "B": "abandon",
+   "C": "conclude",
+   "D": "suspend"
+  }
+ },
+ {
+  "id": "v-synonym-09",
+  "format": "gap",
+  "stem": "The hotel has agreed to ______ the cancellation fee for guests whose flights were canceled because of the storm, provided that they submit written confirmation from their airline.",
+  "options": {
+   "A": "waive",
+   "B": "exempt",
+   "C": "spare",
+   "D": "relieve"
+  }
+ },
+ {
+  "id": "v-business-07",
+  "format": "gap",
+  "stem": "Under the terms of the contract, Pellham Logistics will receive a ______ of 15 percent of the purchase price when the agreement is signed, with the balance due upon delivery.",
+  "options": {
+   "A": "dividend",
+   "B": "rebate",
+   "C": "premium",
+   "D": "deposit"
+  }
+ },
+ {
+  "id": "v-business-08",
+  "format": "gap",
+  "stem": "At the end of each month, the accounts team must ______ the company's bank statements with its internal ledger and investigate any discrepancies before the books are closed.",
+  "options": {
+   "A": "consolidate",
+   "B": "reconcile",
+   "C": "liquidate",
+   "D": "appraise"
+  }
+ },
+ {
+  "id": "v-family-01",
+  "format": "gap",
+  "stem": "Until the merger is formally announced, employees involved in the negotiations must keep every detail of the deal strictly ______.",
+  "options": {
+   "A": "confident",
+   "B": "confidential",
+   "C": "confiding",
+   "D": "confided"
+  }
+ },
+ {
+  "id": "v-family-07",
+  "format": "gap",
+  "stem": "Reviewers often praise the front-desk staff at the Tollmere Inn for being ______ to guests' needs, and many mention that requests are handled within minutes.",
+  "options": {
+   "A": "attentive",
+   "B": "attendant",
+   "C": "attended",
+   "D": "attending"
+  }
+ },
+ {
+  "id": "v-family-08",
+  "format": "gap",
+  "stem": "Everyone who registers for the conference before May 1 will receive a ______ copy of the keynote speaker's latest book, which can be picked up at the registration desk.",
+  "options": {
+   "A": "complementary",
+   "B": "complimentary",
+   "C": "complimented",
+   "D": "completed"
+  }
+ }
+]

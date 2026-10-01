@@ -1,0 +1,66 @@
+[
+ {
+  "id": "l-qr-19",
+  "format": "qr",
+  "heard": "How many chairs should we set up for the awards dinner, now that the guest list has doubled from a hundred?",
+  "responses": {
+   "A": "The list is still a hundred.",
+   "B": "The final replies aren't due until Friday.",
+   "C": "The chairs are stacked in the storage room."
+  }
+ },
+ {
+  "id": "l-qr-21",
+  "format": "qr",
+  "heard": "Do you have the schedule for next week's interviews?",
+  "responses": {
+   "A": "The candidates were very impressive.",
+   "B": "In the second-floor meeting room.",
+   "C": "Yes, I'll e-mail it to you right now."
+  }
+ },
+ {
+  "id": "l-conv-10",
+  "format": "conv",
+  "transcript": [
+   "W: Tom, Gareth, thanks for staying late. Our presentation for the client is at nine tomorrow, and I'm worried about the demo video.",
+   "M1: Rosa, it plays fine on my laptop. The trouble is the projector in their boardroom, which only accepts an older file type.",
+   "M2: I saw that projector last spring. It belongs in a museum.",
+   "W: So can we convert the video tonight?",
+   "M1: I can, with free software. It takes about two hours to run, though, so I'd have to start it before I leave.",
+   "W: Please do. Gareth, I'd like you to test the new file on their projector before we start. Could you be there at eight?",
+   "M2: The building doesn't open until eight thirty, I'm afraid. How about eight forty-five, in the lobby?",
+   "W: That works. The presentation is at nine, so we'll have fifteen minutes. Tom, text me when the conversion finishes tonight.",
+   "M1: Will do. I'll start it as soon as we're done here."
+  ],
+  "questions": [
+   {
+    "q": "What is Rosa worried about?",
+    "options": {
+     "A": "Whether a video will play properly",
+     "B": "Whether the software will cost too much",
+     "C": "Whether the file conversion will take too long",
+     "D": "Whether the building will open early enough"
+    }
+   },
+   {
+    "q": "What does Gareth imply when he says, \"It belongs in a museum\"?",
+    "options": {
+     "A": "The projector should be donated to a museum",
+     "B": "The projector is badly out of date",
+     "C": "The client displays old equipment in the boardroom",
+     "D": "He saw the projector at a museum last spring"
+    }
+   },
+   {
+    "q": "When will Gareth most likely test the new file at the client's building?",
+    "options": {
+     "A": "At eight o'clock",
+     "B": "At eight thirty",
+     "C": "At a quarter to nine",
+     "D": "At nine o'clock"
+    }
+   }
+  ]
+ }
+]

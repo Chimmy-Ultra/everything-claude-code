@@ -1,0 +1,266 @@
+[
+ {
+  "id": "v-collocation-01",
+  "format": "gap",
+  "stem": "Our printing supplier worked late every night to ______ the deadline for the trade show brochures.",
+  "options": {
+   "A": "meet",
+   "B": "match",
+   "C": "catch",
+   "D": "suit"
+  }
+ },
+ {
+  "id": "v-collocation-02",
+  "format": "gap",
+  "stem": "The revised travel policy will ______ effect on July 1, so trips booked after that date must follow the new rules.",
+  "options": {
+   "A": "come",
+   "B": "take",
+   "C": "go",
+   "D": "make"
+  }
+ },
+ {
+  "id": "v-collocation-03",
+  "format": "gap",
+  "stem": "The office manager will ______ an order for new printer cartridges before the end of the day.",
+  "options": {
+   "A": "set",
+   "B": "lay",
+   "C": "place",
+   "D": "position"
+  }
+ },
+ {
+  "id": "v-collocation-04",
+  "format": "gap",
+  "stem": "Our accountant recommends that we ______ a close eye on cash flow during the slow summer months.",
+  "options": {
+   "A": "hold",
+   "B": "take",
+   "C": "set",
+   "D": "keep"
+  }
+ },
+ {
+  "id": "v-collocation-05",
+  "format": "gap",
+  "stem": "The new flexible schedule aims to ______ a balance between client visits and time in the office.",
+  "options": {
+   "A": "pull",
+   "B": "run",
+   "C": "strike",
+   "D": "lift"
+  }
+ },
+ {
+  "id": "v-collocation-06",
+  "format": "gap",
+  "stem": "The plan to open a second branch was approved by an ______ majority of shareholders at Tuesday's meeting.",
+  "options": {
+   "A": "overflowing",
+   "B": "overpowering",
+   "C": "overriding",
+   "D": "overwhelming"
+  }
+ },
+ {
+  "id": "v-synonym-01",
+  "format": "gap",
+  "stem": "Sales representatives earn a ______ of 4 percent on every contract they sign, in addition to their base salary.",
+  "options": {
+   "A": "wage",
+   "B": "pension",
+   "C": "commission",
+   "D": "allowance"
+  }
+ },
+ {
+  "id": "v-synonym-02",
+  "format": "gap",
+  "stem": "The IT department ______ projectors to staff who meet clients off-site, free of charge and for up to two weeks at a time.",
+  "options": {
+   "A": "rents",
+   "B": "lends",
+   "C": "borrows",
+   "D": "donates"
+  }
+ },
+ {
+  "id": "v-synonym-03",
+  "format": "gap",
+  "stem": "Guests who ______ additional charges, such as room service or minibar purchases, must settle them at checkout.",
+  "options": {
+   "A": "suffer",
+   "B": "undergo",
+   "C": "endure",
+   "D": "incur"
+  }
+ },
+ {
+  "id": "v-synonym-04",
+  "format": "gap",
+  "stem": "The new advisory committee ______ five managers, each from a different department of the company.",
+  "options": {
+   "A": "consists",
+   "B": "comprises",
+   "C": "composes",
+   "D": "constitutes"
+  }
+ },
+ {
+  "id": "v-synonym-05",
+  "format": "gap",
+  "stem": "Showroom visits ______ increased after the renovation, jumping 40 percent in the first week and staying at that level for the rest of the year.",
+  "options": {
+   "A": "markedly",
+   "B": "slightly",
+   "C": "steadily",
+   "D": "temporarily"
+  }
+ },
+ {
+  "id": "v-synonym-06",
+  "format": "gap",
+  "stem": "The landlord has agreed to ______ our lease for another two years at the same monthly rent.",
+  "options": {
+   "A": "extend",
+   "B": "expand",
+   "C": "enlarge",
+   "D": "stretch"
+  }
+ },
+ {
+  "id": "v-business-01",
+  "format": "gap",
+  "stem": "Your flight times and the address of each hotel are listed in the ______ the travel agent sent today.",
+  "options": {
+   "A": "inventory",
+   "B": "itinerary",
+   "C": "agenda",
+   "D": "warranty"
+  }
+ },
+ {
+  "id": "v-business-02",
+  "format": "gap",
+  "stem": "The furniture supplier has sent us the ______ for the 40 office chairs, and it is payable within 30 days.",
+  "options": {
+   "A": "receipt",
+   "B": "estimate",
+   "C": "refund",
+   "D": "invoice"
+  }
+ },
+ {
+  "id": "v-business-03",
+  "format": "gap",
+  "stem": "Because of the storm warning, the product launch has been ______ until next Thursday.",
+  "options": {
+   "A": "postponed",
+   "B": "abandoned",
+   "C": "expired",
+   "D": "concluded"
+  }
+ },
+ {
+  "id": "v-business-04",
+  "format": "gap",
+  "stem": "The cost of your staff uniform will be ______ from your first month's salary.",
+  "options": {
+   "A": "reduced",
+   "B": "declined",
+   "C": "deducted",
+   "D": "devoted"
+  }
+ },
+ {
+  "id": "v-business-05",
+  "format": "gap",
+  "stem": "Staff who drive their own cars to client meetings will be ______ for fuel at a fixed rate.",
+  "options": {
+   "A": "rewarded",
+   "B": "reimbursed",
+   "C": "recruited",
+   "D": "reserved"
+  }
+ },
+ {
+  "id": "v-business-06",
+  "format": "gap",
+  "stem": "Since the delay was caused by its own error, the shipping company agreed to ______ the extra cost.",
+  "options": {
+   "A": "absorb",
+   "B": "adopt",
+   "C": "attach",
+   "D": "acquire"
+  }
+ },
+ {
+  "id": "v-family-01",
+  "format": "gap",
+  "stem": "Moving to the smaller warehouse will save the company a ______ amount of money each year.",
+  "options": {
+   "A": "considerate",
+   "B": "considerable",
+   "C": "considering",
+   "D": "considered"
+  }
+ },
+ {
+  "id": "v-family-02",
+  "format": "gap",
+  "stem": "Please keep this folder locked because it contains ______ information about employee salaries.",
+  "options": {
+   "A": "sensible",
+   "B": "sensory",
+   "C": "senseless",
+   "D": "sensitive"
+  }
+ },
+ {
+  "id": "v-family-03",
+  "format": "gap",
+  "stem": "After the break, Ms. Lin and Mr. Hale will present the sales figures for their ______ regions.",
+  "options": {
+   "A": "respective",
+   "B": "respectful",
+   "C": "respectable",
+   "D": "respected"
+  }
+ },
+ {
+  "id": "v-family-04",
+  "format": "gap",
+  "stem": "The supervisor praised the new interns for being ______ and always finishing their tasks ahead of schedule.",
+  "options": {
+   "A": "industrial",
+   "B": "industrialized",
+   "C": "industrious",
+   "D": "industrializing"
+  }
+ },
+ {
+  "id": "v-family-05",
+  "format": "gap",
+  "stem": "The safety manual was rewritten in plain language so that it would be ______ to every new employee.",
+  "options": {
+   "A": "comprehensive",
+   "B": "comprehending",
+   "C": "comprehensible",
+   "D": "comprehended"
+  }
+ },
+ {
+  "id": "v-family-06",
+  "format": "gap",
+  "stem": "The hardware store stocks screws in every ______ size, so builders rarely have to order parts.",
+  "options": {
+   "A": "imaginative",
+   "B": "imaginary",
+   "C": "imagining",
+   "D": "imaginable"
+  }
+ }
+]

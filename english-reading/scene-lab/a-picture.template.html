@@ -1,0 +1,283 @@
+<title>Café, Illustrated</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: a picture-dictionary spread. The café picture with numbered pins, the tapped word under it,
+   a numbered legend, then the visit as steps with what you hear and what you say. */
+{{BASE_CSS}}
+.modes{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:20px 0 12px;font:14px var(--display)}
+.modes label{display:inline-flex;gap:8px;align-items:center;cursor:pointer}
+.modes input{accent-color:var(--accent);width:18px;height:18px;margin:0}
+.pic{position:relative;border-radius:18px;overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+.pic svg{display:block;width:100%;height:auto}
+.pin{position:absolute;transform:translate(-50%,-50%);min-width:26px;height:26px;border-radius:999px;border:2px solid #2B2740;background:#FFFFFF;color:#2B2740;font:700 12px/1 var(--mono);display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:0 6px;box-shadow:0 2px 0 rgba(43,39,64,.35);white-space:nowrap}
+.pin .w{display:none;font:600 12px/1 var(--display)}
+.labels .pin .w{display:inline}
+.labels .pin{transform:translate(-13px,-50%)}
+.labels .pin.up{margin-top:-36px}
+.labels .pin.dn{margin-top:20px}
+.pin[aria-pressed="true"]{background:#0A7F72;border-color:#0A7F72;color:#FFFFFF}
+.pin.right{background:#1F7A3A;border-color:#1F7A3A;color:#FFFFFF}
+.pin.wrong{background:#B23A3A;border-color:#B23A3A;color:#FFFFFF}
+.pic g.hl{filter:drop-shadow(0 0 6px rgba(10,127,114,.9)) drop-shadow(0 0 2px rgba(10,127,114,.9))}
+@media (min-width:700px){.pin{min-width:30px;height:30px;font-size:13px}.labels .pin{transform:translate(-15px,-50%)}}
+@media (max-width:520px){.pin{min-width:22px;height:22px;font-size:11px;padding:0 4px}.labels .pin{transform:translate(-11px,-50%)}.labels .pin .w{font-size:10px}}
+
+.card{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:grid;gap:8px;min-height:120px}
+.card .head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.card .num{font:700 13px var(--mono);color:var(--muted)}
+.card .word{font:700 24px/1.2 var(--display)}
+.card .mean{font:500 16px var(--zh);color:var(--muted)}
+.card .vars{display:flex;gap:6px;flex-wrap:wrap}
+.card .vars span{font:500 13px var(--display);background:var(--warn-bg);color:var(--warn);border-radius:6px;padding:2px 8px}
+.card .ex{display:flex;gap:10px;align-items:flex-start}
+.card .ex p{margin:0;min-width:0}
+.card .ex small{display:block;font:14px var(--zh);color:var(--muted)}
+.card .empty{margin:auto 0;color:var(--muted);font:15px var(--display)}
+.quiz{display:grid;gap:10px;justify-items:start}
+.quiz .q{font:700 22px/1.3 var(--display);margin:0}
+.quiz .score{font:600 14px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+
+.legend{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4px 16px;counter-reset:n}
+.legend li button{width:100%;display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:baseline;text-align:left;background:none;border:0;border-bottom:1px dashed var(--line);padding:7px 2px}
+.legend .n{font:700 12px var(--mono);color:var(--muted)}
+.legend .w{font:600 16px var(--display)}
+.legend .z{font:13px var(--zh);color:var(--muted);margin-left:6px}
+.legend button[aria-current="true"] .w{color:var(--accent)}
+
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:14px;counter-reset:s}
+.step{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:12px}
+.step h3{margin:0;font:700 18px/1.25 var(--display);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.step h3::before{content:counter(s);display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent-bg);color:var(--accent);font:700 12px var(--mono);flex:none;align-self:center}
+.step h3 span{font:500 14px var(--zh);color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.col{min-width:0;display:grid;gap:8px;align-content:start}
+.line{display:flex;gap:8px;align-items:flex-start}
+.line p{margin:0;min-width:0;font-size:16px;line-height:1.45}
+.line small{display:block;font:13px var(--zh);color:var(--muted)}
+.hear .line p{background:var(--barista-tint);border-radius:12px 12px 12px 4px;padding:6px 10px}
+.say .line p{background:var(--you-tint);border-radius:12px 12px 4px 12px;padding:6px 10px}
+.reply{margin-left:40px;font:13px var(--display);color:var(--muted)}
+.reply b{color:var(--you);font-weight:600}
+.col .label{margin:0}
+.line.now p,.reply.now b{outline:2px solid var(--accent);outline-offset:2px;border-radius:10px}
+#visit-play[aria-pressed="true"]{background:var(--surface);color:var(--accent)}
+.who-l{display:flex;align-items:center;gap:8px}
+.who-l .av{width:30px;height:30px;border-radius:50%;overflow:hidden;flex:none}
+.who-l .av:empty{display:none}
+.who-l .av svg{width:100%;height:100%;display:block}
+.muted{color:var(--muted);font:14px var(--display);margin:0}
+@media (max-width:620px){.cols{grid-template-columns:1fr}}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Café, Illustrated <small>Scene Lab · A</small></span>
+  <label class="chip" for="speed">Speed <select id="speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option></select></label>
+</div></header>
+
+<main>
+  <p class="kicker">Demo A · Picture dictionary</p>
+  <h1>Everything in a café, and what people say there</h1>
+  <p class="lede">Tap a number in the picture to hear the word and see it used. <strong>Find it</strong> turns the picture into a listening game: hear a word, tap the thing. Below the picture, the visit is broken into steps with what the barista says and what you can say back.</p>
+
+  <div class="modes">
+    <label for="lab"><input type="checkbox" id="lab"> Show words on the picture</label>
+    <button class="btn" type="button" id="quiz-b">Find it</button>
+  </div>
+
+  <div class="pic" id="pic">
+    {{SVG}}
+  </div>
+  <div class="card" id="card" aria-live="polite"></div>
+
+  <ol class="legend" id="legend"></ol>
+
+  <h2 style="margin-top:44px">The visit, step by step</h2>
+  <p class="lede">Barista lines are on the left with a reply you can use; your own sentences are on the right. Tap ▶ to hear any line.</p>
+  <button class="btn primary" type="button" id="visit-play" aria-pressed="false" style="margin-top:16px">Play the whole visit</button>
+  <ol class="steps" id="steps"></ol>
+</main>
+
+<script>
+const DATA = {{DATA}};
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("scene-lab-a:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("scene-lab-a:" + k, JSON.stringify(v)); } catch {} },
+};
+let speed = Number(store.get("speed", 1)) || 1;
+$("#speed").value = String(speed);
+$("#speed").onchange = e => { speed = Number(e.target.value) || 1; store.set("speed", speed); };
+const au = new Audio(); let onBtn = null;
+function play(src, btn) {
+  if (onBtn) onBtn.classList.remove("on");
+  onBtn = btn || null; if (btn) btn.classList.add("on");
+  au.src = "audio/" + src; au.defaultPlaybackRate = au.playbackRate = speed;
+  au.onended = au.onerror = () => { if (btn) btn.classList.remove("on"); };
+  return au.play().catch(() => {});
+}
+function pbtn(src, label) { const b = el("button", "pl"); b.type = "button"; b.innerHTML = PLAY; b.setAttribute("aria-label", label || "Play"); b.onclick = () => { stopVisit(); play(src, b); }; return b; }
+const OBJ = DATA.objects, BY = Object.fromEntries(OBJ.map(o => [o.id, o]));
+const PH = {}; for (const it of DATA.intents) for (const p of it.phrases) PH[p.id] = p;
+const BA = Object.fromEntries(DATA.barista.map(b => [b.id, b]));
+const VB = 960, VH = 600;
+let sel = null, quiz = null;
+
+// ---------- pins ----------
+const pic = $("#pic"), pins = {};
+const LABEL_NUDGE = { c12: "up", c9: "dn", c5: "dn" };   // keeps word labels from overlapping their neighbours
+OBJ.forEach((o, i) => {
+  if (!o.at) return;
+  const b = el("button", "pin" + (LABEL_NUDGE[o.id] ? " " + LABEL_NUDGE[o.id] : "")); b.type = "button";
+  b.style.left = (o.at[0] / VB * 100) + "%"; b.style.top = (o.at[1] / VH * 100) + "%";
+  b.append(el("span", null, String(i + 1)), el("span", "w", o.word));
+  b.setAttribute("aria-label", (i + 1) + ": " + o.word);
+  b.setAttribute("aria-pressed", "false");
+  b.onclick = () => quiz ? answer(o.id) : select(o.id, true);
+  pic.append(b); pins[o.id] = b;
+});
+$("#lab").checked = store.get("labels", false);
+const setLabels = () => { pic.classList.toggle("labels", $("#lab").checked); store.set("labels", $("#lab").checked); };
+$("#lab").onchange = setLabels; setLabels();
+
+function glow(id) {
+  pic.querySelectorAll("g.hl").forEach(g => g.classList.remove("hl"));
+  const g = id && pic.querySelector("#obj-" + id); if (g) g.classList.add("hl");
+}
+
+function select(id, sound) {
+  sel = id;
+  for (const [k, b] of Object.entries(pins)) b.setAttribute("aria-pressed", String(k === id));
+  document.querySelectorAll(".legend button").forEach(b => b.setAttribute("aria-current", String(b.dataset.id === id)));
+  glow(id);
+  const o = BY[id], i = OBJ.indexOf(o), c = $("#card"); c.textContent = "";
+  const head = el("div", "head");
+  head.append(el("span", "num", String(i + 1)), el("span", "word", o.word), pbtn("w/" + id + ".mp3", "Play " + o.word));
+  const mz = el("span", "mean", o.zh); mz.lang = "zh-Hant"; head.append(mz);
+  c.append(head);
+  if (o.var) { const v = el("div", "vars"); o.var.forEach(([p, w]) => v.append(el("span", null, p + ": " + w))); c.append(v); }
+  const ex = el("div", "ex"); const p = el("p", null, o.ex); const s = el("small", null, o.exzh); s.lang = "zh-Hant"; p.append(s);
+  ex.append(pbtn("w/" + id + "e.mp3", "Play example"), p); c.append(ex);
+  if (sound) play("w/" + id + ".mp3", head.querySelector(".pl"));
+}
+
+// ---------- find it ----------
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function startQuiz() {
+  quiz = { list: shuffle(OBJ.filter(o => o.at).map(o => o.id)).slice(0, 8), i: 0, right: 0, tries: 0 };
+  $("#lab").checked = false; setLabels(); $("#lab").disabled = true;
+  $("#quiz-b").textContent = "Stop";
+  ask();
+}
+function stopQuiz() { quiz = null; $("#lab").disabled = false; $("#quiz-b").textContent = "Find it"; for (const b of Object.values(pins)) b.classList.remove("right", "wrong"); glow(null); if (sel) select(sel, false); else intro(); }
+function ask() {
+  for (const b of Object.values(pins)) { b.classList.remove("right", "wrong"); b.setAttribute("aria-pressed", "false"); }
+  glow(null);
+  const id = quiz.list[quiz.i], c = $("#card"); c.textContent = "";
+  const q = el("div", "quiz");
+  q.append(el("span", "score", "Word " + (quiz.i + 1) + " of " + quiz.list.length + " · " + quiz.right + " right first time"));
+  const row = el("div", "head"); row.append(el("p", "q", "Where is this?"), pbtn("w/" + id + ".mp3", "Hear the word again"));
+  q.append(row, el("p", "muted", "Listen, then tap the number on the picture."));
+  c.append(q);
+  quiz.tries = 0;
+  play("w/" + id + ".mp3", row.querySelector(".pl"));
+}
+function answer(id) {
+  const want = quiz.list[quiz.i];
+  quiz.tries++;
+  if (id !== want) { pins[id].classList.add("wrong"); return; }
+  pins[id].classList.add("right"); glow(id);
+  if (quiz.tries === 1) quiz.right++;
+  const o = BY[id], c = $("#card");
+  const ok = el("p", "q", "✓ " + o.word + " "); const z = el("span", "mean", o.zh); z.lang = "zh-Hant"; ok.append(z);
+  c.querySelector(".quiz").replaceChildren(el("span", "score", "Word " + (quiz.i + 1) + " of " + quiz.list.length), ok);
+  quiz.i++;
+  setTimeout(() => {
+    if (!quiz) return;
+    if (quiz.i < quiz.list.length) return ask();
+    const q = c.querySelector(".quiz"); q.textContent = "";
+    q.append(el("p", "q", quiz.right + " of " + quiz.list.length + " right first time"), el("p", "muted", "Play again to get a new set of eight."));
+    const again = el("button", "btn primary", "Play again"); again.type = "button"; again.onclick = () => startQuiz();
+    q.append(again);
+    store.set("quiz", quiz.right);
+  }, 900);
+}
+$("#quiz-b").onclick = () => quiz ? stopQuiz() : startQuiz();
+
+function intro() { const c = $("#card"); c.textContent = ""; c.append(el("p", "empty", "Tap any number on the picture.")); }
+
+// ---------- legend ----------
+OBJ.forEach((o, i) => {
+  const li = el("li"), b = el("button"); b.type = "button"; b.dataset.id = o.id;
+  const w = el("span", "w", o.word); const z = el("span", "z", o.zh); z.lang = "zh-Hant"; const t = el("span"); t.append(w, z);
+  b.append(el("span", "n", String(i + 1)), t);
+  b.onclick = () => { if (quiz) stopQuiz(); select(o.id, true); $("#pic").scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+  li.append(b); $("#legend").append(li);
+});
+
+// ---------- steps ----------
+const VISIT = [];   // every barista line and its reply, in order
+let visitToken = null;
+function waitEnd() { return new Promise(r => { const done = () => { au.removeEventListener("ended", done); au.removeEventListener("error", done); au.removeEventListener("pause", done); r(); }; au.addEventListener("ended", done); au.addEventListener("error", done); au.addEventListener("pause", done); }); }
+function stopVisit() {
+  if (!visitToken) return;
+  visitToken = null; au.pause();
+  document.querySelectorAll(".now").forEach(x => x.classList.remove("now"));
+  const b = $("#visit-play"); b.textContent = "Play the whole visit"; b.setAttribute("aria-pressed", "false");
+}
+async function playVisit() {
+  if (visitToken) return stopVisit();
+  if (quiz) stopQuiz();
+  const token = visitToken = {};
+  const b = $("#visit-play"); b.textContent = "Stop"; b.setAttribute("aria-pressed", "true");
+  au.pause();
+  for (const x of VISIT) {
+    x.el.classList.add("now");
+    x.el.scrollIntoView({ block: "center", behavior: "smooth" });
+    const ended = waitEnd();
+    play(x.src, x.el.querySelector(".pl"));
+    await ended;
+    x.el.classList.remove("now");
+    if (visitToken !== token) return;
+    await new Promise(r => setTimeout(r, 300));
+    if (visitToken !== token) return;
+  }
+  stopVisit();
+}
+function who(key, text) {
+  const p = el("p", "label who-l"), a = el("span", "av"); a.setAttribute("aria-hidden", "true");
+  if (DATA.avatars && DATA.avatars[key]) a.innerHTML = DATA.avatars[key];
+  p.append(a, text); return p;
+}
+function fill(p) { return p.parts.map(x => typeof x === "string" ? x : x[0]).join(""); }
+for (const s of DATA.steps) {
+  const li = el("li", "step");
+  const h = el("h3", null, s.en + " "); const z = el("span", null, s.zh); z.lang = "zh-Hant"; h.append(z); li.append(h);
+  if (!s.hear.length && !s.say.length) {
+    li.append(el("p", "muted", "Nobody talks yet. Look for the queue (5), the menu board (1) and the display case (7) in the picture."));
+  } else {
+    const cols = el("div", "cols");
+    const hear = el("div", "col hear"); hear.append(who("B", "The barista says"));
+    for (const id of s.hear) {
+      const b = BA[id], row = el("div", "line"), p = el("p", null, b.en), sm = el("small", null, b.zh); sm.lang = "zh-Hant"; p.append(sm);
+      row.append(pbtn("b/" + id + ".mp3", "Play barista line"), p); hear.append(row);
+      const r = el("div", "reply"); r.append("You: "); r.append(el("b", null, b.reply)); r.append(" "); r.append(pbtn("r/" + id + ".mp3", "Play reply")); hear.append(r);
+      VISIT.push({ src: "b/" + id + ".mp3", el: row }, { src: "r/" + id + ".mp3", el: r });
+    }
+    const say = el("div", "col say"); say.append(who("Y", "You can say"));
+    for (const id of s.say) {
+      const p0 = PH[id], row = el("div", "line"), p = el("p", null, fill(p0)), sm = el("small", null, p0.zh); sm.lang = "zh-Hant"; p.append(sm);
+      row.append(pbtn("p/" + id + "-0.mp3", "Play"), p); say.append(row);
+    }
+    cols.append(hear, say); li.append(cols);
+  }
+  $("#steps").append(li);
+}
+
+$("#visit-play").onclick = playVisit;
+intro();
+</script>

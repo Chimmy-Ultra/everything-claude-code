@@ -1,0 +1,197 @@
+{
+  "v-collocation-10": {
+    "point": ["<em>raise</em> concerns.", "raise concerns（提出疑慮）。"],
+    "why": ["<em>tenants ______</em> needs an object, and that object is <em>concerns</em>, earlier in the sentence. Only <em>raised</em> takes <em>concerns</em> directly.", "tenants ______ 缺受詞，受詞是前面的 concerns。只有 raised 能直接接 concerns。"],
+    "usage": [
+      ["<em>speak</em> about a topic, or speak at an event; it cannot take <em>concerns</em> directly. <em>Two tenants spoke about the noise.</em>", "speak about 主題，或在場合中發言；不能直接接 concerns。"],
+      ["<em>comment</em> on something. <em>Several tenants commented on the new parking rules.</em>", "comment on 某事。"],
+      null,
+      ["<em>complain</em> about something, or complain that…; it needs <em>about</em> before the problem. <em>Tenants complained about the noise.</em>", "complain about 某事，或接 that 子句；問題前面要有 about。"]
+    ],
+    "gloss": [
+      {"w": "tenants", "hw": "tenant", "pos": "n.", "zh": "房客、住戶", "ex": "Each tenant pays rent on the first day."},
+      {"w": "passed on", "hw": "pass on", "pos": "phr.", "zh": "轉交、轉達", "ex": "Please pass on my thanks to the team."},
+      {"w": "property management company", "hw": "property management company", "pos": "phr.", "zh": "物業管理公司", "ex": "The property management company fixed the heating."}
+    ]
+  },
+  "v-collocation-11": {
+    "point": ["<em>fill</em> a vacancy.", "fill a vacancy（補上職缺）。"],
+    "why": ["The subject of <em>will be ______</em> is <em>The vacancy</em> at the start, not <em>office</em>. A vacancy is an empty job, so it gets filled <em>by an internal candidate</em>.", "will be ______ 的主詞是句首的 The vacancy，不是 office。職缺是空的，要被補上：filled by an internal candidate。"],
+    "usage": [
+      ["<em>hold</em> a post or a position: someone keeps a job that is already theirs. <em>She holds the senior buyer position.</em>", "hold a post／position：擔任已經屬於自己的職位。"],
+      null,
+      ["<em>occupy</em> a room, a building or a position; people take up a space. <em>Three departments occupy the second floor.</em>", "occupy 房間、樓層或職位：占用空間。"],
+      ["<em>assume</em> a role or a responsibility: take it on. <em>He assumed the role of team leader in May.</em>", "assume a role／responsibility：接下角色或責任。"]
+    ],
+    "gloss": [
+      {"w": "vacancy", "hw": "vacancy", "pos": "n.", "zh": "職缺", "ex": "We have a vacancy in the sales team."},
+      {"w": "transferred", "hw": "transfer", "pos": "v.", "zh": "調職", "ex": "She transferred to the Boston office last year."},
+      {"w": "internal candidate", "hw": "internal candidate", "pos": "phr.", "zh": "內部人選", "ex": "We interviewed one internal candidate for the job."}
+    ]
+  },
+  "v-collocation-12": {
+    "point": ["<em>at short notice</em>: with little warning.", "at short notice（臨時才通知）。"],
+    "why": ["The fixed phrase is <em>at short notice</em>, meaning with very little time to prepare. <em>At such short</em> leads straight to <em>notice</em>.", "固定說法是 at short notice，指事前幾乎沒時間準備。at such short 後面直接接 notice。"],
+    "usage": [
+      ["<em>warning</em> is a signal of possible trouble: <em>without warning</em>, <em>a warning sign</em>. <em>The storm came without warning.</em>", "warning 是可能有麻煩的預告：without warning、a warning sign。"],
+      ["<em>time</em> is used in <em>on time</em>, <em>in time</em> and <em>at the same time</em>. <em>The bus arrived on time.</em>", "time 用在 on time、in time、at the same time。"],
+      ["<em>alert</em> is a signal or message about danger or news. <em>The app sent an alert about the delay.</em>", "alert 是關於危險或消息的警示訊息。"],
+      null
+    ],
+    "gloss": [
+      {"w": "resigned", "hw": "resign", "pos": "v.", "zh": "辭職", "ex": "He resigned to start his own firm."},
+      {"w": "shifts", "hw": "shift", "pos": "n.", "zh": "班次", "ex": "She works the night shift on Fridays."},
+      {"w": "agency", "hw": "agency", "pos": "n.", "zh": "人力仲介公司", "ex": "We hired a temp agency for the summer."}
+    ]
+  },
+  "v-collocation-13": {
+    "point": ["<em>highly</em> unlikely.", "highly unlikely（非常不可能）。"],
+    "why": ["The blank comes before <em>unlikely</em>. The adverb that strengthens <em>likely</em> or <em>unlikely</em> is <em>highly</em>: <em>highly unlikely</em>.", "空格在 unlikely 前面。加強 likely／unlikely 的副詞是 highly：highly unlikely。"],
+    "usage": [
+      null,
+      ["<em>strongly</em> goes with verbs of opinion or feeling: recommend, believe, disagree. <em>We strongly recommend booking early.</em>", "strongly 搭表示意見或感受的動詞：recommend、believe、disagree。"],
+      ["<em>greatly</em> adds force to a verb or a comparison: <em>greatly improved</em>, <em>greatly reduced</em>. <em>Sales have greatly improved.</em>", "greatly 加強動詞或比較：greatly improved、greatly reduced。"],
+      ["<em>heavily</em> goes with <em>rely</em>, <em>invest</em> and <em>depend</em>. <em>The firm relies heavily on one supplier.</em>", "heavily 搭 rely、invest、depend。"]
+    ],
+    "gloss": [
+      {"w": "container ship", "hw": "container ship", "pos": "phr.", "zh": "貨櫃輪", "ex": "The container ship reached the harbor on Monday."},
+      {"w": "unload", "hw": "unload", "pos": "v.", "zh": "卸貨", "ex": "Workers unload the truck every morning."},
+      {"w": "congested", "hw": "congested", "pos": "adj.", "zh": "壅塞的", "ex": "The congested road delayed our delivery."}
+    ]
+  },
+  "v-synonym-10": {
+    "point": ["<em>forbid</em> someone <em>to</em> do something.", "forbid 人 to V。"],
+    "why": ["All four mean roughly “not allow.” The difference is what follows the person. After <em>whether permanent or temporary</em> comes <em>to keep</em>, and only <em>forbid</em> takes someone + <em>to</em> do.", "四個都是「禁止」，差在人後面接什麼。whether permanent or temporary 之後是 to keep，只有 forbid 接「人＋to V」。"],
+    "usage": [
+      ["<em>prohibit</em> someone <em>from</em> doing something. <em>The rules prohibit staff from eating at their desks.</em>", "prohibit 人 from Ving。"],
+      ["<em>prevent</em> someone <em>from</em> doing something; it means stopping it from happening, not a rule. <em>The fence prevents visitors from entering the site.</em>", "prevent 人 from Ving；意思是阻止事情發生，不是規定。"],
+      ["<em>ban</em> something, or <em>ban</em> someone <em>from</em> doing something. <em>The airline bans passengers from smoking on board.</em>", "ban 某事，或 ban 人 from Ving。"],
+      null
+    ],
+    "gloss": [
+      {"w": "billing department", "hw": "billing department", "pos": "phr.", "zh": "帳務部", "ex": "The billing department sends invoices on Fridays."},
+      {"w": "permanent", "hw": "permanent", "pos": "adj.", "zh": "正職的", "ex": "She became a permanent employee in June."},
+      {"w": "temporary", "hw": "temporary", "pos": "adj.", "zh": "臨時的", "ex": "We hired temporary staff for the sale."}
+    ]
+  },
+  "v-synonym-11": {
+    "point": ["<em>substitute</em> A <em>for</em> B.", "substitute A for B：用 A 取代 B。"],
+    "why": ["The new item comes first and the old one after <em>for</em>: <em>a platter of fresh seasonal fruit for the almond cake</em>. Only <em>substituted</em> fits that pattern.", "新的在前、舊的在 for 後：a platter of fresh seasonal fruit for the almond cake。只有 substituted 符合這個句型。"],
+    "usage": [
+      ["<em>replace</em> the old thing <em>with</em> the new one. <em>The hotel replaced its old carpets with wooden floors.</em>", "replace 舊的 with 新的。"],
+      null,
+      ["<em>exchange</em> A <em>for</em> B: give A and get B back, often in a shop. <em>She exchanged the shirt for a larger size.</em>", "exchange A for B：交出 A、換回 B，常見於商店。"],
+      ["<em>remove</em> something from a place or a list; it does not say what takes its place. <em>Staff removed the old sign from the door.</em>", "remove 某物 from 某處；沒有說換成什麼。"]
+    ],
+    "gloss": [
+      {"w": "allergies", "hw": "allergy", "pos": "n.", "zh": "過敏", "ex": "He has an allergy to shellfish."},
+      {"w": "caterer", "hw": "caterer", "pos": "n.", "zh": "外燴業者", "ex": "The caterer arrived two hours before the party."},
+      {"w": "platter", "hw": "platter", "pos": "n.", "zh": "大淺盤、拼盤", "ex": "She served a cheese platter at the reception."}
+    ]
+  },
+  "v-synonym-12": {
+    "point": ["A thing <em>costs</em> someone an amount.", "事物 cost 人 金額。"],
+    "why": ["The subject of the blank is <em>The repairs</em>, not <em>contractor</em>. When something takes money from someone, the verb is <em>cost</em>: <em>cost the company nearly $8,000</em>.", "空格的主詞是 The repairs，不是 contractor。某事讓某人花掉多少錢，動詞用 cost：cost the company nearly $8,000。"],
+    "usage": [
+      ["<em>charge</em> someone an amount: the seller asks for the money. <em>The plumber charged us $200 for the visit.</em>", "charge 人 金額：收錢的人開價。"],
+      ["<em>spend</em> money <em>on</em> something; the subject is the person paying. <em>The firm spent $5,000 on new signs.</em>", "spend 錢 on 某事；主詞是花錢的人。"],
+      null,
+      ["<em>pay</em> someone, or pay for something; the subject is the person giving money. <em>The company paid the contractor last week.</em>", "pay 人，或 pay for 某物；主詞是付錢的人。"]
+    ],
+    "gloss": [
+      {"w": "roofing contractor", "hw": "roofing contractor", "pos": "phr.", "zh": "屋頂包商", "ex": "We hired a roofing contractor for the repairs."},
+      {"w": "carried out", "hw": "carry out", "pos": "phr.", "zh": "執行、進行", "ex": "Staff carried out the survey in May."},
+      {"w": "estimate", "hw": "estimate", "pos": "n.", "zh": "估價", "ex": "The estimate was higher than we expected."}
+    ]
+  },
+  "v-synonym-13": {
+    "point": ["<em>result in</em> something.", "result in（導致）。"],
+    "why": ["Take out <em>within the first six months alone</em>, and the blank is followed by <em>in a sharp drop</em>. Only <em>resulted</em> takes <em>in</em>: <em>has resulted in a sharp drop</em>.", "拿掉 within the first six months alone，空格後面是 in a sharp drop。只有 resulted 接 in：has resulted in a sharp drop。"],
+    "usage": [
+      null,
+      ["<em>lead to</em> something; it takes <em>to</em>, not <em>in</em>. <em>The delay led to several complaints.</em>", "lead to 某事；接 to，不接 in。"],
+      ["<em>cause</em> something directly, with no preposition. <em>The storm caused a power cut.</em>", "cause 直接接受詞，不加介系詞。"],
+      ["<em>produce</em> something directly: make it or bring it about. <em>The new process produced fewer errors.</em>", "produce 直接接受詞：製造或帶來某結果。"]
+    ],
+    "gloss": [
+      {"w": "figures", "hw": "figure", "pos": "n.", "zh": "數字、數據", "ex": "Sales figures rose in the third quarter."},
+      {"w": "branch", "hw": "branch", "pos": "n.", "zh": "分行、分店", "ex": "The bank opened a branch downtown."},
+      {"w": "sharp drop", "hw": "sharp drop", "pos": "phr.", "zh": "大幅下降", "ex": "There was a sharp drop in orders."}
+    ]
+  },
+  "v-business-09": {
+    "point": ["<em>deductible</em>: the amount you pay first on a claim.", "deductible：理賠時自己先付的額度（自負額）。"],
+    "why": ["The bill was <em>$1,600</em> and the insurer paid <em>only $600</em>. The missing $1,000 is what the company pays itself before cover starts: the <em>deductible</em>.", "帳單 1,600，保險公司只付了 600。差的 1,000 是公司在保險給付前自己先付的額度：deductible。"],
+    "usage": [
+      ["<em>premium</em> is the regular payment for an insurance policy. <em>The company pays its insurance premium every month.</em>", "premium 是為保單定期繳的保費。"],
+      ["<em>surcharge</em> is an extra fee added to a price. <em>The airline added a fuel surcharge.</em>", "surcharge 是加在價格上的額外費用。"],
+      ["<em>rebate</em> is money paid back after you have paid. <em>Buyers get a $50 rebate on this printer.</em>", "rebate 是付款後退回的錢。"],
+      null
+    ],
+    "gloss": [
+      {"w": "insurer", "hw": "insurer", "pos": "n.", "zh": "保險公司", "ex": "The insurer approved the claim in two days."},
+      {"w": "insurance policy", "hw": "insurance policy", "pos": "phr.", "zh": "保單", "ex": "Our insurance policy covers water damage."},
+      {"w": "minor accident", "hw": "minor accident", "pos": "phr.", "zh": "小擦撞", "ex": "A minor accident delayed the delivery."}
+    ]
+  },
+  "v-business-10": {
+    "point": ["<em>forfeit</em>: lose something as a penalty.", "forfeit：因違反條件而失去。"],
+    "why": ["<em>Whereas</em> sets two groups against each other. Vendors who withdraw early <em>get the full amount back</em>, so those who withdraw late lose the deposit: <em>forfeit</em>.", "whereas 把兩組人對比。早退出的人 get the full amount back，所以晚退出的人失去訂金：forfeit。"],
+    "usage": [
+      ["<em>reclaim</em> something: collect or get back what is yours. <em>Passengers reclaim their luggage after landing.</em>", "reclaim：取回屬於自己的東西。"],
+      null,
+      ["<em>refund</em> money to someone; the one who received the payment gives it back. <em>The shop refunded the customer in full.</em>", "refund：收款的一方把錢退還給對方。"],
+      ["<em>redeem</em> a voucher, coupon or points: exchange it for goods. <em>She redeemed the coupon at the checkout.</em>", "redeem 禮券、優惠券或點數：兌換成商品。"]
+    ],
+    "gloss": [
+      {"w": "Vendors", "hw": "vendor", "pos": "n.", "zh": "攤商、廠商", "ex": "Several vendors sell fresh bread at the fair."},
+      {"w": "withdraw", "hw": "withdraw", "pos": "v.", "zh": "退出", "ex": "She had to withdraw from the contest."},
+      {"w": "stall", "hw": "stall", "pos": "n.", "zh": "攤位", "ex": "Each vendor rents a stall at the market."}
+    ]
+  },
+  "v-business-11": {
+    "point": ["<em>creditor</em>: a person or firm the company owes.", "creditor：債權人（公司欠錢的對象）。"],
+    "why": ["Until the invoice <em>has been paid in full</em>, the company still owes the supplier money. A business that is owed money is a <em>creditor</em>.", "發票 has been paid in full 之前，公司還欠供應商錢。被欠錢的一方是 creditor。"],
+    "usage": [
+      ["<em>debtor</em> is a person or firm that owes money. <em>The bank listed three debtors who were late with payments.</em>", "debtor 是欠錢的人或公司。"],
+      ["<em>investor</em> puts money into a company to earn a return. <em>Investors bought shares in the new firm.</em>", "investor 是投資公司以求回報的人。"],
+      null,
+      ["<em>auditor</em> checks a company's accounts. <em>The auditors will review our records in April.</em>", "auditor 是查核公司帳目的人。"]
+    ],
+    "gloss": [
+      {"w": "invoice", "hw": "invoice", "pos": "n.", "zh": "發票、請款單", "ex": "Please send the invoice by email."},
+      {"w": "in full", "hw": "in full", "pos": "phr.", "zh": "全額", "ex": "Please pay the invoice in full."},
+      {"w": "finance director", "hw": "finance director", "pos": "phr.", "zh": "財務總監", "ex": "The finance director approved the new budget."}
+    ]
+  },
+  "v-family-09": {
+    "point": ["<em>preventable</em>: can be avoided.", "preventable（可預防的）。"],
+    "why": ["Each breakdown <em>was traced to a worn belt that should have been replaced months earlier</em>. The breakdowns did happen, but they could have been avoided: <em>preventable</em>.", "每次故障都 was traced to a worn belt that should have been replaced months earlier。故障確實發生了，但本來可以避免：preventable。"],
+    "usage": [
+      null,
+      ["<em>preventive</em> describes action taken to stop problems: <em>preventive maintenance</em>. <em>The plant schedules preventive checks every month.</em>", "preventive 形容用來預防問題的做法：preventive maintenance。"],
+      ["<em>prevented</em> is the past of <em>prevent</em>: stopped before it happened. <em>Early checks prevented a longer shutdown.</em>", "prevented 是 prevent 的過去式：在事情發生前就阻止。"],
+      ["<em>preventing</em> needs an object after it: <em>preventing accidents</em>. <em>Preventing delays is the supervisor's main job.</em>", "preventing 後面要接受詞：preventing accidents。"]
+    ],
+    "gloss": [
+      {"w": "breakdowns", "hw": "breakdown", "pos": "n.", "zh": "故障", "ex": "A breakdown stopped the line for an hour."},
+      {"w": "worn", "hw": "worn", "pos": "adj.", "zh": "磨損的", "ex": "The worn tires need to be replaced."},
+      {"w": "traced to", "hw": "trace to", "pos": "phr.", "zh": "追查出原因是", "ex": "The fault was traced to a loose cable."}
+    ]
+  },
+  "v-family-10": {
+    "point": ["<em>dependable</em>: can be trusted.", "dependable（可靠的）。"],
+    "why": ["Staff <em>usually book the one in the south building instead</em>, so the old north elevator has never been reliable: <em>dependable</em>.", "員工 usually book the one in the south building instead，表示北棟舊貨梯一直不可靠：dependable。"],
+    "usage": [
+      ["<em>dependent</em> on someone or something: relying on it. <em>The small shop is dependent on one supplier.</em>", "dependent on 人或物：依賴它。"],
+      ["<em>depending on</em> something means it varies with that thing. <em>Prices change, depending on the season.</em>", "depending on 某事：隨該事而不同，即「視……而定」。"],
+      ["<em>depend</em> on someone: rely on them. <em>We depended on the night shift to finish the order.</em>", "depend on 人：倚靠他們。"],
+      null
+    ],
+    "gloss": [
+      {"w": "freight elevator", "hw": "freight elevator", "pos": "phr.", "zh": "貨梯", "ex": "Use the freight elevator for boxes."},
+      {"w": "heavy equipment", "hw": "heavy equipment", "pos": "phr.", "zh": "重型設備", "ex": "The crew moved the heavy equipment by truck."}
+    ]
+  },
+  "_flags": []
+}

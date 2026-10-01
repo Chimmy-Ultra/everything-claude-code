@@ -1,0 +1,364 @@
+<title>Café, Illustrated</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: a picture-dictionary spread. The café picture with numbered pins, the tapped word under it,
+   a numbered legend, then the visit as steps with what you hear and what you say. */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#F3F2F7; --surface:#FFFFFF; --plate:#E6E3EE; --ink:#1B1830; --muted:#5D5972; --line:#DAD6E4; --outline:#2B2740;
+  --accent:#0A7F72; --accent-ink:#FFFFFF; --accent-bg:rgba(31,181,163,.13);
+  --barista:#B4532A; --barista-tint:#FBEDE5; --you:#2A6FB0; --you-tint:#E4EFFA;
+  --good:#1F7A3A; --good-bg:#E3F3E6; --warn:#9A6200; --warn-bg:#FBF0DA; --bad:#B23A3A; --bad-bg:#FBE6E4;
+  --paper:#FBF7EF;
+  --shadow:0 1px 2px rgba(27,24,48,.05),0 6px 18px rgba(27,24,48,.06);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#2B2740;
+    --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+    --barista:#F2A27E; --barista-tint:#2E1E18; --you:#7DBDF3; --you-tint:#172639;
+    --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+    --paper:#EFE9DC;
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#2B2740;
+  --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+  --barista:#F2A27E; --barista-tint:#2E1E18; --you:#7DBDF3; --you-tint:#172639;
+  --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+  --paper:#EFE9DC;
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+[lang="zh-Hant"],.zh{font-family:var(--zh)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:880px;margin:0 auto;padding:10px clamp(16px,4vw,20px);display:flex;align-items:center;gap:8px 12px}
+.brand{font:700 15px/1 var(--display);margin-right:auto;min-width:0}
+.brand small{font:500 12px var(--mono);color:var(--muted);margin-left:6px;letter-spacing:.04em;text-transform:uppercase}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font:500 13px/1.2 var(--display);white-space:nowrap}
+.chip select{border:0;background:transparent;font:600 13px var(--mono);cursor:pointer;padding:0}
+
+main{max-width:880px;margin:0 auto;padding-inline:clamp(16px,4vw,20px);padding-block:24px 80px}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+h1{font:800 clamp(30px,6vw,44px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
+h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
+.lede{margin:0;max-width:62ch;color:var(--muted)}
+.lede strong{color:var(--ink);font-weight:600}
+.label{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:9px 18px;font:600 15px/1.2 var(--display);border:1.5px solid var(--line);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:default}
+.pl{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:inline-grid;place-items:center;padding:0;color:var(--ink)}
+.pl svg{width:11px;height:11px;fill:currentColor}
+.pl.on{border-color:var(--accent);color:var(--accent)}
+.uk{font:600 10px/1 var(--mono);letter-spacing:.05em;border:1px solid currentColor;border-radius:4px;padding:2px 4px;color:var(--warn);vertical-align:2px;margin-left:6px}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font:600 13px/1.4 var(--display)}
+.tip{margin:0;font:13px/1.5 var(--zh);color:var(--muted)}
+@media (max-width:560px){.brand small{display:none}}
+
+.modes{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin:20px 0 12px;font:14px var(--display)}
+.modes label{display:inline-flex;gap:8px;align-items:center;cursor:pointer}
+.modes input{accent-color:var(--accent);width:18px;height:18px;margin:0}
+.pic{position:relative;border-radius:18px;overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}
+.pic svg{display:block;width:100%;height:auto}
+.pin{position:absolute;transform:translate(-50%,-50%);min-width:26px;height:26px;border-radius:999px;border:2px solid #2B2740;background:#FFFFFF;color:#2B2740;font:700 12px/1 var(--mono);display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:0 6px;box-shadow:0 2px 0 rgba(43,39,64,.35);white-space:nowrap}
+.pin .w{display:none;font:600 12px/1 var(--display)}
+.labels .pin .w{display:inline}
+.labels .pin{transform:translate(-13px,-50%)}
+.labels .pin.up{margin-top:-36px}
+.labels .pin.dn{margin-top:20px}
+.pin[aria-pressed="true"]{background:#0A7F72;border-color:#0A7F72;color:#FFFFFF}
+.pin.right{background:#1F7A3A;border-color:#1F7A3A;color:#FFFFFF}
+.pin.wrong{background:#B23A3A;border-color:#B23A3A;color:#FFFFFF}
+.pic g.hl{filter:drop-shadow(0 0 6px rgba(10,127,114,.9)) drop-shadow(0 0 2px rgba(10,127,114,.9))}
+@media (min-width:700px){.pin{min-width:30px;height:30px;font-size:13px}.labels .pin{transform:translate(-15px,-50%)}}
+@media (max-width:520px){.pin{min-width:22px;height:22px;font-size:11px;padding:0 4px}.labels .pin{transform:translate(-11px,-50%)}.labels .pin .w{font-size:10px}}
+
+.card{margin-top:12px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px;display:grid;gap:8px;min-height:120px}
+.card .head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.card .num{font:700 13px var(--mono);color:var(--muted)}
+.card .word{font:700 24px/1.2 var(--display)}
+.card .mean{font:500 16px var(--zh);color:var(--muted)}
+.card .vars{display:flex;gap:6px;flex-wrap:wrap}
+.card .vars span{font:500 13px var(--display);background:var(--warn-bg);color:var(--warn);border-radius:6px;padding:2px 8px}
+.card .ex{display:flex;gap:10px;align-items:flex-start}
+.card .ex p{margin:0;min-width:0}
+.card .ex small{display:block;font:14px var(--zh);color:var(--muted)}
+.card .empty{margin:auto 0;color:var(--muted);font:15px var(--display)}
+.quiz{display:grid;gap:10px;justify-items:start}
+.quiz .q{font:700 22px/1.3 var(--display);margin:0}
+.quiz .score{font:600 14px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+
+.legend{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4px 16px;counter-reset:n}
+.legend li button{width:100%;display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:baseline;text-align:left;background:none;border:0;border-bottom:1px dashed var(--line);padding:7px 2px}
+.legend .n{font:700 12px var(--mono);color:var(--muted)}
+.legend .w{font:600 16px var(--display)}
+.legend .z{font:13px var(--zh);color:var(--muted);margin-left:6px}
+.legend button[aria-current="true"] .w{color:var(--accent)}
+
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:14px;counter-reset:s}
+.step{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:12px}
+.step h3{margin:0;font:700 18px/1.25 var(--display);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.step h3::before{content:counter(s);display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent-bg);color:var(--accent);font:700 12px var(--mono);flex:none;align-self:center}
+.step h3 span{font:500 14px var(--zh);color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.col{min-width:0;display:grid;gap:8px;align-content:start}
+.line{display:flex;gap:8px;align-items:flex-start}
+.line p{margin:0;min-width:0;font-size:16px;line-height:1.45}
+.line small{display:block;font:13px var(--zh);color:var(--muted)}
+.hear .line p{background:var(--barista-tint);border-radius:12px 12px 12px 4px;padding:6px 10px}
+.say .line p{background:var(--you-tint);border-radius:12px 12px 4px 12px;padding:6px 10px}
+.reply{margin-left:40px;font:13px var(--display);color:var(--muted)}
+.reply b{color:var(--you);font-weight:600}
+.col .label{margin:0}
+.line.now p,.reply.now b{outline:2px solid var(--accent);outline-offset:2px;border-radius:10px}
+#visit-play[aria-pressed="true"]{background:var(--surface);color:var(--accent)}
+.who-l{display:flex;align-items:center;gap:8px}
+.who-l .av{width:30px;height:30px;border-radius:50%;overflow:hidden;flex:none}
+.who-l .av:empty{display:none}
+.who-l .av svg{width:100%;height:100%;display:block}
+.muted{color:var(--muted);font:14px var(--display);margin:0}
+@media (max-width:620px){.cols{grid-template-columns:1fr}}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Café, Illustrated <small>Scene Lab · A</small></span>
+  <label class="chip" for="speed">Speed <select id="speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option></select></label>
+</div></header>
+
+<main>
+  <p class="kicker">Demo A · Picture dictionary</p>
+  <h1>Everything in a café, and what people say there</h1>
+  <p class="lede">Tap a number in the picture to hear the word and see it used. <strong>Find it</strong> turns the picture into a listening game: hear a word, tap the thing. Below the picture, the visit is broken into steps with what the barista says and what you can say back.</p>
+
+  <div class="modes">
+    <label for="lab"><input type="checkbox" id="lab"> Show words on the picture</label>
+    <button class="btn" type="button" id="quiz-b">Find it</button>
+  </div>
+
+  <div class="pic" id="pic">
+    <svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inside a small cafe"><style>
+.cs-st{stroke:var(--outline,#2B2740);stroke-width:2.5;stroke-linejoin:round}
+.cs-ln{fill:none;stroke:var(--outline,#2B2740);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cs-thin{stroke-width:2}
+.cs-dash{stroke-dasharray:4 5}
+.cs-chalk{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cs-f-ink{fill:var(--outline,#2B2740)}
+.cs-f-coral{fill:#FF7A59} .cs-f-coral2{fill:#D65A3A} .cs-f-sky{fill:#4A9FE3} .cs-f-sky2{fill:#2C78BD}
+.cs-f-violet{fill:#8A78E0} .cs-f-teal{fill:#1FB5A3} .cs-f-teal2{fill:#168C7E} .cs-f-amber{fill:#FFB22E} .cs-f-amber2{fill:#E0921A}
+.cs-f-leaf{fill:#6CC06A} .cs-f-leaf2{fill:#4E9C4C} .cs-f-white{fill:#FFFFFF} .cs-f-beige{fill:#F3DFB8}
+.cs-f-grey{fill:#B4BACB} .cs-f-grey2{fill:#8D93A8} .cs-f-dark{fill:#1D1B2A} .cs-f-wood{fill:#C98B55} .cs-f-wood2{fill:#A96F3F}
+.cs-f-wall{fill:#F7F0E3} .cs-f-floor{fill:#E8D4B5} .cs-f-floor2{fill:#D9BF98} .cs-f-board{fill:#3E4A5C}
+.cs-f-glass{fill:#DDF0FA;fill-opacity:.7} .cs-f-skin1{fill:#F1C7A1} .cs-f-skin2{fill:#C98C63} .cs-f-skin3{fill:#E2B288}
+.cs-f-hair1{fill:#7A3B2E} .cs-f-hair2{fill:#1E222C} .cs-f-hair3{fill:#D07A3A} .cs-f-cream{fill:#FFF3D6} .cs-f-brown{fill:#6B4A2B}
+.cs-f-none{fill:none}
+</style><rect class="cs-f-wall" x="0" y="0" width="960" height="600" rx="0"/><rect class="cs-f-floor" x="0" y="330" width="960" height="270" rx="0"/><rect class="cs-f-floor2" x="0" y="330" width="960" height="8" rx="0"/><path class="cs-ln cs-thin" style="stroke:#D9BF98" d="M0 400h960M0 470h960M0 540h960"/><path class="cs-ln cs-thin" style="stroke:#E4D9C5" d="M0 300h960"/><g id="obj-c1"><rect class="cs-f-wood cs-st" x="290" y="22" width="290" height="128" rx="8"/><rect class="cs-f-board cs-st" x="300" y="32" width="270" height="108" rx="4"/><path class="cs-f-white cs-st" d="M322 44h18v10a9 7 0 0 1-18 0z"/><path class="cs-f-none cs-st" d="M340 47h5a4 4 0 0 1 0 8h-5"/><path class="cs-chalk" d="M356 52h58"/><path class="cs-chalk" d="M430 46c0 8 12 8 12 0s-12-8-12 0z"/><path class="cs-f-white cs-st" d="M316 72h16v8a8 6 0 0 1-16 0z"/><path class="cs-chalk" d="M344 78h60"/><path class="cs-chalk" d="M510 78h10M526 78h10M542 78h10"/><path class="cs-f-white cs-st" d="M318 93l3 14h10l3-14z"/><path class="cs-chalk" d="M344 101h74"/><path class="cs-chalk" d="M510 101h10M526 101h10M542 101h10"/><path class="cs-f-white cs-st" d="M316 120h16v3h-16zM318 123l2 8h12l2-8z"/><path class="cs-chalk" d="M344 124h88"/><path class="cs-chalk" d="M510 124h10M526 124h10M542 124h10"/></g><g id="obj-c16"><path class="cs-ln cs-thin" d="M816 20v40M876 20v40"/><rect class="cs-f-wood cs-st" x="800" y="60" width="92" height="84" rx="6"/><rect class="cs-f-board cs-st" x="808" y="68" width="76" height="68" rx="4"/><path class="cs-chalk" d="M822 96a34 34 0 0 1 48 0M831 106a22 22 0 0 1 30 0M840 116a10 10 0 0 1 12 0"/><circle class="cs-f-white" cx="846" cy="125" r="3.2"/><path class="cs-chalk" d="M818 80h56" style="stroke-dasharray:6 6"/></g><rect class="cs-f-wood2 cs-st" x="380" y="240" width="540" height="62" rx="3"/><rect class="cs-f-wood cs-st" x="376" y="236" width="548" height="12" rx="3"/><g id="obj-c4"><rect class="cs-f-grey cs-st" x="672" y="168" width="118" height="72" rx="6"/><rect class="cs-f-grey2 cs-st" x="668" y="150" width="126" height="22" rx="5"/><path class="cs-f-white cs-st" d="M690 150v-6h14v6z"/><path class="cs-f-white cs-st" d="M712 150v-6h14v6z"/><rect class="cs-f-dark cs-st" x="676" y="226" width="110" height="14" rx="3"/><circle class="cs-f-coral cs-st" cx="768" cy="190" r="10"/><circle class="cs-f-white" cx="768" cy="190" r="3"/><rect class="cs-f-dark cs-st" x="684" y="180" width="20" height="12" rx="3"/><rect class="cs-f-dark cs-st" x="716" y="180" width="20" height="12" rx="3"/><rect class="cs-f-dark cs-st" x="690" y="192" width="8" height="16" rx="3"/><rect class="cs-f-dark cs-st" x="722" y="192" width="8" height="16" rx="3"/><path class="cs-f-white cs-st" d="M700 210h18v10a9 6 0 0 1-18 0z"/><path class="cs-ln cs-thin" d="M792 176l16 12v22"/><path class="cs-f-sky cs-st" d="M672 210h14v14h-14z"/></g><g id="obj-c3"><rect class="cs-f-teal cs-st" x="586" y="200" width="62" height="112" rx="14"/><rect class="cs-f-teal cs-st" x="574" y="214" width="16" height="66" rx="8"/><rect class="cs-f-teal cs-st" x="644" y="214" width="16" height="66" rx="8"/><circle class="cs-f-skin3 cs-st" cx="582" cy="284" r="8"/><circle class="cs-f-skin3 cs-st" cx="652" cy="284" r="8"/><path class="cs-f-amber cs-st" d="M598 226h38v84h-38z"/><path class="cs-ln cs-thin" d="M604 226l13-20M636 226l-13-20"/><rect class="cs-f-amber2 cs-st" x="606" y="268" width="22" height="20" rx="3"/><circle class="cs-f-skin3 cs-st" cx="617" cy="178" r="26"/><path class="cs-f-hair2 cs-st" d="M591 176a26 26 0 0 1 52 0z"/><rect class="cs-f-coral cs-st" x="588" y="156" width="58" height="14" rx="6"/><path class="cs-f-coral cs-st" d="M588 168h-14v-8h14z"/><circle class="cs-f-dark" cx="609" cy="182" r="2.6"/><circle class="cs-f-dark" cx="625" cy="182" r="2.6"/><path class="cs-ln cs-thin" d="M611 192q6 5 12 0"/></g><g id="obj-c2"><rect class="cs-f-teal cs-st" x="160" y="318" width="750" height="96" rx="4"/><path class="cs-ln cs-thin" d="M300 330v72M440 330v72M580 330v72M720 330v72M860 330v72"/><rect class="cs-f-wood cs-st" x="150" y="300" width="770" height="22" rx="5"/></g><g id="obj-c7"><rect class="cs-f-wood2 cs-st" x="178" y="292" width="138" height="20" rx="3"/><rect class="cs-f-glass cs-st" x="184" y="224" width="126" height="70" rx="8"/><rect class="cs-f-grey cs-st" x="184" y="218" width="126" height="10" rx="4"/><path class="cs-ln cs-thin" d="M186 254h122"/><circle class="cs-f-wood cs-st" cx="206" cy="244" r="8"/><circle class="cs-f-wood cs-st" cx="226" cy="244" r="8"/><path class="cs-f-beige cs-st" d="M270 254l-3-10h22l-3 10z"/><path class="cs-f-coral cs-st" d="M266 244q6-12 30-2z"/></g><g id="obj-c8"><path class="cs-f-amber cs-st" d="M196 290c-2-28 22-42 51-42s53 14 51 42c-12-11-30-14-51-14s-39 3-51 14z"/><path class="cs-ln cs-thin" d="M226 258c-4 8-4 15-2 21M268 258c4 8 4 15 2 21M242 251c-1 9 0 18 2 26M252 251c1 9 0 18-2 26"/></g><g id="obj-c15"><rect class="cs-f-grey cs-st" x="432" y="264" width="84" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="440" y="270" width="44" height="10" rx="2"/><rect class="cs-f-dark" x="440" y="286" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="440" y="297" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="455" y="286" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="455" y="297" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="470" y="286" width="10" height="7" rx="2"/><rect class="cs-f-dark" x="470" y="297" width="10" height="7" rx="2"/><rect class="cs-f-coral cs-st" x="492" y="286" width="16" height="18" rx="3"/><rect class="cs-f-dark cs-st" x="450" y="232" width="52" height="34" rx="5"/><rect class="cs-f-sky" x="456" y="238" width="40" height="22" rx="3"/><path class="cs-chalk" d="M462 244h18M462 252h26" style="stroke-width:2.5"/><rect class="cs-f-grey2 cs-st" x="444" y="262" width="64" height="6" rx="2"/></g><g id="obj-c14"><path class="cs-f-white cs-st" d="M500 268v-64l6 6 6-6 6 6 6-6v64z"/><path class="cs-ln cs-thin cs-dash" d="M506 222h14M506 232h14M506 242h10M506 252h14"/><rect class="cs-f-grey2 cs-st" x="494" y="262" width="36" height="8" rx="2"/></g><g id="obj-c6"><rect class="cs-f-dark cs-st" x="530" y="262" width="38" height="50" rx="6"/><rect class="cs-f-sky" x="536" y="268" width="26" height="14" rx="2"/><rect class="cs-f-grey" x="537" y="287" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="537" y="294" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="537" y="301" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="546" y="287" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="546" y="294" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="546" y="301" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="555" y="287" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="555" y="294" width="6" height="5" rx="1"/><rect class="cs-f-grey" x="555" y="301" width="6" height="5" rx="1"/><path class="cs-f-coral cs-st" d="M536 300h26v6h-26z"/></g><g id="obj-c9"><path class="cs-f-white cs-st" d="M700 312l6-62h40l6 62z"/><path class="cs-f-wood cs-st" d="M704 274h44l-2 22h-40z"/><rect class="cs-f-dark cs-st" x="702" y="240" width="48" height="12" rx="4"/><path class="cs-f-dark cs-st" d="M716 240h20v-6h-20z"/><circle class="cs-f-coral" cx="726" cy="285" r="5"/></g><g id="obj-c10"><rect class="cs-f-white cs-st" x="760" y="304" width="50" height="9" rx="3"/><rect class="cs-f-white cs-st" x="760" y="296" width="50" height="9" rx="3"/><rect class="cs-f-white cs-st" x="760" y="288" width="50" height="9" rx="3"/><rect class="cs-f-white cs-st" x="760" y="280" width="50" height="9" rx="3"/><ellipse class="cs-f-white cs-st" cx="785" cy="280" rx="25" ry="7"/><rect class="cs-f-dark cs-st" x="777" y="275" width="16" height="6" rx="2"/></g><g id="obj-c18"><rect class="cs-f-coral cs-st" x="814" y="300" width="96" height="14" rx="4"/><rect class="cs-f-coral2 cs-st" x="810" y="292" width="10" height="22" rx="3"/><rect class="cs-f-coral2 cs-st" x="904" y="292" width="10" height="22" rx="3"/><path class="cs-f-beige cs-st" d="M846 302l4-42h32l4 42z"/><path class="cs-f-wood cs-st" d="M851 282h26l2 20h-30z"/><path class="cs-ln cs-thin" d="M864 262l8-22"/><rect class="cs-f-teal cs-st" x="848" y="256" width="34" height="8" rx="3"/></g><g id="obj-c5"><rect class="cs-f-dark cs-st" x="207.44" y="494" width="15.08" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="229.48" y="494" width="15.08" height="48" rx="5"/><rect class="cs-f-brown cs-st" x="205.12" y="536" width="18.56" height="10" rx="4"/><rect class="cs-f-brown cs-st" x="228.32" y="536" width="18.56" height="10" rx="4"/><rect class="cs-f-sky cs-st" x="197.0" y="392" width="58" height="108" rx="14"/><rect class="cs-f-sky cs-st" x="185.0" y="404" width="16" height="66.96" rx="8"/><rect class="cs-f-sky cs-st" x="251.0" y="404" width="16" height="66.96" rx="8"/><circle class="cs-f-skin1 cs-st" cx="193.0" cy="470.96" r="8"/><circle class="cs-f-skin1 cs-st" cx="259.0" cy="470.96" r="8"/><circle class="cs-f-skin1 cs-st" cx="226" cy="372" r="24"/><path class="cs-f-hair3 cs-st" d="M202 382 v-12 a24 24 0 0 1 48 0 v12 h-8 v-12 a16 16 0 0 0 -32 0 v12 z"/><circle class="cs-f-dark" cx="224" cy="374" r="2.6"/><circle class="cs-f-dark" cx="240" cy="374" r="2.6"/><path class="cs-ln cs-thin" d="M226 384 q6 5 12 0"/><rect class="cs-f-dark cs-st" x="287.44" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="309.48" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-brown cs-st" x="285.12" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-brown cs-st" x="308.32" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-coral cs-st" x="277.0" y="388" width="58" height="110" rx="14"/><rect class="cs-f-coral cs-st" x="265.0" y="400" width="16" height="68.2" rx="8"/><rect class="cs-f-coral cs-st" x="331.0" y="400" width="16" height="68.2" rx="8"/><circle class="cs-f-skin2 cs-st" cx="273.0" cy="468.2" r="8"/><circle class="cs-f-skin2 cs-st" cx="339.0" cy="468.2" r="8"/><circle class="cs-f-skin2 cs-st" cx="306" cy="368" r="24"/><path class="cs-f-hair2 cs-st" d="M282 364 a24 24 0 0 1 48 0 v-2 a24 24 0 0 0 -48 0 z"/><circle class="cs-f-dark" cx="304" cy="370" r="2.6"/><circle class="cs-f-dark" cx="320" cy="370" r="2.6"/><path class="cs-ln cs-thin" d="M306 380 q6 5 12 0"/><rect class="cs-f-dark cs-st" x="367.44" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-dark cs-st" x="389.48" y="492" width="15.08" height="48" rx="5"/><rect class="cs-f-brown cs-st" x="365.12" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-brown cs-st" x="388.32" y="534" width="18.56" height="10" rx="4"/><rect class="cs-f-leaf cs-st" x="357.0" y="386" width="58" height="112" rx="14"/><rect class="cs-f-leaf cs-st" x="345.0" y="398" width="16" height="69.44" rx="8"/><rect class="cs-f-leaf cs-st" x="411.0" y="398" width="16" height="69.44" rx="8"/><circle class="cs-f-skin1 cs-st" cx="353.0" cy="467.44" r="8"/><circle class="cs-f-skin1 cs-st" cx="419.0" cy="467.44" r="8"/><circle class="cs-f-skin1 cs-st" cx="386" cy="366" r="24"/><path class="cs-f-hair1 cs-st" d="M362 364 a24 24 0 0 1 48 0 z"/><circle class="cs-f-hair1 cs-st" cx="386" cy="338" r="9"/><circle class="cs-f-dark" cx="384" cy="368" r="2.6"/><circle class="cs-f-dark" cx="400" cy="368" r="2.6"/><path class="cs-ln cs-thin" d="M386 378 q6 5 12 0"/></g><rect class="cs-f-wood cs-st" x="30" y="384" width="124" height="14" rx="3"/><rect class="cs-f-wood2 cs-st" x="40" y="398" width="12" height="140" rx="3"/><rect class="cs-f-wood2 cs-st" x="132" y="398" width="12" height="140" rx="3"/><rect class="cs-f-wood cs-st" x="30" y="450" width="124" height="8" rx="2"/><g id="obj-c12"><path class="cs-f-white cs-st" d="M56 342l8-16h36l-2 16z"/><rect class="cs-f-violet cs-st" x="46" y="338" width="52" height="46" rx="5"/><rect class="cs-f-white cs-st" x="56" y="352" width="32" height="6" rx="2"/><rect class="cs-f-white cs-st" x="56" y="364" width="32" height="6" rx="2"/></g><g id="obj-c13"><rect class="cs-f-glass cs-st" x="108" y="342" width="40" height="42" rx="6"/><rect class="cs-f-white" x="112" y="360" width="32" height="21" rx="4"/><rect class="cs-f-cream" x="114" y="362" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="126" y="368" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="136" y="362" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="120" y="374" width="7" height="7" rx="1"/><rect class="cs-f-cream" x="132" y="374" width="7" height="7" rx="1"/><rect class="cs-f-dark cs-st" x="112" y="334" width="32" height="10" rx="3"/><rect class="cs-f-grey2 cs-st" x="104" y="344" width="48" height="3" rx="1"/></g><g id="obj-c17"><rect class="cs-f-violet cs-st" x="866" y="392" width="52" height="30" rx="8"/><rect class="cs-f-violet cs-st" x="870" y="422" width="10" height="118" rx="4"/><rect class="cs-f-violet cs-st" x="908" y="422" width="10" height="118" rx="4"/><rect class="cs-f-violet cs-st" x="860" y="470" width="60" height="14" rx="4"/><rect class="cs-f-violet cs-st" x="642" y="392" width="52" height="30" rx="8"/><rect class="cs-f-violet cs-st" x="646" y="420" width="8" height="24" rx="3"/><rect class="cs-f-violet cs-st" x="682" y="420" width="8" height="24" rx="3"/><rect class="cs-f-violet cs-st" x="636" y="444" width="64" height="14" rx="4"/><rect class="cs-f-violet cs-st" x="640" y="458" width="10" height="82" rx="4"/><rect class="cs-f-violet cs-st" x="686" y="458" width="10" height="82" rx="4"/><rect class="cs-f-wood2 cs-st" x="772" y="460" width="16" height="76" rx="3"/><ellipse class="cs-f-wood2 cs-st" cx="780" cy="538" rx="44" ry="9"/><ellipse class="cs-f-wood cs-st" cx="780" cy="442" rx="82" ry="22"/><circle class="cs-f-skin1 cs-st" cx="892" cy="400" r="21"/><path class="cs-f-hair1 cs-st" d="M871 398a21 21 0 0 1 42 0z"/><rect class="cs-f-amber cs-st" x="866" y="420" width="52" height="60" rx="14"/><rect class="cs-f-amber cs-st" x="852" y="432" width="16" height="40" rx="8"/><circle class="cs-f-skin1 cs-st" cx="860" cy="476" r="7"/><rect class="cs-f-dark cs-st" x="840" y="470" width="44" height="20" rx="8"/><rect class="cs-f-dark cs-st" x="838" y="486" width="14" height="52" rx="5"/><rect class="cs-f-brown cs-st" x="830" y="530" width="24" height="10" rx="4"/><circle class="cs-f-dark" cx="886" cy="403" r="2.6"/><circle class="cs-f-dark" cx="900" cy="403" r="2.6"/><path class="cs-ln cs-thin" d="M887 412q6 5 12 0"/></g><g id="obj-c11"><path class="cs-f-none cs-st" d="M790 416h8a10 10 0 0 1 0 20h-8"/><rect class="cs-f-white cs-st" x="754" y="404" width="40" height="38" rx="6"/><rect class="cs-f-coral cs-st" x="754" y="404" width="40" height="8" rx="3"/><path class="cs-ln cs-thin" d="M766 396c-4-6 4-8 0-14M780 396c-4-6 4-8 0-14"/></g></svg>
+  </div>
+  <div class="card" id="card" aria-live="polite"></div>
+
+  <ol class="legend" id="legend"></ol>
+
+  <h2 style="margin-top:44px">The visit, step by step</h2>
+  <p class="lede">Barista lines are on the left with a reply you can use; your own sentences are on the right. Tap ▶ to hear any line.</p>
+  <button class="btn primary" type="button" id="visit-play" aria-pressed="false" style="margin-top:16px">Play the whole visit</button>
+  <ol class="steps" id="steps"></ol>
+</main>
+
+<script>
+const DATA = {"objects": [{"id": "c1", "word": "menu board", "zh": "菜單看板", "ex": "The prices are on the menu board.", "exzh": "價格在菜單看板上。", "var": null, "at": [300, 36]}, {"id": "c2", "word": "counter", "zh": "櫃台", "ex": "Please order at the counter.", "exzh": "請在櫃台點餐。", "var": null, "at": [470, 392]}, {"id": "c3", "word": "barista", "zh": "咖啡師", "ex": "The barista is making my latte.", "exzh": "咖啡師正在做我的拿鐵。", "var": null, "at": [617, 138]}, {"id": "c4", "word": "coffee machine", "zh": "咖啡機", "ex": "The coffee machine is really loud.", "exzh": "咖啡機好吵。", "var": null, "at": [730, 130]}, {"id": "c5", "word": "queue", "zh": "排隊的隊伍", "ex": "The queue is quite long this morning.", "exzh": "今天早上隊伍滿長的。", "var": [["UK", "queue"], ["US", "line"]], "at": [306, 330]}, {"id": "c6", "word": "card reader", "zh": "刷卡機", "ex": "Just tap your card on the card reader.", "exzh": "卡片在刷卡機上感應一下就好。", "var": [["UK", "card machine"], ["US", "card reader"]], "at": [549, 246]}, {"id": "c7", "word": "display case", "zh": "點心櫃", "ex": "The croissants are in the display case.", "exzh": "可頌在點心櫃裡。", "var": null, "at": [180, 232]}, {"id": "c8", "word": "croissant", "zh": "可頌", "ex": "Can I get a croissant, please?", "exzh": "可以給我一個可頌嗎？", "var": null, "at": [247, 298]}, {"id": "c9", "word": "takeaway cup", "zh": "外帶杯", "ex": "Can I have it in a takeaway cup?", "exzh": "可以用外帶杯裝嗎？", "var": [["UK", "takeaway cup"], ["US", "to-go cup"]], "at": [684, 285]}, {"id": "c10", "word": "lid", "zh": "杯蓋", "ex": "Could I get a lid, please?", "exzh": "可以給我一個杯蓋嗎？", "var": null, "at": [785, 258]}, {"id": "c11", "word": "mug", "zh": "馬克杯", "ex": "I'm staying, so a mug is fine.", "exzh": "我內用，用馬克杯就好。", "var": null, "at": [774, 370]}, {"id": "c12", "word": "napkins", "zh": "餐巾紙", "ex": "The napkins are next to the sugar.", "exzh": "餐巾紙在糖旁邊。", "var": null, "at": [70, 318]}, {"id": "c13", "word": "sugar", "zh": "糖", "ex": "Sugar and milk are over there.", "exzh": "糖和牛奶在那邊。", "var": null, "at": [128, 316]}, {"id": "c14", "word": "receipt", "zh": "收據", "ex": "Would you like your receipt?", "exzh": "需要收據嗎？", "var": null, "at": [518, 186]}, {"id": "c15", "word": "till", "zh": "收銀機", "ex": "The barista opened the till.", "exzh": "咖啡師打開了收銀機。", "var": [["UK", "till"], ["US", "register"]], "at": [426, 300]}, {"id": "c16", "word": "Wi-Fi password", "zh": "Wi-Fi 密碼", "ex": "What's the Wi-Fi password?", "exzh": "Wi-Fi 密碼是什麼？", "var": null, "at": [846, 46]}, {"id": "c17", "word": "seat", "zh": "座位", "ex": "Is this seat taken?", "exzh": "這個位子有人坐嗎？", "var": null, "at": [668, 378]}, {"id": "c18", "word": "tray", "zh": "托盤", "ex": "She carried the drinks on a tray.", "exzh": "她用托盤端飲料。", "var": null, "at": [896, 282]}], "intents": [{"id": "i1", "zh": "點東西", "en": "Order", "phrases": [{"id": "p1", "parts": ["Can I get a ", ["latte", "flat white", "cappuccino", "tea"], ", please?"], "zh": "可以給我一杯＿＿嗎？", "note": "最萬用的點餐句。get 在這裡就是「拿到、要」。"}, {"id": "p2", "parts": ["I'd like a ", ["croissant", "muffin", "brownie"], ", please."], "zh": "我想要一個＿＿。", "note": "I'd like 比 I want 客氣，點餐時用這個。"}, {"id": "p3", "parts": ["I'll have the same, please."], "zh": "我也要一樣的。", "note": null}]}, {"id": "i2", "zh": "改做法", "en": "Change it", "phrases": [{"id": "p4", "parts": ["Can I get it with ", ["oat milk", "soy milk", "an extra shot"], "?"], "zh": "可以加＿＿嗎？／可以換成＿＿嗎？", "note": "with 後面接你要加或換的東西。"}, {"id": "p5", "parts": ["A ", ["medium", "small", "large"], " one, please."], "zh": "＿＿杯，謝謝。", "note": "one 代替前面說過的飲料，不用再講一次名字。"}, {"id": "p6", "parts": ["Could you make it ", ["decaf", "extra hot"], "?"], "zh": "可以做成＿＿嗎？", "note": "decaf = 低咖啡因。"}]}, {"id": "i3", "zh": "內用外帶", "en": "Here or to go", "phrases": [{"id": "p7", "parts": ["For here, please."], "zh": "內用。", "note": "英美都通。"}, {"id": "p8", "parts": ["To take away, please."], "zh": "外帶。（英式）", "note": "美式說 To go, please."}, {"id": "p9", "parts": ["To go, please."], "zh": "外帶。（美式）", "note": null}]}, {"id": "i4", "zh": "付錢", "en": "Pay", "phrases": [{"id": "p10", "parts": ["Can I pay by card?"], "zh": "可以刷卡嗎？", "note": "by card、by cash 不加 the。付現也常說 pay in cash。"}, {"id": "p11", "parts": ["Do you take cash?"], "zh": "你們收現金嗎？", "note": "take 在這裡是「接受」。"}, {"id": "p12", "parts": ["Could I get a receipt, please?"], "zh": "可以給我收據嗎？", "note": null}]}, {"id": "i5", "zh": "問問題", "en": "Ask", "phrases": [{"id": "p13", "parts": ["What's the Wi-Fi password?"], "zh": "Wi-Fi 密碼是什麼？", "note": null}, {"id": "p14", "parts": ["Where's the ", ["toilet", "restroom"], "?"], "zh": "廁所在哪裡？", "note": "toilet 是英式，restroom 是美式。"}, {"id": "p15", "parts": ["What do you recommend?"], "zh": "你推薦什麼？", "note": null}, {"id": "p16", "parts": ["Is this seat taken?"], "zh": "這個位子有人坐嗎？", "note": "英美都通。"}, {"id": "p17", "parts": ["Do you have anything ", ["without dairy", "vegan", "gluten-free"], "?"], "zh": "有沒有＿＿的東西？", "note": null}]}, {"id": "i6", "zh": "出狀況", "en": "Fix a problem", "phrases": [{"id": "p18", "parts": ["Sorry, I think this is someone else's."], "zh": "不好意思，這杯好像是別人的。", "note": null}, {"id": "p19", "parts": ["Sorry, I asked for ", ["oat milk", "a large", "no sugar"], "."], "zh": "不好意思，我點的是＿＿。", "note": "asked for = 我要的是。直接說事實，不用道歉太多。"}, {"id": "p20", "parts": ["Could I get ", ["a lid", "some napkins", "a spoon"], ", please?"], "zh": "可以給我＿＿嗎？", "note": null}, {"id": "p21", "parts": ["Sorry, could you say that again?"], "zh": "不好意思，可以再說一次嗎？", "note": "聽不懂時最好用的一句。"}]}], "barista": [{"id": "b1", "en": "Hi there, what can I get you?", "zh": "你好，要點什麼？", "reply": "Can I get a latte, please?"}, {"id": "b2", "en": "What size would you like?", "zh": "要什麼尺寸？", "reply": "Medium, please."}, {"id": "b3", "en": "Any milk?", "zh": "要加什麼奶嗎？", "reply": "Oat milk, please."}, {"id": "b4", "en": "Is that to eat in or take away?", "zh": "內用還是外帶？（英式）", "reply": "To take away, please."}, {"id": "b5", "en": "Is that for here or to go?", "zh": "內用還是外帶？（美式）", "reply": "For here, please."}, {"id": "b6", "en": "Anything else?", "zh": "還需要別的嗎？", "reply": "No, that's all, thanks."}, {"id": "b7", "en": "Can I get a name for the order?", "zh": "可以留個名字嗎？", "reply": "It's Wei."}, {"id": "b8", "en": "That's four pounds twenty.", "zh": "總共四鎊二十。", "reply": "Can I pay by card?"}, {"id": "b9", "en": "Just tap whenever you're ready.", "zh": "準備好就感應一下。", "reply": "Okay, thanks."}, {"id": "b10", "en": "Do you want your receipt?", "zh": "需要收據嗎？", "reply": "No, I'm fine, thanks."}, {"id": "b11", "en": "Sorry, we're out of oat milk. Is soy okay?", "zh": "抱歉，燕麥奶沒了。豆奶可以嗎？", "reply": "Sure, soy is fine."}, {"id": "b12", "en": "Your latte will be ready at the end of the counter.", "zh": "你的拿鐵會在櫃台另一頭給你。", "reply": "Great, thanks."}], "avatars": {"B": "<svg viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><defs><clipPath id=\"av-B-clip\"><circle cx=\"32\" cy=\"32\" r=\"32\"/><\/clipPath><\/defs><g clip-path=\"url(#av-B-clip)\"><rect width=\"64\" height=\"64\" fill=\"#FDE7DF\"/><path d=\"M8 66c0-11 9-17 24-17s24 6 24 17z\" fill=\"#1FB5A3\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24 50l3 16M40 50l-3 16\" fill=\"none\" stroke=\"#FFB22E\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M24 50l3 16M40 50l-3 16\" fill=\"none\" stroke=\"#2B2740\" stroke-width=\".8\" stroke-linecap=\"round\" opacity=\".35\"/><path d=\"M20 54c1 4 1 8 0 12M44 54c-1 4-1 8 0 12\" fill=\"none\" stroke=\"#168C7E\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M27.5 40h9v10h-9z\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"19.6\" cy=\"32\" r=\"3\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"44.4\" cy=\"32\" r=\"3\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"32\" cy=\"30\" rx=\"12.4\" ry=\"13.4\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M20 29c0-6 3-10 7-11h10c4 1 7 5 7 11-3-3-7-4.5-12-4.5s-9 1.5-12 4.5z\" fill=\"#1E222C\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M19 22c0-7 6-11 13-11s13 4 13 11z\" fill=\"#FF7A59\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M19 22h31q2 0 1.5 2.2c-.3 1-1.2 1.4-2.2 1.4H19z\" fill=\"#D65A3A\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"11.6\" r=\"1.6\" fill=\"#D65A3A\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"27\" cy=\"31.5\" rx=\"1.75\" ry=\"2.15\" fill=\"#2B2740\"/><circle cx=\"27.6\" cy=\"30.8\" r=\".65\" fill=\"#FFFFFF\"/><ellipse cx=\"37\" cy=\"31.5\" rx=\"1.75\" ry=\"2.15\" fill=\"#2B2740\"/><circle cx=\"37.6\" cy=\"30.8\" r=\".65\" fill=\"#FFFFFF\"/><ellipse cx=\"23.4\" cy=\"36.2\" rx=\"2.4\" ry=\"1.4\" fill=\"#F28B82\" opacity=\".45\"/><ellipse cx=\"40.6\" cy=\"36.2\" rx=\"2.4\" ry=\"1.4\" fill=\"#F28B82\" opacity=\".45\"/><path d=\"M25 27.6q2.2-1.4 4.4 0M34.6 27.6q2.2-1.4 4.4 0\" fill=\"none\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M32 33.5q1.3 1.6 0 2.4\" fill=\"none\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M27.2 38.4h9.6q-.6 5-4.8 5t-4.8-5z\" fill=\"#FFFFFF\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M29.4 41.6q2.6 1.2 5.2 0\" fill=\"#F28B82\" stroke=\"none\"/><\/g><\/svg>", "Y": "<svg viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><defs><clipPath id=\"av-Y-clip\"><circle cx=\"32\" cy=\"32\" r=\"32\"/><\/clipPath><\/defs><g clip-path=\"url(#av-Y-clip)\"><rect width=\"64\" height=\"64\" fill=\"#DCEAF8\"/><path d=\"M8 66c0-12 10-18 24-18s24 6 24 18z\" fill=\"#2A6FB0\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 48.6q6 5 12 0\" fill=\"none\" stroke=\"#9CC3EA\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"29\" r=\"12.5\" fill=\"#5B97D6\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24.5 24.5a9 9 0 0 1 7-5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\".75\"/><circle cx=\"23.2\" cy=\"28.4\" r=\"1.1\" fill=\"#FFFFFF\" opacity=\".75\"/><\/g><\/svg>"}, "steps": [{"en": "Queue and read the menu", "zh": "排隊、看菜單", "hear": [], "say": []}, {"en": "Order", "zh": "點餐", "hear": ["b1", "b6"], "say": ["p1", "p2"]}, {"en": "Size and milk", "zh": "尺寸和奶", "hear": ["b2", "b3", "b11"], "say": ["p4", "p5"]}, {"en": "Here or takeaway", "zh": "內用或外帶", "hear": ["b4", "b5"], "say": ["p7", "p8", "p9"]}, {"en": "Name and pay", "zh": "留名字、付錢", "hear": ["b7", "b8", "b9", "b10"], "say": ["p10", "p12"]}, {"en": "Collect and sit down", "zh": "取餐、找位子", "hear": ["b12"], "say": ["p16", "p20", "p13"]}]};
+const PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z"/></svg>';
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("scene-lab-a:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("scene-lab-a:" + k, JSON.stringify(v)); } catch {} },
+};
+let speed = Number(store.get("speed", 1)) || 1;
+$("#speed").value = String(speed);
+$("#speed").onchange = e => { speed = Number(e.target.value) || 1; store.set("speed", speed); };
+const au = new Audio(); let onBtn = null;
+function play(src, btn) {
+  if (onBtn) onBtn.classList.remove("on");
+  onBtn = btn || null; if (btn) btn.classList.add("on");
+  au.src = "audio/" + src; au.defaultPlaybackRate = au.playbackRate = speed;
+  au.onended = au.onerror = () => { if (btn) btn.classList.remove("on"); };
+  return au.play().catch(() => {});
+}
+function pbtn(src, label) { const b = el("button", "pl"); b.type = "button"; b.innerHTML = PLAY; b.setAttribute("aria-label", label || "Play"); b.onclick = () => { stopVisit(); play(src, b); }; return b; }
+const OBJ = DATA.objects, BY = Object.fromEntries(OBJ.map(o => [o.id, o]));
+const PH = {}; for (const it of DATA.intents) for (const p of it.phrases) PH[p.id] = p;
+const BA = Object.fromEntries(DATA.barista.map(b => [b.id, b]));
+const VB = 960, VH = 600;
+let sel = null, quiz = null;
+
+// ---------- pins ----------
+const pic = $("#pic"), pins = {};
+const LABEL_NUDGE = { c12: "up", c9: "dn", c5: "dn" };   // keeps word labels from overlapping their neighbours
+OBJ.forEach((o, i) => {
+  if (!o.at) return;
+  const b = el("button", "pin" + (LABEL_NUDGE[o.id] ? " " + LABEL_NUDGE[o.id] : "")); b.type = "button";
+  b.style.left = (o.at[0] / VB * 100) + "%"; b.style.top = (o.at[1] / VH * 100) + "%";
+  b.append(el("span", null, String(i + 1)), el("span", "w", o.word));
+  b.setAttribute("aria-label", (i + 1) + ": " + o.word);
+  b.setAttribute("aria-pressed", "false");
+  b.onclick = () => quiz ? answer(o.id) : select(o.id, true);
+  pic.append(b); pins[o.id] = b;
+});
+$("#lab").checked = store.get("labels", false);
+const setLabels = () => { pic.classList.toggle("labels", $("#lab").checked); store.set("labels", $("#lab").checked); };
+$("#lab").onchange = setLabels; setLabels();
+
+function glow(id) {
+  pic.querySelectorAll("g.hl").forEach(g => g.classList.remove("hl"));
+  const g = id && pic.querySelector("#obj-" + id); if (g) g.classList.add("hl");
+}
+
+function select(id, sound) {
+  sel = id;
+  for (const [k, b] of Object.entries(pins)) b.setAttribute("aria-pressed", String(k === id));
+  document.querySelectorAll(".legend button").forEach(b => b.setAttribute("aria-current", String(b.dataset.id === id)));
+  glow(id);
+  const o = BY[id], i = OBJ.indexOf(o), c = $("#card"); c.textContent = "";
+  const head = el("div", "head");
+  head.append(el("span", "num", String(i + 1)), el("span", "word", o.word), pbtn("w/" + id + ".mp3", "Play " + o.word));
+  const mz = el("span", "mean", o.zh); mz.lang = "zh-Hant"; head.append(mz);
+  c.append(head);
+  if (o.var) { const v = el("div", "vars"); o.var.forEach(([p, w]) => v.append(el("span", null, p + ": " + w))); c.append(v); }
+  const ex = el("div", "ex"); const p = el("p", null, o.ex); const s = el("small", null, o.exzh); s.lang = "zh-Hant"; p.append(s);
+  ex.append(pbtn("w/" + id + "e.mp3", "Play example"), p); c.append(ex);
+  if (sound) play("w/" + id + ".mp3", head.querySelector(".pl"));
+}
+
+// ---------- find it ----------
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function startQuiz() {
+  quiz = { list: shuffle(OBJ.filter(o => o.at).map(o => o.id)).slice(0, 8), i: 0, right: 0, tries: 0 };
+  $("#lab").checked = false; setLabels(); $("#lab").disabled = true;
+  $("#quiz-b").textContent = "Stop";
+  ask();
+}
+function stopQuiz() { quiz = null; $("#lab").disabled = false; $("#quiz-b").textContent = "Find it"; for (const b of Object.values(pins)) b.classList.remove("right", "wrong"); glow(null); if (sel) select(sel, false); else intro(); }
+function ask() {
+  for (const b of Object.values(pins)) { b.classList.remove("right", "wrong"); b.setAttribute("aria-pressed", "false"); }
+  glow(null);
+  const id = quiz.list[quiz.i], c = $("#card"); c.textContent = "";
+  const q = el("div", "quiz");
+  q.append(el("span", "score", "Word " + (quiz.i + 1) + " of " + quiz.list.length + " · " + quiz.right + " right first time"));
+  const row = el("div", "head"); row.append(el("p", "q", "Where is this?"), pbtn("w/" + id + ".mp3", "Hear the word again"));
+  q.append(row, el("p", "muted", "Listen, then tap the number on the picture."));
+  c.append(q);
+  quiz.tries = 0;
+  play("w/" + id + ".mp3", row.querySelector(".pl"));
+}
+function answer(id) {
+  const want = quiz.list[quiz.i];
+  quiz.tries++;
+  if (id !== want) { pins[id].classList.add("wrong"); return; }
+  pins[id].classList.add("right"); glow(id);
+  if (quiz.tries === 1) quiz.right++;
+  const o = BY[id], c = $("#card");
+  const ok = el("p", "q", "✓ " + o.word + " "); const z = el("span", "mean", o.zh); z.lang = "zh-Hant"; ok.append(z);
+  c.querySelector(".quiz").replaceChildren(el("span", "score", "Word " + (quiz.i + 1) + " of " + quiz.list.length), ok);
+  quiz.i++;
+  setTimeout(() => {
+    if (!quiz) return;
+    if (quiz.i < quiz.list.length) return ask();
+    const q = c.querySelector(".quiz"); q.textContent = "";
+    q.append(el("p", "q", quiz.right + " of " + quiz.list.length + " right first time"), el("p", "muted", "Play again to get a new set of eight."));
+    const again = el("button", "btn primary", "Play again"); again.type = "button"; again.onclick = () => startQuiz();
+    q.append(again);
+    store.set("quiz", quiz.right);
+  }, 900);
+}
+$("#quiz-b").onclick = () => quiz ? stopQuiz() : startQuiz();
+
+function intro() { const c = $("#card"); c.textContent = ""; c.append(el("p", "empty", "Tap any number on the picture.")); }
+
+// ---------- legend ----------
+OBJ.forEach((o, i) => {
+  const li = el("li"), b = el("button"); b.type = "button"; b.dataset.id = o.id;
+  const w = el("span", "w", o.word); const z = el("span", "z", o.zh); z.lang = "zh-Hant"; const t = el("span"); t.append(w, z);
+  b.append(el("span", "n", String(i + 1)), t);
+  b.onclick = () => { if (quiz) stopQuiz(); select(o.id, true); $("#pic").scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+  li.append(b); $("#legend").append(li);
+});
+
+// ---------- steps ----------
+const VISIT = [];   // every barista line and its reply, in order
+let visitToken = null;
+function waitEnd() { return new Promise(r => { const done = () => { au.removeEventListener("ended", done); au.removeEventListener("error", done); au.removeEventListener("pause", done); r(); }; au.addEventListener("ended", done); au.addEventListener("error", done); au.addEventListener("pause", done); }); }
+function stopVisit() {
+  if (!visitToken) return;
+  visitToken = null; au.pause();
+  document.querySelectorAll(".now").forEach(x => x.classList.remove("now"));
+  const b = $("#visit-play"); b.textContent = "Play the whole visit"; b.setAttribute("aria-pressed", "false");
+}
+async function playVisit() {
+  if (visitToken) return stopVisit();
+  if (quiz) stopQuiz();
+  const token = visitToken = {};
+  const b = $("#visit-play"); b.textContent = "Stop"; b.setAttribute("aria-pressed", "true");
+  au.pause();
+  for (const x of VISIT) {
+    x.el.classList.add("now");
+    x.el.scrollIntoView({ block: "center", behavior: "smooth" });
+    const ended = waitEnd();
+    play(x.src, x.el.querySelector(".pl"));
+    await ended;
+    x.el.classList.remove("now");
+    if (visitToken !== token) return;
+    await new Promise(r => setTimeout(r, 300));
+    if (visitToken !== token) return;
+  }
+  stopVisit();
+}
+function who(key, text) {
+  const p = el("p", "label who-l"), a = el("span", "av"); a.setAttribute("aria-hidden", "true");
+  if (DATA.avatars && DATA.avatars[key]) a.innerHTML = DATA.avatars[key];
+  p.append(a, text); return p;
+}
+function fill(p) { return p.parts.map(x => typeof x === "string" ? x : x[0]).join(""); }
+for (const s of DATA.steps) {
+  const li = el("li", "step");
+  const h = el("h3", null, s.en + " "); const z = el("span", null, s.zh); z.lang = "zh-Hant"; h.append(z); li.append(h);
+  if (!s.hear.length && !s.say.length) {
+    li.append(el("p", "muted", "Nobody talks yet. Look for the queue (5), the menu board (1) and the display case (7) in the picture."));
+  } else {
+    const cols = el("div", "cols");
+    const hear = el("div", "col hear"); hear.append(who("B", "The barista says"));
+    for (const id of s.hear) {
+      const b = BA[id], row = el("div", "line"), p = el("p", null, b.en), sm = el("small", null, b.zh); sm.lang = "zh-Hant"; p.append(sm);
+      row.append(pbtn("b/" + id + ".mp3", "Play barista line"), p); hear.append(row);
+      const r = el("div", "reply"); r.append("You: "); r.append(el("b", null, b.reply)); r.append(" "); r.append(pbtn("r/" + id + ".mp3", "Play reply")); hear.append(r);
+      VISIT.push({ src: "b/" + id + ".mp3", el: row }, { src: "r/" + id + ".mp3", el: r });
+    }
+    const say = el("div", "col say"); say.append(who("Y", "You can say"));
+    for (const id of s.say) {
+      const p0 = PH[id], row = el("div", "line"), p = el("p", null, fill(p0)), sm = el("small", null, p0.zh); sm.lang = "zh-Hant"; p.append(sm);
+      row.append(pbtn("p/" + id + "-0.mp3", "Play"), p); say.append(row);
+    }
+    cols.append(hear, say); li.append(cols);
+  }
+  $("#steps").append(li);
+}
+
+$("#visit-play").onclick = playVisit;
+intro();
+</script>

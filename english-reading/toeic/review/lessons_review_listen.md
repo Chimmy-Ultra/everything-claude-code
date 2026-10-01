@@ -1,0 +1,124 @@
+# Listening lessons review (9 chapters)
+
+Reviewed against lessons/STYLE.md and the practice sets in items_listen.py / items_listen_b.py. check.py: all 9 print ok.
+
+## Changes (one line each; 'zh twin' lines keep the Chinese matching the English)
+
+- qr-wh: lead: Part 2 can also start with a statement (format accuracy)
+- qr-wh: lead zh matches
+- qr-wh: rule 6 example: 'shared drive' was the wording of practice item l-qr-02
+- qr-wh: zh twin of above
+- qr-wh: trap 3: 'cross out first' too absolute
+- qr-wh: zh twin of above
+- qr-yesno: rule 5 example: 'present' mirrored the l-qr-05 trap (practice item); replaced with plant
+- qr-yesno: zh twin of above
+- qr-yesno: trap 1: listed 'name, present' = wrong options of l-qr-04 / l-qr-05
+- qr-yesno: zh twin of above
+- qr-yesno: pair 4 right: near copy of l-qr-04 answer ('No, they should be here by Friday')
+- qr-yesno: list: near copy of practice question l-qr-04
+- qr-yesno: zh twin of above
+- qr-yesno: list: near copy of practice question l-qr-05
+- qr-yesno: zh twin of above
+- qr-indirect: lead: frequency claim 'often' removed
+- qr-indirect: zh twin of above
+- qr-indirect: rule 1 example: speaker announces the news, so 'Who told you?' was unnatural
+- qr-indirect: zh twin of above
+- qr-indirect: rule 2 example: zh had a gloss the English lacked; added English
+- qr-indirect: rule 3 example: same
+- qr-indirect: rule 6 body: 'usually' removed
+- qr-indirect: zh twin of above
+- qr-indirect: trap 1: 'sales' echoed wrong option of l-qr-02
+- qr-indirect: zh twin of above
+- conv-topic: rule 1 body: soften 'usually'
+- conv-topic: zh twin
+- conv-topic: rule 3 body: 'rarely' is a frequency claim
+- conv-topic: zh twin
+- conv-topic: rule 4 example: 'room key works from three' was unnatural
+- conv-topic: zh twin
+- conv-topic: pair 2 (right+wrong): 'room key works from three o'clock' -> 'room will be ready at three o'clock' (unnatural wording)
+- conv-topic: pair 2 why
+- conv-topic: zh twin
+- conv-topic: list: unnatural question wording
+- conv-detail: rule 1: soften 'usually'
+- conv-detail: zh twin
+- conv-detail: rule 2 example: more natural
+- conv-detail: zh twin
+- conv-detail: rule 6 example: time-to-room graphic mirrored practice item l-conv-06
+- conv-detail: zh twin
+- conv-detail: list: was the exact practice question of l-conv-06
+- conv-detail: zh twin
+- conv-detail: pair 1 rewritten (deliver before noon / send assistant to pick up) - it mirrored practice item l-conv-02 and the answer to l-qr-14
+- conv-intent: lead: soften 'usually'
+- conv-intent: zh twin
+- conv-intent: rule 1 example: mirrored practice item l-conv-03 (other commitment at a time)
+- conv-intent: zh twin
+- conv-intent: pair 1 rewritten ('another call at ten' / cannot attend mirrored practice item l-conv-03); now 'I had pasta yesterday'
+- conv-intent: list: question fragment was not a real wording
+- conv-intent: zh twin
+- conv-next: rule 4 body: 'just a second' is the cue of practice item l-conv-04
+- conv-next: zh twin
+- conv-next: list: same cue as l-conv-04
+- conv-next: zh twin
+- conv-next: trap 2: English was stronger than the Chinese 通常
+- talk-topic: rule 1 example: zh had a gloss the English lacked
+- talk-topic: rule 1 example: same
+- talk-topic: zh wording
+- talk-topic: rule 2 body: soften 'usually'
+- talk-topic: zh twin
+- talk-topic: rule 4 body: soften
+- talk-topic: zh twin
+- talk-topic: rule 4 example: 'two weeks' echoed l-talk-01
+- talk-topic: zh twin
+- talk-topic: pair 1 rewritten (east entrance closing/use south entrance mirrored practice item l-talk-01)
+- talk-topic: pair 2: speaker 'Ben' labelled Woman -> Man
+- talk-topic: pair 3 rewritten (tour guide / 'Welcome aboard' mirrored practice item l-talk-04, whose answer is tour guide)
+- talk-detail: lead: 'says it once' unclear; audio plays once is well known
+- talk-detail: zh twin
+- talk-detail: rule 6 body: room clue mirrored l-conv-06
+- talk-detail: zh twin
+- talk-detail: rule 6 example
+- talk-detail: zh twin
+- talk-detail: pair 1 rewritten (90 instead of 60 minutes mirrored the answer to practice item l-talk-02)
+- talk-detail: pair 2: 'by Friday' -> 'by Thursday' (same question wording as l-talk-03)
+- talk-detail: list: practice item name (l-talk-02)
+- talk-detail: zh twin
+- talk-detail: list: practice item question (l-talk-02)
+- talk-detail: zh twin
+- talk-detail: list: practice item question (l-talk-04)
+- talk-detail: zh twin
+
+## Counts
+- Log lines: 82 (of which zh-twin lines roughly half)
+- conv-detail: 9
+- conv-intent: 7
+- conv-next: 5
+- conv-topic: 10
+- qr-indirect: 10
+- qr-wh: 6
+- qr-yesno: 9
+- talk-detail: 14
+- talk-topic: 12
+
+## Summary by type
+- Practice-set overlap fixed (lesson example/pair/list mirrored a practice item's wording, answer or trap): about 22 edits (qr-wh 1, qr-yesno 6, qr-indirect 1, conv-detail 4, conv-intent 2, conv-next 2, talk-topic 3, talk-detail 6).
+- Format claims softened (frequency words, Part 2 can start with a statement, audio plays once): about 12 edits.
+- Unnatural or wrong English fixed: hotel line, 'Who told you?', 'Who is the man most likely?', 'Ben' labelled Woman, truncated question wording, unmatched English/Chinese glosses: about 10 edits.
+- Checked and left unchanged: Wh/yes-no/negative/tag rules, all right/wrong pairs not listed above (each trap verified), Chinese twins not listed.
+- Left as is on purpose: strategy cues that practice items also contain ('I'm afraid', 'Do you have a minute?', 'I'd love to, but', 'Normally... instead'). They teach the signal and do not reveal any answer.
+
+## talk-next (independent review)
+- talk-next: lead: 'often ends' softened to 'can end' (frequency claim)
+- talk-next: lead zh twin
+- talk-next: rule 4 head: 'once' does not reverse the order, so 'reverse' became 'set'
+- talk-next: rule 4 head zh twin
+- talk-next: rule 4 example 2: 'Once you've seen the...' mirrored the l-talk-05 line ('once you've seen the plan'); reworded
+- talk-next: rule 4 example 2 zh twin
+- talk-next: rule 5 body: 'we'll' can include the listeners (rule 3 and pair 2 use it that way); no longer 'speaker's action'
+- talk-next: rule 5 body zh twin
+- talk-next: rule 6 head and body: 'often' softened to 'can'
+- talk-next: rule 6 head and body zh twins
+- talk-next: rule 7 body: 'bring your ID' = 'show identification' was a loose match; now 'have your ID ready' = 'prepare identification'
+- talk-next: rule 7 body zh twin
+- talk-next: list: 'should do first' wording was a near copy of the l-talk-05 question; reworded
+- talk-next: list zh twin
+- talk-next: checked, unchanged: all three pairs, other rules/examples, signal list, traps, other zh twins

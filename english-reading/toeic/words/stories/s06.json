@@ -1,0 +1,25 @@
+{
+  "id": "s06",
+  "title": [
+    "Monday, 8:47 a.m.",
+    "週一早上八點四十七分"
+  ],
+  "paras": [
+    [
+      "At 8:47 on Monday morning, every connection in the Brightway office dropped at once. Nobody could open email, the desk phones were dead, and Sam Ito stared at his {{laptop|laptop}} in disbelief. The proposal for Halvorsen Foods was due at noon. His cell phone buzzed with an {{alert|alert}} from the IT team: \"Network {{outage|outage}} in progress. We're on it.\"",
+      "週一早上八點四十七分，Brightway 辦公室裡所有網路連線同時中斷。沒人打得開電子郵件，桌上電話也都打不通，山姆．伊藤難以置信地盯著他的筆電。哈佛森食品的提案中午就要交。他的手機震了一下，是資訊部門傳來的通知：「網路中斷中，我們正在處理。」"
+    ],
+    [
+      "Rosa Delgado, the IT {{technician|technician}}, arrived ten minutes later with a toolbox. She went straight to the server closet and checked the {{hardware|hardware}}, one blinking switch after another. \"I know this is {{urgent|urgent}},\" Sam said from the doorway. \"My proposal is due at noon.\" \"Everyone's work is urgent today,\" Rosa said. \"Give me a few minutes.\"",
+      "十分鐘後，資訊部的技術人員蘿莎．戴加多提著工具箱趕到。她直接走進機房，檢查硬體設備，一台閃著燈的交換器接著一台。「我知道這很緊急，」山姆站在門口說，「我的提案中午要交。」「今天每個人的事都很緊急，」蘿莎說，「給我幾分鐘。」"
+    ],
+    [
+      "Then she found it in the log. The router had {{download|downloaded}} a software update on Saturday night, and because it was an {{automatic|automatic}} one, it installed itself at 8:47 Monday. The new version clashed with an old setting and {{interfere|interfered}} with every connection in the building.",
+      "接著她在紀錄檔裡找到了原因。路由器週六晚上下載了一個軟體更新，而且是自動更新，所以週一八點四十七分自行安裝了。新版本和舊的設定相衝突，干擾了整棟大樓的每一條連線。"
+    ],
+    [
+      "Rosa changed the setting and restarted the router. The lights turned green one by one, and within twenty minutes work could {{resume|resume}}. Sam finished the proposal at 11:52 and sent it with eight minutes to spare. Then he brought Rosa a cup of coffee.",
+      "蘿莎改了設定，重新啟動路由器。燈號一個接一個轉為綠色，二十分鐘內工作就恢復了。山姆在十一點五十二分完成提案，並在截止前八分鐘寄出。接著他端了一杯咖啡給蘿莎。"
+    ]
+  ]
+}

@@ -1,0 +1,688 @@
+{
+ "g-conditional-07": {
+  "point": [
+   "Real condition: <em>if</em> + present, <em>will</em> in the main clause.",
+   "真實的未來條件：if + 現在式，主句 will。"
+  ],
+  "why": [
+   "The main clause says <em>will resume</em>, so this is a real condition and the <em>if</em> clause takes the present. The subject is the singular <em>shipment</em>, not <em>valves</em>: <em>reaches</em>.",
+   "主句是 will resume，這是真實條件，if 子句用現在式。主詞是單數的 shipment，不是 valves，所以用 reaches。"
+  ],
+  "gloss": [
+   {
+    "w": "replacement valves",
+    "hw": "replacement valve",
+    "pos": "n.",
+    "zh": "更換用閥門",
+    "ex": "We ordered a replacement valve for the pump."
+   },
+   {
+    "w": "second shift",
+    "hw": "second shift",
+    "pos": "phr.",
+    "zh": "第二班（輪班）",
+    "ex": "The second shift starts at two."
+   },
+   {
+    "w": "resume",
+    "hw": "resume",
+    "pos": "v.",
+    "zh": "恢復",
+    "ex": "Work will resume after the inspection."
+   }
+  ]
+ },
+ "g-conditional-08": {
+  "point": [
+   "<em>unless</em> = <em>if … not</em>. Check the logic.",
+   "unless = if … not，先看邏輯。"
+  ],
+  "why": [
+   "The hotel holds the rooms <em>until the end of February</em> and then releases them. They are released only if the booking is <em>not</em> confirmed, so the word is <em>unless</em>.",
+   "旅館保留房間到月底再釋出，只有在尚未確認時才會釋出，所以用 unless。"
+  ],
+  "gloss": [
+   {
+    "w": "block of rooms",
+    "hw": "block of rooms",
+    "pos": "phr.",
+    "zh": "一批預留的客房",
+    "ex": "The agency reserved a block of rooms for guests."
+   },
+   {
+    "w": "delegation",
+    "hw": "delegation",
+    "pos": "n.",
+    "zh": "代表團",
+    "ex": "The delegation arrives on Monday."
+   },
+   {
+    "w": "release",
+    "hw": "release",
+    "pos": "v.",
+    "zh": "釋出",
+    "ex": "We will release unclaimed seats on Friday."
+   },
+   {
+    "w": "in writing",
+    "hw": "in writing",
+    "pos": "phr.",
+    "zh": "以書面",
+    "ex": "Please confirm the booking in writing."
+   }
+  ]
+ },
+ "g-conditional-09": {
+  "point": [
+   "<em>provided that</em> = on the condition that.",
+   "provided that = 只要（附帶條件）。"
+  ],
+  "why": [
+   "<em>Those who apply after that date start again</em> shows the deadline is the condition: transfer in time and keep your rights. That is <em>provided that</em>. <em>Unless</em> would reverse the logic.",
+   "those who apply after that date start again 說明期限是條件：及時轉調才保住權益，所以用 provided that。unless 會讓邏輯顛倒。"
+  ],
+  "gloss": [
+   {
+    "w": "seniority",
+    "hw": "seniority",
+    "pos": "n.",
+    "zh": "年資",
+    "ex": "Her seniority gives her first choice of shifts."
+   },
+   {
+    "w": "pension entitlements",
+    "hw": "pension entitlement",
+    "pos": "n.",
+    "zh": "退休金權益",
+    "ex": "Staff keep their pension entitlements after a transfer."
+   },
+   {
+    "w": "restructuring",
+    "hw": "restructuring",
+    "pos": "n.",
+    "zh": "組織重整",
+    "ex": "The restructuring will affect three departments."
+   },
+   {
+    "w": "entry level",
+    "hw": "entry level",
+    "pos": "phr.",
+    "zh": "基層職級",
+    "ex": "She started at entry level in 2020."
+   }
+  ]
+ },
+ "g-conditional-10": {
+  "point": [
+   "<em>unless</em> + affirmative present verb.",
+   "unless 後面用肯定的現在式。"
+  ],
+  "why": [
+   "<em>Unless</em> already means <em>if … not</em>, so the verb stays affirmative. A condition about the future takes the present, not <em>will</em>: <em>stops</em>.",
+   "unless 已含「如果不」，動詞用肯定式；未來的條件用現在式而非 will，所以是 stops。"
+  ],
+  "gloss": [
+   {
+    "w": "launch event",
+    "hw": "launch event",
+    "pos": "phr.",
+    "zh": "啟用活動",
+    "ex": "The launch event drew a large crowd."
+   },
+   {
+    "w": "ferry service",
+    "hw": "ferry service",
+    "pos": "phr.",
+    "zh": "渡輪服務",
+    "ex": "The ferry service runs every hour."
+   },
+   {
+    "w": "forecast",
+    "hw": "forecast",
+    "pos": "v.",
+    "zh": "預報",
+    "ex": "Snow is forecast for Thursday."
+   }
+  ]
+ },
+ "g-conditional-11": {
+  "point": [
+   "Unreal present: <em>if</em> + past (<em>were</em>), <em>would</em> + base.",
+   "與現在事實相反：if + 過去式（were），would + 原形。"
+  ],
+  "why": [
+   "The first half says the center has <em>only one crew and no budget</em>, so a second shift is not possible. That makes the <em>if</em> clause unreal: the past, with <em>were</em>. <em>would be cleared</em> matches.",
+   "前半句說中心只有一組人、沒有預算，第二班辦不到，所以 if 子句不真實，用過去式 were。would be cleared 與它相配。"
+  ],
+  "gloss": [
+   {
+    "w": "municipal",
+    "hw": "municipal",
+    "pos": "adj.",
+    "zh": "市政的",
+    "ex": "The municipal library opens at nine."
+   },
+   {
+    "w": "backlog",
+    "hw": "backlog",
+    "pos": "n.",
+    "zh": "積壓的工作",
+    "ex": "We have a backlog of orders."
+   },
+   {
+    "w": "second shift",
+    "hw": "second shift",
+    "pos": "phr.",
+    "zh": "第二班（輪班）",
+    "ex": "The second shift ends at midnight."
+   },
+   {
+    "w": "crew",
+    "hw": "crew",
+    "pos": "n.",
+    "zh": "作業班組",
+    "ex": "The night crew cleans the plant."
+   }
+  ]
+ },
+ "g-conditional-12": {
+  "point": [
+   "Unreal present: main clause <em>would</em> + base verb.",
+   "與現在事實相反：主句 would + 原形。"
+  ],
+  "why": [
+   "The <em>if</em> clause comes last and uses the past, <em>had</em>. <em>At present only the fraud team can open</em> it, so the idea is unreal. The main clause takes <em>would resolve</em>.",
+   "if 子句在句尾，用過去式 had；at present only the fraud team can open 說明現況不是這樣，所以主句用 would resolve。"
+  ],
+  "gloss": [
+   {
+    "w": "queries",
+    "hw": "query",
+    "pos": "n.",
+    "zh": "詢問",
+    "ex": "Most queries are answered by email."
+   },
+   {
+    "w": "account-verification",
+    "hw": "verification",
+    "pos": "adj.",
+    "zh": "帳戶驗證的",
+    "ex": "The verification step takes two minutes."
+   },
+   {
+    "w": "fraud team",
+    "hw": "fraud team",
+    "pos": "phr.",
+    "zh": "詐欺防制團隊",
+    "ex": "The fraud team reviews every flagged payment."
+   }
+  ]
+ },
+ "g-conditional-13": {
+  "point": [
+   "Unreal past: <em>if</em> + <em>had</em> + p.p.",
+   "與過去事實相反：if + had + p.p."
+  ],
+  "why": [
+   "<em>would have been avoided</em> and <em>in July</em> make this an unreal past. The <em>if</em> clause needs the past perfect: <em>had identified</em>.",
+   "would have been avoided 和 in July 顯示這是與過去事實相反的假設，if 子句用過去完成式 had identified。"
+  ],
+  "gloss": [
+   {
+    "w": "operations center",
+    "hw": "operations center",
+    "pos": "phr.",
+    "zh": "營運中心",
+    "ex": "The operations center tracks every flight."
+   },
+   {
+    "w": "crew shortage",
+    "hw": "crew shortage",
+    "pos": "phr.",
+    "zh": "機組人力短缺",
+    "ex": "A crew shortage delayed the morning flights."
+   },
+   {
+    "w": "roster",
+    "hw": "roster",
+    "pos": "n.",
+    "zh": "排班表",
+    "ex": "The roster is posted every Friday."
+   },
+   {
+    "w": "stranded",
+    "hw": "strand",
+    "pos": "adj.",
+    "zh": "受困的",
+    "ex": "Stranded passengers were given hotel rooms."
+   }
+  ]
+ },
+ "g-conditional-14": {
+  "point": [
+   "Mixed conditional: past condition, present result.",
+   "混合條件句：過去的條件，現在的結果。"
+  ],
+  "why": [
+   "<em>had accepted … in 2019</em> is a past condition, but the result is <em>now, seven years later</em>. So the main clause is <em>would be</em>, not <em>would have been</em>.",
+   "had accepted … in 2019 是過去的條件，但結果在 now, seven years later，所以主句用 would be。"
+  ],
+  "gloss": [
+   {
+    "w": "digitized",
+    "hw": "digitize",
+    "pos": "adj.",
+    "zh": "數位化的",
+    "ex": "We digitized the old records last year."
+   },
+   {
+    "w": "archive",
+    "hw": "archive",
+    "pos": "n.",
+    "zh": "檔案",
+    "ex": "The archive holds letters from 1950."
+   },
+   {
+    "w": "reading room",
+    "hw": "reading room",
+    "pos": "phr.",
+    "zh": "閱覽室",
+    "ex": "The reading room closes at six."
+   },
+   {
+    "w": "urged",
+    "hw": "urge",
+    "pos": "v.",
+    "zh": "促請",
+    "ex": "The union urged the board to reconsider."
+   }
+  ]
+ },
+ "g-conditional-15": {
+  "point": [
+   "Mixed conditional: present condition, past result.",
+   "混合條件句：現在的條件，過去的結果。"
+  ],
+  "why": [
+   "<em>were not so dependent</em> describes the present. But the result belongs to <em>the three-day strike last September</em>, when stores <em>ran out of stock</em>: past. So <em>would not have been</em>.",
+   "were not so dependent 說的是現在，但結果屬於去年九月的三天罷工，當時店家缺貨，是過去的事，所以用 would not have been。"
+  ],
+  "gloss": [
+   {
+    "w": "heavily dependent on",
+    "hw": "dependent on",
+    "pos": "phr.",
+    "zh": "高度依賴",
+    "ex": "The firm is dependent on one client."
+   },
+   {
+    "w": "carrier",
+    "hw": "carrier",
+    "pos": "n.",
+    "zh": "貨運業者",
+    "ex": "The carrier collects parcels at noon."
+   },
+   {
+    "w": "disrupted",
+    "hw": "disrupt",
+    "pos": "v.",
+    "zh": "擾亂",
+    "ex": "Snow disrupted the delivery schedule."
+   },
+   {
+    "w": "ran out of stock",
+    "hw": "run out of stock",
+    "pos": "phr.",
+    "zh": "缺貨",
+    "ex": "The shop will run out of stock by noon."
+   }
+  ]
+ },
+ "g-conditional-16": {
+  "point": [
+   "<em>But for</em> + noun = if it had not been for.",
+   "But for + 名詞 = 如果沒有。"
+  ],
+  "why": [
+   "<em>would have been forced</em> is an unreal past result. The blank must mean \"if there had been no loan\": <em>But for</em> + noun. A conjunction cannot follow a bare noun phrase.",
+   "would have been forced 是過去相反的結果，空格要表示「如果沒有這筆貸款」：But for + 名詞。"
+  ],
+  "gloss": [
+   {
+    "w": "emergency loan",
+    "hw": "emergency loan",
+    "pos": "phr.",
+    "zh": "緊急貸款",
+    "ex": "The emergency loan covered the payroll."
+   },
+   {
+    "w": "mill",
+    "hw": "mill",
+    "pos": "n.",
+    "zh": "工廠",
+    "ex": "The mill employs two hundred people."
+   },
+   {
+    "w": "lay off",
+    "hw": "lay off",
+    "pos": "phr.",
+    "zh": "裁員",
+    "ex": "The firm had to lay off staff."
+   }
+  ]
+ },
+ "g-conditional-17": {
+  "point": [
+   "<em>Without</em> + noun = if it were not for.",
+   "Without + 名詞 = 如果沒有。"
+  ],
+  "why": [
+   "<em>Without the forty volunteers</em> means \"if there were no volunteers\". An unreal result needs <em>would</em> + base verb: <em>would not be</em> able. <em>As it has done every week</em> shows the museum is open now.",
+   "Without the forty volunteers 等於「如果沒有志工」。不真實的結果要用 would + 原形：would not be。as it has done every week 說明博物館現在開著。"
+  ],
+  "gloss": [
+   {
+    "w": "volunteers",
+    "hw": "volunteer",
+    "pos": "n.",
+    "zh": "志工",
+    "ex": "Volunteers sort the donated books."
+   },
+   {
+    "w": "staff",
+    "hw": "staff",
+    "pos": "v.",
+    "zh": "派人員駐守",
+    "ex": "Two clerks staff the front desk."
+   },
+   {
+    "w": "information desk",
+    "hw": "information desk",
+    "pos": "phr.",
+    "zh": "服務台",
+    "ex": "Ask at the information desk."
+   },
+   {
+    "w": "galleries",
+    "hw": "gallery",
+    "pos": "n.",
+    "zh": "展廳",
+    "ex": "The galleries are closed on Mondays."
+   }
+  ]
+ },
+ "g-conditional-18": {
+  "point": [
+   "<em>Should</em> + subject + base verb = if … should.",
+   "Should + 主詞 + 原形 = 萬一。"
+  ],
+  "why": [
+   "The subject <em>generator</em> is singular, but the verb is <em>fail</em>, without -s. Only the inverted <em>Should … fail</em> (= <em>if … should fail</em>) explains a base verb here.",
+   "主詞 generator 是單數，動詞卻是沒有 -s 的 fail。只有倒裝的 Should … fail 能解釋原形。"
+  ],
+  "gloss": [
+   {
+    "w": "backup generator",
+    "hw": "backup generator",
+    "pos": "phr.",
+    "zh": "備援發電機",
+    "ex": "The backup generator starts within seconds."
+   },
+   {
+    "w": "data center",
+    "hw": "data center",
+    "pos": "phr.",
+    "zh": "資料中心",
+    "ex": "The data center runs day and night."
+   },
+   {
+    "w": "cooling system",
+    "hw": "cooling system",
+    "pos": "phr.",
+    "zh": "冷卻系統",
+    "ex": "The cooling system needs yearly servicing."
+   },
+   {
+    "w": "hosted services",
+    "hw": "hosted service",
+    "pos": "phr.",
+    "zh": "託管服務",
+    "ex": "Hosted services stayed online during the test."
+   }
+  ]
+ },
+ "g-conditional-19": {
+  "point": [
+   "<em>Were</em> + subject + adjective = if … were.",
+   "Were + 主詞 + 形容詞：if … were 的倒裝。"
+  ],
+  "why": [
+   "After the long subject, only <em>not due to expire</em> follows: no verb. The missing word is <em>were</em>. <em>Were the lease not due</em> means <em>If the lease were not due</em>.",
+   "長主詞之後只有 not due to expire，沒有動詞，缺的是 were。Were the lease not due 等於 If the lease were not due。"
+  ],
+  "gloss": [
+   {
+    "w": "lease",
+    "hw": "lease",
+    "pos": "n.",
+    "zh": "租約",
+    "ex": "The lease runs for five years."
+   },
+   {
+    "w": "premises",
+    "hw": "premises",
+    "pos": "n.",
+    "zh": "營業場所",
+    "ex": "The premises are open to the public."
+   },
+   {
+    "w": "expire",
+    "hw": "expire",
+    "pos": "v.",
+    "zh": "到期",
+    "ex": "The permit expires in May."
+   },
+   {
+    "w": "relocating",
+    "hw": "relocate",
+    "pos": "v.",
+    "zh": "搬遷",
+    "ex": "The firm is relocating to the coast."
+   }
+  ]
+ },
+ "g-conditional-20": {
+  "point": [
+   "Inverted <em>Had</em> + subject + past participle.",
+   "Had + 主詞 + p.p.（倒裝）。"
+  ],
+  "why": [
+   "The opening <em>Had</em> stands for <em>If … had</em>. After the inserted <em>whom … first run</em>, the verb must be a past participle: <em>received</em>. <em>would have been unnecessary</em> is the unreal past result.",
+   "句首 Had 代表 If … had，插入的 whom … first run 之後要接過去分詞 received。would have been unnecessary 是過去相反的結果。"
+  ],
+  "gloss": [
+   {
+    "w": "production manager",
+    "hw": "production manager",
+    "pos": "phr.",
+    "zh": "製作經理",
+    "ex": "The production manager approved the print run."
+   },
+   {
+    "w": "consulted",
+    "hw": "consult",
+    "pos": "v.",
+    "zh": "諮詢",
+    "ex": "We consulted the legal team first."
+   },
+   {
+    "w": "page proofs",
+    "hw": "page proofs",
+    "pos": "phr.",
+    "zh": "頁面校樣",
+    "ex": "The author approved the page proofs."
+   },
+   {
+    "w": "errata slip",
+    "hw": "errata slip",
+    "pos": "phr.",
+    "zh": "勘誤條",
+    "ex": "An errata slip was tucked into each copy."
+   }
+  ]
+ },
+ "g-conditional-21": {
+  "point": [
+   "If the clause already has <em>had</em>, use <em>If</em>.",
+   "子句裡已有 had：用 If，不倒裝。"
+  ],
+  "why": [
+   "Inversion moves <em>had</em> to the front. Here <em>had approved</em> still sits after the subject, so nothing was moved: the opener is <em>If</em>.",
+   "倒裝是把 had 移到句首；這裡 had approved 還在主詞後面，沒有移動，所以用 If。"
+  ],
+  "gloss": [
+   {
+    "w": "planning tribunal",
+    "hw": "planning tribunal",
+    "pos": "phr.",
+    "zh": "規劃審議庭",
+    "ex": "The planning tribunal hears objections in May."
+   },
+   {
+    "w": "developers",
+    "hw": "developer",
+    "pos": "n.",
+    "zh": "開發商",
+    "ex": "The developers submitted new plans."
+   },
+   {
+    "w": "permit",
+    "hw": "permit",
+    "pos": "n.",
+    "zh": "許可證",
+    "ex": "The permit was issued in June."
+   },
+   {
+    "w": "appeal",
+    "hw": "appeal",
+    "pos": "n.",
+    "zh": "上訴",
+    "ex": "The appeal was heard in March."
+   }
+  ]
+ },
+ "g-conditional-22": {
+  "point": [
+   "<em>If only</em> + past: a wish about the present.",
+   "If only + 過去式：與現在相反的願望。"
+  ],
+  "why": [
+   "<em>If only</em> expresses a wish, and the verb steps back one tense: <em>had</em>. <em>would not have to queue</em> and <em>every morning</em> show the real situation is different.",
+   "If only 表示願望，動詞退一格用 had。would not have to queue 和 every morning 說明現況不是這樣。"
+  ],
+  "gloss": [
+   {
+    "w": "loading area",
+    "hw": "loading area",
+    "pos": "phr.",
+    "zh": "裝卸區",
+    "ex": "The loading area is behind the hall."
+   },
+   {
+    "w": "exhibitors",
+    "hw": "exhibitor",
+    "pos": "n.",
+    "zh": "參展商",
+    "ex": "Exhibitors set up their stands on Friday."
+   },
+   {
+    "w": "queue",
+    "hw": "queue",
+    "pos": "v.",
+    "zh": "排隊",
+    "ex": "Visitors queue at the main gate."
+   }
+  ]
+ },
+ "g-conditional-23": {
+  "point": [
+   "<em>It is high time</em> + subject + past.",
+   "It is (high) time + 主詞 + 過去式。"
+  ],
+  "why": [
+   "<em>It is high time</em> means \"it should have been done already\", so the verb takes the past: <em>reviewed</em>. <em>has reviewed</em> would say it is done. Two <em>whose</em> clauses push the clue away.",
+   "It is high time 表示「早該做了」，動詞用過去式 reviewed；has reviewed 表示已經做完。兩個 whose 子句把線索推遠。"
+  ],
+  "gloss": [
+   {
+    "w": "admissions office",
+    "hw": "admissions office",
+    "pos": "phr.",
+    "zh": "招生處",
+    "ex": "The admissions office opens at eight."
+   },
+   {
+    "w": "acceptance rate",
+    "hw": "acceptance rate",
+    "pos": "phr.",
+    "zh": "錄取率",
+    "ex": "The acceptance rate fell last year."
+   },
+   {
+    "w": "consecutive",
+    "hw": "consecutive",
+    "pos": "adj.",
+    "zh": "連續的",
+    "ex": "It rained for five consecutive days."
+   },
+   {
+    "w": "intake",
+    "hw": "intake",
+    "pos": "n.",
+    "zh": "招生人數",
+    "ex": "This year's intake is the largest yet."
+   }
+  ]
+ },
+ "g-conditional-24": {
+  "point": [
+   "<em>as though</em> + <em>were</em>: an untrue picture.",
+   "as though + were：與事實不符的說法。"
+  ],
+  "why": [
+   "<em>although tickets will be sold to the general public</em> shows the evening is not private. <em>As though</em> introduces an untrue picture, and <em>be</em> takes <em>were</em>.",
+   "although tickets will be sold to the general public 說明晚宴不是私人活動。as though 引出不符事實的描述，be 用 were。"
+  ],
+  "gloss": [
+   {
+    "w": "gala dinner",
+    "hw": "gala dinner",
+    "pos": "phr.",
+    "zh": "盛大晚宴",
+    "ex": "The gala dinner raised funds for the museum."
+   },
+   {
+    "w": "worded",
+    "hw": "word",
+    "pos": "v.",
+    "zh": "措辭",
+    "ex": "The notice was carefully worded."
+   },
+   {
+    "w": "private function",
+    "hw": "private function",
+    "pos": "phr.",
+    "zh": "私人活動",
+    "ex": "The hall is booked for a private function."
+   },
+   {
+    "w": "sponsors",
+    "hw": "sponsor",
+    "pos": "n.",
+    "zh": "贊助商",
+    "ex": "Our sponsors paid for the printing."
+   }
+  ]
+ },
+ "_flags": []
+}

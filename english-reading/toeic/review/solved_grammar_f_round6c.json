@@ -1,0 +1,77 @@
+{
+ "answers": {
+  "g-prep-11": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'must stay parked ... until the end of next month' = continuing state up to a point. by (deadline) does not fit 'stay' (a state that continues, not an action to be completed); after and from contradict 'when the contractor expects to finish' (the cranes would be released/working by then). No distractor passes in formal BrE or AmE.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (by reads fine locally: 'lowered by the end'); D yes (verb 'stay' is ~7 words before the blank, outside the window); B weak/no (by/until is classic, but with 'stay parked' few good students will confidently choose by); S no. Medium, borderline hard.",
+   "style": 4,
+   "why": "L and D pass; B is weak because 'stay' makes until nearly automatic for anyone who knows the by/until rule.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "g-prep-12": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'within seven days ... of receiving it' is the fixed frame. in ('in seven days of receiving') is non-standard: 'in seven days' means 'after seven days' and does not take 'of receiving'; an editor would change it to within. after contradicts the deadline logic (claim must be lodged, or rejected); over ('over seven days of') is wrong.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes ('in seven days' / 'after seven days' read fine in the window); D yes ('of receiving it' comes after the parenthetical 'excluding public holidays'); B no (nobody confidently picks 'in' once 'of' is seen; within...of is a chunk); S no/weak (the parenthetical is short and does not change the frame). Medium.",
+   "style": 4,
+   "why": "L and D pass, B fails: 'in' is only a weak, colloquial-leaning trap once the 'of receiving' clue is seen.",
+   "fix": "", "tooClose": false,
+   "editorNote": "'in seven days of receiving' appears occasionally in loose contract English, but it is not what an editor would pass in formal writing. Not flagged; keep an eye on it only if a reviewer treats 'in' as = 'within'."
+  },
+  "g-prep-13": {
+   "answer": "A", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'at the end of every month' is the standard phrase. on/in 'the end of' are non-standard ('on the end of' / 'in the end of' do not mean the temporal end of a month). 'toward the end of every month' is a real, correct phrase, but it means shortly before the end, and 'once the last late transactions have been posted at midnight on the final day' places the reconciliation after the last posting, so toward is excluded. Near-pass: a lenient reader could take 'toward the end' loosely as 'around the end' of the month (the exclusion rests on 'final day' being read as the day that closes the month).",
+   "vsToeic": "easier", "band": "medium",
+   "ldbs": "L yes (toward, in read fine locally); D yes (excluding clue is the 'once ... midnight on the final day' clause after the comma); B partial (toward the end of is a real use that good students may believe, but it is excluded fairly clearly); S no. Medium.",
+   "style": 4,
+   "why": "L and D pass; B is only partial because 'at the end of' is so frequent and the 'final day' clue is explicit.",
+   "fix": "Make the exclusion of toward watertight, e.g. 'once the last late transactions have been posted on the final day' is fine, but state that the reconciliation happens only after posting ('then sends the totals' is not enough). Or replace toward with a less passable distractor ('to' / 'till').",
+   "tooClose": false,
+   "editorNote": "toward is a legitimate temporal preposition; the item relies on the 'once ... posted at midnight on the final day' clause to exclude it. Close to the 'needs an extra assumption' line, hence shouldFix."
+  },
+  "g-prep-14": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'ran without a recorded fault for what the plant log calls the stabilization period, a stretch of nine weeks' = duration (for). since fails twice: a simple-past verb ('ran') does not take since in standard English (needs a perfect), and the period 'ended ... in July', so the fault-free run did not continue up to now. from (without 'to') + a period noun does not express a duration; between needs two points. No distractor passes in BrE or AmE.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (since reads fine in the window); D yes ('ran' is ~5 words back and 'nine weeks ... ended' follows after a long noun clause); B yes (for/since with a named period is a classic trap; 'since the period' is something good students actively believe); S yes mild (must parse 'what the plant log calls the stabilization period' as one noun phrase to see that it is a duration). Hard.",
+   "style": 4,
+   "why": "L, D and B all pass (since is a believable trap; the excluding clues are tense of 'ran' and 'nine weeks that ended').",
+   "fix": "", "tooClose": false,
+   "editorNote": "'what the plant log calls' is slightly contrived but plausible in an operations report. 'during' would also fit but is not offered."
+  },
+  "g-prep-17": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'cut its output on Friday in response to the outage ..., which had begun the previous Monday' - the outage had already begun, so the cut is a response. in anticipation of fails because one cannot anticipate an outage that 'had begun' four days earlier (needs the unstated assumption that the cut anticipated its spread). The 'rather than waiting for the regulator' makes anticipation tempting, which is the trap. in contrast to / in return for are meaning-wrong.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (anticipation and response both fit the window); D yes ('which had begun the previous Monday' sits after the noun, outside the window); B no (the difference is meaning/time logic, which for vocabulary-type items counts as no, even though 'rather than waiting' pulls toward anticipation); S no. Medium.",
+   "style": 4,
+   "why": "L and D pass; B fails because the distinction is purely semantic (time logic), not a usage-level trap.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Good distractor in 'in anticipation of'. It is excluded by the explicit 'had begun'; no extra assumption needed."
+  },
+  "g-prep-18": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'out of stock ... ever since the supplier's plant was shut by a strike' - supply stopped, and the order 'is now due to ship from the Bexley depot' (i.e. not from Harlow). in stock is a fluent-looking distractor but contradicts 'ever since the plant was shut' (a supply stoppage cannot make goods available) and the move to Bexley. off/from stock: 'off stock' is not standard; 'from stock' is not used with 'have been'.",
+   "vsToeic": "easier", "band": "medium",
+   "ldbs": "L yes ('in stock' is perfect in the window); D yes ('ever since ... strike' follows 7 words later); B no (in/out of is a plain antonym, pure meaning difference); S no. Medium, borderline easy because out of stock is a very frequent chunk.",
+   "style": 4,
+   "why": "L and D pass; B fails because the distractors are a simple antonym and non-words.",
+   "fix": "Optional: replace 'off' or 'from' with a more tempting form (e.g. 'under' / 'short of') only if a harder band is wanted; not needed for safety.",
+   "tooClose": false,
+   "editorNote": "The 'in stock' reading needs the assumption that Harlow had the goods but Bexley ships them - judged too strained to count. Not flagged."
+  },
+  "g-prep-19": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'filed as of the first of next month' = from that date on; 'claims filed earlier' get the old rate. by the first would include claims filed earlier than the first, so it contradicts 'whereas claims filed earlier ... old rate'. before reverses the rates. against is wrong. No distractor passes in BrE or AmE.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (by and before read fine locally, 'filed by the first' is a very natural collocation); D yes ('earlier' comes at the end of the sentence after 'whereas'); B partial (by is a believable pick for those who think of a filing deadline, but the exclusion is logic, not usage); S no. Medium, borderline hard.",
+   "style": 4,
+   "why": "L and D pass; B is only partial since the exclusion is purely semantic.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  }
+ },
+ "mustFix": [],
+ "shouldFix": ["g-prep-13"],
+ "overall": "Band counts: easy 0, medium 6, hard 1 (g-prep-14). No ambiguous items and no mustFix: every distractor was tested under formal BrE and AmE (toward the end of, since with a period, from without to, over with a period, in...of) and none passes. Only g-prep-13 is a near-pass: 'toward the end of every month' is a real phrase and is excluded only through the 'once ... final day' clause, so the exclusion should be made tighter. Hard is well under the 30 percent target for the batch: most items rely on semantic exclusion (B counted as no for pure-meaning differences) rather than usage-level traps; prep-12 and prep-19 are the closest to hard. g-prep-13 and g-prep-18 are rated vsToeic easier (frequent chunks at the end of / out of stock); 2 of 7 exceeds the 10 percent easier limit if the batch rule is applied literally, so supplement with harder items for the unit. Stems are natural and close to real Part 5 style; g-prep-14 is the most contrived."
+}

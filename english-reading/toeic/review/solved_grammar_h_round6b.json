@@ -1,0 +1,155 @@
+{
+ "answers": {
+  "g-conditional-07": {
+   "answer": "A",
+   "confidence": 4,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Open future conditional: if + present, main clause will resume. B (had reached) is a past perfect marking unreal/past-before-past, which does not pair with will in standard formal English; if a past reading were intended the form would be simple past or present perfect, so B is excluded by form, not by an assumption. C has no finite verb. D (would reach) in an if-clause is acceptable only for willingness of a person, and a shipment cannot be willing. Tested B hardest because Friday could be already past, but even then had reached is not the standard form.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes (had reached / would reach read fine in the window), D yes (will resume is after the comma), B partly (would reach in an if-clause is a known tempting error; had reached as backshift), S no",
+   "style": 4,
+   "why": "L and D pass and B is moderate; S fails (one rule, subject not hidden). Medium.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "B (had reached) is a good trap but sits close to a possible past-time reading of 'by Friday afternoon'; no action needed unless a reviewer disagrees. Result is that 'had reached' needs the reader to ignore will."
+  },
+  "g-conditional-09": {
+   "answer": "D",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Condition for keeping entitlements: provided that they transfer before ... January, contrasted with those who apply after that date. A as if is manner, no. C until: keep until they transfer reverses the meaning of the policy. B in case: as precaution (BrE) it makes no sense (keep entitlements as a precaution against transferring). In chiefly American usage in case can mean if, which would give a coherent reading, but that use is flagged as nonstandard or informal by many American editors and style guides, so it fails 4.1 as formal written English; near-pass only.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes (until / in case read acceptably in the window), D weak-yes (the contrast clause after 'while' and 'before ... January' confirm the condition reading), B yes (in case = if, a common learner belief), S no",
+   "style": 4,
+   "why": "L yes and B yes; D only weak and S no. Medium.",
+   "fix": "Optional: replace B 'in case' with 'unless' (unless they transfer before January: grammatical but reverses the policy, a clean trap) to remove the AmE in case = if risk.",
+   "tooClose": false,
+   "editorNote": "In case = if is chiefly American and disliked in formal editing; borderline under 4.3 'American formal accepts'. Recommend swap to unless."
+  },
+  "g-conditional-11": {
+   "answer": "D",
+   "confidence": 3,
+   "ambiguous": true,
+   "alsoPossible": [
+    "A"
+   ],
+   "reason": "Intended: were (unreal present) with would be cleared. But A (is) is a grammatical open/speculative conditional with would in the main clause (If the center is able to run a second shift, its backlog would be cleared by December), standard in both British and American formal English; would in the result clause expresses a hypothetical outcome of an open possibility. The only thing excluding it is the remote detail 'has only one crew and no budget for another', which suggests but does not rule out that it might become able. B has been and C being are ungrammatical here.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes, D yes (facts before the semicolon), B yes (is + would is a real mixed pattern), S no",
+   "style": 3,
+   "why": "Distractor A passes grammar and meaning; the real vs unreal reading is not forced. Band would be medium if repaired (S no).",
+   "fix": "Force the unreal-present plus past/perfect mix so only were works: '... ; if it ______ able to run a second shift now, its backlog would have been cleared by last December.' (is/has been + would have been is wrong; were + would have been is the standard mixed conditional). Or change the main clause to a past-time result and drop 'would be'.",
+   "tooClose": false,
+   "editorNote": "Style: stating the counterfactual facts before the semicolon tells the solver the answer; real items would not spell out the unreality."
+  },
+  "g-conditional-15": {
+   "answer": "D",
+   "confidence": 3,
+   "ambiguous": true,
+   "alsoPossible": [
+    "A"
+   ],
+   "reason": "Intended: mixed conditional, if + were (present state) with would not have been (past result, September strike and stockout). But A (would not be) also gives a coherent reading: the strike that began in early September is still ongoing, the disruption is current, and when merely dates the start of the strike; 'if the retailer were not so dependent, its deliveries would not be so badly disrupted by the strike' is a normal present-present second conditional. Nothing says the strike has ended; 'ran out of stock' is only the past event at the start. Editors would pass A. B were not is ungrammatical in the main clause; C had not been lacks would.",
+   "vsToeic": "harder",
+   "band": "hard",
+   "ldbs": "L yes, D yes (began / ran out are far after the blank), B yes (would not be is the matching second-conditional pattern), S yes (needs the time of the result from the later clause)",
+   "style": 3,
+   "why": "All four of L/D/B/S pass, but the key time cue ('began ... ran out') does not exclude the present reading, so it is ambiguous; band is hard if repaired.",
+   "fix": "Make the disruption clearly finished: '... its deliveries to the northern stores ______ so badly disrupted by the three-day strike last September, when several of those stores ran out of stock.' (no 'began', no ongoing reading; only would not have been fits). Alternatively add 'at the time'.",
+   "tooClose": false,
+   "editorNote": "Same real/unreal-time defect family as g-conditional-11 and -17. Note A here (would not be) is the key of g-conditional-17: the same string appears as answer and as a distractor across the batch."
+  },
+  "g-conditional-17": {
+   "answer": "A",
+   "confidence": 3,
+   "ambiguous": true,
+   "alsoPossible": [
+    "B"
+   ],
+   "reason": "Intended: Without + noun = unreal, would not be. But B (is not) is the ordinary generic/real dependency reading: 'Without the volunteers, the museum is not able to keep its galleries open on both weekend days, as it has done every week since January' states a present fact (it depends on them) and is coherent and common in standard prose (Without oxygen, humans die). The since-January clause (as it has done) is compatible with it. D was not is excluded by has done since January (tense), C had not been lacks would.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes, D partly (as it has done since January is the only far cue and it excludes only was not), B yes (is not as the real reading), S no",
+   "style": 4,
+   "why": "L yes and B yes, D weak, S no: medium. Currently ambiguous because without + noun accepts an indicative.",
+   "fix": "Without + noun allows a plain indicative, so the stem needs a forcing cue. Recast as a past counterfactual with the result clause carrying the past time, e.g. 'Without the forty volunteers who staffed the information desk last winter, the museum ______ able to keep its galleries open on both weekend days during the January flu outbreak.' with options would not have been / was not / is not / had not been. Re-test: was not then becomes the live rival, so replace it with 'has not been' or 'could not be', and have a second reviewer confirm only would not have been survives.",
+   "tooClose": false,
+   "editorNote": "Without + noun with an indicative is a valid generic reading; any without item needs a forcing cue beyond the without phrase. Also note 'was not' can be the live rival once the time is past, so re-test after the fix."
+  },
+  "g-conditional-18": {
+   "answer": "B",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Inverted conditional (Should + subject + bare verb): fail is the bare form after the singular subject, and the main clause would shut down is conditional. Although / Even though would need fails and are concessive (they contradict the would result); Whenever would need fails and means every time, not a hypothetical. Archaic subjunctive 'Although the generator fail' is not standard modern formal English.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes (all three conjunctions read fine before 'the main backup generator'), D yes (fail / would shut down are after the insertion), B no (nobody sincerely believes Although is right here), S no in practice (the would in the main clause plus the absence of any other conditional word is enough)",
+   "style": 4,
+   "why": "L and D pass but B and S fail: only one conditional word is offered and the bare verb is optional evidence. Medium.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Same inversion pattern as g-conditional-19 and -20; consider swapping one of the three to a different structure."
+  },
+  "g-conditional-19": {
+   "answer": "B",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Were + subject + not due to expire = inverted second conditional (If the lease were not due). Provided needs the verb (is) and gives would the wrong mood; Since and Whether need a finite verb too and have the wrong meaning (Whether ... or not; Since = because). The clause has no finite verb, so only inversion works.",
+   "vsToeic": "harder",
+   "band": "hard",
+   "ldbs": "L yes (Since / Provided read fine before 'the lease'), D yes (the missing finite verb is after the relative clause), B yes (Provided is itself a conditional word that fits the semantic frame), S yes (strip the relative clause, find the subject, notice there is no finite verb)",
+   "style": 3,
+   "why": "All of L, D, B, S pass because Provided competes as a conditional connective and the clue is a missing verb after an insertion.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Style: negative if-clause Were ... not due is plausible; real items more often use Were it not for / Should."
+  },
+  "g-conditional-20": {
+   "answer": "A",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Inverted third conditional: Had + subject + past participle (received), main clause would have been unnecessary. B receive and C receiving are not past participles. D have received (Had X have received, as in if X would have received) is a dialectal or informal form and is not accepted in standard formal written English; editors would delete the have.",
+   "vsToeic": "harder",
+   "band": "hard",
+   "ldbs": "L yes (have received reads fine before 'the revised page proofs'), D yes (Had is at the beginning, 18 words from the gap), B yes (have received by analogy with would have been is a plausible belief), S yes (subject is hidden by the relative clause)",
+   "style": 3,
+   "why": "L, D, B and S all pass: long hidden subject, inversion, and a believable double-have distractor.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "D is a legitimate trap (non-standard). Inverted Had ... is less common on real Part 5 than Should/Were."
+  },
+  "g-conditional-23": {
+   "answer": "C",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "It is high time that + subject + past subjunctive (reviewed) for a present or future action that should already have happened. A has reviewed (done, contradicts 'high time'), B will review and D is reviewing are not accepted in standard formal English after high time. Bare subjunctive 'review' (American) is not offered.",
+   "vsToeic": "harder",
+   "band": "medium",
+   "ldbs": "L yes (has reviewed / is reviewing read fine in the window), D yes (It is high time at the start, the insertion has fallen primes present perfect), B marginal (has reviewed is primed by 'has fallen'; the idiom is one fixed rule, so informed students are not misled), S no (the tense is decided by the idiom, not by the subject)",
+   "style": 2,
+   "why": "L and D pass, B only marginal and S fails: one idiom rule. Medium, not hard.",
+   "fix": "Style: It is high time that ... is a set phrase rarely tested on TOEIC and tests an idiom in isolation; replace the unit or recast as 'If the university ... had reviewed' type content to match the real item style.",
+   "tooClose": false,
+   "editorNote": "Does not resemble real TOEIC Part 5 (rare structure); keep only if the unit is wanted for coverage."
+  }
+ },
+ "mustFix": [
+  "g-conditional-11",
+  "g-conditional-15",
+  "g-conditional-17"
+ ],
+ "shouldFix": [
+  "g-conditional-09",
+  "g-conditional-23"
+ ],
+ "overall": "Bands: 0 easy / 6 medium (07, 09, 11, 17, 18, 23) / 3 hard (15, 19, 20); hard share is 33 percent, meeting the target, but hard 15 is undercut by an ambiguity. Three items have a defensible second answer: the real-versus-unreal trap is not forced in 11 (is + would), 15 (would not be with an ongoing strike) and 17 (without + noun with an indicative). The pattern is the same: the unreality is told in a remote clause or by general knowledge rather than forced by form, so an editor would pass the present-time option. Repair by adding a forcing time cue (last September, last year, by now) or mixing the time reference in the main clause. 09 uses in case as a distractor, which is chiefly American = if: swap to unless. 18, 19 and 20 all use the same inverted-conditional pattern; vary one. 23 tests an idiom (high time) that does not resemble TOEIC. Cross-item overlap: 'would not be' is the key of 17 and a distractor of 15; fix 15 and 17 together. Overall style is slightly more textbook than real TOEIC, with the facts stated before the conditional in 11 and 15."
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "id": "l-qr-18",
+  "format": "qr",
+  "heard": "Which flight is Mr. Brandt taking to the sales meeting, now that the morning departure has been canceled?",
+  "responses": {
+   "A": "The morning one, at ten.",
+   "B": "He prefers an aisle seat.",
+   "C": "The one that leaves right after lunch."
+  }
+ },
+ {
+  "id": "l-qr-19",
+  "format": "qr",
+  "heard": "How many chairs should we set up for the awards dinner, now that the guest list has doubled from a hundred?",
+  "responses": {
+   "A": "A hundred should do it.",
+   "B": "The final replies aren't due until Friday.",
+   "C": "The chairs are stacked in the storage room."
+  }
+ },
+ {
+  "id": "l-qr-20",
+  "format": "qr",
+  "heard": "Will the replacement parts reach the factory before the inspectors arrive on Friday?",
+  "responses": {
+   "A": "The supplier hasn't even shipped them yet.",
+   "B": "Yes, the factory is fully staffed.",
+   "C": "No, the inspectors were here last week."
+  }
+ },
+ {
+  "id": "l-qr-21",
+  "format": "qr",
+  "heard": "Do you have the schedule for next week's interviews?",
+  "responses": {
+   "A": "Only two candidates so far.",
+   "B": "In the second-floor meeting room.",
+   "C": "Yes, I'll e-mail it to you right now."
+  }
+ },
+ {
+  "id": "l-qr-22",
+  "format": "qr",
+  "heard": "Is there an extra charge if I return the car to a different location?",
+  "responses": {
+   "A": "Yes, you can return it any time before six.",
+   "B": "That depends on which branch you choose.",
+   "C": "Our downtown location opens at seven."
+  }
+ },
+ {
+  "id": "l-conv-09",
+  "format": "conv",
+  "transcript": [
+   "W: Daniel, I went through last quarter's numbers. About one patient in six didn't show up for an appointment.",
+   "M: That's a lot of empty chairs. We only phone people the day before, and half of them never answer.",
+   "W: A text message would reach more of them. The software company says patients can even confirm by replying.",
+   "M: What would it cost, though? The owner already turned down a new reception desk this year.",
+   "W: It's a small monthly fee, and it would free up Mia's afternoons for other work. Each no-show costs us more than that.",
+   "M: Mia would love that. Does it work with our current scheduling program?",
+   "W: They say it does, but I'd like to see it running first. They're offering a free two-week trial.",
+   "M: Then let's start the trial on Monday. I'll bring it up with the owner at Thursday's meeting.",
+   "W: Good idea. I'll tell the company to set it up."
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "options": {
+     "A": "Hiring more reception staff",
+     "B": "Replacing the clinic's scheduling program",
+     "C": "Ways to reduce the number of people who miss their visits",
+     "D": "Whether to buy a new reception desk"
+    }
+   },
+   {
+    "q": "Why does the man mention the reception desk?",
+    "options": {
+     "A": "To hint that the boss is reluctant to pay",
+     "B": "To request a replacement desk",
+     "C": "To complain about the waiting area",
+     "D": "To recommend hiring more staff"
+    }
+   },
+   {
+    "q": "What does the man say he will do at Thursday's meeting?",
+    "options": {
+     "A": "Begin a two-week trial",
+     "B": "Watch the software run",
+     "C": "Contact the software company",
+     "D": "Present the idea to management"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-10",
+  "format": "conv",
+  "transcript": [
+   "W: Tom, Gareth, thanks for staying late. Our presentation for the client is at nine tomorrow, and I'm worried about the demo video.",
+   "M1: It plays fine on my laptop. The trouble is the projector in their boardroom, which only accepts an older file type.",
+   "M2: I saw that projector last spring. It belongs in a museum.",
+   "W: So can we convert the video tonight?",
+   "M1: I can, with free software. It takes about two hours to run, though, so I'd have to start it before I leave.",
+   "W: Please do. Gareth, I'd like you to test the new file on their projector before we start. Could you be there at eight?",
+   "M2: The building doesn't open until eight thirty, I'm afraid. How about eight forty-five, in the lobby?",
+   "W: That works. The presentation is at nine, so we'll have fifteen minutes. Tom, text me when the conversion finishes tonight.",
+   "M1: Will do. I'll start it as soon as we're done here."
+  ],
+  "questions": [
+   {
+    "q": "What is Rosa worried about?",
+    "options": {
+     "A": "Whether a video will play properly",
+     "B": "Whether the client will accept the price",
+     "C": "Whether the staff will finish early",
+     "D": "Whether the room has enough seats"
+    }
+   },
+   {
+    "q": "What does Gareth imply when he says, \"It belongs in a museum\"?",
+    "options": {
+     "A": "The projector should be donated to a museum",
+     "B": "The projector is badly out of date",
+     "C": "The client displays old equipment in the boardroom",
+     "D": "He saw the projector at a museum last spring"
+    }
+   },
+   {
+    "q": "When will Gareth most likely test the new file at the client's building?",
+    "options": {
+     "A": "At eight o'clock",
+     "B": "At eight thirty",
+     "C": "At a quarter to nine",
+     "D": "At nine o'clock"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-05",
+  "format": "talk",
+  "transcript": [
+   "W: Hello, Mr. Alvarez, this is Priya Nair at the Linden Hotel, calling about your retirement dinner on the twentieth.",
+   "W: The Garden Room is no longer available, because a pipe burst there on Sunday.",
+   "W: I can offer you the Skyline Room on the top floor instead, at the same price. It's bigger, but it has no built-in microphone system.",
+   "W: Our audio company can supply one, but they need your order by Thursday.",
+   "W: Before you order anything, please look over the floor plan I e-mailed this morning.",
+   "W: I'll hold the Skyline Room until Friday. After that, I'll have to offer it to another client.",
+   "W: Please call me back at the front desk once you've seen the plan."
+  ],
+  "questions": [
+   {
+    "q": "Why is the speaker calling?",
+    "options": {
+     "A": "To confirm a payment for the dinner",
+     "B": "To suggest another venue for an event",
+     "C": "To arrange repairs to a banquet room",
+     "D": "To recommend an audio company"
+    }
+   },
+   {
+    "q": "What is mentioned as a drawback of the Skyline Room?",
+    "options": {
+     "A": "It has to be booked by Thursday",
+     "B": "It was damaged by a burst pipe",
+     "C": "It is smaller than the original room",
+     "D": "It does not come with sound equipment"
+    }
+   },
+   {
+    "q": "What does the speaker ask the listener to do first?",
+    "options": {
+     "A": "Review the layout of a room",
+     "B": "Call the hotel's front desk",
+     "C": "Place an order with the audio company",
+     "D": "Let the hotel know by Friday"
+    }
+   }
+  ]
+ }
+]

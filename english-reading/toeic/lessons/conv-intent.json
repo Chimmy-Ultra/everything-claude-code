@@ -1,0 +1,257 @@
+{
+  "unit": "conv-intent",
+  "lead": [
+    "Some questions quote a line and ask what the speaker means or implies. The words can be simple. The meaning comes from the situation, so the lines before and after the quote matter.",
+    "有些題目引用一句話，問說話者的意思或暗示。字面可能很簡單，意思要從情境來看，所以引句前後的話很重要。"
+  ],
+  "steps": [
+    [
+      "Find the quoted line in the audio. Note the lines before it and after it.",
+      "在音檔中找出被引用的那句話，留意它前後的話。"
+    ],
+    [
+      "Ask what the speaker is doing with the words: refusing, agreeing, warning, complaining, offering.",
+      "問自己說話者想用這句話做什麼：拒絕、同意、警告、抱怨、提議。"
+    ],
+    [
+      "Choose the option that fits that purpose, not the literal meaning.",
+      "選符合那個目的的選項，而不是字面意思。"
+    ],
+    [
+      "Check the other speaker's next line. It should react to the meaning you chose.",
+      "檢查對方的下一句，它應該是在回應你選的那個意思。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "The literal meaning is often not the answer",
+        "字面意思常常不是答案"
+      ],
+      "body": [
+        "Many quotes are statements of fact that carry a message. Ask what the fact means for the plan being discussed.",
+        "許多引句是帶著訊息的事實陳述。想想這個事實對正在討論的計畫代表什麼。"
+      ],
+      "ex": [
+        [
+          "'It's already half past five.' = <em>We should finish soon.</em>",
+          "「現在已經五點半了。」＝我們該收尾了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Polite refusals: 'I'd love to, but…'",
+        "委婉拒絕：I'd love to, but…"
+      ],
+      "body": [
+        "A positive opening followed by 'but' and a reason is usually a refusal. The reason after 'but' carries the real message.",
+        "正面開頭、接 but 和理由，通常是拒絕。but 後面的理由才是真正的訊息。"
+      ],
+      "ex": [
+        [
+          "'I'd love to join, <em>but</em> I'm traveling that week.' = no.",
+          "「我很想加入，但那週我要出差。」＝不行。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Common idioms and set phrases",
+        "常見慣用語"
+      ],
+      "body": [
+        "Some phrases mean something other than their words. Learn a few, and let the context confirm them.",
+        "有些片語的意思和字面不同。學幾個，再用上下文確認。"
+      ],
+      "ex": [
+        [
+          "<em>It's up in the air.</em> = not decided yet.",
+          "It's up in the air.＝還沒決定。"
+        ],
+        [
+          "<em>Count me in.</em> = I will take part.",
+          "Count me in.＝算我一份。"
+        ],
+        [
+          "I'm <em>swamped</em> this week. = very busy.",
+          "I'm swamped this week.＝本週忙翻了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "The reply shows the meaning",
+        "對方的回應透露意思"
+      ],
+      "body": [
+        "The other speaker reacts to the implied message. If the reply is 'Then try tomorrow', the quote probably meant 'not today'.",
+        "對方是針對暗示的訊息做出反應。若回應是 Then try tomorrow，引句大概是「今天不行」。"
+      ],
+      "ex": [
+        [
+          "Woman: I'm swamped today. Man: <em>Then we can try tomorrow.</em>",
+          "女：我今天忙翻了。男：那我們明天再試。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Inference: only what the facts support",
+        "推論：只選事實支持的"
+      ],
+      "body": [
+        "'What does the man imply?' and 'most likely' questions need a conclusion that follows from what was said. Do not pick something that is possible but never suggested.",
+        "What does the man imply? 和 most likely 的題目需要從所說內容推出的結論。不要選可能但從未被暗示的事。"
+      ],
+      "ex": [
+        [
+          "Man: The client arrives at nine, and nothing is printed yet. <em>He is worried about time.</em>",
+          "男：客戶九點到，而什麼都還沒印。他擔心時間不夠。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Tone: hesitation, relief, doubt",
+        "語氣：猶豫、鬆口氣、懷疑"
+      ],
+      "body": [
+        "'Well', 'actually' and 'I guess' signal hesitation or disagreement. 'Great, that saves time' signals relief. The tone should fit the option you pick.",
+        "well、actually、I guess 表示猶豫或不同意；Great, that saves time 表示鬆一口氣。語氣要和你選的選項吻合。"
+      ],
+      "ex": [
+        [
+          "'<em>Well</em>, I guess we could try it.' = not fully convinced.",
+          "「嗯，我想我們可以試試。」＝還沒完全被說服。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What does the woman imply when she says, \"I had pasta yesterday\"? [Man: Do you want to try the new Italian place for lunch?] / A: She would prefer something else.",
+      "wrong": "Q: What does the woman imply when she says, \"I had pasta yesterday\"? [Man: Do you want to try the new Italian place for lunch?] / A: She wants to eat pasta again.",
+      "why": [
+        "The wrong option takes the words as a wish. Here the line is a polite way to say no.",
+        "錯誤選項把字面當成願望。這句話其實是委婉說不。"
+      ]
+    },
+    {
+      "right": "Q: What does the man mean when he says, \"It's up in the air\"? [Woman: Is the trip to Seoul confirmed?] / A: A decision has not been made.",
+      "wrong": "Q: What does the man mean when he says, \"It's up in the air\"? [Woman: Is the trip to Seoul confirmed?] / A: The plane will be late.",
+      "why": [
+        "The wrong option builds a picture from the words. The idiom means 'not decided'.",
+        "錯誤選項用字面畫面解釋，這個慣用語的意思是「尚未決定」。"
+      ]
+    },
+    {
+      "right": "Q: What does the man imply when he says, \"Count me in\"? [Woman: We're collecting money for Ana's farewell gift.] / A: He will contribute.",
+      "wrong": "Q: What does the man imply when he says, \"Count me in\"? [Woman: We're collecting money for Ana's farewell gift.] / A: He will count the money.",
+      "why": [
+        "'Count' is taken literally in the wrong option. The phrase means he will take part.",
+        "錯誤選項把 count 照字面理解，這個片語的意思是他要參加。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "What does the woman imply when she says, \"…\"?",
+          "女子說「……」時暗示什麼？"
+        ],
+        [
+          "What does the man mean when he says, \"…\"?",
+          "男子說「……」是什麼意思？"
+        ],
+        [
+          "Why does the woman say, \"…\"?",
+          "女子為什麼說「……」？"
+        ],
+        [
+          "What does the man imply about the schedule?",
+          "男子對時程暗示了什麼？"
+        ],
+        [
+          "What is the man concerned about?",
+          "男子擔心什麼？"
+        ],
+        [
+          "What is the woman suggesting?",
+          "女子在建議什麼？"
+        ],
+        [
+          "What can be inferred about the project?",
+          "關於這個專案可以推論出什麼？"
+        ],
+        [
+          "What does the woman most likely mean when she says, \"…\"?",
+          "女子說「……」最可能是什麼意思？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Set phrases worth knowing",
+        "值得認識的常用語"
+      ],
+      "items": [
+        [
+          "It's up in the air.",
+          "還沒決定。"
+        ],
+        [
+          "Count me in.",
+          "算我一份。"
+        ],
+        [
+          "I'm swamped.",
+          "我忙翻了。"
+        ],
+        [
+          "We're running behind.",
+          "我們進度落後了。"
+        ],
+        [
+          "It's a long shot.",
+          "希望很渺茫。"
+        ],
+        [
+          "Let me see what I can do.",
+          "我看看能怎麼辦。"
+        ],
+        [
+          "That's fine by me.",
+          "我沒意見。"
+        ],
+        [
+          "I'll take care of it.",
+          "我來處理。"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Reading the quote literally. If an option repeats the words of the quote, check whether it matches the situation. It often does not.",
+      "照字面讀引句。若選項重複引句的字，要檢查它是否符合情境，常常是不符合的。"
+    ],
+    [
+      "Picking an option about the topic instead of the speaker's purpose. The question asks what the speaker means, not what the talk is about.",
+      "選了關於主題的選項，而不是說話者的目的。題目問的是說話者的意思，不是對話的主題。"
+    ],
+    [
+      "Ignoring the next line. The other speaker's reply often confirms the meaning, so listen past the quote.",
+      "忽略下一句。對方的回應常能確認意思，所以引句之後也要聽。"
+    ],
+    [
+      "Over-inferring. An option that goes beyond what was said, such as guessing a reason nobody gave, is wrong.",
+      "過度推論。超出所說內容的選項，例如猜一個沒人說過的原因，是錯的。"
+    ]
+  ]
+}

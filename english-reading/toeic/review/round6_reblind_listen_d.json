@@ -1,0 +1,22 @@
+[
+ {
+  "id": "l-qr-26",
+  "format": "qr",
+  "heard": "What time is the client call tomorrow, now that it's been rescheduled?",
+  "responses": {
+   "A": "Nine o'clock, the same as before.",
+   "B": "The client's office is downtown.",
+   "C": "It got pushed back to noon."
+  }
+ },
+ {
+  "id": "l-qr-40",
+  "format": "qr",
+  "heard": "Do you want to go over the budget in the conference room or over lunch?",
+  "responses": {
+   "A": "The conference room is on the fourth floor.",
+   "B": "The lunch menu changes every Monday.",
+   "C": "Let's just do it by phone this afternoon."
+  }
+ }
+]

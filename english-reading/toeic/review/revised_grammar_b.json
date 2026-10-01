@@ -1,0 +1,19 @@
+{
+  "changed": ["g-agree-01", "g-pronoun-01", "g-parallel-02", "g-parallel-03"],
+  "notes": {
+    "g-agree-01": "New stem: plural head 'The projectors' with the singular 'every conference room on the fourth floor' right before the blank, pulling toward 'has'. Options reordered (have / has / having / to have) so the key stays A. Level 1 -> 2. I did not use the calibrator's 'Each of the conference rooms ...' because a plural verb after 'each of + plural' is accepted informally by some usage guides, and because it nearly repeats the reference page example.",
+    "g-pronoun-01": "Stem and key (B = its) unchanged; the contraction option it's was replaced by theirs. I rejected their because 'Venlow Logistics has updated their return policy' is acceptable in informal and British usage. Point, why, wrong, zh and vocab rewritten. Level 1.",
+    "g-parallel-02": "New stem: the correlative partner 'nor' is now ten words after the blank, and the nearer 'sales and marketing' puts an 'and' in view that pulls toward 'both'. Options and key (A = neither) unchanged. Level 2.",
+    "g-parallel-03": "New stem: coordinated verbs share 'must' (must register ... and keep), with the partner ten words back; 'of purchase and ___' makes 'keeping' look right. Answer is now a base form, not Ving. Key stays C. Level 2.",
+    "g-voice-01": "Step 2 only: why now names the future time phrase; wrong[1] and wrong[3] rewritten (standalone wording; wrong[3] now covers the missing-be reading).",
+    "g-voice-02": "Step 2 only: wrong[3] standalone wording, names the perfect progressive.",
+    "g-voice-03": "Step 2 only: wrong[1] standalone wording.",
+    "g-agree-02": "Step 2 only: wrong[2] dropped the over-generalised claim about usually + present perfect.",
+    "g-relative-01": "Step 2 only: point, why and wrong[0] rewritten. The old rules ('noun follows the blank -> whose'; 'who must be followed directly by a verb') were over-generalised.",
+    "g-compare-01": "Step 2 only: wrong[3] no longer says 'is must be followed by an adjective'.",
+    "g-compare-03": "Step 2 only: level 3 -> 2 (single lexical rule, clue next to the blank).",
+    "g-quantity-01": "Step 2 only: why now says 'only much among the options'.",
+    "g-quantity-02": "Step 2 only: why now says 'among the options'.",
+    "g-quantity-03": "Step 2 only: why now says 'among the options'; wrong[1] no longer suggests 'much' in an affirmative sentence."
+  }
+}

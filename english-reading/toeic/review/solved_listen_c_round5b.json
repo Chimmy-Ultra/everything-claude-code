@@ -1,0 +1,85 @@
+{
+ "answers": {
+  "l-qr-19": {
+   "answer": "B",
+   "confidence": 0.85,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Chair count depends on guest list; B says final replies not due until Friday = number not known yet (indirect answer). A 'still a hundred' contradicts 'has doubled' (form-correct trap, killed by the conditional clause). C repeats 'chairs' but answers where, not how many.",
+   "vsToeic": "similar",
+   "band": "hard",
+   "ldbs": {"L": true, "D": true, "B": true, "S": false},
+   "style": 4,
+   "why": "L: A (list/hundred) and C (chairs) are same-word or form-correct; D: A is only excluded by the 'doubled' clause and B needs one inference step; B: indirect 'not yet known' answer is the correct one.",
+   "fix": "",
+   "tooClose": "",
+   "editorNote": "A contradicts the premise outright, so it is a legal trap. B is mildly indirect (replies pending, so the final count is unknown); acceptable. Not a bad hard item; the answer-by-elimination of C is easy, so hardness rests mostly on A vs B."
+  },
+  "l-qr-21": {
+   "answer": "C",
+   "confidence": 0.97,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Direct Yes/No question answered by 'Yes, I'll e-mail it right now'. A answers about candidates in past tense (interviews are next week, so contradicted). B is a where-answer to a do-you-have question.",
+   "vsToeic": "easier",
+   "band": "easy",
+   "ldbs": {"L": false, "D": false, "B": false, "S": false},
+   "style": 3,
+   "why": "L fails: no distractor reads naturally after the question; direct answer, no conditional clause in the question (matches 2.4 easy pattern).",
+   "fix": "Add an attached condition to the question and make the right answer indirect (e.g. 'Have the interview schedules been sent to the candidates, now that Ms. X approved the room?' -> 'The room booking hasn't been confirmed yet').",
+   "tooClose": "",
+   "editorNote": "B 'In the second-floor meeting room' could be heard as 'the schedule is in the meeting room' (a cooperative reply to 'do you have it'), but that needs the assumption that the schedule is posted/left there; low risk, shouldFix-level only because it needs that assumption. Consider changing B to a clearly wrong-type answer or leaving it since the item is easy anyway."
+  },
+  "l-conv-10:0": {
+   "answer": "A",
+   "confidence": 0.95,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Rosa (W, named by M1) says she is worried about the demo video; context: it plays fine on laptop but the client projector only takes an older file type, so 'whether it will play properly'. B contradicted (free software). C: two hours is M1's remark, not Rosa's worry. D: building opening time is M2's remark, solved by 8:45.",
+   "vsToeic": "easier",
+   "band": "easy",
+   "ldbs": {"L": true, "D": false, "B": false, "S": false},
+   "style": 4,
+   "why": "D fails: the answer sits in the first sentence and shares the content word 'video' with the correct option; B and C are not live (one contradicted, one not a worry).",
+   "fix": "Make the worry non-verbatim: have Rosa say 'I'm worried about how tomorrow's demo will go' so the video/projector link needs the next two lines; or delete the shared word 'video' from the stem sentence.",
+   "tooClose": "",
+   "editorNote": "Rosa, Tom and Gareth are all named aloud (M1 says 'Rosa'; W says 'Tom, Gareth'). C is a mentioned-but-not-asked trap, legal; no defensible alternative."
+  },
+  "l-conv-10:1": {
+   "answer": "B",
+   "confidence": 0.9,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Context: projector only accepts an older file type; 'belongs in a museum' = it is very out of date. D contradicted ('that projector' is the one in the client's boardroom). C needs an unstated assumption that the client displays old gear. A is the literal reading and is not implied by anything.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": {"L": true, "D": true, "B": true, "S": false},
+   "style": 4,
+   "why": "L: A and D read plausibly if taken literally; D: needs the previous speaker's 'older file type' to decode; B: non-literal idiom is the key. Hard would need a second heavy distractor or two-speaker integration; the evidence is only two adjacent lines.",
+   "fix": "",
+   "tooClose": "",
+   "editorNote": "A (donate to museum) is the intended literal trap; not contradicted by a detail but nothing supports it, so I treated it as a trap rather than ambiguous. C is the weakest distractor (needs an assumption), harmless since idiom is clear."
+  },
+  "l-conv-10:2": {
+   "answer": "C",
+   "confidence": 0.92,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "Rosa asks for 8:00; M2 says building opens 8:30 and proposes 8:45 in the lobby; Rosa: 'That works'. 8:45 = a quarter to nine. A is the rejected time (cross-speaker), B is the opening time (mentioned, not the test time), D is the presentation time.",
+   "vsToeic": "similar",
+   "band": "hard",
+   "ldbs": {"L": true, "D": true, "B": false, "S": true},
+   "style": 4,
+   "why": "L: all three wrong times are real times in the dialogue; D: answer spans three lines; S: proposal by W, rejection and counter by M2, acceptance by W (cross-speaker). Borderline hard: paraphrase 'eight forty-five' -> 'quarter to nine' is only distance 1.",
+   "fix": "If a firmer hard is wanted, have M2 give the time relative to the opening ('half an hour after they open') so the paraphrase distance is 2-3.",
+   "tooClose": "",
+   "editorNote": "Gareth is named aloud by W ('Gareth, I'd like you to test...'). 'Most likely' is fine since W confirms. Per the rules (S = integrating two speakers) this is hard, but a real test-taker would find it close to medium."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "l-qr-21: option B ('In the second-floor meeting room') could be read as where the schedule is, which needs an unstated assumption; replace with a clear wrong-type or same-word answer. Also the item is easy (no conditional, direct Yes).",
+  "l-conv-10:0: shares the word 'video' between stem line and correct option with one-line evidence (easy pattern); optional, only if a higher band is wanted."
+ ],
+ "overall": "No ambiguity found: l-qr-19 B, l-qr-21 C, l-conv-10 A/B/C. Bands: l-qr-19 hard, l-qr-21 easy, conv Q0 easy, Q1 medium, Q2 hard (borderline). All named people (Rosa, Tom, Gareth) are named aloud in the transcript. The set is not too easy overall since two of the conv questions are easy or borderline, but the conv has at most one easy question per 2.3 (Q0)."
+}

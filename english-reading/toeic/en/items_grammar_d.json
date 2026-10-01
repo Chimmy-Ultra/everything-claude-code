@@ -1,0 +1,478 @@
+{
+ "g-voice-05": {
+  "point": [
+   "The subject <em>twelve</em> receives the action: use the passive.",
+   "主詞 twelve 是接受動作的人：用被動。"
+  ],
+  "why": [
+   "The real subject is <em>Only twelve of the eighty technicians</em>, far from the blank. They are the people given places, so the verb is passive: <em>were offered</em>. The nearby <em>plant</em> is the one that offers.",
+   "真正的主詞是離空格很遠的 Only twelve of the eighty technicians。他們是被提供名額的人，所以動詞用被動：were offered。附近的 plant 才是提供者。"
+  ],
+  "gloss": [
+   {
+    "w": "apprenticeship",
+    "hw": "apprenticeship",
+    "pos": "n.",
+    "zh": "學徒訓練",
+    "ex": "She started an apprenticeship at a shipyard."
+   },
+   {
+    "w": "intake",
+    "hw": "intake",
+    "pos": "n.",
+    "zh": "（一梯次的）錄取名額",
+    "ex": "The intake of new students begins in May."
+   },
+   {
+    "w": "waiting list",
+    "hw": "waiting list",
+    "pos": "phr.",
+    "zh": "候補名單",
+    "ex": "Her name is on the waiting list."
+   }
+  ]
+ },
+ "g-voice-06": {
+  "point": [
+   "The gerund's subject is the shipment: passive <em>being opened</em>.",
+   "Ving 的主詞是貨物：被動 being opened。"
+  ],
+  "why": [
+   "The doer after <em>without</em> must match the main subject, <em>the refrigerated shipment</em>. A shipment does not open itself; <em>customs officers</em> open it. So the form is passive: <em>being opened</em>.",
+   "without 後面動作的主詞要和主句主詞一致，也就是 the refrigerated shipment。貨物不會自己開箱，是 customs officers 開的。所以用被動：being opened。"
+  ],
+  "gloss": [
+   {
+    "w": "terminal yard",
+    "hw": "terminal yard",
+    "pos": "phr.",
+    "zh": "碼頭堆場",
+    "ex": "The trucks wait in the terminal yard."
+   },
+   {
+    "w": "freight forwarder",
+    "hw": "freight forwarder",
+    "pos": "phr.",
+    "zh": "貨運承攬業者",
+    "ex": "A freight forwarder booked the container."
+   },
+   {
+    "w": "pallet",
+    "hw": "pallet",
+    "pos": "n.",
+    "zh": "棧板",
+    "ex": "Each pallet holds forty boxes."
+   }
+  ]
+ },
+ "g-mandative-05": {
+  "point": [
+   "After <em>demand that</em>, use the base form of the verb.",
+   "demand that 之後用原形動詞。"
+  ],
+  "why": [
+   "The subject of the <em>that</em> clause is <em>every airline</em>; <em>operating more than fifty aircraft</em> only describes it. After <em>demanded … that</em>, the verb is the base form: <em>complete</em>.",
+   "that 子句的主詞是 every airline；operating more than fifty aircraft 只是修飾。demanded … that 之後，動詞用原形：complete。"
+  ],
+  "gloss": [
+   {
+    "w": "aviation authority",
+    "hw": "aviation authority",
+    "pos": "phr.",
+    "zh": "航空主管機關",
+    "ex": "The aviation authority approved the new route."
+   },
+   {
+    "w": "carriers",
+    "hw": "carrier",
+    "pos": "n.",
+    "zh": "航空（運輸）業者",
+    "ex": "Several carriers cut their fares in March."
+   },
+   {
+    "w": "seals",
+    "hw": "seal",
+    "pos": "n.",
+    "zh": "密封條",
+    "ex": "The rubber seal on the door was cracked."
+   }
+  ]
+ },
+ "g-mandative-06": {
+  "point": [
+   "After <em>asked that</em>, use the base form: <em>be</em>.",
+   "asked that 之後用原形：be。"
+  ],
+  "why": [
+   "The <em>that</em> clause comes after the inserted phrase <em>in a letter that the housing authority received</em>. Its subject is <em>no resident</em>. After <em>asked that</em>, the verb is the base form <em>be</em>, followed by <em>evicted</em>.",
+   "that 子句出現在插入語 in a letter that the housing authority received 之後，主詞是 no resident。asked that 之後用原形 be，再接 evicted。"
+  ],
+  "gloss": [
+   {
+    "w": "evicted",
+    "hw": "evict",
+    "pos": "v.",
+    "zh": "驅逐（房客）",
+    "ex": "The landlord tried to evict the family."
+   },
+   {
+    "w": "tribunal",
+    "hw": "tribunal",
+    "pos": "n.",
+    "zh": "仲裁庭",
+    "ex": "The tribunal will hear the case in May."
+   },
+   {
+    "w": "maintenance fees",
+    "hw": "maintenance fee",
+    "pos": "phr.",
+    "zh": "維修費",
+    "ex": "Maintenance fees are due each quarter."
+   }
+  ]
+ },
+ "g-conditional-05": {
+  "point": [
+   "Past unreal condition, inverted: <em>Had</em> + subject + p.p.",
+   "過去相反假設的倒裝：Had + 主詞 + p.p."
+  ],
+  "why": [
+   "The sentence has no <em>if</em>. The key word <em>been</em> comes after a long subject, so the first word must be <em>Had</em>: <em>Had … been told</em> means <em>If … had been told</em>. <em>would not have been rejected</em> is the result.",
+   "句中沒有 if。關鍵的 been 在長主詞之後才出現，所以句首用 Had：Had … been told 等於 If … had been told。would not have been rejected 是結果。"
+  ],
+  "gloss": [
+   {
+    "w": "scheduling manager",
+    "hw": "scheduling manager",
+    "pos": "phr.",
+    "zh": "排程經理",
+    "ex": "The scheduling manager posts the rota on Friday."
+   },
+   {
+    "w": "paper stock",
+    "hw": "paper stock",
+    "pos": "phr.",
+    "zh": "紙材",
+    "ex": "We changed the paper stock for the brochure."
+   },
+   {
+    "w": "retailer",
+    "hw": "retailer",
+    "pos": "n.",
+    "zh": "零售商",
+    "ex": "The retailer cut prices before the holiday."
+   }
+  ]
+ },
+ "g-conditional-06": {
+  "point": [
+   "Past unreal condition: the result clause uses <em>would have</em> + p.p.",
+   "過去相反假設的結果子句：would have + p.p."
+  ],
+  "why": [
+   "The <em>if</em> clause at the end is <em>had not been suspended</em>, a past unreal condition. The result must match: <em>would have opened</em>. <em>A full year earlier</em> also points to the past.",
+   "句尾的 if 子句是 had not been suspended，是過去相反的條件。結果要配：would have opened。a full year earlier 也指過去。"
+  ],
+  "gloss": [
+   {
+    "w": "permit",
+    "hw": "permit",
+    "pos": "n.",
+    "zh": "許可",
+    "ex": "You need a permit to build here."
+   },
+   {
+    "w": "suspended",
+    "hw": "suspend",
+    "pos": "v.",
+    "zh": "暫停",
+    "ex": "The board suspended the project in June."
+   },
+   {
+    "w": "pending",
+    "hw": "pending",
+    "pos": "prep.",
+    "zh": "在…期間／等待…",
+    "ex": "Payment is on hold pending a review."
+   }
+  ]
+ },
+ "g-parallel-05": {
+  "point": [
+   "<em>either A or B</em>: A and B take the same form.",
+   "either A or B：A、B 形式要相同。"
+  ],
+  "why": [
+   "<em>must either book</em> sets the pattern: a base-form verb. After the inserted <em>whose rates were renegotiated in January</em>, <em>or</em> brings the second verb, which must match: <em>obtain</em>.",
+   "must either book 定下形式：原形動詞。插入語 whose rates were renegotiated in January 之後，or 帶出的第二個動詞要相同：obtain。"
+  ],
+  "gloss": [
+   {
+    "w": "renegotiated",
+    "hw": "renegotiate",
+    "pos": "v.",
+    "zh": "重新議定",
+    "ex": "We renegotiated the lease last spring."
+   },
+   {
+    "w": "rates",
+    "hw": "rate",
+    "pos": "n.",
+    "zh": "費率",
+    "ex": "The hotel raised its rates in June."
+   },
+   {
+    "w": "team lead",
+    "hw": "team lead",
+    "pos": "phr.",
+    "zh": "團隊主管",
+    "ex": "Ask your team lead for a sign-off."
+   }
+  ]
+ },
+ "g-parallel-06": {
+  "point": [
+   "<em>Both</em> pairs only with <em>and</em>.",
+   "Both 只能和 and 成對。"
+  ],
+  "why": [
+   "<em>both</em> comes right after <em>close</em>, and the long clause <em>which has stayed open …</em> pushes the pair apart. <em>Both A and B</em> is fixed: <em>both the main library and the three smaller campus libraries</em>.",
+   "both 緊接在 close 後面，長子句 which has stayed open … 把成對的兩半推得很遠。Both A and B 是固定搭配：both the main library and the three smaller campus libraries。"
+  ],
+  "gloss": [
+   {
+    "w": "around the clock",
+    "hw": "around the clock",
+    "pos": "phr.",
+    "zh": "全天候",
+    "ex": "The server team works around the clock."
+   },
+   {
+    "w": "graduation day",
+    "hw": "graduation day",
+    "pos": "phr.",
+    "zh": "畢業典禮日",
+    "ex": "The office is closed on graduation day."
+   }
+  ]
+ },
+ "g-quantity-06": {
+  "point": [
+   "<em>much of</em> goes with an uncountable noun.",
+   "much of 接不可數名詞。"
+  ],
+  "why": [
+   "The noun is <em>equipment</em>, which is uncountable, and the verb after it is singular: <em>is</em>. <em>much of</em> works with it. <em>many</em>, <em>several</em> and <em>few</em> need plural countable nouns.",
+   "名詞是不可數的 equipment，後面的動詞也是單數 is。Much of 可以接它。Many、Several、Few 要接可數複數名詞。"
+  ],
+  "gloss": [
+   {
+    "w": "assembly line",
+    "hw": "assembly line",
+    "pos": "phr.",
+    "zh": "組裝線",
+    "ex": "She works on the assembly line."
+   },
+   {
+    "w": "custom-built",
+    "hw": "custom-built",
+    "pos": "adj.",
+    "zh": "客製的",
+    "ex": "We ordered a custom-built desk."
+   },
+   {
+    "w": "held up",
+    "hw": "hold up",
+    "pos": "phr.",
+    "zh": "受阻、延誤",
+    "ex": "Heavy traffic can hold up deliveries."
+   },
+   {
+    "w": "customs",
+    "hw": "customs",
+    "pos": "n.",
+    "zh": "海關",
+    "ex": "Customs checked every crate."
+   }
+  ]
+ },
+ "g-compare-06": {
+  "point": [
+   "Use <em>that</em> for a singular noun in a comparison.",
+   "比較時用 that 代替單數名詞。"
+  ],
+  "why": [
+   "The comparison is between <em>The monthly fee</em> and the fee for the new garages. The head noun is singular, so <em>that</em> replaces it. Plural nouns in the inserted phrase, such as <em>structures</em>, are not the head.",
+   "比較的是 The monthly fee 和新停車場的費用。主詞中心是單數，所以用 that 代替它。插入語裡的複數名詞，例如 structures，不是中心。"
+  ],
+  "gloss": [
+   {
+    "w": "parking structures",
+    "hw": "parking structure",
+    "pos": "phr.",
+    "zh": "停車場大樓",
+    "ex": "The parking structure closes at midnight."
+   },
+   {
+    "w": "renovated",
+    "hw": "renovate",
+    "pos": "v.",
+    "zh": "整修",
+    "ex": "They renovated the lobby last year."
+   },
+   {
+    "w": "permits",
+    "hw": "permit",
+    "pos": "n.",
+    "zh": "許可證、停車證",
+    "ex": "Staff need permits to park here."
+   }
+  ]
+ },
+ "g-participle-08": {
+  "point": [
+   "A noun can take <em>-ing</em> when another verb is the main verb.",
+   "另一個動詞是主要動詞時，名詞後面接 -ing。"
+  ],
+  "why": [
+   "The main verb is <em>will be seen</em>, far after the insertion <em>including those who have been referred by other practices</em>. <em>Patients</em> already has its verb, so the blank needs a participle: <em>arriving</em>.",
+   "主要動詞是遠處的 will be seen，中間隔著插入語 including those who have been referred by other practices。Patients 已有動詞，空格要用分詞：arriving。"
+  ],
+  "gloss": [
+   {
+    "w": "referred",
+    "hw": "refer",
+    "pos": "v.",
+    "zh": "轉介",
+    "ex": "Her doctor referred her to a specialist."
+   },
+   {
+    "w": "practices",
+    "hw": "practice",
+    "pos": "n.",
+    "zh": "診所（執業單位）",
+    "ex": "The practice opens at eight."
+   },
+   {
+    "w": "physician",
+    "hw": "physician",
+    "pos": "n.",
+    "zh": "（內科）醫師",
+    "ex": "The physician reviewed the test results."
+   }
+  ]
+ },
+ "g-relative-07": {
+  "point": [
+   "A <em>-ever</em> word takes its case from its own clause.",
+   "-ever 複合字的格由自己的子句決定。"
+  ],
+  "why": [
+   "After <em>to</em>, the blank looks like an object. But it is the subject of <em>has the strongest plan</em>; <em>the review panel decides</em> is inserted. A subject needs <em>whoever</em>, not <em>whomever</em>.",
+   "to 之後，空格看起來像受詞。但它是 has the strongest plan 的主詞；the review panel decides 是插入語。主詞要用 whoever，不是 whomever。"
+  ],
+  "gloss": [
+   {
+    "w": "charitable trust",
+    "hw": "charitable trust",
+    "pos": "phr.",
+    "zh": "慈善基金會",
+    "ex": "The charitable trust funds three scholarships."
+   },
+   {
+    "w": "surplus",
+    "hw": "surplus",
+    "pos": "adj.",
+    "zh": "剩餘的",
+    "ex": "We sold the surplus stock in May."
+   },
+   {
+    "w": "infusion pumps",
+    "hw": "infusion pump",
+    "pos": "phr.",
+    "zh": "輸液幫浦",
+    "ex": "The nurse checked the infusion pump."
+   },
+   {
+    "w": "review panel",
+    "hw": "review panel",
+    "pos": "phr.",
+    "zh": "審查小組",
+    "ex": "The review panel meets on Monday."
+   }
+  ]
+ },
+ "g-agree-07": {
+  "point": [
+   "In an inverted sentence, the verb agrees with the later subject.",
+   "倒裝句的動詞與後面的主詞一致。"
+  ],
+  "why": [
+   "<em>Enclosed with …</em> comes first, so the subject follows the blank: <em>the original signed floor plans</em>. Plans are plural, so the verb is <em>are</em>. <em>agreement</em> and <em>Friday</em> are singular but not the subject.",
+   "Enclosed with … 在前，所以主詞在空格後：the original signed floor plans。plans 是複數，動詞用 are。agreement 和 Friday 是單數，但不是主詞。"
+  ],
+  "gloss": [
+   {
+    "w": "Enclosed",
+    "hw": "enclose",
+    "pos": "v.",
+    "zh": "隨附",
+    "ex": "Please see the enclosed invoice."
+   },
+   {
+    "w": "franchise agreement",
+    "hw": "franchise agreement",
+    "pos": "phr.",
+    "zh": "加盟合約",
+    "ex": "The franchise agreement lasts ten years."
+   },
+   {
+    "w": "portfolio",
+    "hw": "portfolio",
+    "pos": "n.",
+    "zh": "（旗下）資產組合",
+    "ex": "The fund's portfolio includes forty properties."
+   }
+  ]
+ },
+ "g-prep-10": {
+  "point": [
+   "<em>adhere to</em>: the verb decides the preposition.",
+   "adhere to：動詞決定介系詞。"
+  ],
+  "why": [
+   "The verb is <em>adhere</em>, separated from the blank by <em>in all its dealings with site staff and without exception</em>. <em>Adhere</em> takes <em>to</em>. <em>With</em> belongs to <em>comply</em> and <em>by</em> to <em>abide</em>.",
+   "動詞是 adhere，和空格隔著 in all its dealings with site staff and without exception。adhere 接 to。with 屬於 comply，by 屬於 abide。"
+  ],
+  "gloss": [
+   {
+    "w": "subcontractor",
+    "hw": "subcontractor",
+    "pos": "n.",
+    "zh": "分包商",
+    "ex": "The subcontractor finished the wiring early."
+   },
+   {
+    "w": "dealings",
+    "hw": "dealing",
+    "pos": "n.",
+    "zh": "往來、交涉",
+    "ex": "Her dealings with clients are always polite."
+   },
+   {
+    "w": "protocols",
+    "hw": "protocol",
+    "pos": "n.",
+    "zh": "規範、協定",
+    "ex": "Follow the safety protocol at all times."
+   },
+   {
+    "w": "master agreement",
+    "hw": "master agreement",
+    "pos": "phr.",
+    "zh": "主合約",
+    "ex": "The master agreement covers all future orders."
+   }
+  ]
+ }
+}

@@ -1,0 +1,404 @@
+<title>Barista Missions</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: pick a mission card → a chat with the barista beside a sticky goal checklist → a debrief. */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+:root{
+  --bg:#F3F2F7; --surface:#FFFFFF; --plate:#E6E3EE; --ink:#1B1830; --muted:#5D5972; --line:#DAD6E4; --outline:#2B2740;
+  --accent:#0A7F72; --accent-ink:#FFFFFF; --accent-bg:rgba(31,181,163,.13);
+  --barista:#B4532A; --barista-tint:#FBEDE5; --you:#2A6FB0; --you-tint:#E4EFFA;
+  --good:#1F7A3A; --good-bg:#E3F3E6; --warn:#9A6200; --warn-bg:#FBF0DA; --bad:#B23A3A; --bad-bg:#FBE6E4;
+  --paper:#FBF7EF;
+  --shadow:0 1px 2px rgba(27,24,48,.05),0 6px 18px rgba(27,24,48,.06);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --zh:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#2B2740;
+    --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+    --barista:#F2A27E; --barista-tint:#2E1E18; --you:#7DBDF3; --you-tint:#172639;
+    --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+    --paper:#EFE9DC;
+    --shadow:0 1px 0 rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13111C; --surface:#1B1827; --plate:#221F31; --ink:#ECEAF3; --muted:#A29EB6; --line:#302C42; --outline:#2B2740;
+  --accent:#46CDBC; --accent-ink:#08201C; --accent-bg:rgba(70,205,188,.14);
+  --barista:#F2A27E; --barista-tint:#2E1E18; --you:#7DBDF3; --you-tint:#172639;
+  --good:#7ED69A; --good-bg:#17291E; --warn:#FFC24F; --warn-bg:#2E2412; --bad:#F29A92; --bad-bg:#32191A;
+  --paper:#EFE9DC;
+  --shadow:0 1px 0 rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+[lang="zh-Hant"],.zh{font-family:var(--zh)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top-in{max-width:880px;margin:0 auto;padding:10px clamp(16px,4vw,20px);display:flex;align-items:center;gap:8px 12px}
+.brand{font:700 15px/1 var(--display);margin-right:auto;min-width:0}
+.brand small{font:500 12px var(--mono);color:var(--muted);margin-left:6px;letter-spacing:.04em;text-transform:uppercase}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font:500 13px/1.2 var(--display);white-space:nowrap}
+.chip select{border:0;background:transparent;font:600 13px var(--mono);cursor:pointer;padding:0}
+
+main{max-width:880px;margin:0 auto;padding-inline:clamp(16px,4vw,20px);padding-block:24px 80px}
+.kicker{font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+h1{font:800 clamp(30px,6vw,44px)/1.05 var(--display);letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
+h2{font:700 20px/1.2 var(--display);margin:0 0 12px;text-wrap:balance}
+.lede{margin:0;max-width:62ch;color:var(--muted)}
+.lede strong{color:var(--ink);font-weight:600}
+.label{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:9px 18px;font:600 15px/1.2 var(--display);border:1.5px solid var(--line);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent}
+.btn:disabled{opacity:.5;cursor:default}
+.pl{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:inline-grid;place-items:center;padding:0;color:var(--ink)}
+.pl svg{width:11px;height:11px;fill:currentColor}
+.pl.on{border-color:var(--accent);color:var(--accent)}
+.uk{font:600 10px/1 var(--mono);letter-spacing:.05em;border:1px solid currentColor;border-radius:4px;padding:2px 4px;color:var(--warn);vertical-align:2px;margin-left:6px}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 10px;font:600 13px/1.4 var(--display)}
+.tip{margin:0;font:13px/1.5 var(--zh);color:var(--muted)}
+@media (max-width:560px){.brand small{display:none}}
+
+.missions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+.mission{display:grid;gap:8px;align-content:start;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:16px;min-width:0}
+.mission:hover{border-color:var(--accent)}
+.mission .k{font:600 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.mission .t{font:700 19px/1.2 var(--display)}
+.mission .s{font:14px/1.5 var(--zh);color:var(--muted)}
+.mission ul{margin:0;padding-left:18px;font:14px/1.5 var(--display)}
+.mission .go{justify-self:start;margin-top:4px}
+.note-box{background:var(--plate);border-radius:14px;padding:14px 16px;font:14px/1.6 var(--zh);max-width:70ch}
+.note-box b{font-weight:700}
+
+.play{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:18px;align-items:start;margin-top:18px}
+.goals{position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;gap:10px}
+.goals ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.goals li{display:grid;grid-template-columns:22px 1fr;gap:8px;font:14px/1.4 var(--display);align-items:start}
+.goals li .box{width:20px;height:20px;border:1.5px solid var(--line);border-radius:6px;display:grid;place-items:center;font:700 13px var(--mono);color:var(--accent-ink)}
+.goals li.met .box{background:var(--good);border-color:var(--good)}
+.goals li.met span:last-child{color:var(--muted);text-decoration:line-through}
+.goals .situ{margin:0;font:13px/1.5 var(--zh);color:var(--muted)}
+
+.chat{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:90%}
+.msg.you{flex-direction:row-reverse;margin-left:auto}
+.av{flex:none;display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;font:700 13px var(--display);color:var(--surface)}
+.msg.b .av{background:var(--barista)} .msg.you .av{background:var(--you)}
+.av{overflow:hidden;width:36px;height:36px}
+.av svg{width:100%;height:100%;display:block}
+.bub{min-width:0;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:9px 14px;background:var(--barista-tint)}
+.msg.you .bub{border-radius:16px 16px 4px 16px;background:var(--you-tint)}
+.bub p{margin:0}
+.bub .who{display:block;font:700 12px/1 var(--display);margin-bottom:4px;color:var(--barista)}
+.msg.you .who{color:var(--you)}
+.bub .t{font:12px var(--mono);color:var(--muted);margin-top:4px}
+.typing{font:italic 15px var(--display);color:var(--muted)}
+.composer{margin-top:16px;display:grid;gap:8px;background:var(--surface);border:1.5px solid var(--accent);border-radius:16px;padding:12px;box-shadow:0 0 0 4px var(--accent-bg)}
+.composer textarea{width:100%;min-height:64px;resize:vertical;border:0;background:transparent;font:18px/1.45 var(--body);padding:4px}
+.composer textarea:focus{outline:none}
+.composer .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.composer .sp{flex:1}
+.hint{margin:0;font:500 14px/1.45 var(--display);background:var(--accent-bg);color:var(--accent);border-radius:8px;padding:6px 10px}
+.hint i{font-style:normal;border-bottom:2px solid currentColor}
+.err{font:14px/1.5 var(--display);color:var(--bad)}
+
+.debrief{display:grid;gap:16px;margin-top:8px}
+.dgoals{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.dgoals li{display:flex;gap:8px;align-items:baseline;font:15px/1.4 var(--display)}
+.ok{color:var(--good);font-weight:700} .no{color:var(--bad);font-weight:700}
+.fix{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:4px}
+.fix .said{margin:0;color:var(--muted);text-decoration:line-through;text-decoration-color:var(--bad)}
+.fix .better{margin:0;font-weight:600}
+.fix .why{margin:0;font:14px/1.5 var(--zh);color:var(--muted)}
+.good{background:var(--good-bg);color:var(--good);border-radius:12px;padding:10px 14px;font:15px/1.6 var(--zh);margin:0}
+.nextup{background:var(--surface);border:1px dashed var(--accent);border-radius:12px;padding:12px 14px;margin:0;font:15px/1.6 var(--zh)}
+.stat-line{font:13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums;margin:0}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+@media (max-width:720px){
+  .missions{grid-template-columns:1fr}
+  .play{grid-template-columns:1fr}
+  .goals{position:static;order:-1}
+  .msg{max-width:100%}
+}
+</style>
+
+<header class="top"><div class="top-in">
+  <span class="brand">Barista Missions <small>Scene Lab · C</small></span>
+  <label class="chip" for="voice"><input type="checkbox" id="voice" checked style="accent-color:var(--accent);margin:0"> Read aloud</label>
+</div></header>
+
+<main>
+  <section id="pick">
+    <p class="kicker">Demo C · Missions</p>
+    <h1>Get what you came for</h1>
+    <p class="lede">Claude plays the barista. You get a mission and talk your way through it in your own words, typed or said with your phone's voice keyboard. <strong>Nobody corrects you mid-way.</strong> If the barista doesn't understand, they ask, the way a real one would. Each mission has one surprise. At the end you get a short debrief.</p>
+    <div class="missions" id="missions"></div>
+    <div class="note-box" id="need" lang="zh-Hant"></div>
+  </section>
+
+  <section id="play" hidden>
+    <p class="kicker" id="m-k"></p>
+    <h2 id="m-h"></h2>
+    <div class="play">
+      <div>
+        <ol class="chat" id="chat" aria-live="polite"></ol>
+        <div class="composer" id="composer">
+          <p class="hint" id="hint" hidden></p>
+          <textarea id="say" aria-label="What you say" placeholder="Type or use the mic on your keyboard…" autocapitalize="sentences" spellcheck="false"></textarea>
+          <div class="row">
+            <button class="btn ghost" type="button" id="hint-b">Hint</button>
+            <button class="btn ghost" type="button" id="end-b">Finish</button>
+            <span class="sp"></span>
+            <button class="btn primary" type="button" id="send">Say it</button>
+          </div>
+          <p class="err" id="err" hidden></p>
+        </div>
+      </div>
+      <aside class="goals" aria-label="Mission goals">
+        <p class="label" style="margin:0">Your mission</p>
+        <p class="situ" id="m-situ" lang="zh-Hant"></p>
+        <ol id="goals"></ol>
+      </aside>
+    </div>
+  </section>
+
+  <section id="done" hidden>
+    <p class="kicker" id="d-k"></p>
+    <h1>Debrief</h1>
+    <div class="debrief" id="debrief"></div>
+    <div class="row" style="margin-top:22px">
+      <button class="btn primary" type="button" id="retry">Try this mission again</button>
+      <button class="btn" type="button" id="back">Other missions</button>
+    </div>
+  </section>
+</main>
+
+<script>
+const DATA = {"objects": [{"id": "c1", "word": "menu board", "zh": "菜單看板", "ex": "The prices are on the menu board.", "exzh": "價格在菜單看板上。", "var": null, "at": [300, 36]}, {"id": "c2", "word": "counter", "zh": "櫃台", "ex": "Please order at the counter.", "exzh": "請在櫃台點餐。", "var": null, "at": [470, 392]}, {"id": "c3", "word": "barista", "zh": "咖啡師", "ex": "The barista is making my latte.", "exzh": "咖啡師正在做我的拿鐵。", "var": null, "at": [617, 138]}, {"id": "c4", "word": "coffee machine", "zh": "咖啡機", "ex": "The coffee machine is really loud.", "exzh": "咖啡機好吵。", "var": null, "at": [730, 130]}, {"id": "c5", "word": "queue", "zh": "排隊的隊伍", "ex": "The queue is quite long this morning.", "exzh": "今天早上隊伍滿長的。", "var": [["UK", "queue"], ["US", "line"]], "at": [306, 330]}, {"id": "c6", "word": "card reader", "zh": "刷卡機", "ex": "Just tap your card on the card reader.", "exzh": "卡片在刷卡機上感應一下就好。", "var": [["UK", "card machine"], ["US", "card reader"]], "at": [549, 246]}, {"id": "c7", "word": "display case", "zh": "點心櫃", "ex": "The croissants are in the display case.", "exzh": "可頌在點心櫃裡。", "var": null, "at": [180, 232]}, {"id": "c8", "word": "croissant", "zh": "可頌", "ex": "Can I get a croissant, please?", "exzh": "可以給我一個可頌嗎？", "var": null, "at": [247, 298]}, {"id": "c9", "word": "takeaway cup", "zh": "外帶杯", "ex": "Can I have it in a takeaway cup?", "exzh": "可以用外帶杯裝嗎？", "var": [["UK", "takeaway cup"], ["US", "to-go cup"]], "at": [684, 285]}, {"id": "c10", "word": "lid", "zh": "杯蓋", "ex": "Could I get a lid, please?", "exzh": "可以給我一個杯蓋嗎？", "var": null, "at": [785, 258]}, {"id": "c11", "word": "mug", "zh": "馬克杯", "ex": "I'm staying, so a mug is fine.", "exzh": "我內用，用馬克杯就好。", "var": null, "at": [774, 370]}, {"id": "c12", "word": "napkins", "zh": "餐巾紙", "ex": "The napkins are next to the sugar.", "exzh": "餐巾紙在糖旁邊。", "var": null, "at": [70, 318]}, {"id": "c13", "word": "sugar", "zh": "糖", "ex": "Sugar and milk are over there.", "exzh": "糖和牛奶在那邊。", "var": null, "at": [128, 316]}, {"id": "c14", "word": "receipt", "zh": "收據", "ex": "Would you like your receipt?", "exzh": "需要收據嗎？", "var": null, "at": [518, 186]}, {"id": "c15", "word": "till", "zh": "收銀機", "ex": "The barista opened the till.", "exzh": "咖啡師打開了收銀機。", "var": [["UK", "till"], ["US", "register"]], "at": [426, 300]}, {"id": "c16", "word": "Wi-Fi password", "zh": "Wi-Fi 密碼", "ex": "What's the Wi-Fi password?", "exzh": "Wi-Fi 密碼是什麼？", "var": null, "at": [846, 46]}, {"id": "c17", "word": "seat", "zh": "座位", "ex": "Is this seat taken?", "exzh": "這個位子有人坐嗎？", "var": null, "at": [668, 378]}, {"id": "c18", "word": "tray", "zh": "托盤", "ex": "She carried the drinks on a tray.", "exzh": "她用托盤端飲料。", "var": null, "at": [896, 282]}], "intents": [{"id": "i1", "zh": "點東西", "en": "Order", "phrases": [{"id": "p1", "parts": ["Can I get a ", ["latte", "flat white", "cappuccino", "tea"], ", please?"], "zh": "可以給我一杯＿＿嗎？", "note": "最萬用的點餐句。get 在這裡就是「拿到、要」。"}, {"id": "p2", "parts": ["I'd like a ", ["croissant", "muffin", "brownie"], ", please."], "zh": "我想要一個＿＿。", "note": "I'd like 比 I want 客氣，點餐時用這個。"}, {"id": "p3", "parts": ["I'll have the same, please."], "zh": "我也要一樣的。", "note": null}]}, {"id": "i2", "zh": "改做法", "en": "Change it", "phrases": [{"id": "p4", "parts": ["Can I get it with ", ["oat milk", "soy milk", "an extra shot"], "?"], "zh": "可以加＿＿嗎？／可以換成＿＿嗎？", "note": "with 後面接你要加或換的東西。"}, {"id": "p5", "parts": ["A ", ["medium", "small", "large"], " one, please."], "zh": "＿＿杯，謝謝。", "note": "one 代替前面說過的飲料，不用再講一次名字。"}, {"id": "p6", "parts": ["Could you make it ", ["decaf", "extra hot"], "?"], "zh": "可以做成＿＿嗎？", "note": "decaf = 低咖啡因。"}]}, {"id": "i3", "zh": "內用外帶", "en": "Here or to go", "phrases": [{"id": "p7", "parts": ["For here, please."], "zh": "內用。", "note": "英美都通。"}, {"id": "p8", "parts": ["To take away, please."], "zh": "外帶。（英式）", "note": "美式說 To go, please."}, {"id": "p9", "parts": ["To go, please."], "zh": "外帶。（美式）", "note": null}]}, {"id": "i4", "zh": "付錢", "en": "Pay", "phrases": [{"id": "p10", "parts": ["Can I pay by card?"], "zh": "可以刷卡嗎？", "note": "by card、by cash 不加 the。付現也常說 pay in cash。"}, {"id": "p11", "parts": ["Do you take cash?"], "zh": "你們收現金嗎？", "note": "take 在這裡是「接受」。"}, {"id": "p12", "parts": ["Could I get a receipt, please?"], "zh": "可以給我收據嗎？", "note": null}]}, {"id": "i5", "zh": "問問題", "en": "Ask", "phrases": [{"id": "p13", "parts": ["What's the Wi-Fi password?"], "zh": "Wi-Fi 密碼是什麼？", "note": null}, {"id": "p14", "parts": ["Where's the ", ["toilet", "restroom"], "?"], "zh": "廁所在哪裡？", "note": "toilet 是英式，restroom 是美式。"}, {"id": "p15", "parts": ["What do you recommend?"], "zh": "你推薦什麼？", "note": null}, {"id": "p16", "parts": ["Is this seat taken?"], "zh": "這個位子有人坐嗎？", "note": "英美都通。"}, {"id": "p17", "parts": ["Do you have anything ", ["without dairy", "vegan", "gluten-free"], "?"], "zh": "有沒有＿＿的東西？", "note": null}]}, {"id": "i6", "zh": "出狀況", "en": "Fix a problem", "phrases": [{"id": "p18", "parts": ["Sorry, I think this is someone else's."], "zh": "不好意思，這杯好像是別人的。", "note": null}, {"id": "p19", "parts": ["Sorry, I asked for ", ["oat milk", "a large", "no sugar"], "."], "zh": "不好意思，我點的是＿＿。", "note": "asked for = 我要的是。直接說事實，不用道歉太多。"}, {"id": "p20", "parts": ["Could I get ", ["a lid", "some napkins", "a spoon"], ", please?"], "zh": "可以給我＿＿嗎？", "note": null}, {"id": "p21", "parts": ["Sorry, could you say that again?"], "zh": "不好意思，可以再說一次嗎？", "note": "聽不懂時最好用的一句。"}]}], "barista": [{"id": "b1", "en": "Hi there, what can I get you?", "zh": "你好，要點什麼？", "reply": "Can I get a latte, please?"}, {"id": "b2", "en": "What size would you like?", "zh": "要什麼尺寸？", "reply": "Medium, please."}, {"id": "b3", "en": "Any milk?", "zh": "要加什麼奶嗎？", "reply": "Oat milk, please."}, {"id": "b4", "en": "Is that to eat in or take away?", "zh": "內用還是外帶？（英式）", "reply": "To take away, please."}, {"id": "b5", "en": "Is that for here or to go?", "zh": "內用還是外帶？（美式）", "reply": "For here, please."}, {"id": "b6", "en": "Anything else?", "zh": "還需要別的嗎？", "reply": "No, that's all, thanks."}, {"id": "b7", "en": "Can I get a name for the order?", "zh": "可以留個名字嗎？", "reply": "It's Wei."}, {"id": "b8", "en": "That's four pounds twenty.", "zh": "總共四鎊二十。", "reply": "Can I pay by card?"}, {"id": "b9", "en": "Just tap whenever you're ready.", "zh": "準備好就感應一下。", "reply": "Okay, thanks."}, {"id": "b10", "en": "Do you want your receipt?", "zh": "需要收據嗎？", "reply": "No, I'm fine, thanks."}, {"id": "b11", "en": "Sorry, we're out of oat milk. Is soy okay?", "zh": "抱歉，燕麥奶沒了。豆奶可以嗎？", "reply": "Sure, soy is fine."}, {"id": "b12", "en": "Your latte will be ready at the end of the counter.", "zh": "你的拿鐵會在櫃台另一頭給你。", "reply": "Great, thanks."}], "avatars": {"B": "<svg viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><defs><clipPath id=\"av-B-clip\"><circle cx=\"32\" cy=\"32\" r=\"32\"/><\/clipPath><\/defs><g clip-path=\"url(#av-B-clip)\"><rect width=\"64\" height=\"64\" fill=\"#FDE7DF\"/><path d=\"M8 66c0-11 9-17 24-17s24 6 24 17z\" fill=\"#1FB5A3\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24 50l3 16M40 50l-3 16\" fill=\"none\" stroke=\"#FFB22E\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M24 50l3 16M40 50l-3 16\" fill=\"none\" stroke=\"#2B2740\" stroke-width=\".8\" stroke-linecap=\"round\" opacity=\".35\"/><path d=\"M20 54c1 4 1 8 0 12M44 54c-1 4-1 8 0 12\" fill=\"none\" stroke=\"#168C7E\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><path d=\"M27.5 40h9v10h-9z\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"19.6\" cy=\"32\" r=\"3\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"44.4\" cy=\"32\" r=\"3\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"32\" cy=\"30\" rx=\"12.4\" ry=\"13.4\" fill=\"#E2B288\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M20 29c0-6 3-10 7-11h10c4 1 7 5 7 11-3-3-7-4.5-12-4.5s-9 1.5-12 4.5z\" fill=\"#1E222C\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M19 22c0-7 6-11 13-11s13 4 13 11z\" fill=\"#FF7A59\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M19 22h31q2 0 1.5 2.2c-.3 1-1.2 1.4-2.2 1.4H19z\" fill=\"#D65A3A\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"11.6\" r=\"1.6\" fill=\"#D65A3A\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"27\" cy=\"31.5\" rx=\"1.75\" ry=\"2.15\" fill=\"#2B2740\"/><circle cx=\"27.6\" cy=\"30.8\" r=\".65\" fill=\"#FFFFFF\"/><ellipse cx=\"37\" cy=\"31.5\" rx=\"1.75\" ry=\"2.15\" fill=\"#2B2740\"/><circle cx=\"37.6\" cy=\"30.8\" r=\".65\" fill=\"#FFFFFF\"/><ellipse cx=\"23.4\" cy=\"36.2\" rx=\"2.4\" ry=\"1.4\" fill=\"#F28B82\" opacity=\".45\"/><ellipse cx=\"40.6\" cy=\"36.2\" rx=\"2.4\" ry=\"1.4\" fill=\"#F28B82\" opacity=\".45\"/><path d=\"M25 27.6q2.2-1.4 4.4 0M34.6 27.6q2.2-1.4 4.4 0\" fill=\"none\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M32 33.5q1.3 1.6 0 2.4\" fill=\"none\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M27.2 38.4h9.6q-.6 5-4.8 5t-4.8-5z\" fill=\"#FFFFFF\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M29.4 41.6q2.6 1.2 5.2 0\" fill=\"#F28B82\" stroke=\"none\"/><\/g><\/svg>", "Y": "<svg viewBox=\"0 0 64 64\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><defs><clipPath id=\"av-Y-clip\"><circle cx=\"32\" cy=\"32\" r=\"32\"/><\/clipPath><\/defs><g clip-path=\"url(#av-Y-clip)\"><rect width=\"64\" height=\"64\" fill=\"#DCEAF8\"/><path d=\"M8 66c0-12 10-18 24-18s24 6 24 18z\" fill=\"#2A6FB0\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M26 48.6q6 5 12 0\" fill=\"none\" stroke=\"#9CC3EA\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><circle cx=\"32\" cy=\"29\" r=\"12.5\" fill=\"#5B97D6\" stroke=\"#2B2740\" stroke-width=\"1.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M24.5 24.5a9 9 0 0 1 7-5\" fill=\"none\" stroke=\"#FFFFFF\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\".75\"/><circle cx=\"23.2\" cy=\"28.4\" r=\"1.1\" fill=\"#FFFFFF\" opacity=\".75\"/><\/g><\/svg>"}, "steps": [{"en": "Queue and read the menu", "zh": "排隊、看菜單", "hear": [], "say": []}, {"en": "Order", "zh": "點餐", "hear": ["b1", "b6"], "say": ["p1", "p2"]}, {"en": "Size and milk", "zh": "尺寸和奶", "hear": ["b2", "b3", "b11"], "say": ["p4", "p5"]}, {"en": "Here or takeaway", "zh": "內用或外帶", "hear": ["b4", "b5"], "say": ["p7", "p8", "p9"]}, {"en": "Name and pay", "zh": "留名字、付錢", "hear": ["b7", "b8", "b9", "b10"], "say": ["p10", "p12"]}, {"en": "Collect and sit down", "zh": "取餐、找位子", "hear": ["b12"], "say": ["p16", "p20", "p13"]}]};
+const $ = s => document.querySelector(s);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("scene-lab-c:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("scene-lab-c:" + k, JSON.stringify(v)); } catch {} },
+};
+const PHRASE = {};
+for (const it of DATA.intents) for (const p of it.phrases) PHRASE[p.id] = p;
+function frame(id) {   // the phrase with its slot shown as a blank, for hints
+  const p = PHRASE[id]; const f = document.createDocumentFragment();
+  for (const x of p.parts) { if (typeof x === "string") f.append(x); else f.append(el("i", null, " " + x[0] + " ")); }
+  return f;
+}
+
+const MISSIONS = [
+  { id: "m1", title: "Morning latte", zh: "上班前買一杯拿鐵帶走。你喜歡燕麥奶。",
+    open: "Hi there, what can I get you?",
+    goals: ["Order a medium latte", "Get it with oat milk, or another milk you're happy with", "Take it away", "Pay by card"],
+    hints: ["p1", "p4", "p8", "p10"],
+    twist: "You have run out of oat milk. When the customer asks for oat milk, apologise and offer soy or almond instead.",
+    tell: "燕麥奶剛好沒了" },
+  { id: "m2", title: "An hour of work", zh: "你要在店裡用筆電工作一小時。點一杯喝的、一樣吃的。",
+    open: "Hiya, what can I get for you?",
+    goals: ["Order a drink and something to eat", "Say you're staying in", "Get the Wi-Fi password", "Find out where the toilet is"],
+    hints: ["p1", "p7", "p13", "p14"],
+    twist: "The card machine is broken today, so it's cash only. Tell the customer when they are about to pay, and help them sort it out (there is a cash machine next door).",
+    tell: "今天刷卡機壞了" },
+  { id: "m3", title: "Wrong drink", zh: "你點了大杯卡布奇諾、不加糖、外帶。拿到的卻是一杯小杯拿鐵。",
+    open: "Here you go, one small latte!",
+    goals: ["Say politely that something is wrong", "Say what you actually ordered", "Leave with the right drink"],
+    hints: ["p18", "p19", "p19"],
+    twist: "At first you misunderstand the problem: you think the customer wants sugar and offer some. Only after they explain again do you understand and remake the drink.",
+    tell: "店員一開始會誤會你的意思" },
+];
+
+let sample = null, m = null;
+
+// ---------- voice (browser speech, optional) ----------
+const canSpeak = "speechSynthesis" in window;
+let voiceOn = canSpeak && store.get("voice", true);
+$("#voice").checked = voiceOn; $("#voice").disabled = !canSpeak;
+$("#voice").onchange = e => { voiceOn = e.target.checked; store.set("voice", voiceOn); if (!voiceOn && canSpeak) speechSynthesis.cancel(); };
+function speak(text) {
+  if (!voiceOn || !canSpeak) return;
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    const vs = speechSynthesis.getVoices();
+    u.voice = vs.find(v => v.lang === "en-GB") || vs.find(v => v.lang && v.lang.startsWith("en")) || null;
+    u.lang = u.voice ? u.voice.lang : "en-GB"; u.rate = 0.95;
+    speechSynthesis.speak(u);
+  } catch {}
+}
+
+// ---------- pick ----------
+function renderPick() {
+  const host = $("#missions"); host.textContent = "";
+  const best = store.get("best", {});
+  MISSIONS.forEach((x, i) => {
+    const c = el("article", "mission");
+    const ul = el("ul"); x.goals.forEach(g => ul.append(el("li", null, g)));
+    const s = el("p", "s", x.zh); s.lang = "zh-Hant"; s.style.margin = "0";
+    const b = el("button", "btn primary go", "Start"); b.type = "button"; b.disabled = !sample;
+    b.onclick = () => start(x);
+    const k = el("span", "k", "Mission " + (i + 1) + (best[x.id] ? " · best " + best[x.id] + "/" + x.goals.length : ""));
+    c.append(k, el("span", "t", x.title), s, ul, b);
+    host.append(c);
+  });
+  const need = $("#need"); need.textContent = "";
+  if (sample) {
+    need.append(el("b", null, "要知道的："), "店員由 Claude 扮演，每說一句會用到一點你的 Claude 額度，第一次會先問你。店員的聲音是瀏覽器內建的語音，可以在右上角關掉。");
+  } else {
+    need.append(el("b", null, "這個 demo 需要 Claude。"), "請在 claude.ai 裡打開這個頁面，店員才能回話。");
+  }
+}
+
+// ---------- play ----------
+function start(x) {
+  m = { x, turns: [{ role: "b", text: x.open }], met: [], hint: 0, waits: [], t0: 0, first: null, busy: false, ctl: null };
+  $("#m-k").textContent = "Mission " + (MISSIONS.indexOf(x) + 1);
+  $("#m-h").textContent = x.title;
+  $("#m-situ").textContent = x.zh;
+  $("#chat").textContent = ""; $("#err").hidden = true; $("#hint").hidden = true; $("#say").value = "";
+  renderGoals();
+  for (const s of ["pick", "done"]) $("#" + s).hidden = true;
+  $("#play").hidden = false; window.scrollTo(0, 0);
+  addMsg("b", x.open); speak(x.open);
+  armTurn();
+}
+function renderGoals() {
+  const ol = $("#goals"); ol.textContent = "";
+  m.x.goals.forEach((g, i) => { const li = el("li", m.met.includes(i) ? "met" : ""); li.append(el("span", "box", m.met.includes(i) ? "✓" : ""), el("span", null, g)); ol.append(li); });
+}
+function addMsg(who, text, meta) {
+  const li = el("li", "msg " + (who === "b" ? "b" : "you"));
+  const av = el("span", "av"); av.setAttribute("aria-hidden", "true");
+  const key = who === "b" ? "B" : "Y";
+  if (DATA.avatars && DATA.avatars[key]) av.innerHTML = DATA.avatars[key]; else av.textContent = key;
+  li.append(av);
+  const b = el("div", "bub"); b.append(el("span", "who", who === "b" ? "Barista" : "You"));
+  const p = el("p", null, text); b.append(p);
+  if (meta) b.append(el("div", "t", meta));
+  li.append(b); $("#chat").append(li);
+  li.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  return p;
+}
+function armTurn() {
+  m.t0 = performance.now(); m.first = null;
+  $("#say").focus({ preventScroll: true });
+}
+$("#say").addEventListener("input", () => { if (m && m.first == null && $("#say").value.trim()) m.first = performance.now() - m.t0; });
+$("#say").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey && !e.isComposing) { e.preventDefault(); send(); } });
+$("#send").onclick = () => send();
+$("#hint-b").onclick = () => {
+  const open = m.x.goals.map((_, i) => i).filter(i => !m.met.includes(i));
+  if (!open.length) return;
+  const h = $("#hint"); h.textContent = ""; h.append("Try: "); h.append(frame(m.x.hints[open[0]])); h.hidden = false;
+  m.hint++; $("#say").focus();
+};
+$("#end-b").onclick = () => debrief();
+
+function transcript() { return m.turns.map(t => (t.role === "b" ? "Barista: " : "Customer: ") + t.text).join("\n"); }
+
+async function send() {
+  const text = $("#say").value.trim();
+  if (!text || m.busy) return;
+  const wait = m.first; m.waits.push(wait == null ? performance.now() - m.t0 : wait);
+  m.turns.push({ role: "c", text });
+  addMsg("you", text, wait != null ? "started after " + (wait / 1000).toFixed(1) + " s" : null);
+  $("#say").value = ""; $("#hint").hidden = true; $("#err").hidden = true;
+  m.busy = true; $("#send").disabled = true;
+  const p = addMsg("b", "…"); p.className = "typing";
+  const prompt = [
+    "You are role-playing a friendly barista in a small British café, talking to a Chinese-speaking customer who is practising English.",
+    "Stay in character. Speak simple, clear everyday English (about CEFR A2-B1), one or two short sentences per turn, like a real barista at a busy counter.",
+    "Never correct the customer's English and never explain grammar. If you genuinely cannot understand what they mean, ask a short natural clarifying question, as a real barista would. If you can understand them, carry on normally even if their English has mistakes.",
+    "Prices: latte, cappuccino and flat white £3.80 (medium), £4.20 (large); tea £2.50; croissant £2.60; muffin £2.90.",
+    "Surprise for this conversation (keep it in character, bring it in naturally at the right moment): " + m.x.twist,
+    "The customer's goals (they can see these; do not mention them):",
+    ...m.x.goals.map((g, i) => i + ": " + g),
+    "", "Conversation so far:", transcript(), "",
+    'Reply with only JSON: {"reply": "what you say next", "met": [indices of goals the customer has clearly achieved so far in the whole conversation], "over": true if the interaction has naturally ended (drink handed over and nothing else is needed), else false}',
+  ].join("\n");
+  try {
+    m.ctl = new AbortController();
+    const out = await sample.json(prompt, { modelTier: "quick", cache: false, signal: m.ctl.signal });
+    const reply = typeof out?.reply === "string" && out.reply.trim() ? out.reply.trim() : null;
+    if (!reply) throw { code: "invalid_json" };
+    p.className = ""; p.textContent = reply;
+    m.turns.push({ role: "b", text: reply }); speak(reply);
+    if (Array.isArray(out.met)) { for (const i of out.met) { const n = Number(i); if (Number.isInteger(n) && n >= 0 && n < m.x.goals.length && !m.met.includes(n)) m.met.push(n); } renderGoals(); }
+    if (out.over || m.met.length === m.x.goals.length) { $("#end-b").textContent = "See debrief"; $("#end-b").className = "btn primary"; $("#send").className = "btn ghost"; }
+  } catch (e) {
+    p.closest("li").remove();
+    m.turns.pop();
+    $("#say").value = text;
+    const err = $("#err"); err.hidden = false;
+    err.textContent = e?.code === "rate_limited" ? "Claude is busy. Wait a moment and send again."
+      : e?.code === "not_granted" || e?.code === "sampling_disabled" ? "Claude isn't allowed on this page, so the barista can't answer."
+      : "The barista didn't answer. Send it again.";
+  } finally {
+    m.busy = false; $("#send").disabled = false; armTurn();
+  }
+}
+
+async function debrief() {
+  if (m.ctl) m.ctl.abort();
+  if (canSpeak) speechSynthesis.cancel();
+  const x = m.x;
+  $("#play").hidden = true; $("#done").hidden = false; window.scrollTo(0, 0);
+  $("#d-k").textContent = "Mission " + (MISSIONS.indexOf(x) + 1) + " · " + x.title;
+  const host = $("#debrief"); host.textContent = "";
+  const ul = el("ul", "dgoals");
+  x.goals.forEach((g, i) => { const li = el("li"); li.append(el("span", m.met.includes(i) ? "ok" : "no", m.met.includes(i) ? "✓" : "✗"), el("span", null, g)); ul.append(li); });
+  host.append(ul);
+  const waits = m.waits.filter(v => v != null).sort((a, b) => a - b);
+  if (waits.length) host.append(el("p", "stat-line", m.waits.length + " turns · started talking after " + (waits[waits.length >> 1] / 1000).toFixed(1) + " s (median) · " + m.hint + " hint" + (m.hint === 1 ? "" : "s")));
+  const best = store.get("best", {}); best[x.id] = Math.max(best[x.id] || 0, m.met.length); store.set("best", best);
+  const said = m.turns.filter(t => t.role === "c");
+  if (!said.length) return;
+  const wait = el("p", "tip", "Claude is reading the conversation…"); host.append(wait);
+  const prompt = [
+    "A Chinese-speaking English learner just did a café role-play. Their goal is to express meaning correctly and fluently, not to sound native.",
+    "Mission goals: " + x.goals.join("; "),
+    "Conversation:", transcript(), "",
+    "Give feedback in Traditional Chinese (except English example sentences).",
+    '"fixes": up to 3 of the customer\'s sentences that had an error a listener would notice or that were unclear. For each: "said" (their sentence, exactly), "better" (their sentence with the fewest changes to make it correct and clear, keeping their words), "why" (one short reason in Chinese). Do NOT include sentences that were already correct just because a more natural phrasing exists. An empty list is fine.',
+    '"good": one sentence in Chinese about something they did well (be specific, quote their words).',
+    '"next": one sentence in Chinese naming one useful café sentence frame to practise next, with the English frame.',
+    'Reply with only JSON: {"fixes":[{"said":"","better":"","why":""}],"good":"","next":""}',
+  ].join("\n");
+  try {
+    const out = await sample.json(prompt, { cache: false });
+    wait.remove();
+    const fixes = Array.isArray(out?.fixes) ? out.fixes.filter(f => f && typeof f.said === "string" && typeof f.better === "string").slice(0, 3) : [];
+    if (typeof out?.good === "string" && out.good) { const g = el("p", "good", out.good); g.lang = "zh-Hant"; host.append(g); }
+    host.append(el("p", "label", fixes.length ? "Worth fixing" : "Nothing that blocked your meaning"));
+    for (const f of fixes) {
+      const d = el("div", "fix"); d.append(el("p", "said", f.said), el("p", "better", f.better));
+      if (f.why) { const w = el("p", "why", f.why); w.lang = "zh-Hant"; d.append(w); }
+      host.append(d);
+    }
+    if (typeof out?.next === "string" && out.next) { const n = el("p", "nextup", out.next); n.lang = "zh-Hant"; host.append(n); }
+  } catch (e) {
+    wait.textContent = "Claude couldn't write the debrief this time. Your goals above are still counted.";
+  }
+}
+$("#retry").onclick = () => start(m.x);
+$("#back").onclick = () => { $("#done").hidden = true; $("#pick").hidden = false; renderPick(); };
+
+renderPick();
+if (window.claude?.use) claude.use("sample").then(s => { sample = s || null; renderPick(); }).catch(() => {});
+if (canSpeak) speechSynthesis.getVoices();
+</script>

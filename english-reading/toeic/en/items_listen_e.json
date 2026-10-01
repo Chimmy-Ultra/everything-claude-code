@@ -1,0 +1,550 @@
+{
+  "l-conv-11": {
+    "q": [
+      {
+        "point": [
+          "Topic: join the problem and the fix.",
+          "主旨題：把問題和做法串起來。"
+        ],
+        "why": [
+          "The woman describes cracked returns, then a camera that can <em>push the bad ones off the line</em>. Together they show the topic: catching damaged bottles before they leave the plant.",
+          "女方先說退貨裡有裂瓶，再說相機可以 push the bad ones off the line。合起來，主題就是在出廠前找出受損的瓶子。"
+        ]
+      },
+      {
+        "point": [
+          "Compare the two numbers: forty and thirty-eight.",
+          "比較兩個數字：四十和三十八。"
+        ],
+        "why": [
+          "He asks <em>Did they test it?</em> She answers <em>forty of our own cracked bottles</em> and <em>It caught thirty-eight</em>. Only two were missed, so nearly all the faulty bottles were found.",
+          "他問 Did they test it?，她答 forty of our own cracked bottles、It caught thirty-eight。只漏掉兩瓶，所以幾乎全部有瑕疵的瓶子都找出來了。"
+        ]
+      },
+      {
+        "point": [
+          "Trace <em>it</em> and <em>them</em> back to their nouns.",
+          "把 it 和 them 追回前面的名詞。"
+        ],
+        "why": [
+          "He says the plant manager <em>won't look at it unless the finance office has checked the numbers first</em>. She replies <em>I'll take it over to them first thing tomorrow</em>: <em>it</em> is the summary, <em>them</em> the finance office.",
+          "他說廠長 won't look at it unless the finance office has checked the numbers first。她答 I'll take it over to them first thing tomorrow：it 是摘要，them 是財務室。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "hairline cracks",
+        "hw": "hairline crack",
+        "pos": "n.",
+        "zh": "細微裂縫",
+        "ex": "A hairline crack ran along the pipe."
+      },
+      {
+        "w": "pallet",
+        "hw": "pallet",
+        "pos": "n.",
+        "zh": "棧板",
+        "ex": "The pallet holds forty boxes."
+      },
+      {
+        "w": "conveyor",
+        "hw": "conveyor",
+        "pos": "n.",
+        "zh": "輸送帶",
+        "ex": "Boxes move along the conveyor to packing."
+      },
+      {
+        "w": "finance office",
+        "hw": "finance office",
+        "pos": "n.",
+        "zh": "財務室",
+        "ex": "The finance office approves every purchase."
+      },
+      {
+        "w": "figures",
+        "hw": "figure",
+        "pos": "n.",
+        "zh": "數字、金額",
+        "ex": "Please check the figures before the meeting."
+      }
+    ]
+  },
+  "l-conv-12": {
+    "q": [
+      {
+        "point": [
+          "Topic: a problem plus its solution.",
+          "主旨題：問題加上解決辦法。"
+        ],
+        "why": [
+          "The maps are <em>too delicate to photograph or take out of the building</em>, so the speakers turn to scanning: <em>Could the library scan them instead?</em> The topic is how a student can study materials that cannot be borrowed.",
+          "地圖 too delicate to photograph or take out of the building，所以大家改談掃描：Could the library scan them instead? 主題是學生要怎麼研究不能外借的資料。"
+        ]
+      },
+      {
+        "point": [
+          "Do the sum with two times.",
+          "用兩個時間算一算。"
+        ],
+        "why": [
+          "The reading room <em>closes at five</em>, and he says <em>I teach until four thirty</em>. That leaves about half an hour, so his teaching schedule gives him little time there.",
+          "閱覽室 closes at five，而他說 I teach until four thirty。只剩大約半小時，所以他的課表讓他在那裡的時間很少。"
+        ]
+      },
+      {
+        "point": [
+          "Trace <em>it</em> back to the letter.",
+          "把 it 追回前面的信。"
+        ],
+        "why": [
+          "Mr. Dunmore asks for <em>a short letter of support</em>. She says <em>Joel, could you draft it tonight?</em> and he answers <em>Of course</em>. Joel will write the letter for his professor to sign.",
+          "Dunmore 先生要 a short letter of support。她說 Joel, could you draft it tonight?，他答 Of course。Joel 會寫信讓教授簽名。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "thesis",
+        "hw": "thesis",
+        "pos": "n.",
+        "zh": "學位論文",
+        "ex": "Her thesis covers port history."
+      },
+      {
+        "w": "special collections",
+        "hw": "special collection",
+        "pos": "n.",
+        "zh": "（圖書館）特藏",
+        "ex": "The special collections room closes at five."
+      },
+      {
+        "w": "delicate",
+        "hw": "delicate",
+        "pos": "adj.",
+        "zh": "脆弱的",
+        "ex": "The old paper is very delicate."
+      },
+      {
+        "w": "waiting list",
+        "hw": "waiting list",
+        "pos": "n.",
+        "zh": "等候名單",
+        "ex": "She joined the waiting list for the class."
+      },
+      {
+        "w": "letter of support",
+        "hw": "letter of support",
+        "pos": "n.",
+        "zh": "支持信、推薦信",
+        "ex": "He asked for a letter of support."
+      }
+    ]
+  },
+  "l-conv-13": {
+    "q": [
+      {
+        "point": [
+          "Reason: join two turns.",
+          "原因題：把兩句話接起來。"
+        ],
+        "why": [
+          "He says <em>My wife and our daughter are coming along after all</em>. She replies <em>Then you'll want more than one bed</em>. More guests are traveling with him.",
+          "他說 My wife and our daughter are coming along after all。她接 Then you'll want more than one bed。同行的客人變多了。"
+        ]
+      },
+      {
+        "point": [
+          "Graphic: two clues give the row, the day gives the column.",
+          "圖表題：兩個線索定列，日期定欄。"
+        ],
+        "why": [
+          "He needs two beds but not <em>a separate sitting area</em>, so the row is the Family Room. He stays <em>this Friday night</em>, so use the Fri–Sat column: $195.",
+          "他要兩張床但不要 a separate sitting area，所以是 Family Room。他住 this Friday night，所以看 Fri–Sat 欄：$195。"
+        ]
+      },
+      {
+        "point": [
+          "An <em>if</em> clause names the first action.",
+          "if 子句說的是先做的事。"
+        ],
+        "why": [
+          "She says <em>If housekeeping finishes early, I'll text you</em>. So the hotel will contact the guest as soon as the room is ready. Keeping the bags comes after <em>Otherwise</em>.",
+          "她說 If housekeeping finishes early, I'll text you。房間一好，飯店就會通知客人。寄放行李在 Otherwise 之後。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "reservation",
+        "hw": "reservation",
+        "pos": "n.",
+        "zh": "訂房、預約",
+        "ex": "I made a reservation for two nights."
+      },
+      {
+        "w": "least expensive",
+        "hw": "least expensive",
+        "pos": "phr.",
+        "zh": "最便宜的",
+        "ex": "This is the least expensive option."
+      },
+      {
+        "w": "sitting area",
+        "hw": "sitting area",
+        "pos": "n.",
+        "zh": "起居區",
+        "ex": "The suite has a small sitting area."
+      },
+      {
+        "w": "check in",
+        "hw": "check in",
+        "pos": "phr.",
+        "zh": "辦理入住",
+        "ex": "Guests can check in after noon."
+      },
+      {
+        "w": "housekeeping",
+        "hw": "housekeeping",
+        "pos": "n.",
+        "zh": "房務",
+        "ex": "Housekeeping cleans each room daily."
+      }
+    ]
+  },
+  "l-conv-14": {
+    "q": [
+      {
+        "point": [
+          "Reason: the opening problem.",
+          "原因題：開頭的問題就是答案。"
+        ],
+        "why": [
+          "He says his first flight <em>sat on the runway for an hour</em>, so he <em>missed my connection</em>. A delay kept him from boarding his next flight.",
+          "他說第一班 sat on the runway for an hour，所以 missed my connection。延誤讓他沒能搭上下一班。"
+        ]
+      },
+      {
+        "point": [
+          "Graphic: drop full, late and wrong-city rows.",
+          "圖表題：刪掉客滿、太晚和城市不對的列。"
+        ],
+        "why": [
+          "The two thirty flight is <em>completely full</em>, and the last one <em>gets in too late</em>. The only Lakeport flight between them leaves at 4:50 and lands at 6:35, so the gate is C3.",
+          "兩點半那班 completely full，最後一班 gets in too late。兩者之間唯一飛 Lakeport 的是 4:50 起飛、6:35 降落那班，所以是 C3 登機門。"
+        ]
+      },
+      {
+        "point": [
+          "Join his worry with her promise.",
+          "把他的疑慮和她的保證接起來。"
+        ],
+        "why": [
+          "His suitcase is checked through, and he says <em>I don't have time to go to baggage claim</em>. She answers <em>Our baggage team will handle it from here</em>. Airline staff will move the suitcase to his new flight.",
+          "他的行李已託運到底，他說 I don't have time to go to baggage claim。她答 Our baggage team will handle it from here。地勤會把行李轉到新班機。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "connection",
+        "hw": "connection",
+        "pos": "n.",
+        "zh": "轉機班次",
+        "ex": "He missed his connection in the capital."
+      },
+      {
+        "w": "runway",
+        "hw": "runway",
+        "pos": "n.",
+        "zh": "跑道",
+        "ex": "The plane waited on the runway."
+      },
+      {
+        "w": "land",
+        "hw": "land",
+        "pos": "v.",
+        "zh": "降落",
+        "ex": "We land at six tonight."
+      },
+      {
+        "w": "baggage claim",
+        "hw": "baggage claim",
+        "pos": "n.",
+        "zh": "行李提領處",
+        "ex": "Meet me at the baggage claim."
+      },
+      {
+        "w": "boarding pass",
+        "hw": "boarding pass",
+        "pos": "n.",
+        "zh": "登機證",
+        "ex": "Show your boarding pass at the gate."
+      }
+    ]
+  },
+  "l-conv-15": {
+    "q": [
+      {
+        "point": [
+          "Purpose: a guess is corrected.",
+          "目的題：猜測被更正。"
+        ],
+        "why": [
+          "He guesses <em>Did she find a typo?</em> She answers <em>No, it's nothing like that</em> and says the subtitle sounds <em>written for professional chefs</em>. The author is not satisfied with how the cover presents the book.",
+          "他猜 Did she find a typo?，她答 No, it's nothing like that，說副標題 sounds written for professional chefs。作者不滿意封面呈現這本書的方式。"
+        ]
+      },
+      {
+        "point": [
+          "An idiom: <em>tall order</em> means hard to do.",
+          "慣用語：tall order 是很難辦到。"
+        ],
+        "why": [
+          "She asks if he can make the change and still meet Thursday. He answers <em>That's a tall order</em>, then mentions a fee. The words take only an hour, so the request is hard because of cost and timing.",
+          "她問他能不能改完又趕上星期四。他答 That's a tall order，再提到費用。改字只要一小時，所以難處在費用和時程。"
+        ]
+      },
+      {
+        "point": [
+          "He gives the cost; she hands the decision to someone.",
+          "他報出費用，她把決定交給別人。"
+        ],
+        "why": [
+          "He says <em>Four hundred dollars, plus an extra day</em>. She replies <em>it depends on the author. If she pays the fee herself, we'll go ahead</em>. The change depends on whether the author will cover the charge.",
+          "他說 Four hundred dollars, plus an extra day。她答 it depends on the author. If she pays the fee herself, we'll go ahead。要不要改，看作者願不願意負擔費用。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "subtitle",
+        "hw": "subtitle",
+        "pos": "n.",
+        "zh": "副標題",
+        "ex": "The subtitle explains the book's focus."
+      },
+      {
+        "w": "proofs",
+        "hw": "proof",
+        "pos": "n.",
+        "zh": "樣稿、校樣",
+        "ex": "The proofs arrive on Monday."
+      },
+      {
+        "w": "tall order",
+        "hw": "tall order",
+        "pos": "phr.",
+        "zh": "很難達成的要求",
+        "ex": "Finishing by noon is a tall order."
+      },
+      {
+        "w": "typo",
+        "hw": "typo",
+        "pos": "n.",
+        "zh": "錯字",
+        "ex": "I found a typo on page two."
+      }
+    ]
+  },
+  "l-conv-16": {
+    "q": [
+      {
+        "point": [
+          "Problem: the first sentence, not a late delivery.",
+          "問題題：看第一句，不是遲到。"
+        ],
+        "why": [
+          "Elena says <em>half of today's fish never arrived</em>. The fish did not come late; part of the order was never delivered.",
+          "Elena 說 half of today's fish never arrived。不是晚到，而是訂單有一部分根本沒送到。"
+        ]
+      },
+      {
+        "point": [
+          "An idiom: <em>eggs in one basket</em> means one big risk.",
+          "慣用語：eggs in one basket 是把風險押在同一處。"
+        ],
+        "why": [
+          "Gus wants to <em>move all our seafood orders</em> to one firm. Theo answers <em>If they have one bad week, we have no fish at all</em>. Relying on a single company is risky.",
+          "Gus 想把 all our seafood orders 都交給一家。Theo 回 If they have one bad week, we have no fish at all。只靠一家公司有風險。"
+        ]
+      },
+      {
+        "point": [
+          "Who asks, and who agrees.",
+          "誰提出需求、誰答應。"
+        ],
+        "why": [
+          "Gus says <em>I'll need your weekend reservation numbers early in the week</em>. Theo answers <em>I'll give you the count every Tuesday morning</em>. He agrees to give a weekly update on guest numbers.",
+          "Gus 說 I'll need your weekend reservation numbers early in the week。Theo 答 I'll give you the count every Tuesday morning。他答應每週提供客人人數。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "supplier",
+        "hw": "supplier",
+        "pos": "n.",
+        "zh": "供應商",
+        "ex": "Our supplier raised its prices."
+      },
+      {
+        "w": "lunch rush",
+        "hw": "lunch rush",
+        "pos": "n.",
+        "zh": "午餐尖峰",
+        "ex": "The cafe is full during the lunch rush."
+      },
+      {
+        "w": "portions",
+        "hw": "portion",
+        "pos": "n.",
+        "zh": "（餐點的）份",
+        "ex": "Each portion serves two people."
+      },
+      {
+        "w": "put all our eggs in one basket",
+        "hw": "put all one's eggs in one basket",
+        "pos": "phr.",
+        "zh": "孤注一擲、把風險押在同一處",
+        "ex": "Do not put all your eggs in one basket."
+      },
+      {
+        "w": "split",
+        "hw": "split",
+        "pos": "v.",
+        "zh": "分配、分攤",
+        "ex": "We split the work between two teams."
+      }
+    ]
+  },
+  "l-conv-17": {
+    "q": [
+      {
+        "point": [
+          "Reason: <em>car</em> becomes <em>vehicle</em>.",
+          "原因題：car 換成 vehicle。"
+        ],
+        "why": [
+          "He says <em>my car goes into the shop that morning</em>. So he will not have his vehicle on the day of the session. The insurance question comes later.",
+          "他說 my car goes into the shop that morning。所以療程那天早上他沒有車可用。保險的問題是後面才問的。"
+        ]
+      },
+      {
+        "point": [
+          "Count the visits: five of six used.",
+          "算次數：六次用掉五次。"
+        ],
+        "why": [
+          "He has used <em>five of the six visits</em>. She says <em>that one is covered. It will be your last</em>. The Thursday session is the final visit his insurance will pay for.",
+          "他已用掉 five of the six visits。她說 that one is covered. It will be your last。星期四是保險最後給付的一次。"
+        ]
+      },
+      {
+        "point": [
+          "A rejected option is not the next step.",
+          "被否決的選項不是下一步。"
+        ],
+        "why": [
+          "She offers mail, or a fax from the doctor's office. He says <em>Mail would take too long</em> and <em>I'd better hurry</em> because the office closes at five. He will contact his physician.",
+          "她提出郵寄或由醫師診所傳真。他說 Mail would take too long，又說 I'd better hurry，因為診所五點關門。他會去聯絡醫師。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "physical therapy",
+        "hw": "physical therapy",
+        "pos": "n.",
+        "zh": "物理治療",
+        "ex": "She started physical therapy for her shoulder."
+      },
+      {
+        "w": "cover",
+        "hw": "cover",
+        "pos": "v.",
+        "zh": "（保險）給付",
+        "ex": "Does the plan cover dental visits?"
+      },
+      {
+        "w": "referral",
+        "hw": "referral",
+        "pos": "n.",
+        "zh": "轉診單",
+        "ex": "A referral is required for specialists."
+      },
+      {
+        "w": "fax",
+        "hw": "fax",
+        "pos": "v.",
+        "zh": "傳真",
+        "ex": "Please fax the form to our office."
+      }
+    ]
+  },
+  "l-conv-18": {
+    "q": [
+      {
+        "point": [
+          "Purpose: what the tables and permit are for.",
+          "目的題：桌子和許可證是為了什麼。"
+        ],
+        "why": [
+          "He wants to <em>put four tables on the sidewalk</em>, and she says he needs <em>an outdoor seating permit</em>. He is asking for permission to serve customers outside.",
+          "他想 put four tables on the sidewalk，她說他需要 an outdoor seating permit。他是來申請在戶外招待客人。"
+        ]
+      },
+      {
+        "point": [
+          "An <em>if</em> clause gives two choices.",
+          "if 子句給了兩個選擇。"
+        ],
+        "why": [
+          "He asks <em>Will four tables fit?</em> She answers <em>If fewer fit, you can go ahead with fewer, or withdraw and get your fee back</em>. Either way, the decision is his.",
+          "他問 Will four tables fit?，她答 If fewer fit, you can go ahead with fewer, or withdraw and get your fee back。不論哪一種，決定權都在他。"
+        ]
+      },
+      {
+        "point": [
+          "Next step: <em>be right back</em> shows where he goes.",
+          "下一步：be right back 說明他要去哪裡。"
+        ],
+        "why": [
+          "The form <em>needs a drawing of the sidewalk</em>. He says <em>I have the building plans in my car. I'll bring them in</em>. He will go and get a document from his vehicle.",
+          "表格 needs a drawing of the sidewalk。他說 I have the building plans in my car. I'll bring them in。他要去車上拿文件。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "permit",
+        "hw": "permit",
+        "pos": "n.",
+        "zh": "許可證",
+        "ex": "You need a permit to build here."
+      },
+      {
+        "w": "inspector",
+        "hw": "inspector",
+        "pos": "n.",
+        "zh": "檢查員",
+        "ex": "The inspector visits every site."
+      },
+      {
+        "w": "narrow",
+        "hw": "narrow",
+        "pos": "adj.",
+        "zh": "狹窄的",
+        "ex": "The road is too narrow for trucks."
+      },
+      {
+        "w": "withdraw",
+        "hw": "withdraw",
+        "pos": "v.",
+        "zh": "撤回",
+        "ex": "She chose to withdraw her application."
+      }
+    ]
+  },
+  "_flags": []
+}

@@ -1,0 +1,1237 @@
+<title>The Workbook</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Noto+Serif+TC:wght@400;500&display=swap">
+<style>
+/* Layout: a printed workbook. Reading pages are one 34rem column; a question is a two-page spread on wide
+   screens (question left, notes right) and one column on phones. Interface text is English; Chinese waits behind 中. */
+:root{
+  --paper:#F2ECDF; --ink:#2A251E; --soft:#655B4C; --faint:#7F7462; --rule:#DCD2BF; --accent:#9A4A26; --pencil:#B4442E; --wash:#E8DFCC; --claude:#C2643F; --shadow:rgba(60,40,15,.14);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
+}
+:root[data-theme="dark"]{--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper) var(--grain);color:var(--ink);font:400 17px/1.75 var(--en),var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 72px;font-variant-numeric:oldstyle-nums}
+button,input,select,textarea{font:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.zh{font-family:var(--zh)}
+.sc{font-variant-caps:all-small-caps;letter-spacing:.09em}
+.link{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.link:hover{text-decoration-thickness:2px}
+.quiet{color:var(--soft)} .faint{color:var(--faint)}
+.page{max-width:34rem;margin:0 auto}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:6px 14px;border-radius:4px;font-size:15px;z-index:30}
+
+/* running head, shared by every view */
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:24px 4px;font-size:.86em;color:var(--faint)}
+.head button,.head a{color:var(--faint);text-decoration:none}
+.head button:hover,.head a:hover{color:var(--ink)}
+.head .tools{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;justify-content:flex-end}
+.head .pg{font-variant-numeric:lining-nums tabular-nums}
+.sz button{padding:0 3px}.sz .s1{font-size:.85em}.sz .s2{font-size:1.1em}
+.sz button:disabled{opacity:.35;cursor:default}
+
+/* contents */
+.mast{padding-block:56px 4px}
+.mast .sc{color:var(--soft);font-size:15px}
+h1{font:500 clamp(36px,7vw,48px)/1.1 var(--en);margin:.1em 0 0;letter-spacing:-.005em}
+h1.small{font-size:clamp(26px,5vw,32px);margin-top:.6em}
+.note{margin:22px 0 0}
+.note + .note{margin-top:6px}
+.part{margin-top:40px}
+.part h2{font:500 15px/1.4 var(--en);color:var(--soft);margin:0 0 8px}
+.part h2 .sc{letter-spacing:.12em}
+.part ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.part li{border-bottom:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;align-items:baseline;gap:0 .6em;width:100%;padding:10px 0;text-align:left}
+.row .n{color:var(--faint);font-size:15px}
+.row .t{min-width:0}
+.row .sub{display:block;font-size:14px;color:var(--faint)}
+.row .c{color:var(--faint);font-size:15px;font-variant-numeric:lining-nums tabular-nums}
+button.row:hover .t{color:var(--accent)}
+.colophon{margin-top:48px;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:15px}
+.colophon button{color:var(--soft)}
+.colophon button:hover{color:var(--ink)}
+
+/* the spread */
+#session{font-size:var(--fs,14.5px);max-width:34rem;margin:0 auto;padding-bottom:calc(var(--dockh,64px) + 1.5rem)}
+/* the dock: tools for the answered question, pinned to the bottom edge */
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--paper);border-top:1px solid var(--rule);padding:0 20px calc(10px + env(safe-area-inset-bottom,0px))}
+.dk-bar,.dk-panel{max-width:34rem;margin:0 auto}
+@media (min-width:900px){.dk-bar,.dk-panel{max-width:64rem}}
+.dk-panel:empty{display:none}
+.dk-panel{padding-top:12px;font-size:15px}
+.dk-bar{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;padding-top:10px;min-height:44px}
+.dk-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px}
+.tool{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;color:var(--soft);text-decoration:none;padding:4px 0}
+.tool:hover{color:var(--ink)}
+.tool svg{width:16px;height:16px;flex:none}
+.tool .ic{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.tool[aria-pressed="true"]{color:var(--accent)}
+.tool[aria-pressed="true"] .ic.fillable{fill:currentColor}
+.tool.claude{color:var(--ink)}
+.tool.claude .spark{stroke:var(--claude);stroke-width:2.4;stroke-linecap:round}
+.tool.zht{font-family:var(--zh);font-size:13px;border:1px solid var(--rule);border-radius:3px;padding:0 6px;line-height:1.7}
+.tool.zht[aria-pressed="true"]{border-color:var(--faint);color:var(--ink)}
+.dk-next button{font:italic 500 18px var(--en);color:var(--accent);white-space:nowrap;padding:4px 0}
+.dk-next button:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:520px){.tool:not(.claude):not(.zht) .lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.dk-tools{gap:6px 18px}}
+.foot .claude-ic{width:13px;height:13px;vertical-align:-1px;margin-right:4px}
+.foot .claude-ic .spark{stroke:var(--claude);stroke-width:2.4;stroke-linecap:round}
+@media (min-width:900px){
+  #session:not([hidden]){max-width:64rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:3.2rem;align-items:start}
+  #session .head{grid-column:1/-1}
+  .rightp{border-left:1px solid var(--rule);padding-left:3.2rem;min-height:60vh}
+  .rightp .ann:first-child{margin-top:1.6em;border-top:0;padding-top:0}
+}
+.leftp,.rightp{min-width:0}
+.mark{margin:1.4em 0 0;font-size:.86em;color:var(--faint)}
+.stem{font:400 1.28em/1.7 var(--en);margin:1.3em 0 1em;text-wrap:pretty}
+.blank{display:inline-block;min-width:4.6em;border-bottom:1.5px solid var(--ink);text-align:center;line-height:1.2;color:var(--accent);font-style:italic}
+.gl{text-decoration:underline dotted var(--faint);text-underline-offset:5px;text-decoration-thickness:1px;cursor:help}
+.pace{height:1px;background:var(--rule);margin:-.4em 0 1em}
+.pace i{display:block;height:100%;background:var(--accent);width:100%}
+.pace.over i{background:var(--pencil)}
+.opts{list-style:none;margin:0;padding:0;display:grid}
+.opt{display:grid;grid-template-columns:2.4em minmax(0,1fr);align-items:baseline;width:100%;text-align:left;padding:.28em 0;font:400 1.14em/1.5 var(--en)}
+.opt .l{position:relative;display:inline-grid;place-items:center;width:1.7em;height:1.7em;font-size:.85em;color:var(--soft)}
+.opt .l svg{position:absolute;left:-7px;top:-6px;width:calc(100% + 14px);height:calc(100% + 12px);overflow:visible;pointer-events:none}
+.opt .l path{fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.opt:not(:disabled):hover .w{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.opt:disabled{cursor:default}
+.opt.now .l{color:var(--accent)}
+.opt.right .l,.opt.right .w{color:var(--accent)}
+.opt.picked-wrong .w{text-decoration:line-through;text-decoration-color:var(--pencil);text-decoration-thickness:1.6px;color:var(--soft)}
+.opt.picked-wrong .l{color:var(--pencil)}
+.opt.dim .w,.opt.dim .l{color:var(--faint)}
+.qr .opts{grid-template-columns:repeat(3,auto);justify-content:start;column-gap:2.4em}
+.qr .opt{grid-template-columns:auto;font-size:1.3em}
+.qr .opt .l{font-size:.8em}
+.unsure{margin-top:.5em;padding-left:2.4em}
+.qr .unsure{padding-left:0}
+.unsure button{font-style:italic;font-size:.92em;color:var(--faint)}
+.unsure button:hover{color:var(--soft)}
+.lq{margin:1.6em 0 .5em;font:500 1.06em/1.55 var(--en)}
+.lq .n{color:var(--faint);margin-right:.5em;font-weight:400}
+
+/* listening */
+.player{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin:1.4em 0 .4em}
+.play{font:italic 500 1.2em var(--en);color:var(--accent)}
+.play:disabled{color:var(--faint);cursor:default}
+.player .state{color:var(--faint);font-size:.9em;flex:1;min-width:8em}
+.speed{display:flex;gap:10px;font-size:.86em}
+.speed button{color:var(--faint)} .speed button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.cue{margin:1em 0 0;font-size:.86em;color:var(--faint)}
+.graphic{margin:1em 0 .4em;overflow-x:auto}
+.graphic table{border-collapse:collapse;width:100%;font-size:.95em;font-variant-numeric:lining-nums tabular-nums}
+.graphic caption{text-align:left;font-weight:500;padding-bottom:.3em}
+.graphic th{font-weight:400;color:var(--soft);text-align:left;border-bottom:1px solid var(--ink);padding:.2em .6em .2em 0}
+.graphic td{border-bottom:1px solid var(--rule);padding:.25em .6em .25em 0}
+
+/* notes */
+.ann{margin-top:1.6em;border-top:1px solid var(--rule);padding-top:1.1em;display:grid;gap:.75em;line-height:1.65}
+.ann + .ann{margin-top:1.4em}
+.ann p{margin:0}
+.ann .qn{font-size:.84em;color:var(--faint);margin-bottom:-.3em}
+.para{cursor:pointer}
+.para .zh{display:block;font-size:.9em;line-height:1.7;color:var(--soft);margin-top:.15em}
+.point{font:500 1.08em/1.55 var(--en)}
+.para em{font-style:italic}
+.para .exs{display:block;margin-top:.2em}
+.wr{display:grid;grid-template-columns:6.4em minmax(0,1fr);gap:.8em;align-items:baseline;font-size:.94em;color:var(--soft)}
+.wr .w{font-style:italic;color:var(--faint);overflow-wrap:anywhere}
+.wr.mine .w{color:var(--pencil)} .wr.mine{color:var(--ink)}
+.wr .para{min-width:0}
+.trans{font-size:.9em;line-height:1.7;color:var(--soft)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px;margin-top:.2em;font-size:.84em;color:var(--faint)}
+.foot .fl{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.foot a,.foot button{color:var(--faint);text-decoration:none}
+.foot a:hover,.foot button:hover{color:var(--soft)}
+.foot button[aria-pressed="true"]{color:var(--accent)}
+.zhb{font-family:var(--zh);font-size:.95em;border:1px solid var(--rule)!important;border-radius:3px;padding:0 5px!important;line-height:1.6}
+.zhb[aria-pressed="true"]{color:var(--soft)!important;border-color:var(--faint)!important}
+.ask,.report{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.4em .8em;align-items:baseline}
+.ask input,.report input,.search,.notes textarea{font:italic 1em var(--en);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--rule);padding:.2em 0;min-width:0;border-radius:0}
+.ask input:focus,.report input:focus,.search:focus,.notes textarea:focus{outline:none;border-bottom-color:var(--accent)}
+.ask button,.report button{font:italic 500 .95em var(--en);color:var(--accent)}
+.ask button:disabled{color:var(--faint)}
+.askOut{grid-column:1/-1;font-size:.94em;color:var(--soft);white-space:pre-wrap;margin:0}
+.script{list-style:none;margin:0;padding:0;display:grid;gap:.2em}
+.script li{display:grid;grid-template-columns:2.2em minmax(0,1fr) 1.4em;gap:.5em;align-items:baseline;padding:.2em .3em;border-radius:3px}
+.script li.ev{background:var(--wash)}
+.script .who{font-size:.84em;color:var(--faint)}
+.script .t{min-width:0}
+.script .t .zh{display:block;font-size:.88em;color:var(--soft)}
+.script .rp{color:var(--faint);font-size:.8em}
+.script .rp:hover{color:var(--accent)}
+.next{display:flex;justify-content:flex-end;margin-top:1.4em}
+.next button{font:italic 500 1.08em var(--en);color:var(--accent)}
+.next button:hover{text-decoration:underline;text-underline-offset:4px}
+.tip{position:absolute;z-index:20;pointer-events:none;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px var(--shadow);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
+.tip .hw{font:italic 500 17px var(--en)}
+.tip .pos{font-style:italic;color:var(--soft);margin-left:.5em}
+.tip .ipa{color:var(--soft);margin-left:.5em;font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en);font-size:.95em}
+.tip .mean{font-family:var(--zh);margin-top:2px}
+.tip .ex{margin-top:6px;padding-top:6px;border-top:1px solid var(--rule);color:var(--soft);font-style:italic}
+
+/* chapter lessons */
+.lesson{font-size:var(--fs,15.5px)}
+.lesson .chap{margin:2.2em 0 0;font-size:.9em;color:var(--soft)}
+.lesson h1{margin-top:.15em}
+.lesson .lead{font-size:1.15em;line-height:1.6;margin:1em 0 0}
+.lesson h3{margin-top:2.2em}
+.lesson .steps{margin:.4em 0 0;padding-left:1.4em;display:grid;gap:.3em}
+.lesson .steps li::marker{color:var(--faint)}
+.lesson .rule{margin:1.4em 0 0;border-top:1px solid var(--rule);padding-top:.9em}
+.lesson .rule .rh{font-weight:500;font-size:1.06em}
+.lesson .rule .rb{margin-top:.25em}
+.lesson .exl{list-style:none;margin:.5em 0 0;padding:0 0 0 1em;border-left:2px solid var(--rule);display:grid;gap:.35em}
+.lesson .exl em{font-style:normal;color:var(--accent);font-weight:500}
+.lesson .exl .para>:not(.zh){font-style:italic}
+.lesson .pr{margin:1em 0 0;display:grid;gap:.2em}
+.lesson .pr .ok,.lesson .pr .no{display:grid;grid-template-columns:1.4em minmax(0,1fr);gap:.4em}
+.lesson .pr .ok b{color:var(--accent);font-weight:500}
+.lesson .pr .no b{color:var(--pencil);font-weight:500}
+.lesson .pr .no span{text-decoration:line-through;text-decoration-color:var(--pencil);color:var(--soft)}
+.lesson .pr .why{padding-left:1.8em;font-size:.94em;color:var(--soft)}
+.lesson .ls{margin:1em 0 0}
+.lesson .ls .lh{font-weight:500}
+.lesson .ls ul{list-style:none;margin:.3em 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(14em,1fr));gap:.15em 1.4em}
+.lesson .ls li{border-bottom:1px solid var(--rule);padding:.2em 0}
+.lesson .ls li .zh{display:block}
+.lesson .traps{margin:.4em 0 0;padding-left:1.2em;display:grid;gap:.5em}
+.lesson .traps li::marker{color:var(--pencil)}
+.lesson .go{display:flex;justify-content:flex-end;margin-top:2.4em}
+.lesson .go button,.skip{font:italic 500 1.08em var(--en);color:var(--accent)}
+.lesson .go button:hover,.skip:hover{text-decoration:underline;text-underline-offset:4px}
+.lesson .zhbar{display:flex;justify-content:flex-end;margin-top:1em}
+#sheet{position:fixed;inset:0;z-index:25;background:var(--paper);overflow-y:auto;padding:0 20px calc(40px + env(safe-area-inset-bottom,0px))}
+#sheet .page{padding-top:env(safe-area-inset-top,0px)}
+
+/* word chapter */
+/* stories */
+.page.story .storyside{display:none}
+@media (min-width:900px){
+  .page.story{max-width:64rem;display:grid;grid-template-columns:minmax(0,34rem) minmax(0,1fr);column-gap:3.2rem;align-items:start}
+  .page.story .head{grid-column:1/-1}
+  .page.story .storyside{display:block;position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);max-height:calc(100vh - 32px);overflow-y:auto;border-left:1px solid var(--rule);padding:1.4em 0 1em 2.4em;margin-top:1.4em}
+  .storyside .word{font-size:14.5px}
+  .storyside .word h1{font-size:30px}
+}
+.storycol{min-width:0}
+.storycol .hwrow{display:flex;align-items:baseline;margin-top:1.6em}
+.storycol h1{margin-top:.2em}
+.storycol > .zh{display:block;color:var(--soft);font-family:var(--zh)}
+.storyp{font-size:18.5px;line-height:1.8;margin:1em 0 0}
+.storyp .zh{display:block;font-size:15.5px;line-height:1.75;color:var(--soft);margin-top:.35em}
+.storyp .say{font-size:.8em;margin-left:.2em}
+.sw{font:inherit;color:inherit;padding:0;text-decoration:underline dotted var(--faint);text-underline-offset:5px;text-decoration-thickness:1px;cursor:pointer}
+.sw:hover,.sw.on{color:var(--accent);text-decoration-color:var(--accent)}
+.word{font-size:var(--fs,15.5px)}
+.word .hwrow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2em .8em;margin-top:1.6em}
+.word h1{margin:0}
+.word .pos{font-style:italic;color:var(--soft);font-size:1.05em}
+.word .ipa{color:var(--soft);font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en)}
+.say{color:var(--accent);font-size:.95em}
+.word .exs .say{margin-left:.35em;font-size:.85em}
+.word .mean{font-family:var(--zh);color:var(--soft);margin:.4em 0 0}
+.word .def{font-size:1.1em;margin:.8em 0 0}
+.word .exs{list-style:none;margin:.4em 0 0;padding:0;display:grid;gap:.55em}
+.word .exs li{padding-left:1em;border-left:2px solid var(--rule)}
+.word .exs em{font-style:normal;color:var(--accent);font-weight:500}
+.word .colls{list-style:none;margin:.4em 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(13em,1fr));gap:.1em 1.4em}
+.word .colls li{border-bottom:1px solid var(--rule);padding:.2em 0}
+.word .colls .zh{display:block;font-size:.9em;color:var(--soft)}
+.net{display:grid;gap:.6em;margin-top:.4em}
+.net .nrow{display:grid;grid-template-columns:7em minmax(0,1fr);gap:.8em;align-items:baseline}
+.net .nk{font-size:.86em;color:var(--faint)}
+.net .nv{display:flex;flex-wrap:wrap;gap:.3em 1.1em;min-width:0}
+.net .nw{display:inline}
+.net .nw b{font-weight:500}
+.net .nw a,.net .nw button{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;font-weight:500}
+.net .nw small{color:var(--soft);font-size:.86em;margin-left:.3em}
+.net .nn{display:block;font-size:.9em;color:var(--soft)}
+.qlist{list-style:none;margin:.4em 0 0;padding:0;display:grid;gap:.4em;font-size:.95em}
+.qlist li{color:var(--soft)}
+.wnav{display:flex;justify-content:space-between;gap:1em;margin-top:2.4em;font-style:italic}
+.wnav button{color:var(--accent)}
+.tip .more{margin-top:6px;font-size:13.5px}
+.tip .more button{pointer-events:auto;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+
+/* summary, review shelf, statistics, settings */
+.score{font:400 clamp(40px,8vw,56px)/1 var(--en);margin:.5em 0 .1em;font-variant-numeric:lining-nums}
+.score small{font-size:.4em;color:var(--soft);margin-left:.3em}
+h3{font:500 15px/1.4 var(--en);color:var(--soft);margin:2em 0 .4em}
+h3 .sc{letter-spacing:.12em}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.list > li{border-bottom:1px solid var(--rule)}
+.list .hd{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 1em;align-items:baseline;width:100%;text-align:left;padding:.6em 0}
+.list .hd .s{min-width:0;font-size:16px}
+.list .hd .m{font-size:13.5px;color:var(--faint);white-space:nowrap}
+.list .hd:hover .s{color:var(--accent)}
+.list .body{padding:0 0 1em;font-size:15px}
+.list .body .ann{margin-top:.4em}
+.notes textarea{width:100%;min-height:2.2em;resize:vertical;font-size:15px;margin-top:.8em}
+.tabs{display:flex;flex-wrap:wrap;gap:4px 18px;margin:1.2em 0 .6em;font-size:15px}
+.tabs button{color:var(--faint)} .tabs button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+.search{width:100%;margin-bottom:.6em;font-size:16px}
+.grp{font-size:14px;color:var(--soft);margin:1.6em 0 .3em}
+.stat{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:lining-nums tabular-nums}
+.stat th{font-weight:400;color:var(--faint);text-align:right;border-bottom:1px solid var(--ink);padding:.2em 0 .2em .8em;white-space:nowrap}
+.stat th:first-child,.stat td:first-child{text-align:left;padding-left:0}
+.stat td{text-align:right;border-bottom:1px solid var(--rule);padding:.3em 0 .3em .8em}
+.tblwrap{overflow-x:auto}
+.set{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.2em 1em;align-items:baseline;padding:.9em 0;border-bottom:1px solid var(--rule)}
+.set label{font-weight:500}
+.set p{grid-column:1/-1;margin:0;font-size:15px;color:var(--soft)}
+.set select{background:transparent;border:0;border-bottom:1px solid var(--rule);font-size:16px;color:var(--ink)}
+.set input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px}
+.small{font-size:15px}
+.credit{font-size:12.5px;color:var(--faint);margin:.6em 0 0;letter-spacing:.06em}
+.empty{color:var(--faint);margin:1.4em 0}
+@media (prefers-reduced-motion: no-preference){
+  .opt.right .l path{animation:draw .5s ease-out both}
+  @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+  .ann{animation:rise .4s .15s ease-out both}
+  @keyframes rise{from{opacity:.001;transform:translateY(5px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<main id="app" class="page"></main>
+<section id="session" hidden></section>
+<nav id="dock" hidden aria-label="This question"><div class="dk-panel" id="dkPanel"></div><div class="dk-bar"><span class="dk-tools" id="dkTools"></span><span class="dk-next" id="dkNext"></span></div></nav>
+<div id="sheet" hidden role="dialog" aria-label="Lesson"></div>
+<div class="tip" id="tip" hidden></div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script type="application/json" id="bank">{{BANK}}</script>
+<script>
+"use strict";
+// ================================================================ data
+const DATA = JSON.parse(document.getElementById("bank").textContent);
+const UNITS = DATA.units;                     // id -> {zh, group, en}
+const INTERVALS = [1, 3, 7, 14];              // review spacing in days per level (our own setting, not a research number)
+const WEAK = 0.7;                             // chapters under this accuracy come up more often (our setting)
+const SIZES = [13.5, 14.5, 15.5, 16.5, 18];
+const L = "ABCD";
+const PARTS = [["grammar", "Part One", "Grammar"], ["vocab", "Part Two", "Vocabulary"], ["listen", "Part Three", "Listening"]];
+const CIRCLE = '<svg viewBox="0 0 48 40" aria-hidden="true"><path pathLength="1" d="M31 5C17 3 5 10 5 21c0 10 12 15 23 14 11-1 16-8 15-16C42 10 34 5 23 6"/></svg>';
+
+let ITEMS = DATA.items.slice();               // hand-written items, plus Claude-added ones merged at load
+let BY = {};
+function index() { BY = Object.fromEntries(ITEMS.map(x => [x.id, x])); }
+index();
+
+// ================================================================ helpers
+const $ = s => document.querySelector(s);
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function btn(cls, text, fn) { const b = el("button", cls, text); b.type = "button"; if (fn) b.onclick = fn; return b; }
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+function day(d = new Date()) { const z = n => String(n).padStart(2, "0"); return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate()); }
+function addDays(n) { const d = new Date(); d.setDate(d.getDate() + n); return day(d); }
+function shortDay(s) { const d = new Date(s + "T00:00"); return d.toLocaleDateString("en-GB", { day: "numeric", month: "short" }); }
+function fmtS(ms) { return ms == null ? "–" : Math.round(ms / 1000) + " s"; }
+function pct(a, b) { return b ? Math.round(a / b * 100) + "%" : "–"; }
+function toast(t) { const e = $("#toast"); e.textContent = t; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 1800); }
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function seeded(seed) { let a = seed; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function shuffle(a, rnd = Math.random) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function unitName(u) { return (UNITS[u] && (UNITS[u].en || UNITS[u].zh)) || u; }
+function isGap(item) { return item.format === "gap"; }
+function qKeys(item) { return isGap(item) || item.format === "qr" ? [item.id] : item.questions.map((_, i) => item.id + ":" + i); }
+function qOf(key) { const [id, q] = key.split(":"); const item = BY[id]; if (!item) return null; return { item, qi: q == null ? 0 : Number(q) }; }
+function unitOfKey(key) { const x = qOf(key); return x ? x.item.unit : ""; }
+function qCount(x) { return x.format === "gap" || x.format === "qr" ? 1 : x.questions.length; }
+
+// ================================================================ storage: db when this is the owner in claude.ai, else localStorage
+const Store = {
+  mode: "local", db: null, queue: {},
+  lsGet(coll) { try { return JSON.parse(localStorage.getItem("toeic:" + coll) || "{}"); } catch { return {}; } },
+  lsPut(coll, map) { try { localStorage.setItem("toeic:" + coll, JSON.stringify(map)); } catch {} },
+  async init() {
+    if (!window.claude?.use) return;
+    try {
+      const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+      if (db && user && await user.isOwner()) { this.db = db; this.mode = "db"; }
+    } catch {}
+  },
+  async list(coll) {
+    if (this.mode === "local") return this.lsGet(coll);
+    const snap = await this.db.collection(coll).get();
+    return Object.fromEntries(snap.docs.map(d => [d.id, d.data()]));
+  },
+  async getProfile() {
+    if (this.mode === "local") return this.lsGet("profile").main || null;
+    const s = await this.db.doc("toeic/profile").get();
+    return s.exists ? s.data() : null;
+  },
+  put(coll, id, data) {           // one write at a time per document
+    const key = coll + "/" + id;
+    if (this.mode === "local") { const m = this.lsGet(coll); m[id] = data; this.lsPut(coll, m); return Promise.resolve(); }
+    const prev = this.queue[key] || Promise.resolve();
+    const path = coll === "profile" ? "toeic/profile" : coll + "/" + id;
+    const p = prev.then(() => this.db.doc(path).set(JSON.parse(JSON.stringify(data)))).catch(e => {
+      if (e && e.code === "quota_exceeded") toast("Your account storage is full; this wasn't saved.");
+      else if (e && e.code === "unavailable") return wait(800 + Math.random() * 800).then(() => this.db.doc(path).set(data)).catch(() => toast("Couldn't save. Check your connection."));
+      else toast("Couldn't save. Check your connection.");
+    });
+    this.queue[key] = p; return p;
+  },
+};
+// collections (db paths are owner-only, see capabilities): toeic/profile, toeic_bank/<key>, toeic_attempts/<session>, toeic_marks/<itemId>, toeic_added/<itemId>
+
+let P = null;    // profile
+let B = {};      // review shelf, key -> entry
+let M = {};      // marks, itemId -> {starred, note, flagged, flagNote, at}
+function freshProfile() { return { settings: { pace: 0, listenSpeed: 1, strictListen: false, theme: "system", size: 1, sound: true }, totals: { n: 0, ok: 0, unsure: 0 }, units: {}, streak: { days: 0, lastDay: "" }, seen: {} }; }
+function saveProfile() { return Store.put("profile", "main", P); }
+function saveBank(key) { return Store.put("toeic_bank", key, B[key]); }
+function saveMark(id) { M[id].at = Date.now(); return Store.put("toeic_marks", id, M[id]); }
+
+async function load() {
+  await Store.init();
+  try {
+    P = await Store.getProfile();
+    B = await Store.list("toeic_bank");
+    M = await Store.list("toeic_marks");
+    const added = await Store.list("toeic_added");
+    if (Store.mode === "db") { try { const c = await Store.db.doc("toeic/credits").get(); if (c.exists) CREDITS = c.data(); } catch {} }
+    for (const [id, x] of Object.entries(added)) {
+      if (x.retired || BY[id] || !x.type || !x.explain && !x.questions) continue;
+      ITEMS.push({ ...x, id, source: x.source || "claude", reviewed: false });
+    }
+    index();
+  } catch (e) {
+    Store.mode = "local"; P = Store.lsGet("profile").main || null; B = Store.lsGet("toeic_bank"); M = Store.lsGet("toeic_marks");
+  }
+  P = Object.assign(freshProfile(), P || {});
+  P.settings = Object.assign(freshProfile().settings, P.settings || {});
+  P.totals.unsure = P.totals.unsure ?? P.totals.guess ?? 0;
+  applyTheme();
+  if (Store.mode === "db" && !Object.keys(B).length && !P.totals.n) {
+    const lp = Store.lsGet("profile").main, lb = Store.lsGet("toeic_bank");
+    if ((lp && lp.totals && lp.totals.n) || Object.keys(lb).length) importOffer = { lp, lb, lm: Store.lsGet("toeic_marks") };
+  }
+}
+let importOffer = null;
+// Who wrote each part, if the owner keeps a "toeic/credits" document in the page's database: {q, en, lessons, cards, stories}.
+let CREDITS = null;
+function creditLine(parts) {
+  if (!CREDITS || P.settings.credits === false) return null;
+  const t = parts.filter(([, v]) => v).map(([k, v]) => k + ": " + v).join(" · ");
+  return t ? el("p", "credit sc", t) : null;
+}
+async function doImport() {
+  const { lp, lb, lm } = importOffer; importOffer = null;
+  if (lp) { P = Object.assign(freshProfile(), lp); await saveProfile(); }
+  for (const [k, v] of Object.entries(lb)) { B[k] = v; await saveBank(k); }
+  for (const [k, v] of Object.entries(lm || {})) { M[k] = v; await saveMark(k); }
+  toast("Imported."); home();
+}
+function applyTheme() {
+  const t = P.settings.theme;
+  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  else document.documentElement.removeAttribute("data-theme");
+}
+
+// ================================================================ sound: one soft tone per answer
+let actx = null;
+function tone(ok) {
+  if (!P.settings.sound) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const t = actx.currentTime, g = actx.createGain(), o = actx.createOscillator();
+    o.type = "sine"; o.frequency.value = ok ? 880 : 392;
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(ok ? 0.07 : 0.05, t + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + (ok ? 0.45 : 0.25));
+    o.connect(g).connect(actx.destination); o.start(t); o.stop(t + 0.5);
+  } catch {}
+}
+
+// ================================================================ audio: one element for the whole page
+const au = new Audio(); au.preload = "auto";
+let playTok = null, playDone = null;
+function stopAudio() { playTok = null; au.pause(); if (playDone) { const d = playDone; playDone = null; d(false); } }
+function playOne(src) {
+  return new Promise(res => {
+    playDone = res;
+    au.onended = () => { playDone = null; res(true); };
+    au.onerror = () => { playDone = null; res(false); };
+    au.src = src; au.playbackRate = P.settings.listenSpeed;
+    au.play().catch(() => { playDone = null; res(false); });
+  });
+}
+async function playLines(item, idxs, gap, onLine) {
+  stopAudio();
+  const tok = playTok = {};
+  let okAll = true;
+  for (let n = 0; n < idxs.length; n++) {
+    const i = idxs[n], ln = item.audio.lines[i];
+    onLine && onLine(i);
+    const ok = await playOne(item.audio.dir + "/" + ln.file);
+    if (playTok !== tok) { onLine && onLine(-1); return null; }
+    if (!ok) okAll = false;
+    if (n < idxs.length - 1) { await wait(gap); if (playTok !== tok) { onLine && onLine(-1); return null; } }
+  }
+  playTok = null; onLine && onLine(-1);
+  return okAll;
+}
+
+// ================================================================ views
+let view = "home";
+function show(v) {
+  view = v; stopAudio(); clearInterval(paceTimer); $("#tip").hidden = true; closeSheet(); window.scrollTo(0, 0);
+  const app = $("#app"), ses = $("#session");
+  app.textContent = ""; ses.textContent = "";
+  const dk = $("#dock"); dk.hidden = true; dk.dataset.card = ""; $("#dkTools").textContent = ""; $("#dkPanel").textContent = ""; $("#dkNext").textContent = "";
+  app.hidden = v === "session"; ses.hidden = v !== "session"; app.className = "page";
+  return v === "session" ? ses : app;
+}
+function head(host, left, right) {
+  const h = el("div", "head"); h.append(left || el("span")); if (right) h.append(right); host.append(h); return h;
+}
+function backTo(label, fn) { return btn(null, "← " + label, fn); }
+
+function unitStat(u) { const s = P.units[u] || { n: 0, ok: 0, unsure: 0, msSum: 0, msN: 0 }; s.unsure = s.unsure ?? s.guess ?? 0; return s; }
+function dueKeys() { const t = day(); return Object.keys(B).filter(k => { const e = B[k]; return e && !e.graduatedAt && !e.removedAt && e.due <= t && qOf(k); }); }
+function activeBank(k) { const e = B[k]; return e && !e.graduatedAt && !e.removedAt; }
+function unitsIn(group) { return Object.keys(UNITS).filter(u => UNITS[u].group === group && ITEMS.some(x => x.unit === u)); }
+function countStars() { return Object.values(M).filter(m => m && m.starred).length; }
+
+// ================================================================ contents
+function home() {
+  const app = show("home");
+  const mast = el("header", "mast"); mast.append(el("div", "sc", "TOEIC Parts 2–5"), el("h1", null, "The Workbook")); app.append(mast);
+
+  if (importOffer) {
+    const p = el("p", "note"); p.append("This browser has older practice records. ", btn("link", "Bring them into your account", doImport), " · ", btn("link", "Ignore", () => { importOffer = null; home(); }));
+    app.append(p);
+  }
+  const saved = loadSession();
+  if (saved) { const p = el("p", "note"); p.append(`Last time: ${saved.label}, question ${saved.i + 1} of ${saved.cards.length}. `, btn("link", "Continue", () => { S = saved; runCard(); })); app.append(p); }
+  const due = dueKeys();
+  if (due.length) { const p = el("p", "note"); p.append(`${due.length} question${due.length > 1 ? "s" : ""} to review today. `, btn("link", "Review", () => startReview(due))); app.append(p); }
+
+  const sets = [
+    ["Mixed", "10 grammar, 6 vocabulary, 4 listening", 20, () => startMixed()],
+    ["Grammar", null, 10, () => startSet({ type: "grammar", n: 10, label: "Grammar" })],
+    ["Vocabulary", null, 10, () => startSet({ type: "vocab", n: 10, label: "Vocabulary" })],
+    ["Listening", null, 5, () => startSet({ type: "listen", n: 5, label: "Listening" })],
+  ];
+  const stars = countStars(); if (stars) sets.push(["Starred", null, stars, () => startStarred()]);
+  const added = ITEMS.filter(x => x.source !== "hand" && !P.seen[qKeys(x)[0]]);
+  if (added.length) sets.push(["From Claude", "not reviewed", added.length, () => startList(added.map(x => x.id), "From Claude")]);
+  app.append(partList("Practice sets", null, sets.map(([t, sub, c, fn]) => ({ n: "", t, sub, c, fn }))));
+
+  for (const [g, part, title] of PARTS) {
+    const us = unitsIn(g); if (!us.length) continue;
+    app.append(partList(part, title, us.map((u, i) => ({ n: String(i + 1), t: unitName(u), c: ITEMS.filter(x => x.unit === u).length, fn: () => DATA.lessons?.[u] ? lessonView(u) : startSet({ unit: u, n: 10, label: unitName(u) }) }))));
+  }
+  if (STORIES.length) app.append(partList("Part Four", "Stories", STORIES.map((st, i) => ({ n: String(i + 1), t: st.title[0], c: "", fn: () => storyView(st.id) }))));
+  const col = el("nav", "colophon sc");
+  const shelf = Object.keys(B).filter(activeBank).length;
+  col.append(btn(null, "Review shelf" + (shelf ? " · " + shelf : ""), bankView), btn(null, "Statistics", statsView), btn(null, "Settings", settingsView));
+  app.append(col);
+}
+function partList(part, title, rows) {
+  const s = el("section", "part"), h = el("h2");
+  if (title) h.append(part + " · ", el("span", "sc", title)); else h.append(el("span", "sc", part));
+  const ol = el("ol");
+  for (const r of rows) {
+    const li = el("li"), b = btn("row");
+    const t = el("span", "t", r.t); if (r.sub) t.append(el("span", "sub", r.sub));
+    b.append(el("span", "n", r.n), t, el("span", "c", String(r.c))); b.onclick = r.fn;
+    li.append(b); ol.append(li);
+  }
+  s.append(h, ol); return s;
+}
+
+// ================================================================ word chapter (TOEIC Service List words that appear in the questions)
+const WORDS = DATA.words || [];
+const WBY = Object.fromEntries(WORDS.map(c => [c.w, c]));
+function wordCard(w) { w = String(w || "").toLowerCase(); return WBY[w] || null; }
+function speak(text) { try { const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; u.rate = 0.9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch {} }
+const canSpeak = "speechSynthesis" in window;
+const STORIES = DATA.stories || [];
+// Part Four: short workplace stories; the high-frequency words are dotted, and a tap opens the word's card
+// (in the page margin on wide screens, in a sheet on phones).
+function storyText(en) {
+  return esc(en).replace(/\{\{([^|{}]+)\|([^{}]+)\}\}/g, (m, w, t) => `<button type="button" class="sw" data-w="${w.trim()}">${t}</button>`);
+}
+function storyView(id) {
+  const i = STORIES.findIndex(st => st.id === id), st = STORIES[i];
+  const app = show("story"); app.className = "page story";
+  head(app, backTo("Contents", home));
+  const main = el("article", "storycol"), side = el("aside", "storyside");
+  side.append(el("p", "faint small", "Tap a dotted word to see it here."));
+  app.append(main, side);
+  const hd = el("div", "hwrow"); hd.append(el("p", "chap sc quiet", "Part Four · Story " + (i + 1)));
+  const zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese"); zb.style.marginLeft = "auto";
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); main.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  hd.append(zb); main.append(hd);
+  const h = el("h1", "small", st.title[0]); const hz = el("span", "zh", st.title[1]); hz.hidden = true; main.append(h, hz);
+  const sc = creditLine([["Story", CREDITS?.stories]]); if (sc) main.append(sc);
+  for (const [en, zh] of st.paras) {
+    const p = el("p", "storyp"); p.innerHTML = storyText(en);
+    if (canSpeak) { const sp = btn("say", " ▸", () => speak(en.replace(/\{\{[^|{}]+\|([^{}]+)\}\}/g, "$1"))); sp.setAttribute("aria-label", "Read this paragraph aloud"); p.append(sp); }
+    const z = el("span", "zh", zh); z.hidden = true; p.append(z);
+    main.append(p);
+  }
+  main.querySelectorAll(".sw").forEach(b => b.onclick = () => {
+    main.querySelectorAll(".sw.on").forEach(x => x.classList.remove("on")); b.classList.add("on");
+    if (matchMedia("(min-width: 900px)").matches) showInSide(b.dataset.w); else openWordSheet(b.dataset.w, "Back to the story");
+  });
+  function showInSide(w) { side.textContent = ""; side.append(wordBody(w, showInSide)); side.scrollTop = 0; }
+  const its = [...new Set(st.words.flatMap(w => (wordCard(w)?.items || []).filter(x => BY[x])))].slice(0, 12);
+  if (its.length) { const pr = el("p", "note"); pr.append(btn("link", "Practise questions with these words", () => startList(its, st.title[0]))); main.append(pr); }
+  const nv = el("div", "wnav");
+  nv.append(i > 0 ? btn(null, "← " + STORIES[i - 1].title[0], () => storyView(STORIES[i - 1].id)) : el("span"), i < STORIES.length - 1 ? btn(null, STORIES[i + 1].title[0] + " →", () => storyView(STORIES[i + 1].id)) : el("span"));
+  main.append(nv);
+  const credit = el("p", "faint small"); credit.style.marginTop = "2.4em";
+  credit.innerHTML = 'Dotted words come from the TOEIC Service List 1.2 by Browne, C. &amp; Culligan, B., <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Pronunciations from the CMU Pronouncing Dictionary.';
+  main.append(credit);
+}
+function wordBody(w, nav) {
+  const c = wordCard(w), box = el("div", "word");
+  const hr = el("div", "hwrow"); hr.append(el("h1", null, c.w), el("span", "pos", c.pos));
+  if (c.ipa) hr.append(el("span", "ipa", c.ipa));
+  if (canSpeak) { const sp = btn("say", "▸ say", () => speak(c.w)); sp.setAttribute("aria-label", "Say " + c.w); hr.append(sp); }
+  const zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese"); zb.style.marginLeft = "auto";
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); box.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  hr.append(zb); box.append(hr);
+  const mean = el("p", "mean zh", c.zh); mean.hidden = true; box.append(mean);
+  box.append(para(c.def, "def"));
+  const wc = creditLine([["Card", CREDITS?.cards]]); if (wc) box.append(wc);
+  box.append(sectionH("Examples"));
+  const ex = el("ul", "exs"); for (const e of c.ex) { const li = el("li"); const p = para(e); if (canSpeak) { const sp = btn("say", " ▸", ev => { ev.stopPropagation(); speak(e[0].replace(/<[^>]+>/g, "")); }); sp.setAttribute("aria-label", "Say this sentence"); p.insertBefore(sp, p.querySelector(".zh")); } li.append(p); ex.append(li); } box.append(ex);
+  if (c.coll?.length) { box.append(sectionH("Collocations")); const ul = el("ul", "colls"); for (const [en, zh] of c.coll) { const li = el("li", null, en); const z = el("span", "zh", zh); z.hidden = true; li.append(z); ul.append(li); } box.append(ul); }
+  const rows = [["Word family", c.family], ["Similar", c.syn], ["Opposite", c.ant], ["Don't confuse", c.confuse]].filter(r => r[1]?.length);
+  if (rows.length) {
+    box.append(sectionH("Related words"));
+    const net = el("div", "net");
+    for (const [k, xs] of rows) {
+      const r = el("div", "nrow"), v = el("div", "nv"); r.append(el("span", "nk sc", k), v);
+      for (const x of xs) {
+        const s = el("span", "nw"), linked = wordCard(x.w) && x.w !== c.w;
+        s.append(linked ? btn(null, x.w, () => nav(x.w)) : el("b", null, x.w));
+        if (x.pos) s.append(el("small", null, x.pos));
+        if (x.zh) { const z = el("small", "zh", x.zh); z.hidden = true; s.append(z); }
+        if (x.note) { const n = para(x.note, "nn"); s.append(n); }
+        v.append(s);
+      }
+      net.append(r);
+    }
+    box.append(net);
+  }
+  const its = (c.items || []).filter(id => BY[id]);
+  if (its.length) {
+    box.append(sectionH("In the questions"));
+    const ul = el("ul", "qlist"); for (const id of its.slice(0, 5)) { const it = BY[id]; ul.append(el("li", null, isGap(it) ? it.stem.replace("______", "_____") : stemText(it, 0))); } box.append(ul);
+    const p = el("p", "note"); p.append(btn("link", "Practise " + (its.length > 1 ? "these " + its.length : "this question"), () => startList(its, c.w))); box.append(p);
+  }
+  return box;
+}
+function openWordSheet(w, back = "Back to the question") {
+  const sh = $("#sheet"); sh.textContent = "";
+  const pg = el("div", "page"); head(pg, backTo(back, closeSheet)); pg.append(wordBody(w, x => openWordSheet(x, back)));
+  sh.append(pg); sh.hidden = false; sh.scrollTop = 0; document.body.style.overflow = "hidden";
+}
+
+// ================================================================ chapter lessons
+function chapterNo(u) { const g = UNITS[u].group, part = PARTS.find(p => p[0] === g); return { n: unitsIn(g).indexOf(u) + 1, part: part ? part[1] + " · " + part[2] : "" }; }
+function lessonBody(u, onStart) {
+  const L_ = DATA.lessons[u], box = el("div", "lesson");
+  const c = chapterNo(u); box.append(el("p", "chap sc", c.part + " · Chapter " + c.n), el("h1", null, unitName(u)));
+  const zt = el("div", "zhbar"), zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); box.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  zt.append(zb); box.append(zt);
+  box.append(para(L_.lead, "lead"));
+  const lc = creditLine([["Lesson", CREDITS?.lessons]]); if (lc) box.append(lc);
+  if (L_.steps?.length) { box.append(sectionH("How to work it")); const ol = el("ol", "steps"); for (const st of L_.steps) { const li = el("li"); li.append(para(st)); ol.append(li); } box.append(ol); }
+  if (L_.rules?.length) {
+    box.append(sectionH("Rules"));
+    for (const r of L_.rules) {
+      const d = el("div", "rule"); d.append(para(r.head, "rh"), para(r.body, "rb"));
+      const ul = el("ul", "exl"); for (const e of r.ex || []) { const li = el("li"); li.append(para(e)); ul.append(li); } d.append(ul); box.append(d);
+    }
+  }
+  if (L_.pairs?.length) {
+    box.append(sectionH("Right and wrong"));
+    for (const p of L_.pairs) {
+      const d = el("div", "pr"), ok = el("div", "ok"), no = el("div", "no");
+      ok.append(el("b", null, "✓"), el("span", null, p.right)); no.append(el("b", null, "✗"), el("span", null, p.wrong));
+      const w = para(p.why, "why"); d.append(ok, no, w); box.append(d);
+    }
+  }
+  for (const l of L_.lists || []) {
+    const d = el("div", "ls"); d.append(para(l.head, "lh"));
+    const ul = el("ul"); for (const [en, zh] of l.items) { const li = el("li"); li.innerHTML = en; const z = el("span", "zh", zh); z.hidden = true; li.append(z); ul.append(li); }
+    d.append(ul); box.append(d);
+  }
+  if (L_.traps?.length) { box.append(sectionH("Traps")); const ul = el("ul", "traps"); for (const t of L_.traps) { const li = el("li"); li.append(para(t)); ul.append(li); } box.append(ul); }
+  if (onStart) { const g = el("div", "go"); g.append(btn(null, "Start the questions →", onStart)); box.append(g); }
+  return box;
+}
+function lessonView(u) {
+  const app = show("lesson");
+  const start = () => startSet({ unit: u, n: 10, label: unitName(u) });
+  head(app, backTo("Contents", home), btn("skip", "Skip to the questions →", start));
+  app.append(lessonBody(u, start));
+}
+function openSheet(u) {
+  const sh = $("#sheet"); sh.textContent = "";
+  const pg = el("div", "page"); head(pg, backTo("Back to the question", closeSheet)); pg.append(lessonBody(u, null));
+  const g = el("div", "lesson"), gg = el("div", "go"); gg.append(btn(null, "Back to the question →", closeSheet)); g.append(gg); pg.append(g);
+  sh.append(pg); sh.hidden = false; sh.scrollTop = 0; document.body.style.overflow = "hidden";
+}
+function closeSheet() { $("#sheet").hidden = true; document.body.style.overflow = ""; }
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#sheet").hidden) closeSheet(); });
+
+// ================================================================ building a session
+let S = null;
+function newSession(cards, label, opts = {}) {
+  S = { id: "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), label, cards, i: 0, results: [], startedAt: Date.now(), review: !!opts.review, listenAt: opts.listenAt ?? -1 };
+  saveSession(); runCard();
+}
+function saveSession() { try { localStorage.setItem("toeic:current", JSON.stringify(S)); } catch {} }
+function loadSession() { try { const s = JSON.parse(localStorage.getItem("toeic:current") || "null"); return s && s.cards && s.i < s.cards.length && s.cards.every(c => BY[c.id]) ? s : null; } catch { return null; } }
+function clearSession() { try { localStorage.removeItem("toeic:current"); } catch {} }
+
+// never seen first, then seen longest ago; weak chapters come up earlier; items on the review shelf wait for review
+function pick(filter, n, countQs) {
+  const pool = ITEMS.filter(x => filter(x) && !qKeys(x).every(activeBank));
+  const scored = pool.map(x => {
+    const seen = Math.max(0, ...qKeys(x).map(k => P.seen[k] || 0));
+    const s = unitStat(x.unit), weak = s.n >= 3 && s.ok / s.n < WEAK;
+    return { x, score: (seen ? 1 : 0) * 1e13 + seen - (weak ? 7 * 864e5 : 0) + Math.random() * 36e5 };
+  }).sort((a, b) => a.score - b.score);
+  const out = []; let count = 0;
+  for (const { x } of scored) { if (count >= n) break; out.push(x); count += countQs ? qCount(x) : 1; }
+  return out;
+}
+function cardFor(x, qs) { return { id: x.id, qs: qs || (x.format === "gap" || x.format === "qr" ? [0] : x.questions.map((_, i) => i)) }; }
+function startSet({ type, unit, n, label }) {
+  const f = x => (type ? x.type === type : true) && (unit ? x.unit === unit : true);
+  const items = pick(f, n, type === "listen" || (unit && UNITS[unit]?.group === "listen"));
+  if (!items.length) { toast("Everything here is on your review shelf."); return; }
+  newSession(shuffle(items).map(x => cardFor(x)), label);
+}
+function startMixed() {
+  const g = pick(x => x.type === "grammar", 10), v = pick(x => x.type === "vocab", 6), l = pick(x => x.type === "listen", 4, true);
+  const gv = shuffle(g.concat(v));
+  newSession(gv.concat(l).map(x => cardFor(x)), "Mixed", { listenAt: l.length ? gv.length : -1 });
+}
+function startList(ids, label) { newSession(ids.filter(id => BY[id]).map(id => cardFor(BY[id])), label); }
+function startStarred() { const ids = Object.keys(M).filter(id => M[id] && M[id].starred && BY[id]); if (ids.length) startList(shuffle(ids), "Starred"); }
+function startReview(keys) {
+  const byItem = {};
+  for (const k of keys) { const x = qOf(k); if (!x) continue; (byItem[x.item.id] = byItem[x.item.id] || []).push(x.qi); }
+  newSession(shuffle(Object.entries(byItem).map(([id, qs]) => cardFor(BY[id], qs.sort()))), "Review", { review: true });
+}
+
+// ================================================================ explanations (English first, Chinese on request)
+function enOf(item, q) {
+  const src = q || item, e = src.en, x = src.explain || {};
+  if (e) return e;
+  return { point: [esc(x.point || ""), ""], why: [esc(x.why || ""), ""] };      // Claude-added items carry Chinese only
+}
+// an example sentence at the end of a usage line goes on its own line
+function exLine(h) { return String(h || "").replace(/\s*(例：)?<em>([A-Z][^<]*[.?!])<\/em>\s*$/, '<em class="exs">$2</em>'); }
+function para([en, zh], cls) {
+  const p = el("p", "para" + (cls ? " " + cls : "")); p.tabIndex = 0; p.innerHTML = en;
+  if (zh) { const z = el("span", "zh", zh); z.hidden = true; p.append(z); p.onclick = () => z.hidden = !z.hidden; p.onkeydown = ev => { if (ev.key === "Enter") z.hidden = !z.hidden; }; }
+  return p;
+}
+function glossify(text, gloss, used) {
+  let h = esc(text);
+  (gloss || []).forEach((g, gi) => {
+    if (used && used.has(gi)) return;
+    const re = new RegExp("(^|[^A-Za-z])(" + esc(g.w).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")(?![A-Za-z])");
+    if (re.test(h)) { h = h.replace(re, `$1<span class="gl" tabindex="0" data-g="${gi}">$2</span>`); used && used.add(gi); }
+  });
+  return h;
+}
+let tipItem = null;
+function tipFor(span) {
+  const g = (tipItem?.gloss || [])[Number(span.dataset.g)]; if (!g) return;
+  const t = $("#tip"), r = span.getBoundingClientRect();
+  t.innerHTML = `<div><span class="hw">${esc(g.hw)}</span><span class="pos">${esc(g.pos)}</span>${g.ipa ? `<span class="ipa">${esc(g.ipa)}</span>` : ""}</div><div class="mean">${esc(g.zh)}</div><div class="ex">${esc(g.ex)}</div>`;
+  const card = wordCard(g.card || g.hw);
+  if (card) { const m = el("div", "more"); m.append(btn(null, card.w === String(g.hw).toLowerCase() ? "Word card →" : "Word card: " + card.w + " →", () => { t.hidden = true; openWordSheet(card.w); })); t.append(m); }
+  t.hidden = false;
+  const w = t.offsetWidth, h = t.offsetHeight, vw = document.documentElement.clientWidth;
+  const x = Math.min(Math.max(16, r.left + r.width / 2 - w / 2), vw - w - 16);
+  // the on-screen place that hides the fewest other dotted words: under the word, above it, under or above its sentence
+  const hidden = top => [...document.querySelectorAll(".gl")].filter(o => { if (o === span) return false; const q = o.getBoundingClientRect(); return q.left < x + w && q.right > x && q.top < top + h && q.bottom > top; }).length;
+  const block = (span.closest("p, li") || span).getBoundingClientRect();
+  const floor = innerHeight - (($("#dock").hidden ? 0 : $("#dock").offsetHeight) + 8);
+  const spots = [r.bottom + 6, r.top - h - 6, block.bottom + 6, block.top - h - 6].filter(y => y > 8 && y + h < floor);
+  let top = r.bottom + 6, best = Infinity;
+  for (const y of spots) { const n = hidden(y); if (n < best) { best = n; top = y; } if (!n) break; }
+  t.style.left = (x + scrollX) + "px"; t.style.top = (top + scrollY) + "px";
+}
+document.addEventListener("click", e => { const g = e.target.closest(".gl"); if (g) tipFor(g); else if (!e.target.closest("#tip")) $("#tip").hidden = true; });
+document.addEventListener("focusin", e => { if (e.target.classList?.contains("gl")) tipFor(e.target); });
+
+// notes for one question: rule, how to see it, (vocabulary) how the other words are used
+function notesFor(item, q, chosen, order) {
+  const box = el("div", "ann"), e = enOf(item, q);
+  box.append(para(e.point, "point"), para(e.why));
+  if (isGap(item) && item.type === "vocab" && e.usage) {
+    const idx = item.options.map((_, i) => i).filter(i => i !== item.answer && e.usage[i]);
+    idx.sort((a, b) => (b === chosen) - (a === chosen) || order.indexOf(a) - order.indexOf(b));
+    for (const i of idx) { const r = el("div", "wr" + (i === chosen ? " mine" : "")); r.append(el("span", "w", item.options[i]), para(e.usage[i].map(exLine))); box.append(r); }
+  }
+  if (isGap(item)) { const t = el("p", "trans zh", item.explain?.zh || ""); t.hidden = true; box.append(t); }
+  return box;
+}
+const ICON = {
+  star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic fillable" d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>',
+  flag: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
+  book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M4 5.5C6.5 4.5 9.5 4.5 12 6c2.5-1.5 5.5-1.5 8-.5V19c-2.5-1-5.5-1-8 .5-2.5-1.5-5.5-1.5-8-.5zM12 6v13.5"/></svg>',
+  claude: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="spark" d="M12 3v6.2M12 14.8V21M3 12h6.2M14.8 12H21M5.6 5.6l4.3 4.3M14.1 14.1l4.3 4.3M18.4 5.6l-4.3 4.3M9.9 14.1l-4.3 4.3"/></svg>',
+};
+function tool(icon, label, cls) { const b = btn("tool" + (cls ? " " + cls : "")); b.innerHTML = (icon || "") + `<span class="lbl">${esc(label)}</span>`; return b; }
+function setLabel(b, t) { b.querySelector(".lbl").textContent = t; }
+function togglePanel(cls, make) {
+  const pn = $("#dkPanel"), open = pn.querySelector("." + cls);
+  pn.textContent = ""; if (open) return;
+  pn.append(make()); pn.querySelector("input")?.focus();
+}
+// The dock appears once a question is answered: star, report, grammar page, Ask Claude, 中, and Next.
+let dockCtx = {};
+// keep the bottom of the page readable above the dock, however tall the dock grows (Ask Claude, Report)
+try { new ResizeObserver(() => { const d = $("#dock"); document.documentElement.style.setProperty("--dockh", (d.hidden ? 0 : d.offsetHeight) + "px"); }).observe($("#dock")); } catch {}
+function dockFor(item, ctx) {
+  dockCtx = ctx;
+  const dk = $("#dock"), id = S.id + ":" + S.i;
+  if (dk.dataset.card === id) return;
+  dk.dataset.card = id; dk.hidden = false;
+  const tools = $("#dkTools"); tools.textContent = "";
+  const m = M[item.id] || {};
+  const star = tool(ICON.star, m.starred ? "Starred" : "Star"); star.setAttribute("aria-pressed", String(!!m.starred));
+  star.onclick = () => { const on = !(M[item.id] || {}).starred; M[item.id] = Object.assign(M[item.id] || {}, { starred: on }); saveMark(item.id); setLabel(star, on ? "Starred" : "Star"); star.setAttribute("aria-pressed", String(on)); };
+  keys.star = () => star.click();
+  const rep = tool(ICON.flag, m.flagged ? "Reported" : "Report"); rep.setAttribute("aria-pressed", String(!!m.flagged));
+  rep.onclick = () => togglePanel("report", () => reportForm(item, rep));
+  tools.append(star, rep);
+  if (DATA.lessons?.[item.unit]) { const lb = tool(ICON.book, "Lesson"); lb.onclick = () => openSheet(item.unit); tools.append(lb); }
+  if (sample) { const ab = tool(ICON.claude, "Ask Claude", "claude"); ab.onclick = () => togglePanel("ask", () => askForm(item, dockCtx)); tools.append(ab); }
+  const zb = tool("", "中", "zht"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); document.querySelectorAll("#session .rightp .zh").forEach(z => z.hidden = !on); };
+  tools.append(zb);
+}
+function footFor(item, box, ctx) {
+  const foot = el("div", "foot sc"), fl = el("span", "fl");
+  if (DATA.lessons?.[item.unit]) fl.append(btn(null, "Lesson", () => openSheet(item.unit)));
+  const m = M[item.id] || {};
+  const star = btn(null, m.starred ? "Starred" : "Star"); star.setAttribute("aria-pressed", String(!!m.starred));
+  star.onclick = () => { M[item.id] = Object.assign(M[item.id] || {}, { starred: !(M[item.id] || {}).starred }); saveMark(item.id); star.textContent = M[item.id].starred ? "Starred" : "Star"; star.setAttribute("aria-pressed", String(M[item.id].starred)); };
+  keys.star = () => star.click();
+  const rep = btn(null, m.flagged ? "Reported" : "Report a problem"); rep.onclick = () => toggleForm(box, "report", () => reportForm(item, rep));
+  fl.append(star, rep);
+  if (sample) { const ab = btn(null); ab.innerHTML = ICON.claude.replace("<svg ", '<svg class="claude-ic" ') + "Ask Claude"; ab.onclick = () => toggleForm(box, "ask", () => askForm(item, ctx)); fl.append(ab); }
+  const zb = btn("zhb", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); (ctx.zhScope || box).querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  foot.append(fl, zb);
+  return foot;
+}
+function toggleForm(box, cls, make) { const f = box.querySelector("." + cls); if (f) { f.remove(); return; } box.append(make()); box.querySelector("." + cls + " input")?.focus(); }
+function reportForm(item, repBtn) {
+  const f = el("div", "report"), inp = el("input"); inp.id = "report-" + item.id; inp.placeholder = "What's wrong with this question?"; inp.value = (M[item.id] || {}).flagNote || "";
+  const send = () => { M[item.id] = Object.assign(M[item.id] || {}, { flagged: true, flagNote: inp.value.trim() }); saveMark(item.id); if (repBtn.querySelector(".lbl")) { setLabel(repBtn, "Reported"); repBtn.setAttribute("aria-pressed", "true"); } else repBtn.textContent = "Reported"; f.remove(); toast("Noted."); };
+  inp.onkeydown = e => { if (e.key === "Enter" && !typing(e)) send(); };
+  f.append(inp, btn(null, "Send", send)); return f;
+}
+
+// Enter that confirms an input-method candidate (Chinese typing) is not a send
+const typing = e => e.isComposing || e.keyCode === 229;
+// Ask Claude: the strongest tier the viewer's plan allows; shown only when the page may use Claude
+let sample = null;
+function askForm(item, ctx) {
+  const f = el("div", "ask"), inp = el("input"), go = btn(null, "Ask"), out = el("p", "askOut"); out.hidden = true;
+  inp.id = "ask-" + item.id + "-" + (ctx.qi || 0); inp.placeholder = isGap(item) ? "Why not B?" : "What did she say about the delivery?"; inp.autocomplete = "off";
+  const run = async () => {
+    const q = inp.value.trim(); if (!q || go.disabled || !sample) return;
+    go.disabled = true; out.hidden = false; out.textContent = "Thinking…";
+    const strip = s => String(s || "").replace(/<[^>]+>/g, "");
+    const data = isGap(item)
+      ? { stem: item.stem, options: item.options, key: item.options[item.answer], rule: strip(enOf(item).point[0]), explanation: strip(enOf(item).why[0]) }
+      : { transcript: item.audio.lines.map(l => l.who + ": " + l.text), question: item.questions[ctx.qi].q, options: item.format === "qr" ? item.audio.lines.slice(1).map(l => l.text) : item.questions[ctx.qi].options, key: item.questions[ctx.qi].answer };
+    const prompt = [
+      "You are a TOEIC tutor. A Taiwanese learner just answered this practice question and has a follow-up. Answer in the language of the question; if it is English, use plain, simple English. At most three sentences. Answer only what was asked. Do not overturn the answer key; if you think the key is wrong, say the item may be disputed and why, and suggest using 'Report a problem'.",
+      "Question: " + JSON.stringify(data),
+      "Learner picked: " + (ctx.chosenText || "I'm not sure"),
+      "Learner asks: " + q,
+    ].join("\n");
+    try {
+      const r = await sample(prompt, { modelTier: "complex", cache: false, onText: ({ text }) => { out.textContent = text; } });
+      if (r && r.modelTierApplied && r.modelTierApplied !== "complex") out.textContent += "\n(answered by a lighter model; your plan didn't allow the strongest one)";
+    } catch (e) {
+      out.textContent = e?.text || (e?.code === "rate_limited" ? "Claude is busy. Try again in a minute." : "That didn't go through. Try again.");
+      if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) sample = null;
+    }
+    go.disabled = false;
+  };
+  go.onclick = run; inp.onkeydown = e => { if (e.key === "Enter" && !typing(e)) run(); };
+  f.append(inp, go, out); return f;
+}
+
+// ================================================================ one card
+let paceTimer = null;
+function sizeControl() {
+  const sz = el("span", "sz"), dn = btn("s1", "A"), up = btn("s2", "A");
+  dn.setAttribute("aria-label", "Smaller text"); up.setAttribute("aria-label", "Larger text");
+  const set = d => { P.settings.size = Math.max(0, Math.min(SIZES.length - 1, (P.settings.size ?? 1) + d)); $("#session").style.setProperty("--fs", SIZES[P.settings.size] + "px"); dn.disabled = P.settings.size === 0; up.disabled = P.settings.size === SIZES.length - 1; if (d) saveProfile(); };
+  dn.onclick = () => set(-1); up.onclick = () => set(1); set(0);
+  sz.append(dn, up); return sz;
+}
+function runCard() {
+  for (const k of Object.keys(keys)) delete keys[k];
+  if (S.i >= S.cards.length) return summary();
+  const ses = show("session");
+  const card = S.cards[S.i], item = BY[card.id];
+  tipItem = item;
+  const tools = el("span", "tools");
+  const snd = btn(null, P.settings.sound ? "sound on" : "sound off", () => { P.settings.sound = !P.settings.sound; snd.textContent = P.settings.sound ? "sound on" : "sound off"; saveProfile(); });
+  tools.append(sizeControl(), snd, el("span", "pg", (S.i + 1) + " / " + S.cards.length));
+  head(ses, backTo(S.label === unitName(item.unit) ? S.label : S.label + " · " + unitName(item.unit), () => { saveSession(); home(); }), tools);
+  const left = el("div", "leftp"), right = el("div", "rightp");
+  ses.append(left, right);
+  if (S.listenAt === S.i) left.append(el("p", "cue sc", "Listening from here on. Headphones on."));
+  if (item.source !== "hand") left.append(el("p", "mark sc", "Written by Claude · not reviewed"));
+  if (isGap(item)) gapCard(left, right, item); else listenCard(left, right, item, card);
+}
+function optionOrder(item, qi, sid) { const n = isGap(item) ? item.options.length : item.questions[qi].options.length; const idx = [...Array(n).keys()]; return sid ? shuffle(idx, seeded(hash(item.id + ":" + qi + ":" + sid))) : idx; }
+function markOptions(buttons, answer, chosen) {
+  for (const b of buttons) {
+    b.disabled = true; const x = Number(b.dataset.oi);
+    if (x === answer) { b.classList.add("right"); b.querySelector(".l").insertAdjacentHTML("beforeend", CIRCLE); }
+    else if (x === chosen) b.classList.add("picked-wrong");
+    else b.classList.add("dim");
+    b.classList.remove("now");
+  }
+}
+
+function gapCard(left, right, item) {
+  const [a, b] = item.stem.split("______");
+  const stem = el("p", "stem"); left.append(stem);
+  const paint = filled => { stem.innerHTML = (filled ? glossify(a, item.gloss) : esc(a)) + `<span class="blank">${filled ? esc(item.options[item.answer]) : "&nbsp;"}</span>` + (filled ? glossify(b, item.gloss) : esc(b)); };
+  paint(false);
+  const pace = P.settings.pace; let bar_ = null;
+  if (pace) { bar_ = el("div", "pace"); bar_.append(el("i")); left.append(bar_); }
+  const order = optionOrder(item, 0, S.id), ol = el("ol", "opts"), buttons = [];
+  order.forEach((oi, pos) => {
+    const li = el("li"), bt = btn("opt"); bt.innerHTML = `<span class="l">${L[pos]}</span><span class="w">${esc(item.options[oi])}</span>`;
+    bt.dataset.oi = oi; bt.onclick = () => answer(oi); li.append(bt); ol.append(li); buttons.push(bt);
+  });
+  const un = el("div", "unsure"), ub = btn(null, "I'm not sure", () => answer(-1)); un.append(ub);
+  left.append(ol, un);
+  const t0 = performance.now();
+  if (pace) paceTimer = setInterval(() => { const l = 1 - (performance.now() - t0) / (pace * 1000); bar_.firstChild.style.width = Math.max(0, l * 100) + "%"; if (l <= 0) { bar_.classList.add("over"); clearInterval(paceTimer); } }, 200);
+  keys.answer = pos => buttons[pos] && !buttons[pos].disabled && buttons[pos].click();
+  keys.unsure = () => !ub.hidden && ub.click();
+  function answer(oi) {
+    clearInterval(paceTimer);
+    const ms = performance.now() - t0, ok = oi === item.answer, unsure = oi < 0;
+    markOptions(buttons, item.answer, oi); un.hidden = true;
+    if (!unsure) tone(ok);
+    paint(true);
+    record(item, 0, oi, ok, unsure, unsure ? null : ms, pace && !unsure ? ms > pace * 1000 : false);
+    const box = notesFor(item, null, oi, order);
+    right.append(box);
+    const cr = creditLine([["Question", CREDITS?.q?.[item.id]], ["Notes", CREDITS?.en?.[item.id]]]); if (cr) right.append(cr);
+    dockFor(item, { chosenText: unsure ? null : item.options[oi] });
+    nextLink();
+  }
+}
+
+function listenCard(left, right, item, card) {
+  const strict = P.settings.strictListen, qr = item.format === "qr";
+  const player = el("div", "player"), play = btn("play", "▸ Play"), state = el("span", "state"), speed = el("span", "speed");
+  for (const v of [0.85, 1, 1.15]) { const b = btn(null, v + "×"); b.setAttribute("aria-pressed", String(P.settings.listenSpeed === v)); b.onclick = () => { P.settings.listenSpeed = v; au.playbackRate = v; saveProfile(); speed.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b))); }; speed.append(b); }
+  player.append(play, state, speed); left.append(player);
+  if (item.graphic) left.append(graphicTable(item.graphic));
+  state.textContent = qr ? "A question, then three responses." : "You can read the questions while you listen.";
+  if (strict) state.textContent += " One play only.";
+  let played = false, playing = false, answeredAll = false, qrButtons = [];
+  const all = item.audio.lines.map((_, i) => i), qs = card.qs, done = {}, blocks = [];
+  async function run() {
+    if (playing) { stopAudio(); return; }
+    if (strict && played && !answeredAll) return;
+    playing = true; play.textContent = "■ Stop";
+    const ok = await playLines(item, all, item.audio.gapMs || 600, i => {
+      if (qr) qrButtons.forEach((b, k) => b.classList.toggle("now", i === k + 1));
+      state.textContent = i < 0 ? "" : qr ? (i === 0 ? "Question" : "Response " + L[i - 1]) : "Line " + (i + 1) + " of " + all.length;
+    });
+    playing = false; play.textContent = "▸ Play again";
+    if (ok === false) state.textContent = "Some audio didn't load. Try again.";
+    else if (ok) state.textContent = "";
+    if (ok !== null || !strict) { played = true; qrButtons.forEach(b => { if (!b.dataset.done) b.disabled = false; }); }
+    if (strict && !answeredAll && ok !== false) play.disabled = true;
+  }
+  play.onclick = run;
+  keys.replay = () => !play.disabled && run();
+  for (const qi of qs) {
+    const q = item.questions[qi], blk = el("div", qr ? "qr" : "");
+    if (!qr) { const p = el("p", "lq"); p.append(el("span", "n", qs.length > 1 ? (qs.indexOf(qi) + 1) + "." : ""), q.q); blk.append(p); }
+    const order = qr ? [0, 1, 2] : optionOrder(item, qi, S.id), ol = el("ol", "opts"), buttons = [];
+    order.forEach((oi, pos) => {
+      const li = el("li"), bt = btn("opt"); bt.innerHTML = `<span class="l">${L[pos]}</span>` + (qr ? "" : `<span class="w">${esc(q.options[oi])}</span>`);
+      bt.dataset.oi = oi; bt.onclick = () => answerQ(oi); if (qr) bt.disabled = true; li.append(bt); ol.append(li); buttons.push(bt);
+    });
+    if (qr) qrButtons = buttons;
+    const un = el("div", "unsure"), ub = btn(null, "I'm not sure", () => answerQ(-1)); un.append(ub);
+    blk.append(ol, un); left.append(blk);
+    blocks.push({ qi, buttons, ub });
+    function answerQ(oi) {
+      if (done[qi] != null) return;
+      done[qi] = oi;
+      const ok = oi === q.answer, unsure = oi < 0;
+      markOptions(buttons, q.answer, oi); buttons.forEach(b => b.dataset.done = "1"); un.hidden = true;
+      if (!unsure) tone(ok);
+      record(item, qi, oi, ok, unsure, null, false);
+      const box = notesFor(item, q, oi, order);
+      if (qs.length > 1) box.prepend(el("p", "qn sc", "Question " + (qs.indexOf(qi) + 1)));
+      const optText = i => qr ? item.audio.lines[i + 1].text : q.options[i];
+      right.append(box);
+      dockFor(item, { qi, chosenText: unsure ? null : optText(oi) });
+      if (Object.keys(done).length === qs.length) finishListen();
+    }
+  }
+  keys.answer = pos => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.buttons[pos] && !nb.buttons[pos].disabled && nb.buttons[pos].click(); };
+  keys.unsure = () => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.ub.click(); };
+  function finishListen() {
+    answeredAll = true; play.disabled = false;
+    const ev = new Set(qs.flatMap(qi => item.questions[qi].explain?.evidence || []));
+    const wrap = el("div", "ann"); wrap.append(el("p", "qn sc", "Transcript"));
+    const ul = el("ol", "script"), used = new Set();
+    item.audio.lines.forEach((ln, i) => {
+      const li = el("li", ev.has(i) ? "ev" : "");
+      const t = el("span", "t"); t.innerHTML = glossify(ln.text, item.gloss, used);
+      const z = el("span", "zh", (item.transcriptZh || [])[i] || ""); z.hidden = true; t.append(z);
+      const rp = btn("rp", "▸"); rp.setAttribute("aria-label", "Play this line"); rp.onclick = () => playLines(item, [i], 0);
+      li.append(el("span", "who sc", qr ? (i === 0 ? "Q" : L[i - 1]) : ln.who), t, rp); ul.append(li);
+    });
+    wrap.append(ul); right.append(wrap);
+    const cr = creditLine([["Questions", CREDITS?.q?.[item.id]], ["Notes", CREDITS?.en?.[item.id]]]); if (cr) right.append(cr);
+    nextLink();
+  }
+}
+function graphicTable(g) {
+  const box = el("div", "graphic"), t = el("table");
+  if (g.caption) t.append(el("caption", null, g.caption));
+  const hr = el("tr"); for (const h of g.head || []) hr.append(el("th", null, h)); const th = el("thead"); th.append(hr); t.append(th);
+  const tb = el("tbody"); for (const r of g.rows || []) { const tr = el("tr"); for (const c of r) tr.append(el("td", null, c)); tb.append(tr); } t.append(tb);
+  box.append(t); return box;
+}
+
+// ================================================================ recording an answer (chosen -1 = "I'm not sure")
+function record(item, qi, chosen, ok, unsure, ms, timedOut) {
+  const key = qKeys(item)[isGap(item) || item.format === "qr" ? 0 : qi];
+  const res = { key, id: item.id, qi, unit: item.unit, type: item.type, chosen, ok, unsure, ms, timedOut, v: item.v || 1, source: item.source };
+  S.results.push(res);
+  P.seen[key] = Date.now();
+  const u = P.units[item.unit] = unitStat(item.unit); P.units[item.unit] = u;
+  u.n++; if (ok) u.ok++; if (unsure) u.unsure++; if (ms != null) { u.msSum += ms; u.msN++; }
+  P.totals.n++; if (ok) P.totals.ok++; if (unsure) P.totals.unsure++;
+  const now = Date.now(), e = B[key];
+  const hist = { at: now, ok, chosen, unsure };
+  if (e && !e.graduatedAt && !e.removedAt) {
+    if (ok) { if (e.level >= 3) { e.graduatedAt = now; res.graduated = true; } else { e.level++; e.due = addDays(INTERVALS[e.level]); } }
+    else { e.level = 0; e.due = addDays(INTERVALS[0]); if (!unsure) e.wrongCount = (e.wrongCount || 0) + 1; res.banked = true; }
+    e.lastAt = now; e.v = res.v; e.history = (e.history || []).concat(hist).slice(-10);
+    res.review = true; saveBank(key);
+  } else if (!ok) {
+    B[key] = { reason: unsure ? "unsure" : "wrong", level: 0, due: addDays(INTERVALS[0]), wrongCount: unsure ? 0 : 1, enteredAt: now, lastAt: now, v: res.v, history: [hist] };
+    res.banked = true; saveBank(key);
+  }
+  saveSession(); saveProfile();
+  if (S.results.length % 5 === 0) saveAttempt(false);
+  return res;
+}
+function saveAttempt(final) {
+  const r = S.results;
+  return Store.put("toeic_attempts", S.id, { startedAt: S.startedAt, endedAt: final ? Date.now() : null, mode: S.label, items: r.map(x => ({ id: x.key, ok: x.ok, chosen: x.chosen, unsure: !!x.unsure, ms: x.ms == null ? null : Math.round(x.ms), timedOut: x.timedOut, v: x.v })), summary: { n: r.length, ok: r.filter(x => x.ok).length } });
+}
+function nextLink() {
+  const b = btn(null, S.i + 1 < S.cards.length ? "Next →" : "Finish →", () => { S.i++; saveSession(); runCard(); });
+  $("#dkNext").textContent = ""; $("#dkNext").append(b);
+  keys.next = () => b.click();
+}
+
+// ================================================================ end of a set
+function summary() {
+  const app = show("summary");
+  clearSession();
+  const r = S.results, t = day();
+  if (P.streak.lastDay !== t) { P.streak.days = P.streak.lastDay === addDays(-1) ? P.streak.days + 1 : 1; P.streak.lastDay = t; }
+  saveProfile(); saveAttempt(true);
+  head(app, backTo("Contents", home));
+  app.append(el("h1", "small", S.label));
+  const ok = r.filter(x => x.ok).length, sc = el("p", "score"); sc.append(ok + " of " + r.length, el("small", null, Math.max(1, Math.round((Date.now() - S.startedAt) / 60000)) + " min"));
+  app.append(sc);
+  const wrong = r.filter(x => !x.ok && !x.unsure), unsure = r.filter(x => x.unsure);
+  if (wrong.length) { app.append(sectionH("Wrong")); app.append(resultList(wrong)); }
+  if (unsure.length) { app.append(sectionH("Not sure")); app.append(resultList(unsure)); }
+  const again = wrong.concat(unsure), p = el("p", "note");
+  if (again.length) p.append(btn("link", "Practise these again", () => { const cards = {}; for (const x of again) (cards[x.id] = cards[x.id] || []).push(x.qi); newSession(Object.entries(cards).map(([id, qs]) => cardFor(BY[id], qs)), "Again"); }), "  ·  ");
+  p.append(btn("link", "Contents", home)); app.append(p);
+}
+function sectionH(t) { const h = el("h3"); h.append(el("span", "sc", t)); return h; }
+function resultList(rs) { const ul = el("ul", "list"); for (const x of rs) { const item = BY[x.id]; if (item) ul.append(itemRow(item, x.qi, { chosen: x.chosen, meta: unitName(item.unit) })); } return ul; }
+function stemText(item, qi) {
+  if (isGap(item)) return item.stem.replace("______", item.options[item.answer]);
+  if (item.format === "qr") return item.audio.lines[0].text;
+  return item.questions[qi].q;
+}
+function itemRow(item, qi, { chosen, meta, bankKey }) {
+  const li = el("li"), hd = btn("hd"), body = el("div", "body"); body.hidden = true;
+  hd.append(el("span", "s", stemText(item, qi)), el("span", "m", meta || ""));
+  hd.onclick = () => { body.hidden = !body.hidden; if (!body.hidden && !body.childNodes.length) fillRow(body, item, qi, chosen, bankKey); };
+  li.append(hd, body); return li;
+}
+function fillRow(body, item, qi, chosen, bankKey) {
+  tipItem = item;
+  const q = isGap(item) ? null : item.questions[qi];
+  if (!isGap(item)) {
+    const ans = item.format === "qr" ? item.audio.lines[q.answer + 1].text : q.options[q.answer];
+    const p = el("p", "quiet"); p.innerHTML = `<em>${esc(ans)}</em>`; body.append(p);
+  }
+  const box = notesFor(item, q, chosen ?? -1, isGap(item) ? optionOrder(item, 0) : [0, 1, 2, 3]);
+  box.append(footFor(item, box, { qi, chosenText: null }));
+  body.append(box);
+  const n = el("div", "notes"), ta = el("textarea"); ta.id = "note-" + item.id + "-" + qi; ta.placeholder = "Your notes"; ta.value = (M[item.id] || {}).note || "";
+  let t = null; ta.oninput = () => { clearTimeout(t); t = setTimeout(() => { M[item.id] = Object.assign(M[item.id] || {}, { note: ta.value }); saveMark(item.id); }, 1000); };
+  n.append(ta); body.append(n);
+  if (bankKey && activeBank(bankKey)) body.append(btn("link small", "Take off the shelf", ev => { B[bankKey].removedAt = Date.now(); saveBank(bankKey); ev.target.replaceWith(el("span", "small faint", "Taken off. It's still under All.")); }));
+}
+
+// ================================================================ review shelf
+let bankFilter = "due", bankGroup = "unit", bankQuery = "";
+function bankView() {
+  const app = show("bank");
+  head(app, backTo("Contents", home));
+  app.append(el("h1", "small", "Review shelf"));
+  const tabs = el("div", "tabs sc");
+  for (const [k, t] of [["due", "Due"], ["all", "All"], ["unsure", "Not sure"], ["grad", "Learned"]]) { const c = btn(null, t, () => { bankFilter = k; bankView(); }); c.setAttribute("aria-pressed", String(bankFilter === k)); tabs.append(c); }
+  const by = el("span", "faint"); by.style.marginLeft = "auto"; by.append("by ");
+  for (const [k, t] of [["unit", "chapter"], ["date", "date"]]) { const c = btn(null, t, () => { bankGroup = k; bankView(); }); c.setAttribute("aria-pressed", String(bankGroup === k)); by.append(c, " "); }
+  tabs.append(by); app.append(tabs);
+  const s = el("input", "search"); s.type = "search"; s.id = "bank-search"; s.placeholder = "Search questions, notes, chapters"; s.value = bankQuery;
+  const host = el("div"); app.append(s, host);
+  const render = () => {
+    host.textContent = "";
+    const t = day(), q = bankQuery.toLowerCase();
+    let ks = Object.keys(B).filter(k => qOf(k)).filter(k => { const e = B[k];
+      if (bankFilter === "due") return !e.graduatedAt && !e.removedAt && e.due <= t;
+      if (bankFilter === "unsure") return !e.graduatedAt && !e.removedAt && (e.reason === "unsure" || e.reason === "guess");
+      if (bankFilter === "grad") return !!e.graduatedAt;
+      return true; });
+    if (q) ks = ks.filter(k => { const { item, qi } = qOf(k); return (stemText(item, qi) + " " + ((M[item.id] || {}).note || "") + " " + unitName(item.unit)).toLowerCase().includes(q); });
+    if (!ks.length) { host.append(el("p", "empty", bankFilter === "due" ? "Nothing due today." : "Nothing here.")); return; }
+    if (bankFilter === "due") { const p = el("p", "note"); p.append(btn("link", "Review these " + ks.length, () => startReview(ks))); host.append(p); }
+    const rowFor = k => { const { item, qi } = qOf(k), e = B[k];
+      const meta = e.graduatedAt ? "learned" : e.removedAt ? "off the shelf" : "next " + shortDay(e.due);
+      return itemRow(item, qi, { meta: bankGroup === "date" ? unitName(item.unit) + " · " + meta : meta, bankKey: k, chosen: -1 }); };
+    if (bankGroup === "date") { const ul = el("ul", "list"); ks.sort((a, b) => B[b].enteredAt - B[a].enteredAt).forEach(k => ul.append(rowFor(k))); host.append(ul); }
+    else {
+      const groups = {}; for (const k of ks) (groups[unitOfKey(k)] = groups[unitOfKey(k)] || []).push(k);
+      for (const [u, g] of Object.entries(groups).sort((a, b) => b[1].length - a[1].length)) {
+        host.append(el("p", "grp", unitName(u) + " · " + g.length));
+        const ul = el("ul", "list"); g.forEach(k => ul.append(rowFor(k))); host.append(ul);
+      }
+    }
+  };
+  s.oninput = () => { bankQuery = s.value; render(); };
+  render();
+}
+
+// ================================================================ statistics
+function statsView() {
+  const app = show("stats");
+  head(app, backTo("Contents", home));
+  app.append(el("h1", "small", "Statistics"));
+  const t = P.totals, sc = el("p", "score"); sc.append(pct(t.ok, t.n), el("small", null, "right of " + t.n + " answered"));
+  app.append(sc);
+  const line = [];
+  if (t.unsure) line.push(t.unsure + " marked not sure");
+  if (P.streak.days) line.push(P.streak.days + (P.streak.days > 1 ? " days" : " day") + " in a row");
+  if (line.length) app.append(el("p", "quiet small", line.join(" · ")));
+  for (const [g, part, title] of PARTS) {
+    const us = unitsIn(g); if (!us.length) continue;
+    app.append(sectionH(title));
+    const w = el("div", "tblwrap"), table = el("table", "stat");
+    table.innerHTML = "<thead><tr><th>Chapter</th><th>Answered</th><th>Right</th><th>Not sure</th><th>Avg</th></tr></thead>";
+    const body = el("tbody");
+    for (const u of us) { const s = unitStat(u), tr = el("tr"); tr.append(el("td", null, unitName(u)), el("td", null, String(s.n)), el("td", null, pct(s.ok, s.n)), el("td", null, String(s.unsure)), el("td", null, s.msN ? fmtS(s.msSum / s.msN) : "–")); body.append(tr); }
+    table.append(body); w.append(table); app.append(w);
+  }
+}
+
+// ================================================================ settings
+function settingsView() {
+  const app = show("settings");
+  head(app, backTo("Contents", home));
+  app.append(el("h1", "small", "Settings"));
+  const box = el("div"); box.style.marginTop = "1.2em";
+  const set = (label, desc, control) => { const d = el("div", "set"), l = el("label", null, label); if (control.id) l.htmlFor = control.id; d.append(l, control); if (desc) d.append(el("p", null, desc)); box.append(d); };
+  const pace = el("select"); pace.id = "set-pace";
+  for (const [v, t] of [[0, "Off"], [20, "20 s"], [30, "30 s"], [45, "45 s"]]) { const o = el("option", null, t); o.value = v; if (P.settings.pace === v) o.selected = true; pace.append(o); }
+  pace.onchange = () => { P.settings.pace = Number(pace.value); saveProfile(); };
+  set("Pace line", "A thin line under grammar and vocabulary questions that runs out after this many seconds. Nothing happens when it does.", pace);
+  const strict = el("input"); strict.type = "checkbox"; strict.id = "set-strict"; strict.checked = P.settings.strictListen;
+  strict.onchange = () => { P.settings.strictListen = strict.checked; saveProfile(); };
+  set("One play only", "Listening audio plays once, as in the test. You can replay it after answering.", strict);
+  const snd = el("input"); snd.type = "checkbox"; snd.id = "set-sound"; snd.checked = P.settings.sound;
+  snd.onchange = () => { P.settings.sound = snd.checked; saveProfile(); };
+  set("Answer sound", null, snd);
+  const theme = el("select"); theme.id = "set-theme";
+  for (const [v, t] of [["system", "System"], ["light", "Light"], ["dark", "Dark"]]) { const o = el("option", null, t); o.value = v; if (P.settings.theme === v) o.selected = true; theme.append(o); }
+  theme.onchange = () => { P.settings.theme = theme.value; applyTheme(); saveProfile(); };
+  set("Appearance", null, theme);
+  if (CREDITS) {
+    const cr = el("input"); cr.type = "checkbox"; cr.id = "set-credits"; cr.checked = P.settings.credits !== false;
+    cr.onchange = () => { P.settings.credits = cr.checked; saveProfile(); };
+    set("Show who wrote each part", "A small label on questions, notes, lessons, stories and word cards, from the labels saved with your account.", cr);
+  }
+  app.append(box);
+  const info = el("div", "small quiet"); info.style.marginTop = "2em";
+  info.append(el("p", null, "Saved " + (Store.mode === "db" ? "to your claude.ai account, so your phone and computer share it." : "in this browser only.")),
+    el("p", null, "Every question is original, not from a past test: " + DATA.items.length + " in all. The listening voices are synthetic American and British speakers; the real test also uses Australian and Canadian accents."),
+    el("p", null, "Keys on a computer: 1–4 or A–D to answer, N for not sure, Enter for next, R to replay, S to star."));
+  app.append(info);
+}
+
+// ================================================================ keyboard (desktop)
+const keys = {};
+document.addEventListener("keydown", e => {
+  if (view !== "session" || e.target.closest("textarea,input,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  const pos = "1234".indexOf(k) >= 0 ? "1234".indexOf(k) : "abcd".indexOf(k);
+  if (pos >= 0 && keys.answer) { keys.answer(pos); e.preventDefault(); }
+  else if (k === "enter" && keys.next) { keys.next(); e.preventDefault(); }
+  else if (k === "n" && keys.unsure) keys.unsure();
+  else if (k === "r" && keys.replay) keys.replay();
+  else if (k === "s" && keys.star) keys.star();
+});
+
+// ================================================================ start
+(async () => {
+  $("#app").append(el("p", "empty", "Loading…"));
+  await load();
+  home();
+  if (window.claude?.use) claude.use("sample").then(s => { sample = s || null; }).catch(() => {});
+})();
+</script>

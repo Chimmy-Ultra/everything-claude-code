@@ -1,0 +1,127 @@
+{
+  "l-qr-13": {
+    "q": [{
+      "point": ["An indirect answer: no one needs to cover.", "間接回答：根本不需要人代。"],
+      "why": ["The question asks who will cover for Daniel. <em>Their offices are closed that whole week anyway</em> means the client is closed, so nobody has to cover.", "問 Daniel 不在時誰接手。回答 Their offices are closed that whole week anyway，表示客戶那週休息，不需要人代。"]
+    }],
+    "gloss": [
+      {"w": "cover", "hw": "cover", "pos": "v.", "zh": "代理、暫時接手", "ex": "Can you cover my shift on Friday?"},
+      {"w": "account", "hw": "account", "pos": "n.", "zh": "客戶（業務）", "ex": "She manages three large accounts."},
+      {"w": "anyway", "hw": "anyway", "pos": "adv.", "zh": "反正、無論如何", "ex": "The store is closed on Monday anyway."}
+    ]
+  },
+  "l-qr-14": {
+    "q": [{
+      "point": ["A request answered indirectly: someone else will do it.", "請求句的間接回答：會有別人來做。"],
+      "why": ["He asks her to mail the lease <em>before you leave</em>. <em>His assistant is coming by to pick it up at noon</em> means no mailing is needed.", "問句要她出發前寄租約。回答 His assistant is coming by to pick it up at noon，表示不必寄了。"]
+    }],
+    "gloss": [
+      {"w": "lease", "hw": "lease", "pos": "n.", "zh": "租約", "ex": "We signed a one-year lease on the office."},
+      {"w": "landlord", "hw": "landlord", "pos": "n.", "zh": "房東", "ex": "The landlord will repair the heater."},
+      {"w": "coming by", "hw": "come by", "pos": "phr.", "zh": "順道過來", "ex": "Please come by my office after lunch."}
+    ]
+  },
+  "l-qr-15": {
+    "q": [{
+      "point": ["A statement: the reply offers a way to fix the problem.", "敘述句：回應主動提出解決辦法。"],
+      "why": ["<em>still haven't arrived</em> states a problem. <em>Should I give the sign company a call?</em> offers to chase the late banners.", "說布條 still haven't arrived 是個問題。回答 Should I give the sign company a call? 是提議去催布條。"]
+    }],
+    "gloss": [
+      {"w": "banners", "hw": "banner", "pos": "n.", "zh": "布條、橫幅", "ex": "The banner hangs above the main entrance."},
+      {"w": "open house", "hw": "open house", "pos": "phr.", "zh": "開放參觀日", "ex": "Our open house starts at ten."},
+      {"w": "hang", "hw": "hang", "pos": "v.", "zh": "懸掛", "ex": "Please hang the poster by the door."}
+    ]
+  },
+  "l-qr-16": {
+    "q": [{
+      "point": ["A choice question: the answer can be \"not decided yet.\"", "選擇疑問句：回答可以是「還不能決定」。"],
+      "why": ["The question asks cafeteria or restaurant <em>now that the budget's been cut</em>. <em>Finance hasn't told us how much we can spend yet</em> means the choice cannot be made yet.", "問句要在員工餐廳或餐廳二選一。回答 Finance hasn't told us how much we can spend yet，表示現在還無法決定。"]
+    }],
+    "gloss": [
+      {"w": "retirement", "hw": "retirement", "pos": "n.", "zh": "退休", "ex": "Her retirement party is next Friday."},
+      {"w": "cafeteria", "hw": "cafeteria", "pos": "n.", "zh": "員工餐廳", "ex": "We eat lunch in the cafeteria."},
+      {"w": "budget", "hw": "budget", "pos": "n.", "zh": "預算", "ex": "The budget for travel was reduced."}
+    ]
+  },
+  "l-qr-17": {
+    "q": [{
+      "point": ["<em>How long</em> asks for a length of time.", "How long 問的是一段時間長度。"],
+      "why": ["The question asks how long the network will be down. <em>Probably most of Saturday</em> gives the length of the shutdown.", "問網路要停多久。回答 Probably most of Saturday，直接給出停機的長度。"]
+    }],
+    "gloss": [
+      {"w": "network", "hw": "network", "pos": "n.", "zh": "網路", "ex": "The office network is very slow today."},
+      {"w": "upgrade", "hw": "upgrade", "pos": "n.", "zh": "升級", "ex": "The upgrade will take two days."},
+      {"w": "be down", "hw": "be down", "pos": "phr.", "zh": "（系統）停擺、故障", "ex": "The system will be down for an hour."}
+    ]
+  },
+  "l-conv-07": {
+    "q": [
+      {
+        "point": ["A problem question: listen to the first lines.", "問題題：聽開頭幾句。"],
+        "why": ["The woman opens with <em>customer complaints were about late deliveries</em>. That means customers are waiting too long for their orders.", "女方開頭說 customer complaints were about late deliveries，也就是顧客等貨等太久。"]
+      },
+      {
+        "point": ["Find who \"they\" is, then what Colin says.", "先找出 they 指誰，再看 Colin 說什麼。"],
+        "why": ["The woman asks about <em>a second delivery company</em>. Colin says <em>they'd charge more per delivery than we actually make on the sale</em>, so the store would lose money on many orders.", "女方問第二家送貨公司。Colin 說 they'd charge more per delivery than we actually make on the sale，所以很多訂單會賠錢。"]
+      },
+      {
+        "point": ["Choose the final decision.", "選最後定案的內容。"],
+        "why": ["Pickup at the warehouse is suggested, but <em>The loading dock is closed to the public on weekends</em>. The woman then decides <em>weekdays only</em>, which means Monday through Friday.", "有人提議到倉庫自取，但 The loading dock is closed to the public on weekends。女方最後定案 weekdays only，就是週一到週五。"]
+      }
+    ],
+    "gloss": [
+      {"w": "look into", "hw": "look into", "pos": "phr.", "zh": "調查、研究", "ex": "We will look into the delay today."},
+      {"w": "charge", "hw": "charge", "pos": "v.", "zh": "收費", "ex": "They charge a fee for rush orders."},
+      {"w": "fully booked", "hw": "fully booked", "pos": "phr.", "zh": "全部排滿、客滿", "ex": "The hotel is fully booked this weekend."},
+      {"w": "loading dock", "hw": "loading dock", "pos": "n.", "zh": "裝卸區", "ex": "Trucks park at the loading dock."},
+      {"w": "showroom", "hw": "showroom", "pos": "n.", "zh": "展示間", "ex": "The showroom opens at nine."}
+    ]
+  },
+  "l-conv-08": {
+    "q": [
+      {
+        "point": ["A reason question: the reason comes right after.", "原因題：理由緊接在後。"],
+        "why": ["She says she wants to avoid air services, then adds <em>My manager wants us to keep shipping costs to a minimum</em>. Her supervisor wants expenses limited.", "她說想避開空運，接著說 My manager wants us to keep shipping costs to a minimum，也就是主管要她壓低開支。"]
+      },
+      {
+        "point": ["A graphic question: cross out what does not fit.", "圖表題：先刪掉不符合的選項。"],
+        "why": ["Standard is ruled out. <em>ground shipments</em> are <em>running a day behind</em>, so Express Ground would miss Thursday. She wants air but <em>not overnight</em>: the Two-Day Air row, $45.00.", "標準件已排除。ground shipments 都 running a day behind，Express Ground 會趕不上星期四。她要空運但 not overnight，所以是 Two-Day Air 那一列，$45.00。"]
+      },
+      {
+        "point": ["Listen for the man's own \"I'll\" sentence.", "聽男方自己說 I'll 的那一句。"],
+        "why": ["The man says <em>I'll e-mail you a tracking number</em>. A tracking number gives her a way to follow the shipment.", "男方說 I'll e-mail you a tracking number。追蹤號碼讓她可以追蹤包裹。"]
+      }
+    ],
+    "gloss": [
+      {"w": "rule out", "hw": "rule out", "pos": "phr.", "zh": "排除", "ex": "We can rule out the cheaper supplier."},
+      {"w": "keep shipping costs to a minimum", "hw": "keep costs to a minimum", "pos": "phr.", "zh": "把運費壓到最低", "ex": "Please keep costs to a minimum this quarter."},
+      {"w": "running a day behind", "hw": "run behind", "pos": "phr.", "zh": "晚一天、落後", "ex": "Trains are running behind schedule today."},
+      {"w": "tracking number", "hw": "tracking number", "pos": "n.", "zh": "追蹤號碼", "ex": "I sent you the tracking number by e-mail."},
+      {"w": "forward", "hw": "forward", "pos": "v.", "zh": "轉寄", "ex": "Please forward the invoice to accounting."}
+    ]
+  },
+  "l-talk-04": {
+    "q": [
+      {
+        "point": ["A speaker question: infer the job from what she does.", "身分題：從她做的事推測職業。"],
+        "why": ["She says <em>welcome to Hollis Glassworks</em> and <em>I'll be showing you around</em>. A person who leads visitors through a workplace is a tour guide.", "她說 welcome to Hollis Glassworks 和 I'll be showing you around。帶訪客參觀工作場所的人就是導覽員。"]
+      },
+      {
+        "point": ["A quoted-line question: use the place named just before.", "引句題：看前面剛提到的地點。"],
+        "why": ["She has just said they begin in <em>the furnace room</em>. <em>you won't need your jackets in there</em> because a furnace room is very hot. She is warning about high temperatures.", "她剛說先去 the furnace room。You won't need your jackets in there 是因為熔爐室很熱，她是在提醒溫度很高。"]
+      },
+      {
+        "point": ["Listen for \"except,\" then the reason after it.", "聽 except，再聽後面的理由。"],
+        "why": ["<em>anywhere except the studio</em> shows photos are not allowed there. The reason: the pieces <em>won't be in stores until next spring</em>, so it holds products not on sale yet.", "anywhere except the studio 表示工作室不能拍照。理由是作品 won't be in stores until next spring，所以裡面有還沒上市的商品。"]
+      }
+    ],
+    "gloss": [
+      {"w": "glassblowers", "hw": "glassblower", "pos": "n.", "zh": "玻璃吹製工匠", "ex": "The glassblower made a blue vase."},
+      {"w": "furnace room", "hw": "furnace room", "pos": "n.", "zh": "熔爐室", "ex": "The furnace room is very hot."},
+      {"w": "showing you around", "hw": "show around", "pos": "phr.", "zh": "帶你四處參觀", "ex": "I will show you around the office."},
+      {"w": "Feel free to", "hw": "feel free to", "pos": "phr.", "zh": "儘管、隨意", "ex": "Feel free to ask me any questions."},
+      {"w": "stop by", "hw": "stop by", "pos": "phr.", "zh": "順道造訪", "ex": "Please stop by my desk later."}
+    ]
+  },
+  "_flags": []
+}

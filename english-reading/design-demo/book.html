@@ -1,0 +1,369 @@
+<title>TOEIC 練習室・書本版</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Noto+Serif+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column like a printed page; while answering, only the question and its options are on the page. */
+:root{
+  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --faint:#8E958F; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E6EAE3;
+  --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1E2420; color-scheme:dark}
+}
+:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1E2420; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.8 var(--en),var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 72px;font-variant-numeric:oldstyle-nums}
+.book{max-width:34rem;margin:0 auto}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.sc{font-family:var(--en);font-variant-caps:all-small-caps;letter-spacing:.09em}
+.link{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+/* contents */
+.mast{padding-block:56px 8px}
+.mast .sc{color:var(--soft);font-size:15px}
+h1{font:500 clamp(34px,7vw,46px)/1.15 var(--zh);margin:.15em 0 0;letter-spacing:.02em}
+.note{margin:28px 0 0;font-family:var(--zh)}
+.note + .note{margin-top:6px}
+.quiet{color:var(--soft)}
+.toc{margin-top:44px;display:grid;gap:34px}
+.part h2{font:500 15px/1.4 var(--zh);color:var(--soft);margin:0 0 10px;letter-spacing:.12em}
+.part h2 .sc{margin-left:.6em}
+.part ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.part li{border-bottom:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;align-items:baseline;gap:0 .6em;width:100%;padding:11px 0;text-align:left;font-family:var(--zh)}
+.row .n{color:var(--soft);font-size:15px}
+.row .t{min-width:0}
+.row .c{color:var(--soft);font:400 15px var(--en);font-variant-numeric:lining-nums tabular-nums}
+button.row .t{color:var(--accent)}
+button.row:hover .t{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.colophon{margin-top:56px;font:14px var(--zh);color:var(--faint)}
+
+/* question page: sizes in em so the reader's text-size setting scales the whole page.
+   Wide screens show a two-page spread: the question on the left, the notes on the right. */
+#page{font-size:var(--fs,15.5px);max-width:34rem;margin:0 auto}
+@media (min-width:900px){
+  #page:not([hidden]){max-width:64rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:3.2rem;align-items:start}
+  #page .head{grid-column:1/-1}
+  .rightp{border-left:1px solid var(--rule);padding-left:3.2rem;min-height:60vh}
+  .ann{margin-top:1.6em!important;border-top:0!important;padding-top:0!important}
+}
+.leftp,.rightp{min-width:0}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:24px 4px;font:.86em var(--zh);color:var(--faint)}
+.head button{color:var(--faint)}
+.head button:hover{color:var(--ink)}
+.head .tools{display:flex;gap:14px;align-items:baseline}
+.head .pg{font-family:var(--en);font-variant-numeric:lining-nums}
+.sz button{font-family:var(--en);padding:0 3px}
+.sz .s1{font-size:.85em}.sz .s2{font-size:1.1em}
+.sz button:disabled{opacity:.35;cursor:default}
+.stem{font:400 1.28em/1.7 var(--en);margin:1.3em 0 1em;text-wrap:pretty}
+.blank{display:inline-block;min-width:4.6em;border-bottom:1.5px solid var(--ink);text-align:center;line-height:1.2;color:var(--accent);font-style:italic}
+.gl{text-decoration:underline dotted var(--faint);text-underline-offset:5px;text-decoration-thickness:1px;cursor:help}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.opt{display:grid;grid-template-columns:2.4em minmax(0,1fr);align-items:baseline;width:100%;text-align:left;padding:.28em 0;font:400 1.14em/1.5 var(--en)}
+.opt .l{position:relative;display:inline-grid;place-items:center;width:1.7em;height:1.7em;font-size:.85em;color:var(--soft)}
+.opt .l svg{position:absolute;left:-7px;top:-6px;width:calc(100% + 14px);height:calc(100% + 12px);overflow:visible;pointer-events:none}
+.opt .l path{fill:none;stroke:var(--accent);stroke-width:1.7;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.opt:not(:disabled):hover .w{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.opt:disabled{cursor:default}
+.opt.right .l,.opt.right .w{color:var(--accent)}
+.opt.picked-wrong .w{text-decoration:line-through;text-decoration-color:var(--pencil);text-decoration-thickness:1.6px;color:var(--soft)}
+.opt.picked-wrong .l{color:var(--pencil)}
+.opt.dim .w,.opt.dim .l{color:var(--faint)}
+.unsure{margin-top:.5em;padding-left:2.4em}
+.unsure button{font:italic 400 .92em var(--en);color:var(--faint)}
+.unsure button:not(:disabled):hover{color:var(--soft)}
+.unsure button:disabled{cursor:default}
+
+/* the annotation */
+.ann{margin-top:1.6em;border-top:1px solid var(--rule);padding-top:1.1em;display:grid;gap:.75em;line-height:1.65}
+.ann p{margin:0}
+.para{cursor:pointer}
+.para .zh[hidden],.trans[hidden]{display:none}
+.para .zh{display:block;font:.9em/1.7 var(--zh);color:var(--soft);margin-top:.15em}
+.point{font:500 1.08em/1.55 var(--en)}
+.why{font-size:1em}
+.why em,.wr em,.point em{font-style:italic}
+.wr{display:grid;grid-template-columns:6.2em minmax(0,1fr);gap:.8em;align-items:baseline;font-size:.94em;color:var(--soft)}
+.wr .w{font-style:italic;color:var(--faint)}
+.wr.mine .w{color:var(--pencil)}
+.wr.mine{color:var(--ink)}
+.wr .para{min-width:0}
+.trans{font:.9em/1.7 var(--zh);color:var(--soft)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px;margin-top:.2em;font-size:.84em;color:var(--faint)}
+.foot a,.foot button{color:var(--faint);text-decoration:none}
+.foot a:hover,.foot button:hover{color:var(--soft)}
+.foot .zhb{font-family:var(--zh);font-size:.95em;border:1px solid var(--rule);border-radius:3px;padding:0 5px;line-height:1.6}
+.foot .zhb[aria-pressed="true"]{color:var(--soft);border-color:var(--faint)}
+.foot .fl{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.ask{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.4em .8em;align-items:baseline}
+.ask input{font:italic 1em var(--en);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--rule);padding:.2em 0;min-width:0}
+.ask input:focus{outline:none;border-bottom-color:var(--accent)}
+.ask button{font:italic 500 .95em var(--en);color:var(--accent)}
+.ask button:disabled{color:var(--faint)}
+.askOut{grid-column:1/-1;font-size:.94em;color:var(--soft);white-space:pre-wrap}
+.next{display:flex;justify-content:flex-end;margin-top:1.2em}
+.next button{font:italic 500 1.08em var(--en);color:var(--accent)}
+.next button:hover{text-decoration:underline;text-underline-offset:4px}
+.tip{position:absolute;z-index:3;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(20,28,24,.12);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
+.tip .hw{font:italic 500 17px var(--en)}
+.tip .pos{font-style:italic;color:var(--soft);margin-left:.5em}
+.tip .ipa{color:var(--soft);margin-left:.5em;font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en);font-size:.95em}
+.tip .mean{font-family:var(--zh);margin-top:2px}
+.tip .ex{margin-top:6px;padding-top:6px;border-top:1px solid var(--rule);color:var(--soft);font-style:italic}
+.end{padding-block:56px}
+@media (prefers-reduced-motion: no-preference){
+  .opt.right .l path{animation:draw .5s ease-out both}
+  @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+  .ann{animation:rise .4s .15s ease-out both}
+  @keyframes rise{from{opacity:.001;transform:translateY(5px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<main>
+  <section id="home" class="book">
+    <header class="mast">
+      <div class="sc">A workbook for TOEIC Parts 2–5</div>
+      <h1>TOEIC 練習室</h1>
+    </header>
+    <p class="note">上次讀到〈詞性判斷〉第 2 題。<button class="link" id="resume" type="button">接著讀</button></p>
+    <nav class="toc" aria-label="目錄" id="toc"></nav>
+    <p class="colophon">設計示範：只有第一章可以作答。</p>
+  </section>
+
+  <section id="page" hidden>
+    <div class="head">
+      <button id="back" type="button">← 詞性判斷</button>
+      <span class="tools"><span class="sz"><button class="s1" id="szDown" type="button" aria-label="字小一點">A</button><button class="s2" id="szUp" type="button" aria-label="字大一點">A</button></span><button id="snd" type="button" aria-pressed="true">sound on</button><span class="pg" id="pg"></span></span>
+    </div>
+    <div class="leftp">
+      <p class="stem" id="stem"></p>
+      <ol class="opts" id="opts"></ol>
+      <div class="unsure"><button type="button" id="unsureBtn">I'm not sure</button></div>
+    </div>
+    <div class="rightp">
+      <div class="ann" id="ann" hidden></div>
+      <div class="next" id="nextWrap" hidden><button type="button" id="next"></button></div>
+    </div>
+  </section>
+
+  <section id="end" class="book end" hidden>
+    <p class="sc quiet">End of sample</p>
+    <p><button class="link" id="home2" type="button">回到目錄</button></p>
+  </section>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const PARTS = [
+  {zh:"第一部　文法", en:"Grammar", ch:[["詞性判斷",10,true],["動詞時態",8],["主動與被動",4],["分詞：-ing 與 -ed",7],["連接詞、介系詞、連接副詞",8],["主詞與動詞一致",6],["關係代名詞",6],["代名詞",6],["介系詞：時間、期限與常用片語",9],["to 的陷阱與動詞後接的形式",6],["要求與建議：that 子句用原形",4],["假設語氣與倒裝",4],["比較",5],["數量詞與可數名詞",5],["平行結構與成對連接詞",4]]},
+  {zh:"第二部　字彙", en:"Vocabulary", ch:[["搭配詞",13],["近義辨析",13,true],["商業字彙",11],["同字根不同義",10]]},
+  {zh:"第三部　聽力", en:"Listening", ch:[["應答",17],["對話",8],["獨白",4]]},
+];
+const NUM = "一二三四五六七八九十";
+const cn = n => n <= 10 ? NUM[n-1] : n < 20 ? "十" + NUM[n-11] : String(n);
+
+// Each explanation line is [English, Chinese]. Chinese stays hidden until asked for.
+const ITEMS = [
+  {ch:"詞性判斷", type:"grammar", stem:"The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
+   options:["access","accessibly","accessible","accessibility"], answer:2,
+   point:["<em>make</em> + object + adjective.","make + 受詞 + 形容詞。"],
+   why:["The object of <em>makes</em> is the whole phrase <em>the items that customers order most often</em>. The blank says what those items become, so it needs an adjective: <em>accessible</em>.","makes 的受詞是 the items that customers order most often，空格說明這些商品變得怎樣，要形容詞 accessible。"],
+   wrong:[["<em>far more access to the pickers</em> sounds fine on its own, but the blank belongs to <em>makes the items ___</em>. A noun can't say what the items become.","far more access to the pickers 單看通順，但空格接在 makes the items 後面，名詞不能說明商品變得怎樣。"],
+          ["An adverb can't say what the items become.","副詞不能說明受詞的狀態。"], null,
+          ["Also a noun. <em>Makes the items accessibility</em> doesn't work.","也是名詞，makes the items accessibility 說不通。"]],
+   zh:"Pellridge 倉庫的新配置，讓顧客最常訂購的商品對早班揀貨員來說好拿得多。",
+   gloss:{
+     layout:{hw:"layout", pos:"n.", ipa:"/ˈleɪaʊt/", zh:"配置、布局", ex:"We changed the layout of the lobby."},
+     pickers:{hw:"picker", pos:"n.", ipa:"/ˈpɪkər/", zh:"揀貨員", ex:"The pickers start work at six."},
+     shift:{hw:"shift", pos:"n.", ipa:"/ʃɪft/", zh:"班次", ex:"She works the night shift on Fridays."}}},
+  {ch:"詞性判斷", type:"grammar", stem:"______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
+   options:["Applications","Apply","Applying","Applied"], answer:0,
+   point:["The blank is the subject: use a noun.","空格是主詞，用名詞。"],
+   why:["The main verb comes late: <em>will be accepted</em>. Everything from the blank to <em>Avenue</em> is the subject. What gets accepted? <em>Applications</em>.","主要動詞在後面：will be accepted。從空格到 Avenue 都是主詞。被受理的是什麼？申請書 Applications。"],
+   wrong:[null,
+          ["<em>Apply for the … position</em> is a common job-ad opening. But then <em>will be accepted</em> has no subject.","Apply for the … position 是徵才廣告常見的開頭，但這樣 will be accepted 就沒有主詞。"],
+          ["As a subject, it means the act of applying gets accepted. It's the applications that do.","當主詞時意思是「申請這個動作」被受理；被受理的是申請書。"],
+          ["A past form can't be the subject.","過去式或過去分詞不能當主詞。"]],
+   zh:"副分行經理一職（工作地點在我們位於 Corliss Avenue 的新辦公室）的申請，在本月底前都可以透過線上系統送出。",
+   gloss:{
+     "assistant branch manager":{hw:"assistant branch manager", pos:"n.", ipa:"/əˈsɪstənt bræntʃ ˈmænɪdʒər/", zh:"副分行經理", ex:"The assistant branch manager opens the bank each morning."},
+     portal:{hw:"portal", pos:"n.", ipa:"/ˈpɔːrtl/", zh:"入口網站、線上系統", ex:"Upload your receipts through the employee portal."}}},
+  {ch:"近義辨析", type:"vocab", stem:"The revised security policy ______ all staff in the billing department, whether permanent or temporary, to keep copies of customers' card numbers on their own laptops or phones.",
+   options:["prohibits","prevents","bans","forbids"], answer:3,
+   point:["<em>forbid</em> someone <em>to</em> do something.","forbid 人 to V。"],
+   why:["All four mean roughly “not allow.” The difference is what follows the person. After <em>whether permanent or temporary</em> comes <em>to keep</em>, and only <em>forbid</em> takes someone + <em>to</em> do.","四個都有「不准」的意思，差在人後面接什麼。插入語之後是 to keep，只有 forbid 接「人 + to V」。"],
+   wrong:[["<em>prohibit</em> someone <em>from</em> doing something. <em>The rules prohibit staff from eating at their desks.</em>","prohibit 人 from Ving。"],
+          ["<em>prevent</em> someone <em>from</em> doing something; it means stopping it from happening, not a rule. <em>The fence prevents visitors from entering the site.</em>","prevent 人 from Ving，指實際阻止，不是規定。"],
+          ["<em>ban</em> something, or <em>ban</em> someone <em>from</em> doing something. <em>The airline bans passengers from smoking on board.</em>","ban 某物，或 ban 人 from Ving。"], null],
+   zh:"修訂後的資安規定禁止帳務部所有員工（不論正職或臨時）把客戶的卡號副本存在自己的筆電或手機上。",
+   gloss:{
+     "billing department":{hw:"billing department", pos:"n.", ipa:"/ˈbɪlɪŋ dɪˈpɑːrtmənt/", zh:"帳務部", ex:"Please send the invoice to our billing department."},
+     permanent:{hw:"permanent", pos:"adj.", ipa:"/ˈpɜːrmənənt/", zh:"正職的、長期的", ex:"She was offered a permanent position."},
+     temporary:{hw:"temporary", pos:"adj.", ipa:"/ˈtempəreri/", zh:"臨時的", ex:"We hire temporary staff for the holidays."}}},
+];
+const L = "ABCD";
+const $ = id => document.getElementById(id);
+const CIRCLE = '<svg viewBox="0 0 48 40" aria-hidden="true"><path pathLength="1" d="M31 5C17 3 5 10 5 21c0 10 12 15 23 14 11-1 16-8 15-16C42 10 34 5 23 6"/></svg>';
+let at = 0, sound = true, ctx = null;
+try { sound = localStorage.getItem("book-sound") !== "off"; } catch (e) {}
+
+function tone(ok){
+  if (!sound) return;
+  try {
+    ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+    const t = ctx.currentTime, g = ctx.createGain(), o = ctx.createOscillator();
+    o.type = "sine"; o.frequency.value = ok ? 880 : 392;
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(ok ? 0.07 : 0.05, t + 0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + (ok ? 0.45 : 0.25));
+    o.connect(g).connect(ctx.destination); o.start(t); o.stop(t + 0.5);
+  } catch (e) {}
+}
+
+function toc(){
+  const nav = $("toc"); nav.textContent = "";
+  PARTS.forEach(p => {
+    const s = document.createElement("section"); s.className = "part";
+    s.innerHTML = `<h2>${p.zh}<span class="sc">${p.en}</span></h2>`;
+    const ol = document.createElement("ol");
+    p.ch.forEach(([t, n, live], i) => {
+      const li = document.createElement("li");
+      const r = document.createElement(live ? "button" : "div");
+      r.className = "row"; if (live) { r.type = "button"; r.onclick = () => open(ITEMS.findIndex(x => x.ch === t)); }
+      r.innerHTML = `<span class="n">${cn(i+1)}</span><span class="t">${t}</span><span class="c">${n} 題</span>`;
+      li.append(r); ol.append(li);
+    });
+    s.append(ol); nav.append(s);
+  });
+}
+
+function show(id){ ["home","page","end"].forEach(x => $(x).hidden = x !== id); $("tip").hidden = true; window.scrollTo(0, 0); }
+function setSnd(){ $("snd").textContent = sound ? "sound on" : "sound off"; $("snd").setAttribute("aria-pressed", sound); }
+
+function stemHTML(it, filled){
+  let [a, b] = it.stem.split("______");
+  const blank = `<span class="blank">${filled ? it.options[it.answer] : "&nbsp;"}</span>`;
+  if (filled) for (const w of Object.keys(it.gloss)) {
+    const re = new RegExp(`\\b(${w})\\b`);
+    a = a.replace(re, `<span class="gl" tabindex="0" data-k="${w}">$1</span>`);
+    b = b.replace(re, `<span class="gl" tabindex="0" data-k="${w}">$1</span>`);
+  }
+  return a + blank + b;
+}
+
+function open(i){
+  at = i; const it = ITEMS[i];
+  show("page"); setSnd();
+  const total = PARTS.flatMap(p => p.ch).find(c => c[0] === it.ch)[1];
+  $("back").textContent = "← " + it.ch;
+  $("pg").textContent = `${ITEMS.slice(0, i).filter(x => x.ch === it.ch).length + 1} / ${total}`;
+  $("stem").innerHTML = stemHTML(it, false);
+  const ol = $("opts"); ol.textContent = "";
+  it.options.forEach((w, k) => {
+    const li = document.createElement("li");
+    const btn = document.createElement("button"); btn.type = "button"; btn.className = "opt";
+    btn.innerHTML = `<span class="l">${L[k]}</span><span class="w">${w}</span>`;
+    btn.onclick = () => answer(k);
+    li.append(btn); ol.append(li);
+  });
+  $("unsureBtn").disabled = false; $("unsureBtn").hidden = false;
+  $("ann").hidden = true; $("nextWrap").hidden = true;
+}
+
+const para = ([en, zh], cls) => `<p class="para ${cls || ""}" tabindex="0">${en}<span class="zh" hidden>${zh}</span></p>`;
+
+function answer(k){
+  const it = ITEMS[at], ok = k === it.answer;
+  [...$("opts").querySelectorAll(".opt")].forEach((b, j) => {
+    b.disabled = true;
+    if (j === it.answer) { b.classList.add("right"); b.querySelector(".l").insertAdjacentHTML("beforeend", CIRCLE); }
+    else if (j === k) b.classList.add("picked-wrong");
+    else b.classList.add("dim");
+  });
+  $("unsureBtn").hidden = true;
+  if (k !== -1) tone(ok);
+  $("stem").innerHTML = stemHTML(it, true);
+
+  const order = [k, ...it.options.map((_, j) => j)].filter((j, n, a) => j >= 0 && j !== it.answer && a.indexOf(j) === n);
+  let h = para(it.point, "point") + para(it.why, "why");
+  if (it.type === "vocab") h += order.map(j => `<div class="wr ${j === k ? "mine" : ""}"><span class="w">${it.options[j]}</span>${para(it.wrong[j])}</div>`).join("");
+  h += `<p class="trans" hidden id="trans">${it.zh}</p>`;
+  const see = it.type === "grammar" ? `<a href="https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ" target="_blank" rel="noopener"><span class="sc">See also</span> ${it.ch}</a>` : "";
+  h += `<div class="foot"><span class="fl">${see}${sample ? `<button id="askBtn" type="button" class="sc" aria-expanded="false">Ask Claude</button>` : ""}</span><button class="zhb" id="zhb" type="button" aria-pressed="false" aria-label="顯示中文">中</button></div>`;
+  h += `<div class="ask" id="ask" hidden><input id="askQ" type="text" placeholder="Why not B?" autocomplete="off"><button id="askGo" type="button">Ask</button><p class="askOut" id="askOut" hidden></p></div>`;
+  $("ann").innerHTML = h; $("ann").hidden = false;
+  $("zhb").onclick = () => {
+    const on = $("zhb").getAttribute("aria-pressed") !== "true";
+    $("zhb").setAttribute("aria-pressed", on);
+    $("ann").querySelectorAll(".zh").forEach(z => z.hidden = !on); $("trans").hidden = !on;
+  };
+  $("ann").querySelectorAll(".para").forEach(p => {
+    const t = () => { const z = p.querySelector(".zh"); z.hidden = !z.hidden; };
+    p.onclick = t; p.onkeydown = e => { if (e.key === "Enter") t(); };
+  });
+  if ($("askBtn")) $("askBtn").onclick = () => { const a = $("ask"); a.hidden = !a.hidden; $("askBtn").setAttribute("aria-expanded", !a.hidden); if (!a.hidden) $("askQ").focus(); };
+  if ($("askGo")) { $("askGo").onclick = () => ask(it, k); $("askQ").onkeydown = e => { if (e.key === "Enter") ask(it, k); }; }
+  const more = ITEMS[at + 1] && ITEMS[at + 1].ch === it.ch;
+  $("next").textContent = more ? "Next →" : "End of chapter →";
+  $("nextWrap").hidden = false;
+}
+
+// word glosses: tap or focus a dotted word in the sentence
+function tipFor(el){
+  const t = $("tip"), r = el.getBoundingClientRect();
+  const g = ITEMS[at].gloss[el.dataset.k];
+  t.innerHTML = `<div><span class="hw">${g.hw}</span><span class="pos">${g.pos}</span><span class="ipa">${g.ipa}</span></div><div class="mean">${g.zh}</div><div class="ex">${g.ex}</div>`;
+  t.hidden = false;
+  const w = t.offsetWidth, x = Math.min(Math.max(16, r.left + r.width / 2 - w / 2 + scrollX), document.documentElement.clientWidth - w - 16);
+  t.style.left = x + "px"; t.style.top = (r.bottom + scrollY + 6) + "px";
+}
+document.addEventListener("click", e => { const g = e.target.closest(".gl"); if (g) tipFor(g); else if (!e.target.closest("#tip")) $("tip").hidden = true; });
+document.addEventListener("focusin", e => { if (e.target.classList?.contains("gl")) tipFor(e.target); });
+document.addEventListener("focusout", e => { if (e.target.classList?.contains("gl")) $("tip").hidden = true; });
+
+const SIZES = [13.5, 14.5, 15.5, 16.5, 18];
+let sz = 1;
+try { const v = +localStorage.getItem("book-size"); if (v >= 0 && v < SIZES.length && localStorage.getItem("book-size") !== null) sz = v; } catch (e) {}
+function setSize(d){
+  sz = Math.max(0, Math.min(SIZES.length - 1, sz + d));
+  $("page").style.setProperty("--fs", SIZES[sz] + "px");
+  $("szDown").disabled = sz === 0; $("szUp").disabled = sz === SIZES.length - 1;
+  try { localStorage.setItem("book-size", sz); } catch (e) {}
+}
+$("szDown").onclick = () => setSize(-1); $("szUp").onclick = () => setSize(1); setSize(0);
+$("unsureBtn").onclick = () => answer(-1);
+$("snd").onclick = () => { sound = !sound; setSnd(); try { localStorage.setItem("book-sound", sound ? "on" : "off"); } catch (e) {} };
+$("next").onclick = () => ITEMS[at + 1] && ITEMS[at + 1].ch === ITEMS[at].ch ? open(at + 1) : show("end");
+
+// Ask Claude: only shown when the viewer's Claude can be reached; one question at a time.
+let sample = null, busy = false;
+if (window.claude?.use) claude.use("sample").then(x => { sample = x || null; }).catch(() => {});
+async function ask(it, k){
+  const q = $("askQ").value.trim(), out = $("askOut");
+  if (!q || busy || !sample) return;
+  busy = true; $("askGo").disabled = true; out.hidden = false; out.textContent = "Thinking…";
+  const prompt = [
+    "You are a TOEIC tutor. A Taiwanese learner just answered this Part 5 question and has a follow-up. Answer in the language of the question; if it is English, use plain, simple English. At most three sentences. Answer only what was asked. Do not overturn the answer key; if you think the key is wrong, say the item may be disputed and why.",
+    "Question: " + JSON.stringify({stem: it.stem, options: it.options, key: it.options[it.answer], rule: it.point[0].replace(/<[^>]+>/g, "")}),
+    "Learner picked: " + (k >= 0 ? it.options[k] : "I'm not sure"),
+    "Learner asks: " + q,
+  ].join("\n");
+  try {
+    const r = await sample(prompt, { modelTier: "complex", cache: false, onText: ({ text }) => { out.textContent = text; } });
+    if (r && r.modelTierApplied && r.modelTierApplied !== "complex") out.textContent += "\n(answered by a lighter model; your plan didn't allow the strongest one)";
+  } catch (e) {
+    out.textContent = e?.text || (e?.code === "rate_limited" ? "Claude is busy. Try again in a minute." : "That didn't go through. Try again.");
+    if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) { sample = null; $("askBtn")?.remove(); }
+  }
+  busy = false; $("askGo").disabled = false;
+}
+$("back").onclick = () => show("home");
+$("home2").onclick = () => show("home");
+$("resume").onclick = () => open(1);
+toc();
+</script>

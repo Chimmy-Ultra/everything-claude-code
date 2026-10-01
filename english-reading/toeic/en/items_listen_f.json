@@ -1,0 +1,141 @@
+{
+  "l-talk-06": {
+    "q": [
+      {
+        "point": ["The opening sentences give the topic.", "開頭幾句就點出主題。"],
+        "why": ["<em>No trains will run on the Harbor Line</em> and <em>Replacement buses are boarding now</em>: passengers travel a different way for now.", "no trains will run on the Harbor Line 加上 Replacement buses are boarding now：旅客暫時要用別的方式搭車。"]
+      },
+      {
+        "point": ["<em>Only on paper</em> is a warning not to trust the board.", "only on paper 是提醒別相信看板。"],
+        "why": ["<em>Some trains still appear on the departure board.</em> <em>Those trains exist only on paper</em>, so passengers should not rely on the screens. Staff say to <em>check with them</em> first.", "Some trains still appear on the departure board。Those trains exist only on paper，所以旅客不該相信螢幕。工作人員說要先 check with them。"]
+      },
+      {
+        "point": ["The arrangement follows <em>After that</em>.", "安排在 After that 之後。"],
+        "why": ["<em>The buses will run until 10:00 tonight. After that, please use the taxi stand.</em> <em>The railway will cover the fare</em>: it pays for a hired car once the buses have stopped.", "The buses will run until 10:00 tonight。After that, please use the taxi stand。The railway will cover the fare：公車收班後，鐵路公司負擔計程車費。"]
+      }
+    ],
+    "gloss": [
+      {"w": "signal failure", "hw": "signal failure", "pos": "n.", "zh": "號誌故障", "ex": "A signal failure delayed every train this morning."},
+      {"w": "forecourt", "hw": "forecourt", "pos": "n.", "zh": "站前廣場", "ex": "Taxis wait in the forecourt of the station."},
+      {"w": "concourse", "hw": "concourse", "pos": "n.", "zh": "站內大廳", "ex": "Please wait on the concourse until the platform is announced."},
+      {"w": "remain valid", "hw": "remain valid", "pos": "phr.", "zh": "仍然有效", "ex": "Your pass will remain valid until June."},
+      {"w": "cover the fare", "hw": "cover the fare", "pos": "phr.", "zh": "負擔車資", "ex": "The company will cover the fare for your trip."}
+    ]
+  },
+  "l-talk-07": {
+    "q": [
+      {
+        "point": ["Link the cause to the new estimate.", "把原因和新的估計連起來。"],
+        "why": ["Crews first said 9:00. <em>But a tow company arrived early.</em> <em>They now hope to open the bridge fully by 8:30.</em> The early help explains the earlier estimate.", "工作人員起初說 9:00。But a tow company arrived early。They now hope to open the bridge fully by 8:30。救援提早到，所以估計提前。"]
+      },
+      {
+        "point": ["The reason comes after <em>But</em>.", "原因在 But 之後。"],
+        "why": ["Drivers are <em>turning onto Orchard Road to get around the bridge</em>. <em>But</em> a repair there has closed a lane, so it is <em>slow going as well</em>. He mentions it as a warning.", "駕駛 turning onto Orchard Road to get around the bridge。But 那裡的維修 has closed a lane，所以 slow going as well。他提到它是為了提醒。"]
+      },
+      {
+        "point": ["Advice follows <em>If you can</em>.", "建議在 If you can 之後。"],
+        "why": ["<em>If you can, leave your car at the Lakeside lot and take the Route 12 bus</em> is his advice: public transportation for part of the trip. <em>I'll update you again</em> is his own plan.", "If you can, leave your car at the Lakeside lot and take the Route 12 bus 是他的建議：部分路程改搭大眾運輸。I'll update you again 是他自己的安排。"]
+      }
+    ],
+    "gloss": [
+      {"w": "backed up", "hw": "back up", "pos": "phr.", "zh": "（交通）大塞車", "ex": "Traffic backed up for two miles on the highway."},
+      {"w": "tow company", "hw": "tow company", "pos": "n.", "zh": "拖吊公司", "ex": "The tow company arrived within ten minutes."},
+      {"w": "water main", "hw": "water main", "pos": "n.", "zh": "自來水主管線", "ex": "A broken water main flooded the street."},
+      {"w": "slow going", "hw": "slow going", "pos": "phr.", "zh": "進展緩慢", "ex": "The road work made it slow going today."},
+      {"w": "update", "hw": "update", "pos": "v.", "zh": "提供最新消息", "ex": "I will update you again at noon."}
+    ]
+  },
+  "l-talk-08": {
+    "q": [
+      {
+        "point": ["The next sentence explains the quote.", "下一句解釋這句話的原因。"],
+        "why": ["<em>You don't need to stay on the line</em> is followed by <em>Crews expect to restore service by 3:00</em>. Callers need not wait because the problem is already being handled.", "you don't need to stay on the line 後面接 Crews expect to restore service by 3:00。來電者不必等，因為問題已在處理。"]
+      },
+      {
+        "point": ["A condition applies to one group of callers.", "條件只適用於某一群來電者。"],
+        "why": ["<em>Key in your account number</em> applies to callers who choose an option. Only callers on <em>the phone number on your account</em> can <em>skip this step</em>. Everyone else enters the number.", "key in your account number 適用於選了選項的人。只有用 the phone number on your account 來電的人可以 skip this step。其他人要輸入號碼。"]
+      },
+      {
+        "point": ["The alternative comes after <em>If you'd rather not hold</em>.", "替代方案在 If you'd rather not hold 之後。"],
+        "why": ["<em>If you'd rather not hold, press 9.</em> Then <em>We'll then call you back within the hour.</em> The offer is a later phone call from the company.", "If you'd rather not hold, press 9。接著 We'll then call you back within the hour。這個提議是公司之後打電話聯絡。"]
+      }
+    ],
+    "gloss": [
+      {"w": "outage", "hw": "outage", "pos": "n.", "zh": "（服務）中斷", "ex": "The outage lasted about three hours."},
+      {"w": "restore", "hw": "restore", "pos": "v.", "zh": "恢復", "ex": "Technicians restored power to the building quickly."},
+      {"w": "key in", "hw": "key in", "pos": "phr.", "zh": "輸入", "ex": "Please key in your password to continue."},
+      {"w": "account number", "hw": "account number", "pos": "n.", "zh": "帳號", "ex": "Your account number is on the invoice."},
+      {"w": "hold", "hw": "hold", "pos": "v.", "zh": "（電話）等候", "ex": "Please hold while I transfer your call."}
+    ]
+  },
+  "l-talk-09": {
+    "q": [
+      {
+        "point": ["The opening names the product or service.", "開頭點出產品或服務。"],
+        "why": ["<em>Running out of room at home?</em> is the need. <em>We rent secure, indoor units by the month</em> is the service: space to keep belongings.", "Running out of room at home? 是需求。We rent secure, indoor units by the month 是服務：存放物品的空間。"]
+      },
+      {
+        "point": ["Find the row from the audio, then the right column.", "先從音檔找出那一列，再找對的欄。"],
+        "why": ["<em>Second-largest unit</em> is Large. <em>Sign up before the end of the month</em> gives <em>our special first-month rate</em>, so read the First month column: $47.50.", "Second-largest unit 是 Large。Sign up before the end of the month 適用 our special first-month rate，所以看 First month 欄：$47.50。"]
+      },
+      {
+        "point": ["Read the quote as a meaning, not as words.", "把引句當成意思來讀，不要照字面。"],
+        "why": ["The ad says <em>Running out of room at home?</em> and offers units for belongings. <em>Your garage can finally be a garage again</em> means the space at home is free.", "廣告先問 Running out of room at home?，並提供存放物品的單位。Your garage can finally be a garage again 的意思是家裡的空間空出來。"]
+      }
+    ],
+    "gloss": [
+      {"w": "second-largest", "hw": "second-largest", "pos": "adj.", "zh": "第二大的", "ex": "This is the second-largest office in the building."},
+      {"w": "Clearing out", "hw": "clear out", "pos": "phr.", "zh": "清空、騰出", "ex": "We cleared out the old files last week."},
+      {"w": "long-term contract", "hw": "long-term contract", "pos": "n.", "zh": "長期合約", "ex": "The supplier offered us a long-term contract."},
+      {"w": "sign up", "hw": "sign up", "pos": "phr.", "zh": "註冊、報名", "ex": "Please sign up before Friday."},
+      {"w": "indoor", "hw": "indoor", "pos": "adj.", "zh": "室內的", "ex": "The indoor pool is open all year."}
+    ]
+  },
+  "l-talk-10": {
+    "q": [
+      {
+        "point": ["The reason is spread over two sentences.", "理由分散在相鄰兩句。"],
+        "why": ["<em>Please wear the badge all day.</em> At lunch, <em>staff will check each badge</em>. The badge shows they are entitled to the meal.", "Please wear the badge all day。午餐時 staff will check each badge。名牌用來證明有資格用餐。"]
+      },
+      {
+        "point": ["Sessions swap times, but rooms stay with sessions.", "場次對調時間，教室跟著場次。"],
+        "why": ["On the schedule, Room B is Using Data. <em>The two afternoon sessions will switch times</em> and <em>each session keeps its original room</em>, so the Room B session moves to 3:00.", "表上 Room B 是 Using Data。The two afternoon sessions will switch times，each session keeps its original room，所以 Room B 的場次改到 3:00。"]
+      },
+      {
+        "point": ["The condition for the drawing comes with the deadline.", "抽獎的條件和期限一起說。"],
+        "why": ["<em>A short survey will be e-mailed at 4:00</em>, but the deadline is <em>by Friday</em>. <em>Everyone who completes it</em> enters the drawing, so the task is answering the survey by the end of the week.", "A short survey will be e-mailed at 4:00，但期限是 by Friday。Everyone who completes it 才能抽獎，所以要在週五前填完問卷。"]
+      }
+    ],
+    "gloss": [
+      {"w": "hosting", "hw": "host", "pos": "v.", "zh": "主持", "ex": "She is hosting the training session today."},
+      {"w": "name badge", "hw": "name badge", "pos": "n.", "zh": "名牌", "ex": "Please wear your name badge at all times."},
+      {"w": "switch times", "hw": "switch times", "pos": "phr.", "zh": "對調時間", "ex": "The two teams will switch times next week."},
+      {"w": "survey", "hw": "survey", "pos": "n.", "zh": "問卷", "ex": "Please complete the survey before you leave."},
+      {"w": "prize drawing", "hw": "prize drawing", "pos": "n.", "zh": "抽獎", "ex": "Everyone who attends enters the prize drawing."}
+    ]
+  },
+  "l-talk-11": {
+    "q": [
+      {
+        "point": ["Combine the welcome with the shop offer.", "把歡迎詞和買豆邀請合起來看。"],
+        "why": ["<em>I'll be your guide for this 45-minute tour</em> shows a visit. <em>If you'd like to buy beans</em> shows outsiders, not staff: visitors being shown around.", "I'll be your guide for this 45-minute tour 表示是參觀。If you'd like to buy beans 表示是外來訪客，不是員工。"]
+      },
+      {
+        "point": ["The new plan follows <em>Normally … but</em>.", "新安排在 Normally … but 之後。"],
+        "why": ["<em>Normally we begin with a tasting, but</em> the room is booked, <em>so we'll finish there instead</em>. The tasting moves from the start to the end.", "Normally we begin with a tasting, but 試喝室被訂走，so we'll finish there instead。試喝從開頭移到最後。"]
+      },
+      {
+        "point": ["<em>Before</em> marks the first step.", "Before 標出第一個步驟。"],
+        "why": ["<em>Before we set off, I need everyone's name on the visitor sheet.</em> That is registering. Only <em>once everyone's name is down</em> do they <em>head to the storage room</em>.", "Before we set off, I need everyone's name on the visitor sheet。這就是登記。once everyone's name is down 才 head to the storage room。"]
+      }
+    ],
+    "gloss": [
+      {"w": "Roastery", "hw": "roastery", "pos": "n.", "zh": "烘豆工坊", "ex": "The roastery smells wonderful in the morning."},
+      {"w": "tasting", "hw": "tasting", "pos": "n.", "zh": "試飲", "ex": "The tasting begins at noon."},
+      {"w": "earplugs", "hw": "earplugs", "pos": "n.", "zh": "耳塞", "ex": "Wear earplugs because the machines are loud."},
+      {"w": "set off", "hw": "set off", "pos": "phr.", "zh": "出發", "ex": "We will set off at nine."},
+      {"w": "visitor sheet", "hw": "visitor sheet", "pos": "n.", "zh": "訪客登記表", "ex": "Please write your name on the visitor sheet."}
+    ]
+  },
+  "_flags": []
+}

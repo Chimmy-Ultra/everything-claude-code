@@ -1,0 +1,249 @@
+{
+  "unit": "conv-next",
+  "lead": [
+    "A 'what happens next' question asks what a speaker will do after the conversation ends. The answer is a plan, a promise or an agreed suggestion, often near the end.",
+    "「接下來會發生什麼」的題目問說話者在對話結束後要做什麼。答案是計畫、承諾或被接受的建議，常出現在接近結尾處。"
+  ],
+  "steps": [
+    [
+      "Note which speaker the question names: the man or the woman.",
+      "留意題目問的是哪一位：男子或女子。"
+    ],
+    [
+      "Listen to the last lines for plans: 'I'll', 'let me', 'I'll go ahead and'.",
+      "聽最後幾句的計畫：I'll、let me、I'll go ahead and。"
+    ],
+    [
+      "Pick the action that comes right after the talk, not one that is later or already done.",
+      "選緊接在對話之後的行動，不是更晚才做或已完成的事。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Promises and offers: 'I'll' and 'let me'",
+        "承諾與提議：I'll 與 let me"
+      ],
+      "body": [
+        "A speaker who says 'I'll' or 'let me' is announcing an action. That action is often the answer for that speaker.",
+        "說 I'll 或 let me 的人是在宣布要做某件事，那件事常是該說話者的答案。"
+      ],
+      "ex": [
+        [
+          "Man: <em>I'll</em> e-mail you the file right now.",
+          "男：我現在就把檔案寄給你。"
+        ],
+        [
+          "Woman: <em>Let me</em> check the stock room.",
+          "女：我去看一下儲藏室。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "A request plus agreement",
+        "請求加上同意"
+      ],
+      "body": [
+        "If one speaker asks and the other says 'sure' or 'no problem', the second speaker will do it. Match the action to the right person.",
+        "一人提出請求，另一人說 sure 或 no problem，就是後者要去做。要把行動配到對的人。"
+      ],
+      "ex": [
+        [
+          "Woman: Could you print the agenda? Man: <em>Sure.</em> The man will print it.",
+          "女：你能印議程嗎？男：好。男子會去印。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Accepted suggestions",
+        "被接受的建議"
+      ],
+      "body": [
+        "'Why don't you call Ms. Kim?' followed by 'Good idea' means the listener will call her. If the reply is 'I already did', she will not.",
+        "Why don't you call Ms. Kim? 後面接 Good idea，表示聽者會打給她。若回答 I already did，就不會。"
+      ],
+      "ex": [
+        [
+          "Man: Why don't you try the second-floor printer? Woman: <em>Good idea.</em>",
+          "男：你何不試試二樓的印表機？女：好主意。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Next, not later",
+        "是「接下來」，不是「之後」"
+      ],
+      "body": [
+        "Speakers may name several future steps. 'Right now', 'first' and 'let me' mark the next one. 'Tomorrow', 'later' and 'by Friday' mark later ones.",
+        "說話者可能提到好幾個未來步驟。right now、first、let me 標示下一步；tomorrow、later、by Friday 標示較晚的步驟。"
+      ],
+      "ex": [
+        [
+          "Man: I'll order more boxes tomorrow, but <em>first</em> I'll count what we have.",
+          "男：我明天會訂更多箱子，但我先清點現有的。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Past actions are not next",
+        "已完成的事不是下一步"
+      ],
+      "body": [
+        "'I've already sent it' tells you the action is finished. A wrong option often describes something that was already done.",
+        "I've already sent it 表示那件事已經完成。錯誤選項常描述已經做完的事。"
+      ],
+      "ex": [
+        [
+          "Woman: <em>I've already booked</em> the room, so I'll send everyone the invitation.",
+          "女：我已經訂好房間，所以接著要寄邀請給大家。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Options reword the action",
+        "選項會改寫行動"
+      ],
+      "body": [
+        "The audio says 'I'll dial the front desk'. The option says 'make a phone call'. Match the type of action, not the exact words.",
+        "音檔說 I'll dial the front desk，選項寫 make a phone call。要比對行動的類型，而不是字面。"
+      ],
+      "ex": [
+        [
+          "'I'll look it up on the website.' = <em>search for information online</em>.",
+          "「我上網查一下。」＝上網搜尋資訊。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What will the woman most likely do next? [Man: Could you check the stock room? Woman: Sure, I'll go look now.] / A: Check some inventory.",
+      "wrong": "Q: What will the woman most likely do next? [Man: Could you check the stock room? Woman: Sure, I'll go look now.] / A: Order more supplies.",
+      "why": [
+        "Ordering might come later, but nobody says it. The woman agrees to look in the stock room.",
+        "訂貨也許是之後的事，但沒人提到。女子答應的是去看儲藏室。"
+      ]
+    },
+    {
+      "right": "Q: What will the man do next? [Woman: Have you called the client? Man: Yes, this morning. Next I'll draft the contract.] / A: Write a contract.",
+      "wrong": "Q: What will the man do next? [Woman: Have you called the client? Man: Yes, this morning. Next I'll draft the contract.] / A: Call a client.",
+      "why": [
+        "The call was made this morning. The next step is the contract.",
+        "電話今天早上已經打過，下一步是起草合約。"
+      ]
+    },
+    {
+      "right": "Q: What will the woman do next? [Man: Why don't you ask Ms. Hall? Woman: Good idea. She's in the next office.] / A: Speak to a colleague.",
+      "wrong": "Q: What will the woman do next? [Man: Why don't you ask Ms. Hall? Woman: Good idea. She's in the next office.] / A: Look for a document.",
+      "why": [
+        "The woman accepts the suggestion to ask Ms. Hall. Nothing is said about a document.",
+        "女子接受了去問 Hall 女士的建議，沒有提到任何文件。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "What will the woman most likely do next?",
+          "女子接下來最可能做什麼？"
+        ],
+        [
+          "What does the man say he will do?",
+          "男子說他會做什麼？"
+        ],
+        [
+          "What does the man offer to do?",
+          "男子主動提議做什麼？"
+        ],
+        [
+          "What does the woman ask the man to do?",
+          "女子要求男子做什麼？"
+        ],
+        [
+          "What will the speakers probably do next?",
+          "說話者接下來可能做什麼？"
+        ],
+        [
+          "What will the man most likely do after the conversation?",
+          "男子在對話後最可能做什麼？"
+        ],
+        [
+          "What does the woman say she will do this afternoon?",
+          "女子說她今天下午會做什麼？"
+        ],
+        [
+          "What does the man suggest?",
+          "男子建議什麼？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Signals of the next action",
+        "預告下一步的說法"
+      ],
+      "items": [
+        [
+          "I'll do that now.",
+          "我現在就去做。"
+        ],
+        [
+          "Let me check.",
+          "我查一下。"
+        ],
+        [
+          "I'll go ahead and…",
+          "我就先……"
+        ],
+        [
+          "I'll start with the invoices.",
+          "我先從發票開始。"
+        ],
+        [
+          "I'll get right on it.",
+          "我馬上處理。"
+        ],
+        [
+          "I'll call you back.",
+          "我再回電給你。"
+        ],
+        [
+          "Leave it with me.",
+          "交給我吧。"
+        ],
+        [
+          "I'm on my way.",
+          "我馬上過去。"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Choosing the other speaker's action. Check whether the question names the man or the woman.",
+      "選了另一位說話者的行動。要確認題目問的是男子還是女子。"
+    ],
+    [
+      "Choosing a later step. 'Tomorrow' and 'by Friday' are later. The next action is usually the one with 'now', 'first' or 'let me'.",
+      "選了較晚的步驟。tomorrow 和 by Friday 是之後的事，下一步通常帶有 now、first 或 let me。"
+    ],
+    [
+      "Choosing something already done. Past forms such as 'I've sent' and 'I called this morning' are not next steps.",
+      "選了已經完成的事。I've sent、I called this morning 這類過去的說法不是下一步。"
+    ],
+    [
+      "Choosing a suggestion that was turned down. If the reply is 'I already tried that', the suggestion is not the answer.",
+      "選了被拒絕的建議。若回應是 I already tried that，該建議就不是答案。"
+    ]
+  ]
+}

@@ -1,0 +1,374 @@
+[
+ {
+  "id": "s01",
+  "scene": "Airport, delayed flight",
+  "words": [
+   "airport",
+   "terminal",
+   "passport",
+   "traveler",
+   "departure",
+   "itinerary",
+   "carrier",
+   "valid",
+   "attendant",
+   "postpone"
+  ]
+ },
+ {
+  "id": "s02",
+  "scene": "Hotel front desk, overbooked night",
+  "words": [
+   "receptionist",
+   "occupancy",
+   "complimentary",
+   "upgrade",
+   "lobby",
+   "elevator",
+   "confirmation",
+   "disappointment",
+   "overcharge",
+   "upstairs"
+  ]
+ },
+ {
+  "id": "s03",
+  "scene": "Warehouse, a damaged shipment arrives",
+  "words": [
+   "warehouse",
+   "shipment",
+   "unload",
+   "dock",
+   "container",
+   "freight",
+   "inventory",
+   "discrepancy",
+   "stack"
+  ]
+ },
+ {
+  "id": "s04",
+  "scene": "Accounts team closing the month",
+  "words": [
+   "accountant",
+   "payable",
+   "payroll",
+   "spreadsheet",
+   "deduct",
+   "overpay",
+   "remainder",
+   "invoice",
+   "quarterly",
+   "automate"
+  ]
+ },
+ {
+  "id": "s05",
+  "scene": "Expense claim after a business trip",
+  "words": [
+   "reimburse",
+   "reimbursement",
+   "receipt",
+   "incur",
+   "behalf",
+   "waive",
+   "rebate",
+   "costly",
+   "cancellation",
+   "absorb"
+  ]
+ },
+ {
+  "id": "s06",
+  "scene": "IT outage on a Monday morning",
+  "words": [
+   "outage",
+   "alert",
+   "technician",
+   "hardware",
+   "download",
+   "automatic",
+   "urgent",
+   "interfere",
+   "resume",
+   "laptop"
+  ]
+ },
+ {
+  "id": "s07",
+  "scene": "Hiring: interviewing for an open position",
+  "words": [
+   "applicant",
+   "recruitment",
+   "vacancy",
+   "prospective",
+   "junior",
+   "occupation",
+   "acceptance",
+   "reluctant",
+   "formally"
+  ]
+ },
+ {
+  "id": "s08",
+  "scene": "New-hire orientation day",
+  "words": [
+   "orientation",
+   "badge",
+   "manual",
+   "cafeteria",
+   "supervisor",
+   "assignment",
+   "campus",
+   "folder"
+  ]
+ },
+ {
+  "id": "s09",
+  "scene": "Factory safety inspection",
+  "words": [
+   "inspector",
+   "inspection",
+   "inspect",
+   "machinery",
+   "assembly",
+   "hazard",
+   "helmet",
+   "comply",
+   "conform",
+   "certify",
+   "drill"
+  ]
+ },
+ {
+  "id": "s10",
+  "scene": "Furniture showroom, weekend sale",
+  "words": [
+   "showroom",
+   "sofa",
+   "lamp",
+   "vase",
+   "shopper",
+   "aisle",
+   "sticker",
+   "seasonal",
+   "clerk",
+   "checkout",
+   "retailer"
+  ]
+ },
+ {
+  "id": "s11",
+  "scene": "Charity banquet, catering and venue",
+  "words": [
+   "caterer",
+   "cater",
+   "banquet",
+   "dessert",
+   "sandwich",
+   "allergy",
+   "charitable",
+   "donate",
+   "venue",
+   "organizer",
+   "noon"
+  ]
+ },
+ {
+  "id": "s12",
+  "scene": "Industry conference, the opening session",
+  "words": [
+   "attendee",
+   "forum",
+   "microphone",
+   "projector",
+   "reception",
+   "battery",
+   "interrupt",
+   "whoever",
+   "accessible"
+  ]
+ },
+ {
+  "id": "s13",
+  "scene": "Apartment rental, lease renewal",
+  "words": [
+   "landlord",
+   "tenant",
+   "lease",
+   "rental",
+   "renewal",
+   "vacate",
+   "appliance",
+   "pet",
+   "expire",
+   "occupant"
+  ]
+ },
+ {
+  "id": "s14",
+  "scene": "Office move to a new floor",
+  "words": [
+   "relocation",
+   "layout",
+   "installation",
+   "boardroom",
+   "copier",
+   "cartridge",
+   "cleaner",
+   "vacuum",
+   "downstairs",
+   "notify"
+  ]
+ },
+ {
+  "id": "s15",
+  "scene": "Renovating the shop before reopening",
+  "words": [
+   "renovate",
+   "renovation",
+   "contractor",
+   "tile",
+   "painter",
+   "completion",
+   "reopen",
+   "temporarily",
+   "considerably",
+   "deadline",
+   "fabric"
+  ]
+ },
+ {
+  "id": "s16",
+  "scene": "Clinic, a busy appointment day",
+  "words": [
+   "clinic",
+   "physician",
+   "dentist",
+   "relieve",
+   "tablet",
+   "reschedule",
+   "reminder",
+   "confidential",
+   "premium"
+  ]
+ },
+ {
+  "id": "s17",
+  "scene": "City hall, a public notice about street use",
+  "words": [
+   "authority",
+   "advisory",
+   "prohibit",
+   "forbid",
+   "outdoor",
+   "recycle",
+   "abide",
+   "downtown",
+   "vendor"
+  ]
+ },
+ {
+  "id": "s18",
+  "scene": "Customer complaint about a faulty product",
+  "words": [
+   "patience",
+   "refund",
+   "warranty",
+   "replacement",
+   "misplace",
+   "mislead",
+   "defective",
+   "poorly",
+   "dependable"
+  ]
+ },
+ {
+  "id": "s19",
+  "scene": "Shareholder meeting after a merger",
+  "words": [
+   "dividend",
+   "merger",
+   "takeover",
+   "turnover",
+   "steadily",
+   "sharply",
+   "portfolio",
+   "franchise",
+   "spite",
+   "precede"
+  ]
+ },
+ {
+  "id": "s20",
+  "scene": "Marketing launch, a redesigned brand",
+  "words": [
+   "brochure",
+   "newsletter",
+   "media",
+   "graphic",
+   "redesign",
+   "publish",
+   "subscription",
+   "reviewer",
+   "rewrite",
+   "logo"
+  ]
+ },
+ {
+  "id": "s21",
+  "scene": "Startup lawyer, protecting the brand",
+  "words": [
+   "trademark",
+   "copyright",
+   "patent",
+   "client",
+   "obtain",
+   "inquire",
+   "terminate",
+   "enclose"
+  ]
+ },
+ {
+  "id": "s22",
+  "scene": "Annual audit at head office",
+  "words": [
+   "auditor",
+   "audit",
+   "adhere",
+   "strictly",
+   "accordingly",
+   "duplicate",
+   "superior",
+   "shortly"
+  ]
+ },
+ {
+  "id": "s23",
+  "scene": "Training program graduation day",
+  "words": [
+   "graduation",
+   "certificate",
+   "compliment",
+   "trainer",
+   "familiarize",
+   "workshop",
+   "feedback",
+   "intern"
+  ]
+ },
+ {
+  "id": "s24",
+  "scene": "Delivery depot, morning dispatch",
+  "words": [
+   "fleet",
+   "highway",
+   "lane",
+   "garage",
+   "courier",
+   "weekday",
+   "overnight",
+   "distribution"
+  ]
+ }
+]

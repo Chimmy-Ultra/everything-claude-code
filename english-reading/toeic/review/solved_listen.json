@@ -1,0 +1,166 @@
+{
+  "answers": {
+    "l-qr-01": {
+      "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "Only C answers 'where' with a location; A says Yes to a wh-question and B reuses 'paper' in another sense.",
+      "vsToeic": "easier", "band": "easy", "style": 4,
+      "why": "The key answers directly with a location, and both distractors fail on question type or an obvious repeated word.",
+      "fix": "Make the key indirect, e.g. 'Maria's clearing a shelf in the supply room,' so the listener has to infer the location.",
+      "tooClose": false
+    },
+    "l-qr-02": {
+      "answer": "B", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "B names a person for a 'who' question; A answers 'what' and C repeats 'new office'.",
+      "vsToeic": "easier", "band": "easy", "style": 4,
+      "why": "The key directly names a person and the distractors are textbook ones, so no inference is needed.",
+      "fix": "Use an indirect key such as 'That hasn't been decided yet' or 'Ask the office manager,' and swap C for an 'order' sound-alike such as 'In order of arrival.'",
+      "tooClose": false
+    },
+    "l-qr-03": {
+      "answer": "A", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "A gives a reason for the change; B answers 'where' and C says Yes to a wh-question.",
+      "vsToeic": "easier", "band": "easy", "style": 4,
+      "why": "Only one option gives a cause, and both distractors fail on question type alone.",
+      "fix": "Make the key indirect ('Didn't you see Daniel's e-mail?') and replace C with a repeated-word trap such as 'We moved offices last spring.'",
+      "tooClose": false
+    },
+    "l-qr-04": {
+      "answer": "B", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "B confirms the repair; A reuses 'working' in another sense and C is a printer-related phrase.",
+      "vsToeic": "easier", "band": "easy", "style": 4,
+      "why": "The key opens with 'Yes' and restates the idea, so a listener picks it at once.",
+      "fix": "Drop the 'Yes' and imply the answer, e.g. 'I just printed my report up there' or 'A technician came by this morning.'",
+      "tooClose": false
+    },
+    "l-qr-05": {
+      "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "C confirms the booking with 'reserved'; A repeats 'conference' and B is a hotel-related phrase.",
+      "vsToeic": "easier", "band": "easy", "style": 4,
+      "why": "A tag question answered with 'Yes' plus a near-restatement is very easy to spot.",
+      "fix": "Use an indirect key such as 'Tim's handling travel this year' or 'The Grand was full, so I'm trying another hotel.'",
+      "tooClose": false
+    },
+    "l-qr-06": {
+      "answer": "A", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "A implies the list isn't ready because Monica is still checking the figures; B says Yes to a wh-question and C repeats 'new' and 'list'.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "This is an indirect reply to a when-question: the listener must infer 'not yet' without hearing any time expression.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-qr-07": {
+      "answer": "B", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "B indirectly turns down the offer because the contract hasn't been reviewed; A answers 'where' and C repeats 'client'.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "The offer is answered with an implied 'not yet', and the distractors use location and repeated-word traps.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-qr-08": {
+      "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "C is an indirect 'I don't know' from a new employee; A says Yes to a wh-question and B answers a question about commuting.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "This is the classic indirect 'I don't know' reply, and B's commuting answer plays on 'get to'.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-01:0": {
+      "answer": "B", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "The whole conversation is about the department moving to the fifth floor, paraphrased as 'relocation'.",
+      "vsToeic": "similar", "band": "easy", "style": 4,
+      "why": "The topic is stated in the first line; the distractors reuse details that are mentioned (moving company, furniture, meeting rooms).",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-01:1": {
+      "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "'I'll give everyone boxes and labels tomorrow morning' means she will hand out packing materials.",
+      "vsToeic": "similar", "band": "easy", "style": 4,
+      "why": "The word 'tomorrow' points straight to the last line and the paraphrase is mild; A is a trap based on who does what.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-02:0": {
+      "answer": "A", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "Deliveries start at noon but she needs the food by 11:30, so the order can't arrive in time.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "The listener must connect the 11:30 request with the noon start, and D reuses 'noon'.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-02:1": {
+      "answer": "D", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "'I'll send my assistant to collect them' means having a staff member pick up the food.",
+      "vsToeic": "similar", "band": "easy", "style": 5,
+      "why": "The paraphrase is clear, and C reuses the noon delivery as a trap.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-03:0": {
+      "answer": "B", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "Her 3:00 appointment means she can't review the brochure later in the afternoon.",
+      "vsToeic": "similar", "band": "medium", "style": 4,
+      "why": "A why-mention question needs inference, but 'I'd like to, but...' signals the refusal clearly; a real test more often quotes the phrase ('What does the woman imply when she says...').",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-03:1": {
+      "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "Tom 'checked the prices on the back page', which means he reviewed the cost details.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "Good traps that mix up who did what: the man books the room, the woman prints the copy, and the photos are still to be checked.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-04:0": {
+      "answer": "D", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "She says 'Let me turn it over' to find the model number on the bottom.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "The listener must infer 'underside' from 'turn it over' and 'on the bottom'; B contradicts his offer to come up to her desk.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-conv-04:1": {
+      "answer": "A", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "'Bring a new battery up to your desk' means delivering a part to her workspace.",
+      "vsToeic": "similar", "band": "easy", "style": 4,
+      "why": "A direct paraphrase of the final line; C contradicts 'we keep spares here'.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-talk-01:0": {
+      "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "The east-side lifts are being replaced, which means new elevators are being installed.",
+      "vsToeic": "similar", "band": "easy", "style": 4,
+      "why": "The topic comes in the first two lines with a lifts-to-elevators paraphrase; the café and office-hours distractors reuse later details.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-talk-01:1": {
+      "answer": "A", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "'Open fifteen minutes earlier' means it will start serving sooner in the morning.",
+      "vsToeic": "similar", "band": "easy", "style": 4,
+      "why": "The answer is in one sentence; B reuses 'ground floor' and C reuses 'two weeks'. The reason given for opening early is a little loose.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-talk-02:0": {
+      "answer": "D", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "The talk will now run 40 minutes instead of 30.",
+      "vsToeic": "similar", "band": "medium", "style": 5,
+      "why": "The listener must link '40 instead of 30' to 'more time'; A (Monday), B (room) and C (another speaker) all reuse details from the audio.",
+      "fix": "",
+      "tooClose": false
+    },
+    "l-talk-02:1": {
+      "answer": "B", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+      "reason": "'Email me your slides by Monday' means sending his presentation files.",
+      "vsToeic": "similar", "band": "easy", "style": 4,
+      "why": "The request is stated outright; A twists the parking-pass offer and D contradicts the laptop already in the room.",
+      "fix": "",
+      "tooClose": false
+    }
+  },
+  "overall": "Correctness: each of the 20 questions has exactly one defensible answer and none is ambiguous. In Parts 3 and 4 the correct options paraphrase the audio instead of repeating it ('boxes and labels' -> 'packing materials', 'lifts' -> 'elevators', 'send my assistant to collect them' -> 'have a staff member pick up the food'). Part 2 uses the real test's standard traps (Yes to wh-questions, answering a different question type, repeated words such as paper/working/client/kitchen, related words such as double-sided/double room), and qr-06, qr-07 and qr-08 are convincing indirect replies. However, five of the eight Part 2 items have direct, easy-to-spot answers, two of them starting with 'Yes', so the set is easier than real Part 2, which in my judgment relies more on indirect replies and also includes statements, choice questions and negative questions, none of which appear here. The Part 3 conversations are natural and work-based, with good traps (mixing up who did what in conv-03, 'noon' in conv-02) and the usual question types (topic, problem, next action, why a detail is mentioned), but they are shorter than real Part 3 conversations, have two questions instead of three, and include no three-speaker, graphic or quoted-phrase item. The Part 4 talks are typical genres (a building announcement and a voicemail) with good traps, but at five lines they are thinner than real Part 4 talks and would need more detail to support a third question; with no hard items overall (12 easy, 8 medium), the first priorities are indirect answers in Part 2 and longer scripts with a third question in Parts 3 and 4.",
+  "changeFirst": ["l-qr-04", "l-qr-05", "l-qr-02", "l-qr-01", "l-qr-03"]
+}

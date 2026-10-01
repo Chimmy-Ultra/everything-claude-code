@@ -1,0 +1,120 @@
+{
+  "unit": "family",
+  "lead": ["The options share one root but end differently, so each has a different meaning. First the grammar may narrow them down; then the ending and the context decide.", "選項共用同一個字根，但字尾不同，意思也不同。先用文法縮小範圍，再用字尾和語境決定。"],
+  "steps": [
+    ["Decide what the blank needs: noun, adjective, adverb or verb form.", "先判斷空格需要名詞、形容詞、副詞還是動詞形式。"],
+    ["If several options have the right form, read their endings and meanings.", "如果有幾個選項詞性都對，就看字尾與意思。"],
+    ["Check the word the adjective describes, or the preposition after it (attentive to, dependent on).", "看形容詞修飾的字，或後面的介系詞（attentive to、dependent on）。"]
+  ],
+  "rules": [
+    {
+      "head": ["-able / -ible often means “can be done”", "-able、-ible 常表示「可被…的」"],
+      "body": ["Add -able to a verb and you often get an adjective meaning “can be …-ed”. Preventable means can be prevented. Dependable means can be depended on. Comprehensible means can be understood.", "動詞加 -able 常變成「可被…的」形容詞。preventable 是可預防的；dependable 是可靠的；comprehensible 是可理解的。"],
+      "ex": [
+        ["Most of these delays were <em>preventable</em>.", "這些延誤大多是可以避免的。"],
+        ["Ms. Park is a <em>dependable</em> member of the team.", "Park 女士是團隊中可靠的成員。"]
+      ]
+    },
+    {
+      "head": ["-ive means “does” or “tends to”", "-ive 表示「具有…作用的」"],
+      "body": ["An -ive adjective describes something that does an action. Comprehensive covers everything. Imaginative shows imagination. Preventive is meant to prevent. Compare it with the -able form of the same root.", "-ive 形容詞描述會做某個動作的事物。comprehensive 是涵蓋全面的；imaginative 是有想像力的；preventive 是用來預防的。要和同字根的 -able 形式比較。"],
+      "ex": [
+        ["The clinic offers <em>preventive</em> care for all employees.", "診所為全體員工提供預防性的照護。"],
+        ["The design agency made an <em>imaginative</em> proposal for the launch.", "設計公司為上市活動提出了很有創意的提案。"]
+      ]
+    },
+    {
+      "head": ["One root, four words: respect", "同一字根四個字：respect"],
+      "body": ["Respectful describes a person who shows respect. Respectable describes someone worth respecting. Respected describes someone people already admire. Respective means each person’s own. One root, four meanings.", "respectful 是尊敬他人的；respectable 是值得尊敬的；respected 是受人敬重的；respective 是各自的。同一字根，四種意思。"],
+      "ex": [
+        ["Each manager will present the plan for his or her <em>respective</em> department.", "每位經理將報告自己部門的計畫。"],
+        ["Please be <em>respectful</em> of your colleagues’ time.", "請尊重同事的時間。"]
+      ]
+    },
+    {
+      "head": ["Pairs like -ic / -ical can differ in meaning", "-ic／-ical 這類字對意思可能不同"],
+      "body": ["Some pairs look nearly the same but mean different things: economic is about the economy, economical saves money. Industrial is about industry, industrious means hard-working. Check each in context.", "有些字看起來幾乎一樣，意思卻不同：economic 與經濟有關，economical 是節省的。industrial 是工業的，industrious 是勤奮的。要看語境。"],
+      "ex": [
+        ["A small car is an <em>economical</em> choice for city deliveries.", "小型車是市區送貨的省錢選擇。"],
+        ["The <em>industrial</em> park is located north of the city.", "工業園區位於城市北邊。"]
+      ]
+    },
+    {
+      "head": ["Person endings: -er, -ee, -ant, -or", "表示人的字尾：-er、-ee、-ant、-or"],
+      "body": ["-er, -or and -ant usually name the person who does the action: employer, supervisor, applicant. -ee usually names the person who receives it: employee, trainee, interviewee. Check who does the action in the sentence.", "-er、-or、-ant 通常指做動作的人：employer、supervisor、applicant。-ee 通常指接受動作的人：employee、trainee、interviewee。看句中誰做動作。"],
+      "ex": [
+        ["Each <em>applicant</em> must submit a résumé.", "每位應徵者都必須提交履歷。"],
+        ["The <em>interviewee</em> arrived ten minutes early.", "面試者提早十分鐘到達。"]
+      ]
+    },
+    {
+      "head": ["A fixed preposition can decide the word", "固定的介系詞可以決定答案"],
+      "body": ["Many adjectives take a fixed preposition. Attentive to means giving care to. Dependent on means relying on. Sensitive to means easily affected by. The preposition after the blank can point to the answer.", "許多形容詞搭固定的介系詞。attentive to 是留心照顧；dependent on 是依賴；sensitive to 是對…敏感。空格後的介系詞可以提示答案。"],
+      "ex": [
+        ["The waiter was very <em>attentive to</em> every guest.", "服務生非常留意每一位客人。"],
+        ["Sales are <em>dependent on</em> the weather.", "銷售額取決於天氣。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "Please keep this information confidential.", "wrong": "Please keep this information confident.", "why": ["Confidential means secret. Confident describes a person who feels sure.", "confidential 是機密的；confident 是人有信心。"]},
+    {"right": "Guests receive a complimentary breakfast.", "wrong": "Guests receive a complementary breakfast.", "why": ["Complimentary means free. Complementary means going well together.", "complimentary 是免費贈送的；complementary 是互補的。"]},
+    {"right": "A compact car is an economical choice for our delivery team.", "wrong": "A compact car is an economic choice for our delivery team.", "why": ["Economical means saving money. Economic relates to the economy.", "economical 是省錢的；economic 是經濟（面）的。"]},
+    {"right": "Ms. Wu was sensible to double-check the figures.", "wrong": "Ms. Wu was sensitive to double-check the figures.", "why": ["Sensible means showing good judgment. Sensitive means easily affected.", "sensible 是明智的；sensitive 是敏感的。"]}
+  ],
+  "lists": [
+    {
+      "head": ["Look-alike words, different meaning", "長得像、意思不同的字"],
+      "items": [
+        ["confident / confidential", "有信心的／機密的"],
+        ["sensitive / sensible", "敏感的／明智的"],
+        ["economic / economical", "經濟的／節省的"],
+        ["industrial / industrious", "工業的／勤奮的"],
+        ["complimentary / complementary", "免費贈送的／互補的"],
+        ["considerate / considerable", "體貼的／相當大的"],
+        ["historic / historical", "有歷史意義的／歷史的"],
+        ["successful / successive", "成功的／連續的"]
+      ]
+    },
+    {
+      "head": ["Same root: -able, -ive and -ent pairs", "同字根：-able、-ive、-ent 字對"],
+      "items": [
+        ["preventable / preventive", "可預防的／預防性的"],
+        ["comprehensible / comprehensive", "可理解的／全面的"],
+        ["imaginable / imaginative", "想得到的／有創意的"],
+        ["dependable / dependent", "可靠的／依賴的"],
+        ["respectable / respective", "值得尊敬的／各自的"],
+        ["responsible / responsive", "負責的／反應靈敏的"]
+      ]
+    },
+    {
+      "head": ["Endings that name people", "表示人的字尾"],
+      "items": [
+        ["employer / employee", "雇主／員工"],
+        ["trainer / trainee", "培訓師／受訓者"],
+        ["interviewer / interviewee", "面試官／面試者"],
+        ["applicant", "應徵者、申請人"],
+        ["participant", "參加者"],
+        ["consultant", "顧問"],
+        ["supervisor", "主管"],
+        ["accountant", "會計人員"]
+      ]
+    },
+    {
+      "head": ["Endings that often show word class", "常顯示詞性的字尾"],
+      "items": [
+        ["-tion, -ment, -ness, -ity: noun", "名詞字尾"],
+        ["-al, -ous, -ive, -ful: usually adjective", "多半是形容詞字尾"],
+        ["-able, -ible, -less: adjective", "形容詞字尾"],
+        ["-ize, -ify, -en: verb", "動詞字尾"],
+        ["-ly: usually adverb", "多半是副詞字尾"],
+        ["-ance, -ence: noun", "名詞字尾"]
+      ]
+    }
+  ],
+  "traps": [
+    ["Grammar alone will not finish the question. When two or more options are adjectives, the ending and the context decide, so read the noun the adjective describes.", "光靠文法無法完成這類題。當有兩個以上選項都是形容詞，要靠字尾和語境，所以要看形容詞修飾的名詞。"],
+    ["Words that look alike are not synonyms. Confident and confidential differ by one syllable but mean different things. Do not choose by spelling.", "長得像的字不是同義字。confident 與 confidential 只差一個音節，意思卻完全不同。不要憑拼字選。"],
+    ["Check the preposition after the blank. Attentive takes to, dependent takes on, sensitive takes to. A wrong preposition usually means the option is wrong.", "檢查空格後的介系詞。attentive 搭 to，dependent 搭 on，sensitive 搭 to。介系詞不對，通常就代表選項不對。"]
+  ]
+}

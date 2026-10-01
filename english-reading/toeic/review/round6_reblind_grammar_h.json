@@ -1,0 +1,101 @@
+[
+ {
+  "id": "g-conditional-07",
+  "format": "gap",
+  "stem": "If the shipment of replacement valves that the supplier promised for Tuesday ______ the Brantwood plant by Friday afternoon, the second shift will resume production on Monday as originally planned.",
+  "options": {
+   "A": "reaches",
+   "B": "had reached",
+   "C": "reaching",
+   "D": "would reach"
+  }
+ },
+ {
+  "id": "g-conditional-09",
+  "format": "gap",
+  "stem": "Under the new policy, employees keep their seniority and pension entitlements ______ they transfer to the Northgate office before the restructuring takes effect in January, while those who apply after that date start again at entry level.",
+  "options": {
+   "A": "as if",
+   "B": "in case",
+   "C": "until",
+   "D": "provided that"
+  }
+ },
+ {
+  "id": "g-conditional-11",
+  "format": "gap",
+  "stem": "The municipal recycling center, which handles waste from all eleven city districts, has only one crew and no budget for another; if it ______ able to run a second shift, its backlog would be cleared by December.",
+  "options": {
+   "A": "is",
+   "B": "has been",
+   "C": "being",
+   "D": "were"
+  }
+ },
+ {
+  "id": "g-conditional-15",
+  "format": "gap",
+  "stem": "If the retailer were not so heavily dependent on a single carrier, its deliveries to the northern stores ______ so badly disrupted by the strike that began in early September, when several of those stores ran out of stock.",
+  "options": {
+   "A": "would not be",
+   "B": "were not",
+   "C": "had not been",
+   "D": "would not have been"
+  }
+ },
+ {
+  "id": "g-conditional-17",
+  "format": "gap",
+  "stem": "Without the forty volunteers who staff the information desk every weekend, the museum ______ able to keep its galleries open on both weekend days, as it has done every week since January.",
+  "options": {
+   "A": "would not be",
+   "B": "is not",
+   "C": "had not been",
+   "D": "was not"
+  }
+ },
+ {
+  "id": "g-conditional-18",
+  "format": "gap",
+  "stem": "______ the main backup generator at the Ashcombe data center, which is tested every month, fail during the storm season, the cooling system would shut down within minutes and all hosted services would go offline.",
+  "options": {
+   "A": "Although",
+   "B": "Should",
+   "C": "Even though",
+   "D": "Whenever"
+  }
+ },
+ {
+  "id": "g-conditional-19",
+  "format": "gap",
+  "stem": "______ the lease on the Harbor Street premises, which the clinic has held since 2009, not due to expire in March, the practice would have no reason to consider relocating.",
+  "options": {
+   "A": "Whether",
+   "B": "Were",
+   "C": "Since",
+   "D": "Provided"
+  }
+ },
+ {
+  "id": "g-conditional-20",
+  "format": "gap",
+  "stem": "Had the printer's production manager, whom the publisher consulted only after the first run, ______ the revised page proofs before the deadline, the errata slip tucked into every copy would have been unnecessary.",
+  "options": {
+   "A": "received",
+   "B": "receive",
+   "C": "receiving",
+   "D": "have received"
+  }
+ },
+ {
+  "id": "g-conditional-23",
+  "format": "gap",
+  "stem": "It is high time that the university's admissions office, whose acceptance rate has fallen for three consecutive years, ______ the way it assesses overseas applications.",
+  "options": {
+   "A": "has reviewed",
+   "B": "will review",
+   "C": "reviewed",
+   "D": "is reviewing"
+  }
+ }
+]

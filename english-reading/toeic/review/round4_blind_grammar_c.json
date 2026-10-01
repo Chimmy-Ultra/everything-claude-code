@@ -1,0 +1,266 @@
+[
+ {
+  "id": "g-pos-09",
+  "format": "gap",
+  "stem": "The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
+  "options": {
+   "A": "access",
+   "B": "accessibly",
+   "C": "accessible",
+   "D": "accessibility"
+  }
+ },
+ {
+  "id": "g-pos-10",
+  "format": "gap",
+  "stem": "______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
+  "options": {
+   "A": "Applications",
+   "B": "Apply",
+   "C": "Applying",
+   "D": "Applied"
+  }
+ },
+ {
+  "id": "g-tense-07",
+  "format": "gap",
+  "stem": "The Wexley Road call center, which now handles more than ten thousand calls a week, ______ without any scheduling software for nearly two years when Ms. Ferrante was hired to manage it.",
+  "options": {
+   "A": "has been operating",
+   "B": "will have been operating",
+   "C": "is operating",
+   "D": "had been operating"
+  }
+ },
+ {
+  "id": "g-tense-08",
+  "format": "gap",
+  "stem": "Revenue from the company's online store, which has grown steadily every month since the website was redesigned, ______ the combined revenue of its four retail branches for the first time last quarter.",
+  "options": {
+   "A": "has surpassed",
+   "B": "surpassed",
+   "C": "had surpassed",
+   "D": "will surpass"
+  }
+ },
+ {
+  "id": "g-voice-04",
+  "format": "gap",
+  "stem": "The two interns the head of the payroll department ______ to the benefits project last month have both been offered full-time positions starting in January.",
+  "options": {
+   "A": "was assigned",
+   "B": "has been assigned",
+   "C": "assigning",
+   "D": "assigned"
+  }
+ },
+ {
+  "id": "g-participle-06",
+  "format": "gap",
+  "stem": "______ only two days' notice of the elevator repairs, the tenants on the upper floors had to arrange for their furniture deliveries to be carried up by hand.",
+  "options": {
+   "A": "Given",
+   "B": "Giving",
+   "C": "Having given",
+   "D": "To give"
+  }
+ },
+ {
+  "id": "g-participle-07",
+  "format": "gap",
+  "stem": "Employees ______ to transfer to the new Corran Street office when it opens in October should inform their department heads in writing by the end of June.",
+  "options": {
+   "A": "wish",
+   "B": "wishing",
+   "C": "wished",
+   "D": "are wishing"
+  }
+ },
+ {
+  "id": "g-connect-07",
+  "format": "gap",
+  "stem": "______ the revised safety regulations that the city council passed in March, all scaffolding on our construction sites must now be inspected by a certified engineer every week.",
+  "options": {
+   "A": "Because",
+   "B": "Even though",
+   "C": "In light of",
+   "D": "Therefore"
+  }
+ },
+ {
+  "id": "g-connect-08",
+  "format": "gap",
+  "stem": "______ the merger is approved by shareholders at next month's annual meeting or not, the two firms will continue to share the distribution center they jointly lease.",
+  "options": {
+   "A": "If",
+   "B": "Unless",
+   "C": "Either",
+   "D": "Whether"
+  }
+ },
+ {
+  "id": "g-agree-05",
+  "format": "gap",
+  "stem": "The chief financial officer, as well as the two external auditors who reviewed last year's accounts, ______ expected to answer questions from the board at Thursday's budget review.",
+  "options": {
+   "A": "is",
+   "B": "are",
+   "C": "have been",
+   "D": "being"
+  }
+ },
+ {
+  "id": "g-agree-06",
+  "format": "gap",
+  "stem": "One of the courier vans that deliver to our downtown branches ______ been out of service since Tuesday, so some orders will arrive a day late this week.",
+  "options": {
+   "A": "have",
+   "B": "has",
+   "C": "having",
+   "D": "to have"
+  }
+ },
+ {
+  "id": "g-relative-05",
+  "format": "gap",
+  "stem": "The firm has hired two outside consultants, both of ______ have advised major retailers on store design, to help plan the layout of its new flagship location.",
+  "options": {
+   "A": "them",
+   "B": "who",
+   "C": "whom",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-relative-06",
+  "format": "gap",
+  "stem": "The hotel ______ the members of our regional sales team stayed during last year's conference has offered us a reduced rate if we book thirty rooms by the end of May.",
+  "options": {
+   "A": "which",
+   "B": "where",
+   "C": "what",
+   "D": "who"
+  }
+ },
+ {
+  "id": "g-pronoun-05",
+  "format": "gap",
+  "stem": "Ms. Kwon has asked the sales associates who joined the Linnet Street store this month to familiarize ______ with the return policy before the holiday sale begins.",
+  "options": {
+   "A": "them",
+   "B": "their own",
+   "C": "they",
+   "D": "themselves"
+  }
+ },
+ {
+  "id": "g-pronoun-06",
+  "format": "gap",
+  "stem": "The company looked at two buildings near the airport for its new claims-processing office, but ______ had enough parking for the evening shift, so it signed a lease on a third.",
+  "options": {
+   "A": "neither",
+   "B": "both",
+   "C": "each",
+   "D": "either"
+  }
+ },
+ {
+  "id": "g-prep-08",
+  "format": "gap",
+  "stem": "The project manager blamed the three-week delay in completing the east wing of the hospital chiefly ______ the late arrival of steel beams from the supplier.",
+  "options": {
+   "A": "for",
+   "B": "to",
+   "C": "on",
+   "D": "with"
+  }
+ },
+ {
+  "id": "g-prep-09",
+  "format": "gap",
+  "stem": "The new security software prevents employees who have not yet completed the annual data protection training ______ opening files stored in the client database.",
+  "options": {
+   "A": "by",
+   "B": "for",
+   "C": "with",
+   "D": "from"
+  }
+ },
+ {
+  "id": "g-toing-05",
+  "format": "gap",
+  "stem": "To cut costs, the committee is considering, among several other measures proposed by the finance department, ______ the branch office on Morrow Lane when its lease expires.",
+  "options": {
+   "A": "to close",
+   "B": "closing",
+   "C": "close",
+   "D": "closed"
+  }
+ },
+ {
+  "id": "g-toing-06",
+  "format": "gap",
+  "stem": "After months of stalled negotiations, the two shipping firms are now closer than they have been at any point in the past three years ______ a long-term agreement on shared port facilities.",
+  "options": {
+   "A": "to sign",
+   "B": "for signing",
+   "C": "to signing",
+   "D": "signing"
+  }
+ },
+ {
+  "id": "g-mandative-04",
+  "format": "gap",
+  "stem": "The supply agreement requires, in the clause on late deliveries, that any shipment arriving more than two days behind schedule ______ at a ten percent discount.",
+  "options": {
+   "A": "be invoiced",
+   "B": "will be invoiced",
+   "C": "being invoiced",
+   "D": "to be invoiced"
+  }
+ },
+ {
+  "id": "g-conditional-04",
+  "format": "gap",
+  "stem": "______ the board, which has already postponed its decision twice this year, to approve the expansion at Thursday's meeting, construction could begin as early as March.",
+  "options": {
+   "A": "If",
+   "B": "Should",
+   "C": "Were",
+   "D": "Unless"
+  }
+ },
+ {
+  "id": "g-compare-05",
+  "format": "gap",
+  "stem": "Since reopening in June, the renovated branch on Delford Street has been serving ______ customers on an average weekday than the two older branches nearby combined.",
+  "options": {
+   "A": "most",
+   "B": "many",
+   "C": "much",
+   "D": "more"
+  }
+ },
+ {
+  "id": "g-quantity-05",
+  "format": "gap",
+  "stem": "______ of applicants for the warehouse positions at the Ostley site has nearly doubled since the company raised its starting wage in the spring.",
+  "options": {
+   "A": "The number",
+   "B": "A number",
+   "C": "The amount",
+   "D": "A lot"
+  }
+ },
+ {
+  "id": "g-parallel-04",
+  "format": "gap",
+  "stem": "Ms. Rao's duties as office manager at the new branch include ordering supplies, scheduling repairs with outside contractors, and ______ the monthly budget for cleaning and maintenance.",
+  "options": {
+   "A": "to manage",
+   "B": "managing",
+   "C": "manage",
+   "D": "managed"
+  }
+ }
+]

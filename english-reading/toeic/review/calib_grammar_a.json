@@ -1,0 +1,198 @@
+{
+  "items": {
+    "g-pos-01": {
+      "answer": "C",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "The adverb slot between 'were' and 'calculated' is immediately visible and the noun and verb distractors are wrong at a glance.",
+      "fix": ""
+    },
+    "g-pos-02": {
+      "answer": "A",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "The linking verb 'seem' sits right before the blank; only the adverb 'acceptably' offers a small learner trap.",
+      "fix": ""
+    },
+    "g-pos-03": {
+      "answer": "D",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "'The ______ of' calls for a noun, and it is the only noun among the options.",
+      "fix": ""
+    },
+    "g-pos-04": {
+      "answer": "B",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "'Safety inspection' fits the words next to the blank, and only 'who visited', further along, shows that a person noun is needed.",
+      "fix": ""
+    },
+    "g-pos-05": {
+      "answer": "A",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The adjective slot is clear, but 'costly' is an -ly adjective that learners often misread as an adverb, which is a real trap.",
+      "fix": ""
+    },
+    "g-pos-06": {
+      "answer": "C",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The test-taker must see that the comparative 'easier' takes an adverb, and 'made it + adjective' makes 'considerable' attractive.",
+      "fix": ""
+    },
+    "g-tense-01": {
+      "answer": "D",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 4,
+      "why": "'Two weeks ago' comes right after the object and rules out every form except the simple past; 'has visited' is the only lure.",
+      "fix": ""
+    },
+    "g-tense-02": {
+      "answer": "B",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 4,
+      "why": "'At the moment' right after the object, plus 'this morning', gives a double, textbook-style signal for the present progressive.",
+      "fix": ""
+    },
+    "g-tense-03": {
+      "answer": "A",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The future meaning pulls toward 'will complete', and the test-taker must apply the rule that time clauses take the present tense.",
+      "fix": ""
+    },
+    "g-tense-04": {
+      "answer": "C",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The deciding 'since' is at the far end of the sentence, and 'expanded' fits everything near the blank.",
+      "fix": ""
+    },
+    "g-tense-05": {
+      "answer": "D",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "'By the time' pulls toward 'will have spent', and only the past verb 'was completed' in the subordinate clause points to the past perfect.",
+      "fix": ""
+    },
+    "g-connect-01": {
+      "answer": "B",
+      "vsToeic": "easier",
+      "band": "easy",
+      "style": 4,
+      "why": "'Because of' is the only preposition before the noun phrase, and 'therefore' and 'so that' are wrong at a glance, so it takes one grammar step.",
+      "fix": "Replace 'therefore' and 'so that' with 'despite' and 'although' so that two prepositions remain and meaning must decide between them."
+    },
+    "g-connect-02": {
+      "answer": "D",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "A full clause follows the blank and 'while' is the only conjunction, though 'during' and 'throughout' fit the meaning as lures.",
+      "fix": ""
+    },
+    "g-connect-03": {
+      "answer": "A",
+      "vsToeic": "easier",
+      "band": "easy",
+      "style": 3,
+      "why": "The '; ______,' punctuation identifies a conjunctive adverb, and 'therefore' is the only adverb among the options, so meaning is never tested.",
+      "fix": "Make all four options conjunctive adverbs (therefore, however, otherwise, instead) so that the cause-result meaning decides, or recast it as a single clause such as 'Because the supplier has raised its prices twice this year, we ...' with conjunction or preposition options."
+    },
+    "g-connect-04": {
+      "answer": "C",
+      "vsToeic": "easier",
+      "band": "easy",
+      "style": 4,
+      "why": "'Unless' is the only conjunction before the clause 'customers choose', so grammar alone decides and the negative condition is never tested.",
+      "fix": "Use four conjunctions (unless, if, because, whereas) so that the test-taker must link 'will not be shipped until' with the exception meaning of 'unless'."
+    },
+    "g-connect-05": {
+      "answer": "B",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "Both 'Because' and 'Even though' fit the clause, and only the contrast signalled later by 'far less' and 'still' decides.",
+      "fix": ""
+    },
+    "g-prep-01": {
+      "answer": "A",
+      "vsToeic": "easier",
+      "band": "easy",
+      "style": 4,
+      "why": "'At the latest' adds a second deadline signal, so the classic 'by' vs 'until' contrast barely needs the verb 'submitted'.",
+      "fix": "Drop 'at the latest' so that the choice between 'by' and 'until' rests only on the one-time action 'submitted'."
+    },
+    "g-prep-02": {
+      "answer": "D",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "The number-plus-period 'three days' sits right after the blank, and 'during' is the one well-known learner trap.",
+      "fix": ""
+    },
+    "g-prep-03": {
+      "answer": "C",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The item depends on knowing the formal set phrase 'upon completion', which weaker test-takers may not recognise.",
+      "fix": ""
+    },
+    "g-prep-04": {
+      "answer": "B",
+      "vsToeic": "similar",
+      "band": "hard",
+      "style": 5,
+      "why": "'During the merger ... last year' reads well near the blank, and only the present perfect 'has doubled' after the comma decides.",
+      "fix": ""
+    },
+    "g-participle-01": {
+      "answer": "A",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 5,
+      "why": "'Updated price list' is a very common fixed business phrase, and the other forms sound wrong before a noun.",
+      "fix": ""
+    },
+    "g-participle-02": {
+      "answer": "D",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "'Participated' looks like a normal past verb, and the test-taker must notice that 'will be listed' is the main verb and that 'participate' cannot be passive.",
+      "fix": ""
+    },
+    "g-participle-03": {
+      "answer": "C",
+      "vsToeic": "similar",
+      "band": "hard",
+      "style": 5,
+      "why": "'Building in only six months' reads well, and only the subject 'the distribution center' after the comma shows the passive meaning.",
+      "fix": ""
+    },
+    "g-participle-04": {
+      "answer": "B",
+      "vsToeic": "similar",
+      "band": "hard",
+      "style": 5,
+      "why": "'Were disappointed' fits the words next to the blank, and the non-human subject 'sales figures' is separated from it by a long prepositional phrase.",
+      "fix": ""
+    }
+  },
+  "overall": "In my judgment the mix leans easier than a real Part 5 set: about half the items are easy, most of the rest are medium, and only three reach hard, all of them the 'clue after the comma' type. The connector unit is systematically too easy. In four of five items (connect-01, -03, -04, and to a lesser extent -02) only one option belongs to the part of speech the slot needs, so grammar alone decides and meaning is rarely tested, whereas real connector items usually offer two or more grammatically possible options. The part-of-speech, tense and participle units are well calibrated and read like real items, and pos-04, pos-05, tense-03, connect-05, participle-02 and participle-04 are especially authentic. The tense unit offers only active finite forms, while real verb-form items often mix voice and non-finite forms (for example 'has been expanded' or 'expanding'), and no grammar types that are often hard appear at all (relative pronouns such as whose/whom, pronoun case or reflexives, inversion, correlatives, or agreement with a distant subject). I would fix the connector distractors and prep-01 first, then turn one easy tense item into a voice-plus-tense item so that the set gains another genuinely hard verb question.",
+  "changeFirst": ["g-connect-03", "g-connect-04", "g-connect-01", "g-prep-01"]
+}

@@ -1,0 +1,250 @@
+[
+ {
+  "id": "l-qr-03",
+  "format": "qr",
+  "heard": "Are you taking the train to the trade fair, or driving?",
+  "responses": {
+   "A": "Parking near the exhibition center is really expensive.",
+   "B": "The fair opens on Thursday.",
+   "C": "I've already trained the new staff."
+  }
+ },
+ {
+  "id": "l-qr-09",
+  "format": "qr",
+  "heard": "Who's going to lead the safety training now that Ms. Harlan has retired?",
+  "responses": {
+   "A": "Ms. Harlan will be leading it.",
+   "B": "That's on the agenda for Monday's meeting.",
+   "C": "It was very useful last year."
+  }
+ },
+ {
+  "id": "l-qr-10",
+  "format": "qr",
+  "heard": "Why is the parking garage closed today?",
+  "responses": {
+   "A": "Because I usually take the train.",
+   "B": "Until six this evening.",
+   "C": "Didn't you see the e-mail from the building manager?"
+  }
+ },
+ {
+  "id": "l-qr-11",
+  "format": "qr",
+  "heard": "The quarterly figures still don't add up.",
+  "responses": {
+   "A": "Sales rose four percent this quarter.",
+   "B": "Good, then we can send them to the board.",
+   "C": "Did you include the April returns?"
+  }
+ },
+ {
+  "id": "l-qr-12",
+  "format": "qr",
+  "heard": "Could you show the new designer how to use the booking system?",
+  "responses": {
+   "A": "She used the same one at her last job.",
+   "B": "Yes, the booking fee is included.",
+   "C": "The new logo design looks great."
+  }
+ },
+ {
+  "id": "l-conv-05",
+  "format": "conv",
+  "transcript": [
+   "W1: Victor, Hannah, thanks for joining me. The buyers from Brenridge Foods have confirmed they'll visit next week, and they mainly want to see our new packaging line in action.",
+   "M: That's great, but the line will be shut down on Monday and Tuesday for its first scheduled maintenance.",
+   "W1: Then how about Friday? That would give us a few extra days to prepare.",
+   "W2: That day won't work. The painters have the whole production floor booked, and visitors aren't allowed in while they're working.",
+   "M: Wednesday or Thursday, then. I'd go with Thursday. The maintenance crew sometimes runs a day over.",
+   "W1: Thursday it is. I'll let the buyers know this afternoon. Hannah, can you take care of the safety gear?",
+   "W2: Sure. We'll need helmets and glasses for the visitors, and our spare sets are pretty worn out.",
+   "W1: Then order new ones today. The supplier usually takes three days to deliver.",
+   "W2: Will do. I'll call them as soon as we're done here."
+  ],
+  "questions": [
+   {
+    "q": "What do the visitors mainly want to do?",
+    "options": {
+     "A": "Place a large order",
+     "B": "Watch some new equipment operate",
+     "C": "Meet the maintenance crew",
+     "D": "Tour a freshly painted area"
+    }
+   },
+   {
+    "q": "Why can't the visit take place on Friday?",
+    "options": {
+     "A": "The packaging line will be under maintenance",
+     "B": "The buyers have another appointment",
+     "C": "Part of the facility will be closed to visitors",
+     "D": "The new safety gear will not be ready"
+    }
+   },
+   {
+    "q": "What will Hannah most likely do next?",
+    "options": {
+     "A": "Tell the buyers about the new date",
+     "B": "Contact a vendor",
+     "C": "Reschedule the painters",
+     "D": "Inspect the packaging line"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-06",
+  "format": "conv",
+  "graphic": {
+   "caption": "Eastbrook Small Business Forum — Saturday Workshops",
+   "head": [
+    "Time",
+    "Workshop",
+    "Room"
+   ],
+   "rows": [
+    [
+     "9:00 A.M.",
+     "Building an Online Presence",
+     "Room 101"
+    ],
+    [
+     "10:30 A.M.",
+     "Writing Strong Proposals",
+     "Room 204"
+    ],
+    [
+     "1:00 P.M.",
+     "Negotiating Contracts",
+     "Room 115"
+    ],
+    [
+     "2:30 P.M.",
+     "Leading Remote Teams",
+     "Room 310"
+    ]
+   ]
+  },
+  "transcript": [
+   "W: Omar, are you going to the workshop on contracts after lunch? I've heard the speaker is excellent.",
+   "M: I'd like to, but my manager asked me to go to the one right after it. She thinks it'll help with our new work-from-home policy.",
+   "W: Oh, that makes sense. By the way, have you picked up your badge yet? They wouldn't let me into the morning session without mine.",
+   "M: Not yet. Is the registration desk still in the main lobby?",
+   "W: No, they moved it upstairs this morning. It's right next to the elevators now.",
+   "M: Thanks. I'll head up there and get it now. Let's meet for coffee between sessions.",
+   "W: Sounds good. I'll be in the café downstairs."
+  ],
+  "questions": [
+   {
+    "q": "Why will the man not attend the contracts workshop?",
+    "options": {
+     "A": "He has not picked up his badge",
+     "B": "His supervisor wants him at a different session",
+     "C": "He heard the speaker is not very good",
+     "D": "He has to meet with a client"
+    }
+   },
+   {
+    "q": "Look at the graphic. Which room will the man go to for his workshop?",
+    "options": {
+     "A": "Room 101",
+     "B": "Room 204",
+     "C": "Room 115",
+     "D": "Room 310"
+    }
+   },
+   {
+    "q": "What will the man most likely do next?",
+    "options": {
+     "A": "Go to the main lobby",
+     "B": "Pick up his conference pass",
+     "C": "Get coffee at the café",
+     "D": "Call his manager"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-01",
+  "format": "talk",
+  "transcript": [
+   "M: Good morning, everyone. This is building management with an update about the elevators on the east side.",
+   "M: Starting on Monday, a contractor will be replacing those elevators, and the work should take about two weeks.",
+   "M: While the work is going on, please use the elevators by the main entrance, or take the stairs.",
+   "M: Those elevators will be very busy between 8:30 and 9:00, so if you can, try to come in a little earlier.",
+   "M: If you work on the east side and can't manage the stairs, the front desk can give you a pass for the freight elevator at the back.",
+   "M: Maps of the temporary routes will also be posted beside each staircase. Thank you for your patience."
+  ],
+  "questions": [
+   {
+    "q": "What is the announcement mainly about?",
+    "options": {
+     "A": "The opening of a new entrance",
+     "B": "A change in office hours",
+     "C": "The installation of new elevators",
+     "D": "A fire safety drill"
+    }
+   },
+   {
+    "q": "Why does the speaker ask listeners to come in earlier?",
+    "options": {
+     "A": "The building will close early",
+     "B": "The remaining elevators will be crowded",
+     "C": "The main entrance will be closed",
+     "D": "The front desk will give out passes only in the morning"
+    }
+   },
+   {
+    "q": "What can some listeners get from the front desk?",
+    "options": {
+     "A": "A map of alternative routes",
+     "B": "A parking permit",
+     "C": "A revised work schedule",
+     "D": "Access to a service elevator"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-03",
+  "format": "talk",
+  "transcript": [
+   "W: Good morning, everyone. As you know, our store is switching to a new inventory system at the end of the month.",
+   "W: Everyone must complete a training session before then, and on the schedule I handed out, you'll see that each session lasts six hours. That's not a typo.",
+   "W: The trainer from the software company wants to cover everything, from ordering to returns, in a single day.",
+   "W: Sessions are on the 12th, 14th, and 19th. Please sign up for one on the sheet by the break room door by Friday.",
+   "W: Since you'll be off the sales floor all day, I'll make sure the store stays covered.",
+   "W: And lunch that day is on us."
+  ],
+  "questions": [
+   {
+    "q": "Who most likely are the listeners?",
+    "options": {
+     "A": "Software trainers",
+     "B": "Store employees",
+     "C": "Job applicants",
+     "D": "Regular customers"
+    }
+   },
+   {
+    "q": "What does the speaker mean when she says, \"That's not a typo\"?",
+    "options": {
+     "A": "A printing error will be fixed",
+     "B": "The sessions really will last that long",
+     "C": "The training dates might change",
+     "D": "The new system is easy to learn"
+    }
+   },
+   {
+    "q": "What are listeners asked to do by Friday?",
+    "options": {
+     "A": "Complete their training",
+     "B": "Choose a session date",
+     "C": "Test the new system",
+     "D": "Turn in their work schedules"
+    }
+   }
+  ]
+ }
+]

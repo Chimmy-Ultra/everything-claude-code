@@ -1,0 +1,22 @@
+{
+  "answers": {
+    "g-parallel-06": {
+      "answer": "A",
+      "confidence": 0.95,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "'both ... and' is the correlative pair. 'both' opens the object before the long relative clause (which has stayed open ... on the third), so the blank must be 'and'. B 'both ... as well as' and C 'both ... along with' are the usual mismatches: 'both' needs 'and', and style guides/editors normally change 'both X as well as Y' (as well as adds Y to X; it does not pair with both). D 'or' is wrong with both (would need either ... or, and 'close either ... or' also changes the meaning). No option other than A survives in formal written BrE/AmE without editing.",
+      "vsToeic": "similar",
+      "band": "hard",
+      "ldbs": {"L": true, "D": true, "B": true, "S": true},
+      "style": 4,
+      "why": "L: B and C read fine locally ('..., as well as the three smaller campus libraries'); D: the deciding word 'both' is about 20 words before the blank, outside the window, behind a relative clause; B: 'as well as' / 'along with' are things good students will actively believe (both ... as well as is common in real writing); S: take out the which-clause to re-attach 'both' to the blank. B is the weakest of the four, but L+D+S already reach hard.",
+      "fix": "",
+      "tooClose": false,
+      "editorNote": "B 'both ... as well as' appears in real usage and some descriptive sources record it, but Garner/Fowler-style editors change it to 'both ... and' or drop 'both', so it is not treated as defensible. If a stricter reviewer wants zero risk, C 'along with' is the safer decoy (clearly not a coordinator); B is the one that could draw an 'it is attested' challenge. Not flagged as shouldFix because no extra assumption is needed and the standard is whether an editor would let it pass."
+    }
+  },
+  "mustFix": [],
+  "shouldFix": [],
+  "overall": "Classic both ... and with the signal word separated from the blank by a non-restrictive relative clause. Single answer A. Hard by L/D/S (B moderate). No mustFix; B 'as well as' is a mild watch item only."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "s05",
+  "title": [
+    "The Missing Taxi Receipt",
+    "不見的計程車收據"
+  ],
+  "paras": [
+    [
+      "When Dana Park got back from Boston, her inbox held one message she had been dreading. Owen in finance had written: \"We'll {{reimburse|reimburse}} your trip expenses this month, but I'm missing a {{receipt|receipt}} for the $64 taxi on Tuesday.\" Dana searched her bag and her email. Nothing.",
+      "黛娜．朴從波士頓回來後，收件匣裡有一封她一直很怕看到的信。財務部的歐文寫道：「我們這個月會報銷妳的出差費用，但週二那趟六十四元的計程車，我這邊少了收據。」黛娜翻遍了包包和電子郵件，什麼都沒找到。"
+    ],
+    [
+      "The bigger problem was the hotel. The client had moved the meeting up, so Dana flew home a day early and canceled her last night. The hotel charged a $180 {{cancellation|cancellation}} fee. She had {{incur|incurred}} the charge only because someone else changed the plans, and at that price it was a {{costly|costly}} surprise she feared she would have to pay herself.",
+      "更大的問題是飯店。客戶把會議提前了，黛娜因此提早一天搭機回來，並取消了最後一晚的住宿，飯店收了她一百八十元的取消費。這筆費用純粹是因為別人更改計畫才產生，而一百八十元可不是小數目，她擔心得自己掏腰包。"
+    ],
+    [
+      "Her manager, Carla, picked up the phone. \"I'm calling on {{behalf|behalf}} of Dana Park, who has stayed with you eleven times,\" she told the hotel manager. \"Would you {{waive|waive}} the fee this once?\" After a pause, the hotel agreed.",
+      "她的主管卡拉拿起了電話。「我代表黛娜．朴打來，她已經住過你們十一次了，」她對飯店經理說，「這次能不能免除這筆費用？」停頓了一下之後，飯店答應了。"
+    ],
+    [
+      "As for the taxi, Carla shrugged. \"A $64 ride isn't worth an argument. Our department will {{absorb|absorb}} the cost.\" A $40 {{rebate|rebate}} also arrived that week from the maker of her headphones. She had mailed in the form and receipt before the trip: the one receipt she hadn't lost. The {{reimbursement|reimbursement}} reached Dana's account on Friday, with a short note: \"Keep your receipts next time.\" Dana taped a note to her laptop: \"RECEIPTS!\"",
+      "至於計程車，卡拉聳了聳肩。「六十四元的車資不值得爭論，我們部門吸收這筆費用。」同一週，她那副耳機的製造商也寄來一筆四十元的退款優惠。她出發前就把申請表連同收據寄了出去，那是她唯一沒弄丟的一張收據。報銷的款項週五進了黛娜的帳戶，還附了一句話：「下次請留好收據。」黛娜在筆電上貼了一張便利貼：「收據！」"
+    ]
+  ]
+}

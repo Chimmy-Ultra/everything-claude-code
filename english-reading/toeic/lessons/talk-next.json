@@ -1,0 +1,281 @@
+{
+  "unit": "talk-next",
+  "lead": [
+    "A one-speaker talk can end with an instruction. These questions ask what the listeners will do next, or what the speaker asks them to do. The answer is an action for the listeners, usually near the end.",
+    "單人短講可能以指示收尾。這類題目問聽眾接下來要做什麼，或說話者要求他們做什麼。答案是聽眾的行動，通常在接近結尾處。"
+  ],
+  "steps": [
+    [
+      "Read the question first. 'Next' asks for the first action after the talk. 'Asked to do' asks for a request.",
+      "先看題目。next 問談話後的第一個行動；asked to do 問的是請求。"
+    ],
+    [
+      "Listen to the last two or three sentences. Catch 'please', 'make sure' and 'be sure to'.",
+      "聽最後兩三句，抓住 please、make sure 和 be sure to。"
+    ],
+    [
+      "When there are several steps, follow the order words and pick the first one.",
+      "有好幾個步驟時，跟著順序詞走，選最先的那一個。"
+    ],
+    [
+      "Check who does the action. It must be the listeners, not the speaker.",
+      "確認是誰做這個行動，必須是聽眾，不是說話者。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Requests: 'please', 'make sure', 'be sure to'",
+        "請求：please、make sure、be sure to"
+      ],
+      "body": [
+        "Speakers use these words to tell the listeners what to do. The action comes right after the phrase, so listen to the verb that follows.",
+        "說話者用這些字告訴聽眾要做什麼。行動緊接在這些片語後面，所以要聽後面的動詞。"
+      ],
+      "ex": [
+        [
+          "<em>Please</em> return your headsets to the cart before you leave.",
+          "離開前請把耳機歸還到推車上。"
+        ],
+        [
+          "<em>Make sure</em> your badge is visible at all times.",
+          "請確保識別證隨時看得見。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Other ways to ask",
+        "其他提出要求的說法"
+      ],
+      "body": [
+        "A request does not always use 'please'. A speaker may say 'I'd like you to', 'you'll need to' or 'I'd ask that you'. All of them ask the listeners to act.",
+        "要求不一定用 please。說話者可能說 I'd like you to、you'll need to 或 I'd ask that you，都是請聽眾去做。"
+      ],
+      "ex": [
+        [
+          "<em>You'll need to</em> sign in at the front desk first.",
+          "你們要先在櫃檯簽到。"
+        ],
+        [
+          "<em>I'd ask that you</em> keep your questions until the end.",
+          "我請各位把問題留到最後再問。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Order words: 'first', 'then', 'after that'",
+        "順序詞：first、then、after that"
+      ],
+      "body": [
+        "Order words list the steps. 'First' is the next action. 'Then', 'after that' and 'finally' come later. If the question says 'next', choose the first step.",
+        "順序詞列出步驟。first 是下一步，then、after that、finally 則是之後。題目問 next，就選第一步。"
+      ],
+      "ex": [
+        [
+          "<em>First</em>, put on your safety glasses. <em>Then</em> we'll walk through the factory.",
+          "先戴上護目鏡，接著我們會走過工廠。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "'Before' and 'once' set the order",
+        "before 與 once 決定順序"
+      ],
+      "body": [
+        "In 'Before we start, please…', the action after 'please' happens first. In 'Once you've finished, please…', it happens second. Decide the order by the time word, not by what is said first.",
+        "在 Before we start, please… 中，please 後面的行動最先發生。在 Once you've finished, please… 中則是第二個。要看時間詞決定順序，不是看哪句先說。"
+      ],
+      "ex": [
+        [
+          "<em>Before</em> we begin the tour, please sign the visitor log.",
+          "導覽開始前，請先簽訪客登記簿。"
+        ],
+        [
+          "<em>Once</em> the demonstration is over, please try the machine yourself.",
+          "示範結束後，請自己試用機器。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Whose action: speaker or listeners?",
+        "誰的行動：說話者還是聽眾？"
+      ],
+      "body": [
+        "'I'll' usually means the speaker's action, and 'we'll' may include the listeners. 'You' and the command form mean the listeners'. The question names one group, so match the action to that group.",
+        "I'll 通常是說話者的行動，we'll 可能包含聽眾；you 和命令句則是聽眾的行動。題目只問其中一方，所以要把行動配到對的一方。"
+      ],
+      "ex": [
+        [
+          "<em>I'll</em> hand out the maps now, and <em>you</em> can choose a route.",
+          "我現在發地圖，各位可以選路線。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "The closing line can point to the next action",
+        "結尾可能指向下一個行動"
+      ],
+      "body": [
+        "Talks can end by sending the listeners somewhere or asking for something. 'Follow me', 'proceed to' and 'visit our website' are typical endings.",
+        "短講可能在結尾請聽眾去某處或做某事。Follow me、proceed to、visit our website 都是典型的結尾。"
+      ],
+      "ex": [
+        [
+          "That's all for the introduction. <em>Please follow me</em> to the first exhibit.",
+          "介紹到此為止，請跟我到第一個展品。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Options reword the action",
+        "選項會改寫行動"
+      ],
+      "body": [
+        "The talk says 'have your ID ready'. The option says 'prepare identification'. Match the meaning of the action, not the words.",
+        "談話說 have your ID ready，選項寫 prepare identification。要比對行動的意思，不是字面。"
+      ],
+      "ex": [
+        [
+          "'Please move your cars to the north lot.' = <em>park in a different area</em>.",
+          "「請把車移到北邊停車場。」＝停到別的區域。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What are listeners asked to do? [Man: I'll collect your tickets at the door, so please have them ready.] / A: Get their tickets ready.",
+      "wrong": "Q: What are listeners asked to do? [Man: I'll collect your tickets at the door, so please have them ready.] / A: Collect some tickets.",
+      "why": [
+        "Collecting tickets is what the speaker will do. The listeners are asked to have their tickets ready.",
+        "收票是說話者要做的事，聽眾被要求的是把票準備好。"
+      ]
+    },
+    {
+      "right": "Q: What will the listeners most likely do next? [Woman: Before we go into the workshop, please put your phones in the lockers. Then we'll watch a short video.] / A: Store their phones.",
+      "wrong": "Q: What will the listeners most likely do next? [Woman: Before we go into the workshop, please put your phones in the lockers. Then we'll watch a short video.] / A: Watch a video.",
+      "why": [
+        "'Before' puts the phones first. The video comes after 'then', so it is a later step.",
+        "before 讓收手機排在最前面。影片在 then 之後，是較晚的步驟。"
+      ]
+    },
+    {
+      "right": "Q: What are the listeners asked to do? [Man: Contractors will repaint the east parking lot from noon. Please move your cars to the north lot before then.] / A: Park in a different area.",
+      "wrong": "Q: What are the listeners asked to do? [Man: Contractors will repaint the east parking lot from noon. Please move your cars to the north lot before then.] / A: Repaint a parking lot.",
+      "why": [
+        "The wrong option repeats words from the talk, but the contractors do the painting. The listeners move their cars.",
+        "錯誤選項重複了談話中的字，但油漆是承包商做的。聽眾要做的是移車。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "What will the listeners most likely do next?",
+          "聽眾接下來最可能做什麼？"
+        ],
+        [
+          "What does the speaker ask the listeners to do?",
+          "說話者要求聽眾做什麼？"
+        ],
+        [
+          "What are the listeners asked to do?",
+          "聽眾被要求做什麼？"
+        ],
+        [
+          "What are the listeners told to do first?",
+          "聽眾被告知要先做什麼？"
+        ],
+        [
+          "What does the speaker recommend?",
+          "說話者建議什麼？"
+        ],
+        [
+          "What should the listeners do before the event?",
+          "聽眾在活動前應該做什麼？"
+        ],
+        [
+          "What does the speaker say she will do next?",
+          "說話者說她接下來會做什麼？"
+        ],
+        [
+          "What will the listeners do after the presentation?",
+          "簡報結束後聽眾要做什麼？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Request and order signals",
+        "請求與順序的訊號"
+      ],
+      "items": [
+        [
+          "Please make sure you…",
+          "請務必……"
+        ],
+        [
+          "Be sure to…",
+          "務必要……"
+        ],
+        [
+          "Don't forget to…",
+          "別忘了……"
+        ],
+        [
+          "I'd like you to…",
+          "我希望你們……"
+        ],
+        [
+          "First… and then…",
+          "先……再……"
+        ],
+        [
+          "After that…",
+          "在那之後……"
+        ],
+        [
+          "Before you leave…",
+          "在你們離開之前……"
+        ],
+        [
+          "When you're ready…",
+          "準備好之後……"
+        ],
+        [
+          "Please proceed to…",
+          "請前往……"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Choosing a later step. 'Then' and 'after that' come after the first action. For 'next', take the step that happens first in time.",
+      "選了較晚的步驟。then 和 after that 在第一個行動之後。問 next 時，要選時間上最先發生的步驟。"
+    ],
+    [
+      "Choosing the speaker's action. 'I'll hand out the forms' is not something the listeners do. Look for 'you' or a command.",
+      "選了說話者的行動。I'll hand out the forms 不是聽眾要做的事，要找 you 或命令句。"
+    ],
+    [
+      "Choosing an option because it repeats a word from the talk. The right option usually rewords the action.",
+      "因為選項重複了談話中的字就選它。正確選項通常會改寫行動。"
+    ],
+    [
+      "Stopping at the first instruction. A talk may give a reminder, then a request. Hear the whole ending before you choose.",
+      "聽到第一個指示就停止。談話可能先提醒，再提出請求，要聽完整個結尾再選。"
+    ]
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "unit": "talk-topic",
+  "lead": [
+    "In Part 4 one person speaks: an announcement, a voicemail, a tour, an advertisement or a speech. Topic questions ask what the talk is about, why the speaker is calling, or who the speaker and the listeners are.",
+    "第 4 部分由一個人說話：公告、語音留言、導覽、廣告或演說。主旨題問談話的主題、說話者為什麼來電，或說話者與聽眾是誰。"
+  ],
+  "steps": [
+    [
+      "Read the questions first, when there is time, so you know what to listen for.",
+      "有時間的話先看題目，知道該聽什麼。"
+    ],
+    [
+      "Identify the type of talk from the opening: 'Attention, passengers', 'Thank you for calling', 'Welcome to'.",
+      "從開頭判斷談話類型：Attention, passengers、Thank you for calling、Welcome to。"
+    ],
+    [
+      "Catch the topic in the first sentences. The rest of the talk supports it.",
+      "在前幾句抓到主題，其餘內容是在支持它。"
+    ],
+    [
+      "Choose the option that covers the whole talk, not one detail.",
+      "選涵蓋整段談話的選項，不是單一細節。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "The opening names the type and the speaker",
+        "開頭點出類型與說話者"
+      ],
+      "body": [
+        "Standard openings tell you what kind of talk it is and who is speaking or listening. Listen for these before the details start.",
+        "固定的開場白會告訴你談話類型，以及誰在說、誰在聽。在細節開始前先抓住它們。"
+      ],
+      "ex": [
+        [
+          "<em>Thank you for calling</em> Westfield Dental. Our office is closed today. (a clinic's recorded message)",
+          "感謝來電 Westfield 牙科。本診所今天休診。（診所的錄音訊息）"
+        ],
+        [
+          "<em>Attention, passengers</em> on Flight 82. Boarding will begin shortly. (an airport announcement)",
+          "82 號班機的旅客請注意，即將開始登機。（機場廣播）"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "The topic comes early, details support it",
+        "主題在前，細節在後"
+      ],
+      "body": [
+        "The first sentences often say what the talk is about. Later sentences add times, places and instructions. Hold on to the first idea.",
+        "前幾句常會說明談話的主題，之後才補上時間、地點和指示。記住最先出現的那個想法。"
+      ],
+      "ex": [
+        [
+          "This is an update on parking. From Monday, Lot B will be closed. <em>Topic: parking changes.</em>",
+          "這是停車的最新消息。星期一起 B 停車場關閉。主旨：停車場異動。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Purpose phrases",
+        "表示目的的說法"
+      ],
+      "body": [
+        "Listen for phrases that state the purpose: 'I'm calling to', 'I'd like to remind you', 'I'm pleased to announce', 'I want to thank'.",
+        "留意直接說明目的的片語：I'm calling to、I'd like to remind you、I'm pleased to announce、I want to thank。"
+      ],
+      "ex": [
+        [
+          "<em>I'm calling to</em> let you know your order is ready for pickup.",
+          "我來電是要通知您，訂單已可取貨。"
+        ],
+        [
+          "<em>I'd like to remind you</em> that timesheets are due on Friday.",
+          "提醒各位，工時表星期五截止。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Details are not the topic",
+        "細節不是主旨"
+      ],
+      "body": [
+        "An option that matches one time, place or name is often too narrow. Ask whether it covers the whole talk.",
+        "只符合一個時間、地點或名字的選項常常範圍太小。要問它是否涵蓋整段談話。"
+      ],
+      "ex": [
+        [
+          "Talk: road work, a delay and detours. Topic: <em>a construction schedule</em>. 'The detour map' is a detail.",
+          "談話：道路施工、延誤、改道。主旨：施工時程。「改道地圖」是細節。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Speaker and audience from word choice",
+        "從用字判斷說話者與聽眾"
+      ],
+      "body": [
+        "Words such as 'your boarding pass', 'our new hires' and 'shoppers' show who is listening. The speaker's job comes from what is offered or explained.",
+        "your boarding pass、our new hires、shoppers 這類字顯示聽眾是誰。說話者的職業則由他提供或說明的內容判斷。"
+      ],
+      "ex": [
+        [
+          "'Please keep your <em>boarding passes</em> ready.' = travelers at an airport.",
+          "「請準備好您的登機證。」＝機場的旅客。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Options reword the topic",
+        "選項會改寫主題"
+      ],
+      "body": [
+        "The talk says 'we're running late'. The option says 'a delay'. Match the meaning of the whole message.",
+        "談話說 we're running late，選項寫 a delay。要比對整段訊息的意思。"
+      ],
+      "ex": [
+        [
+          "'The store will be closed for inventory.' = <em>a temporary closure</em>.",
+          "「本店因盤點暫停營業。」＝暫時休業。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What is the announcement mainly about? [Man: Starting Monday, the staff cafeteria closes for painting. Please use the café across the street.] / A: A temporary cafeteria closure.",
+      "wrong": "Q: What is the announcement mainly about? [Man: Starting Monday, the staff cafeteria closes for painting. Please use the café across the street.] / A: The hours of a nearby café.",
+      "why": [
+        "The café is only the alternative. The main message is that the cafeteria is closing.",
+        "對面的咖啡館只是替代方案，主要訊息是員工餐廳要關閉。"
+      ]
+    },
+    {
+      "right": "Q: Why is the speaker calling? [Man: This is Ben from Delta Print. Your business cards are ready for pickup.] / A: To say an order is ready.",
+      "wrong": "Q: Why is the speaker calling? [Man: This is Ben from Delta Print. Your business cards are ready for pickup.] / A: To ask for payment.",
+      "why": [
+        "Payment is never mentioned. The call is to say the order can be picked up.",
+        "沒有提到付款。這通電話是通知訂單可以取貨。"
+      ]
+    },
+    {
+      "right": "Q: Who is the speaker? [Man: Good morning, class. Please open your textbooks to page ten. Today we'll practice writing business e-mails.] / A: An instructor.",
+      "wrong": "Q: Who is the speaker? [Man: Good morning, class. Please open your textbooks to page ten. Today we'll practice writing business e-mails.] / A: A bookstore clerk.",
+      "why": [
+        "'Textbooks' pulls toward a bookstore, but 'class' and 'we'll practice' name the role.",
+        "textbooks 讓人想到書店，但 class 和 we'll practice 才點出身分。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "What is the announcement mainly about?",
+          "這則公告主要在談什麼？"
+        ],
+        [
+          "What is the purpose of the message?",
+          "這則留言的目的是什麼？"
+        ],
+        [
+          "What is the talk mainly about?",
+          "這段談話主要在談什麼？"
+        ],
+        [
+          "What is being advertised?",
+          "廣告的是什麼？"
+        ],
+        [
+          "Who is the speaker?",
+          "說話者是誰？"
+        ],
+        [
+          "Who most likely are the listeners?",
+          "聽眾最可能是誰？"
+        ],
+        [
+          "Where is the announcement most likely being made?",
+          "這則公告最可能在哪裡發布？"
+        ],
+        [
+          "Why is the speaker calling?",
+          "說話者為什麼來電？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Typical openings",
+        "常見的開場白"
+      ],
+      "items": [
+        [
+          "Attention, passengers…",
+          "各位旅客請注意……"
+        ],
+        [
+          "Thank you for calling…",
+          "感謝來電……"
+        ],
+        [
+          "Welcome to…",
+          "歡迎來到……"
+        ],
+        [
+          "Good morning, everyone.",
+          "各位早安。"
+        ],
+        [
+          "This is a message for…",
+          "這是給……的留言。"
+        ],
+        [
+          "Hello, this is … from …",
+          "您好，我是……公司的……。"
+        ],
+        [
+          "May I have your attention?",
+          "請各位注意。"
+        ],
+        [
+          "Thanks for joining us today.",
+          "謝謝各位今天蒞臨。"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Choosing a detail. A time, a place or a name from the talk is not its topic. Ask whether the option covers the whole message.",
+      "選了細節。談話中的時間、地點或名字不是主題。要問選項是否涵蓋整段訊息。"
+    ],
+    [
+      "Being misled by the first words. Greetings and thanks come before the point. The topic often starts after them.",
+      "被開頭的話誤導。問候和道謝在重點之前，主題常在它們之後才開始。"
+    ],
+    [
+      "Using background knowledge instead of the audio. Choose what the speaker says, not what such a talk usually contains.",
+      "用背景知識取代音檔。要選說話者實際說的，而不是這類談話通常會有的內容。"
+    ],
+    [
+      "An option that repeats words from the talk but changes the meaning. Compare the idea, not the vocabulary.",
+      "選項重複談話的字，意思卻變了。要比對想法，而不是詞彙。"
+    ]
+  ]
+}

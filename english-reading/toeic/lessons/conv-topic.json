@@ -1,0 +1,241 @@
+{
+  "unit": "conv-topic",
+  "lead": [
+    "In Part 3 you hear a short conversation and answer questions about it. Topic and setting questions ask what the speakers are discussing, why someone is calling, or where they are and who they are.",
+    "第 3 部分聽一段簡短對話並回答問題。主旨與場合題會問說話者在討論什麼、為什麼來電，或他們在哪裡、是什麼身分。"
+  ],
+  "steps": [
+    [
+      "Read the questions and options before the audio starts, when there is time.",
+      "有時間的話，在音檔開始前先看題目和選項。"
+    ],
+    [
+      "Listen closely to the opening lines. Speakers often state their reason for talking there.",
+      "仔細聽開頭幾句，說話者常在那裡說出談話的原因。"
+    ],
+    [
+      "Choose the option that covers the whole conversation. A single detail is not a topic.",
+      "選涵蓋整段對話的選項。單一細節不是主旨。"
+    ],
+    [
+      "For setting or job questions, collect clue words: what is bought, fixed, booked or signed.",
+      "場合或職業題要蒐集線索字：買什麼、修什麼、訂什麼、簽什麼。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "The topic covers the whole exchange",
+        "主旨涵蓋整段對話"
+      ],
+      "body": [
+        "The correct option sums up the full conversation. An option that matches only one sentence is a detail, and it is often a wrong answer.",
+        "正確選項概括整段對話。只符合其中一句的選項是細節，常是錯誤答案。"
+      ],
+      "ex": [
+        [
+          "Man: The heater in Room 12 is broken. Woman: I'll send a technician at noon. <em>Topic: a repair request.</em>",
+          "男：12 號房的暖氣壞了。女：中午我派技師過去。主旨：維修請求。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Opening lines often set the purpose",
+        "開頭常交代目的"
+      ],
+      "body": [
+        "Phrases such as 'I'm calling about', 'I'm here to', 'Do you have a minute?' and 'I wanted to ask' introduce the reason. Small talk before them is not the topic.",
+        "I'm calling about、I'm here to、Do you have a minute?、I wanted to ask 這類說法會引出原因。在它們之前的寒暄不是主旨。"
+      ],
+      "ex": [
+        [
+          "Woman: How was your trip? Man: Fine. Anyway, <em>I wanted to ask about</em> the Harper order.",
+          "女：旅途如何？男：還好。對了，我想問 Harper 那筆訂單。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Options reword what you hear",
+        "選項會換個說法"
+      ],
+      "body": [
+        "The audio and the option often use different words. Match meaning, not words. An option that copies words from the audio needs a second look.",
+        "音檔和選項常用不同的字。要比對意思，不是字面。直接抄音檔字詞的選項要再多看一眼。"
+      ],
+      "ex": [
+        [
+          "'Our supplier raised its prices again.' = <em>a cost increase</em>.",
+          "「供應商又調漲價格了。」＝成本上升。"
+        ],
+        [
+          "'We're running low on paper and toner.' = <em>a supply shortage</em>.",
+          "「紙和碳粉快用完了。」＝用品短缺。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Setting: infer it from clue words",
+        "場合：從線索字推斷"
+      ],
+      "body": [
+        "The place is often not named. Work it out from what people do and say: boarding, check-in, a prescription, a menu, a showroom. Wait for two clues that agree.",
+        "地點常不會直說。從人們的行為和用語推斷：登機、報到、處方、菜單、展示間。等到有兩個一致的線索再決定。"
+      ],
+      "ex": [
+        [
+          "Man: Your room will be ready at three o'clock. <em>Setting: a hotel.</em>",
+          "男：您的房間下午三點會準備好。場合：飯店。"
+        ],
+        [
+          "Woman: Would you like to see the dessert menu? <em>Setting: a restaurant.</em>",
+          "女：要看一下甜點菜單嗎？場合：餐廳。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Who the speakers are",
+        "說話者的身分"
+      ],
+      "body": [
+        "Job questions rely on how the speakers talk: 'your reservation', 'our clients', 'the patient in Room 3'. The one who serves or instructs often holds the role being asked.",
+        "職業題看說話方式：your reservation、our clients、the patient in Room 3。提供服務或下指示的人，常是題目問的那個角色。"
+      ],
+      "ex": [
+        [
+          "Man: I'll check <em>your reservation</em> and print your boarding pass. <em>Role: a check-in agent.</em>",
+          "男：我查一下您的訂位並列印登機證。身分：報到櫃檯人員。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What are the speakers mainly discussing? [Woman: The new copier jams again. Man: I'll call the repair company.] / A: A broken machine.",
+      "wrong": "Q: What are the speakers mainly discussing? [Woman: The new copier jams again. Man: I'll call the repair company.] / A: Choosing a repair company.",
+      "why": [
+        "The man's plan to call a company is one detail. The whole exchange is about the copier problem.",
+        "男子打電話給公司只是細節，整段對話談的是影印機的問題。"
+      ]
+    },
+    {
+      "right": "Q: Where is the conversation most likely taking place? [Man: Your room will be ready at three o'clock. Woman: Is breakfast included?] / A: At a hotel.",
+      "wrong": "Q: Where is the conversation most likely taking place? [Man: Your room will be ready at three o'clock. Woman: Is breakfast included?] / A: At a restaurant.",
+      "why": [
+        "'Breakfast' pulls toward a restaurant, but 'your room' and 'ready at three o'clock' point to a hotel.",
+        "breakfast 讓人想到餐廳，但 your room 和 ready at three o'clock 指向飯店。"
+      ]
+    },
+    {
+      "right": "Q: Why is the woman calling? [Woman: I'm calling about the invoice I got yesterday. The total looks wrong.] / A: To question a bill.",
+      "wrong": "Q: Why is the woman calling? [Woman: I'm calling about the invoice I got yesterday. The total looks wrong.] / A: To confirm a delivery date.",
+      "why": [
+        "The wrong option is never mentioned. The woman raises a problem with an invoice total.",
+        "錯誤選項根本沒被提到，女子說的是發票總額有問題。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "What are the speakers mainly discussing?",
+          "說話者主要在討論什麼？"
+        ],
+        [
+          "What is the conversation mainly about?",
+          "這段對話主要在談什麼？"
+        ],
+        [
+          "Why is the woman calling?",
+          "女子為什麼來電？"
+        ],
+        [
+          "What is the purpose of the call?",
+          "這通電話的目的是什麼？"
+        ],
+        [
+          "Where is the conversation most likely taking place?",
+          "這段對話最可能發生在哪裡？"
+        ],
+        [
+          "Where do the speakers most likely work?",
+          "說話者最可能在哪裡工作？"
+        ],
+        [
+          "Who most likely is the man?",
+          "男子最可能是誰？"
+        ],
+        [
+          "What problem are the speakers discussing?",
+          "說話者在討論什麼問題？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Phrases that introduce the purpose",
+        "引出目的的說法"
+      ],
+      "items": [
+        [
+          "I'm calling about…",
+          "我來電是想談……"
+        ],
+        [
+          "I'm here to pick up…",
+          "我是來領取……"
+        ],
+        [
+          "I wanted to ask about…",
+          "我想問關於……"
+        ],
+        [
+          "Do you have a minute?",
+          "你有空嗎？"
+        ],
+        [
+          "I'm afraid there's a problem with…",
+          "恐怕……出了問題。"
+        ],
+        [
+          "I'd like to arrange…",
+          "我想安排……"
+        ],
+        [
+          "We need to talk about…",
+          "我們得談談……"
+        ],
+        [
+          "I'm following up on…",
+          "我是來跟進……"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Choosing a detail. An option can match a sentence you heard clearly and still be too narrow. Ask whether it covers the whole conversation.",
+      "選了細節。選項可能符合你聽得很清楚的一句話，卻範圍太小。要問它是否涵蓋整段對話。"
+    ],
+    [
+      "Taking small talk for the topic. Greetings, thanks and comments on the weather come before the real subject.",
+      "把寒暄當主旨。問候、道謝、聊天氣都在真正的主題之前。"
+    ],
+    [
+      "Guessing the setting from one word. 'Breakfast' alone does not prove a restaurant. Wait for a second clue.",
+      "只憑一個字猜場合。單憑 breakfast 不能證明是餐廳。要等第二個線索。"
+    ],
+    [
+      "An option that reuses exact words from the audio but changes the meaning. Compare what each speaker actually says and does.",
+      "選項用了音檔的字，意思卻變了。要比對每位說話者實際說了什麼、做了什麼。"
+    ]
+  ]
+}

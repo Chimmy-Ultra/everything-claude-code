@@ -1,0 +1,433 @@
+{
+ "g-prep-11": {
+  "point": [
+   "<em>stay</em> + a continuing state: <em>until</em>, not <em>by</em>.",
+   "stay + 持續的狀態：用 until，不用 by。"
+  ],
+  "why": [
+   "The verb is <em>must stay parked</em>: a state that lasts, not an action finished once. It lasts until the repair is done (<em>when the contractor expects to finish</em>), so the word is <em>until</em>.",
+   "動詞是 must stay parked：這是持續的狀態，不是做一次就完成的動作。狀態持續到維修完成（when the contractor expects to finish）為止，所以用 until。"
+  ],
+  "gloss": [
+   {
+    "w": "quay",
+    "hw": "quay",
+    "pos": "n.",
+    "zh": "碼頭",
+    "ex": "The ship docked at the quay at dawn."
+   },
+   {
+    "w": "booms",
+    "hw": "boom",
+    "pos": "n.",
+    "zh": "吊臂",
+    "ex": "The crane lowered its boom slowly."
+   },
+   {
+    "w": "contractor",
+    "hw": "contractor",
+    "pos": "n.",
+    "zh": "承包商",
+    "ex": "The contractor finished the roof early."
+   },
+   {
+    "w": "brake assemblies",
+    "hw": "brake assembly",
+    "pos": "phr.",
+    "zh": "煞車組件",
+    "ex": "Each brake assembly is tested twice."
+   }
+  ]
+ },
+ "g-prep-12": {
+  "point": [
+   "<em>within</em> + a period + <em>of</em> + the starting event.",
+   "within + 一段時間 + of + 起算事件。"
+  ],
+  "why": [
+   "Far from the blank, <em>of receiving it</em> shows the pattern <em>within seven days of</em> …: seven days counted from receipt. The clause <em>or the carrier may reject</em> confirms it is a limit: <em>within</em>.",
+   "離空格很遠的 of receiving it 顯示句型 within seven days of …：從收到起算七天。or the carrier may reject 也說明這是期限：within。"
+  ],
+  "gloss": [
+   {
+    "w": "lodge",
+    "hw": "lodge",
+    "pos": "v.",
+    "zh": "提出（申訴、索賠）",
+    "ex": "Customers may lodge a complaint online."
+   },
+   {
+    "w": "excluding",
+    "hw": "exclude",
+    "pos": "v.",
+    "zh": "不包括",
+    "ex": "The price excludes shipping costs."
+   },
+   {
+    "w": "carrier",
+    "hw": "carrier",
+    "pos": "n.",
+    "zh": "運送業者",
+    "ex": "The carrier delivered the crate on Monday."
+   },
+   {
+    "w": "public holidays",
+    "hw": "public holiday",
+    "pos": "phr.",
+    "zh": "公共假日",
+    "ex": "The office closes on public holidays."
+   }
+  ]
+ },
+ "g-prep-13": {
+  "point": [
+   "<em>at</em> the end of: exactly at that point.",
+   "at the end of：正好在那個時間點。"
+  ],
+  "why": [
+   "<em>once the last late transactions have been posted at midnight on the final day</em> means the work waits for the very end of the month: <em>at</em>. <em>since</em> needs a perfect tense, not <em>reconciles</em>.",
+   "once the last late transactions have been posted at midnight on the final day 表示要等到月底最後一刻：at。since 要配完成式，不能接 reconciles。"
+  ],
+  "gloss": [
+   {
+    "w": "reconciles",
+    "hw": "reconcile",
+    "pos": "v.",
+    "zh": "核對、調節（帳目）",
+    "ex": "Accountants reconcile the ledger every Friday."
+   },
+   {
+    "w": "statements",
+    "hw": "statement",
+    "pos": "n.",
+    "zh": "對帳單",
+    "ex": "Bank statements arrive by email."
+   },
+   {
+    "w": "transactions",
+    "hw": "transaction",
+    "pos": "n.",
+    "zh": "交易",
+    "ex": "Every transaction is logged automatically."
+   }
+  ]
+ },
+ "g-prep-14": {
+  "point": [
+   "<em>for</em> + a length of time.",
+   "for + 一段時間。"
+  ],
+  "why": [
+   "<em>a stretch of nine weeks</em> is a length of time that has ended, and the verb is past tense (<em>ran</em>). So <em>for</em>. <em>since</em> and <em>from</em> give a starting point, not a length.",
+   "a stretch of nine weeks 是已結束的時間長度，動詞又是過去式 ran。所以用 for。since 與 from 給的是起點，不是長度。"
+  ],
+  "gloss": [
+   {
+    "w": "recorded fault",
+    "hw": "recorded fault",
+    "pos": "phr.",
+    "zh": "有紀錄的故障",
+    "ex": "Each recorded fault is reviewed on Monday."
+   },
+   {
+    "w": "stabilization period",
+    "hw": "stabilization period",
+    "pos": "phr.",
+    "zh": "穩定期",
+    "ex": "The stabilization period lasts six weeks."
+   },
+   {
+    "w": "clogged",
+    "hw": "clog",
+    "pos": "v.",
+    "zh": "堵塞",
+    "ex": "Leaves clogged the drain overnight."
+   },
+   {
+    "w": "intake screen",
+    "hw": "intake screen",
+    "pos": "phr.",
+    "zh": "進水濾網",
+    "ex": "Staff clean the intake screen weekly."
+   }
+  ]
+ },
+ "g-prep-15": {
+  "point": [
+   "<em>run ahead of</em> a forecast: better than predicted.",
+   "run ahead of 預測：比預測更好。"
+  ],
+  "why": [
+   "The forecast <em>assumed that sales would be slow</em>, <em>yet</em> the factory must <em>add a second shift</em>. Orders beat the forecast: <em>ahead of</em>. <em>in line with</em> would mean slow orders too.",
+   "預測 assumed that sales would be slow，yet 工廠卻要 add a second shift。訂單超過預測：ahead of。in line with 會代表訂單也慢。"
+  ],
+  "gloss": [
+   {
+    "w": "forecast",
+    "hw": "forecast",
+    "pos": "n.",
+    "zh": "預測",
+    "ex": "The sales forecast was revised in May."
+   },
+   {
+    "w": "second shift",
+    "hw": "second shift",
+    "pos": "phr.",
+    "zh": "第二班次",
+    "ex": "Workers on the second shift start at two."
+   },
+   {
+    "w": "keep up with",
+    "hw": "keep up with",
+    "pos": "phr.",
+    "zh": "趕上、應付",
+    "ex": "We hired staff to keep up with orders."
+   }
+  ]
+ },
+ "g-prep-16": {
+  "point": [
+   "<em>prior to</em> + <em>-ing</em>: before. <em>to</em> is a preposition.",
+   "prior to + Ving：在……之前。to 是介系詞。"
+  ],
+  "why": [
+   "<em>while the part is still in its packaging</em> shows the number is logged before the part is fitted: <em>prior to installing</em>. <em>subsequent to</em> means after, which that clause rules out.",
+   "while the part is still in its packaging 顯示序號在零件裝上之前登記：prior to installing。subsequent to 表示之後，被該子句排除。"
+  ],
+  "gloss": [
+   {
+    "w": "serial number",
+    "hw": "serial number",
+    "pos": "phr.",
+    "zh": "序號",
+    "ex": "Enter the serial number on the form."
+   },
+   {
+    "w": "replacement part",
+    "hw": "replacement part",
+    "pos": "phr.",
+    "zh": "更換零件",
+    "ex": "The replacement part arrives on Tuesday."
+   },
+   {
+    "w": "approved parts list",
+    "hw": "approved parts list",
+    "pos": "phr.",
+    "zh": "核可零件清單",
+    "ex": "Use only items on the approved parts list."
+   },
+   {
+    "w": "packaging",
+    "hw": "packaging",
+    "pos": "n.",
+    "zh": "包裝",
+    "ex": "Keep the original packaging for returns."
+   }
+  ]
+ },
+ "g-prep-17": {
+  "point": [
+   "<em>in response to</em> + an event that came earlier.",
+   "in response to + 較早發生的事。"
+  ],
+  "why": [
+   "<em>which had begun the previous Monday</em> puts the outage before the Friday cut, and the refinery reacted to it: <em>in response to</em>. <em>in anticipation of</em> needs an event still to come.",
+   "which had begun the previous Monday 把停電放在星期五減產之前，煉油廠是對它作出反應：in response to。in anticipation of 要接尚未發生的事。"
+  ],
+  "gloss": [
+   {
+    "w": "refinery",
+    "hw": "refinery",
+    "pos": "n.",
+    "zh": "煉油廠",
+    "ex": "The refinery processes oil from three fields."
+   },
+   {
+    "w": "outage",
+    "hw": "outage",
+    "pos": "n.",
+    "zh": "停電、停機",
+    "ex": "The outage lasted about two hours."
+   },
+   {
+    "w": "regulator",
+    "hw": "regulator",
+    "pos": "n.",
+    "zh": "監管機關",
+    "ex": "The regulator approved the new tariff."
+   }
+  ]
+ },
+ "g-prep-18": {
+  "point": [
+   "<em>out of stock</em>: not available.",
+   "out of stock：缺貨。"
+  ],
+  "why": [
+   "<em>ever since the supplier's plant was shut by a strike</em> and <em>the order is now due to ship from the Bexley depot</em> both show there is no stock here. The phrase is <em>out of stock</em>.",
+   "ever since the supplier's plant was shut by a strike 與 the order is now due to ship from the Bexley depot 都顯示這裡沒有貨。片語是 out of stock。"
+  ],
+  "gloss": [
+   {
+    "w": "valve fittings",
+    "hw": "valve fitting",
+    "pos": "phr.",
+    "zh": "閥門接頭",
+    "ex": "We stock several valve fittings."
+   },
+   {
+    "w": "shut",
+    "hw": "shut",
+    "pos": "v.",
+    "zh": "關閉",
+    "ex": "The plant was shut for repairs."
+   },
+   {
+    "w": "ship",
+    "hw": "ship",
+    "pos": "v.",
+    "zh": "出貨",
+    "ex": "Orders ship within two working days."
+   }
+  ]
+ },
+ "g-prep-19": {
+  "point": [
+   "<em>as of</em> + a date: from that day on.",
+   "as of + 日期：自該日起。"
+  ],
+  "why": [
+   "<em>whereas claims filed earlier will still be paid at the old rate</em> shows the new rate starts on that date. That is <em>as of</em>. <em>by</em> and <em>before</em> would include the earlier claims.",
+   "whereas claims filed earlier will still be paid at the old rate 顯示新費率從那天才開始。這是 as of。by 與 before 會把較早的申請也算進來。"
+  ],
+  "gloss": [
+   {
+    "w": "mileage claims",
+    "hw": "mileage claim",
+    "pos": "phr.",
+    "zh": "里程申請",
+    "ex": "Mileage claims need a signed log."
+   },
+   {
+    "w": "reimbursed",
+    "hw": "reimburse",
+    "pos": "v.",
+    "zh": "核銷、報銷",
+    "ex": "Meals will be reimbursed within two weeks."
+   },
+   {
+    "w": "filed",
+    "hw": "file",
+    "pos": "v.",
+    "zh": "提出（申請）",
+    "ex": "She filed the claim on Monday."
+   }
+  ]
+ },
+ "g-prep-20": {
+  "point": [
+   "<em>pending</em> + noun: while waiting for it.",
+   "pending + 名詞：等待……期間。"
+  ],
+  "why": [
+   "<em>the inspector says he cannot complete before the end of March</em> means the outcome does not exist yet. The permit is suspended while waiting for it: <em>pending</em>. <em>following</em> and <em>after</em> need a known outcome.",
+   "the inspector says he cannot complete before the end of March 表示結果還不存在。許可證在等待期間被暫停：pending。following 與 after 要有已知的結果。"
+  ],
+  "gloss": [
+   {
+    "w": "operating permit",
+    "hw": "operating permit",
+    "pos": "phr.",
+    "zh": "營運許可證",
+    "ex": "The operating permit expires in June."
+   },
+   {
+    "w": "suspended",
+    "hw": "suspend",
+    "pos": "v.",
+    "zh": "暫停",
+    "ex": "The airline suspended flights for a day."
+   },
+   {
+    "w": "inspector",
+    "hw": "inspector",
+    "pos": "n.",
+    "zh": "檢查員",
+    "ex": "The inspector visits each site yearly."
+   }
+  ]
+ },
+ "g-prep-21": {
+  "point": [
+   "<em>throughout</em> + a place: in every part.",
+   "throughout + 地點：遍及每一處。"
+  ],
+  "why": [
+   "<em>from the check-in hall to the farthest boarding gate</em> shows the signs cover every part of the terminal. That meaning is <em>throughout</em>. <em>through</em> means passing through.",
+   "from the check-in hall to the farthest boarding gate 顯示標示涵蓋航廈每一處。這個意思是 throughout。through 表示穿過。"
+  ],
+  "gloss": [
+   {
+    "w": "wayfinding signs",
+    "hw": "wayfinding sign",
+    "pos": "phr.",
+    "zh": "指引標示",
+    "ex": "Clear wayfinding signs reduce lost visitors."
+   },
+   {
+    "w": "check-in hall",
+    "hw": "check-in hall",
+    "pos": "phr.",
+    "zh": "報到大廳",
+    "ex": "The check-in hall opens at four."
+   },
+   {
+    "w": "boarding gate",
+    "hw": "boarding gate",
+    "pos": "phr.",
+    "zh": "登機門",
+    "ex": "Gate 12 is the boarding gate for Oslo."
+   }
+  ]
+ },
+ "g-prep-22": {
+  "point": [
+   "<em>in charge of</em>: responsible for managing.",
+   "in charge of：負責管理。"
+  ],
+  "why": [
+   "<em>he has asked to hand it over to a successor</em> shows he holds the responsibility now. A duty can be handed over; a view cannot. The phrase is <em>in charge of</em>.",
+   "he has asked to hand it over to a successor 顯示他現在擔負這項職責。職責可以交接，立場不行。片語是 in charge of。"
+  ],
+  "gloss": [
+   {
+    "w": "deputy director",
+    "hw": "deputy director",
+    "pos": "phr.",
+    "zh": "副主任",
+    "ex": "The deputy director signed the form."
+   },
+   {
+    "w": "briefing",
+    "hw": "briefing",
+    "pos": "n.",
+    "zh": "簡報會",
+    "ex": "The briefing starts at nine."
+   },
+   {
+    "w": "pilot scheme",
+    "hw": "pilot scheme",
+    "pos": "phr.",
+    "zh": "試辦計畫",
+    "ex": "The pilot scheme runs for six months."
+   },
+   {
+    "w": "successor",
+    "hw": "successor",
+    "pos": "n.",
+    "zh": "接任者",
+    "ex": "She trained her successor carefully."
+   }
+  ]
+ }
+}

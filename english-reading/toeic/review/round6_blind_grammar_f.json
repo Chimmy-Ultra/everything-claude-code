@@ -1,0 +1,134 @@
+[
+ {
+  "id": "g-prep-11",
+  "format": "gap",
+  "stem": "The two cranes on the eastern quay, which failed their annual safety inspection in March, must stay parked with their booms lowered ______ the end of next month, when the contractor expects to finish replacing the brake assemblies.",
+  "options": {
+   "A": "by",
+   "B": "until",
+   "C": "since",
+   "D": "from"
+  }
+ },
+ {
+  "id": "g-prep-12",
+  "format": "gap",
+  "stem": "A passenger whose checked bag was damaged on a flight must lodge a written claim at the airline's baggage office ______ seven days, excluding public holidays, of receiving it, or the carrier may reject the claim.",
+  "options": {
+   "A": "in",
+   "B": "after",
+   "C": "within",
+   "D": "by"
+  }
+ },
+ {
+  "id": "g-prep-13",
+  "format": "gap",
+  "stem": "Delegates who arrive early for the trade fair may collect their badges from the registration booth, which opens ______ the morning of the first day and stays open until the exhibition hall closes.",
+  "options": {
+   "A": "on",
+   "B": "in",
+   "C": "at",
+   "D": "toward"
+  }
+ },
+ {
+  "id": "g-prep-14",
+  "format": "gap",
+  "stem": "Pumps 3 and 4 at the Orsden water plant, which were overhauled in the spring, ran without a single recorded fault ______ eleven consecutive months before the board agreed to extend the maintenance contract.",
+  "options": {
+   "A": "during",
+   "B": "since",
+   "C": "by",
+   "D": "for"
+  }
+ },
+ {
+  "id": "g-prep-15",
+  "format": "gap",
+  "stem": "Sales of the Corvan folding tablet have so far run ______ the forecast prepared in January, which surprised planners who expected the model to sell slowly and must now add a second shift at the factory.",
+  "options": {
+   "A": "in line with",
+   "B": "in view of",
+   "C": "ahead of",
+   "D": "in spite of"
+  }
+ },
+ {
+  "id": "g-prep-16",
+  "format": "gap",
+  "stem": "The revised code of conduct applies ______ the organization, from the executive floor at head office to the smallest regional depot, and no department has been granted an exemption.",
+  "options": {
+   "A": "throughout",
+   "B": "through",
+   "C": "between",
+   "D": "toward"
+  }
+ },
+ {
+  "id": "g-prep-17",
+  "format": "gap",
+  "stem": "The refinery has trimmed its weekly output ______ the outage at Harbor Point that was reported last week, rather than waiting for the regulator to order a cut.",
+  "options": {
+   "A": "in anticipation of",
+   "B": "in response to",
+   "C": "in contrast to",
+   "D": "in return for"
+  }
+ },
+ {
+  "id": "g-prep-18",
+  "format": "gap",
+  "stem": "The 12-inch valve fittings that the crew ordered on the third have been ______ stock at the Harlow warehouse ever since a strike halted production, so the supervisor has asked the Bexley depot to fill the order.",
+  "options": {
+   "A": "in",
+   "B": "at",
+   "C": "by",
+   "D": "out of"
+  }
+ },
+ {
+  "id": "g-prep-19",
+  "format": "gap",
+  "stem": "The committee has confirmed that all four contractor bids remain ______ review while the legal team checks each firm's insurance documents, and no decision will be announced before the end of the month.",
+  "options": {
+   "A": "under",
+   "B": "over",
+   "C": "beyond",
+   "D": "beside"
+  }
+ },
+ {
+  "id": "g-prep-20",
+  "format": "gap",
+  "stem": "The auditors asked that all supporting invoices for the third quarter be filed ______ their visit on the fourteenth, a request that gave the accounts team less than a week to trace the missing receipts.",
+  "options": {
+   "A": "in lieu of",
+   "B": "in the course of",
+   "C": "in advance of",
+   "D": "in the absence of"
+  }
+ },
+ {
+  "id": "g-prep-21",
+  "format": "gap",
+  "stem": "Please send any queries ______ your travel expense claim to the finance office, but direct questions about the booking itself to the travel desk, which handles all airline and hotel reservations.",
+  "options": {
+   "A": "in accordance with",
+   "B": "in addition to",
+   "C": "in the event of",
+   "D": "with regard to"
+  }
+ },
+ {
+  "id": "g-prep-22",
+  "format": "gap",
+  "stem": "The deputy director, who has spoken warmly about the plan at every staff briefing since March, will be ______ the pilot scheme once it launches, although he has asked to hand it over to a successor after six months.",
+  "options": {
+   "A": "in favor of",
+   "B": "in charge of",
+   "C": "in need of",
+   "D": "in case of"
+  }
+ }
+]

@@ -1,0 +1,24 @@
+{
+  "answers": {
+    "g-prep-13": {
+      "answer": "A",
+      "confidence": 5,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "At the end of every month is the fixed expression. In the end of: 'in the end' means finally; 'in the end of the month' is a non-standard learner error that a formal editor would change to at. On the end of: not idiomatic. Since: 'since the end of every month' does not combine with a repeated habitual action; since needs a past starting point with a continuing state. No distractor passes in formal British or American English; the nearby 'on the final day' and 'at midnight' only make on and at look tempting.",
+      "vsToeic": "easier",
+      "band": "easy",
+      "ldbs": "L fails: in/on/since are wrong in the immediate window ('___ the end of every month' is decided by the fixed phrase at the end of); D fails (the deciding words are adjacent to the gap); B weak (in the end of is a learner error, but not a form a good student would confidently defend); S no.",
+      "style": 3,
+      "why": "L fails: the fixed phrase at the end of settles it in the four-word window, and the later 'on the final day' / 'at midnight' only add noise, not a plausible rival.",
+      "fix": "To make it medium or hard use a time-preposition contrast that needs a clue outside the window, e.g. by / until / at / on or for / during / within with a far-away clue (a deadline rather than a point, a duration, a repeated action). Avoid pairs where both are defensible: by vs at the end of a deadline, in vs within a duration, and by vs before in business writing.",
+      "tooClose": false,
+      "editorNote": "Frequent TOEIC phrasal slot (at the end of); the decoy time phrases in the second clause (on the final day, at midnight) are good noise but cannot lift the item past easy."
+    }
+  },
+  "mustFix": [],
+  "shouldFix": [
+    "g-prep-13: easy (L and D both fail: the fixed phrase at the end of decides it locally). Acceptable as the easy quota item; to harden, move to a by/until/at/on contrast with a far clue, checking each pair for a second defensible reading."
+  ],
+  "overall": "One preposition-of-time item. Single answer (at) in both British and American formal English; no mustFix. Band easy, with style 3 because it is a fixed-phrase collocation rather than a time-clue puzzle. The long stem and decoy time phrases do not raise difficulty since the deciding words sit directly next to the gap."
+}

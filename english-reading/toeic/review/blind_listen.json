@@ -1,0 +1,272 @@
+[
+ {
+  "id": "l-qr-01",
+  "format": "qr",
+  "heard": "Where should I leave these boxes of paper?",
+  "responses": {
+   "A": "Yes, they came this morning.",
+   "B": "I read about it in the paper.",
+   "C": "Just put them by the copier."
+  }
+ },
+ {
+  "id": "l-qr-02",
+  "format": "qr",
+  "heard": "Who's in charge of ordering supplies for the new office?",
+  "responses": {
+   "A": "Mostly pens and printer ink.",
+   "B": "Rachel at reception handles that.",
+   "C": "The new office is really bright."
+  }
+ },
+ {
+  "id": "l-qr-03",
+  "format": "qr",
+  "heard": "Why was the client meeting moved to the afternoon?",
+  "responses": {
+   "A": "Their flight was delayed.",
+   "B": "In the large meeting room.",
+   "C": "Yes, it went very well."
+  }
+ },
+ {
+  "id": "l-qr-04",
+  "format": "qr",
+  "heard": "Is the printer upstairs working again?",
+  "responses": {
+   "A": "Our team is working on a new project.",
+   "B": "Yes, someone repaired it an hour ago.",
+   "C": "Double-sided, please."
+  }
+ },
+ {
+  "id": "l-qr-05",
+  "format": "qr",
+  "heard": "You've already booked the hotel for the sales conference, haven't you?",
+  "responses": {
+   "A": "The conference was very useful.",
+   "B": "A double room, please.",
+   "C": "Yes, I reserved rooms for everyone yesterday."
+  }
+ },
+ {
+  "id": "l-qr-06",
+  "format": "qr",
+  "heard": "When will the new price list be ready?",
+  "responses": {
+   "A": "Monica is still checking the numbers.",
+   "B": "Yes, the prices are quite reasonable.",
+   "C": "I made a list of new clients."
+  }
+ },
+ {
+  "id": "l-qr-07",
+  "format": "qr",
+  "heard": "Would you like me to send the contract to the client today?",
+  "responses": {
+   "A": "At the post office on Main Street.",
+   "B": "The lawyers haven't finished going over it.",
+   "C": "She's been our client for years."
+  }
+ },
+ {
+  "id": "l-qr-08",
+  "format": "qr",
+  "heard": "How do I get to the staff kitchen from here?",
+  "responses": {
+   "A": "Yes, the kitchen was just cleaned.",
+   "B": "I usually take the bus.",
+   "C": "Sorry, it's only my first week."
+  }
+ },
+ {
+  "id": "l-conv-01",
+  "format": "conv",
+  "transcript": [
+   "M: Hi Paula, do you have a minute? I heard our department is moving to the fifth floor next month.",
+   "W: That's right. There's more space up there, and we'll finally have our own meeting rooms.",
+   "M: Great. Do we need to pack up our own desks?",
+   "W: Just your personal things. A moving company will handle the furniture and computers.",
+   "M: Okay. And when does everything need to be packed?",
+   "W: By Thursday the 14th. I'll give everyone boxes and labels tomorrow morning."
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "options": {
+     "A": "Hiring a moving company",
+     "B": "Their team's relocation",
+     "C": "Buying new office furniture",
+     "D": "Booking a meeting room"
+    }
+   },
+   {
+    "q": "What will the woman do tomorrow?",
+    "options": {
+     "A": "Pack up her desk",
+     "B": "Contact a moving company",
+     "C": "Hand out packing materials",
+     "D": "Move the computers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-02",
+  "format": "conv",
+  "transcript": [
+   "W: Hello, I'd like to order sandwiches for a training session this Friday. There'll be 18 of us.",
+   "M: Sure. Each of our platters serves six, so you'd need three. They're $45 each.",
+   "W: That's fine. Could you deliver them by 11:30?",
+   "M: I'm afraid our driver doesn't start deliveries until noon on Fridays. But you're welcome to come and get them earlier.",
+   "W: Well, our office is just around the corner, so I'll send my assistant to collect them.",
+   "M: Perfect. I'll have everything ready at the front counter by eleven."
+  ],
+  "questions": [
+   {
+    "q": "What problem does the man mention?",
+    "options": {
+     "A": "The order cannot arrive in time",
+     "B": "The platters are sold out",
+     "C": "The price has gone up",
+     "D": "The kitchen closes at noon"
+    }
+   },
+   {
+    "q": "What does the woman decide to do?",
+    "options": {
+     "A": "Order a larger platter",
+     "B": "Move the session to the afternoon",
+     "C": "Wait for the noon delivery",
+     "D": "Have a staff member pick up the food"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-03",
+  "format": "conv",
+  "transcript": [
+   "M: Lucy, the print shop needs the final brochure by tomorrow morning. Could we go through it together this afternoon?",
+   "W: I'd like to, but I've got a dentist appointment at three.",
+   "M: Then how about straight after lunch? It shouldn't take more than half an hour.",
+   "W: That works. And Tom has already checked the prices on the back page, so we only need to look at the photos and headings.",
+   "M: Oh, good. That'll save time. I'll book a meeting room for one o'clock.",
+   "W: Great. I'll bring a printed copy so we can mark changes by hand."
+  ],
+  "questions": [
+   {
+    "q": "Why does the woman mention a dentist appointment?",
+    "options": {
+     "A": "To ask for the day off",
+     "B": "To say she won't be free later in the day",
+     "C": "To suggest a later deadline",
+     "D": "To recommend a dentist to the man"
+    }
+   },
+   {
+    "q": "What has Tom already done?",
+    "options": {
+     "A": "Taken the photos",
+     "B": "Booked a meeting room",
+     "C": "Reviewed the cost details",
+     "D": "Printed a copy of the brochure"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-04",
+  "format": "conv",
+  "transcript": [
+   "W: Hi, is this the IT help desk? My laptop keeps shutting down after about twenty minutes.",
+   "M: That sounds like the battery. Is it the model the company handed out last year, or an older one?",
+   "W: An older one. I've had it for about four years.",
+   "M: Then the battery's probably worn out. We keep spares here, but I'll need the model number to find the right one.",
+   "W: Sure. It's on the bottom, isn't it? Let me turn it over.",
+   "M: Yes, it's on the silver sticker. Once I have that, I can bring a new battery up to your desk this afternoon."
+  ],
+  "questions": [
+   {
+    "q": "What will the woman most likely do next?",
+    "options": {
+     "A": "Buy a new laptop",
+     "B": "Take her laptop to the help desk",
+     "C": "Replace the battery herself",
+     "D": "Check the underside of her computer"
+    }
+   },
+   {
+    "q": "What does the man offer to do this afternoon?",
+    "options": {
+     "A": "Deliver a part to her workspace",
+     "B": "Lend her a newer laptop",
+     "C": "Order a battery from a supplier",
+     "D": "Update her software"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-01",
+  "format": "talk",
+  "transcript": [
+   "M: Good morning, everyone. This is an update from building management about the lifts on the east side.",
+   "M: Starting on Monday, a team will be replacing those lifts, and the work should take about two weeks.",
+   "M: Until then, please use the lifts by the main entrance, or take the stairs.",
+   "M: Since mornings may be busier than usual, the café on the ground floor will open fifteen minutes earlier.",
+   "M: Thank you for your patience."
+  ],
+  "questions": [
+   {
+    "q": "What is the announcement mainly about?",
+    "options": {
+     "A": "The opening of a new café",
+     "B": "A change in office hours",
+     "C": "The installation of new elevators",
+     "D": "A fire safety drill"
+    }
+   },
+   {
+    "q": "What will the café do?",
+    "options": {
+     "A": "Start serving sooner in the morning",
+     "B": "Move to the ground floor",
+     "C": "Close for two weeks",
+     "D": "Deliver breakfast to offices"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-02",
+  "format": "talk",
+  "transcript": [
+   "W: Hi, this is Nora Blake from the Riverside Business Forum, calling for Mr. Wei.",
+   "W: I'm confirming your talk on Thursday, May 8th, at 2 p.m. in Room 4B.",
+   "W: Please note that it will now run 40 minutes instead of 30, because another speaker had to cancel.",
+   "W: Could you email me your slides by Monday so our technician can load them onto the laptop in the room?",
+   "W: And if you'd like a parking pass, just let me know. See you next week!"
+  ],
+  "questions": [
+   {
+    "q": "What change does the speaker mention?",
+    "options": {
+     "A": "His talk has moved to Monday",
+     "B": "His room has been changed",
+     "C": "Another speaker will join his session",
+     "D": "He will have more time to speak"
+    }
+   },
+   {
+    "q": "What does the speaker ask Mr. Wei to do?",
+    "options": {
+     "A": "Buy a parking pass",
+     "B": "Send his presentation files",
+     "C": "Call the technician",
+     "D": "Bring his own laptop"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,1031 @@
+{
+ "g-pos-01": {
+  "point": [
+   "Put an adverb between <em>be</em> and the past participle.",
+   "be 動詞和過去分詞之間放副詞。"
+  ],
+  "why": [
+   "The blank sits between <em>were</em> and <em>calculated</em>. It describes how the charges were calculated, so it needs an adverb: <em>automatically</em>.",
+   "空格在 were 和 calculated 之間，說明運費是「怎麼」被計算的，要用副詞 automatically。"
+  ],
+  "gloss": [
+   {
+    "w": "shipping charges",
+    "hw": "shipping charge",
+    "pos": "n.",
+    "zh": "運費",
+    "ex": "The shipping charge is added at checkout."
+   },
+   {
+    "w": "invoice",
+    "hw": "invoice",
+    "pos": "n.",
+    "zh": "發票、請款單",
+    "ex": "Please send the invoice by Friday."
+   },
+   {
+    "w": "billing software",
+    "hw": "billing software",
+    "pos": "n.",
+    "zh": "帳務軟體",
+    "ex": "Our billing software sends reminders automatically."
+   }
+  ]
+ },
+ "g-pos-02": {
+  "point": [
+   "<em>seem</em> + adjective.",
+   "seem + 形容詞。"
+  ],
+  "why": [
+   "<em>Seem</em> links the subject to a description. The subject is <em>The terms of the new rental agreement</em>, and the blank says what they seem like. It needs an adjective: <em>acceptable</em>.",
+   "seem 把主詞和描述連起來。主詞是 The terms of the new rental agreement，空格說明條款看起來如何，要用形容詞 acceptable。"
+  ],
+  "gloss": [
+   {
+    "w": "terms",
+    "hw": "terms",
+    "pos": "n.",
+    "zh": "（合約）條款",
+    "ex": "Please read the terms before you sign."
+   },
+   {
+    "w": "rental agreement",
+    "hw": "rental agreement",
+    "pos": "n.",
+    "zh": "租約",
+    "ex": "The rental agreement lasts one year."
+   },
+   {
+    "w": "parties",
+    "hw": "party",
+    "pos": "n.",
+    "zh": "（合約的）一方",
+    "ex": "Both parties agreed to the price."
+   }
+  ]
+ },
+ "g-pos-03": {
+  "point": [
+   "After <em>the</em> and before <em>of</em>: a noun.",
+   "the 之後、of 之前：用名詞。"
+  ],
+  "why": [
+   "The blank comes after <em>The</em> and before <em>of the Tamsin Road factory</em>. Together they are the subject of <em>will create</em>, so the blank must be a noun: <em>expansion</em>.",
+   "空格在 The 之後、of the Tamsin Road factory 之前，整組是 will create 的主詞，所以要用名詞 expansion。"
+  ],
+  "gloss": [
+   {
+    "w": "region",
+    "hw": "region",
+    "pos": "n.",
+    "zh": "地區",
+    "ex": "Sales grew fast in the northern region."
+   },
+   {
+    "w": "create",
+    "hw": "create",
+    "pos": "v.",
+    "zh": "創造（職缺）",
+    "ex": "The new store will create fifty jobs."
+   }
+  ]
+ },
+ "g-pos-04": {
+  "point": [
+   "<em>who</em> refers to a person: use a person noun.",
+   "who 指人：用表示人的名詞。"
+  ],
+  "why": [
+   "The blank is a noun, and <em>who visited the plant</em> and <em>recommended</em> describe a person. A person who checks safety is an <em>inspector</em>.",
+   "空格要放名詞，who visited the plant 和 recommended 描述的是人。檢查安全的人是 inspector。"
+  ],
+  "gloss": [
+   {
+    "w": "plant",
+    "hw": "plant",
+    "pos": "n.",
+    "zh": "工廠",
+    "ex": "The plant employs about 300 workers."
+   },
+   {
+    "w": "recommended",
+    "hw": "recommend",
+    "pos": "v.",
+    "zh": "建議",
+    "ex": "The doctor recommended more rest."
+   },
+   {
+    "w": "replacing",
+    "hw": "replace",
+    "pos": "v.",
+    "zh": "更換、取代",
+    "ex": "We are replacing the old printers."
+   }
+  ]
+ },
+ "g-pos-05": {
+  "point": [
+   "<em>very</em> + adjective + noun.",
+   "very + 形容詞 + 名詞。"
+  ],
+  "why": [
+   "The blank is between <em>very</em> and the noun <em>shutdown</em>, so it must be an adjective. <em>Costly</em> ends in -ly, but it is an adjective meaning \"expensive\".",
+   "空格在 very 和名詞 shutdown 之間，要用形容詞。costly 雖然以 -ly 結尾，但是形容詞，意思是「代價高的」。"
+  ],
+  "gloss": [
+   {
+    "w": "shutdown",
+    "hw": "shutdown",
+    "pos": "n.",
+    "zh": "停工、停機",
+    "ex": "The shutdown lasted two days."
+   },
+   {
+    "w": "worn parts",
+    "hw": "worn part",
+    "pos": "n.",
+    "zh": "磨損的零件",
+    "ex": "Worn parts can cause machine failures."
+   },
+   {
+    "w": "failed",
+    "hw": "fail",
+    "pos": "v.",
+    "zh": "故障、失效",
+    "ex": "The old pump failed last week."
+   }
+  ]
+ },
+ "g-pos-06": {
+  "point": [
+   "An adverb modifies an adjective.",
+   "副詞修飾形容詞。"
+  ],
+  "why": [
+   "The blank is right before the adjective <em>easier</em>. It tells how much easier things are, so it needs an adverb: <em>dramatically</em>.",
+   "空格就在形容詞 easier 前面，說明「容易多少」，所以要用副詞 dramatically。"
+  ],
+  "gloss": [
+   {
+    "w": "booking system",
+    "hw": "booking system",
+    "pos": "n.",
+    "zh": "預約系統",
+    "ex": "The booking system shows free rooms."
+   },
+   {
+    "w": "reserve",
+    "hw": "reserve",
+    "pos": "v.",
+    "zh": "預訂",
+    "ex": "Please reserve a table for six."
+   },
+   {
+    "w": "on short notice",
+    "hw": "on short notice",
+    "pos": "phr.",
+    "zh": "臨時、事前通知很短",
+    "ex": "We can travel on short notice."
+   }
+  ]
+ },
+ "g-tense-01": {
+  "point": [
+   "A past time: past tense. No object: passive.",
+   "過去的時間用過去式；沒有受詞用被動。"
+  ],
+  "why": [
+   "<em>Shortly before the building was sold</em> is a fixed time in the past, so the verb is past tense. The cameras did not replace anything; they <em>were replaced</em>.",
+   "Shortly before the building was sold 是明確的過去時間，動詞用過去式。攝影機是被換的，所以用 were replaced。"
+  ],
+  "gloss": [
+   {
+    "w": "security cameras",
+    "hw": "security camera",
+    "pos": "n.",
+    "zh": "監視攝影機",
+    "ex": "The security camera covers the front door."
+   },
+   {
+    "w": "parking garage",
+    "hw": "parking garage",
+    "pos": "n.",
+    "zh": "（多層）停車場",
+    "ex": "The parking garage closes at midnight."
+   },
+   {
+    "w": "under warranty",
+    "hw": "under warranty",
+    "pos": "phr.",
+    "zh": "在保固期內",
+    "ex": "The laptop is still under warranty."
+   }
+  ]
+ },
+ "g-tense-02": {
+  "point": [
+   "<em>Currently</em> + an action in progress: present continuous.",
+   "currently + 正在進行的動作：現在進行式。"
+  ],
+  "why": [
+   "<em>Currently</em> means now. The technicians have not finished finding <em>the cause of this morning's network outage</em>, so the action is in progress: <em>are investigating</em>.",
+   "Currently 指現在。技術人員還沒查出 the cause of this morning's network outage，動作正在進行，所以用 are investigating。"
+  ],
+  "gloss": [
+   {
+    "w": "technicians",
+    "hw": "technician",
+    "pos": "n.",
+    "zh": "技術人員",
+    "ex": "A technician will visit the office today."
+   },
+   {
+    "w": "network outage",
+    "hw": "network outage",
+    "pos": "n.",
+    "zh": "網路中斷",
+    "ex": "The network outage lasted an hour."
+   }
+  ]
+ },
+ "g-tense-03": {
+  "point": [
+   "After <em>once</em>: present tense for the future.",
+   "once 子句：用現在式表示未來。"
+  ],
+  "why": [
+   "<em>Once</em> starts a time clause, and the main clause says <em>will send</em>, which is future. A time clause uses present tense for a future action: <em>completes</em>.",
+   "Once 引導時間子句，主句 will send 是未來。時間子句用現在式表示未來的動作：completes。"
+  ],
+  "gloss": [
+   {
+    "w": "legal team",
+    "hw": "legal team",
+    "pos": "n.",
+    "zh": "法務團隊",
+    "ex": "The legal team checks every contract."
+   },
+   {
+    "w": "review",
+    "hw": "review",
+    "pos": "n.",
+    "zh": "審閱",
+    "ex": "The review took about two weeks."
+   },
+   {
+    "w": "revised contract",
+    "hw": "revised contract",
+    "pos": "n.",
+    "zh": "修訂後的合約",
+    "ex": "Please sign the revised contract today."
+   }
+  ]
+ },
+ "g-tense-04": {
+  "point": [
+   "<em>since</em> + a point in time: present perfect.",
+   "since + 時間點：現在完成式。"
+  ],
+  "why": [
+   "<em>Since the spring of 2021</em> starts in the past and runs up to now. The verb must be present perfect: <em>has expanded</em>.",
+   "since the spring of 2021 從過去開始、延續到現在，動詞要用現在完成式 has expanded。"
+  ],
+  "gloss": [
+   {
+    "w": "delivery network",
+    "hw": "delivery network",
+    "pos": "n.",
+    "zh": "配送網",
+    "ex": "Our delivery network covers the whole island."
+   },
+   {
+    "w": "since the spring of 2021",
+    "hw": "since",
+    "pos": "phr.",
+    "zh": "自從 2021 年春天",
+    "ex": "We have worked here since the spring."
+   }
+  ]
+ },
+ "g-tense-05": {
+  "point": [
+   "<em>By the time</em> + past: past perfect.",
+   "by the time + 過去式：過去完成式。"
+  ],
+  "why": [
+   "<em>By the time the renovation … was completed in May</em> is a past point. The spending was done before then, so the main clause uses past perfect: <em>had spent</em>.",
+   "By the time … was completed in May 是過去的某個時間點。花錢發生在那之前，主句用過去完成式 had spent。"
+  ],
+  "gloss": [
+   {
+    "w": "renovation",
+    "hw": "renovation",
+    "pos": "n.",
+    "zh": "整修、翻新",
+    "ex": "The renovation will take three months."
+   },
+   {
+    "w": "lobby",
+    "hw": "lobby",
+    "pos": "n.",
+    "zh": "大廳",
+    "ex": "Guests wait in the lobby."
+   },
+   {
+    "w": "owners",
+    "hw": "owner",
+    "pos": "n.",
+    "zh": "業主",
+    "ex": "The owner of the shop lives nearby."
+   }
+  ]
+ },
+ "g-connect-01": {
+  "point": [
+   "A noun phrase needs a preposition.",
+   "名詞片語前要用介系詞。"
+  ],
+  "why": [
+   "<em>the growing number of attendees</em> is a noun phrase, with no subject and verb. It gives the reason for the move, so use <em>because of</em>.",
+   "the growing number of attendees 是名詞片語，沒有主詞和動詞。它是搬會議室的原因，所以用 because of。"
+  ],
+  "gloss": [
+   {
+    "w": "attendees",
+    "hw": "attendee",
+    "pos": "n.",
+    "zh": "出席者",
+    "ex": "Each attendee gets a name badge."
+   },
+   {
+    "w": "conference room",
+    "hw": "conference room",
+    "pos": "n.",
+    "zh": "會議室",
+    "ex": "The conference room seats twenty people."
+   },
+   {
+    "w": "growing",
+    "hw": "growing",
+    "pos": "adj.",
+    "zh": "越來越多的",
+    "ex": "A growing team needs more space."
+   }
+  ]
+ },
+ "g-connect-02": {
+  "point": [
+   "A full clause needs a conjunction.",
+   "完整子句前要用連接詞。"
+  ],
+  "why": [
+   "<em>they are on the construction site</em> has a subject and a verb, so it is a clause. A conjunction must join it to the main sentence: <em>while</em>.",
+   "they are on the construction site 有主詞和動詞，是子句，要用連接詞連到主句：while。"
+  ],
+  "gloss": [
+   {
+    "w": "hard hat",
+    "hw": "hard hat",
+    "pos": "n.",
+    "zh": "安全帽",
+    "ex": "Workers must wear a hard hat here."
+   },
+   {
+    "w": "at all times",
+    "hw": "at all times",
+    "pos": "phr.",
+    "zh": "隨時、全程",
+    "ex": "Keep your badge with you at all times."
+   },
+   {
+    "w": "construction site",
+    "hw": "construction site",
+    "pos": "n.",
+    "zh": "工地",
+    "ex": "The construction site is closed on Sundays."
+   }
+  ]
+ },
+ "g-connect-03": {
+  "point": [
+   "A contrast between two sentences: <em>However</em>.",
+   "前後兩句轉折：用 However。"
+  ],
+  "why": [
+   "The first sentence says the supplier <em>charges more</em>. The second says <em>we have decided to keep ordering</em>. The two ideas go against each other, so use <em>However</em>.",
+   "第一句說供應商收費較高，第二句說我們決定繼續訂貨。兩句意思相反，所以用 However。"
+  ],
+  "gloss": [
+   {
+    "w": "supplier",
+    "hw": "supplier",
+    "pos": "n.",
+    "zh": "供應商",
+    "ex": "Our supplier ships every Tuesday."
+   },
+   {
+    "w": "competitors",
+    "hw": "competitor",
+    "pos": "n.",
+    "zh": "競爭對手",
+    "ex": "Our competitors lowered their prices."
+   },
+   {
+    "w": "parts",
+    "hw": "part",
+    "pos": "n.",
+    "zh": "零件",
+    "ex": "We keep spare parts in the store room."
+   }
+  ]
+ },
+ "g-connect-04": {
+  "point": [
+   "<em>unless</em> = except if.",
+   "unless = 除非。"
+  ],
+  "why": [
+   "The rule is that orders after 3 p.m. ship the next day. Paying extra for <em>same-day shipping</em> is an exception to it, so use <em>unless</em>.",
+   "規則是下午三點後的訂單隔天出貨。加價選 same-day shipping 是這條規則的例外，所以用 unless。"
+  ],
+  "gloss": [
+   {
+    "w": "business day",
+    "hw": "business day",
+    "pos": "n.",
+    "zh": "工作天",
+    "ex": "Refunds take five business days."
+   },
+   {
+    "w": "same-day shipping",
+    "hw": "same-day shipping",
+    "pos": "n.",
+    "zh": "當日出貨",
+    "ex": "Same-day shipping costs ten dollars more."
+   },
+   {
+    "w": "pay extra",
+    "hw": "pay extra",
+    "pos": "phr.",
+    "zh": "加付費用",
+    "ex": "You must pay extra for large bags."
+   }
+  ]
+ },
+ "g-connect-05": {
+  "point": [
+   "<em>even though</em> + clause: a contrast.",
+   "even though + 子句：表示讓步。"
+  ],
+  "why": [
+   "A clause follows the blank. Spending <em>far less on advertising</em> would lead you to expect weak sales, but sales <em>still rose</em>. Use <em>Even though</em>.",
+   "空格後面是子句。廣告費少很多，照理銷量會差，但銷量 still rose，所以用 Even though。"
+  ],
+  "gloss": [
+   {
+    "w": "advertising",
+    "hw": "advertising",
+    "pos": "n.",
+    "zh": "廣告",
+    "ex": "Advertising costs rose last year."
+   },
+   {
+    "w": "desk lamp",
+    "hw": "desk lamp",
+    "pos": "n.",
+    "zh": "桌燈",
+    "ex": "This desk lamp has a built-in charger."
+   },
+   {
+    "w": "rose by",
+    "hw": "rise by",
+    "pos": "phr.",
+    "zh": "上升（幅度）",
+    "ex": "Prices may rise by five percent."
+   }
+  ]
+ },
+ "g-prep-01": {
+  "point": [
+   "<em>by</em> = no later than.",
+   "by = 最晚在……之前。"
+  ],
+  "why": [
+   "<em>April 5</em> is the last day, and <em>must be submitted</em> is a one-time action. It has to be done no later than that date: <em>by</em>.",
+   "April 5 是最後一天，must be submitted 是一次性的動作，最晚要在這天之前完成：by。"
+  ],
+  "gloss": [
+   {
+    "w": "expense claims",
+    "hw": "expense claim",
+    "pos": "n.",
+    "zh": "費用申請、報帳",
+    "ex": "Each expense claim needs a receipt."
+   },
+   {
+    "w": "first-quarter",
+    "hw": "first-quarter",
+    "pos": "adj.",
+    "zh": "第一季的",
+    "ex": "The first-quarter results look strong."
+   },
+   {
+    "w": "submitted",
+    "hw": "submit",
+    "pos": "v.",
+    "zh": "提交",
+    "ex": "Please submit the form online."
+   }
+  ]
+ },
+ "g-prep-02": {
+  "point": [
+   "<em>for</em> + a length of time.",
+   "for + 一段時間的長度。"
+  ],
+  "why": [
+   "<em>three days</em> is a length of time. It says how long the entrance will stay closed, so use <em>for</em>.",
+   "three days 是一段時間的長度，說明正門要關多久，所以用 for。"
+  ],
+  "gloss": [
+   {
+    "w": "main entrance",
+    "hw": "main entrance",
+    "pos": "n.",
+    "zh": "正門",
+    "ex": "Use the main entrance after 8 a.m."
+   },
+   {
+    "w": "floor tiles",
+    "hw": "floor tile",
+    "pos": "n.",
+    "zh": "地磚",
+    "ex": "The floor tiles are made of stone."
+   },
+   {
+    "w": "installed",
+    "hw": "install",
+    "pos": "v.",
+    "zh": "安裝",
+    "ex": "The team installed new lights today."
+   }
+  ]
+ },
+ "g-prep-03": {
+  "point": [
+   "<em>upon</em> + noun = as soon as.",
+   "upon + 名詞 = 一……就。"
+  ],
+  "why": [
+   "The certificate is given the moment the course ends. <em>Upon completion of the training course</em> means \"as soon as it is completed\".",
+   "證書在課程結束的當下發給學員。Upon completion of the training course 的意思是「一完成就」。"
+  ],
+  "gloss": [
+   {
+    "w": "completion",
+    "hw": "completion",
+    "pos": "n.",
+    "zh": "完成",
+    "ex": "Completion of the project is due in May."
+   },
+   {
+    "w": "participant",
+    "hw": "participant",
+    "pos": "n.",
+    "zh": "參加者",
+    "ex": "Each participant gets a free lunch."
+   },
+   {
+    "w": "certificate",
+    "hw": "certificate",
+    "pos": "n.",
+    "zh": "證書",
+    "ex": "The certificate is signed by the director."
+   }
+  ]
+ },
+ "g-prep-04": {
+  "point": [
+   "<em>since</em> + a past point, with present perfect.",
+   "since + 過去時間點，搭配現在完成式。"
+  ],
+  "why": [
+   "The main verb is <em>has doubled</em>, present perfect. It covers the time from <em>the merger with Kessling Freight last year</em> until now, so the starting point needs <em>Since</em>.",
+   "主要動詞是現在完成式 has doubled，涵蓋從 the merger with Kessling Freight last year 到現在，起點要用 Since。"
+  ],
+  "gloss": [
+   {
+    "w": "merger",
+    "hw": "merger",
+    "pos": "n.",
+    "zh": "合併",
+    "ex": "The merger created a much larger firm."
+   },
+   {
+    "w": "fleet",
+    "hw": "fleet",
+    "pos": "n.",
+    "zh": "船隊、車隊",
+    "ex": "The company owns a fleet of ten trucks."
+   },
+   {
+    "w": "doubled",
+    "hw": "double",
+    "pos": "v.",
+    "zh": "變成兩倍",
+    "ex": "Sales doubled in two years."
+   }
+  ]
+ },
+ "g-participle-01": {
+  "point": [
+   "Before a noun, a passive participle takes -ed.",
+   "名詞前的被動分詞用 -ed。"
+  ],
+  "why": [
+   "The price list is something that gets updated. Before the noun <em>price list</em>, a passive meaning takes -ed: <em>updated</em>.",
+   "價目表是被更新的東西。在名詞 price list 前面表示被動，用 -ed：updated。"
+  ],
+  "gloss": [
+   {
+    "w": "price list",
+    "hw": "price list",
+    "pos": "n.",
+    "zh": "價目表",
+    "ex": "The price list changes every spring."
+   },
+   {
+    "w": "download",
+    "hw": "download",
+    "pos": "v.",
+    "zh": "下載",
+    "ex": "You can download the manual here."
+   }
+  ]
+ },
+ "g-participle-02": {
+  "point": [
+   "After a noun, an active participle takes -ing.",
+   "名詞後的主動分詞用 -ing。"
+  ],
+  "why": [
+   "The verb of the sentence is <em>will be listed</em>, so the blank only describes <em>Companies</em>. The companies take part themselves, so the meaning is active: <em>participating</em>.",
+   "句子的動詞是 will be listed，空格只是修飾 Companies。公司是自己參加，意思是主動，用 participating。"
+  ],
+  "gloss": [
+   {
+    "w": "trade fair",
+    "hw": "trade fair",
+    "pos": "n.",
+    "zh": "商展",
+    "ex": "We will have a stand at the trade fair."
+   },
+   {
+    "w": "catalog",
+    "hw": "catalog",
+    "pos": "n.",
+    "zh": "型錄",
+    "ex": "The catalog lists all our products."
+   },
+   {
+    "w": "listed",
+    "hw": "list",
+    "pos": "v.",
+    "zh": "列出",
+    "ex": "Your name will be listed on the website."
+   }
+  ]
+ },
+ "g-participle-03": {
+  "point": [
+   "The subject receives the action: use <em>-ed</em>.",
+   "主詞承受動作：用 -ed。"
+  ],
+  "why": [
+   "The opening phrase describes <em>the new distribution center</em>. The center did not build anything; it was built <em>in only six months</em>. So use <em>Built</em>.",
+   "句首片語描述的是 the new distribution center。物流中心不是自己蓋，而是 in only six months 被蓋好，所以用 Built。"
+  ],
+  "gloss": [
+   {
+    "w": "distribution center",
+    "hw": "distribution center",
+    "pos": "n.",
+    "zh": "物流中心",
+    "ex": "The distribution center ships to every state."
+   },
+   {
+    "w": "process",
+    "hw": "process",
+    "pos": "v.",
+    "zh": "處理",
+    "ex": "We can process refunds within two days."
+   },
+   {
+    "w": "orders",
+    "hw": "order",
+    "pos": "n.",
+    "zh": "訂單",
+    "ex": "We received fifty orders this morning."
+   }
+  ]
+ },
+ "g-participle-04": {
+  "point": [
+   "A thing that causes the feeling takes <em>-ing</em>.",
+   "造成感受的事物用 -ing。"
+  ],
+  "why": [
+   "The subject is <em>the sales figures</em>. The figures cause disappointment in people; they do not feel it. So use <em>disappointing</em>.",
+   "主詞是 the sales figures。數字是讓人失望的事物，自己不會感到失望，所以用 disappointing。"
+  ],
+  "gloss": [
+   {
+    "w": "sales figures",
+    "hw": "sales figure",
+    "pos": "n.",
+    "zh": "銷售數字",
+    "ex": "The sales figures will be released on Monday."
+   },
+   {
+    "w": "kitchen appliances",
+    "hw": "kitchen appliance",
+    "pos": "n.",
+    "zh": "廚房家電",
+    "ex": "Kitchen appliances are on sale this week."
+   },
+   {
+    "w": "board",
+    "hw": "board",
+    "pos": "n.",
+    "zh": "董事會",
+    "ex": "The board meets every quarter."
+   }
+  ]
+ },
+ "g-pos-07": {
+  "point": [
+   "An adverb modifies a verb.",
+   "副詞修飾動詞。"
+  ],
+  "why": [
+   "<em>find the Pembry Conference Center</em> is already a full clause. The blank says how visitors find it, so it modifies the verb and needs an adverb: <em>easily</em>.",
+   "find the Pembry Conference Center 已經是完整的子句。空格說明訪客怎麼找到，修飾動詞，要用副詞 easily。"
+  ],
+  "gloss": [
+   {
+    "w": "signs",
+    "hw": "sign",
+    "pos": "n.",
+    "zh": "指標、標示牌",
+    "ex": "The signs point to the exit."
+   },
+   {
+    "w": "calling ahead",
+    "hw": "call ahead",
+    "pos": "phr.",
+    "zh": "事先打電話",
+    "ex": "Calling ahead saves time at the door."
+   },
+   {
+    "w": "directions",
+    "hw": "directions",
+    "pos": "n.",
+    "zh": "路線指引",
+    "ex": "Can you give me directions to the station?"
+   }
+  ]
+ },
+ "g-pos-08": {
+  "point": [
+   "A sentence needs a main verb.",
+   "句子需要一個主要動詞。"
+  ],
+  "why": [
+   "The subject is <em>The results</em>, and it has no main verb yet. The blank must be that verb. <em>Results</em> is plural, so use <em>indicate</em>.",
+   "主詞是 The results，還沒有主要動詞，空格就要填這個動詞。results 是複數，所以用 indicate。"
+  ],
+  "gloss": [
+   {
+    "w": "customer survey",
+    "hw": "customer survey",
+    "pos": "n.",
+    "zh": "顧客調查",
+    "ex": "The customer survey takes five minutes."
+   },
+   {
+    "w": "slightly",
+    "hw": "slightly",
+    "pos": "adv.",
+    "zh": "稍微",
+    "ex": "Costs rose slightly in May."
+   },
+   {
+    "w": "delivery",
+    "hw": "delivery",
+    "pos": "n.",
+    "zh": "送貨",
+    "ex": "Delivery usually takes two days."
+   }
+  ]
+ },
+ "g-tense-06": {
+  "point": [
+   "A future point, counting up to it: <em>will have been</em>.",
+   "累積到未來某個時間點：will have been。"
+  ],
+  "why": [
+   "<em>when she retires at the end of next month</em> is a point in the future. By then she will have completed <em>thirty-two years</em>, so use <em>will have been</em>.",
+   "when she retires at the end of next month 是未來的時間點。到那時她會已經待滿 thirty-two years，所以用 will have been。"
+  ],
+  "gloss": [
+   {
+    "w": "junior engineer",
+    "hw": "junior engineer",
+    "pos": "n.",
+    "zh": "初級工程師",
+    "ex": "A junior engineer works under a senior lead."
+   },
+   {
+    "w": "firm",
+    "hw": "firm",
+    "pos": "n.",
+    "zh": "公司",
+    "ex": "She works for a law firm."
+   },
+   {
+    "w": "retires",
+    "hw": "retire",
+    "pos": "v.",
+    "zh": "退休",
+    "ex": "He retires next June."
+   }
+  ]
+ },
+ "g-connect-06": {
+  "point": [
+   "<em>provided that</em> = only if.",
+   "provided that = 只要、前提是。"
+  ],
+  "why": [
+   "The dock has no staff after 5 p.m. The warehouse takes deliveries then only if <em>the driver has arranged access … in advance</em>. That is a condition, so use <em>provided that</em>.",
+   "碼頭五點後沒人值班。只有司機 has arranged access … in advance 才收貨，這是條件，所以用 provided that。"
+  ],
+  "gloss": [
+   {
+    "w": "loading dock",
+    "hw": "loading dock",
+    "pos": "n.",
+    "zh": "卸貨碼頭",
+    "ex": "Trucks park at the loading dock."
+   },
+   {
+    "w": "night supervisor",
+    "hw": "night supervisor",
+    "pos": "n.",
+    "zh": "夜班主管",
+    "ex": "The night supervisor locks the gate."
+   },
+   {
+    "w": "in advance",
+    "hw": "in advance",
+    "pos": "phr.",
+    "zh": "事先",
+    "ex": "Please book your seat in advance."
+   }
+  ]
+ },
+ "g-participle-05": {
+  "point": [
+   "After a noun, a passive participle takes <em>-ed</em>.",
+   "名詞後的被動分詞用 -ed。"
+  ],
+  "why": [
+   "The verb of the sentence is <em>have recommended</em>, so the blank only describes <em>The consultants</em>. They were brought in by the company, so the meaning is passive: <em>hired</em>.",
+   "句子的動詞是 have recommended，空格只是修飾 The consultants。顧問是被公司請來的，意思是被動，用 hired。"
+  ],
+  "gloss": [
+   {
+    "w": "consultants",
+    "hw": "consultant",
+    "pos": "n.",
+    "zh": "顧問",
+    "ex": "The consultant reviewed our budget."
+   },
+   {
+    "w": "operations",
+    "hw": "operations",
+    "pos": "n.",
+    "zh": "營運",
+    "ex": "Operations are managed from the head office."
+   },
+   {
+    "w": "regional offices",
+    "hw": "regional office",
+    "pos": "n.",
+    "zh": "區域辦事處",
+    "ex": "We have a regional office in Taipei."
+   }
+  ]
+ },
+ "g-prep-05": {
+  "point": [
+   "<em>in accordance with</em> = following a rule.",
+   "in accordance with = 依照（規定）。"
+  ],
+  "why": [
+   "The chemicals must be labeled and stored as <em>the guidelines set out in section 4</em> say. Following a rule is <em>in accordance with</em>.",
+   "化學品要照 the guidelines set out in section 4 的規定來標示和存放。遵照規定就是 in accordance with。"
+  ],
+  "gloss": [
+   {
+    "w": "chemicals",
+    "hw": "chemical",
+    "pos": "n.",
+    "zh": "化學品",
+    "ex": "Some chemicals must be kept cold."
+   },
+   {
+    "w": "labeled",
+    "hw": "label",
+    "pos": "v.",
+    "zh": "貼標籤、標示",
+    "ex": "Please label each box clearly."
+   },
+   {
+    "w": "set out",
+    "hw": "set out",
+    "pos": "phr.",
+    "zh": "（文件中）列出",
+    "ex": "The rules are set out in the contract."
+   }
+  ]
+ },
+ "g-prep-06": {
+  "point": [
+   "<em>attribute</em> A <em>to</em> B.",
+   "attribute A to B（把 A 歸因於 B）。"
+  ],
+  "why": [
+   "The verb is <em>attributes</em>. Its pattern is <em>attribute</em> A <em>to</em> B. Here A is <em>most of the drop in second-quarter shipments</em>, and B is <em>delays at the Port of Castrell</em>.",
+   "動詞是 attributes，句型是 attribute A to B。A 是 most of the drop in second-quarter shipments，B 是 delays at the Port of Castrell。"
+  ],
+  "gloss": [
+   {
+    "w": "attributes",
+    "hw": "attribute",
+    "pos": "v.",
+    "zh": "把……歸因於",
+    "ex": "She attributes the growth to better training."
+   },
+   {
+    "w": "shipments",
+    "hw": "shipment",
+    "pos": "n.",
+    "zh": "出貨量、貨物",
+    "ex": "Shipments fell by ten percent in March."
+   },
+   {
+    "w": "logistics manager",
+    "hw": "logistics manager",
+    "pos": "n.",
+    "zh": "物流經理",
+    "ex": "The logistics manager plans all deliveries."
+   }
+  ]
+ },
+ "g-prep-07": {
+  "point": [
+   "<em>on behalf of</em> = representing.",
+   "on behalf of = 代表。"
+  ],
+  "why": [
+   "The writer is inviting you to <em>our annual awards dinner</em>, so the writer speaks for the association. Speaking for a group is <em>on behalf of</em>.",
+   "寫信的人邀請你參加 our annual awards dinner，寫信的人是替協會發言。代表團體說話就是 on behalf of。"
+  ],
+  "gloss": [
+   {
+    "w": "invite",
+    "hw": "invite",
+    "pos": "v.",
+    "zh": "邀請",
+    "ex": "We invite you to our open house."
+   },
+   {
+    "w": "Association",
+    "hw": "association",
+    "pos": "n.",
+    "zh": "協會",
+    "ex": "The Association holds a meeting each May."
+   },
+   {
+    "w": "awards dinner",
+    "hw": "awards dinner",
+    "pos": "n.",
+    "zh": "頒獎晚宴",
+    "ex": "The awards dinner starts at seven."
+   }
+  ]
+ },
+ "_flags": []
+}

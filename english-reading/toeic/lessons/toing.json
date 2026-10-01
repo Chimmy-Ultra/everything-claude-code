@@ -1,0 +1,86 @@
+{
+  "unit": "toing",
+  "lead": ["The options show one verb in several forms: base, <em>to</em> + verb, <em>-ing</em>, <em>-ed</em>. The word before the blank decides which form is allowed, and some <em>to</em> words are prepositions.", "選項是同一個動詞的幾種形式：原形、<em>to</em> + 動詞、<em>-ing</em>、<em>-ed</em>。空格前面的字決定可以用哪一種，而且有些 <em>to</em> 是介系詞。"],
+  "steps": [
+    ["Find the word before the blank: a verb, an adjective, or a phrase ending in <em>to</em>.", "找出空格前面的字：動詞、形容詞，或以 <em>to</em> 結尾的片語。"],
+    ["If the phrase ends in <em>to</em>, test a noun after it. If a noun fits, <em>to</em> is a preposition and <em>-ing</em> follows.", "片語若以 <em>to</em> 結尾，就在後面放名詞試試。名詞放得進去，<em>to</em> 就是介系詞，後面接 <em>-ing</em>。"],
+    ["Otherwise, use the pattern that verb takes: <em>-ing</em>, <em>to</em> + verb, or object + <em>to</em> + verb.", "否則就用該動詞的固定句型：<em>-ing</em>、<em>to</em> + 動詞，或受詞 + <em>to</em> + 動詞。"]
+  ],
+  "rules": [
+    {
+      "head": ["Phrases where <em>to</em> is a preposition", "<em>to</em> 是介系詞的片語"],
+      "body": ["<em>look forward to, be committed to, be used to, in addition to, contribute to, object to</em>. A noun fits after <em>to</em>, so use a noun or <em>-ing</em>, never a base verb.", "<em>look forward to、be committed to、be used to、in addition to、contribute to、object to</em>。<em>to</em> 後面放得進名詞，所以接名詞或 <em>-ing</em>，不能接原形動詞。"],
+      "ex": [
+        ["We look forward to <em>hearing</em> from you.", "期待您的回覆。"],
+        ["The firm is committed to <em>reducing</em> its carbon emissions.", "公司致力於減少碳排放。"],
+        ["Mr. Grant is used to <em>working</em> night shifts.", "Grant 先生已經習慣上夜班。"]
+      ]
+    },
+    {
+      "head": ["Verb + -ing", "動詞加 -ing"],
+      "body": ["<em>consider, avoid, suggest, recommend, finish, postpone, delay, mind, enjoy, include, involve, keep</em> are followed by <em>-ing</em>, not by <em>to</em> + verb.", "<em>consider、avoid、suggest、recommend、finish、postpone、delay、mind、enjoy、include、involve、keep</em> 後面接 <em>-ing</em>，不接 <em>to</em> + 動詞。"],
+      "ex": [
+        ["The manager suggested <em>postponing</em> the product launch.", "經理建議延後產品上市。"],
+        ["We are considering <em>opening</em> a new branch in Taichung.", "我們正在考慮在台中開新分店。"]
+      ]
+    },
+    {
+      "head": ["Verb + to + verb", "動詞加 to + 動詞"],
+      "body": ["<em>plan, decide, agree, hope, expect, intend, offer, refuse, fail, afford, hesitate</em> are followed by <em>to</em> + base verb.", "<em>plan、decide、agree、hope、expect、intend、offer、refuse、fail、afford、hesitate</em> 後面接 <em>to</em> + 原形動詞。"],
+      "ex": [
+        ["Please do not hesitate <em>to contact</em> us.", "請隨時與我們聯絡。"],
+        ["The company decided <em>to hire</em> two more designers.", "公司決定再聘請兩位設計師。"]
+      ]
+    },
+    {
+      "head": ["Verb + object + to + verb", "動詞加受詞加 to + 動詞"],
+      "body": ["<em>allow, enable, encourage, require, ask, remind, invite, urge, advise, permit</em> take an object, then <em>to</em> + base verb. The passive keeps <em>to</em>: <em>be allowed to</em>.", "<em>allow、enable、encourage、require、ask、remind、invite、urge、advise、permit</em> 先接受詞，再接 <em>to</em> + 原形動詞。被動時 <em>to</em> 保留：<em>be allowed to</em>。"],
+      "ex": [
+        ["The new app enables customers <em>to track</em> their orders.", "新的 App 讓顧客可以追蹤訂單。"],
+        ["All staff are required <em>to complete</em> safety training.", "所有員工都必須完成安全訓練。"]
+      ]
+    },
+    {
+      "head": ["make, let, have, help, get", "make、let、have、help、get 後接什麼"],
+      "body": ["<em>make, let, have</em> + object + base verb. <em>help</em> + object takes a base verb or <em>to</em> + verb. <em>get</em> + object takes <em>to</em> + verb.", "<em>make、let、have</em> + 受詞 + 原形動詞。<em>help</em> + 受詞之後，接原形或 <em>to</em> + 動詞都可以。<em>get</em> + 受詞 + <em>to</em> + 動詞。"],
+      "ex": [
+        ["The director had her assistant <em>book</em> the flights.", "主任請她的助理訂機票。"],
+        ["This guide will help you <em>set</em> up the device.", "這份指南會幫助你設定這台裝置。"],
+        ["The manager got the technician <em>to repair</em> the printer before noon.", "經理請技術人員在中午前修好印表機。"]
+      ]
+    },
+    {
+      "head": ["Adjective or noun + to + verb", "形容詞或名詞加 to + 動詞"],
+      "body": ["<em>be able to, be likely to, be pleased to, be reluctant to, be eligible to; the ability to, an effort to, the opportunity to</em> take a base verb. <em>eligible for</em> takes a noun.", "<em>be able to、be likely to、be pleased to、be reluctant to、be eligible to；the ability to、an effort to、the opportunity to</em> 後面接原形動詞。<em>eligible for</em> 則接名詞。"],
+      "ex": [
+        ["We are pleased <em>to announce</em> the opening of our new office.", "我們很高興宣布新辦公室開幕。"],
+        ["Only full-time employees are eligible <em>for</em> the program.", "只有全職員工有資格參加這個計畫。"],
+        ["Employees with one year of service are eligible <em>to apply</em>.", "服務滿一年的員工有資格申請。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "I look forward to meeting you.", "wrong": "I look forward to meet you.", "why": ["The <em>to</em> in <em>look forward to</em> is a preposition, so <em>-ing</em> follows.", "<em>look forward to</em> 的 <em>to</em> 是介系詞，後面接 <em>-ing</em>。"]},
+    {"right": "The consultant suggested hiring more staff.", "wrong": "The consultant suggested to hire more staff.", "why": ["<em>suggest</em> takes <em>-ing</em> or a that-clause, never <em>to</em> + verb.", "<em>suggest</em> 後面接 <em>-ing</em> 或 that 子句，不接 <em>to</em> + 動詞。"]},
+    {"right": "He used to work in sales.", "wrong": "He is used to work in sales.", "why": ["<em>used to</em> + base verb is a past habit. <em>be used to</em> + <em>-ing</em> means 'accustomed to'.", "<em>used to</em> 加原形表示過去曾經。<em>be used to</em> 加 <em>-ing</em> 表示習慣於。"]}
+  ],
+  "lists": [
+    {"head": ["Verb + -ing", "動詞加 -ing"], "items": [
+      ["consider hiring", "考慮聘請"], ["avoid making mistakes", "避免犯錯"], ["suggest changing", "建議更改"], ["recommend using", "建議使用"],
+      ["postpone signing", "延後簽約"], ["delay shipping", "延後出貨"], ["finish reviewing", "完成審閱"], ["keep improving", "持續改善"]
+    ]},
+    {"head": ["Verb + to + verb", "動詞加 to + 動詞"], "items": [
+      ["plan to expand", "計畫擴張"], ["decide to hire", "決定聘請"], ["agree to pay", "同意支付"], ["hope to finish", "希望完成"],
+      ["expect to receive", "預期收到"], ["offer to help", "主動提議幫忙"], ["refuse to sign", "拒絕簽名"], ["fail to meet", "未能達到"]
+    ]},
+    {"head": ["<em>to</em> as a preposition", "<em>to</em> 當介系詞"], "items": [
+      ["look forward to meeting", "期待見面"], ["be committed to improving", "致力於改善"], ["be dedicated to serving", "致力於服務"], ["be used to working", "習慣於工作"],
+      ["in addition to managing", "除了管理之外"], ["contribute to reducing", "有助於減少"], ["object to changing", "反對更改"], ["with a view to expanding", "為了擴張"]
+    ]}
+  ],
+  "traps": [
+    ["Seeing <em>to</em> before the blank does not mean a base verb follows. Test with a noun: <em>look forward to the meeting</em> works, so <em>-ing</em> follows.", "看到空格前有 <em>to</em>，不代表後面接原形動詞。用名詞測試：<em>look forward to the meeting</em> 說得通，所以後面接 <em>-ing</em>。"],
+    ["<em>stop, forget, try</em> change meaning with the form. <em>stop to check</em> means pause in order to check; <em>stop checking</em> means quit checking.", "<em>stop、forget、try</em> 接不同形式，意思不同。<em>stop to check</em> 是停下來去檢查；<em>stop checking</em> 是不再檢查。"],
+    ["<em>recommend</em> and <em>suggest</em> take <em>-ing</em> or a that-clause. After a request, the verb in that clause is usually in the base form: <em>suggest that she apply</em>.", "<em>recommend</em> 和 <em>suggest</em> 後面接 <em>-ing</em> 或 that 子句。表示要求時，that 子句裡的動詞通常用原形：<em>suggest that she apply</em>。"]
+  ]
+}

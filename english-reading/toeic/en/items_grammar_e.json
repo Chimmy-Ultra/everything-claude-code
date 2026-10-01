@@ -1,0 +1,583 @@
+{
+ "g-connect-09": {
+  "point": [
+   "No verb follows the noun phrase: use the preposition <em>in spite of</em>.",
+   "名詞片語後面沒有動詞：用介系詞 in spite of。"
+  ],
+  "why": [
+   "After the blank is a noun phrase: <em>the renovation work that its trustees had scheduled</em>. <em>Had scheduled</em> belongs to the relative clause, so the noun has no verb of its own. A conjunction needs a clause, so the preposition <em>in spite of</em> fits the contrast.",
+   "空格後是名詞片語 the renovation work that its trustees had scheduled。had scheduled 屬於關係子句，所以這個名詞沒有自己的動詞。連接詞需要子句，因此用介系詞 in spite of 表示讓步。"
+  ],
+  "gloss": [
+   {
+    "w": "renovation work",
+    "hw": "renovation work",
+    "pos": "phr.",
+    "zh": "整修工程",
+    "ex": "The renovation work will finish in March."
+   },
+   {
+    "w": "trustees",
+    "hw": "trustee",
+    "pos": "n.",
+    "zh": "受託人、董事",
+    "ex": "The trustees approved the new budget."
+   },
+   {
+    "w": "galleries",
+    "hw": "gallery",
+    "pos": "n.",
+    "zh": "展廳",
+    "ex": "The gallery opens at nine on weekdays."
+   }
+  ]
+ },
+ "g-connect-10": {
+  "point": [
+   "<em>despite</em> can take a noun with its own -ing form.",
+   "despite 可以接帶有自己 -ing 的名詞片語。"
+  ],
+  "why": [
+   "<em>The review panel having rejected its first two proposals</em> has no finite verb: <em>having rejected</em> is a participle. The only main verb is <em>won</em>, after the comma. So the blank needs a preposition: <em>Despite</em>.",
+   "the review panel having rejected its first two proposals 沒有定式動詞，having rejected 是分詞。唯一的主要動詞 won 在逗號之後。所以空格要用介系詞 Despite。"
+  ],
+  "gloss": [
+   {
+    "w": "review panel",
+    "hw": "review panel",
+    "pos": "phr.",
+    "zh": "評審小組",
+    "ex": "The review panel meets on the first Monday."
+   },
+   {
+    "w": "tender",
+    "hw": "tender",
+    "pos": "n.",
+    "zh": "招標",
+    "ex": "The firm submitted a tender for the road project."
+   },
+   {
+    "w": "bid",
+    "hw": "bid",
+    "pos": "n.",
+    "zh": "標案、出價",
+    "ex": "The lowest bid won the contract."
+   }
+  ]
+ },
+ "g-connect-11": {
+  "point": [
+   "A gerund subject with its own verb follows: use <em>because</em>.",
+   "後面是以動名詞當主詞的子句：用 because。"
+  ],
+  "why": [
+   "<em>Hiring two temporary receptionists for the front desk</em> is the subject of <em>cleared</em>. A subject plus a verb makes a clause, so a conjunction is needed: <em>because</em>. A preposition here would leave <em>cleared</em> without a subject.",
+   "hiring two temporary receptionists for the front desk 是 cleared 的主詞。主詞加動詞就是子句，所以要連接詞 because。若用介系詞，cleared 就沒有主詞了。"
+  ],
+  "gloss": [
+   {
+    "w": "backlog",
+    "hw": "backlog",
+    "pos": "n.",
+    "zh": "積壓的工作",
+    "ex": "We cleared the backlog of orders last week."
+   },
+   {
+    "w": "receptionists",
+    "hw": "receptionist",
+    "pos": "n.",
+    "zh": "接待員",
+    "ex": "The receptionist greets every visitor at the door."
+   },
+   {
+    "w": "unanswered",
+    "hw": "unanswered",
+    "pos": "adj.",
+    "zh": "未回應的",
+    "ex": "Several unanswered emails were still in the inbox."
+   }
+  ]
+ },
+ "g-connect-12": {
+  "point": [
+   "A noun phrase follows: use the preposition <em>owing to</em>.",
+   "後面接名詞片語：用介系詞 owing to。"
+  ],
+  "why": [
+   "<em>A fault in the cooling system that technicians first detected</em> is a noun phrase with no verb of its own, and the main clause starts only after the comma. A noun phrase needs a preposition, so the answer is <em>Owing to</em>.",
+   "a fault in the cooling system that technicians first detected 是名詞片語，沒有自己的動詞，主要子句要到逗號之後才開始。名詞片語前要用介系詞，所以答案是 Owing to。"
+  ],
+  "gloss": [
+   {
+    "w": "cooling system",
+    "hw": "cooling system",
+    "pos": "phr.",
+    "zh": "冷卻系統",
+    "ex": "The cooling system failed during the heat wave."
+   },
+   {
+    "w": "shutdown",
+    "hw": "shutdown",
+    "pos": "n.",
+    "zh": "停機、停工",
+    "ex": "The annual shutdown lasts two weeks."
+   },
+   {
+    "w": "output",
+    "hw": "output",
+    "pos": "n.",
+    "zh": "產量",
+    "ex": "Output rose by ten percent in June."
+   }
+  ]
+ },
+ "g-connect-13": {
+  "point": [
+   "A clause follows: use the conjunction <em>while</em>.",
+   "後面是子句：用連接詞 while。"
+  ],
+  "why": [
+   "After the <em>who</em> clause, <em>passengers who need wheelchair assistance</em> gets its verb: <em>are boarding</em>. A full clause follows the blank, so a time conjunction is needed: <em>while</em>.",
+   "who 子句之後，passengers who need wheelchair assistance 的動詞 are boarding 出現了。空格後是完整子句，所以需要時間連接詞 while。"
+  ],
+  "gloss": [
+   {
+    "w": "podium",
+    "hw": "podium",
+    "pos": "n.",
+    "zh": "講台、櫃台",
+    "ex": "The speaker stepped up to the podium."
+   },
+   {
+    "w": "wheelchair assistance",
+    "hw": "wheelchair assistance",
+    "pos": "phr.",
+    "zh": "輪椅協助",
+    "ex": "Guests can request wheelchair assistance at the desk."
+   }
+  ]
+ },
+ "g-connect-14": {
+  "point": [
+   "No verb follows the noun: use the preposition <em>during</em>.",
+   "名詞後面沒有動詞：用介系詞 during。"
+  ],
+  "why": [
+   "<em>The quarterly audit</em> is a noun phrase. The <em>when</em> clause after it only adds detail, and the real verb <em>may deploy</em> comes at the end. A time word before a noun phrase must be a preposition: <em>During</em>.",
+   "the quarterly audit 是名詞片語。後面的 when 子句只是補充說明，真正的動詞 may deploy 在句尾。名詞片語前的時間詞必須是介系詞 During。"
+  ],
+  "gloss": [
+   {
+    "w": "deploy",
+    "hw": "deploy",
+    "pos": "v.",
+    "zh": "部署",
+    "ex": "The team will deploy the update tonight."
+   },
+   {
+    "w": "audit",
+    "hw": "audit",
+    "pos": "n.",
+    "zh": "稽核",
+    "ex": "The annual audit begins in March."
+   },
+   {
+    "w": "production system",
+    "hw": "production system",
+    "pos": "phr.",
+    "zh": "正式（上線）系統",
+    "ex": "The production system must stay online."
+   }
+  ]
+ },
+ "g-connect-15": {
+  "point": [
+   "Before a clause use the conjunction <em>before</em>; <em>prior to</em> takes a noun.",
+   "接子句用連接詞 before；prior to 接名詞。"
+  ],
+  "why": [
+   "After the inserted <em>who</em> clause, the subject <em>the warehouse supervisor</em> gets its verb: <em>had a chance to compare</em>. A full clause follows the blank, so it needs a conjunction: <em>before</em>.",
+   "插入的 who 子句之後，主詞 the warehouse supervisor 的動詞出現了：had a chance to compare。空格後是完整子句，所以需要連接詞 before。"
+  ],
+  "gloss": [
+   {
+    "w": "customs broker",
+    "hw": "customs broker",
+    "pos": "phr.",
+    "zh": "報關行",
+    "ex": "A customs broker prepares the import forms."
+   },
+   {
+    "w": "manifest",
+    "hw": "manifest",
+    "pos": "n.",
+    "zh": "貨物艙單",
+    "ex": "The manifest lists every container on board."
+   },
+   {
+    "w": "on leave",
+    "hw": "on leave",
+    "pos": "phr.",
+    "zh": "休假中",
+    "ex": "Ms. Cho is on leave until Friday."
+   }
+  ]
+ },
+ "g-connect-16": {
+  "point": [
+   "Before a clause use the conjunction <em>after</em>.",
+   "接子句用連接詞 after。"
+  ],
+  "why": [
+   "After the relative clause, the subject <em>the wedding reception</em> gets its verb: <em>has ended</em>. A full clause follows the blank, so a conjunction is needed: <em>After</em>.",
+   "關係子句之後，主詞 the wedding reception 的動詞 has ended 才出現。空格後是完整子句，所以需要連接詞 After。"
+  ],
+  "gloss": [
+   {
+    "w": "banquet room",
+    "hw": "banquet room",
+    "pos": "phr.",
+    "zh": "宴會廳",
+    "ex": "The banquet room seats two hundred guests."
+   },
+   {
+    "w": "reception",
+    "hw": "reception",
+    "pos": "n.",
+    "zh": "宴會、招待會",
+    "ex": "The reception starts at seven in the ballroom."
+   },
+   {
+    "w": "reset",
+    "hw": "reset",
+    "pos": "v.",
+    "zh": "重新布置、重設",
+    "ex": "Please reset the room before noon."
+   }
+  ]
+ },
+ "g-connect-17": {
+  "point": [
+   "<em>unless</em> + clause = if not; <em>without</em> + noun.",
+   "unless + 子句 = if not；without + 名詞。"
+  ],
+  "why": [
+   "<em>Whose account was debited in error</em> only describes <em>the sender</em>; the verb of the clause is <em>has submitted</em>. So a clause follows the blank. The meaning is: if no recall request is submitted, the bank cannot reverse the transfer. That is <em>unless</em>.",
+   "whose account was debited in error 只修飾 the sender，子句的動詞是 has submitted，所以空格後是子句。意思是：若沒有提交撤回申請，銀行就不能撤銷匯款。這是 unless。"
+  ],
+  "gloss": [
+   {
+    "w": "wire transfer",
+    "hw": "wire transfer",
+    "pos": "phr.",
+    "zh": "電匯",
+    "ex": "The wire transfer arrived within two hours."
+   },
+   {
+    "w": "debited",
+    "hw": "debit",
+    "pos": "v.",
+    "zh": "扣款",
+    "ex": "The bank debited the wrong account."
+   },
+   {
+    "w": "recall request",
+    "hw": "recall request",
+    "pos": "phr.",
+    "zh": "撤回申請",
+    "ex": "The bank received a recall request on Monday."
+   }
+  ]
+ },
+ "g-connect-18": {
+  "point": [
+   "<em>unless</em> can introduce a clause with a gerund subject.",
+   "unless 可以引導以動名詞當主詞的子句。"
+  ],
+  "why": [
+   "<em>Repairing the damaged unit</em> is the subject of <em>proves</em>, so a clause follows the blank. The meaning is \"except if repair proves impossible\", which is <em>unless</em>. A preposition would leave <em>proves</em> without a subject.",
+   "repairing the damaged unit 是 proves 的主詞，所以空格後是子句。意思是「除非修不好」，這是 unless。若用介系詞，proves 就沒有主詞了。"
+  ],
+  "gloss": [
+   {
+    "w": "refund",
+    "hw": "refund",
+    "pos": "n.",
+    "zh": "退款",
+    "ex": "You can request a full refund within thirty days."
+   },
+   {
+    "w": "repairing",
+    "hw": "repair",
+    "pos": "v.",
+    "zh": "修理",
+    "ex": "Technicians repair most units on site."
+   },
+   {
+    "w": "replacing",
+    "hw": "replace",
+    "pos": "v.",
+    "zh": "更換",
+    "ex": "We replace worn filters every year."
+   }
+  ]
+ },
+ "g-connect-19": {
+  "point": [
+   "Two clauses with a comma between: open the first with <em>whereas</em>.",
+   "兩個子句中間有逗號：第一個子句用 whereas 開頭。"
+  ],
+  "why": [
+   "A comma separates two full clauses: <em>mortgage applications … rose</em> and <em>those … fell</em>. A comma alone cannot join them, so the first needs a conjunction. <em>Whereas</em> also shows the contrast between urban and rural branches.",
+   "逗號隔開兩個完整子句：mortgage applications … rose 和 those … fell。只靠逗號不能連接它們，所以第一個子句需要連接詞。whereas 也表示都會與鄉村分行的對比。"
+  ],
+  "gloss": [
+   {
+    "w": "mortgage applications",
+    "hw": "mortgage application",
+    "pos": "n.",
+    "zh": "房貸申請",
+    "ex": "Her mortgage application was approved last week."
+   },
+   {
+    "w": "urban",
+    "hw": "urban",
+    "pos": "adj.",
+    "zh": "都會的",
+    "ex": "Urban branches handle most of the new accounts."
+   },
+   {
+    "w": "rural",
+    "hw": "rural",
+    "pos": "adj.",
+    "zh": "鄉村的",
+    "ex": "The bank opened a rural branch last spring."
+   }
+  ]
+ },
+ "g-connect-20": {
+  "point": [
+   "Opposite ideas in two sentences: <em>nevertheless</em>.",
+   "兩句意思相反：用 nevertheless。"
+  ],
+  "why": [
+   "The first sentence gives a cost against moving: <em>would cost a fifth more</em>. The second says the board <em>voted to move</em> anyway, so the two ideas run in opposite directions. <em>Nevertheless</em> marks that turn.",
+   "第一句提出搬遷的缺點：would cost a fifth more。第二句卻說董事會 voted to move，兩個想法方向相反。Nevertheless 標示這個轉折。"
+  ],
+  "gloss": [
+   {
+    "w": "printing plant",
+    "hw": "printing plant",
+    "pos": "phr.",
+    "zh": "印刷廠",
+    "ex": "The printing plant runs three shifts a day."
+   },
+   {
+    "w": "citing",
+    "hw": "cite",
+    "pos": "v.",
+    "zh": "引用（作為理由）",
+    "ex": "The report cited rising costs as the main cause."
+   },
+   {
+    "w": "onward",
+    "hw": "onward",
+    "pos": "adv.",
+    "zh": "往後",
+    "ex": "Prices will rise from March onward."
+   }
+  ]
+ },
+ "g-connect-21": {
+  "point": [
+   "<em>otherwise</em> = if not: the result of not doing it.",
+   "otherwise = 如果不這樣做：沒做的後果。"
+  ],
+  "why": [
+   "The first part asks for something: <em>return the signed loan agreement … by Friday</em>. The second part says what happens if that is not done: <em>the painting will be sent back</em>. That relation is <em>otherwise</em>.",
+   "前半句提出要求：return the signed loan agreement … by Friday。後半句說沒做到會怎樣：the painting will be sent back。這種關係用 otherwise。"
+  ],
+  "gloss": [
+   {
+    "w": "loan agreement",
+    "hw": "loan agreement",
+    "pos": "phr.",
+    "zh": "借展協議",
+    "ex": "The loan agreement covers six paintings."
+   },
+   {
+    "w": "registrar",
+    "hw": "registrar",
+    "pos": "n.",
+    "zh": "（博物館）登錄人員",
+    "ex": "The registrar keeps records of every object."
+   }
+  ]
+ },
+ "g-connect-22": {
+  "point": [
+   "<em>so that</em> + clause gives a purpose with its own subject.",
+   "so that + 子句：有自己主詞的目的。"
+  ],
+  "why": [
+   "<em>The online portal … would not be overloaded</em> has its own subject and verb, so a clause follows the blank. A purpose clause with a new subject takes <em>so that</em>.",
+   "the online portal … would not be overloaded 有自己的主詞和動詞，所以空格後是子句。帶有新主詞的目的子句用 so that。"
+  ],
+  "gloss": [
+   {
+    "w": "enrollment",
+    "hw": "enrollment",
+    "pos": "n.",
+    "zh": "註冊、選課",
+    "ex": "Enrollment for the course closes on Friday."
+   },
+   {
+    "w": "overloaded",
+    "hw": "overload",
+    "pos": "v.",
+    "zh": "超載",
+    "ex": "The network was overloaded during the sale."
+   },
+   {
+    "w": "portal",
+    "hw": "portal",
+    "pos": "n.",
+    "zh": "入口網站",
+    "ex": "Staff log in to the portal each morning."
+   }
+  ]
+ },
+ "g-connect-23": {
+  "point": [
+   "<em>such</em> + adjective + noun + <em>that</em> shows a result.",
+   "such + 形容詞 + 名詞 + that 表示結果。"
+  ],
+  "why": [
+   "<em>Detailed feedback</em> is an adjective plus a noun, followed by the result clause <em>that it rewrote the entire onboarding guide</em>. Before an adjective plus a noun, the word is <em>such</em>.",
+   "detailed feedback 是形容詞加名詞，後面接結果子句 that it rewrote the entire onboarding guide。形容詞加名詞的前面用 such。"
+  ],
+  "gloss": [
+   {
+    "w": "pilot group",
+    "hw": "pilot group",
+    "pos": "phr.",
+    "zh": "試辦組",
+    "ex": "The pilot group tested the app for a month."
+   },
+   {
+    "w": "onboarding guide",
+    "hw": "onboarding guide",
+    "pos": "phr.",
+    "zh": "新人訓練手冊",
+    "ex": "The onboarding guide explains the first week."
+   },
+   {
+    "w": "rollout",
+    "hw": "rollout",
+    "pos": "n.",
+    "zh": "正式推出",
+    "ex": "The rollout of the new system starts in May."
+   }
+  ]
+ },
+ "g-connect-24": {
+  "point": [
+   "<em>even if</em> introduces something that may not happen.",
+   "even if 引導可能不會發生的事。"
+  ],
+  "why": [
+   "<em>Who has not yet decided whether she will make the trip</em> shows that cancelling is only a possibility. A possible event that has not yet happened takes <em>even if</em>.",
+   "who has not yet decided whether she will make the trip 顯示取消只是一種可能。尚未發生的可能情況用 even if。"
+  ],
+  "gloss": [
+   {
+    "w": "non-refundable",
+    "hw": "non-refundable",
+    "pos": "adj.",
+    "zh": "不可退款的",
+    "ex": "This non-refundable deposit secures your booking."
+   },
+   {
+    "w": "credit",
+    "hw": "credit",
+    "pos": "n.",
+    "zh": "抵用額度",
+    "ex": "She received a credit for the cancelled flight."
+   },
+   {
+    "w": "cancels",
+    "hw": "cancel",
+    "pos": "v.",
+    "zh": "取消",
+    "ex": "She cancels the booking every year."
+   }
+  ]
+ },
+ "g-connect-25": {
+  "point": [
+   "<em>in case</em> + clause: prepare now for something that may happen.",
+   "in case + 子句：先為可能發生的事做準備。"
+  ],
+  "why": [
+   "The room is <em>already booked</em>, before the numbers are known: only about a hundred and fifty have registered so far. Preparing ahead for a possible event is expressed by <em>in case</em>.",
+   "房間已經訂好（already booked），而報名人數還沒確定：目前只有約一百五十人。為可能發生的事提前準備，用 in case。"
+  ],
+  "gloss": [
+   {
+    "w": "organizers",
+    "hw": "organizer",
+    "pos": "n.",
+    "zh": "主辦人員",
+    "ex": "The organizers booked a larger hall."
+   },
+   {
+    "w": "delegates",
+    "hw": "delegate",
+    "pos": "n.",
+    "zh": "代表、與會者",
+    "ex": "Each delegate receives a conference badge."
+   },
+   {
+    "w": "to date",
+    "hw": "to date",
+    "pos": "phr.",
+    "zh": "到目前為止",
+    "ex": "No complaints have been received to date."
+   }
+  ]
+ },
+ "g-connect-26": {
+  "point": [
+   "<em>as long as</em> = on the condition that.",
+   "as long as = 在……的條件下。"
+  ],
+  "why": [
+   "The rate stays for twelve months only while <em>the balance never falls below the minimum</em>. That is a condition that must stay true, which <em>as long as</em> expresses.",
+   "只有在 the balance never falls below the minimum 的情況下，利率才維持十二個月。這是必須持續成立的條件，用 as long as 表達。"
+  ],
+  "gloss": [
+   {
+    "w": "promotional rate",
+    "hw": "promotional rate",
+    "pos": "phr.",
+    "zh": "優惠利率",
+    "ex": "The promotional rate ends in December."
+   },
+   {
+    "w": "balance",
+    "hw": "balance",
+    "pos": "n.",
+    "zh": "餘額",
+    "ex": "Check your balance before making a transfer."
+   },
+   {
+    "w": "minimum",
+    "hw": "minimum",
+    "pos": "n.",
+    "zh": "最低限額",
+    "ex": "The minimum order is fifty units."
+   }
+  ]
+ },
+ "_flags": []
+}

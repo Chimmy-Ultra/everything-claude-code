@@ -139,6 +139,8 @@ h3 small{font:500 12px var(--mono);letter-spacing:.06em;color:var(--muted);text-
 .line.me{flex-direction:row-reverse}
 .av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:800 16px/1 var(--display);color:#fff;margin-top:2px}
 .p-G .av{background:#3E9B4A} .p-E .av{background:#7A68D6} .p-W .av{background:#3D8AD2}
+.av{overflow:hidden}
+.av svg{width:100%;height:100%;display:block}
 .bub{max-width:min(620px,100%);padding:10px 14px 11px;border-radius:16px;cursor:pointer;border:1.5px solid transparent;transition:border-color .15s,box-shadow .15s}
 .them .bub{border-top-left-radius:6px} .me .bub{border-top-right-radius:6px}
 .p-G .bub{background:var(--george-tint)} .p-E .bub{background:var(--emma-tint)} .p-W .bub{background:var(--wei-tint)}
@@ -272,9 +274,9 @@ footer a{color:var(--accent)}
       <text class="bub-t" x="474" y="44" text-anchor="middle">Fancy a game?</text>
     </svg>
     <div class="cast">
-      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3E9B4A">G</span><b>George</b>the host <i style="color:var(--george)">UK VOICE</i></span>
-      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#7A68D6">E</span><b>Emma</b>a friend <i style="color:var(--emma)">UK VOICE</i></span>
-      <span><span class="av" style="width:26px;height:26px;font-size:12px;background:#3D8AD2">W</span><b>Wei</b>new in town <i style="color:var(--wei)">US VOICE</i></span>
+      <span><span class="av" style="width:34px;height:34px;font-size:12px;background:#3E9B4A" aria-hidden="true">{{AV_G}}</span><b>George</b>the host <i style="color:var(--george)">UK VOICE</i></span>
+      <span><span class="av" style="width:34px;height:34px;font-size:12px;background:#7A68D6" aria-hidden="true">{{AV_E}}</span><b>Emma</b>a friend <i style="color:var(--emma)">UK VOICE</i></span>
+      <span><span class="av" style="width:34px;height:34px;font-size:12px;background:#3D8AD2" aria-hidden="true">{{AV_W}}</span><b>Wei</b>new in town <i style="color:var(--wei)">US VOICE</i></span>
     </div>
   </figure>
 

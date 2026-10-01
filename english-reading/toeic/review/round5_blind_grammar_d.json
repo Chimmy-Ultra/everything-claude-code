@@ -1,0 +1,156 @@
+[
+ {
+  "id": "g-voice-05",
+  "format": "gap",
+  "stem": "Only twelve of the eighty technicians who applied for the three-year apprenticeship at the Davenholt Motors plant ______ places in the first intake, and the remainder were placed on a waiting list.",
+  "options": {
+   "A": "were offered",
+   "B": "offered",
+   "C": "have offered",
+   "D": "offering"
+  }
+ },
+ {
+  "id": "g-voice-06",
+  "format": "gap",
+  "stem": "Despite the eleven days it spent in the terminal yard, the refrigerated shipment cleared the port without ______ even once, a result that surprised the freight forwarder, who had expected customs officers to open every pallet.",
+  "options": {
+   "A": "opening",
+   "B": "being opened",
+   "C": "having opened",
+   "D": "to be opened"
+  }
+ },
+ {
+  "id": "g-mandative-05",
+  "format": "gap",
+  "stem": "After two reported cargo-door failures, the aviation authority has demanded in a notice to all carriers that every airline operating more than fifty aircraft ______ a full inspection of its door seals within sixty days.",
+  "options": {
+   "A": "completing",
+   "B": "to complete",
+   "C": "completed",
+   "D": "complete"
+  }
+ },
+ {
+  "id": "g-mandative-06",
+  "format": "gap",
+  "stem": "The tenants' association has asked, in a letter that the housing authority received on March 4, that no resident ______ evicted while the dispute over maintenance fees is still before the tribunal.",
+  "options": {
+   "A": "being",
+   "B": "to be",
+   "C": "be",
+   "D": "been"
+  }
+ },
+ {
+  "id": "g-conditional-05",
+  "format": "gap",
+  "stem": "______ the print shop's scheduling manager, who had handled the autumn catalog for eleven years, been told about the switch to recycled paper stock, the first run would not have been rejected by the retailer.",
+  "options": {
+   "A": "If",
+   "B": "Should",
+   "C": "Had",
+   "D": "Were"
+  }
+ },
+ {
+  "id": "g-conditional-06",
+  "format": "gap",
+  "stem": "The Rivermark Hotel ______ its second tower a full year earlier if the construction permit that the city issued in 2021 had not been suspended pending a flood-risk review.",
+  "options": {
+   "A": "would open",
+   "B": "had opened",
+   "C": "opened",
+   "D": "would have opened"
+  }
+ },
+ {
+  "id": "g-parallel-05",
+  "format": "gap",
+  "stem": "Under the revised travel policy, software engineers must either book flights through the approved agency, whose rates were renegotiated in January, or ______ written approval from their team lead before buying a ticket elsewhere.",
+  "options": {
+   "A": "obtaining",
+   "B": "obtain",
+   "C": "to obtain",
+   "D": "obtained"
+  }
+ },
+ {
+  "id": "g-parallel-06",
+  "format": "gap",
+  "stem": "Both the main library, which has stayed open around the clock since exams began on the third, ______ the three smaller campus libraries will close at 6 p.m. on graduation day.",
+  "options": {
+   "A": "and",
+   "B": "as well as",
+   "C": "along with",
+   "D": "or"
+  }
+ },
+ {
+  "id": "g-quantity-06",
+  "format": "gap",
+  "stem": "Although the new assembly line is already running, ______ of the newly ordered, custom-built testing equipment is still held up in customs, and two quality checks have had to be done by hand.",
+  "options": {
+   "A": "Many",
+   "B": "Several",
+   "C": "Much",
+   "D": "Few"
+  }
+ },
+ {
+  "id": "g-compare-06",
+  "format": "gap",
+  "stem": "The monthly fee charged for permits in the city's older parking structures, most of which were renovated after 2020, is now almost as high as ______ for spaces in the new private garages.",
+  "options": {
+   "A": "those",
+   "B": "that",
+   "C": "it",
+   "D": "them"
+  }
+ },
+ {
+  "id": "g-participle-08",
+  "format": "gap",
+  "stem": "Patients ______ at the Rosewood Clinic after 5 p.m., including those who have been referred by other practices, will be seen by the evening team rather than by their usual physician.",
+  "options": {
+   "A": "arrive",
+   "B": "have arrived",
+   "C": "are arriving",
+   "D": "arriving"
+  }
+ },
+ {
+  "id": "g-relative-07",
+  "format": "gap",
+  "stem": "The hospital's charitable trust has agreed to donate its surplus infusion pumps to ______ the review panel decides has the strongest plan for putting them to use in rural clinics.",
+  "options": {
+   "A": "whomever",
+   "B": "who",
+   "C": "whoever",
+   "D": "whom"
+  }
+ },
+ {
+  "id": "g-agree-07",
+  "format": "gap",
+  "stem": "Enclosed with the revised franchise agreement, which the hotel group will return to its owners on Friday, ______ the original signed floor plans for every property in the portfolio.",
+  "options": {
+   "A": "is",
+   "B": "are",
+   "C": "has been",
+   "D": "being"
+  }
+ },
+ {
+  "id": "g-prep-10",
+  "format": "gap",
+  "stem": "Every subcontractor working on the new data center is expected to adhere, in all its dealings with site staff and without exception, ______ the security protocols added to the master agreement last spring.",
+  "options": {
+   "A": "to",
+   "B": "with",
+   "C": "by",
+   "D": "for"
+  }
+ }
+]

@@ -1,0 +1,90 @@
+{
+  "unit": "quantity",
+  "lead": ["The options are quantity words (<em>each, every, all, most, few, little, another</em>) or one noun in singular and plural. The noun after the blank decides: singular, plural, or uncountable.", "選項是數量詞（<em>each、every、all、most、few、little、another</em>），或同一個名詞的單數和複數。由空格後面的名詞決定：單數、複數，還是不可數。"],
+  "steps": [
+    ["Find the noun after the blank and decide: singular countable, plural, or uncountable.", "找出空格後面的名詞，判斷它是單數可數、複數，還是不可數。"],
+    ["Check for <em>the</em>, <em>these</em> or a possessive after the quantity word. It changes the pattern: <em>most employees</em>, <em>most of the employees</em>.", "看數量詞後面有沒有 <em>the</em>、<em>these</em> 或所有格。這會改變句型：<em>most employees</em>、<em>most of the employees</em>。"],
+    ["Check the verb: <em>each</em> and uncountable nouns take a singular verb.", "再看動詞：<em>each</em> 和不可數名詞用單數動詞。"]
+  ],
+  "rules": [
+    {
+      "head": ["Words for a singular noun", "接單數名詞的數量詞"],
+      "body": ["<em>each, every, another, either, neither</em> are followed by a singular countable noun and take a singular verb.", "<em>each、every、another、either、neither</em> 後面接單數可數名詞，動詞用單數。"],
+      "ex": [
+        ["<em>Each</em> participant will receive a certificate.", "每位參加者都會獲得證書。"],
+        ["<em>Another</em> delivery is due this afternoon.", "今天下午還有一批貨要送到。"]
+      ]
+    },
+    {
+      "head": ["Words for plural nouns", "接複數名詞的數量詞"],
+      "body": ["<em>many, several, few, a few, both, a number of, a variety of, a wide range of</em> are followed by a plural noun.", "<em>many、several、few、a few、both、a number of、a variety of、a wide range of</em> 後面接複數名詞。"],
+      "ex": [
+        ["<em>Several</em> clients have asked about the new service.", "有好幾位客戶問過這項新服務。"],
+        ["The store sells a wide <em>variety</em> of office supplies.", "這家店販售各式各樣的辦公用品。"]
+      ]
+    },
+    {
+      "head": ["Words for uncountable nouns", "接不可數名詞的數量詞"],
+      "body": ["<em>much, little, a little, a great deal of, an amount of</em> go with uncountable nouns. Use <em>fewer</em> with plural nouns and <em>less</em> with uncountable ones. Amounts and times take <em>less than</em>: <em>less than 30 days</em>.", "<em>much、little、a little、a great deal of、an amount of</em> 搭配不可數名詞。<em>fewer</em> 接複數名詞，<em>less</em> 接不可數名詞。金額和時間用 <em>less than</em>：<em>less than 30 days</em>。"],
+      "ex": [
+        ["There is <em>little</em> time left before the deadline.", "離截止時間已經沒剩多少了。"],
+        ["A <em>great deal of</em> work remains on the new website.", "新網站還有許多工作要做。"],
+        ["The new system produces <em>fewer</em> errors and takes <em>less</em> time.", "新系統出的錯比較少，也比較省時間。"]
+      ]
+    },
+    {
+      "head": ["few and a few", "few 和 a few"],
+      "body": ["<em>few</em> means 'almost none' and sounds negative. <em>a few</em> means 'some'. <em>little</em> and <em>a little</em> work the same way with uncountable nouns.", "<em>few</em> 表示「幾乎沒有」，語氣偏否定。<em>a few</em> 表示「有一些」。<em>little</em> 和 <em>a little</em> 也一樣，但接不可數名詞。"],
+      "ex": [
+        ["<em>Few</em> customers complained, so the launch was a success.", "幾乎沒有顧客抱怨，所以這次上市很成功。"],
+        ["We have <em>a little</em> time to review the contract before the call.", "通話之前，我們還有一點時間審閱合約。"]
+      ]
+    },
+    {
+      "head": ["most, most of, almost all", "most、most of、almost all 的分別"],
+      "body": ["<em>most</em> + noun means most in general. <em>most of the</em> + noun means most of a specific group. <em>almost</em> is an adverb: it needs <em>all</em> or <em>every</em> before a noun.", "<em>most</em> + 名詞是泛指的大部分。<em>most of the</em> + 名詞是某個特定群體中的大部分。<em>almost</em> 是副詞，接名詞前要加 <em>all</em> 或 <em>every</em>。"],
+      "ex": [
+        ["<em>Most</em> employees prefer flexible working hours.", "大部分員工偏好彈性工時。"],
+        ["<em>Most of the</em> employees in the sales department work remotely.", "業務部的大部分員工都遠距工作。"],
+        ["<em>Almost all</em> employees attended the annual meeting.", "幾乎所有員工都出席了年會。"]
+      ]
+    },
+    {
+      "head": ["Uncountable nouns that look countable", "看起來可數的不可數名詞"],
+      "body": ["<em>equipment, information, furniture, luggage, advice, feedback, merchandise, machinery, clothing, access</em> have no plural form and no <em>a</em>. Their verbs are singular.", "<em>equipment、information、furniture、luggage、advice、feedback、merchandise、machinery、clothing、access</em> 沒有複數形，前面不加 <em>a</em>，動詞用單數。"],
+      "ex": [
+        ["All of the new <em>equipment</em> has been installed.", "所有新設備都已經安裝好了。"],
+        ["We received useful <em>feedback</em> from customers.", "我們從顧客那裡得到了有用的意見。"]
+      ]
+    },
+    {
+      "head": ["the number of and a number of", "the number of 和 a number of"],
+      "body": ["<em>the number of</em> + plural noun takes a singular verb, because the subject is the number. <em>a number of</em> means 'several' and takes a plural verb. <em>the amount of</em> goes with uncountable nouns.", "<em>the number of</em> + 複數名詞，動詞用單數，因為主詞是「數量」。<em>a number of</em> 表示「幾個」，動詞用複數。<em>the amount of</em> 接不可數名詞。"],
+      "ex": [
+        ["<em>The number of</em> applicants has doubled this year.", "今年的應徵人數增加了一倍。"],
+        ["<em>A number of</em> clients have requested a refund.", "有幾位客戶要求退款。"],
+        ["<em>The amount of</em> paperwork has decreased.", "文書作業的量減少了。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "We received useful feedback from customers.", "wrong": "We received useful feedbacks from customers.", "why": ["<em>feedback</em> is uncountable and has no plural form.", "<em>feedback</em> 是不可數名詞，沒有複數形。"]},
+    {"right": "Almost all employees agreed.", "wrong": "Almost employees agreed.", "why": ["<em>almost</em> is an adverb and cannot stand directly before a noun. Add <em>all</em>.", "<em>almost</em> 是副詞，不能直接接名詞，要加 <em>all</em>。"]},
+    {"right": "Most of the managers attended.", "wrong": "Most of managers attended.", "why": ["<em>most of</em> needs <em>the</em>, <em>these</em> or a possessive before the noun.", "<em>most of</em> 後面的名詞前要有 <em>the</em>、<em>these</em> 或所有格。"]}
+  ],
+  "lists": [
+    {"head": ["Uncountable nouns in use", "不可數名詞的用法"], "items": [
+      ["some useful information", "一些有用的資訊"], ["a piece of advice", "一則建議"], ["positive feedback", "正面的回饋"], ["new equipment", "新設備"],
+      ["office furniture", "辦公家具"], ["heavy luggage", "沉重的行李"], ["access to the system", "使用系統的權限"], ["a piece of furniture", "一件家具"]
+    ]},
+    {"head": ["Quantity phrases", "數量片語"], "items": [
+      ["a wide range of", "各式各樣的"], ["a variety of", "各種的"], ["a number of", "一些"], ["a great deal of", "大量的"],
+      ["a large amount of", "大量的"], ["a small number of", "少數的"], ["plenty of", "很多的"], ["a majority of", "大多數的"]
+    ]}
+  ],
+  "traps": [
+    ["<em>every</em> takes a singular noun, but with a number it takes a plural noun to show frequency: <em>every three months</em>.", "<em>every</em> 後面接單數名詞，但加數字時接複數名詞表示頻率：<em>every three months</em>。"],
+    ["<em>each of</em> + plural noun still takes a singular verb: <em>Each of the managers has a key</em>.", "<em>each of</em> 加複數名詞，動詞仍用單數：<em>Each of the managers has a key</em>。"],
+    ["<em>much</em> and <em>many</em> follow the noun type, not the meaning. <em>many</em> goes with <em>items</em>; <em>much</em> goes with <em>equipment</em>.", "<em>much</em> 和 <em>many</em> 看名詞的類型，不看意思。<em>many</em> 配 <em>items</em>；<em>much</em> 配 <em>equipment</em>。"]
+  ]
+}

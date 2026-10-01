@@ -1,0 +1,24 @@
+[
+ {
+  "id": "g-relative-23",
+  "format": "gap",
+  "stem": "The agency released the revised schedule without first consulting the shift supervisors, ______ proved a costly oversight when the first trucks arrived on Monday morning and found the loading dock without a crew.",
+  "options": {
+   "A": "which",
+   "B": "who",
+   "C": "what",
+   "D": "that"
+  }
+ },
+ {
+  "id": "g-relative-25",
+  "format": "gap",
+  "stem": "The library thanked the volunteers whom it trained last winter and ______ since April alone have led more than two hundred reading sessions for children from local schools.",
+  "options": {
+   "A": "whom",
+   "B": "whose",
+   "C": "who",
+   "D": "which"
+  }
+ }
+]

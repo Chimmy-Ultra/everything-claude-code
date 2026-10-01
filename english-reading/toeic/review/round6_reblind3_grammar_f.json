@@ -1,0 +1,13 @@
+[
+ {
+  "id": "g-prep-13",
+  "format": "gap",
+  "stem": "The finance department reconciles the corporate card statements ______ the end of every month, once the last late transactions have been posted at midnight on the final day, and then sends the totals to the auditors.",
+  "options": {
+   "A": "at",
+   "B": "on",
+   "C": "in",
+   "D": "since"
+  }
+ }
+]

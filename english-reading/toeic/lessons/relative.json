@@ -1,0 +1,191 @@
+{
+  "unit": "relative",
+  "lead": [
+    "The options include who, whom, whose, which, that, what and where. The word before the blank and the shape of the clause after it decide.",
+    "選項有 who、whom、whose、which、that、what、where。空格前面的字和後面子句的形狀決定答案。"
+  ],
+  "steps": [
+    [
+      "Look at the word before the blank: a person, a thing, a place, a time, or nothing.",
+      "看空格前面的字：人、事物、地點、時間，或是什麼都沒有。"
+    ],
+    [
+      "Look at the clause after the blank. Is a subject missing, an object missing, or does a noun come first?",
+      "看空格後面的子句：缺主詞、缺受詞，還是直接接名詞。"
+    ],
+    [
+      "Check for a comma or a preposition right before the blank.",
+      "檢查空格前面是不是逗號或介系詞。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Who or whom",
+        "who 與 whom"
+      ],
+      "body": [
+        "Both refer to people. If a verb follows the blank, the subject is missing: who. If a subject and verb follow, the object is missing: whom.",
+        "兩者都指人。空格後面直接接動詞，缺主詞，用 who；後面已有主詞和動詞，缺受詞，用 whom。"
+      ],
+      "ex": [
+        [
+          "Candidates <em>who</em> have management experience are preferred.",
+          "有管理經驗的應徵者優先。"
+        ],
+        [
+          "The consultant <em>whom</em> we hired last year has left the firm.",
+          "我們去年聘請的顧問已經離職了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Whose: possession",
+        "whose：所有格"
+      ],
+      "body": [
+        "Whose works for people and things. It is followed directly by a noun with no article: the client whose order was delayed.",
+        "whose 人和事物都可以用，後面直接接沒有冠詞的名詞：the client whose order was delayed。"
+      ],
+      "ex": [
+        [
+          "We contacted the client <em>whose</em> order was delayed.",
+          "我們聯絡了訂單延誤的那位客戶。"
+        ],
+        [
+          "The firm <em>whose</em> bid was lowest won the contract.",
+          "出價最低的那家公司拿下了合約。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Which or that",
+        "which 與 that"
+      ],
+      "body": [
+        "Both refer to things. After a comma, only which is correct. That belongs to the defining clause, with no comma and no preposition before it.",
+        "兩者都指事物。逗號後面只能用 which。that 用在限定用法，前面沒有逗號，也沒有介系詞。"
+      ],
+      "ex": [
+        [
+          "The software, <em>which</em> was released in May, has received positive reviews.",
+          "這款五月推出的軟體獲得了好評。"
+        ],
+        [
+          "The report <em>that</em> you requested is attached.",
+          "你要求的報告在附件裡。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Preposition + which or whom",
+        "介系詞 + which / whom"
+      ],
+      "body": [
+        "A preposition can come before the pronoun: in which, to whom. After a comma, a quantity can come first: both of which, most of whom. That never follows a preposition.",
+        "介系詞可以放在關係代名詞前：in which、to whom。逗號後可以先放數量：both of which、most of whom。that 不能放在介系詞後面。"
+      ],
+      "ex": [
+        [
+          "This is the building <em>in which</em> the conference will be held.",
+          "研討會將在這棟大樓舉行。"
+        ],
+        [
+          "Please send the invoice to the person <em>to whom</em> you spoke yesterday.",
+          "請把發票寄給你昨天通話的那位。"
+        ],
+        [
+          "We received two proposals, both of <em>which</em> are affordable.",
+          "我們收到兩份提案，兩份的價格都負擔得起。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "What, whoever, those who",
+        "what、whoever、those who 的用法"
+      ],
+      "body": [
+        "What means the thing that and has no word before it. Whoever means anyone who. Those who means the people who and takes a plural verb.",
+        "what 等於 the thing that，前面沒有先行詞。whoever 是「任何……的人」。those who 是「那些……的人」，用複數動詞。"
+      ],
+      "ex": [
+        [
+          "<em>What</em> impressed the judges most was the design.",
+          "最讓評審印象深刻的是設計。"
+        ],
+        [
+          "<em>Whoever</em> completes the survey first will receive a gift card.",
+          "最先完成問卷的人可以獲得一張禮物卡。"
+        ],
+        [
+          "<em>Those who</em> wish to attend must register by Friday.",
+          "想參加的人必須在星期五前報名。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Where and when: a complete clause",
+        "where、when：後接完整子句"
+      ],
+      "body": [
+        "Where (place) and when (time) are followed by a complete clause. Which, who and whom are followed by a clause with something missing.",
+        "where（地點）、when（時間）後面是完整子句。which、who、whom 後面的子句會缺主詞或受詞。"
+      ],
+      "ex": [
+        [
+          "The factory <em>where</em> the parts are made is in Poland.",
+          "生產這些零件的工廠在波蘭。"
+        ],
+        [
+          "The city <em>which</em> we visited in May was very quiet.",
+          "我們五月造訪的那座城市非常安靜。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "The software, which was released in May, is popular.",
+      "wrong": "The software, that was released in May, is popular.",
+      "why": [
+        "That cannot follow a comma.",
+        "逗號後面不能用 that。"
+      ]
+    },
+    {
+      "right": "This is the room in which the interview will take place.",
+      "wrong": "This is the room in that the interview will take place.",
+      "why": [
+        "That cannot follow a preposition. Use which or whom.",
+        "介系詞後面不能用 that，要用 which 或 whom。"
+      ]
+    },
+    {
+      "right": "We called the client whose order was late.",
+      "wrong": "We called the client who order was late.",
+      "why": [
+        "A noun, order, follows the blank directly, so the word must show possession: whose.",
+        "空格後面直接接名詞 order，要用表示所有格的 whose。"
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "A short phrase such as we think or it believes can sit inside the clause. Cross it out, then check what is missing after the blank.",
+      "子句中間可能插入 we think、it believes 這類短語。先劃掉它，再看空格後面缺什麼。"
+    ],
+    [
+      "In a defining clause, a pronoun that is the object can be left out: the report you requested. It cannot be left out when it is the subject or follows a comma.",
+      "限定用法裡，當受詞的關係代名詞可以省略：the report you requested。當主詞或前面有逗號時不能省略。"
+    ],
+    [
+      "A sentence about people does not always need who. If a noun follows the blank, as in the client whose order, the answer is whose.",
+      "句子在講人，不代表一定用 who。空格後面接名詞時，例如 the client whose order，答案是 whose。"
+    ]
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "unit": "qr-yesno",
+  "lead": [
+    "Yes/No questions start with do, is, can, have or will. Tag questions end with 'isn't it?' or 'don't you?'. Both ask for confirmation. A response may begin with yes or no, or just give the facts.",
+    "Yes/No 問句以 do、is、can、have、will 開頭；附加問句結尾是 isn't it?、don't you? 之類。兩者都是要對方確認。回應可以用 yes 或 no 開頭，也可以直接講事實。"
+  ],
+  "steps": [
+    [
+      "Listen for the auxiliary at the start (do, is, can, have) or the tag at the end (isn't it, don't you).",
+      "聽開頭的助動詞（do、is、can、have）或結尾的附加問句（isn't it、don't you）。"
+    ],
+    [
+      "Work out what is being asked: did it happen, is it true, will it happen.",
+      "弄清楚在問什麼：事情發生了嗎、是真的嗎、會發生嗎。"
+    ],
+    [
+      "If a response starts with yes or no, check that the details that follow agree with it.",
+      "若回應以 yes 或 no 開頭，檢查後面的內容是否與它一致。"
+    ],
+    [
+      "If there is no yes or no, ask whether the facts answer the question at the right time.",
+      "若沒有 yes 或 no，就看那些事實是否在對的時間點回答了問題。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Plain Yes/No questions",
+        "一般 Yes/No 問句"
+      ],
+      "body": [
+        "A response can begin with yes, no, or a short phrase such as 'not yet' or 'I think so'. A few words of detail often follow.",
+        "回應可以用 yes、no 開頭，或用 not yet、I think so 這類短語，後面常接幾個字的細節。"
+      ],
+      "ex": [
+        [
+          "Q: <em>Did</em> you receive the invoice? / A: <em>Yes</em>, it came this morning.",
+          "Q: 你收到發票了嗎？／A: 收到了，今天早上到的。"
+        ],
+        [
+          "Q: Is the meeting still on Friday? / A: <em>I think so.</em>",
+          "Q: 會議還是在星期五嗎？／A: 我想是的。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Responses without yes or no",
+        "沒有 yes 或 no 的回應"
+      ],
+      "body": [
+        "A response can give a fact that implies yes or no. It must still match the time and the subject of the question.",
+        "回應可以給一個暗示 yes 或 no 的事實，但仍要符合問句的時間和主詞。"
+      ],
+      "ex": [
+        [
+          "Q: Have you booked the conference room? / A: <em>I sent the request this morning.</em>",
+          "Q: 你訂會議室了嗎？／A: 我今天早上已送出申請。"
+        ],
+        [
+          "Q: Can you work on Saturday? / A: <em>I'm out of town that weekend.</em>",
+          "Q: 你星期六能上班嗎？／A: 那個週末我不在城裡。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Negative questions mean the same thing",
+        "否定問句的意思不變"
+      ],
+      "body": [
+        "'Haven't they arrived?' asks the same as 'Have they arrived?', with a hint of surprise. Answer with the facts. 'No' means they have not arrived.",
+        "Haven't they arrived? 和 Have they arrived? 問的是同一件事，只是帶點驚訝。照事實回答，No 就是還沒到。"
+      ],
+      "ex": [
+        [
+          "Q: <em>Isn't</em> the bank open today? / A: <em>No</em>, it's closed for the holiday.",
+          "Q: 銀行今天不是有開嗎？／A: 沒有，假日休息。"
+        ],
+        [
+          "Q: <em>Didn't</em> you get my message? / A: <em>Yes</em>, I replied this morning.",
+          "Q: 你沒收到我的訊息嗎？／A: 有，我今天早上回了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Tag questions: answer the statement",
+        "附加問句：回答前面的陳述"
+      ],
+      "body": [
+        "A tag such as 'aren't you?' only asks the speaker to confirm. Ignore the tag, find the statement in front of it, and answer that.",
+        "aren't you? 這類附加問句只是請對方確認。忽略附加部分，找出前面的陳述來回答。"
+      ],
+      "ex": [
+        [
+          "Q: You're attending the seminar, <em>aren't you</em>? / A: <em>Yes</em>, I registered last week.",
+          "Q: 你會參加研討會，對吧？／A: 會，我上週報名了。"
+        ],
+        [
+          "Q: The deadline is Friday, <em>isn't it</em>? / A: <em>Actually, it was moved to Monday.</em>",
+          "Q: 截止日是星期五，對不對？／A: 其實改到星期一了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Yes or No must agree with the detail",
+        "Yes 或 No 要與後面內容一致"
+      ],
+      "body": [
+        "If a response starts with yes, the detail must be positive. If it starts with no, the detail must be negative. A mismatch makes the response wrong.",
+        "回應以 yes 開頭，後面要是肯定的內容；以 no 開頭，後面要是否定的內容。不一致就是錯的。"
+      ],
+      "ex": [
+        [
+          "Q: Did the client approve the design? / A: <em>No</em>, she asked for changes.",
+          "Q: 客戶核准設計了嗎？／A: 沒有，她要求修改。"
+        ],
+        [
+          "Q: Has the shipment arrived? / A: <em>Yes</em>, it's at the loading dock.",
+          "Q: 貨到了嗎？／A: 到了，在裝卸區。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Same word, different meaning",
+        "同字不同義"
+      ],
+      "body": [
+        "A wrong response may use a word from the question in another sense, or a word that sounds alike. Choose by meaning, not by the repeated word.",
+        "錯誤回應可能用問句的字，但意思不同，或用發音相近的字。要看意思，不要看重複的字。"
+      ],
+      "ex": [
+        [
+          "Is the <em>plant</em> open on Saturday? Here <em>plant</em> means a factory, not something in a pot.",
+          "Is the plant open on Saturday? 這裡的 plant 是「工廠」，不是盆栽。"
+        ],
+        [
+          "Will you <em>book</em> the hotel? Here <em>book</em> means reserve, not a thing to read.",
+          "Will you book the hotel? 這裡的 book 是「預訂」，不是書。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: Is the printer on the second floor working? / A: Yes, I used it a few minutes ago.",
+      "wrong": "Q: Is the printer on the second floor working? / A: I prefer the second one.",
+      "why": [
+        "The wrong response echoes 'second' but does not say whether the printer works.",
+        "錯誤回應重複 second，卻沒說印表機能不能用。"
+      ]
+    },
+    {
+      "right": "Q: You've signed the contract, haven't you? / A: Not yet, legal is still reviewing it.",
+      "wrong": "Q: You've signed the contract, haven't you? / A: Yes, the sign is outside the office.",
+      "why": [
+        "'Sign' sounds like 'signed' but has a different meaning. It ignores the question.",
+        "sign 聽起來像 signed，意思卻不同，也沒回答問題。"
+      ]
+    },
+    {
+      "right": "Q: Did the client approve the design? / A: No, she asked for two changes.",
+      "wrong": "Q: Did the client approve the design? / A: Yes, she didn't like it.",
+      "why": [
+        "Yes and the detail disagree. If she did not like it, the answer is no.",
+        "Yes 與後面的內容矛盾。她不喜歡，答案就是 no。"
+      ]
+    },
+    {
+      "right": "Q: Haven't the samples arrived yet? / A: No, the courier is running late.",
+      "wrong": "Q: Haven't the samples arrived yet? / A: Yes, I sampled the new menu.",
+      "why": [
+        "The wrong response plays on 'sample' and says nothing about delivery.",
+        "錯誤回應只是拿 sample 做文章，沒有談到送達。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "Did you send the report to the client?",
+          "你把報告寄給客戶了嗎？"
+        ],
+        [
+          "Have you met the new manager?",
+          "你見過新經理了嗎？"
+        ],
+        [
+          "Is the meeting still on Thursday?",
+          "會議還是星期四嗎？"
+        ],
+        [
+          "Can I use the projector this afternoon?",
+          "我下午可以用投影機嗎？"
+        ],
+        [
+          "Hasn't the new catalog been printed yet?",
+          "新型錄還沒印好嗎？"
+        ],
+        [
+          "You're joining the site visit, aren't you?",
+          "你會參加實地參訪，對吧？"
+        ],
+        [
+          "The store opens at nine, doesn't it?",
+          "商店九點開門，對不對？"
+        ],
+        [
+          "Do you have the latest price list?",
+          "你有最新的價目表嗎？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Typical short responses",
+        "常見的簡短回應"
+      ],
+      "items": [
+        [
+          "Yes, I did.",
+          "對，我做了。"
+        ],
+        [
+          "Not yet.",
+          "還沒。"
+        ],
+        [
+          "I think so.",
+          "我想是的。"
+        ],
+        [
+          "No, it's been moved.",
+          "不是，已經改期了。"
+        ],
+        [
+          "I'm not sure.",
+          "我不確定。"
+        ],
+        [
+          "Let me check.",
+          "我查一下。"
+        ],
+        [
+          "Actually, it's tomorrow.",
+          "其實是明天。"
+        ],
+        [
+          "I'll do it now.",
+          "我現在就做。"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Echo words. A response repeats a word from the question (plant, book, order) but deals with something else. Ask whether it talks about the same event.",
+      "重複字。回應重複問句裡的字（plant、book、order），卻在談別的事。要問自己它是否在談同一件事。"
+    ],
+    [
+      "Wrong tense. A question about tomorrow answered with 'It went well', or a question about now answered about last year. Check the time first.",
+      "時態不對。問明天的事卻回答「很順利」，或問現在卻答去年。先核對時間。"
+    ],
+    [
+      "A negative question tempts you to flip the answer. Do not. Give the fact: if it has not happened, 'No' fits.",
+      "否定問句容易讓人把答案顛倒。不要。照事實回答：沒發生就是 No。"
+    ],
+    [
+      "A yes or no that conflicts with its own detail, such as 'Yes, it hasn't arrived', is wrong. Listen to the first word and the words after it together.",
+      "yes 或 no 與自己後面的內容衝突，例如 Yes, it hasn't arrived，就是錯的。要把第一個字和後面的話一起聽。"
+    ]
+  ]
+}

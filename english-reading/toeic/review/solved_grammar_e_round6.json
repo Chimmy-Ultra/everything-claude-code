@@ -1,0 +1,193 @@
+{
+ "answers": {
+  "g-connect-09": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "Kept open despite the planned closure: in spite of + noun phrase. The stretch after the gap, 'the renovation work that its trustees had scheduled to close them for most of the spring', is a noun phrase with a relative clause and has no verb of its own, so the clause conjunction 'even though' fails. 'due to' and 'in light of' fail on meaning (a planned closure cannot be the reason the galleries stayed open).",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (even though reads as a clause start in the 8-word window; in light of / due to are also locally grammatical); D yes (the missing verb only shows at sentence end); B yes (Although/Despite trap, a relative clause that has its own verb 'had scheduled' invites a clause reading); S yes (strip the relative clause, see that the noun phrase has no predicate).",
+   "style": 4,
+   "why": "Hard: L, D, B and S all pass; the decisive clue is the absence of a verb at the end of the sentence.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Mirror image of g-connect-10 (same 'that [authority] had [verb] ... ' relative-clause shape, same prep vs clause test). Not a defect, but the two read alike; consider varying the relative clause in one of them."
+  },
+  "g-connect-10": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "After the comma comes a full clause: subject 'the seating capacity that the fire marshal had approved in April' + verb 'was'. So a conjunction is needed: although. 'despite' + noun phrase would leave 'was' without a subject. 'however' and 'even so' would be coherent contrast adverbs, but with only a comma before them the sentence is a comma splice; a formal editor would require a semicolon or full stop. Their exclusion therefore rests on punctuation alone.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (despite the seating capacity that the fire marshal is locally fine; however / even so are fine as adverbs in meaning); D yes (the verb 'was' comes after the relative clause); B no for despite is a known trap but weak; S yes (skip the relative clause to find the main verb).",
+   "style": 4,
+   "why": "Hard (L, D, S): the verb that proves a clause follows only after the relative clause. Caution: two of the three distractors are excluded by the comma splice only.",
+   "fix": "Optional: make however / even so fail by more than punctuation (for example put the gap after a semicolon-less coordinate structure), or accept that these two are comma-splice distractors.",
+   "tooClose": false,
+   "editorNote": "SHOULD-FIX (low): however and even so are excluded only because the comma before them creates a comma splice. With a semicolon both would be good, so the item depends on punctuation."
+  },
+  "g-connect-11": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'hiring two temporary receptionists for the front desk' is a gerund subject and 'cleared' is its verb, so the gap needs a clause conjunction: because. Due to / thanks to / as a result of + 'hiring ...' would leave 'cleared the backlog' as a stray verb with no subject.",
+   "vsToeic": "harder", "band": "hard",
+   "ldbs": "L yes (due to hiring two temporary receptionists reads perfectly in the window); D yes (the verb 'cleared' is about eight words past the gap); B yes (preposition + gerund is an active belief; three near-synonymous prepositions look right); S yes (recognize hiring ... as the subject of cleared, not the object of a preposition).",
+   "style": 4,
+   "why": "Hard: all of L, D, B, S pass. Note the three synonymous prepositions make the odd one out ('because') guessable by elimination, which softens it slightly.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Three options are near-synonyms (due to / thanks to / as a result of), so a test-taker can pick the odd one out without parsing. Still valid and hard to parse; keep."
+  },
+  "g-connect-12": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The sentence is 'X, daily output ... has been held ...': the opening must be a preposition phrase taking the noun phrase 'a fault in the cooling system ...': Owing to. 'As a result' needs 'of'; 'Therefore'/'Thus' + noun phrase leaves the fault with no verb and have no previous sentence to refer to.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (Thus/Therefore + a fault locally parses as a subject); D yes (no verb appears until after the comma); B no (nobody firmly believes a linking adverb can introduce a bare noun phrase); S no.",
+   "style": 3,
+   "why": "Medium: L and D pass but B and S fail; three linking adverbs against one preposition also make it guessable.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Three adverb distractors vs one prepositional phrase: category split is the shortcut. Acceptable as a medium."
+  },
+  "g-connect-13": {
+   "answer": "C", "confidence": 4, "ambiguous": true, "alsoPossible": ["A"],
+   "reason": "'while boarding passengers ...' is a normal reduced adverbial clause. But 'throughout' + gerund phrase ('throughout boarding passengers who need wheelchair assistance') is also grammatical in formal written English (throughout + -ing is attested: throughout testing, throughout implementing). The meaning is coherent: the agents must stay for the whole time they board such passengers, and the second clause ('may leave only when the lead agent releases them') actually fits throughout even better. Nothing in the sentence excludes it. Meanwhile (adverb, no clause) and by (means, 'stay at the podium by boarding') fail.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (throughout and while both fit the window); D no (nothing distant separates them); B yes (throughout is a true alternative); S no. Band is provisional because the item has two answers.",
+   "style": 3,
+   "why": "Medium only if repaired: the only distractor that survives the local window also survives the whole sentence.",
+   "fix": "Make the clause finite so that throughout cannot take it, for example 'The two agents ... must stay at the podium ______ passengers who need wheelchair assistance are boarding, and they may leave only ...'. Then while is the only answer (throughout needs a noun phrase, meanwhile is an adverb, by is wrong).",
+   "tooClose": false,
+   "editorNote": "MUST-FIX: throughout + gerund would be left by an editor. Fix by a finite clause after the gap."
+  },
+  "g-connect-14": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'the quarterly audit' is a noun phrase followed directly by a comma and a relative 'when' clause, so it has no verb of its own: during + noun phrase. whenever / when / once need a clause.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L no (the noun phrase is followed at once by a comma, so the missing verb is visible inside the window); D no; B no; S no.",
+   "style": 4,
+   "why": "Easy: L fails; every other option is a conjunction needing a verb that is visibly absent.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Classic preposition vs conjunction item; fine as an easy slot. Three conjunctions vs one preposition again."
+  },
+  "g-connect-15": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "After the gap: 'the warehouse supervisor, who had been on leave ..., had a chance to compare them'. The supervisor is the subject of 'had', so the gap must be a conjunction: before. In advance of / prior to / ahead of + noun phrase would leave 'had a chance to compare' without a subject.",
+   "vsToeic": "harder", "band": "hard",
+   "ldbs": "L yes (prior to / ahead of the warehouse supervisor is locally fine and idiomatic); D yes (the verb 'had' sits after a non-restrictive relative clause); B yes (prior to / in advance of are the 'formal' choices a good student likes); S yes (skip the relative clause to find the verb).",
+   "style": 4,
+   "why": "Hard (L, D, B, S). Three synonymous prepositions let a guesser pick the odd one, but a reader who parses must skip the relative clause.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Fourth item of the batch with the same prep-NP vs conj-clause shape with an inserted relative clause (09, 10, 11, 15). Consider reshaping one for variety."
+  },
+  "g-connect-16": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Only after can take the noun phrase 'the wedding reception ...'. afterward, later and then are adverbs and cannot be followed by a noun phrase as an object.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L no (afterward / later / then + the wedding reception fails at once); D no; B no; S no.",
+   "style": 3,
+   "why": "Easy: L fails; three adverbs against the one preposition, a 'different classes' list (rule 3.5).",
+   "fix": "Replace the adverbs with options that fit the window, for example a preposition or conjunction set, but avoid 'following' (a second correct answer).",
+   "tooClose": false,
+   "editorNote": "SHOULD-FIX (style): options are three adverbs plus one preposition-conjunction, so the item is too easy and breaks the 'same class' rule."
+  },
+  "g-connect-17": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Meaning: reversal is possible only if a signed recall request is submitted within 24 hours: unless. without + noun phrase leaves 'has submitted' with its own subject unaccounted for; as though is meaningless. The closest rival is whether: 'whether the sender, or the accountant ..., has submitted' can be read as a concessive whether ... or ... clause (the bank cannot reverse regardless of who sends a recall request). That reading is grammatical but makes the bank deny any recall at all, which contradicts the point of mentioning a recall request and needs an assumption the sentence does not give.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (whether ... or reads fine locally because the stem itself contains 'or'); D yes (the recall-request meaning is only settled at the end); B no (few students choose whether); S no.",
+   "style": 4,
+   "why": "Medium: L and D pass, B and S fail; unless is the obvious logical match.",
+   "fix": "Remove the 'or the accountant' appositive (or recast it as 'together with') so that no 'whether X or Y' reading is available.",
+   "tooClose": false,
+   "editorNote": "SHOULD-FIX (low): the 'or the accountant ...' phrase creates a whether-or reading. It needs an assumption to be wrong, so it is not ambiguous, but it is closer to a second answer than intended."
+  },
+  "g-connect-18": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'may not be used after midnight unless authorized in writing': unless + elliptical participle. once authorized would mean it may not be used after it has been authorized (contradictory); without + 'authorized' needs a gerund or noun; regardless needs 'of'.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L no (once authorized fails at once against 'may not be used'); D no; B no; S no.",
+   "style": 4,
+   "why": "Easy: the negation 'may not be used' sits right before the gap and rules out once; the other two are ungrammatical.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Standard unless-ellipsis item, acceptable as easy."
+  },
+  "g-connect-19": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Contrast between two clauses joined after a comma: whereas. consequently is wrong in meaning. however and in contrast are good contrast adverbs but with only a comma before them the sentence would be a comma splice; in formal writing they need a semicolon or full stop. Their exclusion depends on punctuation alone.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L yes (however / in contrast fit locally in meaning); D no (the comma that excludes them is directly before the gap); B no; S no.",
+   "style": 4,
+   "why": "Easy: D, B and S fail; the exclusion sits right at the gap (a comma).",
+   "fix": "If a stronger item is wanted, make the exclusion rest on structure beyond the comma (for example two adverbs the sentence cannot take even after a semicolon). Otherwise keep as an easy slot.",
+   "tooClose": false,
+   "editorNote": "SHOULD-FIX (low): however and in contrast are excluded only by the comma splice; with a semicolon both would be fine. Note also that whereas as the key is fully standard."
+  },
+  "g-connect-20": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The previous sentence says moving costs more; the board nevertheless voted to move, citing lower future rents: Nevertheless. Moreover adds; Therefore / As a result would make the higher cost the reason for moving, which the sentence contradicts.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (Therefore / As a result read plausibly as sequence markers); D yes (the clue is 'citing the lower rents' at the end of the sentence and the cost in the previous sentence); B no; S no.",
+   "style": 4,
+   "why": "Medium: L and D pass, B and S fail; the contrast logic is standard.",
+   "fix": "", "tooClose": false,
+   "editorNote": ""
+  },
+  "g-connect-21": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "A request followed by a consequence if it is not met: Otherwise. Consequently and Moreover do not fit the logic; However (contrast) would require extra assumptions to link a request with the painting being sent back.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L no (the logical link is in the adjacent clause, so Consequently / Moreover fail locally); D no; B no; S no.",
+   "style": 4,
+   "why": "Easy: the answer is signaled by the request in the clause directly before the semicolon (L fails).",
+   "fix": "", "tooClose": false,
+   "editorNote": "The semicolon makes all four adverbs punctuation-safe, which is correct."
+  },
+  "g-connect-22": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The portal is the subject of 'would not be overloaded', so purpose needs a clause: so that. in order to / so as to / to are infinitive purpose and need the same subject as the main verb; here 'the online portal' follows directly, which makes them ungrammatical.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes ('to the online portal' is locally a prepositional phrase); D yes ('would' comes after the relative clause); B no (students do not strongly believe the infinitive here); S no.",
+   "style": 4,
+   "why": "Medium: L and D pass, but B and S fail; only 'to' really passes the window.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Three infinitive purpose options vs one clause option; odd one out is guessable."
+  },
+  "g-connect-23": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "such + adjective + uncountable noun + that-clause: such detailed feedback ... that. so + adjective cannot be directly followed by a noun without 'a/an' ('so detailed feedback' is not standard); too and very do not take a that-result clause.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (so detailed reads fine in the window); D no (the noun 'feedback' that excludes it is adjacent); B yes (so/such is a known good-student confusion); S no.",
+   "style": 4,
+   "why": "Medium: L and B pass but D fails; no clue sits outside the window.",
+   "fix": "", "tooClose": false,
+   "editorNote": ""
+  },
+  "g-connect-24": {
+   "answer": "A", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "The cancellation is hypothetical: Ms. Aldana 'has not yet decided whether she will make the trip', so she cannot yet have cancelled. even if marks it as a possibility. even though presents 'she cancels more than a month in advance' as a fact and so contradicts the undecided state given at the start of the sentence. even so is an adverb; as though is wrong in meaning.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (even though fits the window); D yes (the deciding clue is the relative clause at the start of the sentence); B yes (even if / even though is a classic belief trap); S yes (link the early relative clause to the hypothetical condition).",
+   "style": 5,
+   "why": "Hard (all four): the clue is far from the gap and is a fact about the state of the decision, not a signal word.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Closest rival is even though; it is excluded because the sentence itself says the cancellation is undecided. No external assumption is needed, so this is a good trap, not an ambiguity."
+  },
+  "g-connect-25": {
+   "answer": "C", "confidence": 3, "ambiguous": false, "alsoPossible": [],
+   "reason": "The room is already booked (completed), as a precaution against more than 200 registrations: in case. if is the closest rival: American usage often treats 'if' and 'in case' as close, and 'booked a second room if more than 200 register' can be read as a contingency booking. But 'already booked' + if makes the completed booking depend on a future event; an editor would normally want 'in case'. once is wrong (the booking comes before) and whether is wrong in meaning.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (if and once both fit the window); D yes ('have already booked' and 'although only about a hundred and fifty' are the clues); B yes (if / in case is a well known good-student confusion); S no. Band stays hard only if 'if' is truly excluded.",
+   "style": 4,
+   "why": "Hard (L, D, B): the only exclusion for 'if' is the time logic of 'already booked'.",
+   "fix": "Replace 'if' with a distractor that cannot be read as a contingency booking, or make the precaution reading unmistakable ('... booked a second, smaller room at the hotel ______ more than two hundred delegates turn up, since it cannot be reserved later'), or drop 'if' for 'unless'.",
+   "tooClose": false,
+   "editorNote": "SHOULD-FIX (the closest call in this batch): if can be defended in American usage as a contingency, but it needs the added assumption that the booking is a standing reserve. If reviewers decide 'if' passes an editor, this becomes a must-fix."
+  },
+  "g-connect-26": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The rate stays for twelve months on condition that the balance never falls below the minimum: as long as. as far as is not a condition word; even though gives a concession (opposite logic); now that gives a reason that is already true, which does not fit a condition.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L no (even though / now that / as far as all fail in the window 'the balance never falls below'); D no; B no; S no.",
+   "style": 3,
+   "why": "Easy: L fails; as long as is a formula for a condition and no distractor passes the window.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Provided that is not offered, so no near-synonym of the key is among the options."
+  }
+ },
+ "mustFix": ["g-connect-13"],
+ "shouldFix": ["g-connect-25", "g-connect-17", "g-connect-16", "g-connect-19", "g-connect-10"],
+ "overall": "Band counts: easy 6 (14, 16, 18, 19, 21, 26), medium 6 (12, 13, 17, 20, 22, 23), hard 6 (09, 10, 11, 15, 24, 25). Easy is over the 20 percent cap of 5.2; medium is under the 45-55 percent target; hard meets 30 percent. One must-fix: g-connect-13 (throughout + gerund is a second grammatical, coherent answer). Closest calls: g-connect-25 (if vs in case, American usage; excluded only by the time logic of already booked, flagged shouldFix, becomes mustFix if reviewers consider if editor-proof) and g-connect-17 (whether ... or reading). g-connect-10 and g-connect-19 exclude however, even so and in contrast by comma splice only. Four items (09, 10, 11, 15) repeat one shape (preposition + noun phrase vs conjunction + clause with an inserted relative clause); three of them are hard because of it, so variety is low. Several items offer three options of one class and one of another (12, 14, 15, 16, 22), so the odd one out is guessable; g-connect-16 is the worst. Nothing looks copied from real items."
+}

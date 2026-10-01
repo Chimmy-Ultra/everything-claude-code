@@ -1,0 +1,423 @@
+[
+ {
+  "id": "l-conv-11",
+  "format": "conv",
+  "transcript": [
+   "W: Dev, I read the report from our beverage distributor. Almost every returned case had bottles with hairline cracks.",
+   "M: Our inspectors only pull a few bottles from each pallet, so a cracked one can easily slip through.",
+   "W: A vendor told me a camera above the conveyor can look at every bottle as it passes and push the bad ones off the line.",
+   "M: Every single bottle? At our line speed, I'd need to see that to believe it.",
+   "W: They ran our own samples through a test rig last week. It caught every crack but one.",
+   "M: Impressive. But the price is steep, and the plant manager is already worried about this year's equipment budget.",
+   "W: The returns cost us more in one year than the camera would. I can put the figures in a one-page summary.",
+   "M: Good. Send it to me tonight, and I'll read it before I raise the idea with the plant manager tomorrow.",
+   "W: I'll e-mail it before I leave. Let me know what she says."
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "options": {
+     "A": "Why a distributor has stopped ordering from the plant",
+     "B": "How to get inspectors to check bottles more quickly",
+     "C": "A way to catch damaged products before they leave the factory",
+     "D": "Whether to slow the line to protect the bottles"
+    }
+   },
+   {
+    "q": "What does the woman say about the vendor's test?",
+    "options": {
+     "A": "It slowed down the production line",
+     "B": "It was observed by the plant manager",
+     "C": "It missed about half of the cracks",
+     "D": "Nearly every flaw was identified"
+    }
+   },
+   {
+    "q": "What will the woman do before she leaves work?",
+    "options": {
+     "A": "Give the man a short document covering the costs",
+     "B": "Speak with the plant manager about the budget",
+     "C": "Arrange a second test at the vendor's site",
+     "D": "Ask the distributor for another report"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-12",
+  "format": "conv",
+  "transcript": [
+   "W: Joel, Mr. Dunmore, thanks for meeting with me. Joel's thesis depends on a set of nineteenth-century harbor maps in the library's special collections.",
+   "M1: I need to compare them with modern charts, Professor Lang, but the reading room closes at five, and I teach until four thirty.",
+   "M2: I'm afraid those maps are too delicate to photograph or take out of the building. That rule is firm.",
+   "W: Could the library scan them instead? Then Joel could study the images wherever he likes.",
+   "M2: We do offer scanning, but the waiting list is about three weeks.",
+   "M1: That's too long. My first draft is due in two weeks.",
+   "M2: Then let me see what I can do, Professor Lang. I could move Joel up the list if you write a short letter of support.",
+   "W: I'll write one this afternoon. Joel, once the scans arrive, you can work on them at home.",
+   "M1: That would solve everything. Thank you both."
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "options": {
+     "A": "Whether the library should extend its opening hours",
+     "B": "How a student can study materials that cannot be borrowed",
+     "C": "How to schedule a thesis presentation",
+     "D": "Which research topic a student should choose"
+    }
+   },
+   {
+    "q": "What problem does Joel have with using the reading room?",
+    "options": {
+     "A": "His teaching schedule leaves him little time there",
+     "B": "It closes before his class ends",
+     "C": "He has not been given permission to enter it",
+     "D": "The modern charts are kept in a different building"
+    }
+   },
+   {
+    "q": "What does Professor Lang say she will do this afternoon?",
+    "options": {
+     "A": "Take photographs of the maps",
+     "B": "Put Joel's name on a waiting list",
+     "C": "Ask for more time for Joel's draft",
+     "D": "Prepare a written recommendation for the library"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-13",
+  "format": "conv",
+  "graphic": {
+   "caption": "Lakeview Hotel — Nightly Room Rates",
+   "head": [
+    "Room",
+    "Beds",
+    "Rate per night"
+   ],
+   "rows": [
+    [
+     "Standard",
+     "One queen bed",
+     "$120"
+    ],
+    [
+     "Deluxe",
+     "One king bed",
+     "$150"
+    ],
+    [
+     "Family Room",
+     "Two queen beds",
+     "$175"
+    ],
+    [
+     "Executive Suite",
+     "Two queen beds and a sitting area",
+     "$230"
+    ]
+   ]
+  },
+  "transcript": [
+   "M: Hello, I have a reservation under Hollis for this Friday, and I need to change the room.",
+   "W: Certainly, Mr. Hollis. At the moment you're in our least expensive room, with one queen bed.",
+   "M: Right. My wife and our daughter are coming along after all, so we'll need two beds.",
+   "W: Two of our rooms have that. One of them also comes with a separate sitting area.",
+   "M: We don't need that. Last time we had one, we never used it, and it pushed the price up.",
+   "W: Then I'll put you in the other one. It suits families well.",
+   "M: Perfect. One more thing: our flight lands at noon. Could we check in before the usual three o'clock?",
+   "W: I can't promise that. If housekeeping finishes early, I'll text you. Otherwise, we can keep your bags at the desk until three.",
+   "M: That works. Thanks for your help."
+  ],
+  "questions": [
+   {
+    "q": "Why does the man want to change his reservation?",
+    "options": {
+     "A": "He has found a cheaper rate elsewhere",
+     "B": "More people will be staying with him than he planned",
+     "C": "He has to arrive on a different date",
+     "D": "The first room he booked has a poor view"
+    }
+   },
+   {
+    "q": "Look at the graphic. How much will the man pay per night for his new room?",
+    "options": {
+     "A": "$120",
+     "B": "$150",
+     "C": "$175",
+     "D": "$230"
+    }
+   },
+   {
+    "q": "What will the hotel do if the room is ready before three o'clock?",
+    "options": {
+     "A": "Let the guest know right away",
+     "B": "Charge an additional fee",
+     "C": "Hold the family's luggage at the front desk",
+     "D": "Offer the family a larger room"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-14",
+  "format": "conv",
+  "graphic": {
+   "caption": "Afternoon and Evening Departures",
+   "head": [
+    "Flight",
+    "Destination",
+    "Departs",
+    "Arrives",
+    "Gate"
+   ],
+   "rows": [
+    [
+     "512",
+     "Lakeport",
+     "2:30 P.M.",
+     "4:15 P.M.",
+     "B12"
+    ],
+    [
+     "640",
+     "Northgate",
+     "3:10 P.M.",
+     "5:20 P.M.",
+     "A7"
+    ],
+    [
+     "655",
+     "Lakeport",
+     "4:50 P.M.",
+     "6:35 P.M.",
+     "C3"
+    ],
+    [
+     "719",
+     "Lakeport",
+     "6:20 P.M.",
+     "8:05 P.M.",
+     "B9"
+    ]
+   ]
+  },
+  "transcript": [
+   "M: Excuse me, my first flight sat on the runway for an hour, so I missed my connection to Lakeport.",
+   "W: I'm sorry about that, sir. The next Lakeport flight leaves at two thirty, but it's completely full.",
+   "M: What are my other options? I have a client dinner at seven thirty, and the restaurant is half an hour from the airport.",
+   "W: Then you'll need to land by seven. The last flight to Lakeport gets in too late, but there's one between it and the two thirty.",
+   "M: Is there still a seat on that one?",
+   "W: Yes, I'll put you on it now. Your checked bag will be moved over for you, so you don't need to collect it.",
+   "M: That's a relief. Do I need to do anything else?",
+   "W: Just head to the gate. I'm printing your new boarding pass now."
+  ],
+  "questions": [
+   {
+    "q": "Why is the man at the service desk?",
+    "options": {
+     "A": "His checked bag has been lost",
+     "B": "His flight was canceled because of weather",
+     "C": "He wants to change his dinner plans",
+     "D": "A delay made him unable to board his next flight"
+    }
+   },
+   {
+    "q": "Look at the graphic. Which gate will the man most likely go to?",
+    "options": {
+     "A": "B12",
+     "B": "C3",
+     "C": "A7",
+     "D": "B9"
+    }
+   },
+   {
+    "q": "What does the woman say about the man's checked bag?",
+    "options": {
+     "A": "It must be picked up at the baggage claim",
+     "B": "It will be delivered to his hotel tomorrow",
+     "C": "It will be sent to the new flight automatically",
+     "D": "It needs to be weighed again"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-15",
+  "format": "conv",
+  "transcript": [
+   "W: Marcus, the author just e-mailed me. She wants a different subtitle on the cover of her cookbook.",
+   "M: Now? The cover files are supposed to reach the printer on Thursday.",
+   "W: I know. She thinks the current subtitle sounds like it's written for professional chefs, and her readers are home cooks.",
+   "M: That's what the sales team requested, though. And the proofs were approved on Monday.",
+   "W: Could you make the change and still have the files ready by Thursday?",
+   "M: That's a tall order. Changing the words takes me an hour, but the printer charges a fee for any change after the proofs are approved.",
+   "W: How big is the fee?",
+   "M: Four hundred dollars, plus an extra day on the schedule. I could ask them to waive the fee, but I doubt they would.",
+   "W: Don't bother. I'll call the author, explain the cost, and see whether she's willing to keep the current subtitle."
+  ],
+  "questions": [
+   {
+    "q": "Why is the woman talking to the man?",
+    "options": {
+     "A": "To tell him about a revision an author has asked for",
+     "B": "To report an error in a printed cookbook",
+     "C": "To ask him to design a new cookbook",
+     "D": "To confirm when the printer will deliver the books"
+    }
+   },
+   {
+    "q": "What does the man mean when he says, \"That's a tall order\"?",
+    "options": {
+     "A": "The printer's order is unusually large",
+     "B": "The author has asked for too many changes",
+     "C": "The request will be hard to fulfill",
+     "D": "The sales team will refuse the new subtitle"
+    }
+   },
+   {
+    "q": "What does the woman decide to do?",
+    "options": {
+     "A": "Ask the printer to waive its fee",
+     "B": "Ask the author to reconsider her request",
+     "C": "Approve a one-day delay in the schedule",
+     "D": "Send the cover files to the printer on Thursday"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-16",
+  "format": "conv",
+  "transcript": [
+   "W: Gus, Theo, thanks for staying after the lunch rush. The seafood supplier called again; half of today's fish never arrived.",
+   "M1: That's the second short delivery this month, Elena. And tonight's special is the grilled sea bass.",
+   "M2: Should I stop recommending it to tables, Elena? I've already told a few reservations about it.",
+   "W: Keep mentioning it, but tell guests it's limited. Gus, how many portions can you cover?",
+   "M1: Fourteen. To avoid this in future, I'd move all our seafood orders to Harbor Fresh. They're cheaper, and they've never been late with us.",
+   "M2: Hmm. Gus, I'd hate to put all our eggs in one basket. If they have one bad week, we have no fish at all.",
+   "W: Theo has a point. Gus, what if we keep both suppliers and split the order, about sixty and forty?",
+   "M1: Fine by me. But then I'll need to place the orders two days ahead instead of one.",
+   "W: That's manageable. Gus, please send me the new order sheet by Friday, and I'll call both suppliers."
+  ],
+  "questions": [
+   {
+    "q": "What problem does Elena mention at the beginning?",
+    "options": {
+     "A": "A supplier raised its prices without warning",
+     "B": "Several guests complained about the sea bass",
+     "C": "The kitchen ran out of fish during lunch",
+     "D": "An order from a vendor came up short"
+    }
+   },
+   {
+    "q": "What does Theo mean when he says, \"I'd hate to put all our eggs in one basket\"?",
+    "options": {
+     "A": "He wants the kitchen to buy more eggs",
+     "B": "Depending on a single company could cause trouble",
+     "C": "He thinks Harbor Fresh charges too much",
+     "D": "He is worried about storing too much fish"
+    }
+   },
+   {
+    "q": "What will Gus do by Friday?",
+    "options": {
+     "A": "Call both suppliers",
+     "B": "Move all seafood orders to Harbor Fresh",
+     "C": "Prepare a revised ordering document for the manager",
+     "D": "Place the next order one day in advance"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-17",
+  "format": "conv",
+  "transcript": [
+   "M: Hi, this is Paul Greer. I have a physical therapy session on Tuesday at nine, but my car goes into the shop that morning.",
+   "W: Hello, Mr. Greer. Wednesday is full, but Thursday afternoon has openings. Would two o'clock work?",
+   "M: It would. Will my insurance cover it? I've already used five of the six visits my plan allows.",
+   "W: Yes, that one is covered. It will be your last, though.",
+   "M: My knee still isn't right, so I'd like to book three more visits now.",
+   "W: I can't until we get a new referral from your doctor. I can mail you the form, or the doctor's office can fax it directly.",
+   "M: Mail would take too long. The doctor's office closes at five, so I'd better hurry.",
+   "W: Good idea. Give them our fax number, and your Thursday time will be held for you.",
+   "M: I will. Thanks for your help."
+  ],
+  "questions": [
+   {
+    "q": "What problem does the man mention at the start of the call?",
+    "options": {
+     "A": "His therapist is unavailable on Tuesday",
+     "B": "His insurance plan has been changed",
+     "C": "His vehicle will be unavailable that morning",
+     "D": "He cannot find the clinic's address"
+    }
+   },
+   {
+    "q": "What does the woman say about the Thursday session?",
+    "options": {
+     "A": "It is the last one his insurance will pay for",
+     "B": "It cannot be booked until a new referral arrives",
+     "C": "It will be held in the morning",
+     "D": "He will have to pay for it himself"
+    }
+   },
+   {
+    "q": "What will the man most likely do next?",
+    "options": {
+     "A": "Wait for a form to arrive in the mail",
+     "B": "Visit the clinic to sign a form",
+     "C": "Reschedule his appointment for Wednesday",
+     "D": "Get in touch with his physician's office"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-18",
+  "format": "conv",
+  "transcript": [
+   "M: Good morning. I own a café on Pine Street, and I'd like to put four tables on the sidewalk this summer.",
+   "W: Then you'll need an outdoor seating permit. I can start the application for you right now.",
+   "M: Wonderful. How long does it take?",
+   "W: About three weeks. First an inspector measures the sidewalk, because five feet must stay clear for people walking by.",
+   "M: My sidewalk is pretty narrow, to be honest. Will four tables fit?",
+   "W: I can't say until the inspector measures. If fewer fit, you can go ahead with fewer, or withdraw and get your fee back.",
+   "M: Fair enough. I'll apply. Do you take cards, or should I go to the bank for cash?",
+   "W: Cards are fine at the counter. The form also needs a drawing of the sidewalk showing your door and the tree out front.",
+   "M: I have the building plans in my car. I'll bring them in and be right back."
+  ],
+  "questions": [
+   {
+    "q": "Why has the man come to the office?",
+    "options": {
+     "A": "To report a damaged sidewalk",
+     "B": "To ask for permission to serve customers outdoors",
+     "C": "To renew his café's business license",
+     "D": "To complain about foot traffic"
+    }
+   },
+   {
+    "q": "What does the woman say the inspector will check?",
+    "options": {
+     "A": "Whether the café's kitchen meets health standards",
+     "B": "How many customers the café usually serves",
+     "C": "Whether the sidewalk has been damaged",
+     "D": "Whether enough room is left for people to pass"
+    }
+   },
+   {
+    "q": "What will the man most likely do next?",
+    "options": {
+     "A": "Get a document from his vehicle",
+     "B": "Pay the application fee by card",
+     "C": "Measure the sidewalk himself",
+     "D": "Withdraw his application"
+    }
+   }
+  ]
+ }
+]

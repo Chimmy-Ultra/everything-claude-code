@@ -1,0 +1,66 @@
+{
+  "unit": "pos",
+  "lead": ["The four options are one word root in different forms: noun, adjective, adverb, verb. The words around the blank decide which form fits.", "四個選項是同一個字根的不同詞性（名詞、形容詞、副詞、動詞），空格前後的字決定該用哪一種。"],
+  "steps": [
+    ["Read only the two words before and the two words after the blank.", "只看空格前後各兩個字。"],
+    ["Decide what the blank needs: a noun, an adjective, an adverb or a verb.", "判斷這個位置需要名詞、形容詞、副詞還是動詞。"],
+    ["If two options have that part of speech, choose by meaning: a person or a thing, singular or plural.", "如果有兩個選項詞性相同，再用意思選：是人還是事、單數還是複數。"]
+  ],
+  "rules": [
+    {
+      "head": ["A noun goes here", "名詞的位置"],
+      "body": ["After a, the, your, our, an adjective or a preposition. A noun also works as the subject, or as the object of a verb.", "冠詞、所有格、形容詞、介系詞的後面，以及當主詞或動詞的受詞。"],
+      "ex": [["The <em>implementation</em> of the new policy begins next month.", "新政策將從下個月開始實施。"], ["Please send your <em>application</em> by Friday.", "請在星期五前寄出你的申請。"]]
+    },
+    {
+      "head": ["An adjective goes here", "形容詞的位置"],
+      "body": ["Before a noun, after be, remain, seem, become and stay, and after make, keep or find plus an object that it describes.", "名詞前面；be、remain、seem、become、stay 之後；以及 make、keep、find 加受詞後描述受詞。"],
+      "ex": [["Our prices remain <em>competitive</em> this season.", "本季我們的價格依然具有競爭力。"], ["The new system makes the approval process more <em>efficient</em>.", "新系統讓審核流程更有效率。"]]
+    },
+    {
+      "head": ["An adverb goes here", "副詞的位置"],
+      "body": ["An adverb modifies a verb, an adjective or a whole sentence. Typical spots: between has and a participle, between be and a participle, before an adjective, and as the first word before a comma.", "副詞修飾動詞、形容詞或整個句子。常見位置：has 和分詞之間、be 和分詞之間、形容詞前面、句首逗號前。"],
+      "ex": [["The shipment has <em>finally</em> arrived at the warehouse.", "貨物終於送到倉庫了。"], ["The contract was <em>carefully</em> reviewed by the legal team.", "合約經過法務團隊仔細審閱。"], ["<em>Unfortunately</em>, the flight has been canceled.", "很遺憾，航班已經取消了。"]]
+    },
+    {
+      "head": ["A noun before a noun", "名詞放在名詞前面"],
+      "body": ["A word before a noun is not always an adjective. In compound nouns the first word is itself a noun. Check that the word after the blank is really the head noun.", "名詞前面的字不一定是形容詞。複合名詞的第一個字本身就是名詞，要先確認後面那個字是不是中心名詞。"],
+      "ex": [["The company wants to improve customer <em>satisfaction</em>.", "公司想提高顧客滿意度。"], ["Staff must complete the <em>safety</em> training.", "員工必須完成安全訓練。"]]
+    },
+    {
+      "head": ["Noun for a person or for a thing", "指人的名詞和指事的名詞"],
+      "body": ["One root often gives two nouns. The person: applicant, attendee, supervisor, inspector. The thing: application, attendance, supervision, inspection. Choose by meaning and by singular or plural.", "同一個字根常有兩種名詞：人（applicant、attendee）和事（application、attendance）。看句意和單複數來選。"],
+      "ex": [["All <em>applicants</em> must bring a photo ID to the interview.", "所有應徵者面試時都必須帶附照片的證件。"], ["<em>Attendance</em> at the seminar was higher than expected.", "研討會的出席人數比預期的高。"]]
+    },
+    {
+      "head": ["Check whether a main verb is missing", "先檢查有沒有主要動詞"],
+      "body": ["If the sentence has no main verb yet, the blank is the verb. If a main verb is already there, the blank is usually a noun, adjective or adverb.", "句子還沒有主要動詞，空格就要填動詞；已經有了，空格通常是名詞、形容詞或副詞。"],
+      "ex": [["Ms. Ito <em>approves</em> all travel requests.", "伊藤女士核准所有的出差申請。"], ["The <em>approval</em> of travel requests takes two days.", "出差申請的核准需要兩天。"]]
+    }
+  ],
+  "pairs": [
+    {"right": "The company remains profitable.", "wrong": "The company remains profitably.", "why": ["Remain links the subject to a description, so it takes an adjective.", "remain 是連綴動詞，後面描述主詞的狀態，要用形容詞。"]},
+    {"right": "Attendance at the seminar was higher than expected.", "wrong": "Attendees at the seminar were higher than expected.", "why": ["The sentence measures how many came, so the noun is attendance. Attendees names the people, and people cannot be higher than expected.", "這句在講出席人數，要用 attendance。attendees 指的是人，人不能「比預期高」。"]},
+    {"right": "All employees must follow the safety regulations.", "wrong": "All employees must follow the safe regulations.", "why": ["Safety regulations are rules about safety. Safe regulations would mean rules that are not dangerous.", "safety regulations 是安全規範；safe regulations 會變成「不危險的規範」，意思不通。"]}
+  ],
+  "lists": [
+    {
+      "head": ["One root, several forms", "同字根的不同詞性"],
+      "items": [
+        ["apply, applicant, application", "申請（動詞）、申請人、申請"],
+        ["attend, attendee, attendance", "出席（動詞）、出席者、出席"],
+        ["supervise, supervisor, supervision", "監督（動詞）、主管、監督"],
+        ["employ, employer, employee, employment", "僱用、雇主、員工、就業"],
+        ["inspect, inspector, inspection", "檢查、檢查員、檢查"],
+        ["succeed, success, successful, successfully", "成功（動詞）、成功、成功的、成功地"],
+        ["accept, acceptance, acceptable", "接受、接受、可接受的"],
+        ["effect, effective, effectively", "效果、有效的、有效地"]
+      ]
+    }
+  ],
+  "traps": [
+    ["Some adjectives end in -ly: friendly, timely, costly, likely, lively. Do not pick an adverb just because of the ending.", "有些形容詞以 -ly 結尾：friendly、timely、costly、likely、lively。不要只看字尾就選副詞。"],
+    ["Some words are both adjective and adverb: hard, late, fast, early, and also weekly, monthly, daily. Hardly (almost not) and lately (recently) are different words.", "有些字同時是形容詞和副詞：hard、late、fast、early，還有 weekly、monthly、daily。hardly（幾乎不）和 lately（最近）則是意思不同的另一個字。"],
+    ["A blank before a noun is not always an adjective. Look at the word after it: it may be the first half of a compound noun.", "名詞前的空格不一定是形容詞。看後面那個字，它可能是複合名詞的前半。"]
+  ]
+}

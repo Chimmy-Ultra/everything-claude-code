@@ -1,0 +1,70 @@
+{
+  "answers": {
+    "g-tense-01": {
+      "answer": "D",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The subject 'cameras' receives the action and there is no object, so the verb must be passive (rules out B and C). 'Shortly before the building was sold' is a definite past time, which calls for the simple past, not the present perfect. That rules out A in both American and British English, even though the tail 'so they are still under warranty' pulls toward present relevance.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 4,
+      "why": "The test-taker must combine voice (no object means passive) with tense (a definite past time clause means simple past, not present perfect), and the present-tense tail is a deliberate lure toward A.",
+      "fix": "",
+      "tooClose": false
+    },
+    "g-connect-01": {
+      "answer": "B",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The gap is followed by a noun phrase ('the growing number of attendees'), so it needs a preposition. That rules out the conjunctions 'because' and 'although'. Of the two prepositions, only 'because of' makes sense: a bigger crowd is the reason for moving to a larger room, while 'despite' reverses the logic.",
+      "vsToeic": "similar",
+      "band": "easy",
+      "style": 4,
+      "why": "This is the classic because/because of/despite/although set: the noun phrase after the gap removes two options at once and the cause-effect meaning is obvious.",
+      "fix": "",
+      "tooClose": false
+    },
+    "g-connect-03": {
+      "answer": "A",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "The '; ______,' slot needs a conjunctive adverb. 'Whereas' is a subordinating conjunction and 'in spite of' is a preposition that needs a noun, so neither fits. The higher price and the decision to keep ordering are in contrast, so 'however' is correct. 'Therefore' would make the higher price the reason for staying, which conflicts with the stated reason ('because its parts rarely fail').",
+      "vsToeic": "easier",
+      "band": "easy",
+      "style": 4,
+      "why": "The semicolon-plus-comma frame removes two options on grammar alone, and the explicit 'because its parts rarely fail' makes the contrast obvious, so only however vs therefore needs any thought.",
+      "fix": "Make all four options conjunctive adverbs (e.g., however / therefore / moreover / otherwise, or nevertheless / consequently / furthermore / likewise) so meaning, not punctuation, decides the answer. Alternatively, keep the mix but drop the second 'because' clause so the contrast has to be inferred.",
+      "tooClose": false
+    },
+    "g-connect-04": {
+      "answer": "C",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "Paying extra for same-day shipping is the exception to the next-day rule, so the gap needs 'unless'. 'If' would mean that paying for same-day shipping causes the delay, which is illogical. 'Because' is also illogical, and 'whether' would need an 'or not' and still makes no sense here.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 5,
+      "why": "The test-taker must process the negative 'will not ... until' and see that the second clause is an exception, not a condition; 'if' is the natural lure for weaker readers, but the phrase 'same-day shipping' helps.",
+      "fix": "",
+      "tooClose": false
+    },
+    "g-prep-01": {
+      "answer": "A",
+      "confidence": 3,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "A one-time action with a deadline ('must be submitted') takes 'by'. 'Until' marks how long an ongoing state lasts ('can be submitted until' would work, 'must be submitted until' does not in standard English). 'Since' does not fit a future deadline, and 'within' needs a time period, not a date.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "style": 4,
+      "why": "by vs until is a heavily drilled point, but the opening clause ('opens on March 20') creates a submission window that makes 'until' tempting.",
+      "fix": "",
+      "tooClose": false
+    }
+  },
+  "overall": "All five items have a single defensible key and none needs a British/American or informal-usage exception. They cover standard Part 5 points (tense plus voice, preposition vs conjunction, conjunctive adverb, unless, by vs until), and their stems are natural business English that reads close to real TOEIC. Difficulty runs from easy to medium with no hard item; g-connect-03 is easier than a typical real item because punctuation alone removes two distractors."
+}

@@ -1,0 +1,26 @@
+{
+ "changed": [
+  "l-qr-03",
+  "l-talk-01"
+ ],
+ "new": [
+  "l-qr-09",
+  "l-qr-10",
+  "l-qr-11",
+  "l-qr-12",
+  "l-conv-05",
+  "l-conv-06",
+  "l-talk-03"
+ ],
+ "notes": {
+  "l-qr-03": "centre → center (script and vocab); v 2; audio needs re-recording.",
+  "l-talk-01": "Script in US English (lifts → elevators, goods lift → freight elevator, half past eight → 8:30 with say, reception → the front desk); question/option/why/vocab updated to match; keys unchanged; v 2.",
+  "l-qr-09": "Who-question; key B indirect ('on the agenda for Monday's meeting'); A names a person (form-correct) but she has retired. Band hard.",
+  "l-qr-10": "Why-question; key C is a counter-question ('Didn't you see the e-mail...?'); A starts with Because but explains the wrong thing. Band medium.",
+  "l-qr-11": "Statement 'figures still don't add up'; key C asks about the April returns; B 'Good, then we can send them to the board' reacts naturally but contradicts 'still'. UK voices. Band hard.",
+  "l-qr-12": "Request to train the new designer; key A 'She used the same one at her last job' (no need); B 'Yes, the booking fee is included' is form-correct. Band hard.",
+  "l-conv-05": "Three speakers (W1 Rachel, M Victor, W2 Hannah) choosing a plant-visit day; Q2 and Q3 need lines from two speakers (that day → Friday; them → the supplier). Bands easy / medium / medium.",
+  "l-conv-06": "Conference workshops with a schedule table; graphic question needs 'the one right after' the 1:00 contracts workshop → Room 310. Bands medium / hard / medium.",
+  "l-talk-03": "Store manager on inventory-system training; quoted phrase 'That's not a typo' (six-hour sessions really are that long); Friday = sign-up deadline, not training deadline. Bands easy / hard / medium."
+ }
+}

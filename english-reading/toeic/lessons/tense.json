@@ -1,0 +1,56 @@
+{
+  "unit": "tense",
+  "lead": ["The options are forms of one verb: increase, increased, has increased, will increase. A time word in the sentence usually decides the form.", "選項是同一個動詞的不同時態，例如 increase、increased、has increased、will increase。句中的時間詞通常決定答案。"],
+  "steps": [
+    ["Look for a time word: since, ago, next week, currently, by the time.", "找時間詞：since、ago、next week、currently、by the time。"],
+    ["If the sentence has another verb, the two tenses must fit together.", "如果句中還有另一個動詞，兩個時態要互相配合。"],
+    ["Check for a time or if clause. These use the present tense for the future.", "檢查是不是時間子句或 if 子句，這類子句用現在式表示未來。"]
+  ],
+  "rules": [
+    {
+      "head": ["Present perfect: have/has + past participle", "現在完成式"],
+      "body": ["For something that began in the past and still connects to now. Clues: since + a point in time, for + a period, so far, over the past few years, already, yet.", "表示從過去開始、和現在仍有關係的事。線索：since 加時間點、for 加一段時間、so far、over the past few years、already、yet。"],
+      "ex": [["Sales <em>have increased</em> steadily since the new manager joined.", "自從新經理加入後，銷售量穩定成長。"], ["The company <em>has operated</em> in Taiwan for over twenty years.", "這家公司在台灣營運已超過二十年。"]]
+    },
+    {
+      "head": ["Simple past for a clear past time", "明確的過去時間用過去式"],
+      "body": ["Yesterday, last year, ago and in 2019 point to a finished time. The simple past is needed; the present perfect cannot go with these words.", "yesterday、last year、ago、in 2019 指向已結束的時間，要用過去式，不能搭配現在完成式。"],
+      "ex": [["Mr. Park <em>joined</em> the firm three years ago.", "朴先生三年前加入公司。"], ["The department <em>moved</em> to the new office last quarter.", "部門上一季搬到了新辦公室。"]]
+    },
+    {
+      "head": ["Future: will, be going to, plans", "未來式"],
+      "body": ["Next week, soon and tomorrow call for will or be going to. A fixed arrangement can also use the present continuous.", "next week、soon、tomorrow 用 will 或 be going to。已安排好的行程也可以用現在進行式。"],
+      "ex": [["The board <em>will announce</em> the results next Monday.", "董事會將在下週一公布結果。"], ["The new branch <em>is opening</em> next month.", "新分店下個月開幕。"]]
+    },
+    {
+      "head": ["Present continuous and simple present", "現在進行式與現在簡單式"],
+      "body": ["Currently, now and at the moment usually go with the present continuous. Every Monday, usually, regularly and timetables go with the simple present.", "currently、now、at the moment 通常搭配現在進行式；every Monday、usually、regularly 和時刻表搭配現在簡單式。"],
+      "ex": [["We are <em>currently reviewing</em> all applications.", "我們目前正在審閱所有的申請。"], ["The shuttle bus <em>leaves</em> the hotel every thirty minutes.", "接駁車每三十分鐘從飯店發車一次。"]]
+    },
+    {
+      "head": ["Time and if clauses use the present", "時間與條件子句用現在式"],
+      "body": ["In a time or condition clause that starts with when, after, before, as soon as, until, once, if or unless, use the present tense even for a future event. Will goes in the main clause.", "在以 when、after、before、as soon as、until、once、if、unless 開頭的時間或條件子句裡，即使講未來也用現在式，will 只放在主句。"],
+      "ex": [["Please wait here until the manager <em>returns</em>.", "請在這裡等到經理回來。"], ["If the shipment <em>is</em> delayed, the courier will notify you.", "如果貨物延誤，快遞公司會通知您。"]]
+    },
+    {
+      "head": ["By the time: two patterns", "by the time 的兩種搭配"],
+      "body": ["By the time + present usually goes with will have + past participle. By the time + past usually goes with had + past participle. By next month and by the end of the year also usually take will have.", "by the time 加現在式，主句通常用 will have p.p.；by the time 加過去式，主句通常用 had p.p.。by next month、by the end of the year 也通常搭配 will have。"],
+      "ex": [["By the time the client arrives, the team <em>will have prepared</em> the documents.", "等客戶到的時候，團隊已經準備好文件了。"], ["By the time the client arrived, the team <em>had already prepared</em> the documents.", "客戶到的時候，團隊已經準備好文件了。"]]
+    },
+    {
+      "head": ["Past perfect and had been + Ving", "過去完成式與 had been + Ving"],
+      "body": ["Had + past participle is for an event before another past time. Had been + Ving is for an action that kept going up to that past time.", "had p.p. 表示比另一個過去時間更早發生的事；had been + Ving 表示持續到那個過去時間點的動作。"],
+      "ex": [["The technician <em>had been working</em> on the server for two hours when the power failed.", "停電的時候，技師已經處理伺服器兩小時了。"]]
+    }
+  ],
+  "pairs": [
+    {"right": "We will call you as soon as the parts arrive.", "wrong": "We will call you as soon as the parts will arrive.", "why": ["As soon as starts a time clause, so the verb inside it is in the present tense.", "as soon as 引導時間子句，裡面的動詞用現在式。"]},
+    {"right": "I have worked here since 2021.", "wrong": "I work here since 2021.", "why": ["Since marks a start in the past that continues until now, so it needs the present perfect.", "since 表示從過去某個時間點持續到現在，要用現在完成式。"]},
+    {"right": "The contract was signed last week.", "wrong": "The contract has been signed last week.", "why": ["Last week is a finished time, so the present perfect does not fit.", "last week 是已結束的時間，不能搭配現在完成式。"]}
+  ],
+  "traps": [
+    ["Recently can go with the present perfect or the simple past, depending on the rest of the sentence. Lately usually goes with the present perfect.", "recently 可搭配現在完成式或過去式，要看句子其他部分。lately 通常搭配現在完成式。"],
+    ["Not ... until means only from that time on: The store does not open until 10 a.m. means it opens at 10.", "not ... until 表示「到那時才」：The store does not open until 10 a.m. 是十點才開門。"],
+    ["In a Part 6 passage, read the sentences around the blank. If the message describes things that already happened, the blank is probably a past tense.", "Part 6 的時態題要看前後句。如果整段在講已經發生的事，空格很可能是過去式。"]
+  ]
+}

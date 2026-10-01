@@ -1,0 +1,200 @@
+[
+ {
+  "id": "g-conditional-07",
+  "format": "gap",
+  "stem": "If the shipment of replacement valves that the supplier promised for Tuesday ______ the Brantwood plant by Friday afternoon, the second shift will resume production on Monday as originally planned.",
+  "options": {
+   "A": "reaches",
+   "B": "will reach",
+   "C": "reached",
+   "D": "would reach"
+  }
+ },
+ {
+  "id": "g-conditional-08",
+  "format": "gap",
+  "stem": "The Alderbrook Hotel will hold a block of rooms for the delegation until the end of February and then release it to the general public, ______ the coordinator has confirmed the booking in writing by that date.",
+  "options": {
+   "A": "if",
+   "B": "unless",
+   "C": "as long as",
+   "D": "in case"
+  }
+ },
+ {
+  "id": "g-conditional-09",
+  "format": "gap",
+  "stem": "Ms. Delaney will keep her seniority and pension entitlements ______ she transfers to the Northgate office before the restructuring takes effect in January, but she will forfeit both if she waits until the new year to apply.",
+  "options": {
+   "A": "unless",
+   "B": "in case",
+   "C": "until",
+   "D": "provided that"
+  }
+ },
+ {
+  "id": "g-conditional-10",
+  "format": "gap",
+  "stem": "The launch event for the new ferry service on Harlan Quay will be moved into the exhibition hall on Saturday unless the rain that has been forecast for the whole weekend ______ before noon.",
+  "options": {
+   "A": "will stop",
+   "B": "does not stop",
+   "C": "stops",
+   "D": "stopped"
+  }
+ },
+ {
+  "id": "g-conditional-11",
+  "format": "gap",
+  "stem": "If the municipal recycling center, which handles waste from all eleven city districts, ______ able to run a second shift, its backlog would be cleared by December, but the council will not fund the extra staff.",
+  "options": {
+   "A": "is",
+   "B": "has been",
+   "C": "being",
+   "D": "were"
+  }
+ },
+ {
+  "id": "g-conditional-12",
+  "format": "gap",
+  "stem": "The bank's call center ______ most customer queries within a single call if its agents had direct access to the account-verification database, which at present only the fraud team can open.",
+  "options": {
+   "A": "would resolve",
+   "B": "will resolve",
+   "C": "would have resolved",
+   "D": "has resolved"
+  }
+ },
+ {
+  "id": "g-conditional-13",
+  "format": "gap",
+  "stem": "If the airline's operations center ______ the crew shortage when the first roster was filed in the spring, the cancellations that stranded some two thousand passengers in July would have been avoided.",
+  "options": {
+   "A": "identified",
+   "B": "would have identified",
+   "C": "had identified",
+   "D": "has identified"
+  }
+ },
+ {
+  "id": "g-conditional-14",
+  "format": "gap",
+  "stem": "If the Hollis University Library had accepted the donation of the digitized archive in 2019, as the city council urged at the time, its reading room ______ the busiest in the county now, seven years later.",
+  "options": {
+   "A": "would have been",
+   "B": "would be",
+   "C": "will be",
+   "D": "had been"
+  }
+ },
+ {
+  "id": "g-conditional-15",
+  "format": "gap",
+  "stem": "If the retailer were not so heavily dependent on a single carrier, its deliveries to the northern stores ______ so badly disrupted by the strike that ended last Monday.",
+  "options": {
+   "A": "would not be",
+   "B": "were not",
+   "C": "had not been",
+   "D": "would not have been"
+  }
+ },
+ {
+  "id": "g-conditional-16",
+  "format": "gap",
+  "stem": "______ the emergency loan that the regional development bank arranged for the mill in March, the company would have been forced to shut the plant and lay off all two hundred employees before the summer holidays began.",
+  "options": {
+   "A": "Whereas",
+   "B": "Because of",
+   "C": "But for",
+   "D": "Unless"
+  }
+ },
+ {
+  "id": "g-conditional-17",
+  "format": "gap",
+  "stem": "Without the forty volunteers who staff the information desk every weekend, the museum ______ able to keep its galleries open on Saturdays and Sundays, as it does at present.",
+  "options": {
+   "A": "would not be",
+   "B": "would not have been",
+   "C": "had not been",
+   "D": "will not have been"
+  }
+ },
+ {
+  "id": "g-conditional-18",
+  "format": "gap",
+  "stem": "______ the main backup generator at the Ashcombe data center, which is tested every month, fail during the storm season, the cooling system would shut down within minutes and all hosted services would go offline.",
+  "options": {
+   "A": "If",
+   "B": "Should",
+   "C": "Would",
+   "D": "Unless"
+  }
+ },
+ {
+  "id": "g-conditional-19",
+  "format": "gap",
+  "stem": "______ the lease on the Harbor Street premises, which the clinic has held since 2009, not due to expire in March, the practice would have no reason to consider relocating.",
+  "options": {
+   "A": "If",
+   "B": "Had",
+   "C": "Should",
+   "D": "Were"
+  }
+ },
+ {
+  "id": "g-conditional-20",
+  "format": "gap",
+  "stem": "Had the publisher's production editor, who proofread the catalog twice in August, ______ the revised page proofs before the printing deadline, the errata slip that accompanied every copy would have been unnecessary.",
+  "options": {
+   "A": "received",
+   "B": "receive",
+   "C": "receiving",
+   "D": "have received"
+  }
+ },
+ {
+  "id": "g-conditional-21",
+  "format": "gap",
+  "stem": "______ the planning tribunal, as the developers had repeatedly requested, had approved the permit on the first appeal, construction of the tower would have begun last year.",
+  "options": {
+   "A": "Had",
+   "B": "Should",
+   "C": "If",
+   "D": "Were"
+  }
+ },
+ {
+  "id": "g-conditional-22",
+  "format": "gap",
+  "stem": "If only the venue, which opened in 1998, ______ a larger loading area, exhibitors' trucks would not have to queue for up to two hours at the single rear dock every morning.",
+  "options": {
+   "A": "has",
+   "B": "had",
+   "C": "would have",
+   "D": "will have"
+  }
+ },
+ {
+  "id": "g-conditional-23",
+  "format": "gap",
+  "stem": "It is high time that the university's admissions office, whose acceptance rate has fallen for three consecutive years, ______ the way it assesses overseas applications.",
+  "options": {
+   "A": "reviews",
+   "B": "will review",
+   "C": "reviewed",
+   "D": "is reviewing"
+  }
+ },
+ {
+  "id": "g-conditional-24",
+  "format": "gap",
+  "stem": "The invitation to the gala dinner is worded as though the evening ______ a private function for sponsors, although tickets will be sold to the general public from Monday.",
+  "options": {
+   "A": "has been",
+   "B": "is being",
+   "C": "had been",
+   "D": "were"
+  }
+ }
+]
