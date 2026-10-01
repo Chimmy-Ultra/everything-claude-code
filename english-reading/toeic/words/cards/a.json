@@ -284,7 +284,7 @@
   ],
   "ex": [
    [
-    "The conference centre is easily <em>accessible</em> by train and bus.",
+    "The conference center is easily <em>accessible</em> by train and bus.",
     "會議中心搭火車和公車都很容易到達。"
    ],
    [
@@ -1601,7 +1601,7 @@
   "pos": "n.",
   "zh": "權力、職權；當局；權威（人士）",
   "def": [
-   "The official right to make decisions or give orders; an official organisation in charge of something; an expert.",
+   "The official right to make decisions or give orders; an official organization in charge of something; an expert.",
    "做決定或下命令的正式權力；負責管理某事的官方機構；專家。"
   ],
   "ex": [
@@ -1776,7 +1776,7 @@
    {
     "w": "mechanize",
     "note": [
-     "Older word; to replace human labour with machines, while automate often means software or self-operating systems.",
+     "Older word; to replace human labor with machines, while automate often means software or self-operating systems.",
      "較舊的用語；指以機器取代人力，而 automate 常指軟體或自動運作系統。"
     ]
    },
@@ -2011,7 +2011,7 @@
    {
     "w": "feast",
     "note": [
-     "A feast is a very large, often joyful meal; a banquet is formal and carefully organised.",
+     "A feast is a very large, often joyful meal; a banquet is formal and carefully organized.",
      "feast 是豐盛且常帶歡樂氣氛的大餐；banquet 較正式且經過精心安排。"
     ]
    },
@@ -2240,7 +2240,7 @@
     "請從櫃檯拿一份手冊，看看我們的旅遊方案。"
    ],
    [
-    "The travel agency sent me a colourful <em>brochure</em> about Spain.",
+    "The travel agency sent me a colorful <em>brochure</em> about Spain.",
     "旅行社寄給我一份關於西班牙的彩色手冊。"
    ],
    [
@@ -2383,7 +2383,7 @@
    {
     "w": "cafe",
     "note": [
-     "A cafe is a small public place for drinks and snacks; a cafeteria is a self-service restaurant, often inside an organisation.",
+     "A cafe is a small public place for drinks and snacks; a cafeteria is a self-service restaurant, often inside an organization.",
      "cafe 是供應飲料和點心的小型公共場所；cafeteria 是自助式餐廳，常設於機構內。"
     ]
    }
@@ -2694,7 +2694,7 @@
     "我們的菜單照顧到素食者和有食物過敏的賓客。"
    ],
    [
-    "The conference centre can <em>cater</em> for up to four hundred delegates.",
+    "The conference center can <em>cater</em> for up to four hundred delegates.",
     "這個會議中心最多可為四百位代表提供餐飲。"
    ],
    [
@@ -3016,7 +3016,7 @@
     "公司把一部分獲利捐給慈善事業。"
    ],
    [
-    "She works for a <em>charitable</em> organisation that feeds homeless families.",
+    "She works for a <em>charitable</em> organization that feeds homeless families.",
     "她在一個為無家可歸的家庭提供餐食的慈善組織工作。"
    ],
    [
@@ -3425,7 +3425,7 @@
     "公司在主要廠區設有一間供員工使用的小診所。"
    ],
    [
-    "A free eye <em>clinic</em> will be held at the community centre.",
+    "A free eye <em>clinic</em> will be held at the community center.",
     "社區活動中心將舉辦免費的眼科門診。"
    ],
    [
@@ -4082,7 +4082,7 @@
   "ant": [
    {
     "w": "denial",
-    "zh": "否認、否決（與「證實」相對，如 confirmation or denial of a rumour）"
+    "zh": "否認、否決（與「證實」相對，如 confirmation or denial of a rumor）"
    }
   ],
   "confuse": []
