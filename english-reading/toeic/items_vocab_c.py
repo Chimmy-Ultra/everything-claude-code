@@ -16,7 +16,7 @@ ITEMS = [
         "explain": {
             "point": "搭配詞：a valid passport（有效的護照）",
             "why": "will not be ______ 的主詞是十幾個字前的 passports，被插入語隔開；護照有沒有過期用 valid（valid for six months）。",
-            "wrong": ["effective for 局部通，但指規定「生效」，不指護照", None, None, "legal 是「合法的」，不是「沒過期」"],
+            "wrong": ["effective for 局部通，但指規定「生效」，不指護照", "active 指在運作中，不說護照沒過期", None, "legal 是「合法的」，不是「沒過期」"],
             "wrongMore": [
                 "will not be effective for at least six months 單看通順，因為規定、保單會說 effective for／from；但 effective 是「生效、有作用」，說護照還沒過期只能用 valid。",
                 None,
