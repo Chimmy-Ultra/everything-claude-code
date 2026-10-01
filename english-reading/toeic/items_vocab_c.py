@@ -9,7 +9,7 @@ ITEMS = [
     # ---------------------------------------------------------------- collocation
     {
         "id": "v-collocation-14", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Travelers whose passports, which must be shown to the gate agent together with the boarding pass, will not be ______ for at least six months after the date of entry may be refused boarding.",
         "options": ["effective", "active", "valid", "legal"],
         "answer": 2,
@@ -30,7 +30,7 @@ ITEMS = [
     },
     {
         "id": "v-collocation-15", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The inspector's report describes the cracked ramp at the loading dock, which has already damaged two pallet trucks this winter, as being in ______ need of repair.",
         "options": ["urgent", "rapid", "prompt", "hasty"],
         "answer": 0,
@@ -45,8 +45,8 @@ ITEMS = [
         "ldbs": {"L": False, "D": False, "B": False, "S": False},
     },
     {
-        "id": "v-collocation-16", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-16", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The three-hour workshop on data privacy, which was announced only two days in advance, turned out to be so ______ attended that the organizers canceled the afternoon session.",
         "options": ["mildly", "hardly", "weakly", "poorly"],
         "answer": 3,
@@ -66,8 +66,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": False, "B": True, "S": False},
     },
     {
-        "id": "v-collocation-17", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-17", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The cable that runs across the main corridor to the new copier is a trip ______, so the safety officer has asked for it to be taped down or rerouted by Friday.",
         "options": ["danger", "hazard", "harm", "threat"],
         "answer": 1,
@@ -89,7 +89,7 @@ ITEMS = [
     # ---------------------------------------------------------------- synonym
     {
         "id": "v-synonym-14", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Several prospective tenants who toured the building last week have since ______, by telephone and by e-mail, whether pets will be permitted once the lease is signed in the fall.",
         "options": ["requested", "inquired", "insisted", "demanded"],
         "answer": 1,
@@ -110,7 +110,7 @@ ITEMS = [
     },
     {
         "id": "v-synonym-15", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Under the terms of the lease, the tenant must ______ the unit and hand all keys to the building manager by noon on the last day of the contract, even if repairs are still under way.",
         "options": ["evict", "relocate", "expel", "vacate"],
         "answer": 3,
@@ -130,8 +130,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": False, "S": False},
     },
     {
-        "id": "v-synonym-16", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-synonym-16", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The ambiguous wording on the front of the brochure may ______ customers, particularly those who glance only at the large type, into believing that the discount applies to every product in the catalog.",
         "options": ["mislead", "misinform", "misdirect", "misplace"],
         "answer": 0,
@@ -151,8 +151,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": True, "S": False},
     },
     {
-        "id": "v-synonym-17", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-synonym-17", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Heavy machinery in the loading area should not be allowed to ______, as it did twice last month, with the recording sessions that take place in the studio next door.",
         "options": ["disturb", "interrupt", "interfere", "intervene"],
         "answer": 2,
@@ -173,8 +173,8 @@ ITEMS = [
     },
     # ---------------------------------------------------------------- business
     {
-        "id": "v-business-12", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-business-12", "type": "vocab", "format": "gap", "unit": "business", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The audit found that the subcontractor, whose invoices the company had been paying without checking them, had ______ the company by almost $12,000 for materials that were never delivered.",
         "options": ["overpaid", "overspent", "overcharged", "overdrawn"],
         "answer": 2,
@@ -195,7 +195,7 @@ ITEMS = [
     },
     {
         "id": "v-business-13", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Since flexible hours were introduced in the spring, staff ______ at the call center has fallen from 31 percent to 14 percent, and the recruitment budget has been cut accordingly.",
         "options": ["turnover", "turnout", "turnaround", "takeover"],
         "answer": 0,
@@ -216,7 +216,7 @@ ITEMS = [
     },
     {
         "id": "v-business-14", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Before the prototype was shown at the trade fair, the engineers filed a ______ for the new valve design, so that competitors could not manufacture a valve that works in the same way.",
         "options": ["copyright", "license", "trademark", "patent"],
         "answer": 3,
@@ -237,8 +237,8 @@ ITEMS = [
     },
     # ---------------------------------------------------------------- family
     {
-        "id": "v-family-11", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-11", "type": "vocab", "format": "gap", "unit": "family", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Company procedure requires that the equipment be switched off and the area cleared before any maintenance work begins, so a lockout check must always ______ the first inspection of the machine.",
         "options": ["succeed", "precede", "proceed", "exceed"],
         "answer": 1,
@@ -259,7 +259,7 @@ ITEMS = [
     },
     {
         "id": "v-family-12", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Any appliance that stops working within twelve months because it was ______ when it left the factory will be replaced free of charge, provided that the original receipt is presented.",
         "options": ["defiant", "defaced", "defective", "defensive"],
         "answer": 2,
@@ -280,7 +280,7 @@ ITEMS = [
     },
     {
         "id": "v-family-13", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "To comply with the fire code, the venue has limited the ______ of its second-floor banquet room to 180 guests, which forced the organizers to close registration for the dinner early.",
         "options": ["occupancy", "occupation", "occupant", "occupier"],
         "answer": 0,

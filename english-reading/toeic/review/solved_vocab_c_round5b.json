@@ -1,0 +1,37 @@
+{
+ "answers": {
+  "v-synonym-15": {
+   "answer": "D",
+   "confidence": 0.97,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "vacate the unit = leave the premises and hand over keys. A evict / C expel: the tenant is the one leaving, and evict/expel take a person (the tenant) as object, not the unit; 'the tenant must evict the unit' is not edited-through formal English. B relocate: 'relocate the unit' means move the unit itself, incoherent; 'relocate' needs no object of premises and would not pair with handing over keys to end a lease.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": {"L": true, "D": false, "B": true, "S": false},
+   "style": 4,
+   "why": "L yes (evict/expel/relocate all sit near the 'leave a place' meaning), B yes (the difference is object type and direction: evict/expel people vs vacate premises), but D no: the clue is the adjacent subject 'tenant' and object 'the unit', inside the window; so medium.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "No distractor survives. 'relocate the unit' is only coherent with an assumption that the tenant moves the physical unit, which the sentence does not support, so it is a pure wrong option and not a shouldFix."
+  },
+  "v-family-12": {
+   "answer": "C",
+   "confidence": 0.98,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "defective = faulty from manufacture; fits 'stops working ... because it was ___ when it left the factory'. A defiant (resisting authority) and D defensive (protective/guarded) cannot describe an appliance. B defaced (surface damaged or disfigured): grammatical, but defacing an appliance at the factory as the cause of it ceasing to work needs the added assumption that cosmetic damage affects function, and a free replacement warranty is framed around faults, not cosmetic marks; not defensible as written.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": {"L": true, "D": true, "B": false, "S": false},
+   "style": 4,
+   "why": "L yes (defaced reads acceptably in 'because it was defaced when it left the factory'), D yes (the exclusion clue 'stops working' lies before 'because', outside the window), B no (the same-prefix distractors are look-alikes, not forms a good student confidently believes); so medium.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "defaced is the closest distractor but it needs the assumption that the damage is functional; I judged it a legitimate trap, not even a shouldFix, since 'stops working' is given as the result and defacing is a cosmetic harm in standard usage."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [],
+ "overall": "Both items have one defensible answer (vacate, defective). Both are medium (L+B and L+D respectively), neither hard because B/S are weak or absent. No ambiguity found."
+}
