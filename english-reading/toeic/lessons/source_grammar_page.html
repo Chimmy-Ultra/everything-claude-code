@@ -1,0 +1,996 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>多益文法考點</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#EEF1F5;
+  --surface:#FFFFFF;
+  --surface-2:#F5F7FA;
+  --ink:#172234;
+  --muted:#5A6679;
+  --line:#D6DCE5;
+  --accent:#2753A3;
+  --accent-soft:#E3EAF7;
+  --hi-bg:#FFE680;
+  --hi-ink:#172234;
+  --ok:#1D7550;
+  --ok-soft:#E2F2EA;
+  --bad:#B03A3A;
+  --bad-soft:#F8E6E6;
+  --bubble:#172234;
+  --serif:"Source Serif 4","Noto Serif TC",Georgia,"Times New Roman",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F141C;
+    --surface:#161D28;
+    --surface-2:#1C2432;
+    --ink:#E4E9F1;
+    --muted:#9AA6B8;
+    --line:#2A3445;
+    --accent:#8DB0F0;
+    --accent-soft:#1F2C44;
+    --hi-bg:#5E4E14;
+    --hi-ink:#FFF1BC;
+    --ok:#6FD3A2;
+    --ok-soft:#173327;
+    --bad:#F19A9A;
+    --bad-soft:#3A1E22;
+    --bubble:#E4E9F1;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F141C;
+  --surface:#161D28;
+  --surface-2:#1C2432;
+  --ink:#E4E9F1;
+  --muted:#9AA6B8;
+  --line:#2A3445;
+  --accent:#8DB0F0;
+  --accent-soft:#1F2C44;
+  --hi-bg:#5E4E14;
+  --hi-ink:#FFF1BC;
+  --ok:#6FD3A2;
+  --ok-soft:#173327;
+  --bad:#F19A9A;
+  --bad-soft:#3A1E22;
+  --bubble:#E4E9F1;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;padding-inline:16px;padding-block:0 48px}
+a{color:var(--accent)}
+.wrap{max-width:1120px;margin:0 auto}
+.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px;align-items:start}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}}
+
+/* header */
+.top{padding-block:40px 24px;display:grid;gap:14px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(30px,5vw,44px);font-weight:900;line-height:1.2;margin:0;text-wrap:balance;letter-spacing:.01em}
+.lede{max-width:62ch;color:var(--muted);margin:0}
+
+.intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:28px}
+@media (max-width:760px){.intro{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.panel h2{font-size:17px;margin:0 0 10px;font-weight:700}
+.panel ol,.panel ul{margin:0;padding-left:1.3em;display:grid;gap:8px}
+.panel li{max-width:60ch}
+.panel p{margin:0 0 8px}
+.steps li::marker{font-family:var(--mono);font-weight:600;color:var(--accent)}
+
+/* toolbar */
+.toolbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line);margin-bottom:24px}
+.toolbar input{flex:1 1 220px;min-width:0;font:inherit;font-size:15px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn{font:inherit;font-size:14px;font-weight:500;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn:focus-visible,.toolbar input:focus-visible,.toc a:focus-visible,summary:focus-visible,mark.t:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.progress{font-family:var(--mono);font-size:13px;color:var(--muted);white-space:nowrap}
+
+/* toc */
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px);max-height:calc(100vh - 100px);overflow:auto;padding-right:4px}
+.toc h2{font-size:12px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc a{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:6px;align-items:center;text-decoration:none;color:var(--ink);padding:6px 8px;border-radius:6px;font-size:14px;line-height:1.4}
+.toc a:hover{background:var(--surface)}
+.toc .n{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.toc .seen{font-size:12px;color:var(--ok);font-weight:700}
+.toc .extra{margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+@media (max-width:900px){
+  .toc{position:static;max-height:none;overflow:visible}
+  .toc ol{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+}
+
+/* unit */
+.unit{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 24px 20px;margin-bottom:28px;scroll-margin-top:90px}
+@media (max-width:520px){.unit{padding:18px 16px 16px}}
+.u-head{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:16px}
+.u-title{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.u-no{font-family:var(--mono);font-weight:600;font-size:14px;color:var(--muted)}
+.unit h2{font-size:clamp(22px,3.4vw,28px);font-weight:900;margin:0;line-height:1.25;text-wrap:balance}
+.u-en{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:16px}
+.freq{display:flex;gap:6px;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.bubbles{display:inline-flex;gap:4px}
+.bubbles i{width:14px;height:10px;border-radius:50%;border:1.5px solid var(--bubble);display:inline-block}
+.bubbles i.on{background:var(--bubble)}
+
+.spot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:18px}
+@media (max-width:620px){.spot{grid-template-columns:minmax(0,1fr)}}
+.spot div{background:var(--accent-soft);border-radius:8px;padding:12px 14px}
+.spot b{display:block;font-size:12px;font-family:var(--mono);letter-spacing:.08em;color:var(--accent);margin-bottom:4px;font-weight:600}
+.spot p{margin:0}
+
+.unit h3{font-size:15px;font-weight:700;margin:22px 0 10px;display:flex;align-items:center;gap:8px}
+.unit h3::before{content:"";width:8px;height:8px;background:var(--accent);border-radius:2px}
+.rules{display:grid;gap:10px;margin:0}
+.rules div{display:grid;grid-template-columns:minmax(0,11em) minmax(0,1fr);gap:4px 16px;padding-bottom:10px;border-bottom:1px dashed var(--line)}
+.rules div:last-child{border-bottom:0;padding-bottom:0}
+@media (max-width:620px){.rules div{grid-template-columns:minmax(0,1fr)}}
+.rules dt{font-weight:700}
+.rules dd{margin:0;color:var(--ink)}
+
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14.5px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface-2);font-weight:700;font-size:13px}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;white-space:nowrap}
+td .en{font-family:var(--serif);font-size:15.5px}
+
+.ex{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:ex}
+.ex li{counter-increment:ex;display:grid;grid-template-columns:30px minmax(0,1fr);gap:2px 8px;padding:10px 0;border-bottom:1px solid var(--line)}
+.ex li:last-child{border-bottom:0}
+.ex li::before{content:counter(ex);font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:5px}
+.ex .en{font-family:var(--serif);font-size:18px;line-height:1.6}
+.ex .zh,.ex .note{grid-column:2}
+.ex .zh{color:var(--muted);font-size:14.5px}
+.ex .note{font-size:13.5px;color:var(--accent);font-weight:500}
+mark.t{background:var(--hi-bg);color:var(--hi-ink);padding:0 .15em;border-radius:3px;font-weight:600}
+body.cover mark.t:not(.shown){color:transparent;background:repeating-linear-gradient(135deg,var(--line) 0 4px,var(--surface-2) 4px 8px);cursor:pointer;user-select:none}
+
+.pairs{display:grid;gap:12px}
+.pair{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.pair .row{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;padding:8px 12px;font-family:var(--serif);font-size:16.5px}
+.pair .yes{background:var(--ok-soft)}
+.pair .no{background:var(--bad-soft)}
+.pair .yes .m{color:var(--ok);font-family:var(--sans);font-weight:900}
+.pair .no .m{color:var(--bad);font-family:var(--sans);font-weight:900}
+.pair .no .s{text-decoration:line-through;text-decoration-color:var(--bad);text-decoration-thickness:1.5px}
+.pair .why{padding:8px 12px 10px 48px;font-size:14.5px;color:var(--ink);background:var(--surface)}
+
+.traps{margin:0;padding-left:1.3em;display:grid;gap:8px}
+.traps li::marker{color:var(--bad)}
+
+.u-foot{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:14px}
+.u-foot .when{font-size:13px;color:var(--muted)}
+.btn.seen-btn[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+
+/* review */
+.review .q{border-bottom:1px solid var(--line);padding:12px 0}
+.review .q:last-child{border-bottom:0}
+.review .stem{font-family:var(--serif);font-size:18px;line-height:1.6;display:grid;grid-template-columns:30px minmax(0,1fr);gap:8px}
+.review .stem .qn{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:5px}
+.review .opts{display:flex;flex-wrap:wrap;gap:6px 18px;margin:6px 0 6px 38px;font-family:var(--serif);font-size:16px}
+.review details{margin-left:38px}
+.review summary{cursor:pointer;color:var(--accent);font-size:14px;font-weight:500;width:max-content}
+.review .ans{margin-top:6px;font-size:14.5px;background:var(--surface-2);border-radius:6px;padding:8px 12px}
+.review .ans b{color:var(--ok)}
+
+.empty{padding:24px;text-align:center;color:var(--muted)}
+.sources{font-size:14px;color:var(--muted)}
+.sources ul{padding-left:1.2em;display:grid;gap:6px}
+footer{color:var(--muted);font-size:13px;margin-top:8px}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">TOEIC Reading · Part 5 &amp; Part 6</div>
+    <h1>多益文法考點</h1>
+    <p class="lede">這份講義整理了多益閱讀 Part 5（單句填空）和 Part 6（短文填空）最常考的十五個文法考點。基礎的部分只簡單帶過，篇幅留給常考、容易錯的地方，每個考點都附上多個商業情境的例句。</p>
+  </header>
+
+  <section class="intro" aria-label="使用方式">
+    <div class="panel">
+      <h2>解題三步驟</h2>
+      <ol class="steps">
+        <li>先看四個選項長什麼樣子，判斷這題在考什麼：同一個字的不同詞性、同一個動詞的不同時態，或是意思相近但詞性不同的連接詞。</li>
+        <li>只看空格前後幾個字，套用這個考點的判斷規則。大部分題目不需要讀懂整句話。</li>
+        <li>規則判斷不出來時，才去讀整句的意思。這樣可以把時間留給後面的閱讀題。</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h2>這份講義怎麼用</h2>
+      <ul>
+        <li>例句裡的考點已經用黃色標出來，讓你一眼看到該注意的地方。</li>
+        <li>每個考點都有「對錯對照」，把容易混淆的說法放在一起比，比分開學更容易分辨。</li>
+        <li>讀過一遍之後，可以打開上方的「遮住重點」，看著例句自己回想被遮住的字，點一下就會顯示答案。研究顯示，自己回想比重讀更能記住。</li>
+        <li>建議分幾天讀，每次兩三個單元，隔幾天再回來看。看完一個單元可以按「標記為看過」，目錄會顯示你幾天前看過。</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="toolbar" role="search">
+    <label for="q" class="sr-only" style="position:absolute;left:-9999px">搜尋考點或單字</label>
+    <input id="q" type="search" placeholder="搜尋考點或單字，例如 despite、被動、whose" autocomplete="off">
+    <button class="btn" id="cover" type="button" aria-pressed="false">遮住重點</button>
+    <span class="progress" id="progress"></span>
+  </div>
+
+  <div class="layout">
+    <nav class="toc" aria-label="目錄">
+      <h2>目錄 · 依常考程度排序</h2>
+      <ol id="toclist"></ol>
+      <ol class="extra"><li><a href="#review"><span class="n">★</span><span>混合複習</span><span></span></a></li><li><a href="#sources"><span class="n">※</span><span>資料來源</span><span></span></a></li></ol>
+    </nav>
+    <main>
+      <div id="units"></div>
+      <p class="empty" id="empty" hidden>找不到符合的考點，換個關鍵字試試看。</p>
+      <section class="unit review" id="review">
+        <div class="u-head"><div class="u-title"><span class="u-no">★</span><h2>混合複習</h2><span class="u-en">Mixed practice</span></div></div>
+        <p style="margin-top:0">這一區是選用的。把不同考點的題目混在一起，是為了練習「先判斷這題在考什麼」，這正是考場上最需要的能力。想複習的時候再用，答案點開就看得到。</p>
+        <div id="reviewlist"></div>
+      </section>
+      <section class="unit sources" id="sources">
+        <div class="u-head"><div class="u-title"><span class="u-no">※</span><h2>資料來源</h2></div></div>
+        <p>常考程度（每個單元旁的圓圈數）是根據台灣多益補習班與學習網站的整理估計的，並不是 ETS 官方公布的數字，只能當作大致的參考。其中比較一致的說法是：詞性題每場大約考 7 到 9 題，詞性、時態語態、分詞和轉折詞是 Part 5 最主要的題型。</p>
+        <ul>
+          <li><a href="https://www.psychologicalscience.org/publications/journals/pspi/learning-techniques.html" target="_blank" rel="noopener">Dunlosky et al. (2013), Improving Students' Learning With Effective Learning Techniques</a>：自我測驗和分散練習被評為效用最高的學習方法，自己畫重點則效用偏低。</li>
+          <li><a href="https://journals.sagepub.com/doi/10.1177/1362168817714277" target="_blank" rel="noopener">Meguro (2019), Textual enhancement, grammar learning, reading comprehension, and tag questions</a>：把目標文法標示出來，對部分學習者有幫助，而且不影響閱讀理解，但效果並不穩定。</li>
+          <li><a href="https://www.ivy.com.tw/column/cont/2020091613490013780" target="_blank" rel="noopener">常春藤：2026 多益閱讀攻略，Part 5 與 Part 6 解題技巧</a></li>
+          <li><a href="https://blog.wordup.com.tw/blog/2021/06/07/to-solve-toeic-grammar/" target="_blank" rel="noopener">WORD UP：4 大歷屆多益文法必考題型</a></li>
+          <li><a href="https://prepedu.com/zh-hant/blog/toeic-test-grammar" target="_blank" rel="noopener">PREP：多益文法重點整理，15 個核心語法考點</a></li>
+        </ul>
+      </section>
+      <footer>整理於 2026 年 9 月。例句為教學用途編寫，公司與人名皆為虛構。</footer>
+    </main>
+  </div>
+</div>
+<script>
+window.U = window.U || [];
+
+U.push({
+  id:"pos", title:"詞性判斷", en:"Parts of speech", freq:3,
+  spot:"四個選項是同一個字根的不同詞性，例如 effect、effective、effectively、effectiveness。",
+  look:"只看空格前後各一兩個字，判斷這個位置需要名詞、形容詞還是副詞。這是 Part 5 每場都考、題數最多的題型。",
+  rules:[
+    ["名詞的位置","冠詞（a、the）、所有格（our、its）、形容詞、介系詞的後面，以及及物動詞的受詞位置。"],
+    ["形容詞的位置","名詞的前面；連綴動詞 be、remain、seem、become、stay、prove 的後面；以及 make、keep、find 加受詞之後，用來描述受詞的狀態。"],
+    ["副詞的位置","修飾動詞、形容詞、其他副詞或整個句子。最常考的是助動詞和主要動詞之間（has recently been）、be 動詞和分詞之間（was carefully reviewed），以及句首逗號前。"],
+    ["名詞修飾名詞","空格在名詞前面，不一定是形容詞。safety regulations、customer satisfaction、application form 這類複合名詞，前面那個字本身就是名詞。"],
+    ["人和事的名詞","同一個字根常有兩種名詞：applicant（申請人）和 application（申請）、attendee（出席者）和 attendance（出席）、supervisor（主管）和 supervision（監督）。要看冠詞、單複數和句意來選。"]
+  ],
+  ex:[
+    ["The {{implementation}} of the new policy will begin next month.","新政策的實施將從下個月開始。","the 後面、of 前面，需要名詞。"],
+    ["Ms. Tanaka gave a {{detailed}} explanation of the budget.","田中女士詳細說明了預算。","冠詞和名詞之間，需要形容詞。"],
+    ["The shipment has {{finally}} arrived at the warehouse.","貨物終於送到倉庫了。","助動詞 has 和 arrived 之間，放副詞。"],
+    ["Our prices remain {{competitive}} despite rising costs.","儘管成本上升，我們的價格仍然具有競爭力。","remain 是連綴動詞，後面接形容詞。"],
+    ["Please submit your {{application}} by Friday.","請在星期五前提交你的申請。","所有格 your 後面接名詞。"],
+    ["The new system makes the approval process more {{efficient}}.","新系統讓審核流程更有效率。","make 加受詞之後，用形容詞描述受詞的狀態。"],
+    ["We appreciate your {{timely}} response.","感謝您及時的回覆。","timely 雖然是 -ly 結尾，但它是形容詞。"],
+    ["All {{applicants}} must bring a photo ID to the interview.","所有應徵者面試時都必須帶附照片的證件。","會帶證件的是人，所以用 applicants。"],
+    ["{{Unfortunately}}, the flight has been canceled.","很遺憾，航班已經取消了。","句首逗號前，用副詞修飾整句。"],
+    ["The workshop was {{extremely}} useful for new staff.","這場工作坊對新進員工非常有幫助。","副詞修飾形容詞 useful。"],
+    ["The company is working to improve customer {{satisfaction}}.","公司正在努力提高顧客滿意度。","customer satisfaction 是名詞加名詞的複合名詞。"],
+    ["The contract was {{carefully}} reviewed by the legal team.","合約經過法務團隊仔細審閱。","be 動詞和過去分詞之間，放副詞。"]
+  ],
+  pairs:[
+    ["The company remains profitable.","The company remains profitably.","remain 是連綴動詞，後面描述主詞的狀態，所以用形容詞。"],
+    ["Attendance at the seminar was higher than expected.","Attendees at the seminar was higher than expected.","這句在講出席的人數多寡，要用 attendance。attendees 是指人，而且是複數，動詞也對不上。"],
+    ["All employees must follow the safety regulations.","All employees must follow the safe regulations.","safety regulations 是安全規範；safe regulations 的意思是「安全的規範」，意思不通。"]
+  ],
+  traps:[
+    "以 -ly 結尾的形容詞：friendly、timely、costly、likely、orderly、lively。weekly、monthly、daily 則同時可以當形容詞和副詞。",
+    "有些副詞和形容詞同形：hard（努力地）、late（晚地）、fast、early。hardly 的意思是「幾乎不」，lately 的意思是「最近」，意思完全不同。",
+    "看到空格在名詞前，先確認後面那個字是不是真的名詞，以及是不是複合名詞。"
+  ]
+});
+
+U.push({
+  id:"tense", title:"動詞時態", en:"Verb tenses", freq:3,
+  spot:"選項是同一個動詞的不同時態，例如 increase、increased、has increased、will increase。",
+  look:"在句子裡找時間線索：時間副詞（since、ago、next week、currently），或是 by the time、as soon as 這類連接詞。",
+  rules:[
+    ["現在完成式 has p.p.","since 加時間點、for 加一段時間、so far、over the past three years、recently、already、yet。表示從過去持續到現在，或到現在為止的結果。"],
+    ["過去式","yesterday、last year、ago、in 2019 這類明確的過去時間。有明確過去時間時，不能用現在完成式。"],
+    ["未來","next week、soon、tomorrow、upcoming 用 will 或 be going to。已經安排好的行程，也可以用現在進行式表示未來。"],
+    ["現在進行式","currently、at the moment、now，表示正在進行中的事。"],
+    ["現在簡單式","every Monday、usually、regularly，表示習慣、固定行程或時刻表。"],
+    ["完成式的兩種 by the time","by the time 加現在式，主句用未來完成式 will have p.p.；by the time 加過去式，主句用過去完成式 had p.p.。by next month、by the end of the year 也常搭配 will have p.p.。"],
+    ["時間和條件子句","when、after、before、as soon as、until、once、if、unless 引導的子句，就算講的是未來，也用現在式，不用 will。主句照常用 will。"]
+  ],
+  ex:[
+    ["Sales {{have increased}} steadily since the new manager joined the team.","自從新經理加入團隊後，銷售量穩定成長。","since 加過去的時間點，主句用現在完成式。"],
+    ["The company {{has operated}} in Taiwan for over twenty years.","這家公司已經在台灣營運超過二十年。","for 加一段時間，而且現在仍在營運。"],
+    ["Mr. Park {{joined}} the firm three years ago.","朴先生三年前加入公司。","ago 表示明確的過去時間，用過去式。"],
+    ["The board {{will announce}} the results next Monday.","董事會將在下週一公布結果。",""],
+    ["We {{are currently reviewing}} all applications.","我們目前正在審閱所有的申請。","currently 搭配現在進行式。"],
+    ["The shuttle bus {{leaves}} the hotel every thirty minutes.","接駁車每三十分鐘從飯店發車一次。","固定的時刻表用現在簡單式。"],
+    ["By the time the client arrives, we {{will have prepared}} the documents.","等客戶到的時候，我們會已經準備好文件。","by the time 加現在式，主句用未來完成式。"],
+    ["By the time the client arrived, we {{had already prepared}} the documents.","客戶到的時候，我們已經準備好文件了。","by the time 加過去式，主句用過去完成式。"],
+    ["Please wait here until the manager {{returns}}.","請在這裡等到經理回來。","until 引導時間子句，用現在式表示未來。"],
+    ["If the shipment {{is}} delayed, we will notify you immediately.","如果貨物延誤，我們會立刻通知您。","if 子句用現在式，主句用 will。"],
+    ["Over the past five years, the number of online orders {{has doubled}}.","過去五年來，線上訂單的數量增加了一倍。","over the past five years 搭配現在完成式。"],
+    ["The new branch {{is opening}} next month.","新分店下個月開幕。","已經安排好的未來行程，可以用現在進行式。"]
+  ],
+  pairs:[
+    ["We will call you as soon as the parts arrive.","We will call you as soon as the parts will arrive.","as soon as 引導時間子句，裡面用現在式表示未來。"],
+    ["I have worked here since 2021.","I work here since 2021.","since 表示從過去某個時間點持續到現在，要用現在完成式。"],
+    ["The contract was signed last week.","The contract has been signed last week.","last week 是明確的過去時間，不能搭配現在完成式。"]
+  ],
+  traps:[
+    "recently 可以搭配現在完成式，也可以搭配過去式，要看句子其他部分。lately 則幾乎都搭配現在完成式。",
+    "not ... until 表示「直到……才」：The store does not open until 10 a.m.（商店十點才開門）。",
+    "Part 6 的時態題要看前後句子的時間。例如整封信在講已經發生的事，空格就很可能是過去式。"
+  ]
+});
+
+U.push({
+  id:"voice", title:"主動與被動", en:"Active and passive voice", freq:3,
+  spot:"選項同時有主動和被動，例如 has postponed、has been postponed、is postponing、postpones。",
+  look:"先看空格後面有沒有受詞，再看主詞是做動作的一方，還是承受動作的一方。",
+  rules:[
+    ["後面有受詞","及物動詞後面有受詞時，通常用主動：The committee has postponed the meeting。"],
+    ["後面沒有受詞","主詞是承受動作的一方，後面沒有受詞時，用被動：The meeting has been postponed。"],
+    ["不及物動詞沒有被動","arise、occur、happen、rise、remain、appear、exist、take place、consist of 沒有被動語態。"],
+    ["授與動詞的被動","give、offer、send、award 這類動詞有兩個受詞，改成被動後，後面仍然可以接一個受詞：She was offered the position。所以被動句後面有名詞，不一定就錯。"],
+    ["被動後接 to V","be required to、be asked to、be expected to、be encouraged to、be allowed to、be scheduled to 是公告裡最常見的句型。"]
+  ],
+  ex:[
+    ["The meeting {{has been postponed}} until further notice.","會議延期，另行通知。","主詞 meeting 被延期，後面沒有受詞。"],
+    ["The committee {{has postponed}} the meeting until further notice.","委員會已將會議延期，另行通知。","後面有受詞 the meeting，用主動。"],
+    ["All visitors {{are required}} to sign in at the front desk.","所有訪客都必須在櫃台登記。",""],
+    ["A problem {{occurred}} during the installation.","安裝過程中發生了一個問題。","occur 是不及物動詞，沒有被動。"],
+    ["Several issues {{arose}} during the negotiations.","談判過程中出現了幾個問題。","arise、arose、arisen，不及物。"],
+    ["The company {{raised}} its prices by five percent.","公司把價格調漲了百分之五。","raise 是及物動詞，後面接受詞 its prices。"],
+    ["Prices {{rose}} by five percent last quarter.","上一季價格上漲了百分之五。","rise 是不及物動詞，後面沒有受詞。"],
+    ["Ms. Rivera {{was offered}} the position of regional manager.","Rivera 女士獲得了區域經理的職位。","授與動詞的被動，後面仍然接 the position。"],
+    ["Employees {{will be given}} two additional days off.","員工將多獲得兩天假。",""],
+    ["The results {{will be announced}} at the end of the month.","結果將在月底公布。",""],
+    ["The conference {{will take place}} in Dublin in March.","研討會將於三月在都柏林舉行。","take place 沒有被動。"],
+    ["The warehouse {{is being renovated}}, so deliveries may be delayed.","倉庫正在整修，所以送貨可能會延遲。","被動進行式：is being p.p.。"]
+  ],
+  pairs:[
+    ["Prices rose sharply in May.","Prices were risen sharply in May.","rise 是不及物動詞，沒有被動。要表達「被調漲」，改用 raise：Prices were raised。"],
+    ["An error occurred during the update.","An error was occurred during the update.","occur 沒有被動。"],
+    ["Mr. Chen was awarded a bonus.","Mr. Chen awarded a bonus.","陳先生是得到獎金的人，要用被動。授與動詞改成被動後，後面仍接 a bonus。"]
+  ],
+  traps:[
+    "raise 和 rise、lay 和 lie 是一組一組的：raise、lay 是及物動詞，後面要有受詞；rise、lie 是不及物動詞。",
+    "be located in、be based in、be scheduled for 這類說法，形式是被動，中文卻常翻成主動，例如「位於」「總部設在」。"
+  ]
+});
+
+U.push({
+  id:"participle", title:"分詞：-ing 與 -ed", en:"Participles", freq:3,
+  spot:"選項有同一個動詞的 -ing、-ed、原形和名詞，例如 attach、attaching、attached、attachment。",
+  look:"找出被修飾的名詞，判斷它是主動做這個動作，還是被動承受這個動作。",
+  rules:[
+    ["放在名詞前","主動用 -ing（the remaining seats，剩下來的座位），被動用 -ed（the attached file，被附上的檔案）。"],
+    ["放在名詞後","分詞片語放在名詞後面修飾它，規則一樣：the employees attending the training（參加訓練的員工）、the products manufactured in Vietnam（在越南製造的產品）。"],
+    ["分詞構句","句首的分詞片語，主詞跟主句相同。主詞主動做就用 -ing（When submitting the form, ...），主詞被動承受就用 -ed（Once approved, the request ...；Founded in 1998, the company ...）。"],
+    ["完成式分詞","Having p.p. 表示這件事比主句先完成：Having reviewed the proposal, the board ...。"],
+    ["情緒動詞","事物「讓人有某種感覺」用 -ing，人「感到」用 -ed：The results were disappointing；Customers were disappointed。"]
+  ],
+  ex:[
+    ["Please review the {{attached}} file before the meeting.","開會前請先看附件。","檔案是被附上的。"],
+    ["The {{remaining}} seats will be sold at the door.","剩下的座位將在門口販售。",""],
+    ["{{Enclosed}} is a copy of the signed contract.","隨函附上一份已簽署的合約。","倒裝句，原本的語序是 A copy is enclosed。"],
+    ["Anyone {{wishing}} to attend should register by Friday.","想參加的人請在星期五前報名。","anyone 主動想要參加。"],
+    ["The candidates {{selected}} for interviews will be notified by email.","被選上參加面試的應徵者將收到電子郵件通知。","應徵者是被選上的。"],
+    ["{{Founded}} in 1998, Norland Tech now has offices in six countries.","Norland Tech 成立於 1998 年，現在在六個國家設有辦公室。","公司是被創立的。"],
+    ["When {{filling}} out the form, please use black ink.","填寫表格時，請使用黑色墨水。","填表的人主動填寫。"],
+    ["Once {{approved}}, the request will be forwarded to the finance team.","申請一經核准，就會轉給財務團隊。","申請是被核准的。"],
+    ["{{Having reviewed}} the proposal, the board decided to fund the project.","董事會審閱提案後，決定資助這個計畫。","審閱在決定之前完成。"],
+    ["We hired an {{experienced}} technician to repair the equipment.","我們請了一位有經驗的技師來修理設備。",""],
+    ["A {{growing}} number of customers prefer to pay by phone.","越來越多顧客偏好用手機付款。",""],
+    ["The quarterly results were {{encouraging}}.","季度成果令人振奮。","結果讓人感到振奮。"],
+    ["Most customers were {{satisfied}} with the new service.","大部分顧客對新服務感到滿意。","人感到滿意。"]
+  ],
+  pairs:[
+    ["Anyone wishing to attend should register.","Anyone wished to attend should register.","想參加的人是主動想要，所以用 wishing。"],
+    ["Enclosed is the invoice for your order.","Enclosing is the invoice for your order.","發票是被附上的，要用過去分詞。"],
+    ["The presentation was confusing, so many people were confused.","The presentation was confused, so many people were confusing.","簡報讓人困惑，用 -ing；人感到困惑，用 -ed。"]
+  ],
+  traps:[
+    "attached、enclosed、revised、updated、scheduled、detailed、qualified、experienced 是多益最常見的 -ed 形容詞。",
+    "分詞構句的主詞一定要跟主句相同。When reviewing the report, errors were found 是錯的，因為 errors 不會自己審閱報告。"
+  ]
+});
+
+U.push({
+  id:"connect", title:"連接詞、介系詞、連接副詞", en:"Conjunctions, prepositions, and linking adverbs", freq:3,
+  spot:"選項的意思很像，但詞性不同，例如 although、despite、however、even。",
+  look:"看空格後面接的是什麼：完整的子句（有主詞和動詞）、名詞或動名詞，還是接在句號或分號後面、用逗號隔開。",
+  rules:[
+    ["接子句","用連接詞：although、because、while、unless、as soon as、so that。"],
+    ["接名詞或 Ving","用介系詞：despite、because of、during、prior to、in addition to。"],
+    ["接在句號或分號後","用連接副詞，後面通常有逗號：however、therefore、as a result、meanwhile。它們不能直接連接兩個子句。"],
+    ["Part 6 的轉折題","空格在句首時，要看前後兩句的關係：相反用 however，因果用 therefore 或 as a result，補充用 in addition 或 moreover，時間順序用 afterward 或 meanwhile。"]
+  ],
+  table:{
+    head:["意思","接子句（連接詞）","接名詞或 Ving（介系詞）","句首加逗號（連接副詞）"],
+    rows:[
+      ["讓步、對比","although、though、even though、while","despite、in spite of、notwithstanding","however、nevertheless、nonetheless"],
+      ["原因","because、since、as","because of、due to、owing to、on account of","therefore、consequently、as a result、thus"],
+      ["時間","while、when、before、after、until、once、as soon as","during、prior to、following、before、after、until","meanwhile、in the meantime、afterward、subsequently"],
+      ["條件","if、unless、provided that、as long as、in case","in case of、in the event of、without","otherwise"],
+      ["補充","（無）","in addition to、besides、as well as","moreover、furthermore、in addition、additionally"],
+      ["目的","so that、in order that","in order to、so as to（後接原形動詞）","（無）"]
+    ]
+  },
+  ex:[
+    ["{{Although}} the budget was limited, the project was completed on time.","雖然預算有限，計畫仍準時完成。","後面接完整的子句。"],
+    ["{{Despite}} the limited budget, the project was completed on time.","儘管預算有限，計畫仍準時完成。","後面接名詞片語。"],
+    ["The budget was limited; {{however}}, the project was completed on time.","預算有限，然而計畫仍準時完成。","分號後面，用連接副詞。"],
+    ["The flight was delayed {{because of}} heavy fog.","航班因為濃霧而延誤。",""],
+    ["The flight was delayed {{because}} the fog was heavy.","航班延誤是因為霧很濃。",""],
+    ["Please turn off your phone {{during}} the presentation.","簡報期間請關機。","during 後面接名詞。"],
+    ["Please turn off your phone {{while}} the presentation is in progress.","簡報進行時請關機。","while 後面接子句。"],
+    ["{{Prior to}} joining our company, Mr. Kim worked in marketing.","加入本公司之前，金先生從事行銷工作。","prior to 是介系詞，後面接 Ving。"],
+    ["You will not receive a refund {{unless}} you keep the receipt.","除非你保留收據，否則無法退款。",""],
+    ["{{In the event of}} a fire, please use the stairs.","萬一發生火災，請走樓梯。",""],
+    ["{{In addition to}} managing the team, Ms. Ortiz handles several client accounts.","除了管理團隊，Ortiz 女士也負責幾個客戶。","in addition to 的 to 是介系詞，後面接 Ving。"],
+    ["Please arrive early {{so that}} we can start on time.","請提早到，以便我們準時開始。",""],
+    ["Sales dropped in March. {{As a result}}, the company revised its forecast.","三月銷售下滑，因此公司修正了預測。","接在句號後面。"],
+    ["The printer is being repaired. {{In the meantime}}, please use the one on the second floor.","印表機正在維修，這段期間請使用二樓那台。",""],
+    ["{{Whether}} you attend in person or online, please register in advance.","無論你是親自出席還是線上參加，都請提前報名。","whether A or B。"]
+  ],
+  pairs:[
+    ["Despite the rain, the event continued.","Despite it rained, the event continued.","despite 是介系詞，後面不能接子句。要接子句就改用 although。"],
+    ["Even though the store was busy, the staff stayed calm.","Even the store was busy, the staff stayed calm.","even 是副詞，不能連接子句，要用 even though 或 even if。"],
+    ["The store closed early due to the storm.","The store closed early due to the storm was coming.","due to 是介系詞，後面只能接名詞。"]
+  ],
+  traps:[
+    "before、after、until 既是連接詞也是介系詞，後面接子句或名詞都可以。",
+    "however 不能直接連接兩個子句。The budget was limited, however the project was completed 是錯的，要改成分號或句號。",
+    "since 當連接詞時有兩個意思：「自從」和「因為」。as 也可以表示「因為」。"
+  ]
+});
+U.push({
+  id:"agree", title:"主詞與動詞一致", en:"Subject-verb agreement", freq:2,
+  spot:"選項是同一個動詞的單數和複數，例如 is、are、has、have，或 requires、require。",
+  look:"找出真正的主詞。題目常在主詞和動詞之間塞一段介系詞片語、關係子句或分詞片語，讓你看錯主詞。",
+  rules:[
+    ["插入的修飾語","The list of approved vendors is posted：主詞是 list，不是 vendors。of 後面的名詞通常不是主詞。"],
+    ["each、every、either、neither","後面接單數名詞，動詞也用單數。Each of the rooms 的主詞是 each，動詞用單數。"],
+    ["the number of 和 a number of","the number of（……的數量）主詞是 number，用單數；a number of（許多）主詞是後面的名詞，用複數。"],
+    ["one of the + 複數名詞","主詞是 one，動詞用單數：One of our suppliers has raised its prices。"],
+    ["A 跟著 B 的結構","A as well as B、A along with B、A together with B：動詞跟 A。either A or B、neither A nor B、not only A but also B：動詞跟比較靠近的 B。"],
+    ["動名詞和金額","動名詞或不定詞當主詞時，動詞用單數。金額、時間、距離看成一個整體，也用單數。"],
+    ["there is 和 there are","動詞跟後面的名詞一致。"]
+  ],
+  ex:[
+    ["The list of approved vendors {{is}} posted on the website.","核准廠商的名單公告在網站上。","主詞是 list。"],
+    ["The number of applicants {{has}} increased this year.","今年應徵者的人數增加了。",""],
+    ["A number of applicants {{have}} requested an interview.","有許多應徵者要求面試。",""],
+    ["Each of the hotel rooms {{is}} equipped with a coffee maker.","每間飯店客房都配有咖啡機。",""],
+    ["Every employee {{receives}} a copy of the handbook.","每位員工都會收到一本員工手冊。",""],
+    ["Neither the manager nor the assistants {{were}} informed of the change.","經理和助理們都沒有被通知這項變更。","動詞跟比較靠近的 assistants。"],
+    ["Either the assistants or the manager {{is}} responsible for the schedule.","負責排程的是助理們或經理其中一方。","動詞跟比較靠近的 manager。"],
+    ["Ms. Chen, along with her colleagues, {{is}} attending the conference.","陳女士和她的同事們正在參加研討會。","主詞是 Ms. Chen。"],
+    ["Reducing costs {{is}} our top priority this year.","降低成本是我們今年的首要目標。","動名詞當主詞，用單數。"],
+    ["There {{are}} several options available for delivery.","有好幾種送貨方式可以選擇。",""],
+    ["One of our suppliers {{has}} raised its prices.","我們的其中一家供應商調漲了價格。",""],
+    ["Five hundred dollars {{is}} a reasonable price for this service.","五百美元對這項服務來說是合理的價格。","金額看成一個整體。"]
+  ],
+  pairs:[
+    ["The quality of the products has improved.","The quality of the products have improved.","主詞是 quality，不是 products。"],
+    ["Each of the managers has a parking space.","Each of the managers have a parking space.","主詞是 each，用單數。"],
+    ["The director, as well as the staff, was surprised.","The director, as well as the staff, were surprised.","A as well as B，動詞跟 A。"]
+  ],
+  traps:[
+    "the majority of、most of、all of、some of 這類說法，動詞跟 of 後面的名詞：The majority of the staff work remotely；Most of the information is outdated。",
+    "關係子句的動詞，要跟它修飾的名詞一致：the reports that were submitted、the report that was submitted。"
+  ]
+});
+
+U.push({
+  id:"relative", title:"關係代名詞", en:"Relative pronouns", freq:2,
+  spot:"選項有 who、whom、whose、which、that、what 等。",
+  look:"看空格前面是人還是事物、有沒有逗號或介系詞，以及空格後面缺的是主詞、受詞，還是直接接名詞。",
+  rules:[
+    ["who 和 whom","都指人。空格後面直接接動詞，缺主詞，用 who；空格後面已經有主詞和動詞，缺受詞，用 whom。"],
+    ["whose","所有格，人和事物都可以用。空格後面直接接一個沒有冠詞的名詞，通常就是 whose：the client whose order was delayed。"],
+    ["which 和 that","都指事物。前面有逗號（補充說明）只能用 which；前面有介系詞也只能用 which 或 whom。that 用在沒有逗號的限定用法。"],
+    ["what","意思是 the thing that，前面沒有先行詞：What we need is more time。"],
+    ["介系詞 + which、whom","the building in which、the person to whom、both of which、most of whom。"],
+    ["whoever 和 those who","whoever 表示「任何……的人」；those who 表示「那些……的人」，動詞用複數。"],
+    ["where 和 when","where 指地點、when 指時間，後面接完整的子句。"]
+  ],
+  ex:[
+    ["Candidates {{who}} have management experience are preferred.","有管理經驗的應徵者優先。","後面直接接動詞 have，缺主詞。"],
+    ["The consultant {{whom}} we hired last year has left the firm.","我們去年聘請的顧問已經離職了。","we hired 已經有主詞和動詞，缺受詞。"],
+    ["We contacted the client {{whose}} order was delayed.","我們聯絡了訂單延誤的那位客戶。","後面直接接名詞 order。"],
+    ["The software, {{which}} was released in May, has received positive reviews.","這款五月推出的軟體獲得了好評。","逗號後面只能用 which。"],
+    ["The report {{that}} you requested is attached.","你要求的報告在附件裡。",""],
+    ["{{What}} impressed the judges most was the design.","最讓評審印象深刻的是設計。","沒有先行詞。"],
+    ["This is the building {{in which}} the conference will be held.","研討會將在這棟大樓舉行。",""],
+    ["Please send the invoice to the person {{to whom}} you spoke yesterday.","請把發票寄給你昨天通話的那位。",""],
+    ["{{Whoever}} completes the survey first will receive a gift card.","最先完成問卷的人可以獲得一張禮物卡。",""],
+    ["{{Those who}} wish to attend must register by Friday.","想參加的人必須在星期五前報名。",""],
+    ["The factory {{where}} the parts are made is in Poland.","生產這些零件的工廠在波蘭。","後面是完整子句。"],
+    ["We received two proposals, both of {{which}} are affordable.","我們收到兩份提案，兩份的價格都負擔得起。",""]
+  ],
+  pairs:[
+    ["The software, which was released in May, is popular.","The software, that was released in May, is popular.","逗號後面不能用 that。"],
+    ["This is the room in which the interview will take place.","This is the room in that the interview will take place.","介系詞後面不能用 that。"],
+    ["We called the client whose order was late.","We called the client who order was late.","空格後面直接接名詞 order，要用所有格 whose。"]
+  ],
+  traps:[
+    "where 後面接完整的子句，which 後面接缺了主詞或受詞的子句：the city where we met、the city which we visited。",
+    "限定用法裡，當受詞的關係代名詞可以省略：The report you requested is attached。"
+  ]
+});
+
+U.push({
+  id:"pronoun", title:"代名詞", en:"Pronouns", freq:2,
+  spot:"選項是同一個代名詞的不同格，例如 she、her、hers、herself，或 its、it's、their、theirs。",
+  look:"看空格在句子裡的角色：主詞、受詞、名詞前面，還是單獨存在。",
+  rules:[
+    ["四種格","主格（she）當主詞、受格（her）當受詞或放在介系詞後、所有格（her）放在名詞前、所有代名詞（hers）單獨使用，等於 her 加名詞。"],
+    ["反身代名詞","主詞和受詞是同一人時用（She introduced herself）；也可以放在句尾強調「親自」（She completed it herself）。by oneself 的意思是「獨自」。"],
+    ["its 和 it's","its 是所有格（它的），it's 是 it is 或 it has。"],
+    ["that 和 those","比較句裡，用來代替前面出現過的名詞，避免重複：單數用 that of，複數用 those of。"],
+    ["one another、each other","互相。現代英文兩者通常可以互換。"],
+    ["another、other、others","another 加單數名詞（另一個）；other 加複數名詞；others 單獨使用（其他的人或東西）；the others 表示剩下的全部。"]
+  ],
+  ex:[
+    ["Please submit {{your}} expense report by Friday.","請在星期五前提交你的費用報告。",""],
+    ["Ms. Lopez designed the entire website {{herself}}.","Lopez 女士親自設計了整個網站。","放在句尾強調。"],
+    ["The interns organized the event {{by themselves}}.","實習生們獨自籌辦了這場活動。",""],
+    ["The company announced {{its}} quarterly results on Monday.","公司在星期一公布了季度成果。",""],
+    ["This laptop is mine, and that one is {{hers}}.","這台筆電是我的，那台是她的。","hers 等於 her laptop。"],
+    ["Our prices are lower than {{those}} of our competitors.","我們的價格比競爭對手低。","those 代替 prices。"],
+    ["The climate in the south is milder than {{that}} of the north.","南部的氣候比北部溫和。","that 代替 climate。"],
+    ["Team members are encouraged to support {{one another}}.","鼓勵團隊成員互相支援。",""],
+    ["Some employees prefer to work from home; {{others}} prefer the office.","有些員工喜歡在家工作，其他人則喜歡辦公室。",""],
+    ["Mr. Wong asked us to contact {{him}} directly.","黃先生請我們直接聯絡他。","放在動詞後面當受詞。"],
+    ["Participants should bring {{their own}} laptops.","參加者應自備筆電。",""],
+    ["If this room is not available, we can use {{another}} one.","如果這間會議室不能用，我們可以用另一間。",""]
+  ],
+  pairs:[
+    ["The firm updated its website.","The firm updated it's website.","its 才是所有格。it's 是 it is。"],
+    ["She finished the report by herself.","She finished the report by her.","by oneself 表示獨自，要用反身代名詞。"],
+    ["Our rates are lower than those of other banks.","Our rates are lower than them of other banks.","代替前面的複數名詞，要用 those。"]
+  ],
+  traps:[
+    "空格後面沒有名詞、而且表示「某人的東西」，要用 mine、yours、hers、ours、theirs。",
+    "Part 6 的代名詞題要往前找它指的是誰。前面提到的是公司（it、its）、一群人（they、their），還是一位女士（she、her）。"
+  ]
+});
+
+U.push({
+  id:"prep", title:"介系詞：時間、期限與常用片語", en:"Prepositions of time and fixed phrases", freq:2,
+  spot:"選項是不同的介系詞，例如 by、until、within、since，或 on、in、at。",
+  look:"看空格後面接的是時間點、一段時間，還是事件；再看動詞是一次完成的動作，還是持續的狀態。",
+  rules:[
+    ["at、on、in","at 加時刻（at 3 p.m.），on 加日期或星期（on May 12、on Monday），in 加月、年、季節（in May、in 2027）。in 加一段時間，也表示「……之後」（in two days）。"],
+    ["by 和 until","by 是期限，最晚在這之前完成一次性的動作（submit by Friday）；until 是持續，某個狀態一直延續到那時（stay open until 9 p.m.）。"],
+    ["within","在一段期間之內：within 30 days、within walking distance。"],
+    ["for、during、throughout","for 加時間長度（for three hours）；during 加事件或期間的名稱（during the meeting）；throughout 表示整段期間從頭到尾。"],
+    ["as of、prior to、following、upon","as of 表示自某日起生效；prior to 等於 before；following 等於 after；upon 加名詞或 Ving，表示「一……就」。"],
+    ["常用片語","on behalf of（代表）、in charge of（負責）、according to（根據）、regarding（關於）、in accordance with（依照）、in response to（回應）、ahead of schedule（提前）、on time（準時）、in time（及時）。"]
+  ],
+  ex:[
+    ["Please submit the form {{by}} 5 p.m. on Friday.","請在星期五下午五點前提交表格。","提交是一次性的動作，用 by。"],
+    ["The office will be closed {{until}} January 3.","辦公室將休息到一月三日。","關閉是持續的狀態，用 until。"],
+    ["Returns must be made {{within}} 30 days of purchase.","退貨必須在購買後三十天內辦理。",""],
+    ["The new policy takes effect {{as of}} July 1.","新政策自七月一日起生效。",""],
+    ["{{Upon}} arrival, guests will receive a welcome packet.","客人一抵達就會收到歡迎資料袋。",""],
+    ["The seminar will be held {{on}} Tuesday, May 12.","研討會將於五月十二日星期二舉行。",""],
+    ["Our store will remain open {{throughout}} the holiday season.","本店在整個假期期間都會營業。",""],
+    ["Ms. Diaz accepted the award {{on behalf of}} the entire department.","Diaz 女士代表整個部門領獎。",""],
+    ["{{According to}} the survey, most customers prefer online payment.","根據調查，大部分顧客偏好線上付款。",""],
+    ["The project was completed {{ahead of}} schedule.","這個計畫提前完成了。",""],
+    ["A technician will contact you {{in}} two days.","技術人員會在兩天後與您聯絡。","in 加一段時間，表示「之後」。"],
+    ["{{In response to}} customer feedback, we have extended our hours.","為了回應顧客意見，我們延長了營業時間。",""]
+  ],
+  pairs:[
+    ["Please return the form by Friday.","Please return the form until Friday.","交回表格是一次性的動作，要用 by。"],
+    ["The meeting lasted for three hours.","The meeting lasted during three hours.","three hours 是時間長度，用 for。during 後面接事件或期間的名稱。"],
+    ["We arrived just in time for the opening speech.","We arrived just on time for the opening speech.","in time 表示「及時，趕上」；on time 表示「準時，不早不晚」。這句要表達趕上了開幕演講。"]
+  ],
+  traps:[
+    "since 後面接時間點，搭配現在完成式；for 後面接時間長度。",
+    "from A to B 或 from A until B 表示期間：from Monday to Friday。",
+    "upon 和 on 加 Ving 意思相同：Upon receiving your payment, we will ship the order。"
+  ]
+});
+
+U.push({
+  id:"toing", title:"to 的陷阱與動詞後接的形式", en:"Gerunds and infinitives", freq:2,
+  spot:"選項有同一個動詞的原形、to V、Ving 和 p.p.，例如 hear、to hear、hearing、heard。",
+  look:"看空格前面的動詞、形容詞或片語，它規定了後面要接哪一種形式。特別注意 to 是不是介系詞。",
+  rules:[
+    ["to 是介系詞的片語","look forward to、be committed to、be dedicated to、be used to（習慣於）、in addition to、contribute to、object to、with a view to。這些 to 後面接名詞或 Ving。判斷方法：to 後面放名詞說得通，它就是介系詞。"],
+    ["動詞 + Ving","consider、avoid、suggest、recommend、finish、postpone、delay、mind、enjoy、include、involve、anticipate、discontinue、keep。"],
+    ["動詞 + to V","plan、decide、agree、hope、expect、intend、offer、refuse、fail、afford、strive、aim、hesitate、seek。"],
+    ["動詞 + 受詞 + to V","allow、enable、encourage、require、ask、remind、invite、urge、advise、permit。改成被動就是 be allowed to、be required to。"],
+    ["使役動詞","make、let、have 加受詞之後接原形動詞；help 加受詞之後，接原形或 to V 都可以；get 加受詞之後接 to V。"],
+    ["形容詞或名詞 + to V","be able to、be likely to、be pleased to、be reluctant to、be eligible to；the ability to、an effort to、the opportunity to。"]
+  ],
+  ex:[
+    ["We look forward to {{hearing}} from you.","期待您的回覆。","look forward to 的 to 是介系詞。"],
+    ["The company is committed to {{reducing}} its carbon emissions.","公司致力於減少碳排放。",""],
+    ["Please do not hesitate {{to contact}} us if you have any questions.","如有任何問題，請隨時與我們聯絡。",""],
+    ["The manager suggested {{postponing}} the product launch.","經理建議延後產品上市。","suggest 後面接 Ving。"],
+    ["We are considering {{opening}} a new branch in Taichung.","我們正在考慮在台中開新分店。",""],
+    ["The new app enables customers {{to track}} their orders.","新的 App 讓顧客可以追蹤訂單。",""],
+    ["All staff are required {{to complete}} safety training.","所有員工都必須完成安全訓練。",""],
+    ["The director had her assistant {{book}} the flights.","主任請她的助理訂機票。","have 加受詞之後接原形動詞。"],
+    ["This guide will help you {{set}} up the device.","這份指南會幫助你設定這台裝置。","help 加受詞之後，接原形或 to V 都可以。"],
+    ["Mr. Grant is used to {{working}} night shifts.","Grant 先生已經習慣上夜班。","be used to 的 to 是介系詞。"],
+    ["We are pleased {{to announce}} the opening of our new office.","我們很高興宣布新辦公室開幕。",""],
+    ["Customers are advised {{to keep}} their receipts.","建議顧客保留收據。",""],
+    ["Only full-time employees are eligible {{for}} the program.","只有全職員工有資格參加這個計畫。","eligible for 加名詞，eligible to 加原形動詞。"]
+  ],
+  pairs:[
+    ["I look forward to meeting you.","I look forward to meet you.","look forward to 的 to 是介系詞，後面接 Ving。"],
+    ["The consultant suggested hiring more staff.","The consultant suggested to hire more staff.","suggest 後面接 Ving，或接 that 子句。"],
+    ["He used to work in sales.","He is used to work in sales.","used to 加原形表示「過去曾經」；be used to 加 Ving 表示「習慣於」。"]
+  ],
+  traps:[
+    "stop、remember、forget、try 接 to V 和 Ving 意思不同：remember to call（記得要打），remember calling（記得打過）。",
+    "recommend 和 suggest 後面可以接 Ving，也可以接 that 子句，但不能接 to V。that 子句的動詞要用原形，下一個單元會講。"
+  ]
+});
+U.push({
+  id:"mandative", title:"要求與建議：that 子句用原形", en:"The mandative subjunctive", freq:2,
+  spot:"選項是同一個動詞的原形、第三人稱單數、過去式和 will 形式，例如 submit、submits、submitted、will submit。",
+  look:"看 that 前面有沒有表示要求、建議、堅持或必要的字。有的話，that 子句裡的動詞用原形，不管主詞是誰、時態是什麼。",
+  rules:[
+    ["觸發的動詞","request、require、recommend、suggest、insist、ask、demand、propose、urge。"],
+    ["觸發的形容詞","It is essential、necessary、important、imperative、vital、critical that ...。"],
+    ["觸發的名詞","the recommendation that、the request that、the requirement that、the suggestion that。"],
+    ["被動和否定","被動用 be p.p.（that it be reviewed），否定直接加 not（that he not be informed）。"],
+    ["為什麼是原形","英式英文常在前面加 should：that every employee should submit。所以可以把原形理解成 should 被省略了。在台灣的文法書裡，這個用法常歸在假設語氣底下，稱為「原形假設」。"]
+  ],
+  ex:[
+    ["The manager requested that every employee {{submit}} the form by Friday.","經理要求每位員工在星期五前提交表格。","主詞是 every employee，動詞仍用原形。"],
+    ["It is essential that the client {{receive}} the documents today.","客戶今天一定要收到文件。",""],
+    ["The consultant recommended that the company {{hire}} more engineers.","顧問建議公司聘請更多工程師。",""],
+    ["Ms. Park insisted that the meeting {{be}} rescheduled.","朴女士堅持會議要改期。","被動：be 加過去分詞。"],
+    ["It is important that all visitors {{wear}} a badge at all times.","所有訪客都必須隨時配戴識別證。",""],
+    ["The board suggested that the plan {{not be}} approved yet.","董事會建議先不要核准這個計畫。","否定直接加 not。"],
+    ["Our policy requires that each order {{be}} checked twice.","我們的規定要求每筆訂單都要檢查兩次。",""],
+    ["The recommendation that the office {{remain}} open on weekends was accepted.","辦公室週末照常營業的建議被採納了。","名詞 recommendation 加 that。"]
+  ],
+  pairs:[
+    ["We ask that each guest check out by 11 a.m.","We ask that each guest checks out by 11 a.m.","ask that 後面用原形 check。"],
+    ["It is vital that the report be finished today.","It is vital that the report is finished today.","vital 表示必要，被動要用 be finished。"],
+    ["The data suggests that sales are falling.","The data suggests that sales be falling.","suggest 在這裡的意思是「顯示、暗示」，只是陳述事實，所以不用原形。"]
+  ],
+  traps:[
+    "suggest 表示「顯示、暗示」，insist 表示「堅稱某件事是事實」時，都不用原形：He insisted that he had sent the email。",
+    "這類題目的選項常常同時出現原形和第三人稱單數，主詞又是單數，很容易被引導去選 -s 的形式。"
+  ]
+});
+
+U.push({
+  id:"conditional", title:"假設語氣與倒裝", en:"Conditionals and inversion", freq:2,
+  spot:"空格在句首，選項有 Should、Had、Were、If、Unless；或是句子後半有 would、could have 這類結構。",
+  look:"看句首的助動詞後面接什麼，以及另一半句子用了哪種動詞形式。",
+  rules:[
+    ["基本句型（帶過）","與現在事實相反：If 加過去式，主句 would 加原形，be 動詞一律用 were。與過去事實相反：If 加 had p.p.，主句 would have p.p.。"],
+    ["Should 開頭","把 if you should 的 if 省略，should 移到句首：Should you have any questions, please contact us。should 在這裡表示「萬一、如果剛好」，是商業書信最常見的結尾句。"],
+    ["Had 開頭","與過去事實相反的倒裝：Had we known, we would have ...，等於 If we had known。"],
+    ["Were 開頭","Were the company to expand, it would ...，等於 If the company were to expand，表示可能性很低的假設，語氣正式。"],
+    ["不用 if 的假設","without、but for（要不是）、otherwise（否則）本身帶有假設的意思，後面或前面接 would、could have。"],
+    ["wish、as if、it's time","wish 和 as if 描述不符合事實的情況時，動詞要往過去退一格。it's time 加過去式，表示「早就該做了」。"],
+    ["否定詞開頭的倒裝","Only after、Not until、Rarely、Seldom、Never、Under no circumstances 放在句首時，後面的主句要倒裝，助動詞放到主詞前面。"]
+  ],
+  ex:[
+    ["If I {{were}} in charge, I would hire more staff.","如果我是負責人，我會多聘一些人。",""],
+    ["If we {{had known}} about the delay, we would have changed the schedule.","如果我們早知道會延誤，就會改行程了。",""],
+    ["{{Should}} you have any questions, please contact our support team.","如有任何問題，請聯絡我們的客服團隊。",""],
+    ["{{Had}} we received the order earlier, we would have shipped it on time.","如果我們早點收到訂單，就能準時出貨了。",""],
+    ["{{Were}} the company to expand into Europe, it would need more engineers.","如果公司要擴展到歐洲，就需要更多工程師。",""],
+    ["{{Without}} your help, we could not have finished the project.","沒有你的幫忙，我們不可能完成這個計畫。",""],
+    ["{{But for}} the delay, the product would have launched in May.","要不是延誤，產品在五月就上市了。",""],
+    ["We left early; {{otherwise}}, we would have missed the train.","我們提早出發，否則就趕不上火車了。",""],
+    ["I wish I {{had}} more time to prepare for the presentation.","真希望我有更多時間準備簡報。","現在沒有，所以用過去式。"],
+    ["He talks as if he {{were}} the CEO.","他講話的樣子好像他是執行長一樣。",""],
+    ["It's time we {{updated}} the company website.","我們早就該更新公司網站了。",""],
+    ["{{Only after}} the contract is signed {{will}} we begin production.","合約簽訂之後，我們才會開始生產。","主句倒裝：will we。"],
+    ["{{Not until}} the report was published {{did}} the public learn about the problem.","直到報告發表，大眾才知道這個問題。","主句倒裝：did the public learn。"],
+    ["{{Rarely}} {{have}} we received so many positive comments.","我們很少收到這麼多正面的評價。",""]
+  ],
+  pairs:[
+    ["Should you need assistance, please call us.","Should you needed assistance, please call us.","should 後面接原形動詞。"],
+    ["Had I known about the traffic, I would have left earlier.","Had I know about the traffic, I would have left earlier.","Had 開頭的倒裝，後面接過去分詞 known。"],
+    ["Only after the inspection will the factory reopen.","Only after the inspection the factory will reopen.","Only after 放在句首，主句要倒裝成 will the factory reopen。"]
+  ],
+  traps:[
+    "Only employees with badges may enter 不需要倒裝，因為 only 修飾的是主詞 employees，不是放在句首的副詞片語。",
+    "in case（以防萬一）和 if（如果）不同：Bring an umbrella in case it rains，不管會不會下雨都先帶；Bring an umbrella if it rains，下雨了才帶。",
+    "provided that 和 as long as 表示「只要」，unless 表示「除非」，only if 表示「只有在……的情況下才」。"
+  ]
+});
+
+U.push({
+  id:"compare", title:"比較", en:"Comparisons", freq:1,
+  spot:"選項是同一個形容詞或副詞的原級、比較級、最高級，例如 fast、faster、fastest、most fast；或是 than、as、to 這類字。",
+  look:"看句子裡有沒有 than、as、the、of all、among 這類線索。",
+  rules:[
+    ["原級","as + 原級 + as：as efficient as。否定用 not as ... as 或 not so ... as。"],
+    ["比較級","比較級 + than。加強語氣用 much、far、even、still、significantly、considerably，不能用 very。"],
+    ["最高級","the + 最高級，常搭配 of all、in the region、among、ever、in the company's history。"],
+    ["越……越……","the + 比較級, the + 比較級：The sooner you register, the more you save。"],
+    ["倍數","twice as + 原級 + as、three times as + 原級 + as，或 three times + 比較級 + than。"],
+    ["比較的陷阱","than any other + 單數名詞；兩者之間用 the + 比較級（the more practical of the two）；superior、inferior、senior、junior、prior 後面接 to，不接 than；prefer A to B。"]
+  ],
+  ex:[
+    ["This model is {{as}} efficient {{as}} the previous one.","這個型號和上一代一樣有效率。",""],
+    ["The new printer is {{much}} faster than the old one.","新印表機比舊的快很多。","比較級用 much 加強，不能用 very。"],
+    ["This is {{the most}} popular product in our catalog.","這是我們型錄上最受歡迎的產品。",""],
+    ["{{The sooner}} you register, {{the more}} you save.","越早報名，省得越多。",""],
+    ["Our revenue this year was {{twice as}} high {{as}} last year's.","我們今年的營收是去年的兩倍。",""],
+    ["This laptop is lighter than {{any other}} model on the market.","這台筆電比市面上任何其他型號都輕。","any other 後面接單數名詞。"],
+    ["Their customer service is {{superior to}} ours.","他們的客服比我們的好。","superior 後面接 to。"],
+    ["Of the two proposals, Ms. Hall's is {{the more}} practical.","兩份提案之中，Hall 女士的比較實際。","兩者之間，用 the 加比較級。"],
+    ["Taipei is one of {{the largest}} markets in the region.","台北是這個地區最大的市場之一。","one of the 加最高級加複數名詞。"],
+    ["Many customers {{prefer}} online shopping {{to}} visiting stores.","許多顧客比較喜歡網購，而不是去實體店。",""]
+  ],
+  pairs:[
+    ["The new model is much lighter.","The new model is very lighter.","very 不能修飾比較級，要用 much、far 或 even。"],
+    ["This plan is superior to the old one.","This plan is superior than the old one.","superior 後面接 to。"],
+    ["It is cheaper than any other model.","It is cheaper than any other models.","any other 後面接單數名詞。"]
+  ],
+  traps:[
+    "看到 than 就想到比較級，看到 the 和 of all 或 in 加範圍，就想到最高級。",
+    "比較的對象要是同一類的東西：Our prices are lower than those of our competitors，比的是價格和價格，所以要有 those of。"
+  ]
+});
+
+U.push({
+  id:"quantity", title:"數量詞與可數名詞", en:"Quantifiers and countability", freq:1,
+  spot:"選項有 each、every、all、most、few、little、another、other，或同一個名詞的單數和複數。",
+  look:"看空格後面的名詞是單數、複數還是不可數，以及有沒有 the 或 of the。",
+  rules:[
+    ["接單數可數名詞","each、every、another、either、neither。"],
+    ["接複數名詞","all、most、many、several、few、a few、a number of、a variety of、a wide range of、both。"],
+    ["接不可數名詞","much、little、a little、a great deal of、an amount of。"],
+    ["few 和 a few","few 表示「很少，幾乎沒有」，語氣偏否定；a few 表示「有一些」。little 和 a little 也一樣，但接不可數名詞。"],
+    ["most 的三種說法","most employees（大部分員工）、most of the employees（這群員工中的大部分）、almost all employees（幾乎所有員工）。almost 是副詞，不能直接接名詞。"],
+    ["多益常見的不可數名詞","equipment、information、furniture、luggage、baggage、advice、feedback、merchandise、machinery、clothing、access。它們沒有複數形，動詞用單數。"]
+  ],
+  ex:[
+    ["{{Each}} participant will receive a certificate.","每位參加者都會獲得證書。","each 加單數名詞。"],
+    ["{{Each of}} the participants will receive a certificate.","每一位參加者都會獲得證書。","each of the 加複數名詞，動詞仍用單數。"],
+    ["The store sells a wide {{variety}} of office supplies.","這家店販售各式各樣的辦公用品。",""],
+    ["We need more {{information}} about your order.","我們需要更多關於您訂單的資訊。","information 不可數。"],
+    ["All of the new {{equipment}} has been installed.","所有新設備都已經安裝好了。","equipment 不可數，動詞用單數。"],
+    ["{{Few}} customers complained, so the launch was considered a success.","幾乎沒有顧客抱怨，所以這次上市被認為是成功的。","語氣偏否定。"],
+    ["We have {{a few}} questions about the contract.","我們對合約有幾個問題。",""],
+    ["There is {{little}} time left before the deadline.","離截止時間已經沒剩多少了。","time 不可數。"],
+    ["{{Most}} employees prefer flexible working hours.","大部分員工偏好彈性工時。",""],
+    ["{{Most of the}} employees in the sales department work remotely.","業務部的大部分員工都遠距工作。",""],
+    ["{{Almost all}} employees attended the annual meeting.","幾乎所有員工都出席了年會。",""],
+    ["The {{amount}} of paperwork has decreased since we switched to online forms.","改用線上表單後，紙本作業的量減少了。","paperwork 不可數，用 amount。"]
+  ],
+  pairs:[
+    ["We received useful feedback from customers.","We received useful feedbacks from customers.","feedback 不可數，沒有複數形。"],
+    ["Almost all employees agreed.","Almost employees agreed.","almost 是副詞，不能直接接名詞，要加 all。"],
+    ["Most of the managers attended.","Most of managers attended.","most of 後面要接 the、these 或所有格，再接名詞。"]
+  ],
+  traps:[
+    "the number of 加可數名詞，the amount of 加不可數名詞。",
+    "every 後面接單數名詞，但可以接數字加複數名詞，表示頻率：every three months（每三個月）。"
+  ]
+});
+
+U.push({
+  id:"parallel", title:"平行結構與成對連接詞", en:"Parallel structure and correlative conjunctions", freq:1,
+  spot:"句子裡有 both、either、neither、not only，或用 and、or 列舉好幾個項目。",
+  look:"找出跟空格成對的另一半，或是列舉中的其他項目，讓空格的詞性和形式跟它們一致。",
+  rules:[
+    ["固定成對","both A and B、either A or B、neither A nor B、not only A but (also) B、whether A or B、between A and B。"],
+    ["平行結構","用 and、or、but 連接的項目，詞性和形式要一致：名詞配名詞、形容詞配形容詞、to V 配 to V、Ving 配 Ving。"],
+    ["rather than 和 instead of","rather than 前後的形式通常一致；instead of 是介系詞，後面接名詞或 Ving。"]
+  ],
+  ex:[
+    ["The new model is {{both}} lighter {{and}} cheaper.","新型號更輕，也更便宜。",""],
+    ["You can pay {{either}} by credit card {{or}} by bank transfer.","你可以用信用卡或銀行轉帳付款。",""],
+    ["{{Neither}} the director {{nor}} her assistant was available.","主任和她的助理都沒空。","動詞跟比較靠近的 assistant。"],
+    ["The software is {{not only}} fast {{but also}} easy to use.","這款軟體不但快，而且好用。",""],
+    ["Our goal is to design, test, and {{install}} the system by June.","我們的目標是在六月前設計、測試並安裝這套系統。","跟 design、test 一樣用原形。"],
+    ["The job requires creativity, patience, and {{attention}} to detail.","這份工作需要創意、耐心和對細節的注意。","跟 creativity、patience 一樣用名詞。"],
+    ["We chose this supplier for its low prices and {{reliable}} service.","我們選擇這家供應商，是因為它價格低、服務可靠。","跟 low 一樣，用形容詞修飾名詞。"],
+    ["The training covers {{how to}} write reports and {{how to}} give presentations.","訓練內容包括如何寫報告和如何做簡報。",""]
+  ],
+  pairs:[
+    ["The course is both practical and affordable.","The course is both practical or affordable.","both 要搭配 and。"],
+    ["The app is reliable, affordable, and easy to use.","The app is reliable, affordable, and ease of use.","前兩項是形容詞，第三項也要是形容詞片語。"]
+  ],
+  traps:[
+    "not only 放在句首時，後面要倒裝：Not only does the app save time, but it also reduces costs。",
+    "看到 both、either、neither、not only，就去後面找 and、or、nor、but also，它們是題目最常挖空的地方。"
+  ]
+});
+
+window.REVIEW = [
+  ["_____ the heavy rain, the outdoor concert was not canceled.",["Although","Despite","However","Even"],1,"後面只有名詞片語 the heavy rain，要用介系詞 despite。"],
+  ["The shipment _____ yesterday, so the parts should be ready soon.",["arrives","has arrived","arrived","will arrive"],2,"yesterday 是明確的過去時間，用過去式。"],
+  ["Please review the _____ contract before the meeting.",["attach","attaching","attached","attachment"],2,"合約是被附上的，用過去分詞當形容詞。"],
+  ["Our prices remain _____ despite rising costs.",["compete","competition","competitively","competitive"],3,"remain 是連綴動詞，後面接形容詞。"],
+  ["_____ you require further assistance, please call us at any time.",["Should","Would","Unless","Had"],0,"省略 if 的倒裝，Should 加原形動詞，是商業書信的固定句型。"],
+  ["The number of complaints _____ dropped since the new policy was introduced.",["have","has","is","are"],1,"the number of 的主詞是 number，用單數；since 搭配現在完成式。"],
+  ["The consultant recommended that the firm _____ its hiring process.",["reviews","reviewed","review","reviewing"],2,"recommend that 後面用原形動詞。"],
+  ["We look forward to _____ with you again.",["work","working","worked","be working"],1,"look forward to 的 to 是介系詞，後面接 Ving。"],
+  ["The applicant _____ résumé impressed the panel will be invited back.",["who","whom","whose","which"],2,"空格後面直接接名詞 résumé，用所有格 whose。"],
+  ["The conference room is unavailable _____ the renovation.",["while","during","because","although"],1,"後面是名詞 the renovation，用介系詞 during。"],
+  ["Returns must be made _____ 30 days of purchase.",["within","until","by","since"],0,"在一段期間之內，用 within。"],
+  ["A problem _____ during the software update.",["was occurred","occurred","has been occurred","is occurred"],1,"occur 是不及物動詞，沒有被動。"],
+  ["Of the two candidates, Mr. Reyes is _____ experienced.",["most","the more","the most","more than"],1,"兩者之間用 the 加比較級。"],
+  ["All the new office _____ has been delivered.",["furnitures","furniture","furnishing","furnish"],1,"furniture 不可數，沒有複數形，動詞用單數 has。"],
+  ["The new model is not only faster _____ more energy efficient.",["and","or","but also","as well"],2,"not only 要搭配 but also。"],
+  ["By the time the new manager arrives, the team _____ the report.",["finishes","finished","will have finished","had finished"],2,"by the time 加現在式，主句用未來完成式。"],
+  ["Ms. Novak completed the analysis by _____.",["she","her","herself","hers"],2,"by oneself 表示獨自，用反身代名詞。"],
+  ["_____ the contract is signed will we begin production.",["Only after","Unless","Although","Even if"],0,"主句出現倒裝 will we，句首要是 Only after 這類引發倒裝的說法。"],
+  ["Staff members are encouraged _____ public transportation.",["using","to use","use","used"],1,"be encouraged to 加原形動詞。"],
+  ["Sales fell sharply in the second quarter. _____, the company revised its annual forecast.",["Because","Due to","As a result","Despite"],2,"接在句號後、用逗號隔開，要用連接副詞片語 as a result。"],
+  ["The _____ of the new system will take about two weeks.",["install","installation","installed","installing"],1,"the 後面、of 前面，需要名詞。"],
+  ["Mr. Lin _____ at the company since 2019.",["works","worked","has worked","is working"],2,"since 加時間點，用現在完成式。"],
+  ["Please submit your timesheet _____ Friday at noon.",["until","by","within","during"],1,"提交是一次性的動作，用表示期限的 by。"],
+  ["It is essential that every visitor _____ a safety helmet.",["wears","wear","wore","will wear"],1,"essential that 後面用原形動詞。"]
+];
+(function(){
+  var U = window.U || [];
+  var R = window.REVIEW || [];
+  var FREQ = {3:"幾乎每場都考",2:"常考",1:"偶爾考"};
+  var KEY = "toeic-seen";
+
+  function esc(s){return String(s == null ? "" : s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+  function marks(s){return esc(s).replace(/\{\{(.+?)\}\}/g,'<mark class="t" tabindex="0">$1</mark>');}
+  function plain(s){return String(s||"").replace(/\{\{|\}\}/g,"");}
+  function bubbles(n){var h='<span class="bubbles" aria-hidden="true">';for(var i=1;i<=3;i++){h+='<i'+(i<=n?' class="on"':'')+'></i>';}return h+'</span>';}
+
+  var seen = {};
+  try { seen = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch(e){ seen = {}; }
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(seen)); } catch(e){} }
+  function daysAgo(iso){
+    var d = new Date(iso); if (isNaN(d)) return "";
+    var n = Math.floor((Date.now() - d.getTime()) / 86400000);
+    return n <= 0 ? "今天" : n + " 天前";
+  }
+
+  function unitHTML(u, i){
+    var h = [];
+    h.push('<section class="unit" id="'+u.id+'" data-id="'+u.id+'">');
+    h.push('<div class="u-head"><div class="u-title"><span class="u-no">'+String(i+1).padStart(2,"0")+'</span><h2>'+esc(u.title)+'</h2><span class="u-en">'+esc(u.en)+'</span></div>');
+    h.push('<div class="freq">'+bubbles(u.freq)+'<span>'+FREQ[u.freq]+'</span></div></div>');
+    h.push('<div class="spot"><div><b>看到這種選項</b><p>'+esc(u.spot)+'</p></div><div><b>先看哪裡</b><p>'+esc(u.look)+'</p></div></div>');
+    if (u.rules && u.rules.length){
+      h.push('<h3>規則</h3><dl class="rules">');
+      u.rules.forEach(function(r){h.push('<div><dt>'+esc(r[0])+'</dt><dd>'+esc(r[1])+'</dd></div>');});
+      h.push('</dl>');
+    }
+    if (u.table){
+      h.push('<h3>一張表分清楚</h3><div class="tablebox"><table><thead><tr>');
+      u.table.head.forEach(function(c){h.push('<th scope="col">'+esc(c)+'</th>');});
+      h.push('</tr></thead><tbody>');
+      u.table.rows.forEach(function(r){
+        h.push('<tr>');
+        r.forEach(function(c,j){h.push('<td>'+(j===0?esc(c):'<span class="en">'+esc(c)+'</span>')+'</td>');});
+        h.push('</tr>');
+      });
+      h.push('</tbody></table></div>');
+    }
+    if (u.ex && u.ex.length){
+      h.push('<h3>例句</h3><ol class="ex">');
+      u.ex.forEach(function(e){
+        h.push('<li><span class="en" lang="en">'+marks(e[0])+'</span><span class="zh">'+esc(e[1])+'</span>'+(e[2]?'<span class="note">'+esc(e[2])+'</span>':'')+'</li>');
+      });
+      h.push('</ol>');
+    }
+    if (u.pairs && u.pairs.length){
+      h.push('<h3>對錯對照</h3><div class="pairs">');
+      u.pairs.forEach(function(p){
+        h.push('<div class="pair"><div class="row yes"><span class="m" aria-label="正確">✓</span><span lang="en">'+esc(p[0])+'</span></div>');
+        h.push('<div class="row no"><span class="m" aria-label="錯誤">✗</span><span class="s" lang="en">'+esc(p[1])+'</span></div>');
+        h.push('<div class="why">'+esc(p[2])+'</div></div>');
+      });
+      h.push('</div>');
+    }
+    if (u.traps && u.traps.length){
+      h.push('<h3>容易踩的陷阱</h3><ul class="traps">');
+      u.traps.forEach(function(t){h.push('<li>'+esc(t)+'</li>');});
+      h.push('</ul>');
+    }
+    h.push('<div class="u-foot"><span class="when" data-when="'+u.id+'"></span><button class="btn seen-btn" type="button" id="seen-'+u.id+'" data-seen="'+u.id+'" aria-pressed="false">標記為看過</button></div>');
+    h.push('</section>');
+    return h.join("");
+  }
+
+  document.getElementById("units").innerHTML = U.map(unitHTML).join("");
+
+  var toc = document.getElementById("toclist");
+  toc.innerHTML = U.map(function(u,i){
+    return '<li><a href="#'+u.id+'"><span class="n">'+String(i+1).padStart(2,"0")+'</span><span>'+esc(u.title)+'</span><span class="seen" data-toc="'+u.id+'"></span></a></li>';
+  }).join("");
+
+  document.getElementById("reviewlist").innerHTML = R.map(function(q,i){
+    var L = ["A","B","C","D"];
+    var opts = q[1].map(function(o,j){return '<span>('+L[j]+') '+esc(o)+'</span>';}).join("");
+    return '<div class="q"><div class="stem"><span class="qn">'+(i+1)+'</span><span lang="en">'+esc(q[0])+'</span></div><div class="opts" lang="en">'+opts+'</div><details><summary>看答案</summary><div class="ans"><b>('+L[q[2]]+') '+esc(q[1][q[2]])+'</b>　'+esc(q[3])+'</div></details></div>';
+  }).join("");
+
+  function refreshSeen(){
+    var count = 0;
+    U.forEach(function(u){
+      var iso = seen[u.id];
+      var btn = document.querySelector('[data-seen="'+u.id+'"]');
+      var when = document.querySelector('[data-when="'+u.id+'"]');
+      var t = document.querySelector('[data-toc="'+u.id+'"]');
+      if (iso){
+        count++;
+        btn.setAttribute("aria-pressed","true");
+        btn.textContent = "看過了";
+        when.textContent = "上次看：" + daysAgo(iso) + "。再點一次可以取消標記。";
+        t.textContent = "✓ " + daysAgo(iso);
+      } else {
+        btn.setAttribute("aria-pressed","false");
+        btn.textContent = "標記為看過";
+        when.textContent = "";
+        t.textContent = "";
+      }
+    });
+    document.getElementById("progress").textContent = "已看過 " + count + " / " + U.length;
+  }
+  refreshSeen();
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest && e.target.closest("[data-seen]");
+    if (b){
+      var id = b.getAttribute("data-seen");
+      if (seen[id]) delete seen[id]; else seen[id] = new Date().toISOString();
+      save(); refreshSeen(); return;
+    }
+    var m = e.target.closest && e.target.closest("mark.t");
+    if (m && document.body.classList.contains("cover")) m.classList.toggle("shown");
+  });
+  document.addEventListener("keydown", function(e){
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches && e.target.matches("mark.t") && document.body.classList.contains("cover")){
+      e.preventDefault(); e.target.classList.toggle("shown");
+    }
+  });
+
+  var cover = document.getElementById("cover");
+  cover.addEventListener("click", function(){
+    var on = !document.body.classList.contains("cover");
+    document.body.classList.toggle("cover", on);
+    cover.setAttribute("aria-pressed", String(on));
+    cover.textContent = on ? "顯示重點" : "遮住重點";
+    document.querySelectorAll("mark.t.shown").forEach(function(x){x.classList.remove("shown");});
+  });
+
+  var q = document.getElementById("q"), empty = document.getElementById("empty");
+  var blobs = {};
+  U.forEach(function(u){
+    blobs[u.id] = [u.title,u.en,u.spot,u.look,JSON.stringify(u.rules||[]),JSON.stringify(u.table||{}),plain(JSON.stringify(u.ex||[])),JSON.stringify(u.pairs||[]),JSON.stringify(u.traps||[])].join(" ").toLowerCase();
+  });
+  var timer;
+  q.addEventListener("input", function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      var term = q.value.trim().toLowerCase(), any = false;
+      U.forEach(function(u){
+        var hit = !term || blobs[u.id].indexOf(term) !== -1;
+        document.getElementById(u.id).hidden = !hit;
+        var li = document.querySelector('[data-toc="'+u.id+'"]');
+        if (li) li.closest("li").hidden = !hit;
+        if (hit) any = true;
+      });
+      empty.hidden = any;
+    }, 150);
+  });
+})();
+</script>
+
+</body></html>

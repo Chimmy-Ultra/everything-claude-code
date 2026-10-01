@@ -183,6 +183,40 @@ button.row:hover .t{color:var(--accent)}
 .tip .mean{font-family:var(--zh);margin-top:2px}
 .tip .ex{margin-top:6px;padding-top:6px;border-top:1px solid var(--rule);color:var(--soft);font-style:italic}
 
+/* chapter lessons */
+.lesson{font-size:var(--fs,15.5px)}
+.lesson .chap{margin:2.2em 0 0;font-size:.9em;color:var(--soft)}
+.lesson h1{margin-top:.15em}
+.lesson .lead{font-size:1.15em;line-height:1.6;margin:1em 0 0}
+.lesson h3{margin-top:2.2em}
+.lesson .steps{margin:.4em 0 0;padding-left:1.4em;display:grid;gap:.3em}
+.lesson .steps li::marker{color:var(--faint)}
+.lesson .rule{margin:1.4em 0 0;border-top:1px solid var(--rule);padding-top:.9em}
+.lesson .rule .rh{font-weight:500;font-size:1.06em}
+.lesson .rule .rb{margin-top:.25em}
+.lesson .exl{list-style:none;margin:.5em 0 0;padding:0 0 0 1em;border-left:2px solid var(--rule);display:grid;gap:.35em}
+.lesson .exl em{font-style:normal;color:var(--accent);font-weight:500}
+.lesson .exl .para>:not(.zh){font-style:italic}
+.lesson .pr{margin:1em 0 0;display:grid;gap:.2em}
+.lesson .pr .ok,.lesson .pr .no{display:grid;grid-template-columns:1.4em minmax(0,1fr);gap:.4em}
+.lesson .pr .ok b{color:var(--accent);font-weight:500}
+.lesson .pr .no b{color:var(--pencil);font-weight:500}
+.lesson .pr .no span{text-decoration:line-through;text-decoration-color:var(--pencil);color:var(--soft)}
+.lesson .pr .why{padding-left:1.8em;font-size:.94em;color:var(--soft)}
+.lesson .ls{margin:1em 0 0}
+.lesson .ls .lh{font-weight:500}
+.lesson .ls ul{list-style:none;margin:.3em 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(14em,1fr));gap:.15em 1.4em}
+.lesson .ls li{border-bottom:1px solid var(--rule);padding:.2em 0}
+.lesson .ls li .zh{display:block}
+.lesson .traps{margin:.4em 0 0;padding-left:1.2em;display:grid;gap:.5em}
+.lesson .traps li::marker{color:var(--pencil)}
+.lesson .go{display:flex;justify-content:flex-end;margin-top:2.4em}
+.lesson .go button,.skip{font:italic 500 1.08em var(--en);color:var(--accent)}
+.lesson .go button:hover,.skip:hover{text-decoration:underline;text-underline-offset:4px}
+.lesson .zhbar{display:flex;justify-content:flex-end;margin-top:1em}
+#sheet{position:fixed;inset:0;z-index:25;background:var(--paper);overflow-y:auto;padding:0 20px calc(40px + env(safe-area-inset-bottom,0px))}
+#sheet .page{padding-top:env(safe-area-inset-top,0px)}
+
 /* summary, review shelf, statistics, settings */
 .score{font:400 clamp(40px,8vw,56px)/1 var(--en);margin:.5em 0 .1em;font-variant-numeric:lining-nums}
 .score small{font-size:.4em;color:var(--soft);margin-left:.3em}
@@ -224,6 +258,7 @@ h3 .sc{letter-spacing:.12em}
 <main id="app" class="page"></main>
 <section id="session" hidden></section>
 <nav id="dock" hidden aria-label="This question"><div class="dk-panel" id="dkPanel"></div><div class="dk-bar"><span class="dk-tools" id="dkTools"></span><span class="dk-next" id="dkNext"></span></div></nav>
+<div id="sheet" hidden role="dialog" aria-label="Lesson"></div>
 <div class="tip" id="tip" hidden></div>
 <div class="toast" id="toast" hidden role="status"></div>
 
@@ -233,7 +268,6 @@ h3 .sc{letter-spacing:.12em}
 // ================================================================ data
 const DATA = JSON.parse(document.getElementById("bank").textContent);
 const UNITS = DATA.units;                     // id -> {zh, group, en}
-const GRAMMAR_URL = "https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ";
 const INTERVALS = [1, 3, 7, 14];              // review spacing in days per level (our own setting, not a research number)
 const WEAK = 0.7;                             // chapters under this accuracy come up more often (our setting)
 const SIZES = [13.5, 14.5, 15.5, 16.5, 18];
@@ -397,7 +431,7 @@ async function playLines(item, idxs, gap, onLine) {
 // ================================================================ views
 let view = "home";
 function show(v) {
-  view = v; stopAudio(); clearInterval(paceTimer); $("#tip").hidden = true; window.scrollTo(0, 0);
+  view = v; stopAudio(); clearInterval(paceTimer); $("#tip").hidden = true; closeSheet(); window.scrollTo(0, 0);
   const app = $("#app"), ses = $("#session");
   app.textContent = ""; ses.textContent = "";
   const dk = $("#dock"); dk.hidden = true; dk.dataset.card = ""; $("#dkTools").textContent = ""; $("#dkPanel").textContent = ""; $("#dkNext").textContent = "";
@@ -442,7 +476,7 @@ function home() {
 
   for (const [g, part, title] of PARTS) {
     const us = unitsIn(g); if (!us.length) continue;
-    app.append(partList(part, title, us.map((u, i) => ({ n: String(i + 1), t: unitName(u), c: ITEMS.filter(x => x.unit === u).length, fn: () => startSet({ unit: u, n: 10, label: unitName(u) }) }))));
+    app.append(partList(part, title, us.map((u, i) => ({ n: String(i + 1), t: unitName(u), c: ITEMS.filter(x => x.unit === u).length, fn: () => DATA.lessons?.[u] ? lessonView(u) : startSet({ unit: u, n: 10, label: unitName(u) }) }))));
   }
   const col = el("nav", "colophon sc");
   const shelf = Object.keys(B).filter(activeBank).length;
@@ -461,6 +495,55 @@ function partList(part, title, rows) {
   }
   s.append(h, ol); return s;
 }
+
+// ================================================================ chapter lessons
+function chapterNo(u) { const g = UNITS[u].group, part = PARTS.find(p => p[0] === g); return { n: unitsIn(g).indexOf(u) + 1, part: part ? part[1] + " · " + part[2] : "" }; }
+function lessonBody(u, onStart) {
+  const L_ = DATA.lessons[u], box = el("div", "lesson");
+  const c = chapterNo(u); box.append(el("p", "chap sc", c.part + " · Chapter " + c.n), el("h1", null, unitName(u)));
+  const zt = el("div", "zhbar"), zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); box.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  zt.append(zb); box.append(zt);
+  box.append(para(L_.lead, "lead"));
+  if (L_.steps?.length) { box.append(sectionH("How to work it")); const ol = el("ol", "steps"); for (const st of L_.steps) { const li = el("li"); li.append(para(st)); ol.append(li); } box.append(ol); }
+  if (L_.rules?.length) {
+    box.append(sectionH("Rules"));
+    for (const r of L_.rules) {
+      const d = el("div", "rule"); d.append(para(r.head, "rh"), para(r.body, "rb"));
+      const ul = el("ul", "exl"); for (const e of r.ex || []) { const li = el("li"); li.append(para(e)); ul.append(li); } d.append(ul); box.append(d);
+    }
+  }
+  if (L_.pairs?.length) {
+    box.append(sectionH("Right and wrong"));
+    for (const p of L_.pairs) {
+      const d = el("div", "pr"), ok = el("div", "ok"), no = el("div", "no");
+      ok.append(el("b", null, "✓"), el("span", null, p.right)); no.append(el("b", null, "✗"), el("span", null, p.wrong));
+      const w = para(p.why, "why"); d.append(ok, no, w); box.append(d);
+    }
+  }
+  for (const l of L_.lists || []) {
+    const d = el("div", "ls"); d.append(para(l.head, "lh"));
+    const ul = el("ul"); for (const [en, zh] of l.items) { const li = el("li"); li.innerHTML = en; const z = el("span", "zh", zh); z.hidden = true; li.append(z); ul.append(li); }
+    d.append(ul); box.append(d);
+  }
+  if (L_.traps?.length) { box.append(sectionH("Traps")); const ul = el("ul", "traps"); for (const t of L_.traps) { const li = el("li"); li.append(para(t)); ul.append(li); } box.append(ul); }
+  if (onStart) { const g = el("div", "go"); g.append(btn(null, "Start the questions →", onStart)); box.append(g); }
+  return box;
+}
+function lessonView(u) {
+  const app = show("lesson");
+  const start = () => startSet({ unit: u, n: 10, label: unitName(u) });
+  head(app, backTo("Contents", home), btn("skip", "Skip to the questions →", start));
+  app.append(lessonBody(u, start));
+}
+function openSheet(u) {
+  const sh = $("#sheet"); sh.textContent = "";
+  const pg = el("div", "page"); head(pg, backTo("Back to the question", closeSheet)); pg.append(lessonBody(u, null));
+  const g = el("div", "lesson"), gg = el("div", "go"); gg.append(btn(null, "Back to the question →", closeSheet)); g.append(gg); pg.append(g);
+  sh.append(pg); sh.hidden = false; sh.scrollTop = 0; document.body.style.overflow = "hidden";
+}
+function closeSheet() { $("#sheet").hidden = true; document.body.style.overflow = ""; }
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#sheet").hidden) closeSheet(); });
 
 // ================================================================ building a session
 let S = null;
@@ -578,7 +661,7 @@ function dockFor(item, ctx) {
   const rep = tool(ICON.flag, m.flagged ? "Reported" : "Report"); rep.setAttribute("aria-pressed", String(!!m.flagged));
   rep.onclick = () => togglePanel("report", () => reportForm(item, rep));
   tools.append(star, rep);
-  if (item.type === "grammar") { const a = el("a", "tool"); a.innerHTML = ICON.book + '<span class="lbl">Grammar notes</span>'; a.href = GRAMMAR_URL; a.target = "_blank"; a.rel = "noopener"; tools.append(a); }
+  if (DATA.lessons?.[item.unit]) { const lb = tool(ICON.book, "Lesson"); lb.onclick = () => openSheet(item.unit); tools.append(lb); }
   if (sample) { const ab = tool(ICON.claude, "Ask Claude", "claude"); ab.onclick = () => togglePanel("ask", () => askForm(item, dockCtx)); tools.append(ab); }
   const zb = tool("", "中", "zht"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
   zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); document.querySelectorAll("#session .rightp .zh").forEach(z => z.hidden = !on); };
@@ -586,7 +669,7 @@ function dockFor(item, ctx) {
 }
 function footFor(item, box, ctx) {
   const foot = el("div", "foot sc"), fl = el("span", "fl");
-  if (item.type === "grammar") { const a = el("a", null, "See also"); a.href = GRAMMAR_URL; a.target = "_blank"; a.rel = "noopener"; fl.append(a); }
+  if (DATA.lessons?.[item.unit]) fl.append(btn(null, "Lesson", () => openSheet(item.unit)));
   const m = M[item.id] || {};
   const star = btn(null, m.starred ? "Starred" : "Star"); star.setAttribute("aria-pressed", String(!!m.starred));
   star.onclick = () => { M[item.id] = Object.assign(M[item.id] || {}, { starred: !(M[item.id] || {}).starred }); saveMark(item.id); star.textContent = M[item.id].starred ? "Starred" : "Star"; star.setAttribute("aria-pressed", String(M[item.id].starred)); };

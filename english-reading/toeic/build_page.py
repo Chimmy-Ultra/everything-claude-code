@@ -76,12 +76,25 @@ for it in ITEMS:
         for q, x in zip(it["questions"], e["q"]): q["en"] = x
 if no_ipa: print("no IPA in the CMU dictionary (card shows none):", ", ".join(sorted(set(no_ipa))))
 
+# Chapter lessons (lessons/<unit>.json, checked by lessons/check.py); every chapter with questions needs one.
+sys.path.insert(0, os.path.join(HERE, "lessons"))
+import importlib.util
+_spec = importlib.util.spec_from_file_location("lesson_check", os.path.join(HERE, "lessons", "check.py"))
+lesson_check = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(lesson_check)
+LESSONS = {}
+for u in UNITS:
+    if not any(x["unit"] == u for x in ITEMS): continue
+    for e in lesson_check.check(u): errors.append("lesson " + e)
+    path = os.path.join(HERE, "lessons", u + ".json")
+    if os.path.exists(path):
+        d = json.load(open(path, encoding="utf-8")); d.pop("_flags", None); LESSONS[u] = d
+
 for w in warnings: print("warning:", w)
 if errors:
     for e in errors: print("error:", e)
     if "--draft" not in sys.argv: sys.exit(f"{len(errors)} errors, not building")
 
-data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS}
+data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS, "lessons": LESSONS}
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 page = open(os.path.join(HERE, "template.html"), encoding="utf-8").read().replace("{{BANK}}", blob)
 open(os.path.join(HERE, "toeic.html"), "w", encoding="utf-8").write(page)
