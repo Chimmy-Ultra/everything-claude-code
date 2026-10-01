@@ -9,8 +9,8 @@ level 是出題者估計，最終由盲審 band 換算；reviewed 由審核者�
 ITEMS = [
     # ------------------------------------------------------------ pos
     {
-        "id": "g-pos-09", "type": "grammar", "format": "gap", "unit": "pos", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-pos-09", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
         "options": ["access", "accessibly", "accessible", "accessibility"],
         "answer": 2,
@@ -35,7 +35,7 @@ ITEMS = [
     },
     {
         "id": "g-pos-10", "type": "grammar", "format": "gap", "unit": "pos", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
         "options": ["Applications", "Apply", "Applying", "Applied"],
         "answer": 0,
@@ -60,8 +60,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ tense
     {
-        "id": "g-tense-07", "type": "grammar", "format": "gap", "unit": "tense", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-tense-07", "type": "grammar", "format": "gap", "unit": "tense", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "The Wexley Road call center, which now handles more than ten thousand calls a week, ______ without any scheduling software for nearly two years when Ms. Ferrante was hired to manage it.",
         "options": ["has been operating", "will have been operating", "is operating", "had been operating"],
         "answer": 3,
@@ -85,8 +85,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-tense-08", "type": "grammar", "format": "gap", "unit": "tense", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-tense-08", "type": "grammar", "format": "gap", "unit": "tense", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "Revenue from the company's online store, which has grown steadily every month since the website was redesigned, ______ the combined revenue of its four retail branches for the first time last quarter.",
         "options": ["has surpassed", "surpassed", "had surpassed", "will surpass"],
         "answer": 1,
@@ -112,7 +112,7 @@ ITEMS = [
     # ------------------------------------------------------------ voice
     {
         "id": "g-voice-04", "type": "grammar", "format": "gap", "unit": "voice", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The two interns the head of the payroll department ______ to the benefits project last month have both been offered full-time positions starting in January.",
         "options": ["was assigned", "has been assigned", "assigning", "assigned"],
         "answer": 3,
@@ -137,8 +137,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ participle
     {
-        "id": "g-participle-06", "type": "grammar", "format": "gap", "unit": "participle", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "id": "g-participle-06", "type": "grammar", "format": "gap", "unit": "participle", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "______ only two days' notice of the elevator repairs, the tenants on the upper floors had to arrange for their furniture deliveries to be carried up by hand.",
         "options": ["Given", "Giving", "Having given", "To give"],
         "answer": 0,
@@ -163,7 +163,7 @@ ITEMS = [
     },
     {
         "id": "g-participle-07", "type": "grammar", "format": "gap", "unit": "participle", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Employees ______ to transfer to the new Corran Street office when it opens in October should inform their department heads in writing by the end of June.",
         "options": ["wish", "wishing", "wished", "are wishing"],
         "answer": 1,
@@ -189,7 +189,7 @@ ITEMS = [
     # ------------------------------------------------------------ connect
     {
         "id": "g-connect-07", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "______ the revised safety regulations that the city council passed in March, all scaffolding on our construction sites must now be inspected by a certified engineer every week.",
         "options": ["Because", "Even though", "In light of", "Therefore"],
         "answer": 2,
@@ -213,8 +213,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-08", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-connect-08", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "______ the merger is approved by shareholders at next month's annual meeting or not, the two firms will continue to share the distribution center they jointly lease.",
         "options": ["If", "Unless", "Either", "Whether"],
         "answer": 3,
@@ -240,7 +240,7 @@ ITEMS = [
     # ------------------------------------------------------------ agree
     {
         "id": "g-agree-05", "type": "grammar", "format": "gap", "unit": "agree", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The chief financial officer, as well as the two external auditors who reviewed last year's accounts, ______ expected to answer questions from the board at Thursday's budget review.",
         "options": ["is", "are", "have been", "being"],
         "answer": 0,
@@ -265,7 +265,7 @@ ITEMS = [
     },
     {
         "id": "g-agree-06", "type": "grammar", "format": "gap", "unit": "agree", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "One of the courier vans that deliver to our downtown branches ______ been out of service since Tuesday, so some orders will arrive a day late this week.",
         "options": ["have", "has", "having", "to have"],
         "answer": 1,
@@ -290,8 +290,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ relative
     {
-        "id": "g-relative-05", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-relative-05", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The firm has hired two outside consultants, both of ______ have advised major retailers on store design, to help plan the layout of its new flagship location.",
         "options": ["them", "who", "whom", "which"],
         "answer": 2,
@@ -315,8 +315,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-06", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-relative-06", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The hotel ______ the members of our regional sales team stayed during last year's conference has offered us a reduced rate if we book thirty rooms by the end of May.",
         "options": ["which", "where", "what", "who"],
         "answer": 1,
@@ -341,8 +341,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ pronoun
     {
-        "id": "g-pronoun-05", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-pronoun-05", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Ms. Kwon has asked the sales associates who joined the Linnet Street store this month to familiarize ______ with the return policy before the holiday sale begins.",
         "options": ["them", "their own", "they", "themselves"],
         "answer": 3,
@@ -367,7 +367,7 @@ ITEMS = [
     },
     {
         "id": "g-pronoun-06", "type": "grammar", "format": "gap", "unit": "pronoun", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "The company looked at two buildings near the airport for its new claims-processing office, but ______ had enough parking for the evening shift, so it signed a lease on a third.",
         "options": ["neither", "both", "each", "either"],
         "answer": 0,
@@ -393,7 +393,7 @@ ITEMS = [
     # ------------------------------------------------------------ prep
     {
         "id": "g-prep-08", "type": "grammar", "format": "gap", "unit": "prep", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The project manager blamed the three-week delay in completing the east wing of the hospital chiefly ______ the late arrival of steel beams from the supplier.",
         "options": ["for", "to", "on", "with"],
         "answer": 2,
@@ -418,7 +418,7 @@ ITEMS = [
     },
     {
         "id": "g-prep-09", "type": "grammar", "format": "gap", "unit": "prep", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "The new security software prevents employees who have not yet completed the annual data protection training ______ opening files stored in the client database.",
         "options": ["by", "for", "with", "from"],
         "answer": 3,
@@ -443,8 +443,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ toing
     {
-        "id": "g-toing-05", "type": "grammar", "format": "gap", "unit": "toing", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-toing-05", "type": "grammar", "format": "gap", "unit": "toing", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "To cut costs, the committee is considering, among several other measures proposed by the finance department, ______ the branch office on Morrow Lane when its lease expires.",
         "options": ["to close", "closing", "close", "closed"],
         "answer": 1,
@@ -469,7 +469,7 @@ ITEMS = [
     },
     {
         "id": "g-toing-06", "type": "grammar", "format": "gap", "unit": "toing", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "After months of stalled negotiations, the two shipping firms are now closer than they have been at any point in the past three years ______ a long-term agreement on shared port facilities.",
         "options": ["to sign", "for signing", "to signing", "signing"],
         "answer": 2,
@@ -495,7 +495,7 @@ ITEMS = [
     # ------------------------------------------------------------ mandative
     {
         "id": "g-mandative-04", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The supply agreement requires, in the clause on late deliveries, that any shipment arriving more than two days behind schedule ______ at a ten percent discount.",
         "options": ["be invoiced", "will be invoiced", "being invoiced", "to be invoiced"],
         "answer": 0,
@@ -521,7 +521,7 @@ ITEMS = [
     # ------------------------------------------------------------ conditional
     {
         "id": "g-conditional-04", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "______ the board, which has already postponed its decision twice this year, to approve the expansion at Thursday's meeting, construction could begin as early as March.",
         "options": ["If", "Should", "Were", "Unless"],
         "answer": 2,
@@ -547,7 +547,7 @@ ITEMS = [
     # ------------------------------------------------------------ compare
     {
         "id": "g-compare-05", "type": "grammar", "format": "gap", "unit": "compare", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Since reopening in June, the renovated branch on Delford Street has been serving ______ customers on an average weekday than the two older branches nearby combined.",
         "options": ["most", "many", "much", "more"],
         "answer": 3,
@@ -572,8 +572,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ quantity
     {
-        "id": "g-quantity-05", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "id": "g-quantity-05", "type": "grammar", "format": "gap", "unit": "quantity", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "______ of applicants for the warehouse positions at the Ostley site has nearly doubled since the company raised its starting wage in the spring.",
         "options": ["The number", "A number", "The amount", "A lot"],
         "answer": 0,
@@ -599,7 +599,7 @@ ITEMS = [
     # ------------------------------------------------------------ parallel
     {
         "id": "g-parallel-04", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Ms. Rao's duties as office manager at the new branch include ordering supplies, scheduling repairs with outside contractors, and ______ the monthly budget for cleaning and maintenance.",
         "options": ["to manage", "managing", "manage", "managed"],
         "answer": 1,

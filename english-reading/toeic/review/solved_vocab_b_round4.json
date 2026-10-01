@@ -1,0 +1,105 @@
+{
+ "answers": {
+  "v-collocation-10": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'that' is the object of the gapped verb (tenants ___ concerns), and 'raise concerns' is the standard collocation. 'complained' needs 'about' and cannot take 'concerns' as object; 'spoke' and 'commented' are intransitive here (spoke of / commented on).",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (complained/spoke/commented all read fine in 'tenants ___ at last month's residents' meeting'); D yes (the object slot is 'concerns', 14 words back, linked by 'that'); B weak (complained is only a mild temptation) and S no, so medium not hard.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-collocation-11": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'fill a vacancy' is the stock collocation; 'rather than advertised outside' confirms the sense. 'held' and 'assumed' do not take 'vacancy'. 'occupied' is the only near miss: a post can be occupied by someone, but a vacancy is the empty slot, so editors would write 'filled'.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (held / occupied by an internal candidate reads fine locally); D yes (the head noun 'vacancy' is 15+ words from the gap); B no, since 'fill a vacancy' is a very common collocation, so only medium.",
+   "fix": "", "tooClose": false,
+   "editorNote": "'occupied' is borderline: 'the position will be occupied by an internal candidate' is fine, and 'occupy a vacancy' is attested though odd. An editor would probably still write 'filled'; consider swapping 'occupied' for a clearly wrong option (e.g. 'withdrawn')."
+  },
+  "v-collocation-12": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'at short notice' is the idiom. 'time' and 'alert' do not work. 'at short warning' exists in older or rare usage but modern formal prose uses 'notice'.",
+   "vsToeic": "easier", "band": "easy", "ldbs": "L", "style": 3,
+   "why": "L yes in meaning (warning is plausible), but the idiom is fully local and extremely common, so D no and B weak; nothing in the rest of the sentence is needed. Easy.",
+   "fix": "To raise difficulty, drop the idiom frame (e.g. test 'give ___' or a less stock collocation).", "tooClose": false,
+   "editorNote": "'at short warning' has some dictionary and corpus support; remove 'warning' or accept it as low-risk."
+  },
+  "v-collocation-13": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'highly unlikely' is the standard collocation. 'strongly unlikely', 'greatly unlikely' and 'heavily unlikely' are not used in formal English.",
+   "vsToeic": "easier", "band": "easy", "ldbs": "L", "style": 3,
+   "why": "L yes (all four are intensifying adverbs) but the cue is the adjacent word, so D no; 'highly unlikely' is a very common phrase, so B no. Easy.",
+   "fix": "Replace the adjective with a less stock one or move the collocate away from the gap.", "tooClose": false,
+   "editorNote": "'greatly unlikely' is not standard; no ambiguity."
+  },
+  "v-synonym-10": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'forbid + object + to V' is the only pattern that fits 'all staff ... to keep'. prohibit / ban / prevent take 'from -ing', not 'to V'. 'prohibit someone to do' occurs occasionally but is not standard formal English.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDB", "style": 5,
+   "why": "L yes (all four mean 'not allow'); D yes (the deciding 'to keep' is 12 words after the gap behind a long appositive); B yes (prohibits/bans are the 'obvious' strong synonyms and good students will choose them).",
+   "fix": "", "tooClose": false,
+   "editorNote": "Small risk: some dictionaries record 'prohibit sb to V' as rare but attested. Standard guidance (from -ing) still excludes it."
+  },
+  "v-synonym-11": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'substituted X for Y' = X is the new item, Y the old one; fruit replaces the almond cake. 'replaced X for Y' is wrong ('replaced Y with X'); 'exchanged X for Y' would mean giving up the fruit to get the cake, the reverse of the sense; 'removed ... for' is not coherent.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDB", "style": 5,
+   "why": "L yes (replaced/exchanged fit meaning); D yes ('for the almond cake' is 7 words after the gap; direction needs the full sentence); B yes (replace vs substitute direction is a classic good-student error). S is no.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-synonym-12": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The subject is 'The repairs' (the contractor is inside a relative clause). 'cost + indirect object + amount' fits. 'charged' needs the contractor as subject; 'spent' and 'paid' need the company as subject.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (charged the company nearly $8,000 is locally fine with the contractor nearby); D yes (real subject 'repairs' is 12 words back). B no: 'cost' is basic and the double-object frame points to it. The S step (skip the relative clause) is trivial, so medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-synonym-13": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'has resulted ... in a sharp drop'; the preposition 'in' arrives after the parenthetical. 'led' needs 'to'; 'caused' and 'produced' take a direct object with no 'in'.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (led/caused/produced all read fine through 'has ___, within the first six months alone,'); D yes ('in' is 7 words after the gap). B no: once 'in' is seen, 'result in' is a basic pattern, so medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-business-09": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "A $1,000 deductible leaves the insurer paying $600 of $1,600. Premium (price of the policy), surcharge (extra fee) and rebate (money back) do not explain the split.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (premium on a policy is $1,000 is fine locally); D yes (the arithmetic clue is in the later clause). B no (pure meaning). The numbers nearly define the word, which keeps it from hard.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-business-10": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Late withdrawers lose the deposit, in contrast to those who get it all back. 'reclaim' contradicts the contrast; 'refund' would have the vendors paying the deposit out; 'redeem' (a voucher, bond or pledge) does not fit.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (reclaim reads fine locally); D yes (the contrast 'whereas ... full amount back' is after the gap). B weak and the antonymic tail partly defines the answer, so medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-business-11": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The company owes the supplier an unpaid invoice, so the supplier is one of its creditors. 'debtors' reverses the direction; investors and auditors are unrelated to an unpaid invoice.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDBS", "style": 5,
+   "why": "L yes (debtors on a list the finance director reviews is natural); D yes (decisive information, the unpaid supplier invoice, is at the start of the sentence); B yes (debtor/creditor direction is a common slip); S yes (work out who owes whom).",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-family-09": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'preventable' = could have been avoided, matching 'should have been replaced months earlier'. 'preventive' describes measures (preventive maintenance), not breakdowns; 'prevented' contradicts the breakdowns having occurred; 'preventing' is incoherent.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (prevented/preventive are grammatical in 'were ___'); D yes (the since-clause carries the decision); B weak since few good students believe 'breakdowns were preventive'. The since-clause also nearly glosses the answer, so medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "v-family-10": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'dependable' = reliable, which explains why staff book the other elevator. 'dependent' needs 'on' and gives an incoherent meaning here; 'depended' needs 'on' (depended on); 'depending' is not an adjective in this slot.",
+   "vsToeic": "easier", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes ('has never been dependent' is grammatical locally); D yes (the consequence clause after the comma settles it). B weak, since the meaning is obvious once read; this is the low end of medium.",
+   "fix": "", "tooClose": false, "editorNote": "Low-end medium; 'dependable' is the natural word and the stem practically supplies it."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "v-collocation-11: 'occupied' is a near miss (a post can be occupied; an editor would still write 'filled'). Consider replacing it with a clearer wrong option.",
+  "v-collocation-12: 'at short warning' has some dictionary and corpus support (low priority); consider replacing 'warning'."
+ ],
+ "overall": "13 items: 2 easy, 8 medium, 3 hard (hard 23 percent, below the 30 percent target). No ambiguous items and no mustFix. Weaknesses: (1) too many mid-band items where the clue is a gloss in the stem (b09 arithmetic, b10 'get the full amount back', f09 'should have been replaced', f10 consequence clause), which keeps them at medium; (2) c12 and c13 rest on a single stock collocation next to the gap, so they are easy; (3) four stems open with 'Because' (c12, s11, b09, f10), so the sentence frame is repetitive. The hard items (s10, s11, b11) are well built: close in meaning, with the deciding preposition, direction or reasoning step placed far from the gap. To meet the hard target, add hard items for collocation and family; the existing items are mostly medium."
+}

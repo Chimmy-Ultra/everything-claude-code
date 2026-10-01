@@ -12,7 +12,7 @@ ITEMS = [
     # (C) repeats cover/conference. Key (B) is indirect: the client is closed anyway, so no cover is needed.
     {
         "id": "l-qr-13", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-13", "gapMs": 900,
             "lines": [
@@ -41,23 +41,23 @@ ITEMS = [
             },
         }],
     },
-    # l-qr-14  near-correct: (A) Yes + flight time, (B) No + lease length -- both answer the request's form.
+    # l-qr-14  near-correct: (A) Yes + "when I get back" (contradicts "before you leave"), (B) No + lease length -- both answer the request's form.
     # Key (C) is indirect: the landlord's assistant will collect it, so there is nothing to mail.
     {
         "id": "l-qr-14", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-14", "gapMs": 900,
             "lines": [
                 {"file": "q.mp3", "who": "M", "voice": "am_eric", "text": "Could you mail the signed lease back to the landlord before you leave for the airport?"},
-                {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Yes, my flight lands at six."},
+                {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Yes, I'll mail it when I get back from my trip."},
                 {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "No, it's a two-year lease."},
                 {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "His assistant is coming by to pick it up at noon."},
             ],
         },
         "transcriptZh": [
             "你去機場之前，可以把簽好的租約寄回給房東嗎？",
-            "可以，我的班機六點降落。",
+            "可以，我出差回來再寄。",
             "不，那是兩年期的租約。",
             "他的助理中午會過來拿。",
         ],
@@ -68,9 +68,9 @@ ITEMS = [
                 "point": "請求句：用「有人會來拿」表示不必寄",
                 "why": "請她出發前把租約寄給房東 → 回房東的助理中午會來拿（coming by to pick it up）：暗示不必寄。",
                 "evidence": [3],
-                "wrong": ["形式對情境錯：Yes 對得上，但講的是班機幾點到", "同字陷阱：No 加上重複 lease，答的是租期", None],
+                "wrong": ["時間不對：答應了，卻說回來才寄，不是出發前", "同字陷阱：No 加上重複 lease，答的是租期", None],
                 "wrongMore": [
-                    "Could you… 用 Yes 回是可以的，所以不能只聽開頭；後半講班機抵達時間，跟寄不寄租約無關。",
+                    "Could you… 用 Yes 回是可以的，所以不能只聽開頭；但問句要的是出發前（before you leave）寄，when I get back 跟這個時間衝突。",
                     "No 的形式也接得上請求句，而且又出現 lease；但後半講租約是兩年期，沒有回應要不要寄。",
                     None,
                 ],
@@ -82,7 +82,7 @@ ITEMS = [
     # assumes the banners came; only "still haven't arrived" rules it out. Key (A) offers a fix.
     {
         "id": "l-qr-15", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-15", "gapMs": 900,
             "lines": [
@@ -115,7 +115,7 @@ ITEMS = [
     # contradicts "now that the budget's been cut". Key (C): the amount is not known yet, so no decision.
     {
         "id": "l-qr-16", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-16", "gapMs": 900,
             "lines": [
@@ -147,8 +147,8 @@ ITEMS = [
     # l-qr-17  direct key on purpose (the batch's lower rung). near-correct: (C) is a length of time, exactly
     # the form "How long" asks for, but it is travel time to the warehouse. (A) repeats "down".
     {
-        "id": "l-qr-17", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "id": "l-qr-17", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-17", "gapMs": 900,
             "lines": [
@@ -185,7 +185,7 @@ ITEMS = [
     # to weekends, Grace settles on weekdays; (A) Saturday is what customers want, (D) is the truck's deadline.
     {
         "id": "l-conv-07", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-conv-07", "gapMs": 500,
             "lines": [
@@ -272,7 +272,7 @@ ITEMS = [
     # (B) $32.00 is the row she wanted before the delay -- the near-correct trap.
     {
         "id": "l-conv-08", "type": "listen", "format": "conv", "unit": "conv-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "graphic": {
             "caption": "Shipping Rates — One Standard Box",
             "head": ["Service", "Delivery Time", "Price"],
@@ -364,8 +364,8 @@ ITEMS = [
     # "in there" must be traced back to the furnace room. Q3: "except the studio" is the exception;
     # (B) moves the painters from the gift shop to the studio.
     {
-        "id": "l-talk-04", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "id": "l-talk-04", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-talk-04", "gapMs": 500,
             "lines": [

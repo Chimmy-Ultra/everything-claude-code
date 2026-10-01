@@ -1,0 +1,112 @@
+{
+ "answers": {
+  "l-qr-13": {
+   "answer": "B", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "B is an indirect answer: the client's offices are closed, so nobody needs to cover. A names Daniel, who is the one away (form right, situation wrong). C repeats 'conference' but answers nothing about coverage.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDB", "style": 4,
+   "why": "L yes (A has the right who-answer form, C is a same-word trap); D yes (the 'while Daniel is away' condition is what rules out A); B yes (the correct answer is indirect and must be inferred).",
+   "fix": "", "tooClose": false,
+   "editorNote": "B's 'that whole week' assumes the conference lasts a week; harmless. A (Daniel usually handles it) is a weak non-answer but is contradicted by 'away'."
+  },
+  "l-qr-14": {
+   "answer": "C", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "C is an indirect answer: the landlord's assistant will collect the lease, so mailing is unnecessary. A and B use Yes/No form, but their content ignores the mailing request.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LB", "style": 4,
+   "why": "L yes (Yes/No openers are form-right); B yes (the answer is indirect). D weak: both distractors are plain non-sequiturs that need no condition from the question to exclude, so not hard.",
+   "fix": "Make A and B clash with a detail in the question (the airport trip, the signed lease, the landlord) rather than being unrelated add-ons.",
+   "tooClose": false,
+   "editorNote": "A: 'Yes' directly accepts the request, and 'my flight lands at six' is irrelevant rather than contradictory; a cooperative speaker could say it as extra travel info. Weak distractor, not ambiguous."
+  },
+  "l-qr-15": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "A statement about banners not yet arrived; offering to call the sign company is a natural follow-up. B ('Thanks, I'll hang them') assumes they have arrived. C repeats 'open house' but ignores the problem.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "L", "style": 4,
+   "why": "L yes (B has the right statement-response shape, C is a same-word trap); D no (still haven't is in the same clause as the cue); B no (A is a simple, typical follow-up, not an inference).",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-qr-16": {
+   "answer": "C", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "C is an indirect answer: the budget limit is not yet known, so no choice can be made. A gives a restaurant choice but contradicts 'budget's been cut' (more room now). B mentions Paul's retirement but does not choose a venue.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDB", "style": 5,
+   "why": "L yes (A has the right choice-answer form, B is topic-related); D yes (the condition 'now that the budget's been cut' at the end of the question is what excludes A); B yes (the correct answer is indirect).",
+   "fix": "", "tooClose": false,
+   "editorNote": "A's contradiction with the cut is fairly blunt, so hard is borderline, resting on the indirect answer and the long question."
+  },
+  "l-qr-17": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "B is a direct duration answer to 'How long'. A repeats 'down' but talks about last month's outages. C repeats 'warehouse' and gives a time (twenty minutes) but about distance.",
+   "vsToeic": "easier", "band": "easy", "ldbs": "L", "style": 3,
+   "why": "L yes (both distractors are same-word traps, C even contains a duration); D no (the condition is not needed to choose); B no (direct answer). Easy.",
+   "fix": "Make the answer indirect (e.g. 'The IT team still has to confirm the schedule') to move it up.", "tooClose": false, "editorNote": ""
+  },
+  "l-conv-07:0": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The woman says most complaints were about late deliveries; B restates this as customers waiting too long. A, C and D are not mentioned.",
+   "vsToeic": "easier", "band": "easy", "ldbs": "L", "style": 4,
+   "why": "L yes (A relates through the truck), but the evidence is one sentence at the start, the paraphrase is shallow (late deliveries -> waiting too long) and the other options are unrelated. D no, B no. Easy.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-conv-07:1": {
+   "answer": "B", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "Colin is M2; he says the company would charge more per delivery than the store makes on most sofas, so the store would lose money. A is Ian's remark about the truck. C and D come from the pickup discussion.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDBS", "style": 5,
+   "why": "L yes (every option is a true statement from the dialogue, A and C attributed to the wrong person or topic); D yes (the names and the lines are spread over turns); B yes (charge more than we make -> lose money is a distance-3 inference); S yes (match Colin to M2, separate Ian's and Colin's lines).",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-conv-07:2": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "After Colin says the dock is closed on weekends, the woman decides to offer pickup on weekdays only. C is Monday through Friday. A is what people want. B was the original idea. D confuses the truck's booking period with pickup.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LD", "style": 4,
+   "why": "L yes (Saturday and 'any day' were both discussed); D yes (the final decision comes after a proposal and an objection). But the final line states 'weekdays only' directly, so no integration is needed (S no) and the paraphrase is shallow (B no); medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-conv-08:0": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "She says her manager wants shipping costs kept to a minimum, which B restates as a supervisor asking her to limit expenses. The man says everything except standard arrives in time (not A). D describes ground shipping.",
+   "vsToeic": "easier", "band": "easy", "ldbs": "L", "style": 4,
+   "why": "L yes (D is mentioned later but about ground); one-sentence evidence with an explicit reason right after the stated wish; paraphrase manager -> supervisor, minimum -> limit is shallow. D no, B no. Easy.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-conv-08:1": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Monday + deadline Thursday rules out Standard. Ground is a day behind, so Express Ground ($32) would be late. She will pay for air but not overnight, which leaves Two-Day Air at $45. The audio never says the service name or the price.",
+   "vsToeic": "similar", "band": "hard", "ldbs": "LDBS", "style": 5,
+   "why": "L yes (each wrong price is a service that is discussed and ruled out); D yes (elimination spread across five turns); B yes (ground 'a day behind' makes the 3-day service late, a derived step); S yes (combine the chart with two speakers' constraints). Transcript does not state the answer cell.",
+   "fix": "", "tooClose": false,
+   "editorNote": "Graphic check passed: neither '$45' nor 'Two-Day Air' appears in the transcript."
+  },
+  "l-conv-08:2": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The man will e-mail a tracking number once the box is scanned; B restates that as a way to follow the shipment. A reverses who sends it to the client; C and D are not offered.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LB", "style": 4,
+   "why": "L yes (A reuses the client-forwarding detail); B yes (tracking number -> a way to follow the shipment, a structural paraphrase); D no (single-sentence evidence). Medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-talk-04:0": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "She says she will show visitors around the glassworks for the next hour. A and C are workers there, but not the speaker; D is mentioned in the gift shop line.",
+   "vsToeic": "easier", "band": "easy", "ldbs": "L", "style": 4,
+   "why": "L yes (glassblowers, gift shop and painters are all mentioned), but the cue is in the first sentence and 'showing you around' -> tour guide is a one-step identification. D no, B no. Easy.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-talk-04:1": {
+   "answer": "B", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "The previous line places the group in the furnace room, so 'you won't need your jackets' means it will be hot. A is the literal reading; C and D have no support (the visit is an hour and the work is indoors).",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LB", "style": 4,
+   "why": "L yes (A is a literal reading of the quote); B yes (the non-literal point must be inferred from 'furnace room'). D weak: evidence is the immediately preceding line and C and D are unrelated, so medium, not hard.",
+   "fix": "", "tooClose": false, "editorNote": "'warn' is a slightly strong verb for an informing remark but acceptable."
+  },
+  "l-talk-04:2": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Some pieces in the studio won't be in stores until next spring, which C restates as products not yet on sale. A reverses the photo ban; B is the gift shop (painters); D is the furnace room.",
+   "vsToeic": "similar", "band": "medium", "ldbs": "LB", "style": 4,
+   "why": "L yes (all three distractors are details of other places, A reversed); B yes (won't be in stores until next spring -> not on sale yet, a structural paraphrase). D no: the evidence is one sentence, so medium.",
+   "fix": "", "tooClose": false, "editorNote": ""
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "l-qr-14: A ('Yes, my flight lands at six') directly accepts the request and the tail is irrelevant, not contradictory; B ('No, it's a two-year lease') is also a loose non-sequitur. Rewrite them so each clashes with a detail (leave for the airport, signed lease, landlord)."
+ ],
+ "overall": "8 sets: 5 qr items plus 3 conv/talk sets (9 questions). qr: 1 easy (17), 2 medium (14, 15), 2 hard (13, 16), roughly on target. conv/talk (9 questions): 3 easy (c07:0, c08:0, t04:0), 4 medium (c07:2, c08:2, t04:1, t04:2), 2 hard (c07:1, c08:1). Easy share is 33 percent (limit 25) and hard is 22 percent (target 25); each set has exactly one easy question, so the per-set limit holds. Both graphic and speaker-attribution questions are well built (the chart cell is never spoken; Colin/Ian attribution). The talk set is the weakest: all three questions have single-sentence evidence and the quote item needs only the preceding line. No ambiguous responses and no mustFix; the only weak distractors are in l-qr-14. To lift the difficulty, make the talk's quote item depend on two-sentence context and the first questions of conv sets deeper (distance-3 paraphrase)."
+}

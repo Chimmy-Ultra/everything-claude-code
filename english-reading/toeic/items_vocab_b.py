@@ -7,8 +7,8 @@
 ITEMS = [
     # ---------------------------------------------------------------- collocation
     {
-        "id": "v-collocation-10", "type": "vocab", "format": "gap", "unit": "collocation", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-10", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Most of the concerns about parking and noise that tenants ______ at last month's residents' meeting have already been passed on to the property management company.",
         "options": ["spoke", "commented", "raised", "complained"],
         "answer": 2,
@@ -28,8 +28,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": True, "S": True},
     },
     {
-        "id": "v-collocation-11", "type": "vocab", "format": "gap", "unit": "collocation", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-11", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The vacancy that opened in the purchasing department when Ms. Okafor transferred to the Brockfield office will be ______ by an internal candidate rather than advertised outside the company.",
         "options": ["held", "filled", "occupied", "assumed"],
         "answer": 1,
@@ -49,8 +49,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": True, "S": True},
     },
     {
-        "id": "v-collocation-12", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-12", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Because the assistant store manager resigned at such short ______, the regional manager had to cover two of her shifts himself while the agency looked for a replacement.",
         "options": ["warning", "time", "alert", "notice"],
         "answer": 3,
@@ -70,8 +70,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": False, "B": True, "S": False},
     },
     {
-        "id": "v-collocation-13", "type": "vocab", "format": "gap", "unit": "collocation", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-collocation-13", "type": "vocab", "format": "gap", "unit": "collocation", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Given that the container ship carrying our order is still waiting to unload at a congested port overseas, it is ______ unlikely that the replacement parts will reach the workshop before the end of the month.",
         "options": ["highly", "strongly", "greatly", "heavily"],
         "answer": 0,
@@ -93,7 +93,7 @@ ITEMS = [
     # ---------------------------------------------------------------- synonym
     {
         "id": "v-synonym-10", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The revised security policy ______ all staff in the billing department, whether permanent or temporary, to keep copies of customers' card numbers on their own laptops or phones.",
         "options": ["prohibits", "prevents", "bans", "forbids"],
         "answer": 3,
@@ -114,7 +114,7 @@ ITEMS = [
     },
     {
         "id": "v-synonym-11", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Because several guests had mentioned nut allergies when they registered, the caterer ______ a platter of fresh seasonal fruit for the almond cake that had originally been planned as dessert.",
         "options": ["replaced", "substituted", "exchanged", "removed"],
         "answer": 1,
@@ -134,8 +134,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": True, "S": True},
     },
     {
-        "id": "v-synonym-12", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-synonym-12", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "The repairs that the roofing contractor carried out on the east warehouse after the March storms ______ the company nearly $8,000, almost twice the original estimate.",
         "options": ["charged", "spent", "cost", "paid"],
         "answer": 2,
@@ -155,8 +155,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": True, "S": True},
     },
     {
-        "id": "v-synonym-13", "type": "vocab", "format": "gap", "unit": "synonym", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-synonym-13", "type": "vocab", "format": "gap", "unit": "synonym", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "According to figures released by the bank, letting customers book branch appointments online has ______, within the first six months alone, in a sharp drop in the number of people waiting in line.",
         "options": ["resulted", "led", "caused", "produced"],
         "answer": 0,
@@ -177,8 +177,8 @@ ITEMS = [
     },
     # ---------------------------------------------------------------- business
     {
-        "id": "v-business-09", "type": "vocab", "format": "gap", "unit": "business", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-business-09", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Because the ______ on the firm's vehicle insurance policy is $1,000, the insurer paid only $600 of the $1,600 bill for repairing the delivery van that was damaged in a minor accident last month.",
         "options": ["premium", "surcharge", "rebate", "deductible"],
         "answer": 3,
@@ -198,8 +198,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": False, "S": True},
     },
     {
-        "id": "v-business-10", "type": "vocab", "format": "gap", "unit": "business", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-business-10", "type": "vocab", "format": "gap", "unit": "business", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Vendors who withdraw from the summer craft market after the stall assignments have been published will ______ their deposit, whereas those who withdraw before that date get the full amount back within ten days.",
         "options": ["reclaim", "forfeit", "refund", "redeem"],
         "answer": 1,
@@ -220,7 +220,7 @@ ITEMS = [
     },
     {
         "id": "v-business-11", "type": "vocab", "format": "gap", "unit": "business", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Until the March invoice from its packaging supplier has been paid in full, the company must keep that supplier on the list of ______ that the finance director reviews every Friday.",
         "options": ["debtors", "investors", "creditors", "auditors"],
         "answer": 2,
@@ -241,8 +241,8 @@ ITEMS = [
     },
     # ---------------------------------------------------------------- family
     {
-        "id": "v-family-09", "type": "vocab", "format": "gap", "unit": "family", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-09", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "According to the maintenance log, nearly all of last year's breakdowns on the packing line were ______, since each one was traced to a worn belt that should have been replaced months earlier.",
         "options": ["preventable", "preventive", "prevented", "preventing"],
         "answer": 0,
@@ -262,8 +262,8 @@ ITEMS = [
         "ldbs": {"L": True, "D": True, "B": True, "S": True},
     },
     {
-        "id": "v-family-10", "type": "vocab", "format": "gap", "unit": "family", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "id": "v-family-10", "type": "vocab", "format": "gap", "unit": "family", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1,
         "stem": "Because the old freight elevator in the north building has never been ______, staff who need to move heavy equipment between floors usually book the one in the south building instead.",
         "options": ["dependent", "depending", "depended", "dependable"],
         "answer": 3,

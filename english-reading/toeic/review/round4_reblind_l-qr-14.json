@@ -1,0 +1,12 @@
+[
+ {
+  "id": "l-qr-14",
+  "format": "qr",
+  "heard": "Could you mail the signed lease back to the landlord before you leave for the airport?",
+  "responses": {
+   "A": "Yes, I'll mail it when I get back from my trip.",
+   "B": "No, it's a two-year lease.",
+   "C": "His assistant is coming by to pick it up at noon."
+  }
+ }
+]
