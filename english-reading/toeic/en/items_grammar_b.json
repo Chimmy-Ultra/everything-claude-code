@@ -1,0 +1,318 @@
+{
+  "g-voice-01": {
+    "point": ["The subject receives the action: be + past participle.", "主詞承受動作：be + p.p."],
+    "why": ["The badges do not hand anything out; they are handed out, and no object follows the blank. <em>By the end of next week</em> is future. So the answer is <em>will be distributed</em>.", "識別證是被發放的一方，空格後沒有受詞；by the end of next week 是未來，所以用 will be distributed。"],
+    "gloss": [
+      {"w": "security badges", "hw": "security badge", "pos": "n.", "zh": "識別證、門禁卡", "ex": "Every visitor must wear a security badge."},
+      {"w": "by the end of", "hw": "by the end of", "pos": "phr.", "zh": "在……結束之前", "ex": "Please send the report by the end of Friday."}
+    ]
+  },
+  "g-voice-02": {
+    "point": ["<em>rise</em> takes no object; <em>raise</em> does.", "rise 不接受詞；raise 要接受詞。"],
+    "why": ["Nothing follows the blank except <em>by nearly eight percent</em>, so the verb has no object: costs <em>rise</em> on their own. <em>Since the start of the year</em> needs the present perfect: <em>have risen</em>.", "空格後只有 by nearly eight percent，沒有受詞，運費自己上漲，用 rise；since the start of the year 配完成式：have risen。"],
+    "gloss": [
+      {"w": "Shipping costs", "hw": "shipping cost", "pos": "n.", "zh": "運費", "ex": "Shipping costs are shown at checkout."},
+      {"w": "overseas", "hw": "overseas", "pos": "adj.", "zh": "海外的", "ex": "Our overseas customers pay in local currency."}
+    ]
+  },
+  "g-voice-03": {
+    "point": ["<em>be granted</em> + noun: the receiver is the subject.", "be granted + 名詞：得到的人當主詞。"],
+    "why": ["<em>By the board of directors</em> shows who gives the leave. Ms. Okafor receives it, so the verb is passive. A noun can still follow <em>granted</em>: <em>a two-week paid sabbatical</em>. The answer is <em>was granted</em>.", "by the board of directors 表示給假的是董事會，Okafor 女士是接受者，用被動；granted 後面仍可接 a two-week paid sabbatical。答案是 was granted。"],
+    "gloss": [
+      {"w": "sabbatical", "hw": "sabbatical", "pos": "n.", "zh": "（帶薪）長假", "ex": "She took a sabbatical to write a book."},
+      {"w": "board of directors", "hw": "board of directors", "pos": "phr.", "zh": "董事會", "ex": "The board of directors meets every quarter."},
+      {"w": "in recognition of", "hw": "in recognition of", "pos": "phr.", "zh": "為了表揚", "ex": "He got a bonus in recognition of his work."}
+    ]
+  },
+  "g-agree-01": {
+    "point": ["The verb agrees with the subject, not the nearby noun.", "動詞跟真正的主詞一致，不跟旁邊的名詞。"],
+    "why": ["The subject is the plural <em>projectors</em>. <em>In every conference room on the fourth floor</em> only adds detail, so it does not change the verb. The answer is <em>have</em>.", "主詞是複數的 projectors；in every conference room on the fourth floor 只是補充說明，不影響動詞。答案是 have。"],
+    "gloss": [
+      {"w": "projectors", "hw": "projector", "pos": "n.", "zh": "投影機", "ex": "The projector in room two is broken."},
+      {"w": "conference room", "hw": "conference room", "pos": "n.", "zh": "會議室", "ex": "Please book the conference room early."},
+      {"w": "replaced with", "hw": "replace with", "pos": "phr.", "zh": "換成", "ex": "We replaced the old printer with a new one."}
+    ]
+  },
+  "g-agree-02": {
+    "point": ["A gerund subject takes a singular verb.", "動名詞當主詞，動詞用單數。"],
+    "why": ["The subject is the gerund <em>Approving</em>, not <em>requests</em> or <em>customers</em>. The act of approving is one thing, so the verb is singular: <em>takes</em>.", "主詞是動名詞 Approving，不是 requests 或 customers。「核准這件事」是單數，所以用 takes。"],
+    "gloss": [
+      {"w": "refund", "hw": "refund", "pos": "n.", "zh": "退款", "ex": "You can ask for a refund within a week."},
+      {"w": "domestic", "hw": "domestic", "pos": "adj.", "zh": "國內的", "ex": "Domestic flights are cheaper than overseas ones."}
+    ]
+  },
+  "g-agree-03": {
+    "point": ["<em>neither A nor B</em>: the verb agrees with B.", "neither A nor B：動詞跟 B 一致。"],
+    "why": ["The noun closest to the blank is <em>the two service contracts</em>, which is plural. So the verb is plural: <em>require</em>.", "離空格最近的名詞是 the two service contracts，是複數，所以動詞用複數：require。"],
+    "gloss": [
+      {"w": "lease agreement", "hw": "lease agreement", "pos": "n.", "zh": "租約", "ex": "Please sign the lease agreement today."},
+      {"w": "service contracts", "hw": "service contract", "pos": "n.", "zh": "服務合約", "ex": "The service contract covers repairs for two years."},
+      {"w": "renewal", "hw": "renewal", "pos": "n.", "zh": "續約", "ex": "The renewal date is June 1."}
+    ]
+  },
+  "g-relative-01": {
+    "point": ["<em>whose</em> + noun: the noun belongs to the person before.", "whose + 名詞：名詞屬於前面的人。"],
+    "why": ["<em>Subscriptions expire this month</em> is already a full clause. The subscriptions belong to the <em>customers</em>, so the blank means 'their': <em>whose</em>.", "subscriptions expire this month 已是完整子句；訂閱屬於 customers，空格相當於「他們的」，所以用 whose。"],
+    "gloss": [
+      {"w": "subscriptions", "hw": "subscription", "pos": "n.", "zh": "訂閱", "ex": "My subscription ends in March."},
+      {"w": "expire", "hw": "expire", "pos": "v.", "zh": "到期", "ex": "The coupon will expire on Friday."},
+      {"w": "renewal reminder", "hw": "renewal reminder", "pos": "n.", "zh": "續訂提醒", "ex": "We sent a renewal reminder last week."}
+    ]
+  },
+  "g-relative-02": {
+    "point": ["Preposition + relative pronoun: things take <em>which</em>.", "介系詞 + 關係代名詞：事物用 which。"],
+    "why": ["<em>Two of</em> points back to <em>the five bids</em>, which are things, not people. After the preposition <em>of</em>, things take <em>which</em>: <em>two of which</em>.", "two of 指回前面的 the five bids，是事物不是人；介系詞 of 後面指事物用 which：two of which。"],
+    "gloss": [
+      {"w": "bids", "hw": "bid", "pos": "n.", "zh": "投標、報價", "ex": "We received three bids for the contract."},
+      {"w": "renovation", "hw": "renovation", "pos": "n.", "zh": "整修", "ex": "The renovation will take two months."},
+      {"w": "under budget", "hw": "under budget", "pos": "phr.", "zh": "低於預算", "ex": "The project finished under budget."}
+    ]
+  },
+  "g-relative-03": {
+    "point": ["The missing object is a thing: <em>which</em>.", "缺的受詞是事物：用 which。"],
+    "why": ["<em>Brenvale Foods acquired</em> has no object. The missing object is <em>The Dunmore plant</em>, which is a thing. After the comma, the word is <em>which</em>.", "Brenvale Foods acquired 後面沒有受詞；缺的正是 The Dunmore plant，是事物。逗號後用 which。"],
+    "gloss": [
+      {"w": "plant", "hw": "plant", "pos": "n.", "zh": "工廠", "ex": "The plant employs about two hundred people."},
+      {"w": "acquired", "hw": "acquire", "pos": "v.", "zh": "收購", "ex": "The firm acquired a smaller rival."},
+      {"w": "packaging", "hw": "packaging", "pos": "n.", "zh": "包裝材料", "ex": "We changed our packaging to save money."}
+    ]
+  },
+  "g-pronoun-01": {
+    "point": ["A possessive goes before a noun: <em>its</em>.", "所有格放在名詞前：its。"],
+    "why": ["<em>Return policy</em> is a noun, so the blank needs a possessive. <em>Venlow Logistics</em> is one company, so the word is <em>its</em>.", "return policy 是名詞，空格要用所有格；Venlow Logistics 是單數的公司，所以用 its。"],
+    "gloss": [
+      {"w": "return policy", "hw": "return policy", "pos": "n.", "zh": "退貨政策", "ex": "Our return policy is posted on the website."},
+      {"w": "exchanges", "hw": "exchange", "pos": "n.", "zh": "換貨", "ex": "We accept exchanges within two weeks."}
+    ]
+  },
+  "g-pronoun-02": {
+    "point": ["<em>those of</em> stands for a plural noun already named.", "those of 代替前面已出現的複數名詞。"],
+    "why": ["The sentence compares <em>delivery times</em> with the delivery times of competitors. To avoid saying a plural noun twice, use <em>those</em>: <em>those of its main competitors</em>.", "句子比的是運送時間和競爭對手的運送時間。為了不重複複數名詞，用 those：those of its main competitors。"],
+    "gloss": [
+      {"w": "delivery times", "hw": "delivery time", "pos": "n.", "zh": "運送時間、交期", "ex": "Our delivery times are now much shorter."},
+      {"w": "considerably", "hw": "considerably", "pos": "adv.", "zh": "相當多地", "ex": "Prices rose considerably last year."},
+      {"w": "competitors", "hw": "competitor", "pos": "n.", "zh": "競爭對手", "ex": "Our main competitor lowered its prices."}
+    ]
+  },
+  "g-pronoun-03": {
+    "point": ["A possessive pronoun stands alone for 'my + noun': <em>mine</em>.", "所有代名詞單獨使用，代替「我的 + 名詞」：mine。"],
+    "why": ["The verb <em>took</em> comes right after the blank, so the blank is the subject and has no noun after it. It means 'my request', so the word is <em>mine</em>.", "took 緊接在空格後面，空格是主詞，後面沒有名詞；意思是「我的申請」，所以用 mine。"],
+    "gloss": [
+      {"w": "reimbursement", "hw": "reimbursement", "pos": "n.", "zh": "報帳、費用核銷", "ex": "Reimbursement usually takes ten days."},
+      {"w": "receipt", "hw": "receipt", "pos": "n.", "zh": "收據", "ex": "Please keep the receipt for your records."}
+    ]
+  },
+  "g-toing-01": {
+    "point": ["<em>decide</em> + to + verb.", "decide 後面接 to + 動詞。"],
+    "why": ["The verb <em>decided</em> is followed by <em>to</em> + verb, not an -ing form. So the answer is <em>to postpone</em>.", "decided 後面接 to + 動詞，不接 -ing。所以答案是 to postpone。"],
+    "gloss": [
+      {"w": "branch", "hw": "branch", "pos": "n.", "zh": "分店、分行", "ex": "The bank opened a new branch downtown."},
+      {"w": "renovation", "hw": "renovation", "pos": "n.", "zh": "整修", "ex": "The renovation will take two months."}
+    ]
+  },
+  "g-toing-02": {
+    "point": ["<em>in addition to</em>: <em>to</em> is a preposition, so use -ing.", "in addition to 的 to 是介系詞，後面接 -ing。"],
+    "why": ["In <em>in addition to</em>, the word <em>to</em> is a preposition. A verb after a preposition takes -ing: <em>editing the monthly newsletter</em>.", "in addition to 的 to 是介系詞，介系詞後面的動詞用 -ing：editing the monthly newsletter。"],
+    "gloss": [
+      {"w": "In addition to", "hw": "in addition to", "pos": "phr.", "zh": "除了……之外（還）", "ex": "In addition to salary, we offer training."},
+      {"w": "newsletter", "hw": "newsletter", "pos": "n.", "zh": "電子報、通訊", "ex": "Our newsletter goes out every month."},
+      {"w": "manages", "hw": "manage", "pos": "v.", "zh": "管理", "ex": "She manages a team of six people."}
+    ]
+  },
+  "g-toing-03": {
+    "point": ["<em>let</em> + object + base verb.", "let + 受詞 + 原形動詞。"],
+    "why": ["<em>Let</em> is followed by an object and a base verb, without <em>to</em>. After <em>the two new technicians</em>, the verb is <em>carry out</em>.", "let 後面接受詞加原形動詞，不加 to。在 the two new technicians 後面，動詞用 carry out。"],
+    "gloss": [
+      {"w": "technicians", "hw": "technician", "pos": "n.", "zh": "技術人員", "ex": "A technician will visit the office today."},
+      {"w": "server upgrade", "hw": "server upgrade", "pos": "n.", "zh": "伺服器升級", "ex": "The server upgrade is planned for Sunday."},
+      {"w": "on their own", "hw": "on their own", "pos": "phr.", "zh": "自己、獨自", "ex": "They solved it on their own."}
+    ]
+  },
+  "g-compare-01": {
+    "point": ["<em>than</em> needs a comparative.", "than 前面要用比較級。"],
+    "why": ["<em>Than</em> follows the blank, so use a comparative adjective. <em>Much</em> only makes it stronger: <em>much cheaper</em>.", "空格後面有 than，要用比較級形容詞；much 只是加強語氣：much cheaper。"],
+    "gloss": [
+      {"w": "shipping", "hw": "shipping", "pos": "n.", "zh": "運送、出貨", "ex": "Shipping takes three days."},
+      {"w": "by rail", "hw": "by rail", "pos": "phr.", "zh": "以鐵路運輸", "ex": "The goods travel by rail to the port."}
+    ]
+  },
+  "g-compare-02": {
+    "point": ["<em>the</em> + comparative, <em>the</em> + comparative.", "the + 比較級, the + 比較級。"],
+    "why": ["<em>The earlier</em> starts a pair, so the second half needs <em>the</em> + comparative: <em>the more</em> guests. The earlier the invitations are sent, the more guests are likely to come.", "The earlier 開啟對應句型，後半句要用 the + 比較級：the more guests。意思是邀請函寄得越早，可能來的人越多。"],
+    "gloss": [
+      {"w": "invitations", "hw": "invitation", "pos": "n.", "zh": "邀請函", "ex": "We mailed the invitations on Monday."},
+      {"w": "sent out", "hw": "send out", "pos": "phr.", "zh": "寄出、發出", "ex": "We will send out the notices today."},
+      {"w": "product launch", "hw": "product launch", "pos": "n.", "zh": "產品發表會", "ex": "The product launch is in May."}
+    ]
+  },
+  "g-compare-03": {
+    "point": ["<em>superior</em> is followed by <em>to</em>.", "superior 後面接 to。"],
+    "why": ["<em>Superior</em> already means 'better', so it takes <em>to</em>, not <em>than</em>: <em>superior to that of every competing model</em>.", "superior 本身就有「比較好」的意思，後面接 to，不接 than：superior to that of every competing model。"],
+    "gloss": [
+      {"w": "battery life", "hw": "battery life", "pos": "n.", "zh": "電池續航力", "ex": "This phone has a long battery life."},
+      {"w": "rated", "hw": "rate", "pos": "v.", "zh": "評為、評價", "ex": "Customers rated the service as excellent."},
+      {"w": "competing", "hw": "competing", "pos": "adj.", "zh": "競爭的", "ex": "We compared three competing products."}
+    ]
+  },
+  "g-quantity-01": {
+    "point": ["Uncountable noun: use <em>much</em>.", "不可數名詞：用 much。"],
+    "why": ["<em>Information</em> is uncountable. It has no plural form, so it takes <em>much</em>: <em>not … much information</em>.", "information 是不可數名詞，沒有複數形，所以用 much：not … much information。"],
+    "gloss": [
+      {"w": "parking rules", "hw": "parking rule", "pos": "n.", "zh": "停車規定", "ex": "The parking rules changed last month."},
+      {"w": "building management office", "hw": "building management office", "pos": "n.", "zh": "大樓管理處", "ex": "Ask the building management office about keys."}
+    ]
+  },
+  "g-quantity-02": {
+    "point": ["<em>most of the</em> + plural noun.", "most of the + 複數名詞。"],
+    "why": ["<em>Of the applicants</em> follows the blank, so the word must go before <em>of the</em> + a plural noun. <em>Most</em> does: <em>most of the applicants</em> means the larger part of them.", "空格後面是 of the applicants，空格的字要能接 of the + 複數名詞。Most 可以：most of the applicants 是「大部分應徵者」。"],
+    "gloss": [
+      {"w": "applicants", "hw": "applicant", "pos": "n.", "zh": "應徵者", "ex": "Each applicant sent a short resume."},
+      {"w": "position", "hw": "position", "pos": "n.", "zh": "職位、職缺", "ex": "She applied for a sales position."}
+    ]
+  },
+  "g-quantity-03": {
+    "point": ["Uncountable noun: <em>a great deal of</em>.", "不可數名詞：a great deal of。"],
+    "why": ["<em>Equipment</em> is uncountable, and the later words <em>most of it</em> treat it as one mass. So the quantity phrase must fit an uncountable noun: <em>a great deal of</em>.", "equipment 是不可數名詞，後面的 most of it 也把它當成單數。所以數量詞要能接不可數名詞：a great deal of。"],
+    "gloss": [
+      {"w": "laboratory equipment", "hw": "laboratory equipment", "pos": "n.", "zh": "實驗室設備", "ex": "The laboratory equipment arrived on Tuesday."},
+      {"w": "installed", "hw": "install", "pos": "v.", "zh": "安裝", "ex": "A technician installed the new printer."}
+    ]
+  },
+  "g-parallel-01": {
+    "point": ["<em>both</em> + A + <em>and</em> + B.", "both A and B：both 搭配 and。"],
+    "why": ["<em>Both</em> always pairs with <em>and</em>. Here it joins two descriptions of the chairs: <em>both comfortable and easy to adjust</em>.", "both 一定搭配 and。這裡 and 連接兩個描述椅子的形容詞：both comfortable and easy to adjust。"],
+    "gloss": [
+      {"w": "feedback", "hw": "feedback", "pos": "n.", "zh": "意見、回饋", "ex": "We asked customers for feedback."},
+      {"w": "adjust", "hw": "adjust", "pos": "v.", "zh": "調整", "ex": "You can adjust the height of the desk."}
+    ]
+  },
+  "g-parallel-02": {
+    "point": ["<em>neither</em> pairs with <em>nor</em>.", "neither 搭配 nor。"],
+    "why": ["<em>Nor explained</em> is the second half of a pair. The first half is <em>neither approved</em>. The <em>and</em> in <em>sales and marketing</em> only joins two departments.", "nor explained 是成對句型的後半；前半就是 neither approved。sales and marketing 的 and 只是連接兩個部門。"],
+    "gloss": [
+      {"w": "regional director", "hw": "regional director", "pos": "n.", "zh": "地區總監", "ex": "The regional director visits each office yearly."},
+      {"w": "budget requests", "hw": "budget request", "pos": "n.", "zh": "預算申請", "ex": "Send your budget request to finance."},
+      {"w": "on hold", "hw": "on hold", "pos": "phr.", "zh": "暫緩、擱置", "ex": "The hiring plan is on hold."}
+    ]
+  },
+  "g-parallel-03": {
+    "point": ["Joined by <em>and</em>, both verbs take the same form.", "and 連接的兩個動詞，形式要相同。"],
+    "why": ["<em>And</em> joins <em>register</em> and the blank. Both verbs follow <em>must</em>, so both are base forms: <em>register … and keep</em>. The phrase <em>within 30 days of purchase</em> just sits between them.", "and 連接 register 和空格，兩個動詞都接在 must 後面，所以都用原形：register … and keep。within 30 days of purchase 只是插在中間。"],
+    "gloss": [
+      {"w": "extended warranty", "hw": "extended warranty", "pos": "n.", "zh": "延長保固", "ex": "An extended warranty covers repairs for five years."},
+      {"w": "register", "hw": "register", "pos": "v.", "zh": "登錄、註冊", "ex": "Please register your product online."},
+      {"w": "purchase", "hw": "purchase", "pos": "n.", "zh": "購買", "ex": "Keep the receipt as proof of purchase."}
+    ]
+  },
+  "g-mandative-01": {
+    "point": ["<em>request that</em> + subject + base verb.", "request that + 主詞 + 原形動詞。"],
+    "why": ["<em>Requested that</em> asks for an action, so the verb in the <em>that</em> clause is the base form. <em>Each department head</em> is singular, but the verb stays <em>submit</em>.", "requested that 表示要求，that 子句的動詞用原形。each department head 雖是單數，動詞仍是 submit。"],
+    "gloss": [
+      {"w": "finance director", "hw": "finance director", "pos": "n.", "zh": "財務總監", "ex": "The finance director approved the plan."},
+      {"w": "department head", "hw": "department head", "pos": "n.", "zh": "部門主管", "ex": "Each department head attends the weekly meeting."},
+      {"w": "revised", "hw": "revised", "pos": "adj.", "zh": "修訂過的", "ex": "Please read the revised schedule."}
+    ]
+  },
+  "g-mandative-02": {
+    "point": ["<em>essential that</em> + base verb; put <em>not</em> before it.", "essential that + 原形動詞；否定把 not 放前面。"],
+    "why": ["<em>It is essential that</em> asks for something, so the verb is a base form. To make it negative, put <em>not</em> before it. The draft agreement is the thing shared, so the verb is passive: <em>not be shared</em>.", "It is essential that 表示必要，動詞用原形；否定就在前面加 not。草案是被分享的，所以用被動：not be shared。"],
+    "gloss": [
+      {"w": "draft agreement", "hw": "draft agreement", "pos": "n.", "zh": "合約草案", "ex": "Please review the draft agreement today."},
+      {"w": "essential", "hw": "essential", "pos": "adj.", "zh": "必要的", "ex": "Clear signs are essential in a large building."}
+    ]
+  },
+  "g-conditional-01": {
+    "point": ["<em>Had</em> + subject + past participle = <em>if … had</em>.", "Had + 主詞 + p.p. = if … had。"],
+    "why": ["<em>We would have found</em> shows an imagined past. The matching <em>if</em> clause is <em>if the supplier had notified us</em>. Drop <em>if</em> and put <em>had</em> first: <em>Had the supplier notified us</em>.", "we would have found 表示與過去事實相反。對應的 if 子句是 if the supplier had notified us；省略 if、把 had 放前面：Had the supplier notified us。"],
+    "gloss": [
+      {"w": "supplier", "hw": "supplier", "pos": "n.", "zh": "供應商", "ex": "Our supplier ships every Monday."},
+      {"w": "notified us of", "hw": "notify of", "pos": "phr.", "zh": "通知我們……", "ex": "Please notify us of any changes."},
+      {"w": "vendor", "hw": "vendor", "pos": "n.", "zh": "廠商", "ex": "We chose a new vendor for office supplies."},
+      {"w": "in time", "hw": "in time", "pos": "phr.", "zh": "及時", "ex": "The parts arrived in time for the launch."}
+    ]
+  },
+  "g-conditional-02": {
+    "point": ["<em>Not until</em> + clause, then <em>did</em> + subject + base verb.", "Not until + 子句，後面接 did + 主詞 + 原形動詞。"],
+    "why": ["The sentence starts with <em>Not until</em>, so the main clause flips its order. The event is in the past and the verb is <em>begin</em>, a base form: <em>did the error rate … begin</em>.", "句子以 Not until 開頭，主句要倒裝。事情發生在過去，動詞又是原形 begin：did the error rate … begin。"],
+    "gloss": [
+      {"w": "inventory", "hw": "inventory", "pos": "n.", "zh": "庫存", "ex": "We count our inventory every month."},
+      {"w": "error rate", "hw": "error rate", "pos": "n.", "zh": "錯誤率", "ex": "The error rate dropped last quarter."},
+      {"w": "warehouse", "hw": "warehouse", "pos": "n.", "zh": "倉庫", "ex": "The warehouse is near the airport."}
+    ]
+  },
+  "g-relative-04": {
+    "point": ["Remove <em>it believes</em>, then see what is missing.", "先拿掉 it believes，再看缺什麼。"],
+    "why": ["Take out <em>it believes</em>: <em>the three candidates … are best qualified</em>. The blank is the subject of <em>are</em>, and the candidates are people, so it is <em>who</em>.", "拿掉 it believes 後是 the three candidates … are best qualified。空格是 are 的主詞，先行詞是人，所以用 who。"],
+    "gloss": [
+      {"w": "hiring committee", "hw": "hiring committee", "pos": "n.", "zh": "招聘委員會", "ex": "The hiring committee meets on Thursday."},
+      {"w": "candidates", "hw": "candidate", "pos": "n.", "zh": "人選、候選人", "ex": "We interviewed five candidates this week."},
+      {"w": "qualified", "hw": "qualified", "pos": "adj.", "zh": "有資格的、能勝任的", "ex": "She is qualified for the manager role."},
+      {"w": "distribution center", "hw": "distribution center", "pos": "n.", "zh": "物流中心", "ex": "The distribution center ships orders daily."}
+    ]
+  },
+  "g-agree-04": {
+    "point": ["<em>each of</em> + plural noun: the verb is singular.", "each of + 複數名詞：動詞用單數。"],
+    "why": ["The subject is <em>Each</em>, not <em>offices</em> or <em>the three</em>. <em>Including … last year</em> is extra information. <em>Each</em> is singular, so the passive uses <em>is required</em>.", "主詞是 Each，不是 offices 或 the three；including … last year 只是補充。each 是單數，被動用 is required。"],
+    "gloss": [
+      {"w": "including", "hw": "including", "pos": "prep.", "zh": "包括", "ex": "Everyone, including interns, must attend."},
+      {"w": "quarterly", "hw": "quarterly", "pos": "adj.", "zh": "每季的", "ex": "We publish a quarterly report."},
+      {"w": "head office", "hw": "head office", "pos": "n.", "zh": "總公司", "ex": "Send the forms to the head office."}
+    ]
+  },
+  "g-quantity-04": {
+    "point": ["<em>fewer</em> + plural countable noun.", "fewer + 可數複數名詞。"],
+    "why": ["<em>Than</em> needs a comparative. The main noun is <em>errors</em>, which you can count, and <em>shipping and billing</em> only describe it. So the word is <em>fewer</em>.", "有 than 要用比較級。中心名詞是可數的 errors，shipping and billing 只是修飾它，所以用 fewer。"],
+    "gloss": [
+      {"w": "barcode scanning", "hw": "barcode scanning", "pos": "n.", "zh": "條碼掃描", "ex": "Barcode scanning speeds up our checkout."},
+      {"w": "billing errors", "hw": "billing error", "pos": "n.", "zh": "帳單錯誤", "ex": "A billing error delayed the payment."},
+      {"w": "reported", "hw": "report", "pos": "v.", "zh": "回報、通報", "ex": "Staff report any problems to the manager."}
+    ]
+  },
+  "g-mandative-03": {
+    "point": ["<em>recommend that</em> + subject + base verb.", "recommend that + 主詞 + 原形動詞。"],
+    "why": ["<em>Recommended … that</em> opens a clause with its own subject, <em>the accounts payable team</em>. A recommended action takes the base form, even with a singular subject: <em>check</em>.", "recommended … that 後面是有自己主詞的子句，主詞是 the accounts payable team。建議的內容用原形，即使主詞是單數：check。"],
+    "gloss": [
+      {"w": "In light of", "hw": "in light of", "pos": "phr.", "zh": "鑑於", "ex": "In light of the delay, we changed plans."},
+      {"w": "external auditors", "hw": "external auditor", "pos": "n.", "zh": "外部稽核人員", "ex": "The external auditors visit every spring."},
+      {"w": "accounts payable", "hw": "accounts payable", "pos": "n.", "zh": "應付帳款", "ex": "The accounts payable team pays all bills."},
+      {"w": "invoice", "hw": "invoice", "pos": "n.", "zh": "發票、請款單", "ex": "Please send the invoice by email."}
+    ]
+  },
+  "g-compare-04": {
+    "point": ["multiple + <em>as</em> + adjective + <em>as</em>.", "倍數 + as + 形容詞 + as。"],
+    "why": ["<em>Powerful as the model</em> follows the blank, so the pattern is <em>as … as</em>. A multiple like <em>twice</em> goes before the first <em>as</em>: <em>twice as powerful as</em>.", "空格後面是 powerful as the model，句型是 as … as。twice 這類倍數放在第一個 as 前面：twice as powerful as。"],
+    "gloss": [
+      {"w": "vacuum cleaner", "hw": "vacuum cleaner", "pos": "n.", "zh": "吸塵器", "ex": "The vacuum cleaner is in the closet."},
+      {"w": "weighs", "hw": "weigh", "pos": "v.", "zh": "重量為", "ex": "The box weighs five kilograms."},
+      {"w": "replaces", "hw": "replace", "pos": "v.", "zh": "取代", "ex": "The new model replaces the old one."}
+    ]
+  },
+  "g-toing-04": {
+    "point": ["<em>contribute to</em>: <em>to</em> is a preposition, so use -ing.", "contribute to 的 to 是介系詞，後面接 -ing。"],
+    "why": ["<em>Contributed … to</em> uses <em>to</em> as a preposition, even with <em>significantly</em> between them. A verb after it takes -ing: <em>to reducing the time</em>.", "contributed … to 的 to 是介系詞，中間隔了 significantly 也一樣。後面的動詞用 -ing：to reducing the time。"],
+    "gloss": [
+      {"w": "sorting machines", "hw": "sorting machine", "pos": "n.", "zh": "分揀機", "ex": "Two sorting machines handle all the parcels."},
+      {"w": "contributed", "hw": "contribute", "pos": "v.", "zh": "有助於、促成", "ex": "Better training contributed to our success."},
+      {"w": "significantly", "hw": "significantly", "pos": "adv.", "zh": "大幅地", "ex": "Sales rose significantly last quarter."},
+      {"w": "customer returns", "hw": "customer return", "pos": "n.", "zh": "顧客退貨", "ex": "Customer returns are checked on arrival."}
+    ]
+  },
+  "g-pronoun-04": {
+    "point": ["<em>those who</em> + plural verb: the people who.", "those who + 複數動詞：……的那些人。"],
+    "why": ["The main verb is <em>are entitled</em>, so the subject is plural. <em>Those who registered</em> means 'the people who registered': <em>Those</em>.", "主要動詞是 are entitled，所以主詞要是複數。Those who registered 是「報名的那些人」：Those。"],
+    "gloss": [
+      {"w": "registered for", "hw": "register for", "pos": "phr.", "zh": "報名", "ex": "Over fifty people registered for the course."},
+      {"w": "early deadline", "hw": "early deadline", "pos": "n.", "zh": "早鳥截止日", "ex": "The early deadline is next Friday."},
+      {"w": "are entitled to", "hw": "be entitled to", "pos": "phr.", "zh": "有權享有", "ex": "Members will be entitled to a discount."}
+    ]
+  },
+  "g-conditional-03": {
+    "point": ["<em>Should</em> + subject + base verb = <em>If … should</em>.", "Should + 主詞 + 原形 = If … should。"],
+    "why": ["<em>If you should have any questions</em> drops <em>if</em> and puts <em>should</em> first: <em>Should you have any questions</em>. It is a polite way to say 'if you have questions' before <em>please contact</em>.", "If you should have any questions 省略 if、把 should 放前面：Should you have any questions。是信件裡禮貌的「如果有疑問」，後面接 please contact。"],
+    "gloss": [
+      {"w": "customer service", "hw": "customer service", "pos": "n.", "zh": "客服", "ex": "Customer service answers calls all day."},
+      {"w": "weekdays", "hw": "weekday", "pos": "n.", "zh": "平日", "ex": "The store is closed on weekdays."}
+    ]
+  },
+  "_flags": []
+}

@@ -1,0 +1,218 @@
+{
+  "g-pos-09": {
+    "point": ["<em>make</em> + object + adjective.", "make + 受詞 + 形容詞。"],
+    "why": ["The object of <em>makes</em> is the whole phrase <em>the items that customers order most often</em>. The blank says what those items become, so it needs an adjective: <em>accessible</em>.", "makes 的受詞是整段 the items that customers order most often。空格說明這些商品變得怎樣，所以要形容詞：accessible。"],
+    "gloss": [
+      {"w": "layout", "hw": "layout", "pos": "n.", "zh": "配置、布局", "ex": "We changed the layout of the lobby."},
+      {"w": "pickers", "hw": "picker", "pos": "n.", "zh": "揀貨員", "ex": "Each picker carries a handheld scanner."},
+      {"w": "shift", "hw": "shift", "pos": "n.", "zh": "班次", "ex": "She works the night shift on Fridays."}
+    ]
+  },
+  "g-pos-10": {
+    "point": ["The blank is the subject: use a noun.", "空格是主詞：用名詞。"],
+    "why": ["The main verb comes late: <em>will be accepted</em>. Everything from the blank to <em>Avenue</em> is the subject. What gets accepted? <em>Applications</em>.", "主要動詞出現得很晚：will be accepted。從空格到 Avenue 都是主詞。什麼會被受理？Applications。"],
+    "gloss": [
+      {"w": "assistant branch manager", "hw": "assistant branch manager", "pos": "phr.", "zh": "副分行經理", "ex": "The assistant branch manager signs the daily reports."},
+      {"w": "portal", "hw": "portal", "pos": "n.", "zh": "入口網站、線上系統", "ex": "Log in to the employee portal to check your pay."}
+    ]
+  },
+  "g-tense-07": {
+    "point": ["An action lasting up to a past time: <em>had been</em> + Ving.", "持續到過去某時點的動作：had been + Ving。"],
+    "why": ["The sentence ends with <em>when Ms. Ferrante was hired</em>, a moment in the past. Before that moment, the center had run <em>for nearly two years</em>. So the form is <em>had been operating</em>.", "句尾 when Ms. Ferrante was hired 是過去的時點。在那之前，客服中心已經運作了 for nearly two years。所以用 had been operating。"],
+    "gloss": [
+      {"w": "call center", "hw": "call center", "pos": "phr.", "zh": "客服中心", "ex": "She works at a call center downtown."},
+      {"w": "handles", "hw": "handle", "pos": "v.", "zh": "處理", "ex": "Two clerks handle all customer complaints."},
+      {"w": "scheduling software", "hw": "scheduling software", "pos": "phr.", "zh": "排班軟體", "ex": "The scheduling software saves us hours each week."}
+    ]
+  },
+  "g-tense-08": {
+    "point": ["A finished past time (<em>last quarter</em>): simple past.", "已結束的過去時間（last quarter）：過去式。"],
+    "why": ["<em>last quarter</em> is a finished time in the past. The revenue passed the branches' total then, so use the simple past: <em>surpassed</em>.", "last quarter 是已結束的過去時間。營收就是在那時超過分店總和，所以用過去式：surpassed。"],
+    "gloss": [
+      {"w": "Revenue", "hw": "revenue", "pos": "n.", "zh": "營收", "ex": "Revenue rose by ten percent this year."},
+      {"w": "retail branches", "hw": "retail branch", "pos": "phr.", "zh": "實體分店", "ex": "Each retail branch opens at nine."},
+      {"w": "redesigned", "hw": "redesign", "pos": "v.", "zh": "重新設計", "ex": "They redesigned the website last spring."}
+    ]
+  },
+  "g-voice-04": {
+    "point": ["A clause with <em>that</em> left out: the verb is active.", "省略 that 的子句：動詞用主動。"],
+    "why": ["The subject of <em>have been offered</em> is <em>The two interns</em>. In between is a clause with <em>that</em> left out: the head of the payroll department <em>assigned</em> the interns. The head acts, so the verb is active: <em>assigned</em>.", "have been offered 的主詞是 The two interns。中間是省略了 that 的子句：薪資部主管 assigned 了實習生。主管是做動作的人，所以用主動：assigned。"],
+    "gloss": [
+      {"w": "interns", "hw": "intern", "pos": "n.", "zh": "實習生", "ex": "Our intern helped with the spring survey."},
+      {"w": "payroll department", "hw": "payroll department", "pos": "phr.", "zh": "薪資部", "ex": "The payroll department closes its books on Friday."},
+      {"w": "benefits", "hw": "benefit", "pos": "n.", "zh": "員工福利", "ex": "The company offers good benefits to all staff."}
+    ]
+  },
+  "g-participle-06": {
+    "point": ["An opening participle shares the main subject: passive uses p.p.", "句首分詞的主詞就是主句主詞：被動用 p.p."],
+    "why": ["The subject of the main clause is <em>the tenants</em>. They did not give the notice; they received <em>only two days' notice</em>. So the opening word is passive: <em>Given</em>.", "主句的主詞是 the tenants。他們不是發出通知的人，而是收到 only two days' notice 的人。所以句首用被動：Given。"],
+    "gloss": [
+      {"w": "notice", "hw": "notice", "pos": "n.", "zh": "（事先）通知", "ex": "We gave staff a week's notice."},
+      {"w": "tenants", "hw": "tenant", "pos": "n.", "zh": "房客、承租人", "ex": "The tenants pay rent on the first."},
+      {"w": "by hand", "hw": "by hand", "pos": "phr.", "zh": "用人力、手工", "ex": "Please wash these glasses by hand."}
+    ]
+  },
+  "g-participle-07": {
+    "point": ["A noun + Ving: the Ving phrase describes the noun.", "名詞 + Ving：Ving 片語修飾前面的名詞。"],
+    "why": ["The main verb is the distant <em>should inform</em>. Everything from <em>Employees</em> to <em>October</em> is the subject. <em>Wishing</em> describes <em>Employees</em>, like <em>who wish</em>.", "主要動詞是遠處的 should inform。從 Employees 到 October 都是主詞。wishing 修飾 Employees，相當於 who wish。"],
+    "gloss": [
+      {"w": "transfer", "hw": "transfer", "pos": "v.", "zh": "調職", "ex": "She asked to transfer to the Boston office."},
+      {"w": "department heads", "hw": "department head", "pos": "n.", "zh": "部門主管", "ex": "Each department head approves leave requests."},
+      {"w": "in writing", "hw": "in writing", "pos": "phr.", "zh": "以書面方式", "ex": "Please confirm your request in writing."}
+    ]
+  },
+  "g-connect-07": {
+    "point": ["Only a noun phrase follows: use a preposition.", "後面只有名詞片語：用介系詞。"],
+    "why": ["<em>the revised safety regulations that the city council passed in March</em> is only a noun phrase. <em>Passed</em> belongs to the <em>that</em> clause. There is no main verb before the comma, so the blank needs a preposition: <em>In light of</em>.", "the revised safety regulations that the city council passed in March 只是名詞片語。passed 屬於 that 子句。逗號前沒有主要動詞，所以空格要介系詞：In light of。"],
+    "gloss": [
+      {"w": "regulations", "hw": "regulation", "pos": "n.", "zh": "法規", "ex": "New regulations take effect next month."},
+      {"w": "scaffolding", "hw": "scaffolding", "pos": "n.", "zh": "鷹架", "ex": "Workers put up scaffolding around the building."},
+      {"w": "certified", "hw": "certified", "pos": "adj.", "zh": "經認證的、合格的", "ex": "She is a certified public accountant."}
+    ]
+  },
+  "g-connect-08": {
+    "point": ["<em>Whether … or not</em> means 'no matter if'.", "Whether … or not 表示「不論是否」。"],
+    "why": ["<em>or not</em> pairs with <em>Whether</em>. The firms <em>will continue to share</em> the center, no matter whether the merger is approved or not. The blank is <em>Whether</em>.", "or not 和 Whether 成對。句子說的是：不論併購是否通過，兩家公司 will continue to share 物流中心。空格是 Whether。"],
+    "gloss": [
+      {"w": "merger", "hw": "merger", "pos": "n.", "zh": "併購", "ex": "The merger created the largest bank in town."},
+      {"w": "shareholders", "hw": "shareholder", "pos": "n.", "zh": "股東", "ex": "Each shareholder received a copy of the report."},
+      {"w": "distribution center", "hw": "distribution center", "pos": "phr.", "zh": "物流中心", "ex": "The distribution center ships orders every morning."}
+    ]
+  },
+  "g-agree-05": {
+    "point": ["<em>A, as well as B,</em> + verb: agree with A.", "A, as well as B, + 動詞：跟 A 一致。"],
+    "why": ["Take out the part between the commas: <em>as well as the two external auditors … accounts</em>. The subject is <em>The chief financial officer</em>, which is singular, so the verb is <em>is</em>.", "拿掉兩個逗號之間的 as well as the two external auditors … accounts。主詞是單數的 The chief financial officer，所以動詞用 is。"],
+    "gloss": [
+      {"w": "chief financial officer", "hw": "chief financial officer", "pos": "phr.", "zh": "財務長", "ex": "The chief financial officer presented the budget."},
+      {"w": "external auditors", "hw": "external auditor", "pos": "phr.", "zh": "外部稽核人員", "ex": "The external auditor checks our accounts yearly."},
+      {"w": "budget review", "hw": "budget review", "pos": "phr.", "zh": "預算審查", "ex": "The budget review starts at ten."}
+    ]
+  },
+  "g-agree-06": {
+    "point": ["<em>One of the</em> + plural noun: the verb agrees with <em>One</em>.", "One of the + 複數名詞：動詞跟 One 一致。"],
+    "why": ["The subject is <em>One</em>. <em>that deliver to our downtown branches</em> only describes <em>vans</em>. <em>One</em> is singular, so the verb is <em>has</em>: <em>has been out of service</em>.", "主詞是 One。that deliver to our downtown branches 只是修飾 vans。One 是單數，所以動詞用 has：has been out of service。"],
+    "gloss": [
+      {"w": "courier vans", "hw": "courier van", "pos": "phr.", "zh": "快遞車、送貨車", "ex": "The courier van leaves the depot at seven."},
+      {"w": "downtown", "hw": "downtown", "pos": "adj.", "zh": "市中心的", "ex": "The bank has a downtown branch."},
+      {"w": "out of service", "hw": "out of service", "pos": "phr.", "zh": "停用、無法使用", "ex": "The copier is out of service today."}
+    ]
+  },
+  "g-relative-05": {
+    "point": ["<em>both of</em> + relative word for people: <em>whom</em>.", "both of + 指人的關係代名詞：whom。"],
+    "why": ["The firm <em>has hired</em> already has its main verb. The clause <em>have advised major retailers</em> must describe <em>two outside consultants</em>. After <em>of</em>, the relative word for people is <em>whom</em>.", "The firm has hired 已有主要動詞。have advised major retailers 這一句必須修飾 two outside consultants。of 後面指人的關係代名詞是 whom。"],
+    "gloss": [
+      {"w": "consultants", "hw": "consultant", "pos": "n.", "zh": "顧問", "ex": "We hired a consultant to review our costs."},
+      {"w": "retailers", "hw": "retailer", "pos": "n.", "zh": "零售商", "ex": "Large retailers order goods in bulk."},
+      {"w": "flagship", "hw": "flagship", "pos": "adj.", "zh": "旗艦的", "ex": "The flagship store opens in May."}
+    ]
+  },
+  "g-relative-06": {
+    "point": ["A complete clause with no missing object: use <em>where</em>.", "子句完整、不缺受詞：用 where。"],
+    "why": ["In <em>the members of our regional sales team stayed during last year's conference</em>, nothing is missing. <em>Stayed</em> takes no object. The clause tells the place, so use <em>where</em>, meaning <em>at which</em>.", "the members of our regional sales team stayed during last year's conference 裡什麼都不缺。stayed 不接受詞。這個子句說明地點，所以用 where，意思是 at which。"],
+    "gloss": [
+      {"w": "regional sales team", "hw": "regional sales team", "pos": "phr.", "zh": "區域業務團隊", "ex": "The regional sales team meets every Monday."},
+      {"w": "reduced rate", "hw": "reduced rate", "pos": "phr.", "zh": "優惠價", "ex": "Groups get a reduced rate on weekdays."},
+      {"w": "book", "hw": "book", "pos": "v.", "zh": "預訂", "ex": "Please book a table for six."}
+    ]
+  },
+  "g-pronoun-05": {
+    "point": ["<em>familiarize</em> + reflexive pronoun + <em>with</em>.", "familiarize + 反身代名詞 + with。"],
+    "why": ["The doer of <em>to familiarize</em> is <em>the sales associates</em>. They are the ones who learn the policy, so the object is the same people: <em>themselves</em>.", "to familiarize 的動作者是 the sales associates。要熟悉政策的就是他們自己，所以受詞用反身代名詞：themselves。"],
+    "gloss": [
+      {"w": "sales associates", "hw": "sales associate", "pos": "phr.", "zh": "店員、銷售人員", "ex": "Each sales associate wears a name badge."},
+      {"w": "familiarize", "hw": "familiarize", "pos": "v.", "zh": "使熟悉", "ex": "Please familiarize yourself with the safety rules."},
+      {"w": "return policy", "hw": "return policy", "pos": "phr.", "zh": "退貨政策", "ex": "Our return policy allows refunds within thirty days."}
+    ]
+  },
+  "g-pronoun-06": {
+    "point": ["<em>Neither</em> means 'not one of the two'.", "neither 表示「兩者都不」。"],
+    "why": ["The sentence ends with <em>so it signed a lease on a third</em>. So the company did not use either of the <em>two buildings</em>. Neither one <em>had enough parking</em>: <em>neither</em>.", "句尾是 so it signed a lease on a third。所以公司沒有選那 two buildings 的任何一棟。兩棟都沒有 had enough parking：neither。"],
+    "gloss": [
+      {"w": "claims-processing", "hw": "claims-processing", "pos": "adj.", "zh": "理賠處理的", "ex": "The claims-processing team works on weekdays."},
+      {"w": "lease", "hw": "lease", "pos": "n.", "zh": "租約", "ex": "The lease runs for five years."},
+      {"w": "evening shift", "hw": "evening shift", "pos": "phr.", "zh": "夜班", "ex": "He works the evening shift on Fridays."}
+    ]
+  },
+  "g-prep-08": {
+    "point": ["<em>blame</em> the result <em>on</em> the cause.", "blame 結果 on 原因。"],
+    "why": ["<em>Blamed</em> already has its object: <em>the three-week delay</em>. The cause comes next, <em>the late arrival of steel beams</em>, so the word before it is <em>on</em>.", "blamed 已有受詞：the three-week delay。接著是原因 the late arrival of steel beams，所以前面用 on。"],
+    "gloss": [
+      {"w": "blamed", "hw": "blame", "pos": "v.", "zh": "歸咎", "ex": "Don't blame the driver for the traffic."},
+      {"w": "east wing", "hw": "east wing", "pos": "phr.", "zh": "東翼（建築）", "ex": "The east wing has a new lobby."},
+      {"w": "steel beams", "hw": "steel beam", "pos": "phr.", "zh": "鋼梁", "ex": "Steel beams hold up the roof."}
+    ]
+  },
+  "g-prep-09": {
+    "point": ["<em>prevent</em> + person + <em>from</em> + Ving.", "prevent + 人 + from + Ving。"],
+    "why": ["The verb <em>prevents</em> comes before a long object: <em>employees who have not yet completed the annual data protection training</em>. After that object, <em>prevent</em> needs <em>from</em>: <em>from opening</em>.", "動詞 prevents 後面接很長的受詞：employees who have not yet completed the annual data protection training。受詞之後，prevent 要配 from：from opening。"],
+    "gloss": [
+      {"w": "prevents", "hw": "prevent", "pos": "v.", "zh": "阻止", "ex": "Locks prevent thieves from entering the shop."},
+      {"w": "data protection", "hw": "data protection", "pos": "phr.", "zh": "資料保護", "ex": "New data protection rules start in May."},
+      {"w": "client database", "hw": "client database", "pos": "phr.", "zh": "客戶資料庫", "ex": "Only managers can edit the client database."}
+    ]
+  },
+  "g-toing-05": {
+    "point": ["<em>consider</em> + Ving.", "consider 後面接 Ving。"],
+    "why": ["The blank is the object of <em>is considering</em>. Take out <em>among several other measures proposed by the finance department</em>, and you get <em>considering closing</em>.", "空格是 is considering 的受詞。拿掉插入的 among several other measures proposed by the finance department，就是 considering closing。"],
+    "gloss": [
+      {"w": "cut costs", "hw": "cut costs", "pos": "phr.", "zh": "降低成本", "ex": "We must cut costs this year."},
+      {"w": "measures", "hw": "measure", "pos": "n.", "zh": "措施", "ex": "The firm took new security measures."},
+      {"w": "expires", "hw": "expire", "pos": "v.", "zh": "到期", "ex": "My passport expires in May."}
+    ]
+  },
+  "g-toing-06": {
+    "point": ["<em>close to</em> + Ving: this <em>to</em> is a preposition.", "close to + Ving：這個 to 是介系詞。"],
+    "why": ["The word <em>closer</em> sits far before the blank. <em>Closer … to</em> means near to something, and this <em>to</em> is a preposition. A preposition takes Ving: <em>to signing</em>.", "closer 離空格很遠。closer … to 表示接近某事，這個 to 是介系詞。介系詞後面接 Ving：to signing。"],
+    "gloss": [
+      {"w": "stalled", "hw": "stalled", "pos": "adj.", "zh": "停滯的", "ex": "The stalled talks resumed on Monday."},
+      {"w": "negotiations", "hw": "negotiation", "pos": "n.", "zh": "談判", "ex": "The negotiation lasted three days."},
+      {"w": "port facilities", "hw": "port facility", "pos": "phr.", "zh": "港口設施", "ex": "The port facility handles large ships."}
+    ]
+  },
+  "g-mandative-04": {
+    "point": ["<em>require that</em> + subject + base verb.", "require that + 主詞 + 原形動詞。"],
+    "why": ["<em>requires … that</em> sets up a demand, so the verb after <em>any shipment</em> stays in the base form. The shipment gets invoiced, so it is passive: <em>be invoiced</em>.", "requires … that 帶出要求，所以 any shipment 後面的動詞用原形。貨物是被開發票的一方，用被動：be invoiced。"],
+    "gloss": [
+      {"w": "clause", "hw": "clause", "pos": "n.", "zh": "條款", "ex": "The contract has a clause on late payment."},
+      {"w": "behind schedule", "hw": "behind schedule", "pos": "phr.", "zh": "落後進度", "ex": "The project is two weeks behind schedule."},
+      {"w": "shipment", "hw": "shipment", "pos": "n.", "zh": "（一批）貨物", "ex": "The shipment arrived two days early."}
+    ]
+  },
+  "g-conditional-04": {
+    "point": ["<em>Were</em> + subject + <em>to</em> + verb: <em>If</em> left out.", "Were + 主詞 + to V：省略 If 的倒裝。"],
+    "why": ["The phrase <em>to approve</em> comes after the long subject <em>the board, which has already postponed its decision twice this year</em>. It fits <em>if the board were to approve</em>. Drop <em>if</em> and move <em>Were</em> to the front.", "to approve 接在長主詞 the board, which has already postponed its decision twice this year 之後。這是 if the board were to approve 的句型。省略 if，把 Were 移到句首。"],
+    "gloss": [
+      {"w": "postponed", "hw": "postpone", "pos": "v.", "zh": "延後", "ex": "They postponed the launch until June."},
+      {"w": "approve", "hw": "approve", "pos": "v.", "zh": "核准", "ex": "The manager must approve all expenses."},
+      {"w": "expansion", "hw": "expansion", "pos": "n.", "zh": "擴建、擴張", "ex": "The expansion will add two new floors."}
+    ]
+  },
+  "g-compare-05": {
+    "point": ["A comparison with <em>than</em> needs <em>more</em>.", "有 than 的比較：用 more。"],
+    "why": ["The sentence ends with <em>than the two older branches nearby combined</em>. That <em>than</em> makes this a comparison, so the blank needs the comparative: <em>more</em> customers.", "句子後半是 than the two older branches nearby combined。這個 than 表示在比較，所以空格要比較級：more customers。"],
+    "gloss": [
+      {"w": "renovated", "hw": "renovated", "pos": "adj.", "zh": "重新裝修的", "ex": "The renovated lobby looks much larger."},
+      {"w": "average weekday", "hw": "average weekday", "pos": "phr.", "zh": "一般平日", "ex": "On an average weekday we get fifty calls."},
+      {"w": "combined", "hw": "combined", "pos": "adj.", "zh": "加起來的、合計的", "ex": "Combined sales reached two million dollars."}
+    ]
+  },
+  "g-quantity-05": {
+    "point": ["<em>The number of</em> + plural noun + singular verb.", "the number of + 複數名詞 + 單數動詞。"],
+    "why": ["The verb is the singular <em>has nearly doubled</em>. It describes the count of <em>applicants</em>, not the applicants themselves. So the subject is <em>The number</em>.", "動詞是單數的 has nearly doubled。它說的是 applicants 的數量，不是應徵者本人。所以主詞用 The number。"],
+    "gloss": [
+      {"w": "applicants", "hw": "applicant", "pos": "n.", "zh": "應徵者", "ex": "Every applicant must submit a résumé."},
+      {"w": "doubled", "hw": "double", "pos": "v.", "zh": "加倍", "ex": "Sales doubled in two years."},
+      {"w": "starting wage", "hw": "starting wage", "pos": "phr.", "zh": "起薪", "ex": "The starting wage is twenty dollars an hour."}
+    ]
+  },
+  "g-parallel-04": {
+    "point": ["A list uses the same form for every item.", "列舉的每一項用相同的形式。"],
+    "why": ["<em>include</em> lists three items. The first two are <em>ordering supplies</em> and <em>scheduling repairs</em>, both Ving. The third must match: <em>managing</em>.", "include 後面列出三項。前兩項 ordering supplies 和 scheduling repairs 都是 Ving。第三項要相同：managing。"],
+    "gloss": [
+      {"w": "scheduling", "hw": "schedule", "pos": "v.", "zh": "安排時程", "ex": "Please schedule the meeting for Friday."},
+      {"w": "contractors", "hw": "contractor", "pos": "n.", "zh": "包商", "ex": "The contractor finished the work on time."},
+      {"w": "maintenance", "hw": "maintenance", "pos": "n.", "zh": "維修、保養", "ex": "Maintenance staff check the lifts weekly."}
+    ]
+  },
+  "_flags": []
+}

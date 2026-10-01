@@ -1,4 +1,4 @@
-# Builds toeic.html from content.py and template.html, after checking every item.
+# Builds toeic.html (The Workbook) from content.py, en/*.json and template.html, after checking every item.
 #   python build_page.py            refuses to build if any hand-written item is not reviewed
 #   python build_page.py --draft    builds anyway (for local testing only)
 import json, os, sys
@@ -52,12 +52,36 @@ for it in ITEMS:
             for e in q["explain"].get("evidence") or []:
                 if not 0 <= e < len(lines): errors.append(f"{i} q{qi}: evidence {e} out of range")
 
+# English explanations and word cards (en/<items file>.json, checked by en/check.py); IPA comes from the CMU dictionary.
+sys.path.insert(0, os.path.join(HERE, "en"))
+import importlib, check as en_check
+from ipa import ipa
+EN = {}
+for name in ("items_grammar_a", "items_grammar_b", "items_grammar_c", "items_vocab", "items_vocab_b", "items_listen", "items_listen_b"):
+    path = os.path.join(HERE, "en", name + ".json")
+    if not os.path.exists(path): errors.append(f"en/{name}.json missing"); continue
+    for e in en_check.check(name): errors.append(f"en/{name}: {e}")
+    EN.update({k: v for k, v in json.load(open(path, encoding="utf-8")).items() if k != "_flags"})
+no_ipa = []
+for it in ITEMS:
+    e = EN.get(it["id"])
+    if not e:
+        if it.get("source") == "hand": errors.append(f"{it['id']}: no English explanation")
+        continue
+    it["gloss"] = [dict(g, ipa=ipa(g["hw"]) or "") for g in e.get("gloss", [])]
+    no_ipa += [g["hw"] for g in it["gloss"] if not g["ipa"]]
+    if it["format"] == "gap":
+        it["en"] = {k: e[k] for k in ("point", "why", "usage") if k in e}
+    else:
+        for q, x in zip(it["questions"], e["q"]): q["en"] = x
+if no_ipa: print("no IPA in the CMU dictionary (card shows none):", ", ".join(sorted(set(no_ipa))))
+
 for w in warnings: print("warning:", w)
 if errors:
     for e in errors: print("error:", e)
     if "--draft" not in sys.argv: sys.exit(f"{len(errors)} errors, not building")
 
-data = {"units": {k: {"zh": v[0], "group": v[1]} for k, v in UNITS.items()}, "items": ITEMS}
+data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS}
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 page = open(os.path.join(HERE, "template.html"), encoding="utf-8").read().replace("{{BANK}}", blob)
 open(os.path.join(HERE, "toeic.html"), "w", encoding="utf-8").write(page)
