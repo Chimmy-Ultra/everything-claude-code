@@ -1,0 +1,3042 @@
+[
+  {
+    "w": "accordingly",
+    "pos": "adv.",
+    "zh": "因此；相應地、照著情況",
+    "def": [
+      "In a way that suits the situation; for that reason.",
+      "以符合情況的方式；因此。"
+    ],
+    "ex": [
+      [
+        "The deadline has moved, so please adjust your schedule <em>accordingly</em>.",
+        "截止日期已經改了，所以請相應調整你的時程。"
+      ],
+      [
+        "The forecast calls for heavy rain, so dress <em>accordingly</em> when you visit the site.",
+        "預報會下大雨，所以到現場參觀時請穿著合宜。"
+      ],
+      [
+        "The contract was never signed. <em>Accordingly</em>, the supplier has no duty to deliver.",
+        "合約從未簽署，因此供應商沒有交貨的義務。"
+      ],
+      [
+        "We expected higher demand in December and have staffed the store <em>accordingly</em>.",
+        "我們預期十二月需求較高，並已據此安排門市人力。"
+      ],
+      [
+        "Please inform your team of the new policy so they can act <em>accordingly</em>.",
+        "請告知你的團隊新政策，讓他們能據此行事。"
+      ]
+    ],
+    "coll": [
+      [
+        "act accordingly",
+        "據此行事"
+      ],
+      [
+        "plan accordingly",
+        "據此規劃"
+      ],
+      [
+        "adjust accordingly",
+        "相應調整"
+      ],
+      [
+        "dress accordingly",
+        "穿著合宜"
+      ],
+      [
+        "proceed accordingly",
+        "照此進行"
+      ]
+    ],
+    "family": [
+      {
+        "w": "accordance",
+        "pos": "n.",
+        "zh": "依照、一致（in accordance with）"
+      },
+      {
+        "w": "accord",
+        "pos": "v.",
+        "zh": "使一致；給予"
+      }
+    ],
+    "syn": [
+      {
+        "w": "therefore",
+        "note": [
+          "Links a reason to a result; accordingly can also mean in the way the situation requires.",
+          "連接原因與結果；accordingly 還能表示「依情況所需的方式」。"
+        ]
+      },
+      {
+        "w": "consequently",
+        "note": [
+          "Stresses a direct result of something that just happened; slightly more formal.",
+          "強調前面事情直接造成的結果；稍微更正式。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "according to",
+        "note": [
+          "A preposition phrase meaning as stated by; accordingly stands alone and means therefore or appropriately.",
+          "介系詞片語，意為「依…所說」；accordingly 可單獨使用，意為「因此」或「適當地」。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "audit",
+    "pos": "n., v.",
+    "zh": "審計、查核；稽核",
+    "def": [
+      "An official check of financial records or procedures; to carry out such a check.",
+      "對財務紀錄或作業程序所做的正式查核；進行這類查核。"
+    ],
+    "ex": [
+      [
+        "The accounting firm will conduct an annual <em>audit</em> of our books in March.",
+        "會計師事務所將在三月對我們的帳冊進行年度審計。"
+      ],
+      [
+        "Tax officials <em>audited</em> the company's returns for the past three years.",
+        "稅務人員查核了這家公司過去三年的報稅資料。"
+      ],
+      [
+        "An internal <em>audit</em> found that several safety inspections had not been recorded.",
+        "一項內部稽核發現有幾次安全檢查沒有留下紀錄。"
+      ],
+      [
+        "Suppliers must pass a quality <em>audit</em> before we sign a long-term contract.",
+        "供應商必須通過品質稽核，我們才會簽長期合約。"
+      ],
+      [
+        "The bank will <em>audit</em> all of its branches for compliance next quarter.",
+        "銀行下一季將稽核所有分行的法規遵循情況。"
+      ]
+    ],
+    "coll": [
+      [
+        "conduct an audit",
+        "進行審計"
+      ],
+      [
+        "pass an audit",
+        "通過稽核"
+      ],
+      [
+        "annual audit",
+        "年度審計"
+      ],
+      [
+        "internal audit",
+        "內部稽核"
+      ],
+      [
+        "audit trail",
+        "稽核軌跡"
+      ],
+      [
+        "audit committee",
+        "審計委員會"
+      ]
+    ],
+    "family": [
+      {
+        "w": "auditor",
+        "pos": "n.",
+        "zh": "稽核員、審計師"
+      },
+      {
+        "w": "auditing",
+        "pos": "n.",
+        "zh": "審計（工作）"
+      },
+      {
+        "w": "auditable",
+        "pos": "adj.",
+        "zh": "可審計的、可查核的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "inspection",
+        "note": [
+          "A general check of something, often physical; an audit usually examines records and systems against a standard.",
+          "泛指對事物的檢查，常是實體檢查；audit 通常是對照標準查核紀錄與制度。"
+        ]
+      },
+      {
+        "w": "review",
+        "note": [
+          "A looser, less formal look at how something is going; an audit is official and systematic.",
+          "較不正式的檢討；audit 則是正式且有系統的查核。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "auditorium",
+        "note": [
+          "An auditorium is a large hall for an audience; it is not related to checking accounts.",
+          "auditorium 是容納觀眾的大禮堂，與查帳無關。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "copier",
+    "pos": "n.",
+    "zh": "影印機",
+    "def": [
+      "A machine that makes copies of documents.",
+      "用來複印文件的機器。"
+    ],
+    "ex": [
+      [
+        "The <em>copier</em> on the third floor is out of paper again.",
+        "三樓的影印機又沒紙了。"
+      ],
+      [
+        "Please call the technician; the <em>copier</em> keeps jamming.",
+        "請叫技術人員來；影印機一直卡紙。"
+      ],
+      [
+        "We leased a new color <em>copier</em> instead of buying one.",
+        "我們租了一台新的彩色影印機，而不是買一台。"
+      ],
+      [
+        "She left the original on the <em>copier</em> glass by mistake.",
+        "她不小心把原稿留在影印機的玻璃面板上。"
+      ],
+      [
+        "Each department shares one <em>copier</em>, so print only what you need.",
+        "每個部門共用一台影印機，所以只印你需要的份量。"
+      ]
+    ],
+    "coll": [
+      [
+        "load paper into the copier",
+        "把紙放進影印機"
+      ],
+      [
+        "the copier jams",
+        "影印機卡紙"
+      ],
+      [
+        "copier toner",
+        "影印機碳粉"
+      ],
+      [
+        "a color copier",
+        "彩色影印機"
+      ],
+      [
+        "lease a copier",
+        "租用影印機"
+      ]
+    ],
+    "family": [
+      {
+        "w": "copy",
+        "pos": "v.",
+        "zh": "影印；複製"
+      },
+      {
+        "w": "copying",
+        "pos": "n.",
+        "zh": "影印、複製（作業）"
+      }
+    ],
+    "syn": [
+      {
+        "w": "copy machine",
+        "note": [
+          "Same machine; copy machine is the plain everyday phrase, and copier is the shorter form.",
+          "同一種機器；copy machine 是平實的日常說法，copier 是較簡短的說法。"
+        ]
+      },
+      {
+        "w": "photocopier",
+        "note": [
+          "Same machine; used more in British English, while Americans usually say copier or copy machine.",
+          "同一種機器；較常見於英式英語，美國人通常說 copier 或 copy machine。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "printer",
+        "note": [
+          "A printer prints documents sent from a computer; a copier duplicates paper originals, though many machines do both.",
+          "printer 列印電腦傳來的檔案；copier 複印紙本原稿，不過許多機器兩者兼具。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "copyright",
+    "pos": "n., v.",
+    "zh": "版權、著作權；為…取得版權",
+    "def": [
+      "The legal right to control the copying and use of an original work.",
+      "控制原創作品被複製與使用的法定權利。"
+    ],
+    "ex": [
+      [
+        "The photographer holds the <em>copyright</em> to every image on the website.",
+        "這位攝影師擁有網站上每一張圖片的版權。"
+      ],
+      [
+        "Copying the report without permission may violate <em>copyright</em> law.",
+        "未經許可複製這份報告可能違反著作權法。"
+      ],
+      [
+        "The design firm <em>copyrighted</em> its icon collection before putting it online.",
+        "這家設計公司在把圖示集上線前先登記了版權。"
+      ],
+      [
+        "The film studio sued the website for <em>copyright</em> infringement.",
+        "電影公司以侵害著作權為由控告該網站。"
+      ],
+      [
+        "The <em>copyright</em> on this manual belongs to the manufacturer, not to us.",
+        "這本手冊的版權屬於製造商，不屬於我們。"
+      ]
+    ],
+    "coll": [
+      [
+        "copyright infringement",
+        "侵害著作權"
+      ],
+      [
+        "copyright law",
+        "著作權法"
+      ],
+      [
+        "copyright holder",
+        "著作權人"
+      ],
+      [
+        "hold the copyright",
+        "擁有版權"
+      ],
+      [
+        "protected by copyright",
+        "受著作權保護"
+      ],
+      [
+        "copyright notice",
+        "版權聲明"
+      ]
+    ],
+    "family": [
+      {
+        "w": "copyrighted",
+        "pos": "adj.",
+        "zh": "受版權保護的"
+      },
+      {
+        "w": "copyrightable",
+        "pos": "adj.",
+        "zh": "可取得著作權的"
+      }
+    ],
+    "syn": [],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "patent",
+        "note": [
+          "A patent protects an invention or a technical method; copyright protects original writing, art, music or software code.",
+          "patent 保護發明或技術方法；copyright 保護原創的文字、藝術、音樂或程式碼。"
+        ]
+      },
+      {
+        "w": "trademark",
+        "note": [
+          "A trademark protects a name or symbol that identifies a business; copyright protects creative works.",
+          "trademark 保護識別企業的名稱或標誌；copyright 保護創作作品。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "defective",
+    "pos": "adj.",
+    "zh": "有瑕疵的、有缺陷的",
+    "def": [
+      "Having a fault, so that something does not work or was not made correctly.",
+      "有缺陷，以致無法正常運作或製作不當。"
+    ],
+    "ex": [
+      [
+        "We will replace any <em>defective</em> product within thirty days of purchase.",
+        "購買後三十天內，我們會更換任何有瑕疵的產品。"
+      ],
+      [
+        "A <em>defective</em> battery forced the manufacturer to recall thousands of laptops.",
+        "一顆有瑕疵的電池迫使製造商召回數千台筆記型電腦。"
+      ],
+      [
+        "The customer returned the toaster because its heating element was <em>defective</em>.",
+        "顧客退回了烤麵包機，因為加熱元件有瑕疵。"
+      ],
+      [
+        "Inspectors rejected the batch after finding that ten percent of the units were <em>defective</em>.",
+        "檢驗人員發現百分之十的成品有瑕疵後，拒收了整批貨。"
+      ],
+      [
+        "The contract lets the buyer return <em>defective</em> goods for a full refund.",
+        "合約允許買方退回有瑕疵的貨品並取得全額退款。"
+      ]
+    ],
+    "coll": [
+      [
+        "a defective product",
+        "瑕疵品"
+      ],
+      [
+        "defective goods",
+        "有瑕疵的貨品"
+      ],
+      [
+        "a defective part",
+        "有缺陷的零件"
+      ],
+      [
+        "prove defective",
+        "被證明有瑕疵"
+      ],
+      [
+        "replace a defective item",
+        "更換瑕疵品"
+      ]
+    ],
+    "family": [
+      {
+        "w": "defect",
+        "pos": "n.",
+        "zh": "缺陷、瑕疵"
+      }
+    ],
+    "syn": [
+      {
+        "w": "faulty",
+        "note": [
+          "More common in everyday speech; defective often points to a flaw from manufacturing.",
+          "較常用於日常口語；defective 常指製造時就有的缺陷。"
+        ]
+      },
+      {
+        "w": "flawed",
+        "note": [
+          "Used for plans, arguments and designs as well as objects; defective is mainly for products.",
+          "也可用於計畫、論點與設計；defective 主要用於產品。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "flawless",
+        "zh": "毫無瑕疵的"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "deficient",
+        "note": [
+          "Deficient means lacking something needed, such as quality or quantity; defective means broken or badly made.",
+          "deficient 指缺少所需的東西，如品質或數量；defective 指壞掉或做得不好。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "evacuate",
+    "pos": "v.",
+    "zh": "疏散、撤離",
+    "def": [
+      "To move people out of a place because it is dangerous.",
+      "因為有危險而讓人撤離某個地方。"
+    ],
+    "ex": [
+      [
+        "Staff were told to <em>evacuate</em> the building when the fire alarm sounded.",
+        "火警響起時，員工被告知要撤離大樓。"
+      ],
+      [
+        "Hotel managers <em>evacuated</em> the guests to a nearby conference center during the gas leak.",
+        "瓦斯外洩期間，飯店經理把住客疏散到附近的會議中心。"
+      ],
+      [
+        "Residents were ordered to <em>evacuate</em> before the typhoon reached the coast.",
+        "颱風登陸海岸前，居民被命令撤離。"
+      ],
+      [
+        "Everyone must <em>evacuate</em> the floor calmly and use the stairs, not the elevators.",
+        "大家必須冷靜地撤離樓層，走樓梯，不要搭電梯。"
+      ],
+      [
+        "The airline had to <em>evacuate</em> the terminal after a security threat.",
+        "接獲安全威脅後，航空公司必須疏散航廈內的人員。"
+      ]
+    ],
+    "coll": [
+      [
+        "evacuate the building",
+        "撤離大樓"
+      ],
+      [
+        "evacuate residents",
+        "疏散居民"
+      ],
+      [
+        "an evacuation route",
+        "疏散路線"
+      ],
+      [
+        "an evacuation order",
+        "撤離命令"
+      ],
+      [
+        "emergency evacuation",
+        "緊急疏散"
+      ]
+    ],
+    "family": [
+      {
+        "w": "evacuation",
+        "pos": "n.",
+        "zh": "疏散、撤離"
+      },
+      {
+        "w": "evacuee",
+        "pos": "n.",
+        "zh": "被疏散者"
+      }
+    ],
+    "syn": [
+      {
+        "w": "clear",
+        "note": [
+          "Plain, everyday word (clear the room); evacuate suggests an organized exit in an emergency.",
+          "平實的日常用語（clear the room）；evacuate 暗示緊急狀況下有組織的撤離。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "vacate",
+        "note": [
+          "To leave a room, seat or property you were using; there need not be any danger involved.",
+          "指離開你原本使用的房間、座位或房產；不一定與危險有關。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "hazard",
+    "pos": "n., v.",
+    "zh": "危險物、危害；冒險提出",
+    "def": [
+      "Something that can cause harm or danger.",
+      "可能造成傷害或危險的事物。"
+    ],
+    "ex": [
+      [
+        "Loose cables are a trip <em>hazard</em>, so please tape them down.",
+        "鬆脫的電線容易絆倒人，所以請用膠帶固定。"
+      ],
+      [
+        "The inspector listed several fire <em>hazards</em> in the warehouse.",
+        "檢查人員列出倉庫內幾項火災隱患。"
+      ],
+      [
+        "Employees should report any <em>hazard</em> to their supervisor immediately.",
+        "員工應立即向主管回報任何危險。"
+      ],
+      [
+        "Wet floors in the kitchen are a serious safety <em>hazard</em>.",
+        "廚房濕滑的地板是嚴重的安全隱患。"
+      ],
+      [
+        "I won't <em>hazard</em> a guess about next year's sales figures.",
+        "對於明年的銷售數字，我不敢貿然猜測。"
+      ]
+    ],
+    "coll": [
+      [
+        "a safety hazard",
+        "安全隱患"
+      ],
+      [
+        "a fire hazard",
+        "火災隱患"
+      ],
+      [
+        "a health hazard",
+        "健康危害"
+      ],
+      [
+        "a trip hazard",
+        "絆倒的危險物"
+      ],
+      [
+        "an occupational hazard",
+        "職業傷害；行業風險"
+      ],
+      [
+        "hazard a guess",
+        "冒昧猜測"
+      ]
+    ],
+    "family": [
+      {
+        "w": "hazardous",
+        "pos": "adj.",
+        "zh": "危險的、有害的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "danger",
+        "note": [
+          "General word for possible harm anywhere; a hazard is a specific source of harm, often in safety rules.",
+          "泛指任何可能的傷害；hazard 是具體的危險來源，常見於安全規定。"
+        ]
+      },
+      {
+        "w": "risk",
+        "note": [
+          "Risk is the chance that harm will happen; a hazard is the thing that could cause it.",
+          "risk 是傷害發生的可能性；hazard 是可能造成傷害的事物。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "haphazard",
+        "note": [
+          "Haphazard means done without order or planning; it describes how something is done, not a danger.",
+          "haphazard 指毫無條理或計畫地進行，描述做事方式，而非危險。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "inquire",
+    "pos": "v.",
+    "zh": "詢問、查詢；調查（inquire into）",
+    "def": [
+      "To ask for information about something.",
+      "詢問某事的資訊。"
+    ],
+    "ex": [
+      [
+        "I am writing to <em>inquire</em> about the availability of conference rooms in May.",
+        "我來信是想詢問五月是否還有會議室可用。"
+      ],
+      [
+        "Several customers have <em>inquired</em> whether the store will extend its hours.",
+        "有幾位顧客詢問過本店是否會延長營業時間。"
+      ],
+      [
+        "Please <em>inquire</em> at the front desk if you need a late checkout.",
+        "如需延後退房，請洽櫃檯詢問。"
+      ],
+      [
+        "The auditors will <em>inquire</em> into the reasons for the delay.",
+        "稽核人員將調查延誤的原因。"
+      ],
+      [
+        "He called the agency to <em>inquire</em> how much a corporate package would cost.",
+        "他打電話給旅行社，詢問企業方案的價格。"
+      ]
+    ],
+    "coll": [
+      [
+        "inquire about",
+        "詢問有關…"
+      ],
+      [
+        "inquire whether",
+        "詢問是否…"
+      ],
+      [
+        "inquire into a matter",
+        "調查某事"
+      ],
+      [
+        "inquire at the desk",
+        "到櫃檯詢問"
+      ],
+      [
+        "inquire further",
+        "進一步詢問"
+      ]
+    ],
+    "family": [
+      {
+        "w": "inquiry",
+        "pos": "n.",
+        "zh": "詢問；調查"
+      },
+      {
+        "w": "inquirer",
+        "pos": "n.",
+        "zh": "詢問者"
+      },
+      {
+        "w": "inquiring",
+        "pos": "adj.",
+        "zh": "好奇的、探問的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "ask",
+        "note": [
+          "Everyday word; inquire is more formal and typical of letters, emails and official situations.",
+          "日常用語；inquire 較正式，常見於信件、電子郵件與官方場合。"
+        ]
+      },
+      {
+        "w": "query",
+        "note": [
+          "To question whether something is correct or to put a question to an authority; often about a detail.",
+          "指質疑某事是否正確，或向主管單位提問；常針對細節。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "request",
+        "note": [
+          "To request is to ask for something to be given or done; to inquire is to ask for information.",
+          "request 是要求給予某物或做某事；inquire 是詢問資訊。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "interfere",
+    "pos": "v.",
+    "zh": "干擾、妨礙；干涉",
+    "def": [
+      "To get in the way of something, or to become involved in what is not your business.",
+      "妨礙某事，或介入與自己無關的事。"
+    ],
+    "ex": [
+      [
+        "Construction noise should not <em>interfere</em> with the morning meetings.",
+        "施工噪音不應該干擾早上的會議。"
+      ],
+      [
+        "Our manager rarely <em>interferes</em> in how the teams organize their own tasks.",
+        "我們經理很少干涉各團隊如何安排自己的工作。"
+      ],
+      [
+        "Heavy traffic <em>interfered</em> with the delivery schedule all week.",
+        "壅塞的車流整個星期都影響到配送時程。"
+      ],
+      [
+        "Strong winds <em>interfered</em> with the signal, and the video call dropped.",
+        "強風干擾了訊號，視訊通話就斷了。"
+      ],
+      [
+        "Please do not <em>interfere</em> with the equipment; call maintenance instead.",
+        "請不要擅動設備；改叫維修人員來處理。"
+      ]
+    ],
+    "coll": [
+      [
+        "interfere with",
+        "干擾、妨礙"
+      ],
+      [
+        "interfere in",
+        "干涉（某事）"
+      ],
+      [
+        "interfere with work",
+        "妨礙工作"
+      ],
+      [
+        "interfere with a signal",
+        "干擾訊號"
+      ],
+      [
+        "without interfering",
+        "不加干涉地"
+      ]
+    ],
+    "family": [
+      {
+        "w": "interference",
+        "pos": "n.",
+        "zh": "干擾；干涉"
+      },
+      {
+        "w": "interfering",
+        "pos": "adj.",
+        "zh": "愛管閒事的、干擾的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "disrupt",
+        "note": [
+          "To break up a process or event so that it cannot continue normally; interfere with can be milder.",
+          "使流程或活動無法正常進行；interfere with 的程度可能較輕。"
+        ]
+      },
+      {
+        "w": "hinder",
+        "note": [
+          "Formal; to make progress or movement slower or more difficult.",
+          "較正式；使進展或行動變慢或變困難。"
+        ]
+      },
+      {
+        "w": "meddle",
+        "note": [
+          "Used for getting involved in other people's affairs, always disapproving; interfere can be neutral.",
+          "指插手別人的事，帶有負面意味；interfere 可以是中性的。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "interrupt",
+        "note": [
+          "Interrupt stops a person or activity briefly; interfere with gets in the way of progress or results.",
+          "interrupt 是讓人或活動暫時中止；interfere with 是妨礙進展或結果。"
+        ]
+      },
+      {
+        "w": "intervene",
+        "note": [
+          "To step in on purpose to change a situation, often to help; interfere suggests unwanted involvement.",
+          "刻意介入以改變局面，常是為了協助；interfere 則暗示不受歡迎的介入。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "interrupt",
+    "pos": "v.",
+    "zh": "打斷、中斷",
+    "def": [
+      "To stop a person from speaking or an activity from continuing, usually for a short time.",
+      "讓人停止說話或讓活動暫停，通常是短暫的。"
+    ],
+    "ex": [
+      [
+        "Sorry to <em>interrupt</em>, but your two o'clock client has arrived.",
+        "抱歉打斷一下，你兩點的客戶到了。"
+      ],
+      [
+        "A power cut <em>interrupted</em> production at the plant for three hours.",
+        "停電使工廠的生產中斷了三個小時。"
+      ],
+      [
+        "Please do not <em>interrupt</em> the speaker until the question period begins.",
+        "在提問時間開始前，請不要打斷講者。"
+      ],
+      [
+        "Frequent phone calls <em>interrupted</em> her work all afternoon.",
+        "頻繁的電話整個下午都打斷她的工作。"
+      ],
+      [
+        "A fire drill <em>interrupted</em> the training session just after lunch.",
+        "午餐剛過，一場消防演習就打斷了訓練課程。"
+      ]
+    ],
+    "coll": [
+      [
+        "interrupt a meeting",
+        "打斷會議"
+      ],
+      [
+        "interrupt a conversation",
+        "打斷談話"
+      ],
+      [
+        "interrupt service",
+        "中斷服務"
+      ],
+      [
+        "interrupt production",
+        "使生產中斷"
+      ],
+      [
+        "sorry to interrupt",
+        "抱歉打擾一下"
+      ]
+    ],
+    "family": [
+      {
+        "w": "interruption",
+        "pos": "n.",
+        "zh": "中斷、打擾"
+      },
+      {
+        "w": "uninterrupted",
+        "pos": "adj.",
+        "zh": "不間斷的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "disrupt",
+        "note": [
+          "Causes serious disorder in a system or event; interrupt only stops it for a time.",
+          "造成系統或活動嚴重混亂；interrupt 只是讓它暫時停下來。"
+        ]
+      },
+      {
+        "w": "cut in",
+        "note": [
+          "Informal phrasal verb for breaking into someone's speech; interrupt is more neutral.",
+          "口語的片語動詞，指插嘴；interrupt 較中性。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "disturb",
+        "note": [
+          "To disturb is to bother someone who is resting or concentrating; to interrupt is to stop what they are doing.",
+          "disturb 是打擾正在休息或專心的人；interrupt 是讓對方停下手邊的事。"
+        ]
+      },
+      {
+        "w": "interfere",
+        "note": [
+          "Interfere with gets in the way of progress over time; interrupt stops something briefly.",
+          "interfere with 是持續妨礙進展；interrupt 是讓事情短暫停止。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "machinery",
+    "pos": "n.",
+    "zh": "機器（總稱）、機械設備",
+    "def": [
+      "Machines considered as a group, or the moving parts of a machine.",
+      "機器的總稱，或機器的運轉部件。"
+    ],
+    "ex": [
+      [
+        "The factory invested in new <em>machinery</em> to double its output.",
+        "工廠投資購買新機器，以使產量加倍。"
+      ],
+      [
+        "Workers must wear ear protection near heavy <em>machinery</em>.",
+        "在重型機械附近，工作人員必須戴護耳裝置。"
+      ],
+      [
+        "The company sells farm <em>machinery</em> to customers across Southeast Asia.",
+        "這家公司把農業機械賣給東南亞各地的客戶。"
+      ],
+      [
+        "Regular maintenance keeps the packaging <em>machinery</em> running smoothly.",
+        "定期保養讓包裝機械運轉順暢。"
+      ],
+      [
+        "The <em>machinery</em> of local government can be slow to approve new permits.",
+        "地方政府的行政機制在核發新許可時可能很慢。"
+      ]
+    ],
+    "coll": [
+      [
+        "heavy machinery",
+        "重型機械"
+      ],
+      [
+        "farm machinery",
+        "農業機械"
+      ],
+      [
+        "operate machinery",
+        "操作機械"
+      ],
+      [
+        "a piece of machinery",
+        "一件機械設備"
+      ],
+      [
+        "industrial machinery",
+        "工業機械"
+      ]
+    ],
+    "family": [
+      {
+        "w": "machine",
+        "pos": "n.",
+        "zh": "機器"
+      },
+      {
+        "w": "machinist",
+        "pos": "n.",
+        "zh": "機械操作員、機械工"
+      }
+    ],
+    "syn": [
+      {
+        "w": "equipment",
+        "note": [
+          "Any tools or gear for a job; machinery means machines with moving parts.",
+          "工作所需的任何工具或裝備；machinery 指有運轉部件的機器。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "machine",
+        "note": [
+          "Machine is countable (two machines); machinery is uncountable and never takes an -s.",
+          "machine 可數（two machines）；machinery 不可數，不加 -s。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "mislead",
+    "pos": "v.",
+    "zh": "誤導、使產生錯誤印象",
+    "def": [
+      "To give someone a wrong idea or impression, on purpose or by accident.",
+      "有意或無意地讓人產生錯誤的想法或印象。"
+    ],
+    "ex": [
+      [
+        "The advertisement <em>misled</em> customers by hiding the extra fees.",
+        "這則廣告隱瞞額外費用，誤導了顧客。"
+      ],
+      [
+        "Please don't be <em>misled</em> by the low price; the maintenance costs are high.",
+        "請不要被低價誤導；維護成本很高。"
+      ],
+      [
+        "The chart <em>misled</em> investors by cutting off the vertical axis.",
+        "這張圖表截掉了縱軸，誤導了投資人。"
+      ],
+      [
+        "I did not intend to <em>mislead</em> you about the delivery date.",
+        "我並非有意誤導你交貨日期。"
+      ],
+      [
+        "The company was fined for <em>misleading</em> consumers about where the product was made.",
+        "該公司因誤導消費者產品的產地而被罰款。"
+      ]
+    ],
+    "coll": [
+      [
+        "mislead customers",
+        "誤導顧客"
+      ],
+      [
+        "mislead the public",
+        "誤導大眾"
+      ],
+      [
+        "be misled by",
+        "被…誤導"
+      ],
+      [
+        "deliberately mislead",
+        "蓄意誤導"
+      ],
+      [
+        "misleading information",
+        "誤導性資訊"
+      ],
+      [
+        "misleading advertising",
+        "誤導性廣告"
+      ]
+    ],
+    "family": [
+      {
+        "w": "misleading",
+        "pos": "adj.",
+        "zh": "誤導的、令人誤解的"
+      },
+      {
+        "w": "misleadingly",
+        "pos": "adv.",
+        "zh": "誤導地"
+      }
+    ],
+    "syn": [
+      {
+        "w": "deceive",
+        "note": [
+          "Implies lying or trickery on purpose; mislead can be accidental.",
+          "暗示蓄意說謊或欺騙；mislead 可能是無意的。"
+        ]
+      },
+      {
+        "w": "misinform",
+        "note": [
+          "To give someone wrong facts; mislead stresses that the person ends up with a wrong conclusion.",
+          "指提供錯誤的事實；mislead 強調對方因此得出錯誤的結論。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": []
+  },
+  {
+    "w": "misplace",
+    "pos": "v.",
+    "zh": "放錯地方、一時找不到",
+    "def": [
+      "To put something somewhere and then be unable to find it.",
+      "把東西放在某處後卻找不到。"
+    ],
+    "ex": [
+      [
+        "I seem to have <em>misplaced</em> the key to the supply closet.",
+        "我好像把儲藏室的鑰匙放到不知哪裡去了。"
+      ],
+      [
+        "Someone <em>misplaced</em> the signed contract, so we asked the client for another copy.",
+        "有人把簽好的合約放不見了，所以我們向客戶要了另一份。"
+      ],
+      [
+        "The airline <em>misplaced</em> my luggage and promised to deliver it to the hotel.",
+        "航空公司弄丟了我的行李，並承諾送到飯店。"
+      ],
+      [
+        "If you <em>misplace</em> your security badge, report it to the front desk.",
+        "如果你的安全識別證找不到了，請向櫃檯回報。"
+      ],
+      [
+        "She <em>misplaced</em> a decimal point in the budget, so the total was ten times too high.",
+        "她把預算裡的小數點放錯位置，結果總額高了十倍。"
+      ]
+    ],
+    "coll": [
+      [
+        "misplace a document",
+        "把文件放不見"
+      ],
+      [
+        "misplace the keys",
+        "鑰匙不知放哪"
+      ],
+      [
+        "misplace a file",
+        "找不到檔案"
+      ],
+      [
+        "misplace a decimal point",
+        "把小數點放錯位置"
+      ],
+      [
+        "misplaced trust",
+        "錯付的信任"
+      ]
+    ],
+    "family": [
+      {
+        "w": "misplaced",
+        "pos": "adj.",
+        "zh": "放錯位置的；不恰當的"
+      },
+      {
+        "w": "misplacement",
+        "pos": "n.",
+        "zh": "放錯位置"
+      }
+    ],
+    "syn": [
+      {
+        "w": "lose",
+        "note": [
+          "Lose is the general word and may be permanent; misplace suggests you expect to find the item again.",
+          "lose 是通用字，可能是永遠遺失；misplace 暗示你預期還能找到。"
+        ]
+      },
+      {
+        "w": "mislay",
+        "note": [
+          "Nearly the same meaning; mislay is a little more formal and old-fashioned, and misplace is the usual choice.",
+          "意思幾乎相同；mislay 稍嫌正式老派，一般多用 misplace。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "find",
+        "zh": "找到"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "displace",
+        "note": [
+          "To displace is to force something out of its usual place or take its position; to misplace is to lose track of it.",
+          "displace 是迫使某物離開原位或取代其位置；misplace 是放著卻找不到。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "occupancy",
+    "pos": "n.",
+    "zh": "入住率、使用率；佔用、居住",
+    "def": [
+      "The use of a room or building, or the number of rooms or people using it.",
+      "對房間或建築物的使用，或使用中的房間數、人數。"
+    ],
+    "ex": [
+      [
+        "The hotel reported ninety percent <em>occupancy</em> during the conference week.",
+        "這家飯店回報會議週期間的住房率達九成。"
+      ],
+      [
+        "The fire code limits <em>occupancy</em> of this hall to two hundred people.",
+        "消防法規限制這座大廳最多容納兩百人。"
+      ],
+      [
+        "New tenants may take <em>occupancy</em> of the apartment on the first of the month.",
+        "新房客可於當月一日搬入公寓。"
+      ],
+      [
+        "Office <em>occupancy</em> has fallen since more staff began working from home.",
+        "自從更多員工開始在家工作，辦公室的使用率就下降了。"
+      ],
+      [
+        "The quoted rate is based on double <em>occupancy</em>.",
+        "報價是以兩人入住一間房計算。"
+      ]
+    ],
+    "coll": [
+      [
+        "maximum occupancy",
+        "最大容納人數"
+      ],
+      [
+        "occupancy rate",
+        "入住率、使用率"
+      ],
+      [
+        "take occupancy",
+        "入住、遷入"
+      ],
+      [
+        "double occupancy",
+        "兩人入住（一房）"
+      ],
+      [
+        "certificate of occupancy",
+        "使用許可證"
+      ]
+    ],
+    "family": [
+      {
+        "w": "occupy",
+        "pos": "v.",
+        "zh": "佔用；居住於"
+      },
+      {
+        "w": "occupant",
+        "pos": "n.",
+        "zh": "居住者、使用者"
+      },
+      {
+        "w": "occupied",
+        "pos": "adj.",
+        "zh": "被佔用的、有人的"
+      },
+      {
+        "w": "unoccupied",
+        "pos": "adj.",
+        "zh": "無人使用的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "tenancy",
+        "note": [
+          "Tenancy means renting under an agreement; occupancy simply means using the space, paid or not.",
+          "tenancy 指依租約承租；occupancy 只是使用空間，不論是否付費。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "vacancy",
+        "zh": "空房；空缺"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "occupant",
+        "note": [
+          "An occupant is the person in the space; occupancy is the state or rate of the space being used.",
+          "occupant 是使用空間的人；occupancy 是空間被使用的狀態或比率。"
+        ]
+      },
+      {
+        "w": "occupation",
+        "note": [
+          "Occupation usually means a person's job; occupancy is about using a room or building.",
+          "occupation 通常指職業；occupancy 與使用房間或建築物有關。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "occupant",
+    "pos": "n.",
+    "zh": "居住者、使用者、佔用者；乘員",
+    "def": [
+      "A person who lives in or uses a building, room or vehicle.",
+      "居住或使用某棟建築、房間或車輛的人。"
+    ],
+    "ex": [
+      [
+        "The previous <em>occupant</em> of the office left several boxes in the storage room.",
+        "這間辦公室的前一位使用者在儲藏室留下了幾個箱子。"
+      ],
+      [
+        "Each <em>occupant</em> of the building received a notice about the water shutoff.",
+        "大樓的每位住戶都收到停水通知。"
+      ],
+      [
+        "All <em>occupants</em> of the vehicle must wear seat belts.",
+        "車內所有乘員都必須繫安全帶。"
+      ],
+      [
+        "The lease names Ms. Chen as the sole <em>occupant</em> of the apartment.",
+        "租約載明陳小姐是這間公寓唯一的住戶。"
+      ],
+      [
+        "The sprinklers protect the <em>occupants</em> if a fire breaks out on the third floor.",
+        "若三樓發生火災，自動灑水系統會保護裡面的人。"
+      ]
+    ],
+    "coll": [
+      [
+        "building occupants",
+        "大樓住戶"
+      ],
+      [
+        "the previous occupant",
+        "前任住戶"
+      ],
+      [
+        "the sole occupant",
+        "唯一的住戶"
+      ],
+      [
+        "the current occupant",
+        "現任使用者"
+      ],
+      [
+        "vehicle occupants",
+        "車內乘員"
+      ],
+      [
+        "the occupant of a room",
+        "房間的使用者"
+      ]
+    ],
+    "family": [
+      {
+        "w": "occupy",
+        "pos": "v.",
+        "zh": "佔用；居住於"
+      },
+      {
+        "w": "occupancy",
+        "pos": "n.",
+        "zh": "入住、佔用；入住率"
+      },
+      {
+        "w": "occupation",
+        "pos": "n.",
+        "zh": "職業；佔領"
+      },
+      {
+        "w": "unoccupied",
+        "pos": "adj.",
+        "zh": "無人使用的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "tenant",
+        "note": [
+          "A tenant pays rent; an occupant can be anyone in the space, including an owner or a guest.",
+          "tenant 付租金；occupant 可以是空間內的任何人，包括屋主或訪客。"
+        ]
+      },
+      {
+        "w": "resident",
+        "note": [
+          "Suggests someone who lives in a place for a long time; occupant is neutral and also covers offices and cars.",
+          "指長期居住在某地的人；occupant 較中性，也適用於辦公室與車輛。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "occupation",
+        "note": [
+          "Occupation usually means a job or the act of taking control; occupant is always a person.",
+          "occupation 通常指職業或佔領行為；occupant 一定是指人。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "occupation",
+    "pos": "n.",
+    "zh": "職業；佔領；佔用",
+    "def": [
+      "A person's job; also the act of entering and holding a place.",
+      "一個人的工作；也指進入並控制某地的行為。"
+    ],
+    "ex": [
+      [
+        "Please write your name, address and <em>occupation</em> in the boxes below.",
+        "請在下方欄位填寫姓名、地址與職業。"
+      ],
+      [
+        "It is common for people to change <em>occupation</em> more than once in their careers.",
+        "人們在職涯中不只一次轉換職業是很常見的。"
+      ],
+      [
+        "The union ended its <em>occupation</em> of the factory after talks began.",
+        "談判開始後，工會結束了對工廠的佔據。"
+      ],
+      [
+        "Gardening is her favorite weekend <em>occupation</em>.",
+        "園藝是她週末最愛做的事。"
+      ],
+      [
+        "Many <em>occupations</em> now require basic data skills.",
+        "現在許多職業都需要基本的資料處理能力。"
+      ]
+    ],
+    "coll": [
+      [
+        "by occupation",
+        "就職業而言"
+      ],
+      [
+        "a skilled occupation",
+        "技術性職業"
+      ],
+      [
+        "change occupation",
+        "轉換職業"
+      ],
+      [
+        "current occupation",
+        "目前職業"
+      ],
+      [
+        "occupation and income",
+        "職業與收入"
+      ]
+    ],
+    "family": [
+      {
+        "w": "occupational",
+        "pos": "adj.",
+        "zh": "職業的"
+      },
+      {
+        "w": "occupy",
+        "pos": "v.",
+        "zh": "佔用；使忙碌"
+      },
+      {
+        "w": "occupant",
+        "pos": "n.",
+        "zh": "居住者、使用者"
+      },
+      {
+        "w": "occupancy",
+        "pos": "n.",
+        "zh": "入住、佔用"
+      }
+    ],
+    "syn": [
+      {
+        "w": "profession",
+        "note": [
+          "A profession needs special training, such as law or medicine; occupation covers any kind of job.",
+          "profession 需要專業訓練，如法律或醫學；occupation 涵蓋任何工作。"
+        ]
+      },
+      {
+        "w": "job",
+        "note": [
+          "The everyday word for a specific piece of work; occupation is more formal and common on forms.",
+          "指某項具體工作的日常用語；occupation 較正式，常見於表格。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "position",
+        "note": [
+          "A position is a particular post in a company; an occupation is the general type of work a person does.",
+          "position 是公司中的某個職位；occupation 是一個人從事的工作類別。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "overcharge",
+    "pos": "v., n.",
+    "zh": "多收費、索價過高；多收的款項",
+    "def": [
+      "To ask for more money than the correct or fair price.",
+      "索取高於正確或合理價格的金額。"
+    ],
+    "ex": [
+      [
+        "The garage <em>overcharged</em> me for repairs that were never done.",
+        "修車廠向我收了根本沒做的維修費。"
+      ],
+      [
+        "Customers complained that the taxi driver had <em>overcharged</em> them for the airport trip.",
+        "顧客抱怨計程車司機去機場多收了他們的車資。"
+      ],
+      [
+        "If you think you were <em>overcharged</em>, send us your receipt and we will check.",
+        "如果你認為被多收費了，請把收據寄給我們，我們會查證。"
+      ],
+      [
+        "The bank apologized and refunded the <em>overcharge</em> to my account.",
+        "銀行道歉，並把多收的款項退回我的帳戶。"
+      ],
+      [
+        "Some hotels <em>overcharge</em> guests for minibar items they did not use.",
+        "有些飯店對住客沒用過的小冰箱商品也收費。"
+      ]
+    ],
+    "coll": [
+      [
+        "overcharge a customer",
+        "向顧客多收費"
+      ],
+      [
+        "overcharge for",
+        "就…多收費"
+      ],
+      [
+        "be overcharged by ten dollars",
+        "被多收十美元"
+      ],
+      [
+        "refund an overcharge",
+        "退還多收的款項"
+      ],
+      [
+        "accidentally overcharge",
+        "不慎多收費"
+      ]
+    ],
+    "family": [
+      {
+        "w": "charge",
+        "pos": "v.",
+        "zh": "收費；索價"
+      },
+      {
+        "w": "undercharge",
+        "pos": "v.",
+        "zh": "少收費"
+      }
+    ],
+    "syn": [
+      {
+        "w": "gouge",
+        "note": [
+          "Informal; to charge unfairly high prices, especially when buyers have no choice; overcharge can be a simple mistake.",
+          "口語；指趁買方別無選擇而漫天喊價；overcharge 也可能只是失誤。"
+        ]
+      },
+      {
+        "w": "rip off",
+        "note": [
+          "Informal phrasal verb for cheating someone on price; overcharge is neutral and fits formal complaints.",
+          "口語片語，指在價格上坑人；overcharge 較中性，適用於正式申訴。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "undercharge",
+        "zh": "少收費"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "overpay",
+        "note": [
+          "The seller overcharges; the buyer overpays. They describe the same extra money from opposite sides.",
+          "賣方是 overcharge，買方是 overpay；兩者從相反立場描述同一筆多出的錢。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "overpay",
+    "pos": "v.",
+    "zh": "多付、付過高的薪資或款項",
+    "def": [
+      "To pay someone more than the correct or fair amount.",
+      "付給對方超過正確或合理的金額。"
+    ],
+    "ex": [
+      [
+        "We <em>overpaid</em> the supplier by two hundred dollars last month.",
+        "我們上個月多付了供應商兩百美元。"
+      ],
+      [
+        "If payroll <em>overpays</em> you, the extra amount will be deducted from your next paycheck.",
+        "如果薪資部門多發給你錢，多出的金額會從你下次薪水中扣除。"
+      ],
+      [
+        "Don't <em>overpay</em> for printer ink; compare prices online first.",
+        "別花冤枉錢買印表機墨水，先上網比價。"
+      ],
+      [
+        "Several employees were <em>overpaid</em> because of an error in the timesheet system.",
+        "由於工時系統出錯，有幾位員工被多發了薪水。"
+      ],
+      [
+        "Shareholders argued that the board had <em>overpaid</em> its executives.",
+        "股東主張董事會給高階主管的薪酬過高。"
+      ]
+    ],
+    "coll": [
+      [
+        "overpay for",
+        "為…多付錢"
+      ],
+      [
+        "be overpaid",
+        "薪資過高；被多付"
+      ],
+      [
+        "overpay by fifty dollars",
+        "多付五十美元"
+      ],
+      [
+        "overpay a bill",
+        "多付帳單款項"
+      ],
+      [
+        "overpay taxes",
+        "多繳稅"
+      ]
+    ],
+    "family": [
+      {
+        "w": "overpayment",
+        "pos": "n.",
+        "zh": "多付的款項"
+      },
+      {
+        "w": "overpaid",
+        "pos": "adj.",
+        "zh": "薪酬過高的"
+      },
+      {
+        "w": "pay",
+        "pos": "v.",
+        "zh": "支付"
+      }
+    ],
+    "syn": [],
+    "ant": [
+      {
+        "w": "underpay",
+        "zh": "少付；給薪過低"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "overcharge",
+        "note": [
+          "The buyer overpays; the seller overcharges. Overcharge describes what the seller does.",
+          "買方是 overpay；賣方是 overcharge，後者描述賣方的行為。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "passport",
+    "pos": "n.",
+    "zh": "護照",
+    "def": [
+      "An official document that proves your identity and nationality and lets you travel abroad.",
+      "證明身分與國籍、讓你出國旅行的官方文件。"
+    ],
+    "ex": [
+      [
+        "Please bring your <em>passport</em> to the check-in counter for international flights.",
+        "搭乘國際航班請攜帶護照到報到櫃檯。"
+      ],
+      [
+        "My <em>passport</em> expires in March, so I need to renew it before the business trip.",
+        "我的護照三月到期，所以出差前必須先換新。"
+      ],
+      [
+        "The border officer stamped her <em>passport</em> and let her through.",
+        "邊境人員在她的護照上蓋章後放行。"
+      ],
+      [
+        "Make a photocopy of your <em>passport</em> in case it is lost while you travel.",
+        "請影印一份護照，以免旅途中遺失。"
+      ],
+      [
+        "A good degree can be a <em>passport</em> to a better job.",
+        "好的學歷可以是通往更好工作的敲門磚。"
+      ]
+    ],
+    "coll": [
+      [
+        "renew a passport",
+        "更新護照"
+      ],
+      [
+        "apply for a passport",
+        "申請護照"
+      ],
+      [
+        "a valid passport",
+        "有效護照"
+      ],
+      [
+        "passport control",
+        "護照查驗處"
+      ],
+      [
+        "a passport number",
+        "護照號碼"
+      ],
+      [
+        "a passport photo",
+        "護照照片"
+      ]
+    ],
+    "family": [],
+    "syn": [],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "visa",
+        "note": [
+          "A visa is permission from a country to enter or stay; a passport is your identity document from your own country.",
+          "visa 是他國准許入境或停留的許可；passport 是你本國核發的身分文件。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "patent",
+    "pos": "n., v.",
+    "zh": "專利；取得專利",
+    "def": [
+      "A legal right to be the only person who makes or sells a new invention.",
+      "獨家製造或銷售某項新發明的法定權利。"
+    ],
+    "ex": [
+      [
+        "The engineer filed a <em>patent</em> for a more efficient battery design.",
+        "這位工程師為一種更有效率的電池設計申請了專利。"
+      ],
+      [
+        "The company holds more than forty <em>patents</em> in water filtration.",
+        "這家公司擁有四十多項水過濾方面的專利。"
+      ],
+      [
+        "Our rival has <em>patented</em> the technology, so we must find another method.",
+        "競爭對手已為這項技術取得專利，所以我們必須另找方法。"
+      ],
+      [
+        "The <em>patent</em> expires next year, and other firms can then make similar devices.",
+        "專利明年到期，屆時其他公司就能製造類似的裝置。"
+      ],
+      [
+        "The box is marked <em>patent</em> pending while the application is reviewed.",
+        "申請審查期間，盒子上標示著專利申請中。"
+      ]
+    ],
+    "coll": [
+      [
+        "file a patent",
+        "提出專利申請"
+      ],
+      [
+        "apply for a patent",
+        "申請專利"
+      ],
+      [
+        "hold a patent",
+        "持有專利"
+      ],
+      [
+        "a patent application",
+        "專利申請"
+      ],
+      [
+        "patent infringement",
+        "侵害專利"
+      ],
+      [
+        "patent pending",
+        "專利申請中"
+      ]
+    ],
+    "family": [
+      {
+        "w": "patented",
+        "pos": "adj.",
+        "zh": "已取得專利的"
+      },
+      {
+        "w": "patentable",
+        "pos": "adj.",
+        "zh": "可取得專利的"
+      },
+      {
+        "w": "patentee",
+        "pos": "n.",
+        "zh": "專利權人"
+      }
+    ],
+    "syn": [],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "copyright",
+        "note": [
+          "Copyright protects original writing, art, music or code; a patent protects an invention.",
+          "copyright 保護原創的文字、藝術、音樂或程式碼；patent 保護發明。"
+        ]
+      },
+      {
+        "w": "trademark",
+        "note": [
+          "A trademark protects a name or symbol that identifies a business; a patent protects how something works.",
+          "trademark 保護識別企業的名稱或標誌；patent 保護事物的運作方式。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "pet",
+    "pos": "n., adj.",
+    "zh": "寵物；特別喜愛的（pet project）",
+    "def": [
+      "An animal kept at home for company; also used to mean favorite, as in pet project.",
+      "養在家裡作伴的動物；也可表示「特別喜愛的」，如 pet project。"
+    ],
+    "ex": [
+      [
+        "Guests may bring one small <em>pet</em> if they pay a cleaning fee.",
+        "住客若支付清潔費，可以攜帶一隻小型寵物。"
+      ],
+      [
+        "The apartment building does not allow <em>pets</em> heavier than twenty pounds.",
+        "這棟公寓不允許超過二十磅的寵物。"
+      ],
+      [
+        "The company has a <em>pet</em>-friendly office, and dogs are welcome on Fridays.",
+        "這家公司的辦公室對寵物友善，週五歡迎帶狗上班。"
+      ],
+      [
+        "Redesigning the logo has been the director's <em>pet</em> project for years.",
+        "重新設計標誌多年來一直是這位主任的心頭好。"
+      ],
+      [
+        "Our new <em>pet</em> food line sold out within the first week.",
+        "我們新推出的寵物食品系列第一週就賣光了。"
+      ]
+    ],
+    "coll": [
+      [
+        "a pet-friendly hotel",
+        "寵物友善飯店"
+      ],
+      [
+        "a pet policy",
+        "寵物規定"
+      ],
+      [
+        "a pet owner",
+        "寵物飼主"
+      ],
+      [
+        "pet food",
+        "寵物食品"
+      ],
+      [
+        "a pet project",
+        "心頭好的專案"
+      ],
+      [
+        "a pet deposit",
+        "寵物押金"
+      ]
+    ],
+    "family": [
+      {
+        "w": "pet-friendly",
+        "pos": "adj.",
+        "zh": "寵物友善的"
+      },
+      {
+        "w": "pet store",
+        "pos": "n.",
+        "zh": "寵物店"
+      },
+      {
+        "w": "pet sitter",
+        "pos": "n.",
+        "zh": "寵物保姆"
+      }
+    ],
+    "syn": [],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "pest",
+        "note": [
+          "A pest is an insect or animal that damages crops or property; a pet is an animal kept for company.",
+          "pest 是破壞作物或財物的蟲或動物；pet 是養來作伴的動物。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "poorly",
+    "pos": "adv.",
+    "zh": "差地、不好地；（成績、銷量）不佳",
+    "def": [
+      "In a bad way, or at a low standard.",
+      "以不好的方式，或在低水準上。"
+    ],
+    "ex": [
+      [
+        "The new product sold <em>poorly</em> because the price was too high.",
+        "新產品賣得不好，因為定價太高。"
+      ],
+      [
+        "The conference was <em>poorly</em> organized, and many sessions started late.",
+        "這場研討會籌辦得不好，許多場次都延遲開始。"
+      ],
+      [
+        "Employees who are <em>poorly</em> trained are more likely to make mistakes.",
+        "訓練不足的員工比較容易出錯。"
+      ],
+      [
+        "The software performed <em>poorly</em> when more than fifty users logged in.",
+        "超過五十名使用者登入時，軟體的表現很差。"
+      ],
+      [
+        "Entry-level staff are often <em>poorly</em> paid compared with experienced colleagues.",
+        "與資深同事相比，初階員工的薪水通常偏低。"
+      ],
+      [
+        "Sales did <em>poorly</em> in the first quarter, but the numbers improved by June.",
+        "第一季銷售表現不佳，但到六月數字已有起色。"
+      ]
+    ],
+    "coll": [
+      [
+        "perform poorly",
+        "表現不佳"
+      ],
+      [
+        "poorly designed",
+        "設計不良的"
+      ],
+      [
+        "poorly paid",
+        "薪水偏低的"
+      ],
+      [
+        "poorly maintained",
+        "維護不佳的"
+      ],
+      [
+        "do poorly in",
+        "在…表現差"
+      ],
+      [
+        "sell poorly",
+        "賣得不好"
+      ]
+    ],
+    "family": [
+      {
+        "w": "poor",
+        "pos": "adj.",
+        "zh": "差的；貧窮的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "badly",
+        "note": [
+          "The general adverb; poorly stresses low quality or performance, especially before past participles like poorly made.",
+          "一般副詞；poorly 強調品質或表現低落，尤其常放在 poorly made 這類過去分詞前。"
+        ]
+      },
+      {
+        "w": "inadequately",
+        "note": [
+          "More formal; means not enough for what is needed, not just low quality.",
+          "較正式；指不足以滿足需求，而不只是品質差。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "well",
+        "zh": "好地、順利地"
+      }
+    ],
+    "confuse": []
+  },
+  {
+    "w": "precede",
+    "pos": "v.",
+    "zh": "在…之前、先於",
+    "def": [
+      "To come or happen before something else in time, order or position.",
+      "在時間、順序或位置上先於另一事物。"
+    ],
+    "ex": [
+      [
+        "A short safety briefing will <em>precede</em> the factory tour.",
+        "工廠參觀之前會先有一場簡短的安全說明。"
+      ],
+      [
+        "The CEO's speech was <em>preceded</em> by a video about the company's history.",
+        "執行長演講之前先播放了一段公司歷史的影片。"
+      ],
+      [
+        "Sales fell in the quarter that <em>preceded</em> the product launch.",
+        "產品上市前的那一季，銷售量下滑。"
+      ],
+      [
+        "The chapter that <em>precedes</em> this one explains how to set up an account.",
+        "本章之前的那一章說明如何建立帳號。"
+      ],
+      [
+        "A series of complaints <em>preceded</em> the manager's resignation.",
+        "經理辭職之前，先有一連串的客訴。"
+      ]
+    ],
+    "coll": [
+      [
+        "be preceded by",
+        "前面有…；之前是…"
+      ],
+      [
+        "precede the meeting",
+        "在會議之前"
+      ],
+      [
+        "immediately precede",
+        "緊接在…之前"
+      ],
+      [
+        "the preceding quarter",
+        "前一季"
+      ],
+      [
+        "precede the launch",
+        "先於上市"
+      ]
+    ],
+    "family": [
+      {
+        "w": "preceding",
+        "pos": "adj.",
+        "zh": "前面的、先前的"
+      },
+      {
+        "w": "precedent",
+        "pos": "n.",
+        "zh": "先例"
+      },
+      {
+        "w": "precedence",
+        "pos": "n.",
+        "zh": "優先（take precedence）"
+      },
+      {
+        "w": "unprecedented",
+        "pos": "adj.",
+        "zh": "前所未有的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "come before",
+        "note": [
+          "Plain everyday phrase; precede is more formal and common in writing.",
+          "平實的日常說法；precede 較正式，常見於書面。"
+        ]
+      },
+      {
+        "w": "predate",
+        "note": [
+          "To exist or happen at an earlier date than something else; usually about events or things in the past.",
+          "存在或發生的時間早於另一事物；通常指過去的事件或事物。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "follow",
+        "zh": "跟隨在…之後"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "proceed",
+        "note": [
+          "Proceed means to continue or go ahead; precede means to come before something.",
+          "proceed 指繼續進行；precede 指在某事之前。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "prospective",
+    "pos": "adj.",
+    "zh": "預期的、未來的、有望的",
+    "def": [
+      "Likely to become something, or likely to happen, in the future.",
+      "未來可能成為某種身分，或可能發生的。"
+    ],
+    "ex": [
+      [
+        "We are meeting two <em>prospective</em> clients in Taipei this afternoon.",
+        "我們今天下午要在台北跟兩位潛在客戶會面。"
+      ],
+      [
+        "The agent showed the <em>prospective</em> tenants around the apartment.",
+        "仲介帶準房客參觀這間公寓。"
+      ],
+      [
+        "<em>Prospective</em> buyers can view the property on Saturday between ten and four.",
+        "有意購買者可於週六十點到四點間看屋。"
+      ],
+      [
+        "Please send our <em>prospective</em> suppliers a copy of the quality standards.",
+        "請把品質標準的副本寄給我們的潛在供應商。"
+      ],
+      [
+        "She is a <em>prospective</em> candidate for the regional manager position.",
+        "她是區域經理一職的可能人選。"
+      ]
+    ],
+    "coll": [
+      [
+        "a prospective customer",
+        "潛在客戶"
+      ],
+      [
+        "a prospective employer",
+        "未來雇主"
+      ],
+      [
+        "a prospective buyer",
+        "有意購買者"
+      ],
+      [
+        "a prospective client",
+        "潛在客戶"
+      ],
+      [
+        "a prospective student",
+        "有意就讀的學生"
+      ],
+      [
+        "a prospective tenant",
+        "準房客"
+      ]
+    ],
+    "family": [
+      {
+        "w": "prospect",
+        "pos": "n.",
+        "zh": "前景；潛在對象"
+      },
+      {
+        "w": "prospectus",
+        "pos": "n.",
+        "zh": "公開說明書；招生簡章"
+      }
+    ],
+    "syn": [
+      {
+        "w": "potential",
+        "note": [
+          "The more common everyday word; prospective points to a person or thing expected to fill a role soon.",
+          "較常見的日常用語；prospective 指預期不久會擔任某角色的人或事物。"
+        ]
+      },
+      {
+        "w": "future",
+        "note": [
+          "Only refers to time; prospective suggests someone is likely to take part, such as a buyer or tenant.",
+          "只指時間；prospective 暗示某人可能參與，如買家或房客。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "existing",
+        "zh": "現有的"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "perspective",
+        "note": [
+          "Perspective is a point of view; prospective means likely or expected in the future.",
+          "perspective 是觀點；prospective 是未來可能的、預期的。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "recruitment",
+    "pos": "n.",
+    "zh": "招募、徵才",
+    "def": [
+      "The process of finding and hiring new employees.",
+      "尋找並聘用新員工的過程。"
+    ],
+    "ex": [
+      [
+        "The company has launched a <em>recruitment</em> drive to fill twenty positions.",
+        "公司已展開徵才活動，要補足二十個職缺。"
+      ],
+      [
+        "Our <em>recruitment</em> team attends three job fairs every year.",
+        "我們的招募團隊每年參加三場就業博覽會。"
+      ],
+      [
+        "<em>Recruitment</em> costs rise when a role stays vacant for months.",
+        "職缺空了好幾個月時，招募成本就會上升。"
+      ],
+      [
+        "She works in <em>recruitment</em>, matching engineers with software companies.",
+        "她從事人力招募，替軟體公司媒合工程師。"
+      ],
+      [
+        "The <em>recruitment</em> of skilled technicians has become difficult in this region.",
+        "在這個地區，招募熟練技師已變得困難。"
+      ]
+    ],
+    "coll": [
+      [
+        "a recruitment drive",
+        "徵才活動"
+      ],
+      [
+        "a recruitment agency",
+        "人力仲介公司"
+      ],
+      [
+        "the recruitment process",
+        "招募流程"
+      ],
+      [
+        "a recruitment team",
+        "招募團隊"
+      ],
+      [
+        "staff recruitment",
+        "人員招募"
+      ],
+      [
+        "a recruitment campaign",
+        "徵才宣傳活動"
+      ]
+    ],
+    "family": [
+      {
+        "w": "recruit",
+        "pos": "v.",
+        "zh": "招募；吸收（成員）"
+      },
+      {
+        "w": "recruit",
+        "pos": "n.",
+        "zh": "新進人員；新兵"
+      },
+      {
+        "w": "recruiter",
+        "pos": "n.",
+        "zh": "招募人員"
+      }
+    ],
+    "syn": [
+      {
+        "w": "hiring",
+        "note": [
+          "Plainer word focused on the act of employing someone; recruitment covers searching for and attracting candidates too.",
+          "較平實，著重聘僱的動作；recruitment 還包含尋找與吸引人選。"
+        ]
+      },
+      {
+        "w": "staffing",
+        "note": [
+          "Broader: making sure a business has enough workers, including scheduling; recruitment is only finding new people.",
+          "範圍較廣：確保企業有足夠人力，包括排班；recruitment 只指尋找新人。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "dismissal",
+        "zh": "解僱"
+      },
+      {
+        "w": "layoff",
+        "zh": "裁員"
+      }
+    ],
+    "confuse": []
+  },
+  {
+    "w": "takeover",
+    "pos": "n.",
+    "zh": "收購、接管",
+    "def": [
+      "The act of gaining control of a company or organization.",
+      "取得公司或組織控制權的行為。"
+    ],
+    "ex": [
+      [
+        "Shareholders approved the <em>takeover</em> after the board raised its offer.",
+        "董事會提高報價後，股東核准了這項收購案。"
+      ],
+      [
+        "The bank announced a hostile <em>takeover</em> bid for its smaller rival.",
+        "這家銀行宣布對規模較小的對手展開敵意收購。"
+      ],
+      [
+        "After the <em>takeover</em>, the new owners reorganized the sales department.",
+        "收購完成後，新東家重整了業務部門。"
+      ],
+      [
+        "Employees feared job losses when news of the <em>takeover</em> spread.",
+        "收購消息傳開時，員工擔心會失業。"
+      ],
+      [
+        "The sudden <em>takeover</em> of the project by head office surprised the local team.",
+        "總公司突然接管這項專案，讓當地團隊相當意外。"
+      ]
+    ],
+    "coll": [
+      [
+        "a takeover bid",
+        "收購出價"
+      ],
+      [
+        "a hostile takeover",
+        "敵意收購"
+      ],
+      [
+        "a friendly takeover",
+        "善意收購"
+      ],
+      [
+        "a takeover offer",
+        "收購要約"
+      ],
+      [
+        "a takeover target",
+        "收購目標"
+      ],
+      [
+        "announce a takeover",
+        "宣布收購"
+      ]
+    ],
+    "family": [
+      {
+        "w": "take over",
+        "pos": "v.",
+        "zh": "接管、收購"
+      }
+    ],
+    "syn": [
+      {
+        "w": "acquisition",
+        "note": [
+          "Neutral word for buying a company or asset; takeover stresses gaining control, sometimes against the owners' wishes.",
+          "購買公司或資產的中性用語；takeover 強調取得控制權，有時違背原所有人意願。"
+        ]
+      },
+      {
+        "w": "buyout",
+        "note": [
+          "The purchase of all or most shares of a company, often by managers or investors.",
+          "買下公司全部或大部分股份，常由經理人或投資人進行。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "merger",
+        "note": [
+          "A merger joins two companies, usually as partners; in a takeover one company takes control of the other.",
+          "merger 是兩家公司合併，通常是對等夥伴；takeover 是一家公司取得另一家的控制權。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "trademark",
+    "pos": "n., v.",
+    "zh": "商標；註冊為商標",
+    "def": [
+      "A name, symbol or design that a company registers to identify its products.",
+      "公司登記用來識別其產品的名稱、符號或圖案。"
+    ],
+    "ex": [
+      [
+        "The company registered the name as a <em>trademark</em> before launching the product.",
+        "公司在推出產品之前，先把這個名稱註冊為商標。"
+      ],
+      [
+        "Using another firm's <em>trademark</em> without permission can lead to a lawsuit.",
+        "未經許可使用他家公司的商標可能會引來訴訟。"
+      ],
+      [
+        "The bakery <em>trademarked</em> its logo to stop imitations.",
+        "這家麵包店為了防止仿冒而註冊了自己的標誌。"
+      ],
+      [
+        "A registered <em>trademark</em> is marked with the symbol ®.",
+        "已註冊的商標會標上 ® 符號。"
+      ],
+      [
+        "Careful planning is the <em>trademark</em> of a good project manager.",
+        "周詳的規劃是優秀專案經理的招牌特色。"
+      ]
+    ],
+    "coll": [
+      [
+        "register a trademark",
+        "註冊商標"
+      ],
+      [
+        "a registered trademark",
+        "註冊商標"
+      ],
+      [
+        "trademark infringement",
+        "侵害商標權"
+      ],
+      [
+        "trademark law",
+        "商標法"
+      ],
+      [
+        "a trademark application",
+        "商標申請"
+      ],
+      [
+        "the trademark of",
+        "…的標誌性特色"
+      ]
+    ],
+    "family": [
+      {
+        "w": "trademarked",
+        "pos": "adj.",
+        "zh": "已註冊商標的"
+      }
+    ],
+    "syn": [
+      {
+        "w": "brand",
+        "note": [
+          "The name and image customers know; a trademark is the legal protection of that name or symbol.",
+          "顧客熟悉的名稱與形象；trademark 是對該名稱或標誌的法律保護。"
+        ]
+      },
+      {
+        "w": "logo",
+        "note": [
+          "A logo is a visual design; a trademark can be a name, slogan or logo that is registered by law.",
+          "logo 是視覺圖樣；trademark 可以是依法註冊的名稱、標語或標誌。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "patent",
+        "note": [
+          "A patent protects an invention; a trademark protects a name or symbol that identifies a business.",
+          "patent 保護發明；trademark 保護識別企業的名稱或標誌。"
+        ]
+      },
+      {
+        "w": "copyright",
+        "note": [
+          "Copyright protects creative works such as books and music, not brand names.",
+          "copyright 保護書籍、音樂等創作，不保護品牌名稱。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "traveler",
+    "pos": "n.",
+    "zh": "旅客、旅行者",
+    "def": [
+      "A person who is making a journey, especially to a distant place.",
+      "正在旅行的人，尤指前往遠方的人。"
+    ],
+    "ex": [
+      [
+        "Business <em>travelers</em> often prefer hotels near the airport.",
+        "商務旅客常偏好機場附近的飯店。"
+      ],
+      [
+        "The airline offers a special lounge for frequent <em>travelers</em>.",
+        "這家航空公司為常客提供專屬貴賓室。"
+      ],
+      [
+        "Each <em>traveler</em> must show a boarding pass at the security gate.",
+        "每位旅客都必須在安檢口出示登機證。"
+      ],
+      [
+        "Experienced <em>travelers</em> pack light to avoid baggage fees.",
+        "經驗豐富的旅客會輕裝簡行，以避免行李費。"
+      ],
+      [
+        "The tourism board surveyed international <em>travelers</em> about their hotel experiences.",
+        "觀光局針對國際旅客的住宿體驗做了問卷調查。"
+      ]
+    ],
+    "coll": [
+      [
+        "a business traveler",
+        "商務旅客"
+      ],
+      [
+        "a frequent traveler",
+        "經常旅行者"
+      ],
+      [
+        "an international traveler",
+        "國際旅客"
+      ],
+      [
+        "a solo traveler",
+        "單獨旅行者"
+      ],
+      [
+        "an air traveler",
+        "搭機旅客"
+      ],
+      [
+        "traveler's checks",
+        "旅行支票"
+      ]
+    ],
+    "family": [
+      {
+        "w": "travel",
+        "pos": "v.",
+        "zh": "旅行"
+      },
+      {
+        "w": "travel",
+        "pos": "n.",
+        "zh": "旅行、差旅"
+      }
+    ],
+    "syn": [
+      {
+        "w": "passenger",
+        "note": [
+          "A passenger rides in a vehicle such as a plane or train; a traveler is anyone on a journey.",
+          "passenger 是搭乘飛機、火車等交通工具的人；traveler 是任何在旅途中的人。"
+        ]
+      },
+      {
+        "w": "tourist",
+        "note": [
+          "A tourist travels for pleasure; a traveler may travel for business or other reasons.",
+          "tourist 為遊玩而旅行；traveler 可能是為了商務或其他原因。"
+        ]
+      }
+    ],
+    "ant": [],
+    "confuse": [
+      {
+        "w": "commuter",
+        "note": [
+          "A commuter makes regular trips between home and work; a traveler goes on a journey, often to somewhere far.",
+          "commuter 是定期往返住處與工作地點的人；traveler 是出遠門的人。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "turnover",
+    "pos": "n.",
+    "zh": "營業額；人員流動率；週轉率",
+    "def": [
+      "The amount of business a company does, or the rate at which employees leave and are replaced.",
+      "公司的營業量，或員工離開並被替補的比率。"
+    ],
+    "ex": [
+      [
+        "High staff <em>turnover</em> is expensive because every new hire must be trained.",
+        "員工流動率高會很花錢，因為每位新進人員都要訓練。"
+      ],
+      [
+        "The company reported an annual <em>turnover</em> of twelve million dollars.",
+        "該公司公布年營業額為一千兩百萬美元。"
+      ],
+      [
+        "Inventory <em>turnover</em> improved after we cut the number of slow-moving items.",
+        "我們減少滯銷品項後，存貨週轉率改善了。"
+      ],
+      [
+        "The restaurant's quick table <em>turnover</em> keeps waiting times short.",
+        "這間餐廳翻桌速度快，所以候位時間短。"
+      ],
+      [
+        "A new bonus scheme helped cut employee <em>turnover</em> by fifteen percent.",
+        "新的獎金制度幫助把員工離職率降低了百分之十五。"
+      ]
+    ],
+    "coll": [
+      [
+        "staff turnover",
+        "人員流動率"
+      ],
+      [
+        "employee turnover",
+        "員工離職率"
+      ],
+      [
+        "annual turnover",
+        "年營業額"
+      ],
+      [
+        "the turnover rate",
+        "流動率；週轉率"
+      ],
+      [
+        "inventory turnover",
+        "存貨週轉率"
+      ],
+      [
+        "reduce turnover",
+        "降低流動率"
+      ]
+    ],
+    "family": [
+      {
+        "w": "turn over",
+        "pos": "v.",
+        "zh": "翻轉；移交"
+      }
+    ],
+    "syn": [
+      {
+        "w": "revenue",
+        "note": [
+          "The standard American term for income from sales; turnover with this meaning is mostly British.",
+          "美式標準用語，指銷售收入；turnover 作此義多為英式用法。"
+        ]
+      },
+      {
+        "w": "attrition",
+        "note": [
+          "Gradual loss of staff, often without replacement; turnover counts people who leave and are replaced.",
+          "指員工逐漸流失，常不補人；turnover 計算離職並被補上的人數。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "retention",
+        "zh": "留任；留住（員工）"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "turnaround",
+        "note": [
+          "Turnaround is the time taken to complete a task, or a sudden improvement; turnover is staff change or sales volume.",
+          "turnaround 指完成工作所需時間或情勢好轉；turnover 指人員更替或營業量。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "urgent",
+    "pos": "adj.",
+    "zh": "緊急的、急迫的",
+    "def": [
+      "Needing immediate action or attention.",
+      "需要立即處理或注意。"
+    ],
+    "ex": [
+      [
+        "I have an <em>urgent</em> message for Ms. Lee from the head office.",
+        "我有一則總公司要給李小姐的緊急訊息。"
+      ],
+      [
+        "The client sent an <em>urgent</em> request for a revised quotation.",
+        "客戶緊急要求提供修改後的報價單。"
+      ],
+      [
+        "Repairs to the roof are <em>urgent</em> because the leaks are getting worse.",
+        "屋頂的修繕刻不容緩，因為漏水愈來愈嚴重。"
+      ],
+      [
+        "It is <em>urgent</em> that we confirm the venue by Friday.",
+        "我們必須在週五前確認場地，事不宜遲。"
+      ],
+      [
+        "There is an <em>urgent</em> need for more nurses at the clinic.",
+        "這家診所迫切需要更多護理師。"
+      ]
+    ],
+    "coll": [
+      [
+        "an urgent matter",
+        "緊急事項"
+      ],
+      [
+        "an urgent request",
+        "緊急要求"
+      ],
+      [
+        "urgent attention",
+        "刻不容緩的處理"
+      ],
+      [
+        "an urgent need",
+        "迫切需求"
+      ],
+      [
+        "be in urgent need of",
+        "急需…"
+      ],
+      [
+        "urgent care",
+        "緊急診療"
+      ]
+    ],
+    "family": [
+      {
+        "w": "urgency",
+        "pos": "n.",
+        "zh": "緊急、迫切"
+      },
+      {
+        "w": "urgently",
+        "pos": "adv.",
+        "zh": "緊急地"
+      },
+      {
+        "w": "urge",
+        "pos": "v.",
+        "zh": "力勸；催促"
+      }
+    ],
+    "syn": [
+      {
+        "w": "pressing",
+        "note": [
+          "A bit more formal; usually describes problems or needs that must be dealt with now.",
+          "稍微正式；通常用來形容必須立即處理的問題或需求。"
+        ]
+      },
+      {
+        "w": "critical",
+        "note": [
+          "Stresses very serious consequences if nothing is done; urgent stresses lack of time.",
+          "強調不處理會有非常嚴重的後果；urgent 強調時間緊迫。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "non-urgent",
+        "zh": "不緊急的"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "important",
+        "note": [
+          "Important matters count for a lot but may not need action now; urgent matters cannot wait.",
+          "重要的事影響很大，但不一定要馬上處理；緊急的事則不能等。"
+        ]
+      },
+      {
+        "w": "emergency",
+        "note": [
+          "Emergency is a noun for a sudden dangerous situation; urgent describes anything that needs quick action.",
+          "emergency 是名詞，指突發的危急狀況；urgent 形容任何需要快速處理的事。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "vacate",
+    "pos": "v.",
+    "zh": "搬離、騰出、空出",
+    "def": [
+      "To leave a room, building, seat or job so that others can use it.",
+      "離開房間、建築、座位或職位，讓別人可以使用。"
+    ],
+    "ex": [
+      [
+        "Guests must <em>vacate</em> their rooms by eleven a.m. on the day of departure.",
+        "住客必須在離開當天上午十一點前退房。"
+      ],
+      [
+        "The tenant agreed to <em>vacate</em> the apartment at the end of the lease.",
+        "房客同意租約結束時搬離公寓。"
+      ],
+      [
+        "Please <em>vacate</em> the meeting room; another team has booked it for ten o'clock.",
+        "請把會議室讓出來；另一個團隊預約了十點使用。"
+      ],
+      [
+        "The director will <em>vacate</em> her post in June, and the search for a successor has begun.",
+        "主任六月將卸任，接班人的遴選已經展開。"
+      ],
+      [
+        "Residents were asked to <em>vacate</em> the premises while workers removed the asbestos.",
+        "工人清除石綿期間，住戶被要求離開該處。"
+      ]
+    ],
+    "coll": [
+      [
+        "vacate the premises",
+        "離開該處所"
+      ],
+      [
+        "vacate a room",
+        "退房、離開房間"
+      ],
+      [
+        "vacate a position",
+        "卸任、讓出職位"
+      ],
+      [
+        "vacate a seat",
+        "讓出座位"
+      ],
+      [
+        "vacate an apartment",
+        "搬離公寓"
+      ],
+      [
+        "vacate by noon",
+        "在中午前離開"
+      ]
+    ],
+    "family": [
+      {
+        "w": "vacant",
+        "pos": "adj.",
+        "zh": "空著的；空缺的"
+      },
+      {
+        "w": "vacancy",
+        "pos": "n.",
+        "zh": "空房；職缺"
+      }
+    ],
+    "syn": [
+      {
+        "w": "leave",
+        "note": [
+          "Everyday word; vacate is formal and stresses emptying a place for the next user.",
+          "日常用語；vacate 較正式，強調把地方空出來給下一位使用者。"
+        ]
+      },
+      {
+        "w": "move out",
+        "note": [
+          "Informal; used for homes and offices when you stop living or working there.",
+          "口語；用於不再住在或使用某住處、辦公室時。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "occupy",
+        "zh": "佔用；入住"
+      },
+      {
+        "w": "move in",
+        "zh": "搬入"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "evacuate",
+        "note": [
+          "To evacuate is to move people out because of danger; to vacate is simply to leave a place you were using.",
+          "evacuate 是因危險而讓人撤離；vacate 只是離開原本使用的地方。"
+        ]
+      }
+    ]
+  },
+  {
+    "w": "valid",
+    "pos": "adj.",
+    "zh": "有效的；合理的、站得住腳的",
+    "def": [
+      "Legally acceptable or still usable; based on good reasons.",
+      "在法律上被接受或仍可使用；有充分理由支持。"
+    ],
+    "ex": [
+      [
+        "You need a <em>valid</em> ticket to enter the exhibition hall.",
+        "你需要有效的門票才能進入展覽館。"
+      ],
+      [
+        "This coupon is <em>valid</em> until the end of the month.",
+        "這張優惠券在月底前有效。"
+      ],
+      [
+        "She raised a <em>valid</em> point about the delivery costs.",
+        "她對運費提出了一個合理的看法。"
+      ],
+      [
+        "The contract is only <em>valid</em> if both parties sign it.",
+        "這份合約必須雙方都簽名才有效。"
+      ],
+      [
+        "Please show a <em>valid</em> photo ID at the reception desk.",
+        "請在接待櫃檯出示有效的附照片證件。"
+      ]
+    ],
+    "coll": [
+      [
+        "a valid passport",
+        "有效護照"
+      ],
+      [
+        "valid until",
+        "有效期限至"
+      ],
+      [
+        "a valid reason",
+        "正當理由"
+      ],
+      [
+        "a valid point",
+        "合理的論點"
+      ],
+      [
+        "a valid contract",
+        "有效合約"
+      ],
+      [
+        "remain valid",
+        "維持有效"
+      ]
+    ],
+    "family": [
+      {
+        "w": "validate",
+        "pos": "v.",
+        "zh": "使生效；驗證"
+      },
+      {
+        "w": "validity",
+        "pos": "n.",
+        "zh": "有效性；正當性"
+      },
+      {
+        "w": "validation",
+        "pos": "n.",
+        "zh": "確認、驗證"
+      }
+    ],
+    "syn": [
+      {
+        "w": "legitimate",
+        "note": [
+          "Allowed by law or reasonable and genuine; often used for businesses, claims and reasons.",
+          "合法，或合理且真實；常用於企業、主張與理由。"
+        ]
+      },
+      {
+        "w": "legal",
+        "note": [
+          "Only means allowed by law; valid can also describe tickets, arguments and points.",
+          "只表示法律允許；valid 也能形容票券、論點與看法。"
+        ]
+      }
+    ],
+    "ant": [
+      {
+        "w": "invalid",
+        "zh": "無效的"
+      },
+      {
+        "w": "expired",
+        "zh": "已過期的"
+      }
+    ],
+    "confuse": [
+      {
+        "w": "available",
+        "note": [
+          "Available means able to be obtained or used right now; valid means officially accepted or not yet expired.",
+          "available 指現在可取得或使用；valid 指被正式認可或尚未過期。"
+        ]
+      }
+    ]
+  }
+]
