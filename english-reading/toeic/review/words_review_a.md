@@ -44,7 +44,7 @@ One line per change: word | field | problem | new text.
 ## Counts
 
 - Cards reviewed: 50; cards changed: 20; change lines: 29
-- Examples replaced: 4 (acceptance 5, advisory 3, assembly 5, compliment 3 wording); example Chinese twins fixed: 2 (accessible 2, conform 5)
-- Items removed: 8 (alertly, gadget, nonprofit, charitably, surgery from syn, cancellation ant, confirmation ant on 2 cards counted once each)
-- Antonym zh clarified: 11; synonym notes fixed: 2; zh/coll translation fixes: 3
+- Examples replaced: 3 (acceptance 5, advisory 3, assembly 5); example reworded: 1 (compliment 3); example Chinese twins fixed: 2 (accessible 2, conform 5)
+- Items removed: 7 (family: alertly, charitably; syn: gadget, nonprofit, surgery; ant: cancellation's confirmation, confirmation's cancellation)
+- Antonym zh clarified to state the sense: 9; synonym notes fixed: 2; other zh/coll translation fixes: 3 (automatic, cleaner, cartridge); surgery added to confuse: 1
 - No invented TOEIC claims found. check.py: ok (50 cards).
