@@ -34,8 +34,9 @@ def words(t):
     return t.split()
 
 bad = 0
+ONLY = [p for p in os.environ.get("ONLY", "").split(",") if p]   # ONLY=l-qr-23,l-conv-1 limits the run to ids with these prefixes
 for it in ITEMS:
-    if it["type"] != "listen":
+    if it["type"] != "listen" or (ONLY and not any(it["id"].startswith(p) for p in ONLY)):
         continue
     for ln in it["audio"]["lines"]:
         d = miniaudio.decode_file(os.path.join(HERE, it["audio"]["dir"], ln["file"]), output_format=miniaudio.SampleFormat.FLOAT32, nchannels=1, sample_rate=16000)

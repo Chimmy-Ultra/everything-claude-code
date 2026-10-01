@@ -397,7 +397,7 @@ ITEMS = [
             "dir": "audio/l-qr-34", "gapMs": 900,
             "lines": [
                 {"file": "q.mp3", "who": "W", "voice": "af_bella", "text": "You're still taking tomorrow afternoon off, aren't you, even with the inspection at three o'clock?"},
-                {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Ms. Kemp offered to cover for me."},
+                {"file": "a.mp3", "who": "M", "voice": "am_michael", "text": "Ms. Kemp offered to cover for me.", "say": "Mizz Kemp offered to cover for me."},
                 {"file": "b.mp3", "who": "M", "voice": "am_michael", "text": "Yes, the inspection was very thorough."},
                 {"file": "c.mp3", "who": "M", "voice": "am_michael", "text": "No, I don't think it will rain tomorrow."},
             ],

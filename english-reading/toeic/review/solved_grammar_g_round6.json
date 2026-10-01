@@ -1,0 +1,211 @@
+{
+ "answers": {
+  "g-relative-08": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "whose + noun (whose resume). who's = who is cannot take a noun; whom and which have no function before 'resume'.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fail (nothing in the window passes: the noun right after the blank demands whose), D fail (clue is adjacent), B marginal (who's is a homophone slip, not a belief), S fail",
+   "style": 3,
+   "why": "L fails: the deciding noun 'resume' sits right after the blank; whose + noun is a one-step test.",
+   "fix": "Could be harder by separating whose from its noun with a modifier (whose most recent, fully audited resume ...), but as a deliberate easy item it is fine.",
+   "tooClose": false,
+   "editorNote": "Good easy entry item. who's is a homophone distractor, acceptable."
+  },
+  "g-relative-09": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Non-defining relative, subject of 'handles': which. where fails because 'despite ... still handles every ... check' has no subject of its own for a where-clause. that is not used after a comma. what has no antecedent role.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (where passes 'hangar, where, despite its age'), D yes (the verb 'handles' is about ten words after the blank), B weak (where after a place noun is a believed form, but it dies in one step once you see the verb has no subject; that/what are weak), S partial",
+   "style": 4,
+   "why": "Medium: L and D pass; B is only moderate and two of three distractors (that after a comma, what) are weak, so no hard.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Same design family as g-relative-23 (place noun, where vs which, adverbial insertion pushes the verb away) and structurally the same as g-relative-22 (non-defining relative + insertion + verb). Consider differentiating."
+  },
+  "g-relative-10": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Sentential (non-defining) which referring to the whole suspension/repair situation. that is not used after a comma; what has no antecedent; 'it' gives a comma splice.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L marginal ('repaired, it in turn forced' reads smoothly), D fail (comma splice is visible locally), B weak, S fail",
+   "style": 4,
+   "why": "Easy: comma + verb with a clause-referring subject is the textbook which pattern; the only local-passing option (it) is a comma splice recognised on sight (D fails).",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Long stem but the clue is the comma itself, so length is wasted."
+  },
+  "g-relative-11": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "Free relative what, object of approved and of recommended ('approved [the thing] that the auditors had recommended'). 'that' leaves 'recommended' without an object and approved without an object; which/whom have no antecedent.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (approved that the auditors ... reads as a complementizer clause), D yes (missing object of 'recommended' is about thirteen words later), B moderate (that vs what), S partial (must see one word serves two verbs)",
+   "style": 4,
+   "why": "Medium: L and D pass, but 'that' needs an antecedent and most strong learners know what = the thing which; B is only moderate.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Same what-vs-that logic as g-relative-25 (object gap vs subject gap). Different position, so acceptable, but together they are two what-clause items."
+  },
+  "g-relative-12": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "collaborate takes with, so the relative must be 'with whom'. Plain whom leaves 'collaborated on every title' without its preposition; who and whose do not fit.",
+   "vsToeic": "harder", "band": "hard",
+   "ldbs": "L yes (whom passes 'translator whom the publisher has'), D yes (the verb 'collaborated' is about eight words past the blank, behind an inserted phrase), B yes (whom is the believed object form; the 'on' after collaborated makes the preposition look accounted for), S yes (find the verb, notice the missing with)",
+   "style": 4,
+   "why": "Hard: L, D, B, S all pass; the 'on' after collaborated hides that 'with' is missing.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Essentially the same design as g-relative-24 (pied-piped preposition + whom, verb far behind an insertion) and close to g-relative-14. Three of the 18 items are 'preposition + relative'; keep one or two."
+  },
+  "g-relative-13": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "situations where = situations in which. which would need 'in which' or a gap, but 'a supplier cannot deliver' is complete; whose and whom do not fit.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (which passes 'In situations which a supplier cannot'), D yes (the complete clause is visible only at 'deliver', about nine words later), B moderate (which for a non-place noun without 'in'), S fail",
+   "style": 4,
+   "why": "Medium: L and D pass, B only moderate; 'situations where' is a very common formula.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Fine; where after an abstract noun is a decent trap for learners who tie where to places."
+  },
+  "g-relative-14": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'the inspectors interviewed ... more than sixty drivers' already has its object, so the relative must carry a preposition: during which. Plain which would be an extra object; that and whose do not fit.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (audit, which the inspectors interviewed reads fine), D yes (the object 'drivers' arrives after 'one by one'), B moderate (which is the natural non-defining relative), S yes",
+   "style": 4,
+   "why": "Medium: L, D, S pass but the failure of 'which' is visible as soon as the explicit object appears; B is only moderate.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Same family as g-relative-12 and g-relative-24 (preposition + relative; clause already complete)."
+  },
+  "g-relative-15": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "whose + noun phrase 'combined enrollment'. 'of which' would need 'the ... of which' (the combined enrollment of which); without the article it is not standard.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fail (of which does not survive the noun right after it; which/that cannot precede a noun), D fail, B marginal (whose for things), S fail",
+   "style": 4,
+   "why": "Easy: L fails; the noun immediately after the blank makes whose the only workable form. B (whose for non-persons) is real but whose is standard for things.",
+   "fix": "If a harder version is wanted, make 'of which' pass: 'three satellite campuses, the combined enrollment ______ has doubled' is not possible; instead keep whose and put the possessed noun further away.",
+   "tooClose": false,
+   "editorNote": "Defensible: 'of which combined enrollment' is not standard, so no second answer."
+  },
+  "g-relative-16": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "many of whom = quantifier + relative linking a new clause with its own verb. many of them gives a comma splice; whom many and many who are ungrammatical.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes ('season, many of them had previously worked' reads smoothly), D no (comma splice is local), B moderate (pronoun for relative), S fail",
+   "style": 4,
+   "why": "Medium (borderline easy): L passes and B is moderate, but D fails because the comma splice is visible at once.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Essentially the same design as g-relative-17 (quantifier + of which/whom vs quantifier + them, comma splice). g-relative-17 adds the neither/none count, so it is the stronger one."
+  },
+  "g-relative-17": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'three proposals' needs none of which. neither is for two; 'none of them' and 'neither of them' are comma splices.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (neither of which passes 'gallery, neither of which met'), D yes (three is about eight words before the blank), B moderate (neither/none count is half-known), S fail",
+   "style": 4,
+   "why": "Medium: L and D pass; B is moderate and no S step.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Same design as g-relative-16 plus an added neither/none layer. Keep one of the two or rework 16."
+  },
+  "g-relative-18": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'whichever is later' choosing between two dates. whoever (people), whenever and wherever do not form 'X is later'.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fail (nothing else passes 'whichever is later' locally), D fail, B fail, S fail",
+   "style": 4,
+   "why": "Easy: L fails; 'whichever is later' is a fixed formula and the other options differ by category.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Fine as an easy entry item for the whichever point."
+  },
+  "g-relative-19": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "whatever = anything that, object of offer and subject of will resolve. that/which have no antecedent (guests is the indirect object, and the closing 'from a room upgrade to a complimentary dinner' lists things, not guests); whoever would mean persons.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes ('offer guests that they judge will resolve' parses locally), D yes (the list of things comes at the end), B yes (that/which as ordinary relative forms), S fail",
+   "style": 4,
+   "why": "Medium: L, D, B pass, but the grammar failure of that/which (no antecedent, offer left without a direct object) is checkable in one step.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Tested 'that' as a relative on 'guests': grammatical-looking but meaningless (guests resolve a complaint), so not a real second answer."
+  },
+  "g-relative-20": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Reduced passive relative: documents (that are) filed. 'were filed' creates a second finite verb before 'will be returned'; filing is active (documents do not file); 'that filed' is active.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (were filed reads fine), D yes (main verb 'will be returned' about eight words later), B moderate (finite vs participle), S partial (find the main verb)",
+   "style": 4,
+   "why": "Medium: L and D pass; the finite-vs-participle error is common but the main verb is close and the rule is well known.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Mirror of g-relative-21 (passive vs active participle after a plural subject). Two reduced-relative items with the same skeleton; 21 has the stronger distance."
+  },
+  "g-relative-21": {
+   "answer": "B", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "Technicians performing ... have been reporting: active participle modifying the subject. performed and perform add a second finite verb before 'have been reporting'. 'to perform' (postnominal infinitive, 'technicians to perform the calibration') is grammatical but implies a planned future task and conflicts with the settled 'have been reporting the same fault since January'; it needs an extra assumption.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (performed and to perform both read fine locally), D yes (the main verb is about nineteen words after the blank), B moderate (performed), S yes (skip the long object and appositive to find the main verb)",
+   "style": 4,
+   "why": "Hard: L, D, S pass; the finite verb is nearly twenty words away behind an appositive containing a plural pronoun.",
+   "fix": "Replace 'to perform' with a cleaner distractor, or add a past-habit marker so the future reading is impossible (for example '... at the Eastfield plant since 2021, most of them ...'). Do not use 'having performed' (also grammatical).",
+   "tooClose": false,
+   "editorNote": "'to perform' is a real postnominal infinitive and only fails on meaning; shouldFix, not ambiguous. Mirror design of g-relative-20."
+  },
+  "g-relative-22": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Subject of 'oversees': who. whom is a subject-position overcorrection; that is not used after a comma; whose needs a noun.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L yes (whom passes 'director, whom, after eleven years'), D yes (oversees about ten words later), B weak (the usual whom trigger is an inserted subject+verb like 'it believes'; here the insertion is a bare prepositional phrase), S yes (skip the insertion)",
+   "style": 4,
+   "why": "Medium: L, D, S pass but B is weak, because a prepositional insertion does not push anyone to whom.",
+   "fix": "To make it hard, use a clausal insertion (who, as she often reminds the volunteers, now oversees ...).",
+   "tooClose": false,
+   "editorNote": "Same skeleton as g-relative-09 (non-defining relative, comma, adverbial insertion, verb)."
+  },
+  "g-relative-23": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "which is the object of 'commissioned'. where would require a complete clause, but 'commissioned' has no object; 'in the northern region' only looks like the place that supports where. whose and what do not fit.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L yes (where passes 'center where the retailer, after two years'), D yes (commissioned is about eight words after the blank; the object gap shows only there), B yes (where after a place noun, reinforced by the later 'in the northern region'), S yes (check transitivity of commissioned)",
+   "style": 4,
+   "why": "Hard (low end): all four pass; the stem plants 'in the northern region' as a false place cue for where.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Same family as g-relative-09 (where vs which for a place noun). Here the gap is an object, which is subtler than the missing subject in 09."
+  },
+  "g-relative-24": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The clause 'the trial protocol ... had been drafted' is passive with no agent, so the relative must supply it: by whom. whom/who/that leave the clause complete with no function for the relative word.",
+   "vsToeic": "harder", "band": "hard",
+   "ldbs": "L yes (whom passes 'consultants whom the trial protocol'), D yes (the passive 'had been drafted' is about fifteen words after the blank), B yes (whom as the believed object relative), S yes (identify the passive and the missing agent)",
+   "style": 4,
+   "why": "Hard: L, D, B, S pass; the clue is a bare passive far from the blank.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Essentially the same design as g-relative-12 (pied-piped preposition + whom; verb behind a long insertion). Keep both only if the batch needs two; otherwise change one preposition type."
+  },
+  "g-relative-25": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "What-clause as subject, object of 'needs'. That cannot head a noun clause whose verb lacks its object; whose needs a noun; whom is not a question or relative here.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L fail (That the sales team needs most reads as incomplete at once), D fail (the missing object is adjacent to the verb), B marginal, S fail",
+   "style": 3,
+   "why": "Easy: L fails; the what-clause subject is a textbook pattern.",
+   "fix": "Rewrite so it no longer copies the rules-file example skeleton ('What impressed the selection panel most was not X but Y'); this stem follows it nearly word for word in shape ('What the sales team needs most ... is not more charts but ...').",
+   "tooClose": false,
+   "editorNote": "Near copy of the skeleton of the WRITING_RULES.md example (1.3 relative). Rules say do not put examples into the bank. Not a real-exam match, so tooClose left false."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "g-relative-21: 'to perform' is a grammatical postnominal infinitive; it fails only on meaning (future task vs 'have been reporting since January'). Replace the distractor or add an explicit past/habitual marker.",
+  "g-relative-25: shape follows the 1.3 example 'What impressed ... was not X but Y' and is easy; rewrite or drop.",
+  "g-relative-24 / g-relative-12 (and g-relative-14): same design, preposition + relative with the verb far behind an insertion; vary one.",
+  "g-relative-16 / g-relative-17: same design (quantifier + of whom/which vs quantifier + them, comma splice); vary or merge.",
+  "g-relative-09 / g-relative-23 / g-relative-22: same skeleton (relative, adverbial insertion, verb far away); 09 and 23 are both where vs which for a place noun."
+ ],
+ "overall": "No second answers found: for all 18 items every distractor fails on formal written English (checked specifically: that after a comma in 09/10, that and which as relatives of guests in 19, 'to perform' in 21, neither of which in 17, of which in 15, whom with a bare PP in 22). Band counts by L/D/B/S: easy 5 (08, 10, 15, 18, 25), medium 9 (09, 11, 13, 14, 16, 17, 19, 20, 22), hard 4 (12, 21, 23, 24). Easy is about 28% against the 20% ceiling and hard about 22% against the 30% floor, so the set is slightly bottom-heavy; most medium items stop at medium because B is weak (the strongest distractors fail in one step). Distractors are consistently good where they are local-pass (whom, where, were filed, neither of which), but several items keep a weak third option (what, that after a comma). Duplicates: 12/24 (14), 16/17, 20/21, 09/23/22. Overall the set is a faithful TOEIC-style relative-pronoun group; to hit the hard target, give 22 a clausal insertion (it believes type), and replace one of 08/10/15/18/25 with an item that has a local-pass distractor."
+}

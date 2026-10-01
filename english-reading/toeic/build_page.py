@@ -57,7 +57,8 @@ sys.path.insert(0, os.path.join(HERE, "en"))
 import importlib, check as en_check
 from ipa import ipa
 EN = {}
-for name in ("items_grammar_a", "items_grammar_b", "items_grammar_c", "items_vocab", "items_vocab_b", "items_listen", "items_listen_b", "items_grammar_d", "items_vocab_c", "items_listen_c"):
+for name in ("items_grammar_a", "items_grammar_b", "items_grammar_c", "items_vocab", "items_vocab_b", "items_listen", "items_listen_b", "items_grammar_d", "items_vocab_c", "items_listen_c",
+             "items_listen_d", "items_listen_e", "items_listen_f", "items_grammar_e", "items_grammar_f", "items_grammar_g", "items_grammar_h"):
     if not os.path.exists(os.path.join(HERE, name + ".py")): continue
     path = os.path.join(HERE, "en", name + ".json")
     if not os.path.exists(path): errors.append(f"en/{name}.json missing"); continue

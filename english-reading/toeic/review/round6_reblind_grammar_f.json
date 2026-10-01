@@ -1,0 +1,134 @@
+[
+ {
+  "id": "g-prep-11",
+  "format": "gap",
+  "stem": "The two cranes on the eastern quay, which failed their annual safety inspection in March, must stay parked with their booms lowered ______ the end of next month, when the contractor expects to finish replacing the brake assemblies.",
+  "options": {
+   "A": "by",
+   "B": "until",
+   "C": "since",
+   "D": "from"
+  }
+ },
+ {
+  "id": "g-prep-12",
+  "format": "gap",
+  "stem": "A passenger whose checked bag was damaged on a flight must lodge a written claim at the airline's baggage office ______ seven days, excluding public holidays, of receiving it, or the carrier may reject the claim.",
+  "options": {
+   "A": "in",
+   "B": "after",
+   "C": "within",
+   "D": "by"
+  }
+ },
+ {
+  "id": "g-prep-13",
+  "format": "gap",
+  "stem": "The finance department reconciles the corporate card statements ______ the end of every month, never earlier, because late transactions continue to be posted until midnight on the last day.",
+  "options": {
+   "A": "at",
+   "B": "by",
+   "C": "on",
+   "D": "in"
+  }
+ },
+ {
+  "id": "g-prep-14",
+  "format": "gap",
+  "stem": "Pumps 3 and 4 at the Orsden water plant ran without a recorded fault ______ the first six months of the year, a record that ended only when a clogged intake screen stopped Pump 3 in July.",
+  "options": {
+   "A": "by",
+   "B": "since",
+   "C": "from",
+   "D": "for"
+  }
+ },
+ {
+  "id": "g-prep-15",
+  "format": "gap",
+  "stem": "The January forecast for the Corvan folding tablet assumed that sales would be slow, yet orders have so far run ______ the forecast, and the factory has had to add a second shift to keep up with them.",
+  "options": {
+   "A": "in line with",
+   "B": "in view of",
+   "C": "ahead of",
+   "D": "in spite of"
+  }
+ },
+ {
+  "id": "g-prep-16",
+  "format": "gap",
+  "stem": "Each technician must log the serial number of every replacement part ______ installing it, so that the number can be checked against the approved parts list while the part is still in its packaging.",
+  "options": {
+   "A": "prior to",
+   "B": "subsequent to",
+   "C": "due to",
+   "D": "according to"
+  }
+ },
+ {
+  "id": "g-prep-17",
+  "format": "gap",
+  "stem": "The refinery has trimmed its weekly output ______ the outage at Harbor Point that began last week, rather than waiting for the regulator to order a cut.",
+  "options": {
+   "A": "in anticipation of",
+   "B": "in response to",
+   "C": "in contrast to",
+   "D": "in return for"
+  }
+ },
+ {
+  "id": "g-prep-18",
+  "format": "gap",
+  "stem": "The 12-inch valve fittings that the crew ordered on the third have been ______ stock at the Harlow warehouse ever since a strike halted production, so the supervisor has asked the Bexley depot to fill the order.",
+  "options": {
+   "A": "in",
+   "B": "off",
+   "C": "by",
+   "D": "out of"
+  }
+ },
+ {
+  "id": "g-prep-19",
+  "format": "gap",
+  "stem": "Under the revised travel rules, mileage claims filed ______ the first of next month will be reimbursed at the new rate of sixty cents per mile, whereas claims filed earlier will still be paid at the old rate.",
+  "options": {
+   "A": "since",
+   "B": "by",
+   "C": "before",
+   "D": "as of"
+  }
+ },
+ {
+  "id": "g-prep-20",
+  "format": "gap",
+  "stem": "The operating permit for the Calder Street plant has been suspended ______ the outcome of the safety review, which the inspector says he cannot complete before the end of March.",
+  "options": {
+   "A": "following",
+   "B": "after",
+   "C": "pending",
+   "D": "regarding"
+  }
+ },
+ {
+  "id": "g-prep-21",
+  "format": "gap",
+  "stem": "The new wayfinding signs have been installed ______ the terminal, from the check-in hall to the farthest boarding gate, so that passengers no longer need to ask staff for directions.",
+  "options": {
+   "A": "throughout",
+   "B": "through",
+   "C": "between",
+   "D": "beyond"
+  }
+ },
+ {
+  "id": "g-prep-22",
+  "format": "gap",
+  "stem": "The deputy director, who has spoken warmly about the plan at every briefing since March, will be ______ the pilot scheme once it launches, although he has asked to hand it over to a successor after six months.",
+  "options": {
+   "A": "in favor of",
+   "B": "in charge of",
+   "C": "in need of",
+   "D": "in case of"
+  }
+ }
+]

@@ -1,0 +1,200 @@
+[
+ {
+  "id": "g-connect-09",
+  "format": "gap",
+  "stem": "The museum kept all three galleries open to visitors ______ the renovation work that its trustees had scheduled to close them for most of the spring.",
+  "options": {
+   "A": "even though",
+   "B": "in light of",
+   "C": "due to",
+   "D": "in spite of"
+  }
+ },
+ {
+  "id": "g-connect-10",
+  "format": "gap",
+  "stem": "Ticket sales for the autumn concert series were strong, ______ the seating capacity that the fire marshal had approved in April was a third lower than in previous years.",
+  "options": {
+   "A": "despite",
+   "B": "although",
+   "C": "however",
+   "D": "even so"
+  }
+ },
+ {
+  "id": "g-connect-11",
+  "format": "gap",
+  "stem": "Waiting times at the clinic fell sharply in May ______ hiring two temporary receptionists for the front desk cleared the backlog of unanswered calls within three weeks.",
+  "options": {
+   "A": "due to",
+   "B": "thanks to",
+   "C": "because",
+   "D": "as a result of"
+  }
+ },
+ {
+  "id": "g-connect-12",
+  "format": "gap",
+  "stem": "______ a fault in the cooling system that technicians first detected during the January shutdown, daily output at the main plant has been held to roughly four-fifths of capacity.",
+  "options": {
+   "A": "Owing to",
+   "B": "As a result",
+   "C": "Therefore",
+   "D": "Thus"
+  }
+ },
+ {
+  "id": "g-connect-13",
+  "format": "gap",
+  "stem": "The two agents assigned to the gate must stay at the podium ______ boarding passengers who need wheelchair assistance, and they may leave only when the lead agent releases them.",
+  "options": {
+   "A": "throughout",
+   "B": "meanwhile",
+   "C": "while",
+   "D": "by"
+  }
+ },
+ {
+  "id": "g-connect-14",
+  "format": "gap",
+  "stem": "No engineer may deploy updates to the payment servers ______ the quarterly audit, when every production system is frozen and access is limited to the security team.",
+  "options": {
+   "A": "during",
+   "B": "whenever",
+   "C": "when",
+   "D": "once"
+  }
+ },
+ {
+  "id": "g-connect-15",
+  "format": "gap",
+  "stem": "The customs broker asked to see the original invoices ______ the warehouse supervisor, who had been on leave since the previous Monday, had a chance to compare them with the manifest.",
+  "options": {
+   "A": "in advance of",
+   "B": "before",
+   "C": "prior to",
+   "D": "ahead of"
+  }
+ },
+ {
+  "id": "g-connect-16",
+  "format": "gap",
+  "stem": "Kitchen staff will reset the banquet room ______ the wedding reception that the hotel hosts every Saturday evening, in time for the Sunday brunch service.",
+  "options": {
+   "A": "afterward",
+   "B": "later",
+   "C": "then",
+   "D": "after"
+  }
+ },
+ {
+  "id": "g-connect-17",
+  "format": "gap",
+  "stem": "The bank cannot reverse a wire transfer ______ the sender, or the accountant who authorized it on the sender's behalf, has submitted a signed recall request within twenty-four hours.",
+  "options": {
+   "A": "whether",
+   "B": "unless",
+   "C": "without",
+   "D": "as though"
+  }
+ },
+ {
+  "id": "g-connect-18",
+  "format": "gap",
+  "stem": "The reading room may not be used after midnight ______ authorized in writing by the facilities office, which keeps a log of every request.",
+  "options": {
+   "A": "without",
+   "B": "once",
+   "C": "regardless",
+   "D": "unless"
+  }
+ },
+ {
+  "id": "g-connect-19",
+  "format": "gap",
+  "stem": "Mortgage applications at the bank's urban branches rose by 14 percent last year, ______ applications at its rural branches fell for the third year in a row.",
+  "options": {
+   "A": "however",
+   "B": "in contrast",
+   "C": "whereas",
+   "D": "consequently"
+  }
+ },
+ {
+  "id": "g-connect-20",
+  "format": "gap",
+  "stem": "The report found that moving the printing plant would cost a fifth more over five years. ______, the board voted to move, citing the lower rents expected from the third year onward.",
+  "options": {
+   "A": "Moreover",
+   "B": "Nevertheless",
+   "C": "Therefore",
+   "D": "As a result"
+  }
+ },
+ {
+  "id": "g-connect-21",
+  "format": "gap",
+  "stem": "Please return the signed loan agreement to the museum registrar by Friday; ______, the painting will be sent back to its owner at the end of the month.",
+  "options": {
+   "A": "Consequently",
+   "B": "Moreover",
+   "C": "However",
+   "D": "Otherwise"
+  }
+ },
+ {
+  "id": "g-connect-22",
+  "format": "gap",
+  "stem": "The registrar's office spread the enrollment appointments over four days ______ the online portal, which was rebuilt over the summer, would not be overloaded on the first morning.",
+  "options": {
+   "A": "so that",
+   "B": "in order to",
+   "C": "so as to",
+   "D": "to"
+  }
+ },
+ {
+  "id": "g-connect-23",
+  "format": "gap",
+  "stem": "The help desk received ______ detailed feedback from the pilot group of forty clerks that it rewrote the entire onboarding guide before the rollout.",
+  "options": {
+   "A": "so",
+   "B": "too",
+   "C": "such",
+   "D": "very"
+  }
+ },
+ {
+  "id": "g-connect-24",
+  "format": "gap",
+  "stem": "Ms. Aldana, who has not yet decided whether she will make the trip, will receive no credit for her non-refundable ticket ______ she cancels more than a month in advance.",
+  "options": {
+   "A": "even if",
+   "B": "even though",
+   "C": "even so",
+   "D": "as though"
+  }
+ },
+ {
+  "id": "g-connect-25",
+  "format": "gap",
+  "stem": "The organizers have already booked a second, smaller room at the hotel ______ more than two hundred delegates register, although only about a hundred and fifty have done so to date.",
+  "options": {
+   "A": "if",
+   "B": "once",
+   "C": "in case",
+   "D": "whether"
+  }
+ },
+ {
+  "id": "g-connect-26",
+  "format": "gap",
+  "stem": "The bank will keep the promotional rate on the savings account in place for twelve months ______ the balance never falls below the minimum shown in the product guide.",
+  "options": {
+   "A": "as long as",
+   "B": "as far as",
+   "C": "even though",
+   "D": "now that"
+  }
+ }
+]

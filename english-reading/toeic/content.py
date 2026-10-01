@@ -7,9 +7,10 @@ from items_listen import ITEMS as LISTEN
 
 ITEMS = GRAMMAR_A + GRAMMAR_B + VOCAB + LISTEN
 
-# Rounds 4 and 5 (written under WRITING_RULES.md) live in their own files; they join the bank once they exist.
+# Rounds 4–6 (written under WRITING_RULES.md) live in their own files; they join the bank once they exist.
 import importlib
-for _name in ("items_grammar_c", "items_vocab_b", "items_listen_b", "items_grammar_d", "items_vocab_c", "items_listen_c"):
+for _name in ("items_grammar_c", "items_vocab_b", "items_listen_b", "items_grammar_d", "items_vocab_c", "items_listen_c",
+              "items_listen_d", "items_listen_e", "items_listen_f", "items_grammar_e", "items_grammar_f", "items_grammar_g", "items_grammar_h"):
     try:
         ITEMS = ITEMS + importlib.import_module(_name).ITEMS
     except ModuleNotFoundError as _e:
