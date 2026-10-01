@@ -1,0 +1,87 @@
+{
+  "answers": {
+    "g-conditional-09": {
+      "answer": "D",
+      "confidence": 4,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "Provided that = on condition that; the stem contrasts people who transfer before January (keep seniority) with those who apply after (start again), so the transfer is the condition for keeping it. Unless and until are grammatical in the slot and read naturally in the first half, but they reverse the logic: keep seniority unless they transfer early would penalize early movers, which the 'while those who apply after that date start again at entry level' contrast no longer separates (both groups would lose out). As if has no conditional sense here. Unless/until only work by assuming an odd policy that the sentence does not state, so I do not call them ambiguous, but the exclusion rests on one 'while' contrast at the very end.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "ldbs": "L yes (unless/until read fine in 'keep their seniority ... unless they transfer to the Northgate office'); D yes (decisive clue is the final 'while those who apply after that date start again at entry level' plus 'before ... takes effect'); B weak (logic reversal rather than a belief about a form: a careful reader just checks direction); S no. Medium, not hard, because B/S fail.",
+      "style": 4,
+      "why": "L and D pass but B and S fail: unless/until are a read-the-logic trap, not a rule good students confidently misapply, and there is no second step.",
+      "fix": "Make the direction of the policy explicit before the gap so unless/until fail on a clear contradiction instead of a faint contrast, e.g. open with 'To encourage early moves, the new policy lets employees keep ...' (unless then contradicts the stated purpose). Keep the 'while those who apply after that date' tail.",
+      "tooClose": false,
+      "editorNote": "unless/until are only excluded by the faint 'while' contrast; a reader who assumes a penalty-for-early-transfer policy can make unless coherent. Needs an extra assumption, so shouldFix rather than ambiguous."
+    },
+    "g-conditional-11": {
+      "answer": "D",
+      "confidence": 5,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "Unreal present condition ('has only one crew and no budget'), main clause 'would be cleared', so the if-clause takes were. Being: no finite verb, ungrammatical. To be: 'if it to be able' is ungrammatical (would need were to be). Will be: if + will in a counterfactual with 'would be cleared' mismatches; the 'will in if-clause' reading (if it will be able = if it is willing/going to be able) does not fit a would result.",
+      "vsToeic": "easier",
+      "band": "easy",
+      "ldbs": "L fails: every distractor is ungrammatical or mismatched in the immediate 'if it ___ able' window; nothing reads right locally except were. D also weak (would be cleared sits right after the gap).",
+      "style": 3,
+      "why": "L fails: being, to be and will be are all wrong at once in the local window; this is the basic if + were / would pattern, and the stem even states the unreal facts for you.",
+      "fix": "Either keep as the batch's easy quota item, or push it up: use options were / had been / would be / were to have been style with the main clause far from the gap and a past-time clue, so that a mixed or past reading must be ruled out (check that 'would be' and 'is' do not become defensible). Remove the 'has only one crew and no budget for another' paraphrase that pre-announces the counterfactual.",
+      "tooClose": false,
+      "editorNote": "Stem explains the unreal condition in words before the if-clause, which makes the answer easier than a real item."
+    },
+    "g-conditional-15": {
+      "answer": "D",
+      "confidence": 5,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "Mixed conditional: present unreal condition ('were not so heavily dependent') with a past-time result ('last September'), so would not have been + p.p. (passive, 'disrupted by the strike'). Would not have: no 'been', so 'would not have so badly disrupted by' is ungrammatical. Had not been: indicative past perfect cannot be the result clause of an if-were conditional. Not have been: no modal.",
+      "vsToeic": "similar",
+      "band": "medium",
+      "ldbs": "L marginal yes (B 'had not been so badly disrupted' reads fine locally with 'last September', A looks fine before 'so badly'); D yes (the conditional frame is the 'If ... were' opening, about fifteen words back); B moderate (the past perfect tempted by last September, but only D and A even contain a modal, so a student who knows if-were needs would reaches D by elimination); S weak (modal check then passive 'been', both trivially visible in the options). Because B and S are both weak this stays medium.",
+      "style": 4,
+      "why": "L and D pass, but B/S are weak: only A and D have a modal, and the A-versus-D choice is just spotting the missing been; so medium, not hard.",
+      "fix": "To reach hard, make the mixed-conditional trap bite: add a past-perfect distractor that keeps a modal (would not have been vs would not have been being / would not have had), or use a version where the unreal-present + past-result logic is the only way to choose between would not have been and would not be. Also drop the bare 'would not have' option: item g-conditional-17 uses the same shape.",
+      "tooClose": false,
+      "editorNote": "Option A 'would not have' is a weak distractor (ungrammatical in the immediate window once 'by' appears) and duplicates the shape of g-conditional-17 option B."
+    },
+    "g-conditional-17": {
+      "answer": "A",
+      "confidence": 5,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "'Without + noun' stands for an unreal 'if there were not ...', so the main clause takes would + base: would not be able. Would not have: 'would not have able' is ungrammatical. Were not: a plain past 'the museum were not able' is not a conditional main clause and 'museum' is singular. Not being: no finite verb.",
+      "vsToeic": "easier",
+      "band": "easy",
+      "ldbs": "L fails: B (would not have able), C (the museum were not able) and D (not being) are all ungrammatical right in the local window; only A is a possible verb phrase.",
+      "style": 3,
+      "why": "L fails: three of four options are ungrammatical at the gap itself, so 'would not be able' is chosen by form alone; the 'Without' clue is only needed to confirm.",
+      "fix": "Make the options all grammatical so that the without + noun reading must decide, but watch for a second answer: 'would not be' vs 'would not have been' vs 'will not be' are all defensible with 'as it has done every week since January' (present perfect spans past to now), so the stem would need a clear time anchor. Safer rewrite: keep without + noun, give a distractor set of would not be / is not / had not been / were not to be with a clear present anchor, and drop 'would not have' (same shape as g-conditional-15 option A).",
+      "tooClose": false,
+      "editorNote": "Writer should avoid 'would not have been' with this tail: 'as it has done every week since January' covers the past, so it would be defensible."
+    },
+    "g-conditional-23": {
+      "answer": "C",
+      "confidence": 4,
+      "ambiguous": false,
+      "alsoPossible": [],
+      "reason": "It is high time + subject takes the past subjunctive (reviewed), expressing that the action is overdue. Has reviewed: present perfect after 'high time' is not standard and contradicts 'high time'; will review: 'high time the office will review' is ungrammatical (high time that ... + would/past, or to V); is reviewing: no, the construction needs the unreal past form. 'Told the board that it is high time' leaves 'is high time' in the present, which is acceptable; 'reviewed' also fits a backshifted 'was'. No distractor passes in formal British or American written English.",
+      "vsToeic": "harder",
+      "band": "hard",
+      "ldbs": "L yes (each of has reviewed / will review / is reviewing reads well after 'has fallen faster, ___ the way it assesses'); D yes (the construction it is high time sits twenty words before the gap, behind a two-part whose-clause); B yes-moderate (present/present perfect pull from the two 'has fallen' and from 'is high time'; 'will review' is a natural but wrong future for something needed now); S yes (must remove the whose-clauses to find the subject of the gap and recognize the high time + past pattern).",
+      "style": 3,
+      "why": "L, D and S pass: three plausible forms read fine at the gap, the decisive 'it is high time' is far away behind a long relative clause, and the solver must strip the insertion first.",
+      "fix": "",
+      "tooClose": false,
+      "editorNote": "'It is high time' + past is rare in real TOEIC items, so this is harder than the real test and style is only moderate; fine as a hard-quota item. Check that the final key is not also defensible as a backshifted 'was high time' that someone would argue needs 'had reviewed'; it does not because 'is' is the stated verb."
+    }
+  },
+  "mustFix": [],
+  "shouldFix": [
+    "g-conditional-09: unless/until are excluded only by the faint 'while' contrast at the end; add an explicit early-move purpose before the gap so they fail on a clear contradiction rather than needing an assumed penalty policy.",
+    "g-conditional-11: easy (L fails, every distractor ungrammatical at the gap) and the stem pre-announces the unreal condition; rewrite or accept as the single easy item.",
+    "g-conditional-17: easy (L fails, three ungrammatical options); and 'would not have' here duplicates g-conditional-15 option A. If rewritten, beware that 'would not have been' and 'will not be' become defensible with 'has done every week since January'.",
+    "Batch: 2 easy (40 percent, over the 20 percent cap), 2 medium, 1 hard (20 percent, under the 30 percent target); add a harder conditional or inversion item (Had/Should/Were) rather than hardening the passing items."
+  ],
+  "overall": "Five conditional items, all with a single defensible answer in formal British and American English; no mustFix. Bands: 09 medium, 11 easy, 15 medium, 17 easy, 23 hard. The batch is bottom-heavy: items 11 and 17 are decided by the local window (the distractors are ungrammatical at the gap), and 15 is only medium because only two options have a modal and the real choice is spotting 'been'. The batch uses the would / if-were frame three times (11, 15, 17) and no inversion (Had/Should/Were), which real hard conditional items often use; item 23 is the only one that meets L, D and S, and its construction is rarer than real TOEIC. Needs a harder mixed or inverted conditional to meet the target distribution."
+}

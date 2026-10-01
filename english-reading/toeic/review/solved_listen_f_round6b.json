@@ -1,0 +1,174 @@
+{
+ "answers": {
+  "l-talk-06:0": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The whole talk is a service disruption (no trains, replacement buses, taxis later), i.e. a temporary change in how passengers travel. B (tickets) is only a passing remark that tickets stay valid; C (east exit) is only where the buses board; D (signal failure) is only the opening cause. None is the main point.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L fails: B, C and D are all mentioned details, but none is a plausible main idea; D fails: the gist is stated in the first two sentences; B and S fail (distance 1-2 abstraction only).",
+   "style": 4, "why": "Main-idea item with an abstract key and three mentioned-but-minor distractors; a normal easy opener (L fails).",
+   "fix": "", "tooClose": false, "editorNote": ""
+  },
+  "l-talk-06:1": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The preceding sentence says some trains still appear on the departure board, and the opening says no trains will run on the Harbor Line. 'Only on paper' therefore means the listed trains are not really operating. A is the literal trap ('paper' timetables). B is unsupported. C is contradicted by 'no trains will run this evening'.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes (A literal reading, C plausible locally); B passes (non-literal idiom); D fails: the explanation sits in the immediately adjacent sentence; S fails.",
+   "style": 4, "why": "Quote item with a real literal trap, but the context line is directly adjacent and the idiom is common, so D fails; medium.",
+   "fix": "", "tooClose": false, "editorNote": "Good quote item: the function is non-literal and A is a true literal reading."
+  },
+  "l-talk-06:2": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'The railway will cover the fare for those taxis' after the buses stop at 10:00 gives 'Cover the cost of private transportation'. A is contradicted (buses run until 10:00). B is not stated, since the tickets remain valid. D is not stated either, because 'remain valid' is not an extension.",
+   "vsToeic": "easier", "band": "easy",
+   "ldbs": "L weak: A is contradicted outright, and B and D are mentioned-adjacent only; D fails: 'those taxis' resolves in the same sentence; B and S fail: the key repeats 'cover' and 'fare/cost' is a simple swap.",
+   "style": 3, "why": "The key repeats 'cover' and is a one-hop paraphrase of one sentence; a second easy question in this set (L, D, B, S all fail).",
+   "fix": "Raise the distance: do not repeat 'cover'. For example the speaker says taxi rides from the north exit will be charged to the railway, and the key is 'Have transportation paid for them'. Make a distractor use the same word, e.g. 'Cover the cost of their tickets'.",
+   "tooClose": false, "editorNote": "D (extend validity of passes) is a mild stretch of 'remain valid'; it needs an assumption, so it is only a legal trap."
+  },
+  "l-talk-07:0": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'a tow company arrived early, so they now hope to open the bridge fully by 8:30' gives help for the truck arriving ahead of schedule. A, C and D are not stated as reasons. The Orchard Road repair is ongoing, not finished.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L fails: no distractor is form-correct (A is a mention only, C is the opposite of the repair detail, D is unrelated); B fails: the 'so' causal link is explicit; D: two adjacent sentences only; S fails.",
+   "style": 4, "why": "Explicit 'so' plus a why/cause question with a near-same-word key (2.4 easy pattern); L fails.",
+   "fix": "Avoid repeating 'arrived' and 'truck' in the key. Say instead 'a tow company was able to get there sooner' and key 'Assistance reached the scene sooner than expected'.",
+   "tooClose": false, "editorNote": "The key repeats 'arrived' and 'truck' from the talk."
+  },
+  "l-talk-07:1": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Many drivers are turning onto Orchard Road ... But a water main repair there has closed a lane, so it's slow going as well' gives a warning that another route is also slow. B is contradicted by 'slow going'. C and D are unrelated to Orchard Road.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: B is plausible locally (drivers going around the bridge); D passes: the turn comes with 'But' in the next sentence; B (inference) fails: the key is a 1-hop paraphrase; S fails.",
+   "style": 4, "why": "Function question where the first sentence invites B and the 'But' sentence corrects it; L and D pass but B and S fail, so medium.",
+   "fix": "",
+   "tooClose": false, "editorNote": "The key shares 'slow' and 'as well/also' with the talk; acceptable for medium, but it would be harder with 'is also congested'."
+  },
+  "l-talk-07:2": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'If you can, leave your car at the Lakeside lot and take the Route 12 bus' gives public transportation for part of the trip (park and ride). A is only a promise of an update at 8:15, not advice. B is contradicted by the Orchard Road delay. C comes from 'Rides are free until noon' and is not advised.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: A and C come from mentioned details; D passes: the key combines two clauses; B partly passes: 'part of the trip' is a distance-2 to 3 paraphrase of park-and-ride; S fails.",
+   "style": 4, "why": "Advice item with an inferential key (lot plus bus equals public transport for part of the trip) and two mentioned-detail distractors; one of B/D is weak, so medium.",
+   "fix": "",
+   "tooClose": false, "editorNote": "Minor coherence issue: the advice comes right after the evening concert, but 'Rides are free until noon' belongs to a morning frame, so it is unclear which time the advice is about. D holds in either reading."
+  },
+  "l-talk-08:0": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The next sentence says crews expect to restore service by 3:00 and a text will be sent, so outage callers can hang up because the problem is being handled. A is the literal trap (line equals phone line). B is unsupported because a text is sent, so no call back is needed. D is unrelated to the outage and the wait time is 10 minutes.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: B uses the 3:00 detail and A is a literal reading; D passes: the reason is in the following sentence; B fails: the quote is essentially literal ('hang up'), so the non-literal step is missing; S fails.",
+   "style": 4, "why": "A true literal trap and a reason in the next sentence, but the quote is nearly literal; L and D pass, B and S fail, so medium.",
+   "fix": "",
+   "tooClose": false, "editorNote": "B (phone back after 3:00) is contradicted in effect, since the speaker promises a text message, so it stays a legal trap."
+  },
+  "l-talk-08:1": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'You'll be asked to key in your account number, which is at the top of your monthly bill'. Only callers from the account phone number can skip this step, so the others enter an identification number from their statement. D is the reverse condition. A and C are not requests made of callers.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: D (skip) is the form-correct reversal; D passes: it combines the entry instruction with the 'if you are calling from' condition; B fails: key distance is only 2 (account number to identification number, bill to statement); S fails.",
+   "style": 4, "why": "A condition-based question with a reversal trap; L and D pass but the key distance is only 2 and no extra integration is needed, so medium.",
+   "fix": "Change distractor C ('Wait for a return call within the hour') because it paraphrases the key of Q2.",
+   "tooClose": false, "editorNote": "Option C duplicates the key of l-talk-08:2 and A is a distractor of l-talk-08:2. The rule 'a key must not be another question's distractor' is broken, and it leaks Q2."
+  },
+  "l-talk-08:2": {
+   "answer": "A", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'If you'd rather not hold, press 9. We'll then call you back within the hour' gives a chance to be contacted by phone later. B is for outage callers, C is for business customers (press 0), D mixes up the technician menu with 'within the hour'.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L weak: B, C and D are all mentioned menu items; D fails: one sentence plus the previous line; B and S fail.",
+   "style": 4, "why": "One-sentence evidence with a clear paraphrase (call you back to be contacted by phone later); the distractors are menu items, so it is easy, which is acceptable as this set's only easy item.",
+   "fix": "",
+   "tooClose": false, "editorNote": "This key is repeated as a distractor in l-talk-08:1 (option C)."
+  },
+  "l-talk-09:0": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "A rental storage company: 'Cedar Row Storage ... rent secure, indoor units by the month'. A (moving company), B (furniture store, from 'sofa') and C (apartment complex, from 'two-bedroom apartment') are mentioned-word traps.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L fails: A, B and C are mentioned words, but the first lines state the service; D fails: stated at once; B and S fail.",
+   "style": 4, "why": "Standard advertisement-type question; one easy question in a set whose other two items are harder.",
+   "fix": "",
+   "tooClose": false, "editorNote": ""
+  },
+  "l-talk-09:1": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The speaker says four sizes and calls the second-largest unit the one that holds a two-bedroom apartment. So that unit is Large (10 x 10). Signing up before the end of the month gives the special first-month rate, which for Large is $47.50. $95.00 is the Large regular price, $70.00 the Extra large first-month price, $31.00 the Medium first-month price. Exactly one cell fits, no arithmetic is needed, and the talk does not say the cell.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L passes: $95.00 (regular price of the same unit) and $70.00 are table-form traps; D passes: the unit clue and the sign-up clue are three sentences apart; B partly passes: 'second-largest' gives Large by ordinal counting; S passes: the table row and the column must both be chosen. Low end of hard.",
+   "style": 5, "why": "Two audio clues (ordinal row, sign-up discount column) must be combined with the table; L, D and S pass, so hard, but only at the low end because both clues are plainly stated.",
+   "fix": "",
+   "tooClose": false, "editorNote": "One reading only: 'second-largest' is Large, and the 'special first-month rate' maps to the 'First month (new customers)' column; this is a mild bridge but a normal one. The question has one interpretation."
+  },
+  "l-talk-09:2": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Customers come because of their garage, which is full of belongings. The quote means renting a unit frees the garage for its normal use, i.e. frees up space at home. A and B are literal readings of 'garage'. D is not stated.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: A and B are literal readings; D weak: the meaning is readable from the opening 'Running out of room at home' plus the previous sentence; B passes: the quote is non-literal; S fails.",
+   "style": 4, "why": "Non-literal quote with literal traps; the idiom is transparent from the context, so D is weak and the item is medium.",
+   "fix": "",
+   "tooClose": false, "editorNote": "B (store customers' cars) needs an assumption that the company stores vehicles, and the talk says 'indoor units'; a legal trap."
+  },
+  "l-talk-10:0": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Please wear the badge all day, because you'll need it to get into lunch' gives being admitted to a meal. A shares 'get into' but is not stated. B and D come from later lines about the survey and the introduction.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L weak: A is a same-phrase trap but is unsupported; D fails: one sentence; B fails: 'because' is explicit; S fails.",
+   "style": 4, "why": "Explicit 'because' plus a why question with a single-sentence key (2.4 easy pattern).",
+   "fix": "",
+   "tooClose": false, "editorNote": "Option B repeats the prize drawing that is Q3's topic (slight preview of Q3, no answer leak)."
+  },
+  "l-talk-10:1": {
+   "answer": "D", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "Room B is Using Data in Presentations, listed at 1:30. The two afternoon sessions switch times and each keeps its room, so the Room B session moves to 3:00 P.M. C is the printed time of the same row. A and B are morning sessions. The talk never states 3:00 or the Room B time.",
+   "vsToeic": "similar", "band": "hard",
+   "ldbs": "L passes: C (printed 1:30) is the table-form trap; D passes: the swap and 'keeps its original room' are in separate sentences; B partly passes: 'two afternoon sessions will switch times' must be applied; S passes: the table must be combined with the announced change.",
+   "style": 5, "why": "Classic graphic-plus-change item; one answer cell, the talk does not state it, and the printed-row trap is strong; L, D and S pass.",
+   "fix": "",
+   "tooClose": false, "editorNote": "The answer needs only 'two afternoon sessions switch'; the 'data presenter' clue is not needed (fine, it adds credible context)."
+  },
+  "l-talk-10:2": {
+   "answer": "A", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'A short survey will be e-mailed at 4:00, and everyone who completes it by Friday enters a prize drawing' gives answering a questionnaire by the end of the week. D is contradicted because the survey is only sent at 4:00. B and C are not conditions of the drawing.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: D reuses the e-mail and 4:00 details; D passes: the e-mail/4:00 detail must be checked against 'by Friday'; B fails: survey to questionnaire and Friday to end of the week are simple swaps; S fails.",
+   "style": 4, "why": "Paraphrased key and a form-correct trap (D) that falls on the time detail; L and D pass, B and S fail, so medium.",
+   "fix": "",
+   "tooClose": false, "editorNote": "'By Friday' to 'by the end of the week' assumes a normal work week; acceptable, but 'by the end of the week' is slightly looser than the talk."
+  },
+  "l-talk-11:0": {
+   "answer": "B", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "The speaker introduces herself as the guide for a tour, so the listeners are people on a guided visit. A and C are not supported. D comes from 'our shop' and is only a later offer.",
+   "vsToeic": "similar", "band": "easy",
+   "ldbs": "L fails: no plausible form-correct distractor except D as a mention; D fails: stated in the first sentence; B and S fail.",
+   "style": 4, "why": "Audience question answered by the opening line; the key repeats 'guide' (guide/guided).",
+   "fix": "",
+   "tooClose": false, "editorNote": "The key shares 'guide' with the talk; acceptable for an opener."
+  },
+  "l-talk-11:1": {
+   "answer": "C", "confidence": 5, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Normally we begin with a tasting, but the tasting room is booked today, so we'll finish there instead' means the tasting comes later than usual. A is the normal order, so it is the opposite. B is not stated. D is contradicted, since the group will enter the roasting room.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: A (begin with a tasting) is the form-correct reversal using the talk's own words; D passes: one sentence with a contrast; B fails: 'finish there instead' to 'later than usual' is a distance-2 paraphrase; S fails.",
+   "style": 4, "why": "A normal-versus-today contrast with a same-word reversal trap; L and D pass, B and S fail, so medium.",
+   "fix": "",
+   "tooClose": false, "editorNote": ""
+  },
+  "l-talk-11:2": {
+   "answer": "D", "confidence": 4, "ambiguous": false, "alsoPossible": [],
+   "reason": "'Before we set off, I need everyone's name on the visitor sheet' is the immediate next action, which is registering their attendance. A (earplugs) is later, before the roasting room. B (tasting) is at the end. C (storage room) follows only 'once everyone's name is down'. Each is mentioned but comes later.",
+   "vsToeic": "similar", "band": "medium",
+   "ldbs": "L passes: C is the final sentence, which is the usual pattern for the 'next' key; D passes: ordering must be taken from two sentences; B partly passes: 'name on the visitor sheet' to 'register their attendance' is distance 2; S fails.",
+   "style": 4, "why": "A time-order question where three mentioned later actions compete with the first one; L and D pass, B partly passes, so medium and close to hard.",
+   "fix": "",
+   "tooClose": false, "editorNote": "C is defensible only if 'next' is read loosely as 'the next stop'; the 'Once everyone's name is down' ordering excludes it, so it stays a legal trap, but it is the weakest point of this item."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "l-talk-06:2 - the key 'Cover the cost of private transportation' repeats 'cover' from the talk and comes from one sentence (easy); with Q0 also easy this set has two easy questions (rule: at most one easy per set). Raise the distance and remove the repeated word.",
+  "l-talk-07:0 - the key repeats 'arrived' and 'truck'; with an explicit 'so', easy. Paraphrase it further.",
+  "l-talk-08:1 - option C ('Wait for a return call within the hour') is the key of l-talk-08:2 and option A is a distractor of Q2; the same facts feed both questions. Replace C with a different distractor.",
+  "l-talk-11:0 - the key 'guided visit' repeats 'guide' from the opening sentence (minor).",
+  "l-talk-07:2 - the advice follows the evening concert but 'Rides are free until noon' sounds like a morning frame; the time frame of the advice is muddy (D still unique). Align the times.",
+  "Batch: 7 of 18 questions are easy (39 percent) and 2 are hard (11 percent); the target is at most 25 percent easy and at least 25 percent hard. Raise the distance on 06:2, 07:0, 08:2 and 10:0, and add an inference key with a same-word distractor on 06:1, 08:1 or 11:2."
+ ],
+ "overall": "Six talks, 18 questions, all solved with a unique key and no ambiguity (mustFix empty). Counts: easy 7, medium 9, hard 2. Both graphic questions are clean: l-talk-09:1 has exactly one cell (Large, first-month, $47.50) with no arithmetic and the audio never says the figure; l-talk-10:1 has exactly one cell (3:00 P.M.) and the audio never says it. The batch is easier than the target distribution: most keys are one-hop paraphrases of a single sentence, and several keys repeat a word from the talk (06:2 'cover', 07:0 'arrived/truck', 11:0 'guide'). Set l-talk-06 has two easy questions, and l-talk-08:1 carries the key of l-talk-08:2 as a distractor. The quote questions (06:1, 08:0, 09:2) work as items but the quoted lines are fairly transparent from context. Compared with real Part 4 items the style is close; the main gap is difficulty, which mostly fails on D and B (evidence in adjacent sentences, small paraphrase distance). To reach the hard target, widen the key distance to 3 and use same-word distractors."
+}
