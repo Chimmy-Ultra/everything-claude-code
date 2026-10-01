@@ -103,7 +103,12 @@ button.row:hover .t{text-decoration:underline;text-underline-offset:4px;text-dec
 .next{display:flex;justify-content:flex-end;margin-top:1.2em}
 .next button{font:italic 500 1.08em var(--en);color:var(--accent)}
 .next button:hover{text-decoration:underline;text-underline-offset:4px}
-.tip{position:absolute;z-index:3;background:var(--ink);color:var(--paper);font:14.5px/1.5 var(--zh);padding:4px 10px;border-radius:4px;max-width:14em;pointer-events:none}
+.tip{position:absolute;z-index:3;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(20,28,24,.12);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
+.tip .hw{font:italic 500 17px var(--en)}
+.tip .pos{font-style:italic;color:var(--soft);margin-left:.5em}
+.tip .ipa{color:var(--soft);margin-left:.5em;font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en);font-size:.95em}
+.tip .mean{font-family:var(--zh);margin-top:2px}
+.tip .ex{margin-top:6px;padding-top:6px;border-top:1px solid var(--rule);color:var(--soft);font-style:italic}
 .end{padding-block:56px}
 @media (prefers-reduced-motion: no-preference){
   .opt.right .l path{animation:draw .5s ease-out both}
@@ -166,7 +171,10 @@ const ITEMS = [
           ["An adverb can't say what the items become.","副詞不能說明受詞的狀態。"], null,
           ["Also a noun. <em>Makes the items accessibility</em> doesn't work.","也是名詞，makes the items accessibility 說不通。"]],
    zh:"Pellridge 倉庫的新配置，讓顧客最常訂購的商品對早班揀貨員來說好拿得多。",
-   gloss:{layout:"配置、布局", pickers:"揀貨員", shift:"班次"}},
+   gloss:{
+     layout:{hw:"layout", pos:"n.", ipa:"/ˈleɪaʊt/", zh:"配置、布局", ex:"We changed the layout of the lobby."},
+     pickers:{hw:"picker", pos:"n.", ipa:"/ˈpɪkər/", zh:"揀貨員", ex:"The pickers start work at six."},
+     shift:{hw:"shift", pos:"n.", ipa:"/ʃɪft/", zh:"班次", ex:"She works the night shift on Fridays."}}},
   {stem:"______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
    options:["Applications","Apply","Applying","Applied"], answer:0,
    point:["The sentence already has its verb, so the blank is the subject: a noun.","句子已經有動詞，空格要當主詞，用名詞。"],
@@ -176,7 +184,9 @@ const ITEMS = [
           ["As a subject, it means the act of applying gets accepted. It's the applications that do.","當主詞時意思是「申請這個動作」被受理；被受理的是申請書。"],
           ["A past form can't be the subject.","過去式或過去分詞不能當主詞。"]],
    zh:"副分行經理一職（工作地點在我們位於 Corliss Avenue 的新辦公室）的申請，在本月底前都可以透過線上系統送出。",
-   gloss:{"assistant branch manager":"副分行經理", portal:"入口網站、線上系統"}},
+   gloss:{
+     "assistant branch manager":{hw:"assistant branch manager", pos:"n.", ipa:"/əˈsɪstənt bræntʃ ˈmænɪdʒər/", zh:"副分行經理", ex:"The assistant branch manager opens the bank each morning."},
+     portal:{hw:"portal", pos:"n.", ipa:"/ˈpɔːrtl/", zh:"入口網站、線上系統", ex:"Upload your receipts through the employee portal."}}},
 ];
 const L = "ABCD";
 const $ = id => document.getElementById(id);
@@ -221,8 +231,8 @@ function stemHTML(it, filled){
   const blank = `<span class="blank">${filled ? it.options[it.answer] : "&nbsp;"}</span>`;
   if (filled) for (const w of Object.keys(it.gloss)) {
     const re = new RegExp(`\\b(${w})\\b`);
-    a = a.replace(re, `<span class="gl" tabindex="0" data-zh="${it.gloss[w]}">$1</span>`);
-    b = b.replace(re, `<span class="gl" tabindex="0" data-zh="${it.gloss[w]}">$1</span>`);
+    a = a.replace(re, `<span class="gl" tabindex="0" data-k="${w}">$1</span>`);
+    b = b.replace(re, `<span class="gl" tabindex="0" data-k="${w}">$1</span>`);
   }
   return a + blank + b;
 }
@@ -280,11 +290,13 @@ function answer(k){
 // word glosses: tap or focus a dotted word in the sentence
 function tipFor(el){
   const t = $("tip"), r = el.getBoundingClientRect();
-  t.textContent = el.dataset.zh; t.hidden = false;
-  const w = t.offsetWidth, x = Math.min(Math.max(8, r.left + r.width / 2 - w / 2 + scrollX), document.documentElement.clientWidth - w - 8);
+  const g = ITEMS[at].gloss[el.dataset.k];
+  t.innerHTML = `<div><span class="hw">${g.hw}</span><span class="pos">${g.pos}</span><span class="ipa">${g.ipa}</span></div><div class="mean">${g.zh}</div><div class="ex">${g.ex}</div>`;
+  t.hidden = false;
+  const w = t.offsetWidth, x = Math.min(Math.max(16, r.left + r.width / 2 - w / 2 + scrollX), document.documentElement.clientWidth - w - 16);
   t.style.left = x + "px"; t.style.top = (r.bottom + scrollY + 6) + "px";
 }
-document.addEventListener("click", e => { const g = e.target.closest(".gl"); if (g) tipFor(g); else $("tip").hidden = true; });
+document.addEventListener("click", e => { const g = e.target.closest(".gl"); if (g) tipFor(g); else if (!e.target.closest("#tip")) $("tip").hidden = true; });
 document.addEventListener("focusin", e => { if (e.target.classList?.contains("gl")) tipFor(e.target); });
 document.addEventListener("focusout", e => { if (e.target.classList?.contains("gl")) $("tip").hidden = true; });
 
