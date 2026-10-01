@@ -34,13 +34,13 @@
   },
   "l-qr-26": {
     "q": [{
-      "point": ["Use the condition in the question to work out the time.", "用問句裡的條件算出時間。"],
-      "why": ["The call was <em>delayed three hours from nine o'clock</em>. Delayed means later, and nine plus three is twelve, so <em>Not until noon</em> fits.", "電話會議從九點延後三小時。Delayed 是往後，九點加三小時是十二點，所以 Not until noon 符合。"]
+      "point": ["The reply reports the new time after a change.", "回應報告改期後的新時間。"],
+      "why": ["The question says <em>now that it's been rescheduled</em>. <em>Nine o'clock, the same as before</em> says nothing changed, so only <em>It got pushed back to noon</em> gives the new time.", "問句說 now that it's been rescheduled。Nine o'clock, the same as before 表示沒有改，只有 It got pushed back to noon 給了新時間。"]
     }],
     "gloss": [
-      {"w": "delayed", "hw": "delay", "pos": "v.", "zh": "延後", "ex": "The flight was delayed by two hours."},
+      {"w": "rescheduled", "hw": "reschedule", "pos": "v.", "zh": "改期", "ex": "We rescheduled the meeting for Friday."},
       {"w": "client call", "hw": "client call", "pos": "n.", "zh": "客戶電話會議", "ex": "I have a client call at three."},
-      {"w": "Not until noon", "hw": "not until", "pos": "phr.", "zh": "要到中午才", "ex": "The store does not open until noon."}
+      {"w": "pushed back", "hw": "push back", "pos": "phr.", "zh": "往後延", "ex": "They pushed back the launch by a week."}
     ]
   },
   "l-qr-27": {
@@ -196,7 +196,7 @@
     }],
     "gloss": [
       {"w": "go over", "hw": "go over", "pos": "phr.", "zh": "檢視、逐項看過", "ex": "We will go over the figures together."},
-      {"w": "approved", "hw": "approve", "pos": "v.", "zh": "核准", "ex": "The board approved the plan."},
+      {"w": "conference room", "hw": "conference room", "pos": "n.", "zh": "會議室", "ex": "The conference room is booked until noon."},
       {"w": "by phone", "hw": "by phone", "pos": "phr.", "zh": "用電話", "ex": "We can settle this by phone."}
     ]
   },

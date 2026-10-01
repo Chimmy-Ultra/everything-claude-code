@@ -107,7 +107,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨句：it 要回頭找 one-page summary",
-                    "why": "她說可以做 a one-page summary；他說 Send it to me tonight；她回 I'll e-mail it before I leave → 下班前把簡短的費用文件寄給他。",
+                    "why": "她提議 a one-page summary；他說 Send it to me tonight；她回 I'll e-mail it → 寄費用文件給他。",
                     "evidence": [6, 7, 8],
                     "wrong": [None, "張冠李戴：明天找廠長談的是男方", "沒有人提到第二次測試", "同字陷阱：經銷商的報告是她已經讀過的"],
                     "wrongMore": [
@@ -140,7 +140,7 @@ ITEMS = [
                 {"file": "04.mp3", "who": "W", "voice": "af_sarah", "text": "Could the library scan them instead? Then Joel could study the images wherever he likes."},
                 {"file": "05.mp3", "who": "M2", "voice": "bm_lewis", "text": "We do offer scanning, but the waiting list is about three weeks."},
                 {"file": "06.mp3", "who": "M1", "voice": "am_eric", "text": "That's too long. My first draft is due in two weeks."},
-                {"file": "07.mp3", "who": "M2", "voice": "bm_lewis", "text": "Then let me see what I can do, Professor Lang. I could move Joel's request to the front of the list if you write a short letter of support."},
+                {"file": "07.mp3", "who": "M2", "voice": "bm_lewis", "text": "Then let me see what I can do, Professor Lang. I could move Joel up the list if you write a short letter of support."},
                 {"file": "08.mp3", "who": "W", "voice": "af_sarah", "text": "I'll write one this afternoon. Joel, once the scans arrive, you can work on them at home."},
                 {"file": "09.mp3", "who": "M1", "voice": "am_eric", "text": "That would solve everything. Thank you both."},
             ],
@@ -169,7 +169,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "主旨題：問題加上解決辦法",
-                    "why": "地圖 too delicate to … take out of the building 是問題；Could the library scan them instead 是辦法 → 改述成讓學生能研究不能外借的資料。",
+                    "why": "too delicate to … take out 是問題；scan them instead 是辦法 → 如何研究不能外借的資料。",
                     "evidence": [0, 2, 3],
                     "wrong": ["提到但不是問的：五點關門是 Joel 的困難，沒人提議延長", None, "同字陷阱：thesis 出現過，但沒人談簡報的時間", "沒有人談選題：Joel 的論文主題早已確定"],
                     "wrongMore": [
@@ -217,12 +217,12 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨說話者：條件在前，one 指前一句的東西",
-                    "why": "Dunmore 說 if you write a short letter of support 才移到最前面；Lang 回 I'll write one this afternoon，one 指 letter → 準備給圖書館的推薦文。",
+                    "why": "if you write a short letter of support 才能優先；I'll write one 的 one 指 letter → 寫推薦文。",
                     "evidence": [6, 7],
-                    "wrong": ["張冠李戴：館員說不能拍照，這是被禁止的事", "沒有人說她要幫 Joel 排進名單；館員說的是把他移到前面", "沒有人提到延後初稿期限", None],
+                    "wrong": ["張冠李戴：館員說不能拍照，這是被禁止的事", "沒有人說她要幫 Joel 排進名單；館員說的是把他往前移", "沒有人提到延後初稿期限", None],
                     "wrongMore": [
                         "photograph 在第三句出現，但是館員說這些地圖不能拍；她要做的是寫信，不是拍照。",
-                        "the list 和 the front of the list 在 Dunmore 那句出現；但排前面是館員要做的，Lang 說的是 I'll write one。",
+                        "the list 在 Dunmore 那句出現；但把 Joel 往前移是館員要做的，Lang 說的是 I'll write one。",
                         "two weeks 是 Joel 說的初稿期限；Lang 沒有說要替他爭取更多時間。",
                         None,
                     ],
@@ -288,7 +288,7 @@ ITEMS = [
                 "ldbs": {"L": False, "D": False, "B": False, "S": False, "band": "easy"},
                 "explain": {
                     "point": "原因題：理由在下一句",
-                    "why": "他說 My wife and our daughter are coming along after all, so we'll need two beds → 改述成住的人比原本計畫的多。",
+                    "why": "My wife and our daughter are coming along → 要住的人變多，所以需要兩張床。",
                     "evidence": [2],
                     "wrong": ["沒有人提到別家的價格", None, "沒有人提到改日期：還是這個星期五", "沒有人提到景觀"],
                     "wrongMore": [None, None, None, None],
@@ -365,7 +365,7 @@ ITEMS = [
                 {"file": "01.mp3", "who": "M", "voice": "am_michael", "text": "Excuse me, my first flight sat on the runway for an hour, so I missed my connection to Lakeport."},
                 {"file": "02.mp3", "who": "W", "voice": "af_sarah", "text": "I'm sorry about that, sir. The next Lakeport flight leaves at two thirty, but it's completely full."},
                 {"file": "03.mp3", "who": "M", "voice": "am_michael", "text": "What are my other options? I have a client dinner at seven thirty, and the restaurant is half an hour from the airport."},
-                {"file": "04.mp3", "who": "W", "voice": "af_sarah", "text": "Then you'll need to land by seven. The last flight to Lakeport tonight gets in too late, but there's one between it and the two thirty."},
+                {"file": "04.mp3", "who": "W", "voice": "af_sarah", "text": "Then you'll need to land by seven. The last flight to Lakeport gets in too late, but there's one between it and the two thirty."},
                 {"file": "05.mp3", "who": "M", "voice": "am_michael", "text": "Is there still a seat on that one?"},
                 {"file": "06.mp3", "who": "W", "voice": "af_sarah", "text": "Yes, I'll put you on it now. Your checked bag will be moved over for you, so you don't need to collect it."},
                 {"file": "07.mp3", "who": "M", "voice": "am_michael", "text": "That's a relief. Do I need to do anything else?"},
@@ -395,7 +395,7 @@ ITEMS = [
                 "ldbs": {"L": False, "D": False, "B": False, "S": False, "band": "easy"},
                 "explain": {
                     "point": "原因題：開頭的問題就是答案",
-                    "why": "他說 my first flight sat on the runway for an hour, so I missed my connection → 因為前一班延誤，沒趕上下一班。",
+                    "why": "sat on the runway for an hour, so I missed my connection → 前一班延誤，沒趕上下一班。",
                     "evidence": [0],
                     "wrong": ["行李沒有遺失：女方說會替他轉到新班機", "沒有人提到天氣或取消：是延誤造成錯過轉機", "晚餐是他選班機的限制，不是來櫃檯的原因", None],
                     "wrongMore": [None, None, None, None],
@@ -433,7 +433,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": False, "B": True, "S": False, "band": "medium"},
                 "explain": {
                     "point": "細節題：moved over 加 no need to collect",
-                    "why": "她說 Your checked bag will be moved over for you, so you don't need to collect it → 改述成行李會自動轉到新班機。",
+                    "why": "bag will be moved over for you, so you don't need to collect it → 行李自動轉到新班機。",
                     "evidence": [5],
                     "wrong": ["方向相反：她說不用自己去領", "沒有人提到送到飯店或明天", None, "沒有人提到重新過磅"],
                     "wrongMore": [
@@ -512,7 +512,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "引句題：tall order 是「很難辦到」",
-                    "why": "她問 Could you make the change and still have the files ready by Thursday；他答 That's a tall order，接著說印刷廠要收費 → 這個要求不好辦。",
+                    "why": "她問能否改完又趕上星期四；他答 That's a tall order，再說要收費 → 這個要求很難辦到。",
                     "evidence": [4, 5],
                     "wrong": ["字面陷阱：照字面把 order 讀成訂單量", "沒有人說作者改太多：她只要求換一個副標題", None, "沒有人說業務團隊會拒絕"],
                     "wrongMore": [
@@ -536,7 +536,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨說話者：他提議、她否決、再說自己要做什麼",
-                    "why": "他提議 ask them to waive the fee；她說 Don't bother，改成 call the author … keep the current subtitle → 請作者重新考慮。",
+                    "why": "他提議 waive the fee；她說 Don't bother，改成 call the author → 請作者重新考慮。",
                     "evidence": [7, 8],
                     "wrong": ["張冠李戴：請印刷廠免費是男方提的，她否決了", None, "沒有人要接受延一天：她覺得費用太高", "時間錯置：星期四是原本的期限，也是男方的工作"],
                     "wrongMore": [
@@ -616,7 +616,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "引句題：eggs in one basket 是不要只靠一個",
-                    "why": "Gus 說要 move all our seafood orders to Harbor Fresh；Theo 接著說 If they have one bad week, we have no fish at all → 只靠一家有風險。",
+                    "why": "Gus 要 move all our seafood orders；Theo 說 one bad week, we have no fish → 只靠一家有風險。",
                     "evidence": [4, 5],
                     "wrong": ["字面陷阱：照字面讀成要買更多雞蛋", None, "語境矛盾：Gus 說 Harbor Fresh 比較便宜", "沒有人提到魚放太多"],
                     "wrongMore": [
@@ -640,7 +640,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨說話者：他的提議被改掉，最後由 Elena 分派",
-                    "why": "Gus 先提議全給 Harbor Fresh，被 Theo 質疑後改成兩家分單；Elena 說 Gus, please send me the new order sheet by Friday → 準備給經理的新訂貨單。",
+                    "why": "改成兩家分單後，Elena 說 please send me the new order sheet by Friday → 準備新訂貨單。",
                     "evidence": [4, 6, 7, 8],
                     "wrong": ["張冠李戴：打電話給兩家供應商的是 Elena", "提到但不是問的：這是 Gus 原本的提議，後來改成兩家分單", None, "時間錯置：改成提前兩天下單，不是一天"],
                     "wrongMore": [
@@ -671,7 +671,7 @@ ITEMS = [
                 {"file": "03.mp3", "who": "M", "voice": "am_eric", "text": "It would. Will my insurance cover it? I've already used five of the six visits my plan allows."},
                 {"file": "04.mp3", "who": "W", "voice": "bf_emma", "text": "Yes, that one is covered. It will be your last, though."},
                 {"file": "05.mp3", "who": "M", "voice": "am_eric", "text": "My knee still isn't right, so I'd like to book three more visits now."},
-                {"file": "06.mp3", "who": "W", "voice": "bf_emma", "text": "I can't until we receive a new referral from your doctor. I can mail you the form, or your doctor's office can fax it to us."},
+                {"file": "06.mp3", "who": "W", "voice": "bf_emma", "text": "I can't until we get a new referral from your doctor. I can mail you the form, or the doctor's office can fax it directly."},
                 {"file": "07.mp3", "who": "M", "voice": "am_eric", "text": "Mail would take too long. The doctor's office closes at five, so I'd better hurry."},
                 {"file": "08.mp3", "who": "W", "voice": "bf_emma", "text": "Good idea. Give them our fax number, and your Thursday time will be held for you."},
                 {"file": "09.mp3", "who": "M", "voice": "am_eric", "text": "I will. Thanks for your help."},
@@ -725,7 +725,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "細節題：this one = 星期四那次",
-                    "why": "他問 Will my insurance cover it，已用五次；她答 that one is covered. It will be your last → 星期四是保險最後給付的一次。",
+                    "why": "已用五次；她答 that one is covered. It will be your last → 星期四是最後給付的一次。",
                     "evidence": [2, 3],
                     "wrong": [None, "提到但不是問的：轉診單是之後再預約三次才需要", "時間錯置：她提的是 Thursday afternoon，兩點", "方向相反：她說這一次有給付"],
                     "wrongMore": [
@@ -749,7 +749,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "下一步題：被否決的選項不是下一步",
-                    "why": "她提出 mail 或 your doctor's office can fax；他說 Mail would take too long，醫師診所 closes at five, so I'd better hurry → 趕快聯絡醫師的診所。",
+                    "why": "他說 Mail would take too long，診所 closes at five, so I'd better hurry → 趕快聯絡醫師診所。",
                     "evidence": [5, 6, 7],
                     "wrong": ["方向相反：郵寄的選項被他以太慢否決", "沒有人提到要去診所簽名", "時間錯置：星期三已經客滿", None],
                     "wrongMore": [
@@ -833,7 +833,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": False, "B": True, "S": False, "band": "medium"},
                 "explain": {
                     "point": "細節題：because 後面是檢查的理由",
-                    "why": "她說 an inspector measures the sidewalk, because five feet must stay clear for people walking by → 檢查是否留夠行人通行的空間。",
+                    "why": "inspector measures the sidewalk, because five feet must stay clear → 檢查行人空間夠不夠。",
                     "evidence": [3],
                     "wrong": ["沒有人提到廚房或衛生標準", "沒有人提到平常的客人數", "同字陷阱：sidewalk 出現過，但檢查員是量寬度，不是看損壞", None],
                     "wrongMore": [
@@ -857,7 +857,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "下一步題：「馬上回來」交代接下來做什麼",
-                    "why": "表格需要 a drawing of the sidewalk；他說 I have the building plans in my car. I'll bring them in → 先去車上拿文件。",
+                    "why": "表格要 a drawing；他說 I have the building plans in my car. I'll bring them in → 先去車上拿文件。",
                     "evidence": [6, 7, 8],
                     "wrong": [None, "提到但不是現在：她說可以刷卡，但他先去拿平面圖", "沒有人說他要自己丈量：丈量是檢查員的工作", "沒有人要撤回：他說 I'll apply"],
                     "wrongMore": [

@@ -117,40 +117,40 @@ ITEMS = [
             },
         }],
     },
-    # l-qr-26  qr-wh, hard. Condition: delayed three hours from nine o'clock. near-correct: (A) the old time,
-    # (B) the wrong direction (nine minus three). Key (C) needs the arithmetic.
+    # l-qr-26  qr-wh, medium. Condition: "now that it's been rescheduled". near-correct: (A) a time, but the old one
+    # ("the same as before" contradicts rescheduled); (B) repeats client, answers where. Key (C) reports the change.
     {
-        "id": "l-qr-26", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 3,
+        "id": "l-qr-26", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
         "source": "hand", "reviewed": False, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-26", "gapMs": 900,
             "lines": [
-                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "What time is the client call tomorrow, now that it's been delayed three hours from nine o'clock?"},
+                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "What time is the client call tomorrow, now that it's been rescheduled?"},
                 {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Nine o'clock, the same as before."},
-                {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "Six o'clock, I believe."},
-                {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "Not until noon."},
+                {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "The client's office is downtown."},
+                {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "It got pushed back to noon."},
             ],
         },
         "transcriptZh": [
-            "既然明天的客戶電話會議從九點延後了三個小時，現在是幾點？",
+            "既然明天的客戶電話會議已經改期了，現在是幾點？",
             "九點，跟之前一樣。",
-            "我想是六點。",
-            "要到中午才開。",
+            "客戶的辦公室在市中心。",
+            "已經往後延到中午了。",
         ],
         "questions": [{
             "q": None, "options": None, "answer": 2,
-            "ldbs": {"L": True, "D": True, "B": False, "S": True, "band": "hard"},
+            "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
             "explain": {
-                "point": "What time 問句帶條件：要用條件算出新時間",
-                "why": "問從九點延後三小時後是幾點 → 回 Not until noon（中午）：九點加三小時就是十二點。",
+                "point": "What time 問句帶條件：回應要報告改期後的新時間",
+                "why": "問改期後明天的客戶電話會議是幾點 → 回 pushed back to noon：往後延到中午，才是改期後的時間。",
                 "evidence": [3],
-                "wrong": ["形式對情境錯：說的是延後前的原時間", "形式對情境錯：方向算反，變成提前三小時", None],
+                "wrong": ["形式對情境錯：是時間，但 the same as before 表示沒改期，與 rescheduled 矛盾", "同字陷阱：重複 client，講的是客戶辦公室在哪裡", None],
                 "wrongMore": [
-                    "What time 問句回 Nine o'clock 形式完全對；但問句說 has been delayed，原本的九點已經不是答案。",
-                    "Six o'clock 也是時間；但 delayed 是往後延，不是往前提，九點往前三小時才是六點。",
+                    "What time 問句回 Nine o'clock 形式完全對；但問句說 now that it's been rescheduled，回答卻說跟之前一樣，與改期矛盾。",
+                    "回答用了 client，聽起來沾得上邊；但 office is downtown 回答的是地點，不是時間，是答錯問句類型。",
                     None,
                 ],
-                "vocab": [["delay", "延後"], ["client call", "客戶電話會議"], ["Not until", "要到…才"]],
+                "vocab": [["reschedule", "改期"], ["client call", "客戶電話會議"], ["push back", "往後延"]],
             },
         }],
     },
@@ -589,7 +589,7 @@ ITEMS = [
         }],
     },
     # l-qr-40  qr-indirect, medium. Choice question answered with a third option.
-    # near-correct: (A) repeats budget; (B) repeats lunch. Key (C) names a third way.
+    # near-correct: (A) repeats conference room, answers where; (B) repeats lunch. Key (C) names a third way.
     {
         "id": "l-qr-40", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
         "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
@@ -597,14 +597,14 @@ ITEMS = [
             "dir": "audio/l-qr-40", "gapMs": 900,
             "lines": [
                 {"file": "q.mp3", "who": "W", "voice": "bf_emma", "text": "Do you want to go over the budget in the conference room or over lunch?"},
-                {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "The budget was approved in March."},
+                {"file": "a.mp3", "who": "M", "voice": "bm_george", "text": "The conference room is on the fourth floor."},
                 {"file": "b.mp3", "who": "M", "voice": "bm_george", "text": "The lunch menu changes every Monday."},
                 {"file": "c.mp3", "who": "M", "voice": "bm_george", "text": "Let's just do it by phone this afternoon."},
             ],
         },
         "transcriptZh": [
             "你想在會議室檢視預算，還是邊吃午餐邊看？",
-            "預算是三月核准的。",
+            "會議室在四樓。",
             "午餐菜單每個星期一更換。",
             "我們今天下午直接用電話談吧。",
         ],
@@ -615,9 +615,9 @@ ITEMS = [
                 "point": "選擇問句：可以兩個都不選，提出第三個方式",
                 "why": "問在會議室還是午餐時看預算 → 回 do it by phone this afternoon：兩個都不選，改成電話，是第三個選項。",
                 "evidence": [3],
-                "wrong": ["同字陷阱：重複 budget，講的是何時核准", "同字陷阱：重複 lunch，講的是菜單", None],
+                "wrong": ["同字陷阱：重複 conference room，講的是會議室在幾樓", "同字陷阱：重複 lunch，講的是菜單", None],
                 "wrongMore": [None, None, None],
-                "vocab": [["go over", "檢視、逐項看過"], ["approve", "核准"], ["by phone", "用電話"]],
+                "vocab": [["go over", "檢視、逐項看過"], ["conference room", "會議室"], ["by phone", "用電話"]],
             },
         }],
     },
