@@ -1,0 +1,200 @@
+[
+ {
+  "id": "g-relative-08",
+  "format": "gap",
+  "stem": "Mr. Okafor is the only finalist ______ résumé lists both warehouse automation and customs compliance, and the panel has therefore placed him first on its shortlist.",
+  "options": {
+   "A": "who's",
+   "B": "whose",
+   "C": "whom",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-relative-09",
+  "format": "gap",
+  "stem": "The Brightwater hangar, ______, despite its age and its cramped doors, still handles every overnight engine check for the airline's regional fleet, is scheduled to be replaced by a larger facility in 2028.",
+  "options": {
+   "A": "where",
+   "B": "that",
+   "C": "what",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-relative-10",
+  "format": "gap",
+  "stem": "The ferry operator announced that vehicle crossings would be suspended until the damaged ramp had been repaired, ______ in turn forced three island hotels to cancel their weekend bookings and, in one case, close early for the season.",
+  "options": {
+   "A": "what",
+   "B": "that",
+   "C": "which",
+   "D": "it"
+  }
+ },
+ {
+  "id": "g-relative-11",
+  "format": "gap",
+  "stem": "The credit committee approved ______ the external auditors, after reviewing three years of loan files, had recommended, and the risk department was asked to report on progress every quarter.",
+  "options": {
+   "A": "that",
+   "B": "which",
+   "C": "whom",
+   "D": "what"
+  }
+ },
+ {
+  "id": "g-relative-12",
+  "format": "gap",
+  "stem": "The translator ______ the publisher has, over the past nine years, collaborated on every title in its Nordic crime series is retiring, and the search for a successor has begun.",
+  "options": {
+   "A": "with whom",
+   "B": "whom",
+   "C": "who",
+   "D": "whose"
+  }
+ },
+ {
+  "id": "g-relative-13",
+  "format": "gap",
+  "stem": "In situations ______ a supplier cannot, for reasons beyond its control, deliver within the agreed period, the buyer may extend the deadline once without penalty or cancel the order.",
+  "options": {
+   "A": "which",
+   "B": "whose",
+   "C": "where",
+   "D": "whom"
+  }
+ },
+ {
+  "id": "g-relative-14",
+  "format": "gap",
+  "stem": "The sanitation department's annual compliance audit, ______ the inspectors interviewed, one by one, more than sixty drivers and reviewed two years of maintenance logs, found no safety violations at any of the four depots.",
+  "options": {
+   "A": "which",
+   "B": "during which",
+   "C": "that",
+   "D": "whose"
+  }
+ },
+ {
+  "id": "g-relative-15",
+  "format": "gap",
+  "stem": "The university operates three satellite campuses, ______ combined enrollment has doubled since 2018 and now exceeds that of the main campus.",
+  "options": {
+   "A": "whose",
+   "B": "of which",
+   "C": "which",
+   "D": "that"
+  }
+ },
+ {
+  "id": "g-relative-16",
+  "format": "gap",
+  "stem": "The staffing agency placed forty temporary nurses at the Eastgate clinic during the flu season, ______ had previously worked in intensive care and were able to start without additional orientation.",
+  "options": {
+   "A": "many of them",
+   "B": "whom many",
+   "C": "many of whom",
+   "D": "many who"
+  }
+ },
+ {
+  "id": "g-relative-17",
+  "format": "gap",
+  "stem": "The museum's board received three proposals to redesign the east gallery, ______ met the budget ceiling that the finance committee had set at its meeting in March.",
+  "options": {
+   "A": "none of them",
+   "B": "none of which",
+   "C": "neither of which",
+   "D": "neither of them"
+  }
+ },
+ {
+  "id": "g-relative-18",
+  "format": "gap",
+  "stem": "Claims under the extended warranty must be filed within thirty days of the purchase date or of the date on which the fault was first detected, ______ is later, and must include proof of purchase.",
+  "options": {
+   "A": "whoever",
+   "B": "whenever",
+   "C": "wherever",
+   "D": "whichever"
+  }
+ },
+ {
+  "id": "g-relative-19",
+  "format": "gap",
+  "stem": "Front desk agents are free to offer guests ______ they judge will resolve a complaint, from a room upgrade to a complimentary dinner, without first consulting a duty manager.",
+  "options": {
+   "A": "whatever",
+   "B": "that",
+   "C": "whoever",
+   "D": "which"
+  }
+ },
+ {
+  "id": "g-relative-20",
+  "format": "gap",
+  "stem": "Any supporting documents ______ with the court registry after the filing deadline will be returned unopened, and the claimant will be notified of the rejection in writing.",
+  "options": {
+   "A": "filing",
+   "B": "were filed",
+   "C": "filed",
+   "D": "that filed"
+  }
+ },
+ {
+  "id": "g-relative-21",
+  "format": "gap",
+  "stem": "Technicians ______ the quarterly calibration of the extruders at the Eastfield plant, most of them with more than a decade of experience, have been reporting the same fault since January.",
+  "options": {
+   "A": "performed",
+   "B": "performing",
+   "C": "to perform",
+   "D": "perform"
+  }
+ },
+ {
+  "id": "g-relative-22",
+  "format": "gap",
+  "stem": "The festival director, ______, after eleven years with the city's tourism board, now oversees every stage of the program, has asked the volunteers to arrive an hour early on the opening day.",
+  "options": {
+   "A": "that",
+   "B": "whom",
+   "C": "whose",
+   "D": "who"
+  }
+ },
+ {
+  "id": "g-relative-23",
+  "format": "gap",
+  "stem": "The distribution center ______ the retailer, after two years of planning, commissioned in the northern region last spring has already doubled the number of orders it can process each day.",
+  "options": {
+   "A": "where",
+   "B": "whose",
+   "C": "which",
+   "D": "what"
+  }
+ },
+ {
+  "id": "g-relative-24",
+  "format": "gap",
+  "stem": "The clinic thanked the three outside consultants ______ the trial protocol, together with its consent forms and safety rules, had been drafted over the course of the previous year.",
+  "options": {
+   "A": "that",
+   "B": "by whom",
+   "C": "whom",
+   "D": "who"
+  }
+ },
+ {
+  "id": "g-relative-25",
+  "format": "gap",
+  "stem": "______ the sales team needs most from the new reporting tool is not more charts but faster access to the weekly figures that regional managers request.",
+  "options": {
+   "A": "What",
+   "B": "That",
+   "C": "Whose",
+   "D": "Whom"
+  }
+ }
+]

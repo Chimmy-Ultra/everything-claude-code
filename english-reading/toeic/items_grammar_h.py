@@ -95,7 +95,7 @@ ITEMS = [
         "answer": 2,
         "explain": {
             "point": "unless 後用肯定的現在式",
-            "why": "unless 本身已含否定（= if … not），後面動詞用肯定的現在式；未來的事在條件子句裡也用現在式，所以是 stops。unless 在離空格十個字前的 the rain 之前。",
+            "why": "unless 本身已含否定（= if … not），後面動詞用肯定的現在式；未來的事在條件子句裡也用現在式，所以是 stops。unless 離空格很遠，在 the rain 之前。",
             "wrong": [
                 "will stop 局部順；但條件子句不放 will",
                 "雙重否定，意思變成「雨停就移到室內」",
