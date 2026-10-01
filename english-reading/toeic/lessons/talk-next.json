@@ -1,8 +1,8 @@
 {
   "unit": "talk-next",
   "lead": [
-    "A one-speaker talk often ends with an instruction. These questions ask what the listeners will do next, or what the speaker asks them to do. The answer is an action for the listeners, usually near the end.",
-    "單人短講常以指示收尾。這類題目問聽眾接下來要做什麼，或說話者要求他們做什麼。答案是聽眾的行動，通常在接近結尾處。"
+    "A one-speaker talk can end with an instruction. These questions ask what the listeners will do next, or what the speaker asks them to do. The answer is an action for the listeners, usually near the end.",
+    "單人短講可能以指示收尾。這類題目問聽眾接下來要做什麼，或說話者要求他們做什麼。答案是聽眾的行動，通常在接近結尾處。"
   ],
   "steps": [
     [
@@ -81,8 +81,8 @@
     },
     {
       "head": [
-        "'Before' and 'once' reverse the order",
-        "before 與 once 會顛倒順序"
+        "'Before' and 'once' set the order",
+        "before 與 once 決定順序"
       ],
       "body": [
         "In 'Before we start, please…', the action after 'please' happens first. In 'Once you've finished, please…', it happens second. Decide the order by the time word, not by what is said first.",
@@ -94,8 +94,8 @@
           "導覽開始前，請先簽訪客登記簿。"
         ],
         [
-          "<em>Once</em> you've seen the demonstration, please try the machine yourself.",
-          "看完示範後，請自己試用機器。"
+          "<em>Once</em> the demonstration is over, please try the machine yourself.",
+          "示範結束後，請自己試用機器。"
         ]
       ]
     },
@@ -105,8 +105,8 @@
         "誰的行動：說話者還是聽眾？"
       ],
       "body": [
-        "'I'll' and 'we'll' usually mean the speaker's action. 'You' and the command form mean the listeners'. The question names one group, so match the action to that group.",
-        "I'll 和 we'll 通常是說話者的行動，you 和命令句則是聽眾的行動。題目只問其中一方，所以要把行動配到對的一方。"
+        "'I'll' usually means the speaker's action, and 'we'll' may include the listeners. 'You' and the command form mean the listeners'. The question names one group, so match the action to that group.",
+        "I'll 通常是說話者的行動，we'll 可能包含聽眾；you 和命令句則是聽眾的行動。題目只問其中一方，所以要把行動配到對的一方。"
       ],
       "ex": [
         [
@@ -117,12 +117,12 @@
     },
     {
       "head": [
-        "The closing line often points to the next action",
-        "結尾常指向下一個行動"
+        "The closing line can point to the next action",
+        "結尾可能指向下一個行動"
       ],
       "body": [
-        "Talks often end by sending the listeners somewhere or asking for something. 'Follow me', 'proceed to' and 'visit our website' are typical endings.",
-        "短講常在結尾請聽眾去某處或做某事。Follow me、proceed to、visit our website 都是典型的結尾。"
+        "Talks can end by sending the listeners somewhere or asking for something. 'Follow me', 'proceed to' and 'visit our website' are typical endings.",
+        "短講可能在結尾請聽眾去某處或做某事。Follow me、proceed to、visit our website 都是典型的結尾。"
       ],
       "ex": [
         [
@@ -137,8 +137,8 @@
         "選項會改寫行動"
       ],
       "body": [
-        "The talk says 'bring your ID'. The option says 'show identification'. Match the meaning of the action, not the words.",
-        "談話說 bring your ID，選項寫 show identification。要比對行動的意思，不是字面。"
+        "The talk says 'have your ID ready'. The option says 'prepare identification'. Match the meaning of the action, not the words.",
+        "談話說 have your ID ready，選項寫 prepare identification。要比對行動的意思，不是字面。"
       ],
       "ex": [
         [
@@ -194,8 +194,8 @@
           "聽眾被要求做什麼？"
         ],
         [
-          "What does the speaker say the listeners should do first?",
-          "說話者說聽眾應該先做什麼？"
+          "What are the listeners told to do first?",
+          "聽眾被告知要先做什麼？"
         ],
         [
           "What does the speaker recommend?",

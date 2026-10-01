@@ -105,3 +105,20 @@ Reviewed against lessons/STYLE.md and the practice sets in items_listen.py / ite
 - Unnatural or wrong English fixed: hotel line, 'Who told you?', 'Who is the man most likely?', 'Ben' labelled Woman, truncated question wording, unmatched English/Chinese glosses: about 10 edits.
 - Checked and left unchanged: Wh/yes-no/negative/tag rules, all right/wrong pairs not listed above (each trap verified), Chinese twins not listed.
 - Left as is on purpose: strategy cues that practice items also contain ('I'm afraid', 'Do you have a minute?', 'I'd love to, but', 'Normally... instead'). They teach the signal and do not reveal any answer.
+
+## talk-next (independent review)
+- talk-next: lead: 'often ends' softened to 'can end' (frequency claim)
+- talk-next: lead zh twin
+- talk-next: rule 4 head: 'once' does not reverse the order, so 'reverse' became 'set'
+- talk-next: rule 4 head zh twin
+- talk-next: rule 4 example 2: 'Once you've seen the...' mirrored the l-talk-05 line ('once you've seen the plan'); reworded
+- talk-next: rule 4 example 2 zh twin
+- talk-next: rule 5 body: 'we'll' can include the listeners (rule 3 and pair 2 use it that way); no longer 'speaker's action'
+- talk-next: rule 5 body zh twin
+- talk-next: rule 6 head and body: 'often' softened to 'can'
+- talk-next: rule 6 head and body zh twins
+- talk-next: rule 7 body: 'bring your ID' = 'show identification' was a loose match; now 'have your ID ready' = 'prepare identification'
+- talk-next: rule 7 body zh twin
+- talk-next: list: 'should do first' wording was a near copy of the l-talk-05 question; reworded
+- talk-next: list zh twin
+- talk-next: checked, unchanged: all three pairs, other rules/examples, signal list, traps, other zh twins
