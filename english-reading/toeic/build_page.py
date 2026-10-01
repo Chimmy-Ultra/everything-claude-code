@@ -111,6 +111,18 @@ for f in sorted(glob.glob(os.path.join(HERE, "words", "cards", "*.json"))):
         if c["items"]: WORDS.append(c)
         else: print("word card left out (no question uses it):", c["w"])
 WORDS.sort(key=lambda c: c["w"])
+# Word stories (words/stories/: plan.json + one file per story, checked by words/check_stories.py)
+STORIES = []
+if os.path.exists(os.path.join(HERE, "words", "stories", "plan.json")):
+    _spec3 = importlib.util.spec_from_file_location("story_check", os.path.join(HERE, "words", "check_stories.py"))
+    story_check = importlib.util.module_from_spec(_spec3); _spec3.loader.exec_module(story_check)
+    for e in story_check.check(): errors.append("story " + e)
+    for s_ in json.load(open(os.path.join(HERE, "words", "stories", "plan.json"), encoding="utf-8")):
+        path = os.path.join(HERE, "words", "stories", s_["id"] + ".json")
+        if os.path.exists(path):
+            d = json.load(open(path, encoding="utf-8"))
+            STORIES.append({"id": s_["id"], "title": d["title"], "paras": d["paras"], "words": s_["words"]})
+
 # Point each tap-to-gloss entry at a word card: its own headword, or else a card word inside the phrase
 # ("under warranty" -> warranty), read right to left because the head noun usually comes last.
 _head = {f: h for h, fs in _forms.items() for f in fs}
@@ -126,7 +138,7 @@ if errors:
     for e in errors: print("error:", e)
     if "--draft" not in sys.argv: sys.exit(f"{len(errors)} errors, not building")
 
-data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS, "lessons": LESSONS, "words": WORDS}
+data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS, "lessons": LESSONS, "words": WORDS, "stories": STORIES}
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 page = open(os.path.join(HERE, "template.html"), encoding="utf-8").read().replace("{{BANK}}", blob)
 open(os.path.join(HERE, "toeic.html"), "w", encoding="utf-8").write(page)

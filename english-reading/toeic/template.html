@@ -218,13 +218,24 @@ button.row:hover .t{color:var(--accent)}
 #sheet .page{padding-top:env(safe-area-inset-top,0px)}
 
 /* word chapter */
-.wlist{list-style:none;margin:.6em 0 0;padding:0;border-top:1px solid var(--rule)}
-.wlist li{border-bottom:1px solid var(--rule)}
-.wlist button{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1em;width:100%;text-align:left;padding:.45em 0;align-items:baseline}
-.wlist .ww{font-size:17px}
-.wlist .wp{font-size:14px;color:var(--faint);font-style:italic}
-.wlist button:hover .ww{color:var(--accent)}
-.letter{font-size:14px;color:var(--soft);margin:1.4em 0 .2em}
+/* stories */
+.page.story .storyside{display:none}
+@media (min-width:900px){
+  .page.story{max-width:64rem;display:grid;grid-template-columns:minmax(0,34rem) minmax(0,1fr);column-gap:3.2rem;align-items:start}
+  .page.story .head{grid-column:1/-1}
+  .page.story .storyside{display:block;position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);max-height:calc(100vh - 32px);overflow-y:auto;border-left:1px solid var(--rule);padding:1.4em 0 1em 2.4em;margin-top:1.4em}
+  .storyside .word{font-size:14.5px}
+  .storyside .word h1{font-size:30px}
+}
+.storycol{min-width:0}
+.storycol .hwrow{display:flex;align-items:baseline;margin-top:1.6em}
+.storycol h1{margin-top:.2em}
+.storycol > .zh{display:block;color:var(--soft);font-family:var(--zh)}
+.storyp{font-size:18.5px;line-height:1.8;margin:1em 0 0}
+.storyp .zh{display:block;font-size:15.5px;line-height:1.75;color:var(--soft);margin-top:.35em}
+.storyp .say{font-size:.8em;margin-left:.2em}
+.sw{font:inherit;color:inherit;padding:0;text-decoration:underline dotted var(--faint);text-underline-offset:5px;text-decoration-thickness:1px;cursor:pointer}
+.sw:hover,.sw.on{color:var(--accent);text-decoration-color:var(--accent)}
 .word{font-size:var(--fs,15.5px)}
 .word .hwrow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2em .8em;margin-top:1.6em}
 .word h1{margin:0}
@@ -474,7 +485,7 @@ function show(v) {
   const app = $("#app"), ses = $("#session");
   app.textContent = ""; ses.textContent = "";
   const dk = $("#dock"); dk.hidden = true; dk.dataset.card = ""; $("#dkTools").textContent = ""; $("#dkPanel").textContent = ""; $("#dkNext").textContent = "";
-  app.hidden = v === "session"; ses.hidden = v !== "session";
+  app.hidden = v === "session"; ses.hidden = v !== "session"; app.className = "page";
   return v === "session" ? ses : app;
 }
 function head(host, left, right) {
@@ -517,7 +528,7 @@ function home() {
     const us = unitsIn(g); if (!us.length) continue;
     app.append(partList(part, title, us.map((u, i) => ({ n: String(i + 1), t: unitName(u), c: ITEMS.filter(x => x.unit === u).length, fn: () => DATA.lessons?.[u] ? lessonView(u) : startSet({ unit: u, n: 10, label: unitName(u) }) }))));
   }
-  if (DATA.words?.length) app.append(partList("Part Four", "Words", [{ n: "", t: "High-frequency words", sub: "from the TOEIC Service List, with examples and related words", c: DATA.words.length, fn: () => wordsView() }]));
+  if (STORIES.length) app.append(partList("Part Four", "Stories", STORIES.map((st, i) => ({ n: String(i + 1), t: st.title[0], c: "", fn: () => storyView(st.id) }))));
   const col = el("nav", "colophon sc");
   const shelf = Object.keys(B).filter(activeBank).length;
   col.append(btn(null, "Review shelf" + (shelf ? " · " + shelf : ""), bankView), btn(null, "Statistics", statsView), btn(null, "Settings", settingsView));
@@ -542,32 +553,43 @@ const WBY = Object.fromEntries(WORDS.map(c => [c.w, c]));
 function wordCard(w) { w = String(w || "").toLowerCase(); return WBY[w] || null; }
 function speak(text) { try { const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; u.rate = 0.9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch {} }
 const canSpeak = "speechSynthesis" in window;
-let wordQuery = "";
-function wordsView() {
-  const app = show("words");
+const STORIES = DATA.stories || [];
+// Part Four: short workplace stories; the high-frequency words are dotted, and a tap opens the word's card
+// (in the page margin on wide screens, in a sheet on phones).
+function storyText(en) {
+  return esc(en).replace(/\{\{([^|{}]+)\|([^{}]+)\}\}/g, (m, w, t) => `<button type="button" class="sw" data-w="${w.trim()}">${t}</button>`);
+}
+function storyView(id) {
+  const i = STORIES.findIndex(st => st.id === id), st = STORIES[i];
+  const app = show("story"); app.className = "page story";
   head(app, backTo("Contents", home));
-  app.append(el("p", "chap sc quiet", "Part Four · Words"), el("h1", "small", "High-frequency words"));
-  const lead = el("p", "quiet small"); lead.innerHTML = 'Words from the <a href="https://www.newgeneralservicelist.com/toeic-service-list" target="_blank" rel="noopener">TOEIC Service List</a> that appear in these questions. Each card has examples, collocations and related words.'; app.append(lead);
-  const s = el("input", "search"); s.type = "search"; s.id = "word-search"; s.placeholder = "Search a word or its meaning"; s.value = wordQuery;
-  const host = el("div"); app.append(s, host);
-  const render = () => {
-    host.textContent = "";
-    const q = wordQuery.trim().toLowerCase();
-    const list = WORDS.filter(c => !q || c.w.includes(q) || (c.zh || "").includes(q) || (c.family || []).some(f => f.w.includes(q)));
-    if (!list.length) { host.append(el("p", "empty", "No word matches.")); return; }
-    let letter = "", ul = null;
-    for (const c of list) {
-      const L0 = c.w[0].toUpperCase();
-      if (L0 !== letter && !q) { letter = L0; host.append(el("p", "letter sc", L0)); ul = null; }
-      if (!ul) { ul = el("ul", "wlist"); host.append(ul); }
-      const li = el("li"), b = btn(null); b.append(el("span", "ww", c.w), el("span", "wp", c.pos)); b.onclick = () => wordView(c.w); li.append(b); ul.append(li);
-    }
-  };
-  s.oninput = () => { wordQuery = s.value; render(); };
-  render();
+  const main = el("article", "storycol"), side = el("aside", "storyside");
+  side.append(el("p", "faint small", "Tap a dotted word to see it here."));
+  app.append(main, side);
+  const hd = el("div", "hwrow"); hd.append(el("p", "chap sc quiet", "Part Four · Story " + (i + 1)));
+  const zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese"); zb.style.marginLeft = "auto";
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); main.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  hd.append(zb); main.append(hd);
+  const h = el("h1", "small", st.title[0]); const hz = el("span", "zh", st.title[1]); hz.hidden = true; main.append(h, hz);
+  for (const [en, zh] of st.paras) {
+    const p = el("p", "storyp"); p.innerHTML = storyText(en);
+    if (canSpeak) { const sp = btn("say", " ▸", () => speak(en.replace(/\{\{[^|{}]+\|([^{}]+)\}\}/g, "$1"))); sp.setAttribute("aria-label", "Read this paragraph aloud"); p.append(sp); }
+    const z = el("span", "zh", zh); z.hidden = true; p.append(z);
+    main.append(p);
+  }
+  main.querySelectorAll(".sw").forEach(b => b.onclick = () => {
+    main.querySelectorAll(".sw.on").forEach(x => x.classList.remove("on")); b.classList.add("on");
+    if (matchMedia("(min-width: 900px)").matches) showInSide(b.dataset.w); else openWordSheet(b.dataset.w, "Back to the story");
+  });
+  function showInSide(w) { side.textContent = ""; side.append(wordBody(w, showInSide)); side.scrollTop = 0; }
+  const its = [...new Set(st.words.flatMap(w => (wordCard(w)?.items || []).filter(x => BY[x])))].slice(0, 12);
+  if (its.length) { const pr = el("p", "note"); pr.append(btn("link", "Practise questions with these words", () => startList(its, st.title[0]))); main.append(pr); }
+  const nv = el("div", "wnav");
+  nv.append(i > 0 ? btn(null, "← " + STORIES[i - 1].title[0], () => storyView(STORIES[i - 1].id)) : el("span"), i < STORIES.length - 1 ? btn(null, STORIES[i + 1].title[0] + " →", () => storyView(STORIES[i + 1].id)) : el("span"));
+  main.append(nv);
   const credit = el("p", "faint small"); credit.style.marginTop = "2.4em";
-  credit.innerHTML = 'Word selection: TOEIC Service List 1.2 by Browne, C. &amp; Culligan, B., <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Pronunciations from the CMU Pronouncing Dictionary.';
-  app.append(credit);
+  credit.innerHTML = 'Dotted words come from the TOEIC Service List 1.2 by Browne, C. &amp; Culligan, B., <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Pronunciations from the CMU Pronouncing Dictionary.';
+  main.append(credit);
 }
 function wordBody(w, nav) {
   const c = wordCard(w), box = el("div", "word");
@@ -608,17 +630,9 @@ function wordBody(w, nav) {
   }
   return box;
 }
-function wordView(w) {
-  const app = show("words");
-  head(app, backTo("Words", wordsView));
-  app.append(wordBody(w, wordView));
-  const i = WORDS.findIndex(c => c.w === w), nv = el("div", "wnav");
-  nv.append(i > 0 ? btn(null, "← " + WORDS[i - 1].w, () => wordView(WORDS[i - 1].w)) : el("span"), i < WORDS.length - 1 ? btn(null, WORDS[i + 1].w + " →", () => wordView(WORDS[i + 1].w)) : el("span"));
-  app.append(nv);
-}
-function openWordSheet(w) {
+function openWordSheet(w, back = "Back to the question") {
   const sh = $("#sheet"); sh.textContent = "";
-  const pg = el("div", "page"); head(pg, backTo("Back to the question", closeSheet)); pg.append(wordBody(w, openWordSheet));
+  const pg = el("div", "page"); head(pg, backTo(back, closeSheet)); pg.append(wordBody(w, x => openWordSheet(x, back)));
   sh.append(pg); sh.hidden = false; sh.scrollTop = 0; document.body.style.overflow = "hidden";
 }
 
