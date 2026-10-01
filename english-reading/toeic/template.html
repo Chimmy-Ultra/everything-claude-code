@@ -296,6 +296,7 @@ h3 .sc{letter-spacing:.12em}
 .set select{background:transparent;border:0;border-bottom:1px solid var(--rule);font-size:16px;color:var(--ink)}
 .set input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px}
 .small{font-size:15px}
+.credit{font-size:12.5px;color:var(--faint);margin:.6em 0 0;letter-spacing:.06em}
 .empty{color:var(--faint);margin:1.4em 0}
 @media (prefers-reduced-motion: no-preference){
   .opt.right .l path{animation:draw .5s ease-out both}
@@ -404,6 +405,7 @@ async function load() {
     B = await Store.list("toeic_bank");
     M = await Store.list("toeic_marks");
     const added = await Store.list("toeic_added");
+    if (Store.mode === "db") { try { const c = await Store.db.doc("toeic/credits").get(); if (c.exists) CREDITS = c.data(); } catch {} }
     for (const [id, x] of Object.entries(added)) {
       if (x.retired || BY[id] || !x.type || !x.explain && !x.questions) continue;
       ITEMS.push({ ...x, id, source: x.source || "claude", reviewed: false });
@@ -422,6 +424,13 @@ async function load() {
   }
 }
 let importOffer = null;
+// Who wrote each part, if the owner keeps a "toeic/credits" document in the page's database: {q, en, lessons, cards, stories}.
+let CREDITS = null;
+function creditLine(parts) {
+  if (!CREDITS || P.settings.credits === false) return null;
+  const t = parts.filter(([, v]) => v).map(([k, v]) => k + ": " + v).join(" · ");
+  return t ? el("p", "credit sc", t) : null;
+}
 async function doImport() {
   const { lp, lb, lm } = importOffer; importOffer = null;
   if (lp) { P = Object.assign(freshProfile(), lp); await saveProfile(); }
@@ -571,6 +580,7 @@ function storyView(id) {
   zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); main.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
   hd.append(zb); main.append(hd);
   const h = el("h1", "small", st.title[0]); const hz = el("span", "zh", st.title[1]); hz.hidden = true; main.append(h, hz);
+  const sc = creditLine([["Story", CREDITS?.stories]]); if (sc) main.append(sc);
   for (const [en, zh] of st.paras) {
     const p = el("p", "storyp"); p.innerHTML = storyText(en);
     if (canSpeak) { const sp = btn("say", " ▸", () => speak(en.replace(/\{\{[^|{}]+\|([^{}]+)\}\}/g, "$1"))); sp.setAttribute("aria-label", "Read this paragraph aloud"); p.append(sp); }
@@ -601,6 +611,7 @@ function wordBody(w, nav) {
   hr.append(zb); box.append(hr);
   const mean = el("p", "mean zh", c.zh); mean.hidden = true; box.append(mean);
   box.append(para(c.def, "def"));
+  const wc = creditLine([["Card", CREDITS?.cards]]); if (wc) box.append(wc);
   box.append(sectionH("Examples"));
   const ex = el("ul", "exs"); for (const e of c.ex) { const li = el("li"); const p = para(e); if (canSpeak) { const sp = btn("say", " ▸", ev => { ev.stopPropagation(); speak(e[0].replace(/<[^>]+>/g, "")); }); sp.setAttribute("aria-label", "Say this sentence"); p.insertBefore(sp, p.querySelector(".zh")); } li.append(p); ex.append(li); } box.append(ex);
   if (c.coll?.length) { box.append(sectionH("Collocations")); const ul = el("ul", "colls"); for (const [en, zh] of c.coll) { const li = el("li", null, en); const z = el("span", "zh", zh); z.hidden = true; li.append(z); ul.append(li); } box.append(ul); }
@@ -645,6 +656,7 @@ function lessonBody(u, onStart) {
   zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); box.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
   zt.append(zb); box.append(zt);
   box.append(para(L_.lead, "lead"));
+  const lc = creditLine([["Lesson", CREDITS?.lessons]]); if (lc) box.append(lc);
   if (L_.steps?.length) { box.append(sectionH("How to work it")); const ol = el("ol", "steps"); for (const st of L_.steps) { const li = el("li"); li.append(para(st)); ol.append(li); } box.append(ol); }
   if (L_.rules?.length) {
     box.append(sectionH("Rules"));
@@ -936,6 +948,7 @@ function gapCard(left, right, item) {
     record(item, 0, oi, ok, unsure, unsure ? null : ms, pace && !unsure ? ms > pace * 1000 : false);
     const box = notesFor(item, null, oi, order);
     right.append(box);
+    const cr = creditLine([["Question", CREDITS?.q?.[item.id]], ["Notes", CREDITS?.en?.[item.id]]]); if (cr) right.append(cr);
     dockFor(item, { chosenText: unsure ? null : item.options[oi] });
     nextLink();
   }
@@ -1009,6 +1022,7 @@ function listenCard(left, right, item, card) {
       li.append(el("span", "who sc", qr ? (i === 0 ? "Q" : L[i - 1]) : ln.who), t, rp); ul.append(li);
     });
     wrap.append(ul); right.append(wrap);
+    const cr = creditLine([["Questions", CREDITS?.q?.[item.id]], ["Notes", CREDITS?.en?.[item.id]]]); if (cr) right.append(cr);
     nextLink();
   }
 }
@@ -1184,6 +1198,11 @@ function settingsView() {
   for (const [v, t] of [["system", "System"], ["light", "Light"], ["dark", "Dark"]]) { const o = el("option", null, t); o.value = v; if (P.settings.theme === v) o.selected = true; theme.append(o); }
   theme.onchange = () => { P.settings.theme = theme.value; applyTheme(); saveProfile(); };
   set("Appearance", null, theme);
+  if (CREDITS) {
+    const cr = el("input"); cr.type = "checkbox"; cr.id = "set-credits"; cr.checked = P.settings.credits !== false;
+    cr.onchange = () => { P.settings.credits = cr.checked; saveProfile(); };
+    set("Show who wrote each part", "A small label on questions, notes, lessons, stories and word cards, from the labels saved with your account.", cr);
+  }
   app.append(box);
   const info = el("div", "small quiet"); info.style.marginTop = "2em";
   info.append(el("p", null, "Saved " + (Store.mode === "db" ? "to your claude.ai account, so your phone and computer share it." : "in this browser only.")),

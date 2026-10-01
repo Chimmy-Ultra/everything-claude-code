@@ -1,14 +1,25 @@
 {
   "id": "s22",
-  "title": ["Two Signatures, Always", "永遠要兩個簽名"],
+  "title": [
+    "Two Signatures, Always",
+    "永遠要兩個簽名"
+  ],
   "paras": [
-    ["Every March the head office of Calder Hardware went quiet and tense. The annual {{audit|audit}} was about to begin, and Hannah Ruiz, who worked in accounts payable, had spent a week putting her files in order. At nine sharp, an {{auditor|auditor}} named Mr. Vance arrived with a laptop and a very small smile.",
-     "每年三月，卡爾德五金的總公司都會變得安靜又緊繃。年度審計即將開始，在應付帳款部門工作的漢娜・魯伊斯花了一個星期把她的檔案整理好。九點整，一位姓萬斯的查帳員帶著筆電和一個很淺的微笑來了。"],
-    ["“We {{adhere|adhere}} to the same steps for every payment,” said Greg, her {{superior|superior}}, as he led Mr. Vance to a conference room. “Nothing goes out without two signatures, and that rule is {{strictly|strictly}} enforced.” Hannah nodded, hoping she looked calmer than she felt.",
-     "「每一筆付款我們都遵守同樣的步驟，」她的主管葛雷格一邊帶萬斯先生走向會議室，一邊說。「沒有兩個簽名，任何款項都不會付出去，而且這條規定執行得非常嚴格。」漢娜點點頭，希望自己看起來比實際上鎮定。"],
-    ["By lunch, Mr. Vance had found something: an $8,400 payment to a roofing supplier had been made twice. Hannah’s stomach dropped. Then she opened her folder. The supplier had emailed the same invoice two times with different numbers, and she had spotted the {{duplicate|duplicate}} a week earlier. Her notes showed the refund request, the supplier’s reply, and Greg’s approval.",
-     "到了午餐時間，萬斯先生發現了一件事：付給一家屋頂材料供應商的八千四百美元被付了兩次。漢娜的心往下一沉。接著她打開自己的資料夾。那家供應商用不同的編號把同一張發票寄了兩次，而她一週前就發現了這張重複的發票。她的紀錄裡有退款申請、供應商的回覆，還有葛雷格的核准。"],
-    ["Mr. Vance read every page and nodded. “Good records,” he said. “I’ll write it up {{accordingly|accordingly}}: a small error, found and fixed.” “The refund should arrive {{shortly|shortly}},” Hannah said. When he left for the next department, Greg handed her a cup of coffee without a word, which from him was a speech.",
-     "萬斯先生把每一頁都看過，點了點頭。「紀錄很完整，」他說。「我會據此寫進報告：一個小錯誤，已發現並更正。」「退款很快就會入帳，」漢娜說。他前往下一個部門之後，葛雷格一句話也沒說，遞給她一杯咖啡，對他來說，這已經是一篇演說了。"]
+    [
+      "Every March the head office of Calder Hardware went quiet and tense. The annual {{audit|audit}} was about to begin, and Paula Ruiz, who worked in accounts payable, had spent a week putting her files in order. At nine sharp, an {{auditor|auditor}} named Mr. Vance arrived with a laptop and a very small smile.",
+      "每年三月，卡爾德五金的總公司都會變得安靜又緊繃。年度查核即將開始，在應付帳款部門工作的寶拉・魯伊斯花了一個星期把她的檔案整理好。九點整，一位姓萬斯的查帳員帶著筆電和一個很淺的微笑來了。"
+    ],
+    [
+      "“We {{adhere|adhere}} to the same procedure for every payment,” said Martin, her {{superior|superior}}, as he led Mr. Vance to a conference room. “Nothing goes out without two signatures, and that rule is {{strictly|strictly}} enforced.” Paula nodded, hoping she looked calmer than she felt.",
+      "「每一筆付款我們都遵守同樣的程序，」她的主管馬丁一邊帶萬斯先生走向會議室，一邊說。「沒有兩個簽名，任何款項都不會付出去，而且這條規定執行得非常嚴格。」寶拉點點頭，希望自己看起來比實際上鎮定。"
+    ],
+    [
+      "By lunch, Mr. Vance had found something: an $8,400 payment to a roofing supplier had been made twice. Paula’s stomach dropped. Then she opened her folder. The supplier had emailed the same invoice twice under different numbers, which is how it got paid twice, but she had spotted the {{duplicate|duplicate}} payment a week earlier. Her notes showed the refund request, the supplier’s reply, and Martin’s approval.",
+      "到了午餐時間，萬斯先生發現了一件事：付給一家屋頂材料供應商的八千四百美元被付了兩次。寶拉的心往下一沉。接著她打開自己的資料夾。那家供應商用不同的編號把同一張發票寄了兩次，所以才會付了兩次款，不過她一週前就發現了這筆重複付款。她的紀錄裡有退款申請、供應商的回覆，還有馬丁的核准。"
+    ],
+    [
+      "Mr. Vance read every page and nodded. “Good records,” he said. “I’ll write it up {{accordingly|accordingly}}: a small error, found and fixed.” “The refund should arrive {{shortly|shortly}},” Paula said. When he left for the next department, Martin handed her a cup of coffee without a word, which from him was a speech.",
+      "萬斯先生把每一頁都看過，點了點頭。「紀錄很完整，」他說。「我會據此寫進報告：一個小錯誤，已發現並更正。」「退款很快就會入帳，」寶拉說。他前往下一個部門之後，馬丁一句話也沒說，遞給她一杯咖啡，對他來說，這已經是一篇演說了。"
+    ]
   ]
 }

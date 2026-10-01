@@ -89,3 +89,10 @@ Every chapter now opens with a short lesson (`lessons/<unit>.json`, style in `le
 - New lesson for Talks: What Happens Next (reviewed, 7 fixes).
 - Round-5 audio passed the speech check; the four flagged clips differ only in spelling (Mr./mister, e-mail/email, any time/anytime).
 - Bank now: 106 grammar, 61 vocabulary, 37 listening sets (67 questions), 234 questions.
+
+## Word stories (2026-10-01)
+- The word chapter is no longer a list. 24 short workplace stories (`words/stories/`, plan in `plan.json`, rules in `words/STORIES.md`) use every one of the 228 card words exactly once; tapping a word opens its card (side panel on wide screens, sheet on phones). `words/check_stories.py` checks coverage, marks, length (130–220 words) and banned phrases.
+- Three review agents read all 24 stories (`stories_review_1.md`–`_3.md`): 23 stories edited (each change is listed in those files), mostly timeline and fact slips inside a story (times, counts, who said what), target words used in a weak or unguessable sense, and literal Chinese.
+- Names were then made unique across stories (14 stories renamed, English and Chinese together), since several characters and companies had been reused by different writers.
+- Each part can show a small "who wrote this" line. The labels live in the page's own database on the owner's account, not in this repository; Settings can hide them.
+

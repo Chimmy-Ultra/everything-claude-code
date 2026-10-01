@@ -58,15 +58,17 @@ const log = (...a) => console.log(...a);
   await p.locator('#session .head button').first().click(); await p.waitForTimeout(200);
   await p.getByRole('button', { name: /Review shelf/ }).click(); await p.getByRole('button', { name: 'All' }).click();
   log('8 shelf rows:', await p.locator('.list > li').count());
-  // 9 words chapter: search, card, related link, practise
-  await p.getByText('← Contents').click(); await p.getByRole('button', { name: /High-frequency words/ }).click();
-  await p.locator('#word-search').fill('zzzz'); log('9 search no match:', await p.locator('.empty').textContent());
-  await p.locator('#word-search').fill('valid'); await p.locator('.wlist button').first().click(); await p.waitForTimeout(200);
-  log('  card:', await p.locator('.word h1').textContent(), '| examples', await p.locator('.word .exs li').count(), '| ipa', await p.locator('.word .ipa').textContent());
+  // 9 stories: open one, tap a word, card in sheet, related link, practise
+  await p.getByText('← Contents').click();
+  await p.locator('.part', { hasText: 'Stories' }).locator('button.row').first().click(); await p.waitForTimeout(200);
+  log('9 story:', await p.locator('.storycol h1').textContent(), '| paras', await p.locator('.storyp').count(), '| dotted words', await p.locator('.sw').count());
+  await p.locator('.sw').first().click(); await p.waitForTimeout(200);
+  log('  card:', await p.locator('#sheet .word h1').textContent(), '| examples', await p.locator('#sheet .word .exs li').count(), '| ipa', await p.locator('#sheet .word .ipa').textContent());
   await p.screenshot({ path: SP + '/9-card.png', fullPage: true });
-  const link = p.locator('.net .nw button').first();
-  if (await link.count()) { const t = await link.textContent(); await link.click(); log('  related link', t, '-> card', await p.locator('.word h1').textContent()); }
-  await p.locator('.word .note .link').click(); await p.waitForTimeout(300); log('  Practise started, head:', await p.locator('#session .head button').first().textContent());
+  const link = p.locator('#sheet .net .nw button').first();
+  if (await link.count()) { const t = await link.textContent(); await link.click(); log('  related link', t, '-> card', await p.locator('#sheet .word h1').textContent()); }
+  await p.locator('#sheet .head button').click(); await p.waitForTimeout(150);
+  await p.getByRole('button', { name: 'Practise questions with these words' }).click(); await p.waitForTimeout(300); log('  Practise started, head:', await p.locator('#session .head button').first().textContent());
   // 10 listening: real audio playback
   await p.locator('#session .head button').first().click();
   await p.getByRole('button', { name: /^Listening/ }).first().click(); await p.waitForTimeout(400);

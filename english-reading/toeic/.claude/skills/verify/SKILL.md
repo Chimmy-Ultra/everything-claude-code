@@ -9,7 +9,7 @@ Build (from `english-reading/toeic/`): `python3 build_page.py` — refuses to bu
 Drive: `SP=<scratch dir> node .claude/skills/verify/drive.js` (needs `$SP/verify/` to exist; writes screenshots there).
 It uses the global Playwright (`require(npm root -g + '/playwright')`, Chromium preinstalled) at 390×844 and clicks through:
 contents → chapter → lesson → Skip → answer a wrong option → dock (Lesson sheet, Esc, 中, Star, Ask Claude with a mocked
-`window.claude.use('sample')`) → tap-to-gloss → Next → reload + Continue → review shelf → word chapter (search, card, Practise)
+`window.claude.use('sample')`) → tap-to-gloss → Next → reload + Continue → review shelf → a story (tap a word, card, related link, Practise)
 → listening playback (`--autoplay-policy=no-user-gesture-required`; checks `au.paused`/`currentTime`) → text-size limits.
 
 Gotchas

@@ -1,12 +1,21 @@
 {
   "id": "s23",
-  "title": ["Slow Down, Look Up", "慢一點，抬起頭"],
+  "title": [
+    "Slow Down, Look Up",
+    "慢一點，抬起頭"
+  ],
   "paras": [
-    ["On the last Friday of the program, eight {{intern|interns}} in their best clothes sat in the training room at Larkspur Insurance, waiting for {{graduation|graduation}}. Omar Haddad checked his tie for the third time. Eight weeks earlier he hadn’t known the difference between a claim and a policy.",
-     "課程的最後一個星期五，八位實習生穿著最體面的衣服，坐在雲雀保險的訓練教室裡等待結業典禮。歐瑪・哈達德第三次檢查自己的領帶。八週前，他連理賠和保單有什麼不同都不知道。"],
-    ["Their {{trainer|trainer}}, Ms. Becker, had started by asking each of them to {{familiarize|familiarize}} themselves with the claims system. Omar had been lost for days. In week five, after his practice presentation, she gave him blunt {{feedback|feedback}}: “Good ideas. You talk too fast, and you read from your slides.” He spent the next three Thursdays in her public-speaking {{workshop|workshop}}, saying the same two minutes out loud until his roommate begged him to stop.",
-     "他們的訓練講師貝克女士一開始就要每個人先熟悉理賠系統。歐瑪有好幾天都摸不著頭緒。到了第五週，他做完練習簡報後，她給了他直率的回饋：「想法很好。但你講得太快，而且是在照著投影片念。」接下來三個星期四，他都待在她開的簡報技巧工作坊裡，把同樣的兩分鐘大聲講了一遍又一遍，直到室友求他別再練了。"],
-    ["Now he had to give the three-minute speech for the whole group. His hands shook, but he remembered the only two rules: slow down, look up. The room stayed quiet for a second after he finished, and then everyone clapped. Ms. Becker handed each intern a {{certificate|certificate}}. When she gave Omar his, she leaned in and said, “That was the best speech of the day.” It was the nicest {{compliment|compliment}} he had heard all year, and he tried very hard not to grin.",
-     "現在，他得代表全體學員發表三分鐘的演說。他的手在發抖，但他記得僅有的兩條原則：慢一點，抬起頭。他講完後，全場安靜了一秒，接著大家都鼓起掌來。貝克女士把證書發給每位實習生。輪到歐瑪時，她湊近他說：「那是今天最棒的一場演說。」這是他今年聽過最窩心的稱讚，他拚命忍住不要咧嘴笑出來。"]
+    [
+      "On the last Friday of the program, eight {{intern|interns}} in their best clothes sat in the training room at Larkspur Insurance, waiting for {{graduation|graduation}}. Karim Haddad checked his tie for the third time. Eight weeks earlier he hadn’t known the difference between a claim and a policy.",
+      "課程的最後一個星期五，八位實習生穿著最體面的衣服，坐在雲雀保險的訓練教室裡等待結業典禮。卡里姆・哈達德第三次檢查自己的領帶。八週前，他連理賠和保單有什麼不同都不知道。"
+    ],
+    [
+      "Their {{trainer|trainer}}, Ms. Becker, had started by asking each of them to {{familiarize|familiarize}} themselves with the claims system. Karim had been lost for days. In week five, after his practice presentation, she gave him blunt {{feedback|feedback}}: “Good ideas. You talk too fast, and you read from your slides.” He spent the next three Thursdays in her public-speaking {{workshop|workshop}}, saying the same three minutes out loud until his roommate begged him to stop.",
+      "他們的訓練講師貝克女士一開始就要每個人先熟悉理賠系統。卡里姆有好幾天都摸不著頭緒。到了第五週，他做完練習簡報後，她給了他直率的回饋：「想法很好。但你講得太快，而且是在照著投影片念。」接下來三個星期四，他都待在她開的演說技巧工作坊裡，把同樣的三分鐘大聲講了一遍又一遍，直到室友求他別再練了。"
+    ],
+    [
+      "Now it was his turn to give a three-minute speech in front of the whole group. His hands shook, but he remembered the only two rules: slow down, look up. The room stayed quiet for a second after he finished, and then everyone clapped. Ms. Becker handed each intern a {{certificate|certificate}}. When she gave Karim his, she leaned in and said, “That was the best speech of the day.” It was the nicest {{compliment|compliment}} he had heard all year, and he tried very hard not to grin.",
+      "現在輪到他在全體學員面前發表三分鐘的演說。他的手在發抖，但他記得僅有的兩條原則：慢一點，抬起頭。他講完後，全場安靜了一秒，接著大家都鼓起掌來。貝克女士把證書發給每位實習生。輪到卡里姆時，她湊近他說：「那是今天最棒的一場演說。」這是他今年聽過最窩心的稱讚，他拚命忍住不要咧嘴笑出來。"
+    ]
   ]
 }
