@@ -1,0 +1,25 @@
+{
+  "id": "s04",
+  "title": [
+    "The $400 Typo",
+    "那筆四百元的手誤"
+  ],
+  "paras": [
+    [
+      "On the last day of the month, Hannah Cole, the {{accountant|accountant}} at a small design studio, had a long list. The {{quarterly|quarterly}} report was due Friday, and the printer's {{invoice|invoice}} was {{payable|payable}} within thirty days, which meant by Monday. She opened the {{spreadsheet|spreadsheet}} for {{payroll|payroll}} first.",
+      "月底最後一天，一間小型設計工作室的會計漢娜．柯爾手上有一長串待辦事項。季報週五要交，印刷廠的請款單三十天內就得付款，也就是下週一前。她先打開薪資作業的試算表。"
+    ],
+    [
+      "Halfway down the column, one number looked wrong. A typo had turned Ben Ortiz's $1,000 bonus into $1,400, so the company had {{overpay|overpaid}} him by $400. Hannah checked the file twice, hoping she was wrong. She wasn't.",
+      "看到那一欄的一半時，有個數字不對勁。一個打錯的字，把班．奧蒂茲一千元的獎金變成一千四百元，公司因此多付了他四百元。漢娜把檔案檢查了兩遍，希望是自己看錯，結果並沒有。"
+    ],
+    [
+      "She didn't want to surprise him by email, so she walked over to his desk. \"It was our mistake, not yours,\" she said. \"But we need to {{deduct|deduct}} the extra money from your next paycheck. If that's too much at once, we can take half now and the {{remainder|remainder}} the month after.\" Ben shrugged. \"Half and half is fine. Honestly, I thought the bonus was generous.\"",
+      "她不想用電子郵件嚇他一跳，所以直接走到他的座位。「這是我們的錯，不是你的錯，」她說，「不過我們得從你下個月的薪水扣掉多給的錢。如果一次扣太多，我們可以這個月先扣一半，剩下的下個月再扣。」班聳了聳肩。「一半一半就好。老實說，我還覺得這筆獎金滿大方的。」"
+    ],
+    [
+      "Back at her desk, Hannah fixed the cell and sent the report on time. Her boss, Mr. Grant, stopped by with his coffee. \"Can't we {{automate|automate}} some of this?\" he asked. \"A formula that checks every payment against the contract would have caught that typo.\" Hannah smiled. She had been asking for exactly that for a year.",
+      "回到座位上，漢娜修正了那個儲存格，並準時交出報告。她的老闆格蘭特先生端著咖啡走過來。「這些作業能不能讓一部分自動化？」他問，「如果有個公式能把每筆付款和合約對照，那個錯字早就被抓出來了。」漢娜笑了。她已經要求這件事整整一年了。"
+    ]
+  ]
+}

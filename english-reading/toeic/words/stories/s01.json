@@ -1,0 +1,25 @@
+{
+  "id": "s01",
+  "title": [
+    "The Flight That Wouldn't Leave",
+    "不肯起飛的班機"
+  ],
+  "paras": [
+    [
+      "Mia Torres reached the {{airport|airport}} at 5:30 a.m., two hours before her flight to Toronto. In {{terminal|Terminal}} B, a crowd had already gathered under the big screen, and the word DELAYED was blinking next to her {{departure|departure}} time. She had a client meeting at eleven.",
+      "米亞．托雷斯清晨五點半抵達機場，距離她飛多倫多的班機還有兩個小時。B 航廈裡，大螢幕底下已經聚了一群人，她那班飛機的起飛時間旁正閃著「延誤」兩個字。她十一點還有一場客戶會議。"
+    ],
+    [
+      "At the counter, she showed her {{passport|passport}} to the gate {{attendant|attendant}}, a young man named Luis. He made sure it was still {{valid|valid}}, then lowered his voice. \"I'm sorry, ma'am. There's a problem with the plane. It won't leave until noon.\" Mia did the math and felt her stomach drop.",
+      "到了櫃檯，她把護照遞給地勤人員路易斯，一位年輕男生。他確認護照仍在有效期內，然後壓低了聲音：「很抱歉，女士，飛機出了點問題，要到中午才能起飛。」米亞心算了一下，心頭一沉。"
+    ],
+    [
+      "Luis typed for a full minute. \"We have nothing else to Toronto today, but a partner {{carrier|carrier}} has an 8:05 flight with two seats open. Boarding has already started, though.\" \"Then I'll take it,\" Mia said.",
+      "路易斯敲了整整一分鐘的鍵盤。「我們今天沒有其他飛多倫多的班機，不過合作的航空公司有一班八點零五分的，還有兩個空位。只是已經開始登機了。」「那我搭那班，」米亞說。"
+    ],
+    [
+      "She ran. Behind her, an angry {{traveler|traveler}} was still arguing with the desk. In the boarding line, Mia opened her {{itinerary|itinerary}} and saw that the hotel car was booked for 9:15, half an hour too early. She texted the driver, then wrote to her client: \"Landing late. Can we {{postpone|postpone}} our coffee until after the meeting?\" She stepped onto the plane with three minutes to spare.",
+      "她拔腿就跑。身後，一位氣呼呼的旅客還在跟櫃檯爭論。排隊登機時，米亞打開行程表，發現飯店的接送車訂在九點十五分，比她現在的抵達時間早了半小時。她傳訊息給司機，接著寫信給客戶：「我會晚點到。咖啡可以延到會議結束後再喝嗎？」她在登機結束前三分鐘上了飛機。"
+    ]
+  ]
+}
