@@ -1,0 +1,42 @@
+{
+ "answers": {
+  "g-relative-23": {
+   "answer": "A",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "'which' with the whole preceding clause as antecedent (releasing the schedule without consulting the supervisors) proved a costly oversight. 'who' would make the supervisors the oversight (absurd); 'what' cannot follow a comma as a relative; 'that' cannot introduce a non-restrictive clause after a comma.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes (supervisors, who proved reads fine in the window); D no (the predicate 'a costly oversight' that excludes 'who' is within four words); B yes (nearest-noun attraction to 'supervisors'); S yes-ish (recognise the antecedent is the whole clause, not a noun) -> medium since D fails",
+   "style": 4,
+   "why": "D fails: 'a costly oversight' right after the gap excludes 'who'.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "Not ambiguous: 'who' = supervisors proved an oversight is absurd; 'that' after a comma is ungrammatical in formal writing."
+  },
+  "g-relative-25": {
+   "answer": "C",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "'who ... have led' needs the subject form; the relative is the subject of 'have led', coordinated with 'whom it trained' but with a different function. 'whom' as subject is hypercorrection (4.2). 'whose' needs a noun; 'which' is wrong for people.",
+   "vsToeic": "similar",
+   "band": "hard",
+   "ldbs": "L yes (whom after 'and' reads as parallel); D yes ('have led' comes after 'since April alone' beyond the window); B yes (parallelism with 'whom it trained' and hypercorrection); S yes (find the real function after the adverbial) -> hard",
+   "style": 4,
+   "why": "Passes L, D, B and S.",
+   "fix": "",
+   "tooClose": false,
+   "editorNote": "who/whom across 'and': 'and whom since April alone have led' is not acceptable in formal writing; not ambiguous."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [],
+ "overall": "Both items are clean with a single defensible answer. g-relative-25 is a genuine hard item (parallel whom + subject who across an adverbial); g-relative-23 is medium because the predicate noun 'oversight' sits next to the gap and kills 'who' locally. Typical TOEIC relative items are shorter; these are slightly harder in stem length but similar in structure.",
+ "bandCounts": {
+  "easy": 0,
+  "medium": 1,
+  "hard": 1
+ }
+}

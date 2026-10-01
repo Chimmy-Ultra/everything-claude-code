@@ -25,7 +25,7 @@ ITEMS = [
     # q3 the railway pays for taxis after the buses stop at 10:00 (last third); the key is paraphrased.
     {
         "id": "l-talk-06", "type": "listen", "format": "talk", "unit": "talk-topic", "level": 3,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 2, "accent": "uk",
         "audio": {
             "dir": "audio/l-talk-06", "gapMs": 500,
             "lines": [
@@ -113,8 +113,8 @@ ITEMS = [
     # q1 cause of the revised estimate (line 4, after "But"). q2 purpose of mentioning Orchard Road: line 5 sounds
     # like a recommendation, line 6 reverses it. q3 advice in the last third; the 8:15 update is the speaker's action.
     {
-        "id": "l-talk-07", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "us",
+        "id": "l-talk-07", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 2,
+        "source": "hand", "reviewed": True, "v": 2, "accent": "us",
         "audio": {
             "dir": "audio/l-talk-07", "gapMs": 500,
             "lines": [
@@ -209,8 +209,8 @@ ITEMS = [
     # the phone line. q2 conditional: "skip this step" applies only to callers on the registered phone.
     # q3 the offer after "If you'd rather not hold" (last two lines).
     {
-        "id": "l-talk-08", "type": "listen", "format": "talk", "unit": "talk-next", "level": 3,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "us",
+        "id": "l-talk-08", "type": "listen", "format": "talk", "unit": "talk-next", "level": 2,
+        "source": "hand", "reviewed": True, "v": 2, "accent": "us",
         "audio": {
             "dir": "audio/l-talk-08", "gapMs": 500,
             "lines": [
@@ -305,7 +305,7 @@ ITEMS = [
     # column, so no arithmetic: the regular price in the same row ($95.00) is the trap. q3 quote with a literal trap.
     {
         "id": "l-talk-09", "type": "listen", "format": "talk", "unit": "talk-topic", "level": 3,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 2, "accent": "uk",
         "graphic": {
             "caption": "Cedar Row Storage: Monthly Rates",
             "head": ["Unit", "Size", "Regular price", "First month (new customers)"],
@@ -399,7 +399,7 @@ ITEMS = [
     # nor 3:00. q3 detail in the last third (survey by Friday); the key is a paraphrase.
     {
         "id": "l-talk-10", "type": "listen", "format": "talk", "unit": "talk-detail", "level": 3,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 2, "accent": "uk",
         "graphic": {
             "caption": "Customer Service Workshop: Printed Schedule",
             "head": ["Time", "Session", "Room"],
@@ -497,7 +497,7 @@ ITEMS = [
     # belong to the third stop and the tasting is last; the key "Register their attendance" is a paraphrase.
     {
         "id": "l-talk-11", "type": "listen", "format": "talk", "unit": "talk-next", "level": 3,
-        "source": "hand", "reviewed": False, "v": 2, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 2, "accent": "us",
         "audio": {
             "dir": "audio/l-talk-11", "gapMs": 500,
             "lines": [
@@ -555,7 +555,7 @@ ITEMS = [
                 },
             },
             {
-                "q": "What will the listeners most likely do next?",
+                "q": "What must the listeners do before the tour sets off?",
                 "options": ["Collect ear protection", "Sample some coffee", "Go to the storage room", "Register their attendance"],
                 "answer": 3,
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},

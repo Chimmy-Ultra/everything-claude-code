@@ -9,8 +9,8 @@ reviewed 由審核者改成 True。
 
 ITEMS = [
     {
-        "id": "g-relative-08", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-relative-08", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "Mr. Okafor is the only finalist ______ recently updated and unusually detailed résumé lists both warehouse automation and customs compliance, and the panel has therefore placed him first on its shortlist.",
         "options": ["who's", "who", "whose", "whom"],
         "answer": 2,
@@ -34,8 +34,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-09", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-relative-09", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The Brightwater hangar, ______, despite its age and its cramped doors, still handles every overnight engine check for the airline's regional fleet, is scheduled to be replaced by a larger facility in 2028.",
         "options": ["where", "that", "what", "which"],
         "answer": 3,
@@ -59,8 +59,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-10", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B S",
+        "id": "g-relative-10", "type": "grammar", "format": "gap", "unit": "relative", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B S",
         "stem": "The caterer withdrew just two days before the gala, ______ is exactly what the organizers had feared when they awarded the contract to the lowest bidder.",
         "options": ["what", "which", "it", "that"],
         "answer": 1,
@@ -84,8 +84,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-11", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-relative-11", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The credit committee approved ______ the external auditors, after reviewing three years of loan files, had recommended, and the risk department was asked to report on progress every quarter.",
         "options": ["that", "which", "whom", "what"],
         "answer": 3,
@@ -110,7 +110,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-12", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The translator ______ the publisher has, over the past nine years, collaborated on every title in its Nordic crime series is retiring, and the search for a successor has begun.",
         "options": ["with whom", "whom", "who", "whose"],
         "answer": 0,
@@ -135,7 +135,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-13", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "In situations ______ a supplier cannot, for reasons beyond its control, deliver within the agreed period, the buyer may extend the deadline once without penalty or cancel the order.",
         "options": ["which", "whose", "where", "whom"],
         "answer": 2,
@@ -159,8 +159,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-14", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-relative-14", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The sanitation department's annual compliance audit, ______ the inspectors interviewed, one by one, more than sixty drivers and reviewed two years of maintenance logs, found no safety violations at any of the four depots.",
         "options": ["which", "during which", "that", "whose"],
         "answer": 1,
@@ -184,8 +184,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-15", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "id": "g-relative-15", "type": "grammar", "format": "gap", "unit": "relative", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "The university operates three satellite campuses, ______ combined enrollment has doubled since 2018 and now exceeds that of the main campus.",
         "options": ["whose", "of which", "which", "who's"],
         "answer": 0,
@@ -210,7 +210,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-16", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "The staffing agency placed forty temporary nurses at the Eastgate clinic during the flu season, ______ had previously worked in intensive care and were able to start without additional orientation.",
         "options": ["many of them", "whom many", "many of whom", "many who"],
         "answer": 2,
@@ -234,8 +234,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-17", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-relative-17", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "The museum's board received three proposals to redesign the east gallery, ______ met the budget ceiling set by the finance committee in March, and a second round of tenders was therefore announced.",
         "options": ["both of which", "none of which", "neither of which", "either of which"],
         "answer": 1,
@@ -260,7 +260,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-18", "type": "grammar", "format": "gap", "unit": "relative", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "B",
         "stem": "Claims under the extended warranty must be filed within thirty days of the purchase date or of the date on which the fault was first detected, ______ is later, and must include proof of purchase.",
         "options": ["whoever", "whenever", "wherever", "whichever"],
         "answer": 3,
@@ -280,7 +280,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-19", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "Front desk agents are free to offer guests ______ they judge will resolve a complaint, from a room upgrade to a complimentary dinner, without first consulting a duty manager.",
         "options": ["whatever", "that", "whoever", "which"],
         "answer": 0,
@@ -304,8 +304,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-relative-20", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-relative-20", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Any supporting documents ______ with the court registry after the filing deadline will be returned unopened, and the claimant will be notified of the rejection in writing.",
         "options": ["filing", "were filed", "filed", "that filed"],
         "answer": 2,
@@ -330,7 +330,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-21", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Technicians ______ the quarterly calibration of the extruders at the Eastfield plant, most of them with more than a decade of experience, have been reporting the same fault since January.",
         "options": ["performed", "performing", "perform", "being performed"],
         "answer": 1,
@@ -355,7 +355,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-22", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The head of the apprenticeship program, ______ the board believes will oversee every stage of next year's expansion, has already asked the plant managers to submit their staffing plans by Friday.",
         "options": ["that", "whom", "whose", "who"],
         "answer": 3,
@@ -380,7 +380,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-23", "type": "grammar", "format": "gap", "unit": "relative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "The agency released the revised schedule without first consulting the shift supervisors, ______ proved a costly oversight when the first trucks arrived on Monday morning and found the loading dock without a crew.",
         "options": ["which", "who", "what", "that"],
         "answer": 0,
@@ -405,7 +405,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-24", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The auditors named the regional manager ______ attention the discrepancy in the freight invoices had first been brought in January, though no corrective step was taken for another four months.",
         "options": ["whose", "to whose", "to whom", "whom"],
         "answer": 1,
@@ -430,7 +430,7 @@ ITEMS = [
     },
     {
         "id": "g-relative-25", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The library thanked the volunteers whom it trained last winter and ______ since April alone have led more than two hundred reading sessions for children from local schools.",
         "options": ["whom", "whose", "who", "which"],
         "answer": 2,

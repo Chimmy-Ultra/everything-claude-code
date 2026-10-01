@@ -9,8 +9,8 @@ S 兩步），"-" 表示四項都沒過；level 是出題者估計，最終由�
 
 ITEMS = [
     {
-        "id": "g-connect-09", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-connect-09", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The museum kept all three galleries open to visitors ______ the renovation work that its trustees had scheduled to close them for most of the spring.",
         "options": ["even though", "in light of", "due to", "in spite of"],
         "answer": 3,
@@ -35,7 +35,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-10", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B S",
         "stem": "______ the review panel having rejected its first two proposals, the consulting firm won the contract with a third bid that met every requirement in the tender.",
         "options": ["Although", "Whenever", "Despite", "Therefore"],
         "answer": 2,
@@ -60,7 +60,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-11", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Waiting times at the clinic fell sharply in May ______ hiring two temporary receptionists for the front desk cleared the backlog of unanswered calls within three weeks.",
         "options": ["due to", "thanks to", "because", "as a result of"],
         "answer": 2,
@@ -84,8 +84,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-12", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-connect-12", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "______ a fault in the cooling system that technicians first detected during the January shutdown, daily output at the main plant has been held to roughly four-fifths of capacity.",
         "options": ["Owing to", "Although", "As a result", "Therefore"],
         "answer": 0,
@@ -109,8 +109,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-13", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-connect-13", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The two agents assigned to the gate must stay at the podium ______ passengers who need wheelchair assistance are boarding, and they may leave only when the lead agent releases them.",
         "options": ["throughout", "while", "although", "regardless of"],
         "answer": 1,
@@ -134,8 +134,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-14", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "id": "g-connect-14", "type": "grammar", "format": "gap", "unit": "connect", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "______ the quarterly audit, when every production system is frozen and access is limited to the security team, no engineer may deploy updates to the payment servers.",
         "options": ["During", "When", "Meanwhile", "Once"],
         "answer": 0,
@@ -160,9 +160,9 @@ ITEMS = [
     },
     {
         "id": "g-connect-15", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The customs broker asked to see the original invoices ______ the warehouse supervisor, who had been on leave since the previous Monday, had a chance to compare them with the manifest.",
-        "options": ["prior to", "before", "although", "in advance of"],
+        "options": ["prior to", "before", "throughout", "in advance of"],
         "answer": 1,
         "explain": {
             "point": "後面接子句的時間連接詞 → before；prior to 只接名詞",
@@ -170,7 +170,7 @@ ITEMS = [
             "wrong": [
                 "prior to 是介系詞，不接子句",
                 None,
-                "although 是連接詞，但表讓步，句意不合",
+                "throughout 是介系詞，不接子句",
                 "in advance of 是介系詞，不接子句",
             ],
             "wrongMore": [
@@ -185,7 +185,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-16", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "______ the wedding reception that the hotel hosts every Saturday evening has ended, kitchen staff reset the banquet room in time for the Sunday brunch service.",
         "options": ["Following", "Afterward", "Throughout", "After"],
         "answer": 3,
@@ -209,8 +209,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-17", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-connect-17", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The bank cannot reverse a wire transfer ______ the sender whose account was debited in error has submitted a signed recall request within twenty-four hours.",
         "options": ["whether", "unless", "without", "as though"],
         "answer": 1,
@@ -235,7 +235,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-18", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "A refund will not be issued ______ repairing the damaged unit proves impossible, since the retailer's policy is to repair a product before replacing it.",
         "options": ["without", "unless", "as though", "regardless of"],
         "answer": 1,
@@ -259,8 +259,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-19", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "id": "g-connect-19", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "______ mortgage applications at the bank's urban branches rose by 14 percent last year, those at its rural branches fell for the third year in a row.",
         "options": ["Regardless of", "Whereas", "However", "Consequently"],
         "answer": 1,
@@ -284,8 +284,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-20", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "id": "g-connect-20", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "The report found that moving the printing plant would cost a fifth more over five years. ______, the board voted to move, citing the lower rents expected from the third year onward.",
         "options": ["Therefore", "Moreover", "As a result", "Nevertheless"],
         "answer": 3,
@@ -310,7 +310,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-21", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Please return the signed loan agreement to the museum registrar by Friday; ______, the painting will be sent back to its owner at the end of the month.",
         "options": ["Consequently", "Moreover", "Otherwise", "However"],
         "answer": 2,
@@ -334,10 +334,10 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-22", "type": "grammar", "format": "gap", "unit": "connect", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "B",
+        "id": "g-connect-22", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "B",
         "stem": "The registrar's office spread the enrollment appointments over four days ______ the online portal, which was rebuilt over the summer, would not be overloaded on the first morning.",
-        "options": ["so that", "in order to", "so as to", "although"],
+        "options": ["so that", "in order to", "so as to", "because of"],
         "answer": 0,
         "explain": {
             "point": "目的 + 另一個主詞的子句 → so that；in order to 後接原形",
@@ -346,7 +346,7 @@ ITEMS = [
                 None,
                 "in order to 後面接原形動詞，不接子句",
                 "so as to 後面接原形動詞，不接子句",
-                "although 是連接詞，但表讓步，句意不合",
+                "because of 是介系詞片語，不接子句",
             ],
             "wrongMore": [
                 None,
@@ -360,7 +360,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-23", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "The help desk received ______ detailed feedback from the pilot group of forty clerks that it rewrote the entire onboarding guide before the rollout.",
         "options": ["so", "too", "such", "very"],
         "answer": 2,
@@ -384,8 +384,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-24", "type": "grammar", "format": "gap", "unit": "connect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-connect-24", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Ms. Aldana, who has not yet decided whether she will make the trip, will receive no credit for her non-refundable ticket ______ she cancels more than a month in advance.",
         "options": ["even if", "even though", "even so", "as though"],
         "answer": 0,
@@ -410,7 +410,7 @@ ITEMS = [
     },
     {
         "id": "g-connect-25", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "The organizers have already booked a second, smaller room at the hotel ______ more than two hundred delegates register, although only about a hundred and fifty have done so to date.",
         "options": ["once", "when", "in case", "whether"],
         "answer": 2,
@@ -434,8 +434,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-connect-26", "type": "grammar", "format": "gap", "unit": "connect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L B",
+        "id": "g-connect-26", "type": "grammar", "format": "gap", "unit": "connect", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L B",
         "stem": "The bank will keep the promotional rate on the savings account in place for twelve months ______ the balance never falls below the minimum shown in the product guide.",
         "options": ["as long as", "as far as", "even though", "now that"],
         "answer": 0,
