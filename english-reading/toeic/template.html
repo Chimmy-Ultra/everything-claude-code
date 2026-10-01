@@ -7,18 +7,19 @@
 /* Layout: a printed workbook. Reading pages are one 34rem column; a question is a two-page spread on wide
    screens (question left, notes right) and one column on phones. Interface text is English; Chinese waits behind 中. */
 :root{
-  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --faint:#8E958F; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E6EBE3; --claude:#D97757;
+  --paper:#F2ECDF; --ink:#2A251E; --soft:#655B4C; --faint:#7F7462; --rule:#DCD2BF; --accent:#9A4A26; --pencil:#B4442E; --wash:#E8DFCC; --claude:#C2643F; --shadow:rgba(60,40,15,.14);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1F2621; --claude:#E3916F; color-scheme:dark}
+  :root:not([data-theme="light"]){--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
 }
-:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1F2621; --claude:#E3916F; color-scheme:dark}
+:root[data-theme="dark"]{--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.75 var(--en),var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 72px;font-variant-numeric:oldstyle-nums}
+body{margin:0;background:var(--paper) var(--grain);color:var(--ink);font:400 17px/1.75 var(--en),var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 72px;font-variant-numeric:oldstyle-nums}
 button,input,select,textarea{font:inherit;color:inherit}
 button{background:none;border:0;padding:0;cursor:pointer}
 a{color:inherit}
@@ -176,7 +177,7 @@ button.row:hover .t{color:var(--accent)}
 .next{display:flex;justify-content:flex-end;margin-top:1.4em}
 .next button{font:italic 500 1.08em var(--en);color:var(--accent)}
 .next button:hover{text-decoration:underline;text-underline-offset:4px}
-.tip{position:absolute;z-index:20;pointer-events:none;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px rgba(20,28,24,.12);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
+.tip{position:absolute;z-index:20;pointer-events:none;background:var(--paper);color:var(--ink);border:1px solid var(--rule);box-shadow:0 6px 18px var(--shadow);padding:10px 14px 11px;border-radius:4px;width:min(19rem,calc(100vw - 32px));font:14.5px/1.55 var(--en)}
 .tip .hw{font:italic 500 17px var(--en)}
 .tip .pos{font-style:italic;color:var(--soft);margin-left:.5em}
 .tip .ipa{color:var(--soft);margin-left:.5em;font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en);font-size:.95em}
@@ -1056,7 +1057,7 @@ function record(item, qi, chosen, ok, unsure, ms, timedOut) {
     B[key] = { reason: unsure ? "unsure" : "wrong", level: 0, due: addDays(INTERVALS[0]), wrongCount: unsure ? 0 : 1, enteredAt: now, lastAt: now, v: res.v, history: [hist] };
     res.banked = true; saveBank(key);
   }
-  saveSession();
+  saveSession(); saveProfile();
   if (S.results.length % 5 === 0) saveAttempt(false);
   return res;
 }
