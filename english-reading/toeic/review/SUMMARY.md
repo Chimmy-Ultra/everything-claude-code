@@ -77,5 +77,5 @@ Fable 指出第一版偏簡單。原因在出題規則（詳見 DESIGN.md 附錄
 
 ## The Workbook: English notes (2026-10-01)
 The page was renamed The Workbook and redesigned as a printed workbook at the learner's request. All 192 questions got English notes (`en/*.json`, style in `en/STYLE.md`): grammar and listening show only the rule and how to see it; vocabulary also shows how each other option word is used. The reviewed Chinese stays as a hidden twin.
-- Seven writer agents drafted the notes from the reviewed Chinese explanations; five other agents reviewed every entry against the items and fixed 33 entries (logs: `en_review_*.md`). No answer key was questioned.
+- Seven writer agents drafted the notes from the reviewed Chinese explanations; five other agents reviewed every entry against the items and made 34 fixes (logs: `en_review_*.md`). No answer key was questioned.
 - Word-card phonetics come from the CMU Pronouncing Dictionary (`en/ipa.py`); two phrases it lacks (barcode scanning, minibar) show no phonetics rather than a guess.
