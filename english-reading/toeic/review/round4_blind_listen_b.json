@@ -1,0 +1,213 @@
+[
+ {
+  "id": "l-qr-13",
+  "format": "qr",
+  "heard": "Who's going to cover the Hartwell account while Daniel is away at the sales conference?",
+  "responses": {
+   "A": "Daniel usually handles that account.",
+   "B": "Their offices are closed that whole week anyway.",
+   "C": "The conference covers the new pricing rules."
+  }
+ },
+ {
+  "id": "l-qr-14",
+  "format": "qr",
+  "heard": "Could you mail the signed lease back to the landlord before you leave for the airport?",
+  "responses": {
+   "A": "Yes, my flight lands at six.",
+   "B": "No, it's a two-year lease.",
+   "C": "His assistant is coming by to pick it up at noon."
+  }
+ },
+ {
+  "id": "l-qr-15",
+  "format": "qr",
+  "heard": "The banners for Saturday's open house still haven't arrived.",
+  "responses": {
+   "A": "Should I give the sign company a call?",
+   "B": "Thanks, I'll hang them by the front entrance.",
+   "C": "The open house was a big success last year."
+  }
+ },
+ {
+  "id": "l-qr-16",
+  "format": "qr",
+  "heard": "Should we hold Paul's retirement lunch in the cafeteria or at a restaurant, now that the budget's been cut?",
+  "responses": {
+   "A": "A restaurant, since there's more room in the budget now.",
+   "B": "He's retiring at the end of June.",
+   "C": "Finance hasn't told us how much we can spend yet."
+  }
+ },
+ {
+  "id": "l-qr-17",
+  "format": "qr",
+  "heard": "How long will the network be down this weekend, now that the upgrade includes the warehouse?",
+  "responses": {
+   "A": "It went down twice last month.",
+   "B": "Probably most of Saturday.",
+   "C": "The warehouse is about twenty minutes away."
+  }
+ },
+ {
+  "id": "l-conv-07",
+  "format": "conv",
+  "transcript": [
+   "W: Ian, Colin, thanks for coming in early. Most of last month's customer complaints were about late deliveries.",
+   "M1: Those are mostly sofa orders. Our truck only holds four at a time, and it's fully booked until the end of the month.",
+   "W: Colin, weren't you going to look into hiring a second delivery company?",
+   "M2: I did. On most of our sofas, they'd charge more per delivery than we actually make on the sale.",
+   "M1: Then why not let customers collect their sofas from the warehouse themselves? Plenty of them have asked about that.",
+   "W: I like that. We could even take 10% off for anyone who picks up.",
+   "M2: The loading dock is closed to the public on weekends, though, and most people would want to come on a Saturday.",
+   "W: Then let's offer it on weekdays only, for now. Colin, could you put together a sign for the showroom explaining the offer?",
+   "M2: Sure. I'll have a draft ready this afternoon, and I'll ask Ian to check the wording."
+  ],
+  "questions": [
+   {
+    "q": "What problem does the woman mention?",
+    "options": {
+     "A": "A truck has broken down",
+     "B": "Customers are waiting too long for their orders",
+     "C": "Sofa sales have fallen",
+     "D": "The warehouse is short of staff"
+    }
+   },
+   {
+    "q": "What does Colin say about hiring a second delivery company?",
+    "options": {
+     "A": "It is fully booked until the end of the month",
+     "B": "The store would lose money on many orders",
+     "C": "Customers have already asked for it",
+     "D": "It could only deliver on weekdays"
+    }
+   },
+   {
+    "q": "When will customers be able to pick up their sofas?",
+    "options": {
+     "A": "Only on Saturdays",
+     "B": "Any day of the week",
+     "C": "Monday through Friday",
+     "D": "After the end of the month"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-conv-08",
+  "format": "conv",
+  "graphic": {
+   "caption": "Shipping Rates — One Standard Box",
+   "head": [
+    "Service",
+    "Delivery Time",
+    "Price"
+   ],
+   "rows": [
+    [
+     "Standard Ground",
+     "5–7 business days",
+     "$18.00"
+    ],
+    [
+     "Express Ground",
+     "3 business days",
+     "$32.00"
+    ],
+    [
+     "Two-Day Air",
+     "2 business days",
+     "$45.00"
+    ],
+    [
+     "Overnight Air",
+     "Next business day",
+     "$70.00"
+    ]
+   ]
+  },
+  "transcript": [
+   "W: Hi, I need to send this box of fabric samples to a client. It has to get there by Thursday at the latest.",
+   "M: Since today's Monday, you can rule out our standard service. Anything else on this chart will arrive in time.",
+   "W: I'd like to avoid the air services if I can. My manager wants us to keep shipping costs to a minimum.",
+   "M: Before you decide, ground shipments to that area are running a day behind this week. There's road construction on the main highway.",
+   "W: Oh. Then ground won't work at all.",
+   "M: I'm afraid not. The air services aren't affected, though.",
+   "W: All right, I'll pay for air, but not overnight. Thursday is soon enough.",
+   "M: Sure. Once the box is scanned, I'll e-mail you a tracking number you can forward to your client.",
+   "W: Perfect. My e-mail is on this business card."
+  ],
+  "questions": [
+   {
+    "q": "Why does the woman want to avoid the air services at first?",
+    "options": {
+     "A": "They would not arrive by Thursday",
+     "B": "Her supervisor asked her to limit expenses",
+     "C": "Her client prefers ground delivery",
+     "D": "They are delayed by road construction"
+    }
+   },
+   {
+    "q": "Look at the graphic. How much will the woman most likely pay?",
+    "options": {
+     "A": "$18.00",
+     "B": "$32.00",
+     "C": "$45.00",
+     "D": "$70.00"
+    }
+   },
+   {
+    "q": "What does the man say he will do?",
+    "options": {
+     "A": "Contact the woman's client directly",
+     "B": "Send her a way to follow the shipment",
+     "C": "Switch the box to ground service",
+     "D": "Give her a discount on air shipping"
+    }
+   }
+  ]
+ },
+ {
+  "id": "l-talk-04",
+  "format": "talk",
+  "transcript": [
+   "W: Good morning, and welcome to Hollis Glassworks. My name is Dana, and I'll be showing you around for the next hour.",
+   "W: We'll begin in the furnace room, where our glassblowers shape every vase and bowl by hand.",
+   "W: Trust me, you won't need your jackets in there.",
+   "W: After that, we'll walk through the packing area and stop by the design studio.",
+   "W: Feel free to take pictures anywhere except the studio. Some of the pieces there won't be in stores until next spring.",
+   "W: Normally we'd finish in our gift shop, but the painters are working in there until Friday.",
+   "W: Instead, before you leave, I'll give each of you a card for 10% off anything on our website.",
+   "W: All right, if everyone's ready, please follow me."
+  ],
+  "questions": [
+   {
+    "q": "Who most likely is the speaker?",
+    "options": {
+     "A": "A glassblower",
+     "B": "A tour guide",
+     "C": "A gift shop clerk",
+     "D": "A painter"
+    }
+   },
+   {
+    "q": "Why does the speaker say, \"Trust me, you won't need your jackets in there\"?",
+    "options": {
+     "A": "To explain that jackets are not allowed",
+     "B": "To warn listeners about high temperatures",
+     "C": "To suggest that the visit will be short",
+     "D": "To mention that the work is done outdoors"
+    }
+   },
+   {
+    "q": "What does the speaker say about the design studio?",
+    "options": {
+     "A": "Visitors may take photos there",
+     "B": "It is being painted this week",
+     "C": "It contains products that are not on sale yet",
+     "D": "It is where items are shaped by hand"
+    }
+   }
+  ]
+ }
+]
