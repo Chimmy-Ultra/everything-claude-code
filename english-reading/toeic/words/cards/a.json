@@ -1,0 +1,4345 @@
+[
+ {
+  "w": "abide",
+  "pos": "v.",
+  "zh": "遵守（abide by）；容忍（多用於否定）",
+  "def": [
+   "To accept and follow a rule, decision or agreement; also to tolerate something.",
+   "接受並遵守規定、決定或協議；也指忍受某事。"
+  ],
+  "ex": [
+   [
+    "All contractors must <em>abide</em> by the safety rules on site.",
+    "所有承包商都必須遵守現場的安全規定。"
+   ],
+   [
+    "Employees who fail to <em>abide</em> by the dress code may be sent home.",
+    "未遵守服裝規定的員工可能會被請回家。"
+   ],
+   [
+    "Both companies agreed to <em>abide</em> by the arbitrator's decision.",
+    "兩家公司都同意遵守仲裁人的裁決。"
+   ],
+   [
+    "Our manager cannot <em>abide</em> careless mistakes in client reports.",
+    "我們經理無法容忍客戶報告中的粗心錯誤。"
+   ],
+   [
+    "Guests are asked to <em>abide</em> by the hotel's quiet hours after ten p.m.",
+    "請住客遵守飯店晚上十點後的安靜時段規定。"
+   ]
+  ],
+  "coll": [
+   [
+    "abide by the rules",
+    "遵守規則"
+   ],
+   [
+    "abide by a decision",
+    "遵從決定"
+   ],
+   [
+    "abide by the terms",
+    "遵守條款"
+   ],
+   [
+    "abide by the law",
+    "守法"
+   ],
+   [
+    "cannot abide lateness",
+    "無法忍受遲到"
+   ]
+  ],
+  "family": [
+   {
+    "w": "law-abiding",
+    "pos": "adj.",
+    "zh": "守法的"
+   },
+   {
+    "w": "abiding",
+    "pos": "adj.",
+    "zh": "持久的（如 an abiding interest）"
+   }
+  ],
+  "syn": [
+   {
+    "w": "comply",
+    "note": [
+     "Also followed by with; slightly more formal and common in legal or regulatory contexts.",
+     "後面接 with；稍微更正式，常見於法規情境。"
+    ]
+   },
+   {
+    "w": "obey",
+    "note": [
+     "Obey takes a person or order as object; abide by is used for rules and agreements.",
+     "obey 的受詞是人或命令；abide by 用於規定與協議。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "violate",
+    "zh": "違反"
+   },
+   {
+    "w": "disobey",
+    "zh": "不服從"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "absorb",
+  "pos": "v.",
+  "zh": "吸收；承擔（費用）；使專注；併入",
+  "def": [
+   "To take in liquid, information or shock; to bear a cost; to make something part of a larger whole.",
+   "吸入液體、資訊或衝擊；承擔費用；把較小的事物併入較大者。"
+  ],
+  "ex": [
+   [
+    "The company decided to <em>absorb</em> the shipping costs rather than raise prices.",
+    "公司決定自行吸收運費，而不調漲價格。"
+   ],
+   [
+    "Trainees <em>absorb</em> a great deal of information during their first week.",
+    "受訓人員在第一週吸收了大量資訊。"
+   ],
+   [
+    "The thick carpet helps <em>absorb</em> noise from the open-plan office.",
+    "厚地毯有助於吸收開放式辦公室的噪音。"
+   ],
+   [
+    "After the merger, the smaller firm was <em>absorbed</em> into the parent company.",
+    "合併後，規模較小的公司被併入母公司。"
+   ],
+   [
+    "She was so <em>absorbed</em> in the budget report that she missed lunch.",
+    "她太專注於預算報告，連午餐都錯過了。"
+   ]
+  ],
+  "coll": [
+   [
+    "absorb the cost",
+    "吸收成本"
+   ],
+   [
+    "absorb information",
+    "吸收資訊"
+   ],
+   [
+    "absorb shock",
+    "吸收衝擊"
+   ],
+   [
+    "absorb noise",
+    "吸收噪音"
+   ],
+   [
+    "be absorbed in",
+    "全神貫注於"
+   ]
+  ],
+  "family": [
+   {
+    "w": "absorption",
+    "pos": "n.",
+    "zh": "吸收；併入"
+   },
+   {
+    "w": "absorbent",
+    "pos": "adj.",
+    "zh": "吸水的、吸收性的"
+   },
+   {
+    "w": "absorbing",
+    "pos": "adj.",
+    "zh": "引人入勝的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "soak up",
+    "note": [
+     "Informal and often literal (liquid) or figurative (atmosphere); absorb is more neutral and formal.",
+     "較口語，可指吸水或感受氣氛；absorb 較中性、正式。"
+    ]
+   },
+   {
+    "w": "assimilate",
+    "note": [
+     "Formal; to take in ideas or people and make them fully part of a group or one's own knowledge.",
+     "較正式；指把想法或人完全融入群體或自己的知識中。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "emit",
+    "zh": "釋放、發出（光、熱等）"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "acceptance",
+  "pos": "n.",
+  "zh": "接受；採納；認可",
+  "def": [
+   "The act of agreeing to take something offered, or general approval of an idea.",
+   "同意收下所提供之物的行為，或對某想法的普遍認可。"
+  ],
+  "ex": [
+   [
+    "Please sign the form as your formal <em>acceptance</em> of the job offer.",
+    "請簽署這份表格，作為你正式接受這份工作邀約的證明。"
+   ],
+   [
+    "The new pricing plan has gained wide <em>acceptance</em> among our customers.",
+    "新的定價方案已廣受我們的客戶接受。"
+   ],
+   [
+    "Her <em>acceptance</em> of the award was followed by a short speech.",
+    "她領獎後發表了一段簡短的致詞。"
+   ],
+   [
+    "Final <em>acceptance</em> of the building depends on the inspector's report.",
+    "這棟建築物最終能否驗收取決於檢查員的報告。"
+   ],
+   [
+    "The supplier sent a letter of <em>acceptance</em> within two days of our order.",
+    "供應商在我們下訂單兩天內寄來了接受函。"
+   ]
+  ],
+  "coll": [
+   [
+    "acceptance of an offer",
+    "接受邀約"
+   ],
+   [
+    "letter of acceptance",
+    "接受函、錄取通知"
+   ],
+   [
+    "acceptance speech",
+    "（得獎）致詞"
+   ],
+   [
+    "gain acceptance",
+    "獲得認可"
+   ],
+   [
+    "widespread acceptance",
+    "廣泛接受"
+   ]
+  ],
+  "family": [
+   {
+    "w": "accept",
+    "pos": "v.",
+    "zh": "接受"
+   },
+   {
+    "w": "acceptable",
+    "pos": "adj.",
+    "zh": "可接受的"
+   },
+   {
+    "w": "unacceptable",
+    "pos": "adj.",
+    "zh": "不可接受的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "approval",
+    "note": [
+     "Approval means permission from someone in authority; acceptance means agreeing to take what is offered.",
+     "approval 是有權者的許可；acceptance 是同意收下所提供的東西。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "rejection",
+    "zh": "拒絕、否決"
+   },
+   {
+    "w": "refusal",
+    "zh": "拒絕"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "accessible",
+  "pos": "adj.",
+  "zh": "可到達的；可取得的；易懂的；無障礙的",
+  "def": [
+   "Easy to reach, enter, obtain or understand.",
+   "容易抵達、進入、取得或理解的。"
+  ],
+  "ex": [
+   [
+    "The conference centre is easily <em>accessible</em> by train and bus.",
+    "會議中心搭火車和公車都很容易到達。"
+   ],
+   [
+    "All entrances are wheelchair <em>accessible</em>.",
+    "所有入口都有輪椅無障礙設施。"
+   ],
+   [
+    "The report uses plain language to make the data <em>accessible</em> to non-specialists.",
+    "這份報告用淺顯的語言，讓非專業人士也能看懂這些數據。"
+   ],
+   [
+    "Files in this folder are <em>accessible</em> only to the finance team.",
+    "這個資料夾中的檔案只有財務團隊才能存取。"
+   ],
+   [
+    "Our manager is friendly and <em>accessible</em>, so staff often drop by with questions.",
+    "我們的經理親切又容易接近，所以員工常順道來問問題。"
+   ]
+  ],
+  "coll": [
+   [
+    "easily accessible",
+    "容易到達／取得"
+   ],
+   [
+    "accessible to",
+    "對……開放、容易取得"
+   ],
+   [
+    "wheelchair accessible",
+    "輪椅無障礙"
+   ],
+   [
+    "accessible by public transport",
+    "搭大眾運輸可到達"
+   ],
+   [
+    "accessible online",
+    "可在線上取得"
+   ]
+  ],
+  "family": [
+   {
+    "w": "access",
+    "pos": "n.",
+    "zh": "進入、使用權；存取"
+   },
+   {
+    "w": "accessibility",
+    "pos": "n.",
+    "zh": "可及性、無障礙"
+   },
+   {
+    "w": "inaccessible",
+    "pos": "adj.",
+    "zh": "無法到達或取得的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "available",
+    "note": [
+     "Available means able to be obtained or used; accessible stresses how easy it is to reach or enter.",
+     "available 指能取得或使用；accessible 強調容易抵達或進入。"
+    ]
+   },
+   {
+    "w": "approachable",
+    "note": [
+     "Used for people who are friendly and easy to talk to.",
+     "用來形容親切、容易交談的人。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "inaccessible",
+    "zh": "無法到達的、無法取得的"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "acceptable",
+    "note": [
+     "Acceptable means good enough; accessible means easy to reach or use.",
+     "acceptable 是「夠好、可接受」；accessible 是「容易到達或使用」。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "accountant",
+  "pos": "n.",
+  "zh": "會計師、會計人員",
+  "def": [
+   "A person whose job is to keep or check financial records and prepare tax returns.",
+   "負責記帳或查核財務紀錄並辦理報稅的專業人員。"
+  ],
+  "ex": [
+   [
+    "Our <em>accountant</em> prepares the tax return every March.",
+    "我們的會計師每年三月辦理報稅。"
+   ],
+   [
+    "The firm is hiring a senior <em>accountant</em> to join the finance team.",
+    "公司正在招募一名資深會計加入財務團隊。"
+   ],
+   [
+    "Ask your <em>accountant</em> whether the expense can be deducted.",
+    "請問你的會計師這筆費用能否扣除。"
+   ],
+   [
+    "She trained as a certified public <em>accountant</em> before moving into consulting.",
+    "她先受訓成為註冊會計師，之後才轉入顧問業。"
+   ],
+   [
+    "The <em>accountant</em> sent a summary of the quarterly figures to the board.",
+    "會計人員把季度數字的摘要寄給了董事會。"
+   ]
+  ],
+  "coll": [
+   [
+    "certified public accountant",
+    "註冊會計師"
+   ],
+   [
+    "chartered accountant",
+    "特許會計師（英式）"
+   ],
+   [
+    "tax accountant",
+    "稅務會計師"
+   ],
+   [
+    "hire an accountant",
+    "聘請會計師"
+   ],
+   [
+    "management accountant",
+    "管理會計師"
+   ]
+  ],
+  "family": [
+   {
+    "w": "accounting",
+    "pos": "n.",
+    "zh": "會計（工作或學科）"
+   },
+   {
+    "w": "accountancy",
+    "pos": "n.",
+    "zh": "會計職業（英式）"
+   },
+   {
+    "w": "account",
+    "pos": "n.",
+    "zh": "帳戶；帳目"
+   },
+   {
+    "w": "accountable",
+    "pos": "adj.",
+    "zh": "有責任的"
+   },
+   {
+    "w": "accountability",
+    "pos": "n.",
+    "zh": "責任歸屬"
+   }
+  ],
+  "syn": [
+   {
+    "w": "bookkeeper",
+    "note": [
+     "A bookkeeper records daily transactions; an accountant analyses the figures, reports and gives financial advice.",
+     "bookkeeper 負責記錄日常交易；accountant 則分析數字、出報告並提供財務建議。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "auditor",
+    "note": [
+     "An auditor independently checks the accounts an accountant prepares.",
+     "auditor 獨立查核會計人員所做的帳目。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "adhere",
+  "pos": "v.",
+  "zh": "遵守（adhere to）；黏附",
+  "def": [
+   "To follow a rule or plan closely; to stick firmly to a surface.",
+   "嚴格遵循規定或計畫；牢牢黏在表面上。"
+  ],
+  "ex": [
+   [
+    "All staff must <em>adhere</em> to the company's data protection policy.",
+    "所有員工都必須遵守公司的資料保護政策。"
+   ],
+   [
+    "We will <em>adhere</em> to the schedule unless the client asks for changes.",
+    "除非客戶要求更動，否則我們會按照時程進行。"
+   ],
+   [
+    "The label will not <em>adhere</em> to a wet or dusty surface.",
+    "標籤無法黏在潮濕或有灰塵的表面上。"
+   ],
+   [
+    "The committee has <em>adhered</em> to the same hiring principles for years.",
+    "委員會多年來都堅持相同的聘雇原則。"
+   ],
+   [
+    "Drivers who <em>adhere</em> strictly to the speed limit rarely receive fines.",
+    "嚴格遵守速限的駕駛人很少被罰款。"
+   ]
+  ],
+  "coll": [
+   [
+    "adhere to a policy",
+    "遵守政策"
+   ],
+   [
+    "adhere strictly to",
+    "嚴格遵守"
+   ],
+   [
+    "adhere to deadlines",
+    "遵守截止期限"
+   ],
+   [
+    "adhere to guidelines",
+    "遵守準則"
+   ],
+   [
+    "adhere to a surface",
+    "黏附在表面"
+   ]
+  ],
+  "family": [
+   {
+    "w": "adherence",
+    "pos": "n.",
+    "zh": "遵守、堅持"
+   },
+   {
+    "w": "adherent",
+    "pos": "n.",
+    "zh": "支持者、信奉者"
+   },
+   {
+    "w": "adhesive",
+    "pos": "n.",
+    "zh": "黏著劑"
+   }
+  ],
+  "syn": [
+   {
+    "w": "comply",
+    "note": [
+     "Comply with is followed by rules or requests; adhere to suggests sticking firmly to a plan or principle.",
+     "comply with 後接規定或要求；adhere to 暗示堅定遵循計畫或原則。"
+    ]
+   },
+   {
+    "w": "abide",
+    "note": [
+     "Abide by is used for accepting and following rules or decisions.",
+     "abide by 用於接受並遵守規定或決定。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "deviate",
+    "zh": "偏離"
+   },
+   {
+    "w": "violate",
+    "zh": "違反"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "advisory",
+  "pos": "adj., n.",
+  "zh": "顧問性的；諮詢的；（官方）警示、公告",
+  "def": [
+   "Giving advice rather than making decisions; an official notice that warns people about something.",
+   "提供建議而非做決定的；向大眾發出警示的官方通知。"
+  ],
+  "ex": [
+   [
+    "She sits on the <em>advisory</em> board of two local start-ups.",
+    "她擔任兩家本地新創公司的顧問委員。"
+   ],
+   [
+    "The government issued a travel <em>advisory</em> for the region after the storm.",
+    "暴風雨過後，政府針對該地區發布了旅遊警示。"
+   ],
+   [
+    "He works as an <em>advisory</em> consultant on pension plans.",
+    "他擔任退休金計畫的諮詢顧問。"
+   ],
+   [
+    "A weather <em>advisory</em> warned drivers to avoid the mountain road.",
+    "天氣警示提醒駕駛人避開山路。"
+   ],
+   [
+    "The committee plays a purely <em>advisory</em> role and cannot make final decisions.",
+    "這個委員會只扮演諮詢角色，無法做最終決定。"
+   ]
+  ],
+  "coll": [
+   [
+    "advisory board",
+    "顧問委員會"
+   ],
+   [
+    "advisory committee",
+    "諮詢委員會"
+   ],
+   [
+    "travel advisory",
+    "旅遊警示"
+   ],
+   [
+    "weather advisory",
+    "天氣警示"
+   ],
+   [
+    "advisory role",
+    "顧問角色"
+   ],
+   [
+    "advisory services",
+    "諮詢服務"
+   ]
+  ],
+  "family": [
+   {
+    "w": "advise",
+    "pos": "v.",
+    "zh": "建議、勸告"
+   },
+   {
+    "w": "advice",
+    "pos": "n.",
+    "zh": "建議"
+   },
+   {
+    "w": "adviser",
+    "pos": "n.",
+    "zh": "顧問（亦作 advisor）"
+   },
+   {
+    "w": "advisable",
+    "pos": "adj.",
+    "zh": "明智的、可取的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "consultative",
+    "note": [
+     "Formal; describes a group or process that gives advice or asks for opinions before a decision.",
+     "較正式；形容在決策前提供意見或徵詢意見的團體或過程。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "advisable",
+    "note": [
+     "Advisable means wise to do; advisory means giving advice or a warning.",
+     "advisable 是「明智、值得做」；advisory 是「提供建議或警示」。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "airport",
+  "pos": "n.",
+  "zh": "機場",
+  "def": [
+   "A place where aircraft take off and land and passengers wait for flights.",
+   "飛機起降、旅客候機的場所。"
+  ],
+  "ex": [
+   [
+    "The shuttle bus leaves for the <em>airport</em> every thirty minutes.",
+    "接駁巴士每三十分鐘開往機場。"
+   ],
+   [
+    "Please arrive at the <em>airport</em> two hours before an international flight.",
+    "國際航班請在起飛前兩小時抵達機場。"
+   ],
+   [
+    "Our flight was delayed because of fog at the <em>airport</em>.",
+    "我們的班機因機場起霧而延誤。"
+   ],
+   [
+    "The hotel offers a free <em>airport</em> pickup for guests who book directly.",
+    "直接訂房的住客可享免費機場接送。"
+   ],
+   [
+    "<em>Airport</em> security was tighter than usual this morning.",
+    "今天早上機場的安檢比平常更嚴格。"
+   ]
+  ],
+  "coll": [
+   [
+    "airport shuttle",
+    "機場接駁車"
+   ],
+   [
+    "airport terminal",
+    "機場航廈"
+   ],
+   [
+    "airport security",
+    "機場安檢"
+   ],
+   [
+    "airport transfer",
+    "機場接送"
+   ],
+   [
+    "international airport",
+    "國際機場"
+   ],
+   [
+    "airport lounge",
+    "機場貴賓室"
+   ]
+  ],
+  "family": [],
+  "syn": [],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "aisle",
+  "pos": "n.",
+  "zh": "走道、通道（座位或貨架之間）",
+  "def": [
+   "A narrow passage between rows of seats or shelves.",
+   "座位或貨架排列之間的狹窄通道。"
+  ],
+  "ex": [
+   [
+    "I prefer an <em>aisle</em> seat so I can stretch my legs.",
+    "我偏好走道座位，這樣可以伸展雙腿。"
+   ],
+   [
+    "The cleaning products are in <em>aisle</em> seven, next to the paper goods.",
+    "清潔用品在第七走道，紙製品旁邊。"
+   ],
+   [
+    "Please keep the <em>aisle</em> clear in case of an emergency.",
+    "請保持走道暢通，以防緊急狀況。"
+   ],
+   [
+    "The flight attendant pushed the drinks cart down the <em>aisle</em>.",
+    "空服員推著飲料推車走過走道。"
+   ],
+   [
+    "Staff restock the shelves along each <em>aisle</em> before the store opens.",
+    "員工在開店前補滿每條走道旁的貨架。"
+   ]
+  ],
+  "coll": [
+   [
+    "aisle seat",
+    "走道座位"
+   ],
+   [
+    "window or aisle",
+    "靠窗或靠走道"
+   ],
+   [
+    "down the aisle",
+    "沿著走道"
+   ],
+   [
+    "block the aisle",
+    "擋住走道"
+   ],
+   [
+    "in aisle five",
+    "在第五走道"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "corridor",
+    "note": [
+     "A corridor connects rooms inside a building; an aisle runs between rows of seats or shelves.",
+     "corridor 連接建築物內的房間；aisle 位於成排座位或貨架之間。"
+    ]
+   },
+   {
+    "w": "walkway",
+    "note": [
+     "Any path for walking, often outdoors or raised; aisle is inside a vehicle, shop or hall.",
+     "供行走的任何通道，常在戶外或架高；aisle 則在車內、店內或大廳內。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "isle",
+    "note": [
+     "Pronounced the same as aisle but means a small island.",
+     "發音與 aisle 相同，但意思是小島。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "alert",
+  "pos": "n., v., adj.",
+  "zh": "警報、通知；使警覺、通知；警覺的",
+  "def": [
+   "A warning message; to warn someone about a problem; watchful and ready to act.",
+   "警告訊息；就問題向某人提出警告；留心且隨時準備行動的。"
+  ],
+  "ex": [
+   [
+    "The system sends an <em>alert</em> whenever stock drops below ten units.",
+    "只要庫存低於十件，系統就會發出警示。"
+   ],
+   [
+    "Please <em>alert</em> security if you see an unattended bag.",
+    "如果看到無人看管的包包，請通知保全。"
+   ],
+   [
+    "Drivers should stay <em>alert</em> on long night shifts.",
+    "夜間長時間駕駛的司機應保持警覺。"
+   ],
+   [
+    "The bank <em>alerted</em> customers to a new email scam.",
+    "銀行提醒客戶注意一種新的電子郵件詐騙。"
+   ],
+   [
+    "A weather <em>alert</em> was issued for the coastal area.",
+    "沿海地區發布了天氣警報。"
+   ]
+  ],
+  "coll": [
+   [
+    "send an alert",
+    "發出警示"
+   ],
+   [
+    "alert someone to",
+    "使某人注意到"
+   ],
+   [
+    "stay alert",
+    "保持警覺"
+   ],
+   [
+    "on alert",
+    "處於戒備狀態"
+   ],
+   [
+    "security alert",
+    "安全警報"
+   ]
+  ],
+  "family": [
+   {
+    "w": "alertness",
+    "pos": "n.",
+    "zh": "警覺性"
+   },
+   {
+    "w": "alertly",
+    "pos": "adv.",
+    "zh": "警覺地"
+   }
+  ],
+  "syn": [
+   {
+    "w": "warn",
+    "note": [
+     "Warn stresses danger; alert stresses making someone aware so they can act.",
+     "warn 強調危險；alert 強調讓人察覺以便採取行動。"
+    ]
+   },
+   {
+    "w": "notify",
+    "note": [
+     "Neutral and formal; informs someone officially, without implying urgency.",
+     "中性且正式；正式告知，不一定帶有緊急感。"
+    ]
+   },
+   {
+    "w": "vigilant",
+    "note": [
+     "Formal adjective; watchful for danger over a period of time.",
+     "較正式的形容詞；長時間留意危險。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "inattentive",
+    "zh": "不專心的"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "alarm",
+    "note": [
+     "An alarm is a loud signal of danger; an alert is a message or notice.",
+     "alarm 是示警的巨響訊號；alert 是訊息或通知。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "allergy",
+  "pos": "n.",
+  "zh": "過敏",
+  "def": [
+   "A medical condition in which the body reacts badly to a food, plant or substance.",
+   "身體對食物、植物或物質產生不良反應的病症。"
+  ],
+  "ex": [
+   [
+    "Please tell the restaurant about any food <em>allergies</em> when you book.",
+    "訂位時請告知餐廳任何食物過敏。"
+   ],
+   [
+    "He has an <em>allergy</em> to peanuts, so he checks every label.",
+    "他對花生過敏，所以每個標籤都會檢查。"
+   ],
+   [
+    "Seasonal <em>allergies</em> caused several staff to take sick leave.",
+    "季節性過敏使幾位員工請了病假。"
+   ],
+   [
+    "The nurse asked whether the patient had any drug <em>allergies</em>.",
+    "護理師詢問病人是否有任何藥物過敏。"
+   ],
+   [
+    "Employees with a severe <em>allergy</em> should carry their medication at all times.",
+    "有嚴重過敏的員工應隨身攜帶藥物。"
+   ]
+  ],
+  "coll": [
+   [
+    "food allergy",
+    "食物過敏"
+   ],
+   [
+    "have an allergy to",
+    "對……過敏"
+   ],
+   [
+    "allergy medication",
+    "過敏藥物"
+   ],
+   [
+    "seasonal allergy",
+    "季節性過敏"
+   ],
+   [
+    "severe allergy",
+    "嚴重過敏"
+   ],
+   [
+    "drug allergy",
+    "藥物過敏"
+   ]
+  ],
+  "family": [
+   {
+    "w": "allergic",
+    "pos": "adj.",
+    "zh": "過敏的（be allergic to）"
+   },
+   {
+    "w": "allergen",
+    "pos": "n.",
+    "zh": "過敏原"
+   }
+  ],
+  "syn": [],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "intolerance",
+    "note": [
+     "Food intolerance is a digestive reaction; an allergy involves the immune system and can be more dangerous.",
+     "食物不耐是消化反應；過敏牽涉免疫系統，可能更危險。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "appliance",
+  "pos": "n.",
+  "zh": "（家用）電器、器具",
+  "def": [
+   "A machine for use in the home or office, such as an oven or a washing machine.",
+   "家中或辦公室使用的機器，例如烤箱或洗衣機。"
+  ],
+  "ex": [
+   [
+    "The store sells kitchen <em>appliances</em> such as ovens and dishwashers.",
+    "這家店販售烤箱和洗碗機等廚房電器。"
+   ],
+   [
+    "Please unplug every electrical <em>appliance</em> before you leave the office.",
+    "離開辦公室前，請拔掉所有電器的插頭。"
+   ],
+   [
+    "This <em>appliance</em> comes with a two-year manufacturer's warranty.",
+    "這台電器附有兩年的原廠保固。"
+   ],
+   [
+    "Energy-efficient <em>appliances</em> can lower a household's monthly electricity bill.",
+    "節能電器可以降低家庭每月的電費。"
+   ],
+   [
+    "The technician will repair the faulty <em>appliance</em> on Thursday.",
+    "技師將在週四修理這台故障的電器。"
+   ]
+  ],
+  "coll": [
+   [
+    "household appliance",
+    "家用電器"
+   ],
+   [
+    "kitchen appliance",
+    "廚房電器"
+   ],
+   [
+    "electrical appliance",
+    "電器用品"
+   ],
+   [
+    "home appliance",
+    "家電"
+   ],
+   [
+    "small appliance",
+    "小家電"
+   ],
+   [
+    "appliance repair",
+    "電器維修"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "device",
+    "note": [
+     "Device is broader and covers any piece of equipment, especially electronic; appliance is for home or kitchen machines.",
+     "device 範圍較廣，指任何設備，尤其電子產品；appliance 多指家用或廚房機器。"
+    ]
+   },
+   {
+    "w": "gadget",
+    "note": [
+     "A small, clever or novel device; informal.",
+     "小巧或新奇的裝置；口語。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "applicant",
+    "note": [
+     "An applicant is a person who applies for a job or service; an appliance is a machine.",
+     "applicant 是申請工作或服務的人；appliance 是機器。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "applicant",
+  "pos": "n.",
+  "zh": "申請人、應徵者",
+  "def": [
+   "A person who formally asks for a job, loan, place or permit.",
+   "正式申請工作、貸款、名額或許可的人。"
+  ],
+  "ex": [
+   [
+    "Every <em>applicant</em> must submit a résumé and two references.",
+    "每位應徵者都必須繳交履歷表和兩份推薦信。"
+   ],
+   [
+    "The firm received more than two hundred <em>applicants</em> for the position.",
+    "這個職缺收到了兩百多位應徵者。"
+   ],
+   [
+    "Successful <em>applicants</em> will be contacted by phone within a week.",
+    "錄取的應徵者會在一週內接到電話通知。"
+   ],
+   [
+    "The loan <em>applicant</em> was asked to provide proof of income.",
+    "貸款申請人被要求提供收入證明。"
+   ],
+   [
+    "Each visa <em>applicant</em> needs a valid passport.",
+    "每位簽證申請人都需要有效護照。"
+   ]
+  ],
+  "coll": [
+   [
+    "job applicant",
+    "求職者"
+   ],
+   [
+    "successful applicant",
+    "錄取者"
+   ],
+   [
+    "qualified applicant",
+    "符合資格的申請人"
+   ],
+   [
+    "loan applicant",
+    "貸款申請人"
+   ],
+   [
+    "applicant for a position",
+    "職位應徵者"
+   ],
+   [
+    "applicant pool",
+    "應徵者人才庫"
+   ]
+  ],
+  "family": [
+   {
+    "w": "apply",
+    "pos": "v.",
+    "zh": "申請；適用"
+   },
+   {
+    "w": "application",
+    "pos": "n.",
+    "zh": "申請；申請書"
+   },
+   {
+    "w": "applicable",
+    "pos": "adj.",
+    "zh": "適用的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "candidate",
+    "note": [
+     "A candidate is someone being considered for a job or election, often after screening; an applicant is anyone who has applied.",
+     "candidate 是被考慮的人選，常已經過篩選；applicant 是任何提出申請的人。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "appliance",
+    "note": [
+     "An appliance is a machine; an applicant is a person who applies.",
+     "appliance 是機器；applicant 是申請人。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "assembly",
+  "pos": "n.",
+  "zh": "組裝；集會；議會",
+  "def": [
+   "The putting together of parts to make something; a meeting of a large group of people.",
+   "把零件組合成產品；眾人的集會。"
+  ],
+  "ex": [
+   [
+    "The <em>assembly</em> of the engine takes about four hours.",
+    "組裝這具引擎大約需要四小時。"
+   ],
+   [
+    "Workers on the <em>assembly</em> line check each part for defects.",
+    "裝配線上的工人逐一檢查每個零件有無瑕疵。"
+   ],
+   [
+    "Please read the <em>assembly</em> instructions before you start building the shelf.",
+    "開始組裝書架前，請先閱讀組裝說明。"
+   ],
+   [
+    "The whole school gathered in the hall for the morning <em>assembly</em>.",
+    "全校師生聚集在禮堂參加晨間集會。"
+   ],
+   [
+    "The city's legislative <em>assembly</em> will vote on the budget next week.",
+    "市議會將於下週就預算案進行表決。"
+   ]
+  ],
+  "coll": [
+   [
+    "assembly line",
+    "裝配線"
+   ],
+   [
+    "assembly plant",
+    "組裝廠"
+   ],
+   [
+    "assembly instructions",
+    "組裝說明"
+   ],
+   [
+    "some assembly required",
+    "需自行組裝"
+   ],
+   [
+    "general assembly",
+    "大會"
+   ],
+   [
+    "assembly hall",
+    "禮堂、集會廳"
+   ]
+  ],
+  "family": [
+   {
+    "w": "assemble",
+    "pos": "v.",
+    "zh": "組裝；集合"
+   },
+   {
+    "w": "reassemble",
+    "pos": "v.",
+    "zh": "重新組裝"
+   },
+   {
+    "w": "disassemble",
+    "pos": "v.",
+    "zh": "拆解"
+   }
+  ],
+  "syn": [
+   {
+    "w": "gathering",
+    "note": [
+     "Informal and general for any group of people; assembly is more formal or official.",
+     "泛指任何聚集的人群，較口語；assembly 較正式或官方。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "disassembly",
+    "zh": "拆解"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "assignment",
+  "pos": "n.",
+  "zh": "任務、工作指派；作業；外派",
+  "def": [
+   "A piece of work given to someone in a job or course; a posting to a particular place.",
+   "指派給某人的工作或課業；被派往特定地點或職務。"
+  ],
+  "ex": [
+   [
+    "Our team received a new <em>assignment</em> from the head office on Monday.",
+    "我們團隊週一從總公司接到一項新任務。"
+   ],
+   [
+    "She was sent to the Bangkok branch on a six-month <em>assignment</em>.",
+    "她被派到曼谷分公司，為期六個月。"
+   ],
+   [
+    "Please submit the <em>assignment</em> by Friday at noon.",
+    "請在週五中午前繳交作業。"
+   ],
+   [
+    "The <em>assignment</em> of seats will be done at check-in.",
+    "座位會在報到時分配。"
+   ],
+   [
+    "The reporter's first <em>assignment</em> was covering the trade fair.",
+    "這位記者的第一項任務是採訪貿易展。"
+   ]
+  ],
+  "coll": [
+   [
+    "complete an assignment",
+    "完成任務／作業"
+   ],
+   [
+    "hand in an assignment",
+    "繳交作業"
+   ],
+   [
+    "overseas assignment",
+    "海外外派"
+   ],
+   [
+    "on assignment",
+    "出任務、外派中"
+   ],
+   [
+    "a new assignment",
+    "新的任務"
+   ],
+   [
+    "assignment of tasks",
+    "任務分配"
+   ]
+  ],
+  "family": [
+   {
+    "w": "assign",
+    "pos": "v.",
+    "zh": "指派、分配"
+   },
+   {
+    "w": "reassign",
+    "pos": "v.",
+    "zh": "重新指派"
+   }
+  ],
+  "syn": [
+   {
+    "w": "task",
+    "note": [
+     "A task is one piece of work; an assignment is a task given to you by someone, often with a deadline.",
+     "task 是一項工作；assignment 是別人交付給你的工作，通常有期限。"
+    ]
+   },
+   {
+    "w": "duty",
+    "note": [
+     "A duty is an ongoing responsibility of a job; an assignment is usually a specific piece of work.",
+     "duty 是職務上持續的責任；assignment 通常是特定的工作項目。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "attendant",
+  "pos": "n., adj.",
+  "zh": "服務人員、侍者；隨之而來的",
+  "def": [
+   "A person whose job is to serve or help the public in a place; accompanying or resulting from something.",
+   "在某處為大眾服務或提供協助的人；伴隨某事而來的。"
+  ],
+  "ex": [
+   [
+    "A flight <em>attendant</em> showed passengers where the emergency exits are.",
+    "空服員向乘客說明緊急出口的位置。"
+   ],
+   [
+    "The parking <em>attendant</em> gave us a ticket at the gate.",
+    "停車場管理員在閘門口給了我們一張停車券。"
+   ],
+   [
+    "Please ask the museum <em>attendant</em> if you need help finding the exhibit.",
+    "如果需要協助尋找展品，請詢問博物館的服務人員。"
+   ],
+   [
+    "The pool <em>attendant</em> checks the water temperature every hour.",
+    "泳池管理員每小時檢查一次水溫。"
+   ],
+   [
+    "The new policy has several <em>attendant</em> risks that must be reviewed.",
+    "這項新政策伴隨著幾項必須檢討的風險。"
+   ]
+  ],
+  "coll": [
+   [
+    "flight attendant",
+    "空服員"
+   ],
+   [
+    "parking attendant",
+    "停車場管理員"
+   ],
+   [
+    "gas station attendant",
+    "加油站服務員"
+   ],
+   [
+    "museum attendant",
+    "博物館服務人員"
+   ],
+   [
+    "attendant risks",
+    "伴隨的風險"
+   ]
+  ],
+  "family": [
+   {
+    "w": "attend",
+    "pos": "v.",
+    "zh": "出席；照料"
+   },
+   {
+    "w": "attendance",
+    "pos": "n.",
+    "zh": "出席；出席人數"
+   },
+   {
+    "w": "attendee",
+    "pos": "n.",
+    "zh": "出席者"
+   }
+  ],
+  "syn": [],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "attendee",
+    "note": [
+     "An attendee is a person who attends an event; an attendant works at a place to serve people.",
+     "attendee 是出席活動的人；attendant 是在某處服務他人的工作人員。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "attendee",
+  "pos": "n.",
+  "zh": "出席者、與會者",
+  "def": [
+   "A person who is present at an event such as a meeting, conference or class.",
+   "出席會議、研討會或課程等活動的人。"
+  ],
+  "ex": [
+   [
+    "Each <em>attendee</em> will receive a name badge at registration.",
+    "每位與會者在報到時都會領到名牌。"
+   ],
+   [
+    "More than three hundred <em>attendees</em> signed up for the workshop.",
+    "超過三百人報名了這場工作坊。"
+   ],
+   [
+    "<em>Attendees</em> are asked to silence their phones during the keynote.",
+    "主題演講期間，請與會者將手機轉為靜音。"
+   ],
+   [
+    "The organiser emailed all conference <em>attendees</em> a copy of the schedule.",
+    "主辦單位把議程表寄給了所有研討會與會者。"
+   ],
+   [
+    "Lunch is provided for <em>attendees</em> of the full-day seminar.",
+    "全天研討會的出席者可享用午餐。"
+   ]
+  ],
+  "coll": [
+   [
+    "conference attendee",
+    "研討會與會者"
+   ],
+   [
+    "workshop attendee",
+    "工作坊參加者"
+   ],
+   [
+    "registered attendees",
+    "已登記的出席者"
+   ],
+   [
+    "list of attendees",
+    "出席者名單"
+   ],
+   [
+    "attendee list",
+    "出席者名單"
+   ]
+  ],
+  "family": [
+   {
+    "w": "attend",
+    "pos": "v.",
+    "zh": "出席"
+   },
+   {
+    "w": "attendance",
+    "pos": "n.",
+    "zh": "出席；出席人數"
+   },
+   {
+    "w": "attendant",
+    "pos": "n.",
+    "zh": "服務人員"
+   }
+  ],
+  "syn": [
+   {
+    "w": "participant",
+    "note": [
+     "A participant takes an active part in an event; an attendee is simply present.",
+     "participant 積極參與活動；attendee 只是出席。"
+    ]
+   },
+   {
+    "w": "delegate",
+    "note": [
+     "A delegate is an official representative sent to a meeting by a group.",
+     "delegate 是團體派往會議的正式代表。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "attendant",
+    "note": [
+     "An attendant provides service at a place; an attendee goes to an event.",
+     "attendant 在某處提供服務；attendee 是前往參加活動的人。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "auditor",
+  "pos": "n.",
+  "zh": "稽核員、審計人員、查帳員",
+  "def": [
+   "A person who officially examines a company's financial records to check they are accurate.",
+   "正式檢查公司財務紀錄是否正確的人。"
+  ],
+  "ex": [
+   [
+    "An external <em>auditor</em> will review our accounts next month.",
+    "外部審計人員下個月會審查我們的帳目。"
+   ],
+   [
+    "The <em>auditor</em> found several errors in the expense reports.",
+    "審計人員在費用報告中發現了幾處錯誤。"
+   ],
+   [
+    "The company hired a new <em>auditor</em> after the merger.",
+    "合併後，公司聘請了新的審計人員。"
+   ],
+   [
+    "Our internal <em>auditor</em> reports directly to the board.",
+    "我們的內部稽核人員直接向董事會報告。"
+   ],
+   [
+    "The <em>auditor</em>'s report was published with the annual results.",
+    "審計報告與年度業績一同公布。"
+   ]
+  ],
+  "coll": [
+   [
+    "external auditor",
+    "外部審計人員"
+   ],
+   [
+    "internal auditor",
+    "內部稽核人員"
+   ],
+   [
+    "independent auditor",
+    "獨立審計人員"
+   ],
+   [
+    "auditor's report",
+    "審計報告"
+   ],
+   [
+    "hire an auditor",
+    "聘請審計人員"
+   ]
+  ],
+  "family": [
+   {
+    "w": "audit",
+    "pos": "n.",
+    "zh": "審計、查帳"
+   },
+   {
+    "w": "auditing",
+    "pos": "n.",
+    "zh": "審計工作"
+   }
+  ],
+  "syn": [
+   {
+    "w": "inspector",
+    "note": [
+     "An inspector checks quality, safety or rules; an auditor checks financial records.",
+     "inspector 檢查品質、安全或規定；auditor 檢查財務紀錄。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "accountant",
+    "note": [
+     "An accountant prepares the records; an auditor independently checks them.",
+     "accountant 製作帳務；auditor 獨立查核。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "authority",
+  "pos": "n.",
+  "zh": "權力、職權；當局；權威（人士）",
+  "def": [
+   "The official right to make decisions or give orders; an official organisation in charge of something; an expert.",
+   "做決定或下命令的正式權力；負責管理某事的官方機構；專家。"
+  ],
+  "ex": [
+   [
+    "Only the finance director has the <em>authority</em> to approve this expense.",
+    "只有財務長有權核准這筆費用。"
+   ],
+   [
+    "The local <em>authorities</em> issued a permit for the outdoor event.",
+    "地方當局為這場戶外活動核發了許可。"
+   ],
+   [
+    "She is a leading <em>authority</em> on supply chain management.",
+    "她是供應鏈管理領域的權威。"
+   ],
+   [
+    "The airport <em>authority</em> announced new security procedures.",
+    "機場管理局宣布了新的安檢程序。"
+   ],
+   [
+    "Managers were given more <em>authority</em> over staffing decisions.",
+    "經理們獲得了更多人事決策的權限。"
+   ]
+  ],
+  "coll": [
+   [
+    "have the authority to",
+    "有權做……"
+   ],
+   [
+    "local authorities",
+    "地方當局"
+   ],
+   [
+    "an authority on",
+    "……方面的權威"
+   ],
+   [
+    "authority over",
+    "對……的管轄權"
+   ],
+   [
+    "health authority",
+    "衛生主管機關"
+   ],
+   [
+    "abuse of authority",
+    "濫用職權"
+   ]
+  ],
+  "family": [
+   {
+    "w": "authorize",
+    "pos": "v.",
+    "zh": "授權、批准"
+   },
+   {
+    "w": "authorization",
+    "pos": "n.",
+    "zh": "授權"
+   },
+   {
+    "w": "authoritative",
+    "pos": "adj.",
+    "zh": "權威性的"
+   },
+   {
+    "w": "unauthorized",
+    "pos": "adj.",
+    "zh": "未經授權的"
+   },
+   {
+    "w": "authoritarian",
+    "pos": "adj.",
+    "zh": "專制的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "power",
+    "note": [
+     "Power is the general ability to act or influence; authority is the official right to do so.",
+     "power 是一般的行事或影響能力；authority 是官方賦予的權利。"
+    ]
+   },
+   {
+    "w": "jurisdiction",
+    "note": [
+     "Formal and legal; the area or subject over which an official body has authority.",
+     "正式的法律用語；指機構擁有管轄權的範圍或事項。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "automate",
+  "pos": "v.",
+  "zh": "使自動化",
+  "def": [
+   "To make a process or machine work automatically with little or no human control.",
+   "使流程或機器在幾乎不需人工控制下自動運作。"
+  ],
+  "ex": [
+   [
+    "The company plans to <em>automate</em> its invoicing process next year.",
+    "公司計畫明年將開立發票的流程自動化。"
+   ],
+   [
+    "We <em>automated</em> the weekly report, which saves two hours of manual work.",
+    "我們把每週報告自動化，省下兩小時的人工作業。"
+   ],
+   [
+    "Many banks have <em>automated</em> routine customer enquiries with chatbots.",
+    "許多銀行用聊天機器人自動處理例行的客戶詢問。"
+   ],
+   [
+    "Factories that <em>automate</em> packaging can ship orders faster.",
+    "將包裝自動化的工廠可以更快出貨。"
+   ],
+   [
+    "Repetitive tasks are the easiest to <em>automate</em>.",
+    "重複性的工作最容易自動化。"
+   ]
+  ],
+  "coll": [
+   [
+    "automate a process",
+    "將流程自動化"
+   ],
+   [
+    "automate tasks",
+    "將工作自動化"
+   ],
+   [
+    "automate the workflow",
+    "將工作流程自動化"
+   ],
+   [
+    "fully automated",
+    "全自動的"
+   ],
+   [
+    "automate manual work",
+    "把人工作業自動化"
+   ]
+  ],
+  "family": [
+   {
+    "w": "automation",
+    "pos": "n.",
+    "zh": "自動化"
+   },
+   {
+    "w": "automated",
+    "pos": "adj.",
+    "zh": "自動化的"
+   },
+   {
+    "w": "automatic",
+    "pos": "adj.",
+    "zh": "自動的"
+   },
+   {
+    "w": "automatically",
+    "pos": "adv.",
+    "zh": "自動地"
+   }
+  ],
+  "syn": [
+   {
+    "w": "mechanize",
+    "note": [
+     "Older word; to replace human labour with machines, while automate often means software or self-operating systems.",
+     "較舊的用語；指以機器取代人力，而 automate 常指軟體或自動運作系統。"
+    ]
+   },
+   {
+    "w": "computerize",
+    "note": [
+     "To start using computers to do a job or store records.",
+     "開始使用電腦處理工作或儲存紀錄。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "automatic",
+  "pos": "adj.",
+  "zh": "自動的；理所當然的",
+  "def": [
+   "Working by itself without direct human control; happening as a normal result.",
+   "無需人直接操控、自行運作的；作為正常結果自然發生的。"
+  ],
+  "ex": [
+   [
+    "The doors have an <em>automatic</em> sensor that opens them as you approach.",
+    "這些門有自動感應器，人一靠近就會開啟。"
+   ],
+   [
+    "You will receive an <em>automatic</em> reply if the manager is out of the office.",
+    "如果經理不在辦公室，你會收到自動回覆。"
+   ],
+   [
+    "Enrolment in the pension plan is <em>automatic</em> for all full-time staff.",
+    "所有全職員工都會自動加入退休金計畫。"
+   ],
+   [
+    "Set up an <em>automatic</em> payment so your bill is never late.",
+    "設定自動付款，帳單就不會逾期。"
+   ],
+   [
+    "Renewal is not <em>automatic</em>; you must reapply every year.",
+    "續約不是自動的，你每年都必須重新申請。"
+   ]
+  ],
+  "coll": [
+   [
+    "automatic payment",
+    "自動付款"
+   ],
+   [
+    "automatic renewal",
+    "自動續約"
+   ],
+   [
+    "automatic door",
+    "自動門"
+   ],
+   [
+    "automatic transmission",
+    "自排變速箱"
+   ],
+   [
+    "automatic reply",
+    "自動回覆"
+   ],
+   [
+    "automatic update",
+    "自動更新"
+   ]
+  ],
+  "family": [
+   {
+    "w": "automatically",
+    "pos": "adv.",
+    "zh": "自動地"
+   },
+   {
+    "w": "automate",
+    "pos": "v.",
+    "zh": "使自動化"
+   },
+   {
+    "w": "automation",
+    "pos": "n.",
+    "zh": "自動化"
+   }
+  ],
+  "syn": [],
+  "ant": [
+   {
+    "w": "manual",
+    "zh": "手動的"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "autonomous",
+    "note": [
+     "Autonomous means able to act or govern itself independently, such as a self-driving car; automatic means working by itself once set up.",
+     "autonomous 指能獨立行動或自治，如自駕車；automatic 指設定後自行運作。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "badge",
+  "pos": "n.",
+  "zh": "識別證、名牌；徽章",
+  "def": [
+   "A small card or piece of metal that shows who you are or where you work.",
+   "顯示身分或工作單位的小卡片或金屬片。"
+  ],
+  "ex": [
+   [
+    "Please wear your <em>badge</em> at all times while you are in the building.",
+    "在大樓內請隨時配戴識別證。"
+   ],
+   [
+    "Swipe your <em>badge</em> at the gate to enter the parking garage.",
+    "請在閘門刷識別證進入停車場。"
+   ],
+   [
+    "Visitors collect a name <em>badge</em> from reception.",
+    "訪客在接待處領取名牌。"
+   ],
+   [
+    "The security guard asked to see my ID <em>badge</em>.",
+    "保全人員要求查看我的識別證。"
+   ],
+   [
+    "He lost his <em>badge</em> and had to ask the front desk for a temporary one.",
+    "他弄丟了識別證，只好向櫃檯申請一張臨時證。"
+   ]
+  ],
+  "coll": [
+   [
+    "name badge",
+    "名牌"
+   ],
+   [
+    "security badge",
+    "安全識別證"
+   ],
+   [
+    "ID badge",
+    "身分識別證"
+   ],
+   [
+    "wear a badge",
+    "配戴識別證"
+   ],
+   [
+    "swipe a badge",
+    "刷識別證"
+   ],
+   [
+    "visitor badge",
+    "訪客證"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "pass",
+    "note": [
+     "A pass is a document or card giving permission to enter, often temporary; a badge also identifies the wearer.",
+     "pass 是允許進入的證件或卡片，常為臨時性；badge 還能辨識配戴者身分。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "banquet",
+  "pos": "n.",
+  "zh": "宴會、盛宴",
+  "def": [
+   "A large formal meal for many guests, held for a special occasion.",
+   "為特殊場合舉辦、賓客眾多的正式大型餐會。"
+  ],
+  "ex": [
+   [
+    "The company will hold its annual <em>banquet</em> at a downtown hotel.",
+    "公司將在市區一家飯店舉辦年度宴會。"
+   ],
+   [
+    "Over two hundred guests attended the awards <em>banquet</em>.",
+    "兩百多位賓客出席了頒獎晚宴。"
+   ],
+   [
+    "A farewell <em>banquet</em> was given for the retiring director.",
+    "公司為即將退休的主任舉辦了惜別宴。"
+   ],
+   [
+    "Tickets for the charity <em>banquet</em> include a three-course meal.",
+    "慈善晚宴的門票包含三道菜的餐點。"
+   ],
+   [
+    "The hotel's <em>banquet</em> hall can seat up to five hundred people.",
+    "這家飯店的宴會廳最多可容納五百人。"
+   ]
+  ],
+  "coll": [
+   [
+    "banquet hall",
+    "宴會廳"
+   ],
+   [
+    "wedding banquet",
+    "婚宴"
+   ],
+   [
+    "awards banquet",
+    "頒獎晚宴"
+   ],
+   [
+    "hold a banquet",
+    "舉辦宴會"
+   ],
+   [
+    "banquet room",
+    "宴會廳"
+   ],
+   [
+    "banquet table",
+    "宴會餐桌"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "feast",
+    "note": [
+     "A feast is a very large, often joyful meal; a banquet is formal and carefully organised.",
+     "feast 是豐盛且常帶歡樂氣氛的大餐；banquet 較正式且經過精心安排。"
+    ]
+   },
+   {
+    "w": "gala",
+    "note": [
+     "A special formal social event, not always a meal; often for raising money.",
+     "特別的正式社交活動，不一定有用餐；常為募款而辦。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "battery",
+  "pos": "n.",
+  "zh": "電池",
+  "def": [
+   "A device that stores electrical energy and powers phones, cars and other equipment.",
+   "儲存電能、為手機、汽車等設備供電的裝置。"
+  ],
+  "ex": [
+   [
+    "The laptop <em>battery</em> lasts about eight hours on a single charge.",
+    "這台筆電的電池充一次電可使用約八小時。"
+   ],
+   [
+    "Please replace the <em>battery</em> in the smoke detector every year.",
+    "請每年更換煙霧偵測器的電池。"
+   ],
+   [
+    "My phone ran out of <em>battery</em> during the presentation.",
+    "簡報進行到一半，我的手機沒電了。"
+   ],
+   [
+    "The new electric bus has a rechargeable <em>battery</em> with a long range.",
+    "這款新電動巴士配有續航力長的可充電電池。"
+   ],
+   [
+    "Keep a spare <em>battery</em> in your bag when you travel.",
+    "旅行時，請在包包裡放一顆備用電池。"
+   ]
+  ],
+  "coll": [
+   [
+    "rechargeable battery",
+    "可充電電池"
+   ],
+   [
+    "battery life",
+    "電池續航力"
+   ],
+   [
+    "charge a battery",
+    "為電池充電"
+   ],
+   [
+    "battery pack",
+    "電池組"
+   ],
+   [
+    "low battery",
+    "電量不足"
+   ],
+   [
+    "replace the battery",
+    "更換電池"
+   ]
+  ],
+  "family": [],
+  "syn": [],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "behalf",
+  "pos": "n.",
+  "zh": "代表、為了（僅用於 on behalf of）",
+  "def": [
+   "Used in on behalf of: acting as the representative of someone, or for their benefit.",
+   "用於 on behalf of：作為某人的代表，或為了某人的利益。"
+  ],
+  "ex": [
+   [
+    "I am writing on <em>behalf</em> of the entire sales team.",
+    "我謹代表整個業務團隊寫這封信。"
+   ],
+   [
+    "Ms. Lee signed the contract on his <em>behalf</em> while he was abroad.",
+    "他出國期間，李女士代他簽署了合約。"
+   ],
+   [
+    "On <em>behalf</em> of the hotel, I apologise for the delay.",
+    "我謹代表本飯店為延誤致歉。"
+   ],
+   [
+    "The lawyer acted on the client's <em>behalf</em> during the negotiations.",
+    "談判期間，律師代表客戶行事。"
+   ],
+   [
+    "We collected donations on <em>behalf</em> of the local hospital.",
+    "我們為當地醫院募集捐款。"
+   ]
+  ],
+  "coll": [
+   [
+    "on behalf of",
+    "代表……"
+   ],
+   [
+    "on my behalf",
+    "代表我"
+   ],
+   [
+    "on behalf of the company",
+    "代表公司"
+   ],
+   [
+    "act on someone's behalf",
+    "代某人行事"
+   ],
+   [
+    "speak on behalf of",
+    "代表……發言"
+   ],
+   [
+    "sign on behalf of",
+    "代為簽署"
+   ]
+  ],
+  "family": [],
+  "syn": [],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "boardroom",
+  "pos": "n.",
+  "zh": "董事會會議室",
+  "def": [
+   "A large room where company directors hold meetings.",
+   "公司董事開會的大型會議室。"
+  ],
+  "ex": [
+   [
+    "The directors will meet in the <em>boardroom</em> at ten o'clock.",
+    "董事們將在十點於董事會議室開會。"
+   ],
+   [
+    "Please book the <em>boardroom</em> if you need to host clients.",
+    "如果需要招待客戶，請預約董事會議室。"
+   ],
+   [
+    "The <em>boardroom</em> table seats twenty people.",
+    "董事會議室的會議桌可容納二十人。"
+   ],
+   [
+    "Decisions made in the <em>boardroom</em> affect thousands of employees.",
+    "董事會議室裡做的決策會影響數千名員工。"
+   ],
+   [
+    "The <em>boardroom</em> has a large screen for video calls.",
+    "董事會議室有一面大螢幕可供視訊通話。"
+   ]
+  ],
+  "coll": [
+   [
+    "boardroom meeting",
+    "董事會議"
+   ],
+   [
+    "boardroom table",
+    "董事會議桌"
+   ],
+   [
+    "book the boardroom",
+    "預約董事會議室"
+   ],
+   [
+    "in the boardroom",
+    "在董事會議室"
+   ],
+   [
+    "boardroom presentation",
+    "向董事會簡報"
+   ]
+  ],
+  "family": [
+   {
+    "w": "board",
+    "pos": "n.",
+    "zh": "董事會"
+   }
+  ],
+  "syn": [
+   {
+    "w": "meeting room",
+    "note": [
+     "General term for any room used for meetings; boardroom is the formal room for a board of directors.",
+     "泛指任何開會用的房間；boardroom 是董事會用的正式會議室。"
+    ]
+   },
+   {
+    "w": "conference room",
+    "note": [
+     "A room for meetings of any size or group; boardroom suggests senior management.",
+     "任何規模或團體開會的房間；boardroom 暗示高階管理層。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "brochure",
+  "pos": "n.",
+  "zh": "小冊子、宣傳手冊",
+  "def": [
+   "A thin printed booklet that gives information about a product, service or place.",
+   "介紹產品、服務或地點的薄型印刷小冊子。"
+  ],
+  "ex": [
+   [
+    "Take a <em>brochure</em> from the desk to see our tour options.",
+    "請從櫃檯拿一份手冊，看看我們的旅遊方案。"
+   ],
+   [
+    "The travel agency sent me a colourful <em>brochure</em> about Spain.",
+    "旅行社寄給我一份關於西班牙的彩色手冊。"
+   ],
+   [
+    "We are designing a new product <em>brochure</em> for the trade fair.",
+    "我們正在為貿易展設計新的產品手冊。"
+   ],
+   [
+    "The hotel <em>brochure</em> lists all the facilities and room rates.",
+    "飯店手冊列出所有設施和房價。"
+   ],
+   [
+    "Her company printed five thousand <em>brochures</em> for the launch event.",
+    "她的公司為發表會印了五千份手冊。"
+   ]
+  ],
+  "coll": [
+   [
+    "product brochure",
+    "產品手冊"
+   ],
+   [
+    "travel brochure",
+    "旅遊手冊"
+   ],
+   [
+    "glossy brochure",
+    "精美印刷手冊"
+   ],
+   [
+    "print a brochure",
+    "印製手冊"
+   ],
+   [
+    "request a brochure",
+    "索取手冊"
+   ],
+   [
+    "brochure design",
+    "手冊設計"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "pamphlet",
+    "note": [
+     "Usually a few folded pages giving information or an opinion; a brochure is mainly promotional.",
+     "通常是幾頁摺頁，提供資訊或意見；brochure 主要用於宣傳。"
+    ]
+   },
+   {
+    "w": "leaflet",
+    "note": [
+     "A single printed sheet, often handed out free; a brochure is usually bound or folded into several pages.",
+     "單張印刷品，常免費發送；brochure 通常裝訂或摺成多頁。"
+    ]
+   },
+   {
+    "w": "flyer",
+    "note": [
+     "A single-sheet advertisement, informal; handed out or posted in public.",
+     "單張廣告，較口語；在公共場所發送或張貼。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "cafeteria",
+  "pos": "n.",
+  "zh": "自助餐廳、員工餐廳",
+  "def": [
+   "A restaurant in a workplace, school or hospital where people choose their own food and carry it to a table.",
+   "設於職場、學校或醫院、由顧客自行取餐的餐廳。"
+  ],
+  "ex": [
+   [
+    "Lunch is served in the staff <em>cafeteria</em> from noon to two.",
+    "員工餐廳在中午到兩點供應午餐。"
+   ],
+   [
+    "The company <em>cafeteria</em> offers a vegetarian option every day.",
+    "公司餐廳每天都提供素食選項。"
+   ],
+   [
+    "Our team usually meets in the <em>cafeteria</em> for a quick coffee.",
+    "我們團隊通常在餐廳碰面喝杯咖啡。"
+   ],
+   [
+    "The hospital <em>cafeteria</em> stays open all night.",
+    "醫院的餐廳整晚營業。"
+   ],
+   [
+    "Students line up at the campus <em>cafeteria</em> during the lunch break.",
+    "午休時間，學生在校園餐廳排隊。"
+   ]
+  ],
+  "coll": [
+   [
+    "staff cafeteria",
+    "員工餐廳"
+   ],
+   [
+    "school cafeteria",
+    "學校餐廳"
+   ],
+   [
+    "company cafeteria",
+    "公司餐廳"
+   ],
+   [
+    "cafeteria menu",
+    "餐廳菜單"
+   ],
+   [
+    "cafeteria food",
+    "自助餐廳的食物"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "canteen",
+    "note": [
+     "British word for a workplace or school dining area; cafeteria is the usual American word.",
+     "英式用語，指職場或學校的用餐區；cafeteria 是美式常用字。"
+    ]
+   },
+   {
+    "w": "dining hall",
+    "note": [
+     "A large room for meals at a school or university.",
+     "學校或大學中供用餐的大廳。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "cafe",
+    "note": [
+     "A cafe is a small public place for drinks and snacks; a cafeteria is a self-service restaurant, often inside an organisation.",
+     "cafe 是供應飲料和點心的小型公共場所；cafeteria 是自助式餐廳，常設於機構內。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "campus",
+  "pos": "n.",
+  "zh": "校園；（公司）園區",
+  "def": [
+   "The land and buildings of a university, school or large company.",
+   "大學、學校或大型公司的土地與建築群。"
+  ],
+  "ex": [
+   [
+    "The company's main <em>campus</em> has three office buildings and a gym.",
+    "公司的主要園區有三棟辦公大樓和一間健身房。"
+   ],
+   [
+    "Visitors must register at the gate before entering the <em>campus</em>.",
+    "訪客進入園區前必須先在門口登記。"
+   ],
+   [
+    "She lives on <em>campus</em> during her first year of study.",
+    "她大一那年住在校內。"
+   ],
+   [
+    "We recruit new graduates at <em>campus</em> job fairs every autumn.",
+    "我們每年秋天在校園徵才博覽會招募應屆畢業生。"
+   ],
+   [
+    "A free shuttle runs between the two <em>campuses</em>.",
+    "兩個校區之間有免費接駁車往返。"
+   ]
+  ],
+  "coll": [
+   [
+    "on campus",
+    "在校內、園區內"
+   ],
+   [
+    "off campus",
+    "校外、園區外"
+   ],
+   [
+    "university campus",
+    "大學校園"
+   ],
+   [
+    "campus tour",
+    "校園導覽"
+   ],
+   [
+    "campus recruitment",
+    "校園徵才"
+   ],
+   [
+    "campus security",
+    "校園保全"
+   ]
+  ],
+  "family": [],
+  "syn": [
+   {
+    "w": "grounds",
+    "note": [
+     "The outdoor land around a building; a campus includes the buildings as well as the land.",
+     "建築物周圍的戶外土地；campus 則包含建築物與土地。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "cancellation",
+  "pos": "n.",
+  "zh": "取消",
+  "def": [
+   "The act of deciding that an event, booking or order will not happen or continue.",
+   "決定活動、訂位或訂單不再舉行或繼續。"
+  ],
+  "ex": [
+   [
+    "The airline announced the <em>cancellation</em> of all morning flights.",
+    "航空公司宣布取消所有早班航班。"
+   ],
+   [
+    "A <em>cancellation</em> fee applies if you change your booking within 24 hours.",
+    "如果在二十四小時內更改訂位，需支付取消費。"
+   ],
+   [
+    "Because of the <em>cancellation</em> of the keynote speech, the schedule was revised.",
+    "由於主題演講取消，議程已作修改。"
+   ],
+   [
+    "Please confirm your <em>cancellation</em> by email so we can release the room.",
+    "請以電子郵件確認你的取消，讓我們得以釋出房間。"
+   ],
+   [
+    "The hotel has a free <em>cancellation</em> policy up to 48 hours before arrival.",
+    "這家飯店在入住前四十八小時前可免費取消。"
+   ]
+  ],
+  "coll": [
+   [
+    "cancellation fee",
+    "取消費"
+   ],
+   [
+    "cancellation policy",
+    "取消政策"
+   ],
+   [
+    "free cancellation",
+    "免費取消"
+   ],
+   [
+    "notice of cancellation",
+    "取消通知"
+   ],
+   [
+    "flight cancellation",
+    "航班取消"
+   ],
+   [
+    "late cancellation",
+    "過晚取消"
+   ]
+  ],
+  "family": [
+   {
+    "w": "cancel",
+    "pos": "v.",
+    "zh": "取消"
+   }
+  ],
+  "syn": [
+   {
+    "w": "termination",
+    "note": [
+     "Formal; the ending of a contract or employment, rather than an event or booking.",
+     "較正式；指合約或雇用關係的終止，而非活動或訂位。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "confirmation",
+    "zh": "確認"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "carrier",
+  "pos": "n.",
+  "zh": "運輸業者、航空公司；電信業者；保險公司",
+  "def": [
+   "A company that transports goods or passengers, or provides a service such as mobile phone or insurance.",
+   "運送貨物或乘客，或提供行動電話、保險等服務的公司。"
+  ],
+  "ex": [
+   [
+    "The <em>carrier</em> will deliver the parcel within two business days.",
+    "運送業者會在兩個工作天內送達包裹。"
+   ],
+   [
+    "Our main air <em>carrier</em> has added three flights a week to Seoul.",
+    "我們主要合作的航空公司每週增加了三班飛往首爾的班機。"
+   ],
+   [
+    "Please check with your mobile <em>carrier</em> about roaming charges abroad.",
+    "請向你的電信業者查詢國外漫遊費用。"
+   ],
+   [
+    "A low-cost <em>carrier</em> flies to Osaka for half the price.",
+    "廉價航空飛往大阪的票價只要一半。"
+   ],
+   [
+    "The insurance <em>carrier</em> approved the claim last week.",
+    "保險公司上週核准了這件理賠。"
+   ]
+  ],
+  "coll": [
+   [
+    "air carrier",
+    "航空公司"
+   ],
+   [
+    "low-cost carrier",
+    "廉價航空"
+   ],
+   [
+    "mobile carrier",
+    "行動電信業者"
+   ],
+   [
+    "freight carrier",
+    "貨運業者"
+   ],
+   [
+    "insurance carrier",
+    "保險業者"
+   ],
+   [
+    "carrier bag",
+    "（英式）購物袋"
+   ]
+  ],
+  "family": [
+   {
+    "w": "carry",
+    "pos": "v.",
+    "zh": "運送、攜帶"
+   }
+  ],
+  "syn": [
+   {
+    "w": "courier",
+    "note": [
+     "A courier delivers documents or small parcels quickly; a carrier is any company that moves goods or people.",
+     "courier 快速遞送文件或小包裹；carrier 是任何運送貨物或人員的公司。"
+    ]
+   },
+   {
+    "w": "airline",
+    "note": [
+     "Specifically an air transport company; carrier can also mean sea, road or phone companies.",
+     "專指航空運輸公司；carrier 也可指海運、陸運或電信公司。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "cartridge",
+  "pos": "n.",
+  "zh": "（印表機）墨水匣、碳粉匣；卡匣",
+  "def": [
+   "A small container that holds ink or toner and fits inside a printer.",
+   "裝有墨水或碳粉、可裝入印表機的小型容器。"
+  ],
+  "ex": [
+   [
+    "The printer stopped because the ink <em>cartridge</em> was empty.",
+    "印表機停止運作，因為墨水匣空了。"
+   ],
+   [
+    "Order a new toner <em>cartridge</em> before we run out.",
+    "請在用完之前訂購新的碳粉匣。"
+   ],
+   [
+    "Open the cover and remove the old <em>cartridge</em> carefully.",
+    "打開蓋子，小心取出舊的墨水匣。"
+   ],
+   [
+    "The supply room keeps spare <em>cartridges</em> for every office printer.",
+    "文具室備有每台辦公室印表機所需的備用墨水匣。"
+   ],
+   [
+    "Refilled <em>cartridges</em> cost less than original ones.",
+    "再填充的墨水匣比原廠的便宜。"
+   ]
+  ],
+  "coll": [
+   [
+    "ink cartridge",
+    "墨水匣"
+   ],
+   [
+    "toner cartridge",
+    "碳粉匣"
+   ],
+   [
+    "printer cartridge",
+    "印表機匣"
+   ],
+   [
+    "replace the cartridge",
+    "更換墨水匣"
+   ],
+   [
+    "empty cartridge",
+    "空的墨水匣"
+   ]
+  ],
+  "family": [],
+  "syn": [],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "cater",
+  "pos": "v.",
+  "zh": "承辦（餐飲）；迎合、滿足需求",
+  "def": [
+   "To provide food and drink for an event; to supply what a particular group of people needs.",
+   "為活動提供餐飲；提供特定族群所需的服務。"
+  ],
+  "ex": [
+   [
+    "A local restaurant will <em>cater</em> the staff party on Friday.",
+    "當地一家餐廳將承辦週五的員工派對餐點。"
+   ],
+   [
+    "The hotel <em>caters</em> to business travellers with fast Wi-Fi and a work desk.",
+    "這家飯店以快速無線網路和工作桌來迎合商務旅客。"
+   ],
+   [
+    "Our menu <em>caters</em> for vegetarians and guests with food allergies.",
+    "我們的菜單照顧到素食者和有食物過敏的賓客。"
+   ],
+   [
+    "The conference centre can <em>cater</em> for up to four hundred delegates.",
+    "這個會議中心最多可為四百位代表提供餐飲。"
+   ],
+   [
+    "The bakery <em>caters</em> mainly to small offices in the area.",
+    "這家麵包店主要服務附近的小型辦公室。"
+   ]
+  ],
+  "coll": [
+   [
+    "cater to",
+    "迎合、服務（對象）"
+   ],
+   [
+    "cater for",
+    "提供……所需（英式）"
+   ],
+   [
+    "cater an event",
+    "承辦活動餐飲"
+   ],
+   [
+    "cater a wedding",
+    "承辦婚宴餐飲"
+   ],
+   [
+    "cater to all tastes",
+    "滿足各種口味"
+   ]
+  ],
+  "family": [
+   {
+    "w": "caterer",
+    "pos": "n.",
+    "zh": "餐飲承辦業者"
+   },
+   {
+    "w": "catering",
+    "pos": "n.",
+    "zh": "餐飲服務"
+   }
+  ],
+  "syn": [
+   {
+    "w": "accommodate",
+    "note": [
+     "To make room for or meet someone's needs; not limited to food and drink.",
+     "騰出空間或滿足某人需求；不限於餐飲。"
+    ]
+   },
+   {
+    "w": "serve",
+    "note": [
+     "Broader; to provide goods or services to customers.",
+     "範圍較廣；向顧客提供商品或服務。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "caterer",
+  "pos": "n.",
+  "zh": "餐飲承辦業者",
+  "def": [
+   "A person or company that provides food and drink for events.",
+   "為活動提供餐飲的人或公司。"
+  ],
+  "ex": [
+   [
+    "We have hired a <em>caterer</em> for the product launch.",
+    "我們已為產品發表會聘請了餐飲業者。"
+   ],
+   [
+    "The <em>caterer</em> will set up the buffet an hour before guests arrive.",
+    "餐飲業者會在賓客抵達前一小時佈置好自助餐。"
+   ],
+   [
+    "Please tell the <em>caterer</em> about any dietary requirements by Monday.",
+    "請在週一前告知餐飲業者任何飲食需求。"
+   ],
+   [
+    "The wedding <em>caterer</em> offers both Western and Chinese menus.",
+    "這家婚宴餐飲業者提供西式與中式菜單。"
+   ],
+   [
+    "Our regular <em>caterer</em> raised its prices last quarter.",
+    "我們固定合作的餐飲業者上一季調漲了價格。"
+   ]
+  ],
+  "coll": [
+   [
+    "hire a caterer",
+    "聘請餐飲業者"
+   ],
+   [
+    "book a caterer",
+    "預約餐飲業者"
+   ],
+   [
+    "wedding caterer",
+    "婚宴餐飲業者"
+   ],
+   [
+    "event caterer",
+    "活動餐飲業者"
+   ],
+   [
+    "professional caterer",
+    "專業餐飲業者"
+   ]
+  ],
+  "family": [
+   {
+    "w": "cater",
+    "pos": "v.",
+    "zh": "承辦餐飲；滿足需求"
+   },
+   {
+    "w": "catering",
+    "pos": "n.",
+    "zh": "餐飲服務"
+   }
+  ],
+  "syn": [],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "certificate",
+  "pos": "n.",
+  "zh": "證書、證明書",
+  "def": [
+   "An official document that proves a fact, such as a qualification, a birth or a payment.",
+   "證明某項事實的正式文件，如資格、出生或款項。"
+  ],
+  "ex": [
+   [
+    "She received a <em>certificate</em> after completing the safety training.",
+    "她完成安全訓練後獲頒證書。"
+   ],
+   [
+    "Please bring your birth <em>certificate</em> to the visa interview.",
+    "請攜帶出生證明參加簽證面談。"
+   ],
+   [
+    "The factory holds a quality <em>certificate</em> that must be renewed every three years.",
+    "這間工廠持有品質認證，每三年必須更新。"
+   ],
+   [
+    "A gift <em>certificate</em> for the spa was the prize.",
+    "獎品是一張水療中心的禮券。"
+   ],
+   [
+    "Applicants need a teaching <em>certificate</em> issued by the Ministry of Education.",
+    "申請人需要教育部核發的教師證。"
+   ]
+  ],
+  "coll": [
+   [
+    "birth certificate",
+    "出生證明"
+   ],
+   [
+    "gift certificate",
+    "禮券"
+   ],
+   [
+    "certificate of completion",
+    "結業證書"
+   ],
+   [
+    "issue a certificate",
+    "核發證書"
+   ],
+   [
+    "professional certificate",
+    "專業證書"
+   ],
+   [
+    "teaching certificate",
+    "教師證"
+   ]
+  ],
+  "family": [
+   {
+    "w": "certify",
+    "pos": "v.",
+    "zh": "證明、認證"
+   },
+   {
+    "w": "certification",
+    "pos": "n.",
+    "zh": "認證；證明"
+   },
+   {
+    "w": "certified",
+    "pos": "adj.",
+    "zh": "經認證的、持有證照的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "diploma",
+    "note": [
+     "Awarded for finishing a longer course of study; a certificate can be for a short course or to prove any fact.",
+     "完成較長學程後頒發；certificate 可為短期課程或證明任何事實。"
+    ]
+   },
+   {
+    "w": "credential",
+    "note": [
+     "Any qualification or proof of ability; usually plural and more general than a certificate.",
+     "任何資格或能力證明；通常用複數，比 certificate 更籠統。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "certify",
+  "pos": "v.",
+  "zh": "證明、認證；核發證書",
+  "def": [
+   "To state officially, usually in writing, that something is true or meets a standard.",
+   "正式（通常以書面）聲明某事屬實或符合標準。"
+  ],
+  "ex": [
+   [
+    "The inspector must <em>certify</em> that the building meets fire safety standards.",
+    "檢查員必須證明這棟建築物符合消防安全標準。"
+   ],
+   [
+    "Our accountant will <em>certify</em> the figures before we submit the report.",
+    "我們的會計師會在我們提交報告前核證這些數字。"
+   ],
+   [
+    "This document <em>certifies</em> that Mr. Chen completed the course on 5 May.",
+    "本文件證明陳先生已於五月五日完成課程。"
+   ],
+   [
+    "The lab is <em>certified</em> to test medical equipment.",
+    "這間實驗室經認證可以檢測醫療設備。"
+   ],
+   [
+    "A notary will <em>certify</em> the copy as a true copy of the original.",
+    "公證人會證明這份影本與正本相符。"
+   ]
+  ],
+  "coll": [
+   [
+    "certify that",
+    "證明……"
+   ],
+   [
+    "certify a document",
+    "認證文件"
+   ],
+   [
+    "certified copy",
+    "認證副本"
+   ],
+   [
+    "certified mail",
+    "掛號信件"
+   ],
+   [
+    "be certified to",
+    "經認證可以……"
+   ],
+   [
+    "certify compliance",
+    "證明合規"
+   ]
+  ],
+  "family": [
+   {
+    "w": "certificate",
+    "pos": "n.",
+    "zh": "證書"
+   },
+   {
+    "w": "certification",
+    "pos": "n.",
+    "zh": "認證"
+   }
+  ],
+  "syn": [
+   {
+    "w": "verify",
+    "note": [
+     "Verify means to check that something is true; certify means to confirm it officially, often in writing.",
+     "verify 是查證某事屬實；certify 是正式（常以書面）確認。"
+    ]
+   },
+   {
+    "w": "attest",
+    "note": [
+     "Formal; to state or show that something is true, often as a witness (attest to).",
+     "較正式；陳述或顯示某事屬實，常如證人般（attest to）。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "charitable",
+  "pos": "adj.",
+  "zh": "慈善的；仁慈的",
+  "def": [
+   "Relating to giving money or help to people in need; kind and generous.",
+   "與捐錢或幫助有需要的人有關；仁慈慷慨的。"
+  ],
+  "ex": [
+   [
+    "The company donates part of its profits to <em>charitable</em> causes.",
+    "公司把一部分獲利捐給慈善事業。"
+   ],
+   [
+    "She works for a <em>charitable</em> organisation that feeds homeless families.",
+    "她在一個為無家可歸的家庭提供餐食的慈善組織工作。"
+   ],
+   [
+    "Gifts to <em>charitable</em> foundations may be tax deductible.",
+    "捐贈給慈善基金會的款項可能可以抵稅。"
+   ],
+   [
+    "The firm set up a <em>charitable</em> trust in the founder's name.",
+    "公司以創辦人的名義設立了慈善信託。"
+   ],
+   [
+    "A <em>charitable</em> event raised funds for the children's hospital.",
+    "一場慈善活動為兒童醫院募得了款項。"
+   ]
+  ],
+  "coll": [
+   [
+    "charitable organization",
+    "慈善組織"
+   ],
+   [
+    "charitable donation",
+    "慈善捐款"
+   ],
+   [
+    "charitable cause",
+    "慈善事業"
+   ],
+   [
+    "charitable foundation",
+    "慈善基金會"
+   ],
+   [
+    "charitable trust",
+    "慈善信託"
+   ],
+   [
+    "charitable status",
+    "慈善機構資格"
+   ]
+  ],
+  "family": [
+   {
+    "w": "charity",
+    "pos": "n.",
+    "zh": "慈善團體；慈善"
+   },
+   {
+    "w": "uncharitable",
+    "pos": "adj.",
+    "zh": "不寬容的、刻薄的"
+   },
+   {
+    "w": "charitably",
+    "pos": "adv.",
+    "zh": "寬厚地"
+   }
+  ],
+  "syn": [
+   {
+    "w": "philanthropic",
+    "note": [
+     "Formal; describes generous giving, often large-scale, to improve society.",
+     "較正式；形容慷慨捐助，常為大規模、以改善社會為目的。"
+    ]
+   },
+   {
+    "w": "nonprofit",
+    "note": [
+     "Describes an organisation that does not distribute profit to owners; not every nonprofit is charitable.",
+     "形容不將利潤分配給所有者的組織；不是所有非營利組織都屬慈善。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "checkout",
+  "pos": "n.",
+  "zh": "結帳處；結帳；退房",
+  "def": [
+   "The place in a shop where you pay; the process of paying or leaving a hotel.",
+   "商店中付款的地方；付款或退房的程序。"
+  ],
+  "ex": [
+   [
+    "<em>Checkout</em> is at eleven, but you can leave your luggage at the desk.",
+    "退房時間是十一點，但你可以把行李寄放在櫃檯。"
+   ],
+   [
+    "There was a long line at the <em>checkout</em> on Saturday afternoon.",
+    "週六下午結帳處排了很長的隊。"
+   ],
+   [
+    "Customers can pay at the self-service <em>checkout</em>.",
+    "顧客可以在自助結帳機付款。"
+   ],
+   [
+    "Proceed to <em>checkout</em> to review your order and enter payment details.",
+    "請前往結帳頁面檢查訂單並輸入付款資料。"
+   ],
+   [
+    "The store opened two extra <em>checkout</em> counters at peak hours.",
+    "尖峰時段，商店多開了兩個結帳櫃台。"
+   ]
+  ],
+  "coll": [
+   [
+    "checkout counter",
+    "結帳櫃台"
+   ],
+   [
+    "self-checkout",
+    "自助結帳"
+   ],
+   [
+    "checkout time",
+    "退房時間"
+   ],
+   [
+    "online checkout",
+    "線上結帳"
+   ],
+   [
+    "proceed to checkout",
+    "前往結帳"
+   ],
+   [
+    "checkout line",
+    "結帳排隊隊伍"
+   ]
+  ],
+  "family": [
+   {
+    "w": "check out",
+    "pos": "v.",
+    "zh": "辦理退房；結帳；查看"
+   }
+  ],
+  "syn": [],
+  "ant": [
+   {
+    "w": "check-in",
+    "zh": "登記入住、報到"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "cleaner",
+  "pos": "n.",
+  "zh": "清潔工；清潔劑；洗衣店",
+  "def": [
+   "A person whose job is to clean buildings; a substance used for cleaning.",
+   "以打掃建築物為業的人；用來清潔的物質。"
+  ],
+  "ex": [
+   [
+    "The office <em>cleaner</em> arrives at six every evening.",
+    "辦公室的清潔人員每天傍晚六點到。"
+   ],
+   [
+    "A professional <em>cleaner</em> came to wash the carpets.",
+    "一位專業清潔人員來清洗地毯。"
+   ],
+   [
+    "This all-purpose <em>cleaner</em> removes stains from most surfaces.",
+    "這款萬用清潔劑可以去除大部分表面的污漬。"
+   ],
+   [
+    "The hotel employs twenty <em>cleaners</em> to prepare rooms before check-in.",
+    "飯店雇用二十名清潔人員，在入住前整理房間。"
+   ],
+   [
+    "I left my suit at the dry <em>cleaner's</em> on the way to work.",
+    "我上班途中把西裝送去乾洗店。"
+   ]
+  ],
+  "coll": [
+   [
+    "office cleaner",
+    "辦公室清潔人員"
+   ],
+   [
+    "dry cleaner's",
+    "乾洗店"
+   ],
+   [
+    "window cleaner",
+    "擦窗工人"
+   ],
+   [
+    "vacuum cleaner",
+    "吸塵器"
+   ],
+   [
+    "all-purpose cleaner",
+    "萬用清潔劑"
+   ],
+   [
+    "floor cleaner",
+    "地板清潔劑"
+   ]
+  ],
+  "family": [
+   {
+    "w": "clean",
+    "pos": "v.",
+    "zh": "清潔、打掃"
+   },
+   {
+    "w": "cleaning",
+    "pos": "n.",
+    "zh": "清潔工作"
+   },
+   {
+    "w": "cleanliness",
+    "pos": "n.",
+    "zh": "清潔、整潔"
+   }
+  ],
+  "syn": [
+   {
+    "w": "janitor",
+    "note": [
+     "American word for a person who cleans and maintains a building.",
+     "美式用語，指打掃並維護建築物的人。"
+    ]
+   },
+   {
+    "w": "housekeeper",
+    "note": [
+     "Cleans rooms in hotels or homes; in hotels it is the usual job title.",
+     "負責打掃飯店或住家的房間；在飯店中是常見職稱。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "clerk",
+  "pos": "n.",
+  "zh": "店員、職員、櫃檯人員",
+  "def": [
+   "A person who does office work or serves customers at a desk, shop or counter.",
+   "從事辦公室文書工作或在櫃檯、店內服務顧客的人。"
+  ],
+  "ex": [
+   [
+    "The hotel desk <em>clerk</em> printed my receipt.",
+    "飯店櫃檯人員幫我列印了收據。"
+   ],
+   [
+    "A bank <em>clerk</em> will help you open an account.",
+    "銀行行員會協助你開戶。"
+   ],
+   [
+    "She started as a filing <em>clerk</em> and became office manager.",
+    "她從檔案管理員做起，後來成為辦公室經理。"
+   ],
+   [
+    "Please ask the sales <em>clerk</em> whether the shirt comes in blue.",
+    "請問店員這件襯衫有沒有藍色。"
+   ],
+   [
+    "The shipping <em>clerk</em> checks each parcel against the order form.",
+    "出貨人員會依訂單核對每個包裹。"
+   ]
+  ],
+  "coll": [
+   [
+    "sales clerk",
+    "店員"
+   ],
+   [
+    "desk clerk",
+    "櫃檯人員"
+   ],
+   [
+    "bank clerk",
+    "銀行行員"
+   ],
+   [
+    "shipping clerk",
+    "出貨人員"
+   ],
+   [
+    "filing clerk",
+    "檔案管理員"
+   ],
+   [
+    "office clerk",
+    "辦公室職員"
+   ]
+  ],
+  "family": [
+   {
+    "w": "clerical",
+    "pos": "adj.",
+    "zh": "文書的、行政事務的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "shop assistant",
+    "note": [
+     "British term for a person who serves customers in a shop; sales clerk is the American one.",
+     "英式用語，指店內服務顧客的人；sales clerk 是美式說法。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "client",
+  "pos": "n.",
+  "zh": "客戶、委託人",
+  "def": [
+   "A person or company that pays a professional or firm for advice or services.",
+   "付費向專業人士或公司取得建議或服務的個人或公司。"
+  ],
+  "ex": [
+   [
+    "Our firm has more than fifty <em>clients</em> in the technology sector.",
+    "我們事務所在科技業有五十多位客戶。"
+   ],
+   [
+    "Please send the proposal to the <em>client</em> by Thursday.",
+    "請在週四前將提案寄給客戶。"
+   ],
+   [
+    "The law firm protects <em>client</em> confidentiality at all times.",
+    "這間律師事務所隨時保護客戶的機密。"
+   ],
+   [
+    "A new <em>client</em> called to ask about our consulting fees.",
+    "一位新客戶來電詢問我們的顧問費用。"
+   ],
+   [
+    "The designer met the <em>client</em> twice before finalising the plan.",
+    "設計師在定案前與客戶見了兩次面。"
+   ]
+  ],
+  "coll": [
+   [
+    "regular client",
+    "老客戶"
+   ],
+   [
+    "potential client",
+    "潛在客戶"
+   ],
+   [
+    "client base",
+    "客戶群"
+   ],
+   [
+    "client meeting",
+    "客戶會議"
+   ],
+   [
+    "meet with a client",
+    "與客戶會面"
+   ],
+   [
+    "client list",
+    "客戶名單"
+   ]
+  ],
+  "family": [
+   {
+    "w": "clientele",
+    "pos": "n.",
+    "zh": "（總稱）客戶群"
+   }
+  ],
+  "syn": [
+   {
+    "w": "customer",
+    "note": [
+     "A customer buys goods or services, often one time; a client uses professional services, usually over a longer relationship.",
+     "customer 購買商品或服務，常為單次；client 使用專業服務，通常關係較長久。"
+    ]
+   },
+   {
+    "w": "patron",
+    "note": [
+     "Formal; a regular customer of a shop, restaurant or theatre.",
+     "較正式；商店、餐廳或劇院的常客。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": []
+ },
+ {
+  "w": "clinic",
+  "pos": "n.",
+  "zh": "診所；門診",
+  "def": [
+   "A place where people receive medical care or advice, usually without staying overnight.",
+   "人們接受醫療照護或諮詢的地方，通常不需過夜。"
+  ],
+  "ex": [
+   [
+    "The <em>clinic</em> opens at eight and closes at six on weekdays.",
+    "這間診所平日八點開門、六點關門。"
+   ],
+   [
+    "She made an appointment at the dental <em>clinic</em> for Tuesday.",
+    "她預約了週二到牙醫診所看診。"
+   ],
+   [
+    "The company runs a small <em>clinic</em> for employees at its main plant.",
+    "公司在主要廠區設有一間供員工使用的小診所。"
+   ],
+   [
+    "A free eye <em>clinic</em> will be held at the community centre.",
+    "社區活動中心將舉辦免費的眼科門診。"
+   ],
+   [
+    "Walk-in <em>clinics</em> treat minor injuries without an appointment.",
+    "無需預約的門診可處理輕微傷勢。"
+   ]
+  ],
+  "coll": [
+   [
+    "dental clinic",
+    "牙科診所"
+   ],
+   [
+    "medical clinic",
+    "醫療診所"
+   ],
+   [
+    "walk-in clinic",
+    "不需預約的門診"
+   ],
+   [
+    "health clinic",
+    "健康診所"
+   ],
+   [
+    "clinic hours",
+    "門診時間"
+   ],
+   [
+    "outpatient clinic",
+    "門診部"
+   ]
+  ],
+  "family": [
+   {
+    "w": "clinical",
+    "pos": "adj.",
+    "zh": "臨床的"
+   },
+   {
+    "w": "clinician",
+    "pos": "n.",
+    "zh": "臨床醫師"
+   }
+  ],
+  "syn": [
+   {
+    "w": "surgery",
+    "note": [
+     "British; a doctor's or dentist's place of work where patients are seen.",
+     "英式用法；醫師或牙醫看診的地點。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "hospital",
+    "note": [
+     "A hospital is larger and has beds for patients who stay overnight; a clinic is smaller and usually for day visits.",
+     "hospital 較大，設有床位供病人住院；clinic 較小，通常只供當日看診。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "completion",
+  "pos": "n.",
+  "zh": "完成；竣工",
+  "def": [
+   "The act or state of finishing something.",
+   "把某事做完的動作或狀態。"
+  ],
+  "ex": [
+   [
+    "The <em>completion</em> of the new terminal is expected in March.",
+    "新航廈預計於三月完工。"
+   ],
+   [
+    "Upon <em>completion</em> of the course, you will receive a certificate.",
+    "完成課程後，你會獲得證書。"
+   ],
+   [
+    "The contractor is paid in full on <em>completion</em> of the work.",
+    "承包商在工程完成時獲得全額付款。"
+   ],
+   [
+    "The project is nearing <em>completion</em>, so the team is preparing handover documents.",
+    "專案即將完成，團隊正在準備交接文件。"
+   ],
+   [
+    "The form must be returned within a week of <em>completion</em>.",
+    "表格填寫完成後必須在一週內交回。"
+   ]
+  ],
+  "coll": [
+   [
+    "upon completion",
+    "一旦完成"
+   ],
+   [
+    "completion date",
+    "完成日期"
+   ],
+   [
+    "completion of the project",
+    "專案完成"
+   ],
+   [
+    "near completion",
+    "接近完成"
+   ],
+   [
+    "on completion of",
+    "在……完成時"
+   ],
+   [
+    "completion certificate",
+    "結業或完工證明"
+   ]
+  ],
+  "family": [
+   {
+    "w": "complete",
+    "pos": "v.",
+    "zh": "完成"
+   },
+   {
+    "w": "completely",
+    "pos": "adv.",
+    "zh": "完全地"
+   },
+   {
+    "w": "incomplete",
+    "pos": "adj.",
+    "zh": "不完整的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "conclusion",
+    "note": [
+     "The end of an event or process, such as a meeting or talks; completion stresses that the work is finished.",
+     "活動或過程（如會議、談判）的結束；completion 強調工作已完成。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "start",
+    "zh": "開始"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "competition",
+    "note": [
+     "Looks similar but means a contest or rivalry between people or companies.",
+     "字形相似，但意思是人或公司之間的比賽或競爭。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "compliment",
+  "pos": "n., v.",
+  "zh": "稱讚；恭維；致意",
+  "def": [
+   "A polite remark that praises someone; to say something that praises someone.",
+   "稱讚某人的禮貌話語；說出稱讚某人的話。"
+  ],
+  "ex": [
+   [
+    "The client paid us a <em>compliment</em> on the quick delivery.",
+    "客戶稱讚我們出貨迅速。"
+   ],
+   [
+    "My manager <em>complimented</em> me on the clear presentation.",
+    "我的經理稱讚我簡報條理清楚。"
+   ],
+   [
+    "Thank you for the kind <em>compliments</em> about our service.",
+    "謝謝你對我們服務的美言。"
+   ],
+   [
+    "Customers often <em>compliment</em> the staff on their friendly attitude.",
+    "顧客常稱讚員工態度親切。"
+   ],
+   [
+    "The champagne is sent with our <em>compliments</em>.",
+    "這瓶香檳是我們獻上的心意。"
+   ]
+  ],
+  "coll": [
+   [
+    "pay a compliment",
+    "稱讚（某人）"
+   ],
+   [
+    "receive a compliment",
+    "收到讚美"
+   ],
+   [
+    "compliment someone on",
+    "就……稱讚某人"
+   ],
+   [
+    "a genuine compliment",
+    "真心的讚美"
+   ],
+   [
+    "return the compliment",
+    "回敬讚美"
+   ],
+   [
+    "with the compliments of",
+    "謹此奉上"
+   ]
+  ],
+  "family": [
+   {
+    "w": "complimentary",
+    "pos": "adj.",
+    "zh": "免費贈送的；讚美的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "praise",
+    "note": [
+     "Praise can be public and about work or character; a compliment is a short polite remark to a person.",
+     "praise 可以是公開的，針對工作或品格；compliment 是對人說的簡短客套話。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "criticism",
+    "zh": "批評"
+   },
+   {
+    "w": "insult",
+    "zh": "侮辱"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "complement",
+    "note": [
+     "Complement (with e) means to go well with or complete something; compliment (with i) means to praise.",
+     "complement（有 e）指搭配或使完整；compliment（有 i）指稱讚。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "complimentary",
+  "pos": "adj.",
+  "zh": "免費贈送的；讚美的",
+  "def": [
+   "Given free as a courtesy by a business; expressing praise.",
+   "企業出於禮遇免費提供的；表示讚美的。"
+  ],
+  "ex": [
+   [
+    "Guests receive a <em>complimentary</em> breakfast with every room.",
+    "每間客房的住客都附贈早餐。"
+   ],
+   [
+    "The airline offers <em>complimentary</em> drinks in first class.",
+    "航空公司在頭等艙免費提供飲料。"
+   ],
+   [
+    "She gave a <em>complimentary</em> review of the new software.",
+    "她對這套新軟體給了正面的評價。"
+   ],
+   [
+    "Please take a <em>complimentary</em> ticket to the exhibition.",
+    "請收下這張展覽的招待券。"
+   ],
+   [
+    "A <em>complimentary</em> shuttle runs between the hotel and the station.",
+    "飯店與車站之間有免費接駁車往返。"
+   ]
+  ],
+  "coll": [
+   [
+    "complimentary breakfast",
+    "免費早餐"
+   ],
+   [
+    "complimentary ticket",
+    "招待券"
+   ],
+   [
+    "complimentary copy",
+    "贈閱本"
+   ],
+   [
+    "complimentary Wi-Fi",
+    "免費無線網路"
+   ],
+   [
+    "complimentary remarks",
+    "讚美的話"
+   ],
+   [
+    "complimentary shuttle",
+    "免費接駁車"
+   ]
+  ],
+  "family": [
+   {
+    "w": "compliment",
+    "pos": "n.",
+    "zh": "稱讚"
+   }
+  ],
+  "syn": [
+   {
+    "w": "free",
+    "note": [
+     "Everyday word; complimentary is the polite word for something a business gives at no charge.",
+     "日常用語；complimentary 是商家免費贈送時較禮貌的用詞。"
+    ]
+   },
+   {
+    "w": "on the house",
+    "note": [
+     "Informal phrase for food or drink a restaurant or bar gives free.",
+     "口語說法，指餐廳或酒吧免費招待的餐飲。"
+    ]
+   }
+  ],
+  "ant": [],
+  "confuse": [
+   {
+    "w": "complementary",
+    "note": [
+     "Complementary means going well together or completing each other, as in complementary skills; it has nothing to do with free.",
+     "complementary 指互相搭配或互補，如互補的技能；與「免費」無關。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "comply",
+  "pos": "v.",
+  "zh": "遵守、服從（comply with）",
+  "def": [
+   "To do what a rule, law or request says you must do.",
+   "依照規則、法律或要求所規定的去做。"
+  ],
+  "ex": [
+   [
+    "All suppliers must <em>comply</em> with our environmental standards.",
+    "所有供應商都必須遵守我們的環保標準。"
+   ],
+   [
+    "The factory was fined for failing to <em>comply</em> with safety regulations.",
+    "這間工廠因未遵守安全法規而被罰款。"
+   ],
+   [
+    "We will <em>comply</em> with your request and send the files today.",
+    "我們會依你的要求，今天就寄出檔案。"
+   ],
+   [
+    "Employees are required to <em>comply</em> with the company's travel policy.",
+    "員工必須遵守公司的差旅政策。"
+   ],
+   [
+    "Does the new packaging <em>comply</em> with the labelling rules?",
+    "新包裝符合標示規定嗎？"
+   ]
+  ],
+  "coll": [
+   [
+    "comply with regulations",
+    "遵守法規"
+   ],
+   [
+    "comply with a request",
+    "依要求辦理"
+   ],
+   [
+    "fail to comply",
+    "未能遵守"
+   ],
+   [
+    "comply with the law",
+    "遵守法律"
+   ],
+   [
+    "comply with standards",
+    "符合標準"
+   ],
+   [
+    "comply with an order",
+    "遵從命令"
+   ]
+  ],
+  "family": [
+   {
+    "w": "compliance",
+    "pos": "n.",
+    "zh": "遵守、合規"
+   },
+   {
+    "w": "compliant",
+    "pos": "adj.",
+    "zh": "符合規定的"
+   },
+   {
+    "w": "noncompliance",
+    "pos": "n.",
+    "zh": "不遵守、不合規"
+   }
+  ],
+  "syn": [
+   {
+    "w": "obey",
+    "note": [
+     "Obey is used with a person or command and sounds more personal; comply with is used with rules and requests.",
+     "obey 用於人或命令，語氣較個人；comply with 用於規定與要求。"
+    ]
+   },
+   {
+    "w": "conform",
+    "note": [
+     "To match a standard or pattern; comply stresses doing what is required.",
+     "符合某標準或模式；comply 強調做到所要求的事。"
+    ]
+   },
+   {
+    "w": "abide",
+    "note": [
+     "Abide by means to accept and follow a rule or decision.",
+     "abide by 指接受並遵守規定或決定。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "violate",
+    "zh": "違反"
+   },
+   {
+    "w": "disobey",
+    "zh": "不服從"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "confidential",
+  "pos": "adj.",
+  "zh": "機密的、保密的",
+  "def": [
+   "Meant to be kept secret and shared only with certain people.",
+   "應當保密、只與特定人士分享的。"
+  ],
+  "ex": [
+   [
+    "Please keep this information strictly <em>confidential</em>.",
+    "請嚴格保密這項資訊。"
+   ],
+   [
+    "The file is marked <em>confidential</em> and is locked in the safe.",
+    "這份檔案標示為機密，鎖在保險箱裡。"
+   ],
+   [
+    "Employees sign an agreement not to share <em>confidential</em> client data.",
+    "員工須簽署協議，不得洩漏客戶機密資料。"
+   ],
+   [
+    "Her salary details are <em>confidential</em> and known only to HR.",
+    "她的薪資細節屬於機密，只有人資部門知道。"
+   ],
+   [
+    "A <em>confidential</em> email was sent to the wrong address by mistake.",
+    "一封機密電子郵件被誤寄到錯誤的地址。"
+   ]
+  ],
+  "coll": [
+   [
+    "strictly confidential",
+    "絕對機密"
+   ],
+   [
+    "confidential information",
+    "機密資訊"
+   ],
+   [
+    "confidential document",
+    "機密文件"
+   ],
+   [
+    "confidentiality agreement",
+    "保密協議"
+   ],
+   [
+    "keep it confidential",
+    "保密"
+   ],
+   [
+    "highly confidential",
+    "高度機密"
+   ]
+  ],
+  "family": [
+   {
+    "w": "confidentiality",
+    "pos": "n.",
+    "zh": "機密性、保密"
+   },
+   {
+    "w": "confidentially",
+    "pos": "adv.",
+    "zh": "祕密地、保密地"
+   },
+   {
+    "w": "confide",
+    "pos": "v.",
+    "zh": "吐露（祕密）"
+   }
+  ],
+  "syn": [
+   {
+    "w": "private",
+    "note": [
+     "Private means personal and not for the public; confidential is used for business or official information.",
+     "private 指個人、不對外公開；confidential 多用於商業或官方資訊。"
+    ]
+   },
+   {
+    "w": "secret",
+    "note": [
+     "Hidden from nearly everyone; confidential information may still be shared with permitted people.",
+     "對幾乎所有人隱瞞；confidential 的資訊仍可與獲准的人分享。"
+    ]
+   },
+   {
+    "w": "classified",
+    "note": [
+     "Officially marked as secret by a government or military.",
+     "經政府或軍方正式列為機密。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "public",
+    "zh": "公開的"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "confident",
+    "note": [
+     "Confident means sure of yourself or of something; confidential means secret.",
+     "confident 是對自己或某事有信心；confidential 是機密。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "confirmation",
+  "pos": "n.",
+  "zh": "確認；確認通知",
+  "def": [
+   "A statement or document that says something is true, agreed or booked.",
+   "表示某事屬實、已同意或已預訂的聲明或文件。"
+  ],
+  "ex": [
+   [
+    "You will receive a booking <em>confirmation</em> by email within an hour.",
+    "你會在一小時內以電子郵件收到訂位確認。"
+   ],
+   [
+    "We are waiting for written <em>confirmation</em> from the supplier.",
+    "我們正在等供應商的書面確認。"
+   ],
+   [
+    "Please bring your <em>confirmation</em> number to the check-in desk.",
+    "請攜帶你的確認編號到報到櫃檯。"
+   ],
+   [
+    "The <em>confirmation</em> of his promotion was announced on Friday.",
+    "他升遷的確認消息在週五公布。"
+   ],
+   [
+    "Reply to this message as <em>confirmation</em> that you will attend the meeting.",
+    "請回覆此訊息，確認你會出席會議。"
+   ]
+  ],
+  "coll": [
+   [
+    "booking confirmation",
+    "訂位確認"
+   ],
+   [
+    "confirmation email",
+    "確認電子郵件"
+   ],
+   [
+    "confirmation number",
+    "確認編號"
+   ],
+   [
+    "written confirmation",
+    "書面確認"
+   ],
+   [
+    "await confirmation",
+    "等候確認"
+   ],
+   [
+    "request confirmation",
+    "要求確認"
+   ]
+  ],
+  "family": [
+   {
+    "w": "confirm",
+    "pos": "v.",
+    "zh": "確認"
+   },
+   {
+    "w": "reconfirm",
+    "pos": "v.",
+    "zh": "再次確認"
+   },
+   {
+    "w": "unconfirmed",
+    "pos": "adj.",
+    "zh": "未經證實的"
+   }
+  ],
+  "syn": [
+   {
+    "w": "verification",
+    "note": [
+     "Verification means checking that something is true; confirmation says it is settled, agreed or booked.",
+     "verification 是查證某事屬實；confirmation 是表示已確定、同意或預訂。"
+    ]
+   },
+   {
+    "w": "acknowledgement",
+    "note": [
+     "Shows that something was received; it does not necessarily say it is approved or correct.",
+     "表示已收到；不一定表示已核准或正確。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "denial",
+    "zh": "否認、否決"
+   },
+   {
+    "w": "cancellation",
+    "zh": "取消"
+   }
+  ],
+  "confuse": []
+ },
+ {
+  "w": "conform",
+  "pos": "v.",
+  "zh": "符合、遵從（conform to / with）",
+  "def": [
+   "To match a rule, standard or expected pattern of behaviour.",
+   "符合某項規定、標準或預期的行為模式。"
+  ],
+  "ex": [
+   [
+    "All products must <em>conform</em> to international safety standards.",
+    "所有產品都必須符合國際安全標準。"
+   ],
+   [
+    "The software update was designed to <em>conform</em> with the new data law.",
+    "這次軟體更新是為了符合新的資料法規而設計。"
+   ],
+   [
+    "Visitors are expected to <em>conform</em> to the dress code at the club.",
+    "俱樂部要求訪客遵守服裝規定。"
+   ],
+   [
+    "The design does not <em>conform</em> to the client's specifications.",
+    "這個設計不符合客戶的規格。"
+   ],
+   [
+    "New recruits quickly <em>conform</em> to the company's way of working.",
+    "新進員工很快就適應公司的工作方式。"
+   ]
+  ],
+  "coll": [
+   [
+    "conform to standards",
+    "符合標準"
+   ],
+   [
+    "conform to regulations",
+    "遵守法規"
+   ],
+   [
+    "conform with the law",
+    "遵守法律"
+   ],
+   [
+    "conform to specifications",
+    "符合規格"
+   ],
+   [
+    "conform to expectations",
+    "符合期望"
+   ],
+   [
+    "fail to conform",
+    "未能符合"
+   ]
+  ],
+  "family": [
+   {
+    "w": "conformity",
+    "pos": "n.",
+    "zh": "符合；順從"
+   },
+   {
+    "w": "conformance",
+    "pos": "n.",
+    "zh": "符合性（常見於標準規範）"
+   },
+   {
+    "w": "conformist",
+    "pos": "n.",
+    "zh": "墨守成規者"
+   }
+  ],
+  "syn": [
+   {
+    "w": "comply",
+    "note": [
+     "Comply stresses doing what is required; conform stresses matching a standard or pattern.",
+     "comply 強調做到所要求的事；conform 強調符合標準或模式。"
+    ]
+   },
+   {
+    "w": "follow",
+    "note": [
+     "Everyday word; to do what a rule or example says.",
+     "日常用語；照規定或範例去做。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "deviate",
+    "zh": "偏離"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "confirm",
+    "note": [
+     "Looks similar but means to say or show that something is true or certain.",
+     "字形相似，但意思是確認或證實某事屬實。"
+    ]
+   }
+  ]
+ },
+ {
+  "w": "considerably",
+  "pos": "adv.",
+  "zh": "相當地、大幅地",
+  "def": [
+   "By a large amount; to a great degree.",
+   "數量很多；程度很大。"
+  ],
+  "ex": [
+   [
+    "Sales rose <em>considerably</em> after we changed the packaging.",
+    "我們更換包裝後，銷售額大幅成長。"
+   ],
+   [
+    "The new model is <em>considerably</em> cheaper than the old one.",
+    "新款比舊款便宜許多。"
+   ],
+   [
+    "Delivery times have improved <em>considerably</em> since we switched carriers.",
+    "自從我們更換運輸業者後，送貨時間已大幅改善。"
+   ],
+   [
+    "The two proposals differ <em>considerably</em> in cost.",
+    "這兩份提案的成本差異很大。"
+   ],
+   [
+    "The hotel was <em>considerably</em> busier than we expected during the fair.",
+    "展覽期間，飯店比我們預期的繁忙許多。"
+   ]
+  ],
+  "coll": [
+   [
+    "improve considerably",
+    "大幅改善"
+   ],
+   [
+    "vary considerably",
+    "差異很大"
+   ],
+   [
+    "considerably higher",
+    "高出許多"
+   ],
+   [
+    "considerably less",
+    "少很多"
+   ],
+   [
+    "differ considerably",
+    "差別很大"
+   ],
+   [
+    "considerably more expensive",
+    "貴上許多"
+   ]
+  ],
+  "family": [
+   {
+    "w": "considerable",
+    "pos": "adj.",
+    "zh": "相當大的"
+   },
+   {
+    "w": "consider",
+    "pos": "v.",
+    "zh": "考慮"
+   },
+   {
+    "w": "consideration",
+    "pos": "n.",
+    "zh": "考量；體貼"
+   }
+  ],
+  "syn": [
+   {
+    "w": "significantly",
+    "note": [
+     "Stresses that the change is important or measurable; considerably stresses the size of the amount.",
+     "強調變化重要或可衡量；considerably 強調幅度大。"
+    ]
+   },
+   {
+    "w": "substantially",
+    "note": [
+     "Formal; by a large amount, often used for figures and changes.",
+     "較正式；幅度大，常用於數字與變動。"
+    ]
+   },
+   {
+    "w": "greatly",
+    "note": [
+     "Used before or after verbs, as in greatly improved; not before comparatives like cheaper.",
+     "用在動詞前後，如 greatly improved；不用在 cheaper 這類比較級前。"
+    ]
+   }
+  ],
+  "ant": [
+   {
+    "w": "slightly",
+    "zh": "稍微"
+   },
+   {
+    "w": "marginally",
+    "zh": "些微地"
+   }
+  ],
+  "confuse": [
+   {
+    "w": "considerate",
+    "note": [
+     "Considerate means thoughtful about other people's feelings; it is not the adjective of considerably.",
+     "considerate 指體貼他人感受；不是 considerably 對應的形容詞。"
+    ]
+   }
+  ]
+ }
+]
