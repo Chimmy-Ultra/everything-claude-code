@@ -100,6 +100,13 @@ button.row:hover .t{text-decoration:underline;text-underline-offset:4px;text-dec
 .foot a:hover,.foot button:hover{color:var(--soft)}
 .foot .zhb{font-family:var(--zh);font-size:.95em;border:1px solid var(--rule);border-radius:3px;padding:0 5px;line-height:1.6}
 .foot .zhb[aria-pressed="true"]{color:var(--soft);border-color:var(--faint)}
+.foot .fl{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline}
+.ask{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.4em .8em;align-items:baseline}
+.ask input{font:italic 1em var(--en);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--rule);padding:.2em 0;min-width:0}
+.ask input:focus{outline:none;border-bottom-color:var(--accent)}
+.ask button{font:italic 500 .95em var(--en);color:var(--accent)}
+.ask button:disabled{color:var(--faint)}
+.askOut{grid-column:1/-1;font-size:.94em;color:var(--soft);white-space:pre-wrap}
 .next{display:flex;justify-content:flex-end;margin-top:1.2em}
 .next button{font:italic 500 1.08em var(--en);color:var(--accent)}
 .next button:hover{text-decoration:underline;text-underline-offset:4px}
@@ -155,7 +162,7 @@ button.row:hover .t{text-decoration:underline;text-underline-offset:4px;text-dec
 <script>
 const PARTS = [
   {zh:"第一部　文法", en:"Grammar", ch:[["詞性判斷",10,true],["動詞時態",8],["主動與被動",4],["分詞：-ing 與 -ed",7],["連接詞、介系詞、連接副詞",8],["主詞與動詞一致",6],["關係代名詞",6],["代名詞",6],["介系詞：時間、期限與常用片語",9],["to 的陷阱與動詞後接的形式",6],["要求與建議：that 子句用原形",4],["假設語氣與倒裝",4],["比較",5],["數量詞與可數名詞",5],["平行結構與成對連接詞",4]]},
-  {zh:"第二部　字彙", en:"Vocabulary", ch:[["搭配詞",13],["近義辨析",13],["商業字彙",11],["同字根不同義",10]]},
+  {zh:"第二部　字彙", en:"Vocabulary", ch:[["搭配詞",13],["近義辨析",13,true],["商業字彙",11],["同字根不同義",10]]},
   {zh:"第三部　聽力", en:"Listening", ch:[["應答",17],["對話",8],["獨白",4]]},
 ];
 const NUM = "一二三四五六七八九十";
@@ -163,7 +170,7 @@ const cn = n => n <= 10 ? NUM[n-1] : n < 20 ? "十" + NUM[n-11] : String(n);
 
 // Each explanation line is [English, Chinese]. Chinese stays hidden until asked for.
 const ITEMS = [
-  {stem:"The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
+  {ch:"詞性判斷", type:"grammar", stem:"The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
    options:["access","accessibly","accessible","accessibility"], answer:2,
    point:["<em>make</em> + object + adjective.","make + 受詞 + 形容詞。"],
    why:["The object of <em>makes</em> is the whole phrase <em>the items that customers order most often</em>. The blank says what those items become, so it needs an adjective: <em>accessible</em>.","makes 的受詞是 the items that customers order most often，空格說明這些商品變得怎樣，要形容詞 accessible。"],
@@ -175,7 +182,7 @@ const ITEMS = [
      layout:{hw:"layout", pos:"n.", ipa:"/ˈleɪaʊt/", zh:"配置、布局", ex:"We changed the layout of the lobby."},
      pickers:{hw:"picker", pos:"n.", ipa:"/ˈpɪkər/", zh:"揀貨員", ex:"The pickers start work at six."},
      shift:{hw:"shift", pos:"n.", ipa:"/ʃɪft/", zh:"班次", ex:"She works the night shift on Fridays."}}},
-  {stem:"______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
+  {ch:"詞性判斷", type:"grammar", stem:"______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
    options:["Applications","Apply","Applying","Applied"], answer:0,
    point:["The blank is the subject: use a noun.","空格是主詞，用名詞。"],
    why:["The main verb comes late: <em>will be accepted</em>. Everything from the blank to <em>Avenue</em> is the subject. What gets accepted? <em>Applications</em>.","主要動詞在後面：will be accepted。從空格到 Avenue 都是主詞。被受理的是什麼？申請書 Applications。"],
@@ -187,6 +194,18 @@ const ITEMS = [
    gloss:{
      "assistant branch manager":{hw:"assistant branch manager", pos:"n.", ipa:"/əˈsɪstənt bræntʃ ˈmænɪdʒər/", zh:"副分行經理", ex:"The assistant branch manager opens the bank each morning."},
      portal:{hw:"portal", pos:"n.", ipa:"/ˈpɔːrtl/", zh:"入口網站、線上系統", ex:"Upload your receipts through the employee portal."}}},
+  {ch:"近義辨析", type:"vocab", stem:"The revised security policy ______ all staff in the billing department, whether permanent or temporary, to keep copies of customers' card numbers on their own laptops or phones.",
+   options:["prohibits","prevents","bans","forbids"], answer:3,
+   point:["<em>forbid</em> someone <em>to</em> do something.","forbid 人 to V。"],
+   why:["All four mean roughly “not allow.” The difference is what follows the person. After <em>whether permanent or temporary</em> comes <em>to keep</em>, and only <em>forbid</em> takes someone + <em>to</em> do.","四個都有「不准」的意思，差在人後面接什麼。插入語之後是 to keep，只有 forbid 接「人 + to V」。"],
+   wrong:[["<em>prohibit</em> someone <em>from</em> doing something. <em>The rules prohibit staff from eating at their desks.</em>","prohibit 人 from Ving。"],
+          ["<em>prevent</em> someone <em>from</em> doing something; it means stopping it from happening, not a rule. <em>The fence prevents visitors from entering the site.</em>","prevent 人 from Ving，指實際阻止，不是規定。"],
+          ["<em>ban</em> something, or <em>ban</em> someone <em>from</em> doing something. <em>The airline bans passengers from smoking on board.</em>","ban 某物，或 ban 人 from Ving。"], null],
+   zh:"修訂後的資安規定禁止帳務部所有員工（不論正職或臨時）把客戶的卡號副本存在自己的筆電或手機上。",
+   gloss:{
+     "billing department":{hw:"billing department", pos:"n.", ipa:"/ˈbɪlɪŋ dɪˈpɑːrtmənt/", zh:"帳務部", ex:"Please send the invoice to our billing department."},
+     permanent:{hw:"permanent", pos:"adj.", ipa:"/ˈpɜːrmənənt/", zh:"正職的、長期的", ex:"She was offered a permanent position."},
+     temporary:{hw:"temporary", pos:"adj.", ipa:"/ˈtempəreri/", zh:"臨時的", ex:"We hire temporary staff for the holidays."}}},
 ];
 const L = "ABCD";
 const $ = id => document.getElementById(id);
@@ -215,7 +234,7 @@ function toc(){
     p.ch.forEach(([t, n, live], i) => {
       const li = document.createElement("li");
       const r = document.createElement(live ? "button" : "div");
-      r.className = "row"; if (live) { r.type = "button"; r.onclick = () => open(0); }
+      r.className = "row"; if (live) { r.type = "button"; r.onclick = () => open(ITEMS.findIndex(x => x.ch === t)); }
       r.innerHTML = `<span class="n">${cn(i+1)}</span><span class="t">${t}</span><span class="c">${n} 題</span>`;
       li.append(r); ol.append(li);
     });
@@ -240,7 +259,9 @@ function stemHTML(it, filled){
 function open(i){
   at = i; const it = ITEMS[i];
   show("page"); setSnd();
-  $("pg").textContent = `${i+1} / 10`;
+  const total = PARTS.flatMap(p => p.ch).find(c => c[0] === it.ch)[1];
+  $("back").textContent = "← " + it.ch;
+  $("pg").textContent = `${ITEMS.slice(0, i).filter(x => x.ch === it.ch).length + 1} / ${total}`;
   $("stem").innerHTML = stemHTML(it, false);
   const ol = $("opts"); ol.textContent = "";
   it.options.forEach((w, k) => {
@@ -270,9 +291,11 @@ function answer(k){
 
   const order = [k, ...it.options.map((_, j) => j)].filter((j, n, a) => j >= 0 && j !== it.answer && a.indexOf(j) === n);
   let h = para(it.point, "point") + para(it.why, "why");
-  h += order.map(j => `<div class="wr ${j === k ? "mine" : ""}"><span class="w">${it.options[j]}</span>${para(it.wrong[j])}</div>`).join("");
+  if (it.type === "vocab") h += order.map(j => `<div class="wr ${j === k ? "mine" : ""}"><span class="w">${it.options[j]}</span>${para(it.wrong[j])}</div>`).join("");
   h += `<p class="trans" hidden id="trans">${it.zh}</p>`;
-  h += `<div class="foot"><a href="https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ" target="_blank" rel="noopener"><span class="sc">See also</span> 詞性判斷</a><button class="zhb" id="zhb" type="button" aria-pressed="false" aria-label="顯示中文">中</button></div>`;
+  const see = it.type === "grammar" ? `<a href="https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ" target="_blank" rel="noopener"><span class="sc">See also</span> ${it.ch}</a>` : "";
+  h += `<div class="foot"><span class="fl">${see}${sample ? `<button id="askBtn" type="button" class="sc" aria-expanded="false">Ask Claude</button>` : ""}</span><button class="zhb" id="zhb" type="button" aria-pressed="false" aria-label="顯示中文">中</button></div>`;
+  h += `<div class="ask" id="ask" hidden><input id="askQ" type="text" placeholder="Why not B?" autocomplete="off"><button id="askGo" type="button">Ask</button><p class="askOut" id="askOut" hidden></p></div>`;
   $("ann").innerHTML = h; $("ann").hidden = false;
   $("zhb").onclick = () => {
     const on = $("zhb").getAttribute("aria-pressed") !== "true";
@@ -283,7 +306,10 @@ function answer(k){
     const t = () => { const z = p.querySelector(".zh"); z.hidden = !z.hidden; };
     p.onclick = t; p.onkeydown = e => { if (e.key === "Enter") t(); };
   });
-  $("next").textContent = at + 1 < ITEMS.length ? "Next →" : "End of chapter →";
+  if ($("askBtn")) $("askBtn").onclick = () => { const a = $("ask"); a.hidden = !a.hidden; $("askBtn").setAttribute("aria-expanded", !a.hidden); if (!a.hidden) $("askQ").focus(); };
+  if ($("askGo")) { $("askGo").onclick = () => ask(it, k); $("askQ").onkeydown = e => { if (e.key === "Enter") ask(it, k); }; }
+  const more = ITEMS[at + 1] && ITEMS[at + 1].ch === it.ch;
+  $("next").textContent = more ? "Next →" : "End of chapter →";
   $("nextWrap").hidden = false;
 }
 
@@ -312,7 +338,30 @@ function setSize(d){
 $("szDown").onclick = () => setSize(-1); $("szUp").onclick = () => setSize(1); setSize(0);
 $("unsureBtn").onclick = () => answer(-1);
 $("snd").onclick = () => { sound = !sound; setSnd(); try { localStorage.setItem("book-sound", sound ? "on" : "off"); } catch (e) {} };
-$("next").onclick = () => at + 1 < ITEMS.length ? open(at + 1) : show("end");
+$("next").onclick = () => ITEMS[at + 1] && ITEMS[at + 1].ch === ITEMS[at].ch ? open(at + 1) : show("end");
+
+// Ask Claude: only shown when the viewer's Claude can be reached; one question at a time.
+let sample = null, busy = false;
+if (window.claude?.use) claude.use("sample").then(x => { sample = x || null; }).catch(() => {});
+async function ask(it, k){
+  const q = $("askQ").value.trim(), out = $("askOut");
+  if (!q || busy || !sample) return;
+  busy = true; $("askGo").disabled = true; out.hidden = false; out.textContent = "Thinking…";
+  const prompt = [
+    "You are a TOEIC tutor. A Taiwanese learner just answered this Part 5 question and has a follow-up. Answer in the language of the question; if it is English, use plain, simple English. At most three sentences. Answer only what was asked. Do not overturn the answer key; if you think the key is wrong, say the item may be disputed and why.",
+    "Question: " + JSON.stringify({stem: it.stem, options: it.options, key: it.options[it.answer], rule: it.point[0].replace(/<[^>]+>/g, "")}),
+    "Learner picked: " + (k >= 0 ? it.options[k] : "I'm not sure"),
+    "Learner asks: " + q,
+  ].join("\n");
+  try {
+    const r = await sample(prompt, { modelTier: "complex", cache: false, onText: ({ text }) => { out.textContent = text; } });
+    if (r && r.modelTierApplied && r.modelTierApplied !== "complex") out.textContent += "\n(answered by a lighter model; your plan didn't allow the strongest one)";
+  } catch (e) {
+    out.textContent = e?.text || (e?.code === "rate_limited" ? "Claude is busy. Try again in a minute." : "That didn't go through. Try again.");
+    if (e && (e.code === "not_granted" || e.code === "sampling_disabled")) { sample = null; $("askBtn")?.remove(); }
+  }
+  busy = false; $("askGo").disabled = false;
+}
 $("back").onclick = () => show("home");
 $("home2").onclick = () => show("home");
 $("resume").onclick = () => open(1);
