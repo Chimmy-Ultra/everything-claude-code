@@ -217,6 +217,44 @@ button.row:hover .t{color:var(--accent)}
 #sheet{position:fixed;inset:0;z-index:25;background:var(--paper);overflow-y:auto;padding:0 20px calc(40px + env(safe-area-inset-bottom,0px))}
 #sheet .page{padding-top:env(safe-area-inset-top,0px)}
 
+/* word chapter */
+.wlist{list-style:none;margin:.6em 0 0;padding:0;border-top:1px solid var(--rule)}
+.wlist li{border-bottom:1px solid var(--rule)}
+.wlist button{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1em;width:100%;text-align:left;padding:.45em 0;align-items:baseline}
+.wlist .ww{font-size:17px}
+.wlist .wp{font-size:14px;color:var(--faint);font-style:italic}
+.wlist button:hover .ww{color:var(--accent)}
+.letter{font-size:14px;color:var(--soft);margin:1.4em 0 .2em}
+.word{font-size:var(--fs,15.5px)}
+.word .hwrow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2em .8em;margin-top:1.6em}
+.word h1{margin:0}
+.word .pos{font-style:italic;color:var(--soft);font-size:1.05em}
+.word .ipa{color:var(--soft);font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",var(--en)}
+.say{color:var(--accent);font-size:.95em}
+.word .mean{font-family:var(--zh);color:var(--soft);margin:.4em 0 0}
+.word .def{font-size:1.1em;margin:.8em 0 0}
+.word .exs{list-style:none;margin:.4em 0 0;padding:0;display:grid;gap:.55em}
+.word .exs li{padding-left:1em;border-left:2px solid var(--rule)}
+.word .exs em{font-style:normal;color:var(--accent);font-weight:500}
+.word .colls{list-style:none;margin:.4em 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(13em,1fr));gap:.1em 1.4em}
+.word .colls li{border-bottom:1px solid var(--rule);padding:.2em 0}
+.word .colls .zh{display:block;font-size:.9em;color:var(--soft)}
+.net{display:grid;gap:.6em;margin-top:.4em}
+.net .nrow{display:grid;grid-template-columns:7em minmax(0,1fr);gap:.8em;align-items:baseline}
+.net .nk{font-size:.86em;color:var(--faint)}
+.net .nv{display:flex;flex-wrap:wrap;gap:.3em 1.1em;min-width:0}
+.net .nw{display:inline}
+.net .nw b{font-weight:500}
+.net .nw a,.net .nw button{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;font-weight:500}
+.net .nw small{color:var(--soft);font-size:.86em;margin-left:.3em}
+.net .nn{display:block;font-size:.9em;color:var(--soft)}
+.qlist{list-style:none;margin:.4em 0 0;padding:0;display:grid;gap:.4em;font-size:.95em}
+.qlist li{color:var(--soft)}
+.wnav{display:flex;justify-content:space-between;gap:1em;margin-top:2.4em;font-style:italic}
+.wnav button{color:var(--accent)}
+.tip .more{margin-top:6px;font-size:13.5px}
+.tip .more button{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+
 /* summary, review shelf, statistics, settings */
 .score{font:400 clamp(40px,8vw,56px)/1 var(--en);margin:.5em 0 .1em;font-variant-numeric:lining-nums}
 .score small{font-size:.4em;color:var(--soft);margin-left:.3em}
@@ -478,6 +516,7 @@ function home() {
     const us = unitsIn(g); if (!us.length) continue;
     app.append(partList(part, title, us.map((u, i) => ({ n: String(i + 1), t: unitName(u), c: ITEMS.filter(x => x.unit === u).length, fn: () => DATA.lessons?.[u] ? lessonView(u) : startSet({ unit: u, n: 10, label: unitName(u) }) }))));
   }
+  if (DATA.words?.length) app.append(partList("Part Four", "Words", [{ n: "", t: "High-frequency words", sub: "from the TOEIC Service List, with examples and related words", c: DATA.words.length, fn: () => wordsView() }]));
   const col = el("nav", "colophon sc");
   const shelf = Object.keys(B).filter(activeBank).length;
   col.append(btn(null, "Review shelf" + (shelf ? " · " + shelf : ""), bankView), btn(null, "Statistics", statsView), btn(null, "Settings", settingsView));
@@ -494,6 +533,93 @@ function partList(part, title, rows) {
     li.append(b); ol.append(li);
   }
   s.append(h, ol); return s;
+}
+
+// ================================================================ word chapter (TOEIC Service List words that appear in the questions)
+const WORDS = DATA.words || [];
+const WBY = Object.fromEntries(WORDS.map(c => [c.w, c]));
+function wordCard(w) { w = String(w || "").toLowerCase(); return WBY[w] || null; }
+function speak(text) { try { const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; u.rate = 0.9; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch {} }
+const canSpeak = "speechSynthesis" in window;
+let wordQuery = "";
+function wordsView() {
+  const app = show("words");
+  head(app, backTo("Contents", home));
+  app.append(el("p", "chap sc quiet", "Part Four · Words"), el("h1", "small", "High-frequency words"));
+  const lead = el("p", "quiet small"); lead.innerHTML = 'Words from the <a href="https://www.newgeneralservicelist.com/toeic-service-list" target="_blank" rel="noopener">TOEIC Service List</a> that appear in these questions. Each card has examples, collocations and related words.'; app.append(lead);
+  const s = el("input", "search"); s.type = "search"; s.id = "word-search"; s.placeholder = "Search a word or its meaning"; s.value = wordQuery;
+  const host = el("div"); app.append(s, host);
+  const render = () => {
+    host.textContent = "";
+    const q = wordQuery.trim().toLowerCase();
+    const list = WORDS.filter(c => !q || c.w.includes(q) || (c.zh || "").includes(q) || (c.family || []).some(f => f.w.includes(q)));
+    if (!list.length) { host.append(el("p", "empty", "No word matches.")); return; }
+    let letter = "", ul = null;
+    for (const c of list) {
+      const L0 = c.w[0].toUpperCase();
+      if (L0 !== letter && !q) { letter = L0; host.append(el("p", "letter sc", L0)); ul = null; }
+      if (!ul) { ul = el("ul", "wlist"); host.append(ul); }
+      const li = el("li"), b = btn(null); b.append(el("span", "ww", c.w), el("span", "wp", c.pos)); b.onclick = () => wordView(c.w); li.append(b); ul.append(li);
+    }
+  };
+  s.oninput = () => { wordQuery = s.value; render(); };
+  render();
+  const credit = el("p", "faint small"); credit.style.marginTop = "2.4em";
+  credit.innerHTML = 'Word selection: TOEIC Service List 1.2 by Browne, C. &amp; Culligan, B., <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Pronunciations from the CMU Pronouncing Dictionary.';
+  app.append(credit);
+}
+function wordBody(w, nav) {
+  const c = wordCard(w), box = el("div", "word");
+  const hr = el("div", "hwrow"); hr.append(el("h1", null, c.w), el("span", "pos", c.pos));
+  if (c.ipa) hr.append(el("span", "ipa", c.ipa));
+  if (canSpeak) { const sp = btn("say", "▸ say", () => speak(c.w)); sp.setAttribute("aria-label", "Say " + c.w); hr.append(sp); }
+  box.append(hr);
+  const zt = el("div", "zhbar"), zb = btn("tool zht", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); box.querySelectorAll(".zh").forEach(z => z.hidden = !on); };
+  zt.append(zb); box.append(zt);
+  const mean = el("p", "mean zh", c.zh); mean.hidden = true; box.append(mean);
+  box.append(para(c.def, "def"));
+  box.append(sectionH("Examples"));
+  const ex = el("ul", "exs"); for (const e of c.ex) { const li = el("li"); const p = para(e); if (canSpeak) { const sp = btn("say", " ▸", ev => { ev.stopPropagation(); speak(e[0].replace(/<[^>]+>/g, "")); }); sp.setAttribute("aria-label", "Say this sentence"); p.insertBefore(sp, p.querySelector(".zh")); } li.append(p); ex.append(li); } box.append(ex);
+  if (c.coll?.length) { box.append(sectionH("Collocations")); const ul = el("ul", "colls"); for (const [en, zh] of c.coll) { const li = el("li", null, en); const z = el("span", "zh", zh); z.hidden = true; li.append(z); ul.append(li); } box.append(ul); }
+  const rows = [["Word family", c.family], ["Similar", c.syn], ["Opposite", c.ant], ["Don't confuse", c.confuse]].filter(r => r[1]?.length);
+  if (rows.length) {
+    box.append(sectionH("Related words"));
+    const net = el("div", "net");
+    for (const [k, xs] of rows) {
+      const r = el("div", "nrow"), v = el("div", "nv"); r.append(el("span", "nk sc", k), v);
+      for (const x of xs) {
+        const s = el("span", "nw"), linked = wordCard(x.w) && x.w !== c.w;
+        s.append(linked ? btn(null, x.w, () => nav(x.w)) : el("b", null, x.w));
+        if (x.pos) s.append(el("small", null, x.pos));
+        if (x.zh) { const z = el("small", "zh", x.zh); z.hidden = true; s.append(z); }
+        if (x.note) { const n = para(x.note, "nn"); s.append(n); }
+        v.append(s);
+      }
+      net.append(r);
+    }
+    box.append(net);
+  }
+  const its = (c.items || []).filter(id => BY[id]);
+  if (its.length) {
+    box.append(sectionH("In the questions"));
+    const ul = el("ul", "qlist"); for (const id of its.slice(0, 5)) ul.append(el("li", null, stemText(BY[id], 0))); box.append(ul);
+    const p = el("p", "note"); p.append(btn("link", "Practise " + (its.length > 1 ? "these " + its.length : "this question"), () => startList(its, c.w))); box.append(p);
+  }
+  return box;
+}
+function wordView(w) {
+  const app = show("words");
+  head(app, backTo("Words", wordsView));
+  app.append(wordBody(w, wordView));
+  const i = WORDS.findIndex(c => c.w === w), nv = el("div", "wnav");
+  nv.append(i > 0 ? btn(null, "← " + WORDS[i - 1].w, () => wordView(WORDS[i - 1].w)) : el("span"), i < WORDS.length - 1 ? btn(null, WORDS[i + 1].w + " →", () => wordView(WORDS[i + 1].w)) : el("span"));
+  app.append(nv);
+}
+function openWordSheet(w) {
+  const sh = $("#sheet"); sh.textContent = "";
+  const pg = el("div", "page"); head(pg, backTo("Back to the question", closeSheet)); pg.append(wordBody(w, openWordSheet));
+  sh.append(pg); sh.hidden = false; sh.scrollTop = 0; document.body.style.overflow = "hidden";
 }
 
 // ================================================================ chapter lessons
@@ -614,6 +740,8 @@ function tipFor(span) {
   const g = (tipItem?.gloss || [])[Number(span.dataset.g)]; if (!g) return;
   const t = $("#tip"), r = span.getBoundingClientRect();
   t.innerHTML = `<div><span class="hw">${esc(g.hw)}</span><span class="pos">${esc(g.pos)}</span>${g.ipa ? `<span class="ipa">${esc(g.ipa)}</span>` : ""}</div><div class="mean">${esc(g.zh)}</div><div class="ex">${esc(g.ex)}</div>`;
+  const card = wordCard(g.hw);
+  if (card) { const m = el("div", "more"); m.append(btn(null, "Word card →", () => { t.hidden = true; openWordSheet(card.w); })); t.append(m); }
   t.hidden = false;
   const w = t.offsetWidth, x = Math.min(Math.max(16, r.left + r.width / 2 - w / 2 + scrollX), document.documentElement.clientWidth - w - 16);
   t.style.left = x + "px"; t.style.top = (r.bottom + scrollY + 6) + "px";

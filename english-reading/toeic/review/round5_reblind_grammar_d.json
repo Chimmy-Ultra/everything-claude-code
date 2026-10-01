@@ -1,0 +1,13 @@
+[
+ {
+  "id": "g-parallel-06",
+  "format": "gap",
+  "stem": "On graduation day, the university will close both the main library, which has stayed open around the clock since exams began on the third, ______ the three smaller campus libraries at 6 p.m.",
+  "options": {
+   "A": "and",
+   "B": "as well as",
+   "C": "along with",
+   "D": "or"
+  }
+ }
+]

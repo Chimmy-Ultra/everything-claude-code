@@ -190,12 +190,12 @@ ITEMS = [
     {
         "id": "g-parallel-06", "type": "grammar", "format": "gap", "unit": "parallel", "level": 3,
         "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
-        "stem": "Both the main library, which has stayed open around the clock since exams began on the third, ______ the three smaller campus libraries will close at 6 p.m. on graduation day.",
+        "stem": "On graduation day, the university will close both the main library, which has stayed open around the clock since exams began on the third, ______ the three smaller campus libraries at 6 p.m.",
         "options": ["and", "as well as", "along with", "or"],
         "answer": 0,
         "explain": {
             "point": "both A and B：成對連接詞只能用 and",
-            "why": "句首的 Both 被長插入語 which has stayed open … 推得很遠；Both 只能與 and 成對：Both the main library and the three smaller campus libraries。",
+            "why": "close 後面的 both 被長插入語 which has stayed open … 推得很遠；both 只能與 and 成對：both the main library and the three smaller campus libraries。",
             "wrong": [
                 None,
                 "意思像「和」；但 Both 不能配 as well as",
@@ -204,11 +204,11 @@ ITEMS = [
             ],
             "wrongMore": [
                 None,
-                "the main library … as well as the three smaller campus libraries 單看是通順的並列。但句首有 Both，Both 的第二項一定要用 and 連接；as well as 不能替代。",
+                "the main library … as well as the three smaller campus libraries 單看是通順的並列。但前面有 both，both 的第二項一定要用 and 連接；as well as 不能替代。",
                 "Both the main library, along with the three smaller campus libraries 單看像「連同」的意思。但 along with 是介系詞，只能附加說明，不能與 Both 成對。",
                 None,
             ],
-            "zh": "主圖書館（自三號期末考開始後全天開放）和三間較小的校區圖書館，都會在畢業典禮當天下午六點關閉。",
+            "zh": "畢業典禮當天，學校會在下午六點關閉主圖書館（自三號期末考開始後全天開放）和三間較小的校區圖書館。",
             "vocab": [["around the clock", "全天候"], ["graduation day", "畢業典禮日"]],
         },
     },
@@ -217,7 +217,7 @@ ITEMS = [
         "id": "g-quantity-06", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2,
         "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
         "stem": "Although the new assembly line is already running, ______ of the newly ordered, custom-built testing equipment is still held up in customs, and two quality checks have had to be done by hand.",
-        "options": ["Many", "Several", "Much", "Few"],
+        "options": ["many", "several", "much", "few"],
         "answer": 2,
         "explain": {
             "point": "不可數名詞 equipment 配 much of",

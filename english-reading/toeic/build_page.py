@@ -90,12 +90,33 @@ for u in UNITS:
     if os.path.exists(path):
         d = json.load(open(path, encoding="utf-8")); d.pop("_flags", None); LESSONS[u] = d
 
+# Word cards (words/cards/*.json, checked by words/check.py): TSL 1.2 words that appear in the questions.
+import csv, glob, re as _re
+_spec2 = importlib.util.spec_from_file_location("word_check", os.path.join(HERE, "words", "check.py"))
+word_check = importlib.util.module_from_spec(_spec2); _spec2.loader.exec_module(word_check)
+_forms = {}
+for row in csv.reader(l for l in open(os.path.join(HERE, "words", "tsl", "TSL_12_lemmatized_for_teaching.csv"), encoding="latin-1") if not l.startswith("#")):
+    row = [x.strip().lower() for x in row if x.strip()]
+    if row: _forms.setdefault(row[0], set()).update(row)
+def _text(it):
+    if it["format"] == "gap": return it["stem"] + " " + " ".join(it["options"])
+    return " ".join(l["text"] for l in it["audio"]["lines"]) + " " + " ".join(" ".join(q.get("options") or []) for q in it["questions"])
+_tok = {it["id"]: set(_re.findall(r"[a-z]+(?:-[a-z]+)?", _text(it).lower())) for it in ITEMS if it.get("reviewed") or it.get("source") != "hand"}
+WORDS = []
+for f in sorted(glob.glob(os.path.join(HERE, "words", "cards", "*.json"))):
+    for c in json.load(open(f, encoding="utf-8")):
+        for e in word_check.check_card(c): errors.append("word " + e)
+        fs = _forms.get(c["w"], {c["w"]})
+        c = dict(c, ipa=ipa(c["w"]) or "", items=[i for i, t in _tok.items() if t & fs][:12])
+        WORDS.append(c)
+WORDS.sort(key=lambda c: c["w"])
+
 for w in warnings: print("warning:", w)
 if errors:
     for e in errors: print("error:", e)
     if "--draft" not in sys.argv: sys.exit(f"{len(errors)} errors, not building")
 
-data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS, "lessons": LESSONS}
+data = {"units": {k: {"zh": v[0], "group": v[1], "en": v[2]} for k, v in UNITS.items()}, "items": ITEMS, "lessons": LESSONS, "words": WORDS}
 blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 page = open(os.path.join(HERE, "template.html"), encoding="utf-8").read().replace("{{BANK}}", blob)
 open(os.path.join(HERE, "toeic.html"), "w", encoding="utf-8").write(page)
