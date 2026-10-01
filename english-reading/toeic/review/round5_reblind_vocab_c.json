@@ -1,0 +1,24 @@
+[
+ {
+  "id": "v-synonym-15",
+  "format": "gap",
+  "stem": "Under the terms of the lease, the tenant must ______ the unit and hand all keys to the building manager by noon on the last day of the contract, even if repairs are still under way.",
+  "options": {
+   "A": "evict",
+   "B": "relocate",
+   "C": "expel",
+   "D": "vacate"
+  }
+ },
+ {
+  "id": "v-family-12",
+  "format": "gap",
+  "stem": "Any appliance that stops working within twelve months because it was ______ when it left the factory will be replaced free of charge, provided that the original receipt is presented.",
+  "options": {
+   "A": "defiant",
+   "B": "defaced",
+   "C": "defective",
+   "D": "defensive"
+  }
+ }
+]

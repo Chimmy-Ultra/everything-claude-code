@@ -78,7 +78,7 @@
     "why": ["The tenant leaves a place, <em>the unit</em>, on <em>the last day of the contract</em> and returns the keys. Leaving a rented place at the end of a lease is <em>vacate</em>.", "租客要離開的是場所 the unit，時間是合約最後一天，還要交還鑰匙。租約結束時搬離用 vacate。"],
     "usage": [
       ["<em>evict</em> a person: the landlord makes a tenant leave. <em>The landlord evicted the tenant for unpaid rent.</em>", "evict 是房東趕走房客。"],
-      ["<em>evacuate</em> people or a place in an emergency. <em>Staff evacuated the building during the fire drill.</em>", "evacuate 是緊急情況下撤離人或場所。"],
+      ["<em>relocate</em> people or things to a new place, or move to one; it does not take the place you leave. <em>The firm will relocate its staff to Leeds.</em>", "relocate 是把人或物搬到新地點，或自己搬過去；不接要離開的場所。"],
       ["<em>expel</em> a person from a school or group. <em>The school expelled two students.</em>", "expel 是把人逐出學校或團體。"],
       null
     ],
@@ -177,11 +177,11 @@
     ]
   },
   "v-family-12": {
-    "point": ["<em>defective</em> means faulty; <em>deficient</em> means lacking.", "defective 是有瑕疵；deficient 是不足。"],
-    "why": ["The appliance <em>stops working</em> because of a fault it had <em>when it left the factory</em>. <em>defective</em> means having a fault; <em>deficient</em> needs a thing it lacks, as in <em>deficient in</em>.", "電器因為出廠時就有的毛病而 stops working。defective 是有瑕疵；deficient 要有缺少的東西，如 deficient in。"],
+    "point": ["<em>defective</em>: faulty from the start.", "defective：本來就有瑕疵。"],
+    "why": ["The appliance <em>stops working</em> because of a fault it had <em>when it left the factory</em>. A product that has a fault of its own is <em>defective</em>.", "電器因為出廠時就有的毛病而 stops working。產品本身有毛病就是 defective。"],
     "usage": [
       ["<em>defiant</em> describes a person who openly refuses to obey. <em>The defiant staff ignored the order.</em>", "defiant 形容公然不服從的人。"],
-      ["<em>deficient</em> means not having enough of something; it is often followed by <em>in</em>. <em>The soil is deficient in iron.</em>", "deficient 是缺少某物，常接 in。"],
+      ["<em>defaced</em> means with the surface spoiled, such as by graffiti; it describes looks, not function. <em>Someone defaced the poster with a marker.</em>", "defaced 是表面被塗污或刮花，指外觀，不是功能。"],
       null,
       ["<em>defensive</em> means protecting against attack, or quick to feel criticized. <em>He became defensive when asked about the error.</em>", "defensive 是防禦的，或容易覺得被批評。"]
     ],
