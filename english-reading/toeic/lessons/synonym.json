@@ -1,0 +1,130 @@
+{
+  "unit": "synonym",
+  "lead": ["The four options have similar meanings but behave differently. Decide by what the word needs after it: the structure, the preposition or the exact sense.", "四個選項意思相近，但用法不同。要看這個字後面需要什麼：句型、介系詞，或確切語意。"],
+  "steps": [
+    ["Read what follows the blank: a person, a verb form, a preposition, an amount.", "先讀空格後面接的是什麼：人、動詞形式、介系詞，還是金額。"],
+    ["Cross out options that cannot take that structure, even if the meaning fits.", "把接不了這個結構的選項劃掉，即使語意說得通。"],
+    ["If more than one remains, check the exact meaning: who does what to whom, and for how long.", "如果還剩不只一個，再看確切語意：誰對誰做什麼、持續多久。"]
+  ],
+  "rules": [
+    {
+      "head": ["Same idea, different verb pattern", "意思相同，動詞句型不同"],
+      "body": ["Forbid takes a person and to + verb. Prohibit, ban and prevent take a person and from + -ing. Allow, permit and enable take to + verb. The structure after the blank often decides the answer.", "forbid 接人加 to + 動詞；prohibit、ban、prevent 接人加 from + -ing；allow、permit、enable 接 to + 動詞。空格後的結構常常就是答案。"],
+      "ex": [
+        ["Company policy <em>forbids</em> employees <em>to</em> share their passwords.", "公司規定禁止員工分享密碼。"],
+        ["The new rule <em>prohibits</em> visitors <em>from</em> taking photographs.", "新規定禁止訪客拍照。"],
+        ["A backup system <em>prevents</em> data <em>from</em> being lost.", "備份系統可避免資料遺失。"]
+      ]
+    },
+    {
+      "head": ["Following rules: the preposition decides", "遵守規定：看介系詞"],
+      "body": ["Comply goes with with, abide with by, adhere and conform with to. All four mean “follow a rule”, but each needs its own small word. Observe takes the rule directly.", "comply 搭 with，abide 搭 by，adhere、conform 搭 to，都是「遵守」，但各有各的小字。observe 則直接接受詞。"],
+      "ex": [
+        ["All contractors must <em>comply with</em> the safety code.", "所有承包商都必須遵守安全規範。"],
+        ["Staff are expected to <em>abide by</em> the dress code.", "員工須遵守服裝規定。"],
+        ["The factory <em>adheres to</em> strict quality standards.", "這家工廠嚴格遵守品質標準。"]
+      ]
+    },
+    {
+      "head": ["Cost, charge, spend, pay: who is the subject?", "cost、charge、spend、pay：看主詞是誰"],
+      "body": ["A thing costs a person an amount. A seller charges a customer an amount. A person spends money on something and pays an amount for it. The subject tells you which verb fits.", "東西 cost 人金額；賣方 charge 顧客金額；人 spend 錢在某物上，也為某物 pay 金額。看主詞是什麼，就知道用哪個字。"],
+      "ex": [
+        ["The repair <em>cost</em> us two hundred dollars.", "這次維修花了我們兩百美元。"],
+        ["The hotel <em>charges</em> guests a fee for late checkout.", "飯店對延後退房的房客收費。"],
+        ["We <em>spent</em> a week preparing the report.", "我們花了一星期準備報告。"]
+      ]
+    },
+    {
+      "head": ["Replace, substitute, exchange: which one is new?", "replace、substitute、exchange：哪個是新的"],
+      "body": ["Replace the old with the new: replace A with B. Substitute the new for the old: substitute B for A. Exchange swaps one thing for another: exchange A for B. The preposition shows the direction.", "replace A with B：用新的換掉舊的。substitute B for A：用 B 代替 A。exchange A for B：以 A 換 B。看介系詞就知道方向。"],
+      "ex": [
+        ["We <em>replaced</em> the old printer <em>with</em> a faster model.", "我們用較快的機型換掉舊印表機。"],
+        ["The chef <em>substituted</em> olive oil <em>for</em> butter.", "主廚用橄欖油代替奶油。"]
+      ]
+    },
+    {
+      "head": ["Result in, result from, lead to, cause", "表示因果的 result in、result from、lead to、cause"],
+      "body": ["A result in B and A lead to B both point from cause to effect. B results from A points back to the cause. Cause takes its object directly, with no preposition.", "A result in B、A lead to B 都是由原因指向結果；B result from A 則回指原因。cause 直接接受詞，不加介系詞。"],
+      "ex": [
+        ["The delay <em>resulted in</em> several cancelled orders.", "延誤導致數筆訂單被取消。"],
+        ["The shortage <em>resulted from</em> a supplier strike.", "缺貨是供應商罷工造成的。"],
+        ["Heavy snow <em>caused</em> long delays at the airport.", "大雪造成機場嚴重延誤。"]
+      ]
+    },
+    {
+      "head": ["Extend, expand, enlarge: time or size?", "extend、expand、enlarge：時間還是規模"],
+      "body": ["Extend means to make something last longer or reach further: a deadline, a contract, a stay. Expand means to grow in scope: a business, a market. Enlarge means to make physically bigger: a photo, a room.", "extend 是延長時間或延伸範圍：期限、合約、停留。expand 是擴大規模：事業、市場。enlarge 是實體變大：照片、房間。"],
+      "ex": [
+        ["The landlord agreed to <em>extend</em> the lease by a year.", "房東同意把租約延長一年。"],
+        ["The bakery plans to <em>expand</em> into two new cities.", "這家烘焙坊打算拓展到兩個新城市。"]
+      ]
+    },
+    {
+      "head": ["Adverbs: read the whole sentence", "副詞：要讀整句"],
+      "body": ["Adverbs such as slightly, markedly, steadily and temporarily differ in degree, speed or length of time. Look for contrast words (although, but) and for numbers or time words that show which one fits.", "slightly、markedly、steadily、temporarily 在程度、速度、時間長短上不同。找對比詞（although、but）和數字、時間詞，判斷哪個合適。"],
+      "ex": [
+        ["The shop closed <em>temporarily</em> and reopened after the renovation.", "店面暫時關閉，整修後重新營業。"],
+        ["Costs rose <em>markedly</em>, from $4,000 to $9,000 a month.", "成本明顯上升，從每月 4,000 元漲到 9,000 元。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "The policy prevents staff from sharing client data.", "wrong": "The policy prevents staff to share client data.", "why": ["Prevent takes from + -ing, not to + verb.", "prevent 後面接 from + -ing，不接 to + 動詞。"]},
+    {"right": "Our hotel charges guests a fee for late checkout.", "wrong": "Our hotel costs guests a fee for late checkout.", "why": ["The seller is the subject, so charge fits. Cost needs a thing as the subject.", "主詞是賣方，要用 charge；cost 的主詞要是東西。"]},
+    {"right": "All branches must comply with the new regulations.", "wrong": "All branches must comply the new regulations.", "why": ["Comply needs with before the rule.", "comply 後面要加 with 才能接規定。"]},
+    {"right": "Ms. Lee lent her laptop to a colleague.", "wrong": "Ms. Lee borrowed her laptop to a colleague.", "why": ["Lend means give for a time. Borrow means take for a time.", "lend 是借出；borrow 是借入。"]}
+  ],
+  "lists": [
+    {
+      "head": ["Verb + person + structure", "動詞 + 人 + 句型"],
+      "items": [
+        ["forbid sb to do", "禁止某人做"],
+        ["prohibit sb from doing", "禁止某人做"],
+        ["ban sb from doing", "禁止某人做"],
+        ["prevent sb from doing", "防止某人做"],
+        ["allow sb to do", "允許某人做"],
+        ["permit sb to do", "准許某人做"],
+        ["enable sb to do", "使某人能夠做"],
+        ["discourage sb from doing", "勸阻某人做"]
+      ]
+    },
+    {
+      "head": ["Stop, pause, move, end", "停止、暫停、延後、結束"],
+      "items": [
+        ["suspend: stop for now, may resume", "暫停，之後可能恢復"],
+        ["terminate: end for good", "終止，不再繼續"],
+        ["postpone: move to a later time", "延期到較晚時間"],
+        ["cancel: decide it will not happen", "取消"],
+        ["conclude: bring to a natural end", "結束、締結"],
+        ["abandon: give up completely", "放棄"]
+      ]
+    },
+    {
+      "head": ["Follow a rule or give it up", "遵守規定與免除"],
+      "items": [
+        ["comply with", "遵守"],
+        ["abide by", "遵守"],
+        ["adhere to", "堅守、遵守"],
+        ["conform to", "符合"],
+        ["waive a fee", "免收費用"],
+        ["exempt sb from a rule", "免除某人的規定"]
+      ]
+    },
+    {
+      "head": ["Pay and money terms", "薪資與金錢用詞"],
+      "items": [
+        ["wage: paid by the hour or week", "工資，按時或按週"],
+        ["salary: fixed pay by month or year", "薪水，按月或按年"],
+        ["commission: share of sales made", "佣金，按業績抽成"],
+        ["allowance: fixed extra for expenses", "津貼，固定額外給付"],
+        ["pension: income after retirement", "退休金"],
+        ["incur costs or expenses", "產生費用"]
+      ]
+    }
+  ],
+  "traps": [
+    ["Do not choose by Chinese meaning alone. Forbid, prohibit and prevent all feel like 禁止, but each has its own structure after it.", "不要只靠中文意思選。forbid、prohibit、prevent 都像「禁止」，但後面的句型各不相同。"],
+    ["A verb may fit the meaning but still need a preposition the sentence does not have. If the blank is followed by a plain noun, check whether the verb takes one directly.", "動詞語意可能對，但需要句中沒有的介系詞。如果空格後面直接接名詞，要確認這個動詞能不能直接接受詞。"],
+    ["Words that share a field are not interchangeable. Wage, salary and commission are all pay, yet each names a different way of being paid.", "同一領域的字不能互換。wage、salary、commission 都是報酬，但各指不同的給付方式。"]
+  ]
+}

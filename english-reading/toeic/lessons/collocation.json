@@ -1,0 +1,138 @@
+{
+  "unit": "collocation",
+  "lead": ["Each blank needs the word that normally goes with its neighbour. Several options may look right in Chinese, but only one is the natural English partner.", "每個空格要選的是和旁邊的字「慣用搭配」的那個字。中文看起來幾個選項都通，但自然的英文搭配只有一個。"],
+  "steps": [
+    ["Find the word right next to the blank: usually a noun after it or a preposition before it.", "先找空格緊鄰的字：通常是後面的名詞，或前面的介系詞。"],
+    ["Say the phrase in your head with each option. Choose the one you have heard or read together.", "把每個選項放進去默念，選你聽過、讀過會連在一起的那個。"],
+    ["Check the small words around it (into, of, on, to). They are part of the phrase.", "檢查周圍的小字（into、of、on、to），它們也是搭配的一部分。"],
+    ["If two options both fit, read the whole sentence for the exact meaning.", "如果兩個選項都說得通，就讀全句，看確切語意。"]
+  ],
+  "rules": [
+    {
+      "head": ["Verb + noun: the noun picks the verb", "動詞 + 名詞：由名詞決定動詞"],
+      "body": ["English does not use one verb for every noun. Learn the pair as one block. Different nouns take different verbs, even when the Chinese verb is the same.", "英文不會一個動詞通用所有名詞。把搭配當成一整塊背。中文用同一個動詞，英文名詞不同，動詞就不同。"],
+      "ex": [
+        ["The committee <em>reached</em> an agreement after a short discussion.", "委員會在短暫討論後達成協議。"],
+        ["Ms. Tan <em>conducted</em> a survey of customer habits.", "Tan 女士針對顧客習慣做了一項調查。"],
+        ["The agency <em>launched</em> a new advertising campaign.", "該機構推出了新的廣告活動。"]
+      ]
+    },
+    {
+      "head": ["Small words belong to the phrase", "小字也是片語的一部分"],
+      "body": ["Some phrases need a preposition in a fixed place. Without it, a similar phrase may mean something else or not exist. Check what comes before and after the blank.", "有些片語的介系詞位置是固定的。少了它，可能變成別的意思，或根本不存在。要看空格前後。"],
+      "ex": [
+        ["The new tax rule <em>came into</em> effect in March.", "新的稅務規定在三月生效。"],
+        ["Mr. Ito is <em>in charge of</em> the Osaka branch.", "Ito 先生負責大阪分公司。"],
+        ["She spoke <em>on behalf of</em> the whole team.", "她代表整個團隊發言。"]
+      ]
+    },
+    {
+      "head": ["Adverb + adjective or verb: not interchangeable", "副詞搭配：不能隨意替換"],
+      "body": ["Adverbs such as highly, strongly, greatly and heavily all mean “very”, but each keeps its own partners. Learn the common pairs instead of guessing from the meaning.", "highly、strongly、greatly、heavily 都有「很」的意思，但各有固定夥伴。要記常見搭配，不要憑字義猜。"],
+      "ex": [
+        ["This model is <em>highly</em> recommended by our technicians.", "這款機型深受我們技師推薦。"],
+        ["We <em>strongly</em> advise customers to back up their files.", "我們強烈建議顧客備份檔案。"],
+        ["The firm depends <em>heavily</em> on a few large clients.", "這家公司非常依賴少數幾個大客戶。"]
+      ]
+    },
+    {
+      "head": ["Same meaning in Chinese, different verb in English", "中文同一個詞，英文不同動詞"],
+      "body": ["Say “提出” in Chinese and you can mean raise, submit, lodge or propose. The noun decides which: a concern is raised, a form is submitted, a complaint is filed, a plan is proposed.", "中文都說「提出」，英文可能是 raise、submit、lodge、propose。看名詞：疑慮用 raise，表格用 submit，申訴用 file，計畫用 propose。"],
+      "ex": [
+        ["Several staff <em>raised</em> concerns about the new schedule.", "數位員工對新班表提出疑慮。"],
+        ["Applicants must <em>submit</em> the form by Friday.", "申請人必須在星期五前提交表格。"]
+      ]
+    },
+    {
+      "head": ["Time and manner phrases are fixed too", "時間與方式片語也是固定的"],
+      "body": ["Phrases about timing keep one preposition and one noun: in advance, on time, ahead of schedule, at short notice. Changing any word breaks the phrase.", "表示時間的片語，介系詞和名詞都是固定的：in advance、on time、ahead of schedule、at short notice。換掉任一個字就不對。"],
+      "ex": [
+        ["The caterer can deliver <em>at short notice</em> if we call before noon.", "如果我們中午前打電話，外燴業者可以臨時送餐。"],
+        ["Please book your room <em>well in advance</em>.", "請提早預訂您的房間。"]
+      ]
+    },
+    {
+      "head": ["Look for the verb that fits the whole phrase", "要挑適合整個片語的動詞"],
+      "body": ["Wrong options are often real verbs that go with other nouns. Ask what the noun normally does: a vacancy is filled, a meeting is held, a goal is set, a profit is made.", "錯誤選項常是別的名詞的搭配動詞。想想這個名詞通常怎麼用：職缺用 fill，會議用 hold，目標用 set，利潤用 make。"],
+      "ex": [
+        ["The hotel is trying to <em>fill</em> two vacancies in housekeeping.", "飯店正在設法補齊房務部的兩個職缺。"],
+        ["Management will <em>set</em> new sales targets next month.", "管理階層下個月將訂定新的銷售目標。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "The two firms reached an agreement on delivery dates.", "wrong": "The two firms got an agreement on delivery dates.", "why": ["An agreement is reached, not got or made in this sense.", "協議是用 reach 達成的，這裡不用 get。"]},
+    {"right": "The contract came into effect on March 1.", "wrong": "The contract came effect on March 1.", "why": ["Come needs into before effect. Take effect needs no preposition.", "come 後面要有 into；take effect 則不需要介系詞。"]},
+    {"right": "Please pay attention to the safety notice.", "wrong": "Please pay attention on the safety notice.", "why": ["The fixed phrase is pay attention to.", "固定說法是 pay attention to。"]},
+    {"right": "The software is highly competitive in this market.", "wrong": "The software is strongly competitive in this market.", "why": ["Highly goes with competitive. Strongly goes with verbs like recommend and support.", "competitive 搭 highly；strongly 多搭 recommend、support 這類動詞。"]}
+  ],
+  "lists": [
+    {
+      "head": ["Verb + noun in business", "商務常見動詞 + 名詞"],
+      "items": [
+        ["make a decision", "做決定"],
+        ["reach an agreement", "達成協議"],
+        ["hold a meeting", "舉行會議"],
+        ["conduct a survey", "進行調查"],
+        ["meet a requirement", "符合要求"],
+        ["place an order", "下訂單"],
+        ["file a complaint", "提出申訴"],
+        ["launch a product", "推出產品"],
+        ["set a target", "訂定目標"],
+        ["draw a conclusion", "得出結論"],
+        ["submit a report", "提交報告"],
+        ["run a business", "經營事業"]
+      ]
+    },
+    {
+      "head": ["Fixed phrases with prepositions", "含介系詞的固定片語"],
+      "items": [
+        ["in charge of", "負責"],
+        ["on behalf of", "代表"],
+        ["in response to", "回應"],
+        ["in accordance with", "依照"],
+        ["ahead of schedule", "比預定時程早"],
+        ["behind schedule", "落後進度"],
+        ["at short notice", "臨時通知"],
+        ["on a regular basis", "定期地"],
+        ["in advance", "事先"],
+        ["out of stock", "缺貨"],
+        ["under construction", "施工中"],
+        ["come into effect", "開始生效"]
+      ]
+    },
+    {
+      "head": ["Adverb + adjective or verb", "副詞 + 形容詞或動詞"],
+      "items": [
+        ["highly recommended", "高度推薦"],
+        ["highly competitive", "高度競爭的"],
+        ["strongly recommend", "強烈建議"],
+        ["greatly appreciated", "非常感謝"],
+        ["heavily discounted", "大幅折扣的"],
+        ["closely monitor", "密切監控"],
+        ["readily available", "隨時可得"],
+        ["widely used", "廣泛使用"],
+        ["fully refundable", "可全額退款"],
+        ["rise sharply", "急遽上升"]
+      ]
+    },
+    {
+      "head": ["Phrases built on a noun", "以名詞為核心的片語"],
+      "items": [
+        ["bear in mind", "記住、留意"],
+        ["keep an eye on", "留意、看管"],
+        ["strike a balance", "取得平衡"],
+        ["fall short of", "未達到"],
+        ["take into account", "將…納入考量"],
+        ["raise a concern", "提出疑慮"],
+        ["fill a vacancy", "補職缺"],
+        ["meet a deadline", "趕上期限"]
+      ]
+    }
+  ],
+  "traps": [
+    ["Do not translate word by word from Chinese. Do a decision and do a mistake feel natural in Chinese, but English says make a decision and make a mistake.", "不要逐字從中文翻。「做決定」「犯錯」中文都用「做／犯」，但英文是 make a decision、make a mistake。"],
+    ["Options that look like synonyms are usually other words' partners. If an option goes naturally with a different noun, it is probably the trap.", "意思相近的選項，通常是別的名詞的搭配。如果某個選項明顯屬於另一個名詞，它多半是陷阱。"],
+    ["A phrase can be right with a different small word. Come into effect is fine, but come effect is not. Read the words just before and after the blank.", "同一個片語少了小字就不對。come into effect 可以，come effect 不行。要看空格前後的字。"]
+  ]
+}

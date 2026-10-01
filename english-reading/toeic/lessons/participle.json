@@ -1,0 +1,187 @@
+{
+  "unit": "participle",
+  "lead": [
+    "The options show one verb as -ing, -ed, base form or noun, such as attach, attaching, attached, attachment. The noun being described decides between -ing and -ed.",
+    "選項是同一個動詞的 -ing、-ed、原形和名詞，例如 attach、attaching、attached、attachment。被修飾的名詞決定用 -ing 還是 -ed。"
+  ],
+  "steps": [
+    [
+      "Find the noun the blank describes.",
+      "找出空格修飾的名詞。"
+    ],
+    [
+      "Ask whether that noun does the action or receives it. Doing is -ing, receiving is -ed.",
+      "問這個名詞是做動作還是承受動作。做動作用 -ing，承受用 -ed。"
+    ],
+    [
+      "If the blank opens the sentence, the subject after the comma must be the one doing or receiving the action.",
+      "空格在句首時，逗號後面的主詞要是做或承受這個動作的人或物。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Before a noun",
+        "放在名詞前"
+      ],
+      "body": [
+        "A noun that does the action takes -ing: the remaining seats. A noun that receives the action takes -ed: the attached file.",
+        "名詞主動做動作用 -ing（the remaining seats），名詞被動承受用 -ed（the attached file）。"
+      ],
+      "ex": [
+        [
+          "Please review the <em>attached</em> file before the meeting.",
+          "開會前請先看附件。"
+        ],
+        [
+          "The <em>remaining</em> seats will be sold at the door.",
+          "剩下的座位將在門口販售。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "After a noun",
+        "放在名詞後"
+      ],
+      "body": [
+        "A participle phrase after a noun works like a short relative clause: the employees attending = the employees who attend. Use it when the sentence already has a main verb.",
+        "名詞後面的分詞片語相當於簡短的關係子句：the employees attending = the employees who attend。句子已經有主要動詞時用它。"
+      ],
+      "ex": [
+        [
+          "The employees <em>attending</em> the training should arrive early.",
+          "參加訓練的員工應提早到。"
+        ],
+        [
+          "The products <em>manufactured</em> in Vietnam are shipped weekly.",
+          "在越南製造的產品每週出貨。"
+        ],
+        [
+          "Anyone <em>wishing</em> to attend should register by Friday.",
+          "想參加的人請在星期五前報名。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "A phrase that opens the sentence",
+        "放在句首的分詞片語"
+      ],
+      "body": [
+        "Its subject is the subject of the main clause. If that subject does the action, use -ing. If it receives the action, use -ed.",
+        "它的主詞就是主句的主詞。主詞主動做用 -ing，被動承受用 -ed。"
+      ],
+      "ex": [
+        [
+          "When <em>filling</em> out the form, please use black ink.",
+          "填寫表格時，請使用黑色墨水。"
+        ],
+        [
+          "<em>Founded</em> in 1998, Norland Tech now has offices in six countries.",
+          "Norland Tech 成立於 1998 年，現在在六個國家設有辦公室。"
+        ],
+        [
+          "Once <em>approved</em>, the request will be forwarded to the finance team.",
+          "申請一經核准，就會轉給財務團隊。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Having + past participle",
+        "完成式分詞"
+      ],
+      "body": [
+        "It shows that the action finished before the main verb. The subject of the main clause did it.",
+        "表示這個動作在主要動詞之前已經完成，做這個動作的是主句的主詞。"
+      ],
+      "ex": [
+        [
+          "<em>Having reviewed</em> the proposal, the board decided to fund the project.",
+          "董事會審閱提案後，決定資助這個計畫。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Feeling verbs: thing or person",
+        "情緒動詞：事物或人"
+      ],
+      "body": [
+        "Use -ing for the thing that causes the feeling. Use -ed for the person who has the feeling: the results were disappointing, customers were disappointed.",
+        "造成感覺的事物用 -ing，有這種感覺的人用 -ed：results 是 disappointing，customers 是 disappointed。"
+      ],
+      "ex": [
+        [
+          "The quarterly results were <em>encouraging</em>.",
+          "季度成果令人振奮。"
+        ],
+        [
+          "Most customers were <em>satisfied</em> with the new service.",
+          "大部分顧客對新服務感到滿意。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Participles that act as adjectives",
+        "當形容詞用的分詞"
+      ],
+      "body": [
+        "Attached, enclosed, revised, updated, scheduled, detailed, qualified and experienced are -ed adjectives. Attached and enclosed can also open a sentence: Enclosed is a copy.",
+        "attached、enclosed、revised、updated、scheduled、detailed、qualified、experienced 是 -ed 形容詞。attached、enclosed 也可以放句首。"
+      ],
+      "ex": [
+        [
+          "<em>Enclosed</em> is a copy of the signed contract.",
+          "隨函附上一份已簽署的合約。"
+        ],
+        [
+          "We hired an <em>experienced</em> technician to repair the equipment.",
+          "我們請了一位有經驗的技師來修理設備。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Anyone wishing to attend should register.",
+      "wrong": "Anyone wished to attend should register.",
+      "why": [
+        "The person is the one who wishes, so the participle is active: -ing.",
+        "想參加的人是主動想要，所以用 wishing。"
+      ]
+    },
+    {
+      "right": "Enclosed is the invoice for your order.",
+      "wrong": "Enclosing is the invoice for your order.",
+      "why": [
+        "The invoice is the thing that is enclosed, so it takes the -ed form.",
+        "發票是被附上的東西，要用過去分詞。"
+      ]
+    },
+    {
+      "right": "The presentation was confusing, so many people were confused.",
+      "wrong": "The presentation was confused, so many people were confusing.",
+      "why": [
+        "A thing that causes the feeling takes -ing. People who feel it take -ed.",
+        "簡報讓人困惑，用 -ing；人感到困惑，用 -ed。"
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "The subject of an opening participle phrase must match the main subject. In the sentence beginning When reviewing the report, errors were found, errors cannot review, so it is wrong.",
+      "句首分詞片語的主詞要和主句主詞相同。When reviewing the report, errors were found 是錯的，因為 errors 不會自己審閱。"
+    ],
+    [
+      "A participle does not show time by itself. The attached file is not being attached now. Decide by active or passive, not by time.",
+      "分詞本身不表示時間。the attached file 不是「正在被附上」。要看主動或被動，不是看時間。"
+    ],
+    [
+      "If the sentence already has a main verb, the blank cannot be another finite verb. Look for a participle that describes the noun.",
+      "句子已經有主要動詞，空格就不能再放一個動詞，要找修飾名詞的分詞。"
+    ]
+  ]
+}

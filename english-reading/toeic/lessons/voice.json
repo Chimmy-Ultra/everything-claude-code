@@ -1,0 +1,211 @@
+{
+  "unit": "voice",
+  "lead": [
+    "The options mix active and passive forms of one verb: has postponed, has been postponed, is postponing. Whether the subject does the action or receives it decides.",
+    "選項同時有主動和被動，例如 has postponed、has been postponed、is postponing。看主詞是做動作還是承受動作。"
+  ],
+  "steps": [
+    [
+      "Find the subject. Does it do the action or receive it?",
+      "找出主詞，它是做動作的一方，還是承受動作的一方。"
+    ],
+    [
+      "Look at what follows the blank. An object right after the verb usually means active.",
+      "看空格後面。動詞後面直接接受詞，通常是主動。"
+    ],
+    [
+      "Check the verb itself. Some verbs have no passive at all.",
+      "檢查動詞本身，有些動詞根本沒有被動。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "An object follows: active",
+        "後面有受詞：主動"
+      ],
+      "body": [
+        "A transitive verb followed by its object is usually active. The subject is the one doing the action.",
+        "及物動詞後面接受詞時，通常用主動，主詞是做動作的一方。"
+      ],
+      "ex": [
+        [
+          "The committee <em>has postponed</em> the meeting until further notice.",
+          "委員會已將會議延期，另行通知。"
+        ],
+        [
+          "Ms. Ito <em>signed</em> the contract on Friday.",
+          "伊藤女士在星期五簽了合約。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "No object, subject receives: passive",
+        "沒有受詞，主詞承受動作：被動"
+      ],
+      "body": [
+        "When the subject receives the action and no object follows, use be + past participle. The tense is carried by be: has been, will be, is being.",
+        "主詞承受動作、後面沒有受詞時，用 be + p.p.。時態由 be 表現：has been、will be、is being。"
+      ],
+      "ex": [
+        [
+          "The meeting <em>has been postponed</em> until further notice.",
+          "會議延期，另行通知。"
+        ],
+        [
+          "The results <em>will be announced</em> at the end of the month.",
+          "結果將在月底公布。"
+        ],
+        [
+          "The warehouse <em>is being renovated</em>, so deliveries may be delayed.",
+          "倉庫正在整修，所以送貨可能延遲。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Verbs with no passive",
+        "沒有被動的動詞"
+      ],
+      "body": [
+        "Arise, occur, happen, rise, remain, appear, exist, take place and consist of are intransitive. They never take be + past participle.",
+        "arise、occur、happen、rise、remain、appear、exist、take place、consist of 是不及物動詞，不能用 be + p.p.。"
+      ],
+      "ex": [
+        [
+          "A problem <em>occurred</em> during the installation.",
+          "安裝過程中發生了一個問題。"
+        ],
+        [
+          "Several issues <em>arose</em> during the negotiations.",
+          "談判過程中出現了幾個問題。"
+        ],
+        [
+          "The conference <em>will take place</em> in Dublin in March.",
+          "研討會將於三月在都柏林舉行。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Raise and rise, lay and lie",
+        "raise 與 rise、lay 與 lie"
+      ],
+      "body": [
+        "Raise and lay need an object. Rise and lie do not, and they have no passive. If no object follows, rise is the verb that fits.",
+        "raise、lay 後面要有受詞；rise、lie 不需要受詞，也沒有被動。後面沒有受詞時，選 rise。"
+      ],
+      "ex": [
+        [
+          "Prices <em>rose</em> sharply in May.",
+          "五月價格急遽上漲。"
+        ],
+        [
+          "The company <em>raised</em> its prices in May.",
+          "公司在五月調漲了價格。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Two objects: a noun can follow a passive",
+        "兩個受詞：被動後面仍可接名詞"
+      ],
+      "body": [
+        "Give, offer, send, award and grant take two objects. In the passive one object is left behind, so a noun can follow the verb. A noun after a passive verb is not always wrong.",
+        "give、offer、send、award、grant 有兩個受詞，改成被動後還剩一個，所以被動動詞後面接名詞不一定錯。"
+      ],
+      "ex": [
+        [
+          "Ms. Rivera <em>was offered</em> the position of regional manager.",
+          "Rivera 女士獲得了區域經理的職位。"
+        ],
+        [
+          "Employees <em>will be given</em> two additional days off.",
+          "員工將多獲得兩天假。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Passive + to + verb",
+        "被動 + to + 原形動詞"
+      ],
+      "body": [
+        "Be required to, asked to, expected to, encouraged to, allowed to and scheduled to are standard patterns in notices and announcements.",
+        "be required to、asked to、expected to、encouraged to、allowed to、scheduled to 是公告和通知裡的標準句型。"
+      ],
+      "ex": [
+        [
+          "All visitors <em>are required</em> to sign in at the front desk.",
+          "所有訪客都必須在櫃台登記。"
+        ],
+        [
+          "The audit <em>is scheduled</em> to begin on Monday.",
+          "稽核預定星期一開始。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Passive in English, active in Chinese",
+        "英文是被動，中文常翻成主動"
+      ],
+      "body": [
+        "Be located in, be based in and be scheduled for are passive in form. Chinese says them actively: 位於, 總部設在, 預定。",
+        "be located in、be based in、be scheduled for 形式上是被動，中文卻常說成主動：位於、總部設在、預定。"
+      ],
+      "ex": [
+        [
+          "Our head office <em>is located</em> in Taipei.",
+          "我們的總公司位於台北。"
+        ],
+        [
+          "The company <em>is based</em> in Osaka.",
+          "這家公司總部設在大阪。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Prices rose sharply in May.",
+      "wrong": "Prices were risen sharply in May.",
+      "why": [
+        "Rise has no passive. To say that someone increased them, use raise: Prices were raised.",
+        "rise 沒有被動。要表達「被調漲」，改用 raise：Prices were raised。"
+      ]
+    },
+    {
+      "right": "An error occurred during the update.",
+      "wrong": "An error was occurred during the update.",
+      "why": [
+        "Occur is intransitive, so it cannot take be + past participle.",
+        "occur 是不及物動詞，不能用被動。"
+      ]
+    },
+    {
+      "right": "Mr. Chen was awarded a bonus.",
+      "wrong": "Mr. Chen awarded a bonus.",
+      "why": [
+        "Mr. Chen received the bonus, so the verb is passive. A bonus is the object left over after the passive.",
+        "陳先生是得到獎金的人，要用被動。a bonus 是被動後剩下的那個受詞。"
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "A thing as the subject does not always mean passive. The new policy affects all staff is active. Decide by whether an object follows.",
+      "主詞是事物，不代表就要用被動。The new policy affects all staff 是主動。要看後面有沒有受詞。"
+    ],
+    [
+      "Check the tense inside the passive. Is being renovated is happening now, has been renovated is finished, will be renovated is planned.",
+      "被動裡的時態也要看。is being renovated 是正在進行，has been renovated 是已完成，will be renovated 是預計。"
+    ],
+    [
+      "A by phrase naming who did it points to the passive: reviewed by the director. A by phrase with a time, such as by Friday, says nothing about voice.",
+      "by 加上做動作的人，指向被動：reviewed by the director。by 加時間（by Friday）則看不出主動或被動。"
+    ]
+  ]
+}

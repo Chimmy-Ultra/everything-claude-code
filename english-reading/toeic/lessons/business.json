@@ -1,0 +1,133 @@
+{
+  "unit": "business",
+  "lead": ["These questions test workplace words: documents, payments, travel and finance. Pick the word whose exact meaning matches the situation, and check the structure it needs.", "這類題目考職場用詞：文件、付款、差旅與財務。要選確切意思符合情境的字，並檢查它需要的句型。"],
+  "steps": [
+    ["Find the situation: who pays whom, what is being sent, and when.", "先找出情境：誰付錢給誰、寄什麼、什麼時候。"],
+    ["Match the situation to a term. Ask what the word names: a document, a payment, a person or an action.", "把情境對應到術語。想想這個字指的是文件、款項、人，還是動作。"],
+    ["For verbs, check the preposition that follows (deduct from, reimburse for, reconcile with).", "遇到動詞，要檢查後面的介系詞（deduct from、reimburse for、reconcile with）。"]
+  ],
+  "rules": [
+    {
+      "head": ["Documents: each one has its own job", "文件：各有各的用途"],
+      "body": ["An estimate gives a price before work starts. An invoice asks for payment. A receipt proves payment was made. An itinerary lists travel plans. An agenda lists meeting topics. Match the job to the sentence.", "estimate 在開工前報價；invoice 請對方付款；receipt 證明已付款；itinerary 列出行程；agenda 列出會議議題。把用途對到句子上。"],
+      "ex": [
+        ["The garage sent an <em>estimate</em> before it started the repair.", "修車廠在開始維修前先寄了估價單。"],
+        ["Keep the <em>receipt</em> as proof that you paid.", "請保留收據作為已付款的證明。"],
+        ["The <em>agenda</em> for Monday's meeting has six items.", "星期一會議的議程有六項。"]
+      ]
+    },
+    {
+      "head": ["Money terms: when and why it is paid", "金錢用詞：何時、為何付款"],
+      "body": ["A deposit is part of the price paid early. A premium is what you pay for insurance. A deductible is what you pay first in a claim. A rebate returns part of the price after purchase. A surcharge is an extra fee.", "deposit 是先付的部分款項；premium 是保險費；deductible 是理賠時先自付的額度；rebate 是購買後退回部分款項；surcharge 是額外費用。"],
+      "ex": [
+        ["Guests must pay a <em>deposit</em> and the balance on arrival.", "房客須先付訂金，餘款於抵達時付清。"],
+        ["The policy has a low monthly <em>premium</em> but a high deductible.", "這份保單月保費低，但自負額高。"],
+        ["Buyers can claim a <em>rebate</em> on energy-efficient models.", "購買節能機型的買家可申請回饋金。"]
+      ]
+    },
+    {
+      "head": ["Money verbs need the right preposition", "金錢動詞要配對的介系詞"],
+      "body": ["Deduct A from B. Reimburse a person for an expense. Reconcile one record with another. Postpone something until a later time. Absorb a cost means to pay it yourself instead of passing it on.", "deduct A from B；reimburse 人 for 費用；reconcile 一份紀錄 with 另一份；postpone 事 until 時間；absorb a cost 是自行吸收成本，不轉嫁給別人。"],
+      "ex": [
+        ["Payroll <em>deducts</em> the parking fee <em>from</em> your pay.", "薪資部門從你的薪水中扣除停車費。"],
+        ["The firm will <em>reimburse</em> staff <em>for</em> hotel costs.", "公司會補償員工住宿費用。"],
+        ["Our supplier agreed to <em>absorb</em> the shipping cost.", "我們的供應商同意自行吸收運費。"]
+      ]
+    },
+    {
+      "head": ["People and roles in a business", "商業中的人與角色"],
+      "body": ["A creditor is owed money. A debtor owes money. An investor puts money in to earn a return. An auditor checks the accounts. A supplier or vendor sells goods to the company. Decide who owes and who is owed.", "creditor 是被欠錢的人；debtor 是欠錢的人；investor 投資求回報；auditor 查核帳目；supplier、vendor 是供貨給公司的人。先分清誰欠誰。"],
+      "ex": [
+        ["The company paid its <em>creditors</em> before the end of the year.", "公司在年底前還清了債權人的款項。"],
+        ["An outside <em>auditor</em> will review our accounts in May.", "外部審計員將在五月審查我們的帳目。"]
+      ]
+    },
+    {
+      "head": ["Lose, keep or give up: the condition matters", "失去、保有、放棄：看條件"],
+      "body": ["Forfeit means to lose something because you broke a condition, such as a deposit. Waive means the other side chooses not to require something. Refund and redeem mean to get money back or exchange for value.", "forfeit 是因違反條件而失去（如訂金）；waive 是對方自願免除要求；refund 是退款；redeem 是兌換成價值。"],
+      "ex": [
+        ["Late cancellations <em>forfeit</em> the deposit.", "太晚取消就喪失訂金。"],
+        ["The bank agreed to <em>waive</em> the transfer fee.", "銀行同意免收轉帳手續費。"]
+      ]
+    },
+    {
+      "head": ["Use the nearby words as clues", "用周圍的字當線索"],
+      "body": ["Words like before payment, proof, per month, balance or claim point to a specific term. Read them first, then pick the word that names that exact thing.", "before payment、proof、per month、balance、claim 這類字會指向特定術語。先讀這些線索，再選指稱該事物的字。"],
+      "ex": [
+        ["Send the <em>invoice</em> by the 5th, and payment follows within thirty days.", "請在 5 號前寄出請款單，我們會在三十天內付款。"],
+        ["Check your <em>inventory</em> before you place a new order.", "下新訂單之前，先確認庫存。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "The company will reimburse employees for travel expenses.", "wrong": "The company will reimburse employees of travel expenses.", "why": ["Reimburse a person for an expense. Of does not fit.", "reimburse 人 for 費用，不用 of。"]},
+    {"right": "Taxes are deducted from your monthly pay.", "wrong": "Taxes are deducted to your monthly pay.", "why": ["The structure is deduct A from B.", "句型是 deduct A from B。"]},
+    {"right": "Keep your receipt as proof of payment.", "wrong": "Keep your invoice as proof of payment.", "why": ["A receipt shows payment was made. An invoice asks for payment.", "receipt 證明已付款；invoice 是請款。"]},
+    {"right": "The bank is our largest creditor, and we owe it money.", "wrong": "The bank is our largest debtor, and we owe it money.", "why": ["The side that is owed money is the creditor.", "被欠錢的一方是 creditor。"]}
+  ],
+  "lists": [
+    {
+      "head": ["Business documents", "商務文件"],
+      "items": [
+        ["invoice", "請款單、發票"],
+        ["receipt", "收據"],
+        ["estimate", "估價單"],
+        ["quotation", "報價單"],
+        ["purchase order", "訂購單"],
+        ["itinerary", "行程表"],
+        ["agenda", "議程"],
+        ["inventory", "庫存、存貨清單"],
+        ["warranty", "保固"],
+        ["voucher", "抵用券、憑證"]
+      ]
+    },
+    {
+      "head": ["Payment and finance terms", "付款與財務用詞"],
+      "items": [
+        ["deposit", "訂金、存款"],
+        ["premium", "保險費"],
+        ["deductible", "自負額"],
+        ["rebate", "回饋金、退款"],
+        ["surcharge", "附加費"],
+        ["dividend", "股息、紅利"],
+        ["refund", "退款"],
+        ["installment", "分期付款"],
+        ["overdue balance", "逾期未付餘額"],
+        ["accounts payable", "應付帳款"]
+      ]
+    },
+    {
+      "head": ["Verbs with their prepositions", "動詞與其介系詞"],
+      "items": [
+        ["deduct A from B", "從 B 扣除 A"],
+        ["reimburse sb for sth", "補償某人某筆費用"],
+        ["reconcile A with B", "使 A 與 B 相符"],
+        ["postpone sth until Friday", "把某事延到星期五"],
+        ["invoice sb for sth", "向某人開立某款項的請款單"],
+        ["absorb a cost", "自行吸收成本"],
+        ["forfeit a deposit", "喪失訂金"],
+        ["waive a fee", "免收費用"]
+      ]
+    },
+    {
+      "head": ["People and roles", "人與角色"],
+      "items": [
+        ["creditor", "債權人"],
+        ["debtor", "債務人"],
+        ["investor", "投資人"],
+        ["auditor", "審計員"],
+        ["shareholder", "股東"],
+        ["supplier", "供應商"],
+        ["vendor", "廠商、攤商"],
+        ["contractor", "承包商"],
+        ["tenant", "房客、承租人"],
+        ["landlord", "房東"]
+      ]
+    }
+  ],
+  "traps": [
+    ["Words from one field look alike in Chinese. Premium, deposit and deductible are all 費用 in a loose sense, but each names a different payment. Match the situation first.", "同一領域的字在中文裡看起來很像。premium、deposit、deductible 都像「費用」，但各指不同款項。先對應情境。"],
+    ["A verb can fit the meaning and still fail on its preposition. Check deduct from, reimburse for and reconcile with before you choose.", "動詞意思對，介系詞可能不對。選之前先檢查 deduct from、reimburse for、reconcile with。"],
+    ["Do not mix up the two sides of a transaction. Ask who pays and who receives: creditor and debtor, lend and borrow, invoice and receipt.", "不要把交易的兩方搞混。問清楚誰付、誰收：creditor 與 debtor、lend 與 borrow、invoice 與 receipt。"]
+  ]
+}

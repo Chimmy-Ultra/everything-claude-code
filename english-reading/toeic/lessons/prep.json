@@ -1,0 +1,83 @@
+{
+  "unit": "prep",
+  "lead": ["The options are different prepositions (<em>by, until, within, since</em>) or a fixed phrase. Look at the time word after the blank and at the verb before it.", "選項是不同的介系詞（<em>by、until、within、since</em>）或固定片語。看空格後面的時間字，以及前面的動詞。"],
+  "steps": [
+    ["Read what follows the blank: a point in time, a length of time, or an event.", "先看空格後面接什麼：時間點、一段時間，還是事件。"],
+    ["Check the verb: a one-time action points to <em>by</em>; a state that continues points to <em>until</em>.", "再看動詞：一次完成的動作用 <em>by</em>；持續的狀態用 <em>until</em>。"],
+    ["If the options are phrases, such as <em>on behalf of</em> or <em>in charge of</em>, match the meaning of the whole sentence.", "選項若是片語，例如 <em>on behalf of</em>、<em>in charge of</em>，就用整句的意思來配對。"]
+  ],
+  "rules": [
+    {
+      "head": ["at, on, in with time words", "at、on、in 搭配時間"],
+      "body": ["<em>at</em> goes with clock times, <em>on</em> with days and dates, <em>in</em> with months, years and seasons. <em>in</em> plus a length of time means 'after that time'.", "<em>at</em> 接時刻，<em>on</em> 接日期和星期，<em>in</em> 接月、年、季節。<em>in</em> 加一段時間，表示「……之後」。"],
+      "ex": [
+        ["The seminar starts <em>at</em> 9 a.m. <em>on</em> Tuesday, May 12.", "研討會在五月十二日星期二上午九點開始。"],
+        ["A technician will contact you <em>in</em> two days.", "技術人員會在兩天後與您聯絡。"]
+      ]
+    },
+    {
+      "head": ["by or until", "by 還是 until"],
+      "body": ["<em>by</em> sets a deadline for an action that happens once. <em>until</em> says how long a state lasts. Ask: is it done once, or does it continue?", "<em>by</em> 是一次性動作的期限；<em>until</em> 是狀態持續到什麼時候。先問：這件事做一次就完成，還是會一直持續？"],
+      "ex": [
+        ["Please submit the form <em>by</em> 5 p.m. on Friday.", "請在星期五下午五點前提交表格。"],
+        ["The office will stay closed <em>until</em> January 3.", "辦公室將休息到一月三日。"]
+      ]
+    },
+    {
+      "head": ["within, for, during, since", "within、for、during、since 的分別"],
+      "body": ["<em>within</em> means inside a period. <em>for</em> takes a length of time, <em>during</em> takes the name of an event, <em>since</em> takes a starting point.", "<em>within</em> 表示在一段期間之內。<em>for</em> 接時間長度，<em>during</em> 接事件名稱，<em>since</em> 接起點。"],
+      "ex": [
+        ["Returns must be made <em>within</em> 30 days of purchase.", "退貨必須在購買後三十天內辦理。"],
+        ["The generator ran <em>for</em> three hours <em>during</em> the power cut.", "停電期間，發電機運轉了三個小時。"],
+        ["Our store has been open <em>since</em> 2019.", "本店自二〇一九年起營業至今。"]
+      ]
+    },
+    {
+      "head": ["as of, prior to, following, upon", "as of、prior to、following、upon 的用法"],
+      "body": ["<em>as of</em> gives the date something starts to apply. <em>prior to</em> means before, <em>following</em> means after, and <em>upon</em> means as soon as.", "<em>as of</em> 表示自某日起生效。<em>prior to</em> 等於 before，<em>following</em> 等於 after，<em>upon</em> 表示「一……就」。"],
+      "ex": [
+        ["The new policy takes effect <em>as of</em> July 1.", "新政策自七月一日起生效。"],
+        ["<em>Upon</em> arrival, guests receive a welcome packet.", "客人一抵達就會收到歡迎資料袋。"],
+        ["Please complete the form <em>prior to</em> your appointment.", "請在預約時間之前填好表格。"]
+      ]
+    },
+    {
+      "head": ["Fixed phrases", "固定片語"],
+      "body": ["Some options are whole phrases. Read the sentence for its meaning, then choose the phrase that fits. Learn each one as a unit.", "有些選項是整個片語。先讀懂句意，再選出符合的片語。每個片語要整個一起記。"],
+      "ex": [
+        ["Ms. Diaz accepted the award <em>on behalf of</em> the entire department.", "Diaz 女士代表整個部門領獎。"],
+        ["The project was completed <em>ahead of</em> schedule.", "這個計畫提前完成了。"],
+        ["<em>In response to</em> customer feedback, the shop extended its hours.", "為了回應顧客意見，這家店延長了營業時間。"]
+      ]
+    },
+    {
+      "head": ["Verb + preposition", "動詞加介系詞"],
+      "body": ["Many verbs take one fixed preposition. The blank may test that link and have nothing to do with time. Learn the verb together with its preposition.", "很多動詞固定搭配某個介系詞。空格考的可能是這個搭配，和時間無關。動詞和介系詞要一起記。"],
+      "ex": [
+        ["The manager <em>attributed</em> the increase <em>to</em> a better ad campaign.", "經理把成長歸功於更好的廣告活動。"],
+        ["The new rule <em>prevents</em> staff <em>from</em> working overtime without approval.", "新規定禁止員工未經核准加班。"],
+        ["The report <em>blames</em> the delay <em>on</em> a supplier error.", "報告把延誤歸咎於供應商的失誤。"]
+      ]
+    }
+  ],
+  "pairs": [
+    {"right": "Please return the form by Friday.", "wrong": "Please return the form until Friday.", "why": ["Returning the form happens once, so it needs a deadline word: <em>by</em>.", "交回表格是一次性的動作，要用表示期限的 <em>by</em>。"]},
+    {"right": "The meeting lasted for three hours.", "wrong": "The meeting lasted during three hours.", "why": ["<em>three hours</em> is a length of time, so use <em>for</em>. <em>during</em> needs the name of an event.", "three hours 是時間長度，用 <em>for</em>。<em>during</em> 後面要接事件名稱。"]},
+    {"right": "We have worked here since 2019.", "wrong": "We have worked here for 2019.", "why": ["<em>2019</em> is a starting point, so use <em>since</em> with the present perfect.", "2019 是起點，要用 <em>since</em>，搭配現在完成式。"]}
+  ],
+  "lists": [
+    {"head": ["Fixed phrases", "固定片語"], "items": [
+      ["on behalf of", "代表"], ["in charge of", "負責"], ["according to", "根據"], ["in accordance with", "依照"],
+      ["in response to", "回應"], ["in addition to", "除了……之外"], ["as a result of", "由於"], ["ahead of schedule", "提前"]
+    ]},
+    {"head": ["Verb + preposition", "動詞加介系詞"], "items": [
+      ["attribute A to B", "把 A 歸因於 B"], ["blame A on B", "把 A 怪到 B 頭上"], ["blame B for A", "為 A 責怪 B"], ["prevent A from doing", "阻止 A 做……"],
+      ["depend on", "取決於"], ["apply for", "申請"], ["comply with", "遵守"], ["participate in", "參加"]
+    ]}
+  ],
+  "traps": [
+    ["<em>in time</em> means early enough to catch or join something. <em>on time</em> means exactly at the scheduled moment.", "<em>in time</em> 表示及時，趕得上。<em>on time</em> 表示準時，不早不晚。"],
+    ["<em>since</em> goes with the present perfect and a starting point (<em>since March</em>). <em>for</em> goes with a length (<em>for six months</em>).", "<em>since</em> 搭配現在完成式和起點（<em>since March</em>）。<em>for</em> 搭配長度（<em>for six months</em>）。"],
+    ["<em>upon</em> and <em>on</em> + <em>-ing</em> mean the same: <em>Upon receiving your payment</em> and <em>On receiving your payment</em> both mean 'as soon as we receive it'.", "<em>upon</em> 和 <em>on</em> 加 Ving 意思相同：<em>Upon receiving your payment</em> 和 <em>On receiving your payment</em> 都表示一收到款項就……"]
+  ]
+}
