@@ -15,14 +15,15 @@ def check(unit):
     if not os.path.exists(path): return [f"{unit}: missing"]
     d = json.load(open(path, encoding="utf-8")); errs = []
 
-    def pair(where, p, limit):
+    def pair(where, p, limit, example=False):
         if not (isinstance(p, list) and len(p) == 2 and all(isinstance(x, str) and x.strip() for x in p)):
             errs.append(f"{where}: must be [English, Chinese]"); return
         en, zh = p
         if re.search(r"<(?!/?em>)[^>]*>", en + zh): errs.append(f"{where}: only <em> is allowed")
         if en.count("<em>") != en.count("</em>"): errs.append(f"{where}: unbalanced <em>")
-        if BANNED.search(re.sub(r"<em>.*?</em>", "", en)): errs.append(f"{where}: banned word or mark")
-        if FACTS.search(en) or re.search(r"每場|每次考試|考\s*\d+\s*題|最常考|官方", zh): errs.append(f"{where}: claims about the test are not allowed")
+        if not example:     # example sentences may say "we will" or "percent"; the teaching text may not
+            if BANNED.search(re.sub(r"<em>.*?</em>", "", en)): errs.append(f"{where}: banned word or mark")
+            if FACTS.search(en) or re.search(r"每場|每次考試|考\s*\d+\s*題|最常考|官方", zh): errs.append(f"{where}: claims about the test are not allowed")
         if words(en) > limit: errs.append(f"{where}: {words(en)} words (max {limit})")
         if not re.search(r"[一-鿿]", zh): errs.append(f"{where}: Chinese twin has no Chinese")
 
@@ -36,7 +37,7 @@ def check(unit):
         pair(f"{unit} rules[{i}].head", r.get("head"), 10); pair(f"{unit} rules[{i}].body", r.get("body"), 45)
         ex = r.get("ex", [])
         if not 1 <= len(ex) <= 3: errs.append(f"{unit} rules[{i}]: 1-3 examples")
-        for j, e in enumerate(ex): pair(f"{unit} rules[{i}].ex[{j}]", e, 22)
+        for j, e in enumerate(ex): pair(f"{unit} rules[{i}].ex[{j}]", e, 22, example=True)
     pairs = d.get("pairs", [])
     if not 2 <= len(pairs) <= 4: errs.append(f"{unit}: 2-4 pairs")
     for i, p in enumerate(pairs):
@@ -48,7 +49,7 @@ def check(unit):
         pair(f"{unit} lists[{i}].head", l.get("head"), 10)
         its = l.get("items", [])
         if not 4 <= len(its) <= 12: errs.append(f"{unit} lists[{i}]: 4-12 items")
-        for j, it in enumerate(its): pair(f"{unit} lists[{i}].items[{j}]", it, 14)
+        for j, it in enumerate(its): pair(f"{unit} lists[{i}].items[{j}]", it, 14, example=True)
     traps = d.get("traps", [])
     if not 2 <= len(traps) <= 4: errs.append(f"{unit}: 2-4 traps")
     for i, t in enumerate(traps): pair(f"{unit} traps[{i}]", t, 40)
