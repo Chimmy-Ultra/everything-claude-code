@@ -1,0 +1,101 @@
+[
+ {
+  "id": "g-relative-08",
+  "format": "gap",
+  "stem": "Mr. Okafor is the only finalist ______ recently updated and unusually detailed résumé lists both warehouse automation and customs compliance, and the panel has therefore placed him first on its shortlist.",
+  "options": {
+   "A": "who's",
+   "B": "who",
+   "C": "whose",
+   "D": "whom"
+  }
+ },
+ {
+  "id": "g-relative-10",
+  "format": "gap",
+  "stem": "The caterer withdrew just two days before the gala, ______ is exactly what the organizers had feared when they awarded the contract to the lowest bidder.",
+  "options": {
+   "A": "what",
+   "B": "which",
+   "C": "it",
+   "D": "that"
+  }
+ },
+ {
+  "id": "g-relative-15",
+  "format": "gap",
+  "stem": "The university operates three satellite campuses, ______ combined enrollment has doubled since 2018 and now exceeds that of the main campus.",
+  "options": {
+   "A": "whose",
+   "B": "of which",
+   "C": "which",
+   "D": "who's"
+  }
+ },
+ {
+  "id": "g-relative-17",
+  "format": "gap",
+  "stem": "The museum's board received three proposals to redesign the east gallery, ______ met the budget ceiling set by the finance committee in March, and a second round of tenders was therefore announced.",
+  "options": {
+   "A": "both of which",
+   "B": "none of which",
+   "C": "neither of which",
+   "D": "either of which"
+  }
+ },
+ {
+  "id": "g-relative-21",
+  "format": "gap",
+  "stem": "Technicians ______ the quarterly calibration of the extruders at the Eastfield plant, most of them with more than a decade of experience, have been reporting the same fault since January.",
+  "options": {
+   "A": "performed",
+   "B": "performing",
+   "C": "perform",
+   "D": "being performed"
+  }
+ },
+ {
+  "id": "g-relative-22",
+  "format": "gap",
+  "stem": "The head of the apprenticeship program, ______ the board believes will oversee every stage of next year's expansion, has already asked the plant managers to submit their staffing plans by Friday.",
+  "options": {
+   "A": "that",
+   "B": "whom",
+   "C": "whose",
+   "D": "who"
+  }
+ },
+ {
+  "id": "g-relative-23",
+  "format": "gap",
+  "stem": "The agency released the revised schedule without first consulting the shift supervisors, ______ led to confusion on the loading dock when the first trucks arrived on Monday morning.",
+  "options": {
+   "A": "which",
+   "B": "who",
+   "C": "what",
+   "D": "that"
+  }
+ },
+ {
+  "id": "g-relative-24",
+  "format": "gap",
+  "stem": "The auditors named the regional manager ______ attention the discrepancy in the freight invoices had first been brought in January, though no corrective step was taken for another four months.",
+  "options": {
+   "A": "whose",
+   "B": "to whose",
+   "C": "to whom",
+   "D": "whom"
+  }
+ },
+ {
+  "id": "g-relative-25",
+  "format": "gap",
+  "stem": "The regional director, ______, according to the minutes of the March meeting, been pressing the board to approve the new budget, is expected to present a revised plan on Friday.",
+  "options": {
+   "A": "whose",
+   "B": "whom",
+   "C": "who has",
+   "D": "who"
+  }
+ }
+]

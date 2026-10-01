@@ -83,7 +83,7 @@ ITEMS = [{'id': 'g-prep-11',
   'stem': 'The finance department reconciles the corporate card statements ______ the end of every '
           'month, once the last late transactions have been posted at midnight on the final day, '
           'and then sends the totals to the auditors.',
-  'options': ['at', 'on', 'in', 'toward'],
+  'options': ['at', 'on', 'in', 'since'],
   'answer': 0,
   'explain': {'point': 'at the end of：正好在月底那個時間點',
               'why': '決定線索在空格之後：once the last late transactions have been posted at midnight on '
@@ -91,14 +91,12 @@ ITEMS = [{'id': 'g-prep-11',
               'wrong': [None,
                         'on the end of 不成立',
                         'in the end of 不成立；in the end 是另一個片語',
-                        'toward the end of 表接近月底；但要等最後一筆入帳'],
+                        'since 要搭完成式，不能接一般現在式 reconciles'],
               'wrongMore': [None,
                             None,
                             None,
-                            'reconciles … toward the end of every month 局部通順，toward the end of '
-                            '是常見說法，表示「接近月底時」。但句子說要等 once the last late transactions have been '
-                            'posted at midnight on the final day '
-                            '才對帳，也就是月底最後一刻，不是接近月底；要表示正好在那個時間點，用 at。'],
+                            'since the end of every month 要配完成式（has reconciled … since），一般現在式 reconciles 不能接 since；'
+                            '而且句子說要等最後一天午夜的交易入帳後才對帳，是那個時間點，所以用 at。'],
               'zh': '財務部門在每個月底、最後一天午夜最後一批遲到的交易入帳之後，核對公司信用卡對帳單，然後把總額送交查帳人員。',
               'vocab': [['reconcile', '核對、調節'],
                         ['statement', '對帳單'],

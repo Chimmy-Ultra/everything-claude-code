@@ -1,0 +1,57 @@
+[
+ {
+  "id": "g-conditional-09",
+  "format": "gap",
+  "stem": "Under the new policy, employees keep their seniority and pension entitlements ______ they transfer to the Northgate office before the restructuring takes effect in January, while those who apply after that date start again at entry level.",
+  "options": {
+   "A": "as if",
+   "B": "unless",
+   "C": "until",
+   "D": "provided that"
+  }
+ },
+ {
+  "id": "g-conditional-11",
+  "format": "gap",
+  "stem": "The municipal recycling center, which handles waste from all eleven city districts, has only one crew and no budget for another; if it ______ able to run a second shift, its backlog would be cleared by December.",
+  "options": {
+   "A": "being",
+   "B": "to be",
+   "C": "will be",
+   "D": "were"
+  }
+ },
+ {
+  "id": "g-conditional-15",
+  "format": "gap",
+  "stem": "If the retailer were not so heavily dependent on a single carrier, its deliveries to the northern stores ______ so badly disrupted by the three-day strike last September, when several of those stores ran out of stock.",
+  "options": {
+   "A": "would not have",
+   "B": "had not been",
+   "C": "not have been",
+   "D": "would not have been"
+  }
+ },
+ {
+  "id": "g-conditional-17",
+  "format": "gap",
+  "stem": "Without the forty volunteers who staff the information desk every weekend, the museum ______ able to keep its galleries open on both weekend days, as it has done every week since January.",
+  "options": {
+   "A": "would not be",
+   "B": "would not have",
+   "C": "were not",
+   "D": "not being"
+  }
+ },
+ {
+  "id": "g-conditional-23",
+  "format": "gap",
+  "stem": "The dean told the board that it is high time the admissions office, whose acceptance rate has fallen for three consecutive years and whose overseas intake has fallen faster, ______ the way it assesses foreign applicants.",
+  "options": {
+   "A": "has reviewed",
+   "B": "will review",
+   "C": "reviewed",
+   "D": "is reviewing"
+  }
+ }
+]
