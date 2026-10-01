@@ -2,7 +2,7 @@
 import csv, glob, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 TSL = {r["Word"].strip().lower() for r in csv.DictReader(open(os.path.join(HERE, "tsl", "TSL_12_stats.csv"), encoding="latin-1"))}
-POS = {"n.", "v.", "adj.", "adv.", "prep.", "conj."}
+POS = {"n.", "v.", "adj.", "adv.", "prep.", "conj.", "pron."}
 BANNED = re.compile(r"!|[\U0001F300-\U0001FAFF]|\b(let's|remember|note that|tip:)\b|\bTOEIC\b", re.I)
 ZH = re.compile(r"[一-鿿]")
 

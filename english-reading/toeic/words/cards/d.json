@@ -1671,7 +1671,7 @@
     "w": "gradually",
     "note": [
      "Stresses slow change in stages; steadily stresses a regular, unbroken pace.",
-     "強調分階段的緩慢變化；steadily 強調規律、不間斷的步調."
+     "強調分階段的緩慢變化；steadily 強調規律、不間斷的步調。"
     ]
    },
    {
@@ -2894,11 +2894,6 @@
   ],
   "family": [
    {
-    "w": "load",
-    "pos": "v.",
-    "zh": "裝載"
-   },
-   {
     "w": "unloading",
     "pos": "n.",
     "zh": "卸貨"
@@ -3747,11 +3742,6 @@
   ],
   "family": [
    {
-    "w": "weekend",
-    "pos": "n.",
-    "zh": "週末"
-   },
-   {
     "w": "weekly",
     "pos": "adj.",
     "zh": "每週的"
@@ -3791,7 +3781,7 @@
  },
  {
   "w": "whoever",
-  "pos": "conj.",
+  "pos": "pron.",
   "zh": "無論誰；任何…的人",
   "def": [
    "Any person who; no matter who.",

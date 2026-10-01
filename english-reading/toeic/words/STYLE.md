@@ -25,7 +25,7 @@ The learner is a Taiwanese adult working toward TOEIC 700–850. English first; 
 ```
 
 - `w`: the TSL headword exactly as given to you (lower case).
-- `pos`: the parts of speech the card covers, from `n.` `v.` `adj.` `adv.` `prep.` `conj.`, comma-separated.
+- `pos`: the parts of speech the card covers, from `n.` `v.` `adj.` `adv.` `prep.` `conj.` `pron.`, comma-separated.
 - `zh`: short Chinese meanings for the senses that matter in business English.
 - `def`: one plain English definition, max 20 words.
 - `ex`: **4 to 6** example sentences. This is the most important part.
