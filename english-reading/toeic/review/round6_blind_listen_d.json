@@ -1,0 +1,182 @@
+[
+ {
+  "id": "l-qr-23",
+  "format": "qr",
+  "heard": "When does the new shuttle to the train station begin running?",
+  "responses": {
+   "A": "It stops right outside the main entrance.",
+   "B": "Yes, I take the shuttle every morning.",
+   "C": "Starting the first of next month."
+  }
+ },
+ {
+  "id": "l-qr-24",
+  "format": "qr",
+  "heard": "How much did the catering for last week's client luncheon come to?",
+  "responses": {
+   "A": "Accounting hasn't sent us the bill yet.",
+   "B": "About sixty guests, I think.",
+   "C": "The luncheon was a big success."
+  }
+ },
+ {
+  "id": "l-qr-25",
+  "format": "qr",
+  "heard": "Why did Ms. Novak turn down the Lisbon position when she'd been asking for a transfer for years?",
+  "responses": {
+   "A": "Because she was never offered the job.",
+   "B": "Her whole family lives in this city.",
+   "C": "The transfer forms are on the intranet."
+  }
+ },
+ {
+  "id": "l-qr-26",
+  "format": "qr",
+  "heard": "What time is the client call tomorrow, now that it's been delayed three hours from nine o'clock?",
+  "responses": {
+   "A": "Nine o'clock, the same as before.",
+   "B": "Six o'clock, I believe.",
+   "C": "Not until noon."
+  }
+ },
+ {
+  "id": "l-qr-27",
+  "format": "qr",
+  "heard": "Where did the courier leave the fabric samples that arrived this morning?",
+  "responses": {
+   "A": "Ask at the front desk. Lena signed for them.",
+   "B": "They're imported from Portugal.",
+   "C": "The courier comes at around ten o'clock every day."
+  }
+ },
+ {
+  "id": "l-qr-28",
+  "format": "qr",
+  "heard": "How are we getting the display boards to the expo center, now that the company van is in the repair shop?",
+  "responses": {
+   "A": "By the company van, as usual.",
+   "B": "I've booked a rental truck for Thursday morning.",
+   "C": "They're about two meters wide."
+  }
+ },
+ {
+  "id": "l-qr-29",
+  "format": "qr",
+  "heard": "Is the café on the ground floor open on weekends?",
+  "responses": {
+   "A": "The ground floor has been repainted.",
+   "B": "Yes, but only on Saturdays.",
+   "C": "I'll have a coffee with milk, please."
+  }
+ },
+ {
+  "id": "l-qr-30",
+  "format": "qr",
+  "heard": "You've booked the interpreter for the Tokyo call, haven't you?",
+  "responses": {
+   "A": "Yes, I've been to Tokyo twice.",
+   "B": "The call went very well last week.",
+   "C": "Sorry, I thought Hana was handling that."
+  }
+ },
+ {
+  "id": "l-qr-31",
+  "format": "qr",
+  "heard": "Didn't the maintenance crew promise to finish the lobby floor before the clients arrive at noon?",
+  "responses": {
+   "A": "They told me it'll take until after lunch.",
+   "B": "Yes, the clients were very impressed last time.",
+   "C": "No, the lobby is on the first floor."
+  }
+ },
+ {
+  "id": "l-qr-32",
+  "format": "qr",
+  "heard": "Is the small conference room still free on Thursday, now that finance has reserved it for the whole afternoon?",
+  "responses": {
+   "A": "Yes, I reserved it from two to four o'clock.",
+   "B": "Only in the morning.",
+   "C": "Finance is hiring two more analysts."
+  }
+ },
+ {
+  "id": "l-qr-33",
+  "format": "qr",
+  "heard": "Wouldn't it be cheaper to ship the display units by sea, now that the trade show isn't until next quarter?",
+  "responses": {
+   "A": "Yes, because the show starts tomorrow.",
+   "B": "The display units were designed in Milan.",
+   "C": "Our warehouse partner only handles air freight."
+  }
+ },
+ {
+  "id": "l-qr-34",
+  "format": "qr",
+  "heard": "You're still taking tomorrow afternoon off, aren't you, even with the inspection at three o'clock?",
+  "responses": {
+   "A": "Ms. Kemp offered to cover for me.",
+   "B": "Yes, the inspection was very thorough.",
+   "C": "No, I don't think it will rain tomorrow."
+  }
+ },
+ {
+  "id": "l-qr-35",
+  "format": "qr",
+  "heard": "The invoice from the print shop is higher than the quote.",
+  "responses": {
+   "A": "Let me pull up the original estimate.",
+   "B": "Their print shop is next to the bank.",
+   "C": "Good, that's less than I expected."
+  }
+ },
+ {
+  "id": "l-qr-36",
+  "format": "qr",
+  "heard": "The customer survey scores dropped for the first time in three years.",
+  "responses": {
+   "A": "Wonderful, the team will be thrilled.",
+   "B": "Was it the long waiting times again?",
+   "C": "The survey only takes about five minutes."
+  }
+ },
+ {
+  "id": "l-qr-37",
+  "format": "qr",
+  "heard": "Could you lend me your laptop charger for an hour?",
+  "responses": {
+   "A": "The laptops are on sale this week.",
+   "B": "It took about an hour.",
+   "C": "Sure, it's in the top drawer."
+  }
+ },
+ {
+  "id": "l-qr-38",
+  "format": "qr",
+  "heard": "Should we hold the demo in the main hall or the studio, which seats only sixty, now that over two hundred people have registered?",
+  "responses": {
+   "A": "I'll see if the main hall is free that morning.",
+   "B": "The studio is a better fit for a demo.",
+   "C": "Registration closes on the thirtieth."
+  }
+ },
+ {
+  "id": "l-qr-39",
+  "format": "qr",
+  "heard": "Why don't we split the dinner bill between the two departments?",
+  "responses": {
+   "A": "Because the dinner started at eight o'clock.",
+   "B": "Marketing has already used up its budget for this quarter.",
+   "C": "The waiter brought the bill on a tray."
+  }
+ },
+ {
+  "id": "l-qr-40",
+  "format": "qr",
+  "heard": "Do you want to go over the budget in the conference room or over lunch?",
+  "responses": {
+   "A": "The budget was approved in March.",
+   "B": "The lunch menu changes every Monday.",
+   "C": "Let's just do it by phone this afternoon."
+  }
+ }
+]

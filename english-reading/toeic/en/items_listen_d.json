@@ -1,0 +1,204 @@
+{
+  "l-qr-23": {
+    "q": [{
+      "point": ["A when-question needs a time.", "When 問句要回一個時間。"],
+      "why": ["The question asks when the shuttle will <em>begin running</em>. <em>Starting the first of next month</em> gives a date, so it answers the question directly.", "問題問接駁車什麼時候開始行駛。Starting the first of next month 給了日期，直接回答問題。"]
+    }],
+    "gloss": [
+      {"w": "shuttle", "hw": "shuttle", "pos": "n.", "zh": "接駁車", "ex": "The shuttle leaves every twenty minutes."},
+      {"w": "main entrance", "hw": "main entrance", "pos": "n.", "zh": "大門、正門", "ex": "Please wait at the main entrance."},
+      {"w": "Starting the first of next month", "hw": "starting", "pos": "phr.", "zh": "從下個月一日起", "ex": "Starting Monday, the office opens at eight."}
+    ]
+  },
+  "l-qr-24": {
+    "q": [{
+      "point": ["How much: the answer can be that the amount is not known yet.", "How much：回答可以是金額還不知道。"],
+      "why": ["The question asks how much the catering cost. <em>Accounting hasn't sent us the bill yet</em> means the amount is not known, so it is a fitting indirect answer.", "問題問外燴總共多少錢。Accounting hasn't sent us the bill yet 表示金額還不知道，是合適的間接回答。"]
+    }],
+    "gloss": [
+      {"w": "catering", "hw": "catering", "pos": "n.", "zh": "外燴", "ex": "The catering for the event was excellent."},
+      {"w": "come to", "hw": "come to", "pos": "phr.", "zh": "（金額）總計達", "ex": "The total comes to four hundred dollars."},
+      {"w": "luncheon", "hw": "luncheon", "pos": "n.", "zh": "午宴", "ex": "The annual luncheon is held in June."}
+    ]
+  },
+  "l-qr-25": {
+    "q": [{
+      "point": ["A why-question can be answered with a fact that implies the reason.", "Why 問句可以用暗示理由的事實來回答。"],
+      "why": ["The question says she chose to <em>turn down</em> the position, so the reason is something that keeps her here. <em>Her whole family lives in this city</em> gives that reason without saying <em>because</em>.", "她回絕了職缺，所以理由是讓她留在這裡的事。Her whole family lives in this city 沒說 because，卻給了這個理由。"]
+    }],
+    "gloss": [
+      {"w": "turn down", "hw": "turn down", "pos": "phr.", "zh": "回絕、拒絕", "ex": "She turned down the job offer."},
+      {"w": "transfer", "hw": "transfer", "pos": "n.", "zh": "調職", "ex": "He asked for a transfer to Chicago."},
+      {"w": "intranet", "hw": "intranet", "pos": "n.", "zh": "公司內部網站", "ex": "The form is on the intranet."}
+    ]
+  },
+  "l-qr-26": {
+    "q": [{
+      "point": ["Use the condition in the question to work out the time.", "用問句裡的條件算出時間。"],
+      "why": ["The call was <em>delayed three hours from nine o'clock</em>. Delayed means later, and nine plus three is twelve, so <em>Not until noon</em> fits.", "電話會議從九點延後三小時。Delayed 是往後，九點加三小時是十二點，所以 Not until noon 符合。"]
+    }],
+    "gloss": [
+      {"w": "delayed", "hw": "delay", "pos": "v.", "zh": "延後", "ex": "The flight was delayed by two hours."},
+      {"w": "client call", "hw": "client call", "pos": "n.", "zh": "客戶電話會議", "ex": "I have a client call at three."},
+      {"w": "Not until noon", "hw": "not until", "pos": "phr.", "zh": "要到中午才", "ex": "The store does not open until noon."}
+    ]
+  },
+  "l-qr-27": {
+    "q": [{
+      "point": ["A where-question can be answered by naming who knows.", "Where 問句可以回答「誰知道」。"],
+      "why": ["Nobody says where the samples are, but <em>Ask at the front desk. Lena signed for them</em> points to the person who received them. That is a helpful answer to <em>Where</em>.", "沒人直接說樣品在哪，但 Ask at the front desk. Lena signed for them 指向收件的人，是對 Where 有用的回答。"]
+    }],
+    "gloss": [
+      {"w": "courier", "hw": "courier", "pos": "n.", "zh": "快遞員、快遞公司", "ex": "The courier delivered the package at noon."},
+      {"w": "fabric samples", "hw": "fabric sample", "pos": "n.", "zh": "布料樣品", "ex": "She ordered fabric samples for the curtains."},
+      {"w": "signed for", "hw": "sign for", "pos": "phr.", "zh": "簽收", "ex": "Someone must sign for the delivery."},
+      {"w": "imported", "hw": "import", "pos": "v.", "zh": "進口", "ex": "The firm imports tiles from Spain."}
+    ]
+  },
+  "l-qr-28": {
+    "q": [{
+      "point": ["A how-question with a condition: use it to rule out one way.", "帶條件的 how 問句：用條件刪掉一種方式。"],
+      "why": ["The van <em>is in the repair shop</em>, so the answer must be another way. <em>I've booked a rental truck</em> names a different way to move the boards.", "廂型車在修理廠，所以答案得是另一種方式。I've booked a rental truck 說出另一種運送方式。"]
+    }],
+    "gloss": [
+      {"w": "display boards", "hw": "display board", "pos": "n.", "zh": "展示板", "ex": "We set up the display boards early."},
+      {"w": "expo center", "hw": "expo center", "pos": "n.", "zh": "展覽中心", "ex": "The expo center hosts three fairs a year."},
+      {"w": "repair shop", "hw": "repair shop", "pos": "n.", "zh": "修理廠", "ex": "My car is at the repair shop."},
+      {"w": "rental truck", "hw": "rental truck", "pos": "n.", "zh": "租用貨車", "ex": "They hired a rental truck for the move."}
+    ]
+  },
+  "l-qr-29": {
+    "q": [{
+      "point": ["A direct yes with a limit.", "直接回 Yes，再補上限制。"],
+      "why": ["The question asks if the café is open on weekends. <em>Yes, but only on Saturdays</em> says yes and adds the limit.", "問題問咖啡廳週末有沒有開。Yes, but only on Saturdays 回答有，並補上限制。"]
+    }],
+    "gloss": [
+      {"w": "ground floor", "hw": "ground floor", "pos": "n.", "zh": "一樓", "ex": "The lobby is on the ground floor."},
+      {"w": "weekends", "hw": "weekend", "pos": "n.", "zh": "週末", "ex": "The shop is closed on weekends."},
+      {"w": "repainted", "hw": "repaint", "pos": "v.", "zh": "重新粉刷", "ex": "They repainted the hallway last week."}
+    ]
+  },
+  "l-qr-30": {
+    "q": [{
+      "point": ["A tag question: an excuse can mean no.", "附加問句：說明原因也可以表示「沒有」。"],
+      "why": ["The speaker expects a yes. <em>Sorry, I thought Hana was handling that</em> shows the booking was not done, so the answer is no.", "說話者預期答案是有。Sorry, I thought Hana was handling that 表示沒訂，所以答案是沒有。"]
+    }],
+    "gloss": [
+      {"w": "interpreter", "hw": "interpreter", "pos": "n.", "zh": "口譯員", "ex": "We hired an interpreter for the meeting."},
+      {"w": "booked", "hw": "book", "pos": "v.", "zh": "預訂、安排", "ex": "She booked a room for the workshop."},
+      {"w": "handling", "hw": "handle", "pos": "v.", "zh": "處理、負責", "ex": "Who is handling the travel plans?"}
+    ]
+  },
+  "l-qr-31": {
+    "q": [{
+      "point": ["Compare two times: a later finish means no.", "比較兩個時間：完成得比較晚就是沒趕上。"],
+      "why": ["The crew was to finish <em>before the clients arrive at noon</em>. <em>It'll take until after lunch</em> is later than noon, so the answer is no.", "維修人員要在客戶中午抵達前完成。It'll take until after lunch 比中午晚，所以答案是沒趕上。"]
+    }],
+    "gloss": [
+      {"w": "maintenance crew", "hw": "maintenance crew", "pos": "n.", "zh": "維修人員", "ex": "The maintenance crew arrives at six."},
+      {"w": "lobby", "hw": "lobby", "pos": "n.", "zh": "大廳", "ex": "Please wait in the lobby."},
+      {"w": "impressed", "hw": "impressed", "pos": "adj.", "zh": "印象深刻的", "ex": "The client was impressed by the results."}
+    ]
+  },
+  "l-qr-32": {
+    "q": [{
+      "point": ["A condition can turn a yes into a partial yes.", "條件可以把 Yes 縮小成部分的 Yes。"],
+      "why": ["Finance has the room <em>for the whole afternoon</em>. <em>Only in the morning</em> says the room is free then, but not in the afternoon.", "財務部整個下午都訂了會議室。Only in the morning 表示只有早上有空，下午沒有。"]
+    }],
+    "gloss": [
+      {"w": "reserved", "hw": "reserve", "pos": "v.", "zh": "預訂", "ex": "I reserved the room for Monday."},
+      {"w": "whole afternoon", "hw": "whole afternoon", "pos": "n.", "zh": "整個下午", "ex": "The workshop takes the whole afternoon."},
+      {"w": "analysts", "hw": "analyst", "pos": "n.", "zh": "分析師", "ex": "The bank employs forty analysts."}
+    ]
+  },
+  "l-qr-33": {
+    "q": [{
+      "point": ["A negative question: a limit can mean no.", "否定問句：說明做不到，答案就是 No。"],
+      "why": ["The question suggests sea freight. <em>Our warehouse partner only handles air freight</em> means sea is not possible, so the answer is no.", "問題提議海運。Our warehouse partner only handles air freight 表示海運行不通，所以答案是 No。"]
+    }],
+    "gloss": [
+      {"w": "display units", "hw": "display unit", "pos": "n.", "zh": "展示設備", "ex": "The display units arrive on Tuesday."},
+      {"w": "trade show", "hw": "trade show", "pos": "n.", "zh": "貿易展", "ex": "We attend a trade show every spring."},
+      {"w": "freight", "hw": "freight", "pos": "n.", "zh": "貨運", "ex": "Air freight is faster but costs more."}
+    ]
+  },
+  "l-qr-34": {
+    "q": [{
+      "point": ["A tag question: a solution can mean yes.", "附加問句：提到解決辦法可以表示 Yes。"],
+      "why": ["The question asks if the speaker will still take the afternoon off. <em>Ms. Kemp offered to cover for me</em> solves the inspection problem, so the answer is yes.", "問題問說話者是否照樣請下午假。Ms. Kemp offered to cover for me 解決了檢查的問題，所以答案是會。"]
+    }],
+    "gloss": [
+      {"w": "inspection", "hw": "inspection", "pos": "n.", "zh": "檢查、視察", "ex": "The inspection starts at nine."},
+      {"w": "taking tomorrow afternoon off", "hw": "take off", "pos": "phr.", "zh": "請假", "ex": "I will take Friday off."},
+      {"w": "cover for", "hw": "cover for", "pos": "phr.", "zh": "代班、代替", "ex": "Can you cover for me on Friday?"}
+    ]
+  },
+  "l-qr-35": {
+    "q": [{
+      "point": ["Answer a statement by offering to check.", "回應陳述句：說「我來查」。"],
+      "why": ["The statement says the <em>invoice</em> is higher than the <em>quote</em>. <em>Let me pull up the original estimate</em> offers to compare the two, a natural next step.", "陳述句說發票比報價高。Let me pull up the original estimate 表示要拿原本的估價來比對，是自然的下一步。"]
+    }],
+    "gloss": [
+      {"w": "invoice", "hw": "invoice", "pos": "n.", "zh": "發票、請款單", "ex": "Please send the invoice by Friday."},
+      {"w": "quote", "hw": "quote", "pos": "n.", "zh": "報價", "ex": "We asked three firms for a quote."},
+      {"w": "pull up", "hw": "pull up", "pos": "phr.", "zh": "調出（資料）", "ex": "I'll pull up the file now."}
+    ]
+  },
+  "l-qr-36": {
+    "q": [{
+      "point": ["Answer bad news with a question about the cause.", "回應壞消息：追問原因。"],
+      "why": ["The scores <em>dropped</em>, which is bad news. <em>Was it the long waiting times again?</em> asks about the cause, which fits the mood.", "分數下滑是壞消息。Was it the long waiting times again? 追問原因，符合這個語氣。"]
+    }],
+    "gloss": [
+      {"w": "survey", "hw": "survey", "pos": "n.", "zh": "問卷調查", "ex": "The survey takes five minutes."},
+      {"w": "scores", "hw": "score", "pos": "n.", "zh": "分數、評分", "ex": "Test scores improved this year."},
+      {"w": "waiting times", "hw": "waiting time", "pos": "n.", "zh": "等候時間", "ex": "Waiting times are longer on Mondays."}
+    ]
+  },
+  "l-qr-37": {
+    "q": [{
+      "point": ["Answer a request directly: agree and add a detail.", "回應請求：直接答應，再補一個細節。"],
+      "why": ["The speaker asks to borrow a charger. <em>Sure, it's in the top drawer</em> agrees and says where to find it.", "說話者想借充電器。Sure, it's in the top drawer 答應了，也說了東西在哪裡。"]
+    }],
+    "gloss": [
+      {"w": "lend", "hw": "lend", "pos": "v.", "zh": "借出", "ex": "Could you lend me a pen?"},
+      {"w": "charger", "hw": "charger", "pos": "n.", "zh": "充電器", "ex": "I left my charger at home."},
+      {"w": "on sale", "hw": "on sale", "pos": "phr.", "zh": "特價中", "ex": "All coats are on sale today."}
+    ]
+  },
+  "l-qr-38": {
+    "q": [{
+      "point": ["Answer a choice question by checking one option.", "回應選擇問句：去確認其中一個選項。"],
+      "why": ["The studio <em>seats only sixty</em>, but <em>over two hundred people have registered</em>. <em>I'll see if the main hall is free</em> checks the only room big enough.", "小棚只有六十個座位，但有兩百多人報名。I'll see if the main hall is free 是去確認唯一夠大的場地。"]
+    }],
+    "gloss": [
+      {"w": "main hall", "hw": "main hall", "pos": "n.", "zh": "主廳", "ex": "The main hall seats five hundred."},
+      {"w": "seats", "hw": "seat", "pos": "v.", "zh": "（場地）容納座位", "ex": "The room seats about eighty people."},
+      {"w": "registered", "hw": "register", "pos": "v.", "zh": "報名、登記", "ex": "Forty people registered for the class."},
+      {"w": "Registration", "hw": "registration", "pos": "n.", "zh": "報名", "ex": "Registration opens on Monday."}
+    ]
+  },
+  "l-qr-39": {
+    "q": [{
+      "point": ["Answer a suggestion with a reason that means no.", "回應建議：用理由表示不行。"],
+      "why": ["The speaker suggests that two departments share the bill. <em>Marketing has already used up its budget</em> gives a reason why marketing cannot pay its half.", "說話者建議兩個部門平分帳單。Marketing has already used up its budget 說明行銷部付不出那一半的原因。"]
+    }],
+    "gloss": [
+      {"w": "split", "hw": "split", "pos": "v.", "zh": "平分", "ex": "Let us split the cost evenly."},
+      {"w": "bill", "hw": "bill", "pos": "n.", "zh": "帳單", "ex": "The bill came to ninety dollars."},
+      {"w": "used up", "hw": "use up", "pos": "phr.", "zh": "用完", "ex": "We used up the whole budget."}
+    ]
+  },
+  "l-qr-40": {
+    "q": [{
+      "point": ["Answer a choice question with a third option.", "回應選擇問句：提出第三個選項。"],
+      "why": ["The question offers the <em>conference room</em> or <em>lunch</em>. <em>Let's just do it by phone this afternoon</em> picks neither and offers a third way.", "問題給了會議室或午餐兩個選項。Let's just do it by phone this afternoon 兩個都不選，提出第三種方式。"]
+    }],
+    "gloss": [
+      {"w": "go over", "hw": "go over", "pos": "phr.", "zh": "檢視、逐項看過", "ex": "We will go over the figures together."},
+      {"w": "approved", "hw": "approve", "pos": "v.", "zh": "核准", "ex": "The board approved the plan."},
+      {"w": "by phone", "hw": "by phone", "pos": "phr.", "zh": "用電話", "ex": "We can settle this by phone."}
+    ]
+  },
+  "_flags": []
+}
