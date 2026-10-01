@@ -11,7 +11,7 @@ ITEMS = [
     # ------------------------------------------------------------ voice
     {
         "id": "g-voice-05", "type": "grammar", "format": "gap", "unit": "voice", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Only twelve of the eighty technicians who applied for the three-year apprenticeship at the Davenholt Motors plant ______ places in the first intake, and the remainder were placed on a waiting list.",
         "options": ["were offered", "offered", "have offered", "offering"],
         "answer": 0,
@@ -36,7 +36,7 @@ ITEMS = [
     },
     {
         "id": "g-voice-06", "type": "grammar", "format": "gap", "unit": "voice", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "Despite the eleven days it spent in the terminal yard, the refrigerated shipment cleared the port without ______ even once, a result that surprised the freight forwarder, who had expected customs officers to open every pallet.",
         "options": ["opening", "being opened", "having opened", "to be opened"],
         "answer": 1,
@@ -62,7 +62,7 @@ ITEMS = [
     # ------------------------------------------------------------ mandative
     {
         "id": "g-mandative-05", "type": "grammar", "format": "gap", "unit": "mandative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "After two reported cargo-door failures, the aviation authority has demanded in a notice to all carriers that every airline operating more than fifty aircraft ______ a full inspection of its door seals within sixty days.",
         "options": ["completing", "to complete", "completed", "complete"],
         "answer": 3,
@@ -86,8 +86,8 @@ ITEMS = [
         },
     },
     {
-        "id": "g-mandative-06", "type": "grammar", "format": "gap", "unit": "mandative", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "id": "g-mandative-06", "type": "grammar", "format": "gap", "unit": "mandative", "level": 1,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "The tenants' association has asked, in a letter that the housing authority received on March 4, that no resident ______ evicted while the dispute over maintenance fees is still before the tribunal.",
         "options": ["being", "to be", "be", "been"],
         "answer": 2,
@@ -112,8 +112,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ conditional
     {
-        "id": "g-conditional-05", "type": "grammar", "format": "gap", "unit": "conditional", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-conditional-05", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "______ the print shop's scheduling manager, who had handled the autumn catalog for eleven years, been told about the switch to recycled paper stock, the first run would not have been rejected by the retailer.",
         "options": ["If", "Should", "Had", "Were"],
         "answer": 2,
@@ -138,7 +138,7 @@ ITEMS = [
     },
     {
         "id": "g-conditional-06", "type": "grammar", "format": "gap", "unit": "conditional", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "The Rivermark Hotel ______ its second tower a full year earlier if the construction permit that the city issued in 2021 had not been suspended pending a flood-risk review.",
         "options": ["would open", "had opened", "opened", "would have opened"],
         "answer": 3,
@@ -163,8 +163,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ parallel
     {
-        "id": "g-parallel-05", "type": "grammar", "format": "gap", "unit": "parallel", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "id": "g-parallel-05", "type": "grammar", "format": "gap", "unit": "parallel", "level": 3,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Under the revised travel policy, software engineers must either book flights through the approved agency, whose rates were renegotiated in January, or ______ written approval from their team lead before buying a ticket elsewhere.",
         "options": ["obtaining", "obtain", "to obtain", "obtained"],
         "answer": 1,
@@ -189,7 +189,7 @@ ITEMS = [
     },
     {
         "id": "g-parallel-06", "type": "grammar", "format": "gap", "unit": "parallel", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B",
         "stem": "On graduation day, the university will close both the main library, which has stayed open around the clock since exams began on the third, ______ the three smaller campus libraries at 6 p.m.",
         "options": ["and", "as well as", "along with", "or"],
         "answer": 0,
@@ -215,7 +215,7 @@ ITEMS = [
     # ------------------------------------------------------------ quantity
     {
         "id": "g-quantity-06", "type": "grammar", "format": "gap", "unit": "quantity", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D",
         "stem": "Although the new assembly line is already running, ______ of the newly ordered, custom-built testing equipment is still held up in customs, and two quality checks have had to be done by hand.",
         "options": ["many", "several", "much", "few"],
         "answer": 2,
@@ -241,7 +241,7 @@ ITEMS = [
     # ------------------------------------------------------------ compare
     {
         "id": "g-compare-06", "type": "grammar", "format": "gap", "unit": "compare", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The monthly fee charged for permits in the city's older parking structures, most of which were renovated after 2020, is now almost as high as ______ for spaces in the new private garages.",
         "options": ["those", "that", "it", "them"],
         "answer": 1,
@@ -267,7 +267,7 @@ ITEMS = [
     # ------------------------------------------------------------ participle
     {
         "id": "g-participle-08", "type": "grammar", "format": "gap", "unit": "participle", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D S",
         "stem": "Patients ______ at the Rosewood Clinic after 5 p.m., including those who have been referred by other practices, will be seen by the evening team rather than by their usual physician.",
         "options": ["arrive", "have arrived", "are arriving", "arriving"],
         "answer": 3,
@@ -293,7 +293,7 @@ ITEMS = [
     # ------------------------------------------------------------ relative
     {
         "id": "g-relative-07", "type": "grammar", "format": "gap", "unit": "relative", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "The hospital's charitable trust has agreed to donate its surplus infusion pumps to ______ the review panel decides has the strongest plan for putting them to use in rural clinics.",
         "options": ["whomever", "who", "whoever", "whom"],
         "answer": 2,
@@ -319,7 +319,7 @@ ITEMS = [
     # ------------------------------------------------------------ agree
     {
         "id": "g-agree-07", "type": "grammar", "format": "gap", "unit": "agree", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Enclosed with the revised franchise agreement, which the hotel group will return to its owners on Friday, ______ the original signed floor plans for every property in the portfolio.",
         "options": ["is", "are", "has been", "being"],
         "answer": 1,
@@ -344,8 +344,8 @@ ITEMS = [
     },
     # ------------------------------------------------------------ prep
     {
-        "id": "g-prep-10", "type": "grammar", "format": "gap", "unit": "prep", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "ldbs": "L D B S",
+        "id": "g-prep-10", "type": "grammar", "format": "gap", "unit": "prep", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "ldbs": "L D B S",
         "stem": "Every subcontractor working on the new data center is expected to adhere, in all its dealings with site staff and without exception, ______ the security protocols added to the master agreement last spring.",
         "options": ["to", "with", "by", "for"],
         "answer": 0,
