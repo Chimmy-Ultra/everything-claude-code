@@ -1,0 +1,156 @@
+[
+ {
+  "id": "v-collocation-14",
+  "format": "gap",
+  "stem": "Travelers whose passports, which must be shown to the gate agent together with the boarding pass, will not be ______ for at least six months after the date of entry may be refused boarding.",
+  "options": {
+   "A": "effective",
+   "B": "active",
+   "C": "valid",
+   "D": "legal"
+  }
+ },
+ {
+  "id": "v-collocation-15",
+  "format": "gap",
+  "stem": "The inspector's report describes the cracked ramp at the loading dock, which has already damaged two pallet trucks this winter, as being in ______ need of repair.",
+  "options": {
+   "A": "urgent",
+   "B": "rapid",
+   "C": "prompt",
+   "D": "hasty"
+  }
+ },
+ {
+  "id": "v-collocation-16",
+  "format": "gap",
+  "stem": "The three-hour workshop on data privacy, which was announced only two days in advance, turned out to be so ______ attended that the organizers canceled the afternoon session.",
+  "options": {
+   "A": "mildly",
+   "B": "hardly",
+   "C": "weakly",
+   "D": "poorly"
+  }
+ },
+ {
+  "id": "v-collocation-17",
+  "format": "gap",
+  "stem": "The cable that runs across the main corridor to the new copier is a trip ______, so the safety officer has asked for it to be taped down or rerouted by Friday.",
+  "options": {
+   "A": "danger",
+   "B": "hazard",
+   "C": "harm",
+   "D": "threat"
+  }
+ },
+ {
+  "id": "v-synonym-14",
+  "format": "gap",
+  "stem": "Several prospective tenants who toured the building last week have since ______, by telephone and by e-mail, whether pets will be permitted once the lease is signed in the fall.",
+  "options": {
+   "A": "requested",
+   "B": "inquired",
+   "C": "insisted",
+   "D": "demanded"
+  }
+ },
+ {
+  "id": "v-synonym-15",
+  "format": "gap",
+  "stem": "Under the terms of the lease, the tenant must ______ the unit and hand all keys to the building manager by noon on the last day of the contract, even if repairs are still under way.",
+  "options": {
+   "A": "evict",
+   "B": "evacuate",
+   "C": "expel",
+   "D": "vacate"
+  }
+ },
+ {
+  "id": "v-synonym-16",
+  "format": "gap",
+  "stem": "The ambiguous wording on the front of the brochure may ______ customers, particularly those who glance only at the large type, into believing that the discount applies to every product in the catalog.",
+  "options": {
+   "A": "mislead",
+   "B": "misinform",
+   "C": "misdirect",
+   "D": "misplace"
+  }
+ },
+ {
+  "id": "v-synonym-17",
+  "format": "gap",
+  "stem": "Heavy machinery in the loading area should not be allowed to ______, as it did twice last month, with the recording sessions that take place in the studio next door.",
+  "options": {
+   "A": "disturb",
+   "B": "interrupt",
+   "C": "interfere",
+   "D": "intervene"
+  }
+ },
+ {
+  "id": "v-business-12",
+  "format": "gap",
+  "stem": "The audit found that the subcontractor, whose invoices the company had been paying without checking them, had ______ the company by almost $12,000 for materials that were never delivered.",
+  "options": {
+   "A": "overpaid",
+   "B": "overspent",
+   "C": "overcharged",
+   "D": "overdrawn"
+  }
+ },
+ {
+  "id": "v-business-13",
+  "format": "gap",
+  "stem": "Since flexible hours were introduced in the spring, staff ______ at the call center has fallen from 31 percent to 14 percent, and the recruitment budget has been cut accordingly.",
+  "options": {
+   "A": "turnover",
+   "B": "turnout",
+   "C": "turnaround",
+   "D": "takeover"
+  }
+ },
+ {
+  "id": "v-business-14",
+  "format": "gap",
+  "stem": "Before the prototype was shown at the trade fair, the engineers filed a ______ for the new valve design, so that competitors could not manufacture a valve that works in the same way.",
+  "options": {
+   "A": "copyright",
+   "B": "license",
+   "C": "trademark",
+   "D": "patent"
+  }
+ },
+ {
+  "id": "v-family-11",
+  "format": "gap",
+  "stem": "Company procedure requires that the equipment be switched off and the area cleared before any maintenance work begins, so a lockout check must always ______ the first inspection of the machine.",
+  "options": {
+   "A": "succeed",
+   "B": "precede",
+   "C": "proceed",
+   "D": "exceed"
+  }
+ },
+ {
+  "id": "v-family-12",
+  "format": "gap",
+  "stem": "Any appliance that stops working within twelve months because it was ______ when it left the factory will be replaced free of charge, provided that the original receipt is presented.",
+  "options": {
+   "A": "defiant",
+   "B": "deficient",
+   "C": "defective",
+   "D": "defensive"
+  }
+ },
+ {
+  "id": "v-family-13",
+  "format": "gap",
+  "stem": "To comply with the fire code, the venue has limited the ______ of its second-floor banquet room to 180 guests, which forced the organizers to close registration for the dinner early.",
+  "options": {
+   "A": "occupancy",
+   "B": "occupation",
+   "C": "occupant",
+   "D": "occupier"
+  }
+ }
+]
