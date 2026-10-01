@@ -5,8 +5,8 @@
    "真實的未來條件：if + 現在式，主句 will。"
   ],
   "why": [
-   "The main clause says <em>will resume</em>, so this is a real condition and the <em>if</em> clause takes the present. The subject is the singular <em>shipment</em>: <em>reaches</em>.",
-   "主句是 will resume，這是真實條件，if 子句用現在式。主詞是單數的 shipment，所以用 reaches。"
+   "The main clause says <em>will resume</em>, so this is a real condition and the <em>if</em> clause takes the present. The subject is the singular <em>shipment</em>, not <em>valves</em>: <em>reaches</em>.",
+   "主句是 will resume，這是真實條件，if 子句用現在式。主詞是單數的 shipment，不是 valves，所以用 reaches。"
   ],
   "gloss": [
    {
@@ -78,8 +78,8 @@
    "provided that = 只要（附帶條件）。"
   ],
   "why": [
-   "The end of the sentence says she loses both <em>if she waits</em>. So transferring is the condition for keeping them: <em>provided that</em>. <em>Unless</em> would reverse the logic.",
-   "句尾說拖延就失去，所以轉調是保留的條件，用 provided that。unless 會讓邏輯顛倒。"
+   "<em>Those who apply after that date start again</em> shows the deadline is the condition: transfer in time and keep your rights. That is <em>provided that</em>.",
+   "those who apply after that date start again 說明期限是條件：及時轉調才保住權益，所以用 provided that。"
   ],
   "gloss": [
    {
@@ -104,11 +104,11 @@
     "ex": "The restructuring will affect three departments."
    },
    {
-    "w": "forfeit",
-    "hw": "forfeit",
-    "pos": "v.",
-    "zh": "喪失",
-    "ex": "Late applicants forfeit their deposit."
+    "w": "entry level",
+    "hw": "entry level",
+    "pos": "phr.",
+    "zh": "基層職級",
+    "ex": "She started at entry level in 2020."
    }
   ]
  },
@@ -151,8 +151,8 @@
    "與現在事實相反：if + 過去式（were），would + 原形。"
   ],
   "why": [
-   "<em>would be cleared</em> and <em>the council will not fund</em> show the idea is not real, so the <em>if</em> clause takes the past. <em>Be</em> becomes <em>were</em>: <em>were</em> able.",
-   "would be cleared 和 the council will not fund 顯示這不是事實，if 子句用過去式，be 動詞用 were。"
+   "The first half says the center has <em>only one crew and no budget</em>, so a second shift is not possible. That makes the <em>if</em> clause unreal: the past, with <em>were</em>. <em>would be cleared</em> matches.",
+   "前半句說中心只有一組人、沒有預算，第二班辦不到，所以 if 子句不真實，用過去式 were。would be cleared 與它相配。"
   ],
   "gloss": [
    {
@@ -177,11 +177,11 @@
     "ex": "The second shift ends at midnight."
    },
    {
-    "w": "fund",
-    "hw": "fund",
-    "pos": "v.",
-    "zh": "出資",
-    "ex": "The city will fund the repairs."
+    "w": "crew",
+    "hw": "crew",
+    "pos": "n.",
+    "zh": "作業班組",
+    "ex": "The night crew cleans the plant."
    }
   ]
  },
@@ -304,8 +304,8 @@
    "混合條件句：現在的條件，過去的結果。"
   ],
   "why": [
-   "<em>were not so dependent</em> describes the present. But the result is the disruption by <em>the strike that ended last Monday</em>, which already happened: <em>would not have been</em>.",
-   "were not so dependent 說的是現在，但結果是上週一結束的罷工造成的，已經發生，所以用 would not have been。"
+   "<em>were not so dependent</em> describes the present. But the result belongs to the strike that <em>began in early September</em>, when stores <em>ran out of stock</em>: past. So <em>would not have been</em>.",
+   "were not so dependent 說的是現在，但結果屬於九月初開始的罷工，當時店家缺貨，是過去的事，所以用 would not have been。"
   ],
   "gloss": [
    {
@@ -328,6 +328,13 @@
     "pos": "v.",
     "zh": "擾亂",
     "ex": "Snow disrupted the delivery schedule."
+   },
+   {
+    "w": "ran out of stock",
+    "hw": "run out of stock",
+    "pos": "phr.",
+    "zh": "缺貨",
+    "ex": "The shop will run out of stock by noon."
    }
   ]
  },
@@ -370,8 +377,8 @@
    "Without + 名詞 = 如果沒有。"
   ],
   "why": [
-   "<em>Without the forty volunteers</em> means \"if there were no volunteers\". <em>As it does at present</em> shows the result is about now, so the main clause is <em>would not be</em>.",
-   "Without … volunteers 等於「如果沒有志工」。as it does at present 說明結果在現在，所以用 would not be。"
+   "<em>Without the forty volunteers</em> means \"if there were no volunteers\". <em>As it has done every week</em> shows the museum is open now, so <em>is not</em> clashes and the main clause is <em>would not be</em>.",
+   "Without the forty volunteers 等於「如果沒有志工」。as it has done every week 說明博物館現在開著，所以 is not 衝突，主句用 would not be。"
   ],
   "gloss": [
    {
@@ -490,23 +497,23 @@
    "Had + 主詞 + p.p.（倒裝）。"
   ],
   "why": [
-   "The opening <em>Had</em> stands for <em>If … had</em>. After the long subject, the verb must be a past participle: <em>received</em>. <em>would have been unnecessary</em> is the unreal past result.",
-   "句首 Had 代表 If … had，長主詞之後要接過去分詞 received。would have been unnecessary 是過去相反的結果。"
+   "The opening <em>Had</em> stands for <em>If … had</em>. After the inserted <em>whom … first run</em>, the verb must be a past participle: <em>received</em>. <em>would have been unnecessary</em> is the unreal past result.",
+   "句首 Had 代表 If … had，插入的 whom … first run 之後要接過去分詞 received。would have been unnecessary 是過去相反的結果。"
   ],
   "gloss": [
    {
-    "w": "production editor",
-    "hw": "production editor",
+    "w": "production manager",
+    "hw": "production manager",
     "pos": "phr.",
-    "zh": "製作編輯",
-    "ex": "The production editor checks every layout."
+    "zh": "製作經理",
+    "ex": "The production manager approved the print run."
    },
    {
-    "w": "proofread",
-    "hw": "proofread",
+    "w": "consulted",
+    "hw": "consult",
     "pos": "v.",
-    "zh": "校對",
-    "ex": "Please proofread the letter before sending."
+    "zh": "諮詢",
+    "ex": "We consulted the legal team first."
    },
    {
     "w": "page proofs",
@@ -603,8 +610,8 @@
    "It is (high) time + 主詞 + 過去式。"
   ],
   "why": [
-   "<em>It is high time that</em> means \"it should have been done already\". The verb after the subject takes the past: <em>reviewed</em>. The long <em>whose …</em> phrase hides this clue.",
-   "It is high time that 表示「早該做了」，主詞後的動詞用過去式 reviewed。長長的 whose 片語把線索藏遠了。"
+   "<em>It is high time that</em> means \"it should have been done already\". The verb takes the past: <em>reviewed</em>. <em>has reviewed</em> would say the review is already done. The long <em>whose …</em> phrase hides the clue.",
+   "It is high time that 表示「早該做了」，動詞用過去式 reviewed；has reviewed 表示已經做完。長長的 whose 片語把線索藏遠了。"
   ],
   "gloss": [
    {
