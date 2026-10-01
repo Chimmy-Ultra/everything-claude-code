@@ -1,0 +1,253 @@
+{
+  "unit": "conv-detail",
+  "lead": [
+    "Detail questions ask what, why, when, how many or what problem. The answer is stated or reworded in the conversation, so you must catch the right sentence. Some questions also ask you to match the audio with a graphic.",
+    "細節題問 what、why、when、how many 或什麼問題。答案在對話中被直接說出或換句話說，所以要抓到對的那一句。有些題目還要把音檔和圖表對照。"
+  ],
+  "steps": [
+    [
+      "Before the audio, mark the key words in each question: the person, the day, the thing.",
+      "音檔開始前，圈出每題的關鍵字：人、日期、事物。"
+    ],
+    [
+      "Questions generally follow the order of the conversation. Answer one, then wait for the next.",
+      "題目大致依對話順序排列。答完一題，再等下一題。"
+    ],
+    [
+      "When you hear the key word, listen to the sentence around it. Wait for the final decision.",
+      "聽到關鍵字時，注意它前後的句子，並等到最後的決定。"
+    ],
+    [
+      "Choose the option that restates it. Exact words from the audio are not enough.",
+      "選換句話說的選項。只有字面和音檔相同並不夠。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Catch the key word, then listen next to it",
+        "抓關鍵字，聽它旁邊的句子"
+      ],
+      "body": [
+        "If the question asks why a shipment is late, wait for 'shipment' or 'late'. The reason is usually in that sentence or the next one.",
+        "若題目問貨為什麼延遲，就等 shipment 或 late 出現，原因通常在那一句或下一句。"
+      ],
+      "ex": [
+        [
+          "Q: Why is the shipment late? Audio: 'The truck <em>broke down</em> on the highway.'",
+          "Q: 貨為什麼延遲？音檔：卡車在高速公路上拋錨了。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "The first plan may change",
+        "第一個計畫可能會改"
+      ],
+      "body": [
+        "Speakers often suggest something, then change it. A question about the final plan needs the last version, not the first.",
+        "說話者常先提議再更改。問最後的計畫，要用最後的版本，而不是第一個。"
+      ],
+      "ex": [
+        [
+          "Man: We could meet at two. Woman: I have a client then. <em>Make it four.</em>",
+          "男：我們兩點見面吧。女：我那時有客戶。改四點。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Problem questions: listen for the turn",
+        "問題題：注意語氣轉折"
+      ],
+      "body": [
+        "Words such as 'unfortunately', 'I'm afraid', 'the trouble is' and 'but' signal a problem. The words right after them state it.",
+        "unfortunately、I'm afraid、the trouble is、but 這類字預告問題，緊接著的話就是問題內容。"
+      ],
+      "ex": [
+        [
+          "<em>I'm afraid</em> the printer is out of toner, and the supplier closes at five.",
+          "恐怕印表機沒碳粉了，而供應商五點關門。"
+        ],
+        [
+          "We'd love to move the meeting, <em>but</em> the room is booked.",
+          "我們很想改會議時間，但會議室已被訂走。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Numbers and times: do the math",
+        "數字與時間：自己算"
+      ],
+      "body": [
+        "The audio may give the parts, not the answer. Add or subtract before you look at the options.",
+        "音檔可能只給部分數字，不直接給答案。看選項之前先自己加減。"
+      ],
+      "ex": [
+        [
+          "We need twelve chairs and already have five, so I'll order <em>seven</em>.",
+          "我們需要十二張椅子，已經有五張，所以我會訂七張。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Options reword the audio",
+        "選項會改寫音檔"
+      ],
+      "body": [
+        "The audio says 'The invoice has the wrong total'. The option says 'a billing error'. Match the meaning, not the words.",
+        "音檔說 The invoice has the wrong total，選項寫 a billing error。要比對意思，不是字面。"
+      ],
+      "ex": [
+        [
+          "Audio: 'We ran out of toner.' Option: <em>a supply shortage</em>.",
+          "音檔：碳粉用完了。選項：用品短缺。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Graphic questions: one clue from each",
+        "圖表題：音檔與圖表各一個線索"
+      ],
+      "body": [
+        "A 'Look at the graphic' question shows a schedule, map, chart or list. The audio gives one clue, such as a time. Find it on the graphic, then read the answer beside it.",
+        "Look at the graphic 題會附時程表、地圖、圖表或清單。音檔給一個線索，如時間；在圖表上找到它，再讀旁邊的答案。"
+      ],
+      "ex": [
+        [
+          "Audio: 'I'll take the 2 p.m. session.' Graphic: find the <em>2 p.m. row</em> and read the room.",
+          "音檔：我選下午兩點那場。圖表：找到下午兩點那一列，讀出教室。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What does the woman decide to do? [Man: We can't deliver before noon. Woman: Then I'll send my assistant to pick it up.] / A: Send someone to collect an order.",
+      "wrong": "Q: What does the woman decide to do? [Man: We can't deliver before noon. Woman: Then I'll send my assistant to pick it up.] / A: Postpone the event until noon.",
+      "why": [
+        "'Noon' is a word from the audio, but it is the delivery limit. The woman decides on a pickup.",
+        "noon 是音檔裡的字，但那是送貨時間的限制。女子決定的是派人去取貨。"
+      ]
+    },
+    {
+      "right": "Q: When will the report be ready? [Woman: Can you finish it by Wednesday? Man: That's too tight. Thursday morning is realistic.] / A: On Thursday morning.",
+      "wrong": "Q: When will the report be ready? [Woman: Can you finish it by Wednesday? Man: That's too tight. Thursday morning is realistic.] / A: On Wednesday.",
+      "why": [
+        "Wednesday is mentioned first, but the man rejects it. The final plan is Thursday.",
+        "星期三先被提到，但男子拒絕了。最後的安排是星期四。"
+      ]
+    },
+    {
+      "right": "Q: What problem does the man mention? [Man: We can't ship today because the label printer broke.] / A: A machine is not working.",
+      "wrong": "Q: What problem does the man mention? [Man: We can't ship today because the label printer broke.] / A: A package is too heavy.",
+      "why": [
+        "The audio gives the cause, a broken printer. The wrong option mentions a problem nobody raised.",
+        "音檔給的原因是印表機壞了。錯誤選項是沒人提過的問題。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "What does the man ask the woman to do?",
+          "男子要求女子做什麼？"
+        ],
+        [
+          "What problem does the woman mention?",
+          "女子提到什麼問題？"
+        ],
+        [
+          "Why is the man calling?",
+          "男子為什麼來電？"
+        ],
+        [
+          "When will the order arrive?",
+          "訂單何時會到？"
+        ],
+        [
+          "How much will the woman pay?",
+          "女子要付多少錢？"
+        ],
+        [
+          "What does the man say he will do?",
+          "男子說他會做什麼？"
+        ],
+        [
+          "What does the woman say she needs?",
+          "女子說她需要什麼？"
+        ],
+        [
+          "Look at the graphic. Which room will the man go to?",
+          "看圖表。男子會去哪個房間？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Words that signal a change or a problem",
+        "預告改變或問題的字"
+      ],
+      "items": [
+        [
+          "unfortunately",
+          "很遺憾"
+        ],
+        [
+          "I'm afraid",
+          "恐怕"
+        ],
+        [
+          "the trouble is",
+          "麻煩的是"
+        ],
+        [
+          "instead",
+          "改成"
+        ],
+        [
+          "actually",
+          "其實"
+        ],
+        [
+          "on second thought",
+          "再想一想"
+        ],
+        [
+          "however",
+          "不過"
+        ],
+        [
+          "as it turns out",
+          "結果是"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Taking the first time or place you hear. Wait until the speakers agree on it.",
+      "把第一個聽到的時間或地點當答案。要等說話者達成共識。"
+    ],
+    [
+      "An option that contains a word you heard but attaches it to the wrong person or thing. Check who does what.",
+      "選項含有你聽過的字，卻放在錯的人或事上。要確認是誰做什麼。"
+    ],
+    [
+      "Stopping after the key word. The answer often comes in the next sentence, not in the same one.",
+      "聽到關鍵字就停止。答案常在下一句，而不在同一句。"
+    ],
+    [
+      "Answering a graphic question from the audio alone. You need both: the clue you hear and the row or place you see.",
+      "只靠音檔回答圖表題。兩者都要：聽到的線索，加上看到的那一列或位置。"
+    ]
+  ]
+}

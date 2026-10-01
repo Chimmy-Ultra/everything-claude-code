@@ -1,0 +1,257 @@
+{
+  "unit": "talk-detail",
+  "lead": [
+    "Detail questions on a talk ask for a specific fact: a time, a reason, a change or a request. The speaker says it once, so you need to know what to listen for before the talk plays.",
+    "短講的細節題問特定資訊：時間、原因、變動或請求。說話者只說一次，所以要在播放前就知道該聽什麼。"
+  ],
+  "steps": [
+    [
+      "Read the questions before the talk and mark the key words.",
+      "播放前先看題目，圈出關鍵字。"
+    ],
+    [
+      "Questions generally follow the order of the talk. Move on to the next one after you answer.",
+      "題目大致依談話順序排列。答完一題就往下一題。"
+    ],
+    [
+      "Listen to the sentence around each key word, and to what comes right after it.",
+      "聽每個關鍵字前後的句子，以及緊接著出現的內容。"
+    ],
+    [
+      "Choose the option that restates the fact in different words.",
+      "選用不同說法重述該事實的選項。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Reason: why the speaker mentions something",
+        "原因：說話者為何提到某事"
+      ],
+      "body": [
+        "A reason question asks why a fact was included. The speaker usually mentions it to explain a request or a warning. Read the sentences before and after it.",
+        "原因題問為什麼要提到某個事實。說話者通常是為了解釋請求或警告。要看它前後的句子。"
+      ],
+      "ex": [
+        [
+          "The lobby floor is being polished, <em>so</em> please use the side door. The floor explains the change.",
+          "大廳地板正在打蠟，所以請走側門。地板解釋了為什麼要改走側門。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Requests and instructions",
+        "請求與指示"
+      ],
+      "body": [
+        "'What are listeners asked to do?' The request often follows 'please', 'make sure' or 'don't forget', and may come near the end.",
+        "What are listeners asked to do? 的請求常跟在 please、make sure 或 don't forget 後面，也可能在接近結尾處。"
+      ],
+      "ex": [
+        [
+          "<em>Please</em> bring your ID to the front desk.",
+          "請帶身分證到櫃檯。"
+        ],
+        [
+          "<em>Don't forget</em> to sign in before the session.",
+          "別忘了在課程開始前簽到。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Changes and exceptions",
+        "變動與例外"
+      ],
+      "body": [
+        "'Normally… but this week', 'instead' and 'unfortunately' signal a change. A question about the change needs the new plan, not the usual one.",
+        "Normally… but this week、instead、unfortunately 預告變動。問變動的題目要答新的安排，不是平常的安排。"
+      ],
+      "ex": [
+        [
+          "Normally we finish at four, but <em>this week</em> we'll stop at three.",
+          "我們平常四點結束，但本週三點就停。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Quoted lines: meaning in context",
+        "引句：看上下文的意思"
+      ],
+      "body": [
+        "A quote question asks what the speaker means. The words may be a joke, a warning or emphasis. The sentences around the quote show what point it supports.",
+        "引句題問說話者的意思。那句話可能是玩笑、警告或強調。引句前後的句子會顯示它在支持什麼論點。"
+      ],
+      "ex": [
+        [
+          "'<em>Believe it or not</em>, we finished early.' = a pleasant surprise.",
+          "「說來難以置信，我們提早完成了。」＝令人愉快的意外。"
+        ],
+        [
+          "The lot is far away. 'It's <em>not</em> a short walk.' = leave early.",
+          "停車場很遠。「走路可不近。」＝要提早出發。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Who the listeners are",
+        "聽眾是誰"
+      ],
+      "body": [
+        "Role questions use clues: 'our new hires', 'your appointment', 'shoppers'. Collect two clues before you choose.",
+        "身分題靠線索：our new hires、your appointment、shoppers。要蒐集兩個線索再選。"
+      ],
+      "ex": [
+        [
+          "'<em>Our new hires</em> should pick up their badges at the front desk.' = new employees.",
+          "「新進同仁請到櫃檯領取識別證。」＝新員工。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Graphics and numbers",
+        "圖表與數字"
+      ],
+      "body": [
+        "With a graphic, the talk gives one clue and the graphic gives the other: a time you hear, a room you see. If the talk gives parts, work out the total.",
+        "有圖表時，談話給一個線索，圖表給另一個：聽到時間，看到房間。若談話給的是部分數字，要自己算出總數。"
+      ],
+      "ex": [
+        [
+          "Talk: 'The session starts at ten.' Graphic: find the <em>10:00 row</em>, then read the room.",
+          "談話：課程十點開始。圖表：找到 10:00 那一列，再讀房間。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: What change does the speaker mention? [Woman: The workshop will now run ninety minutes instead of sixty.] / A: A longer session.",
+      "wrong": "Q: What change does the speaker mention? [Woman: The workshop will now run ninety minutes instead of sixty.] / A: A new location.",
+      "why": [
+        "The talk changes the length. A new location is never mentioned.",
+        "談話中改的是時間長度，從未提到新地點。"
+      ]
+    },
+    {
+      "right": "Q: What are listeners asked to do by Friday? [Man: Please hand your timesheets to payroll by Friday.] / A: Submit their timesheets.",
+      "wrong": "Q: What are listeners asked to do by Friday? [Man: Please hand your timesheets to payroll by Friday.] / A: Attend a payroll meeting.",
+      "why": [
+        "'Payroll' is a word from the talk, but the request is to hand in timesheets.",
+        "payroll 是談話中的字，但請求是交工時表。"
+      ]
+    },
+    {
+      "right": "Q: Why does the speaker say, \"It's not a short walk\"? [Man: The parking lot is at the far end. It's not a short walk, so leave early.] / A: To suggest leaving early.",
+      "wrong": "Q: Why does the speaker say, \"It's not a short walk\"? [Man: The parking lot is at the far end. It's not a short walk, so leave early.] / A: To recommend walking.",
+      "why": [
+        "The wrong option takes 'walk' as advice. The line warns that the lot is far.",
+        "錯誤選項把 walk 當成建議，那句話其實是警告停車場很遠。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "Who most likely is Mr. Wei?",
+          "Wei 先生最可能是誰？"
+        ],
+        [
+          "What change does the speaker mention?",
+          "說話者提到什麼變動？"
+        ],
+        [
+          "Why does the speaker mention the garage?",
+          "說話者為什麼提到停車場？"
+        ],
+        [
+          "What are listeners asked to do?",
+          "聽眾被要求做什麼？"
+        ],
+        [
+          "What does the speaker say about the studio?",
+          "說話者對工作室說了什麼？"
+        ],
+        [
+          "What does the speaker mean when she says, \"…\"?",
+          "說話者說「……」是什麼意思？"
+        ],
+        [
+          "When will the event take place?",
+          "活動何時舉行？"
+        ],
+        [
+          "What will the listeners receive?",
+          "聽眾會收到什麼？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Signal words for reasons, requests, changes",
+        "預告原因、請求、變動的字"
+      ],
+      "items": [
+        [
+          "because",
+          "因為"
+        ],
+        [
+          "so that",
+          "以便"
+        ],
+        [
+          "due to",
+          "由於"
+        ],
+        [
+          "please make sure",
+          "請務必"
+        ],
+        [
+          "be sure to",
+          "務必要"
+        ],
+        [
+          "instead",
+          "改為"
+        ],
+        [
+          "starting next week",
+          "從下週起"
+        ],
+        [
+          "unfortunately",
+          "很遺憾"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Picking a fact from the wrong part of the talk. Two times or two places are often mentioned. Match the one the question asks about.",
+      "選了談話中別處的事實。常會提到兩個時間或兩個地點，要對應題目問的那一個。"
+    ],
+    [
+      "Number traps. The talk gives a usual figure and a new one. Choose the one that applies to the question.",
+      "數字陷阱。談話會給一個平常的數字和一個新的數字，要選題目適用的那一個。"
+    ],
+    [
+      "Reading a quote literally. 'It's not a short walk' is not about walking. Ask what point the speaker is making.",
+      "把引句照字面讀。It's not a short walk 不是在談走路，要問說話者想表達什麼。"
+    ],
+    [
+      "Stopping after the key word. The request, reason or change often comes in the next sentence.",
+      "聽到關鍵字就停止。請求、原因或變動常在下一句才出現。"
+    ]
+  ]
+}
