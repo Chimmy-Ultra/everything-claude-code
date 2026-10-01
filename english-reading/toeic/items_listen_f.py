@@ -74,7 +74,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "引句題：hasn't caught up 是說資訊還沒更新",
-                    "why": "前一句 Some trains still appear on the departure board，接著 hasn't caught up yet → 畫面是舊的；下一句叫旅客問工作人員。",
+                    "why": "前一句 Some trains still appear on the board，接著 hasn't caught up yet → 畫面是舊的；要問工作人員。",
                     "evidence": [3, 4],
                     "wrong": ["字面陷阱：把 board 讀成壞掉要修的螢幕", "語境矛盾：廣播只說復駛時會再通知", "語境矛盾：叫旅客先問工作人員，不是在看板旁等", None],
                     "wrongMore": [
@@ -136,7 +136,7 @@ ITEMS = [
             ],
         },
         "transcriptZh": [
-            "早安，我是 Dale Fenner，為您帶來 7:40 的路況報導。Eastgate 橋塞得很嚴重。",
+            "早安，我是 Dale Fenner，為您帶來 7:40 的路況報導。Eastgate 橋塞車了。",
             "一輛貨運卡車在左線拋錨，所以每個方向只開放一個車道。",
             "工作人員起初說 9:00 前會把卡車清走。",
             "但是拖吊公司提早抵達，他們現在希望 8:30 前讓橋完全通車。",
@@ -450,7 +450,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "圖表題：場次對調時間，房間跟著場次走",
-                    "why": "two afternoon sessions will switch times，Each session keeps its original room → 3:00 那場移到 1:30，仍是 Room D。",
+                    "why": "switch times，keeps its original room → 3:00 那場移到 1:30，仍是 Room D。",
                     "evidence": [3, 4],
                     "wrong": ["Room A：是早上 9:30 的場次，不受影響", "同字陷阱：表上 1:30 那列是 Room B，但場次已對調", "Room C：是 11:00 的場次，不受影響", None],
                     "wrongMore": [
@@ -531,7 +531,7 @@ ITEMS = [
                 "answer": 2,
                 "ldbs": {"L": True, "D": False, "B": True, "S": False, "band": "medium"},
                 "explain": {
-                    "point": "變化題：Normally … but today 後面才是新安排",
+                    "point": "變化題：Normally … but 後面才是新安排",
                     "why": "Normally we begin with a tasting, but … we'll finish there instead → 試喝從開頭改到最後，改述成比平常晚。",
                     "evidence": [1],
                     "wrong": ["方向相反：先試喝是平常的做法", "沒有提到縮短：45 分鐘是整趟導覽的長度", None, "同字陷阱：roasting room 只是太吵要戴耳塞"],
@@ -551,7 +551,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "順序題：Before we set off 是眼前第一件事",
-                    "why": "Before we set off, I need everyone's name on the visitor sheet；Once … name is down → 先寫名字才出發。",
+                    "why": "Before we set off, I need everyone's name on the visitor sheet → 先寫名字才出發。",
                     "evidence": [6, 7],
                     "wrong": ["順序錯置：耳塞是進第三站烘豆室之前才拿", "順序錯置：試喝排在最後", "順序錯置：去儲藏室要等名字寫完之後", None],
                     "wrongMore": [

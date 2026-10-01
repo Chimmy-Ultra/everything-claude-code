@@ -22,7 +22,7 @@ ITEMS = [
     # l-qr-23  qr-wh, easy. Direct answer; the wrong replies answer "where" and use Yes on a When question.
     {
         "id": "l-qr-23", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-23", "gapMs": 900,
             "lines": [
@@ -55,7 +55,7 @@ ITEMS = [
     # How much (it answers how many); (C) repeats luncheon.
     {
         "id": "l-qr-24", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-24", "gapMs": 900,
             "lines": [
@@ -87,8 +87,8 @@ ITEMS = [
     # l-qr-25  qr-wh, hard. near-correct: (A) "Because she was never offered the job" has the Because form but the
     # question says she turned the position down; (C) repeats transfer. Key (B) is an implied reason.
     {
-        "id": "l-qr-25", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-qr-25", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-25", "gapMs": 900,
             "lines": [
@@ -121,18 +121,18 @@ ITEMS = [
     # ("the same as before" contradicts rescheduled); (B) repeats client, answers where. Key (C) reports the change.
     {
         "id": "l-qr-26", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-26", "gapMs": 900,
             "lines": [
-                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "What time is the client call tomorrow, now that it's been rescheduled?"},
+                {"file": "q.mp3", "who": "M", "voice": "am_michael", "text": "What time is the client call tomorrow, now that it's been rescheduled for later in the day?"},
                 {"file": "a.mp3", "who": "W", "voice": "af_bella", "text": "Nine o'clock, the same as before."},
                 {"file": "b.mp3", "who": "W", "voice": "af_bella", "text": "The client's office is downtown."},
                 {"file": "c.mp3", "who": "W", "voice": "af_bella", "text": "It got pushed back to noon."},
             ],
         },
         "transcriptZh": [
-            "既然明天的客戶電話會議已經改期了，現在是幾點？",
+            "既然明天的客戶電話會議已經改到當天晚一點，現在是幾點？",
             "九點，跟之前一樣。",
             "客戶的辦公室在市中心。",
             "已經往後延到中午了。",
@@ -158,7 +158,7 @@ ITEMS = [
     # Key (A) is a referral.
     {
         "id": "l-qr-27", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-27", "gapMs": 900,
             "lines": [
@@ -191,7 +191,7 @@ ITEMS = [
     # (C) answers a how-big question. Key (B) is direct.
     {
         "id": "l-qr-28", "type": "listen", "format": "qr", "unit": "qr-wh", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-28", "gapMs": 900,
             "lines": [
@@ -225,7 +225,7 @@ ITEMS = [
     # l-qr-29  qr-yesno, easy. Direct Yes with a limit; the wrong replies answer other questions.
     {
         "id": "l-qr-29", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-29", "gapMs": 900,
             "lines": [
@@ -258,7 +258,7 @@ ITEMS = [
     # Key (C) is an indirect No with a referral.
     {
         "id": "l-qr-30", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-30", "gapMs": 900,
             "lines": [
@@ -291,7 +291,7 @@ ITEMS = [
     # near-correct: (B) Yes + clients, (C) No + lobby. Key (A) is indirect: not done until after the deadline.
     {
         "id": "l-qr-31", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-31", "gapMs": 900,
             "lines": [
@@ -324,8 +324,8 @@ ITEMS = [
     # near-correct: (A) Yes + a reservation from two to four (contradicts the whole afternoon).
     # (C) repeats finance. Key (B) is a partial yes.
     {
-        "id": "l-qr-32", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "id": "l-qr-32", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 2,
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-32", "gapMs": 900,
             "lines": [
@@ -359,7 +359,7 @@ ITEMS = [
     # Key (C) is indirect: the partner only does air, so no.
     {
         "id": "l-qr-33", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-33", "gapMs": 900,
             "lines": [
@@ -392,7 +392,7 @@ ITEMS = [
     # near-correct: (B) Yes + inspection in the past tense; (C) No + weather. Key (A) implies Yes via cover.
     {
         "id": "l-qr-34", "type": "listen", "format": "qr", "unit": "qr-yesno", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-34", "gapMs": 900,
             "lines": [
@@ -427,7 +427,7 @@ ITEMS = [
     # (B) repeats print shop. Key (A) is "I'll check".
     {
         "id": "l-qr-35", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "us",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "us",
         "audio": {
             "dir": "audio/l-qr-35", "gapMs": 900,
             "lines": [
@@ -460,7 +460,7 @@ ITEMS = [
     # (C) repeats survey. Key (B) is a follow-up question about the cause.
     {
         "id": "l-qr-36", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-36", "gapMs": 900,
             "lines": [
@@ -492,7 +492,7 @@ ITEMS = [
     # l-qr-37  qr-indirect, easy (the batch's easy request). Direct "Sure"; the wrong replies answer other things.
     {
         "id": "l-qr-37", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 1,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-37", "gapMs": 900,
             "lines": [
@@ -526,7 +526,7 @@ ITEMS = [
     # Key (A) does not pick: it checks the main hall, which implies the choice.
     {
         "id": "l-qr-38", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-38", "gapMs": 900,
             "lines": [
@@ -559,7 +559,7 @@ ITEMS = [
     # (C) repeats bill. Key (B) is a reason that implies no.
     {
         "id": "l-qr-39", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "mixed",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "mixed",
         "audio": {
             "dir": "audio/l-qr-39", "gapMs": 900,
             "lines": [
@@ -592,7 +592,7 @@ ITEMS = [
     # near-correct: (A) repeats conference room, answers where; (B) repeats lunch. Key (C) names a third way.
     {
         "id": "l-qr-40", "type": "listen", "format": "qr", "unit": "qr-indirect", "level": 2,
-        "source": "hand", "reviewed": False, "v": 1, "accent": "uk",
+        "source": "hand", "reviewed": True, "v": 1, "accent": "uk",
         "audio": {
             "dir": "audio/l-qr-40", "gapMs": 900,
             "lines": [

@@ -1,0 +1,39 @@
+{
+ "answers": {
+  "l-qr-26": {
+   "answer": "C",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "C directly gives the new time (pushed back to noon), matching 'now that it's been rescheduled'. B answers where, not what time (wrong type). A is a time-shaped reply, but the question's 'now that it's been rescheduled' signals the time changed, and 'the same as before' runs against that. It is not fully contradicted: a cooperative speaker could say it if the reschedule moved only the day and the clock time stayed 9, but that needs an assumption the question does not give.",
+   "vsToeic": "easier",
+   "band": "medium",
+   "ldbs": "L yes (A is form-right: a time); D yes-ish (the excluding clue is the 'rescheduled' clause, but the question is short and the clause is clear); B no (the correct answer is a direct answer, with a light paraphrase 'rescheduled' to 'pushed back'); S no (one step). L plus D/B only partly met, so medium rather than hard; it is close to easy because only one distractor is form-right and the key is direct.",
+   "style": 4,
+   "why": "Medium: L passes (A is a time reply with 'same as before'), but the key is a direct answer (B no) and there is one inference step at most (S no); D is weak because the clue sits in the question's short clause.",
+   "fix": "Make A clearly contradicted so it is a clean trap rather than a conditionally natural reply. For example change the question to '...now that the client has moved it up an hour?' and keep A as 'Nine o'clock, the same as before.', or keep the question and change A to 'It's still on the calendar for the original slot.' only if the original slot is stated in the question. Simplest: question 'What time is the client call tomorrow, now that it's been pushed an hour later?'",
+   "tooClose": false,
+   "editorNote": "A needs the assumption that the reschedule changed only the date, not the clock time, to be a natural reply. Not enough to be ambiguous (the asker's phrasing implies the time is news), but it is the weak point of the item."
+  },
+  "l-qr-40": {
+   "answer": "C",
+   "confidence": 5,
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "The question offers two options (conference room or lunch). C rejects both and proposes a third (phone this afternoon), a standard indirect answer to an either/or question. A repeats 'conference room' and gives a floor, which answers neither the choice nor any implied preference. B repeats 'lunch' and gives menu timing, which is unrelated to the choice. Neither is something a cooperative speaker would naturally say as a reply here without an extra assumption (A could be read as an implied 'conference room' only by adding that assumption), so both are legal same-word traps.",
+   "vsToeic": "similar",
+   "band": "medium",
+   "ldbs": "L yes (A and B are both same-word traps); D no (no conditional detail in the question; the key does not rely on a clue outside the question's two options); B yes (the key is an indirect answer, a third option that neither named choice covers); S no.",
+   "style": 4,
+   "why": "Medium: L passes (two same-word distractors) and B passes (indirect third-option answer), but D fails because the question has no attached condition and the distractors are plainly off-topic.",
+   "fix": "To reach hard: add a condition to the question (e.g. '...now that the finance team is flying in tomorrow?') and make one distractor form-right, such as 'Lunch is fine, the conference room is booked.' only if the question states the room situation.",
+   "tooClose": false,
+   "editorNote": "A ('The conference room is on the fourth floor.') could be read as an implied choice of the conference room (telling where to meet), but this needs an assumption. Optional: swap A for something less tempting, for example 'The conference room has a new projector.' Not required."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "l-qr-26: A ('Nine o'clock, the same as before') is natural if the reschedule moved only the day; it needs the assumption that the clock time changed to be excluded. Make the question say the time moved (e.g. 'pushed an hour later') so A is contradicted outright."
+ ],
+ "overall": "Both items are clean, with one correct response each and no ambiguous distractor. Both land at medium: l-qr-26 has a direct-answer key and only one form-right distractor, so it is near the easy edge; l-qr-40 has a good indirect third-option key but no conditional detail in the question and two off-topic same-word distractors, so it does not reach hard. Against real Part 2, l-qr-26 is slightly easier and l-qr-40 is about typical. For hard-band supply, both would need an attached condition in the question and a distractor that is form-right and excluded only by that condition."
+}
