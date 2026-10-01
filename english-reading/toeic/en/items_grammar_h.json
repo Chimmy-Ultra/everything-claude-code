@@ -78,8 +78,8 @@
    "provided that = 只要（附帶條件）。"
   ],
   "why": [
-   "<em>Those who apply after that date start again</em> shows the deadline is the condition: transfer in time and keep your rights. That is <em>provided that</em>.",
-   "those who apply after that date start again 說明期限是條件：及時轉調才保住權益，所以用 provided that。"
+   "<em>Those who apply after that date start again</em> shows the deadline is the condition: transfer in time and keep your rights. That is <em>provided that</em>. <em>Unless</em> would reverse the logic.",
+   "those who apply after that date start again 說明期限是條件：及時轉調才保住權益，所以用 provided that。unless 會讓邏輯顛倒。"
   ],
   "gloss": [
    {
@@ -304,8 +304,8 @@
    "混合條件句：現在的條件，過去的結果。"
   ],
   "why": [
-   "<em>were not so dependent</em> describes the present. But the result belongs to the strike that <em>began in early September</em>, when stores <em>ran out of stock</em>: past. So <em>would not have been</em>.",
-   "were not so dependent 說的是現在，但結果屬於九月初開始的罷工，當時店家缺貨，是過去的事，所以用 would not have been。"
+   "<em>were not so dependent</em> describes the present. But the result belongs to <em>the three-day strike last September</em>, when stores <em>ran out of stock</em>: past. So <em>would not have been</em>.",
+   "were not so dependent 說的是現在，但結果屬於去年九月的三天罷工，當時店家缺貨，是過去的事，所以用 would not have been。"
   ],
   "gloss": [
    {
@@ -377,8 +377,8 @@
    "Without + 名詞 = 如果沒有。"
   ],
   "why": [
-   "<em>Without the forty volunteers</em> means \"if there were no volunteers\". <em>As it has done every week</em> shows the museum is open now, so <em>is not</em> clashes and the main clause is <em>would not be</em>.",
-   "Without the forty volunteers 等於「如果沒有志工」。as it has done every week 說明博物館現在開著，所以 is not 衝突，主句用 would not be。"
+   "<em>Without the forty volunteers</em> means \"if there were no volunteers\". An unreal result needs <em>would</em> + base verb: <em>would not be</em> able. <em>As it has done every week</em> shows the museum is open now.",
+   "Without the forty volunteers 等於「如果沒有志工」。不真實的結果要用 would + 原形：would not be。as it has done every week 說明博物館現在開著。"
   ],
   "gloss": [
    {
@@ -610,8 +610,8 @@
    "It is (high) time + 主詞 + 過去式。"
   ],
   "why": [
-   "<em>It is high time that</em> means \"it should have been done already\". The verb takes the past: <em>reviewed</em>. <em>has reviewed</em> would say the review is already done. The long <em>whose …</em> phrase hides the clue.",
-   "It is high time that 表示「早該做了」，動詞用過去式 reviewed；has reviewed 表示已經做完。長長的 whose 片語把線索藏遠了。"
+   "<em>It is high time</em> means \"it should have been done already\", so the verb takes the past: <em>reviewed</em>. <em>has reviewed</em> would say it is done. Two <em>whose</em> clauses push the clue away.",
+   "It is high time 表示「早該做了」，動詞用過去式 reviewed；has reviewed 表示已經做完。兩個 whose 子句把線索推遠。"
   ],
   "gloss": [
    {
@@ -636,11 +636,11 @@
     "ex": "It rained for five consecutive days."
    },
    {
-    "w": "assesses",
-    "hw": "assess",
-    "pos": "v.",
-    "zh": "評估",
-    "ex": "The panel assesses each application."
+    "w": "intake",
+    "hw": "intake",
+    "pos": "n.",
+    "zh": "招生人數",
+    "ex": "This year's intake is the largest yet."
    }
   ]
  },
