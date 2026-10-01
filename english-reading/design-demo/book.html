@@ -1,0 +1,255 @@
+<title>TOEIC 練習室・書本版</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Noto+Serif+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column like a printed page, with a margin column for notes on wide screens. */
+:root{
+  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E8ECE5;
+  --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1D221F; color-scheme:dark}
+}
+:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1D221F; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.8 var(--en),var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 72px;font-variant-numeric:oldstyle-nums}
+:lang(zh), .zh{font-family:var(--zh)}
+.book{max-width:34rem;margin:0 auto}
+.wide,.frame{max-width:34rem;margin:0 auto}
+@media (min-width:980px){.frame{max-width:50rem}}
+@media (min-width:980px){.wide{max-width:50rem;display:grid;grid-template-columns:minmax(0,34rem) minmax(0,13rem);column-gap:3rem}}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.sc{font-family:var(--en);font-variant-caps:all-small-caps;letter-spacing:.09em;font-size:1.02em}
+.link{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.link:hover{text-decoration-thickness:2px}
+
+/* masthead */
+.mast{padding-block:56px 8px;text-align:left}
+.mast .sc{color:var(--soft);font-size:15px}
+h1{font:500 clamp(34px,7vw,46px)/1.15 var(--zh);margin:.15em 0 0;letter-spacing:.02em}
+h1 .en{font-family:var(--en);font-weight:500;letter-spacing:0}
+
+/* home */
+.note{margin:28px 0 0;max-width:32em}
+.note + .note{margin-top:10px}
+.quiet{color:var(--soft)}
+.toc{margin-top:44px;display:grid;gap:34px}
+.part h2{font:500 15px/1.4 var(--zh);color:var(--soft);margin:0 0 10px;letter-spacing:.12em}
+.part h2 .sc{margin-left:.6em;letter-spacing:.09em}
+.part ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.part li{border-bottom:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;align-items:baseline;gap:0 .6em;width:100%;padding:11px 0;text-align:left;font-family:var(--zh)}
+.row .n{color:var(--soft);font-size:15px}
+.row .t{min-width:0}
+.row .c{color:var(--soft);font:400 15px var(--en);font-variant-numeric:lining-nums tabular-nums}
+button.row .t{color:var(--accent)}
+button.row:hover .t{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.colophon{margin-top:56px;font-size:14px;color:var(--soft);border-top:1px solid var(--rule);padding-top:14px}
+
+/* question page */
+.head{display:flex;justify-content:space-between;gap:16px;padding-block:28px 10px;border-bottom:1px solid var(--rule);font-size:14px;color:var(--soft);font-family:var(--zh)}
+.head .pg{font-family:var(--en);font-variant-numeric:lining-nums}
+.back{color:var(--soft)}
+.back:hover{color:var(--ink)}
+.stem{font:400 clamp(20px,4.4vw,23px)/1.7 var(--en);margin:34px 0 26px;text-wrap:pretty;hanging-punctuation:first}
+.blank{display:inline-block;min-width:4.6em;border-bottom:1.5px solid var(--ink);text-align:center;line-height:1.2;color:var(--accent);font-style:italic}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.opt{display:grid;grid-template-columns:2.4em minmax(0,1fr);align-items:baseline;width:100%;text-align:left;padding:7px 0;font:400 19px/1.5 var(--en)}
+.opt .l{position:relative;display:inline-grid;place-items:center;width:1.7em;height:1.7em;font-size:16px;color:var(--soft)}
+.opt:not(:disabled):hover .w{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.opt:disabled{cursor:default}
+.opt.right .l{color:var(--accent);font-weight:600}
+.opt.right .l::after{content:"";position:absolute;inset:-1px -3px;border:1.6px solid var(--accent);border-radius:52% 46% 50% 48%;transform:rotate(-8deg)}
+.opt.right .w{color:var(--accent)}
+.opt.picked-wrong .w{text-decoration:line-through;text-decoration-color:var(--pencil);text-decoration-thickness:1.6px;color:var(--soft)}
+.opt.picked-wrong .l{color:var(--pencil)}
+.opt.dim .w{color:var(--soft)}
+.unsure{margin-top:14px;padding-top:12px;border-top:1px dashed var(--rule)}
+.unsure button{font:italic 400 18px var(--en);color:var(--soft)}
+.unsure button:not(:disabled):hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.unsure.on button{color:var(--accent)}
+
+/* the annotation */
+.ann{margin-top:38px;padding-top:6px}
+.verdict{font:500 21px/1.5 var(--zh);margin:0 0 4px}
+.verdict .en{font-family:var(--en);font-style:italic;font-weight:500}
+.verdict.ok{color:var(--accent)} .verdict.no{color:var(--pencil)}
+.ann .sub{margin:0 0 22px;color:var(--soft);font-family:var(--zh);font-size:15.5px}
+.ann h3{font:500 13.5px/1.4 var(--zh);letter-spacing:.14em;color:var(--soft);margin:26px 0 6px}
+.ann p{margin:0;font-family:var(--zh);max-width:32em}
+.point{font:500 18.5px/1.65 var(--zh)}
+.en-i{font-family:var(--en);font-style:italic;letter-spacing:0}
+.others{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-family:var(--zh)}
+.others li{display:grid;grid-template-columns:5.4em minmax(0,1fr);gap:.6em;align-items:baseline}
+.others .w{font:italic 400 17px var(--en);color:var(--soft)}
+.trans{font-size:16px;color:var(--soft)}
+.ann .see{margin-top:28px;font-size:15.5px;color:var(--soft);font-family:var(--zh)}
+.margin{font-family:var(--zh);font-size:15px;color:var(--soft);margin-top:30px;padding-top:12px;border-top:1px solid var(--rule)}
+@media (min-width:980px){.margin{margin-top:118px;border-top:0;padding-top:0;border-left:1px solid var(--rule);padding-left:18px;align-self:start}}
+.margin h4{font:500 13px/1.4 var(--zh);letter-spacing:.14em;margin:0 0 8px}
+.margin dl{margin:0;display:grid;gap:8px}
+.margin dt{font:italic 500 16.5px var(--en);color:var(--ink)}
+.margin dd{margin:0}
+.next{display:flex;justify-content:flex-end;margin-top:36px;border-top:1px solid var(--rule);padding-top:16px}
+.next button{font:500 17px var(--zh);color:var(--accent)}
+.next button:hover{text-decoration:underline;text-underline-offset:4px}
+.end{padding-block:48px}
+.end p{font-family:var(--zh);max-width:32em}
+@media (prefers-reduced-motion: no-preference){
+  .ann{animation:rise .35s ease-out}
+  @keyframes rise{from{opacity:.001;transform:translateY(6px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<main>
+  <!-- contents -->
+  <section id="home" class="book">
+    <header class="mast">
+      <div class="sc">A workbook for TOEIC Parts 2–5</div>
+      <h1>TOEIC 練習室</h1>
+    </header>
+
+    <p class="note">上次讀到〈詞性判斷〉第 2 題。<button class="link" id="resume" type="button">接著讀</button></p>
+    <p class="note quiet">今天沒有要複習的題。答錯的題和選了 <span class="en-i">I'm not sure</span> 的題，會在一天、三天、一週、兩週後回來找你。</p>
+
+    <nav class="toc" aria-label="目錄" id="toc"></nav>
+
+    <p class="colophon">這是設計示範。題目和解說取自題庫；進度與複習狀態是示範用的，只有第一章可以作答。</p>
+  </section>
+
+  <!-- a page of questions -->
+  <section id="page" hidden>
+    <div class="frame head">
+      <button class="back" id="back" type="button">← 目錄</button>
+      <span><span id="chap">第一章　詞性判斷</span>　<span class="pg" id="pg"></span></span>
+    </div>
+    <div class="wide">
+      <div>
+        <p class="stem" id="stem"></p>
+        <ol class="opts" id="opts"></ol>
+        <div class="unsure" id="unsure"><button type="button" id="unsureBtn">I'm not sure</button></div>
+        <div class="ann" id="ann" hidden></div>
+      </div>
+      <aside class="margin" id="margin" hidden></aside>
+    </div>
+    <div class="frame next" id="nextWrap" hidden><button type="button" id="next"></button></div>
+  </section>
+
+  <section id="end" class="book end" hidden>
+    <div class="sc quiet">End of sample</div>
+    <p>示範到這裡。正式版每一章讀完，會告訴你這一章答對幾題、哪幾題會回來複習，然後回到目錄。</p>
+    <p><button class="link" id="home2" type="button">回到目錄</button></p>
+  </section>
+</main>
+
+<script>
+const PARTS = [
+  {zh:"第一部　文法", en:"Grammar", ch:[["詞性判斷",10,true],["動詞時態",8],["主動與被動",4],["分詞：-ing 與 -ed",7],["連接詞、介系詞、連接副詞",8],["主詞與動詞一致",6],["關係代名詞",6],["代名詞",6],["介系詞：時間、期限與常用片語",9],["to 的陷阱與動詞後接的形式",6],["要求與建議：that 子句用原形",4],["假設語氣與倒裝",4],["比較",5],["數量詞與可數名詞",5],["平行結構與成對連接詞",4]]},
+  {zh:"第二部　字彙", en:"Vocabulary", ch:[["搭配詞",13],["近義辨析",13],["商業字彙",11],["同字根不同義",10]]},
+  {zh:"第三部　聽力", en:"Listening", ch:[["應答",17],["對話",8],["獨白",4]]},
+];
+const NUM = "一二三四五六七八九十";
+const cn = n => n <= 10 ? NUM[n-1] : n < 20 ? "十" + NUM[n-11] : String(n);
+
+const ITEMS = [
+  {stem:"The new layout of the Pellridge warehouse makes the items that customers order most often far more ______ to the pickers working on the early shift.",
+   options:["access","accessibly","accessible","accessibility"], answer:2,
+   point:"make + 受詞 + 形容詞：受詞再長，後面還是接形容詞。",
+   why:"makes 的受詞是 the items that customers order most often，一路讀到這裡，後面還缺一個字說明這些商品「變得怎樣」，所以要形容詞 accessible。",
+   wrong:["far more access to the pickers 單看是通順的名詞片語。但往前找會看到 makes the items…，這個位置要說明 items 的狀態，只能用形容詞。","副詞不能說明受詞的狀態。",null,"名詞不能說明 the items 變得怎樣。"],
+   zh:"Pellridge 倉庫的新配置，讓顧客最常訂購的商品對早班揀貨員來說好拿得多。",
+   vocab:[["layout","配置、布局"],["picker","揀貨員"],["shift","班次"]]},
+  {stem:"______ for the assistant branch manager position, which will be based at our new office on Corliss Avenue, will be accepted through the online portal until the end of the month.",
+   options:["Applications","Apply","Applying","Applied"], answer:0,
+   point:"句子已經有動詞了，空格要當主詞，所以用名詞。",
+   why:"這句的動詞在很後面：will be accepted。從空格到 Avenue 整段都是主詞，被受理的是「申請書」，要名詞 Applications。",
+   wrong:[null,"Apply for the … position 是徵才廣告常見的開頭，前半句單看完全對。但讀到 will be accepted 就知道它需要主詞，祈使句沒有位置給這個動詞。","當主詞時意思是「申請這個動作會被受理」，不通；被受理的是申請書。","過去式和過去分詞都不能當主詞。"],
+   zh:"副分行經理一職（工作地點在我們位於 Corliss Avenue 的新辦公室）的申請，在本月底前都可以透過線上系統送出。",
+   vocab:[["assistant branch manager","副分行經理"],["portal","入口網站、線上系統"]]},
+];
+const L = "ABCD";
+const $ = id => document.getElementById(id);
+let at = 0;
+
+function toc(){
+  const nav = $("toc"); nav.textContent = "";
+  PARTS.forEach(p => {
+    const s = document.createElement("section"); s.className = "part";
+    s.innerHTML = `<h2>${p.zh}<span class="sc">${p.en}</span></h2>`;
+    const ol = document.createElement("ol");
+    p.ch.forEach(([t, n, live], i) => {
+      const li = document.createElement("li");
+      const r = document.createElement(live ? "button" : "div");
+      r.className = "row"; if (live) { r.type = "button"; r.onclick = () => open(0); }
+      r.innerHTML = `<span class="n">${cn(i+1)}</span><span class="t">${t}</span><span class="c">${n} 題</span>`;
+      li.append(r); ol.append(li);
+    });
+    s.append(ol); nav.append(s);
+  });
+}
+
+function show(id){ ["home","page","end"].forEach(x => $(x).hidden = x !== id); window.scrollTo(0, 0); }
+
+function open(i){
+  at = i; const it = ITEMS[i];
+  show("page");
+  $("pg").textContent = `${i+1} / 10`;
+  const [a, b] = it.stem.split("______");
+  $("stem").innerHTML = "";
+  $("stem").append(a, Object.assign(document.createElement("span"), {className:"blank", id:"blank", innerHTML:"&nbsp;"}), b);
+  const ol = $("opts"); ol.textContent = "";
+  it.options.forEach((w, k) => {
+    const li = document.createElement("li");
+    const btn = document.createElement("button"); btn.type = "button"; btn.className = "opt";
+    btn.innerHTML = `<span class="l">${L[k]}</span><span class="w">${w}</span>`;
+    btn.onclick = () => answer(k);
+    li.append(btn); ol.append(li);
+  });
+  $("unsure").className = "unsure"; $("unsureBtn").disabled = false; $("unsureBtn").onclick = () => answer(-1);
+  $("ann").hidden = true; $("margin").hidden = true; $("nextWrap").hidden = true;
+}
+
+function answer(k){
+  const it = ITEMS[at], ok = k === it.answer;
+  const btns = [...$("opts").querySelectorAll(".opt")];
+  btns.forEach((b, j) => {
+    b.disabled = true;
+    if (j === it.answer) b.classList.add("right");
+    else if (j === k) b.classList.add("picked-wrong");
+    else b.classList.add("dim");
+  });
+  $("unsureBtn").disabled = true; if (k < 0) $("unsure").classList.add("on");
+  $("blank").textContent = it.options[it.answer];
+
+  const ans = `<span class="en">(${L[it.answer]}) ${it.options[it.answer]}</span>`;
+  let head;
+  if (ok) head = `<p class="verdict ok">對了。</p><p class="sub">這題不會回到複習裡。</p>`;
+  else if (k < 0) head = `<p class="verdict">答案是 ${ans}。</p><p class="sub">這題明天會再出現一次。</p>`;
+  else head = `<p class="verdict no">答案是 ${ans}。</p><p class="sub">這題明天會再出現一次。</p>`;
+
+  let body = `<h3>要點</h3><p class="point">${it.point}</p><h3>怎麼看出來</h3><p>${it.why}</p>`;
+  if (!ok && k >= 0) body += `<h3>你選的 <span class="en-i">${it.options[k]}</span></h3><p>${it.wrong[k]}</p>`;
+  const rest = it.options.map((w, j) => [w, j]).filter(([, j]) => j !== it.answer && j !== k);
+  body += `<h3>${!ok && k >= 0 ? "另外兩個" : "其他選項"}</h3><ul class="others">` +
+    rest.map(([w, j]) => `<li><span class="w">${w}</span><span>${it.wrong[j]}</span></li>`).join("") + `</ul>`;
+  body += `<h3>譯文</h3><p class="trans">${it.zh}</p>`;
+  body += `<p class="see">想多讀一點，見《多益文法考點》第一章〈<a href="https://claude.ai/artifact/1KZ2F1miJtZxSMpeZLknDQ" target="_blank" rel="noopener">詞性判斷</a>〉。</p>`;
+  $("ann").innerHTML = head + body; $("ann").hidden = false;
+
+  $("margin").innerHTML = `<h4>這題的字</h4><dl>` + it.vocab.map(([w, m]) => `<div><dt>${w}</dt><dd>${m}</dd></div>`).join("") + `</dl>`;
+  $("margin").hidden = false;
+  $("next").textContent = at + 1 < ITEMS.length ? "下一題 →" : "讀完這一章 →";
+  $("nextWrap").hidden = false;
+}
+
+$("next").onclick = () => at + 1 < ITEMS.length ? open(at + 1) : show("end");
+$("back").onclick = () => show("home");
+$("home2").onclick = () => show("home");
+$("resume").onclick = () => open(1);
+toc();
+</script>
