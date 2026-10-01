@@ -21,8 +21,8 @@
     "我們為飯店住客提供自行車出租服務。"
    ],
    [
-    "Her company runs a successful equipment <em>rental</em> business near the port.",
-    "她的公司在港口附近經營一家很成功的設備租賃事業。"
+    "<em>Rental</em> of the conference hall costs two hundred dollars an hour.",
+    "會議廳的租用費用為每小時兩百美元。"
    ],
    [
     "Please bring a valid driver's licence when you collect the <em>rental</em>.",
@@ -162,10 +162,6 @@
    {
     "w": "close",
     "zh": "關閉"
-   },
-   {
-    "w": "shut down",
-    "zh": "關閉；停業"
    }
   ],
   "confuse": []
@@ -292,8 +288,8 @@
     "好幾位員工生病，我們不得不重新安排培訓課程的時間。"
    ],
    [
-    "The product launch has been <em>rescheduled</em> for early November.",
-    "產品發表會已改期到十一月初。"
+    "Please let us know if you need to <em>reschedule</em> your interview.",
+    "如果你需要改期面試，請告訴我們。"
    ]
   ],
   "coll": [
@@ -397,8 +393,8 @@
     "恢復會談"
    ],
    [
-    "resume normal service",
-    "恢復正常服務"
+    "resume work",
+    "恢復工作"
    ]
   ],
   "family": [
@@ -428,10 +424,6 @@
    {
     "w": "suspend",
     "zh": "暫停"
-   },
-   {
-    "w": "halt",
-    "zh": "中止；停止"
    }
   ],
   "confuse": [
@@ -480,7 +472,7 @@
     "網路零售商"
    ],
    [
-    "authorized retailer",
+    "authorised retailer",
     "授權零售商"
    ],
    [
@@ -500,7 +492,7 @@
    {
     "w": "retail",
     "pos": "n.",
-    "zh": "零售；零售的"
+    "zh": "零售（業）"
    },
    {
     "w": "retailing",
@@ -876,7 +868,7 @@
     "大幅增加"
    ],
    [
-    "sharply criticize",
+    "sharply criticise",
     "嚴厲批評"
    ],
    [
@@ -1126,7 +1118,7 @@
  {
   "w": "shortly",
   "pos": "adv.",
-  "zh": "不久；很快；簡短地",
+  "zh": "不久；很快；稍後",
   "def": [
    "In a short time from now, or soon after a stated event.",
    "從現在起不久之後，或在某事發生後不久。"
@@ -1146,7 +1138,7 @@
    ],
    [
     "The package arrived <em>shortly</em> before noon.",
-    "包裹在接近中午前不久送達。"
+    "包裹在中午前不久送達。"
    ],
    [
     "The CEO resigned in March; <em>shortly</em> thereafter, the board named a successor.",
@@ -1266,13 +1258,7 @@
     "展示間賣場區"
    ]
   ],
-  "family": [
-   {
-    "w": "show",
-    "pos": "v.",
-    "zh": "展示；顯示"
-   }
-  ],
+  "family": [],
   "syn": [],
   "ant": [],
   "confuse": [
@@ -1375,8 +1361,8 @@
     "儘管下大雨，戶外活動仍照常舉行。"
    ],
    [
-    "Sales kept growing in <em>spite</em> of the higher prices.",
-    "儘管價格提高，銷售額仍持續成長。"
+    "The flight was delayed twice; in <em>spite</em> of that, we reached the client on time.",
+    "班機延誤了兩次，儘管如此，我們還是準時抵達客戶那裡。"
    ],
    [
     "She finished the report on time in <em>spite</em> of being ill.",
@@ -1539,8 +1525,8 @@
     "儲藏室裡的箱子堆到了天花板。"
    ],
    [
-    "He carried a <em>stack</em> of brochures to the registration table.",
-    "他把一疊宣傳手冊搬到報到桌。"
+    "The clerk sorted the forms into neat <em>stacks</em> by department.",
+    "店員把表格依部門分成整齊的幾疊。"
    ],
    [
     "Items on the top shelf should not be <em>stacked</em> higher than one metre.",
@@ -1611,8 +1597,8 @@
     "過去五年來，營收穩定成長。"
    ],
    [
-    "The number of online orders has increased <em>steadily</em> since January.",
-    "自一月以來，網路訂單的數量持續增加。"
+    "Our website traffic is <em>steadily</em> rising, thanks to the new advertising campaign.",
+    "多虧新的廣告活動，我們的網站流量正穩定攀升。"
    ],
    [
     "Rain fell <em>steadily</em> all afternoon, so the outdoor fair was cancelled.",
@@ -1684,10 +1670,6 @@
   ],
   "ant": [
    {
-    "w": "sharply",
-    "zh": "急遽地"
-   },
-   {
     "w": "erratically",
     "zh": "不規則地"
    }
@@ -1742,8 +1724,8 @@
     "汽車保險桿貼紙"
    ],
    [
-    "stick a sticker on",
-    "在…上貼貼紙"
+    "sticker price",
+    "標價；定價"
    ]
   ],
   "family": [
@@ -1970,8 +1952,8 @@
     "她出色的談判技巧幫助我們贏得這份合約。"
    ],
    [
-    "She reported directly to her <em>superiors</em> at headquarters.",
-    "她直接向總公司的上級報告。"
+    "Ms. Ortiz is my <em>superior</em>, so she signs off on my expense claims.",
+    "Ortiz 女士是我的上司，所以由她核准我的費用申請。"
    ]
   ],
   "coll": [
@@ -2039,7 +2021,7 @@
   "ex": [
    [
     "Please ask your <em>supervisor</em> to sign the leave request form.",
-    "請請你的主管在請假單上簽名。"
+    "請你的主管在請假單上簽名。"
    ],
    [
     "The shift <em>supervisor</em> checks the machines before the factory opens.",
@@ -2190,8 +2172,8 @@
    {
     "w": "pill",
     "note": [
-     "Pill is the general word for a small medicine; tablet is slightly more technical and also names a computer.",
-     "pill 泛指小顆藥物；tablet 稍微偏專業，同時也指平板電腦。"
+     "Only for the medicine sense: pill is the everyday word; tablet is slightly more technical.",
+     "僅限藥片的意思：pill 是日常用語；tablet 稍微偏專業。"
     ]
    }
   ],
@@ -2268,16 +2250,6 @@
     "w": "technically",
     "pos": "adv.",
     "zh": "技術上；嚴格說來"
-   },
-   {
-    "w": "technique",
-    "pos": "n.",
-    "zh": "技巧；技術"
-   },
-   {
-    "w": "technology",
-    "pos": "n.",
-    "zh": "科技"
    }
   ],
   "syn": [
@@ -2326,8 +2298,8 @@
     "我們暫時把訓練教室搬到二樓。"
    ],
    [
-    "Customers may <em>temporarily</em> store luggage at the front desk.",
-    "顧客可以把行李暫時寄放在櫃檯。"
+    "Guests may <em>temporarily</em> leave their luggage at the front desk before check-in.",
+    "辦理入住前，客人可以暫時把行李寄放在櫃檯。"
    ]
   ],
   "coll": [
@@ -2410,7 +2382,7 @@
     "新房客將在三月一日搬進這間公寓。"
    ],
    [
-    "Each <em>tenant</em> is responsible for paying its own electricity bill.",
+    "Each <em>tenant</em> is responsible for paying their own electricity bill.",
     "每位承租人須自行負擔電費。"
    ],
    [
@@ -2497,8 +2469,8 @@
   ],
   "ex": [
    [
-    "The check-in desks are on the second floor of the departures <em>terminal</em>.",
-    "報到櫃檯在出境航廈的二樓。"
+    "The check-in desks are on the second floor of <em>Terminal</em> 2.",
+    "報到櫃檯在第二航廈的二樓。"
    ],
    [
     "The bus <em>terminal</em> is a ten-minute walk from the hotel.",
@@ -2590,7 +2562,7 @@
    ],
    [
     "This train will <em>terminate</em> at Central Station; all passengers must leave here.",
-    "這班列車將在中央車站終點，所有乘客請在此下車。"
+    "這班列車的終點站為中央車站，所有乘客請在此下車。"
    ],
    [
     "The landlord <em>terminated</em> the lease when the tenant failed to pay rent.",
@@ -2651,12 +2623,7 @@
     ]
    }
   ],
-  "ant": [
-   {
-    "w": "start",
-    "zh": "開始"
-   }
-  ],
+  "ant": [],
   "confuse": [
    {
     "w": "exterminate",
@@ -2769,8 +2736,8 @@
     "公司在首爾行程前為業務團隊聘請了語言講師。"
    ],
    [
-    "In British English, a pair of sports shoes is called <em>trainers</em>.",
-    "在英式英語中，運動鞋稱為 trainers。"
+    "The <em>trainer</em> gave each participant a handbook and a short quiz.",
+    "講師發給每位參加者一本手冊和一份簡短測驗。"
    ]
   ],
   "coll": [
@@ -2897,11 +2864,6 @@
     "w": "unloading",
     "pos": "n.",
     "zh": "卸貨"
-   },
-   {
-    "w": "reload",
-    "pos": "v.",
-    "zh": "重新裝載"
    }
   ],
   "syn": [
@@ -2975,9 +2937,9 @@
   ],
   "family": [
    {
-    "w": "grade",
-    "pos": "n.",
-    "zh": "等級"
+    "w": "upgradable",
+    "pos": "adj.",
+    "zh": "可升級的"
    }
   ],
   "syn": [
@@ -3045,7 +3007,7 @@
     "樓上的辦公室"
    ],
    [
-    "upstairs neighbor",
+    "upstairs neighbour",
     "樓上的鄰居"
    ],
    [
@@ -3511,8 +3473,8 @@
    {
     "w": "forgo",
     "note": [
-     "To go without something; waive is used for fees, rules and rights that an organisation could enforce.",
-     "指放棄某物或不去享有；waive 用於機構本可強制執行的費用、規定與權利。"
+     "Forgo means to do without something you could have; waive means to give up a right or not insist on a fee or rule.",
+     "forgo 指放棄本可擁有的東西；waive 指放棄權利，或不堅持收取費用、執行規定。"
     ]
    }
   ],
@@ -3520,10 +3482,6 @@
    {
     "w": "enforce",
     "zh": "執行；強制實施"
-   },
-   {
-    "w": "impose",
-    "zh": "課徵；強加"
    }
   ],
   "confuse": [
@@ -3702,8 +3660,8 @@
     "辦公室每個平日從九點開到六點。"
    ],
    [
-    "Delivery usually takes three <em>weekdays</em> after the order is placed.",
-    "下單後通常需要三個工作日送達。"
+    "Orders placed after noon are processed on the next <em>weekday</em>.",
+    "中午過後下的訂單，會在下一個平日處理。"
    ],
    [
     "On <em>weekdays</em>, the express train to the airport runs every ten minutes.",
@@ -3740,13 +3698,7 @@
     "平日時刻表"
    ]
   ],
-  "family": [
-   {
-    "w": "weekly",
-    "pos": "adj.",
-    "zh": "每週的"
-   }
-  ],
+  "family": [],
   "syn": [
    {
     "w": "business day",
@@ -3797,8 +3749,8 @@
     "請把包裹交給櫃檯當班的任何人。"
    ],
    [
-    "<em>Whoever</em> made this mistake must correct it before the report goes out.",
-    "不管是誰犯了這個錯，都必須在報告送出前更正。"
+    "<em>Whoever</em> calls while I am in the meeting, please take a message.",
+    "我開會時不管誰來電，請幫我留言。"
    ],
    [
     "Our policy is to hire <em>whoever</em> is best qualified for the job.",
