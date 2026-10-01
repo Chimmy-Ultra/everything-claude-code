@@ -7,14 +7,14 @@
 /* Layout: a printed workbook. Reading pages are one 34rem column; a question is a two-page spread on wide
    screens (question left, notes right) and one column on phones. Interface text is English; Chinese waits behind 中. */
 :root{
-  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --faint:#8E958F; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E6EBE3;
+  --paper:#F4F5F1; --ink:#1E2320; --soft:#5C635E; --faint:#8E958F; --rule:#D5D8D0; --accent:#2B5A4A; --pencil:#B4442E; --wash:#E6EBE3; --claude:#D97757;
   --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1F2621; color-scheme:dark}
+  :root:not([data-theme="light"]){--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1F2621; --claude:#E3916F; color-scheme:dark}
 }
-:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1F2621; color-scheme:dark}
+:root[data-theme="dark"]{--paper:#151816; --ink:#E4E7E1; --soft:#9AA29B; --faint:#6E766F; --rule:#2D322F; --accent:#8CC4AE; --pencil:#E88C73; --wash:#1F2621; --claude:#E3916F; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -63,7 +63,30 @@ button.row:hover .t{color:var(--accent)}
 .colophon button:hover{color:var(--ink)}
 
 /* the spread */
-#session{font-size:var(--fs,14.5px);max-width:34rem;margin:0 auto}
+#session{font-size:var(--fs,14.5px);max-width:34rem;margin:0 auto;padding-bottom:5.5rem}
+/* the dock: tools for the answered question, pinned to the bottom edge */
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--paper);border-top:1px solid var(--rule);padding:0 20px calc(10px + env(safe-area-inset-bottom,0px))}
+.dk-bar,.dk-panel{max-width:34rem;margin:0 auto}
+@media (min-width:900px){.dk-bar,.dk-panel{max-width:64rem}}
+.dk-panel:empty{display:none}
+.dk-panel{padding-top:12px;font-size:15px}
+.dk-bar{display:flex;align-items:center;justify-content:space-between;gap:10px 16px;padding-top:10px;min-height:44px}
+.dk-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px}
+.tool{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;color:var(--soft);text-decoration:none;padding:4px 0}
+.tool:hover{color:var(--ink)}
+.tool svg{width:16px;height:16px;flex:none}
+.tool .ic{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.tool[aria-pressed="true"]{color:var(--accent)}
+.tool[aria-pressed="true"] .ic.fillable{fill:currentColor}
+.tool.claude{color:var(--ink)}
+.tool.claude .spark{stroke:var(--claude);stroke-width:2.4;stroke-linecap:round}
+.tool.zht{font-family:var(--zh);font-size:13px;border:1px solid var(--rule);border-radius:3px;padding:0 6px;line-height:1.7}
+.tool.zht[aria-pressed="true"]{border-color:var(--faint);color:var(--ink)}
+.dk-next button{font:italic 500 18px var(--en);color:var(--accent);white-space:nowrap;padding:4px 0}
+.dk-next button:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:520px){.tool:not(.claude):not(.zht) .lbl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.dk-tools{gap:6px 18px}}
+.foot .claude-ic{width:13px;height:13px;vertical-align:-1px;margin-right:4px}
+.foot .claude-ic .spark{stroke:var(--claude);stroke-width:2.4;stroke-linecap:round}
 @media (min-width:900px){
   #session:not([hidden]){max-width:64rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:3.2rem;align-items:start}
   #session .head{grid-column:1/-1}
@@ -123,6 +146,7 @@ button.row:hover .t{color:var(--accent)}
 .para .zh{display:block;font-size:.9em;line-height:1.7;color:var(--soft);margin-top:.15em}
 .point{font:500 1.08em/1.55 var(--en)}
 .para em{font-style:italic}
+.para .exs{display:block;margin-top:.2em}
 .wr{display:grid;grid-template-columns:6.4em minmax(0,1fr);gap:.8em;align-items:baseline;font-size:.94em;color:var(--soft)}
 .wr .w{font-style:italic;color:var(--faint);overflow-wrap:anywhere}
 .wr.mine .w{color:var(--pencil)} .wr.mine{color:var(--ink)}
@@ -199,6 +223,7 @@ h3 .sc{letter-spacing:.12em}
 
 <main id="app" class="page"></main>
 <section id="session" hidden></section>
+<nav id="dock" hidden aria-label="This question"><div class="dk-panel" id="dkPanel"></div><div class="dk-bar"><span class="dk-tools" id="dkTools"></span><span class="dk-next" id="dkNext"></span></div></nav>
 <div class="tip" id="tip" hidden></div>
 <div class="toast" id="toast" hidden role="status"></div>
 
@@ -375,6 +400,7 @@ function show(v) {
   view = v; stopAudio(); clearInterval(paceTimer); $("#tip").hidden = true; window.scrollTo(0, 0);
   const app = $("#app"), ses = $("#session");
   app.textContent = ""; ses.textContent = "";
+  const dk = $("#dock"); dk.hidden = true; dk.dataset.card = ""; $("#dkTools").textContent = ""; $("#dkPanel").textContent = ""; $("#dkNext").textContent = "";
   app.hidden = v === "session"; ses.hidden = v !== "session";
   return v === "session" ? ses : app;
 }
@@ -484,6 +510,8 @@ function enOf(item, q) {
   if (e) return e;
   return { point: [esc(x.point || ""), ""], why: [esc(x.why || ""), ""] };      // Claude-added items carry Chinese only
 }
+// an example sentence at the end of a usage line goes on its own line
+function exLine(h) { return String(h || "").replace(/\s*(例：)?<em>([A-Z][^<]*[.?!])<\/em>\s*$/, '<em class="exs">$2</em>'); }
 function para([en, zh], cls) {
   const p = el("p", "para" + (cls ? " " + cls : "")); p.tabIndex = 0; p.innerHTML = en;
   if (zh) { const z = el("span", "zh", zh); z.hidden = true; p.append(z); p.onclick = () => z.hidden = !z.hidden; p.onkeydown = ev => { if (ev.key === "Enter") z.hidden = !z.hidden; }; }
@@ -517,10 +545,44 @@ function notesFor(item, q, chosen, order) {
   if (isGap(item) && item.type === "vocab" && e.usage) {
     const idx = item.options.map((_, i) => i).filter(i => i !== item.answer && e.usage[i]);
     idx.sort((a, b) => (b === chosen) - (a === chosen) || order.indexOf(a) - order.indexOf(b));
-    for (const i of idx) { const r = el("div", "wr" + (i === chosen ? " mine" : "")); r.append(el("span", "w", item.options[i]), para(e.usage[i])); box.append(r); }
+    for (const i of idx) { const r = el("div", "wr" + (i === chosen ? " mine" : "")); r.append(el("span", "w", item.options[i]), para(e.usage[i].map(exLine))); box.append(r); }
   }
   if (isGap(item)) { const t = el("p", "trans zh", item.explain?.zh || ""); t.hidden = true; box.append(t); }
   return box;
+}
+const ICON = {
+  star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic fillable" d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>',
+  flag: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
+  book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M4 5.5C6.5 4.5 9.5 4.5 12 6c2.5-1.5 5.5-1.5 8-.5V19c-2.5-1-5.5-1-8 .5-2.5-1.5-5.5-1.5-8-.5zM12 6v13.5"/></svg>',
+  claude: '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="spark" d="M12 3v6.2M12 14.8V21M3 12h6.2M14.8 12H21M5.6 5.6l4.3 4.3M14.1 14.1l4.3 4.3M18.4 5.6l-4.3 4.3M9.9 14.1l-4.3 4.3"/></svg>',
+};
+function tool(icon, label, cls) { const b = btn("tool" + (cls ? " " + cls : "")); b.innerHTML = (icon || "") + `<span class="lbl">${esc(label)}</span>`; return b; }
+function setLabel(b, t) { b.querySelector(".lbl").textContent = t; }
+function togglePanel(cls, make) {
+  const pn = $("#dkPanel"), open = pn.querySelector("." + cls);
+  pn.textContent = ""; if (open) return;
+  pn.append(make()); pn.querySelector("input")?.focus();
+}
+// The dock appears once a question is answered: star, report, grammar page, Ask Claude, 中, and Next.
+let dockCtx = {};
+function dockFor(item, ctx) {
+  dockCtx = ctx;
+  const dk = $("#dock"), id = S.id + ":" + S.i;
+  if (dk.dataset.card === id) return;
+  dk.dataset.card = id; dk.hidden = false;
+  const tools = $("#dkTools"); tools.textContent = "";
+  const m = M[item.id] || {};
+  const star = tool(ICON.star, m.starred ? "Starred" : "Star"); star.setAttribute("aria-pressed", String(!!m.starred));
+  star.onclick = () => { const on = !(M[item.id] || {}).starred; M[item.id] = Object.assign(M[item.id] || {}, { starred: on }); saveMark(item.id); setLabel(star, on ? "Starred" : "Star"); star.setAttribute("aria-pressed", String(on)); };
+  keys.star = () => star.click();
+  const rep = tool(ICON.flag, m.flagged ? "Reported" : "Report"); rep.setAttribute("aria-pressed", String(!!m.flagged));
+  rep.onclick = () => togglePanel("report", () => reportForm(item, rep));
+  tools.append(star, rep);
+  if (item.type === "grammar") { const a = el("a", "tool"); a.innerHTML = ICON.book + '<span class="lbl">Grammar notes</span>'; a.href = GRAMMAR_URL; a.target = "_blank"; a.rel = "noopener"; tools.append(a); }
+  if (sample) { const ab = tool(ICON.claude, "Ask Claude", "claude"); ab.onclick = () => togglePanel("ask", () => askForm(item, dockCtx)); tools.append(ab); }
+  const zb = tool("", "中", "zht"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); document.querySelectorAll("#session .rightp .zh").forEach(z => z.hidden = !on); };
+  tools.append(zb);
 }
 function footFor(item, box, ctx) {
   const foot = el("div", "foot sc"), fl = el("span", "fl");
@@ -531,7 +593,7 @@ function footFor(item, box, ctx) {
   keys.star = () => star.click();
   const rep = btn(null, m.flagged ? "Reported" : "Report a problem"); rep.onclick = () => toggleForm(box, "report", () => reportForm(item, rep));
   fl.append(star, rep);
-  if (sample) { const ab = btn(null, "Ask Claude"); ab.onclick = () => toggleForm(box, "ask", () => askForm(item, ctx)); fl.append(ab); }
+  if (sample) { const ab = btn(null); ab.innerHTML = ICON.claude.replace("<svg ", '<svg class="claude-ic" ') + "Ask Claude"; ab.onclick = () => toggleForm(box, "ask", () => askForm(item, ctx)); fl.append(ab); }
   const zb = btn("zhb", "中"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
   zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); (ctx.zhScope || box).querySelectorAll(".zh").forEach(z => z.hidden = !on); };
   foot.append(fl, zb);
@@ -540,7 +602,7 @@ function footFor(item, box, ctx) {
 function toggleForm(box, cls, make) { const f = box.querySelector("." + cls); if (f) { f.remove(); return; } box.append(make()); box.querySelector("." + cls + " input")?.focus(); }
 function reportForm(item, repBtn) {
   const f = el("div", "report"), inp = el("input"); inp.id = "report-" + item.id; inp.placeholder = "What's wrong with this question?"; inp.value = (M[item.id] || {}).flagNote || "";
-  const send = () => { M[item.id] = Object.assign(M[item.id] || {}, { flagged: true, flagNote: inp.value.trim() }); saveMark(item.id); repBtn.textContent = "Reported"; f.remove(); toast("Noted."); };
+  const send = () => { M[item.id] = Object.assign(M[item.id] || {}, { flagged: true, flagNote: inp.value.trim() }); saveMark(item.id); if (repBtn.querySelector(".lbl")) { setLabel(repBtn, "Reported"); repBtn.setAttribute("aria-pressed", "true"); } else repBtn.textContent = "Reported"; f.remove(); toast("Noted."); };
   inp.onkeydown = e => { if (e.key === "Enter") send(); };
   f.append(inp, btn(null, "Send", send)); return f;
 }
@@ -638,9 +700,9 @@ function gapCard(left, right, item) {
     paint(true);
     record(item, 0, oi, ok, unsure, unsure ? null : ms, pace && !unsure ? ms > pace * 1000 : false);
     const box = notesFor(item, null, oi, order);
-    box.append(footFor(item, box, { chosenText: unsure ? null : item.options[oi] }));
     right.append(box);
-    nextLink(right);
+    dockFor(item, { chosenText: unsure ? null : item.options[oi] });
+    nextLink();
   }
 }
 
@@ -670,7 +732,6 @@ function listenCard(left, right, item, card) {
   }
   play.onclick = run;
   keys.replay = () => !play.disabled && run();
-  const zhScope = right;
   for (const qi of qs) {
     const q = item.questions[qi], blk = el("div", qr ? "qr" : "");
     if (!qr) { const p = el("p", "lq"); p.append(el("span", "n", qs.length > 1 ? (qs.indexOf(qi) + 1) + "." : ""), q.q); blk.append(p); }
@@ -693,8 +754,8 @@ function listenCard(left, right, item, card) {
       const box = notesFor(item, q, oi, order);
       if (qs.length > 1) box.prepend(el("p", "qn sc", "Question " + (qs.indexOf(qi) + 1)));
       const optText = i => qr ? item.audio.lines[i + 1].text : q.options[i];
-      box.append(footFor(item, box, { qi, chosenText: unsure ? null : optText(oi), zhScope }));
       right.append(box);
+      dockFor(item, { qi, chosenText: unsure ? null : optText(oi) });
       if (Object.keys(done).length === qs.length) finishListen();
     }
   }
@@ -713,7 +774,7 @@ function listenCard(left, right, item, card) {
       li.append(el("span", "who sc", qr ? (i === 0 ? "Q" : L[i - 1]) : ln.who), t, rp); ul.append(li);
     });
     wrap.append(ul); right.append(wrap);
-    nextLink(right);
+    nextLink();
   }
 }
 function graphicTable(g) {
@@ -752,9 +813,9 @@ function saveAttempt(final) {
   const r = S.results;
   return Store.put("toeic_attempts", S.id, { startedAt: S.startedAt, endedAt: final ? Date.now() : null, mode: S.label, items: r.map(x => ({ id: x.key, ok: x.ok, chosen: x.chosen, unsure: !!x.unsure, ms: x.ms == null ? null : Math.round(x.ms), timedOut: x.timedOut, v: x.v })), summary: { n: r.length, ok: r.filter(x => x.ok).length } });
 }
-function nextLink(host) {
-  const nb = el("div", "next"), b = btn(null, S.i + 1 < S.cards.length ? "Next →" : "Finish →", () => { S.i++; saveSession(); runCard(); });
-  nb.append(b); host.append(nb);
+function nextLink() {
+  const b = btn(null, S.i + 1 < S.cards.length ? "Next →" : "Finish →", () => { S.i++; saveSession(); runCard(); });
+  $("#dkNext").textContent = ""; $("#dkNext").append(b);
   keys.next = () => b.click();
 }
 
