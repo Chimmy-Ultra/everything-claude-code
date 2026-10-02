@@ -1,0 +1,436 @@
+[
+ {
+  "id": "r-p7-01",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Web page",
+    "title": "Brightwater Packaging Summit: Program for Thursday, April 16, Harlow Convention Center",
+    "table": {
+     "head": [
+      "Time",
+      "Session",
+      "Speaker",
+      "Room"
+     ],
+     "rows": [
+      [
+       "8:30–9:15",
+       "Opening address: Where packaging goes next",
+       "Helen Marsh",
+       "Main Hall"
+      ],
+      [
+       "9:30–10:30",
+       "Panel: Lighter boxes, lower freight costs",
+       "Owen Batista and guests",
+       "Main Hall"
+      ],
+      [
+       "10:45–12:00",
+       "Workshop A: Labels that survive cold storage (separate ticket required, $45)",
+       "Keiko Tran",
+       "Room 204"
+      ],
+      [
+       "12:00–1:15",
+       "Lunch (included with all passes)",
+       "—",
+       "Terrace Café"
+      ],
+      [
+       "1:30–2:45",
+       "Workshop B: Designing with recycled board (separate ticket required, $45)",
+       "Samuel Adeyemi",
+       "Room 210"
+      ],
+      [
+       "3:00–4:00",
+       "Closing panel: What retailers now expect from suppliers",
+       "Lucia Ortega and guests",
+       "Main Hall"
+      ]
+     ]
+    }
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Martin Kessler <mkessler@dalbrookfoods.com>"
+     ],
+     [
+      "To",
+      "registration@brightwatersummit.com"
+     ],
+     [
+      "Date",
+      "April 2"
+     ],
+     [
+      "Subject",
+      "Change to my registration"
+     ]
+    ],
+    "paras": [
+     "I am registered for the Thursday program of the summit, including the 1:30 workshop on designing with recycled board. Unfortunately, our plant in Corvale has just scheduled a supplier audit for the afternoon of April 16, and as the plant's quality manager I will need to leave the convention center by 1:00 P.M. to get there in time.",
+     "Would it be possible to transfer my workshop ticket to the late-morning workshop instead? We are about to replace the labels on our entire frozen range, so that topic would be almost as useful to me as the one I originally chose. I would still like to attend the opening address and the panel that follows it.",
+     "If a transfer cannot be arranged, please cancel the workshop ticket alone and refund the fee to my company card. I will attend the morning sessions either way. My registration number is BPS-4471."
+    ]
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Ayumi Sato <registration@brightwatersummit.com>"
+     ],
+     [
+      "To",
+      "Martin Kessler <mkessler@dalbrookfoods.com>"
+     ],
+     [
+      "Date",
+      "April 3"
+     ],
+     [
+      "Subject",
+      "RE: Change to my registration"
+     ]
+    ],
+    "paras": [
+     "Dear Mr. Kessler, thank you for letting us know about the change in your plans. I am sorry to say that the cold-storage labeling workshop filled up last week, and eleven people are already on the waiting list for it.",
+     "There is, however, another solution. Because so many attendees asked for Mr. Adeyemi's session, he has agreed to give it twice. The extra session will run in Room 112, in the same time slot as the cold-storage workshop, and its content will be identical to that of the afternoon session. I have already moved your ticket to it, so there is nothing more you need to do, and no refund will be necessary.",
+     "Please also note that the convention center needs extra time to set up the Main Hall, so the opening address will begin fifteen minutes later than shown in the online program. The rest of the day's schedule is unchanged. Badges can be collected at the registration desk on the ground floor from 7:30 A.M. We look forward to seeing you on the 16th."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the purpose of the first e-mail?",
+    "options": {
+     "A": "To withdraw from the summit",
+     "B": "To move to an event that ends earlier",
+     "C": "To ask for advice about product labels",
+     "D": "To say he will miss the opening address"
+    }
+   },
+   {
+    "q": "What is indicated about Workshop A?",
+    "options": {
+     "A": "It has more applicants than places.",
+     "B": "It is led by Samuel Adeyemi.",
+     "C": "It is included with all passes.",
+     "D": "It will be held twice."
+    }
+   },
+   {
+    "q": "Where will Mr. Kessler most likely be at 11:00 A.M. on April 16?",
+    "options": {
+     "A": "In Room 204",
+     "B": "In Room 210",
+     "C": "In Room 112",
+     "D": "In the Main Hall"
+    }
+   },
+   {
+    "q": "When will the first session that Mr. Kessler plans to attend most likely begin?",
+    "options": {
+     "A": "At 7:30 A.M.",
+     "B": "At 8:30 A.M.",
+     "C": "At 8:45 A.M.",
+     "D": "At 9:30 A.M."
+    }
+   },
+   {
+    "q": "In the second e-mail, the word \"run\" in paragraph 2 is closest in meaning to",
+    "options": {
+     "A": "be advertised",
+     "B": "be managed",
+     "C": "hurry",
+     "D": "take place"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p7-02",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Price list",
+    "title": "Corbel Workspace Supply: Autumn Price List",
+    "table": {
+     "head": [
+      "Item no.",
+      "Product",
+      "Colors",
+      "Unit price"
+     ],
+     "rows": [
+      [
+       "DK-140",
+       "Height-adjustable desk, 140 cm wide",
+       "White, oak",
+       "$415"
+      ],
+      [
+       "DK-160",
+       "Height-adjustable desk, 160 cm wide",
+       "White, oak, graphite",
+       "$468"
+      ],
+      [
+       "CH-35",
+       "Mesh-back task chair",
+       "Black, gray",
+       "$189"
+      ],
+      [
+       "CH-40",
+       "Mesh-back task chair with headrest",
+       "Black",
+       "$226"
+      ],
+      [
+       "ST-02",
+       "Mobile storage unit, three drawers",
+       "White, graphite",
+       "$134"
+      ],
+      [
+       "SC-12",
+       "Acoustic desk screen",
+       "Gray, blue",
+       "$72"
+      ],
+      [
+       "—",
+       "Delivery within the metro area (free on orders of $3,000 or more)",
+       "—",
+       "$85"
+      ]
+     ]
+    }
+   },
+   {
+    "kind": "Order form",
+    "head": [
+     [
+      "Order no.",
+      "40-1187"
+     ],
+     [
+      "Date",
+      "September 8"
+     ],
+     [
+      "Customer",
+      "Brennick & Hale Architects"
+     ],
+     [
+      "Contact",
+      "Yusuf Demir, office manager"
+     ]
+    ],
+    "title": "Corbel Workspace Supply: Customer Order Form",
+    "paras": [
+     "Item DK-160 (height-adjustable desk, 160 cm) | Quantity: 6 | Color: oak",
+     "Item CH-40 (task chair with headrest) | Quantity: 6 | Color: black",
+     "Item ST-02 (mobile storage unit) | Quantity: 6 | Color: graphite",
+     "Delivery address: 77 Marlow Street, 3rd floor, Edgeton. Please deliver no later than September 25, as six new members of our design team start work the following Monday. Please place the desks in the open area beside the windows.",
+     "Special instructions: Deliveries must arrive before 9:00 A.M. After that time, the building's freight elevator is reserved for the other tenants. Please call the front desk at 555-0148 when the truck is fifteen minutes away."
+    ]
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Ingrid Solberg <isolberg@corbelworkspace.com>"
+     ],
+     [
+      "To",
+      "Yusuf Demir <ydemir@brennickhale.com>"
+     ],
+     [
+      "Date",
+      "September 10"
+     ],
+     [
+      "Subject",
+      "Your order 40-1187"
+     ]
+    ],
+    "paras": [
+     "Dear Mr. Demir, thank you for your order, and congratulations on your growing team. The desks and storage units are in stock and will be delivered on Tuesday, September 22, before 9:00 A.M., as you requested. Our crew will bring everything up to your floor, set up the desks, and take all packaging away with them. Unfortunately, the chair you selected is on back order, and our manufacturer does not expect to ship more until the middle of October.",
+     "As an alternative, we can supply the same model without the headrest, which we carry in the color you chose. Its seat, frame, and adjustments are identical, and several of our clients actually prefer it for shorter staff members. If you accept this substitute, we will refund the difference in price for all six chairs, and they will arrive with the rest of your order.",
+     "Alternatively, we can deliver the chairs you ordered on their own once they arrive. In that case, however, the standard delivery fee would apply to the second shipment, since it would fall below our free-delivery threshold. Please let me know which option you prefer by Monday, September 14, so that I can reserve the chairs for you. I apologize for the inconvenience and thank you for your patience."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is NOT indicated about Mr. Demir's order?",
+    "options": {
+     "A": "Its total qualified for free delivery.",
+     "B": "It allowed over two weeks for delivery.",
+     "C": "It specified a delivery time.",
+     "D": "It requested storage units in the only color offered."
+    }
+   },
+   {
+    "q": "What is the purpose of the e-mail?",
+    "options": {
+     "A": "To report a supply problem with one product",
+     "B": "To confirm delivery of the full order",
+     "C": "To request payment of a delivery fee",
+     "D": "To announce new furniture prices"
+    }
+   },
+   {
+    "q": "In the e-mail, the word \"carry\" in paragraph 2 is closest in meaning to",
+    "options": {
+     "A": "transport",
+     "B": "support the weight of",
+     "C": "have available for sale",
+     "D": "take responsibility for"
+    }
+   },
+   {
+    "q": "What is suggested about the substitute chair?",
+    "options": {
+     "A": "It will arrive in mid-October.",
+     "B": "It comes in more than one color.",
+     "C": "It has a headrest.",
+     "D": "It costs more than the original."
+    }
+   },
+   {
+    "q": "How much will Brennick & Hale most likely be refunded if Mr. Demir accepts the substitute?",
+    "options": {
+     "A": "$37",
+     "B": "$85",
+     "C": "$222",
+     "D": "$1,134"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p7-03",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Advertisement",
+    "title": "Operations Coordinator, Ferrow Logistics",
+    "paras": [
+     "Ferrow Logistics, a distributor of medical supplies with warehouses in Redmarsh and Dunmore, will open a third warehouse in Ashcombe in January. We are looking for an operations coordinator to help run the new site from its first day.",
+     "The coordinator will plan shifts for a team of about 25 warehouse staff, track incoming shipments, and address any problems with deliveries as they arise. The coordinator will also prepare a weekly report for our regional director.",
+     "Applicants should have at least three years of experience in warehouse or distribution work and be comfortable using inventory software. A forklift certificate is an advantage but is not required. Some weekend work will be needed during busy periods.",
+     "To apply, send a résumé and cover letter to careers@ferrowlogistics.com by November 13. Interviews will be held at our head office in Dunmore during the week of November 23, and short-listed candidates will complete a brief scheduling exercise on the day of their interview."
+    ]
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Tobias Reyes <t.reyes@quillpost.com>"
+     ],
+     [
+      "To",
+      "careers@ferrowlogistics.com"
+     ],
+     [
+      "Date",
+      "November 9"
+     ],
+     [
+      "Subject",
+      "Application: Operations Coordinator"
+     ]
+    ],
+    "paras": [
+     "I am writing to apply for the operations coordinator position at your new Ashcombe site. For the past four years, I have supervised the night shift at Glenhaven Foods' distribution center in Pellford, where I lead a crew of eighteen and oversee the unloading and checking of all incoming deliveries.",
+     "I use inventory software every day and recently completed a course in shift planning. I do not yet hold a forklift certificate, but I am booked to take the test in early December.",
+     "My résumé is attached. I should mention that I will be away at a family wedding from November 21 to 25. If I am invited for an interview, I would be grateful if it could be held outside those dates. I would be happy to travel to Dunmore on any other day."
+    ]
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Hannah Whitcombe <hwhitcombe@ferrowlogistics.com>"
+     ],
+     [
+      "To",
+      "Tobias Reyes <t.reyes@quillpost.com>"
+     ],
+     [
+      "Date",
+      "November 18"
+     ],
+     [
+      "Subject",
+      "Interview invitation"
+     ]
+    ],
+    "paras": [
+     "Dear Mr. Reyes, thank you for applying. We were impressed by your application and would like to meet you. Given the dates in your e-mail, we have arranged your interview for Monday, November 30, at 10:00 A.M.",
+     "Please note that the interviews will no longer take place at our head office. Because most of the short-listed candidates live near the new site, we will hold them at the new warehouse itself, which also gives candidates a chance to see the building. Our regional director, Carla Mendes, will lead the interview panel.",
+     "We have also changed the arrangements for the scheduling exercise. Instead of completing it at the interview, you will receive it by e-mail on November 26 and should send it back to me before your interview. It should take about an hour. Please bring photo identification with you on the day."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "In the advertisement, the word \"address\" in paragraph 2 is closest in meaning to",
+    "options": {
+     "A": "speak formally to",
+     "B": "deal with",
+     "C": "write a destination on",
+     "D": "greet"
+    }
+   },
+   {
+    "q": "What is suggested about Mr. Reyes?",
+    "options": {
+     "A": "He has worked longer than the job requires.",
+     "B": "He holds a forklift certificate.",
+     "C": "He manages more staff than the job involves.",
+     "D": "He works for Ferrow Logistics."
+    }
+   },
+   {
+    "q": "What is the purpose of the second e-mail?",
+    "options": {
+     "A": "To offer Mr. Reyes the position",
+     "B": "To ask him to change his travel dates",
+     "C": "To request a copy of his certificate",
+     "D": "To arrange a meeting and note new procedures"
+    }
+   },
+   {
+    "q": "Where will Mr. Reyes most likely be interviewed?",
+    "options": {
+     "A": "In Dunmore",
+     "B": "In Ashcombe",
+     "C": "In Pellford",
+     "D": "In Redmarsh"
+    }
+   },
+   {
+    "q": "When will Mr. Reyes most likely complete the scheduling exercise?",
+    "options": {
+     "A": "Shortly after he returns from his trip",
+     "B": "During his interview on November 30",
+     "C": "Before he leaves for the wedding",
+     "D": "At the head office with others"
+    }
+   }
+  ]
+ }
+]

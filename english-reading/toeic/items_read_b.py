@@ -77,7 +77,7 @@ ITEMS = [
                     "To say he will miss the opening address",
                 ],
                 "answer": 1,
-                "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "medium"},
+                "ldbs": {"L": True, "D": False, "B": True, "S": False, "band": "medium"},
                 "explain": {
                     "point": "目的題：把「為什麼」和「要什麼」合起來，排除信裡順帶提到的事",
                     "why": "文件二第 1 段說他下午一點前必須離開（工廠稽核），而他原本報名的是 1:30 的工作坊；第 2 段 Would it be possible to transfer my workshop ticket to the late-morning workshop 是請求本身。上午那場在文件一第 3 行，10:45–12:00，比原本那場早結束 → 他寫信是想改到一場較早結束的活動。",
@@ -284,7 +284,7 @@ ITEMS = [
                     "Its total qualified for free delivery.",
                     "It allowed over two weeks for delivery.",
                     "It specified a delivery time.",
-                    "It requested storage units in their only color.",
+                    "It requested storage units in the only color offered.",
                 ],
                 "answer": 3,
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
