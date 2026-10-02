@@ -1,0 +1,216 @@
+{
+  "id": "relative", "n": 9,
+  "title": "關係代名詞", "en": "Relative Pronouns",
+  "lead": "關係代名詞（<em>who、which、that、whose、whom</em>）把兩個句子接成一句：用一整個子句去說明前面的名詞。這一章從「兩句共用一個名詞」開始，一步一步教你怎麼選：先看前面的名詞是人還是事物，再看這個字在自己的子句裡做什麼工作。接著處理插入語、<em>whose</em>、介系詞、逗號和省略這幾個容易卡住的地方。讀這章之前，要先會分辨子句和從屬子句（第 3 章）。",
+  "check": [
+    {"type": "choose", "q": "<em>The engineer ___ designed the new billing system will train the staff.</em> 空格填哪一個？", "options": ["who", "whom", "whose"], "answer": 0, "why": "空格後面直接是動詞 <em>designed</em>，表示這個子句缺的是主詞。先行詞是人、又當主詞，用 <em>who</em>。<em>whom</em> 只能當受詞，<em>whose</em> 後面要接名詞。"},
+    {"type": "choose", "q": "<em>The supplier ___ prices were the lowest won the contract.</em> 空格填哪一個？", "options": ["who", "which", "whose"], "answer": 2, "why": "空格後面直接接名詞 <em>prices</em>，而且是「這家供應商的價格」。表示「誰的」要用 <em>whose</em>，後面接名詞。"},
+    {"type": "choose", "q": "<em>The candidate ___ we believe is the most qualified will start in May.</em> 空格填哪一個？", "options": ["who", "whom"], "answer": 0, "why": "先把插進來的 <em>we believe</em> 劃掉，剩下 <em>the candidate ___ is the most qualified</em>：空格後面直接接動詞 <em>is</em>，缺主詞，所以是 <em>who</em>。"},
+    {"type": "choose", "q": "下面哪一句是對的？", "options": ["Our new office, that opened in March, has a larger meeting room.", "Our new office, which opened in March, has a larger meeting room."], "answer": 1, "why": "逗號後面的關係子句是補充說明，只能用 <em>which</em>（事物）或 <em>who</em>（人），不能用 <em>that</em>。"},
+    {"type": "tap", "q": "點出關係子句說明的那個名詞（一個字）。", "sentence": "We finally received the laptops that the IT team ordered in May.", "answer": [4], "why": "<em>that</em> 緊接在 <em>laptops</em> 後面，子句 <em>that the IT team ordered in May</em> 說明的是哪些筆電。把名詞放回子句裡試試：<em>the IT team ordered the laptops</em>，說得通。<em>team</em> 是子句裡的主詞，不是被說明的名詞。"}
+  ],
+  "sections": [
+    {
+      "h": "兩個句子共用一個名詞",
+      "body": [
+        "先看兩個簡單的句子：<em>We hired a consultant.</em> 和 <em>The consultant reduced our shipping costs.</em> 兩句講的是同一個人：<em>consultant</em>。中文會說「我們請了一位幫我們降低運費的顧問」。英文的做法是：把第二句的 <em>the consultant</em> 換成 <em>who</em>，再把整個第二句接在第一個 <em>consultant</em> 後面：<em>We hired a consultant who reduced our shipping costs.</em>",
+        "接上去的 <em>who reduced our shipping costs</em> 有自己的主詞（<em>who</em>）和動詞（<em>reduced</em>），所以是子句；它不能單獨成句，所以是從屬子句（第 3 章）。這種用來說明名詞的從屬子句叫做<b>關係子句</b>，被它說明的那個名詞叫做<b>先行詞</b>。關係子句的作用像一個很長的形容詞，只是位置相反：形容詞放在名詞前面（<em>an experienced consultant</em>），關係子句放在名詞後面（<em>a consultant who reduced our costs</em>）。",
+        "所以 <em>who</em> 一個字同時做兩件事。第一，它像連接詞，把兩個子句接起來。第二，它代替第二句裡的 <em>the consultant</em>，在子句裡當主詞。這就是它叫關係<b>代名詞</b>的原因：它是一個代名詞，代替先行詞。",
+        "拿掉它會怎樣？<em>We hired a consultant reduced our shipping costs.</em> 這句有兩個動詞 <em>hired</em> 和 <em>reduced</em>，中間沒有東西接起來，讀的人不知道第二個子句從哪裡開始，句子就壞了。反過來，接上 <em>who</em> 之後，第二句原本的名詞就要拿掉。不能寫成 <em>a consultant who he reduced our costs</em>：<em>who</em> 已經代替了他，再放 <em>he</em> 就重複了。",
+        "接句子的步驟固定是四步。一、找出兩句共用的名詞。二、把第二句裡的那個名詞換成關係代名詞。三、把關係代名詞移到它那個子句的最前面。四、把整個子句放在第一句那個名詞的正後面。",
+        "如果共用的名詞是第一句的主詞，關係子句就會夾在主詞和動詞中間：<em>The hotel which we booked for the conference has forty rooms.</em> 主詞是 <em>The hotel</em>，主要動詞是 <em>has</em>，中間整段都是關係子句。讀這種句子時，先把關係子句當成一個括號跳過，才找得到真正的動詞。"
+      ],
+      "ex": [
+        {"en": "We hired a <u>consultant</u> who reduced our shipping costs.", "zh": "我們請了一位幫我們降低運費的顧問。", "note": "先行詞是 <em>consultant</em>；<em>who</em> 代替它，在子句裡當主詞。"},
+        {"en": "The <u>hotel</u> which we booked for the conference has forty rooms.", "zh": "我們為研討會訂的那家飯店有四十間房。", "note": "第二句 <em>We booked the hotel</em> 的 <em>the hotel</em> 換成 <em>which</em>，從 <em>booked</em> 後面移到子句最前面，再接在第一個 <em>hotel</em> 後面。"},
+        {"en": "The <u>report</u> that Ms. Chen wrote is on your desk.", "zh": "陳小姐寫的那份報告在你桌上。", "note": "主詞 <em>The report</em> 和動詞 <em>is</em> 中間夾著關係子句。"}
+      ],
+      "table": {"head": ["原本的兩句", "共用的名詞", "接成一句"], "rows": [
+        ["<em>We hired a consultant.</em>／<em>The consultant reduced our costs.</em>", "<em>consultant</em>", "<em>We hired a consultant who reduced our costs.</em>"],
+        ["<em>The hotel has forty rooms.</em>／<em>We booked the hotel.</em>", "<em>hotel</em>", "<em>The hotel which we booked has forty rooms.</em>"],
+        ["<em>The report is on your desk.</em>／<em>Ms. Chen wrote the report.</em>", "<em>report</em>", "<em>The report that Ms. Chen wrote is on your desk.</em>"]
+      ]},
+      "quiz": [
+        {"type": "choose", "q": "把這兩句接成一句：<em>The printer is on the third floor.</em> <em>Mr. Davis repaired the printer.</em> 哪一個是對的？", "options": ["The printer which Mr. Davis repaired is on the third floor.", "The printer which Mr. Davis repaired it is on the third floor.", "The printer which repaired Mr. Davis is on the third floor."], "answer": 0, "why": "<em>which</em> 代替第二句的 <em>the printer</em>，它在子句裡是 <em>repaired</em> 的受詞，所以移到子句最前面，原本的位置就空著，不能再放 <em>it</em>。第三句把順序弄反了，變成「修好 Davis 先生的那台印表機」。"}
+      ],
+      "takeaway": "關係代名詞做兩件事：把兩句接成一句，同時代替兩句共用的那個名詞。"
+    },
+    {
+      "h": "第一個問題：先行詞是人還是事物",
+      "body": [
+        "選關係代名詞要問兩個問題。第一個最簡單：先行詞是人，還是事物？先行詞是人（員工、客戶、經理），用 <em>who</em>；是事物（報告、產品、會議），用 <em>which</em>。<em>that</em> 人和事物都可以用，但有一個限制，在講逗號的那一節會說明。",
+        "看的是<b>先行詞</b>，也就是關係代名詞正前面被說明的那個名詞，不是整句裡有沒有人。<em>The training which the employees completed lasted three days.</em> 這句有人（<em>employees</em>），但 <em>which</em> 前面的名詞是 <em>training</em>，訓練是事物，所以用 <em>which</em>。子句裡面出現人，不代表要用 <em>who</em>。",
+        "公司、部門、機構在書面英文裡一般當作事物，用 <em>which</em> 或 <em>that</em>：<em>a company which makes solar panels</em>。",
+        "這個區別拿掉會怎樣？<em>who</em> 和 <em>which</em> 有點像中文書面的「他」和「它」：讀的人靠它確認你在講人還是東西。寫成 <em>the printer who</em>，就像把印表機寫成「他」，讀起來像在講一個人。"
+      ],
+      "ex": [
+        {"en": "The <u>employees</u> who completed the training received a certificate.", "zh": "完成訓練的員工拿到了證書。", "note": "先行詞 <em>employees</em> 是人：<em>who</em>。"},
+        {"en": "The <u>training</u> which the employees completed lasted three days.", "zh": "員工完成的那個訓練為期三天。", "note": "先行詞 <em>training</em> 是事物：<em>which</em>。子句裡有 <em>employees</em>，不影響。"},
+        {"en": "The <u>employees</u> that completed the training received a certificate.", "zh": "完成訓練的員工拿到了證書。", "note": "<em>that</em> 人和事物都能用。"},
+        {"en": "We work with a <u>company</u> which makes solar panels.", "zh": "我們跟一家生產太陽能板的公司合作。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Please return the forms ___ the new employees signed.</em> 空格填哪一個？", "options": ["who", "which"], "answer": 1, "why": "空格正前面的名詞是 <em>forms</em>（表格），是事物，用 <em>which</em>。<em>employees</em> 是子句裡的主詞，不是先行詞。"}
+      ],
+      "takeaway": "看關係代名詞正前面的名詞：人用 <em>who</em>，事物用 <em>which</em>，<em>that</em> 兩邊都行。"
+    },
+    {
+      "h": "第二個問題：它在自己的子句裡做什麼",
+      "body": [
+        "第二個問題才是門檻。關係子句是一個「挖了一個洞」的句子：原本的名詞被拿走，換成關係代名詞放在最前面。洞在哪裡，決定用哪個字。",
+        "找洞的方法：把先行詞放回子句裡，看它放在哪裡才通順。<em>the engineer who designed the app</em> → <em>the engineer designed the app</em>：先行詞放在動詞前面，它是子句的<b>主詞</b>。<em>the engineer whom we hired</em> → <em>we hired the engineer</em>：先行詞放在動詞後面，它是子句的<b>受詞</b>。",
+        "更快的看法是看關係代名詞後面緊接著什麼。後面直接是動詞（<em>who designed</em>），表示主詞那一格是空的，關係代名詞就是主詞。後面先出現自己的主詞和動詞（<em>whom we hired</em>），而那個動詞後面少了受詞，表示受詞那一格是空的，關係代名詞就是受詞。",
+        "人的部分，主詞用 <em>who</em>，受詞用 <em>whom</em>。這跟 <em>he</em> 和 <em>him</em> 的差別一樣（第 11 章）：主詞位置用 <em>he</em>，受詞位置用 <em>him</em>。<em>whom</em> 結尾的 <em>m</em>，和 <em>him</em>、<em>them</em> 結尾的 <em>m</em> 是同一個記號，表示「受詞」。日常口語裡很多人受詞也用 <em>who</em>，但正式書面要分清楚；而 <em>whom</em> 放在主詞的位置（<em>the engineer whom designed</em>）在哪裡都是錯的。",
+        "事物就簡單了：<em>which</em> 和 <em>that</em> 當主詞、當受詞都是同一個樣子。所以「缺主詞還是缺受詞」這個問題，在先行詞是人的時候最重要。"
+      ],
+      "table": {"head": ["先行詞", "當主詞：後面直接接動詞", "當受詞：後面接主詞＋動詞", "所有格：後面接名詞"], "rows": [
+        ["人", "<em>who</em>／<em>that</em>", "<em>whom</em>／<em>that</em>", "<em>whose</em>"],
+        ["事物", "<em>which</em>／<em>that</em>", "<em>which</em>／<em>that</em>", "<em>whose</em>"]
+      ]},
+      "ex": [
+        {"en": "The engineer <u>who designed the app</u> will train the staff.", "zh": "設計這個 app 的工程師會訓練員工。", "note": "<em>who</em> 後面直接是動詞 <em>designed</em>：缺主詞。"},
+        {"en": "The engineer <u>whom we hired in May</u> will train the staff.", "zh": "我們五月聘的那位工程師會訓練員工。", "note": "<em>whom</em> 後面是 <em>we hired</em>，<em>hired</em> 後面少了受詞：缺受詞。"},
+        {"en": "The app <u>which crashed yesterday</u> has been fixed.", "zh": "昨天當機的那個 app 已經修好了。", "note": "事物當主詞：<em>which</em>。"},
+        {"en": "The app <u>which we launched last week</u> already has 2,000 users.", "zh": "我們上週推出的 app 已經有兩千個使用者。", "note": "事物當受詞，還是 <em>which</em>。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The intern ___ Ms. Park trained last summer now works in sales.</em> 空格後面的子句缺什麼？", "options": ["缺主詞", "缺受詞", "什麼都不缺，空格後面接的是一個屬於先行詞的名詞"], "answer": 1, "why": "空格後面先有主詞 <em>Ms. Park</em> 和動詞 <em>trained</em>，但 <em>trained</em> 後面沒有受詞。放回去是 <em>Ms. Park trained the intern</em>，所以缺受詞，正式書面用 <em>whom</em>。"}
+      ],
+      "takeaway": "把先行詞放回子句：放在動詞前面就是主詞（<em>who</em>），放在動詞後面就是受詞（<em>whom</em>）。"
+    },
+    {
+      "h": "中間插了 we believe：先劃掉再看",
+      "body": [
+        "有一種句子特別容易選錯：<em>The candidate ___ we believe is the most qualified will start in May.</em> 空格後面看到 <em>we believe</em>，很像上一節說的「後面有主詞和動詞，所以缺受詞」，於是選了 <em>whom</em>。這是錯的。",
+        "原因是 <em>we believe</em> 是插進來的一小段，意思是「我們認為」，它不是子句的骨架。把它劃掉：<em>the candidate ___ is the most qualified</em>，空格後面直接是動詞 <em>is</em>，缺主詞，答案是 <em>who</em>。",
+        "用放回去的方法也會得到一樣的答案：<em>We believe the candidate is the most qualified.</em> 這句裡 <em>the candidate</em> 是 <em>is</em> 的主詞，不是 <em>believe</em> 的受詞。<em>believe</em> 的受詞是後面整件事：「這位應徵者最合格」。所以關係代名詞是主詞，用 <em>who</em>。",
+        "常插進來的有 <em>we think</em>、<em>we believe</em>、<em>I hope</em>、<em>they say</em>、<em>experts expect</em>、<em>the manager said</em>。判斷的步驟：空格後面是「主詞＋這類動詞」，而且緊接著又出現一個動詞（<em>is</em>、<em>will lead</em>），就先把那一段劃掉，再看缺什麼。",
+        "對照真的缺受詞的句子：<em>The candidate whom we interviewed yesterday …</em> 這裡沒有可以劃掉的東西，<em>we interviewed</em> 後面少了受詞，這時才用 <em>whom</em>。差別在於：<em>we believe</em> 後面還接著一個動詞 <em>is</em>，<em>we interviewed</em> 後面沒有。"
+      ],
+      "ex": [
+        {"en": "The candidate <u>who</u> we believe is the most qualified will start in May.", "zh": "我們認為最合格的那位應徵者五月到職。", "note": "劃掉 <em>we believe</em> → <em>who is the most qualified</em>：缺主詞。"},
+        {"en": "Ms. Ortiz is the manager <u>who</u> I think will lead the project.", "zh": "Ortiz 女士就是我認為會帶這個專案的經理。", "note": "劃掉 <em>I think</em> → <em>who will lead the project</em>：缺主詞。"},
+        {"en": "Ms. Ortiz is the manager <u>whom</u> I contacted about the project.", "zh": "Ortiz 女士就是我為了這個專案聯絡的經理。", "note": "沒有可以劃掉的插入語；<em>contacted</em> 後面少了受詞：<em>whom</em>。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "點出可以先劃掉的插入語。", "sentence": "The engineer who the director said would lead the project has resigned.", "answer": [3, 4, 5], "why": "<em>the director said</em> 是插進來的「主管說」。劃掉之後是 <em>the engineer who would lead the project</em>：<em>who</em> 後面直接接動詞 <em>would lead</em>，缺主詞，所以用 <em>who</em> 是對的。整句的主要動詞是 <em>has resigned</em>。"}
+      ],
+      "takeaway": "空格後面是 <em>we think</em>、<em>we believe</em> 這類短語、再接一個動詞時，先劃掉短語，通常會發現缺的是主詞。"
+    },
+    {
+      "h": "whose ＋名詞：誰的",
+      "body": [
+        "再看這兩句：<em>We called the client.</em> <em>The client's order was delayed.</em> 共用的是 <em>client</em>，但第二句用的是 <em>the client's</em>（客戶的）。要代替「誰的」，就用 <em>whose</em>：<em>We called the client whose order was delayed.</em>",
+        "<em>whose</em> 是 <em>his</em>、<em>her</em>、<em>its</em>、<em>their</em> 的關係代名詞版本，所以後面一定緊接一個名詞，而且這個名詞屬於先行詞：<em>whose order</em> 是那位客戶的訂單。名詞前面不加 <em>the</em> 或 <em>a</em>，就像不會說 <em>her the order</em>。",
+        "<em>whose</em> 人和事物都能用：<em>the company whose software we use</em>（我們用的是這家公司的軟體）。不要因為先行詞是事物就換成 <em>which</em>，<em>which</em> 後面不能直接接一個屬於它的名詞。",
+        "拿掉會怎樣？<em>the client who order was delayed</em> 裡，<em>who</em> 後面直接放名詞 <em>order</em>，<em>who</em> 沒辦法表示「他的」，句子就斷了。和前兩節合起來看，關係代名詞後面緊接著什麼，就知道要哪一個：接動詞，用 <em>who</em>／<em>which</em>；接主詞＋動詞，用 <em>whom</em>／<em>which</em>；接一個屬於先行詞的名詞，用 <em>whose</em>。",
+        "另外，<em>who's</em> 是 <em>who is</em> 或 <em>who has</em> 的縮寫，唸起來和 <em>whose</em> 一樣，意思完全不同。"
+      ],
+      "ex": [
+        {"en": "We called the <u>client</u> whose order was delayed.", "zh": "我們打電話給訂單延誤的那位客戶。", "note": "<em>whose order</em> = <em>the client's order</em>。"},
+        {"en": "Employees <u>whose</u> contracts end in June should contact Human Resources.", "zh": "合約六月到期的員工請聯絡人資部。"},
+        {"en": "The <u>company</u> whose software we use has opened an office in Harlow Bay.", "zh": "提供我們所用軟體的那家公司，在 Harlow Bay 開了辦事處。", "note": "先行詞是事物，一樣用 <em>whose</em>。<em>whose software</em> 在子句裡是 <em>use</em> 的受詞。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The architect ___ design won the award will speak at the conference.</em> 空格填哪一個？", "options": ["who", "whom", "whose"], "answer": 2, "why": "空格後面直接是名詞 <em>design</em>，而且是這位建築師的設計。表示「他的」要用 <em>whose</em>。"}
+      ],
+      "takeaway": "空格後面直接接一個屬於前面那個人或東西的名詞，就用 <em>whose</em>。"
+    },
+    {
+      "h": "介系詞後面：in which、to whom",
+      "body": [
+        "有些動詞要帶介系詞才能接受詞：<em>speak to</em> someone、<em>work for</em> a company、<em>take place in</em> a room。這時關係代名詞是<b>介系詞的受詞</b>。例如：<em>This is the manager.</em> <em>We spoke to the manager.</em>",
+        "接成一句有兩種放法。第一種，介系詞留在原位，在子句最後：<em>This is the manager whom we spoke to.</em> 第二種比較正式，介系詞跟著關係代名詞一起移到前面：<em>This is the manager to whom we spoke.</em>",
+        "第二種放法有一條硬規則：<b>介系詞後面只能接 <em>which</em>（事物）或 <em>whom</em>（人）</b>。不能接 <em>that</em>，也不能接 <em>who</em>。不能接 <em>who</em>，是因為介系詞後面要用受詞的形式，就像要說 <em>to him</em>，不說 <em>to he</em>。<em>that</em> 則是規定上不放在介系詞後面。",
+        "介系詞移到前面之後，後面的子句看起來是<b>完整</b>的：<em>the room in which the interview will take place</em>，<em>the interview will take place</em> 主詞、動詞都有，不缺東西。這不是例外：缺的那一格是 <em>in</em> 的受詞，已經跟著 <em>in</em> 一起搬到前面了。",
+        "同樣的道理，逗號後面可以用「數量＋<em>of</em>＋<em>which</em>／<em>whom</em>」：<em>three of whom</em>（其中三位）、<em>most of which</em>（其中大部分）。<em>of</em> 是介系詞，所以後面一樣只能接 <em>which</em> 或 <em>whom</em>。"
+      ],
+      "ex": [
+        {"en": "This is the <u>room</u> in which the interview will take place.", "zh": "面試會在這個房間進行。", "note": "= <em>the interview will take place in the room</em>。"},
+        {"en": "Mr. Grant is the buyer <u>to whom</u> we sent the samples.", "zh": "Grant 先生就是我們寄樣品過去的那位採購。", "note": "= <em>we sent the samples to the buyer</em>。"},
+        {"en": "Mr. Grant is the buyer <u>whom</u> we sent the samples <u>to</u>.", "zh": "意思同上；介系詞留在句尾，語氣比較口語。"},
+        {"en": "We interviewed twelve applicants, <u>three of whom</u> have accounting degrees.", "zh": "我們面試了十二位應徵者，其中三位有會計學位。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "下面哪一個是對的？", "options": ["the company for which she works", "the company for that she works", "the company for who she works"], "answer": 0, "why": "介系詞 <em>for</em> 後面只能接 <em>which</em> 或 <em>whom</em>。先行詞 <em>company</em> 是事物，所以是 <em>for which</em>。也可以把介系詞留在句尾：<em>the company she works for</em>。"}
+      ],
+      "takeaway": "介系詞後面的關係代名詞只有兩個選擇：事物用 <em>which</em>，人用 <em>whom</em>。"
+    },
+    {
+      "h": "有逗號和沒逗號：限定和補充",
+      "body": [
+        "比較這兩句：<em>The employees who work on weekends receive extra pay.</em> 和 <em>Our employees, who work on weekends, receive extra pay.</em> 只差兩個逗號，意思不同。",
+        "第一句沒有逗號，關係子句的工作是<b>限定</b>：從所有員工裡挑出「週末上班的那些」，只有他們有加給。拿掉關係子句，變成 <em>The employees receive extra pay</em>，意思就變了，好像所有員工都有加給。所以限定的子句拿不掉。",
+        "第二句有逗號，關係子句是<b>補充</b>：講的是我們全部的員工，順便補一句「他們週末都要上班」。拿掉它，<em>Our employees receive extra pay</em>，主要意思還在，只是少了一項資訊。逗號的作用像括號，告訴讀者：這段拿掉，你還是知道我在講誰。",
+        "所以人名、獨一無二的東西（<em>our CEO</em>、<em>the company's headquarters</em>）後面的關係子句，幾乎都加逗號：<em>Ms. Lin, who joined the firm in 2019, …</em> 名字已經說明是誰了，不需要再限定。",
+        "規則是：<b>逗號後面不能用 <em>that</em></b>，只能用 <em>who</em>、<em>whom</em>、<em>which</em>、<em>whose</em>。<em>that</em> 只用在限定（沒有逗號）的子句。可以這樣理解：<em>that</em> 的工作是「挑出是哪一個」，而有逗號表示已經知道是哪一個，兩者衝突。沒有逗號時，事物用 <em>that</em> 或 <em>which</em> 都可以，美式書面比較常用 <em>that</em>。",
+        "補充用法還有一個特別的地方：逗號後面的 <em>which</em> 可以指前面<b>一整件事</b>，不只一個名詞。<em>The shipment arrived two days late, which delayed production.</em> 造成生產延誤的是「貨晚到兩天」這件事。這時也只能用 <em>which</em>。"
+      ],
+      "table": {"head": ["比較項目", "限定：沒有逗號", "補充：有逗號"], "rows": [
+        ["作用", "挑出是哪一個、哪一些", "對已經知道是誰的人事物補一句"],
+        ["拿掉關係子句", "意思改變", "主要意思還在"],
+        ["能不能用 <em>that</em>", "可以", "不可以"],
+        ["當受詞的關係代名詞能不能省略", "可以", "不可以"]
+      ]},
+      "ex": [
+        {"en": "The employees <u>who work on weekends</u> receive extra pay.", "zh": "週末上班的員工有加給。", "note": "限定：只有週末上班的那些人有。"},
+        {"en": "Our employees, <u>who work on weekends</u>, receive extra pay.", "zh": "我們的員工有加給，他們週末都要上班。", "note": "補充：講的是全部員工。"},
+        {"en": "Ms. Lin, <u>who</u> joined the firm in 2019, now leads the sales team.", "zh": "林小姐 2019 年加入公司，現在帶業務團隊。"},
+        {"en": "The new scheduling tool, <u>which</u> we introduced in May, saves each team several hours a week.", "zh": "這個五月導入的新排程工具，讓每個團隊每週省下好幾個小時。"},
+        {"en": "The shipment arrived two days late, <u>which</u> delayed production.", "zh": "貨晚到兩天，這件事讓生產延誤了。", "note": "<em>which</em> 指前面整件事。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Our CEO, ___ founded the company in 2005, will retire next year.</em> 空格填哪一個？", "options": ["that", "who", "which"], "answer": 1, "why": "逗號後面不能用 <em>that</em>。先行詞 <em>our CEO</em> 是人，而且空格後面直接接動詞 <em>founded</em>，缺主詞，所以用 <em>who</em>。"},
+        {"type": "choose", "q": "<em>The laptops, which were damaged, were sent back.</em> 這句的意思是哪一個？", "options": ["那批筆電全都壞了，全部退回", "只有壞掉的那幾台退回，其他的留下"], "answer": 0, "why": "有逗號是補充：講的是那一批全部的筆電，順便說它們都壞了。如果只有壞掉的那幾台退回，要寫成沒有逗號的 <em>The laptops which were damaged were sent back.</em>"}
+      ],
+      "takeaway": "有逗號是補充，沒逗號是限定；逗號後面只能用 <em>who</em>、<em>which</em> 這類，不能用 <em>that</em>。"
+    },
+    {
+      "h": "可以省略的關係代名詞",
+      "body": [
+        "商業英文裡很常見這種句子：<em>The report you requested is attached.</em> 名詞 <em>report</em> 後面直接接 <em>you requested</em>，好像少了什麼。確實少了：原本是 <em>The report that you requested is attached.</em> 關係代名詞被省略了。",
+        "能省略要同時符合兩個條件。一、關係代名詞在子句裡當<b>受詞</b>。二、子句是限定用法，前面沒有逗號。<em>that you requested</em> 中，<em>that</em> 是 <em>requested</em> 的受詞，又沒有逗號，所以可以拿掉。",
+        "當主詞時不能省略。試試看：<em>The client who called this morning is waiting in the lobby.</em> 拿掉 <em>who</em>，變成 <em>The client called this morning is waiting in the lobby.</em> 讀的人會先讀成「那位客戶今天早上打了電話」，接著遇到 <em>is waiting</em> 就接不下去了。主詞那一格空著，子句就沒有主詞，所以不能省。",
+        "有逗號時也不能省略：<em>Mr. Reyes, whom we met at the trade fair, …</em> 不能寫成 <em>Mr. Reyes, we met at the trade fair, …</em>。介系詞放在前面時也不能省（<em>in which</em> 不能只剩 <em>in</em>）；介系詞留在句尾時才可以省：<em>the manager we spoke to</em>。",
+        "閱讀時的訊號：一個名詞後面緊接著另一組主詞和動詞（<em>the report you requested</em>、<em>the supplier we chose</em>），中間就藏了一個 <em>that</em> 或 <em>which</em>。看出這一點，就找得到真正的主要動詞。"
+      ],
+      "ex": [
+        {"en": "The <u>report you requested</u> is attached.", "zh": "您要的報告在附件裡。", "note": "= <em>The report that you requested</em>。主要動詞是 <em>is attached</em>。"},
+        {"en": "The <u>supplier we chose</u> delivers every Friday.", "zh": "我們選的那家供應商每週五送貨。"},
+        {"en": "The <u>manager we spoke to</u> will call you back this afternoon.", "zh": "我們聯絡的那位經理今天下午會回您電話。", "note": "介系詞 <em>to</em> 留在句尾，關係代名詞可以省略。"},
+        {"en": "The client <u>who called this morning</u> is waiting in the lobby.", "zh": "今天早上打電話來的客戶在大廳等。", "note": "<em>who</em> 是主詞，不能省略。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "下面哪一句的關係代名詞可以省略？", "options": ["The technician who fixed the printer has left for the day.", "The proposal that we discussed on Monday needs more detail.", "Mr. Reyes, whom we met at the trade fair, sent us an email."], "answer": 1, "why": "第二句的 <em>that</em> 是 <em>discussed</em> 的受詞，而且沒有逗號，可以省略成 <em>The proposal we discussed on Monday</em>。第一句的 <em>who</em> 是主詞；第三句有逗號；兩者都不能省。"}
+      ],
+      "takeaway": "關係代名詞當受詞、前面沒有逗號，才可以省略；名詞後面直接接主詞＋動詞，就是省略過的。"
+    },
+    {
+      "h": "預告：what、where、when",
+      "body": [
+        "這三個字常跟 <em>who</em>、<em>which</em> 一起出現，這裡只講怎麼分辨。",
+        "<em>what</em> 的前面<b>沒有</b>先行詞，因為它自己就包含了名詞：<em>what</em> = <em>the thing that</em>（……的東西、……的事）。<em>What the client wants is a faster delivery date.</em> = <em>The thing that the client wants is …</em> 所以前面已經有名詞時不能用 <em>what</em>：<em>the date what we agreed on</em> 是錯的，要用 <em>that</em> 或 <em>which</em>。",
+        "<em>where</em> 說明地點，<em>when</em> 說明時間，後面接的是<b>完整</b>的子句，什麼都不缺：<em>the factory where the parts are made</em>，<em>the parts are made</em> 主詞、動詞都有。這和介系詞那一節的 <em>in which</em> 是同一回事：<em>where</em> 大致等於 <em>in which</em> 或 <em>at which</em>。",
+        "先行詞是地點，不代表一定用 <em>where</em>。<em>the factory which we visited in May</em>：<em>we visited</em> 後面缺受詞，要用 <em>which</em>。判斷方法還是看後面的子句：缺主詞或受詞，用 <em>which</em>／<em>that</em>；什麼都不缺，用 <em>where</em>。"
+      ],
+      "ex": [
+        {"en": "<u>What</u> the client wants is a faster delivery date.", "zh": "客戶想要的是更快的交期。", "note": "<em>what</em> 前面沒有名詞。"},
+        {"en": "The factory <u>where</u> the parts are made is near the port.", "zh": "生產這些零件的工廠在港口附近。", "note": "<em>the parts are made</em> 是完整的子句。"},
+        {"en": "The factory <u>which</u> we visited in May is near the port.", "zh": "我們五月參觀的工廠在港口附近。", "note": "<em>visited</em> 後面缺受詞：<em>which</em>。"},
+        {"en": "Friday is the day <u>when</u> the auditors arrive.", "zh": "星期五是稽核人員到的那天。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The hotel ___ we held the conference has a new owner.</em> 空格填哪一個？", "options": ["which", "where"], "answer": 1, "why": "空格後面 <em>we held the conference</em> 主詞、動詞、受詞都有，是完整的子句。地點加完整子句用 <em>where</em>（= <em>at which</em>）。如果是 <em>the hotel ___ we booked</em>，<em>booked</em> 缺受詞，才用 <em>which</em>。"}
+      ],
+      "takeaway": "<em>what</em> 前面沒有名詞；<em>where</em>、<em>when</em> 後面的子句是完整的。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "The engineer whom designed the system will lead the training.", "right": "The engineer who designed the system will lead the training.", "why": "<em>whom</em> 後面直接接動詞 <em>designed</em>，表示它在當主詞。當主詞要用 <em>who</em>。"},
+    {"wrong": "The candidate whom we believe is the most qualified will start on Monday.", "right": "The candidate who we believe is the most qualified will start on Monday.", "why": "劃掉插入的 <em>we believe</em>，剩下 <em>who is the most qualified</em>，缺的是主詞。"},
+    {"wrong": "We called the client who order was delayed.", "right": "We called the client whose order was delayed.", "why": "後面直接接名詞 <em>order</em>，是那位客戶的訂單，要用 <em>whose</em>。"},
+    {"wrong": "Our new office, that opened in March, has a larger lobby.", "right": "Our new office, which opened in March, has a larger lobby.", "why": "逗號後面不能用 <em>that</em>。"},
+    {"wrong": "This is the warehouse in that the samples are stored.", "right": "This is the warehouse in which the samples are stored.", "why": "介系詞後面只能接 <em>which</em> 或 <em>whom</em>，不能接 <em>that</em>。"}
+  ],
+  "workbook": ["relative"]
+}
