@@ -2,19 +2,28 @@
 
 Scope: `chapters/13-quantity.json`, `14-parallel.json`, `15-prep.json`, `16-mandative.json`, checked against `STYLE.md`. The reader is a Taiwanese adult (TOEIC 690, aiming for 785 to 860) who has forgotten most grammar. The chapter files were not edited.
 
-How to read this file
+## How to read this file
 
 - **mustFix**: a grammar error, a quiz item with more than one acceptable answer, a rule that is false or contradicts another chapter, or a gap the reader will fall into. **shouldFix**: an improvement to accuracy, clarity, consistency or style.
 - Paths are written from the root of the chapter JSON, for example `sections[3].quiz[0]`. Indices are the current ones in the file.
 - **Replace** means: set the field to the given value. **Insert** means: add the given value as a new list element at the stated index, so the elements from that index on move down by one (when two edits touch the same list, apply the replace edits first and the inserts last, highest index first). **Append** means: add the given text to the end of the existing string.
 - Every replacement string was applied to a scratch copy of the chapters and run through `check.py`; all four files pass (tags, banned phrases, counts of examples, quizzes and check items).
 
-| File | mustFix edits | shouldFix edits |
+| File | mustFix items (edits) | shouldFix edits |
 |---|---|---|
-| 13-quantity.json | 9 | 12 |
-| 14-parallel.json | 2 | 8 |
-| 15-prep.json | 5 | 14 |
-| 16-mandative.json | 9 | 10 |
+| 13-quantity.json | 4 (9) | 12 |
+| 14-parallel.json | 1 (2) | 8 |
+| 15-prep.json | 3 (5) | 14 |
+| 16-mandative.json | 1 (9) | 10 |
+
+An item is one problem; its edits are the field changes needed to fix it (several edits can belong to one item). The numbers below are the numbers of the edits.
+
+## Summary of mustFix items
+
+- **13-quantity.json**: (1) 13-01, the few / a few quiz has two defensible answers. (2) 13-02 to 13-05, 'less than' is taught without 'fewer than', and the 'add two' test contradicts the exception. (3) 13-06, 'almost cannot stand before a noun' is false. (4) 13-07 to 13-09, 'the other' used alone and 'the others' are not taught.
+- **14-parallel.json**: (1) 14-01 and 14-02, a table row begins 'Not only' + noun with no inversion, against the rule that a fronted 'not only' inverts; the rule needs scoping to 'not only' + clause.
+- **15-prep.json**: (1) 15-01, the during / throughout / prior to takeaway says 'noun or Ving' for all three. (2) 15-02 to 15-04, the heading says a phrase-final 'to' is a preposition, false for in order to, be able to, and similar. (3) 15-05, the by / until verb-type rule fails for 'be ready by 9 a.m.', which chapter 16 uses.
+- **16-mandative.json**: (1) 16-01 to 16-09, British handling: seven stems say only 'formal written' and do not exclude options that British formal writing accepts, and sections[6] omits the indicative.
 
 ## chapters/13-quantity.json
 
@@ -41,7 +50,7 @@ Checked and correct: Both tap items verified by splitting on spaces (advices = 6
 
 ### 13-02 · mustFix · `sections[4].body[1]`
 
-**Problem.** The test 'front can take two, so use fewer' contradicts the next paragraph: 'two minutes' and 'two dollars' also pass the test, yet 'less than 30 minutes' is right. Restate the test as counting people or things one by one.
+**Problem.** The current rule ('if two can go in front of the noun, use fewer') contradicts the next paragraph: 'two minutes' and 'two dollars' also pass the test, yet 'less than 30 minutes' is right. Restate the test as counting people or things one by one.
 
 **Edit.** Replace the field value with:
 
@@ -245,11 +254,11 @@ a number of、the number of、a large amount of
 
 ## chapters/14-parallel.json
 
-Checked and correct: All four tap items verified (small + comfortable. = 4 and 6; read = 7; fast + reliable. = 7 and 10; technicians + were = 5 and 6). Every choose item has one answer. The proximity rule for either/or and neither/nor is the standard answer in British and American writing. Both A and B is plural; neither/nor takes no extra 'not'; rather than takes parallel forms and instead of takes a noun or Ving; the claim that this book's examples use the serial comma holds (pattern search over the English fields of all 16 chapters). No banned phrases and no test claims.
+Checked and correct: All four tap items verified (small + comfortable. = 4 and 6; read = 7; fast + reliable. = 7 and 10; technicians + were = 5 and 6). Every choose item has one answer. The proximity rule for either/or and neither/nor is the standard answer in British and American writing. Both A and B is plural; neither/nor takes no extra 'not'; rather than takes parallel forms and instead of takes a noun or Ving; the claim that this book's examples use the serial comma holds (pattern search over the example sentences, quiz sentences and mistakes of all 16 chapters). No banned phrases and no test claims.
 
 ### 14-01 · mustFix · `sections[5].body[1]`
 
-**Problem.** Internal contradiction. This paragraph says a fronted 'not only' makes the clause invert, but the table in the previous section (sections[4].table.rows[3][2]) contains 'Not only the staff but also the director is ...', which begins with 'Not only' and does not invert (correctly: it joins two subjects, not two clauses). A reader who has forgotten grammar cannot tell which rule wins. Scope the rule to 'not only' followed by a full clause, and cite chapter 2 for auxiliary and chapter 10 so inversion is not read as the 'Should you need' kind only.
+**Problem.** Internal contradiction. This paragraph says a fronted 'not only' makes the clause invert, but the table in the previous section (sections[4].table.rows[3][2]) contains 'Not only the staff but also the director is ...', which begins with 'Not only' and does not invert (correctly: it joins two subjects, not two clauses). A reader who has forgotten grammar cannot tell which rule wins. Scope the rule to 'not only' followed by a full clause. The replacement also adds the chapter 2 pointer for 助動詞 (the term is used here without a reminder) and says that this is a different use of inversion from chapter 10's 'Should you need'.
 
 **Edit.** Replace the field value with:
 
@@ -269,7 +278,7 @@ Checked and correct: All four tap items verified (small + comfortable. = 4 and 6
 
 ### 14-03 · shouldFix · `sections[5].body[2]`
 
-**Problem.** Incomplete: only be-verbs and do/does/did are covered. Auxiliaries (will, can, has) simply move; a reader told to 'borrow do' may write 'Not only does the system will reduce'. State both cases.
+**Problem.** Applies to the current body[2] (it moves to body[3] once 14-02 is inserted). Incomplete: only be-verbs and do/does/did are covered. Auxiliaries (will, can, has) simply move; a reader told to 'borrow do' may write 'Not only does the system will reduce'. State both cases.
 
 **Edit.** Replace the field value with:
 
@@ -303,7 +312,7 @@ Checked and correct: All four tap items verified (small + comfortable. = 4 and 6
 
 ### 14-06 · shouldFix · `sections[3].ex[4]`
 
-**Problem.** 'online or at the counter' joins an adverb with a prepositional phrase. It is acceptable English, but this chapter teaches that the two sides must have the same form (section 0), and it asks the reader to check by splitting the sentence. The example works against its own rule. Use two 'by' phrases.
+**Problem.** 'online or at the counter' joins an adverb with a prepositional phrase. It is acceptable English, but this chapter teaches that the two sides must have the same form (sections[0]), and it asks the reader to check by splitting the sentence. The example works against its own rule. Use two 'by' phrases.
 
 **Edit.** Replace the field value with:
 
@@ -564,7 +573,7 @@ Checked and correct: Both tap items verified (include = 6; be + translated = 6 a
 
 ### 16-01 · mustFix · `check[0].q`
 
-**Problem.** British handling. The stem '選正式書面的寫法' does not exclude the other options in British formal writing. British writers use 'should + base form' and also the plain indicative after recommend, suggest, essential and similar words ('recommended that each team reviews'), and the indicative is not confined to informal British writing. The stem must say which standard decides the item. Use the American formal standard, which excludes the indicative, and which the correct answer also satisfies in British formal writing (the base form is accepted there). Same fix for the six other stems below.
+**Problem.** British handling. The stem '選正式書面的寫法' does not exclude the other options in British formal writing. British writers use 'should + base form' and also the plain indicative after recommend, suggest, essential and similar words ('recommended that each team reviews'); the indicative appears in British business and press writing, so 'formal' alone does not rule it out. The stem must say which standard decides the item. Use the American formal standard, which excludes the indicative, and which the correct answer also satisfies in British formal writing (the base form is accepted there). Same fix for the six other stems below.
 
 **Edit.** Replace the field value with:
 
@@ -614,7 +623,7 @@ Checked and correct: Both tap items verified (include = 6; be + translated = 6 a
 
 ### 16-06 · mustFix · `sections[2].quiz[0].q`
 
-**Problem.** Same fix. 'It is important that each team member reviews the agenda' is the form British writers most often produce with 'important'.
+**Problem.** Same fix. 'It is important that each team member reviews the agenda' is a form British writers do use with 'important'.
 
 **Edit.** Replace the field value with:
 
@@ -634,7 +643,7 @@ Checked and correct: Both tap items verified (include = 6; be + translated = 6 a
 
 ### 16-08 · mustFix · `sections[6].body[2]`
 
-**Problem.** Companion to the stem change, and the current text is also inaccurate: 'the examples and questions of this book all use the no-should form' is contradicted by sections[6].ex[1] in this chapter. The paragraph must explain why the stems name the American standard, so the reader is not confused when a British text writes should or the indicative.
+**Problem.** Applies to the current body[2] (it moves to body[3] once 16-09 is inserted). Companion to the stem change, and the current text is also inaccurate: 'the examples and questions of this book all use the no-should form' is contradicted by sections[6].ex[1] in this chapter. The paragraph must explain why the stems name the American standard, so the reader is not confused when a British text writes should or the indicative.
 
 **Edit.** Replace the field value with:
 
@@ -759,8 +768,8 @@ Checked and correct: Both tap items verified (include = 6; be + translated = 6 a
 
 **13-quantity.json.** The chapter is accurate and teaches in a sound order: the countable test comes first, and the quantity words are then sorted by what noun follows. The contrast pairs are well chosen, the examples are natural and the translations are correct. Four mustFix items stand between it and release. The few / a few quiz has a defensible second answer. The 'less than' rule is half taught, with no 'fewer than 50 employees', and its 'add two' test contradicts its own exception. The statement that 'almost' cannot stand before a noun is false as written. And 'the other' is used as a pronoun, and 'the others' is missing, in a section whose title promises both. The shouldFix items (feedback row, nouns that are both countable and uncountable, 'an amount of', the chapter 12 cross-reference) are small. Ready once the four mustFix items are applied.
 
-**14-parallel.json.** The chapter is accurate and paced well. The take-apart-and-test method for parallel forms and the three-paragraph treatment of shared to / will are the right slow handling of the threshold, and the quizzes each have one answer. There is one mustFix: the table in section 4 contains 'Not only the staff but also the director is', which begins with 'Not only' without inversion, while section 5 says a fronted 'not only' inverts. The rule needs scoping to 'not only' followed by a full clause. The shouldFix items are examples that join an adverb to a prepositional phrase against the chapter's own rule, the missing auxiliary case in inversion, an out-of-date roadmap in the lead, and one tap question that can be read two ways. Ready once the mustFix item is applied.
+**14-parallel.json.** The chapter is accurate and paced well. The take-apart-and-test method for parallel forms and the three-paragraph treatment of shared to / will are the right slow handling of the threshold, and the quizzes each have one answer. There is one mustFix: the table in sections[4] contains 'Not only the staff but also the director is', which begins with 'Not only' without inversion, while sections[5] says a fronted 'not only' inverts. The rule needs scoping to 'not only' followed by a full clause. The shouldFix items are examples that join an adverb to a prepositional phrase against the chapter's own rule, the missing auxiliary case in inversion, an out-of-date roadmap in the lead, and one tap question that can be read two ways. Ready once the mustFix item is applied.
 
-**15-prep.json.** The time-preposition half is clear and the 'size of the time' idea works. The fixed-phrase half is honest that there is no rule to derive. Three mustFix items need action. The during / throughout / prior to takeaway says all three take a noun or Ving, which is wrong for during and throughout and contradicts chapter 8. The heading of section 7 says the 'to' at the end of a phrase is a preposition, which is false for in order to, be able to and similar phrases, and the section has no contrast. And the by / until verb-type heuristic fails for states reached by a deadline ('ready by 9 a.m.'), which chapter 16 itself uses. The shouldFix items are the scope of this/next/last, 'at night', Chinese glosses that leave 'by June 30' ambiguous, the 'during' table cell, a fifth check item for 'to + Ving', and one Hong Kong style word. Not ready until the three mustFix items are applied.
+**15-prep.json.** The time-preposition half is clear and the 'size of the time' idea works. The fixed-phrase half is honest that there is no rule to derive. Three mustFix items need action. The during / throughout / prior to takeaway says all three take a noun or Ving, which is wrong for during and throughout and contradicts chapter 8. The heading of sections[6] says the 'to' at the end of a phrase is a preposition, which is false for in order to, be able to and similar phrases, and the section has no contrast. And the by / until verb-type heuristic fails for states reached by a deadline ('ready by 9 a.m.'), which chapter 16 itself uses. The shouldFix items are the scope of this/next/last, 'at night', Chinese glosses that leave 'by June 30' ambiguous, the 'during' table cell, a fifth check item for 'to + Ving', and one Hong Kong style word. Not ready until the three mustFix items are applied.
 
-**16-mandative.json.** The content is accurate for standard American formal English, and the teaching order is right for this reader: the odd-looking sentence first, then why, then the verbs, adjectives, negatives and be, then the suggest / insist exceptions. Every example and tap index checks out. The one mustFix is British handling. The stems say only 'formal written', which does not exclude the plain indicative or 'should' in British formal writing, and section 6 offers only 'should' as the British alternative. Name the standard in the seven stems, and rewrite section 6 so it states that the indicative also occurs in British writing and why the book teaches the base form. The passive 'It is recommended that' pattern is the main thing missing. Ready once the mustFix items are applied.
+**16-mandative.json.** The content is accurate for standard American formal English, and the teaching order is right for this reader: the odd-looking sentence first, then why, then the verbs, adjectives, negatives and be, then the suggest / insist exceptions. Every example and tap index checks out. The one mustFix is British handling. The stems say only 'formal written', which does not exclude the plain indicative or 'should' in British formal writing, and sections[6] offers only 'should' as the British alternative. Name the standard in the seven stems, and rewrite sections[6] so it states that the indicative also occurs in British writing and why the book teaches the base form. The passive 'It is recommended that' pattern is the main thing missing. Ready once the mustFix items are applied.
