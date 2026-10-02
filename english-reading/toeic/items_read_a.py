@@ -351,7 +351,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "連接詞：Until（在…之前一直）——要和前一句「所有糕點都移到新廠」的計畫對得上",
-                    "why": "前一句說計畫是新廠接手 all of Corvell's pastry production，磨坊路專做麵包。本句說磨坊路會繼續烤少量糕點——這只能是過渡期：在新廠全面運轉「之前」，所以用 Until。用 Once 就變成新廠全面運轉「之後」磨坊路還在烤糕點，和前一句的計畫矛盾。",
+                    "why": "前一句說計畫是新廠接手 all of Corvell's pastry production，磨坊路專做麵包。本句說磨坊路會繼續烤一些糕點——這只能是過渡期：在新廠全面運轉「之前」，所以用 Until。用 Once 就變成新廠全面運轉「之後」磨坊路還在烤糕點，和前一句的計畫矛盾。",
                     "evidence": [[0, 2]],
                     "wrong": [
                         "Once … is running at full capacity 本句很順；但新廠全面運轉後，依前一句的計畫所有糕點都在新廠做，磨坊路不會再烤",
