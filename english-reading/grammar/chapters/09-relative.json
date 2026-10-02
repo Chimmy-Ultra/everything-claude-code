@@ -1,9 +1,9 @@
 {
   "id": "relative", "n": 9,
   "title": "關係代名詞", "en": "Relative Pronouns",
-  "lead": "關係代名詞（<em>who、which、that、whose、whom</em>）把兩個句子接成一句：用一整個子句去說明前面的名詞。這一章從「兩句共用一個名詞」開始，一步一步教你怎麼選：先看前面的名詞是人還是事物，再看這個字在自己的子句裡做什麼工作。接著處理插入語、<em>whose</em>、介系詞、逗號和省略這幾個容易卡住的地方。讀這章之前，要先會分辨子句和從屬子句（第 3 章）。",
+  "lead": "關係代名詞（<em>who、which、that、whose、whom</em>）把兩個句子接成一句：用一整個子句（叫做關係子句）去說明前面的名詞。這一章從「兩句共用一個名詞」開始，一步一步教你怎麼選：先看前面的名詞是人還是事物，再看這個字在自己的子句裡做什麼工作。接著處理插入語、<em>whose</em>、介系詞、逗號和省略這幾個容易卡住的地方。讀這章之前，要先會分辨子句和從屬子句（第 3 章）。",
   "check": [
-    {"type": "choose", "q": "<em>The engineer ___ designed the new billing system will train the staff.</em> 空格填哪一個？", "options": ["who", "whom", "whose"], "answer": 0, "why": "空格後面直接是動詞 <em>designed</em>，表示這個子句缺的是主詞。先行詞是人、又當主詞，用 <em>who</em>。<em>whom</em> 只能當受詞，<em>whose</em> 後面要接名詞。"},
+    {"type": "choose", "q": "<em>The engineer ___ designed the new billing system will train the staff.</em> 空格填哪一個？", "options": ["who", "whom", "whose"], "answer": 0, "why": "空格後面直接是動詞 <em>designed</em>，表示這個子句缺的是主詞。前面的名詞 <em>engineer</em> 是人、又當主詞，用 <em>who</em>。<em>whom</em> 只能當受詞，<em>whose</em> 後面要接名詞。"},
     {"type": "choose", "q": "<em>The supplier ___ prices were the lowest won the contract.</em> 空格填哪一個？", "options": ["who", "which", "whose"], "answer": 2, "why": "空格後面直接接名詞 <em>prices</em>，而且是「這家供應商的價格」。表示「誰的」要用 <em>whose</em>，後面接名詞。"},
     {"type": "choose", "q": "<em>The candidate ___ we believe is the most qualified will start in May.</em> 空格填哪一個？", "options": ["who", "whom"], "answer": 0, "why": "先把插進來的 <em>we believe</em> 劃掉，剩下 <em>the candidate ___ is the most qualified</em>：空格後面直接接動詞 <em>is</em>，缺主詞，所以是 <em>who</em>。"},
     {"type": "choose", "q": "下面哪一句是對的？", "options": ["Our new office, that opened in March, has a larger meeting room.", "Our new office, which opened in March, has a larger meeting room."], "answer": 1, "why": "逗號後面的關係子句是補充說明，只能用 <em>which</em>（事物）或 <em>who</em>（人），不能用 <em>that</em>。"},

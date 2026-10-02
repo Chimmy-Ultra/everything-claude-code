@@ -17,7 +17,7 @@ for i, ks in level.items():
     lv = max(ks.values())                       # a conversation or talk takes its hardest question's band
     # the item's block runs from its "id" key to the next item's "id" key; either quote style
     start = re.search(r'["\']id["\']: ["\']%s["\']' % re.escape(i), s)
-    if not start: sys.exit(f"{i}: id not found")
+    if not start: print(f"{i}: not in {name}, skipped"); continue      # a solved file may cover several modules
     nxt = re.compile(r'["\']id["\']: ["\']').search(s, start.end())
     end = nxt.start() if nxt else len(s)
     block, n1 = re.subn(r'(["\']level["\']: )\d', lambda m: m.group(1) + str(lv), s[start.start():end], count=1)

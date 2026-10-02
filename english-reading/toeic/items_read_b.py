@@ -19,7 +19,7 @@ ITEMS = [
     # doc 2 Sato: Workshop A is full, Workshop B is repeated in Room 112 in Workshop A's slot, opening moved +15 min.
     {
         "id": "r-p7-01", "type": "read", "format": "p7t", "unit": "p7-triple", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {"kind": "Web page",
              "head": [],
@@ -190,7 +190,7 @@ ITEMS = [
                 "q": "In the second e-mail, the word \"collected\" in paragraph 3 is closest in meaning to",
                 "options": [
                     "picked up",
-                    "gathered up",
+                    "built up",
                     "put together",
                     "saved up",
                 ],
@@ -202,13 +202,13 @@ ITEMS = [
                     "evidence": [[2, 2]],
                     "wrong": [
                         None,
-                        "collect 最常見的「收集、收齊」義（collect the forms）；放進本句也通，像是工作人員在櫃台把識別證收起來，但下一句要他每場都戴，一早是領走，不是被收走",
+                        "collect 的「堆積」義（dust collects on the shelves）；識別證不會在櫃台堆積起來，下一句要他每場都戴，是去領自己的識別證",
                         "collect 有「把東西湊在一起」的意思；put together 放進本句也通（在櫃台把識別證組好），但 collect 不是「製作、組裝」",
                         "collect 的「累積、存」義（collect stamps、collect points）；識別證不是存起來的東西",
                     ],
                     "wrongMore": [
                         None,
-                        "collect 最常用的意思就是把分散的東西收到一起（The forms will be collected at the end of the session），而 Badges can be gathered up at the registration desk 單看這一句也說得通，好像識別證要在櫃台被收齊。但時間是 from 7:30 A.M.，一天的開始；下一句 Please wear yours at all sessions 要他在每一場都戴著，所以是一早去領自己的識別證，不是把它交回去讓人收齊。",
+                        None,
                         "Badges can be put together at the registration desk 單看這一句說得通，好像識別證是現場組裝的。但 collect 的「湊在一起」是把分散的東西集中起來（collect data、collect signatures），不是把一件東西做出來；而且這一段講的是與會者什麼時候、在哪裡拿到識別證（下一句 Please wear yours）。",
                         None,
                     ],
@@ -224,7 +224,7 @@ ITEMS = [
     # 6 x $37 = $222; or wait and pay $85 on the second shipment.
     {
         "id": "r-p7-02", "type": "read", "format": "p7t", "unit": "p7-triple", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {"kind": "Price list",
              "head": [],
@@ -432,7 +432,7 @@ ITEMS = [
     # offers to go to Dunmore); doc 2 Whitcombe: Nov 30, at the new warehouse, exercise e-mailed Nov 26 and returned first.
     {
         "id": "r-p7-03", "type": "read", "format": "p7t", "unit": "p7-triple", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {"kind": "Advertisement",
              "head": [],

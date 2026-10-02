@@ -1,0 +1,310 @@
+{
+  "id": "tense",
+  "n": 4,
+  "title": "時態",
+  "en": "Tenses",
+  "lead": "中文說「核准了」「正在核准」「已經核准」，靠的是多加一個字；英文把時間和樣子都做進動詞的形狀裡：<em>approved</em>、<em>is approving</em>、<em>has approved</em>。這一章先給你整張時態表，再把商業英文天天用到的六種講清楚：現在式、過去式、現在完成式、未來式、過去完成式、未來完成式。第 5 章的被動語態，就是把這一章的每一種時態，再套上一層 be＋p.p.。",
+  "check": [
+    {
+      "type": "choose",
+      "q": "<em>Ms. Lee ___ the company in 2019.</em> 空格用哪一個？",
+      "options": ["has joined", "joined", "joins"],
+      "answer": 1,
+      "why": "<em>in 2019</em> 是已經結束的時間，用過去式 <em>joined</em>。現在完成式說「連到現在」，不能和明確的過去時間放在一起。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>Ms. Lee ___ at this company since 2019.</em> 空格用哪一個？",
+      "options": ["worked", "has worked", "works"],
+      "answer": 1,
+      "why": "<em>since 2019</em> 表示從 2019 年一直到現在，要用現在完成式 <em>has worked</em>。"
+    },
+    {
+      "type": "choose",
+      "q": "哪一句是對的？",
+      "options": ["We will send the invoice as soon as the order will ship.", "We will send the invoice as soon as the order ships."],
+      "answer": 1,
+      "why": "<em>as soon as</em> 帶頭的是時間子句，裡面的未來用現在式 <em>ships</em>；<em>will</em> 只放在主要子句。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>When Mr. Diaz arrived at the airport, his flight had already left.</em> 哪一件事先發生？",
+      "options": ["Diaz 先生到機場", "班機起飛", "兩件事同時發生"],
+      "answer": 1,
+      "why": "<em>had left</em> 是過去完成式，表示在另一個過去的時間點（他到機場）之前，就已經發生了。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>By the end of this month, we ___ all the orders.</em> 空格用哪一個？",
+      "options": ["will have shipped", "had shipped", "have shipped"],
+      "answer": 0,
+      "why": "<em>by</em>＋未來的時間點：到那時為止已經完成，用未來完成式 <em>will have</em>＋p.p.。"
+    }
+  ],
+  "sections": [
+    {
+      "h": "時態＝時間＋樣子",
+      "body": [
+        "英文的時態由兩個部分組成。<b>時間</b>：過去、現在、未來。<b>樣子</b>：簡單、進行、完成。三乘三，一共九種。",
+        "三種樣子各說什麼。<b>簡單</b>把事情當成一個整體：一個事實、一個習慣、一個做完的動作。<b>進行</b>是事情正在進行、還沒結束，形狀是 <em>be</em>＋Ving。<b>完成</b>是站在某個時間點往回看：到那時為止，已經怎樣了，形狀是 <em>have</em>＋p.p.。",
+        "<b>p.p.</b> 是過去分詞。規則動詞的 p.p. 和過去式長得一樣（<em>approve → approved → approved</em>），不規則動詞要另外認：<em>write → wrote → written</em>、<em>send → sent → sent</em>、<em>begin → began → begun</em>、<em>take → took → taken</em>。完成式用的是第三個形狀。",
+        "九種不用一次學會。商業書信和會議裡用得最多的，是表中粗體的六種，再加上現在進行式。這一章就講這七種。完成和進行還可以合在一起（<em>have been waiting</em>），表示一直持續到某個時間點，第 4 節會順帶提到。"
+      ],
+      "ex": [
+        {"en": "The board <u>approved</u> the plan last week.", "zh": "董事會上週核准了這個計畫。", "note": "過去＋簡單：一件做完的事。"},
+        {"en": "The board <u>is reviewing</u> the plan this week.", "zh": "董事會這週正在審這個計畫。", "note": "現在＋進行：還在進行中。"},
+        {"en": "The board <u>has</u> already <u>approved</u> the plan.", "zh": "董事會已經核准這個計畫了。", "note": "現在＋完成：站在現在往回看，已經核准了。"}
+      ],
+      "table": {
+        "head": ["樣子", "過去", "現在", "未來"],
+        "rows": [
+          ["簡單", "<b><em>approved</em></b>", "<b><em>approve(s)</em></b>", "<b><em>will approve</em></b>"],
+          ["進行（<em>be</em>＋Ving）", "<em>was approving</em>", "<em>is approving</em>", "<em>will be approving</em>"],
+          ["完成（<em>have</em>＋p.p.）", "<b><em>had approved</em></b>", "<b><em>has approved</em></b>", "<b><em>will have approved</em></b>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>will have approved</em> 是哪一種時態？",
+          "options": ["未來進行式", "未來完成式", "現在完成式"],
+          "answer": 1,
+          "why": "<em>will</em> 標出未來，<em>have</em>＋p.p.（<em>have approved</em>）標出完成，合起來是未來完成式。"
+        }
+      ],
+      "takeaway": "時態＝時間（過去、現在、未來）＋樣子（簡單、進行、完成）。"
+    },
+    {
+      "h": "現在式和現在進行式",
+      "body": [
+        "現在式（<em>approve</em>、<em>approves</em>）聽起來像「現在」，其實它講的是<b>一直都這樣</b>的事：事實、習慣、固定的時刻表。<em>Ms. Ruiz handles all vendor contracts.</em> 不是說她此刻正在處理，而是說這是她的工作。主詞是一個人或一樣東西（<em>he</em>、<em>she</em>、<em>it</em>）時，動詞加 -s，細節在第 7 章。",
+        "現在進行式（<em>is handling</em>）講的是<b>這段時間正在進行、還沒結束</b>的事：<em>Ms. Ruiz is handling the Delmar contract this week.</em>。這週的事，過了這週就不一定了。",
+        "時間詞會幫你分。<em>every day</em>、<em>usually</em>、<em>always</em>、<em>regularly</em>、<em>each month</em> 搭現在式。<em>now</em>、<em>currently</em>、<em>at the moment</em>、<em>this week</em> 搭現在進行式。",
+        "有一類動詞通常不用進行式：表示狀態、不是動作的 <em>know</em>、<em>need</em>、<em>belong</em>、<em>own</em>、<em>contain</em>。<em>We need more chairs.</em>，不說 <em>We are needing more chairs.</em>"
+      ],
+      "ex": [
+        {"en": "Ms. Ruiz <u>handles</u> all vendor contracts.", "zh": "Ruiz 女士負責所有的廠商合約。", "note": "她的工作，一直都這樣：現在式。"},
+        {"en": "Ms. Ruiz <u>is handling</u> the Delmar contract this week.", "zh": "Ruiz 女士這週在處理 Delmar 的合約。", "note": "這週正在進行：現在進行式。"},
+        {"en": "The airport shuttle <u>departs</u> from Gate 3 every twenty minutes.", "zh": "機場接駁車每二十分鐘從三號門發車。", "note": "時刻表：現在式。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一句是對的？",
+          "options": ["We review the applications at the moment.", "We are reviewing the applications at the moment."],
+          "answer": 1,
+          "why": "<em>at the moment</em>（此刻）說的是正在進行、還沒結束的事，用現在進行式 <em>are reviewing</em>。"
+        }
+      ],
+      "takeaway": "現在式講一直都這樣的事；現在進行式講這段時間正在做的事。"
+    },
+    {
+      "h": "過去式：已經結束的時間",
+      "body": [
+        "過去式講的是<b>發生在過去、而且那段時間已經結束</b>的事。規則動詞加 -ed（<em>approved</em>），不規則動詞另外變（<em>send → sent</em>、<em>meet → met</em>、<em>buy → bought</em>）。",
+        "它常和一個明確的過去時間放在一起：<em>yesterday</em>、<em>last week</em>、<em>last quarter</em>、<em>two days ago</em>、<em>in 2021</em>、<em>on Monday</em>（已經過去的那個星期一）。",
+        "這些時間詞像一扇關上的門：那段時間結束了，事情也留在那裡，和現在沒有連著。下一節的現在完成式剛好相反。",
+        "否定和問句用 <em>did</em>。<em>did</em> 已經標出過去，後面的動詞回到原形：<em>We did not receive the invoice.</em>，不是 <em>did not received</em>。"
+      ],
+      "ex": [
+        {"en": "We <u>received</u> your payment two days ago.", "zh": "我們兩天前收到您的款項了。", "note": "<em>two days ago</em>：已經結束的時間。"},
+        {"en": "The company <u>opened</u> its first overseas branch in 2021.", "zh": "公司在 2021 年開了第一家海外分公司。"},
+        {"en": "We <u>did not receive</u> the invoice last month.", "zh": "我們上個月沒有收到發票。", "note": "<em>did not</em> 後面用原形 <em>receive</em>。"}
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出讓這句要用過去式的時間詞（整組）。",
+          "sentence": "Mr. Grady spoke with the client on the phone last Thursday.",
+          "answer": [9, 10],
+          "why": "<em>last Thursday</em> 是已經結束的時間，所以動詞用過去式 <em>spoke</em>。<em>on the phone</em> 說的是方式，不是時間。"
+        }
+      ],
+      "takeaway": "有明確的過去時間（yesterday、ago、last、in 2021），就用過去式。"
+    },
+    {
+      "h": "現在完成式：從過去連到現在",
+      "body": [
+        "這一節是時態的門檻。中文「我們雇了三位工程師」可以是去年的事，也可以是今年到現在的事，「了」都一樣。英文要分成兩種：過去式，和現在完成式（<em>have／has</em>＋p.p.）。",
+        "差別不在事情什麼時候發生，而在<b>說話的人站在哪裡看</b>。過去式把事情放在一段已經結束的時間裡，和現在切開。現在完成式站在現在往回看：從過去到現在為止，累積了什麼、改變了什麼。",
+        "<em>We hired three engineers last year.</em>：去年已經過去，那是一段關起來的時間。<em>We have hired three engineers this year.</em>：今年還沒結束，從年初到現在已經雇了三位，可能還會再雇。",
+        "<em>Mr. Lin worked here for five years.</em>：他在這裡做過五年，現在已經不在了。<em>Mr. Lin has worked here for five years.</em>：他在這裡做了五年，現在還在。同樣是 <em>for five years</em>，差一個 <em>has</em>，意思完全不同。",
+        "拿掉會怎樣：<em>We have hired three engineers last year.</em> 是錯的。<em>have hired</em> 說「連到現在」，<em>last year</em> 說「已經關起來」，兩個訊號打架。所以現在完成式不和 <em>yesterday</em>、<em>ago</em>、<em>last …</em>、<em>in 2021</em> 這類已經結束的時間放在一起。",
+        "常和現在完成式一起出現的字：<em>since</em>＋時間點（<em>since 2020</em>、<em>since the merger</em>）、<em>for</em>＋一段時間（一直到現在）、<em>so far</em>、<em>already</em>、<em>yet</em>、<em>just</em>、<em>over the past few years</em>，以及還沒結束的時間（<em>this year</em>、<em>this month</em>）。想強調一直在做、到現在還在做，可以用 <em>have been</em>＋Ving：<em>We have been waiting for the parts since Monday.</em>"
+      ],
+      "ex": [
+        {"en": "We <u>hired</u> three engineers last year.", "zh": "我們去年雇了三位工程師。", "note": "<em>last year</em> 已經結束：過去式。"},
+        {"en": "We <u>have hired</u> three engineers so far this year.", "zh": "今年到目前為止，我們雇了三位工程師。", "note": "<em>so far</em>、<em>this year</em> 連到現在：現在完成式。"},
+        {"en": "Mr. Lin <u>worked</u> here for five years.", "zh": "林先生在這裡工作過五年。", "note": "他已經離開了。"},
+        {"en": "Mr. Lin <u>has worked</u> here for five years.", "zh": "林先生在這裡工作五年了。", "note": "他現在還在這裡。"},
+        {"en": "Sales <u>have risen</u> steadily since the new website launched.", "zh": "自從新網站上線以來，銷售量穩定上升。", "note": "<em>since</em>＋時間點：主要子句用現在完成式。<em>since</em> 後面的子句用過去式 <em>launched</em>，因為上線是過去某一刻的事。"}
+      ],
+      "table": {
+        "head": ["比較", "過去式", "現在完成式"],
+        "rows": [
+          ["形狀", "<em>hired</em>", "<em>have／has hired</em>"],
+          ["看事情的位置", "在那段已經結束的時間裡", "站在現在往回看"],
+          ["和現在的關係", "切開", "連著"],
+          ["一起出現的字", "<em>yesterday</em>、<em>ago</em>、<em>last …</em>、<em>in 2021</em>", "<em>since</em>、<em>for</em>（到現在）、<em>so far</em>、<em>already</em>、<em>yet</em>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一句是對的？",
+          "options": ["The client has signed the contract yesterday.", "The client signed the contract yesterday."],
+          "answer": 1,
+          "why": "<em>yesterday</em> 是已經結束的時間，和現在切開，要用過去式。現在完成式說「連到現在」，和 <em>yesterday</em> 打架。"
+        },
+        {
+          "type": "choose",
+          "q": "<em>Ms. Han has managed the Asia team since 2022.</em> 韓女士現在還在管這個團隊嗎？",
+          "options": ["還在", "已經沒有了", "看不出來"],
+          "answer": 0,
+          "why": "現在完成式＋<em>since</em>：從 2022 年一直連到現在，所以她現在還在管。如果寫 <em>managed the Asia team from 2022 to 2024</em>，才是已經結束。"
+        }
+      ],
+      "takeaway": "已經結束的時間用過去式；從過去連到現在，用現在完成式。"
+    },
+    {
+      "h": "未來：will、be going to、已經排好的事",
+      "body": [
+        "英文講未來有好幾種說法，商業英文主要用下面幾種。",
+        "<em>will</em>＋原形：最中性的未來，也用在承諾、預測和當場決定：<em>We will send the revised quote tomorrow.</em>",
+        "<em>be going to</em>＋原形：已經打算好的事，或從現在的跡象看得出來的事：<em>The company is going to expand the warehouse next year.</em>",
+        "現在進行式：已經排定、有時間地點的安排：<em>Dr. Weiss is giving the keynote speech on Friday.</em>。班表、時刻表這種固定的未來，則用現在式：<em>The conference starts at 9 a.m. tomorrow.</em>",
+        "看到 <em>tomorrow</em>、<em>next week</em>、<em>soon</em>、<em>later this month</em>、<em>in two weeks</em>，就是在講未來。這幾種說法的語氣差別很細，先把 <em>will</em>＋原形用對就夠了。"
+      ],
+      "ex": [
+        {"en": "We <u>will send</u> the revised quote tomorrow.", "zh": "我們明天會寄出修改後的報價。"},
+        {"en": "The company <u>is going to expand</u> the warehouse next year.", "zh": "公司明年打算擴建倉庫。"},
+        {"en": "Dr. Weiss <u>is giving</u> the keynote speech on Friday.", "zh": "Weiss 博士週五要發表主題演講。", "note": "已經排好的行程。"},
+        {"en": "The conference <u>starts</u> at 9 a.m. tomorrow.", "zh": "研討會明天早上九點開始。", "note": "時刻表：現在式。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The supplier ___ the parts next Tuesday.</em> 哪一個<b>不能</b>放進空格？",
+          "options": ["will deliver", "is delivering", "delivered"],
+          "answer": 2,
+          "why": "<em>next Tuesday</em> 是未來。<em>will deliver</em> 和 <em>is delivering</em>（已經排好的安排）都能講未來；過去式 <em>delivered</em> 不行。"
+        }
+      ],
+      "takeaway": "講未來最穩的是 will＋原形；已經排好的行程也可以用現在進行式。"
+    },
+    {
+      "h": "過去完成式：比過去更早",
+      "body": [
+        "過去完成式（<em>had</em>＋p.p.）用在<b>兩件過去的事</b>，要標出哪一件比較早。它站在一個過去的時間點往回看：到那時為止，已經怎樣了。",
+        "比較這兩句。<em>When the CEO arrived, the meeting started.</em>：執行長一到，會議才開始（先到，後開始）。<em>When the CEO arrived, the meeting had already started.</em>：執行長到的時候，會議已經開始了（先開始，後到）。只差一個 <em>had</em>，順序就反過來。",
+        "過去完成式一定要有一個「過去的時間點」當參考：另一個過去式的動作、<em>by the time</em>＋過去式，或 <em>by last Friday</em> 這類過去的期限。沒有參考點，就用一般的過去式。",
+        "如果句子已經用 <em>before</em>、<em>after</em> 把先後說清楚了，用過去式也可以：<em>The meeting started before the CEO arrived.</em>。<em>had</em> 真正不可少的時候，是句子裡沒有別的字標出先後。"
+      ],
+      "ex": [
+        {"en": "When the CEO arrived, the meeting <u>started</u>.", "zh": "執行長一到，會議就開始了。", "note": "先到，後開始。"},
+        {"en": "When the CEO arrived, the meeting <u>had</u> already <u>started</u>.", "zh": "執行長到的時候，會議已經開始了。", "note": "先開始，後到。"},
+        {"en": "Ms. Hart <u>had worked</u> in sales for ten years before she joined our firm.", "zh": "Hart 女士加入我們公司之前，已經做了十年業務。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一句表示「報告先寄出，經理後來才打電話」？",
+          "options": ["When the manager called, I sent the report.", "When the manager called, I had already sent the report."],
+          "answer": 1,
+          "why": "<em>had sent</em> 表示在經理打電話這個過去的時間點之前，就已經寄出了。第一句是電話來了才寄。"
+        }
+      ],
+      "takeaway": "兩件過去的事，比較早的那一件用 had＋p.p.。"
+    },
+    {
+      "h": "未來完成式：到某個未來時間點，已經完成",
+      "body": [
+        "未來完成式（<em>will have</em>＋p.p.）把現在完成式搬到未來：站在未來的某個時間點往回看，到那時為止，已經完成了什麼。",
+        "它幾乎總是帶著一個<b>未來的期限</b>：<em>by Friday</em>、<em>by the end of the year</em>、<em>by the time the client arrives</em>。這裡的 <em>by</em> 是「最晚到……、在……之前」。",
+        "<em>We will ship the orders on Friday.</em>：週五那天出貨。<em>We will have shipped the orders by Friday.</em>：最晚到週五，出貨這件事已經做完了，可能週三就出了。",
+        "<em>by the time</em> 有兩種搭法，看它後面的子句是現在式還是過去式。<em>by the time</em>＋現在式（講未來），主要子句用 <em>will have</em>＋p.p.。<em>by the time</em>＋過去式，主要子句用 <em>had</em>＋p.p.。"
+      ],
+      "ex": [
+        {"en": "We <u>will have shipped</u> all the orders by Friday.", "zh": "最晚週五，我們會把所有訂單都出貨完畢。"},
+        {"en": "By the end of the year, the company <u>will have opened</u> five new stores.", "zh": "到年底時，公司將已經開了五家新店。"},
+        {"en": "By the time the auditors arrive, we <u>will have organized</u> all the receipts.", "zh": "等稽核人員到的時候，我們會已經把所有收據整理好。", "note": "<em>by the time</em> 後面用現在式 <em>arrive</em>，講的卻是未來。下一節解釋為什麼。"}
+      ],
+      "table": {
+        "head": ["by the time 後面", "主要子句", "例子"],
+        "rows": [
+          ["現在式（講未來）", "<em>will have</em>＋p.p.", "<em>By the time the auditors arrive, we will have organized the receipts.</em>"],
+          ["過去式", "<em>had</em>＋p.p.", "<em>By the time the auditors arrived, we had organized the receipts.</em>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>By the time the new manager starts next month, Ms. Abe ___ the handover notes.</em> 空格用哪一個？",
+          "options": ["will have written", "had written", "has written"],
+          "answer": 0,
+          "why": "<em>by the time</em>＋現在式 <em>starts</em>，講的是下個月，主要子句用 <em>will have</em>＋p.p.。"
+        }
+      ],
+      "takeaway": "by＋未來的期限，用 will have＋p.p.：到那時已經做完。"
+    },
+    {
+      "h": "時間子句和條件子句：用現在式講未來",
+      "body": [
+        "<em>We will email you as soon as your order ships.</em> 講的是未來的事，<em>ships</em> 卻是現在式。這不是例外，而是規則：由 <em>when</em>、<em>after</em>、<em>before</em>、<em>as soon as</em>、<em>once</em>、<em>until</em>、<em>by the time</em> 帶頭的<b>時間子句</b>，和由 <em>if</em>、<em>unless</em> 帶頭的<b>條件子句</b>，裡面的未來用現在式。",
+        "為什麼？整句話的未來，已經由主要子句的 <em>will</em> 標出來了。時間子句只負責說「在哪個時間點」，英文不在這裡再標一次未來。所以 <em>will</em> 只出現一次，放在主要子句。",
+        "用法：先找出從屬子句（第 3 章），看它是不是 <em>when</em>、<em>once</em>、<em>if</em> 這類帶頭的。是，裡面就不用 <em>will</em>；主要子句照常用 <em>will</em>。",
+        "要強調「做完之後」，時間子句也可以用現在完成式：<em>Once we have received your payment, we will ship the order.</em>",
+        "這條規則只管時間子句和條件子句。<em>that</em> 帶頭的子句講未來，照樣用 <em>will</em>：<em>We expect that the parts will arrive on Monday.</em>"
+      ],
+      "ex": [
+        {"en": "We will email you as soon as your order <u>ships</u>.", "zh": "您的訂單一出貨，我們就會寄電子郵件通知您。", "note": "<em>as soon as</em> 子句：現在式 <em>ships</em>。"},
+        {"en": "When Mr. Abbott <u>returns</u> from his trip, he will review the proposal.", "zh": "Abbott 先生出差回來後，會審閱這份提案。", "note": "<em>when</em> 子句：現在式 <em>returns</em>。"},
+        {"en": "If the shipment <u>is</u> late again, we will change suppliers.", "zh": "如果貨又晚到，我們就換供應商。", "note": "<em>if</em> 子句：現在式 <em>is</em>。"},
+        {"en": "Once we <u>have received</u> your payment, we will ship the order.", "zh": "我們一收到您的款項，就會出貨。", "note": "用現在完成式，強調付款先完成。"}
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出時間子句裡的動詞。",
+          "sentence": "We will start the meeting once everyone arrives.",
+          "answer": [7],
+          "why": "<em>once</em> 帶頭的是時間子句，裡面的動詞 <em>arrives</em> 用現在式講未來。<em>will start</em> 是主要子句的動詞。"
+        }
+      ],
+      "takeaway": "when、once、as soon as、until、if 帶頭的子句，未來的事用現在式；will 只放在主要子句。"
+    },
+    {
+      "h": "時間詞總表",
+      "body": [
+        "選時態時，先找句子裡的時間詞，它通常就決定了答案。下表把這一章的時間詞放在一起。",
+        "表上是典型的搭配，不是絕對。<em>recently</em> 可以配過去式，也可以配現在完成式；<em>for three years</em> 配過去式表示已經結束，配現在完成式表示到現在還在。最後還是要問：句子講的那段時間，結束了沒有？",
+        "一句話裡有兩個動詞時，兩個時態要各自對上自己的時間詞，不一定相同。"
+      ],
+      "ex": [
+        {"en": "The auditors <u>visited</u> us last week, and they <u>have</u> already <u>sent</u> their report.", "zh": "稽核人員上週來過，他們已經把報告寄來了。", "note": "<em>last week</em> 用過去式；<em>already</em> 連到現在，用現在完成式。"},
+        {"en": "We <u>have used</u> Nordline as our courier since 2020.", "zh": "我們從 2020 年起就一直用 Nordline 當快遞公司。"}
+      ],
+      "table": {
+        "head": ["看到這些字", "通常用", "例子"],
+        "rows": [
+          ["<em>every …</em>、<em>usually</em>、<em>always</em>、<em>regularly</em>", "現在式", "<em>We back up the files every night.</em>"],
+          ["<em>now</em>、<em>currently</em>、<em>at the moment</em>", "現在進行式", "<em>We are currently updating the system.</em>"],
+          ["<em>yesterday</em>、<em>ago</em>、<em>last …</em>、<em>in 2021</em>", "過去式", "<em>The auditors visited us last week.</em>"],
+          ["<em>since</em>、<em>for</em>（到現在）、<em>so far</em>、<em>already</em>、<em>yet</em>", "現在完成式", "<em>We have already paid the deposit.</em>"],
+          ["<em>tomorrow</em>、<em>next …</em>、<em>soon</em>", "未來式", "<em>The new rules will take effect next month.</em>"],
+          ["<em>by the time</em>＋過去式、另一個過去動作之前", "過去完成式", "<em>The guests had left by the time the food arrived.</em>"],
+          ["<em>by</em>＋未來時間、<em>by the time</em>＋現在式", "未來完成式", "<em>We will have finished the audit by June.</em>"]
+        ]
+      },
+      "takeaway": "先找時間詞，再問那段時間結束了沒有。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "We have received your application last Monday.", "right": "We received your application last Monday.", "why": "<em>last Monday</em> 是已經結束的時間，用過去式。現在完成式說「連到現在」，和它打架。"},
+    {"wrong": "I work at Halden Bank since 2018.", "right": "I have worked at Halden Bank since 2018.", "why": "<em>since</em>＋時間點表示從那時一直到現在，要用現在完成式。現在式只說「一直都這樣」，沒有從過去連過來的意思。"},
+    {"wrong": "We will start the training after the new hires will arrive.", "right": "We will start the training after the new hires arrive.", "why": "<em>after</em> 帶頭的是時間子句，裡面的未來用現在式；<em>will</em> 只放在主要子句。"},
+    {"wrong": "We did not received the shipment.", "right": "We did not receive the shipment.", "why": "<em>did</em> 已經標出過去，後面的動詞用原形。"},
+    {"wrong": "This box is containing the spare parts.", "right": "This box contains the spare parts.", "why": "<em>contain</em> 表示狀態（裡面裝了什麼），不是正在進行的動作，不用進行式。"}
+  ],
+  "workbook": ["tense"]
+}

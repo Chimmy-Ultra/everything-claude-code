@@ -1,0 +1,204 @@
+{
+  "id": "conditional", "n": 10,
+  "title": "假設語氣與倒裝", "en": "Conditionals and Inversion",
+  "lead": "<em>if</em> 的句子有兩種：一種講可能發生的事，一種講不是真的事。英文用「把時態往過去退一格」來表示「這不是真的」。這一章從這個想法出發，把三種句型、<em>were</em>、<em>unless</em> 一一講清楚，最後講正式書信裡常見的倒裝：<em>Should you need …</em>、<em>Had we known …</em>、<em>Were the price …</em>，以及怎麼把它們還原成 <em>if</em> 句。時態（第 4 章）是這一章的基礎。",
+  "check": [
+    {"type": "choose", "q": "<em>If we had a bigger budget, we would hire two more designers.</em> 從這句可以知道什麼？", "options": ["預算夠大，我們打算多請兩位設計師", "預算不夠大，所以沒有多請", "我們以前曾經有比較大的預算"], "answer": 1, "why": "<em>if</em> 子句用過去式 <em>had</em>、主要子句用 <em>would</em>，是在講現在「不是真的」事，事實和句子相反：預算其實不夠大。這裡的 <em>had</em> 不是過去時間。"},
+    {"type": "choose", "q": "<em>If the shipment ___ tomorrow, we will process it right away.</em> 空格填哪一個？", "options": ["arrives", "will arrive", "arrived"], "answer": 0, "why": "主要子句是 <em>will</em>，表示這是可能發生的條件。<em>if</em> 子句講未來的事時用現在式，不用 <em>will</em>。"},
+    {"type": "choose", "q": "我其實不是負責人。<em>If I ___ in charge of the project, I would hire an extra designer.</em> 空格填哪一個？", "options": ["am", "were", "have been"], "answer": 1, "why": "講現在不是真的事，<em>if</em> 子句往過去退一格；<em>be</em> 動詞在這裡不分主詞都用 <em>were</em>。"},
+    {"type": "choose", "q": "<em>If we had known about the delay, we ___ the client.</em> 空格填哪一個？", "options": ["will call", "would have called", "would had called"], "answer": 1, "why": "<em>if</em> 子句是 <em>had</em> + p.p.，講過去沒有發生的事；主要子句配 <em>would have</em> + p.p.。<em>would</em> 後面要接原形 <em>have</em>，不能接 <em>had</em>。"},
+    {"type": "choose", "q": "<em>Had we known about the strike, we would have shipped the order earlier.</em> 這句等於哪一個 <em>if</em> 句？", "options": ["If we had known about the strike, …", "If we have known about the strike, …", "If we knew about the strike, …"], "answer": 0, "why": "句首的 <em>Had</em> + 主詞 + p.p.，是把 <em>if we had known</em> 的 <em>if</em> 拿掉、<em>had</em> 搬到主詞前面。還原時把 <em>had</em> 放回主詞後面，再加上 <em>if</em>。"}
+  ],
+  "sections": [
+    {
+      "h": "真的條件和不真的條件",
+      "body": [
+        "<em>if</em> 帶頭的子句是從屬子句（第 3 章），說的是「條件」；另一半是主要子句，說的是「結果」。<em>If the client signs today, we will start on Monday.</em> 條件是客戶今天簽約，結果是我們星期一開工。",
+        "條件分兩種，先分清楚再談文法。第一種是<b>真的條件</b>：說的人覺得這件事有可能發生，只是還不確定。客戶今天可能簽，也可能不簽，兩邊都有可能。",
+        "第二種是<b>不真的條件</b>：說的人知道這件事不是真的，或者幾乎不可能。<em>If we had a bigger warehouse, we would keep more stock.</em> 說這句話的人其實知道：倉庫不夠大。這種句子要「反過來讀」，才是事實。",
+        "中文兩種都可以說「如果」，再靠「要是」「早知道」這類字眼和語氣表達。英文則一定要在<b>動詞</b>上表現出來：一看動詞的時態，就知道說話的人覺得這件事有可能，還是知道它不是真的。這也是為什麼讀錯動詞，就會把意思整個讀反。"
+      ],
+      "ex": [
+        {"en": "If the client <u>signs</u> today, we <u>will start</u> on Monday.", "zh": "如果客戶今天簽約，我們星期一就開工。", "note": "真的條件：客戶可能簽。"},
+        {"en": "If we <u>had</u> a bigger warehouse, we <u>would keep</u> more stock.", "zh": "要是我們的倉庫大一點，就會多放些庫存。", "note": "不真的條件：倉庫其實不夠大。"},
+        {"en": "If the price <u>drops</u> next month, we <u>will order</u> 500 units.", "zh": "如果下個月降價，我們會訂 500 個。", "note": "有可能降價，還不知道。"},
+        {"en": "If the price <u>were</u> lower, we <u>would order</u> 500 units.", "zh": "要是價格低一點，我們就會訂 500 個。", "note": "價格其實不低，所以沒訂。"}
+      ],
+      "table": {"head": ["句子", "說話的人覺得", "真正的情況"], "rows": [
+        ["<em>If the price drops next month, we will order 500 units.</em>", "有可能降價", "還不知道會不會降"],
+        ["<em>If the price were lower, we would order 500 units.</em>", "這不是真的", "價格不低，所以不訂"]
+      ]},
+      "quiz": [
+        {"type": "choose", "q": "<em>If Mr. Hale were here, he would know the password.</em> 從這句可以知道什麼？", "options": ["Hale 先生現在在這裡", "Hale 先生現在不在這裡", "Hale 先生等一下一定會來"], "answer": 1, "why": "<em>were</em> 和 <em>would</em> 表示不真的條件。句子說「要是他在這裡」，事實就是他不在。"}
+      ],
+      "takeaway": "先問：說話的人覺得這件事有可能，還是知道它不是真的；答案決定動詞怎麼寫。"
+    },
+    {
+      "h": "退一格：英文怎麼表示「這不是真的」",
+      "body": [
+        "英文沒有一個專門表示「不是真的」的字。它的做法是：<b>把動詞的時態往過去退一格</b>。往過去退，就是把話推得離現實遠一點，讀的人一看就知道「這只是假設」。",
+        "退一格的對照是固定的。現在式退一格變過去式；過去式退一格變過去完成式，也就是 <em>had</em> + p.p.（第 4 章）。主要子句也一樣：<em>will</em> 退一格變 <em>would</em>；<em>would</em> 再退一格變 <em>would have</em> + p.p.。",
+        "這裡是最容易卡住的地方：<b>退一格之後的過去式，講的不是過去時間</b>。<em>If we had more staff</em> 的 <em>had</em> 講的是現在：我們現在人手不夠。要講過去不真的事，必須再退一格，用 <em>had</em> + p.p.：<em>If we had hired more staff last year</em>（去年要是多請了人）。",
+        "所以三種句型其實只是一條規則：先想這件事的時間（未來、現在、過去），再問它是不是真的；不是真的，就把 <em>if</em> 子句和主要子句<b>一起</b>退一格。下面三節一型一型看。"
+      ],
+      "table": {"head": ["情況", "<em>if</em> 子句", "主要子句", "例句"], "rows": [
+        ["可能發生：不退", "現在式", "<em>will</em> + 原形", "<em>If we hire more staff, we will open on Sundays.</em>"],
+        ["現在不是真的：退一格", "過去式（<em>be</em> 用 <em>were</em>）", "<em>would</em> + 原形", "<em>If we had more staff, we would open on Sundays.</em>"],
+        ["過去沒有發生：再退一格", "<em>had</em> + p.p.", "<em>would have</em> + p.p.", "<em>If we had hired more staff, we would have opened on Sundays.</em>"]
+      ]},
+      "ex": [
+        {"en": "If we <u>hire</u> more staff, we <u>will open</u> on Sundays.", "zh": "如果我們多請一些人，星期天就會開門。", "note": "還沒決定，有可能。"},
+        {"en": "If we <u>had</u> more staff, we <u>would open</u> on Sundays.", "zh": "要是我們人手夠，星期天就會開門。", "note": "講現在：人手其實不夠。"},
+        {"en": "If we <u>had hired</u> more staff, we <u>would have opened</u> on Sundays.", "zh": "當初要是多請了人，星期天就會開門了。", "note": "講過去：當時沒請，所以沒開。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>If we had more time, we would test the app again.</em> 這句的 <em>had</em> 講的是什麼時候的事？", "options": ["過去：以前時間不夠", "現在：現在時間不夠"], "answer": 1, "why": "<em>if</em> 子句是過去式、主要子句是 <em>would</em> + 原形，這是「退一格」的現在不真。過去式在這裡表示「不是真的」，不表示過去時間。要講過去，會寫成 <em>If we had had more time, we would have tested …</em>。"}
+      ],
+      "takeaway": "不是真的，就把兩半的動詞一起往過去退一格；退一格之後的過去式講的是現在。"
+    },
+    {
+      "h": "可能發生：if ＋現在式，主要子句用 will",
+      "body": [
+        "這一型不用退：說的人覺得事情可能發生。<em>if</em> 子句用現在式，主要子句用 <em>will</em>（或 <em>can</em>、<em>may</em>）加原形。",
+        "門檻在 <em>if</em> 子句：就算講的是明天、下週，<em>if</em> 子句也用<b>現在式</b>，不用 <em>will</em>。寫 <em>If the shipment arrives tomorrow</em>，不寫 <em>If the shipment will arrive tomorrow</em>。未來的意思已經由主要子句的 <em>will</em> 和 <em>tomorrow</em> 表達了，<em>if</em> 子句不用再說一次。<em>when</em>、<em>before</em>、<em>as soon as</em> 這些表示時間的連接詞也一樣（第 4 章）。",
+        "主要子句也可以是請求或指示，商業書信常這樣寫：<em>If you have any questions, please contact Ms. Ward.</em>",
+        "<em>if</em> 子句可以放前面，也可以放後面。放前面時，兩個子句中間加逗號；放後面時，通常不加：<em>We will start on Monday if the client signs today.</em>"
+      ],
+      "ex": [
+        {"en": "If the shipment <u>arrives</u> tomorrow, we <u>will process</u> it right away.", "zh": "如果貨明天到，我們會馬上處理。", "note": "講明天，<em>if</em> 子句還是用現在式 <em>arrives</em>。"},
+        {"en": "If you <u>have</u> any questions, please <u>contact</u> Ms. Ward.", "zh": "如果有任何問題，請聯絡 Ward 女士。"},
+        {"en": "We <u>can offer</u> a 10% discount if you <u>order</u> before May 1.", "zh": "如果您在五月一日前訂購，我們可以打九折。", "note": "<em>if</em> 子句在後面，中間不加逗號。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "下面哪一句是對的？", "options": ["If the client will approve the design, we will start next week.", "If the client approves the design, we will start next week.", "If the client approved the design, we will start next week."], "answer": 1, "why": "主要子句是 <em>will</em>，表示可能發生。這時 <em>if</em> 子句用現在式 <em>approves</em>，不用 <em>will</em>。用過去式 <em>approved</em> 是「不是真的」的訊號，會和 <em>will</em> 互相矛盾。"}
+      ],
+      "takeaway": "可能發生的事，<em>if</em> 子句就算講未來也用現在式，<em>will</em> 只放在主要子句。"
+    },
+    {
+      "h": "現在不是真的：if ＋過去式，would ＋原形",
+      "body": [
+        "講現在的事，但它不是真的：<em>if</em> 子句退一格用過去式，主要子句退一格用 <em>would</em> + 原形，也可以用 <em>could</em>（就能）、<em>might</em>（可能會）。",
+        "<em>be</em> 動詞在這裡有一個特別的地方：<b>不管主詞是誰，一律用 <em>were</em></b>。<em>If I were</em>、<em>If she were</em>、<em>If the price were</em>。平常 <em>I</em> 和 <em>she</em> 的過去式是 <em>was</em>，但在不真的條件裡，<em>were</em> 是專門用來說「這不是真的」的形式。口語裡有人說 <em>If I was</em>，正式書面用 <em>were</em>。常聽到的 <em>If I were you</em>（如果我是你）就是這個用法。",
+        "沒有一起退會怎樣？<em>If we have more staff, we would open on Sundays.</em> 前半的現在式說「有可能」，後半的 <em>would</em> 說「不是真的」，兩個訊號打架，讀的人不知道你到底有沒有人手。兩半要一起退。",
+        "這一型也用在<b>未來不太可能</b>的事：<em>If the vendor raised its prices, we would look for another supplier.</em> 供應商現在沒有漲價，說的人也不認為會漲，只是假設一下。對照真的條件：<em>If the vendor raises its prices, we will look for another supplier.</em> 這句表示漲價是有可能的。"
+      ],
+      "ex": [
+        {"en": "If we <u>had</u> a larger budget, we <u>would hire</u> two more designers.", "zh": "要是預算多一點，我們會再請兩位設計師。", "note": "<em>had</em> 講的是現在：預算現在不夠。"},
+        {"en": "If Ms. Kato <u>were</u> here, she <u>would know</u> the answer.", "zh": "要是 Kato 小姐在這裡，她就會知道答案。", "note": "主詞是 <em>she</em>，還是用 <em>were</em>。"},
+        {"en": "If I <u>were</u> you, I <u>would ask</u> for a written quote.", "zh": "如果我是你，我會要求一份書面報價。"},
+        {"en": "If the vendor <u>raised</u> its prices, we <u>would look</u> for another supplier.", "zh": "萬一供應商漲價，我們會另找廠商。", "note": "說的人認為不太可能漲。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "會議室其實很小。<em>If the meeting room ___ bigger, we would invite the whole team.</em> 空格填哪一個？", "options": ["is", "were", "will be"], "answer": 1, "why": "會議室其實很小，主要子句也是 <em>would</em>，所以是現在不真的條件。<em>if</em> 子句退一格用過去式，<em>be</em> 動詞一律用 <em>were</em>。"}
+      ],
+      "takeaway": "現在不是真的：<em>if</em> + 過去式（<em>be</em> 用 <em>were</em>），主要子句 <em>would</em> + 原形。"
+    },
+    {
+      "h": "過去沒有發生：if ＋ had p.p.，would have p.p.",
+      "body": [
+        "事情已經過去，結果也知道了：<em>We did not know about the delay, so we did not change the schedule.</em> 現在回頭說「要是當時……就會……」，這是過去不真的條件。",
+        "過去的事本來就用過去式，不真就要再退一格：<em>if</em> 子句用 <em>had</em> + p.p.（過去完成式），主要子句用 <em>would have</em> + p.p.。<em>If we had known about the delay, we would have changed the schedule.</em>",
+        "讀的時候一樣要反過來：<em>had known</em> → 其實不知道；<em>would have changed</em> → 其實沒改。這種句子常帶著「可惜」或「還好」的語氣。",
+        "兩個常見的錯。一是在 <em>if</em> 子句裡也放 <em>would</em>（<em>If we would have known</em>）；<em>would</em> 只放在主要子句。二是 <em>would have</em> 後面忘了用 p.p.（<em>would have change</em>）；<em>would have</em> 後面一定是 p.p.：<em>changed</em>、<em>sent</em>、<em>written</em>。"
+      ],
+      "ex": [
+        {"en": "If we <u>had known</u> about the delay, we <u>would have changed</u> the schedule.", "zh": "要是早知道會延誤，我們就會改時程了。", "note": "事實：不知道，也沒改。"},
+        {"en": "If the courier <u>had left</u> earlier, the package <u>would have arrived</u> on time.", "zh": "要是快遞早一點出發，包裹就會準時到了。"},
+        {"en": "Mr. Silva <u>would have noticed</u> the error if he <u>had checked</u> the invoice.", "zh": "要是 Silva 先生有核對發票，他就會發現錯誤了。", "note": "<em>if</em> 子句在後面，中間不加逗號。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>If we had booked the hall in March, we would have saved $2,000.</em> 實際上發生了什麼？", "options": ["三月訂了場地，省了兩千元", "三月沒有訂場地，沒省到這兩千元", "還沒訂場地，打算三月再訂"], "answer": 1, "why": "<em>had booked</em> 和 <em>would have saved</em> 是過去不真的條件，事實和句子相反：三月沒訂，所以沒省到。"}
+      ],
+      "takeaway": "過去沒發生的事：<em>if</em> + <em>had</em> + p.p.，主要子句 <em>would have</em> + p.p.；反過來讀就是事實。"
+    },
+    {
+      "h": "兩半時間不一樣的時候",
+      "body": [
+        "三種句型是最常見的組合，但兩半不一定講同一個時間。條件可能在過去，結果在現在：<em>If we had hired more staff last year, we would not be so busy now.</em> 去年沒多請人（過去不真：<em>had hired</em>），所以現在很忙（現在不真：<em>would</em> + 原形）。",
+        "處理方法是<b>兩半各看各的時間</b>。講過去的那一半，用 <em>had</em> + p.p. 或 <em>would have</em> + p.p.；講現在的那一半，用過去式或 <em>would</em> + 原形。句子裡的 <em>now</em>、<em>today</em>、<em>last year</em> 是判斷的線索。",
+        "這種句子不用另外背，前面「退一格」想通了，一半一半套進去就好。"
+      ],
+      "ex": [
+        {"en": "If we <u>had hired</u> more staff last year, we <u>would not be</u> so busy now.", "zh": "要是去年多請了人，我們現在就不會這麼忙。"},
+        {"en": "If Ms. Ruiz <u>had accepted</u> the offer, she <u>would be</u> our sales director today.", "zh": "要是 Ruiz 小姐當初接受了這份工作，她今天就是我們的業務總監了。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>If the team had finished testing last week, the app ___ available in stores now.</em> 空格填哪一個？", "options": ["would be", "would have been", "will be"], "answer": 0, "why": "前半有 <em>last week</em>，是過去不真，用 <em>had finished</em>；後半有 <em>now</em>，是現在不真，用 <em>would</em> + 原形 <em>be</em>。"}
+      ],
+      "takeaway": "兩半時間不同時各看各的：過去那半用 <em>had</em> p.p.／<em>would have</em> p.p.，現在那半用過去式／<em>would</em> + 原形。"
+    },
+    {
+      "h": "unless：就是 if … not",
+      "body": [
+        "<em>unless</em> 的意思是「除非」，等於 <em>if … not</em>。<em>Unless you register by Friday, you cannot attend.</em> = <em>If you do not register by Friday, you cannot attend.</em>",
+        "因為 <em>unless</em> 裡面已經有 <em>not</em> 的意思，後面就<b>不要再放 not</b>。<em>Unless you don't register</em> 等於「如果你沒有不報名」，意思反了。",
+        "<em>unless</em> 是連接詞（第 8 章），後面接子句。它和真的條件用法一樣：講未來也用現在式，寫 <em>unless the client approves</em>，不寫 <em>will approve</em>。",
+        "換句話說的時候要小心意思：<em>We will ship the order on Monday unless the parts arrive late.</em> 零件沒晚到，就星期一出貨；零件晚到，就不會是星期一。"
+      ],
+      "ex": [
+        {"en": "<u>Unless</u> you register by Friday, you cannot attend the workshop.", "zh": "除非你在星期五前報名，否則不能參加研習。", "note": "= <em>If you do not register by Friday</em>"},
+        {"en": "We will ship the order on Monday <u>unless</u> the parts arrive late.", "zh": "除非零件晚到，否則我們星期一出貨。"},
+        {"en": "The contract is not valid <u>unless</u> both parties sign it.", "zh": "雙方都簽字，合約才有效。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Unless the client approves the design, we cannot start.</em> 和哪一句意思一樣？", "options": ["If the client approves the design, we cannot start.", "If the client does not approve the design, we cannot start.", "If the client does not approve the design, we can start."], "answer": 1, "why": "<em>unless</em> = <em>if … not</em>。把 <em>unless</em> 換成 <em>if</em>，再在條件的動詞加上 <em>not</em>，主要子句不動。"}
+      ],
+      "takeaway": "<em>unless</em> 就是 <em>if … not</em>，後面不要再加 <em>not</em>。"
+    },
+    {
+      "h": "倒裝：拿掉 if，把 Should、Had、Were 搬到主詞前面",
+      "body": [
+        "正式的書信和公告裡常看到這種句子：<em>Should you need assistance, please call the front desk.</em> 看起來像問句，但它不是：這一段結束在逗號，後面還接著一個主要子句。這是把 <em>if</em> 子句<b>倒裝</b>的結果。",
+        "倒裝的做法是兩步：一、拿掉 <em>if</em>；二、把 <em>if</em> 子句裡的 <em>should</em>、<em>had</em> 或 <em>were</em> 搬到主詞前面。意思不變，只是語氣比較正式。能這樣做的只有這三個字。",
+        "<b>Should</b>：來自 <em>If you should need help</em>（萬一你需要幫忙）。這裡的 <em>should</em> 是「萬一、如果碰巧」，說的人覺得有可能，但不一定。倒裝成 <em>Should you need help</em>，主詞後面接<b>原形</b>。另一半通常是請求（<em>please call</em>）或 <em>will</em>。這是真的條件的正式說法。",
+        "<b>Had</b>：來自 <em>If we had known</em>。倒裝成 <em>Had we known</em>，主詞後面接 <b>p.p.</b>。另一半是 <em>would have</em> + p.p.。這是過去不真的條件。",
+        "<b>Were</b>：來自 <em>If the price were lower</em>。倒裝成 <em>Were the price lower</em>。也常見 <em>were to</em> + 原形，表示不太可能的未來：<em>If the company were to move</em> → <em>Were the company to move</em>。另一半是 <em>would</em> + 原形。這是現在或未來不真的條件。",
+        "倒裝之後不能再放 <em>if</em>：<em>If should you need help</em> 是錯的，<em>if</em> 和倒裝只能選一個。否定的時候，<em>not</em> 放在主詞後面：<em>Had we not received the payment, …</em>"
+      ],
+      "table": {"head": ["原本的 <em>if</em> 子句", "倒裝", "主詞後面接", "另一半"], "rows": [
+        ["<em>If you should need help, …</em>", "<em>Should you need help, …</em>", "原形", "請求，或 <em>will</em> + 原形"],
+        ["<em>If we had known, …</em>", "<em>Had we known, …</em>", "p.p.", "<em>would have</em> + p.p."],
+        ["<em>If the price were lower, …</em>", "<em>Were the price lower, …</em>", "形容詞、名詞等", "<em>would</em> + 原形"],
+        ["<em>If the firm were to expand, …</em>", "<em>Were the firm to expand, …</em>", "<em>to</em> + 原形", "<em>would</em> + 原形"]
+      ]},
+      "ex": [
+        {"en": "<u>Should you need</u> assistance, please call the front desk.", "zh": "如需協助，請撥打櫃台電話。", "note": "= <em>If you should need assistance</em>"},
+        {"en": "<u>Had we known</u> about the strike, we would have shipped the order earlier.", "zh": "要是早知道會罷工，我們就會提早出貨了。", "note": "= <em>If we had known</em>"},
+        {"en": "<u>Were the price</u> lower, we would order 500 units.", "zh": "要是價格低一點，我們就會訂 500 個。", "note": "= <em>If the price were lower</em>"},
+        {"en": "<u>Were</u> the company <u>to move</u> its headquarters, many employees would need to relocate.", "zh": "假如公司搬遷總部，很多員工就得跟著搬家。", "note": "= <em>If the company were to move</em>"},
+        {"en": "<u>Had</u> the contractor <u>not finished</u> on time, the opening would have been delayed.", "zh": "要是承包商沒有準時完工，開幕就會延後了。", "note": "否定：<em>not</em> 放在主詞後面。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>___ you have any questions about the invoice, please contact Ms. Ward.</em> 空格填哪一個？", "options": ["Should", "Had", "Were"], "answer": 0, "why": "主詞後面是原形 <em>have</em>，另一半是請求 <em>please contact</em>，這是 <em>If you should have any questions</em> 的倒裝：<em>Should</em>。<em>Had</em> 後面要接 p.p.；<em>Were</em> 後面要接 <em>to</em> + 原形，或形容詞、名詞。"}
+      ],
+      "takeaway": "倒裝就是拿掉 <em>if</em>，把 <em>should</em>、<em>had</em>、<em>were</em> 搬到主詞前面；意思不變，語氣更正式。"
+    },
+    {
+      "h": "看到倒裝，還原成 if 句",
+      "body": [
+        "句首是 <em>Should</em>、<em>Had</em>、<em>Were</em>，後面接主詞，而且這一段結束在逗號、後面還有一個主要子句，就是倒裝的條件。還原的方法是反過來做：前面加上 <em>if</em>，再把 <em>should</em>／<em>had</em>／<em>were</em> 放回主詞後面。",
+        "還原之後，就回到前面學過的三型，看得出時間和真假。<em>Had the supplier lowered its prices</em> → <em>If the supplier had lowered its prices</em>：過去不真，事實是供應商沒有降價。",
+        "要分清楚的是：句首的 <em>Had</em> 不是「有」的過去式，而是 <em>had</em> + p.p. 的那個 <em>had</em>，所以主詞後面一定跟著 p.p.。<em>Had we know</em> 是錯的，要寫 <em>Had we known</em>。同樣地，<em>Should</em> 後面一定是原形：<em>Should you needed</em> 是錯的。",
+        "跟問句怎麼分？問句以問號結束，本身就是一整句：<em>Should we call the client?</em> 倒裝的條件只是半句，後面一定還有另一半：<em>Should we need more samples, we will call the client.</em>"
+      ],
+      "ex": [
+        {"en": "<u>Had</u> the supplier <u>lowered</u> its prices, we would have signed the contract.", "zh": "要是供應商降了價，我們就會簽約了。", "note": "→ <em>If the supplier had lowered its prices</em>：事實是沒降價。"},
+        {"en": "<u>Should</u> the shipment <u>be</u> delayed, we will notify you by email.", "zh": "萬一出貨延誤，我們會用電子郵件通知您。", "note": "→ <em>If the shipment should be delayed</em>：有可能，但不一定。"},
+        {"en": "<u>Were</u> Ms. Novak still with the company, she <u>would lead</u> this project.", "zh": "要是 Novak 女士還在公司，這個專案就會由她帶。", "note": "→ <em>If Ms. Novak were still with the company</em>：她已經離開了。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Were the hotel closer to the airport, more guests would book it.</em> 還原成 <em>if</em> 句是哪一個？", "options": ["If the hotel is closer to the airport, …", "If the hotel were closer to the airport, …", "If the hotel had been closer to the airport, …"], "answer": 1, "why": "句首 <em>Were</em> + 主詞：把 <em>were</em> 放回主詞後面、加上 <em>if</em>，得到 <em>If the hotel were closer</em>。這是現在不真：飯店其實離機場不近。"},
+        {"type": "choose", "q": "<em>Had the team tested the software, the launch would have gone smoothly.</em> 實際上發生了什麼？", "options": ["團隊測試了軟體，上市很順利", "團隊沒有測試軟體，上市不順利", "團隊之後會測試軟體"], "answer": 1, "why": "<em>Had the team tested</em> = <em>If the team had tested</em>，是過去不真的條件。事實和句子相反：沒有測試，上市也不順利。"}
+      ],
+      "takeaway": "句首 <em>Should</em>／<em>Had</em>／<em>Were</em> + 主詞、後面還有半句，就加回 <em>if</em>、把那個字放回主詞後面再讀。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "If the client will approve the plan, we will start next week.", "right": "If the client approves the plan, we will start next week.", "why": "可能發生的條件，<em>if</em> 子句講未來也用現在式，<em>will</em> 只放在主要子句。"},
+    {"wrong": "If we would have known about the delay, we would have changed the schedule.", "right": "If we had known about the delay, we would have changed the schedule.", "why": "<em>would</em> 只放在主要子句。過去不真的 <em>if</em> 子句用 <em>had</em> + p.p.。"},
+    {"wrong": "Had we know about the strike, we would have shipped the order earlier.", "right": "Had we known about the strike, we would have shipped the order earlier.", "why": "句首的 <em>Had</em> 是 <em>had</em> + p.p. 的倒裝，主詞後面要接 p.p. <em>known</em>。"},
+    {"wrong": "Should you needed help, please call the front desk.", "right": "Should you need help, please call the front desk.", "why": "<em>Should</em> 後面的動詞用原形。"},
+    {"wrong": "Unless you don't register by Friday, you cannot attend.", "right": "Unless you register by Friday, you cannot attend.", "why": "<em>unless</em> 已經是 <em>if … not</em>，再加 <em>don't</em> 意思就反了。"}
+  ],
+  "workbook": ["conditional"]
+}

@@ -24,7 +24,7 @@ ITEMS = [
     # so the reader meets {3} before the clue; "During the work," was dropped from P2.
     {
         "id": "r-p6-01", "type": "read", "format": "p6", "unit": "p6", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {
                 "kind": "E-mail",
@@ -156,7 +156,7 @@ ITEMS = [
     # ("submitted", judged easy) and is now a word-form blank.
     {
         "id": "r-p6-02", "type": "read", "format": "p6", "unit": "p6", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {
                 "kind": "Memo",
@@ -287,7 +287,7 @@ ITEMS = [
     # insertion options B and D so it appears only once in the article.
     {
         "id": "r-p6-03", "type": "read", "format": "p6", "unit": "p6", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {
                 "kind": "Article",
@@ -418,7 +418,7 @@ ITEMS = [
     # every evidence index moved up by one; "第一段" in the explanations means the first body paragraph.
     {
         "id": "r-p6-04", "type": "read", "format": "p6", "unit": "p6", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {
                 "kind": "Letter",

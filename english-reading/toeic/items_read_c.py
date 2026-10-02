@@ -28,7 +28,7 @@ ITEMS = [
     # Q4 (C) delivery fee. Q5 (D) weekend staffing line -> Saturday 22 -> two days after the hoped-for Thursday 20.
     {
         "id": "r-p7-04", "type": "read", "format": "p7t", "unit": "p7-triple", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {
                 "kind": "Web page",
@@ -186,14 +186,14 @@ ITEMS = [
                 "options": [
                     "It added coffee service to its order.",
                     "It wanted the food by a set time.",
-                    "Its new office is outside the free-delivery area.",
+                    "It moved to an address outside the free-delivery area.",
                     "It booked less than ten days ahead.",
                 ],
                 "answer": 2,
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨文件：發票上的一筆費用，要回政策找對應的規定，再用信判斷為什麼適用",
-                    "why": "發票第 2 行 Delivery，Flat fee，$35.00。網頁第 3 段：Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses。E-mail 第 1 段：we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby。合起來：新辦公室已不在 Corbridge，也就不在免運範圍內，所以收 $35。選項的 new office is outside the free-delivery area 改述 left our Corbridge premises; our new office is … in Ashby＋free anywhere within Corbridge city limits。",
+                    "why": "發票第 2 行 Delivery，Flat fee，$35.00。網頁第 3 段：Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses。E-mail 第 1 段：we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby。合起來：新辦公室已不在 Corbridge，也就不在免運範圍內，所以收 $35。選項的 moved to an address outside the free-delivery area 改述 left our Corbridge premises; our new office is … in Ashby＋free anywhere within Corbridge city limits。",
                     "evidence": [[2, 1], [0, 2], [1, 0]],
                     "wrong": [
                         "咖啡是 Banquet Package 本來就有的內容（網頁第 2 段 coffee service），已含在發票第 1 行每人 $26 裡；$35 那一行寫的是 Delivery。",
@@ -251,7 +251,7 @@ ITEMS = [
     # house. Q5 NOT (D) full refund: offered in the e-mail, not in the review (she got a voucher).
     {
         "id": "r-p7-05", "type": "read", "format": "p7t", "unit": "p7-triple", "level": 3,
-        "source": "hand", "reviewed": False, "v": 1,
+        "source": "hand", "reviewed": True, "v": 1,
         "docs": [
             {
                 "kind": "Itinerary",
