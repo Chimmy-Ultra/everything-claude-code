@@ -2,12 +2,12 @@
   "id": "mandative", "n": 16,
   "title": "要求、建議後面的 that 子句用原形",
   "en": "The Base Form After Requests and Recommendations",
-  "lead": "<em>The manager requested that Mr. Kim submit the report.</em> 這句的 <em>submit</em> 沒有 <em>-s</em>，也沒有跟著 <em>requested</em> 變成過去式，但它不是打錯。表示要求、建議、必要的字後面接 that 子句（第 3 章）時，正式的書面英文讓子句裡的動詞用原形（第 6 章），不管主詞是誰、時間是什麼時候。這一章講哪些字會帶出這個句型、為什麼要用原形，以及否定和被動怎麼寫。",
+  "lead": "<em>The manager requested that Mr. Kim submit the report.</em> 這句的 <em>submit</em> 沒有 <em>-s</em>，也沒有跟著 <em>requested</em> 變成過去式，但它不是打錯。表示要求、建議、必要的字後面接 that 子句（第 3 章）時，美式正式書面英文讓子句裡的動詞用原形（第 6 章），英式正式書面英文也接受這個寫法，不管主詞是誰、時間是什麼時候。這一章講哪些字會帶出這個句型、為什麼要用原形，以及否定和被動怎麼寫。",
   "check": [
-    {"type": "choose", "q": "選正式書面的寫法：Our director recommended that each team ___ its budget by May 1.", "options": ["reviews", "review", "reviewed"], "answer": 1, "why": "<em>recommended</em> 是建議，後面的 that 子句用原形 <em>review</em>：不因為 <em>each team</em> 是單數就加 <em>-s</em>，也不因為 <em>recommended</em> 是過去式就變成 <em>reviewed</em>。"},
-    {"type": "choose", "q": "選正式書面的寫法：It is essential that every guest ___ a photo ID at check-in.", "options": ["shows", "show", "showed"], "answer": 1, "why": "<em>essential</em>（必要的）後面的 that 子句也用原形，所以是 <em>show</em>，即使主詞 <em>every guest</em> 是單數。"},
-    {"type": "choose", "q": "選正式書面的寫法：Our lawyer recommended that the company ___ the contract until the terms are revised.", "options": ["not sign", "does not sign", "did not sign"], "answer": 0, "why": "這個句型的否定，是把 <em>not</em> 直接放在原形前面：<em>not sign</em>。不用 <em>does</em> 或 <em>did</em>，因為子句裡的動詞不帶時態。"},
-    {"type": "choose", "q": "選正式書面的寫法：The contract requires that the payment ___ made in full before delivery.", "options": ["be", "is", "was"], "answer": 0, "why": "<em>requires</em> 是要求，子句裡的 be 動詞用原形 <em>be</em>。付款是「被付清」，所以是被動 <em>be made</em>。"}
+    {"type": "choose", "q": "依美式正式書面英文的寫法選：Our director recommended that each team ___ its budget by May 1.", "options": ["reviews", "review", "reviewed"], "answer": 1, "why": "<em>recommended</em> 是建議，後面的 that 子句用原形 <em>review</em>：不因為 <em>each team</em> 是單數就加 <em>-s</em>，也不因為 <em>recommended</em> 是過去式就變成 <em>reviewed</em>。"},
+    {"type": "choose", "q": "依美式正式書面英文的寫法選：It is essential that every guest ___ a photo ID at check-in.", "options": ["shows", "show", "showed"], "answer": 1, "why": "<em>essential</em>（必要的）後面的 that 子句也用原形，所以是 <em>show</em>，即使主詞 <em>every guest</em> 是單數。"},
+    {"type": "choose", "q": "依美式正式書面英文的寫法選：Our lawyer recommended that the company ___ the contract until the terms are revised.", "options": ["not sign", "does not sign", "did not sign"], "answer": 0, "why": "這個句型的否定，是把 <em>not</em> 直接放在原形前面：<em>not sign</em>。不用 <em>does</em> 或 <em>did</em>，因為子句裡的動詞不帶時態。"},
+    {"type": "choose", "q": "依美式正式書面英文的寫法選：The contract requires that the payment ___ made in full before delivery.", "options": ["be", "is", "was"], "answer": 0, "why": "<em>requires</em> 是要求，子句裡的 <em>be</em> 動詞用原形 <em>be</em>。付款是「被付清」，所以是被動 <em>be made</em>。"}
   ],
   "sections": [
     {
@@ -17,7 +17,7 @@
         "兩個都沒有變，是因為第二句的 that 子句說的不是「發生了什麼」，而是「<b>有人希望發生什麼</b>」。交報告這件事還沒發生，是被要求的內容。英文用原形來標示這種內容：不帶 <em>-s</em>，不帶過去式，也就是不標任何時態。",
         "可以這樣理解：要求的內容，本來就是一句叫人做事的話。經理對金先生說的是 <em>Submit the report.</em>，叫人做事的句子用原形開頭。把這句話搬進 that 子句，前面補上主詞，動詞還是原形。",
         "拿掉這個規則會怎樣？<em>The manager requested that Mr. Kim submitted the report.</em> 讀起來像在說「金先生交了報告」這件已經發生的事，跟「要求」互相矛盾。",
-        "有些文法書把這個句型放在「假設語氣」底下，寫成「要求、建議 + that + 主詞 + (should) + 原形」。叫什麼名字不重要，重要的是動詞的形式：原形。"
+        "有些文法書把這個句型放在「假設語氣」（第 10 章）底下，寫成「要求、建議 + that + 主詞 + (should) + 原形」。叫什麼名字不重要，重要的是動詞的形式：原形。"
       ],
       "table": {"head": ["比較", "陳述事實的 that 子句", "要求的 that 子句"], "rows": [
         ["前面的字", "<em>know</em>、<em>say</em>、<em>think</em>", "<em>request</em>、<em>recommend</em>、<em>require</em>"],
@@ -38,7 +38,7 @@
       "h": "哪些動詞會帶出原形",
       "body": [
         "會帶出原形的動詞，意思都跟「希望某件事發生」有關：<em>recommend</em>（建議）、<em>suggest</em>（建議、提議）、<em>request</em>（要求）、<em>require</em>（規定、要求）、<em>insist</em>（堅持要）、<em>ask</em>（要求、請求）、<em>propose</em>（提議）、<em>demand</em>（強烈要求）。句型都是：動詞 + <em>that</em> + 主詞 + 原形。",
-        "第二個看起來像打錯的地方是<b>時態</b>。這些動詞自己可以是現在式、過去式或未來式，但 that 子句裡永遠是原形，不跟著變：<em>recommends that she apply</em>、<em>recommended that she apply</em>、<em>will recommend that she apply</em>。一般的句子裡，第 4 章教你讓前後時態配合；在這個句型裡，不要配合。",
+        "這些動詞自己可以是現在式、過去式或未來式，但 that 子句裡永遠是原形，不跟著變：<em>recommends that she apply</em>、<em>recommended that she apply</em>、<em>will recommend that she apply</em>。一般的句子裡，第 4 章教你讓前後時態配合；在這個句型裡，不要配合。",
         "其中幾個動詞還有另一種寫法：動詞 + 人 + to V（第 6 章），例如 <em>asked Mr. Kim to submit</em>、<em>required all staff to attend</em>。但 <em>suggest</em> 沒有這種寫法，<em>suggested him to call</em> 是錯的，要寫 <em>suggested that he call</em>。"
       ],
       "table": {"head": ["動詞", "意思", "例子"], "rows": [
@@ -58,28 +58,30 @@
         {"en": "The landlord <u>insisted</u> that the tenant <u>pay</u> the full deposit.", "zh": "房東堅持房客要付全額押金。"}
       ],
       "quiz": [
-        {"type": "choose", "q": "選正式書面的寫法：Last year, the auditors recommended that the firm ___ its records every quarter.", "options": ["update", "updated", "updates"], "answer": 0, "why": "<em>recommended</em> 是過去式，但 that 子句不跟著變時態，也不因為主詞 <em>the firm</em> 是單數就加 <em>-s</em>，一律用原形 <em>update</em>。"}
+        {"type": "choose", "q": "依美式正式書面英文的寫法選：Last year, the auditors recommended that the firm ___ its records every quarter.", "options": ["update", "updated", "updates"], "answer": 0, "why": "<em>recommended</em> 是過去式，但 that 子句不跟著變時態，也不因為主詞 <em>the firm</em> 是單數就加 <em>-s</em>，一律用原形 <em>update</em>。"}
       ],
       "takeaway": "主要動詞是 <em>recommend</em>、<em>suggest</em>、<em>request</em>、<em>require</em>、<em>insist</em>、<em>ask</em>、<em>propose</em> 這類字時，不管它是什麼時態，that 子句都用原形。"
     },
     {
-      "h": "It is essential that …：形容詞和名詞也會帶出原形",
+      "h": "It is essential that …：形容詞、名詞和被動說法也會帶出原形",
       "body": [
         "表示「必要、重要」的形容詞也一樣：<em>essential</em>（不可或缺的）、<em>important</em>（重要的）、<em>necessary</em>（必要的）、<em>vital</em>（極重要的）、<em>critical</em>（關鍵的）、<em>imperative</em>（非做不可的）。句型是 <em>It is</em> + 形容詞 + <em>that</em> + 主詞 + 原形：<em>It is essential that the shipment arrive before the store opens.</em>",
         "道理跟上一節一樣：說某件事「很必要」，就是希望它發生，而它還沒發生。",
         "但不是每個「<em>It is</em> + 形容詞 + <em>that</em>」都這樣。<em>clear</em>（很清楚）、<em>true</em>（是真的）、<em>likely</em>（很可能）是在判斷事實，子句裡的動詞照常變化：<em>It is clear that the new layout saves time.</em> 判斷方法還是同一個：這個形容詞在說「應該發生」，還是在說「事實是這樣」？",
-        "意思相同的名詞，後面接 that 子句時也用原形：<em>recommendation</em>、<em>request</em>、<em>requirement</em>、<em>suggestion</em>、<em>proposal</em>。例如 <em>the proposal that each branch hire one more cashier</em>。"
+        "意思相同的名詞，後面接 that 子句時也用原形：<em>recommendation</em>、<em>request</em>、<em>requirement</em>、<em>suggestion</em>、<em>proposal</em>。例如 <em>the proposal that each branch hire one more cashier</em>。",
+        "公告和規定裡常見被動的說法：<em>It is recommended that all employees attend the briefing.</em>、<em>It is required that every visitor sign in.</em> 這裡的 <em>It is recommended / required / requested / suggested that</em> 跟形容詞的句型一樣，後面的 that 子句用原形。"
       ],
       "ex": [
         {"en": "It is <u>essential</u> that the shipment <u>arrive</u> before the store opens.", "zh": "這批貨一定要在開店前送到。"},
-        {"en": "It is <u>important</u> that every new hire <u>complete</u> the safety course.", "zh": "每位新進員工都必須完成安全課程。"},
-        {"en": "It is <u>clear</u> that the new layout <u>saves</u> time.", "zh": "新的配置顯然省時間。", "note": "<em>clear</em> 是在陳述事實，所以 <em>saves</em> 照常加 <em>-s</em>。"},
-        {"en": "The board accepted the <u>proposal</u> that each branch <u>hire</u> one more cashier.", "zh": "董事會接受了每家分店多聘一名收銀員的提案。"}
+        {"en": "It is <u>important</u> that every new hire <u>complete</u> the safety course.", "zh": "重要的是，每位新進員工都要完成安全課程。"},
+        {"en": "It is <u>clear</u> that the new layout <u>saves</u> time.", "zh": "新的格局顯然省時間。", "note": "<em>clear</em> 是在陳述事實，所以 <em>saves</em> 照常加 <em>-s</em>。"},
+        {"en": "The board accepted the <u>proposal</u> that each branch <u>hire</u> one more cashier.", "zh": "董事會接受了每家分店多聘一名收銀員的提案。"},
+        {"en": "It is <u>recommended</u> that all employees <u>attend</u> the safety briefing.", "zh": "建議所有員工參加安全說明會。"}
       ],
       "quiz": [
-        {"type": "choose", "q": "正式書面英文裡，哪一句對？", "options": ["It is important that each team member reviews the agenda.", "It is important that each team member review the agenda."], "answer": 1, "why": "<em>important</em> 表示「必要」，that 子句用原形 <em>review</em>，即使主詞 <em>each team member</em> 是單數。"}
+        {"type": "choose", "q": "依美式正式書面英文的寫法，哪一句對？", "options": ["It is important that each team member reviews the agenda.", "It is important that each team member review the agenda."], "answer": 1, "why": "<em>important</em> 表示「必要」，that 子句用原形 <em>review</em>，即使主詞 <em>each team member</em> 是單數。"}
       ],
-      "takeaway": "<em>It is essential / important / necessary that</em> 後面用原形；在判斷事實的 <em>clear</em>、<em>true</em> 後面，動詞照常變化。"
+      "takeaway": "<em>It is essential / important / necessary that</em> 和 <em>It is recommended that</em> 後面用原形；在判斷事實的 <em>clear</em>、<em>true</em> 後面，動詞照常變化。"
     },
     {
       "h": "否定：not 直接放在原形前面",
@@ -94,15 +96,15 @@
         {"en": "The hotel asks that guests <u>not smoke</u> on the balconies.", "zh": "飯店請房客不要在陽台抽菸。"}
       ],
       "quiz": [
-        {"type": "choose", "q": "選正式書面的寫法：The supervisor asked that the new technician ___ the machine without training.", "options": ["not operate", "does not operate", "not operates"], "answer": 0, "why": "<em>asked that</em> 是要求，that 子句用原形。否定就把 <em>not</em> 直接放在原形 <em>operate</em> 前面，不加 <em>does</em>，也不加 <em>-s</em>。"}
+        {"type": "choose", "q": "依美式正式書面英文的寫法選：The supervisor asked that the new technician ___ the machine without training.", "options": ["not operate", "does not operate", "not operates"], "answer": 0, "why": "<em>asked that</em> 是要求，that 子句用原形。否定就把 <em>not</em> 直接放在原形 <em>operate</em> 前面，不加 <em>does</em>，也不加 <em>-s</em>。"}
       ],
       "takeaway": "否定就在原形前面加 <em>not</em>，不用 <em>do</em>、<em>does</em>、<em>did</em>。"
     },
     {
       "h": "be 動詞和被動：用 be，不用 is、was、were",
       "body": [
-        "<em>is</em>、<em>am</em>、<em>are</em>、<em>was</em>、<em>were</em> 的原形是 <em>be</em>。所以在這個句型裡，be 動詞一律寫成 <em>be</em>：<em>It is essential that the room be ready by 9 a.m.</em>，不是 <em>is ready</em>。",
-        "被動（第 5 章）是 be 動詞 + p.p.，在這裡就是 <em>be</em> + p.p.：<em>The policy requires that all receipts be attached to the claim.</em> 收據是被附上的，所以用被動；被動裡的 be 動詞用原形 <em>be</em>。",
+        "<em>is</em>、<em>am</em>、<em>are</em>、<em>was</em>、<em>were</em> 的原形是 <em>be</em>。所以在這個句型裡，<em>be</em> 動詞一律寫成 <em>be</em>：<em>It is essential that the room be ready by 9 a.m.</em>，不是 <em>is ready</em>。",
+        "被動（第 5 章）是 <em>be</em> 動詞 + p.p.，在這裡就是 <em>be</em> + p.p.：<em>The policy requires that all receipts be attached to the claim.</em> 收據是被附上的，所以用被動；被動裡的 <em>be</em> 動詞用原形 <em>be</em>。",
         "也不要寫成 <em>were</em>。第 10 章的 <em>If I were you</em> 是另一個句型；要求、建議後面的 that 子句只用 <em>be</em>。",
         "否定的被動照上一節，把 <em>not</em> 放在 <em>be</em> 前面：<em>that the file not be shared</em>。"
       ],
@@ -113,9 +115,9 @@
         {"en": "The director asked that the file <u>not be shared</u> outside the team.", "zh": "主任要求這份檔案不要分享給團隊以外的人。"}
       ],
       "quiz": [
-        {"type": "tap", "q": "點出這句 that 子句裡的動詞（可以點好幾個字）。", "sentence": "The board requested that the report be translated into Spanish.", "answer": [6, 7], "why": "that 子句的主詞是 <em>the report</em>。報告是被翻譯的，所以動詞是被動 <em>be translated</em>；be 動詞用原形 <em>be</em>，不是 <em>is</em> 或 <em>was</em>。<em>requested</em> 是主要子句的動詞，不在 that 子句裡。"}
+        {"type": "tap", "q": "點出這句 that 子句裡的動詞（可以點好幾個字）。", "sentence": "The board requested that the report be translated into Spanish.", "answer": [6, 7], "why": "that 子句的主詞是 <em>the report</em>。報告是被翻譯的，所以動詞是被動 <em>be translated</em>；<em>be</em> 動詞用原形 <em>be</em>，不是 <em>is</em> 或 <em>was</em>。<em>requested</em> 是主要子句的動詞，不在 that 子句裡。"}
       ],
-      "takeaway": "be 動詞一律用 <em>be</em>；被動寫成 <em>be</em> + p.p.，不用 <em>is</em>、<em>was</em>、<em>were</em>。"
+      "takeaway": "<em>be</em> 動詞一律用 <em>be</em>；被動寫成 <em>be</em> + p.p.，不用 <em>is</em>、<em>was</em>、<em>were</em>。"
     },
     {
       "h": "同一個字，不是在要求就照常變化",
@@ -136,23 +138,25 @@
       "takeaway": "先看意思：在要求某件事發生才用原形；<em>suggest</em> 是「顯示」、<em>insist</em> 是「堅稱」時，照常用時態。"
     },
     {
-      "h": "加 should 的寫法",
+      "h": "英式英文的其他寫法",
       "body": [
-        "英式英文還有另一種寫法：在原形前面加 <em>should</em>。<em>The manager requested that Mr. Kim should submit the report.</em> 意思跟不加 <em>should</em> 的版本一樣。",
-        "不管加不加 <em>should</em>，子句裡的動詞都是原形，因為 <em>should</em> 後面本來就接原形。所以兩種寫法有一個共同點：動詞不加 <em>-s</em>、不變過去式。",
-        "這本書的例句和題目都用不加 <em>should</em> 的寫法，它在美式和英式的正式書面英文裡都通用。讀到加 <em>should</em> 的句子，知道意思一樣就好。"
+        "這一章教的原形寫法，美式正式書面英文用它，英式正式書面英文也接受它。英式英文另外還接受兩種寫法，讀英式的文件時會看到。",
+        "第一種是在原形前面加 <em>should</em>：<em>The manager requested that Mr. Kim should submit the report.</em> 意思跟不加 <em>should</em> 的版本一樣。<em>should</em> 後面本來就接原形，所以動詞一樣不加 <em>-s</em>、不變過去式。",
+        "第二種是照常變化，跟陳述事實的 that 子句一樣：<em>It is important that the contract is signed before the launch.</em> 英式英文在一些情況下接受這種寫法；美式正式書面英文不用它，而用原形 <em>be signed</em>。",
+        "所以這一章的題目，選項裡同時有原形和照常變化的形式時，題目會寫明「依美式正式書面英文的寫法」，答案是原形。原形在美式和英式的正式書面英文裡都通，自己寫的時候用它就不會出錯。讀到加 <em>should</em> 或照常變化的英式句子，知道意思跟原形一樣就好。"
       ],
       "ex": [
-        {"en": "The manager requested that Mr. Kim <u>submit</u> the report by Friday.", "zh": "經理要求金先生在星期五前交報告。"},
-        {"en": "The manager requested that Mr. Kim <u>should submit</u> the report by Friday.", "zh": "經理要求金先生在星期五前交報告。", "note": "英式英文常見的寫法，意思相同；<em>should</em> 後面也是原形。"}
+        {"en": "The manager requested that Mr. Kim <u>submit</u> the report by Friday.", "zh": "經理要求金先生在星期五前交報告。", "note": "原形：美式和英式的正式書面英文都用。"},
+        {"en": "The manager requested that Mr. Kim <u>should submit</u> the report by Friday.", "zh": "經理要求金先生在星期五前交報告。", "note": "英式英文接受的寫法，意思相同；<em>should</em> 後面也是原形。"},
+        {"en": "It is important that the contract <u>is signed</u> before the launch.", "zh": "合約在上市前簽好，這一點很重要。", "note": "英式英文在一些情況下接受的寫法：照常變化。美式正式書面英文寫 <em>be signed</em>。"}
       ],
-      "takeaway": "英式英文也會寫 <em>should</em> + 原形，意思一樣；兩種寫法的動詞都不加 <em>-s</em>、不變過去式。"
+      "takeaway": "英式英文也接受 <em>should</em> + 原形，有時也照常變化；原形在美式和英式的正式書面英文裡都通。"
     }
   ],
   "mistakes": [
-    {"wrong": "The manager requested that Ms. Ito submits the report by Friday.", "right": "The manager requested that Ms. Ito submit the report by Friday.", "why": "要求的 that 子句用原形，主詞是單數也不加 <em>-s</em>。"},
-    {"wrong": "Our lawyer recommended that we did not sign the contract yet.", "right": "Our lawyer recommended that we not sign the contract yet.", "why": "否定直接在原形前面加 <em>not</em>，不用 <em>did</em>，也不跟著 <em>recommended</em> 變過去式。"},
-    {"wrong": "The policy requires that all receipts are attached to the claim.", "right": "The policy requires that all receipts be attached to the claim.", "why": "在這個句型裡，be 動詞一律用原形 <em>be</em>；被動是 <em>be</em> + p.p.。"},
+    {"wrong": "The manager requested that Ms. Ito submits the report by Friday.", "right": "The manager requested that Ms. Ito submit the report by Friday.", "why": "要求的 that 子句用原形，主詞是單數也不加 <em>-s</em>。英式英文有時會寫 <em>submits</em>，但美式正式書面英文用原形（見本章最後一節）。"},
+    {"wrong": "Our lawyer recommended that we did not sign the contract yet.", "right": "Our lawyer recommended that we not sign the contract yet.", "why": "否定直接在原形前面加 <em>not</em>，不用 <em>did</em>，也不跟著 <em>recommended</em> 變過去式。這是美式正式書面英文的寫法，英式的其他寫法見本章最後一節。"},
+    {"wrong": "The policy requires that all receipts are attached to the claim.", "right": "The policy requires that all receipts be attached to the claim.", "why": "在這個句型裡，<em>be</em> 動詞一律用原形 <em>be</em>；被動是 <em>be</em> + p.p.。<em>are attached</em> 在英式文字裡看得到，但不是美式正式書面英文的寫法。"},
     {"wrong": "Ms. Ortiz suggested him to call the client.", "right": "Ms. Ortiz suggested that he call the client.", "why": "<em>suggest</em> 不能接「人 + to V」，要用 <em>that</em> + 主詞 + 原形。"},
     {"wrong": "The figures suggest that the new store be doing well.", "right": "The figures suggest that the new store is doing well.", "why": "這裡的 <em>suggest</em> 是「顯示」，在陳述事實，不是要求，所以動詞照常變化。"}
   ],

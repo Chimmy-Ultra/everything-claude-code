@@ -145,6 +145,12 @@ const $ = s => document.querySelector(s);
 function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
 function btn(cls, text, fn) { const b = el("button", cls, text); b.type = "button"; if (fn) b.onclick = fn; return b; }
 function html(tag, cls, h) { const e = el(tag, cls); e.innerHTML = h; return e; }   // chapter text: only <em>, <b>, <u> (checked at build)
+function shuffled(n, seed) {
+  let h = 2166136261; for (const c of seed) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); }
+  const a = [...Array(n).keys()];
+  for (let i = n - 1; i > 0; i--) { h = Math.imul(h ^ h >>> 15, 2246822507) ^ Math.imul(h ^ h >>> 13, 3266489909); const j = (h >>> 0) % (i + 1); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
 function toast(t) { const e = $("#toast"); e.textContent = t; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 1800); }
 
 // ================================================================ progress: the viewer's own doc in the db, else this browser
@@ -217,12 +223,14 @@ function quiz(q, key, onDone) {
   const why = () => { const w = el("p", "why"); w.append(el("span", "mk " + (st.q[key] ? "ok" : "no"), st.q[key] ? "對" : "再看一次")); w.insertAdjacentHTML("beforeend", q.why); box.append(w); };
   if (q.type === "choose") {
     const ol = el("ol", "opts"), bs = [];
-    q.options.forEach((o, i) => {
-      const li = el("li"), b = btn("opt"); b.innerHTML = `<span class="l">${L[i]}</span><span class="w">${o}</span>`;
-      b.onclick = () => answer(i); bs.push(b); li.append(b); ol.append(li);
+    // options in a fixed shuffled order per question, so the answer is not always in the same place
+    const order = shuffled(q.options.length, cur.id + ":" + key);
+    order.forEach((i, pos) => {
+      const li = el("li"), b = btn("opt"); b.innerHTML = `<span class="l">${L[pos]}</span><span class="w">${q.options[i]}</span>`;
+      b.dataset.i = i; b.onclick = () => answer(i); bs.push(b); li.append(b); ol.append(li);
     });
     box.append(ol);
-    const show = chosen => bs.forEach((b, i) => { b.disabled = true; b.classList.add(i === q.answer ? "right" : i === chosen ? "wrong" : "dim"); });
+    const show = chosen => bs.forEach(b => { const i = Number(b.dataset.i); b.disabled = true; b.classList.add(i === q.answer ? "right" : i === chosen ? "wrong" : "dim"); });
     function answer(i) { st.q[key] = i === q.answer; show(i); why(); save(); onDone && onDone(st.q[key]); }
     if (prev != null) { show(prev ? q.answer : -1); why(); }
   } else {
