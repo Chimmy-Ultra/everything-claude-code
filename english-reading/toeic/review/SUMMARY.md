@@ -121,8 +121,8 @@ The learner asked for Part 6 and Part 7, hard-leaning. Rules are in WRITING_RULE
 | Batch | File | Questions | Blind bands, latest pass (easy / medium / hard) | Blind passes |
 |---|---|---|---|---|
 | Part 6 text completion (e-mail, memo, article, letter) | items_read_a | 4 texts, 16 | 1 / 7 / 8 | 2 |
-| Part 7 three documents (conference, furniture order, hiring) | items_read_b | 3 sets, 15 | 1 / 6 / 8 (pass 3 covered two sets) | 3 |
-| Part 7 three documents (catering, coach tour) | items_read_c | 2 sets, 10 | 0 / 4 / 6 | 3 |
+| Part 7 three documents (conference, furniture order, hiring) | items_read_b | 3 sets, 15 | 1 / 5 / 9 (pass 3 covered two of the sets) | 3 |
+| Part 7 three documents (catering, coach tour) | items_read_c | 2 sets, 10 | 0 / 5 / 5 | 3 |
 
 - Keys matched in every pass. No option was ever judged defensible; near-misses were closed anyway (r-p6-03 Once, r-p6-02 no longer, r-p7-02:0 two options readable two ways, r-p7-01:4 gathered up).
 - First pass found too many easy word and purpose questions and some option-length cues; these were rewritten, and later passes put the hard share at about half (22 of 41) with 2 easy.
