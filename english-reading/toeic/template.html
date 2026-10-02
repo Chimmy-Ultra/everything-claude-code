@@ -1117,7 +1117,11 @@ function readCard(left, right, item, card) {
   keys.unsure = () => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.ub.click(); };
   function finishRead() {
     item.questions.forEach((_, i) => filled.add(i));
-    repaint(new Set());
+    const used = new Set();                    // each word card underlines its first place in document order, tables included
+    left.querySelectorAll(".doc p[data-ev], .doc td").forEach(node => {
+      if (node.tagName === "TD") { node.innerHTML = glossify(node.textContent, item.gloss, used); return; }
+      const x = paras.find(x => x.p === node); if (x) node.innerHTML = docHTML(x.t, item, filled, used);
+    });
     const on = $("#dkTools .zht")?.getAttribute("aria-pressed") === "true";
     for (const x of paras) if (x.zh) { const z = el("span", "zh", x.zh); z.hidden = !on; x.p.append(z); }
     const ev = new Set(qs.flatMap(qi => (item.questions[qi].explain?.evidence || []).map(([d, i]) => d + ":" + i)));

@@ -71,7 +71,7 @@
         "w": "transfer",
         "hw": "transfer",
         "pos": "v.",
-        "zh": "轉換、改換（到別處）",
+        "zh": "改到、轉到（另一場）",
         "ex": "Can I transfer my booking to the evening class?"
       },
       {
@@ -112,8 +112,8 @@
           "NOT 題：每個選項都拿訂購單和價目表核對。"
         ],
         "why": [
-          "Three options are confirmed. Free delivery: the order form has six each of DK-160, CH-40 and ST-02, and the price list gives <em>$468</em>, <em>$226</em> and <em>$134</em>, so the total is $4,968; the price list's last row says delivery is <em>free on orders of $3,000 or more</em>. Over two weeks: the order form's order date is <em>September 8</em> and its required-by date is <em>September 25</em>, seventeen days later. A time of day: its special instructions say <em>Deliveries must arrive before 9:00 A.M.</em> The graphite option is the one that is not true. The graphite item on the order is ST-02, and the price list gives its colors as <em>White, graphite</em>; the DK-160 desk comes in <em>White, oak, graphite</em>, and CH-40 only in <em>Black</em>. No item on the order is offered only in graphite, so this option is the answer.",
-          "三個選項都能確認。免運：訂購單上 DK-160、CH-40、ST-02 各 6 件，價目表的單價是 $468、$226、$134，合計 $4,968；價目表最後一行說 free on orders of $3,000 or more。超過兩週：訂購單的下單日是 September 8，最晚需要日是 September 25，相隔十七天。指定時段：特別指示寫 Deliveries must arrive before 9:00 A.M.。不成立的是石墨灰那一項：訂單上的石墨灰是 ST-02，價目表上它的顏色是 White, graphite；DK-160 是 White, oak, graphite，CH-40 只有 Black。訂單裡沒有任何一項只出石墨灰，所以這個選項就是答案。"
+          "Three options are confirmed. Free delivery: the order form has 6 each of DK-160, CH-40 and ST-02. On the price list, one of each costs <em>$468</em> + <em>$226</em> + <em>$134</em> = $828, so six of each is 6 × $828 = $4,968. The price list's last row says delivery is <em>free on orders of $3,000 or more</em>. Ordered more than two weeks early: the order form's order date is <em>September 8</em> and its required-by date is <em>September 25</em>, seventeen days later. A delivery time: its special instructions say <em>Deliveries must arrive before 9:00 A.M.</em> The graphite option is the one that is not true. The graphite item on the order is ST-02, and the price list gives its colors as <em>White, graphite</em>. The DK-160 desk comes in <em>White, oak, graphite</em>, and CH-40 only in <em>Black</em>. No item on the order is offered only in graphite, so this option is the answer.",
+          "三個選項都能確認。免運：訂購單上 DK-160、CH-40、ST-02 各 6 件。價目表上三種各一件是 $468 + $226 + $134 = $828，六組就是 6 × $828 = $4,968。價目表最後一行說 free on orders of $3,000 or more。提早兩週以上下單：訂購單的下單日是 September 8，最晚需要日是 September 25，相隔十七天。指定送達時間：特別指示寫 Deliveries must arrive before 9:00 A.M.。不成立的是石墨灰那一項：訂單上的石墨灰是 ST-02，價目表上它的顏色是 White, graphite；DK-160 是 White, oak, graphite，CH-40 只有 Black。訂單裡沒有任何一項只出石墨灰，所以這個選項就是答案。"
         ]
       },
       {
@@ -132,8 +132,8 @@
           "賣家 carry 某商品：有在賣、有庫存。"
         ],
         "why": [
-          "The second paragraph of the e-mail offers <em>the same model without the headrest, which we carry in the color you chose</em>. The subject <em>we</em> is the seller, the object is a chair model, and <em>in the color you chose</em> says which version the seller has. So <em>carry</em> means stock.",
-          "e-mail 第 2 段提供 the same model without the headrest, which we carry in the color you chose。主詞 we 是賣家，受詞是一款椅子，in the color you chose 說的是賣家有哪個顏色。所以 carry 等於 stock（有庫存、有販售）。"
+          "The second paragraph of the e-mail offers <em>the same model without the headrest, which we carry in the color you chose</em>. The subject <em>we</em> is the seller, the object is a chair model, and <em>in the color you chose</em> says which version the seller has. So <em>carry</em> means stock: the seller keeps this chair available to sell.",
+          "e-mail 第 2 段提供 the same model without the headrest, which we carry in the color you chose。主詞 we 是賣家，受詞是一款椅子，in the color you chose 說的是賣家有哪個顏色。所以 carry 等於 stock：賣家備有這款椅子可以賣。"
         ]
       },
       {
@@ -257,8 +257,8 @@
           "三篇整合：排班練習的新安排，再對照他不在的日期。"
         ],
         "why": [
-          "The advertisement planned the exercise for <em>the day of their interview</em>, but the third paragraph of the second e-mail changes this: <em>you will receive it by e-mail on November 26 and should send it back to me before your interview</em>. Its first paragraph sets the interview for <em>Monday, November 30</em>. In the third paragraph of the first e-mail, Mr. Reyes says <em>I will be away at a family wedding from November 21 to 25</em>. The exercise arrives the day after he gets back and is due before the 30th, so he will do it just after he returns from traveling.",
-          "廣告原本安排在 the day of their interview 做練習，但第二封 e-mail 第 3 段改了：you will receive it by e-mail on November 26 and should send it back to me before your interview。同一封信第 1 段把面試定在 Monday, November 30。第一封 e-mail 第 3 段，Reyes 先生說 I will be away at a family wedding from November 21 to 25。練習在他回來的隔天寄到，要在 30 日前寄回，所以他會在旅行回來後不久完成。"
+          "The fourth paragraph of the advertisement planned the exercise for <em>the day of their interview</em>, but the third paragraph of the second e-mail changes this: <em>you will receive it by e-mail on November 26 and should send it back to me before your interview</em>. Its first paragraph sets the interview for <em>Monday, November 30</em>. In the third paragraph of the first e-mail, Mr. Reyes says <em>I will be away at a family wedding from November 21 to 25</em>. The exercise does not reach him until November 26, after his trip has ended, and it is due before the interview on the 30th. So he will do it just after he returns from traveling.",
+          "廣告第 4 段原本安排在 the day of their interview 做練習，但第二封 e-mail 第 3 段改了：you will receive it by e-mail on November 26 and should send it back to me before your interview。同一封信第 1 段把面試定在 Monday, November 30。第一封 e-mail 第 3 段，Reyes 先生說 I will be away at a family wedding from November 21 to 25。練習要到 11 月 26 日才寄到他手上，那時他的旅程已經結束，而且要在 30 日的面試前寄回。所以他會在旅行回來後不久完成。"
         ]
       }
     ],
