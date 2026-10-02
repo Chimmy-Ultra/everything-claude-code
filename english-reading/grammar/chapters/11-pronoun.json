@@ -49,7 +49,7 @@
         {"en": "Please send the agenda to Mr. Lee and <u>me</u>.", "zh": "請把議程寄給李先生和我。", "note": "拿掉 <em>Mr. Lee and</em>：<em>send the agenda to me</em>。"}
       ],
       "quiz": [
-        {"type": "choose", "q": "<em>Both teams submitted proposals, and the client chose ___.</em> 空格填哪一個？", "options": ["their", "theirs", "they"], "answer": 1, "why": "空格在動詞 <em>chose</em> 後面，後面沒有名詞，意思是「他們的（提案）」，用所有代名詞 <em>theirs</em>。<em>their</em> 後面一定要接名詞；<em>they</em> 是主格，不能放在動詞後面。"}
+        {"type": "choose", "q": "<em>The two consultants sent a proposal too. Ours was cheaper, but the client chose ___.</em> 空格填哪一個？", "options": ["their", "theirs", "they"], "answer": 1, "why": "空格在動詞 <em>chose</em> 後面，後面沒有名詞，意思是「那兩位顧問的（提案）」，用所有代名詞 <em>theirs</em>。<em>their</em> 後面一定要接名詞；<em>they</em> 是主格，不能放在動詞後面。"}
       ],
       "takeaway": "後面有名詞用 <em>their</em>，沒有名詞用 <em>theirs</em>；兩個人連在一起時，先拿掉另一個人再判斷。"
     },

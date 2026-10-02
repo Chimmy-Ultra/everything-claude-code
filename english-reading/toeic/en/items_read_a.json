@@ -1,0 +1,341 @@
+{
+  "r-p6-01": {
+    "q": [
+      {
+        "point": [
+          "Inserted sentence: the next paragraph must follow from it.",
+          "插入句：下一段要能接著它說下去。"
+        ],
+        "why": [
+          "The blank ends paragraph 1. The first sentence of paragraph 2 says <em>The elevator that remains in service will be busier than usual</em>, so one of the two elevators keeps running during the work. The sentence that sets this up is <em>Only one elevator will be shut down at a time, starting with the east one.</em>",
+          "空格在第一段最後。第二段第一句說 The elevator that remains in service will be busier than usual，表示施工期間兩部電梯中有一部照常運轉。能先交代這件事的句子是 Only one elevator will be shut down at a time, starting with the east one（一次只停一部，先從東側那部開始）。"
+        ]
+      },
+      {
+        "point": [
+          "Find the noun the pronoun replaces.",
+          "找出代名詞代替的名詞。"
+        ],
+        "why": [
+          "Tenants on the lower floors are asked to <em>leave … free for residents of the upper floors</em>. What they leave free is the elevator in the sentence before: <em>The elevator that remains in service</em>. Paragraph 1 says only one elevator is shut down at a time, so just one is running. One elevator is singular: <em>it</em>.",
+          "低樓層住戶被要求 leave … free for residents of the upper floors。要留下來的，是前一句的 The elevator that remains in service。第一段說一次只停一部，所以施工期間只有一部在運轉。一部電梯是單數，用 it。"
+        ]
+      },
+      {
+        "point": [
+          "The clue for the linking word is in the next paragraph.",
+          "連接詞的線索在下一段。"
+        ],
+        "why": [
+          "The sentence itself does not decide; paragraph 3 does. It says the freight elevator is <em>open to tenants for these deliveries from 6 to 8 a.m. each weekday</em>. <em>these deliveries</em> are the furniture and large items in the blank's sentence, and 6 to 8 a.m. is its <em>early in the morning</em>. So large items may come in through the loading dock at that time; at any other time they are postponed: <em>unless</em>.",
+          "本句自己決定不了，要看第三段。第三段說貨梯 open to tenants for these deliveries from 6 to 8 a.m. each weekday。these deliveries 就是空格那句的家具和大型物品，6 點到 8 點就是那句的 early in the morning。所以大型物品在這個時段經卸貨區送進來是可以的，其他時間才要延後：用 unless（除非）。"
+        ]
+      },
+      {
+        "point": [
+          "Tense: compare the e-mail date with the start of the work.",
+          "時態：比較 e-mail 的日期和開工日期。"
+        ],
+        "why": [
+          "The e-mail is dated <em>March 9</em>, and paragraph 1 says the technicians <em>will begin</em> on <em>Monday, March 16</em>. The blank's own sentence says the freight elevator <em>is normally used only by building staff</em>. Opening it to tenants is a new arrangement for the work week, and it has not started yet: <em>will be</em>.",
+          "這封 e-mail 的日期是 March 9，第一段說技術人員 Monday, March 16 才 will begin。空格這一句也說貨梯 is normally used only by building staff。開放給住戶是配合施工的新安排，還沒開始：用 will be。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "tenants",
+        "hw": "tenant",
+        "pos": "n.",
+        "zh": "房客、住戶",
+        "ex": "The landlord sent a notice to every tenant."
+      },
+      {
+        "w": "in service",
+        "hw": "in service",
+        "pos": "phr.",
+        "zh": "運轉中、可使用",
+        "ex": "Only two of the four buses are in service today."
+      },
+      {
+        "w": "postponed",
+        "hw": "postpone",
+        "pos": "v.",
+        "zh": "延後",
+        "ex": "We postponed the meeting until Friday."
+      },
+      {
+        "w": "loading dock",
+        "hw": "loading dock",
+        "pos": "n.",
+        "zh": "卸貨區",
+        "ex": "The truck is waiting at the loading dock."
+      },
+      {
+        "w": "freight elevator",
+        "hw": "freight elevator",
+        "pos": "n.",
+        "zh": "貨梯",
+        "ex": "Use the freight elevator for large boxes."
+      }
+    ]
+  },
+  "r-p6-02": {
+    "q": [
+      {
+        "point": [
+          "A good result, then the step it leads to.",
+          "先是好結果，再是因此採取的行動。"
+        ],
+        "why": [
+          "The sentence before says the sales staff <em>reported far fewer rejected claims than they had with the paper forms</em>. <em>rejected</em> sounds negative, but <em>far fewer</em> rejected claims is good news: the trial worked. Because of this, Tallyway will replace the paper forms for everyone. The blank's sentence is the result of the one before: <em>As a result</em>.",
+          "前一句說業務部同仁 reported far fewer rejected claims than they had with the paper forms。rejected 雖然是負面字，但 far fewer 被退回的申請是好消息：試用很成功。因為這樣，全公司都改用 Tallyway。這一句是前一句的結果：As a result。"
+        ]
+      },
+      {
+        "point": [
+          "The next sentence decides the adverb.",
+          "下一句決定副詞。"
+        ],
+        "why": [
+          "Receipts are now <em>simply photographed with a phone</em>, but the next sentence says <em>Our auditors may ask to see the originals during the annual review</em>. So the paper originals must be kept even after they are photographed: <em>still</em>.",
+          "收據現在 simply photographed with a phone 就好，但下一句說 Our auditors may ask to see the originals during the annual review。所以即使拍了照，正本仍然要保留：still。"
+        ]
+      },
+      {
+        "point": [
+          "Inserted sentence: link it to the sentences before and after.",
+          "插入句：前後兩句都要接得上。"
+        ],
+        "why": [
+          "The sentence before moves the deadline from <em>the 15th of the following month</em> to <em>the 5th</em>, an earlier date. The sentence after says claims that miss the deadline <em>will be repaid the following month instead</em>, and <em>instead</em> needs a usual case to contrast with. <em>This earlier date lets us repay claims in the month they are submitted</em> does both: it points back to the 5th and gives the usual case.",
+          "前一句把期限從 the 15th of the following month 提前到 the 5th，是比較早的日期。後一句說錯過期限的申請 will be repaid the following month instead；instead（改為）需要一個平常的情況來對照。This earlier date lets us repay claims in the month they are submitted（提前的期限讓我們在提交當月就撥款）兩邊都接上：指回 5 日，也交代了平常是當月撥款。"
+        ]
+      },
+      {
+        "point": [
+          "<em>late</em> is itself an adverb: <em>submitted late</em>.",
+          "late 本身就是副詞：submitted late。"
+        ],
+        "why": [
+          "The blank describes <em>submitted</em>, so it needs an adverb. The paragraph is about a deadline: claims must be <em>submitted by the 5th</em>, and these claims are repaid <em>the following month instead</em>. So they are claims sent in after the deadline, <em>submitted late</em>. <em>late</em> works as an adverb with no -ly.",
+          "空格修飾 submitted，要用副詞。這一段講的是期限：申請要 submitted by the 5th，而這些申請 the following month instead 才撥款，所以是過了期限才交的，也就是 submitted late（逾期提交）。late 不加 -ly 就能當副詞。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "trial",
+        "hw": "trial",
+        "pos": "n.",
+        "zh": "試用、試行",
+        "ex": "We ran a two-week trial of the new software."
+      },
+      {
+        "w": "rejected",
+        "hw": "reject",
+        "pos": "v.",
+        "zh": "退回、駁回",
+        "ex": "The bank rejected the loan application."
+      },
+      {
+        "w": "claims",
+        "hw": "claim",
+        "pos": "n.",
+        "zh": "（費用）申請、報帳",
+        "ex": "Submit your travel claim within thirty days."
+      },
+      {
+        "w": "auditors",
+        "hw": "auditor",
+        "pos": "n.",
+        "zh": "稽核人員",
+        "ex": "The auditors checked every invoice from last year."
+      },
+      {
+        "w": "repaid",
+        "hw": "repay",
+        "pos": "v.",
+        "zh": "撥還（款項）",
+        "ex": "Travel costs will be repaid within two weeks."
+      }
+    ]
+  },
+  "r-p6-03": {
+    "q": [
+      {
+        "point": [
+          "Inserted sentence: the next sentence explains it.",
+          "插入句：下一句在解釋它。"
+        ],
+        "why": [
+          "The sentence before says orders <em>have nearly doubled</em> and the ovens <em>now run around the clock</em>, so Mill Road is working at its limit. The sentence after says <em>The bakery sits on a narrow lot between a school and a row of houses</em>: there is no room to build more there. The missing sentence is the point that this explains: <em>Expanding the original bakery was never an option.</em> That is why the company is opening a second site.",
+          "前一句說訂單 have nearly doubled，烤爐 now run around the clock，磨坊路的廠已經滿載。後一句說 The bakery sits on a narrow lot between a school and a row of houses：原址沒有空間再蓋。空格要放的，就是這句話在解釋的事：Expanding the original bakery was never an option（擴建原本的烘焙廠從來不是選項）。所以公司才要另開第二座生產基地。"
+        ]
+      },
+      {
+        "point": [
+          "Tense: the dateline shows March is past.",
+          "時態：報導日期顯示 3 月已經過去。"
+        ],
+        "why": [
+          "The sentence only says <em>in March</em>. The article opens with the date <em>June 12</em>, and the new bakery <em>is due to open in October</em>, which paragraph 1 calls <em>this autumn</em>. So this is March of this year, already past: <em>began</em>.",
+          "句子只說 in March。報導開頭的日期是 June 12，新廠 is due to open in October，也就是第一段說的 this autumn。所以這是今年的 3 月，已經過去了：began。"
+        ]
+      },
+      {
+        "point": [
+          "Time conjunction: the sentence before decides.",
+          "時間連接詞：由前一句決定。"
+        ],
+        "why": [
+          "The sentence before says <em>The building has room for all of Corvell's pastry production, so Mill Road will eventually bake only bread</em>. When the new site is fully running, it takes over all the pastries. So Mill Road can go on baking <em>some pastries</em> only in the period before that: <em>Until</em> the new site is running at full capacity.",
+          "前一句說 The building has room for all of Corvell's pastry production, so Mill Road will eventually bake only bread。新廠全面運轉後，糕點全部由新廠做。所以磨坊路繼續烤 some pastries，只會是在那之前的過渡期：Until（在……之前一直）。"
+        ]
+      },
+      {
+        "point": [
+          "<em>given the opportunity to</em> do something: a choice, not an order.",
+          "given the opportunity to + 動詞：是可以選擇，不是命令。"
+        ],
+        "why": [
+          "The sentence before says <em>no current employee will be required to move</em>. So moving to Southmere is a choice for Mill Road staff, not a duty. Those who want to move get the first chance, before <em>the jobs are advertised</em>: <em>opportunity</em>.",
+          "前一句說 no current employee will be required to move。所以調到 Southmere 對磨坊路員工來說是自己的選擇，不是義務。想調的人可以在 the jobs are advertised 之前優先申請：opportunity（機會）。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "around the clock",
+        "hw": "around the clock",
+        "pos": "phr.",
+        "zh": "日夜不停地",
+        "ex": "The factory runs around the clock during the holidays."
+      },
+      {
+        "w": "lot",
+        "hw": "lot",
+        "pos": "n.",
+        "zh": "（一塊）土地、地段",
+        "ex": "The company bought an empty lot next to the station."
+      },
+      {
+        "w": "Conversion",
+        "hw": "conversion",
+        "pos": "n.",
+        "zh": "改建、改裝",
+        "ex": "The conversion of the old mill into offices took a year."
+      },
+      {
+        "w": "eventually",
+        "hw": "eventually",
+        "pos": "adv.",
+        "zh": "最後、終究",
+        "ex": "The two offices will eventually move into one building."
+      },
+      {
+        "w": "full capacity",
+        "hw": "full capacity",
+        "pos": "n.",
+        "zh": "滿載產能、全面運轉",
+        "ex": "The new plant will reach full capacity next spring."
+      },
+      {
+        "w": "transfer",
+        "hw": "transfer",
+        "pos": "v.",
+        "zh": "調職、調動",
+        "ex": "She asked to transfer to the Boston office."
+      }
+    ]
+  },
+  "r-p6-04": {
+    "q": [
+      {
+        "point": [
+          "Same or different? Check the first paragraph.",
+          "相同還是不同？看第一段。"
+        ],
+        "why": [
+          "The first paragraph says the printed copy <em>often arrives a week or more after the first of the month</em>. This sentence says <em>the digital edition will reach you on the first of every month</em>. The two editions differ, so the answer is <em>Unlike</em>.",
+          "第一段說紙本 often arrives a week or more after the first of the month。本句說 the digital edition will reach you on the first of every month。兩種版本不同，所以用 Unlike（和……不同）。"
+        ]
+      },
+      {
+        "point": [
+          "Inserted sentence: join the price cut and the refund.",
+          "插入句：把降價和退款接起來。"
+        ],
+        "why": [
+          "The sentence before cuts the price <em>from $96 to $72</em>. The sentence after says some subscribers <em>have already paid for next year</em> and <em>will receive a refund of the difference</em>. They can get money back only if the lower price covers them too. <em>The new rate will apply to all subscriptions, including renewals</em> makes that link.",
+          "前一句說年費 from $96 to $72。後一句說有些訂戶 have already paid for next year，他們 will receive a refund of the difference。新價格也適用於他們，才會有差額可退。The new rate will apply to all subscriptions, including renewals（新費率適用於所有訂閱，包括續訂）正好把兩句接起來。"
+        ]
+      },
+      {
+        "point": [
+          "Take out <em>our records show</em>, then see what the blank does.",
+          "拿掉 our records show，再看空格的作用。"
+        ],
+        "why": [
+          "<em>our records show</em> is an extra phrase placed inside the clause. Without it, the sentence reads <em>Subscribers … have already paid for next year</em>. The blank comes right before the verb <em>have already paid</em>, so it is the subject of that verb. A subject that refers to people: <em>who</em>.",
+          "our records show 是插在關係子句中間的插入語。拿掉它，句子是 Subscribers … have already paid for next year。空格後面直接接動詞 have already paid，所以空格是這個動詞的主詞。指人的主詞用 who。"
+        ]
+      },
+      {
+        "point": [
+          "<em>Should you</em> + verb = <em>If you</em> + verb.",
+          "Should you + 原形動詞 = If you + 動詞。"
+        ],
+        "why": [
+          "After the comma comes an instruction: <em>please check the box on the enclosed form</em>. So the first half must be a condition. <em>Should you prefer</em> is a formal way to say <em>If you prefer</em>: <em>if</em> is left out and <em>should</em> comes before the subject.",
+          "逗號後面是指示：please check the box on the enclosed form。所以前半要是一個條件。Should you prefer 是 If you prefer 的正式說法：省略 if，把 should 放到主詞前面。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "postage",
+        "hw": "postage",
+        "pos": "n.",
+        "zh": "郵資",
+        "ex": "Postage is included in the price of the catalog."
+      },
+      {
+        "w": "sharply",
+        "hw": "sharply",
+        "pos": "adv.",
+        "zh": "大幅地、急劇地",
+        "ex": "Fuel prices rose sharply last quarter."
+      },
+      {
+        "w": "issue",
+        "hw": "issue",
+        "pos": "n.",
+        "zh": "（刊物的）一期",
+        "ex": "The March issue includes a guide to local restaurants."
+      },
+      {
+        "w": "refund",
+        "hw": "refund",
+        "pos": "n.",
+        "zh": "退款",
+        "ex": "Customers can ask for a full refund within thirty days."
+      },
+      {
+        "w": "difference",
+        "hw": "difference",
+        "pos": "n.",
+        "zh": "差額",
+        "ex": "If the hotel costs more, the company pays the difference."
+      },
+      {
+        "w": "enclosed",
+        "hw": "enclosed",
+        "pos": "adj.",
+        "zh": "隨函附上的",
+        "ex": "Please sign the enclosed contract and return it."
+      }
+    ]
+  },
+  "_flags": []
+}
