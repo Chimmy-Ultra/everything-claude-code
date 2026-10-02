@@ -19,6 +19,7 @@ FILL = {"name": "Alex", "country": "Canada"}
 
 def spoken(text):
     text = re.sub(r"\[([^\]]+)\]", lambda m: FILL.get(m.group(1), ""), text)
+    text = text.replace("jackbox.tv", "jackbox dot T V")
     return text.replace("…", "").replace("“", '"').replace("”", '"').strip()
 
 def save(text, who, rel):
