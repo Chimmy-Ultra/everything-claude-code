@@ -24,7 +24,7 @@
       "q": "點出這句的動詞。被動的動詞不只一個字：從標時態的助動詞（第 2 章），一路點到 p.p.。",
       "sentence": "The new software has been installed on every computer.",
       "answer": [3, 4, 5],
-      "why": "<em>has</em> 是標時態的助動詞（現在完成式），<em>been</em> 是 <em>be</em> 的完成式樣子，<em>installed</em> 是 p.p.。三個字合起來才是一個被動的動詞：軟體被安裝了。"
+      "why": "<em>has</em> 是標時態的助動詞（現在完成式），<em>been</em> 是 <em>be</em> 的 p.p.（完成式要用這個樣子），<em>installed</em> 是 p.p.。三個字合起來才是一個被動的動詞：軟體被安裝了。"
     },
     {
       "type": "choose",
@@ -54,7 +54,7 @@
       "ex": [
         {"en": "Ms. Chou <u>approved</u> the budget.", "zh": "周女士核准了預算。", "note": "主動：主詞 <em>Ms. Chou</em> 做「核准」這個動作，<em>the budget</em> 是受詞。"},
         {"en": "The budget <u>was approved</u> by Ms. Chou.", "zh": "預算由周女士核准了。", "note": "被動：原本的受詞 <em>the budget</em> 搬到主詞的位置，做動作的人退到 <em>by</em> 後面。"},
-        {"en": "The budget <u>was approved</u> on Monday.", "zh": "預算在星期一核准了。", "note": "誰核准的不重要，<em>by</em> 整段省略。"}
+        {"en": "The budget <u>was approved</u> on Monday.", "zh": "預算在星期一獲得核准。", "note": "誰核准的不重要，<em>by</em> 整段省略。"}
       ],
       "table": {
         "head": ["看哪裡", "主動", "被動"],
@@ -62,7 +62,7 @@
           ["主詞是誰", "做動作的人（<em>Ms. Chou</em>）", "承受動作的東西（<em>the budget</em>）"],
           ["動詞", "<em>approved</em>", "<em>was approved</em>（<em>be</em> + p.p.）"],
           ["做動作的人在哪", "主詞的位置", "<em>by</em> 後面，或乾脆省略"],
-          ["受詞", "在動詞後面（<em>the budget</em>）", "已經搬去當主詞，動詞後面沒有了"]
+          ["受詞", "在動詞後面（<em>the budget</em>）", "已經搬去當主詞，動詞後面通常沒有了（<em>give、offer</em> 這類有兩個受詞的動詞，見第 7 節）"]
         ]
       },
       "takeaway": "被動就是把受詞搬到前面當主詞，動詞改成 <em>be</em> + p.p.。"
@@ -70,15 +70,15 @@
     {
       "h": "被動的形狀：be + p.p.",
       "body": [
-        "被動的動詞一定由兩個零件組成：<em>be</em> 和 p.p.（過去分詞）。<em>be</em> 可以是 <em>is、are、was、were、be、been、being</em> 任何一個樣子，時態由它決定；p.p. 是 <em>approved、sent、written</em> 這種形式。",
-        "兩個零件少一個，就不是被動。拿掉 <em>be</em>：<em>The samples sent to the client.</em> 讀起來像樣品自己把東西寄給客戶，或者只是「寄給客戶的樣品」這一串字，句子沒有說完。把 p.p. 換成 Ving：<em>The samples were sending to the client.</em> 變成過去進行式（第 4 章），意思是樣品正在寄東西給客戶，說不通。",
+        "被動的動詞一定由兩個零件組成：<em>be</em> 和 p.p.（過去分詞）。<em>be</em> 可以是 <em>is、are、was、were、be、been、being</em> 任何一個樣子，時態靠它的形狀標出來（完成式、未來式前面還會多一個 <em>has</em>、<em>will</em> 這類助動詞，第 4 節會講）；p.p. 是 <em>approved、sent、written</em> 這種形式。",
+        "兩個零件少一個，就不是被動。拿掉 <em>be</em>：<em>The samples sent to the client.</em> 讀起來像樣品自己把東西寄給客戶，或者只是「寄給客戶的樣品」這一串字，句子沒有說完。把 p.p. 換成 Ving：<em>The samples were sending to the client.</em> 變成過去進行式（第 4 章），意思是樣品當時正在寄東西給客戶，說不通。",
         "門檻在 <em>was sending</em> 和 <em>was sent</em> 這種只差一個字的地方。兩個都有 <em>was</em>，差別全在後面那個字：接 Ving，是主詞<b>正在做</b>；接 p.p.，是主詞<b>承受</b>。所以看到 <em>be</em> 動詞，一定要再往後看一個字，才知道是主動還是被動。",
         "規則動詞的 p.p. 和過去式一樣，加 <em>-ed</em>（<em>approved、delivered</em>）。不規則動詞的 p.p. 要另外認，下表是辦公室裡常見的幾個。"
       ],
       "ex": [
         {"en": "The samples <u>were sent</u> to the client on Tuesday.", "zh": "樣品星期二寄給客戶了。"},
-        {"en": "The annual meeting <u>is held</u> in Kaohsiung every June.", "zh": "年會每年六月在高雄舉行。", "note": "<em>held</em> 是 <em>hold</em> 的 p.p.。"},
-        {"en": "All invoices <u>are paid</u> within 30 days.", "zh": "所有發票都在 30 天內付款。"}
+        {"en": "The annual meeting <u>is held</u> in Harbor City every June.", "zh": "年會每年六月在海港市舉行。", "note": "<em>held</em> 是 <em>hold</em> 的 p.p.。"},
+        {"en": "All invoices <u>are paid</u> within 30 days.", "zh": "所有發票都會在 30 天內付清。"}
       ],
       "table": {
         "head": ["原形", "過去式", "p.p."],
@@ -114,7 +114,7 @@
       "ex": [
         {"en": "The new policy <u>affects</u> all part-time staff.", "zh": "新政策影響所有兼職員工。", "note": "主詞是東西，但它在影響別人，後面有受詞 <em>all part-time staff</em>，所以是主動。"},
         {"en": "Mr. Lin <u>was promoted</u> to sales director last month.", "zh": "林先生上個月升為業務總監。", "note": "主詞是人，但他是被升職的一方，後面沒有受詞。"},
-        {"en": "The form <u>must be submitted</u> by Friday.", "zh": "表格必須在星期五前繳交。", "note": "<em>by Friday</em> 是期限，不是做動作的人。判斷被動靠的是：表格不會自己繳交。"}
+        {"en": "The form <u>must be submitted</u> by Friday.", "zh": "表格必須在星期五前繳交。", "note": "<em>by Friday</em> 是期限，不是做動作的人。判斷被動靠的是：表格不會自己繳交。<em>must be submitted</em> 裡的 <em>must be</em>，第 4 節會講。"}
       ],
       "quiz": [
         {
@@ -133,24 +133,26 @@
         "被動可以配上任何時態（第 4 章）。規則只有一條：<b>時態全部由 <em>be</em> 表現，p.p. 永遠不變</b>。",
         "做法是：先想主動句是哪個時態，把那個時態套在 <em>be</em> 上，再接 p.p.。例如主動的 <em>They are repairing the elevator.</em> 是現在進行式；把 <em>be</em> 放進現在進行式，就是 <em>is being</em>，再接 <em>repaired</em>：<em>The elevator is being repaired.</em>",
         "門檻是 <em>being</em> 和 <em>been</em>。兩個字長得像，意思差很多：<em>is being repaired</em> 是此刻正在修；<em>has been repaired</em> 是已經修好了。<em>being</em> 跟著進行式走，<em>been</em> 跟著完成式走。少了 <em>being</em>，<em>The elevator is repaired.</em> 就只是在說電梯處於修好的狀態，「正在修」的意思不見了。",
-        "<em>will、can、must、should</em> 後面一律接原形，所以 <em>be</em> 保持原形：<em>will be checked</em>、<em>must be checked</em>。"
+        "<em>will、can、must、should</em> 和 to V 的 <em>to</em> 後面一律接原形，所以 <em>be</em> 保持原形：<em>will be checked</em>、<em>must be checked</em>、<em>needs to be checked</em>。"
       ],
       "ex": [
         {"en": "The elevator <u>is being repaired</u>, so please use the stairs.", "zh": "電梯正在維修，請走樓梯。"},
         {"en": "The elevator <u>has been repaired</u> and is working again.", "zh": "電梯已經修好，可以用了。"},
         {"en": "The new menu <u>will be introduced</u> next month.", "zh": "新菜單下個月推出。"},
-        {"en": "Passwords <u>must be changed</u> every 90 days.", "zh": "密碼必須每 90 天更換一次。"}
+        {"en": "Passwords <u>must be changed</u> every 90 days.", "zh": "密碼必須每 90 天更換一次。"},
+        {"en": "All expense reports <u>need to be signed</u> by a manager.", "zh": "所有費用報告都需要經理簽名。", "note": "<em>to</em> 後面接原形，所以被動是 <em>to be</em> + p.p.。"}
       ],
       "table": {
         "head": ["時態", "主動", "被動"],
         "rows": [
-          ["現在簡單", "<em>The team checks the invoice.</em>", "<em>The invoice is checked.</em>"],
-          ["過去簡單", "<em>The team checked the invoice.</em>", "<em>The invoice was checked.</em>"],
-          ["未來", "<em>The team will check the invoice.</em>", "<em>The invoice will be checked.</em>"],
-          ["現在進行", "<em>The team is checking the invoice.</em>", "<em>The invoice is being checked.</em>"],
-          ["現在完成", "<em>The team has checked the invoice.</em>", "<em>The invoice has been checked.</em>"],
-          ["過去完成", "<em>The team had checked the invoice.</em>", "<em>The invoice had been checked.</em>"],
-          ["加 <em>must、can、should</em>", "<em>The team must check the invoice.</em>", "<em>The invoice must be checked.</em>"]
+          ["現在式", "<em>The team checks the invoice.</em>", "<em>The invoice is checked.</em>"],
+          ["過去式", "<em>The team checked the invoice.</em>", "<em>The invoice was checked.</em>"],
+          ["未來式", "<em>The team will check the invoice.</em>", "<em>The invoice will be checked.</em>"],
+          ["現在進行式", "<em>The team is checking the invoice.</em>", "<em>The invoice is being checked.</em>"],
+          ["現在完成式", "<em>The team has checked the invoice.</em>", "<em>The invoice has been checked.</em>"],
+          ["過去完成式", "<em>The team had checked the invoice.</em>", "<em>The invoice had been checked.</em>"],
+          ["加 <em>must、can、should</em>", "<em>The team must check the invoice.</em>", "<em>The invoice must be checked.</em>"],
+          ["加 <em>to</em>", "<em>The team needs to check the invoice.</em>", "<em>The invoice needs to be checked.</em>"]
         ]
       },
       "quiz": [
@@ -195,7 +197,7 @@
         "不及物動詞講的多半是自己發生、自己變動的事：<em>occur、happen、take place</em>（發生、舉行）、<em>arrive</em>（抵達）、<em>rise、fall</em>（上升、下降）、<em>remain</em>（維持）、<em>exist</em>（存在）、<em>appear</em>（出現）。它們永遠用主動，<em>was occurred、was happened、were risen</em> 都是錯的。",
         "門檻在中文的語感。中文「會議在三樓舉行」聽起來有點像被動，英文的 <em>take place</em> 卻是主動：<em>The meeting took place on the third floor.</em> 判斷不靠中文聽起來像什麼，靠這個動詞後面能不能接受詞。",
         "要說「有人讓它變動」，就換一個及物動詞。<em>Prices rose.</em> 是價格自己漲；<em>The airline raised its fares.</em> 是航空公司把票價調高。<em>raise</em> 有受詞，所以也有被動：<em>Fares were raised.</em> 下表是成對的字。",
-        "也有一些動詞兩種都可以，例如 <em>increase、open、close、change</em>：<em>Sales increased.</em>（銷售自己增加）和 <em>We increased our prices.</em>（我們調高價格）都對。不確定時查字典，看它標的是及物、不及物，還是兩者都有。"
+        "也有一些動詞兩種都可以，例如 <em>increase、open、close、change</em>：<em>Sales increased.</em>（銷售自己增加）和 <em>We increased our prices.</em>（我們調高價格）都對。不確定時查字典，看它標的是及物、不及物，還是兩者都有。反過來，後面有受詞也不保證有被動：表示擁有或狀態的 <em>have</em>（<em>The hotel has 120 rooms.</em>）、<em>cost</em>、<em>resemble</em> 通常不用被動。這類字不多，不確定時用主動。"
       ],
       "ex": [
         {"en": "A power outage <u>occurred</u> during the night shift.", "zh": "夜班期間發生了停電。"},
