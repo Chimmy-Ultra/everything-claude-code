@@ -21,10 +21,10 @@
     },
     {
       "type": "tap",
-      "q": "點出這句的動詞。被動的動詞不只一個字：從帶時態的那個字，一路點到 p.p.。",
+      "q": "點出這句的動詞。被動的動詞不只一個字：從標時態的助動詞（第 2 章），一路點到 p.p.。",
       "sentence": "The new software has been installed on every computer.",
       "answer": [3, 4, 5],
-      "why": "<em>has</em> 帶著現在完成式的時態，<em>been</em> 是 <em>be</em> 的完成式樣子，<em>installed</em> 是 p.p.。三個字合起來才是一個被動的動詞：軟體被安裝了。"
+      "why": "<em>has</em> 是標時態的助動詞（現在完成式），<em>been</em> 是 <em>be</em> 的完成式樣子，<em>installed</em> 是 p.p.。三個字合起來才是一個被動的動詞：軟體被安裝了。"
     },
     {
       "type": "choose",
@@ -163,10 +163,10 @@
         },
         {
           "type": "tap",
-          "q": "點出這句的動詞（從帶時態的字點到 p.p.）。",
+          "q": "點出這句的動詞（從助動詞一路點到 p.p.）。",
           "sentence": "The proposal has been reviewed by three managers.",
           "answer": [2, 3, 4],
-          "why": "<em>has been reviewed</em> 是現在完成式的被動：<em>has</em> 帶時態，<em>been</em> 是完成式的 <em>be</em>，<em>reviewed</em> 是 p.p.。<em>by three managers</em> 是做動作的人，不屬於動詞。"
+          "why": "<em>has been reviewed</em> 是現在完成式的被動：<em>has</em> 是標時態的助動詞，<em>been</em> 是完成式的 <em>be</em>，<em>reviewed</em> 是 p.p.。<em>by three managers</em> 是做動作的人，不屬於動詞。"
         }
       ],
       "takeaway": "時態全部放在 <em>be</em> 上，p.p. 不動；<em>being</em> 是正在被做，<em>been</em> 是已經被做。"

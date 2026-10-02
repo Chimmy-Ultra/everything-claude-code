@@ -10,14 +10,14 @@
       "q": "<em>___ the heavy traffic, the driver delivered the order on time.</em> 空格要填哪一個？",
       "options": ["Although", "Despite", "However"],
       "answer": 1,
-      "why": "空格後面到逗號是 <em>the heavy traffic</em>，沒有帶時態的動詞，是名詞片語，要用介系詞 <em>Despite</em>。<em>Although</em> 是連接詞，後面要子句；<em>However</em> 是連接副詞，要開一個新句子。"
+      "why": "空格後面到逗號是 <em>the heavy traffic</em>，找不到有時態的動詞，是名詞片語，要用介系詞 <em>Despite</em>。<em>Although</em> 是連接詞，後面要子句；<em>However</em> 是連接副詞，要開一個新句子。"
     },
     {
       "type": "choose",
       "q": "<em>___ the truck broke down, the delivery was late.</em> 空格要填哪一個？",
       "options": ["Because", "Because of", "Therefore"],
       "answer": 0,
-      "why": "空格後面是 <em>the truck broke down</em>，有主詞 <em>the truck</em>，有帶時態的動詞 <em>broke</em>，是子句，要用連接詞 <em>Because</em>。<em>Because of</em> 是介系詞，只接名詞。<em>Therefore</em> 要放在句號或分號後面，而且後面接的是結果，不是原因。"
+      "why": "空格後面是 <em>the truck broke down</em>，主詞 <em>the truck</em>，有時態的動詞 <em>broke</em>，是子句，要用連接詞 <em>Because</em>。<em>Because of</em> 是介系詞，只接名詞。<em>Therefore</em> 要放在句號或分號後面，而且後面接的是結果，不是原因。"
     },
     {
       "type": "choose",
@@ -46,22 +46,22 @@
       "h": "三種字，差在後面接什麼",
       "body": [
         "<em>although、despite、however</em> 意思接近，都在說「前面那件事沒有擋住後面那件事」。中文都可以翻成「雖然、儘管、不過」，所以光看中文分不出來。它們的差別在文法：後面能接什麼。下面前三個例句說的是同一件事，請看每個字後面接的東西。",
-        "<b>連接詞</b>後面接<b>子句</b>。<em>Although the budget was small</em>：<em>although</em> 後面是 <em>the budget was small</em>，有主詞 <em>the budget</em>，有帶時態的動詞 <em>was</em>，是一個子句。連接詞把這個子句掛到主要子句上，讓它變成從屬子句（第 3 章）。",
+        "<b>連接詞</b>後面接<b>子句</b>。<em>Although the budget was small</em>：<em>although</em> 後面是 <em>the budget was small</em>，主詞 <em>the budget</em>，有時態的動詞 <em>was</em>，是一個子句。連接詞把這個子句掛到主要子句上，讓它變成從屬子句（第 3 章）。",
         "<b>介系詞</b>後面接<b>名詞</b>、<b>名詞片語</b>（以名詞為中心的一串字，例如 <em>the small budget</em>），或 <b>Ving</b>。<em>Despite the small budget</em>：<em>the small budget</em> 裡沒有動詞，只是一個名詞片語。",
         "<b>連接副詞</b>不接在別人後面，它站在一個<b>新句子</b>的開頭。前一句已經用句號或分號結束了，<em>However</em> 後面加逗號，再接一個完整的句子。它負責說明兩句之間的關係，但沒有把兩句接成一句的文法能力。",
-        "門檻是：怎麼確定後面是不是子句。方法只有一個：找<b>帶時態的動詞</b>。<em>the budget was small</em> 有 <em>was</em>，是子句；<em>the small budget</em> 沒有動詞，是名詞片語；<em>having a small budget</em> 雖然有動詞的樣子，但 Ving 沒有時態（第 6 章），所以也不是子句，介系詞可以接。",
-        "所以遇到這類字，順序是：先看它後面到逗號為止的那一段，有沒有主詞＋帶時態的動詞。有，用連接詞；只有名詞或 Ving，用介系詞；這個字前面已經是句號或分號，用連接副詞。<b>形狀決定是哪一類，意思決定是哪一個字。</b>"
+        "門檻是：怎麼確定後面是不是子句。方法只有一個：找<b>有時態的動詞</b>（第 2 章）。<em>the budget was small</em> 有 <em>was</em>，是子句；<em>the small budget</em> 沒有動詞，是名詞片語；<em>having a small budget</em> 雖然有動詞的樣子，但 Ving 不是有時態的動詞（第 3 章），所以也不是子句，介系詞可以接。",
+        "所以遇到這類字，順序是：先看它後面到逗號為止的那一段，有沒有主詞＋有時態的動詞。有，用連接詞；只有名詞或 Ving，用介系詞；這個字前面已經是句號或分號，用連接副詞。<b>形狀決定是哪一類，意思決定是哪一個字。</b>"
       ],
       "ex": [
         {"en": "<u>Although</u> the budget was small, we finished the project on time.", "zh": "雖然預算很少，我們還是準時完成了計畫。", "note": "<em>although</em> + 子句（<em>the budget was small</em>）。"},
         {"en": "<u>Despite</u> the small budget, we finished the project on time.", "zh": "儘管預算很少，我們還是準時完成了計畫。", "note": "<em>despite</em> + 名詞片語（<em>the small budget</em>）。"},
         {"en": "The budget was small. <u>However,</u> we finished the project on time.", "zh": "預算很少。不過，我們還是準時完成了計畫。", "note": "前一句用句號結束，<em>However</em> 開一個新句子。"},
-        {"en": "<u>Despite</u> having a small budget, we finished the project on time.", "zh": "儘管預算很少，我們還是準時完成了計畫。", "note": "<em>despite</em> + Ving：Ving 沒有時態，不是子句。"}
+        {"en": "<u>Despite</u> having a small budget, we finished the project on time.", "zh": "儘管預算很少，我們還是準時完成了計畫。", "note": "<em>despite</em> + Ving：Ving 不是有時態的動詞，所以不是子句。"}
       ],
       "table": {
         "head": ["種類", "後面接", "例子"],
         "rows": [
-          ["連接詞", "子句（主詞＋帶時態的動詞）", "<em>although、because、while、unless、once、so that</em>"],
+          ["連接詞", "子句（主詞＋有時態的動詞）", "<em>although、because、while、unless、once、so that</em>"],
           ["介系詞", "名詞、名詞片語或 Ving", "<em>despite、because of、during、without、upon</em>"],
           ["連接副詞", "前面是句號或分號；後面通常加逗號，再接一個完整的句子", "<em>however、therefore、meanwhile、otherwise、moreover</em>"]
         ]
@@ -69,17 +69,17 @@
       "quiz": [
         {
           "type": "tap",
-          "q": "<em>Although</em> 是連接詞，後面接子句。點出這個子句裡帶時態的動詞。",
+          "q": "<em>Although</em> 是連接詞，後面接子句。點出這個子句裡那個有時態的動詞。",
           "sentence": "Although the client called twice, nobody answered the phone.",
           "answer": [3],
-          "why": "<em>Although</em> 後面的子句是 <em>the client called twice</em>：主詞 <em>the client</em>，帶時態的動詞 <em>called</em>（過去式）。<em>answered</em> 屬於逗號後面的主要子句。"
+          "why": "<em>Although</em> 後面的子句是 <em>the client called twice</em>：主詞 <em>the client</em>，有時態的動詞 <em>called</em>（過去式）。<em>answered</em> 屬於逗號後面的主要子句。"
         },
         {
           "type": "choose",
           "q": "<em>___ the late delivery, the store opened on time.</em> 空格後面接的是什麼？",
           "options": ["子句，要用連接詞", "名詞片語，要用介系詞", "新的句子，要用連接副詞"],
           "answer": 1,
-          "why": "<em>the late delivery</em> 裡沒有帶時態的動詞（<em>late</em> 是形容詞，<em>delivery</em> 是名詞），是名詞片語，所以要介系詞，例如 <em>Despite</em>。"
+          "why": "<em>the late delivery</em> 裡找不到有時態的動詞（<em>late</em> 是形容詞，<em>delivery</em> 是名詞），是名詞片語，所以要介系詞，例如 <em>Despite</em>。"
         }
       ],
       "takeaway": "先看後面：子句用連接詞，名詞或 Ving 用介系詞，句號或分號之後的新句子用連接副詞。"
@@ -88,7 +88,7 @@
       "h": "連接副詞的標點：句號、分號、逗號",
       "body": [
         "連接副詞的難處在標點。<em>however</em> 的中文是「但是、然而」，跟 <em>but</em> 一樣，所以很自然就把它當 <em>but</em> 用，寫成 <em>Sales fell, however profits rose.</em>",
-        "<em>but</em> 是連接詞，有把兩個子句接成一句的能力，中間一個逗號就夠：<em>Sales fell, but profits rose.</em> <em>however</em> 是副詞，沒有這個能力。把它和一個逗號放在兩個子句中間，等於兩個完整的句子只靠一個逗號黏在一起，文法上是錯的。",
+        "<em>but</em> 是連接詞，有把兩個子句接成一句的能力，中間一個逗號就夠：<em>Sales fell, but profits rose.</em> <em>however</em> 是副詞，沒有這個能力。把它和一個逗號放在兩個子句中間，等於兩個完整的句子只靠一個逗號黏在一起，文法上是錯的。第 3 章說過：逗號只是停頓，不能把兩個子句接成一句。",
         "所以連接副詞前面要有真正能把句子隔開的標點：<b>句號</b>（後面大寫，開新句子），或<b>分號</b>（兩句並排，後面小寫）。連接副詞後面通常再加一個逗號。對的寫法有三種：句號 + <em>However,</em>；分號 + <em>however,</em>；或者乾脆換成連接詞 <em>but</em>，用逗號。",
         "分辨連接詞和連接副詞，還有一個方法：<b>能不能搬動</b>。連接副詞可以移到第二句的中間：<em>Profits, however, rose.</em> 連接詞只能站在它那個子句的最前面，<em>Profits, but, rose</em> 是不可能的。能搬動的就是副詞，前面就不能只靠逗號。",
         "這一節的規則適用於所有連接副詞：<em>however、therefore、as a result、meanwhile、otherwise、moreover、in addition</em>。後面每一節出現連接副詞，標點都照這裡。"
@@ -168,7 +168,7 @@
         {"en": "<u>Although</u> the hotel was small, the service was excellent.", "zh": "雖然飯店很小，服務卻很好。"},
         {"en": "<u>Despite</u> its small size, the hotel offered excellent service.", "zh": "儘管規模小，這家飯店的服務很好。", "note": "<em>despite</em> + 名詞片語。"},
         {"en": "The hotel was small. <u>However,</u> the service was excellent.", "zh": "飯店很小。不過，服務很好。"},
-        {"en": "<u>Despite</u> having little experience, Ms. Ng handled the negotiation well.", "zh": "儘管經驗不多，<em>Ng</em> 女士把談判處理得很好。", "note": "<em>despite</em> + Ving；Ving 沒有時態，不是子句。"},
+        {"en": "<u>Despite</u> having little experience, Ms. Ng handled the negotiation well.", "zh": "儘管經驗不多，<em>Ng</em> 女士把談判處理得很好。", "note": "<em>despite</em> + Ving：Ving 不是有時態的動詞，所以不是子句。"},
         {"en": "The hotel was small, <u>but</u> the service was excellent.", "zh": "飯店很小，但服務很好。", "note": "<em>but</em> 是連接詞，用逗號；前面就不能再加 <em>although</em>。"}
       ],
       "table": {
@@ -184,7 +184,7 @@
           "q": "<em>___ the printer is new, it breaks down every week.</em> 空格要填哪一個？",
           "options": ["Although", "Despite", "However"],
           "answer": 0,
-          "why": "空格後面是 <em>the printer is new</em>，有主詞，有帶時態的動詞 <em>is</em>，是子句，要用連接詞 <em>Although</em>。<em>Despite</em> 只接名詞或 Ving；<em>However</em> 要放在句號或分號後面。"
+          "why": "空格後面是 <em>the printer is new</em>，主詞 <em>the printer</em>，有時態的動詞 <em>is</em>，是子句，要用連接詞 <em>Although</em>。<em>Despite</em> 只接名詞或 Ving；<em>However</em> 要放在句號或分號後面。"
         }
       ],
       "takeaway": "意思都是「雖然」：<em>although</em> 接子句，<em>despite</em> 接名詞或 Ving，<em>however</em> 開新句子；<em>although</em> 和 <em>but</em> 只能留一個。"
@@ -196,13 +196,15 @@
         "門檻是 <em>during</em>。中文「在我待在東京的期間」很自然，於是寫出 <em>during I was in Tokyo</em>。<em>during</em> 是介系詞，後面只能是名詞：<em>during my stay in Tokyo</em>、<em>during the meeting</em>。要接子句，就用 <em>while</em>：<em>while I was in Tokyo</em>。",
         "<em>meanwhile</em> 常用在「那件事還沒好，這段時間先這樣做」：<em>The new kitchen will be installed next week. Meanwhile, lunch will be served in the lobby.</em> 它跟所有連接副詞一樣，前面要句號或分號。",
         "<em>while</em> 另外有對比的意思：<em>While sales rose in Asia, they fell in Europe.</em>（亞洲銷售上升，歐洲卻下降）。不管是哪個意思，它都是連接詞，後面接子句；是時間還是對比，靠上下文判斷。",
-        "再看 <em>before、after、until</em>：它們<b>兩種身分都有</b>。<em>after the meeting</em> 是介系詞 + 名詞；<em>after the meeting ended</em> 是連接詞 + 子句（有帶時態的動詞 <em>ended</em>）。這三個字正好說明本章的原則：判斷時看後面接什麼，不是看這個字本身。"
+        "有一個寫法看起來像例外：<em>Please do not use your phone while driving.</em> <em>while</em> 後面直接接 Ving，好像變成了介系詞。其實這是子句的縮短：從屬子句的主詞和主要子句的主詞是同一個時，可以把主詞和 <em>be</em> 一起拿掉。<em>while you are driving</em> 縮成 <em>while driving</em>，<em>while</em> 還是連接詞，只是後面的子句變短了。<em>when、once</em> 也常這樣縮：<em>When filling out the form, …</em>、<em>Once approved, …</em>。第 6 章最後一節的分詞片語，前面加上這些字，就是這種寫法；選 Ving 還是 p.p.，一樣把它還原成完整的子句，看主詞是做還是被做。兩個主詞不同就不能縮。",
+        "再看 <em>before、after、until</em>：它們<b>兩種身分都有</b>。<em>after the meeting</em> 是介系詞 + 名詞；<em>after the meeting ended</em> 是連接詞 + 子句（<em>ended</em> 是有時態的動詞）。這三個字正好說明本章的原則：判斷時看後面接什麼，不是看這個字本身。"
       ],
       "ex": [
         {"en": "Please keep your phone on silent <u>while</u> the workshop is in progress.", "zh": "研習進行時，請把手機轉成靜音。", "note": "<em>while</em> + 子句（<em>the workshop is in progress</em>）。"},
         {"en": "Please keep your phone on silent <u>during</u> the workshop.", "zh": "研習期間，請把手機轉成靜音。", "note": "<em>during</em> + 名詞（<em>the workshop</em>）。"},
         {"en": "The new kitchen will be installed next week. <u>Meanwhile,</u> lunch will be served in the lobby.", "zh": "新廚房下週安裝。這段期間，午餐改在大廳供應。"},
-        {"en": "<u>While</u> sales rose in Asia, they fell in Europe.", "zh": "亞洲的銷售上升，歐洲卻下降。", "note": "這個 <em>while</em> 是對比，不是時間，但一樣接子句。"}
+        {"en": "<u>While</u> sales rose in Asia, they fell in Europe.", "zh": "亞洲的銷售上升，歐洲卻下降。", "note": "這個 <em>while</em> 是對比，不是時間，但一樣接子句。"},
+        {"en": "Please do not use your phone <u>while</u> driving a company vehicle.", "zh": "駕駛公司車輛時，請不要使用手機。", "note": "完整的是 <em>while you are driving</em>：主詞和主要子句相同，<em>you are</em> 一起省略。"}
       ],
       "table": {
         "head": ["字", "身分", "後面接", "例子"],
@@ -219,7 +221,7 @@
           "q": "<em>After the contract was signed, the team celebrated with dinner.</em> 這裡的 <em>After</em> 是什麼？",
           "options": ["連接詞，因為後面接子句 <em>the contract was signed</em>", "介系詞，因為後面接名詞 <em>the contract</em>"],
           "answer": 0,
-          "why": "<em>After</em> 後面到逗號為止是 <em>the contract was signed</em>：有主詞 <em>the contract</em>，也有帶時態的動詞 <em>was signed</em>（被動，第 5 章），是子句，所以這個 <em>After</em> 是連接詞。只看到 <em>the contract</em> 就停下來，會漏掉後面的動詞。"
+          "why": "<em>After</em> 後面到逗號為止是 <em>the contract was signed</em>：主詞 <em>the contract</em>，有時態的動詞 <em>was signed</em>（被動，第 5 章），是子句，所以這個 <em>After</em> 是連接詞。只看到 <em>the contract</em> 就停下來，會漏掉後面的動詞。"
         }
       ],
       "takeaway": "<em>while</em> 接子句，<em>during</em> 接名詞，<em>meanwhile</em> 開新句子；<em>before、after、until</em> 兩種都行，看後面。"
@@ -232,7 +234,7 @@
         "<em>without</em> 是介系詞，後面不能接子句：<em>without we receive payment</em> 是錯的，要寫 <em>without payment</em> 或 <em>without receiving payment</em>。",
         "<em>otherwise</em> 的意思是「不然的話」，它把前一句當成條件：<em>Please send payment by Friday. Otherwise, the order will be canceled.</em> 就是「如果你沒在星期五前付款，訂單就會取消」。它是連接副詞，前面要句號或分號。",
         "其他表示條件的字也照這個分法：連接詞 <em>if、as long as、provided that</em> 接子句；介系詞 <em>in the event of、in case of</em> 接名詞（<em>in the event of a fire</em>）。",
-        "講未來的條件時，<em>unless、if</em> 帶的子句用現在式，不用 <em>will</em>：<em>unless you register by Friday</em>，不寫 <em>unless you will register</em>。第 8 節的 <em>once、as soon as</em> 也一樣。"
+        "講未來的條件時，<em>unless、if</em> 帶的子句照第 4 章的規則用現在式，不用 <em>will</em>：<em>unless you register by Friday</em>，不寫 <em>unless you will register</em>。"
       ],
       "ex": [
         {"en": "We cannot ship the order <u>unless</u> we receive payment.", "zh": "除非收到款項，否則我們無法出貨。", "note": "<em>unless</em> + 子句，子句本身是肯定的。"},
@@ -254,7 +256,7 @@
           "q": "<em>___ you sign up by June 1, you will not receive the early-bird price.</em> 空格要填哪一個？",
           "options": ["Unless", "Without", "Otherwise"],
           "answer": 0,
-          "why": "空格後面是 <em>you sign up by June 1</em>，有主詞 <em>you</em>，有帶時態的動詞 <em>sign up</em>，是子句，要用連接詞 <em>Unless</em>。<em>Without</em> 是介系詞，不接子句；<em>Otherwise</em> 要開新句子。"
+          "why": "空格後面是 <em>you sign up by June 1</em>，主詞 <em>you</em>，有時態的動詞 <em>sign up</em>，是子句，要用連接詞 <em>Unless</em>。<em>Without</em> 是介系詞，不接子句；<em>Otherwise</em> 要開新句子。"
         }
       ],
       "takeaway": "<em>unless</em> 接子句、<em>without</em> 接名詞或 Ving、<em>otherwise</em> 開新句子，意思都是「不這樣的話」。"
@@ -289,8 +291,8 @@
       "h": "一……就：once、as soon as、upon",
       "body": [
         "講「一……就……」：連接詞 <em>once、as soon as</em> 接子句；介系詞 <em>upon</em>（或 <em>on</em>）接名詞或 Ving。",
-        "<em>once</em> 在這裡不是「一次」，是「一旦、一……就」。判斷方法還是看後面：<em>once</em> 後面接子句，就是連接詞。<em>Once the payment is received, your order will be shipped.</em>",
-        "門檻是時態。這類句子講的常常是未來，主要子句用 <em>will</em>，<em>once、as soon as</em> 帶的子句卻用現在式：<em>once the payment is received</em>，不寫 <em>once the payment will be received</em>。第 6 節的 <em>unless、if</em> 也是這樣。",
+        "門檻是 <em>once</em> 這個字。很多人先想到的是「一次」：<em>We met once.</em> 那是副詞。在這裡它是「一旦、一……就」，是連接詞。判斷方法還是看後面：<em>once</em> 後面接子句，就是連接詞。<em>Once the payment is received, your order will be shipped.</em>",
+        "時態照第 4 章的規則：這類句子講的常常是未來，主要子句用 <em>will</em>，<em>once、as soon as</em> 帶的子句卻用現在式：<em>once the payment is received</em>，不寫 <em>once the payment will be received</em>。",
         "<em>upon</em> 比較正式，常出現在公告和信件裡：<em>upon arrival</em>（一抵達）、<em>upon request</em>（應要求）、<em>upon receiving your application</em>（一收到您的申請）。它是介系詞，所以 <em>upon you arrive</em> 是錯的。"
       ],
       "ex": [
@@ -305,7 +307,7 @@
           "q": "<em>___ completion of the course, participants will receive a certificate.</em> 空格要填哪一個？",
           "options": ["Once", "As soon as", "Upon"],
           "answer": 2,
-          "why": "空格後面是名詞片語 <em>completion of the course</em>，沒有帶時態的動詞，要用介系詞 <em>Upon</em>。<em>Once</em> 和 <em>As soon as</em> 是連接詞，要接子句，例如 <em>Once the course is completed</em>。"
+          "why": "空格後面是名詞片語 <em>completion of the course</em>，找不到有時態的動詞，要用介系詞 <em>Upon</em>。<em>Once</em> 和 <em>As soon as</em> 是連接詞，要接子句，例如 <em>Once the course is completed</em>。"
         }
       ],
       "takeaway": "<em>once、as soon as</em> 接子句，<em>upon</em> 接名詞或 Ving；意思都是「一……就」。"
@@ -353,7 +355,7 @@
     {
       "wrong": "Despite the train was late, Ms. Huang arrived on time.",
       "right": "Although the train was late, Ms. Huang arrived on time.",
-      "why": "<em>despite</em> 是介系詞，後面不能接子句；<em>the train was late</em> 有帶時態的動詞 <em>was</em>，是子句。接子句要用連接詞 <em>although</em>。想保留 <em>despite</em>，就改成名詞：<em>Despite the train's late arrival</em>。"
+      "why": "<em>despite</em> 是介系詞，後面不能接子句；<em>the train was late</em> 裡有 <em>was</em> 這個有時態的動詞，是子句。接子句要用連接詞 <em>although</em>。想保留 <em>despite</em>，就改成名詞：<em>Despite the train's late arrival</em>。"
     },
     {
       "wrong": "Although the hotel was small, but the service was excellent.",

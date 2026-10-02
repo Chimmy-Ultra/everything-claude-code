@@ -3,7 +3,7 @@
   "n": 6,
   "title": "動詞後面接什麼",
   "en": "To V, Ving, Base Form and Participles",
-  "lead": "一個子句由一個帶時態的動詞撐起來（第 2 章）。可是我們常常一口氣要講兩個動作：決定聘人、考慮開店、期待見面。第二個動作想進句子，就得換成 to V、Ving 或原形，換成哪一種由前面的字決定。這一章整理這些規則，最後兩節講 Ving 和 p.p. 當形容詞用時怎麼選。",
+  "lead": "一個子句由一個有時態的動詞撐起來（第 2 章）。可是我們常常一口氣要講兩個動作：決定聘人、考慮開店、期待見面。第二個動作想進句子，就得換成 to V、Ving 或原形，換成哪一種由前面的字決定。這一章整理這些規則，最後兩節講 Ving 和 p.p. 當形容詞用時怎麼選。",
   "check": [
     {
       "type": "choose",
@@ -45,26 +45,26 @@
     {
       "h": "為什麼第二個動詞要變形",
       "body": [
-        "一個子句（第 3 章）由一個帶時態的動詞撐起來（第 2 章）。<em>We decided.</em> 的 <em>decided</em> 帶著過去式，整句的時間由它決定。",
+        "一個子句（第 3 章）由一個有時態的動詞撐起來（第 2 章）。<em>We decided.</em> 的 <em>decided</em> 帶著過去式，整句的時間由它決定。",
         "現在想說「我們決定聘兩位設計師」，句子裡有兩個動作：決定、聘請。第二個動作不能也帶著時態直接排上去：<em>We decided hired two designers.</em> 兩個過去式擠在一起，讀的人不知道哪一個才是核心，句子就壞了。",
         "所以第二個動詞要<b>降一級</b>：拿掉時態，換成 to V、Ving 或原形。<em>We decided to hire two designers.</em> 時間只看 <em>decided</em>；<em>to hire</em> 不管過去、現在、未來，永遠長這樣。寫成 <em>to hired</em> 是錯的，因為時態已經在 <em>decided</em> 身上，<em>to</em> 後面只能接原形。",
         "換成哪一種，不是看意思隨便挑，是前面的字說了算：動詞本身有規定（<em>decide</em> 接 to V，<em>consider</em> 接 Ving）；前面是介系詞，接 Ving；前面是 <em>make、let、have</em>，接原形。接下來四節，一節講一種。"
       ],
       "ex": [
-        {"en": "We <u>decided</u> to hire two more designers.", "zh": "我們決定再聘兩位設計師。", "note": "帶時態的只有 <em>decided</em>；<em>to hire</em> 沒有時態。"},
-        {"en": "Ms. Kao <u>finished</u> reviewing the contract at noon.", "zh": "高女士中午看完了合約。", "note": "帶時態的只有 <em>finished</em>；<em>reviewing</em> 照 <em>finish</em> 的規定用 Ving。"},
-        {"en": "The site supervisor <u>made</u> everyone wear a helmet.", "zh": "工地主任要求每個人都戴安全帽。", "note": "帶時態的只有 <em>made</em>；<em>wear</em> 照 <em>make</em> 的規定用原形。"}
+        {"en": "We <u>decided</u> to hire two more designers.", "zh": "我們決定再聘兩位設計師。", "note": "有時態的只有 <em>decided</em>；<em>to hire</em> 沒有時態。"},
+        {"en": "Ms. Kao <u>finished</u> reviewing the contract at noon.", "zh": "高女士中午看完了合約。", "note": "有時態的只有 <em>finished</em>；<em>reviewing</em> 照 <em>finish</em> 的規定用 Ving。"},
+        {"en": "The site supervisor <u>made</u> everyone wear a helmet.", "zh": "工地主任要求每個人都戴安全帽。", "note": "有時態的只有 <em>made</em>；<em>wear</em> 照 <em>make</em> 的規定用原形。"}
       ],
       "quiz": [
         {
           "type": "tap",
-          "q": "點出這句裡帶著時態的那個動詞。",
+          "q": "點出這句裡有時態的那個動詞。",
           "sentence": "The team hopes to finish the report before Friday.",
           "answer": [2],
           "why": "<em>hopes</em> 是現在式，整句的時間由它決定。<em>to finish</em> 是降了一級的第二個動作，沒有時態。"
         }
       ],
-      "takeaway": "一個子句只有一個帶時態的核心動詞，其他動詞都要換成 to V、Ving 或原形。"
+      "takeaway": "一個子句只有一個有時態的動詞，其他動詞都要換成 to V、Ving 或原形。"
     },
     {
       "h": "接 to V 的動詞，接 Ving 的動詞",
@@ -257,7 +257,7 @@
     {
       "h": "分詞片語放句首：Located near the station, …",
       "body": [
-        "分詞帶著自己後面的字，就成了一個分詞片語，例如 <em>located near the station</em>。它是片語（第 3 章）：沒有自己的主詞，也沒有帶時態的動詞。",
+        "分詞帶著自己後面的字，就成了一個分詞片語，例如 <em>located near the station</em>。它是片語（第 3 章）：沒有自己的主詞，也找不到有時態的動詞。",
         "分詞片語常放在句首，後面加逗號，再接主要子句（第 3 章）：<em>Located near the station, the hotel is popular with business travelers.</em> 它的作用是把兩句話併成一句：<em>The hotel is located near the station. It is popular with business travelers.</em>",
         "門檻是：<b>片語沒有主詞，所以它借用逗號後面的主詞</b>。讀者會自動把逗號後面那個主詞，當成做（或承受）片語裡那個動作的人或東西。所以判斷 Ving 還是 p.p.，步驟是：找到逗號後面的主詞；用這個主詞開頭，把片語還原成一句話；還原後是主動，用 Ving；是被動，用 p.p.。",
         "<em>Located near the station</em>：還原是 <em>The hotel is located near the station.</em>，被動，用 p.p.。<em>Looking for a larger office</em>：還原是 <em>The company was looking for a larger office.</em>，主動，用 Ving。",

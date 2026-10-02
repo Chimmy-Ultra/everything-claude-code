@@ -1,0 +1,227 @@
+{
+  "r-p7-04": {
+    "q": [
+      {
+        "point": [
+          "A deposit <em>secures</em> a date: it makes the booking certain.",
+          "訂金 secures 日期：讓這一天確定留給你。"
+        ],
+        "why": [
+          "The third paragraph of the web page is the booking policy: <em>Please book at least ten days in advance. A deposit of 25 percent of the estimated food cost secures your date.</em> Once the deposit is paid, the caterer keeps that date for you and no one else can take it. So <em>secures</em> means guarantees.",
+          "網頁第 3 段是訂餐規定：Please book at least ten days in advance. A deposit of 25 percent of the estimated food cost secures your date。付了訂金，外燴就把這一天留給你，別人訂不走。所以 secures 的意思是 guarantees（確保）。"
+        ]
+      },
+      {
+        "point": [
+          "Purpose: find what the writer asks the caterer to do.",
+          "目的題：找出寫信人要外燴做什麼。"
+        ],
+        "why": [
+          "The first paragraph of the e-mail says <em>we are coming back to you for our spring training day</em>. The second paragraph asks <em>please put us down for the package that includes them</em> and gives <em>about 30 people</em>, and the third gives the date and asks for the food <em>by 11:30</em>. The whole e-mail books lunch for the training day, so it was sent to order catering for a staff event.",
+          "e-mail 第 1 段說 we are coming back to you for our spring training day。第 2 段請對方 please put us down for the package that includes them，並給了 about 30 people；第 3 段談日期，也希望餐點 by 11:30 送到。整封信都在為訓練日訂午餐，所以目的是為員工活動訂外燴。"
+        ]
+      },
+      {
+        "point": [
+          "Name the package from what it includes, then compare it with January.",
+          "從內容認出是哪個套餐，再跟一月那次比。"
+        ],
+        "why": [
+          "The first paragraph of the e-mail says the January lunch was <em>the Harvest Package</em>. The second paragraph says colleagues <em>have asked for dessert and coffee</em> and asks for <em>the package that includes them</em>. On the web page, only the Banquet Package has <em>a dessert table and coffee service</em>, and it is the Harvest Package <em>plus a second hot main course</em>. The invoice's first row, <em>34 guests at $26.00</em>, matches the Banquet price. So this lunch had more main dishes than the one in January.",
+          "e-mail 第 1 段說一月那次是 the Harvest Package。第 2 段說同事 have asked for dessert and coffee，所以要 the package that includes them。網頁上只有 Banquet Package 有 a dessert table and coffee service，而它是 Harvest Package plus a second hot main course。發票第一行 34 guests at $26.00 也正是 Banquet 的價錢。所以這次的主菜比一月多。"
+        ]
+      },
+      {
+        "point": [
+          "Match the invoice line to the policy, then to the e-mail.",
+          "把發票那一行對回訂餐規定，再對回 e-mail。"
+        ],
+        "why": [
+          "The invoice's second row is <em>Delivery</em>, <em>Flat fee</em>, <em>$35.00</em>. The third paragraph of the web page says <em>Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses</em>. The first paragraph of the e-mail says <em>we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby</em>. Ashby is outside Corbridge, so the fee applies: the company moved to an address outside the free-delivery area.",
+          "發票第二行是 Delivery、Flat fee、$35.00。網頁第 3 段說 Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses。e-mail 第 1 段說 we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby。Ashby 不在 Corbridge，所以要收這筆運費：公司搬到了免運範圍以外的地址。"
+        ]
+      },
+      {
+        "point": [
+          "Three documents: the $60 line tells you which day it was.",
+          "三篇整合：$60 那一行告訴你是哪一天。"
+        ],
+        "why": [
+          "The invoice's third row is <em>Staffing</em>, <em>Service team surcharge</em>, <em>$60.00</em>. The third paragraph of the web page says <em>Events held on a Saturday or Sunday carry an additional $60 staffing charge</em>, so the training was on a weekend. In the third paragraph of the e-mail, Ms. Whitfield first proposes a weekday, <em>We would like Thursday, March 20</em>, and then adds <em>If they run late, we will move the training to Saturday, March 22</em>. So it took place on Saturday, March 22, two days later than first proposed.",
+          "發票第三行是 Staffing、Service team surcharge、$60.00。網頁第 3 段說 Events held on a Saturday or Sunday carry an additional $60 staffing charge，所以訓練辦在週末。e-mail 第 3 段，Whitfield 女士先提出平日：We would like Thursday, March 20，接著說 If they run late, we will move the training to Saturday, March 22。所以活動在 3 月 22 日星期六舉行，比最初提出的日期晚兩天。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "platter",
+        "hw": "platter",
+        "pos": "n.",
+        "zh": "大淺盤、拼盤",
+        "ex": "A cheese platter was served after the meeting."
+      },
+      {
+        "w": "city limits",
+        "hw": "city limits",
+        "pos": "n.",
+        "zh": "市界、市區範圍",
+        "ex": "The shop delivers free within city limits."
+      },
+      {
+        "w": "flat fee",
+        "hw": "flat fee",
+        "pos": "n.",
+        "zh": "固定費用",
+        "ex": "The garage charges a flat fee of ten dollars."
+      },
+      {
+        "w": "premises",
+        "hw": "premises",
+        "pos": "n.",
+        "zh": "（公司的）營業處所、辦公處",
+        "ex": "Smoking is not allowed anywhere on the premises."
+      },
+      {
+        "w": "put us down for",
+        "hw": "put someone down for",
+        "pos": "phr.",
+        "zh": "幫某人登記（預訂）",
+        "ex": "Please put me down for two seats at the dinner."
+      },
+      {
+        "w": "run late",
+        "hw": "run late",
+        "pos": "phr.",
+        "zh": "延誤、進度落後",
+        "ex": "The builders may run late because of the rain."
+      },
+      {
+        "w": "surcharge",
+        "hw": "surcharge",
+        "pos": "n.",
+        "zh": "附加費",
+        "ex": "A fuel surcharge was added to the bill."
+      },
+      {
+        "w": "Balance due",
+        "hw": "balance due",
+        "pos": "n.",
+        "zh": "應付餘額",
+        "ex": "The balance due must be paid within fourteen days."
+      }
+    ]
+  },
+  "r-p7-05": {
+    "q": [
+      {
+        "point": [
+          "Purpose: read past the greeting to the changes.",
+          "目的題：越過開頭的問候，看後面的變動。"
+        ],
+        "why": [
+          "The first paragraph of the e-mail only asks passengers to <em>read the information below</em>. The second paragraph replaces the boat stop, <em>In its place, we will visit Hessle Farm Dairy</em>, and moves lunch and the return later. The third moves the departure to <em>Bay 2</em>, and the fourth offers other choices to passengers who no longer want to go. Set against the itinerary, each paragraph changes something about Saturday's tour, so the e-mail was sent to announce changes to a trip.",
+          "e-mail 第 1 段只請旅客 read the information below。第 2 段替換了搭船那一站：In its place, we will visit Hessle Farm Dairy，午餐和回程也都延後。第 3 段把出發地點改到 Bay 2，第 4 段給不想去的旅客其他選擇。跟行程表對照，每一段都在改週六行程的某個部分，所以寫信是為了通知行程變動。"
+        ]
+      },
+      {
+        "point": [
+          "An offer <em>stands until</em> a time: it is open until then.",
+          "offer stands until 某時：方案在那之前都有效。"
+        ],
+        "why": [
+          "The fourth paragraph of the e-mail gives the offer: <em>you may cancel for a full refund or move to our Lakeside Day Tour on June 28 at no extra cost</em>. The next sentence is <em>This offer stands until 5:00 p.m. on Thursday, June 12</em>. Passengers can take the offer now, and <em>until</em> gives the deadline. So <em>stands</em> means remains valid.",
+          "e-mail 第 4 段提出方案：you may cancel for a full refund or move to our Lakeside Day Tour on June 28 at no extra cost。下一句是 This offer stands until 5:00 p.m. on Thursday, June 12。旅客現在就可以選這個方案，until 給的是截止時間。所以 stands 的意思是 remains valid（仍然有效）。"
+        ]
+      },
+      {
+        "point": [
+          "Bay 6 is in the itinerary, but the e-mail moved the coach.",
+          "Bay 6 是行程表上的月台，但 e-mail 已經改了上車處。"
+        ],
+        "why": [
+          "The itinerary's first row gives the departure point as <em>Kingsgate Bus Station, Bay 6</em>. The third paragraph of the e-mail closes Bays 5 to 8 and says <em>Your coach will therefore leave from Bay 2, beside the main ticket hall</em>. The second paragraph of the review says <em>an elderly couple had been waiting at Bay 6</em>, and <em>the driver had to go and find them</em>. They went where the old itinerary told them to, so they relied on outdated departure details.",
+          "行程表第一行的出發地點是 Kingsgate Bus Station, Bay 6。e-mail 第 3 段說 5 到 8 號月台關閉，Your coach will therefore leave from Bay 2, beside the main ticket hall。評論第 2 段說 an elderly couple had been waiting at Bay 6，而 the driver had to go and find them。他們照舊的行程表去等車，所以是依據了過時的出發資訊。"
+        ]
+      },
+      {
+        "point": [
+          "Follow the dropped stop through all three documents.",
+          "沿著被取消的那一站，把三份文件串起來。"
+        ],
+        "why": [
+          "The first paragraph of the review says she booked mainly for <em>the stop I had been looking forward to for months</em>, and that Thornfield wrote <em>to say it had been dropped</em>. The second paragraph of the e-mail shows which stop was dropped: <em>The boat that serves the island tea house on Lindell Water has been taken out of service</em>. The itinerary's third row describes that stop as a <em>Forty-minute cruise to the island tea house</em>, and the e-mail's fourth paragraph says <em>some of you chose this tour for the lake</em>. What she most looked forward to was a trip on a lake.",
+          "評論第 1 段說她報名主要是為了 the stop I had been looking forward to for months，而 Thornfield 來信 to say it had been dropped。e-mail 第 2 段說明取消的是哪一站：The boat that serves the island tea house on Lindell Water has been taken out of service。行程表第三行說這一站是 Forty-minute cruise to the island tea house，e-mail 第 4 段也說 some of you chose this tour for the lake。所以她最期待的是遊湖。"
+        ]
+      },
+      {
+        "point": [
+          "NOT: find three options in the review; the fourth is only in the e-mail.",
+          "NOT 題：三個選項在評論裡找得到，剩下那個只出現在 e-mail。"
+        ],
+        "why": [
+          "The review confirms three options. Traveling with a relative: <em>My sister and I booked this tour</em> (first paragraph). Buying a product: <em>I bought two wedges to take home</em> (second paragraph). Being hungry before a meal: <em>By the time we sat down at the inn, most of us were starving</em> (third paragraph). A full refund appears only in the fourth paragraph of the e-mail, for passengers who cancel. Ms. Quaye writes <em>We decided to go anyway</em>, and she mentions <em>my voucher</em>, not a refund. So receiving a full refund is not mentioned in the review.",
+          "評論確認了三個選項。和親人同行：My sister and I booked this tour（第 1 段）。買了商品：I bought two wedges to take home（第 2 段）。用餐前很餓：By the time we sat down at the inn, most of us were starving（第 3 段）。全額退款只出現在 e-mail 第 4 段，是給取消行程的人的。Quaye 女士寫 We decided to go anyway，她提到的是 my voucher，不是退款。所以評論沒有提到拿到全額退款。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "out of service",
+        "hw": "out of service",
+        "pos": "phr.",
+        "zh": "停止營運、停用",
+        "ex": "The east elevator is out of service today."
+      },
+      {
+        "w": "In its place",
+        "hw": "in its place",
+        "pos": "phr.",
+        "zh": "取而代之",
+        "ex": "The café closed, and a bakery opened in its place."
+      },
+      {
+        "w": "resurfacing",
+        "hw": "resurfacing",
+        "pos": "n.",
+        "zh": "（路面）重新鋪設",
+        "ex": "Resurfacing will close the parking lot on Sunday."
+      },
+      {
+        "w": "voucher",
+        "hw": "voucher",
+        "pos": "n.",
+        "zh": "抵用券",
+        "ex": "Each guest received a ten-dollar voucher for the café."
+      },
+      {
+        "w": "dropped",
+        "hw": "drop",
+        "pos": "v.",
+        "zh": "取消、刪去",
+        "ex": "The airline dropped the early flight from its schedule."
+      },
+      {
+        "w": "inside out",
+        "hw": "inside out",
+        "pos": "phr.",
+        "zh": "（了解得）透徹、瞭若指掌",
+        "ex": "Our accountant knows the tax rules inside out."
+      },
+      {
+        "w": "wedges",
+        "hw": "wedge",
+        "pos": "n.",
+        "zh": "楔形的一塊（如乳酪）",
+        "ex": "She cut the cheese into small wedges."
+      },
+      {
+        "w": "starving",
+        "hw": "starving",
+        "pos": "adj.",
+        "zh": "餓壞了的",
+        "ex": "After the long meeting, everyone was starving."
+      }
+    ]
+  },
+  "_flags": []
+}
