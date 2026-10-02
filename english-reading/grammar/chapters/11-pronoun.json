@@ -1,0 +1,191 @@
+{
+  "id": "pronoun", "n": 11,
+  "title": "代名詞", "en": "Pronouns",
+  "lead": "代名詞代替前面已經出現過的名詞，讓句子不必一直重複。同一個代名詞會隨位置變形：<em>they</em>、<em>them</em>、<em>their</em>、<em>theirs</em>、<em>themselves</em>。這一章教你依照位置選對形式，確認它和代替的名詞單複數一致、讀的人找得到它指誰，最後講 <em>one</em>／<em>ones</em>、<em>those who</em> 和 <em>each other</em>。",
+  "check": [
+    {"type": "choose", "q": "<em>Please send the updated schedule to Mr. Okafor and ___.</em> 空格填哪一個？", "options": ["I", "me", "myself"], "answer": 1, "why": "先把 <em>Mr. Okafor and</em> 拿掉：<em>send the schedule to ___</em>。介系詞 <em>to</em> 後面要用受格 <em>me</em>。<em>myself</em> 只在主詞也是「我」的時候用。"},
+    {"type": "choose", "q": "<em>The company will announce ___ new CEO on Monday.</em> 空格填哪一個？", "options": ["it's", "its", "it"], "answer": 1, "why": "空格後面接名詞 <em>new CEO</em>，要的是所有格「它的」：<em>its</em>。<em>it's</em> 是 <em>it is</em> 的縮寫。"},
+    {"type": "choose", "q": "<em>The interns organized the welcome party by ___.</em> 空格填哪一個？", "options": ["them", "their", "themselves"], "answer": 2, "why": "<em>by</em> + 反身代名詞表示「自己來、沒有別人幫忙」。主詞是 <em>the interns</em>，所以是 <em>themselves</em>。"},
+    {"type": "tap", "q": "點出 it 代替的那個名詞（一個字）。", "sentence": "The price of the new laptops has gone up, so we will wait until it drops.", "answer": [1], "why": "<em>it</em> 是單數，要找單數名詞；<em>laptops</em> 是複數，不會用 <em>it</em>。會「降下來」的是價格 <em>price</em>。"},
+    {"type": "choose", "q": "<em>Our old chairs were uncomfortable, so we bought new ___.</em> 空格填哪一個？", "options": ["one", "ones", "them"], "answer": 1, "why": "新買的不是舊的那些椅子本身，而是同一種東西的另外幾張。代替複數的可數名詞 <em>chairs</em>，前面又有形容詞 <em>new</em>，用 <em>ones</em>。"}
+  ],
+  "sections": [
+    {
+      "h": "同一個代名詞，五種樣子",
+      "body": [
+        "代名詞（第 1 章）代替前面出現過的名詞。<em>Ms. Diaz called. She wants the new price list.</em> 第二句的 <em>She</em> 就是 <em>Ms. Diaz</em>。沒有代名詞，就得一直重複名字，又長又不自然。",
+        "中文的「他」不管放在哪裡都是「他」：他打電話來、我打給他、他的報告。英文不一樣，同一個人會依照<b>在句子裡的位置</b>換樣子。以 <em>they</em> 為例：當主詞是 <em>they</em>；當受詞是 <em>them</em>；放在名詞前面表示「他們的」是 <em>their</em>；單獨使用、表示「他們的東西」是 <em>theirs</em>；主詞和受詞是同一批人時是 <em>themselves</em>。",
+        "這一章把這五種分別叫做主格、受格、所有格、所有代名詞、反身代名詞。名稱不重要，重要的是每一種放在哪個位置，下一節講。"
+      ],
+      "table": {"head": ["主格：當主詞", "受格：當受詞", "所有格：後面接名詞", "所有代名詞：單獨用", "反身代名詞"], "rows": [
+        ["<em>I</em>", "<em>me</em>", "<em>my</em>", "<em>mine</em>", "<em>myself</em>"],
+        ["<em>you</em>", "<em>you</em>", "<em>your</em>", "<em>yours</em>", "<em>yourself</em>／<em>yourselves</em>"],
+        ["<em>he</em>", "<em>him</em>", "<em>his</em>", "<em>his</em>", "<em>himself</em>"],
+        ["<em>she</em>", "<em>her</em>", "<em>her</em>", "<em>hers</em>", "<em>herself</em>"],
+        ["<em>it</em>", "<em>it</em>", "<em>its</em>", "（不常用）", "<em>itself</em>"],
+        ["<em>we</em>", "<em>us</em>", "<em>our</em>", "<em>ours</em>", "<em>ourselves</em>"],
+        ["<em>they</em>", "<em>them</em>", "<em>their</em>", "<em>theirs</em>", "<em>themselves</em>"]
+      ]},
+      "ex": [
+        {"en": "<u>They</u> will present the new design on Friday.", "zh": "他們星期五會發表新設計。", "note": "主詞位置：<em>they</em>。"},
+        {"en": "The client wants to meet <u>them</u> before Friday.", "zh": "客戶想在星期五前跟他們見面。", "note": "動詞 <em>meet</em> 後面：<em>them</em>。"},
+        {"en": "<u>Their</u> design is simpler than <u>ours</u>.", "zh": "他們的設計比我們的簡單。", "note": "名詞前面：<em>their</em>；單獨用：<em>ours</em> = <em>our design</em>。"}
+      ],
+      "takeaway": "英文的代名詞看位置變形：主詞、受詞、名詞前面、單獨用、指回自己，各有一個樣子。"
+    },
+    {
+      "h": "看位置選：主詞、受詞、名詞前面、單獨用",
+      "body": [
+        "選代名詞的方法是看它所在的位置。在動詞前面當主詞，用主格（<em>she</em>、<em>they</em>）。在動詞或介系詞後面當受詞，用受格（<em>her</em>、<em>them</em>）：<em>contact her</em>、<em>with them</em>。",
+        "後面緊接一個名詞、表示「誰的」，用所有格：<em>their office</em>、<em>her report</em>。後面<b>沒有</b>名詞、自己就代表「誰的東西」，用所有代名詞：<em>The parking space by the door is hers.</em>（= <em>her parking space</em>）。所以 <em>their</em> 和 <em>theirs</em> 的差別，只看後面有沒有名詞。",
+        "<em>her</em> 一個字有兩種身份，受格和所有格長得一樣，要看後面。<em>We met her yesterday</em>：後面沒有名詞，是受格。<em>We read her report</em>：後面有名詞 <em>report</em>，是所有格。",
+        "兩個人用 <em>and</em> 連在一起時最容易錯：<em>Ms. Diaz and me will lead the workshop</em>，還是 <em>Ms. Diaz and I</em>？方法是<b>先拿掉另一個人</b>：<em>me will lead</em> 明顯不對，<em>I will lead</em> 才對，所以是 <em>Ms. Diaz and I</em>。反過來，<em>Please send it to Mr. Lee and I</em>：拿掉 <em>Mr. Lee and</em>，剩 <em>send it to I</em>，不對，要寫 <em>to Mr. Lee and me</em>。"
+      ],
+      "ex": [
+        {"en": "Please contact <u>her</u> before the meeting.", "zh": "請在會議前聯絡她。", "note": "動詞 <em>contact</em> 後面：受格。"},
+        {"en": "We reviewed <u>her</u> report this morning.", "zh": "我們今天早上看了她的報告。", "note": "後面有名詞 <em>report</em>：所有格。"},
+        {"en": "The parking space by the door is <u>hers</u>.", "zh": "門口旁邊那個車位是她的。", "note": "後面沒有名詞：所有代名詞。"},
+        {"en": "Ms. Diaz and <u>I</u> will lead the workshop.", "zh": "Diaz 女士和我會主持研習。", "note": "拿掉 <em>Ms. Diaz and</em>：<em>I will lead</em>。"},
+        {"en": "Please send the agenda to Mr. Lee and <u>me</u>.", "zh": "請把議程寄給李先生和我。", "note": "拿掉 <em>Mr. Lee and</em>：<em>send the agenda to me</em>。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Both teams submitted proposals, and the client chose ___.</em> 空格填哪一個？", "options": ["their", "theirs", "they"], "answer": 1, "why": "空格在動詞 <em>chose</em> 後面，後面沒有名詞，意思是「他們的（提案）」，用所有代名詞 <em>theirs</em>。<em>their</em> 後面一定要接名詞；<em>they</em> 是主格，不能放在動詞後面。"}
+      ],
+      "takeaway": "後面有名詞用 <em>their</em>，沒有名詞用 <em>theirs</em>；兩個人連在一起時，先拿掉另一個人再判斷。"
+    },
+    {
+      "h": "its、theirs 不加撇號",
+      "body": [
+        "英文名詞表示「誰的」要加 <em>'s</em>：<em>the company's website</em>。但代名詞的所有格<b>不加撇號</b>：<em>its</em>、<em>yours</em>、<em>ours</em>、<em>theirs</em>、<em>hers</em>。",
+        "最容易搞混的是 <em>its</em> 和 <em>it's</em>。<em>it's</em> 是 <em>it is</em> 或 <em>it has</em> 的縮寫：<em>It's late.</em>、<em>It's been a long week.</em> 判斷方法：把它換成 <em>it is</em> 唸一次，通順就是 <em>it's</em>，不通就是 <em>its</em>。<em>The hotel has renovated it is lobby</em> 不通，所以是 <em>its lobby</em>。",
+        "同樣的配對還有 <em>their</em>／<em>they're</em>（= <em>they are</em>）、<em>your</em>／<em>you're</em>（= <em>you are</em>），以及第 9 章的 <em>whose</em>／<em>who's</em>。帶撇號的都是縮寫，不是所有格。"
+      ],
+      "ex": [
+        {"en": "The hotel has renovated <u>its</u> lobby.", "zh": "飯店重新裝修了大廳。", "note": "<em>its</em> = 它的。"},
+        {"en": "<u>It's</u> been a busy quarter for the sales team.", "zh": "這一季業務團隊很忙。", "note": "<em>It's</em> = <em>It has</em>。"},
+        {"en": "<u>They're</u> reviewing <u>their</u> budget this week.", "zh": "他們這週在檢討自己的預算。", "note": "<em>They're</em> = <em>They are</em>；<em>their</em> + 名詞。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "下面哪一句是對的？", "options": ["The printer has lost it's connection to the network.", "The printer has lost its connection to the network."], "answer": 1, "why": "把 <em>it's</em> 換成 <em>it is</em>：<em>lost it is connection</em> 不通。這裡要的是「它的連線」，所有格 <em>its</em>，不加撇號。"}
+      ],
+      "takeaway": "代名詞的所有格不加撇號；有撇號的 <em>it's</em> 是 <em>it is</em> 或 <em>it has</em>。"
+    },
+    {
+      "h": "反身代名詞：主詞和受詞是同一個人",
+      "body": [
+        "<em>-self</em>／<em>-selves</em> 結尾的叫反身代名詞。第一個用法：主詞和受詞是<b>同一個人</b>時，受詞用反身代名詞。<em>Mr. Cho introduced himself to the team.</em> 做介紹的人和被介紹的人都是 Cho 先生。",
+        "對照：<em>Mr. Cho introduced him to the team.</em> 這句的 <em>him</em> 是另一個男人，例如一位新同事。所以反身代名詞不是可有可無：用錯，意思就換了人。",
+        "第二個用法是強調「本人親自」，放在句尾或名詞後面，拿掉之後句子仍然完整：<em>The CEO answered the questions herself.</em>（執行長親自回答）。第三個是 <em>by</em> + 反身代名詞，意思是「獨自、沒有別人幫忙」：<em>The interns organized the event by themselves.</em>",
+        "反身代名詞<b>不能自己當主詞</b>，也不能在主詞是別人的時候拿來代替 <em>me</em>。<em>Please contact myself</em> 是錯的：這句的主詞是省略掉的 <em>you</em>，不是我，所以要用 <em>contact me</em>。這種錯誤常出現在想寫得正式一點的郵件裡。"
+      ],
+      "ex": [
+        {"en": "Mr. Cho introduced <u>himself</u> to the team.", "zh": "Cho 先生向團隊自我介紹。", "note": "主詞和受詞是同一人。"},
+        {"en": "Mr. Cho introduced <u>him</u> to the team.", "zh": "Cho 先生把他（另一個人）介紹給團隊。"},
+        {"en": "The CEO answered the questions <u>herself</u>.", "zh": "執行長親自回答了問題。"},
+        {"en": "The interns organized the welcome event <u>by themselves</u>.", "zh": "實習生們自己辦了迎新活動。"},
+        {"en": "If you have any questions, please contact <u>me</u>.", "zh": "如果有任何問題，請跟我聯絡。", "note": "不寫 <em>contact myself</em>。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Before the interview, Ms. Banda prepared ___ by reading the company's annual report.</em> 空格填哪一個？", "options": ["her", "herself", "hers"], "answer": 1, "why": "做準備的人和被準備的人都是 Banda 女士，主詞和受詞同一人，用反身代名詞 <em>herself</em>。用 <em>her</em> 會變成她幫另一位女性做準備。"}
+      ],
+      "takeaway": "主詞和受詞是同一個人才用 <em>-self</em>；不是同一個人，用一般的受格。"
+    },
+    {
+      "h": "代名詞要跟它代替的名詞一致",
+      "body": [
+        "代名詞要和它代替的名詞在兩件事上一致：<b>單複數</b>，以及<b>人還是事物</b>。代替一個人，用 <em>he</em>／<em>she</em>；代替一件事物，用 <em>it</em>；代替兩個以上，不管是人是物，都用 <em>they</em>。",
+        "公司、飯店、部門是一個單位，美式英文用 <em>it</em> 和 <em>its</em>：<em>Brightline Foods has moved its headquarters.</em> 雖然公司裡有很多人，還是 <em>its</em>。英式英文有時用 <em>they</em>，但用 <em>it</em> 在兩邊都對。",
+        "名詞後面跟著片語時，要找的是核心名詞，不是離代名詞最近的那個字。<em>The list of new clients is ready; please send it to Mr. Abe.</em> 要寄出去的是名單（<em>list</em>，單數），所以用 <em>it</em>；<em>clients</em> 只是名單的內容。這和找主詞的方法一樣（第 7 章）。",
+        "不一致會怎樣？<em>We received the samples and sent it to the lab.</em> 讀的人會往前找一個單數的東西，找不到，只好猜。代名詞的單複數，就是讀者往回找的線索。"
+      ],
+      "ex": [
+        {"en": "Brightline Foods has moved <u>its</u> headquarters to the north side of the city.", "zh": "Brightline 食品把總部搬到了城北。", "note": "公司是一個單位：<em>its</em>。"},
+        {"en": "We received the samples and sent <u>them</u> to the lab.", "zh": "我們收到樣品，並把樣品送去實驗室。", "note": "<em>samples</em> 是複數：<em>them</em>。"},
+        {"en": "The list of new clients is ready; please send <u>it</u> to Mr. Abe.", "zh": "新客戶名單好了，請寄給 Abe 先生。", "note": "代替的是 <em>list</em>，不是 <em>clients</em>。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Ms. Novak ordered three monitors, but only one of ___ works.</em> 空格填哪一個？", "options": ["it", "them", "they"], "answer": 1, "why": "代替的是 <em>three monitors</em>，複數；又在介系詞 <em>of</em> 後面，要用受格，所以是 <em>them</em>。"}
+      ],
+      "takeaway": "代名詞跟著它代替的名詞走：一個用 <em>it</em>、<em>he</em>、<em>she</em>，兩個以上用 <em>they</em>，公司用 <em>it</em>。"
+    },
+    {
+      "h": "閱讀時：往前找 it 和 they 指誰",
+      "body": [
+        "閱讀時看到 <em>it</em>、<em>they</em>，要往前找它代替的名詞。找的時候有兩個條件：一、單複數對得上；二、意思放得進去。",
+        "<em>The new printers arrived on Monday. They were installed on Tuesday.</em> <em>They</em> 是複數，往前找到的複數名詞是 <em>printers</em>，放進去也通：印表機被安裝。",
+        "有時候前面有兩個以上的候選。<em>Our supplier sent a new contract, but it contains several errors.</em> <em>it</em> 是單數，<em>supplier</em> 和 <em>contract</em> 都是單數，但「內容有錯誤」的只能是合約，所以 <em>it</em> = <em>contract</em>。先用單複數篩，再用意思決定。",
+        "寫的時候反過來想：如果兩個候選都說得通，讀者可能會猜錯，這時就直接把名詞寫出來，不要用代名詞。"
+      ],
+      "ex": [
+        {"en": "The new printers arrived on Monday. <u>They</u> were installed on Tuesday.", "zh": "新印表機星期一到，星期二安裝好了。", "note": "<em>They</em> = <em>the new printers</em>。"},
+        {"en": "Our supplier sent a new contract, but <u>it</u> contains several errors.", "zh": "供應商寄來新合約，但裡面有好幾個錯誤。", "note": "<em>it</em> = <em>the contract</em>；供應商不會「包含錯誤」。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "點出 they 代替的那個名詞（一個字）。", "sentence": "The hotel sent us two quotes for the banquet, but they were both over budget.", "answer": [5], "why": "<em>they</em> 是複數。前面的名詞裡只有 <em>quotes</em> 是複數，放進去也通：兩份報價都超出預算。<em>hotel</em> 和 <em>banquet</em> 是單數。"}
+      ],
+      "takeaway": "往前找代名詞指誰：先用單複數篩，再用意思確認。"
+    },
+    {
+      "h": "one 和 ones：同一種東西的另一個",
+      "body": [
+        "<em>it</em> 代替的是<b>同一個</b>東西；<em>one</em> 代替的是<b>同一種</b>東西裡的另一個。<em>I lost my badge, so I need a new one.</em> 新的那張不是弄丟的那張，而是同一種東西（識別證）的另一張，所以用 <em>one</em>。如果說 <em>I need it</em>，意思就變成需要弄丟的那一張本身。",
+        "複數用 <em>ones</em>：<em>These folders are too small. Do you have bigger ones?</em> 前面常有形容詞或 <em>the</em>、<em>this</em>、<em>which</em>：<em>the red one</em>、<em>the newer ones</em>、<em>Which one do you prefer?</em>",
+        "<em>one</em>／<em>ones</em> 只能代替<b>可數</b>名詞。<em>information</em>、<em>equipment</em>、<em>advice</em> 這類不可數名詞（第 13 章）不能用 <em>one</em>，要重複名詞或改用 <em>some</em>。"
+      ],
+      "ex": [
+        {"en": "I lost my badge, so I need a new <u>one</u>.", "zh": "我的識別證弄丟了，需要一張新的。", "note": "<em>one</em> = 另一張識別證。"},
+        {"en": "These folders are too small. Do you have bigger <u>ones</u>?", "zh": "這些文件夾太小了，有大一點的嗎？"},
+        {"en": "Of the two laptops, I prefer the lighter <u>one</u>.", "zh": "這兩台筆電中，我比較喜歡輕的那台。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The projector in Room A is broken. Please use the ___ in Room B.</em> 空格填哪一個？", "options": ["it", "one", "ones"], "answer": 1, "why": "Room B 的投影機是另一台，同一種東西的另一個，用 <em>one</em>。<em>it</em> 會是壞掉的那台本身，而且前面不能加 <em>the</em>；<em>ones</em> 是複數。"}
+      ],
+      "takeaway": "<em>it</em> 是同一個，<em>one</em> 是同一種的另一個；複數用 <em>ones</em>，只代替可數名詞。"
+    },
+    {
+      "h": "those who：……的那些人",
+      "body": [
+        "<em>those who</em> 的意思是「……的那些人」，泛指符合某個條件的人，不必先說出是哪個名詞：<em>Those who completed the survey will receive a meal voucher.</em> 填完問卷的人會拿到餐券。",
+        "<em>who completed the survey</em> 是關係子句（第 9 章），說明 <em>those</em>。<em>those</em> 是複數，所以子句裡的動詞和主要動詞都要配複數：<em>Those who work night shifts get an extra day off.</em>，是 <em>work</em> 和 <em>get</em>，不是 <em>works</em> 和 <em>gets</em>。",
+        "不能說 <em>them who</em> 或 <em>they who</em>。如果要說單數，用 <em>anyone who</em>，配單數動詞：<em>Anyone who needs a parking pass …</em>",
+        "<em>those</em> 也可以代替前面出現過的複數名詞，常用在比較：<em>Our delivery times are shorter than those of most courier companies.</em>（<em>those</em> = <em>the delivery times</em>）。第 12 章會再用到。"
+      ],
+      "ex": [
+        {"en": "<u>Those who</u> completed the survey will receive a meal voucher.", "zh": "填完問卷的人會收到一張餐券。"},
+        {"en": "<u>Those who</u> work night shifts get an extra day off each month.", "zh": "上夜班的人每個月多休一天。", "note": "<em>those</em> 是複數：<em>work</em>、<em>get</em> 都用複數形。"},
+        {"en": "<u>Anyone who</u> needs a parking pass should contact the front desk.", "zh": "需要停車證的人請洽櫃台。", "note": "<em>anyone</em> 是單數：<em>needs</em>。"},
+        {"en": "Our delivery times are shorter than <u>those</u> of most courier companies.", "zh": "我們的送貨時間比大部分快遞公司短。", "note": "<em>those</em> = <em>the delivery times</em>。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Those who ___ the training will get a certificate.</em> 空格填哪一個？", "options": ["completes", "complete"], "answer": 1, "why": "<em>who</em> 代替 <em>those</em>，是複數，子句裡的動詞要用複數形 <em>complete</em>。"}
+      ],
+      "takeaway": "<em>those who</em> 是「……的那些人」，複數，子句裡的動詞也用複數。"
+    },
+    {
+      "h": "each other 和 themselves：互相，還是自己",
+      "body": [
+        "<em>each other</em>（也可以說 <em>one another</em>）表示<b>互相</b>：A 對 B 做，B 也對 A 做。<em>Ms. Ito and Mr. Park have known each other for ten years.</em> Ito 女士認識 Park 先生，Park 先生也認識 Ito 女士。",
+        "對照 <em>themselves</em>：<em>The two managers congratulated themselves.</em> 是各自恭喜自己；<em>The two managers congratulated each other.</em> 是彼此恭喜對方。一個指回自己，一個指向對方，意思不同。",
+        "<em>each other</em> 只能當受詞，放在動詞或介系詞後面：<em>talk to each other</em>、<em>help each other</em>，不能當主詞。所有格是 <em>each other's</em>：<em>review each other's reports</em>。",
+        "<em>each other</em> 和 <em>one another</em> 在現代英文裡意思一樣，兩個人或更多人都可以用。"
+      ],
+      "ex": [
+        {"en": "Ms. Ito and Mr. Park have known <u>each other</u> for ten years.", "zh": "Ito 女士和 Park 先生認識十年了。"},
+        {"en": "The two managers congratulated <u>each other</u> after the launch.", "zh": "產品上市後，兩位經理互相道賀。"},
+        {"en": "Team members review <u>each other's</u> reports before submitting them.", "zh": "團隊成員在提交前會互相檢查報告。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The two sales teams compete with ___ every quarter.</em> 空格填哪一個？", "options": ["themselves", "each other"], "answer": 1, "why": "競爭是兩隊之間的事：A 隊和 B 隊比，B 隊也和 A 隊比，是互相的，用 <em>each other</em>。<em>themselves</em> 會變成各隊跟自己比。"}
+      ],
+      "takeaway": "<em>each other</em> 是互相，<em>-selves</em> 是指回自己。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "Please contact myself if you have any questions.", "right": "Please contact me if you have any questions.", "why": "主詞是省略掉的 <em>you</em>，不是我，受詞用一般的受格 <em>me</em>。"},
+    {"wrong": "The hotel has renovated it's lobby.", "right": "The hotel has renovated its lobby.", "why": "所有格是 <em>its</em>，不加撇號；<em>it's</em> 是 <em>it is</em>。"},
+    {"wrong": "Ms. Diaz and me will lead the workshop.", "right": "Ms. Diaz and I will lead the workshop.", "why": "拿掉 <em>Ms. Diaz and</em>，剩下的字在主詞位置，要用主格 <em>I</em>。"},
+    {"wrong": "Those who wishes to attend should register by Friday.", "right": "Those who wish to attend should register by Friday.", "why": "<em>those</em> 是複數，子句裡的動詞用 <em>wish</em>。"},
+    {"wrong": "Ms. Ito and Mr. Park have known themselves for ten years.", "right": "Ms. Ito and Mr. Park have known each other for ten years.", "why": "認識是互相的，用 <em>each other</em>；<em>themselves</em> 是各自指回自己。"}
+  ],
+  "workbook": ["pronoun"]
+}
