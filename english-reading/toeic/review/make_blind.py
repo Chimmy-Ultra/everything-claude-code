@@ -9,7 +9,10 @@ items = [it for it in importlib.import_module(name).ITEMS if not only or it["id"
 out = []
 for it in items:
     b = {"id": it["id"], "format": it["format"]}
-    if it["format"] == "gap":
+    if it.get("type") == "read":
+        b["documents"] = [{k: d[k] for k in ("kind", "head", "title", "paras", "table") if d.get(k)} for d in it["docs"]]
+        b["questions"] = [{"q": q.get("q") or f"Blank ({n + 1})", "options": {"ABCD"[i]: o for i, o in enumerate(q["options"])}} for n, q in enumerate(it["questions"])]
+    elif it["format"] == "gap":
         b.update(stem=it["stem"], options={"ABCD"[i]: o for i, o in enumerate(it["options"])})
     else:
         lines = it["audio"]["lines"]

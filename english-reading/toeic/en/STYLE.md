@@ -25,6 +25,12 @@ These rules come from the learner's own feedback on a demo. Follow them exactly.
 - `why`: quote the deciding words from the transcript in `<em>…</em>` and connect them to the answer. For graphic questions, say which row or cell and why. No word limit.
 - No lines about the wrong options.
 
+**Reading (`p6`, `p7t`)**: for each question, `point` and `why` only, as for listening.
+- `point`: the skill in a few words (e.g. `The linking word depends on the sentence before.` / `Join the order date with the discount deadline.`).
+- `why`: quote the deciding words from the documents in `<em>…</em>`, say where they are (`the second e-mail`, `the schedule`, `the sentence after the blank`), and for cross-document questions say how the two pieces combine. No word limit.
+- No lines about the wrong options.
+- Word cards: 3–6 for a text completion, 5–8 for a three-document set; `w` must appear in the documents.
+
 ## Word cards (`gloss`)
 
 After answering, the learner can tap words in the sentence (or transcript) to see a card. Pick the words a TOEIC 700 learner may not know: business terms, less common verbs, and phrases. Skip basic words (company, meeting, report…).

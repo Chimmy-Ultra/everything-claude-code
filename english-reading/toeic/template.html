@@ -7,15 +7,15 @@
 /* Layout: a printed workbook. Reading pages are one 34rem column; a question is a two-page spread on wide
    screens (question left, notes right) and one column on phones. Interface text is English; Chinese waits behind 中. */
 :root{
-  --paper:#F2ECDF; --ink:#2A251E; --soft:#655B4C; --faint:#7F7462; --rule:#DCD2BF; --accent:#9A4A26; --pencil:#B4442E; --wash:#E8DFCC; --claude:#C2643F; --shadow:rgba(60,40,15,.14);
+  --paper:#F2ECDF; --ink:#2A251E; --soft:#655B4C; --faint:#7F7462; --rule:#DCD2BF; --accent:#9A4A26; --pencil:#B4442E; --wash:#E8DFCC; --sheet:#FAF6EC; --claude:#C2643F; --shadow:rgba(60,40,15,.14);
   --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
   --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
+  :root:not([data-theme="light"]){--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --sheet:#262420; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
 }
-:root[data-theme="dark"]{--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
+:root[data-theme="dark"]{--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --sheet:#262420; --claude:#E3916F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -166,6 +166,21 @@ button.row:hover .t{color:var(--accent)}
 .ask button,.report button{font:italic 500 .95em var(--en);color:var(--accent)}
 .ask button:disabled{color:var(--faint)}
 .askOut{grid-column:1/-1;font-size:.94em;color:var(--soft);white-space:pre-wrap;margin:0}
+.doc{margin:1.3em 0;padding:1em 1.15em .4em;background:var(--sheet);border:1px solid var(--rule);border-radius:3px;box-shadow:0 1px 2px var(--shadow);font:400 1.02em/1.65 var(--en)}
+.doc .kind{font-size:.78em;color:var(--faint);margin:0 0 .5em}
+.doc .dh{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.05em .8em;font-size:.9em;margin:0 0 .7em;padding-bottom:.6em;border-bottom:1px solid var(--rule)}
+.doc .dh dt{color:var(--soft)}
+.doc .dh dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.doc h4{font:600 1.05em/1.4 var(--en);margin:0 0 .5em}
+.doc p{margin:0 0 .8em;padding:.1em .3em;margin-inline:-.3em;border-radius:3px;text-wrap:pretty}
+.doc p.ev,.doc tr.ev td{background:var(--wash)}
+.doc p .zh{display:block;font:400 .88em/1.6 var(--zh, inherit);color:var(--soft);margin-top:.2em}
+.doc .graphic{margin:.2em 0 .8em}
+.doc .blank{min-width:3.4em;font-style:normal;color:var(--faint)}
+.doc .blank.filled{color:var(--accent);font-style:italic;border-bottom-style:dotted}
+@media (min-width:900px){.leftp.docs{position:sticky;top:10px;max-height:calc(100vh - var(--dockh,64px) - 1.5rem - 72px - 12px);overflow:auto;padding:0 .6em 0 .2em;margin-left:-.2em;overscroll-behavior:contain}}
+.rq{margin:0 0 .4em}
+.rq + .rq{margin-top:1.4em}
 .script{list-style:none;margin:0;padding:0;display:grid;gap:.2em}
 .script li{display:grid;grid-template-columns:2.2em minmax(0,1fr) 1.4em;gap:.5em;align-items:baseline;padding:.2em .3em;border-radius:3px}
 .script li.ev{background:var(--wash)}
@@ -324,7 +339,7 @@ const INTERVALS = [1, 3, 7, 14];              // review spacing in days per leve
 const WEAK = 0.7;                             // chapters under this accuracy come up more often (our setting)
 const SIZES = [13.5, 14.5, 15.5, 16.5, 18];
 const L = "ABCD";
-const PARTS = [["grammar", "Part One", "Grammar"], ["vocab", "Part Two", "Vocabulary"], ["listen", "Part Three", "Listening"]];
+const PARTS = [["grammar", "Part One", "Grammar"], ["vocab", "Part Two", "Vocabulary"], ["listen", "Part Three", "Listening"], ["read", "Part Four", "Reading"]];
 const CIRCLE = '<svg viewBox="0 0 48 40" aria-hidden="true"><path pathLength="1" d="M31 5C17 3 5 10 5 21c0 10 12 15 23 14 11-1 16-8 15-16C42 10 34 5 23 6"/></svg>';
 
 let ITEMS = DATA.items.slice();               // hand-written items, plus Claude-added ones merged at load
@@ -349,6 +364,7 @@ function seeded(seed) { let a = seed; return () => { a |= 0; a = a + 0x6D2B79F5 
 function shuffle(a, rnd = Math.random) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function unitName(u) { return (UNITS[u] && (UNITS[u].en || UNITS[u].zh)) || u; }
 function isGap(item) { return item.format === "gap"; }
+function isRead(item) { return item.type === "read"; }
 function qKeys(item) { return isGap(item) || item.format === "qr" ? [item.id] : item.questions.map((_, i) => item.id + ":" + i); }
 function qOf(key) { const [id, q] = key.split(":"); const item = BY[id]; if (!item) return null; return { item, qi: q == null ? 0 : Number(q) }; }
 function unitOfKey(key) { const x = qOf(key); return x ? x.item.unit : ""; }
@@ -512,7 +528,7 @@ function countStars() { return Object.values(M).filter(m => m && m.starred).leng
 // ================================================================ contents
 function home() {
   const app = show("home");
-  const mast = el("header", "mast"); mast.append(el("div", "sc", "TOEIC Parts 2–5"), el("h1", null, "The Workbook")); app.append(mast);
+  const mast = el("header", "mast"); mast.append(el("div", "sc", "TOEIC Parts 2–7"), el("h1", null, "The Workbook")); app.append(mast);
 
   if (importOffer) {
     const p = el("p", "note"); p.append("This browser has older practice records. ", btn("link", "Bring them into your account", doImport), " · ", btn("link", "Ignore", () => { importOffer = null; home(); }));
@@ -529,6 +545,7 @@ function home() {
     ["Vocabulary", null, 10, () => startSet({ type: "vocab", n: 10, label: "Vocabulary" })],
     ["Listening", null, 5, () => startSet({ type: "listen", n: 5, label: "Listening" })],
   ];
+  if (ITEMS.some(x => x.type === "read")) sets.push(["Reading", "a short text and a three-document set", 9, () => startReading()]);
   const stars = countStars(); if (stars) sets.push(["Starred", null, stars, () => startStarred()]);
   const added = ITEMS.filter(x => x.source !== "hand" && !P.seen[qKeys(x)[0]]);
   if (added.length) sets.push(["From Claude", "not reviewed", added.length, () => startList(added.map(x => x.id), "From Claude")]);
@@ -538,7 +555,7 @@ function home() {
     const us = unitsIn(g); if (!us.length) continue;
     app.append(partList(part, title, us.map((u, i) => ({ n: String(i + 1), t: unitName(u), c: ITEMS.filter(x => x.unit === u).length, fn: () => DATA.lessons?.[u] ? lessonView(u) : startSet({ unit: u, n: 10, label: unitName(u) }) }))));
   }
-  if (STORIES.length) app.append(partList("Part Four", "Stories", STORIES.map((st, i) => ({ n: String(i + 1), t: st.title[0], c: "", fn: () => storyView(st.id) }))));
+  if (STORIES.length) app.append(partList("Part Five", "Stories", STORIES.map((st, i) => ({ n: String(i + 1), t: st.title[0], c: "", fn: () => storyView(st.id) }))));
   const col = el("nav", "colophon sc");
   const shelf = Object.keys(B).filter(activeBank).length;
   col.append(btn(null, "Review shelf" + (shelf ? " · " + shelf : ""), bankView), btn(null, "Statistics", statsView), btn(null, "Settings", settingsView));
@@ -723,7 +740,7 @@ function pick(filter, n, countQs) {
 function cardFor(x, qs) { return { id: x.id, qs: qs || (x.format === "gap" || x.format === "qr" ? [0] : x.questions.map((_, i) => i)) }; }
 function startSet({ type, unit, n, label }) {
   const f = x => (type ? x.type === type : true) && (unit ? x.unit === unit : true);
-  const items = pick(f, n, type === "listen" || (unit && UNITS[unit]?.group === "listen"));
+  const items = pick(f, n, type === "listen" || type === "read" || (unit && ["listen", "read"].includes(UNITS[unit]?.group)));
   if (!items.length) { toast("Everything here is on your review shelf."); return; }
   newSession(shuffle(items).map(x => cardFor(x)), label);
 }
@@ -731,6 +748,11 @@ function startMixed() {
   const g = pick(x => x.type === "grammar", 10), v = pick(x => x.type === "vocab", 6), l = pick(x => x.type === "listen", 4, true);
   const gv = shuffle(g.concat(v));
   newSession(gv.concat(l).map(x => cardFor(x)), "Mixed", { listenAt: l.length ? gv.length : -1 });
+}
+function startReading() {
+  const items = pick(x => x.format === "p6", 1).concat(pick(x => x.format === "p7t", 1));
+  if (!items.length) { toast("Everything here is on your review shelf."); return; }
+  newSession(items.map(x => cardFor(x)), "Reading");
 }
 function startList(ids, label) { newSession(ids.filter(id => BY[id]).map(id => cardFor(BY[id])), label); }
 function startStarred() { const ids = Object.keys(M).filter(id => M[id] && M[id].starred && BY[id]); if (ids.length) startList(shuffle(ids), "Starred"); }
@@ -829,7 +851,7 @@ function dockFor(item, ctx) {
   if (DATA.lessons?.[item.unit]) { const lb = tool(ICON.book, "Lesson"); lb.onclick = () => openSheet(item.unit); tools.append(lb); }
   if (sample) { const ab = tool(ICON.claude, "Ask Claude", "claude"); ab.onclick = () => togglePanel("ask", () => askForm(item, dockCtx)); tools.append(ab); }
   const zb = tool("", "中", "zht"); zb.setAttribute("aria-pressed", "false"); zb.setAttribute("aria-label", "Show Chinese");
-  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); document.querySelectorAll("#session .rightp .zh").forEach(z => z.hidden = !on); };
+  zb.onclick = () => { const on = zb.getAttribute("aria-pressed") !== "true"; zb.setAttribute("aria-pressed", String(on)); document.querySelectorAll("#session .rightp .zh, #session .doc .zh").forEach(z => z.hidden = !on); };
   tools.append(zb);
 }
 function footFor(item, box, ctx) {
@@ -861,16 +883,17 @@ const typing = e => e.isComposing || e.keyCode === 229;
 let sample = null;
 function askForm(item, ctx) {
   const f = el("div", "ask"), inp = el("input"), go = btn(null, "Ask"), out = el("p", "askOut"); out.hidden = true;
-  inp.id = "ask-" + item.id + "-" + (ctx.qi || 0); inp.placeholder = isGap(item) ? "Why not B?" : "What did she say about the delivery?"; inp.autocomplete = "off";
+  inp.id = "ask-" + item.id + "-" + (ctx.qi || 0); inp.placeholder = isGap(item) || isRead(item) ? "Why not B?" : "What did she say about the delivery?"; inp.autocomplete = "off";
   const run = async () => {
     const q = inp.value.trim(); if (!q || go.disabled || !sample) return;
     go.disabled = true; out.hidden = false; out.textContent = "Thinking…";
     const strip = s => String(s || "").replace(/<[^>]+>/g, "");
-    const data = isGap(item)
+    const data = isRead(item) ? { documents: item.docs.map(d => ({ kind: d.kind, head: d.head, title: d.title, text: d.paras ? d.paras.join("\n\n") : d.table })), question: item.questions[ctx.qi].q || "Blank (" + (ctx.qi + 1) + ")", options: item.questions[ctx.qi].options, key: item.questions[ctx.qi].answer }
+      : isGap(item)
       ? { stem: item.stem, options: item.options, key: item.options[item.answer], rule: strip(enOf(item).point[0]), explanation: strip(enOf(item).why[0]) }
       : { transcript: item.audio.lines.map(l => l.who + ": " + l.text), question: item.questions[ctx.qi].q, options: item.format === "qr" ? item.audio.lines.slice(1).map(l => l.text) : item.questions[ctx.qi].options, key: item.questions[ctx.qi].answer };
     const prompt = [
-      "You are a TOEIC tutor. A Taiwanese learner just answered this practice question and has a follow-up. Answer in the language of the question; if it is English, use plain, simple English. At most three sentences. Answer only what was asked. Do not overturn the answer key; if you think the key is wrong, say the item may be disputed and why, and suggest using 'Report a problem'.",
+      "You are a TOEIC tutor. A Taiwanese learner just answered this practice question and has a follow-up. Answer in the language of the question; if it is English, use plain, simple English. Answer only what was asked. Do not overturn the answer key; if you think the key is wrong, say the item may be disputed and why, and suggest using 'Report a problem'.",
       "Question: " + JSON.stringify(data),
       "Learner picked: " + (ctx.chosenText || "I'm not sure"),
       "Learner asks: " + q,
@@ -911,7 +934,7 @@ function runCard() {
   ses.append(left, right);
   if (S.listenAt === S.i) left.append(el("p", "cue sc", "Listening from here on. Headphones on."));
   if (item.source !== "hand") left.append(el("p", "mark sc", "Written by Claude · not reviewed"));
-  if (isGap(item)) gapCard(left, right, item); else listenCard(left, right, item, card);
+  if (isGap(item)) gapCard(left, right, item); else if (isRead(item)) readCard(left, right, item, card); else listenCard(left, right, item, card);
 }
 function optionOrder(item, qi, sid) { const n = isGap(item) ? item.options.length : item.questions[qi].options.length; const idx = [...Array(n).keys()]; return sid ? shuffle(idx, seeded(hash(item.id + ":" + qi + ":" + sid))) : idx; }
 function markOptions(buttons, answer, chosen) {
@@ -1029,6 +1052,76 @@ function listenCard(left, right, item, card) {
     nextLink();
   }
 }
+// ================================================================ reading (Part 6 text completion, Part 7 three documents)
+// paragraph text with {n} blanks: shown as numbered gaps, or with the answer once that question is done
+function docHTML(text, item, filled, gloss) {
+  return String(text).split(/(\{\d\})/).map(part => {
+    const m = /^\{(\d)\}$/.exec(part); if (!m) return gloss ? glossify(part, item.gloss, gloss) : esc(part);
+    const n = Number(m[1]), q = item.questions[n - 1];
+    return filled.has(n - 1) ? `<span class="blank filled">${esc(q.options[q.answer])}</span>` : `<span class="blank">(${n})</span>`;
+  }).join("");
+}
+function blankSentence(item, qi) {
+  const para = item.docs.flatMap(d => d.paras || []).find(t => t.includes("{" + (qi + 1) + "}")) || "";
+  const t = para.replace(/\{(\d)\}/g, (_, n) => Number(n) === qi + 1 ? "_____" : item.questions[n - 1].options[item.questions[n - 1].answer]);
+  return (t.match(/[^.?!]*_____[^.?!]*[.?!]?/) || [t])[0].trim();
+}
+function readCard(left, right, item, card) {
+  const qs = card.qs, done = {}, blocks = [], filled = new Set(), paras = [];
+  left.classList.add("docs");
+  item.questions.forEach((_, i) => { if (!qs.includes(i)) filled.add(i); });   // a review card asks only some blanks; the rest show their answers
+  item.docs.forEach((d, di) => {
+    const box = el("section", "doc");
+    box.append(el("p", "kind sc", d.kind || "Document"));
+    if (d.head?.length) { const dl = el("dl", "dh"); for (const [k, v] of d.head) dl.append(el("dt", null, k), el("dd", null, v)); box.append(dl); }
+    if (d.title) box.append(el("h4", null, d.title));
+    if (d.table) {
+      const g = graphicTable(d.table); g.querySelectorAll("tbody tr").forEach((tr, ri) => tr.dataset.ev = di + ":" + ri); box.append(g);
+    } else d.paras.forEach((t, pi) => {
+      const p = el("p"); p.dataset.ev = di + ":" + pi; p.innerHTML = docHTML(t, item, filled);
+      paras.push({ p, t, zh: (d.zh || [])[pi] }); box.append(p);
+    });
+    left.append(box);
+  });
+  const repaint = gloss => paras.forEach(x => { const z = x.p.querySelector(".zh"); x.p.innerHTML = docHTML(x.t, item, filled, gloss); if (z) x.p.append(z); });
+  for (const qi of qs) {
+    const q = item.questions[qi], blk = el("div", "rq");
+    const p = el("p", "lq"); p.append(el("span", "n", (qi + 1) + "."), q.q || (item.format === "p6" ? "Blank (" + (qi + 1) + ")" : "")); blk.append(p);
+    const order = optionOrder(item, qi, S.id), ol = el("ol", "opts"), buttons = [];
+    order.forEach((oi, pos) => {
+      const li = el("li"), bt = btn("opt"); bt.innerHTML = `<span class="l">${L[pos]}</span><span class="w">${esc(q.options[oi])}</span>`;
+      bt.dataset.oi = oi; bt.onclick = () => answerQ(oi); li.append(bt); ol.append(li); buttons.push(bt);
+    });
+    const un = el("div", "unsure"), ub = btn(null, "I'm not sure", () => answerQ(-1)); un.append(ub);
+    blk.append(ol, un); right.append(blk);
+    blocks.push({ qi, buttons, ub });
+    function answerQ(oi) {
+      if (done[qi] != null) return;
+      done[qi] = oi;
+      const ok = oi === q.answer, unsure = oi < 0;
+      markOptions(buttons, q.answer, oi); un.hidden = true;
+      if (!unsure) tone(ok);
+      record(item, qi, oi, ok, unsure, null, false);
+      filled.add(qi); repaint(null);
+      const box = notesFor(item, q, oi, order);
+      blk.append(box);
+      dockFor(item, { qi, chosenText: unsure ? null : q.options[oi] });
+      if (Object.keys(done).length === qs.length) finishRead();
+    }
+  }
+  keys.answer = pos => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.buttons[pos] && !nb.buttons[pos].disabled && nb.buttons[pos].click(); };
+  keys.unsure = () => { const nb = blocks.find(b => done[b.qi] == null); nb && nb.ub.click(); };
+  function finishRead() {
+    item.questions.forEach((_, i) => filled.add(i));
+    repaint(new Set());
+    const on = $("#dkTools .zht")?.getAttribute("aria-pressed") === "true";
+    for (const x of paras) if (x.zh) { const z = el("span", "zh", x.zh); z.hidden = !on; x.p.append(z); }
+    const ev = new Set(qs.flatMap(qi => (item.questions[qi].explain?.evidence || []).map(([d, i]) => d + ":" + i)));
+    left.querySelectorAll("[data-ev]").forEach(e => e.classList.toggle("ev", ev.has(e.dataset.ev)));
+    const cr = creditLine([["Questions", CREDITS?.q?.[item.id]], ["Notes", CREDITS?.en?.[item.id]]]); if (cr) right.append(cr);
+    nextLink();
+  }
+}
 function graphicTable(g) {
   const box = el("div", "graphic"), t = el("table");
   if (g.caption) t.append(el("caption", null, g.caption));
@@ -1094,6 +1187,7 @@ function resultList(rs) { const ul = el("ul", "list"); for (const x of rs) { con
 function stemText(item, qi) {
   if (isGap(item)) return item.stem.replace("______", item.options[item.answer]);
   if (item.format === "qr") return item.audio.lines[0].text;
+  if (item.format === "p6") return blankSentence(item, qi);
   return item.questions[qi].q;
 }
 function itemRow(item, qi, { chosen, meta, bankKey }) {

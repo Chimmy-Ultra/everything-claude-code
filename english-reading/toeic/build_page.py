@@ -1,7 +1,7 @@
 # Builds toeic.html (The Workbook) from content.py, en/*.json and template.html, after checking every item.
 #   python build_page.py            refuses to build if any hand-written item is not reviewed
 #   python build_page.py --draft    builds anyway (for local testing only)
-import json, os, sys
+import json, os, re, sys
 from content import ITEMS, UNITS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -34,6 +34,28 @@ for it in ITEMS:
         if not 0 <= it["answer"] < 4: errors.append(f"{i}: answer out of range")
         check_explain(i, it["explain"], 4, it["answer"])
         if not it["explain"].get("zh"): errors.append(f"{i}: explain.zh missing")
+    elif it.get("type") == "read":
+        docs = it.get("docs") or []
+        want = {"p6": 1, "p7t": 3}.get(it.get("format"))
+        if want is None or len(docs) != want: errors.append(f"{i}: {it.get('format')} needs {want} documents")
+        for di, d in enumerate(docs):
+            if d.get("table") is not None:
+                t = d["table"]
+                if not (isinstance(t.get("head"), list) and t.get("rows") and all(len(r) == len(t["head"]) for r in t["rows"])): errors.append(f"{i} doc{di}: table rows must match head")
+            elif not d.get("paras") or len(d.get("zh") or []) != len(d["paras"]): errors.append(f"{i} doc{di}: needs paras and a zh line for each")
+            if not all(isinstance(h, list) and len(h) == 2 for h in d.get("head") or []): errors.append(f"{i} doc{di}: head entries must be [label, value]")
+        blanks = re.findall(r"\{(\d)\}", " ".join(p for d in docs for p in d.get("paras") or []))
+        if it.get("format") == "p6" and blanks != [str(n + 1) for n in range(len(it["questions"]))]: errors.append(f"{i}: blanks {blanks} must be {{1}}..{{{len(it['questions'])}}} in order, one per question")
+        if it.get("format") == "p7t" and blanks: errors.append(f"{i}: three-document sets have no blanks")
+        for qi, q in enumerate(it["questions"]):
+            if len(q["options"]) != 4 or len(set(q["options"])) != 4: errors.append(f"{i} q{qi}: needs 4 different options")
+            if it.get("format") == "p7t" and not q.get("q"): errors.append(f"{i} q{qi}: needs q")
+            if not 0 <= q["answer"] < 4: errors.append(f"{i} q{qi}: answer out of range")
+            check_explain(f"{i} q{qi}", q["explain"], 4, q["answer"])
+            for e in q["explain"].get("evidence") or []:
+                d = docs[e[0]] if isinstance(e, list) and len(e) == 2 and 0 <= e[0] < len(docs) else None
+                n = len(d["table"]["rows"]) if d and d.get("table") else len(d.get("paras") or []) if d else 0
+                if not (d and 0 <= e[1] < n): errors.append(f"{i} q{qi}: evidence {e} out of range")
     else:
         lines = it["audio"]["lines"]
         g = it.get("graphic")
@@ -55,7 +77,8 @@ import importlib, check as en_check
 from ipa import ipa
 EN = {}
 for name in ("items_grammar_a", "items_grammar_b", "items_grammar_c", "items_vocab", "items_vocab_b", "items_listen", "items_listen_b", "items_grammar_d", "items_vocab_c", "items_listen_c",
-             "items_listen_d", "items_listen_e", "items_listen_f", "items_grammar_e", "items_grammar_f", "items_grammar_g", "items_grammar_h"):
+             "items_listen_d", "items_listen_e", "items_listen_f", "items_grammar_e", "items_grammar_f", "items_grammar_g", "items_grammar_h",
+             "items_read_a", "items_read_b", "items_read_c"):
     if not os.path.exists(os.path.join(HERE, name + ".py")): continue
     path = os.path.join(HERE, "en", name + ".json")
     if not os.path.exists(path): errors.append(f"en/{name}.json missing"); continue
@@ -98,6 +121,7 @@ for row in csv.reader(l for l in open(os.path.join(HERE, "words", "tsl", "TSL_12
     if row: _forms.setdefault(row[0], set()).update(row)
 def _text(it):
     if it["format"] == "gap": return it["stem"] + " " + " ".join(it["options"])
+    if it["type"] == "read": return " ".join(" ".join(d.get("paras") or [" ".join(" ".join(r) for r in d["table"]["rows"])]) for d in it["docs"]) + " " + " ".join(" ".join(q["options"]) for q in it["questions"])
     return " ".join(l["text"] for l in it["audio"]["lines"]) + " " + " ".join(" ".join(q.get("options") or []) for q in it["questions"])
 _tok = {it["id"]: set(_re.findall(r"[a-z]+(?:-[a-z]+)?", _text(it).lower())) for it in ITEMS if it.get("reviewed") or it.get("source") != "hand"}
 WORDS = []
@@ -141,4 +165,4 @@ blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 page = open(os.path.join(HERE, "template.html"), encoding="utf-8").read().replace("{{BANK}}", blob)
 open(os.path.join(HERE, "toeic.html"), "w", encoding="utf-8").write(page)
 count = lambda t: sum(1 for x in ITEMS if x["type"] == t)
-print("items", len(ITEMS), "grammar", count("grammar"), "vocab", count("vocab"), "listen", count("listen"), "bytes", len(page.encode()))
+print("items", len(ITEMS), "grammar", count("grammar"), "vocab", count("vocab"), "listen", count("listen"), "read", count("read"), "bytes", len(page.encode()))

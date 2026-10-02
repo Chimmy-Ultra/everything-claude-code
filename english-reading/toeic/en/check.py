@@ -39,13 +39,16 @@ def check(name):
             elif "usage" in e: errs.append(f"{i}: grammar items have no usage lines")
             lo, hi = 2, 4
         else:
-            text = " ".join(ln["text"] for ln in it["audio"]["lines"])
+            if it["type"] == "read":
+                text = " ".join(" ".join(d.get("paras") or [" ".join(" ".join(r) for r in d["table"]["rows"])]) for d in it["docs"])
+            else:
+                text = " ".join(ln["text"] for ln in it["audio"]["lines"])
             q = e.get("q")
             if not (isinstance(q, list) and len(q) == len(it["questions"])): errs.append(f"{i} q: need one entry per question")
             else:
                 for n, x in enumerate(q):
                     pair(f"{i} q{n} point", x.get("point")); pair(f"{i} q{n} why", x.get("why"))
-            lo, hi = (2, 4) if it["format"] == "qr" else (3, 5)
+            lo, hi = {"qr": (2, 4), "p6": (3, 6), "p7t": (5, 8)}.get(it["format"], (3, 5))
         g = e.get("gloss", [])
         if not lo <= len(g) <= hi: errs.append(f"{i} gloss: {len(g)} entries (want {lo}-{hi})")
         for x in g:
