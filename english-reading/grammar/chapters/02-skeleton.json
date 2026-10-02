@@ -1,0 +1,435 @@
+{
+  "id": "skeleton",
+  "n": 2,
+  "title": "句子的骨架：主詞、動詞、受詞、補語",
+  "en": "The Shape of a Sentence",
+  "lead": "每一個英文句子都有一副骨架：一個主詞、一個有時態的動詞，有時再加上受詞或補語。其他的字都是掛在骨架上的配件。這一章教你把配件拿掉，看出骨架。後面講時態、被動、主詞動詞一致、連接詞、關係代名詞，都是在這副骨架上做變化；骨架看不出來，後面每一章都會卡住。",
+  "check": [
+    {
+      "type": "tap",
+      "q": "點出這句有時態的動詞。",
+      "sentence": "The cost of the repairs to the elevators surprised everyone.",
+      "answer": [
+        8
+      ],
+      "why": "<em>surprised</em> 是唯一會隨時間變的動詞（改成現在就是 <em>surprises</em>）。<em>cost</em> 前面有 <em>The</em>，是名詞；<em>of the repairs to the elevators</em> 是介系詞帶頭的配件，裡面沒有動詞。"
+    },
+    {
+      "type": "choose",
+      "q": "哪一個是完整的句子？",
+      "options": [
+        "The new intern from the Eastfield office.",
+        "The new intern from the Eastfield office starts on Monday.",
+        "The new intern from the Eastfield office starting on Monday."
+      ],
+      "answer": 1,
+      "why": "句子要有主詞和有時態的動詞。第一個只有主詞。第三個的 <em>starting</em> 是 Ving，不是有時態的動詞，撐不起句子。只有 <em>starts</em> 會隨時間變（<em>started</em>、<em>will start</em>）。"
+    },
+    {
+      "type": "tap",
+      "q": "點出主詞（只點最核心的那一個字）。",
+      "sentence": "The boxes in the corner of the storage room belong to Mr. Becker.",
+      "answer": [
+        1
+      ],
+      "why": "動詞是 <em>belong</em>。問「什麼屬於 Becker 先生？」是箱子。<em>in the corner of the storage room</em> 是介系詞帶頭的配件，只說明箱子在哪裡；介系詞後面的 <em>corner</em>、<em>room</em> 不會是主詞。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>Ms. Park became the director.</em> 和 <em>Ms. Park hired the director.</em>，哪一句的 <em>the director</em> 是<b>補語</b>？",
+      "options": [
+        "第一句",
+        "第二句",
+        "兩句都是"
+      ],
+      "answer": 0,
+      "why": "<em>became</em> 後面的 <em>the director</em> 就是 Park 女士本人：主詞＝它，是補語。<em>hired</em> 後面的 <em>the director</em> 是另一個人，是動作的對象，是受詞。"
+    }
+  ],
+  "sections": [
+    {
+      "h": "最小的句子：主詞＋動詞",
+      "body": [
+        "英文句子再短，也要有兩樣東西：<b>主詞</b>和<b>動詞</b>。",
+        "<b>主詞</b>是這句話在講的人事物，回答「誰？」或「什麼？」。<b>動詞</b>說主詞做了什麼，或處在什麼狀態。<em>Prices rose.</em> 只有兩個字，卻是完整的句子。什麼？價格。怎麼了？漲了。",
+        "拿掉任何一個，句子就倒了。只剩 <em>Prices.</em>，讀的人會問「價格怎樣？」。只剩 <em>Rose.</em>，讀的人會問「什麼漲了？」。中文常常省略主詞（「到了，在樓下」），英文正式的句子不行。例外是請人做事的句子（<em>Please call me.</em>），主詞 <em>you</em> 省略了。",
+        "沒有東西可以當主詞的時候，英文放一個沒有意思的 <em>it</em>：<em>It rained all day.</em>、<em>It is 3 p.m.</em>。中文說「下雨了」「三點了」，英文不能只說 <em>Rained all day.</em>。",
+        "這一章說的「句子」，嚴格來說叫「子句」：一組有自己主詞和動詞的字。一句話裡可以有好幾個子句，那是第 3 章的事。這一章先看只有一個子句的句子。"
+      ],
+      "ex": [
+        {
+          "en": "<u>Prices</u> <u>rose</u>.",
+          "zh": "價格上漲了。",
+          "note": "主詞 <em>Prices</em>，動詞 <em>rose</em>。兩個字就是一個完整的句子。"
+        },
+        {
+          "en": "<u>The meeting</u> <u>started</u> late.",
+          "zh": "會議晚開始了。",
+          "note": "<em>late</em> 在這裡是副詞，說明 <em>started</em> 怎麼開始（有些字的形容詞和副詞長得一樣，第 1 章）。拿掉後 <em>The meeting started.</em> 仍然完整。"
+        },
+        {
+          "en": "<u>Our new office in Harbor City</u> <u>opens</u> next month.",
+          "zh": "我們在海港市的新辦公室下個月啟用。",
+          "note": "主詞可以很長，動詞只有 <em>opens</em> 一個。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一個是完整的句子？",
+          "options": [
+            "Arrived at the hotel at noon.",
+            "The sales team arrived at the hotel at noon.",
+            "The sales team at the hotel at noon."
+          ],
+          "answer": 1,
+          "why": "第一個沒有主詞：誰到了？第三個沒有動詞：業務團隊怎麼了？主詞和動詞都在，才是句子。"
+        }
+      ],
+      "takeaway": "每個句子至少要有一個主詞和一個動詞，少一個就不是句子。"
+    },
+    {
+      "h": "有時態的動詞：哪些算數",
+      "body": [
+        "動詞有好幾種樣子，但不是每一種都撐得起一個句子。撐得起句子的，是<b>有時態的動詞</b>：它標出時間（現在、過去、未來）。有些有時態的動詞還會跟著主詞變，例如 <em>approves</em>，第 7 章再講。The Workbook 說的「主要動詞」，指的是主要子句裡那個有時態的動詞（主要子句見第 3 章）。",
+        "<em>approves</em>、<em>approved</em>、<em>will approve</em>、<em>is approving</em>、<em>has approved</em> 都是有時態的動詞。後面三個由兩個字組成：前面的 <em>will</em>、<em>is</em>、<em>has</em> 是幫忙標時間的字，叫<b>助動詞</b>，和後面的動詞合起來，整組算一個動詞。",
+        "下面兩種樣子看起來像動作，但<b>不算</b>。<b>to V</b>：<em>to</em>＋原形，例如 <em>to approve</em>。<b>Ving</b>：動詞加 <em>-ing</em>，前面沒有 <em>is</em>、<em>was</em> 這類助動詞，例如 <em>approving</em>。還有一種 <em>-ed</em> 的樣子有時也不算，叫過去分詞（p.p.），第 4 章和第 6 章會講。",
+        "怎麼測？把句子換成另一個時間：現在的句子改成「昨天」，過去的句子改成「明天」。會跟著變的，就是有時態的動詞；不會變的，就不是。<em>The committee wants to approve the plan.</em> 改成昨天：<em>The committee wanted to approve the plan.</em>。變的是 <em>wants → wanted</em>，<em>to approve</em> 一動也不動。所以這句有時態的動詞是 <em>wants</em>。<em>must</em> 沒有別的時間形狀，直接當作和後面原形合成一組的助動詞。"
+      ],
+      "ex": [
+        {
+          "en": "The committee <u>wants</u> to approve the plan.",
+          "zh": "委員會想核准這個計畫。",
+          "note": "有時態的是 <em>wants</em>；<em>to approve</em> 不算。"
+        },
+        {
+          "en": "Ms. Ruiz <u>is reviewing</u> the contract.",
+          "zh": "Ruiz 女士正在審閱合約。",
+          "note": "<em>is reviewing</em> 兩個字合起來是一個動詞。"
+        },
+        {
+          "en": "The team leader <u>has approved</u> your request.",
+          "zh": "組長已經核准您的申請了。",
+          "note": "<em>has approved</em> 整組是一個動詞。"
+        }
+      ],
+      "table": {
+        "head": [
+          "樣子",
+          "例子",
+          "算不算有時態的動詞"
+        ],
+        "rows": [
+          [
+            "現在式",
+            "<em>She approves the plan.</em>",
+            "算"
+          ],
+          [
+            "過去式",
+            "<em>She approved the plan.</em>",
+            "算"
+          ],
+          [
+            "<em>will</em>、<em>can</em>、<em>must</em>＋原形",
+            "<em>She will approve the plan.</em>",
+            "算（整組）"
+          ],
+          [
+            "<em>is</em>＋Ving、<em>has</em>＋p.p.（第 4 章）",
+            "<em>She is reviewing the plan.</em> <em>She has approved the plan.</em>",
+            "算（整組）"
+          ],
+          [
+            "to V",
+            "<em>to approve the plan</em>",
+            "不算"
+          ],
+          [
+            "Ving（前面沒有 <em>is</em>、<em>was</em>）",
+            "<em>approving the plan</em>",
+            "不算"
+          ]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出這句有時態的動詞。",
+          "sentence": "Our director plans to visit the new factory next spring.",
+          "answer": [
+            2
+          ],
+          "why": "改成過去：<em>Our director planned to visit…</em>。會變的是 <em>plans</em>；<em>to visit</em> 是 to V，不會變。"
+        }
+      ],
+      "takeaway": "撐得起句子的是有時態的動詞；to V 和 Ving 撐不起來。"
+    },
+    {
+      "h": "一個子句，一個有時態的動詞",
+      "body": [
+        "反過來也成立：一個子句裡，只放<b>一個</b>有時態的動詞。要放第二個，中間一定要有東西把它接進來。",
+        "<em>The manager approved the budget sent it to the finance team.</em> 讀起來卡住，因為 <em>approved</em> 和 <em>sent</em> 兩個有時態的動詞擠在同一個子句裡，中間沒有任何東西把它們接起來。",
+        "要放進第二個動作，有三種修法。用 <em>and</em> 接起來：<em>approved the budget and sent it…</em>，兩個動詞共用同一個主詞。把第二個動詞改成沒有時態的樣子，例如 to V：<em>decided to send…</em>（第 6 章）。或讓它變成另一個子句，自己帶一個連接的字：<em>after she approved the budget</em>（第 3 章）。",
+        "這條規則在判斷詞性時很好用：句子已經有一個有時態的動詞了，空位就不會是另一個有時態的動詞。"
+      ],
+      "ex": [
+        {
+          "en": "The manager <u>approved</u> the budget and <u>sent</u> it to the finance team.",
+          "zh": "經理核准了預算，並把它寄給財務團隊。",
+          "note": "<em>and</em> 把兩個動詞接起來，它們共用主詞 <em>The manager</em>。"
+        },
+        {
+          "en": "The manager <u>decided</u> to send the budget to the finance team.",
+          "zh": "經理決定把預算寄給財務團隊。",
+          "note": "有時態的只有 <em>decided</em>；<em>to send</em> 不算。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一句是對的？",
+          "options": [
+            "The courier picked up the package delivered it the same day.",
+            "The courier picked up the package and delivered it the same day."
+          ],
+          "answer": 1,
+          "why": "<em>picked up</em> 和 <em>delivered</em> 都是有時態的動詞。兩個有時態的動詞之間，一定要有東西接起來：這裡用 <em>and</em>，兩個動詞共用主詞 <em>The courier</em>。"
+        }
+      ],
+      "takeaway": "一個子句只有一個有時態的動詞；要放第二個，就要有字把它接進來。"
+    },
+    {
+      "h": "受詞：動作的對象",
+      "body": [
+        "有些動詞說完了，話還沒說完。<em>Mr. Ota received.</em> 讀的人一定會問：收到什麼？這個動作需要一個對象。這個對象叫<b>受詞</b>，緊跟在動詞後面：<em>Mr. Ota received the invoice.</em>",
+        "<em>receive</em>、<em>need</em>、<em>submit</em>、<em>approve</em>、<em>hire</em>、<em>contact</em>、<em>discuss</em> 這類動詞後面要接受詞。受詞通常是名詞或代名詞。問「動詞＋什麼？」或「動詞＋誰？」就找得到：核准了什麼？預算。聯絡了誰？供應商。",
+        "有些動詞可以接兩個受詞：先「給誰」，再「給什麼」。<em>The firm sent us a quote.</em> 裡，<em>us</em> 和 <em>a quote</em> 都是受詞：寄給誰？<em>us</em>。寄了什麼？<em>a quote</em>。",
+        "也有動詞後面不接受詞：<em>arrive</em>、<em>rise</em>、<em>happen</em>、<em>occur</em>。<em>The shipment arrived.</em> 已經完整。想說到了哪裡，要先放介系詞：<em>arrived at the warehouse</em>。這時 <em>the warehouse</em> 是介系詞 <em>at</em> 後面的名詞，不是 <em>arrive</em> 的受詞。",
+        "反過來，接受詞的動詞不要多塞介系詞。中文說「跟客戶聯絡」「討論一下這件事」，英文是 <em>contact the client</em>、<em>discuss the matter</em>，中間沒有 <em>with</em>、<em>about</em>。另有一批動詞本身就要介系詞，要一個一個認：<em>reply to</em>、<em>depend on</em>、<em>apply for</em>、<em>wait for</em>。",
+        "動詞有沒有受詞，第 5 章會用到：能改成被動的，主要是後面接受詞的動詞。"
+      ],
+      "ex": [
+        {
+          "en": "Mr. Ota received <u>the invoice</u> this morning.",
+          "zh": "Ota 先生今天早上收到了發票。",
+          "note": "收到什麼？<em>the invoice</em>，是受詞。"
+        },
+        {
+          "en": "Please contact <u>our help desk</u> for a new password.",
+          "zh": "如需新密碼，請聯絡我們的服務台。",
+          "note": "<em>contact</em> 直接接受詞，中間不加 <em>with</em>。"
+        },
+        {
+          "en": "The shipment arrived <u>at</u> the warehouse on time.",
+          "zh": "貨物準時抵達倉庫。",
+          "note": "<em>arrive</em> 不接受詞；要說地點，先放介系詞 <em>at</em>。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "下面哪一句的動詞後面<b>有</b>受詞？",
+          "options": [
+            "The price of fuel rose sharply in March.",
+            "Our accountant found an error in the report.",
+            "The conference ended at five o'clock."
+          ],
+          "answer": 1,
+          "why": "找到了什麼？<em>an error</em>，是受詞。<em>rose</em> 和 <em>ended</em> 後面的 <em>sharply</em>、<em>at five o'clock</em> 是配件，說明怎麼漲、幾點結束，不是動作的對象。"
+        }
+      ],
+      "takeaway": "受詞是動作的對象，直接放在動詞後面；問「動詞＋什麼？」就找得到。"
+    },
+    {
+      "h": "補語：說明主詞是什麼、怎麼樣",
+      "body": [
+        "<em>The report is late.</em> 裡，<em>late</em> 不是動作的對象，<em>is</em> 也沒有在做任何動作。<em>is</em> 像一個等號：報告＝遲交的。等號後面說明主詞的那一部分，叫<b>補語</b>。",
+        "會帶補語的動詞不多：<em>be</em>（<em>is</em>、<em>are</em>、<em>was</em>、<em>were</em>）、<em>become</em>、<em>remain</em>、<em>stay</em>、<em>seem</em>、<em>appear</em>、<em>prove</em>，還有當「看起來」的 <em>look</em>、當「聽起來」的 <em>sound</em>、當「感覺起來」的 <em>feel</em>，以及當「變得」的 <em>get</em>（<em>get better</em>）。它們叫<b>連綴動詞</b>：把主詞和描述連起來。",
+        "補語可以是形容詞（<em>The report is late.</em>），也可以是名詞（<em>Ms. Park is the new director.</em>）。<em>be</em> 後面也可以接地點或時間（<em>The meeting is at 3 p.m.</em>），這一組字同樣拿不掉。拿掉補語，句子就倒：<em>The report is.</em> 不成句。",
+        "受詞和補語都在動詞後面，怎麼分？問一個問題：<b>主詞＝後面那個東西嗎？</b> <em>Ms. Park became the director.</em>：Park 女士＝總監，是補語。<em>Ms. Park hired the director.</em>：Park 女士和總監是兩個人，總監是動作的對象，是受詞。",
+        "這也解釋了第 1 章的規則：補語描述的是主詞，主詞是名詞，所以補語用形容詞，不用副詞。<em>The figures look accurate.</em>，不是 <em>accurately</em>。"
+      ],
+      "ex": [
+        {
+          "en": "The quarterly report is <u>late</u>.",
+          "zh": "季報遲交了。",
+          "note": "<em>late</em> 說明主詞 <em>report</em> 怎麼樣，是補語。"
+        },
+        {
+          "en": "Ms. Park became <u>the regional director</u> in May.",
+          "zh": "Park 女士五月成為區域總監。",
+          "note": "<em>Ms. Park</em>＝<em>the regional director</em>，是補語。"
+        },
+        {
+          "en": "Ms. Park hired <u>a new assistant</u> in May.",
+          "zh": "Park 女士五月僱了一位新助理。",
+          "note": "Park 女士不等於助理，助理是受詞。"
+        },
+        {
+          "en": "The figures in your summary look <u>accurate</u>.",
+          "zh": "您摘要裡的數字看起來是正確的。",
+          "note": "<em>look</em> 是「看起來」，後面接形容詞。"
+        }
+      ],
+      "table": {
+        "head": [
+          "比較",
+          "受詞",
+          "補語"
+        ],
+        "rows": [
+          [
+            "跟在什麼動詞後面",
+            "動作動詞：<em>approve</em>、<em>hire</em>、<em>receive</em>",
+            "連綴動詞：<em>be</em>、<em>become</em>、<em>remain</em>、<em>seem</em>"
+          ],
+          [
+            "和主詞的關係",
+            "不同的人事物",
+            "就是主詞，或說明主詞"
+          ],
+          [
+            "可以是",
+            "名詞、代名詞",
+            "形容詞、名詞"
+          ],
+          [
+            "例子",
+            "<em>She hired a manager.</em>",
+            "<em>She became a manager.</em>"
+          ]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The new warehouse seems ___.</em> 空格放哪一個？",
+          "options": [
+            "spacious",
+            "spaciously",
+            "space"
+          ],
+          "answer": 0,
+          "why": "<em>seem</em> 是連綴動詞，後面的補語說明主詞 <em>warehouse</em> 怎麼樣（寬敞的），要用形容詞。倉庫也不等於「空間」，所以不是名詞 <em>space</em>。"
+        }
+      ],
+      "takeaway": "主詞＝後面那個東西，就是補語；不相等、是動作的對象，就是受詞。"
+    },
+    {
+      "h": "修飾語：拿掉也不會倒的部分",
+      "body": [
+        "真實的商業句子很少只有骨架。<em>The new manager of our Westbrook branch carefully reviewed the budget for next year.</em> 有十四個字，骨架只有五個：<em>The manager reviewed the budget.</em>",
+        "其他的字多半是<b>修飾語</b>：形容詞（<em>new</em>）、副詞（<em>carefully</em>）、介系詞帶頭的一組字（<em>of our Westbrook branch</em>、<em>for next year</em>）。它們補充細節，拿掉之後，句子的文法還是完整的。",
+        "修飾語拿掉之後，主詞和受詞各會剩下一個核心的字，叫<b>中心名詞</b>：<em>manager</em> 是主詞的中心名詞，<em>budget</em> 是受詞的中心名詞。下面用拿掉修飾語的方法把它們找出來。",
+        "找骨架的方法，就是一件一件拿掉：先拿掉副詞，再拿掉介系詞帶頭的那一串（有兩種拿不掉，見下一段），再拿掉名詞前面的形容詞。剩下拿不掉的，也就是一拿掉句子就倒的，就是主詞、動詞、受詞或補語。",
+        "有兩種介系詞那一串拿不掉。一是動詞離不開它：<em>belong to</em>、<em>depend on</em>、<em>reply to</em>、<em>apply for</em>。拿掉 <em>to Mr. Becker</em>，<em>The boxes belong.</em> 就不成句。二是 <em>be</em> 後面說地點或時間：<em>The agenda is on the shared drive.</em>、<em>The meeting is at 3 p.m.</em>。拿掉就剩 <em>The agenda is.</em>，不成句。判斷方法不變：拿掉之後句子倒了，就留著。",
+        "介系詞帶頭的那一串（<em>of our Westbrook branch</em>）裡面沒有自己的主詞和動詞。這種一組字，第 3 章會叫它<b>片語</b>。"
+      ],
+      "ex": [
+        {
+          "en": "The new <u>manager</u> of our Westbrook branch carefully <u>reviewed</u> the <u>budget</u> for next year.",
+          "zh": "我們 Westbrook 分店的新經理仔細審閱了明年的預算。",
+          "note": "骨架：<em>The manager reviewed the budget.</em>"
+        },
+        {
+          "en": "Due to heavy traffic, the <u>bus</u> from the airport <u>was</u> nearly an hour <u>late</u>.",
+          "zh": "因為交通壅塞，機場來的巴士晚了將近一小時。",
+          "note": "骨架：<em>the bus was late</em>。<em>late</em> 是補語，拿掉就倒。"
+        },
+        {
+          "en": "The <u>agenda</u> <u>is</u> <u>on the shared drive</u>.",
+          "zh": "議程放在共用雲端硬碟上。",
+          "note": "<em>on the shared drive</em> 說明 <em>is</em> 的地點，拿掉就剩 <em>The agenda is.</em>，所以要留下。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "拿掉所有修飾語，點出剩下的骨架：主詞的中心名詞、動詞、受詞的中心名詞，共三個字。",
+          "sentence": "The friendly staff at the front desk quickly answered all our questions.",
+          "answer": [
+            2,
+            8,
+            11
+          ],
+          "why": "拿掉形容詞 <em>friendly</em>、介系詞那一串 <em>at the front desk</em>、副詞 <em>quickly</em>，剩下：誰？<em>staff</em>。做了什麼？<em>answered</em>。回答了什麼？<em>questions</em>。"
+        }
+      ],
+      "takeaway": "形容詞、副詞和多數介系詞那一串是配件；拿掉就倒的，才是骨架。"
+    },
+    {
+      "h": "找真正的主詞：動詞前面的長串",
+      "body": [
+        "主詞常常不是一個字，而是一長串：<em>The report on the new branches</em>。這一串裡，只有一個字是核心：拿掉其他字它還在，句子講的就是它。這個字就是第 6 節說的<b>中心名詞</b>。",
+        "找法分三步。第一，先找有時態的動詞。第二，問「什麼＋動詞？」。第三，把動詞前面由介系詞（<em>of</em>、<em>on</em>、<em>in</em>、<em>for</em>、<em>with</em>、<em>from</em>、<em>to</em>）帶頭的那一串劃掉，剩下的名詞就是中心名詞。",
+        "<em>The report on the new branches is late.</em> 動詞是 <em>is</em>。什麼遲了？是報告，不是分店。<em>on the new branches</em> 是掛在 <em>report</em> 上的修飾語，說明是哪一份報告。中心名詞是 <em>report</em>。",
+        "所以 <em>The report on the new branches are late.</em> 錯在找錯了主詞。離動詞最近的名詞是 <em>branches</em>，很容易誤以為它是主詞，就跟著它用了複數的 <em>are</em>。可是 <em>branches</em> 在介系詞 <em>on</em> 後面，<b>介系詞後面的名詞不會是主詞</b>。主詞是 <em>report</em>，一份。動詞怎麼跟著主詞變單複數，第 7 章會完整講；這一章只要你先找對主詞。",
+        "有一類片語要小心：<em>a number of</em>、<em>some of</em>、<em>most of</em>、<em>all of</em>、<em>half of</em>，這種只在說「多少」的片語。動詞要看 <em>of</em> 後面的名詞：<em>A number of employees are …</em>、<em>Some of the budget is …</em>。這是第 7 章和第 13 章的內容；這一章處理的是 <em>report on …</em>、<em>list of …</em> 這種前面的名詞才是重點的情況。",
+        "有時候主詞前面還有別的東西：<em>After the presentation, the client signed the contract.</em>。逗號前面那一串是配件，主詞在逗號後面：<em>the client</em>。"
+      ],
+      "ex": [
+        {
+          "en": "The <u>report</u> on the new branches <u>is</u> late.",
+          "zh": "那份關於新分店的報告遲交了。",
+          "note": "<em>on the new branches</em> 是修飾語；主詞是 <em>report</em>。"
+        },
+        {
+          "en": "The <u>list</u> of approved vendors <u>is</u> on the shared drive.",
+          "zh": "核准廠商名單放在共用雲端硬碟上。",
+          "note": "放在雲端硬碟上的是名單，不是廠商。"
+        },
+        {
+          "en": "<u>Visitors</u> to the factory floor <u>must wear</u> safety glasses.",
+          "zh": "進入工廠廠區的訪客必須戴護目鏡。",
+          "note": "<em>to the factory floor</em> 說明是哪些訪客；主詞是 <em>Visitors</em>。"
+        },
+        {
+          "en": "After the presentation, the <u>client</u> <u>signed</u> the contract.",
+          "zh": "簡報結束後，客戶簽了合約。",
+          "note": "逗號前是配件，主詞在逗號後面。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出主詞的中心名詞（一個字）。",
+          "sentence": "The price of the tickets for the trade show has gone up.",
+          "answer": [
+            1
+          ],
+          "why": "動詞是 <em>has gone up</em>。什麼漲了？價格。<em>of the tickets</em>、<em>for the trade show</em> 都是介系詞帶頭的修飾語，裡面的 <em>tickets</em>、<em>show</em> 不會是主詞。"
+        }
+      ],
+      "takeaway": "介系詞後面的名詞通常不是主詞；劃掉介系詞那一串，剩下的才是。<em>a number of</em>、<em>some of</em> 這類數量片語例外，第 7 章會講。"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "The report on the new branches are late.",
+      "right": "The report on the new branches is late.",
+      "why": "主詞是 <em>report</em>（一份）。<em>branches</em> 在介系詞 <em>on</em> 後面，不是主詞。單複數的細節見第 7 章。"
+    },
+    {
+      "wrong": "Please contact with the front desk if you need anything.",
+      "right": "Please contact the front desk if you need anything.",
+      "why": "<em>contact</em> 直接接受詞，中間不放 <em>with</em>。中文說「跟櫃台聯絡」，英文沒有那個「跟」。"
+    },
+    {
+      "wrong": "We will discuss about the schedule on Monday.",
+      "right": "We will discuss the schedule on Monday.",
+      "why": "<em>discuss</em> 本身就是「討論……」，直接接受詞，不需要 <em>about</em>。"
+    },
+    {
+      "wrong": "The shipment will arrive the warehouse on Friday.",
+      "right": "The shipment will arrive at the warehouse on Friday.",
+      "why": "<em>arrive</em> 不接受詞；地點前面要有介系詞 <em>at</em>。"
+    },
+    {
+      "wrong": "The new employees from the Eastfield office visiting the factory tomorrow.",
+      "right": "The new employees from the Eastfield office are visiting the factory tomorrow.",
+      "why": "Ving 不是有時態的動詞，撐不起句子。加上助動詞 <em>are</em>，<em>are visiting</em> 整組才是有時態的動詞。"
+    }
+  ],
+  "workbook": []
+}

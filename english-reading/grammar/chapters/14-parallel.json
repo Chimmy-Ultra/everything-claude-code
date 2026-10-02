@@ -1,0 +1,177 @@
+{
+  "id": "parallel", "n": 14,
+  "title": "平行結構與成對連接詞",
+  "en": "Parallel Structure and Paired Conjunctions",
+  "lead": "用 <em>and</em>、<em>or</em>、<em>but</em> 把東西接在一起時，被接起來的每一項要是<b>同一種形式</b>：名詞配名詞、形容詞配形容詞、原形（第 6 章）配原形。這叫平行結構。<em>both … and</em>、<em>either … or</em> 這類成對的連接詞也一樣，而且前半決定後半。這一章教你先找出被接起來的是哪幾塊，再檢查它們長得一不一樣；接著講兩個主詞用 <em>or</em>、<em>nor</em> 接起來時，動詞要跟誰；最後講 <em>not only</em> 放在句首時的倒裝，以及 <em>rather than</em> 和 <em>instead of</em> 的差別。",
+  "check": [
+    {"type": "choose", "q": "哪一句對？", "options": ["Our new assistant is friendly, organized, and works hard.", "Our new assistant is friendly, organized, and hardworking.", "Our new assistant is friendly, organization, and hardworking."], "answer": 1, "why": "三項都接在 <em>is</em> 後面。第一項 <em>friendly</em> 是形容詞，後面兩項也要是形容詞：<em>organized</em>、<em>hardworking</em>。<em>works hard</em> 是動詞，<em>organization</em> 是名詞，形式都不一樣。"},
+    {"type": "choose", "q": "<em>Please sign the form, ___ a copy, and return it to the HR office.</em>", "options": ["make", "making", "made"], "answer": 0, "why": "這是叫人做事的句子，三個動作 <em>sign</em>、空格、<em>return</em> 並排，前後都是原形，中間那一項也要用原形 <em>make</em>。"},
+    {"type": "choose", "q": "<em>The hotel offers both free breakfast ___ an airport shuttle.</em>", "options": ["and", "or", "but also"], "answer": 0, "why": "<em>both</em> 的另一半固定是 <em>and</em>。<em>or</em> 配 <em>either</em>，<em>but also</em> 配 <em>not only</em>。"},
+    {"type": "choose", "q": "<em>Neither the manager nor her assistants ___ available on Friday.</em>", "options": ["is", "are"], "answer": 1, "why": "用 <em>neither … nor</em> 接兩個主詞時，動詞跟離它比較近的那一個。離動詞近的是 <em>her assistants</em>（複數），所以用 <em>are</em>。"}
+  ],
+  "sections": [
+    {
+      "h": "and、or、but 兩邊要是同一種東西",
+      "body": [
+        "<em>and</em>、<em>or</em>、<em>but</em> 也是連接詞（第 8 章），但跟 <em>because</em>、<em>although</em> 不一樣：它們兩邊是對等的，可以接兩個字、兩個片語，也可以接兩個子句（第 3 章）。條件只有一個：<b>兩邊要是同一種東西</b>。",
+        "為什麼？<em>and</em> 告訴讀者「後面這一項跟前面那一項站在同一個位置」。讀者會把後一項放回前一項的位置去讀，形式不一樣，放回去就不通。",
+        "所以檢查的方法是<b>拆開</b>：把句子拆成兩句，每一項單獨放回原來的位置，都要說得通。<em>Ms. Rowan is friendly and patient.</em> 拆成 <em>Ms. Rowan is friendly.</em> 和 <em>Ms. Rowan is patient.</em>，兩句都對。<em>Ms. Rowan is friendly and patience.</em> 拆開後變成 <em>Ms. Rowan is patience.</em>（Rowan 女士是耐心），這就壞了：<em>patience</em> 是名詞，放不進形容詞的位置。",
+        "「同一種東西」指的是詞性（第 1 章）和形式相同，不是長度相同。<em>fast</em> 和 <em>easy to use</em> 長短不同，但都是形容詞，可以並排。常見的形式有名詞、形容詞、原形、Ving、to V（第 6 章）、片語和子句，見下表。"
+      ],
+      "table": {"head": ["兩邊都是", "例子"], "rows": [
+        ["名詞", "<em>price and quality</em>"],
+        ["形容詞", "<em>small but comfortable</em>"],
+        ["原形", "<em>sign and return</em>"],
+        ["Ving", "<em>reviewing and approving</em>"],
+        ["to V", "<em>to reduce costs or to save time</em>"],
+        ["片語", "<em>by phone or by email</em>"],
+        ["子句", "<em>The office closes at six, but the store stays open until nine.</em>"]
+      ]},
+      "ex": [
+        {"en": "Ms. Rowan is <u>friendly</u> and <u>patient</u> with customers.", "zh": "Rowan 女士對顧客友善又有耐心。"},
+        {"en": "You can reach us <u>by phone</u> or <u>by email</u>.", "zh": "您可以用電話或電子郵件聯絡我們。"},
+        {"en": "The manager <u>reviewed</u> the proposal and <u>approved</u> the budget.", "zh": "經理看過了提案，也核准了預算。"},
+        {"en": "<u>The office closes at six</u>, but <u>the store stays open until nine</u>.", "zh": "辦公室六點關，但店面開到九點。", "note": "<em>but</em> 兩邊都是完整的子句。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "點出被 <em>but</em> 連起來、形式必須一樣的兩個字。", "sentence": "The new office is small but comfortable.", "answer": [4, 6], "why": "<em>but</em> 前面是 <em>small</em>，後面是 <em>comfortable</em>，兩個都是形容詞，都接在 <em>is</em> 後面。拆開讀：<em>The new office is small.</em>、<em>The new office is comfortable.</em>，兩句都通。"}
+      ],
+      "takeaway": "把 <em>and</em>、<em>or</em>、<em>but</em> 兩邊拆開，每一項單獨放回句子裡都要說得通。"
+    },
+    {
+      "h": "三項以上：第一項定形式",
+      "body": [
+        "列舉三項以上時，寫法是 <em>A, B, and C</em>：項目之間用逗號，最後一項前面加 <em>and</em> 或 <em>or</em>。<em>and</em> 前面那個逗號可加可不加，這本書的例句都加。",
+        "規則跟兩項一樣：每一項形式相同。最容易出錯的是<b>最後一項</b>。寫到第三項時，第一項已經離得有點遠，很容易不知不覺換成另一種說法。所以檢查時從第一項開始：看它是名詞、形容詞、原形、Ving，還是 to V，再確定後面每一項都照抄這個形式。",
+        "拿掉這個規則會怎樣？看這句：<em>Our goals are to cut costs, to improve service, and increasing sales.</em> 前兩項都是「目標是要做什麼」（to V），第三項突然變成 Ving，讀者讀到最後，不確定 <em>increasing sales</em> 跟前面是什麼關係。改成 <em>and to increase sales</em>，三項就整整齊齊。"
+      ],
+      "ex": [
+        {"en": "Ms. Ruiz is responsible for <u>hiring</u>, <u>training</u>, and <u>evaluating</u> new staff.", "zh": "Ruiz 女士負責招募、訓練和考核新進員工。"},
+        {"en": "The room was <u>clean</u>, <u>quiet</u>, and <u>reasonably priced</u>.", "zh": "房間乾淨、安靜，價格也合理。", "note": "<em>reasonably priced</em> 比較長，但它也是形容詞，所以可以跟前兩項並排。"},
+        {"en": "The ideal candidate has <u>sales experience</u>, <u>strong language skills</u>, and <u>a valid driver's license</u>.", "zh": "理想的人選要有業務經驗、良好的語言能力，以及有效的駕照。", "note": "三項都是名詞片語。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Our goals this year are to cut costs, to improve customer service, and ___ sales in Asia.</em>", "options": ["increasing", "to increase", "increased"], "answer": 1, "why": "第一項是 <em>to cut</em>，第二項是 <em>to improve</em>，都是 to V。第三項照抄同一個形式：<em>to increase</em>。"}
+      ],
+      "takeaway": "列舉再長，先看第一項是什麼形式，後面每一項都照抄。"
+    },
+    {
+      "h": "共用的字：to、will、can 只寫一次",
+      "body": [
+        "很多時候，<em>and</em> 後面的動詞看起來孤零零的：<em>We will review your application and contact you within a week.</em> <em>contact</em> 前面沒有主詞，也沒有 <em>will</em>，為什麼用原形？",
+        "因為它跟前一個動詞<b>共用</b>了前面的字。這句其實是 <em>We will review … and (we will) contact …</em>，第二次的 <em>we will</em> 省略了。<em>contact</em> 還是接在 <em>will</em> 後面，所以跟 <em>review</em> 一樣用原形。<em>to</em> 也一樣：<em>asked us to check the figures and send a summary</em>，<em>send</em> 共用前面的 <em>to</em>。",
+        "如果把 <em>contact</em> 寫成 <em>contacting</em> 或 <em>contacted</em>，它就沒有地方可以掛：前面沒有任何字能讓 Ving 或過去式在這裡成立。判斷的方法是往前找：<em>and</em> 後面這個動詞，跟 <em>and</em> 前面的哪一個動詞是一對？那一個長什麼樣，它就長什麼樣。",
+        "有時候共用的只有主詞，兩個動詞各自帶時態：<em>Ms. Chen joined the company in 2019 and became a manager last year.</em> <em>joined</em> 是過去式，<em>became</em> 也是過去式。"
+      ],
+      "ex": [
+        {"en": "We will review your application and <u>contact</u> you within five business days.", "zh": "我們會審閱您的申請，並在五個工作天內與您聯絡。", "note": "<em>contact</em> 跟 <em>review</em> 共用 <em>will</em>，所以用原形。"},
+        {"en": "Customers can pay online or <u>visit</u> any of our branches.", "zh": "顧客可以線上付款，或到任何一家分行辦理。"},
+        {"en": "Mr. Sandoval asked us to check the figures and <u>send</u> him a summary.", "zh": "Sandoval 先生請我們核對數字，再寄一份摘要給他。"},
+        {"en": "Ms. Chen <u>joined</u> the company in 2019 and <u>became</u> a manager last year.", "zh": "Chen 女士 2019 年進公司，去年升上經理。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The technician will inspect the machine and ___ a report by Friday.</em>", "options": ["submit", "submitting", "submits"], "answer": 0, "why": "空格跟 <em>inspect</em> 共用前面的 <em>will</em>（<em>will inspect … and (will) submit</em>）。<em>will</em> 後面用原形，所以是 <em>submit</em>。"},
+        {"type": "tap", "q": "<em>sign</em> 前面沒有 <em>to</em>，它借用前面某個動詞的 <em>to</em>。點出跟 <em>sign</em> 共用同一個 <em>to</em> 的另一個動詞（不要點 <em>sign</em> 自己）。", "sentence": "The supervisor asked the new staff to read the manual and sign the safety form.", "answer": [7], "why": "<em>to</em> 後面的第一個動詞是 <em>read</em>，<em>and</em> 後面的 <em>sign</em> 跟它共用這個 <em>to</em>，所以兩個都是原形。<em>asked</em> 在 <em>to</em> 前面，是主詞 <em>The supervisor</em> 的動詞，不跟 <em>sign</em> 配對。"}
+      ],
+      "takeaway": "<em>and</em> 後面的動詞看起來孤零零，其實跟前面的動詞共用 <em>to</em>、<em>will</em> 或 <em>can</em>，所以形式跟它一樣。"
+    },
+    {
+      "h": "成對連接詞：前半決定後半",
+      "body": [
+        "有些連接詞是兩個字一組，前半先出現，預告「後面還有一半」：<em>both A and B</em>、<em>either A or B</em>、<em>neither A nor B</em>、<em>not only A but also B</em>、<em>whether A or B</em>。",
+        "第一個門檻：<b>另一半是固定的</b>，不能換。<em>both</em> 只配 <em>and</em>，<em>either</em> 只配 <em>or</em>，<em>neither</em> 只配 <em>nor</em>，<em>not only</em> 配 <em>but also</em>。看到前半，就該知道後半是什麼。<em>both … or</em> 壞在哪裡？<em>both</em> 說「兩個都」，<em>or</em> 說「其中一個」，前後意思打架。",
+        "第二個門檻：<b>A 和 B 也要平行</b>。成對連接詞就是加強版的 <em>and</em>、<em>or</em>，前面幾節的規則全部適用。<em>either on Saturday or on Monday</em>：兩邊都是 <em>on</em> 片語。",
+        "<em>neither … nor</em> 本身就是否定，句子裡不要再加 <em>not</em>。<em>Neither the hotel nor the airline offered a refund.</em>（飯店和航空公司都沒有退款）的動詞 <em>offered</em> 是肯定的形式，否定的意思由 <em>neither</em> 和 <em>nor</em> 負責。"
+      ],
+      "table": {"head": ["成對連接詞", "意思", "例子"], "rows": [
+        ["<em>both A and B</em>", "A 和 B 兩個都", "<em>both lighter and quieter</em>"],
+        ["<em>either A or B</em>", "A 或 B 其中一個", "<em>either on Saturday or on Monday</em>"],
+        ["<em>neither A nor B</em>", "A 和 B 都不", "<em>neither the hotel nor the airline</em>"],
+        ["<em>not only A but also B</em>", "不只 A，還有 B", "<em>not only free but also open to the public</em>"],
+        ["<em>whether A or B</em>", "不管是 A 還是 B；是 A 還是 B", "<em>whether you pay by card or by bank transfer</em>"]
+      ]},
+      "ex": [
+        {"en": "The new model is <u>both</u> lighter <u>and</u> quieter.", "zh": "新機型又輕又安靜。"},
+        {"en": "We can deliver the furniture <u>either</u> on Saturday <u>or</u> on Monday.", "zh": "家具可以星期六或星期一送。"},
+        {"en": "<u>Neither</u> the hotel <u>nor</u> the airline offered a refund.", "zh": "飯店和航空公司都沒有退款。"},
+        {"en": "The workshop is <u>not only</u> free <u>but also</u> open to the public.", "zh": "這場工作坊不但免費，而且開放給一般民眾參加。"},
+        {"en": "<u>Whether</u> you pay by card <u>or</u> by bank transfer, you will receive a receipt.", "zh": "不管是刷卡還是轉帳付款，您都會拿到收據。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>You can submit the form ___ by email or at the front desk.</em>", "options": ["both", "either", "neither"], "answer": 1, "why": "後半是 <em>or</em>，前半就是 <em>either</em>。<em>both</em> 配 <em>and</em>，<em>neither</em> 配 <em>nor</em>。"},
+        {"type": "tap", "q": "點出被 <em>not only … but also</em> 連起來的兩個形容詞。", "sentence": "The new scheduling app is not only fast but also reliable.", "answer": [7, 10], "why": "<em>not only</em> 後面是 <em>fast</em>，<em>but also</em> 後面是 <em>reliable</em>，兩個都是形容詞，都接在 <em>is</em> 後面。<em>new</em> 也是形容詞，但它修飾 <em>app</em>，不在這一對裡面。"}
+      ],
+      "takeaway": "看到 <em>both</em>、<em>either</em>、<em>neither</em>、<em>not only</em>、<em>whether</em>，先找它固定的另一半；兩半後面接的東西也要同一種形式。"
+    },
+    {
+      "h": "兩個主詞用 or、nor 接起來：動詞跟近的那一個",
+      "body": [
+        "成對連接詞也能把兩個主詞接在一起。這時動詞用單數還是複數（主詞和動詞一致，第 7 章）？分兩種情況。",
+        "<em>both A and B</em>：兩個加起來，一定是複數。<em>Both the printer and the scanner need repairs.</em>",
+        "<em>either A or B</em>、<em>neither A nor B</em>：意思是「其中一個」或「兩個都不」，沒有把兩個加起來，所以不能直接算複數。英文的做法是：<b>動詞跟離它比較近的那個主詞</b>，也就是 B。<em>not only A but also B</em> 也照這個規則。",
+        "比較這一對：<em>Neither the manager nor the interns were told.</em>、<em>Neither the interns nor the manager was told.</em> 兩句意思一樣，只是順序換了，靠近動詞的主詞變了，動詞就跟著變。自己寫的時候，把複數的那一個放在後面，句子念起來比較順。"
+      ],
+      "table": {"head": ["結構", "動詞跟誰", "例子"], "rows": [
+        ["<em>both A and B</em>", "複數（兩個加起來）", "<em>Both the CEO and the CFO are</em> …"],
+        ["<em>either A or B</em>", "B（比較近的那個）", "<em>Either the drivers or the dispatcher has</em> …"],
+        ["<em>neither A nor B</em>", "B（比較近的那個）", "<em>Neither the manager nor the interns were</em> …"],
+        ["<em>not only A but also B</em>", "B（比較近的那個）", "<em>Not only the staff but also the director is</em> …"]
+      ]},
+      "ex": [
+        {"en": "<u>Both</u> the printer <u>and</u> the scanner <u>need</u> repairs.", "zh": "印表機和掃描器都需要修理。"},
+        {"en": "Neither the interns nor the <u>manager</u> <u>was</u> told about the change.", "zh": "實習生和經理都沒有被告知這項變動。"},
+        {"en": "Neither the manager nor the <u>interns</u> <u>were</u> told about the change.", "zh": "經理和實習生都沒有被告知這項變動。", "note": "順序一換，靠近動詞的主詞變了，動詞也跟著變。"},
+        {"en": "Either the drivers or the <u>dispatcher</u> <u>has</u> a copy of the schedule.", "zh": "司機或調度員手上會有一份時刻表。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "點出必須互相配合單複數的兩個字：決定動詞單複數的那個名詞，和那個動詞。", "sentence": "Neither the supervisor nor the technicians were aware of the problem.", "answer": [5, 6], "why": "<em>neither … nor</em> 的動詞跟離它比較近的主詞。離 <em>were</em> 最近的是 <em>technicians</em>（複數），所以用 <em>were</em>。<em>supervisor</em> 離得遠，不影響動詞。"}
+      ],
+      "takeaway": "<em>both … and</em> 算兩個，用複數；<em>either … or</em>、<em>neither … nor</em> 的動詞跟離它比較近的那個主詞。"
+    },
+    {
+      "h": "not only 放在句首：前半要倒裝",
+      "body": [
+        "<em>not only</em> 有時會跑到句首，接兩個完整的子句：<em>Not only is the hotel close to the station, but it also offers free parking.</em>",
+        "前半的語序：不是 <em>the hotel is</em>，而是 <em>is the hotel</em>，動詞或助動詞（第 2 章）跑到主詞前面，像問句的樣子。這叫倒裝（第 10 章的 <em>Should you need …</em> 也是倒裝，這裡是另一種場合）。<em>not only</em> 這類否定的字放到句首、後面接的是一個完整子句時，那個子句要倒裝，英文固定這樣寫。不倒裝，寫成 <em>Not only the hotel is close to the station</em>，就是錯的。",
+        "有一個情況要分清楚：上一節表裡的 <em>Not only the staff but also the director is …</em> 也是 <em>Not only</em> 開頭，卻沒有倒裝。差別在 <em>not only</em> 後面接什麼。那一句 <em>not only</em> 後面只有一個名詞（<em>the staff</em>），接著 <em>but also</em> 另一個名詞，連接的是兩個主詞，不是兩個子句，所以不倒裝。<em>not only</em> 後面接著主詞加動詞（<em>the hotel is</em>），連接的是兩個子句，才倒裝。",
+        "<em>be</em> 動詞和助動詞（第 2 章）可以直接搬到主詞前面：<em>the hotel is</em> 變成 <em>is the hotel</em>，<em>the system will reduce</em> 變成 <em>will the system reduce</em>。一般動詞沒有東西可以搬，就借 <em>do</em>、<em>does</em>、<em>did</em> 放到主詞前面，動詞回到原形：<em>the layout saved</em> 變成 <em>did the layout save</em>。",
+        "後半維持正常語序，而且要有自己的主詞：<em>but it also offers</em>。不想倒裝，就把 <em>not only</em> 放回句子中間：<em>The new layout not only saved space but also made the office brighter.</em> 意思一樣，兩種都對。"
+      ],
+      "ex": [
+        {"en": "<u>Not only is</u> the hotel close to the station, but it also offers free parking.", "zh": "這家飯店不但離車站近，還提供免費停車。", "note": "<em>be</em> 動詞直接搬到主詞前面：<em>the hotel is</em> 變成 <em>is the hotel</em>。"},
+        {"en": "<u>Not only did</u> the new layout save space, but it also made the office brighter.", "zh": "新的格局不但省空間，也讓辦公室更明亮。", "note": "一般動詞借 <em>did</em> 倒裝，<em>save</em> 回到原形。"},
+        {"en": "<u>Not only will</u> the new system reduce costs, but it will also shorten delivery times.", "zh": "新系統不但會降低成本，還會縮短交貨時間。", "note": "助動詞 <em>will</em> 直接搬到主詞前面，<em>reduce</em> 維持原形。"},
+        {"en": "The new layout <u>not only</u> saved space <u>but also</u> made the office brighter.", "zh": "新的格局不但省空間，也讓辦公室更明亮。", "note": "<em>not only</em> 在句子中間，不倒裝。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "哪一句對？", "options": ["Not only the system is faster, but it also costs less.", "Not only is the system faster, but it also costs less."], "answer": 1, "why": "<em>Not only</em> 放在句首時，前半要倒裝：<em>the system is</em> 變成 <em>is the system</em>。第一句沒有倒裝，所以錯。"}
+      ],
+      "takeaway": "<em>not only</em> 放句首，前半倒裝、後半照常；不想倒裝，就把它放回句子中間。"
+    },
+    {
+      "h": "rather than 和 instead of",
+      "body": [
+        "<em>rather than</em>（而不是）的作用像 <em>and</em>、<em>or</em>：把兩個形式相同的東西接起來，前面是什麼形式，後面就用什麼形式。<em>sign contracts electronically rather than print them</em>：兩邊都是原形。<em>by air rather than by sea</em>：兩邊都是 <em>by</em> 片語。",
+        "<em>instead of</em>（代替、而不是）意思很像，但它是介系詞（第 8 章），後面只能接名詞或 Ving，不管前面是什麼形式：<em>instead of canceling the project</em>。",
+        "所以同一個意思，兩種寫法後面的動詞形式不一樣：<em>We decided to rent rather than buy.</em>（平行，用原形）；<em>We decided to rent instead of buying.</em>（介系詞，用 Ving）。拿平行的規則去套 <em>instead of</em>，寫成 <em>instead of buy</em>，就錯了。"
+      ],
+      "ex": [
+        {"en": "Most of our clients prefer to sign contracts electronically <u>rather than</u> print them.", "zh": "我們大部分的客戶比較喜歡用電子方式簽約，而不是印出來簽。"},
+        {"en": "We shipped the samples by air <u>rather than</u> by sea.", "zh": "我們用空運寄樣品，而不是海運。"},
+        {"en": "The board approved a smaller budget <u>instead of</u> canceling the project.", "zh": "董事會核准了較少的預算，而沒有取消這個專案。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Ms. Ward called the supplier instead of ___ another email.</em>", "options": ["send", "sending", "sent"], "answer": 1, "why": "<em>instead of</em> 是介系詞，後面接名詞或 Ving，所以用 <em>sending</em>。"}
+      ],
+      "takeaway": "<em>rather than</em> 兩邊同形式；<em>instead of</em> 是介系詞，後面一律接名詞或 Ving。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "The position requires strong writing skills, attention to detail, and to be able to work under pressure.", "right": "The position requires strong writing skills, attention to detail, and the ability to work under pressure.", "why": "前兩項是名詞片語，第三項也要是名詞片語。改成以名詞 <em>ability</em> 為中心的 <em>the ability to work</em>，形式就對齊了。"},
+    {"wrong": "Neither the hotel or the airline offered a refund.", "right": "Neither the hotel nor the airline offered a refund.", "why": "<em>neither</em> 的另一半固定是 <em>nor</em>。"},
+    {"wrong": "We will review your application and contacting you within a week.", "right": "We will review your application and contact you within a week.", "why": "<em>contact</em> 跟 <em>review</em> 共用 <em>will</em>，要用原形。"},
+    {"wrong": "Neither the manager nor the interns was told about the change.", "right": "Neither the manager nor the interns were told about the change.", "why": "動詞跟離它比較近的主詞。<em>interns</em> 是複數，所以用 <em>were</em>。"},
+    {"wrong": "Not only the new printer is faster, but it also uses less ink.", "right": "Not only is the new printer faster, but it also uses less ink.", "why": "<em>Not only</em> 放在句首時，前半要倒裝：<em>is the new printer</em>。"}
+  ],
+  "workbook": ["parallel"]
+}

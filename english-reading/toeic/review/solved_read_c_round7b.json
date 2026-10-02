@@ -1,0 +1,143 @@
+{
+ "answers": {
+  "r-p7-04:0": {
+   "answer": "D",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes (marginal): 'transport' is the most common sense of carry and is the lure. B yes: most-common-meaning lure. D not met: the clue is local ('carry an additional $60 staffing charge'); S not met.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "Swap the target word so it does not repeat r-p7-02 question 3. For example use 'secures' in 'A deposit ... secures your date' (key: guarantees; lures: fastens, protects, obtains), or keep 'carry' here and change the word in r-p7-02.",
+   "editorNote": "Not ambiguous: 'involve' is the only option that takes 'an additional charge'. The repetition of carry with the same lure words (stock / transport / support) in two sets of one batch is the problem."
+  },
+  "r-p7-04:1": {
+   "answer": "B",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes: A (change of address) and C (praise) are both real content of the e-mail, and D is promised for later. B yes: A is the first thing the reader sees. D and S not met: one document.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "Shorten the key or lengthen the others so the key is not the longest, for example 'To book a lunch for a work event' against 'To report a change of office address', 'To praise a lunch ordered earlier', 'To say how many guests will attend'.",
+   "editorNote": "Not ambiguous. Length cue: the key is 8 words against 5-6 for the others (shouldFix, cosmetic)."
+  },
+  "r-p7-04:2": {
+   "answer": "A",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L, D, B, S all met. L: C ('same package as in January') is the 'coming back to you' lure; B uses the deposit. D: January package (Harvest, e-mail), the new package (dessert and coffee, e-mail), what each includes (web page), the $26 rate (invoice). B: the same-package lure. S: Harvest has one hot main, Banquet has a second, so more main dishes.",
+   "vsToeic": "similar",
+   "style": 5,
+   "fix": "",
+   "editorNote": "Checked: Banquet is the only package with dessert and coffee. $26 on the invoice confirms it. B fails (deposit only), C fails (Harvest vs Banquet), D fails (cooked at the Fenwick Road kitchen)."
+  },
+  "r-p7-04:3": {
+   "answer": "C",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L, D, B, S all met, at the lower end of hard. L: A is a real charge on the invoice, and B and D are real policy features. D: invoice ($35 flat fee), web page ($35 outside Corbridge city limits), e-mail (new office in Ashby). B: A is the other surcharge ($60), which a hurried reader mixes up. S: link the invoice line to the policy, then to the move.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "Say 'free-delivery area' instead of 'no-charge zone' (for example 'Its new office is outside the free-delivery area').",
+   "editorNote": "Not ambiguous. 'No-charge zone' is not natural business English. Also, option A ('held on a weekend') tells the solver the answer to question 5's inference; consider replacing it with another real but wrong charge reason."
+  },
+  "r-p7-04:4": {
+   "answer": "D",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L, D, B, S all met. L: A (March 20) is the preferred date, B and C use real numbers (30 guests, March 18). D: the e-mail (preferred March 20, fallback Saturday March 22) and the invoice ($60 staffing charge, 34 guests) plus the web page (weekend surcharge). B: A is the preferred date. S: the weekend surcharge shows the event moved to Saturday, March 22, two days later.",
+   "vsToeic": "similar",
+   "style": 5,
+   "fix": "Give the four options one shape and similar length, for example 'It took place two days after the date first preferred', 'It had fewer guests than the number first estimated', 'It took place on the date the builders had promised', 'It took place on the first date Ms. Whitfield proposed' (checked: only the first is true; 34 guests exceeds the 30 estimated, and the builders' date was March 18).",
+   "editorNote": "Not ambiguous: the staffing charge excludes March 20 (Thursday), 34 guests excludes B, and March 18 was only the builders' date. Length and shape cue: the key is 10 words and the only relative-date option, against 6-7 words and absolute dates for A, B and C."
+  },
+  "r-p7-05:0": {
+   "answer": "C",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes: B (refund) is in the e-mail, A and D are plausible lures. B yes: the refund paragraph is a prominent detail that is not the purpose. D and S not met: one document.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "",
+   "editorNote": "Not ambiguous: the e-mail is dated before the trip, so an apology for a late departure (D) is impossible. Key is slightly longer than the others (7 words against 5-6), minor."
+  },
+  "r-p7-05:1": {
+   "answer": "A",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes: 'is on hold' fits 'This offer ___ until 5:00 p.m.' grammatically. B yes: 'is located' is the common sense of stand. D not met: the clue is in the same sentence.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "",
+   "editorNote": "Not ambiguous: 'is on hold until Thursday 5 p.m.' contradicts the offer being available until then."
+  },
+  "r-p7-05:2": {
+   "answer": "B",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L, D, B, S all met. L: A uses the real bay by the ticket hall, C and D are plausible. D: itinerary (Bay 6), e-mail (moved to Bay 2), review (couple waiting at Bay 6). B: A is the literal 'at the bay' reading. S: infer that the couple waited at the old bay because they were using the outdated details.",
+   "vsToeic": "similar",
+   "style": 5,
+   "fix": "",
+   "editorNote": "Checked: A fails (they were at Bay 6, the ticket-hall bay is Bay 2), C fails (they traveled), D has no support (their time was not wrong, their bay was)."
+  },
+  "r-p7-05:3": {
+   "answer": "A",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L, D, B, S all met. L: B (cheese demonstration), C (abbey walk) and D (gardens) are all real stops. D: itinerary (island tea house cruise), e-mail (boat out of service, replaced by the dairy), review ('the stop ... dropped'). B: B is the replacement stop she liked, not the one she wanted. S: work out that the dropped stop is the cruise.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "Shorten the key so it is not the longest and only two-part option, for example 'A boat trip to a café' (5 words) against 3-5 words for the others.",
+   "editorNote": "Not ambiguous. Length cue: key is 7 words and two-part ('by water to a café'), the others 3-5 words."
+  },
+  "r-p7-05:4": {
+   "answer": "D",
+   "confidence": "high",
+   "ambiguous": false,
+   "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L, D, B, S all met, at the lower end of hard. L: refund is real, in the e-mail. D: the review has to be checked in all three paragraphs. B: the refund is a tempting belief because the e-mail offers it. S: NOT item, eliminate A (sister), B (two wedges), C (starving) one by one.",
+   "vsToeic": "similar",
+   "style": 4,
+   "fix": "",
+   "editorNote": "Not ambiguous: she went on the tour, so no refund; she received a voucher, which is not a refund."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "r-p7-04:0 - 'carry' with the lures stock / transport / support repeats r-p7-02:2; change the target word in one of the two (for example 'secures' here).",
+  "r-p7-04:1 - length cue: key (8 words) longer than the others (5-6).",
+  "r-p7-04:3 - 'no-charge zone' is unnatural; say 'free-delivery area'. Option A hands over the weekend inference needed for question 5.",
+  "r-p7-04:4 - key is the longest option (10 words) and the only relative-date shape; equalize the options.",
+  "r-p7-05:3 - key is the longest and only two-part option; shorten (for example 'A boat trip to a café')."
+ ],
+ "overall": "Two good triples in official form. Checked: invoice arithmetic (34 x $26 = $884; deposit 25 percent of 30 x $26 = $195; $884 + $35 + $60 - $195 = $784), booking policy against the e-mail (17 days ahead against a ten-day minimum, deposit paid March 4 = 'tomorrow' from March 3, weekend surcharge on Saturday March 22, Ashby outside Corbridge so the $35 fee), and the tour (Bay 6 to Bay 2, cruise replaced by the dairy, lunch 1:30, return about 6:15 against the review's 'well after six', voucher $10, offer deadline Thursday June 12 before Saturday June 14). Weekday-date pairs agree with each other (Thursday March 20 with Saturday March 22; Thursday June 12 with Saturday June 14; Monday June 9 and 16) and match the 2025 calendar; no year appears on the page, so this is harmless, though r-p7-01 to 03 match 2026 if the batch is meant to share one year. No internal inconsistencies and no option defensible as a second answer. Bands: 6 hard, 4 medium, 0 easy; nearly all hard items need a short cross-document step, with r-p7-04:3 and r-p7-05:4 at the lower end. Main weaknesses are cosmetic: option-length cues on r-p7-04:1, r-p7-04:4 and r-p7-05:3, the repeated word 'carry' (r-p7-04:0 against r-p7-02:2), and the phrase 'no-charge zone'. The town name Corvale (r-p7-05 itinerary) is also used for Mr. Kessler's plant in r-p7-01; change one."
+}

@@ -1,0 +1,522 @@
+{
+  "id": "pos",
+  "n": 1,
+  "title": "詞性：從位置和字尾認出來",
+  "en": "Parts of Speech by Position and Ending",
+  "lead": "一個字在句子裡做什麼工作，就是它的詞性。中文的「決定」當動作、當一件事都長一樣，英文卻要換形狀：<em>decide</em>、<em>decision</em>、<em>decisive</em>、<em>decisively</em>。這一章教你不靠意思，靠<b>位置</b>和<b>字尾</b>認出詞性。後面每一章說「這裡要一個名詞」「這裡要一個動詞」，用的都是這一章的話。",
+  "check": [
+    {
+      "type": "choose",
+      "q": "<em>The ___ was announced at the morning meeting.</em> 空格要放哪一種詞性？",
+      "options": [
+        "名詞",
+        "動詞",
+        "形容詞",
+        "副詞"
+      ],
+      "answer": 0,
+      "why": "空格前面是 <em>the</em>，<em>the</em> 後面一定要落在一個名詞上。這個名詞也是 <em>was announced</em> 的主詞：被宣布的人或事。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>Ms. Okada ___ reviewed the contract before signing it.</em> 空格要放哪一種詞性？",
+      "options": [
+        "名詞",
+        "形容詞",
+        "副詞"
+      ],
+      "answer": 2,
+      "why": "句子已經有主詞 <em>Ms. Okada</em> 和動詞 <em>reviewed</em>，空格夾在中間，說明「怎麼審」。描述動作的是副詞（例如 <em>carefully</em>）。拿掉它，句子還是完整的。"
+    },
+    {
+      "type": "choose",
+      "q": "哪一句是對的？",
+      "options": [
+        "The shipping fees seem reasonably.",
+        "The shipping fees seem reasonable."
+      ],
+      "answer": 1,
+      "why": "<em>seem</em> 後面那個字描述的是 <em>fees</em>（運費是合理的），不是在說「怎麼 <em>seem</em>」。描述名詞要用形容詞 <em>reasonable</em>。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>a ___ solution</em>（一個有效的解決辦法）空格放哪一個？",
+      "options": [
+        "effect",
+        "effective",
+        "effectively"
+      ],
+      "answer": 1,
+      "why": "<em>a</em> 和名詞 <em>solution</em> 中間，是描述名詞的位置，要形容詞。<em>-ive</em> 是形容詞字尾。"
+    }
+  ],
+  "sections": [
+    {
+      "h": "詞性是這個字在句子裡的工作",
+      "body": [
+        "中文的字很少變形。「我們<b>決定</b>延後」和「這個<b>決定</b>很突然」，同一個「決定」，一次是動作，一次是一件事，字長得一模一樣。英文不行：動作是 <em>decide</em>，一件事是 <em>decision</em>。英文用字的<b>形狀</b>告訴你，它在句子裡做什麼工作。",
+        "這個工作就叫<b>詞性</b>。這本書用七種：名詞、動詞、形容詞、副詞、介系詞、連接詞、代名詞。下表是每一種的工作。",
+        "判斷詞性有兩個線索：<b>位置</b>（它前後是什麼字）和<b>字尾</b>（它長什麼樣子）。位置是證據，字尾是線索。兩個通常會指向同一個答案；萬一不一致，聽位置的。",
+        "為什麼中文母語的人特別需要這一章：中文靠位置，字不變，所以我們很少注意詞性。英文讀起來好像懂，寫的時候卻會寫出 <em>We need your approve</em> 這種句子，因為「核准」在中文裡沒有分動詞和名詞。"
+      ],
+      "ex": [
+        {
+          "en": "We <u>decided</u> to delay the launch.",
+          "zh": "我們決定延後上市。",
+          "note": "動作，用動詞 <em>decided</em>。"
+        },
+        {
+          "en": "The <u>decision</u> to delay the launch disappointed the sales team.",
+          "zh": "延後上市的決定讓業務團隊很失望。",
+          "note": "一件事，用名詞 <em>decision</em>。"
+        }
+      ],
+      "table": {
+        "head": [
+          "詞性",
+          "工作",
+          "例子"
+        ],
+        "rows": [
+          [
+            "名詞",
+            "人、事、物的名字",
+            "<em>manager</em>、<em>budget</em>、<em>decision</em>"
+          ],
+          [
+            "動詞",
+            "動作或狀態；句子的核心",
+            "<em>approve</em>、<em>arrive</em>、<em>is</em>"
+          ],
+          [
+            "形容詞",
+            "描述名詞",
+            "<em>new</em>、<em>late</em>、<em>decisive</em>"
+          ],
+          [
+            "副詞",
+            "描述名詞以外的東西：動作、形容詞、另一個副詞、整句話",
+            "<em>quickly</em>、<em>very</em>、<em>unfortunately</em>"
+          ],
+          [
+            "介系詞",
+            "放在名詞前面，說明時間、地點、原因等關係",
+            "<em>in</em>、<em>after</em>、<em>during</em>、<em>despite</em>"
+          ],
+          [
+            "連接詞",
+            "把字或句子接起來",
+            "<em>and</em>、<em>but</em>、<em>because</em>、<em>although</em>"
+          ],
+          [
+            "代名詞",
+            "代替名詞：前面提過的人事物，或說話的人和聽的人",
+            "<em>it</em>、<em>they</em>、<em>them</em>、<em>we</em>、<em>you</em>"
+          ]
+        ]
+      },
+      "takeaway": "英文用字的形狀標出它的工作；判斷詞性，先看位置，再用字尾確認。"
+    },
+    {
+      "h": "名詞的位置",
+      "body": [
+        "名詞是人、事、物的名字。它的位置很固定，通常看前面一個字就認得出來。",
+        "第一，名詞前面的小字：<em>a</em>、<em>an</em>、<em>the</em>（冠詞），<em>our</em>、<em>your</em>、<em>its</em>（所有格），<em>this</em>、<em>that</em>（後面接名詞時，意思是「這個」「那個」）。這些字不在七種詞性裡，但它們後面<b>一定</b>有一個名詞在等。中間可以夾形容詞（<em>the new budget</em>），但最後總要落在名詞上。<em>this</em> 單獨出現（<em>This is the final version.</em>）時才是代名詞。",
+        "名詞前面的字不一定是形容詞，也可以是另一個名詞：<em>sales team</em>（業務團隊）、<em>travel expenses</em>（差旅費）、<em>safety glasses</em>（護目鏡）。前面那個字在說明後面那個名詞，但它自己還是名詞。",
+        "第二，介系詞後面接名詞：<em>after the meeting</em>、<em>for your patience</em>、<em>during the inspection</em>。",
+        "第三，名詞可以當句子的<b>主詞</b>（句子在講誰、講什麼），也可以當<b>受詞</b>（動作的對象）。這兩個詞第 2 章會仔細講。現在只要知道：動作前面「是誰做的」、動作後面「做了什麼」，這兩個位置通常是名詞。"
+      ],
+      "ex": [
+        {
+          "en": "Please submit your <u>application</u> before the end of the month.",
+          "zh": "請在月底前提交您的申請。",
+          "note": "<em>your</em> 後面要名詞。"
+        },
+        {
+          "en": "The <u>inspection</u> of the warehouse took three hours.",
+          "zh": "倉庫的檢查花了三個小時。",
+          "note": "<em>the</em> 後面的名詞，也是這句話在講的那件事。"
+        },
+        {
+          "en": "Thank you for your <u>patience</u> during the renovation.",
+          "zh": "裝修期間，感謝您的耐心。",
+          "note": "介系詞 <em>for</em> 後面、<em>your</em> 後面，都是名詞的位置。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>We need your ___ before we can release the payment.</em> 空格要放哪一種詞性？",
+          "options": [
+            "動詞",
+            "名詞",
+            "副詞"
+          ],
+          "answer": 1,
+          "why": "<em>your</em> 後面一定要接名詞（例如 <em>your approval</em>）。<em>your</em> 不能直接接動詞或副詞。"
+        }
+      ],
+      "takeaway": "<em>a</em>、<em>the</em>、<em>your</em> 這類字和介系詞的後面，都在等一個名詞。"
+    },
+    {
+      "h": "形容詞的位置",
+      "body": [
+        "形容詞只做一件事：描述名詞（或代名詞：<em>She seems happy.</em>）。它出現在三個地方，最常見的是前兩個。",
+        "第一，名詞前面：<em>a reliable supplier</em>、<em>the annual report</em>。",
+        "<em>-ing</em> 和 <em>-ed</em> 結尾的字也常放在名詞前面當形容詞：<em>a growing market</em>、<em>an experienced manager</em>、<em>the attached file</em>。這類字第 6 章再講。",
+        "第二，<em>be</em>（<em>is</em>、<em>are</em>、<em>was</em>）以及 <em>remain</em>、<em>seem</em>、<em>become</em>、<em>stay</em> 的後面。這時形容詞隔著動詞，描述的還是前面那個名詞：<em>The supplier is reliable.</em>，可靠的是供應商。",
+        "第二種位置是門檻。很多人看到動詞後面，就想用副詞，因為「副詞修飾動詞」。可是 <em>remain</em>、<em>seem</em> 這類動詞並沒有在做什麼動作，它們只是把前面的名詞和後面的描述接起來，像一個等號。等號後面描述的是名詞，所以用形容詞。這種動詞叫<b>連綴動詞</b>，第 2 章講「補語」時會再看到。<em>look</em>（看起來）、<em>sound</em>（聽起來）、<em>feel</em>（感覺起來）、<em>get</em>（變得，<em>get better</em>）、<em>prove</em>（<em>prove useful</em>）也是同一類。怎麼測？把動詞換成 <em>is</em>，句子還通，後面就是形容詞：<em>The fees seem reasonable.</em> 換成 <em>The fees are reasonable.</em>，意思幾乎不變。同一個動詞也可能真的在做動作，例如 <em>She looked carefully at the report.</em>，換成 <em>is</em> 就不通，那時後面才是副詞。",
+        "還有第三個位置：<em>make</em>、<em>keep</em>、<em>find</em> 加上一個名詞之後，例如 <em>keep the office clean</em>。<em>clean</em> 描述的是 <em>office</em>，所以也是形容詞。"
+      ],
+      "ex": [
+        {
+          "en": "Kestrel Logistics is a <u>reliable</u> supplier.",
+          "zh": "Kestrel 物流是一家可靠的供應商。",
+          "note": "名詞 <em>supplier</em> 前面。"
+        },
+        {
+          "en": "Our delivery times have become more <u>predictable</u>.",
+          "zh": "我們的交貨時間變得比較好預測了。",
+          "note": "<em>become</em> 後面，描述 <em>delivery times</em>。"
+        },
+        {
+          "en": "The hotel's rates remain <u>reasonable</u> even in summer.",
+          "zh": "這家飯店的價格即使在夏天也依然合理。",
+          "note": "價格是合理的，不是「合理地維持」。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>Our rates remain ___ in the regional market.</em> 空格放哪一個？",
+          "options": [
+            "competitive",
+            "competitively",
+            "competition"
+          ],
+          "answer": 0,
+          "why": "<em>remain</em> 是連綴動詞，後面描述的是 <em>rates</em>（價格仍然有競爭力），要用形容詞 <em>competitive</em>。價格不等於「競爭」，所以不是名詞 <em>competition</em>。"
+        }
+      ],
+      "takeaway": "形容詞描述名詞：放在名詞前面，放在 <em>be</em>、<em>remain</em>、<em>seem</em>、<em>become</em> 後面，或放在 <em>make</em>、<em>keep</em>、<em>find</em>＋名詞的後面。"
+    },
+    {
+      "h": "副詞：拿掉句子也不會壞",
+      "body": [
+        "副詞主要描述<b>名詞以外</b>的東西：動作怎麼做（<em>reviewed carefully</em>）、形容詞的程度（<em>very late</em>、<em>highly qualified</em>），或說話的人對整句話的態度（<em>Unfortunately, …</em>）。數字和數量字前面也常放副詞（<em>approximately 200 employees</em>、<em>nearly all</em>）。",
+        "副詞是句子的配件。把它拿掉，意思少了一點，文法卻還是完整的。這是認副詞最好用的方法：一個字拿掉之後句子還站得住，而且它描述的不是名詞，它就是副詞。",
+        "常見的副詞位置：主詞和動詞中間（<em>She quickly replied.</em>）；<em>has</em>、<em>is</em>、<em>will</em> 和後面的動詞中間（<em>has finally arrived</em>）；形容詞前面（<em>extremely busy</em>）；句子開頭加逗號（<em>Fortunately, …</em>）；句尾（<em>She replied quickly.</em>）。副詞通常不放在動詞和受詞中間：不說 <em>She reviewed carefully the report.</em>，說 <em>She carefully reviewed the report.</em> 或 <em>She reviewed the report carefully.</em>。",
+        "形容詞和副詞怎麼分？看它描述誰。<em>a careful review</em>：描述 <em>review</em>，是名詞，所以用形容詞。<em>reviewed carefully</em>：描述 <em>reviewed</em>，是動作，所以用副詞。"
+      ],
+      "ex": [
+        {
+          "en": "The technician <u>quickly</u> fixed the printer.",
+          "zh": "技師很快就修好了印表機。",
+          "note": "拿掉 <em>quickly</em>，<em>The technician fixed the printer.</em> 仍然完整。"
+        },
+        {
+          "en": "The replacement parts have <u>finally</u> arrived.",
+          "zh": "替換零件終於到了。",
+          "note": "<em>have</em> 和 <em>arrived</em> 中間。"
+        },
+        {
+          "en": "The candidates for this position are <u>highly</u> qualified.",
+          "zh": "這個職位的應徵者條件都非常好。",
+          "note": "<em>highly</em> 描述形容詞 <em>qualified</em> 的程度。"
+        },
+        {
+          "en": "<u>Unfortunately</u>, the venue is not available on that date.",
+          "zh": "很遺憾，那天場地沒有空。",
+          "note": "描述說話的人對整句話的態度。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出這句的副詞。",
+          "sentence": "The marketing team presented the results clearly at the meeting.",
+          "answer": [
+            6
+          ],
+          "why": "<em>clearly</em> 描述動作 <em>presented</em>（怎麼報告），拿掉它句子仍然完整。<em>marketing</em> 雖然在名詞 <em>team</em> 前面，但它本身是名詞，和 <em>team</em> 合成「行銷團隊」。"
+        }
+      ],
+      "takeaway": "副詞描述名詞以外的東西；拿掉它，句子還是完整的。"
+    },
+    {
+      "h": "動詞：每個句子都要有一個",
+      "body": [
+        "動詞是句子的核心。一句話可以沒有形容詞、沒有副詞，但不能沒有動詞。<em>The new manager the budget.</em> 不是句子：新經理對預算怎樣了？加上 <em>approved</em>，<em>The new manager approved the budget.</em> 才成立。",
+        "動詞通常緊跟在主詞後面，而且會隨著時間變形：<em>approve</em>、<em>approves</em>、<em>approved</em>、<em>will approve</em>。這種會隨時間變化的動詞，第 2 章叫它「有時態的動詞」。",
+        "<em>will</em>、<em>can</em>、<em>must</em>、<em>should</em> 後面接動詞的<b>原形</b>，也就是動詞沒有任何變化的樣子：<em>will approve</em>、<em>must submit</em>，不加 <em>-s</em>，也不加 <em>-ed</em>。",
+        "判斷詞性時，先看句子有沒有動詞。還沒有，缺的很可能就是動詞；已經有了，其他空位通常是名詞、形容詞或副詞（也可能是 <em>to</em>＋原形、Ving、p.p.，這幾種不算有時態的動詞，第 2 章會講）。"
+      ],
+      "ex": [
+        {
+          "en": "Mr. Daley <u>reviews</u> every purchase order over $5,000.",
+          "zh": "Daley 先生審核每一張超過五千美元的採購單。",
+          "note": "句子需要一個動作：<em>reviews</em>。"
+        },
+        {
+          "en": "The <u>review</u> of each purchase order takes a day.",
+          "zh": "每張採購單的審核要花一天。",
+          "note": "動詞 <em>takes</em> 已經有了；<em>the</em> 後面的 <em>review</em> 是名詞。"
+        },
+        {
+          "en": "The supplier will <u>deliver</u> the chairs on Monday.",
+          "zh": "供應商週一會把椅子送來。",
+          "note": "<em>will</em> 後面接原形 <em>deliver</em>。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The new software ___ mistakes in our monthly reports.</em> 這句缺的是哪一種詞性？",
+          "options": [
+            "名詞",
+            "動詞",
+            "形容詞",
+            "副詞"
+          ],
+          "answer": 1,
+          "why": "前面有 <em>The new software</em>，後面有 <em>mistakes</em>，中間卻沒有任何動作。缺的是動詞，例如 <em>reduces</em>（減少）。"
+        }
+      ],
+      "takeaway": "每一句都要有動詞；句子還缺動作，空位就是動詞。"
+    },
+    {
+      "h": "字尾：一眼猜出詞性",
+      "body": [
+        "很多字的最後幾個字母會透露它的詞性。看到 <em>-tion</em>，通常是名詞；看到 <em>-ive</em>，多半是形容詞。下表是商業英文裡常見的字尾。",
+        "字尾只是線索。有五組例外要認得。",
+        "一，有些 <em>-ly</em> 是形容詞，不是副詞：<em>friendly</em>、<em>timely</em>、<em>costly</em>、<em>likely</em>、<em>orderly</em>。它們放在名詞前面或 <em>be</em> 後面：<em>a timely reply</em>（及時的回覆）、<em>a costly mistake</em>（代價很高的錯誤）。",
+        "二，有些 <em>-al</em> 是名詞，不是形容詞：<em>approval</em>、<em>arrival</em>、<em>proposal</em>、<em>renewal</em>、<em>rental</em>。<em>the approval of the budget</em> 裡，<em>approval</em> 在 <em>the</em> 後面，是名詞。",
+        "三，有些 <em>-ive</em> 是名詞：<em>representative</em>（代表、業務代表）、<em>executive</em>（主管）、<em>initiative</em>（新計畫、新方案）。",
+        "四，<em>-ant</em>、<em>-ent</em> 兩邊都有：<em>applicant</em>、<em>consultant</em>、<em>resident</em> 是人，是名詞；<em>important</em>、<em>relevant</em>、<em>efficient</em> 是形容詞。",
+        "五，有些字形狀完全不變，同一個字可以當兩種詞性。名詞兼動詞：<em>report</em>、<em>increase</em>、<em>plan</em>、<em>order</em>、<em>offer</em>、<em>request</em>、<em>review</em>。<em>We will review the plan.</em> 裡的 <em>review</em> 是動詞，<em>The review is due on Friday.</em> 裡的 <em>review</em> 是名詞。形容詞兼副詞：<em>late</em>、<em>early</em>、<em>fast</em>、<em>hard</em>、<em>daily</em>、<em>weekly</em>、<em>monthly</em>。<em>The report is late.</em> 裡的 <em>late</em> 描述名詞 <em>report</em>，是形容詞；<em>The report arrived late.</em> 裡的 <em>late</em> 描述動作 <em>arrived</em>，是副詞。這種字從形狀看不出詞性，只能看位置。<em>hard</em>（努力地）和 <em>hardly</em>（幾乎不）、<em>late</em>（遲）和 <em>lately</em>（最近）意思不一樣，不能因為有 <em>-ly</em> 就選它。",
+        "所以順序是：先看位置，再用字尾確認。位置說要名詞，字尾又是 <em>-tion</em>，就很穩。位置說要形容詞，卻看到 <em>-ly</em>，先想想它是不是 <em>friendly</em> 這一類。"
+      ],
+      "ex": [
+        {
+          "en": "We appreciate your <u>timely</u> response.",
+          "zh": "感謝您及時的回覆。",
+          "note": "<em>timely</em> 在名詞 <em>response</em> 前面，是形容詞。"
+        },
+        {
+          "en": "The <u>proposal</u> needs the director's <u>approval</u>.",
+          "zh": "這份提案需要總監的核准。",
+          "note": "兩個都是 <em>-al</em> 結尾，但都在名詞的位置。"
+        },
+        {
+          "en": "A sales <u>representative</u> will contact you this week.",
+          "zh": "業務代表這週會和您聯絡。",
+          "note": "<em>-ive</em> 結尾的名詞，指人。"
+        }
+      ],
+      "table": {
+        "head": [
+          "詞性",
+          "常見字尾",
+          "例子"
+        ],
+        "rows": [
+          [
+            "名詞（事情）",
+            "<em>-tion</em>、<em>-sion</em>、<em>-ment</em>、<em>-ness</em>、<em>-ity</em>、<em>-ance</em>、<em>-ence</em>",
+            "<em>production</em>、<em>expansion</em>、<em>payment</em>、<em>awareness</em>、<em>security</em>、<em>attendance</em>、<em>reference</em>"
+          ],
+          [
+            "名詞（人）",
+            "<em>-er</em>、<em>-or</em>、<em>-ee</em>、<em>-ist</em>",
+            "<em>employer</em>、<em>supervisor</em>、<em>trainee</em>、<em>specialist</em>"
+          ],
+          [
+            "形容詞",
+            "<em>-ive</em>、<em>-ful</em>、<em>-able</em>、<em>-ible</em>、<em>-ous</em>、<em>-al</em>、<em>-ic</em>",
+            "<em>productive</em>、<em>successful</em>、<em>reliable</em>、<em>flexible</em>、<em>various</em>、<em>annual</em>、<em>economic</em>"
+          ],
+          [
+            "動詞",
+            "<em>-ize</em>（英式拼 <em>-ise</em>）、<em>-ify</em>、<em>-en</em>",
+            "<em>organize</em>、<em>finalize</em>、<em>notify</em>、<em>strengthen</em>"
+          ],
+          [
+            "副詞",
+            "形容詞＋<em>-ly</em>",
+            "<em>quickly</em>、<em>successfully</em>、<em>reliably</em>"
+          ]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "下面哪一個字是<b>形容詞</b>？",
+          "options": [
+            "costly",
+            "quickly",
+            "recently"
+          ],
+          "answer": 0,
+          "why": "<em>costly</em> 是名詞 <em>cost</em> 加 <em>-ly</em>，意思是「昂貴的、代價高的」，放在名詞前面：<em>a costly repair</em>。<em>quickly</em>、<em>recently</em> 是形容詞 <em>quick</em>、<em>recent</em> 加 <em>-ly</em>，是副詞。"
+        }
+      ],
+      "takeaway": "字尾是線索，位置是證據；<em>-ly</em> 不一定是副詞，<em>-al</em> 和 <em>-ive</em> 也可能是名詞，有些字（<em>report</em>、<em>late</em>）兩種詞性長得一樣，只能看位置。"
+    },
+    {
+      "h": "一個字家族，四個位置",
+      "body": [
+        "同一個字根常有四種形狀，一種詞性一個。它們意思相近，差別在工作，也就是放在哪個位置。",
+        "以 <em>decide</em> 為例：<em>decide</em> 是動作（動詞），<em>decision</em> 是那件事（名詞），<em>decisive</em> 描述人或行動「果斷的」（形容詞），<em>decisively</em> 描述動作「果斷地」（副詞）。",
+        "遇到不確定的字，順序是：先問這個位置要什麼詞性，再從家族裡挑那個形狀。四個字的意思本來就差不多，所以這一步幾乎只看位置。",
+        "名詞常常有兩個，一個指人、一個指事：<em>apply</em> 的人是 <em>applicant</em>，事是 <em>application</em>；<em>supervise</em> 的人是 <em>supervisor</em>，事是 <em>supervision</em>。位置確定要名詞之後，再看句意是人還是事。"
+      ],
+      "ex": [
+        {
+          "en": "The board will <u>decide</u> on the location next week.",
+          "zh": "董事會下週會決定地點。",
+          "note": "<em>will</em> 後面，動詞原形。"
+        },
+        {
+          "en": "The board's <u>decision</u> surprised the investors.",
+          "zh": "董事會的決定讓投資人很意外。",
+          "note": "<em>board's</em>（董事會的）後面，名詞。"
+        },
+        {
+          "en": "Investors want a <u>decisive</u> leader.",
+          "zh": "投資人想要一位果斷的領導者。",
+          "note": "名詞 <em>leader</em> 前面，形容詞。"
+        },
+        {
+          "en": "The board acted <u>decisively</u> after the report came out.",
+          "zh": "報告出來後，董事會果斷地採取行動。",
+          "note": "描述動作 <em>acted</em>，副詞。"
+        }
+      ],
+      "table": {
+        "head": [
+          "動詞",
+          "名詞",
+          "形容詞",
+          "副詞"
+        ],
+        "rows": [
+          [
+            "<em>decide</em>",
+            "<em>decision</em>",
+            "<em>decisive</em>",
+            "<em>decisively</em>"
+          ],
+          [
+            "<em>produce</em>",
+            "<em>production</em>",
+            "<em>productive</em>",
+            "<em>productively</em>"
+          ],
+          [
+            "<em>succeed</em>",
+            "<em>success</em>",
+            "<em>successful</em>",
+            "<em>successfully</em>"
+          ],
+          [
+            "<em>compete</em>",
+            "<em>competition</em>",
+            "<em>competitive</em>",
+            "<em>competitively</em>"
+          ],
+          [
+            "<em>differ</em>",
+            "<em>difference</em>",
+            "<em>different</em>",
+            "<em>differently</em>"
+          ],
+          [
+            "<em>analyze</em>",
+            "<em>analysis</em>",
+            "<em>analytical</em>",
+            "<em>analytically</em>"
+          ]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The team ___ completed the project on time.</em> 空格放 <em>succeed</em> 家族的哪一個？",
+          "options": [
+            "success",
+            "successful",
+            "successfully"
+          ],
+          "answer": 2,
+          "why": "空格夾在主詞 <em>The team</em> 和動作 <em>completed</em> 中間，描述「怎麼完成」，是副詞的位置。拿掉它，<em>The team completed the project on time.</em> 仍然完整。"
+        }
+      ],
+      "takeaway": "同一個字家族的字意思差不多，挑哪一個由位置決定。"
+    },
+    {
+      "h": "小字也有詞性：介系詞、連接詞、代名詞",
+      "body": [
+        "<em>in</em>、<em>because</em>、<em>it</em> 這種小字也有詞性，而且它們的詞性決定後面能接什麼。",
+        "<b>介系詞</b>後面接名詞，或接 <b>Ving</b>（動詞加 <em>-ing</em>）：<em>during the meeting</em>、<em>despite the rain</em>、<em>because of the delay</em>、<em>after reviewing the file</em>。",
+        "<b>連接詞</b>把東西接起來。<em>and</em>、<em>but</em>、<em>or</em> 可以接兩個字，也可以接兩句話。<em>because</em>、<em>although</em>、<em>while</em>、<em>if</em> 後面接的是一整句有做事的人、也有動詞的話：<em>because the truck was late</em>。",
+        "<b>代名詞</b>代替名詞，免得重複。<em>The client called. She wants a refund.</em> 裡的 <em>She</em> 就是 <em>the client</em>。<em>we</em>、<em>you</em> 則直接指說話的人和聽的人。代名詞的細節在第 11 章。",
+        "這一節的重點是：<em>because</em> 和 <em>because of</em> 意思都是「因為」，詞性卻不同，所以後面接的東西也不同。第 3 章會從這裡開始講，第 8 章再完整整理。"
+      ],
+      "ex": [
+        {
+          "en": "The flight was delayed <u>because of</u> the storm.",
+          "zh": "班機因為暴風雨延誤。",
+          "note": "<em>because of</em> 是介系詞，後面接名詞 <em>the storm</em>。"
+        },
+        {
+          "en": "The flight was delayed <u>because</u> the weather was bad.",
+          "zh": "班機因為天氣不好延誤。",
+          "note": "<em>because</em> 是連接詞，後面接有動詞 <em>was</em> 的一整句話。"
+        },
+        {
+          "en": "Ms. Ochoa sent the slides, and the team reviewed <u>them</u> overnight.",
+          "zh": "Ochoa 女士寄來投影片，團隊連夜審閱了。",
+          "note": "<em>them</em> 代替 <em>the slides</em>。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The meeting ended early ___ the fire alarm.</em> 空格放哪一個？",
+          "options": [
+            "because",
+            "because of"
+          ],
+          "answer": 1,
+          "why": "空格後面只有名詞 <em>the fire alarm</em>，沒有動詞。接名詞的是介系詞 <em>because of</em>。"
+        }
+      ],
+      "takeaway": "小字的詞性決定後面接什麼：介系詞接名詞，<em>because</em> 這類連接詞接一整句話。"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Please reply at your earliest convenient.",
+      "right": "Please reply at your earliest convenience.",
+      "why": "<em>your earliest</em> 後面要落在名詞上。<em>convenient</em> 是形容詞，名詞是 <em>convenience</em>。"
+    },
+    {
+      "wrong": "Mr. Hale answered the client's questions polite.",
+      "right": "Mr. Hale answered the client's questions politely.",
+      "why": "這個字描述的是 <em>answered</em> 這個動作怎麼做，要用副詞 <em>politely</em>。"
+    },
+    {
+      "wrong": "The renovation will significant improve the lobby.",
+      "right": "The renovation will significantly improve the lobby.",
+      "why": "<em>will</em> 和 <em>improve</em> 中間是副詞的位置，描述改善的程度。"
+    },
+    {
+      "wrong": "The new process made our team more efficiently.",
+      "right": "The new process made our team more efficient.",
+      "why": "<em>make</em>＋名詞＋描述：描述的是 <em>our team</em>（團隊變得有效率），描述名詞要用形容詞。"
+    }
+  ],
+  "workbook": [
+    "pos"
+  ]
+}

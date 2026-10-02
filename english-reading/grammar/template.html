@@ -1,0 +1,333 @@
+<title>文法地基</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Noto+Serif+TC:wght@400;500;700&display=swap">
+<style>
+/* Layout: the companion volume to The Workbook, same paper and ink. One 36rem reading column; a chapter
+   opens with a short self-check, then numbered sections, each closing on a one-line rule set in the margin
+   style of a printed textbook. Chinese carries the teaching; English is the specimen, set larger in a book face. */
+:root{
+  --paper:#F2ECDF; --ink:#2A251E; --soft:#655B4C; --faint:#7F7462; --rule:#DCD2BF; --accent:#9A4A26; --pencil:#B4442E; --wash:#E8DFCC; --sheet:#FAF6EC; --ok:#3F6B3A; --shadow:rgba(60,40,15,.14);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  --en:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --zh:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --sheet:#262420; --ok:#9CC48F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
+}
+:root[data-theme="dark"]{--paper:#1F1D1A; --ink:#ECE6DA; --soft:#B3AA99; --faint:#8A8173; --rule:#3A362F; --accent:#E39A74; --pencil:#EC8E72; --wash:#2A2723; --sheet:#262420; --ok:#9CC48F; --shadow:rgba(0,0,0,.4); --grain:none; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper) var(--grain);color:var(--ink);font:400 17px/1.85 var(--zh);-webkit-font-smoothing:antialiased;padding-inline:20px;padding-block:0 80px}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.page{max-width:36rem;margin:0 auto}
+em,.en{font-family:var(--en);font-style:normal;font-size:1.06em}
+em{color:var(--accent)}
+b{font-weight:700}
+.sc{font-family:var(--en);font-variant-caps:all-small-caps;letter-spacing:.09em}
+.faint{color:var(--faint)} .soft{color:var(--soft)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:6px 14px;border-radius:4px;font-size:15px;z-index:30}
+
+/* running head */
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-block:24px 4px;font-size:15px;color:var(--faint)}
+.head button{color:var(--faint)}
+.head button:hover{color:var(--ink)}
+
+/* contents */
+.mast{padding-block:56px 6px}
+.mast .sc{color:var(--soft);font-size:15px}
+h1{font:500 clamp(36px,8vw,50px)/1.15 var(--zh);margin:.1em 0 .2em;letter-spacing:.02em}
+.mast p{margin:.6em 0 0;color:var(--soft)}
+.resume{margin:26px 0 0}
+.resume button{color:var(--accent);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.part{margin-top:40px}
+.part h2{font:500 15px/1.5 var(--zh);color:var(--soft);margin:0 0 8px;letter-spacing:.06em}
+.part h2 .weak{color:var(--accent);margin-left:.6em;font-size:13px}
+.part ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.part li{border-bottom:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:2.2em minmax(0,1fr) auto;align-items:baseline;gap:0 .6em;width:100%;padding:11px 0;text-align:left}
+.row .n{font-family:var(--en);color:var(--faint);font-variant-numeric:lining-nums}
+.row .t{min-width:0}
+.row .t .sub{display:block;font:400 14px/1.4 var(--en);color:var(--faint)}
+.row .st{font-size:14px;color:var(--faint);white-space:nowrap}
+.row .st.done{color:var(--ok)}
+button.row:hover .t{color:var(--accent)}
+.colophon{margin-top:48px;font-size:14px;color:var(--faint)}
+.colophon a{color:var(--soft)}
+
+/* chapter */
+.chhead{padding-block:40px 4px}
+.chhead .sc{color:var(--faint);font-size:15px}
+.chhead h1{font-size:clamp(30px,6.4vw,40px)}
+.chhead .en{display:block;color:var(--soft);font-size:18px;margin-top:2px}
+.lead{font-size:1.06em;margin:1.2em 0 0}
+.box{margin:2em 0;padding:1.1em 1.2em 1.2em;background:var(--sheet);border:1px solid var(--rule);border-radius:3px;box-shadow:0 1px 2px var(--shadow)}
+.box > h3{font:500 15px/1.5 var(--zh);color:var(--soft);margin:0 0 .2em;letter-spacing:.06em}
+.box > p.hint{margin:0 0 .6em;font-size:15px;color:var(--faint)}
+.verdict{margin:1em 0 0;padding-top:.8em;border-top:1px solid var(--rule)}
+.verdict .acts{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:.4em}
+.verdict button,.endnav button,.go{color:var(--accent);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+
+.sec{margin-top:2.6em}
+.sec h2{font:500 1.28em/1.45 var(--zh);margin:0 0 .5em;text-wrap:balance}
+.sec h2 .no{font-family:var(--en);color:var(--accent);margin-right:.5em;font-variant-numeric:lining-nums}
+.sec p{margin:0 0 .9em;text-wrap:pretty}
+.exs{list-style:none;margin:1.1em 0;padding:0 0 0 1em;border-left:2px solid var(--rule);display:grid;gap:.85em}
+.exs .e{font:400 1.14em/1.55 var(--en)}
+.exs .e u{text-decoration:none;background:linear-gradient(transparent 62%,var(--wash) 62%);box-shadow:inset 0 -1.5px 0 var(--accent)}
+.exs .z{display:block;font-size:.88em;color:var(--soft);line-height:1.6}
+.exs .nt{display:block;font-size:.88em;color:var(--faint);line-height:1.6;margin-top:.15em}
+.tbl{overflow-x:auto;margin:1.1em 0}
+.tbl table{border-collapse:collapse;width:100%;font-size:.95em}
+.tbl th{font-weight:500;color:var(--soft);text-align:left;border-bottom:1px solid var(--ink);padding:.25em .8em .25em 0}
+.tbl td{border-bottom:1px solid var(--rule);padding:.35em .8em .35em 0;vertical-align:top}
+.take{margin:1.4em 0 0;padding:.55em 0 .55em 1em;border-left:3px solid var(--accent);font-weight:500}
+.take::before{content:"一句話　";color:var(--accent);font-size:.82em;font-weight:400;letter-spacing:.1em}
+
+/* little questions */
+.q{margin:1.6em 0 0}
+.box .q:first-of-type{margin-top:.6em}
+.q .qq{margin:0 0 .5em;font-weight:500}
+.q .qq .k{font-family:var(--en);color:var(--faint);font-weight:400;margin-right:.4em}
+.opts{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.opt{display:grid;grid-template-columns:1.8em minmax(0,1fr);gap:.3em;align-items:baseline;width:100%;text-align:left;padding:6px 10px;border:1px solid var(--rule);border-radius:3px;background:var(--paper)}
+.opt .l{font-family:var(--en);color:var(--faint)}
+.opt:not(:disabled):hover{border-color:var(--accent)}
+.opt.right{border-color:var(--ok);color:var(--ok)}
+.opt.right .l{color:var(--ok)}
+.opt.wrong{border-color:var(--pencil);color:var(--pencil);text-decoration:line-through;text-decoration-thickness:1px}
+.opt:disabled{cursor:default}
+.opt.dim{opacity:.55}
+.sent{display:flex;flex-wrap:wrap;gap:4px 3px;font:400 1.14em/1.5 var(--en);margin:.2em 0 .6em}
+.tok{padding:1px 5px;border-radius:3px;border:1px dashed var(--rule)}
+.tok[aria-pressed="true"]{background:var(--wash);border:1px solid var(--accent)}
+.tok.hit{background:var(--wash);border:1px solid var(--ok);color:var(--ok)}
+.tok.miss{border:1px solid var(--ok);color:var(--ok)}
+.tok.extra{border:1px solid var(--pencil);color:var(--pencil);text-decoration:line-through}
+.tok:disabled{cursor:default}
+.tapgo{margin-top:.2em;color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.tapgo:disabled{color:var(--faint);text-decoration:none;cursor:default}
+.why{margin:.6em 0 0;font-size:.95em;color:var(--soft)}
+.why .mk{font-weight:700;margin-right:.4em}
+.why .mk.ok{color:var(--ok)} .why .mk.no{color:var(--pencil)}
+
+.mist{list-style:none;margin:1em 0 0;padding:0;display:grid;gap:1.1em}
+.mist .w,.mist .r{display:block;font:400 1.08em/1.5 var(--en)}
+.mist .w{color:var(--pencil);text-decoration:line-through;text-decoration-thickness:1px}
+.mist .w::before,.mist .r::before{font:400 13px var(--zh);margin-right:.5em;text-decoration:none;display:inline-block}
+.mist .w::before{content:"錯"}
+.mist .r::before{content:"對";color:var(--ok)}
+.mist .y{display:block;font-size:.92em;color:var(--soft);margin-top:.15em}
+.endnav{margin-top:2.8em;padding-top:1.2em;border-top:1px solid var(--rule);display:grid;gap:.8em}
+.endnav .wb{color:var(--soft);font-size:15px}
+.endnav .pn{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.markread{justify-self:start;padding:6px 14px;border:1px solid var(--accent);border-radius:3px;color:var(--accent);text-decoration:none}
+.markread[aria-pressed="true"]{background:var(--accent);color:var(--paper)}
+@media (prefers-reduced-motion: no-preference){ .why{animation:rise .3s ease-out both} @keyframes rise{from{opacity:.001;transform:translateY(4px)}to{opacity:1;transform:none}} }
+</style>
+
+<main id="app" class="page"></main>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script type="application/json" id="book">{{BOOK}}</script>
+<script>
+"use strict";
+const BOOK = JSON.parse(document.getElementById("book").textContent);
+const CH = BOOK.chapters, BYID = Object.fromEntries(CH.map(c => [c.id, c]));
+const PARTS = [["一", "骨架", [1, 3]], ["二", "動詞", [4, 7]], ["三", "連接句子", [8, 10], "你的弱點"], ["四", "其他考點", [11, 16]]];
+const WORKBOOK = "https://claude.ai/artifact/F3qr5xjhJhjDgXy4fsTe7p";
+const L = "ABCD";
+const $ = s => document.querySelector(s);
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function btn(cls, text, fn) { const b = el("button", cls, text); b.type = "button"; if (fn) b.onclick = fn; return b; }
+function html(tag, cls, h) { const e = el(tag, cls); e.innerHTML = h; return e; }   // chapter text: only <em>, <b>, <u> (checked at build)
+function shuffled(n, seed) {
+  let h = 2166136261; for (const c of seed) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); }
+  const a = [...Array(n).keys()];
+  for (let i = n - 1; i > 0; i--) { h = Math.imul(h ^ h >>> 15, 2246822507) ^ Math.imul(h ^ h >>> 13, 3266489909); const j = (h >>> 0) % (i + 1); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+function toast(t) { const e = $("#toast"); e.textContent = t; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 1800); }
+
+// ================================================================ progress: the viewer's own doc in the db, else this browser
+// G = { last: chapterId, ch: { id: { read: ms, check: {ok, n, at}, skipped: ms, q: { key: true|false } } } }
+let G = { last: null, ch: {} };
+const Store = {
+  db: null, path: null, busy: Promise.resolve(),
+  async init() {
+    try {
+      if (!window.claude?.use) return;
+      const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+      if (!db || !user) return;
+      const id = await user.id(); if (!id) return;
+      this.db = db; this.path = "data/users/" + id + "/grammar_progress";
+    } catch { this.db = null; }
+  },
+  async load() {
+    if (this.db) { try { const s = await this.db.doc(this.path).get(); if (s.exists) return s.data(); } catch {} }
+    try { return JSON.parse(localStorage.getItem("grammar:progress") || "null"); } catch { return null; }
+  },
+  save() {
+    const data = JSON.parse(JSON.stringify(G));
+    try { localStorage.setItem("grammar:progress", JSON.stringify(data)); } catch {}
+    if (!this.db) return;
+    this.busy = this.busy.then(() => this.db.doc(this.path).set(data)).catch(e => { if (e?.code !== "cancelled") toast("進度沒有存到，請檢查連線。"); });
+  },
+};
+function chState(id) { return G.ch[id] || (G.ch[id] = { q: {} }); }
+
+// ================================================================ contents
+function statusOf(c) {
+  const s = G.ch[c.id]; if (!s) return ["", false];
+  if (s.read) return ["讀過", true];
+  if (s.skipped) return ["跳過", true];
+  if (s.check) return ["小確認 " + s.check.ok + "/" + s.check.n, false];
+  if (Object.keys(s.q || {}).length) return ["讀到一半", false];
+  return ["", false];
+}
+function home() {
+  const app = $("#app"); app.textContent = ""; scrollTo(0, 0);
+  const mast = el("header", "mast");
+  mast.append(el("div", "sc", "Grammar Foundations"), el("h1", null, "文法地基"),
+    el("p", null, "從句子的骨架開始，一章一章把文法蓋回來。每章開頭有幾題小確認：全對就可以跳過那一章。"));
+  app.append(mast);
+  const last = G.last && BYID[G.last];
+  const next = CH.find(c => !G.ch[c.id]?.read && !G.ch[c.id]?.skipped);
+  const go = last && !G.ch[last.id]?.read && !G.ch[last.id]?.skipped ? last : next;
+  if (go) { const p = el("p", "resume"); p.append(btn(null, (G.last ? "繼續讀：" : "從這裡開始：") + "第 " + go.n + " 章　" + go.title, () => chapter(go.id))); app.append(p); }
+  for (const [no, name, [a, b], tag] of PARTS) {
+    const s = el("section", "part"), h = el("h2", null, "第" + no + "部　" + name);
+    if (tag) h.append(el("span", "weak", tag));
+    const ol = el("ol");
+    for (const c of CH.filter(c => c.n >= a && c.n <= b)) {
+      const li = el("li"), r = btn("row", null, () => chapter(c.id)), [st, done] = statusOf(c);
+      const t = el("span", "t", c.title); t.append(el("span", "sub", c.en));
+      r.append(el("span", "n", String(c.n)), t, el("span", "st" + (done ? " done" : ""), st));
+      li.append(r); ol.append(li);
+    }
+    s.append(h, ol); app.append(s);
+  }
+  const col = el("p", "colophon");
+  col.append("讀完一章就去 ", Object.assign(el("a", null, "The Workbook"), { href: WORKBOOK, target: "_blank", rel: "noopener" }), " 練同一個主題的題目。例句為教學用途編寫，人名與公司名皆為虛構。");
+  app.append(col);
+}
+
+// ================================================================ little questions (choose / tap)
+function quiz(q, key, onDone) {
+  const box = el("div", "q"), st = chState(cur.id), prev = st.q[key];
+  const qq = el("p", "qq"); qq.innerHTML = q.q; box.append(qq);
+  const why = () => { const w = el("p", "why"); w.append(el("span", "mk " + (st.q[key] ? "ok" : "no"), st.q[key] ? "對" : "再看一次")); w.insertAdjacentHTML("beforeend", q.why); box.append(w); };
+  if (q.type === "choose") {
+    const ol = el("ol", "opts"), bs = [];
+    // options in a fixed shuffled order per question, so the answer is not always in the same place
+    const order = shuffled(q.options.length, cur.id + ":" + key);
+    order.forEach((i, pos) => {
+      const li = el("li"), b = btn("opt"); b.innerHTML = `<span class="l">${L[pos]}</span><span class="w">${q.options[i]}</span>`;
+      b.dataset.i = i; b.onclick = () => answer(i); bs.push(b); li.append(b); ol.append(li);
+    });
+    box.append(ol);
+    const show = chosen => bs.forEach(b => { const i = Number(b.dataset.i); b.disabled = true; b.classList.add(i === q.answer ? "right" : i === chosen ? "wrong" : "dim"); });
+    function answer(i) { st.q[key] = i === q.answer; show(i); why(); save(); onDone && onDone(st.q[key]); }
+    if (prev != null) { show(prev ? q.answer : -1); why(); }
+  } else {
+    const words = q.sentence.split(" "), want = new Set(q.answer), sent = el("div", "sent"), toks = [];
+    words.forEach((w, i) => { const t = btn("tok", w, () => { t.setAttribute("aria-pressed", String(t.getAttribute("aria-pressed") !== "true")); go.disabled = !toks.some(x => x.getAttribute("aria-pressed") === "true"); }); t.setAttribute("aria-pressed", "false"); toks.push(t); sent.append(t); });
+    const go = btn("tapgo", "確認", () => check()); go.disabled = true;
+    box.append(sent, go);
+    const show = picked => { toks.forEach((t, i) => { t.disabled = true; const on = picked ? picked.has(i) : want.has(i); const k = want.has(i) ? (on ? "hit" : "miss") : on ? "extra" : ""; if (k) t.classList.add(k); }); go.remove(); };
+    function check() {
+      const picked = new Set(toks.map((t, i) => t.getAttribute("aria-pressed") === "true" ? i : -1).filter(i => i >= 0));
+      st.q[key] = picked.size === want.size && [...want].every(i => picked.has(i));
+      show(picked); why(); save(); onDone && onDone(st.q[key]);
+    }
+    if (prev != null) { show(null); why(); }
+  }
+  return box;
+}
+function save() { Store.save(); }
+
+// ================================================================ chapter
+let cur = null;
+function chapter(id) {
+  cur = BYID[id]; G.last = id; save();
+  const c = cur, st = chState(id), app = $("#app"); app.textContent = ""; scrollTo(0, 0);
+  const hd = el("div", "head"); hd.append(btn(null, "← 目錄", home), el("span", null, "第 " + c.n + " / " + CH.length + " 章")); app.append(hd);
+  const ch = el("header", "chhead"); ch.append(el("div", "sc", "Chapter " + c.n)); const h1 = el("h1", null, c.title); h1.append(el("span", "en", c.en)); ch.append(h1); app.append(ch);
+  app.append(html("p", "lead", c.lead));
+
+  // opening check
+  const box = el("section", "box"); box.append(el("h3", null, "先試試看"), el("p", "hint", "全對的話，這一章可以跳過。"));
+  const res = {};
+  c.check.forEach((q, i) => box.append(quiz(q, "check" + i, ok => { res[i] = ok; if (Object.keys(res).length === c.check.length) verdict(); })));
+  const vd = el("div", "verdict"); vd.hidden = true; box.append(vd);
+  function verdict() {
+    const n = c.check.length, ok = c.check.filter((_, i) => st.q["check" + i]).length;
+    st.check = { ok, n, at: Date.now() }; save();
+    vd.hidden = false; vd.textContent = "";
+    if (ok === n) {
+      vd.append(el("p", null, "全對。這一章的核心你已經會了。"));
+      const a = el("div", "acts"), nx = CH[c.n];
+      a.append(btn(null, nx ? "跳過，去第 " + nx.n + " 章" : "跳過，回目錄", () => { st.skipped = Date.now(); save(); nx ? chapter(nx.id) : home(); }), btn(null, "還是讀一遍", () => secs.scrollIntoView({ behavior: "smooth" })));
+      vd.append(a);
+    } else vd.append(el("p", null, "錯了 " + (n - ok) + " 題。從下面開始讀，讀到對應的地方就會懂。"));
+  }
+  if (c.check.every((_, i) => st.q["check" + i] != null)) verdict();
+  app.append(box);
+
+  // sections
+  const secs = el("div"); app.append(secs);
+  c.sections.forEach((s, si) => {
+    const sec = el("section", "sec"); sec.id = "s" + (si + 1);
+    const h = el("h2"); h.append(el("span", "no", c.n + "." + (si + 1)), s.h); sec.append(h);
+    for (const p of s.body) sec.append(html("p", null, p));
+    if (s.ex?.length) {
+      const ul = el("ul", "exs");
+      for (const e of s.ex) { const li = el("li"); li.append(html("span", "e", e.en), html("span", "z", e.zh)); if (e.note) li.append(html("span", "nt", e.note)); ul.append(li); }
+      sec.append(ul);
+    }
+    if (s.table) {
+      const w = el("div", "tbl"), t = el("table"), hr = el("tr");
+      for (const x of s.table.head) hr.append(html("th", null, x));
+      const th = el("thead"); th.append(hr); t.append(th);
+      const tb = el("tbody"); for (const r of s.table.rows) { const tr = el("tr"); for (const x of r) tr.append(html("td", null, x)); tb.append(tr); } t.append(tb);
+      w.append(t); sec.append(w);
+    }
+    (s.quiz || []).forEach((q, qi) => sec.append(quiz(q, "s" + si + "q" + qi)));
+    sec.append(html("p", "take", s.takeaway));
+    secs.append(sec);
+  });
+
+  // mistakes
+  if (c.mistakes?.length) {
+    const sec = el("section", "sec"), h = el("h2"); h.append(el("span", "no", c.n + "." + (c.sections.length + 1)), "常見錯誤"); sec.append(h);
+    const ul = el("ul", "mist");
+    for (const m of c.mistakes) { const li = el("li"); li.append(html("span", "w", m.wrong), html("span", "r", m.right), html("span", "y", m.why)); ul.append(li); }
+    sec.append(ul); secs.append(sec);
+  }
+
+  // end of chapter
+  const end = el("nav", "endnav"), mr = btn("markread", st.read ? "已讀完" : "讀完了", () => {
+    st.read = st.read ? null : Date.now(); save(); mr.textContent = st.read ? "已讀完" : "讀完了"; mr.setAttribute("aria-pressed", String(!!st.read)); if (st.read) toast("記下來了。");
+  });
+  mr.setAttribute("aria-pressed", String(!!st.read)); end.append(mr);
+  if (c.workbook.length) {
+    const p = el("p", "wb"); p.append("接著去 ");
+    p.append(Object.assign(el("a", "go", "The Workbook"), { href: WORKBOOK, target: "_blank", rel: "noopener" }), " 練：" + c.workbook.map(u => BOOK.units[u] || u).join("、"));
+    end.append(p);
+  }
+  const pn = el("div", "pn"), pv = CH[c.n - 2], nx = CH[c.n];
+  pn.append(pv ? btn(null, "← 第 " + pv.n + " 章　" + pv.title, () => chapter(pv.id)) : el("span"), nx ? btn(null, "第 " + nx.n + " 章　" + nx.title + " →", () => chapter(nx.id)) : btn(null, "回目錄", home));
+  end.append(pn); app.append(end);
+}
+
+(async () => {
+  home();
+  await Store.init();
+  const g = await Store.load();
+  if (g && g.ch) { G = g; home(); }
+})();
+</script>

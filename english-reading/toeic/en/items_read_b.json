@@ -1,0 +1,318 @@
+{
+  "r-p7-01": {
+    "q": [
+      {
+        "point": [
+          "Purpose: join the reason and the request.",
+          "目的題：把原因和請求合起來看。"
+        ],
+        "why": [
+          "In the first paragraph of the first e-mail, Mr. Kessler says he is registered for <em>the 1:30 workshop</em>, but a supplier audit means he must <em>leave the convention center by 1:00 P.M.</em> The second paragraph makes the request: <em>Would it be possible to transfer my workshop ticket to the late-morning workshop instead?</em> He is writing to ask to switch to another session.",
+          "第一封 e-mail 第 1 段，Kessler 先生說他報名了 the 1:30 workshop，但因為供應商稽核，他必須 leave the convention center by 1:00 P.M.。第 2 段才提出請求：Would it be possible to transfer my workshop ticket to the late-morning workshop instead? 他寫信是要求改到另一場。"
+        ]
+      },
+      {
+        "point": [
+          "Match the workshop's topic in the program to the reply.",
+          "用議程表把工作坊的主題對回回信。"
+        ],
+        "why": [
+          "The reply never uses the name <em>Workshop A</em>. The program's third row shows that Workshop A is <em>Labels that survive cold storage</em>. The first paragraph of the second e-mail says <em>the cold-storage labeling workshop filled up last week, and eleven people are already on the waiting list for it</em>. Every place is taken and more people are waiting, so it has more applicants than places.",
+          "回信裡沒有出現 Workshop A 這個名稱。議程表第三行顯示 Workshop A 就是 Labels that survive cold storage。第二封 e-mail 第 1 段說 the cold-storage labeling workshop filled up last week, and eleven people are already on the waiting list for it。名額已滿，還有人在候補，所以想參加的人比名額多。"
+        ]
+      },
+      {
+        "point": [
+          "The reply gives the room; the program gives the time.",
+          "回信給教室，議程表給時間。"
+        ],
+        "why": [
+          "The second paragraph of the second e-mail says his ticket has been moved to the extra session, which <em>will run in Room 112, in the same time slot as the cold-storage workshop</em>. The program lists the cold-storage workshop, Workshop A, at <em>10:45–12:00</em>. So at 11:00 he will be in Room 112.",
+          "第二封 e-mail 第 2 段說他的票已改到加開的場次，那一場 will run in Room 112, in the same time slot as the cold-storage workshop。議程表上冷藏標籤工作坊（Workshop A）的時間是 10:45–12:00。所以十一點他會在 112 室。"
+        ]
+      },
+      {
+        "point": [
+          "Three documents: which session, its listed time, then the change.",
+          "三篇整合：哪一場、原定幾點，再看改了多少。"
+        ],
+        "why": [
+          "In the second paragraph of the first e-mail he says <em>I would still like to attend the opening address</em>, the first session of the day. The program's first row lists it at <em>8:30–9:15</em>. The third paragraph of the second e-mail says the opening address <em>will begin fifteen minutes later than shown in the online program</em>. 8:30 plus fifteen minutes is 8:45.",
+          "第一封 e-mail 第 2 段他說 I would still like to attend the opening address，這是當天的第一場。議程表第一行列的時間是 8:30–9:15。第二封 e-mail 第 3 段說開幕演講 will begin fifteen minutes later than shown in the online program。8:30 加十五分鐘是 8:45。"
+        ]
+      },
+      {
+        "point": [
+          "Badges <em>collected</em> at a desk: attendees go and get them.",
+          "在櫃台 collected 識別證：與會者自己去領。"
+        ],
+        "why": [
+          "The third paragraph of the second e-mail says <em>Badges can be collected at the registration desk on the ground floor from 7:30 A.M.</em> The next sentence is <em>Please wear yours at all sessions</em>. Each attendee goes to the desk and takes his or her own badge, so <em>collected</em> means picked up.",
+          "第二封 e-mail 第 3 段說 Badges can be collected at the registration desk on the ground floor from 7:30 A.M.。下一句是 Please wear yours at all sessions。每位與會者到櫃台領走自己的識別證，所以 collected 的意思是 picked up（領取）。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "freight",
+        "hw": "freight",
+        "pos": "n.",
+        "zh": "貨運",
+        "ex": "Freight costs rose after the new fuel tax."
+      },
+      {
+        "w": "audit",
+        "hw": "audit",
+        "pos": "n.",
+        "zh": "稽核",
+        "ex": "The factory passed its safety audit last week."
+      },
+      {
+        "w": "transfer",
+        "hw": "transfer",
+        "pos": "v.",
+        "zh": "改到、轉到（另一場）",
+        "ex": "Can I transfer my booking to the evening class?"
+      },
+      {
+        "w": "range",
+        "hw": "range",
+        "pos": "n.",
+        "zh": "產品系列",
+        "ex": "Our new range of frozen soups is selling well."
+      },
+      {
+        "w": "waiting list",
+        "hw": "waiting list",
+        "pos": "n.",
+        "zh": "候補名單",
+        "ex": "Twelve people are on the waiting list for the course."
+      },
+      {
+        "w": "time slot",
+        "hw": "time slot",
+        "pos": "n.",
+        "zh": "時段",
+        "ex": "The ten o'clock time slot is still available."
+      },
+      {
+        "w": "identical",
+        "hw": "identical",
+        "pos": "adj.",
+        "zh": "完全相同的",
+        "ex": "The two branch offices have identical layouts."
+      }
+    ]
+  },
+  "r-p7-02": {
+    "q": [
+      {
+        "point": [
+          "NOT: check each option against the order form and the price list.",
+          "NOT 題：每個選項都拿訂購單和價目表核對。"
+        ],
+        "why": [
+          "Three options are confirmed. Free delivery: the order form has 6 each of DK-160, CH-40 and ST-02. On the price list, one of each costs <em>$468</em> + <em>$226</em> + <em>$134</em> = $828, so six of each is 6 × $828 = $4,968. The price list's last row says delivery is <em>free on orders of $3,000 or more</em>. Ordered more than two weeks early: the order form's order date is <em>September 8</em> and its required-by date is <em>September 25</em>, seventeen days later. A delivery time: its special instructions say <em>Deliveries must arrive before 9:00 A.M.</em> The graphite option is the one that is not true. The graphite item on the order is ST-02, and the price list gives its colors as <em>White, graphite</em>. The DK-160 desk comes in <em>White, oak, graphite</em>, and CH-40 only in <em>Black</em>. No item on the order is offered only in graphite, so this option is the answer.",
+          "三個選項都能確認。免運：訂購單上 DK-160、CH-40、ST-02 各 6 件。價目表上三種各一件是 $468 + $226 + $134 = $828，六組就是 6 × $828 = $4,968。價目表最後一行說 free on orders of $3,000 or more。提早兩週以上下單：訂購單的下單日是 September 8，最晚需要日是 September 25，相隔十七天。指定送達時間：特別指示寫 Deliveries must arrive before 9:00 A.M.。不成立的是石墨灰那一項：訂單上的石墨灰是 ST-02，價目表上它的顏色是 White, graphite；DK-160 是 White, oak, graphite，CH-40 只有 Black。訂單裡沒有任何一項只出石墨灰，所以這個選項就是答案。"
+        ]
+      },
+      {
+        "point": [
+          "Purpose: the main news comes after <em>Unfortunately</em>.",
+          "目的題：重點在 Unfortunately 後面。"
+        ],
+        "why": [
+          "The first paragraph of the e-mail confirms the desks and storage units, then says <em>Unfortunately, the chair you selected is on back order</em>, with no new stock until <em>the middle of October</em>. The second and third paragraphs each offer a way to deal with that chair. The e-mail is written to report a supply problem with one product.",
+          "e-mail 第 1 段先確認辦公桌和收納櫃，接著說 Unfortunately, the chair you selected is on back order，要到 the middle of October 才會再出貨。第 2、3 段各提出一個處理這張椅子的辦法。寫信是為了說明一項商品的供貨問題。"
+        ]
+      },
+      {
+        "point": [
+          "A seller <em>carries</em> a product: it has it for sale.",
+          "賣家 carry 某商品：有在賣、有庫存。"
+        ],
+        "why": [
+          "The second paragraph of the e-mail offers <em>the same model without the headrest, which we carry in the color you chose</em>. The subject <em>we</em> is the seller, the object is a chair model, and <em>in the color you chose</em> says which version the seller has. So <em>carry</em> means stock: the seller keeps this chair available to sell.",
+          "e-mail 第 2 段提供 the same model without the headrest, which we carry in the color you chose。主詞 we 是賣家，受詞是一款椅子，in the color you chose 說的是賣家有哪個顏色。所以 carry 等於 stock：賣家備有這款椅子可以賣。"
+        ]
+      },
+      {
+        "point": [
+          "The e-mail describes the chair; the price list names it.",
+          "信描述椅子，價目表告訴你是哪一款。"
+        ],
+        "why": [
+          "The second paragraph of the e-mail calls the substitute <em>the same model without the headrest</em>. The order form shows the chair ordered: CH-40, <em>Task chair with headrest</em>. In the price list, CH-40 is the <em>Mesh-back task chair with headrest</em>, and the row above it, CH-35, is the same <em>Mesh-back task chair</em> without one. CH-35's colors are <em>Black, gray</em>, so the substitute comes in two colors.",
+          "e-mail 第 2 段說替代品是 the same model without the headrest。訂購單上他訂的是 CH-40，Task chair with headrest。價目表上 CH-40 是 Mesh-back task chair with headrest，上一行的 CH-35 則是同款、沒有頭枕的 Mesh-back task chair。CH-35 的顏色是 Black, gray，所以替代品有兩種顏色。"
+        ]
+      },
+      {
+        "point": [
+          "Three documents: the price gap times the quantity.",
+          "三篇整合：價差乘以數量。"
+        ],
+        "why": [
+          "The second paragraph of the e-mail says that if he accepts, <em>we will refund the difference in price for all six chairs</em>. The price list gives <em>$226</em> for CH-40 and <em>$189</em> for CH-35, a difference of $37 a chair. The order form shows a quantity of 6 for CH-40. $37 × 6 = $222.",
+          "e-mail 第 2 段說，如果他接受，we will refund the difference in price for all six chairs。價目表上 CH-40 是 $226，CH-35 是 $189，每張差 $37。訂購單上 CH-40 的數量是 6。$37 × 6 = $222。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "Height-adjustable",
+        "hw": "height-adjustable",
+        "pos": "adj.",
+        "zh": "可調整高度的",
+        "ex": "Every desk in the new office is height-adjustable."
+      },
+      {
+        "w": "Mesh-back",
+        "hw": "mesh-back",
+        "pos": "adj.",
+        "zh": "網背的",
+        "ex": "A mesh-back chair stays cool in summer."
+      },
+      {
+        "w": "headrest",
+        "hw": "headrest",
+        "pos": "n.",
+        "zh": "頭枕",
+        "ex": "He adjusted the headrest before the long drive."
+      },
+      {
+        "w": "in stock",
+        "hw": "in stock",
+        "pos": "phr.",
+        "zh": "有現貨",
+        "ex": "The blue folders are back in stock."
+      },
+      {
+        "w": "on back order",
+        "hw": "on back order",
+        "pos": "phr.",
+        "zh": "缺貨待補",
+        "ex": "The printer is on back order until next month."
+      },
+      {
+        "w": "substitute",
+        "hw": "substitute",
+        "pos": "n.",
+        "zh": "替代品",
+        "ex": "We can send a similar lamp as a substitute."
+      },
+      {
+        "w": "threshold",
+        "hw": "threshold",
+        "pos": "n.",
+        "zh": "門檻",
+        "ex": "Orders above the threshold ship for free."
+      }
+    ]
+  },
+  "r-p7-03": {
+    "q": [
+      {
+        "point": [
+          "<em>address</em> a problem: deal with it.",
+          "address a problem：處理問題。"
+        ],
+        "why": [
+          "The second paragraph of the advertisement lists the coordinator's own tasks: <em>plan shifts</em>, <em>track incoming shipments</em>, and <em>address any problems with deliveries as they arise</em>. The object is <em>problems</em>, and <em>as they arise</em> means the coordinator acts as soon as they come up. So <em>address</em> means handle.",
+          "廣告第 2 段列出協調專員自己要做的事：plan shifts、track incoming shipments、address any problems with deliveries as they arise。受詞是 problems，as they arise 表示問題一出現就要處理。所以 address 的意思是 handle（處理）。"
+        ]
+      },
+      {
+        "point": [
+          "Compare the applicant's years with the job's minimum.",
+          "拿應徵者的年資和職缺的最低要求比。"
+        ],
+        "why": [
+          "The third paragraph of the advertisement asks for <em>at least three years of experience in warehouse or distribution work</em>. In the first paragraph of the first e-mail, Mr. Reyes writes <em>For the past four years, I have supervised the night shift at Glenhaven Foods' distribution center</em>. Four years is more than three, so he has more experience than the job requires.",
+          "廣告第 3 段要求 at least three years of experience in warehouse or distribution work。第一封 e-mail 第 1 段，Reyes 先生寫 For the past four years, I have supervised the night shift at Glenhaven Foods' distribution center。四年多於三年，所以他的經驗超過職缺的要求。"
+        ]
+      },
+      {
+        "point": [
+          "Purpose: the whole e-mail sets up one meeting.",
+          "目的題：整封信都在安排一次面試。"
+        ],
+        "why": [
+          "The first paragraph of the second e-mail says <em>would like to meet you</em> and <em>we have arranged your interview for the following Monday, November 30, at 10:00 A.M.</em> The second paragraph gives the place, and the third explains the scheduling exercise and asks him to bring photo identification. Every part is about the interview, so the e-mail is written to schedule an appointment with a candidate.",
+          "第二封 e-mail 第 1 段說 would like to meet you，以及 we have arranged your interview for the following Monday, November 30, at 10:00 A.M.。第 2 段交代地點，第 3 段說明排班練習，並請他帶附照片的證件。每一段都在講這次面試，所以寫信是為了和應徵者約定面試。"
+        ]
+      },
+      {
+        "point": [
+          "The reply says <em>the new warehouse</em>; the advertisement says where it is.",
+          "回信說 the new warehouse，廣告告訴你它在哪裡。"
+        ],
+        "why": [
+          "The second paragraph of the second e-mail says <em>the interviews will no longer take place at our head office</em> and <em>we will hold them at the new warehouse itself</em>. The first paragraph of the advertisement says Ferrow <em>will open a third warehouse in Ashcombe</em>, and Mr. Reyes also calls it <em>your new Ashcombe site</em>. So he will be interviewed in Ashcombe.",
+          "第二封 e-mail 第 2 段說 the interviews will no longer take place at our head office，以及 we will hold them at the new warehouse itself。廣告第 1 段說 Ferrow will open a third warehouse in Ashcombe，Reyes 先生的信也稱它為 your new Ashcombe site。所以他會在 Ashcombe 面試。"
+        ]
+      },
+      {
+        "point": [
+          "Three documents: the new plan for the exercise, then his dates away.",
+          "三篇整合：排班練習的新安排，再對照他不在的日期。"
+        ],
+        "why": [
+          "The fourth paragraph of the advertisement planned the exercise for <em>the day of their interview</em>, but the third paragraph of the second e-mail changes this: <em>you will receive it by e-mail on November 26 and should send it back to me before your interview</em>. Its first paragraph sets the interview for <em>Monday, November 30</em>. In the third paragraph of the first e-mail, Mr. Reyes says <em>I will be away at a family wedding from November 21 to 25</em>. The exercise does not reach him until November 26, after his trip has ended, and it is due before the interview on the 30th. So he will do it just after he returns from traveling.",
+          "廣告第 4 段原本安排在 the day of their interview 做練習，但第二封 e-mail 第 3 段改了：you will receive it by e-mail on November 26 and should send it back to me before your interview。同一封信第 1 段把面試定在 Monday, November 30。第一封 e-mail 第 3 段，Reyes 先生說 I will be away at a family wedding from November 21 to 25。練習要到 11 月 26 日才寄到他手上，那時他的旅程已經結束，而且要在 30 日的面試前寄回。所以他會在旅行回來後不久完成。"
+        ]
+      }
+    ],
+    "gloss": [
+      {
+        "w": "distributor",
+        "hw": "distributor",
+        "pos": "n.",
+        "zh": "經銷商",
+        "ex": "The distributor supplies forty pharmacies in the region."
+      },
+      {
+        "w": "incoming shipments",
+        "hw": "incoming shipment",
+        "pos": "n.",
+        "zh": "進貨",
+        "ex": "Please check each incoming shipment against the order."
+      },
+      {
+        "w": "arise",
+        "hw": "arise",
+        "pos": "v.",
+        "zh": "出現、發生",
+        "ex": "Call the help desk if any problems arise."
+      },
+      {
+        "w": "inventory",
+        "hw": "inventory",
+        "pos": "n.",
+        "zh": "庫存",
+        "ex": "We count the inventory at the end of each month."
+      },
+      {
+        "w": "forklift certificate",
+        "hw": "forklift certificate",
+        "pos": "n.",
+        "zh": "堆高機證照",
+        "ex": "Every driver in the warehouse needs a forklift certificate."
+      },
+      {
+        "w": "supervised",
+        "hw": "supervise",
+        "pos": "v.",
+        "zh": "督導、管理",
+        "ex": "She supervises a team of twelve drivers."
+      },
+      {
+        "w": "short-listed",
+        "hw": "short-listed",
+        "pos": "adj.",
+        "zh": "進入決選名單的",
+        "ex": "Four short-listed candidates will meet the director."
+      }
+    ]
+  },
+  "_flags": []
+}

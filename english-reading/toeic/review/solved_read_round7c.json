@@ -1,0 +1,152 @@
+{
+ "answers": {
+  "r-p7-01:0": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "easy",
+   "why": "L weak: only the fallback line 'cancel the workshop ticket alone' touches option A, and it is not a withdrawal from the summit; D no (one e-mail, one paragraph says 'transfer'); B no; S no.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Fine as the single-document purpose opener. Option A (withdraw) and D (miss the opening address) are both flatly contradicted by the e-mail (he keeps the morning sessions and the opening address), so this is the easy item of the set."
+  },
+  "r-p7-01:1": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (A Adeyemi, C held twice, B included with passes are all true of Workshop B or lunch); D yes (program row plus reply paragraph 1: 'cold-storage labeling workshop filled up ... eleven on the waiting list'); B yes (mixing up Workshop A and B); S yes (match the program's Workshop A to the e-mail's description, then paraphrase to 'more applicants than places'). Low end of hard.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Checked each other option: A is Keiko Tran, not Adeyemi; B is lunch, workshop needs a $45 ticket; C is Workshop B (Adeyemi's session, given twice). None survives."
+  },
+  "r-p7-01:2": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (Room 204 is the room he asked for; Room 210 is Adeyemi's afternoon room; Main Hall is where he stays in the morning); D yes (request in e-mail 1, Room 112 and 'same time slot' in e-mail 2, 10:45-12:00 in the program); B yes (his original request, Room 204); S yes (place 11:00 inside the late-morning slot).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "The 15-minute delay applies only to the opening address ('rest of the day unchanged'), so 11:00 still falls in the 10:45-12:00 slot. No other room works."
+  },
+  "r-p7-01:3": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (8:30 is true in the program, 7:30 true for badges, 9:30 is the panel he also attends); D yes (all three documents); B yes (8:30, the corrected original time); S yes (8:30 + 15 minutes after confirming the opening address is his first session).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Option D (9:30) is a good trap for readers who miss that he attends the opening address. Nothing else is defensible."
+  },
+  "r-p7-01:4": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (collect = gather is the common sense, so 'gathered up' is a real rival); B yes (most common meaning); D no; S no.",
+   "vsToeic": "similar", "style": 4,
+   "fix": "Replace 'gathered up' with a rival that is clearly wrong for badges handed out one by one but still tied to the common sense of 'collect', for example 'brought together' or 'accumulated'.",
+   "editorNote": "I tried hard to make B work. 'Badges can be gathered up at the registration desk from 7:30 A.M.' is understandable and a lenient reader could accept it, because 'gather up' can mean pick up one's things. It is not idiomatic (it implies scattered items brought into one pile), and an editor would change it to 'picked up', so I am not calling it ambiguous, but it is the nearest call in the four sets. C (put together = assembled) and D (saved up = hoarded) are clearly off. Shape is consistent (verb + particle x4)."
+  },
+  "r-p7-02:0": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (A, B, C are all true and each needs a check); D yes (price list, order form, e-mail); B yes (ST-02 is graphite, so D looks right; only CH-40 is single-color, and it is black); S yes (6 x 468 + 6 x 226 + 6 x 134 = $4,968 vs $3,000; Sept 8 to Sept 25 = 17 days; NOT-question elimination).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Tried making each other option the NOT. A: total $4,968 is at least $3,000, and e-mail paragraph 3 ('fall below our free-delivery threshold' for the chairs alone) confirms the full order qualified; the price list does not say Edgeton is inside the metro area, but the e-mail makes the point moot. B: 17 days is over two weeks. C: 'before 9:00 A.M.' is a time of day. D: ST-02 is white and graphite, DK-160 has three colors, CH-40 is black only, so nothing ordered is graphite-only. D is the only NOT."
+  },
+  "r-p7-02:1": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (A: the e-mail does confirm delivery of desks and storage; C: delivery fee is discussed); B yes (A is the literal first-paragraph reading); D no (single e-mail); S no.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Option B is the longest option by a word or two (8 words vs 7, 7, 5); not enough to be a cue."
+  },
+  "r-p7-02:2": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (transport is the most common sense of carry); B yes (common-meaning trap); D no; S no.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Substitution test: 'which we stock in the color you chose' fits; 'transport', 'support', 'publish' each fail in context ('we transport the chair in black' does not say it is available). Unique."
+  },
+  "r-p7-02:3": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (A mid-October and C headrest are true of the original chair; D is plausible as a price comparison); D yes (e-mail identifies 'same model without the headrest', price list gives CH-35 'Black, gray'); B yes (A is the original back-order information); S yes (merge e-mail and price list, plus 'refund the difference' to rule out D).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Tried making each other option right: A (arrives mid-October) is contradicted by 'arrive with the rest of your order'; C is the headrest model; D is contradicted by 'we will refund the difference' ($189 vs $226). 'Which we carry in the color you chose' plus the price list gives two colors. Unique."
+  },
+  "r-p7-02:4": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes ($37 per chair, $85 delivery fee, $1,134 = 6 x $189 are all numbers from the documents); D yes (price list, order form quantity, e-mail); B yes (per-chair difference); S yes (($226 - $189) x 6 = $222).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Arithmetic checked: 226 - 189 = 37; 37 x 6 = 222. Options are numbers of the same shape. No other option is defensible."
+  },
+  "r-p7-04:0": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (fastens, protects, obtains are all dictionary senses of 'secure'); B yes (the common senses are the traps); D no; S no.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Substitution test in 'A deposit ... secures your date'. 'guarantees' keeps the meaning. 'obtains' is the closest rival: a deposit as subject cannot 'obtain' the client's own date, and 'obtains your date' is not how booking language works, so I do not call it ambiguous, but a lenient reader might entertain it. 'protects your date' is weaker (no threat is mentioned). 'fastens' is physical. Low-moderate risk only."
+  },
+  "r-p7-04:1": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (A address change, C praise of the January lunch, D guest number are all in the e-mail); B yes (the e-mail opens with praise, the literal first-sentence reading); D no (single e-mail); S no. Low end of medium.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "D is explicitly deferred ('will send you the exact number'); A and C are background. 'Please put us down for the package ... we would like Thursday, March 20' is the order. Unique."
+  },
+  "r-p7-04:2": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (C same package, B deposit, D kitchen are all docs-based); D yes (web page packages, e-mail 'dessert and coffee' and January Harvest, invoice $26); B yes (C: 'coming back to you' suggests repeat order); S yes (identify Banquet, compare one main course vs two).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Tried each other option: B contradicted by deposit of $195 and balance due; C contradicted (Harvest in January, Banquet now); D contradicted by the web page ('cooked in our Fenwick Road kitchen'). The $26 invoice line confirms Banquet, which has a second hot main course. Unique."
+  },
+  "r-p7-04:3": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (A coffee service and B 11:30 request are real in the e-mail; D uses the ten-day rule); D yes (web page delivery rule, e-mail new Ashby address, invoice line); B yes (the old Corbridge premises make free delivery look natural); S yes (combine rule and address change).",
+   "vsToeic": "similar", "style": 4,
+   "fix": "Put C in the same shape as the others, for example 'It moved to an address outside the free-delivery area.'",
+   "editorNote": "Content is unique: nothing in the policy charges for coffee, a delivery time or short notice, and March 3 to March 20 is 17 days anyway. Minor shape cue: A, B, D are 'It + past-tense verb', C alone is 'Its new office is ...' (present tense) and is also the longest; a test-wise reader may notice. Also, the e-mail never says in so many words that Ashby is outside Corbridge, but 'left our Corbridge premises ... new office in Ashby' plus the invoice's flat-fee line settles it."
+  },
+  "r-p7-04:4": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (A first date, C builders' date March 18, B guest count are all in the documents); D yes (e-mail dates, web page weekend charge, invoice $60 and guest count); B yes (the original date and the builders' date are the old information); S yes (the $60 weekend surcharge shows Saturday March 22; 34 guests vs about 30).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Tried each other option: A fails because $60 staffing applies only to Saturday or Sunday and Thursday March 20 is not a weekend; B fails because 34 guests exceeds 'about 30'; C: March 18 is the builders' deadline, a Tuesday, and the e-mail offers only the 20th or the 22nd. Invoice arithmetic checks: 34 x 26 = 884; 25% of (30 x 26) = 195; 884 + 35 + 60 - 195 = 784. Unique."
+  },
+  "r-p7-05:0": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (B refund offer is a whole paragraph of the e-mail); D yes (changes are spread over paragraphs 2 and 3, the offer in 4); B weak; S no.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "B (explain a refund policy): paragraph 4 offers a one-time option because of the changes; it is not a policy explanation, and the e-mail's main content is the replacement stop, lunch time, return time and bay. A: nothing asks for confirmation. D: no apology and no late departure in this e-mail. Unique."
+  },
+  "r-p7-05:1": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (is located is the common physical sense of 'stands'); B yes (most common meaning); D no; S no.",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Substitution test: 'This offer remains valid until 5:00 p.m.' fits; 'is located', 'is on hold' (contradicts the deadline), 'is displayed' do not. Options are all short verb phrases of 2 to 3 words; no length cue."
+  },
+  "r-p7-05:2": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (A: Bay 2 is beside the ticket hall in the e-mail, and the couple were at a bay; D: departure time is a real topic); D yes (review paragraph 2, e-mail paragraph 3, itinerary 'Bay 6'); B yes (A is the new bay, which the couple were not at); S yes (couple at Bay 6 + Bays 5 to 8 closed and move to Bay 2 = they used the old information).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Tried each other option: A is the new bay (Bay 2) and the couple were at Bay 6; C is incompatible with them waiting at the bay; D is not supported because the departure time was unchanged ('at the usual time') and the couple were present, just at the wrong place. B is the only one the documents support. It is an inference (could also be 'did not read the e-mail'), but that still fits 'relied on outdated details'."
+  },
+  "r-p7-05:3": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "hard",
+   "why": "L yes (B and C are both things she praised in the review; C appears in the itinerary); D yes (review says the stop was 'dropped'; e-mail paragraphs 2 and 4 identify the dropped stop as the Lindell Water boat and 'the lake'; itinerary gives the stop); B yes (the replacement and the abbey are her praised stops); S yes (merge to work out which stop was dropped).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Tried each other option: B is the replacement she did not choose the tour for; C is the abbey, which she visited and enjoyed (so it was not the dropped stop); D walled gardens appears only in the itinerary and not in the review. 'A trip on a lake' matches the boat to the island tea house on Lindell Water ('chose this tour for the lake'). Unique."
+  },
+  "r-p7-05:4": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes (A sister, B two wedges, C 'starving' are all in the review; refund appears in the e-mail); B yes (voucher vs refund); S yes (NOT elimination); D weak (answer is absence from the review only).",
+   "vsToeic": "similar", "style": 4, "fix": "",
+   "editorNote": "Each of A (sister), B (bought two wedges), C (starving before the meal at the inn) is mentioned; the review mentions only the voucher, not a refund. Unique."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "r-p7-01:4: 'gathered up' is the nearest rival in the four sets (understandable if not idiomatic for badges at a desk). Swap it for a rival that is clearly wrong for badges (for example 'brought together' or 'accumulated').",
+  "r-p7-04:3: option C is present tense and the longest, while A, B, D are 'It + past-tense verb'. Rewrite C in the same shape, for example 'It moved to an address outside the free-delivery area.'"
+ ],
+ "overall": "All 20 questions have one defensible answer in my reading, including the nine recently changed items (each other option tried and rejected from the documents; notes per key). Document checks passed: dates and weekdays are internally consistent in each set; invoice arithmetic in r-p7-04 (34 x 26 = 884, deposit 195, balance 784) and refund arithmetic in r-p7-02 (37 x 6 = 222; total order 4,968) both work. Bands: easy 1 (r-p7-01:0), medium 8, hard 11, so hard is 55% and easy 5%, in line with the 8.3 target. The purpose and word-meaning questions are the lower items (a purpose question with a single-document answer cannot go much higher); the cross-document questions carry the difficulty. Only two small fixes recommended, neither blocking."
+}

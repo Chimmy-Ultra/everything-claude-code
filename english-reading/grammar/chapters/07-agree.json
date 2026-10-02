@@ -1,0 +1,316 @@
+{
+  "id": "agree",
+  "n": 7,
+  "title": "主詞和動詞一致",
+  "en": "Subject-Verb Agreement",
+  "lead": "英文的動詞要跟主詞配合：主詞是一個，用 <em>is、has、requires</em>；主詞是好幾個，用 <em>are、have、require</em>。中文的動詞不會跟著變，所以這件事很容易漏看。規則本身不難，難的是找到真正的主詞（第 2 章），因為它常常被一長串字擋在動詞前面。",
+  "check": [
+    {
+      "type": "choose",
+      "q": "<em>The list of approved suppliers ___ updated every month.</em> 空格要填哪一個？",
+      "options": ["is", "are"],
+      "answer": 0,
+      "why": "劃掉 <em>of approved suppliers</em>，主詞是 <em>the list</em>，一份清單，用 <em>is</em>。離空格最近的 <em>suppliers</em> 不是主詞。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>Each of the meeting rooms ___ a projector.</em> 空格要填哪一個？",
+      "options": ["has", "have"],
+      "answer": 0,
+      "why": "主詞是 <em>each</em>，「每一間」是一間一間看，用單數 <em>has</em>。<em>of the meeting rooms</em> 只是說明是哪些房間裡的每一間。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>There ___ several problems with the new schedule.</em> 空格要填哪一個？",
+      "options": ["is", "are"],
+      "answer": 1,
+      "why": "<em>there</em> 不是主詞，真正的主詞在 <em>be</em> 後面：<em>several problems</em>，複數，用 <em>are</em>。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>A number of customers ___ asked about the new service.</em> 空格要填哪一個？",
+      "options": ["has", "have"],
+      "answer": 1,
+      "why": "<em>a number of</em> 是「好幾個、不少」，講的是好幾位顧客，用 <em>have</em>。要是 <em>the number of</em>（……的數量），主詞是那個數字，才用 <em>has</em>。"
+    },
+    {
+      "type": "tap",
+      "q": "點出決定動詞 <em>is</em> 的那個名詞（只點一個字）。",
+      "sentence": "The cost of the repairs to the elevators is higher than expected.",
+      "answer": [1],
+      "why": "劃掉 <em>of the repairs to the elevators</em>，骨架是 <em>The cost is higher</em>。<em>repairs</em> 和 <em>elevators</em> 都是複數，但都在介系詞片語裡，不是主詞。"
+    }
+  ],
+  "sections": [
+    {
+      "h": "動詞跟著主詞變：在哪裡看得到",
+      "body": [
+        "主詞和動詞一致，意思是動詞的形式要配合主詞是一個還是好幾個。這一章說的<b>單數</b>，指的是一個人或一個東西，可以用 <em>he、she、it</em> 代替的那種；<b>複數</b>是好幾個，可以用 <em>they</em> 代替。<em>I</em> 和 <em>you</em> 有自己的形式（<em>I am、you are</em>），這裡不談。",
+        "一致只在幾個地方看得到：現在式的一般動詞（<em>requires / require</em>，包括 <em>does / do</em>）、<em>be</em> 動詞（<em>is / are</em>、<em>was / were</em>），以及 <em>has / have</em>。過去式的一般動詞不分單複數（都是 <em>required</em>），<em>will、can、must</em> 後面的原形也不變。所以檢查一致時，先看動詞是不是這幾種；不是，就不用擔心。",
+        "門檻是那個 <em>-s</em>。名詞加 <em>-s</em> 是複數（<em>clients</em>），現在式動詞加 <em>-s</em> 卻是<b>單數</b>（<em>requires</em>），方向剛好相反。所以 <em>The client requires</em> 和 <em>The clients require</em> 都對，<em>-s</em> 通常只出現在一邊。寫成 <em>The clients requires</em>，名詞已經是複數，動詞又加了代表單數的 <em>-s</em>，就錯了。（<em>news</em> 這類本身是單數的字，見第 7 節。）",
+        "一致不只是形式，它也帶著資訊。<em>The manager of the two stores is</em> 告訴讀者主詞是一位經理；<em>The managers of the store are</em> 是好幾位經理。動詞選錯，讀者對「在講誰」的判斷就跟著錯。"
+      ],
+      "ex": [
+        {"en": "The client <u>requires</u> a signed copy of the agreement.", "zh": "客戶需要一份簽好的合約。", "note": "主詞 <em>the client</em> 是一位，現在式動詞加 <em>-s</em>。"},
+        {"en": "Our clients <u>require</u> a signed copy of the agreement.", "zh": "我們的客戶需要一份簽好的合約。", "note": "主詞 <em>our clients</em> 是好幾位，動詞不加 <em>-s</em>。"},
+        {"en": "The shipment <u>was</u> late, but the invoices <u>were</u> correct.", "zh": "貨晚到了，但發票是正確的。"}
+      ],
+      "table": {
+        "head": ["動詞的種類", "單數主詞", "複數主詞"],
+        "rows": [
+          ["現在式一般動詞", "<em>The client requires</em>", "<em>The clients require</em>"],
+          ["<em>be</em>（現在）", "<em>is</em>", "<em>are</em>"],
+          ["<em>be</em>（過去）", "<em>was</em>", "<em>were</em>"],
+          ["<em>have</em>（現在）", "<em>has</em>", "<em>have</em>"],
+          ["過去式一般動詞", "<em>required</em>", "<em>required</em>（不變）"],
+          ["<em>will、can、must</em> + 原形", "<em>will require</em>", "<em>will require</em>（不變）"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "下面哪一句，把主詞換成複數（<em>the managers</em>）以後，動詞不用改？",
+          "options": ["The manager approves every expense.", "The manager approved every expense.", "The manager is in Eastfield this week."],
+          "answer": 1,
+          "why": "<em>approved</em> 是過去式的一般動詞，單複數都一樣。<em>approves</em> 是現在式，要改成 <em>approve</em>；<em>is</em> 要改成 <em>are</em>。"
+        }
+      ],
+      "takeaway": "一致只在現在式、<em>be</em> 和 <em>have</em> 上看得到；動詞的 <em>-s</em> 代表單數，和名詞剛好相反。"
+    },
+    {
+      "h": "找真正的主詞：劃掉中間的字",
+      "body": [
+        "決定動詞的是真正的主詞，也就是主詞那一串字裡的中心名詞（第 2 章）。麻煩的是，中心名詞後面常常跟著一串補充說明，把動詞推得很遠，離動詞最近的名詞反而不是主詞。",
+        "<em>The list of approved vendors is posted online.</em> 離 <em>is</em> 最近的是 <em>vendors</em>（複數），但主詞是 <em>list</em>，一份清單。<em>of approved vendors</em> 只是在說明是什麼清單。",
+        "方法和第 2 章找中心名詞一樣：把主詞後面的介系詞片語（第 3 章；<em>of、in、for、with、on</em> 開頭的那一串）和插進來的子句用括號劃掉，剩下的就是骨架。<em>The list (of approved vendors) is posted online.</em> 骨架是 <em>The list is posted</em>，動詞跟 <em>list</em>。",
+        "為什麼可以劃掉：拿掉這些字，句子的骨架還在，只是少了細節。能拿掉而句子不壞的部分，就不會是主詞。",
+        "<em>along with、as well as、together with</em> 也是同一類。它們看起來像 <em>and</em>，文法上卻是插在中間的片語，通常前後用逗號隔開，一樣劃掉。<em>Ms. Chen, along with her two assistants, is attending the fair.</em> 動詞跟 <em>Ms. Chen</em>。",
+        "「劃掉 <em>of</em> 片語」有一個例外：前面是數量的時候，像 <em>most of、some of、all of、half of</em>，動詞要看 <em>of</em> 後面的名詞。<em>Most of the budget has been spent.</em>（預算，一筆，用單數）；<em>Most of the rooms have been booked.</em>（房間，好幾間，用複數）。這類數量詞在第 13 章細講。"
+      ],
+      "ex": [
+        {"en": "The <u>list</u> of approved vendors <u>is</u> posted on the intranet.", "zh": "核准廠商的名單公告在內部網站上。", "note": "劃掉 <em>of approved vendors</em>，剩下 <em>The list is posted</em>。"},
+        {"en": "The <u>quality</u> of our products <u>has</u> improved this year.", "zh": "我們產品的品質今年提升了。"},
+        {"en": "The <u>report</u> that the consultants prepared <u>is</u> very detailed.", "zh": "顧問們準備的報告非常詳細。", "note": "<em>that the consultants prepared</em> 是插進來的子句，主詞還是 <em>the report</em>。"},
+        {"en": "<u>Ms. Chen</u>, along with her two assistants, <u>is</u> attending the trade fair.", "zh": "Chen 女士連同她的兩位助理，正在參加商展。", "note": "<em>along with</em> 那一段夾在逗號中間，劃掉後動詞跟 <em>Ms. Chen</em>。"}
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出決定動詞 <em>need</em> 的那個名詞（只點一個字）。",
+          "sentence": "The boxes in the storage room need to be moved by Friday.",
+          "answer": [1],
+          "why": "劃掉 <em>in the storage room</em>，骨架是 <em>The boxes need to be moved</em>。<em>room</em> 離動詞最近，但它在介系詞片語裡。"
+        },
+        {
+          "type": "choose",
+          "q": "<em>The results of the customer survey ___ been sent to all managers.</em> 空格要填哪一個？",
+          "options": ["has", "have"],
+          "answer": 1,
+          "why": "劃掉 <em>of the customer survey</em>，主詞是 <em>the results</em>，複數，用 <em>have</em>。<em>survey</em> 是單數，又緊挨著空格，但它不是主詞。"
+        }
+      ],
+      "takeaway": "劃掉主詞後面的介系詞片語和插進來的子句，剩下的中心名詞才決定動詞。"
+    },
+    {
+      "h": "each、every、one of、either of：都是「一個」",
+      "body": [
+        "<em>each</em> 和 <em>every</em> 雖然在講一整群，看的方式卻是一個一個看：每一位員工、每一間客房。所以 <em>each</em>、<em>every</em> 後面接單數名詞，動詞也用單數：<em>Every employee receives a handbook.</em>",
+        "<em>each of the</em> + 複數名詞，主詞是 <em>each</em>（每一個），動詞還是單數：<em>Each of the rooms has a coffee maker.</em> 照上一節把 <em>of the rooms</em> 劃掉，剩下 <em>Each has</em>。",
+        "門檻在 <em>one of the</em> + 複數名詞。這個寫法裡有兩個方向相反的規定：名詞要<b>複數</b>，因為是「好幾家裡面的一家」；動詞要<b>單數</b>，因為主詞是 <em>one</em>。<em>One of our suppliers has raised its prices.</em> 常見的錯有兩種：名詞寫成單數（<em>one of our supplier</em>），或動詞跟著 <em>suppliers</em> 變成 <em>have</em>。",
+        "<em>either of</em>、<em>neither of</em> 和 <em>each of</em> 一樣，主詞是 <em>either</em>、<em>neither</em>，動詞用單數：<em>Either of the two dates is fine with me.</em> 字尾是 <em>-one</em>、<em>-body</em> 的字也是「一個一個看」：<em>everyone、everybody、someone、anyone、no one</em>，動詞用單數：<em>Everyone has received the new schedule.</em>"
+      ],
+      "ex": [
+        {"en": "Every <u>employee receives</u> a copy of the handbook.", "zh": "每位員工都會收到一本手冊。"},
+        {"en": "<u>Each</u> of the hotel rooms <u>has</u> a coffee maker.", "zh": "每間客房都有咖啡機。"},
+        {"en": "<u>One</u> of our suppliers <u>has</u> raised its prices.", "zh": "我們有一家供應商漲價了。", "note": "<em>suppliers</em> 是複數（好幾家裡的一家），但主詞是 <em>one</em>，所以用 <em>has</em>。"},
+        {"en": "<u>Either</u> of the two dates <u>is</u> fine with me.", "zh": "這兩個日期我都可以。", "note": "主詞是 <em>either</em>（兩個裡面任何一個），劃掉 <em>of the two dates</em>，動詞用單數。"}
+      ],
+      "table": {
+        "head": ["寫法", "後面的名詞", "動詞"],
+        "rows": [
+          ["<em>every</em>", "單數（<em>every employee</em>）", "單數"],
+          ["<em>each</em>", "單數（<em>each room</em>）", "單數"],
+          ["<em>each of the</em>", "複數（<em>each of the rooms</em>）", "單數"],
+          ["<em>one of the</em>", "複數（<em>one of the suppliers</em>）", "單數"],
+          ["<em>either of / neither of the</em>", "複數（<em>either of the dates</em>）", "單數"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>One of the new printers ___ not working.</em> 空格要填哪一個？",
+          "options": ["is", "are"],
+          "answer": 0,
+          "why": "主詞是 <em>one</em>，一台，用 <em>is</em>。<em>printers</em> 是複數，因為是好幾台裡的一台，但它不決定動詞。"
+        }
+      ],
+      "takeaway": "<em>each、every、one of、either of、neither of</em> 講的都是「一個」，動詞用單數；<em>one of</em> 後面的名詞卻要用複數。"
+    },
+    {
+      "h": "the number of 和 a number of",
+      "body": [
+        "這兩個只差 <em>the</em> 和 <em>a</em>，動詞卻相反。",
+        "<em>the number of</em> + 複數名詞，意思是「……的<b>數量</b>」。主詞是 <em>number</em>，一個數字，用單數：<em>The number of applicants has doubled.</em>（應徵人數增加了一倍）。",
+        "<em>a number of</em> + 複數名詞，意思是「<b>好幾個、不少</b>」，整串等於 <em>several</em> 或 <em>many</em>，真正在講的是後面那些人，用複數：<em>A number of applicants have asked about remote work.</em>",
+        "測試方法：把 <em>a number of</em> 換成 <em>many</em>，句子還說得通，就用複數。<em>The number of applicants has doubled</em> 換成 <em>many</em>，變成「很多應徵者翻倍了」，說不通，因為這句講的是人數這個數字。"
+      ],
+      "ex": [
+        {"en": "The number of applicants <u>has</u> doubled this year.", "zh": "今年應徵的人數增加了一倍。"},
+        {"en": "A number of applicants <u>have</u> asked about remote work.", "zh": "有不少應徵者問到遠距工作。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The number of complaints ___ dropped since we hired more staff.</em> 空格要填哪一個？",
+          "options": ["has", "have"],
+          "answer": 0,
+          "why": "<em>the number of</em> 是「……的數量」，主詞是 <em>number</em> 這一個數字，用 <em>has</em>。"
+        }
+      ],
+      "takeaway": "<em>the number of</em> 是「一個數字」，用單數；<em>a number of</em> 是「好幾個」，用複數。"
+    },
+    {
+      "h": "there is 和 there are：主詞在後面",
+      "body": [
+        "<em>There is / There are</em> 是英文說「有」的句型。這裡的 <em>there</em> 不是主詞，只是先佔住句首的位置，真正的主詞在 <em>be</em> 動詞<b>後面</b>。",
+        "所以這個句型要反過來讀：先往後看「有」的是什麼，再回頭決定 <em>is</em> 還是 <em>are</em>。一個，用 <em>is</em>；好幾個，用 <em>are</em>。換成別的時態也一樣：<em>there was / there were</em>、<em>there has been / there have been</em>。",
+        "門檻在中文。中文的「有」不會變，所以很容易一律寫 <em>there is</em>。<em>There is several reasons</em> 唸起來很順，卻是錯的：主詞 <em>several reasons</em> 是複數。",
+        "後面的主詞如果帶著介系詞片語，第 2 節的方法照用：<em>There is a list of local restaurants in your room.</em> 主詞是 <em>a list</em>，不是 <em>restaurants</em>。"
+      ],
+      "ex": [
+        {"en": "There <u>is</u> a spare key at the front desk.", "zh": "櫃台有一把備用鑰匙。"},
+        {"en": "There <u>are</u> three candidates for the position.", "zh": "這個職位有三位候選人。"},
+        {"en": "There <u>have been</u> several complaints about the noise.", "zh": "已經有好幾件關於噪音的投訴。"},
+        {"en": "There <u>is</u> a list of local restaurants in your room.", "zh": "您的房間裡有一份附近餐廳的清單。", "note": "主詞是 <em>a list</em>，<em>of local restaurants</em> 劃掉。"}
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出決定 <em>are</em> 的那個名詞（只點一個字）。",
+          "sentence": "There are two new projects on the agenda this week.",
+          "answer": [4],
+          "why": "<em>there</em> 只是佔位置，<em>be</em> 後面的 <em>two new projects</em> 才是主詞，中心名詞是 <em>projects</em>，複數，所以用 <em>are</em>。<em>agenda</em> 在介系詞片語 <em>on the agenda</em> 裡。"
+        }
+      ],
+      "takeaway": "<em>there</em> 只是佔位置；真正的主詞在 <em>be</em> 後面，先往後看再決定 <em>is</em> 還是 <em>are</em>。"
+    },
+    {
+      "h": "兩個主詞：and、or、neither … nor",
+      "body": [
+        "主詞有時是兩個名詞連在一起。連接的字不同，動詞跟的對象就不同。",
+        "<em>A and B</em>：兩個加在一起，用複數。<em>The sales manager and her assistant are visiting clients.</em>",
+        "<em>A or B</em>、<em>either A or B</em>、<em>neither A nor B</em>：不是加在一起，而是二選一（或兩個都不），動詞跟<b>離動詞比較近的那一個</b>，也就是 B。<em>Neither the contract nor the invoices were signed.</em> 動詞跟 <em>invoices</em>；把兩個對調，<em>Neither the invoices nor the contract was signed.</em> 動詞就跟 <em>contract</em>。",
+        "對照第 2 節：<em>A as well as B</em>、<em>A along with B</em> 意思和 <em>and</em> 很像，文法上卻是插在中間的片語，動詞只跟 A。<em>The CEO and two board members are attending.</em> 用 <em>are</em>；<em>The CEO, as well as two board members, is attending.</em> 用 <em>is</em>。意思差不多，動詞卻不同，差別全在連接的那個字。"
+      ],
+      "ex": [
+        {"en": "The sales manager and her assistant <u>are</u> visiting clients in Westbrook.", "zh": "業務經理和她的助理正在 Westbrook 拜訪客戶。"},
+        {"en": "Neither the contract nor the invoices <u>were</u> signed.", "zh": "合約和發票都還沒簽。", "note": "離動詞近的是 <em>the invoices</em>，複數。"},
+        {"en": "Neither the invoices nor the contract <u>was</u> signed.", "zh": "發票和合約都還沒簽。", "note": "對調以後，離動詞近的是 <em>the contract</em>，單數。"},
+        {"en": "The CEO, as well as two board members, <u>is</u> attending the opening.", "zh": "執行長連同兩位董事，將出席開幕式。", "note": "<em>as well as</em> 那一段夾在逗號中間，動詞跟 <em>the CEO</em>。"}
+      ],
+      "table": {
+        "head": ["寫法", "動詞跟誰", "例子"],
+        "rows": [
+          ["<em>A and B</em>", "兩個加起來，複數", "<em>The CEO and the CFO are…</em>"],
+          ["<em>A or B</em>", "靠近動詞的 B", "<em>Mr. Lee or his assistants are…</em>"],
+          ["<em>either A or B</em>", "靠近動詞的 B", "<em>Either the assistants or Mr. Lee is…</em>"],
+          ["<em>neither A nor B</em>", "靠近動詞的 B", "<em>Neither the contract nor the invoices were…</em>"],
+          ["<em>A, as well as B,</em>", "只跟 A（第 2 節）", "<em>The CEO, as well as the CFO, is…</em>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>Neither the printer nor the scanners ___ working this morning.</em> 空格要填哪一個？",
+          "options": ["was", "were"],
+          "answer": 1,
+          "why": "<em>neither A nor B</em>，動詞跟離它比較近的 B。B 是 <em>the scanners</em>，複數，用 <em>were</em>。"
+        }
+      ],
+      "takeaway": "<em>and</em> 把兩個加起來，用複數；<em>or、nor</em> 跟離動詞近的那個；<em>as well as</em> 不算，動詞跟前面的。"
+    },
+    {
+      "h": "團體、news、information：形狀和單複數不一定對得上",
+      "body": [
+        "前面都是先找主詞，再數它是一個還是好幾個。有幾類名詞，形狀會騙人。",
+        "<b>集合名詞</b>是一個單數的字，指一群人：<em>team、committee、department、company、board</em>。把這群人當成一個團體來講時，動詞用單數：<em>The committee has approved the plan.</em> 英式英文有時把重點放在一個個成員身上，改用複數（<em>The committee have …</em>）；正式書面和商業文件用單數，英式、美式都能接受，本書的題目也以單數為準。",
+        "<b>字尾有 <em>-s</em> 的單數名詞</b>：<em>news</em> 看起來像複數，其實是單數名詞，動詞用 <em>is</em>：<em>The news is encouraging.</em>",
+        "<b>不可數名詞</b>（第 13 章）：<em>information、equipment、advice、furniture</em> 沒有複數形，當主詞時用單數：<em>The information on the website is out of date.</em> 中文的「資訊」「設備」常常指好幾樣東西，所以特別容易順手寫成 <em>are</em>。",
+        "反過來，<em>people</em> 和 <em>police</em> 沒有 <em>-s</em>，講的卻是好幾個人，用複數：<em>The police are investigating the theft.</em>"
+      ],
+      "ex": [
+        {"en": "The marketing <u>department</u> <u>has</u> moved to the fourth floor.", "zh": "行銷部已經搬到四樓了。", "note": "<em>department</em> 是一個單位，當成一個團體，用單數。"},
+        {"en": "The <u>news</u> from our Eastfield office <u>is</u> encouraging.", "zh": "我們 Eastfield 辦公室傳來的消息令人振奮。", "note": "<em>news</em> 是單數名詞；<em>from our Eastfield office</em> 劃掉。"},
+        {"en": "The <u>information</u> on the website <u>is</u> updated every Monday.", "zh": "網站上的資訊每週一更新。", "note": "<em>information</em> 不可數，沒有複數形，用單數。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The equipment in the meeting rooms ___ checked every month.</em> 空格要填哪一個？",
+          "options": ["is", "are"],
+          "answer": 0,
+          "why": "<em>equipment</em> 是不可數名詞，沒有複數形，當主詞用單數 <em>is</em>。<em>in the meeting rooms</em> 是介系詞片語，劃掉；<em>rooms</em> 是複數，但它不是主詞。中文的「設備」可以指很多樣東西，英文卻只看這個字的類別。"
+        },
+        {
+          "type": "choose",
+          "q": "<em>The committee ___ announced its decision.</em> 空格要填哪一個？",
+          "options": ["has", "have"],
+          "answer": 0,
+          "why": "<em>committee</em> 是集合名詞，這裡當成一個團體；後面的 <em>its</em> 也是單數，所以用 <em>has</em>。"
+        }
+      ],
+      "takeaway": "名詞的形狀不一定等於單複數：一個團體、<em>news</em>、不可數名詞用單數；<em>people</em>、<em>police</em> 用複數。"
+    },
+    {
+      "h": "Ving 當主詞：一件事，用單數",
+      "body": [
+        "主詞不一定是名詞，也可以是一個 Ving 帶頭的片語：<em>Reducing costs is our top priority.</em> 主詞是「降低成本」這<b>一件事</b>，所以用單數 <em>is</em>。",
+        "門檻是片語裡的複數名詞。<em>costs</em> 是複數，又剛好緊挨著動詞，很容易寫成 <em>are</em>。但 <em>costs</em> 只是 <em>reducing</em> 的受詞，主詞是整件事。不管 Ving 後面接什麼，一件事就是一件事。",
+        "金額、時間、距離當成一個整體時也一樣：<em>Two weeks is enough time.</em> 講的是「兩週這段時間」，不是一週、一週分開算。"
+      ],
+      "ex": [
+        {"en": "Reducing costs <u>is</u> our top priority this year.", "zh": "降低成本是我們今年的首要目標。"},
+        {"en": "Meeting all three deadlines <u>was</u> not easy.", "zh": "要趕上三個期限並不容易。", "note": "<em>deadlines</em> 是複數，但主詞是「趕上期限」這件事。"},
+        {"en": "Two weeks <u>is</u> enough time to finish the report.", "zh": "兩週的時間夠把報告寫完。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>Answering customer emails ___ most of my morning.</em> 空格要填哪一個？",
+          "options": ["takes", "take"],
+          "answer": 0,
+          "why": "主詞是 <em>Answering customer emails</em> 這一件事，用單數 <em>takes</em>。<em>emails</em> 是 <em>answering</em> 的受詞，不決定動詞。"
+        }
+      ],
+      "takeaway": "Ving 帶頭的主詞是一件事，用單數；不要被片語裡的複數名詞拉走。"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "The results of the survey shows a clear trend.",
+      "right": "The results of the survey show a clear trend.",
+      "why": "劃掉 <em>of the survey</em>，主詞是 <em>the results</em>，複數，動詞不加 <em>-s</em>。"
+    },
+    {
+      "wrong": "Each of the managers have a parking space.",
+      "right": "Each of the managers has a parking space.",
+      "why": "主詞是 <em>each</em>，一個一個看，用單數 <em>has</em>。"
+    },
+    {
+      "wrong": "There is several reasons for the delay.",
+      "right": "There are several reasons for the delay.",
+      "why": "<em>there</em> 不是主詞，<em>be</em> 後面的 <em>several reasons</em> 才是，複數，用 <em>are</em>。"
+    },
+    {
+      "wrong": "One of our suppliers have closed its factory.",
+      "right": "One of our suppliers has closed its factory.",
+      "why": "主詞是 <em>one</em>，一家，用 <em>has</em>。<em>suppliers</em> 保持複數，因為是好幾家裡的一家。"
+    },
+    {
+      "wrong": "The number of visitors have increased this month.",
+      "right": "The number of visitors has increased this month.",
+      "why": "<em>the number of</em> 的主詞是 <em>number</em>，一個數字，用單數 <em>has</em>。"
+    }
+  ],
+  "workbook": ["agree"]
+}

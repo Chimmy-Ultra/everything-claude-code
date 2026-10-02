@@ -512,14 +512,14 @@ Q  When will the call most likely take place?    ✓ On Friday   ≈ On Thursday
 
 ## 6. 解說規則（不限制題目難度）
 
-解說的字數限制是**顯示層**的限制（解釋卡要在手機一屏內看完），由 `build_page.py` 以 warning 提醒；它們**不是**出題的限制。理由寫不進短欄位，就寫 `wrongMore`。
+解說沒有字數上限：長度由要講清楚的內容決定，寫完整比寫短重要。`wrong` 是一眼看到的那一句，`wrongMore` 是點開才看到的補充；兩者的分工照下表，但不用字數來切。
 
-| 欄位 | 上限 | 寫什麼 |
+| 欄位 | 長度 | 寫什麼 |
 |---|---|---|
-| `point` | 40 字 | 考的規則，一句；不含答案以外的多餘資訊。字彙題寫「搭配詞：fall short of」這種形式；聽力寫技巧（跨說話者：that day 要回頭找 Friday）。 |
-| `why` | 90 字 | **一定要指出決定性線索在哪**（句尾 when … next month；拿掉插入的 it believes）。聽力一定要寫改述對應（音檔的字 → 選項的字）。 |
-| `wrong[i]` | 45 字 | 一句標題。近乎正確誘答的格式：「<為什麼看起來對>；<哪個字排除>」（例：shipments from 看似通順，但 attribute 要配 to）。聽力要標陷阱類型。 |
-| `wrongMore[i]` | 建議 ≤ 160 字 | **近乎正確誘答必填**：先承認它在哪裡是對的（recommend checking 本身是對的說法），再說這一句為什麼不行。一般誘答可為 `null`。形狀同 `wrong`，正解位置 `null`。 |
+| `point` | 一句 | 考的規則，一句；不含答案以外的多餘資訊。字彙題寫「搭配詞：fall short of」這種形式；聽力寫技巧（跨說話者：that day 要回頭找 Friday）。 |
+| `why` | 講清楚為止 | **一定要指出決定性線索在哪**（句尾 when … next month；拿掉插入的 it believes）。聽力一定要寫改述對應（音檔的字 → 選項的字）。 |
+| `wrong[i]` | 講清楚為止 | 先一句話點出錯在哪。近乎正確誘答的格式：「<為什麼看起來對>；<哪個字排除>」（例：shipments from 看似通順，但 attribute 要配 to）。聽力要標陷阱類型。 |
+| `wrongMore[i]` | 講清楚為止 | **近乎正確誘答必填**：先承認它在哪裡是對的（recommend checking 本身是對的說法），再說這一句為什麼不行。一般誘答可為 `null`。形狀同 `wrong`，正解位置 `null`。 |
 | `zh` | 一句 | 填入正解後整句的翻譯，中文要自然。 |
 | `vocab` | 2–4 組 | 題幹裡的中高階字＋中文；不放正解。 |
 | `evidence`（聽力） | 1–4 個索引 | 跨句就全列；`why` 要寫怎麼串。 |
@@ -530,7 +530,7 @@ Q  When will the call most likely take place?    ✓ On Friday   ≈ On Thursday
 - `point` 與 `why` 用的是同一條規則；`wrong` 不能跟 `why` 矛盾。
 - 文法術語跟「多益文法考點」頁一致（Ving、to V、p.p.、原形、連接副詞）。
 - 解說只答這一題；延伸規則寫在 `wrongMore`，不寫在 `why`。
-- 不因為解說寫不短而改題；修題者發現解說超長，是去改解說或移到 `wrongMore`，不是回頭改選項。
+- 不因為解說的長短而改題。
 
 ---
 
@@ -546,7 +546,7 @@ Q  When will the call most likely take place?    ✓ On Friday   ≈ On Thursday
 6. 沒用第 1.3 節「不要用的」清單裡的東西（-s 形式當 mandative 誘答、集合名詞一致、兩個真實搭配……）。
 7. 題幹 18–38 字、兩個子句或一個插入語、美式拼字、商業場景、無真名；題幹沒有替正解下定義。
 8. 同一批：正解不是另一題的誘答；同單元誘答型態有變化；場景不重複。
-9. 解說：`why` 指出線索位置；近乎正確誘答有 `wrongMore`；`point` ≤ 40、`why` ≤ 90、`wrong` ≤ 45 只是顯示上限。
+9. 解說：`why` 指出線索位置；近乎正確誘答有 `wrongMore`；解說沒有字數上限，寫完整。
 10. 聽力：改述距離 ≥ 2（困難 3）、同字只在誘答、證據索引完整、圖表題音檔不說答案格、附帶條件在問句裡、`say` 補齊、沒有相似音與語調陷阱、三人對話名字有叫到。
 
 ### 7.2 盲審者（每題）
@@ -559,3 +559,101 @@ Q  When will the call most likely take place?    ✓ On Friday   ≈ On Thursday
 6. `style` 1–5，低於 4 要在 `fix` 說為什麼不像真題（句首訊號詞、定義式題幹、公式、選項類別不同、場景不像）。
 7. 看整批：同一題的正解是否出現在另一題的誘答；同單元是否重複同一型態；分布是否達到第 5.2 節的目標；`overall` 寫整批跟真題比的差距在哪。
 8. 聽力：確認音檔沒有說出正解的字；圖表題音檔沒有說出答案格；引句題的誘答裡有字面解讀；每個誘答的陷阱類型標對。
+
+---
+
+## 8. 閱讀 Part 6 / Part 7 型（第七輪起）
+
+這一節是閱讀題的規則；第 0、3、4 節的原則（唯一答案的標準、出題順序、盲審程序）照樣適用，「整句」換成「整份文件」。本節對真題的描述都是我們的判斷，不是統計。
+
+### 8.0 對照官方範例（2026-10 查核）
+
+來源：ETS 公開的 *TOEIC Listening and Reading Sample Test*（https://www.ets.org/content/dam/ets-org/pdfs/toeic/toeic-listening-reading-sample-test.pdf）。只參考格式，不抄任何文句。從裡面直接看得到的事：
+
+- **Part 6 作答說明**：A word, phrase, or sentence is missing in parts of each text. 一篇文件四題，題組開頭寫 Questions 131-134 refer to the following e-mail.
+- **Part 6 範例**（e-mail，To / From / Subject，連稱呼與署名約 130 字）的四格依序是：詞性（interest / interests / interested / interesting）、字彙搭配（develop / raise / open / complete + a deep understanding）、句首連接副詞（After all / For / Even so / At the same time）、句子插入（放在內文最後一句，四個選項都是同主題的短句）。
+- **Part 7 作答說明**：texts such as magazine and newspaper articles, e-mails, and instant messages；Each text or set of texts is followed by several questions；有些題要選句子插入的位置（範例中出現在單篇文章，用 — [1] — 標記）。
+- **Part 7 三篇範例**：Questions 196-200 refer to the following advertisement, online shopping cart, and e-mail. 五題依序是：廣告裡的字義題、廣告建議顧客做什麼、跨文件推論（What is most likely true about order #3397?）、跨文件細節（Which color does Mr. Phan indicate that he likes?）、只看 e-mail 的問題題（What problem does Mr. Phan mention in his e-mail?）。
+- **題幹句型**：What is suggested about …? / What is indicated about …? / According to the advertisement, why …? / What is NOT a stated requirement …? / Who most likely is …? / What will … most likely do …? / In the advertisement, the word "top" in paragraph 1, line 2, is closest in meaning to
+- **選項**多半是 2–10 字的短語或短句，四個同形狀。
+
+由此調整的規則：
+- Part 7 題目大致**依文件順序**排：先問第一份，跨文件題在中後段，最後一題可以只問第三份。主旨題不必放第一題。
+- 字義題照官方句型，但**不寫行號**（頁面會依螢幕寬度重排，行號不存在）：In the e-mail, the word "X" in paragraph 2 is closest in meaning to
+- 選項寫短、四個同形狀。
+- 頁面在每組文件上方顯示 Questions 1–4 refer to the following e-mail. 這一行。
+- 範例沒有給的事（例如三篇合計多少字、各題型出現幾次），本文件的數字都是我們的設定，不是官方規格。
+
+### 8.1 Part 6 型 `p6`：短文填空
+
+- 一份文件（e-mail、memo、notice、letter、article、advertisement、web page），120–200 字，2–4 段。
+- 四個空格，在段落文字裡寫成 `{1}` `{2}` `{3}` `{4}`，依出現順序。四題分別是：
+  - 兩到三題「字詞」空格：文法（時態、詞性、代名詞、連接詞與連接副詞、關係詞、假設語氣）或字彙。
+  - **剛好一題「句子插入」**：四個選項都是完整句子，選最適合放進這個空格的一句。
+- **Part 6 的難度來自「本句裡四個都通」。** 中等以上的字詞空格，在自己那一句裡至少兩個選項文法對、意思順，要讀**前後句或另一段**才能決定：
+  - 時態：句子本身沒有時間詞，要靠信件日期、前一段的 last month／next week 判斷。
+  - 代名詞與限定詞：they／it／this／these 指誰，要回前一句找。
+  - 連接副詞（However、As a result、In addition、Otherwise、Instead）：要看前後兩句的關係，本句單獨看任何一個都通。
+  - 字彙：四個字放進本句都說得通，前文的細節排除其中三個（前面說是「暫時」關閉，就不能選 permanently 的意思）。
+- **句子插入題**：正解要同時接得上前一句與後一句。用指涉（These changes／The same discount／this request）或邏輯（先問題後解法）把它綁住。誘答是**同主題**的句子，但：指向還沒出現的東西、跟文中某個細節矛盾（日期、人、方向）、或放在這裡打斷前後兩句的連接。不要用跟主題無關的句子當誘答（那是簡單題）。
+- 四題中**至多一題**簡單；困難題至少兩題。
+
+### 8.2 Part 7 型 `p7t`：三篇閱讀
+
+- 三份相關文件，合計 380–560 字。常見組合：廣告／公告＋e-mail＋表單；行程表＋e-mail＋評論；文章＋信件＋發票。三份之中可以有一份是表格（時刻表、價目表、訂單）。
+- 五題，依下列配置（順序依文件，見 8.0）：
+  1. 一題**單篇**的主旨或目的（Why was the e-mail sent?），誘答用文中真的提到、但不是目的的事。
+  2. 一題**字義題**：In the e-mail, the word "X" in paragraph 2 is closest in meaning to。X 是常用多義字，正解是它在這裡的意思，**最強的誘答是它最常見的意思**（例：the figures were *settled* → decided，誘答 moved into a home）。
+  3. 一題 **NOT／true** 或推論題（What is indicated about…／What is NOT mentioned as…／What is suggested about…）。推論題的正解必須由文字推得出來，不能只是「有可能」。
+  4. **至少兩題跨文件題**：答案要把兩份文件的資訊合起來才拿得到（表單的訂購日期＋公告的折扣截止日 → 有沒有拿到折扣；e-mail 說選了最便宜的方案＋價目表 → 哪個方案的特點）。困難的跨文件題要三份都用到，或要先排除一個被後文更正的資訊。
+- **改述距離**（同第 2.3 節）：正解與文件之間至少距離 2；同字只准出現在誘答。
+- **誘答的做法**：
+  - **被更正的資訊**：第一份文件的原計畫，第三份改了；誘答是原計畫。
+  - **另一欄／另一行**：表格裡相鄰那一行，或另一個人、另一個日期。
+  - **提到但不是問的**：文中屬實，但不是題目問的那件事。
+  - **字面／最常見義**：字義題與推論題。
+- 文件要像真的：e-mail 有 To／From／Date／Subject，表單有欄位，評論有星等或日期。人名、公司名、地名、產品名都要虛構；同一組裡名字不要太像。
+
+### 8.3 閱讀的難度自測（L / D / B / S 的閱讀版）
+
+| 代號 | Part 6 | Part 7 |
+|---|---|---|
+| **L 局部** | 至少一個誘答在空格自己那一句裡文法對、意思順 | 至少一個誘答用了文件裡的字，或在某一份文件裡屬實 |
+| **D 距離** | 決定性線索在另一句或另一段 | 證據在兩處以上，或在題目指的那份文件以外 |
+| **B 誤信** | 誘答是學生會主動相信的（本句最自然的連接副詞、最常見字義、最近的名詞當代名詞先行詞） | 誘答是被更正的舊資訊、最常見字義、或字面讀法 |
+| **S 兩步** | 要先確認前文的時間或指涉，再判本句 | 要合併兩份文件、或計算日期／金額、或在 NOT 題逐一排除 |
+
+band 的判法同第 3.4 節：L 否 → 簡單；L 是＋D 或 B → 中等；L、D 是＋B 或 S → 困難。題組的 `level` 取題組裡最高的 band（同聽力）。
+
+**第七輪的目標（學習者要求偏難）**：以題計，簡單 ≤ 10%、困難 ≥ 50%。
+
+### 8.4 唯一答案（閱讀）
+
+- 正解要**被文件支持**；每個誘答要**被文件否定、或文件完全沒提**。「文件沒提，但也可能是真的」的選項放在 NOT 題以外的題型時，盲審要判它是否可辯護。
+- 推論題：如果一個誘答也能由文件合理推出，就是 `ambiguous`。
+- Part 6 句子插入：盲審者把四個句子逐一放進空格讀整段；有兩句都接得順 → `ambiguous`。
+- Part 6 字詞空格：用第 4.1 節的標準，但「整句」換成「整段（含前後句）」。
+
+### 8.5 格式
+
+```python
+{
+ "id": "r-p6-01", "type": "read", "format": "p6", "unit": "p6", "level": 3, "source": "hand", "reviewed": False, "v": 1,
+ "docs": [
+  {"kind": "E-mail",
+   "head": [["To", "..."], ["From", "..."], ["Date", "May 4"], ["Subject", "..."]],   # 沒有就 []
+   "title": None,                                                                      # 文章、公告的標題；沒有就 None
+   "paras": ["First paragraph with a {1} blank.", "Second paragraph. {2}"],          # 句子插入的空格自己就是一個 {n}
+   "zh": ["第一段的翻譯（空格填入正解）", "第二段的翻譯"]}                              # 與 paras 一樣長
+ ],
+ "questions": [
+  {"options": ["...", "...", "...", "..."], "answer": 2,                              # p6 的第 i 題對應 {i+1}；p6 沒有 "q"
+   "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
+   "explain": {"point": "...", "why": "...", "evidence": [[0, 1]],                    # [文件, 段落]；表格文件的段落 = 行號
+               "wrong": [...], "wrongMore": [...], "vocab": [["word", "中文"]]}}
+ ]
+}
+```
+
+- Part 7 `p7t`：`format` 寫 `p7t`、`unit` 寫 `p7-triple`，`docs` 三份，每題有 `"q"`。表格文件用 `"table": {"head": [...], "rows": [[...]]}` 代替 `paras`，`zh` 寫 `[]`。
+- `explain` 的欄位與規則同第 6 節；`why` 要寫明證據在哪一份文件的哪一段，跨文件題要寫怎麼合起來。

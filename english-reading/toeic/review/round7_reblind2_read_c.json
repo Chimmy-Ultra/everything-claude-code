@@ -1,0 +1,308 @@
+[
+ {
+  "id": "r-p7-04",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Web page",
+    "title": "Larkspur Table Catering: Office Lunch Packages",
+    "paras": [
+     "For eleven years, Larkspur Table has supplied lunches to businesses across the Halden Valley. Every dish is cooked in our Fenwick Road kitchen on the morning of your event and delivered ready to serve.",
+     "Garden Package ($14 per person): seasonal salads, two vegetable dishes, fresh bread and a fruit platter. Harvest Package ($19 per person): everything in the Garden Package, plus one hot main course of chicken or baked fish. Banquet Package ($26 per person): everything in the Harvest Package, plus a second hot main course, a dessert table and coffee service.",
+     "Booking policy: Please book at least ten days in advance. A deposit of 25 percent of the estimated food cost secures your date. Final guest numbers are due five days before the event, and your invoice will be based on that figure. Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses. Events held on a Saturday or Sunday carry an additional $60 staffing charge."
+    ]
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Dana Whitfield, Coldharbor Surveying"
+     ],
+     [
+      "To",
+      "Larkspur Table Catering"
+     ],
+     [
+      "Date",
+      "March 3"
+     ],
+     [
+      "Subject",
+      "Training day lunch"
+     ]
+    ],
+    "paras": [
+     "Our staff enjoyed the Harvest Package you provided for Arthur Penrose's retirement lunch in January, so we are coming back to you for our spring training day. Please note that we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby.",
+     "This time, several colleagues have asked for dessert and coffee, so please put us down for the package that includes them. We expect about 30 people and will send you the exact number before your deadline.",
+     "The date is less certain. We would like Thursday, March 20, but the session will be held in our new conference room, which the builders have promised to finish by March 18. If they run late, we will move the training to Saturday, March 22. I will confirm the date by March 12. Either way, could the food arrive by 11:30? Our morning session breaks at noon.",
+     "Our accounts team will pay the deposit tomorrow.\nMany thanks,\nDana Whitfield, Office Manager"
+    ]
+   },
+   {
+    "kind": "Invoice",
+    "head": [
+     [
+      "Invoice no.",
+      "LT-2217"
+     ],
+     [
+      "Client",
+      "Coldharbor Surveying, 14 Mill Lane, Ashby"
+     ],
+     [
+      "Attn",
+      "Ms. Dana Whitfield, Office Manager"
+     ],
+     [
+      "Event",
+      "Staff training day lunch"
+     ],
+     [
+      "Issued",
+      "March 24"
+     ]
+    ],
+    "title": "Larkspur Table Catering: Invoice",
+    "table": {
+     "head": [
+      "Item",
+      "Details",
+      "Amount"
+     ],
+     "rows": [
+      [
+       "Lunch package",
+       "34 guests at $26.00",
+       "$884.00"
+      ],
+      [
+       "Delivery",
+       "Flat fee",
+       "$35.00"
+      ],
+      [
+       "Staffing",
+       "Service team surcharge",
+       "$60.00"
+      ],
+      [
+       "Deposit",
+       "Received March 4",
+       "-$195.00"
+      ],
+      [
+       "Balance due",
+       "Payable within 14 days",
+       "$784.00"
+      ]
+     ]
+    }
+   }
+  ],
+  "questions": [
+   {
+    "q": "In the Web page, the word \"secures\" in paragraph 3 is closest in meaning to",
+    "options": {
+     "A": "fastens",
+     "B": "protects",
+     "C": "obtains",
+     "D": "guarantees"
+    }
+   },
+   {
+    "q": "Why did Ms. Whitfield send the e-mail?",
+    "options": {
+     "A": "To report a change of office address",
+     "B": "To order catering for a staff event",
+     "C": "To praise a lunch served earlier",
+     "D": "To give a final number of guests"
+    }
+   },
+   {
+    "q": "What is suggested about the lunch Ms. Whitfield ordered?",
+    "options": {
+     "A": "It had more main dishes than in January.",
+     "B": "It was paid for in full in advance.",
+     "C": "It was the same package as in January.",
+     "D": "It was cooked at Coldharbor's new office."
+    }
+   },
+   {
+    "q": "Why was Coldharbor Surveying charged $35?",
+    "options": {
+     "A": "It added coffee service to its order.",
+     "B": "It wanted the food by a set time.",
+     "C": "Its new office is outside the free-delivery area.",
+     "D": "It booked less than ten days ahead."
+    }
+   },
+   {
+    "q": "What is most likely true about the training day?",
+    "options": {
+     "A": "It took place on the date first proposed.",
+     "B": "Its final guest count fell short of the estimate.",
+     "C": "It took place on the builders' promised finish date.",
+     "D": "It took place two days later than first proposed."
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p7-05",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Itinerary",
+    "head": [
+     [
+      "Date",
+      "Saturday, June 14"
+     ],
+     [
+      "Fare",
+      "$68 per adult, including lunch and all entry fees"
+     ]
+    ],
+    "title": "Thornfield Coach Tours: Valley Heritage Day Tour",
+    "table": {
+     "head": [
+      "Time",
+      "Stop",
+      "Details"
+     ],
+     "rows": [
+      [
+       "7:45 a.m.",
+       "Kingsgate Bus Station, Bay 6",
+       "Departure (please arrive 15 minutes early)"
+      ],
+      [
+       "9:30 a.m.",
+       "Corvale Abbey",
+       "Guided walk through the twelfth-century ruins"
+      ],
+      [
+       "11:15 a.m.",
+       "Lindell Water",
+       "Forty-minute cruise to the island tea house"
+      ],
+      [
+       "12:45 p.m.",
+       "Pennock",
+       "Lunch at the Old Mill Inn, then free time in the village"
+      ],
+      [
+       "3:00 p.m.",
+       "Fellbrook House",
+       "Tour of the house and its walled gardens"
+      ],
+      [
+       "5:30 p.m.",
+       "Kingsgate Bus Station",
+       "Return (approximate)"
+      ]
+     ]
+    }
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Imogen Castell, Thornfield Coach Tours"
+     ],
+     [
+      "To",
+      "Valley Heritage Day Tour passengers, June 14"
+     ],
+     [
+      "Date",
+      "June 9"
+     ],
+     [
+      "Subject",
+      "Saturday's tour"
+     ]
+    ],
+    "paras": [
+     "Thank you for booking the Valley Heritage Day Tour. We look forward to welcoming you on Saturday. Before then, please take a moment to read the information below.",
+     "The boat that serves the island tea house on Lindell Water has been taken out of service for engine repairs. In its place, we will visit Hessle Farm Dairy, where the owners will show you how their cheeses are made and offer a tasting. As the dairy is a short drive beyond Pennock, lunch at the Old Mill Inn will now begin at 1:30 p.m., and we expect to return to Kingsgate at about 6:15 p.m.",
+     "In addition, resurfacing work will close Bays 5 to 8 at Kingsgate Bus Station to coaches that weekend. Your coach will therefore leave from Bay 2, beside the main ticket hall, at the usual time.",
+     "We know that some of you chose this tour for the lake. If you would prefer not to travel, you may cancel for a full refund or move to our Lakeside Day Tour on June 28 at no extra cost. This offer stands until 5:00 p.m. on Thursday, June 12. Passengers who travel as planned will receive a $10 voucher toward a future tour.",
+     "Kind regards,\nImogen Castell, Customer Service"
+    ]
+   },
+   {
+    "kind": "Online review",
+    "head": [
+     [
+      "Reviewer",
+      "Rosalind Quaye"
+     ],
+     [
+      "Posted",
+      "June 16"
+     ],
+     [
+      "Rating",
+      "4 out of 5 stars"
+     ]
+    ],
+    "title": "Better than expected",
+    "paras": [
+     "My sister and I booked this tour mainly for the stop I had been looking forward to for months, so my heart sank when Thornfield wrote to say it had been dropped. We decided to go anyway, and I'm glad we did.",
+     "The day did not start well: we left Kingsgate almost twenty minutes late because an elderly couple had been waiting at Bay 6, and the driver had to go and find them. After that, though, everything ran smoothly. Our guide, Fergus, knew the history of the abbey inside out, and the replacement stop turned out to be the surprise of the day. The samples were generous, and I bought two wedges to take home.",
+     "My only real complaint is the timing. By the time we sat down at the inn, most of us were starving, and we didn't get back until well after six. Still, I've already put my voucher toward another Thornfield tour later this month."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did Ms. Castell send the e-mail?",
+    "options": {
+     "A": "To ask passengers to confirm bookings",
+     "B": "To explain a refund policy",
+     "C": "To announce changes to a trip",
+     "D": "To apologize for a late departure"
+    }
+   },
+   {
+    "q": "In the e-mail, the word \"stands\" in paragraph 4 is closest in meaning to",
+    "options": {
+     "A": "remains valid",
+     "B": "is located",
+     "C": "is on hold",
+     "D": "is displayed"
+    }
+   },
+   {
+    "q": "What is suggested about the couple mentioned in the review?",
+    "options": {
+     "A": "They were at the bay by the ticket hall.",
+     "B": "They relied on outdated departure details.",
+     "C": "They had canceled their booking.",
+     "D": "They misread the departure time."
+    }
+   },
+   {
+    "q": "What had Ms. Quaye most looked forward to?",
+    "options": {
+     "A": "A trip on a lake",
+     "B": "A cheese-making demonstration",
+     "C": "A guided walk through ruins",
+     "D": "A visit to walled gardens"
+    }
+   },
+   {
+    "q": "What is NOT mentioned in the review?",
+    "options": {
+     "A": "Traveling with a relative",
+     "B": "Buying a product",
+     "C": "Being hungry before a meal",
+     "D": "Receiving a full refund"
+    }
+   }
+  ]
+ }
+]

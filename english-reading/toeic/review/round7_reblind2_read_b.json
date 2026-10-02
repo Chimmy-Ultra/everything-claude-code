@@ -1,0 +1,354 @@
+[
+ {
+  "id": "r-p7-01",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Web page",
+    "title": "Brightwater Packaging Summit: Program for Thursday, April 16, Harlow Convention Center",
+    "table": {
+     "head": [
+      "Time",
+      "Session",
+      "Speaker",
+      "Room"
+     ],
+     "rows": [
+      [
+       "8:30–9:15",
+       "Opening address: Where packaging goes next",
+       "Helen Marsh",
+       "Main Hall"
+      ],
+      [
+       "9:30–10:30",
+       "Panel: Lighter boxes, lower freight costs",
+       "Owen Batista and guests",
+       "Main Hall"
+      ],
+      [
+       "10:45–12:00",
+       "Workshop A: Labels that survive cold storage (separate ticket required, $45)",
+       "Keiko Tran",
+       "Room 204"
+      ],
+      [
+       "12:00–1:15",
+       "Lunch (included with all passes)",
+       "—",
+       "Terrace Café"
+      ],
+      [
+       "1:30–2:45",
+       "Workshop B: Designing with recycled board (separate ticket required, $45)",
+       "Samuel Adeyemi",
+       "Room 210"
+      ],
+      [
+       "3:00–4:00",
+       "Closing panel: What retailers now expect from suppliers",
+       "Lucia Ortega and guests",
+       "Main Hall"
+      ]
+     ]
+    }
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Martin Kessler <mkessler@dalbrookfoods.com>"
+     ],
+     [
+      "To",
+      "registration@brightwatersummit.com"
+     ],
+     [
+      "Date",
+      "April 2"
+     ],
+     [
+      "Subject",
+      "Change to my registration"
+     ]
+    ],
+    "paras": [
+     "I am registered for the Thursday program of the summit, including the 1:30 workshop on designing with recycled board. Unfortunately, our plant in Fenwold has just scheduled a supplier audit for the afternoon of April 16, and as the plant's quality manager I will need to leave the convention center by 1:00 P.M. to get there in time.",
+     "Would it be possible to transfer my workshop ticket to the late-morning workshop instead? We are about to replace the labels on our entire frozen range, so that topic would be almost as useful to me as the one I originally chose. I would still like to attend the opening address and the panel that follows it.",
+     "If a transfer cannot be arranged, please cancel the workshop ticket alone and refund the fee to my company card. I will attend the morning sessions either way. My registration number is BPS-4471."
+    ]
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Ayumi Sato <registration@brightwatersummit.com>"
+     ],
+     [
+      "To",
+      "Martin Kessler <mkessler@dalbrookfoods.com>"
+     ],
+     [
+      "Date",
+      "April 3"
+     ],
+     [
+      "Subject",
+      "RE: Change to my registration"
+     ]
+    ],
+    "paras": [
+     "Dear Mr. Kessler, thank you for letting us know about the change in your plans. I am sorry to say that the cold-storage labeling workshop filled up last week, and eleven people are already on the waiting list for it.",
+     "There is, however, another solution. Because so many attendees asked for Mr. Adeyemi's session, he has agreed to give it twice. The extra session will run in Room 112, in the same time slot as the cold-storage workshop, and its content will be identical to that of the afternoon session. I have already moved your ticket to it, so there is nothing more you need to do, and no refund will be necessary.",
+     "Please also note that the convention center needs extra time to set up the Main Hall, so the opening address will begin fifteen minutes later than shown in the online program. The rest of the day's schedule is unchanged. Badges can be collected at the registration desk on the ground floor from 7:30 A.M. Please wear yours at all sessions. We look forward to seeing you on the 16th."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the purpose of the first e-mail?",
+    "options": {
+     "A": "To withdraw from the summit",
+     "B": "To ask to switch to another session",
+     "C": "To ask for advice about product labels",
+     "D": "To say he will miss the opening address"
+    }
+   },
+   {
+    "q": "What is indicated about Workshop A?",
+    "options": {
+     "A": "It is led by Samuel Adeyemi.",
+     "B": "It is included with all passes.",
+     "C": "It will be held twice.",
+     "D": "It has more applicants than places."
+    }
+   },
+   {
+    "q": "Where will Mr. Kessler most likely be at 11:00 A.M. on April 16?",
+    "options": {
+     "A": "In Room 204",
+     "B": "In Room 210",
+     "C": "In Room 112",
+     "D": "In the Main Hall"
+    }
+   },
+   {
+    "q": "When will the first session that Mr. Kessler plans to attend most likely begin?",
+    "options": {
+     "A": "At 7:30 A.M.",
+     "B": "At 8:30 A.M.",
+     "C": "At 8:45 A.M.",
+     "D": "At 9:30 A.M."
+    }
+   },
+   {
+    "q": "In the second e-mail, the word \"collected\" in paragraph 3 is closest in meaning to",
+    "options": {
+     "A": "picked up",
+     "B": "gathered up",
+     "C": "put together",
+     "D": "saved up"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p7-02",
+  "format": "p7t",
+  "documents": [
+   {
+    "kind": "Price list",
+    "title": "Corbel Workspace Supply: Autumn Price List",
+    "table": {
+     "head": [
+      "Item no.",
+      "Product",
+      "Colors",
+      "Unit price"
+     ],
+     "rows": [
+      [
+       "DK-140",
+       "Height-adjustable desk, 140 cm wide",
+       "White, oak",
+       "$415"
+      ],
+      [
+       "DK-160",
+       "Height-adjustable desk, 160 cm wide",
+       "White, oak, graphite",
+       "$468"
+      ],
+      [
+       "CH-35",
+       "Mesh-back task chair",
+       "Black, gray",
+       "$189"
+      ],
+      [
+       "CH-40",
+       "Mesh-back task chair with headrest",
+       "Black",
+       "$226"
+      ],
+      [
+       "ST-02",
+       "Mobile storage unit, three drawers",
+       "White, graphite",
+       "$134"
+      ],
+      [
+       "SC-12",
+       "Acoustic desk screen",
+       "Gray, blue",
+       "$72"
+      ],
+      [
+       "—",
+       "Delivery within the metro area (free on orders of $3,000 or more)",
+       "—",
+       "$85"
+      ]
+     ]
+    }
+   },
+   {
+    "kind": "Order form",
+    "head": [
+     [
+      "Order no.",
+      "40-1187"
+     ],
+     [
+      "Order date",
+      "September 8"
+     ],
+     [
+      "Customer",
+      "Brennick & Hale Architects"
+     ],
+     [
+      "Contact",
+      "Yusuf Demir, office manager"
+     ],
+     [
+      "Delivery address",
+      "77 Marlow Street, 3rd floor, Edgeton"
+     ],
+     [
+      "Required by",
+      "September 25 (six new members of our design team start work the following Monday)"
+     ],
+     [
+      "Special instructions",
+      "Deliveries must arrive before 9:00 A.M.; after that time, the building's freight elevator is reserved for the other tenants. Please call the front desk at 555-0148 when the truck is fifteen minutes away, and place the desks in the open area beside the windows."
+     ]
+    ],
+    "title": "Corbel Workspace Supply: Customer Order Form",
+    "table": {
+     "head": [
+      "Item no.",
+      "Description",
+      "Color",
+      "Quantity"
+     ],
+     "rows": [
+      [
+       "DK-160",
+       "Height-adjustable desk, 160 cm",
+       "Oak",
+       "6"
+      ],
+      [
+       "CH-40",
+       "Task chair with headrest",
+       "Black",
+       "6"
+      ],
+      [
+       "ST-02",
+       "Mobile storage unit",
+       "Graphite",
+       "6"
+      ]
+     ]
+    }
+   },
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "From",
+      "Ingrid Solberg <isolberg@corbelworkspace.com>"
+     ],
+     [
+      "To",
+      "Yusuf Demir <ydemir@brennickhale.com>"
+     ],
+     [
+      "Date",
+      "September 10"
+     ],
+     [
+      "Subject",
+      "Your order 40-1187"
+     ]
+    ],
+    "paras": [
+     "Dear Mr. Demir, thank you for your order, and congratulations on your growing team. The desks and storage units are in stock and will be delivered on Tuesday, September 22, before 9:00 A.M., as you requested. Our crew will bring everything up to your floor, set up the desks, and take all packaging away with them. Unfortunately, the chair you selected is on back order, and our manufacturer does not expect to ship more until the middle of October.",
+     "As an alternative, we can supply the same model without the headrest, which we carry in the color you chose. Its seat, frame, and adjustments are identical, and several of our clients actually prefer it for shorter staff members. If you accept this substitute, we will refund the difference in price for all six chairs, and they will arrive with the rest of your order.",
+     "Alternatively, we can deliver the chairs you ordered on their own once they arrive. In that case, however, the standard delivery fee would apply to the second shipment, since it would fall below our free-delivery threshold. Please let me know which option you prefer by Monday, September 14, so that I can reserve the chairs for you. I apologize for the inconvenience and thank you for your patience."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is NOT indicated about Mr. Demir's order?",
+    "options": {
+     "A": "Its total qualified for free delivery.",
+     "B": "It was placed over two weeks before the required-by date.",
+     "C": "It specified a time of day for delivery.",
+     "D": "It includes an item offered only in graphite."
+    }
+   },
+   {
+    "q": "What is the purpose of the e-mail?",
+    "options": {
+     "A": "To confirm delivery of the full order",
+     "B": "To report a supply problem with one product",
+     "C": "To request payment of a delivery fee",
+     "D": "To announce new furniture prices"
+    }
+   },
+   {
+    "q": "In the e-mail, the word \"carry\" in paragraph 2 is closest in meaning to",
+    "options": {
+     "A": "stock",
+     "B": "transport",
+     "C": "support",
+     "D": "publish"
+    }
+   },
+   {
+    "q": "What is suggested about the substitute chair?",
+    "options": {
+     "A": "It will arrive in mid-October.",
+     "B": "It comes in two colors.",
+     "C": "It has a headrest.",
+     "D": "It costs more than the original."
+    }
+   },
+   {
+    "q": "How much will Brennick & Hale most likely be refunded if Mr. Demir accepts the substitute?",
+    "options": {
+     "A": "$37",
+     "B": "$85",
+     "C": "$222",
+     "D": "$1,134"
+    }
+   }
+  ]
+ }
+]

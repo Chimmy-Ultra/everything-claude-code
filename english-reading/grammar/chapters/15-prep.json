@@ -1,0 +1,203 @@
+{
+  "id": "prep", "n": 15,
+  "title": "時間介系詞與常用片語",
+  "en": "Prepositions of Time and Fixed Phrases",
+  "lead": "介系詞（第 8 章）後面接名詞或 Ving。這一章前半講時間：<em>at</em>、<em>on</em>、<em>in</em> 怎麼分，<em>by</em> 和 <em>until</em>、<em>for</em> 和 <em>since</em> 為什麼不能互換，這些都有道理可推。後半講商業英文裡的固定片語，例如 <em>in charge of</em>、<em>on behalf of</em>，裡面的介系詞沒有道理可推，要整塊學起來。",
+  "check": [
+    {"type": "choose", "q": "<em>The new branch opens ___ March 3.</em>", "options": ["in", "on", "at"], "answer": 1, "why": "<em>March 3</em> 是某一天，日期前面用 <em>on</em>。只有月份的時候（<em>in March</em>）才用 <em>in</em>。"},
+    {"type": "choose", "q": "<em>Please submit your expense report ___ Friday.</em>", "options": ["by", "until"], "answer": 0, "why": "交報告是做一次就完成的動作，<em>Friday</em> 是最晚的期限，用 <em>by</em>。<em>until</em> 是「一直持續到」，用在會持續的狀態。"},
+    {"type": "choose", "q": "<em>Mr. Dunmore has worked in the downtown office ___ 2021.</em>", "options": ["for", "since", "during"], "answer": 1, "why": "<em>2021</em> 是起點，用 <em>since</em>。<em>for</em> 後面接一段長度（<em>for five years</em>）；<em>during</em> 是「在那段期間裡」，不表示從什麼時候開始。"},
+    {"type": "choose", "q": "<em>Ms. Novak is ___ the new training program.</em>", "options": ["in charge of", "in charge for", "on charge of"], "answer": 0, "why": "「負責」的固定說法是 <em>in charge of</em>，裡面的介系詞都不能換。這種片語沒有規則可推，要整塊學。"},
+    {"type": "choose", "q": "<em>In addition to ___ the new hires, Ms. Fraser manages the payroll.</em>", "options": ["train", "training", "trained"], "answer": 1, "why": "<em>in addition to</em> 整組是介系詞，最後的 <em>to</em> 後面放得進名詞（<em>in addition to the new hires</em>），所以接動作時用 Ving：<em>training</em>。"}
+  ],
+  "sections": [
+    {
+      "h": "at、on、in：從小到大",
+      "body": [
+        "時間前面用哪個介系詞，看時間的「大小」。",
+        "<em>at</em> 接一個<b>時刻</b>，像時鐘上的一個點：<em>at 9:30</em>、<em>at noon</em>、<em>at midnight</em>。",
+        "<em>on</em> 接<b>某一天</b>，像日曆上的一格：<em>on Tuesday</em>、<em>on June 5</em>、<em>on New Year's Day</em>。",
+        "<em>in</em> 接<b>比一天長的時段</b>，像一個範圍，事情發生在裡面：<em>in June</em>、<em>in 2027</em>、<em>in the third quarter</em>。一天裡的時段也用 <em>in</em>：<em>in the morning</em>、<em>in the afternoon</em>、<em>in the evening</em>。只有 <em>night</em> 例外，要說 <em>at night</em>。",
+        "有兩個地方要特別看。第一，一天裡的時段一旦加上某一天，就變成「某一天」，改用 <em>on</em>：<em>in the morning</em>，但 <em>on Friday morning</em>，決定介系詞的是 <em>Friday</em>。第二，前面直接放 <em>this</em>、<em>next</em>、<em>last</em>、<em>every</em> 時，什麼介系詞都不加：<em>next Monday</em>、<em>last year</em>、<em>every morning</em>。這些字已經把時間定好位置了，不需要介系詞，寫成 <em>on next Monday</em> 是錯的。（前面還有 <em>the</em> 的說法是另一回事，例如 <em>in the next two weeks</em>。）"
+      ],
+      "table": {"head": ["時間", "介系詞", "例子"], "rows": [
+        ["時刻", "<em>at</em>", "<em>at 9:30</em>、<em>at noon</em>"],
+        ["星期、日期", "<em>on</em>", "<em>on Tuesday</em>、<em>on June 5</em>"],
+        ["某一天的上午、下午", "<em>on</em>", "<em>on Friday morning</em>"],
+        ["月、年、季", "<em>in</em>", "<em>in June</em>、<em>in 2027</em>、<em>in the third quarter</em>"],
+        ["一天裡的時段", "<em>in</em>", "<em>in the morning</em>、<em>in the afternoon</em>"],
+        ["前面直接放 <em>this</em>、<em>next</em>、<em>last</em>、<em>every</em>", "不加", "<em>next Monday</em>、<em>last year</em>"]
+      ]},
+      "ex": [
+        {"en": "The airport shuttle leaves <u>at</u> 7:15 every morning.", "zh": "機場接駁車每天早上七點十五分出發。", "note": "<em>every morning</em> 前面不加介系詞。"},
+        {"en": "The board meets <u>on</u> the first Monday of each month.", "zh": "董事會在每個月的第一個星期一開會。"},
+        {"en": "Sales usually rise <u>in</u> the fourth quarter.", "zh": "銷售通常在第四季上升。"},
+        {"en": "The new manager starts <u>next</u> Monday.", "zh": "新經理下週一開始上班。", "note": "<em>next Monday</em> 前面不加 <em>on</em>。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "<em>evening</em> 單獨用時是 <em>in the evening</em>。點出讓這句改用 <em>on</em> 的那個字。", "sentence": "The client dinner is on Friday evening at the Harbor Hotel.", "answer": [5], "why": "<em>Friday</em> 把時間定在某一天，某一天就用 <em>on</em>。<em>evening</em> 只是在說那一天的哪個時段。"}
+      ],
+      "takeaway": "時刻用 <em>at</em>，某一天用 <em>on</em>，比一天長用 <em>in</em>；前面有 <em>next</em>、<em>last</em>、<em>this</em>、<em>every</em> 就不加介系詞。"
+    },
+    {
+      "h": "in two weeks 和 within two weeks",
+      "body": [
+        "<em>in</em> 後面接一段時間長度，說的是未來的事時，意思是「從現在起，過了這段時間」，也就是「……之後」：<em>The renovation will be finished in about three weeks.</em>（大約三週後完工）。中文很容易把它想成「三週內」，但它說的是一個時間點：大約三週後。",
+        "「之內」要用 <em>within</em>：<em>within two weeks</em> 是「不超過兩週，這段期間內任何時候都可以」。退款、回覆、交貨的期限常用它：<em>Refunds are processed within ten business days.</em>",
+        "拿兩句比：<em>We will announce the results in two weeks.</em>（兩週後公布）；<em>We will announce the results within two weeks.</em>（兩週內公布，可能更早）。想說的是「最晚不超過」，就用 <em>within</em>。"
+      ],
+      "ex": [
+        {"en": "The renovation will be finished <u>in</u> about three weeks.", "zh": "整修大約三週後完工。"},
+        {"en": "Refunds are processed <u>within</u> ten business days.", "zh": "退款會在十個工作天內處理完成。"},
+        {"en": "Please reply <u>within</u> 48 hours of receiving this message.", "zh": "請在收到這封訊息後四十八小時內回覆。", "note": "<em>within</em> + 長度 + <em>of</em> + 事件：從那件事算起多久之內。"}
+      ],
+      "takeaway": "<em>in two weeks</em> 是「兩週後」，<em>within two weeks</em> 是「兩週之內」。"
+    },
+    {
+      "h": "by 和 until：做完一次，還是一直持續",
+      "body": [
+        "<em>by</em> 和 <em>until</em> 中文常常都翻成「到……為止」，所以很容易混。其實它們回答的是兩個不同的問題。",
+        "<em>by</em> 回答「<b>最晚什麼時候要做完？</b>」它是期限，搭配做一次就完成的動作：交、付、回覆、抵達、完成。<em>Please submit the report by Friday.</em>（最晚星期五要交，星期三交也可以）",
+        "<em>until</em> 回答「<b>一直持續到什麼時候？</b>」它搭配會持續的狀態或動作：待著、等、開著、關著、維持。<em>The lobby will remain closed until 2 p.m.</em>（從現在一直關著，到兩點才開）",
+        "換錯會怎樣？<em>Please submit the report until Friday.</em> 變成「請一直交報告，交到星期五為止」。交報告不是能持續的事，句子就說不通。判斷時不要只看動詞，直接問那個時間的作用：它是「最晚要完成的期限」（<em>by</em>），還是「這個狀態一直持續到那時才結束」（<em>until</em>）？同樣是狀態，<em>The room must be ready by 9 a.m.</em>（最晚九點要準備好）用 <em>by</em>，<em>The room will stay closed until 9 a.m.</em>（一直關到九點）用 <em>until</em>。",
+        "<em>until</em> 和否定一起用時，意思是「直到……才」：<em>The parts won't arrive until Tuesday.</em>（星期二才會到）。這是從「一直沒到，持續到星期二」來的。"
+      ],
+      "table": {"head": ["比較", "<em>by</em>", "<em>until</em>"], "rows": [
+        ["回答的問題", "最晚什麼時候要做完", "一直持續到什麼時候"],
+        ["常搭配的動詞（只是傾向）", "<em>submit</em>、<em>pay</em>、<em>reply</em>、<em>finish</em>、<em>arrive</em>、<em>be ready</em>", "<em>stay</em>、<em>wait</em>、<em>remain</em>、<em>be open</em>、<em>last</em>"],
+        ["中文", "在……之前（完成）", "一直到……"]
+      ]},
+      "ex": [
+        {"en": "Please return the signed contract <u>by</u> June 30.", "zh": "請在六月三十日（含）以前寄回簽好的合約。"},
+        {"en": "The lobby will remain closed <u>until</u> 2 p.m.", "zh": "大廳會一直關閉到下午兩點。"},
+        {"en": "We need the final figures <u>by</u> noon tomorrow.", "zh": "我們最晚明天中午需要最後的數字。"},
+        {"en": "The replacement parts won't arrive <u>until</u> next Tuesday.", "zh": "替換零件要到下週二才會到。", "note": "<em>not … until</em>：直到……才。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The conference room is reserved for our team ___ 3 p.m., so no other group can use it before then.</em>", "options": ["by", "until"], "answer": 1, "why": "「被預約」是一段持續的狀態，一直持續到三點，用 <em>until</em>。<em>by</em> 是一次性動作的期限，放在這裡說不通。"}
+      ],
+      "takeaway": "<em>by</em> 回答「最晚什麼時候要完成」，是期限；<em>until</em> 回答「一直持續到什麼時候」。"
+    },
+    {
+      "h": "for 和 since：一段長度，還是一個起點",
+      "body": [
+        "<em>for</em> 接一段<b>長度</b>，回答「多久」：<em>for three years</em>、<em>for two hours</em>、<em>for a long time</em>。",
+        "<em>since</em> 接一個<b>起點</b>，回答「從什麼時候開始」：<em>since 2020</em>、<em>since March</em>、<em>since last Monday</em>、<em>since the merger</em>。",
+        "同一件事兩種說法都可以，只是角度不同：<em>Ms. Grant has managed the branch for six years.</em>（管了六年）；<em>Ms. Grant has managed the branch since 2020.</em>（從 2020 年開始管）。換錯就壞：<em>since six years</em>，六年不是一個時間點；<em>for 2020</em>，2020 不是一段長度。",
+        "<em>since</em> 說的是「從過去某一點一直到現在」，所以常跟現在完成式（<em>has managed</em>、<em>have worked</em>，第 4 章）一起出現。<em>for</em> 沒有這個限制，什麼時態都能用：<em>The training lasted for three days.</em>",
+        "<em>since</em> 後面也可以接子句，這時它是連接詞（第 8 章）：<em>since we moved to the new office</em>。"
+      ],
+      "ex": [
+        {"en": "Ms. Grant has managed the Ferngate branch <u>for</u> six years.", "zh": "Grant 女士管理 Ferngate 分店已經六年了。"},
+        {"en": "Ms. Grant has managed the Ferngate branch <u>since</u> 2020.", "zh": "Grant 女士從 2020 年起管理 Ferngate 分店。"},
+        {"en": "The elevator has been out of service <u>since</u> Monday.", "zh": "電梯從星期一起就停用了。"},
+        {"en": "The training workshop lasted <u>for</u> three days.", "zh": "訓練工作坊為期三天。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Our company has used this supplier ___ more than ten years.</em>", "options": ["for", "since"], "answer": 0, "why": "<em>more than ten years</em> 是一段長度（多久），用 <em>for</em>。<em>since</em> 後面要接起點，例如 <em>since 2015</em>。"}
+      ],
+      "takeaway": "「多久」用 <em>for</em>，「從什麼時候開始」用 <em>since</em>；<em>since</em> 常跟現在完成式一起出現。"
+    },
+    {
+      "h": "during、throughout、prior to",
+      "body": [
+        "<em>during</em> 接一個<b>事件或時段的名稱</b>，意思是「在那段期間裡」：<em>during the meeting</em>、<em>during the holidays</em>、<em>during lunch</em>。它不接長度：<em>during three hours</em> 是錯的，長度要用 <em>for</em>。兩個可以一起出現：<em>Our team worked for ten hours during the system upgrade.</em>",
+        "<em>during</em> 是介系詞，後面不能接子句。要接子句，用連接詞 <em>while</em>（第 8 章）：<em>during the presentation</em>，但 <em>while Mr. Caldwell was presenting</em>。",
+        "<em>throughout</em> 是「<b>從頭到尾</b>」，強調整段期間都是這樣：<em>throughout the year</em>（一整年都）、<em>throughout the conference</em>（整個會議期間）。<em>during the conference</em> 可能只是會議中的某個時候；<em>throughout the conference</em> 是每個時候。",
+        "<em>prior to</em> 就是正式一點的 <em>before</em>，常出現在通知和規定裡：<em>prior to the meeting</em>、<em>prior to departure</em>。它整組是一個介系詞，後面接名詞或 Ving：<em>prior to entering the building</em>。為什麼 <em>to</em> 後面不接原形，本章後面講固定片語時會說明。"
+      ],
+      "table": {"head": ["介系詞", "後面接", "意思"], "rows": [
+        ["<em>for</em>", "長度（<em>three hours</em>）", "持續多久"],
+        ["<em>during</em>", "事件、時段的名稱（<em>the meeting</em>）", "在那段期間裡（可能是其中某個時候，也可能是整段）"],
+        ["<em>throughout</em>", "事件、時段的名稱（<em>the year</em>）", "從頭到尾每個時候"],
+        ["<em>within</em>", "長度（<em>ten days</em>）", "不超過這段時間"],
+        ["<em>prior to</em>", "名詞或 Ving（<em>the meeting</em>）", "在……之前（正式）"]
+      ]},
+      "ex": [
+        {"en": "Please keep your phone on silent <u>during</u> the presentation.", "zh": "簡報期間請把手機調成靜音。"},
+        {"en": "Our support team is available <u>throughout</u> the holiday season.", "zh": "整個假期期間，我們的客服團隊都有人值班。"},
+        {"en": "All visitors must sign in <u>prior to</u> entering the factory.", "zh": "所有訪客進入工廠前都必須登記。"},
+        {"en": "Our team worked <u>for</u> ten hours <u>during</u> the system upgrade.", "zh": "系統升級期間，我們團隊工作了十個小時。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Mr. Voss answered several emails ___ the training session.</em>", "options": ["during", "while"], "answer": 0, "why": "空格後面是 <em>the training session</em>，一個名詞，沒有自己的動詞，所以用介系詞 <em>during</em>。<em>while</em> 是連接詞，後面要接子句（<em>while he was waiting</em>）。"}
+      ],
+      "takeaway": "<em>during</em> 接事件或時段的名稱，<em>throughout</em> 是從頭到尾，<em>prior to</em> 是正式的 <em>before</em>；三個都是介系詞，後面不能接子句。<em>during</em>、<em>throughout</em> 後面接名詞，<em>prior to</em> 可以接名詞或 Ving。"
+    },
+    {
+      "h": "固定片語：整塊學，不要拆",
+      "body": [
+        "商業英文裡有很多「介系詞 + 名詞 + 介系詞」組成的片語：<em>in charge of</em>、<em>on behalf of</em>、<em>in accordance with</em>、<em>with regard to</em>、<em>in addition to</em>。它們整組的作用就像一個介系詞，後面接名詞。",
+        "這些片語裡的介系詞<b>沒有道理可推</b>。為什麼是 <em>in charge of</em>，不是 <em>on charge for</em>？沒有規則可以說明，英文就是固定這樣說，像中文說「打電話」，不說「做電話」。前半章「看時間大小選介系詞」的方法在這裡完全用不上，硬推只會推錯。",
+        "學的方法是<b>整塊學</b>。第一，連頭帶尾一起抄下來，包括最後那個介系詞：抄 <em>in charge of</em>，不要只抄 <em>charge</em>。第二，連後面接什麼一起抄：<em>in charge of</em> + 工作或部門。第三，用自己工作上的事造一個句子，例如 <em>I am in charge of the monthly sales report.</em> 句子比單字好記。第四，讀英文時看到這些片語，整組框起來讀，不要拆開。",
+        "整塊學的好處是：以後看到其中一個字被換掉，例如 <em>in charge for</em>，你會覺得不對勁，即使說不出規則。這種感覺就是從一個個整塊學來的片語累積出來的。"
+      ],
+      "table": {"head": ["片語", "意思", "例子"], "rows": [
+        ["<em>in charge of</em>", "負責", "<em>in charge of the budget</em>"],
+        ["<em>on behalf of</em>", "代表（某人或某單位）", "<em>on behalf of the company</em>"],
+        ["<em>in accordance with</em>", "依照（規定、合約）", "<em>in accordance with our policy</em>"],
+        ["<em>with regard to</em>", "關於", "<em>with regard to your request</em>"],
+        ["<em>in addition to</em>", "除了……之外（還有）", "<em>in addition to the base salary</em>"],
+        ["<em>according to</em>", "根據（某人、某資料的說法）", "<em>according to the report</em>"],
+        ["<em>in response to</em>", "回應", "<em>in response to rising costs</em>"],
+        ["<em>as a result of</em>", "由於", "<em>as a result of the delay</em>"]
+      ]},
+      "ex": [
+        {"en": "Mr. Osei is <u>in charge of</u> the new marketing campaign.", "zh": "Osei 先生負責新的行銷活動。"},
+        {"en": "Ms. Varga signed the agreement <u>on behalf of</u> Northgate Logistics.", "zh": "Varga 女士代表 Northgate 物流簽署協議。"},
+        {"en": "<u>With regard to</u> your request, we will send a revised quote on Monday.", "zh": "關於您的要求，我們星期一會寄出修改後的報價。"},
+        {"en": "All refunds are issued <u>in accordance with</u> our return policy.", "zh": "所有退款都依照我們的退貨規定辦理。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Mr. Diallo thanked the volunteers ___ the hotel's management.</em>", "options": ["on behalf of", "in accordance with", "with regard to"], "answer": 0, "why": "句意是 Diallo 先生「代表」飯店管理階層向志工道謝，用 <em>on behalf of</em>。<em>in accordance with</em> 是依照規定，<em>with regard to</em> 是關於，放進去都說不通。"}
+      ],
+      "takeaway": "固定片語的介系詞沒有道理可推，連頭帶尾、連後面接什麼，一起整塊學。"
+    },
+    {
+      "h": "有些片語最後的 to 是介系詞，不是 to V",
+      "body": [
+        "<em>in addition to</em>、<em>with regard to</em>、<em>according to</em>、<em>prior to</em>、<em>in response to</em> 都以 <em>to</em> 結尾。很多人看到 <em>to</em> 就接原形，因為 to V（第 6 章）就是 <em>to</em> + 原形。",
+        "但這些片語整組是一個介系詞，最後的 <em>to</em> 也是介系詞。介系詞後面接名詞或 Ving，不接原形。所以是 <em>In addition to managing the team</em>，不是 <em>In addition to manage the team</em>。",
+        "怎麼分辨？在 <em>to</em> 後面放一個普通名詞試試看。<em>in addition to the salary</em> 說得通，表示這個 <em>to</em> 是介系詞，要接動詞就用 Ving。<em>We plan to the salary</em> 說不通，表示 <em>plan to</em> 的 <em>to</em> 是 to V，後面用原形。",
+        "<em>look forward to</em> 也是同一個道理（第 6 章講過）：<em>We look forward to working with you.</em> 第 6 章列過的 <em>be committed to</em>、<em>be used to</em>、<em>contribute to</em>，後面接動作時也用 Ving。",
+        "不是所有以 <em>to</em> 結尾的片語都是這樣。<em>in order to</em>、<em>be able to</em>、<em>be about to</em>、<em>be supposed to</em>、<em>have to</em> 裡的 <em>to</em> 是 to V 的 <em>to</em>，後面接原形：<em>in order to reduce costs</em>。用上面的測試：<em>in order to the salary</em> 說不通，所以它的 <em>to</em> 是 to V。"
+      ],
+      "ex": [
+        {"en": "<u>In addition to</u> <u>managing</u> the team, Ms. Fraser trains all new hires.", "zh": "除了管理團隊，Fraser 女士還負責訓練所有新進人員。"},
+        {"en": "Please read the safety guide <u>prior to</u> <u>using</u> the equipment.", "zh": "使用設備前，請先閱讀安全指南。"},
+        {"en": "<u>In response to</u> rising costs, the airline raised its baggage fees.", "zh": "因應成本上升，這家航空公司調高了行李費。", "note": "<em>to</em> 後面接名詞片語 <em>rising costs</em>。"},
+        {"en": "We look forward to <u>working</u> with you.", "zh": "我們期待與您合作。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>In addition to ___ free Wi-Fi, the hotel offers a free airport shuttle.</em>", "options": ["provide", "providing", "provided"], "answer": 1, "why": "<em>in addition to</em> 整組是介系詞，最後的 <em>to</em> 不是 to V 的 <em>to</em>。介系詞後面接名詞或 Ving，所以用 <em>providing</em>。"}
+      ],
+      "takeaway": "<em>in addition to</em>、<em>prior to</em> 這類片語最後的 <em>to</em> 是介系詞，後面接名詞或 Ving；<em>in order to</em> 這類的 <em>to</em> 是 to V，後面接原形。"
+    },
+    {
+      "h": "意思相近的片語：according to 和 in accordance with",
+      "body": [
+        "這兩個中文都可以翻成「根據」，但用法不一樣。<em>according to</em> 最常見的用法是<b>引用說法</b>：某人、某份資料說了什麼。<em>According to the latest survey, most guests prefer mobile check-in.</em>",
+        "<em>in accordance with</em> 只用在<b>照著規定做</b>：一個動作符合規定、法律、合約或指示。<em>All refunds are issued in accordance with our return policy.</em> 它不能用來引用說法：<em>In accordance with the forecast, sales will rise.</em> 就壞了，預測不是一條要遵守的規定，銷售也不是在「照著做」。",
+        "<em>according to</em> 也可以表示「照著」（<em>according to plan</em>，照計畫），所以範圍比較大；<em>in accordance with</em> 範圍比較小。判斷時先問：這句在說「某某說了什麼」，還是「某個動作照著規定做」？前者只能用 <em>according to</em>。",
+        "還有一點：<em>according to</em> 一般不用在自己的意見上。要說「依我看」，用 <em>in my opinion</em>，不說 <em>according to me</em>。"
+      ],
+      "ex": [
+        {"en": "<u>According to</u> the latest survey, most guests prefer mobile check-in.", "zh": "根據最新的調查，大部分的住客偏好用手機辦理入住。"},
+        {"en": "<u>According to</u> Mr. Reyes, the shipment left the warehouse this morning.", "zh": "根據 Reyes 先生的說法，這批貨今天早上已經從倉庫送出了。"},
+        {"en": "All chemicals must be stored <u>in accordance with</u> safety regulations.", "zh": "所有化學品都必須依照安全規定存放。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>___ the weather forecast, the storm will reach the coast tonight.</em>", "options": ["According to", "In accordance with"], "answer": 0, "why": "這句在引用天氣預報說了什麼，用 <em>According to</em>。<em>in accordance with</em> 是「照著規定做」，預報不是規定，暴風雨也不是在照著做。"}
+      ],
+      "takeaway": "引用某人或某份資料的說法用 <em>according to</em>；照著規定、合約做事用 <em>in accordance with</em>。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "Please send me the final draft until Thursday.", "right": "Please send me the final draft by Thursday.", "why": "寄稿子是一次就完成的動作，要用表示期限的 <em>by</em>。"},
+    {"wrong": "Mr. Keane has worked here since five years.", "right": "Mr. Keane has worked here for five years.", "why": "<em>five years</em> 是長度，用 <em>for</em>；<em>since</em> 接起點，例如 <em>since 2021</em>。"},
+    {"wrong": "The quarterly review is on next Tuesday.", "right": "The quarterly review is next Tuesday.", "why": "前面有 <em>next</em>，就不加介系詞。"},
+    {"wrong": "Ms. Ellis is in charge for the new project.", "right": "Ms. Ellis is in charge of the new project.", "why": "固定片語是 <em>in charge of</em>，介系詞不能換。"},
+    {"wrong": "All staff must complete the training prior to operate the forklift.", "right": "All staff must complete the training prior to operating the forklift.", "why": "<em>prior to</em> 的 <em>to</em> 是介系詞，後面接 Ving。"}
+  ],
+  "workbook": ["prep"]
+}

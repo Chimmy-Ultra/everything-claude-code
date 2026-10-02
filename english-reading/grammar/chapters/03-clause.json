@@ -1,0 +1,472 @@
+{
+  "id": "clause",
+  "n": 3,
+  "title": "片語和子句",
+  "en": "Phrases and Clauses",
+  "lead": "這一章只問一件事：一組字裡，有沒有自己的主詞和有時態的動詞。有，就是子句；沒有，就是片語。聽起來簡單，但連接詞和介系詞（第 8 章）、關係代名詞（第 9 章）、假設語氣（第 10 章）都建立在這個分辨上：<em>because</em> 和 <em>because of</em> 意思一樣，差別就在後面接子句還是片語。這一章慢慢講，後面才走得快。",
+  "check": [
+    {
+      "type": "choose",
+      "q": "<em>during the training session</em> 是片語還是子句？",
+      "options": [
+        "片語",
+        "子句"
+      ],
+      "answer": 0,
+      "why": "裡面只有介系詞 <em>during</em> 和名詞 <em>the training session</em>，找不到有時態的動詞，是片語。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>after the client signed the contract</em> 是片語還是子句？",
+      "options": [
+        "片語",
+        "子句"
+      ],
+      "answer": 1,
+      "why": "有主詞 <em>the client</em>，也有有時態的動詞 <em>signed</em>，是子句。前面的 <em>after</em> 只是帶頭的字。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>after signing the contract</em> 是片語還是子句？",
+      "options": [
+        "片語",
+        "子句"
+      ],
+      "answer": 0,
+      "why": "<em>signing</em> 是 Ving，不是有時態的動詞，而且這組字裡沒有自己的主詞（簽的人要回頭看主要子句才知道）。所以是片語。"
+    },
+    {
+      "type": "choose",
+      "q": "哪一句是對的？",
+      "options": [
+        "Although the delay, the event started on time.",
+        "Despite the delay, the event started on time."
+      ],
+      "answer": 1,
+      "why": "<em>the delay</em> 只是名詞，沒有動詞，是片語。片語前面用介系詞 <em>despite</em>；<em>although</em> 是連接詞，後面要接子句。"
+    },
+    {
+      "type": "choose",
+      "q": "哪一句是對的？",
+      "options": [
+        "The shipment was late, the store opened on time.",
+        "The shipment was late, but the store opened on time."
+      ],
+      "answer": 1,
+      "why": "有兩個有時態的動詞（<em>was</em>、<em>opened</em>），就是兩個子句，中間要有一個連接的字。只有逗號接不起來；加上 <em>but</em> 才行。"
+    }
+  ],
+  "sections": [
+    {
+      "h": "片語：一組字，沒有自己的主詞和動詞",
+      "body": [
+        "第 2 章說過，句子裡有很多「一串字」：<em>of our Westbrook branch</em>、<em>for next year</em>、<em>the new sales manager</em>。一組字合起來當一個單位用，但裡面<b>沒有自己的主詞＋有時態的動詞</b>，就叫<b>片語</b>。",
+        "片語可以很短（<em>in May</em>），也可以很長（<em>because of the unexpected delay at the port</em>）。長短不是重點，重點是裡面找不到「誰＋有時態的動詞」。",
+        "片語自己不能成為一句話。<em>In the morning.</em>、<em>Because of the delay.</em> 單獨寫出來，讀的人會等下文：早上怎樣？因為延誤，所以怎樣？",
+        "常見的片語有四種。以名詞為中心的，叫<b>名詞片語</b>（<em>the quarterly sales report</em>）。介系詞帶頭的，叫<b>介系詞片語</b>（<em>after the meeting</em>、<em>despite the rain</em>）。另外還有 to V 帶頭的（<em>to reduce costs</em>）和 Ving 帶頭的（<em>reviewing the budget</em>）。後面的章會用到「名詞片語」「介系詞片語」這兩個名稱；其餘的，認得「沒有主詞＋有時態的動詞」就夠了。"
+      ],
+      "ex": [
+        {
+          "en": "<u>Because of the delay</u>, the meeting started at ten.",
+          "zh": "因為延誤，會議十點才開始。",
+          "note": "<em>because of the delay</em>：沒有動詞，是片語。"
+        },
+        {
+          "en": "The samples arrived <u>in the afternoon</u>.",
+          "zh": "樣品是下午到的。",
+          "note": "介系詞＋名詞，是片語。"
+        },
+        {
+          "en": "We hired two temporary workers <u>to handle the holiday orders</u>.",
+          "zh": "我們僱了兩名臨時人員來處理節慶訂單。",
+          "note": "to V 帶頭，沒有有時態的動詞，是片語。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "下面哪一組字是<b>片語</b>？",
+          "options": [
+            "since the merger last year",
+            "since the companies merged last year"
+          ],
+          "answer": 0,
+          "why": "<em>since the merger last year</em> 裡只有名詞 <em>the merger</em>，沒有動詞。另一組有主詞 <em>the companies</em> 和有時態的動詞 <em>merged</em>，是子句。"
+        }
+      ],
+      "takeaway": "片語是一組字，但裡面沒有「主詞＋有時態的動詞」，自己不能成句。"
+    },
+    {
+      "h": "子句：有自己的主詞和有時態的動詞",
+      "body": [
+        "一組字裡<b>有</b>自己的主詞和有時態的動詞，就是<b>子句</b>。<em>the truck was late</em> 是子句：主詞 <em>the truck</em>，動詞 <em>was</em>。前面加上 <em>because</em>，<em>because the truck was late</em> 仍然是子句。加了一個帶頭的字，裡面的主詞和動詞都還在。",
+        "第 2 章看的句子都只有一個子句，所以那裡說的「句子」就是一個子句。一句話可以只有一個子句（<em>The truck was late.</em>），也可以有好幾個（<em>The truck was late, so the meeting started without the samples.</em>）。",
+        "判斷的方法只有一個：在這組字裡找「誰＋有時態的動詞」。找到了，是子句；找不到，是片語。不要看長短，也不要看意思。<em>because of the delay</em> 和 <em>because the truck was late</em> 意思差不多，一個是片語，一個是子句。"
+      ],
+      "ex": [
+        {
+          "en": "The meeting started without the samples <u>because the truck was late</u>.",
+          "zh": "因為貨車晚到，會議在沒有樣品的情況下開始了。",
+          "note": "<em>the truck</em>（主詞）＋<em>was</em>（動詞），是子句。"
+        },
+        {
+          "en": "<u>While we were waiting for the client</u>, we reviewed the slides again.",
+          "zh": "等客戶的時候，我們又看了一次投影片。",
+          "note": "<em>we</em>（主詞）＋<em>were waiting</em>（動詞），是子句。"
+        },
+        {
+          "en": "<u>Although sales rose in March</u>, profits stayed flat.",
+          "zh": "雖然三月銷售增加，利潤卻持平。",
+          "note": "<em>sales</em>（主詞）＋<em>rose</em>（動詞），是子句。"
+        }
+      ],
+      "table": {
+        "head": [
+          "片語（沒有主詞＋動詞）",
+          "子句（有主詞＋動詞）"
+        ],
+        "rows": [
+          [
+            "<em>because of the delay</em>",
+            "<em>because the truck was late</em>"
+          ],
+          [
+            "<em>during the meeting</em>",
+            "<em>while we were meeting</em>"
+          ],
+          [
+            "<em>despite the rain</em>",
+            "<em>although it was raining</em>"
+          ],
+          [
+            "<em>after the inspection</em>",
+            "<em>after the inspector left</em>"
+          ]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>once the payment clears</em>（款項一入帳）是片語還是子句？",
+          "options": [
+            "片語",
+            "子句"
+          ],
+          "answer": 1,
+          "why": "主詞 <em>the payment</em>，有時態的動詞 <em>clears</em>（改成過去就是 <em>cleared</em>）。前面的 <em>once</em> 只是帶頭的字。"
+        }
+      ],
+      "takeaway": "找得到「誰＋有時態的動詞」就是子句，找不到就是片語。"
+    },
+    {
+      "h": "Ving、to V 和過去分詞不算：最容易看錯的地方",
+      "body": [
+        "這一節是整章的門檻。",
+        "<em>after signing the contract</em> 裡有 <em>signing</em>，看起來像動作，很多人就把它當成子句。可是第 2 章說過：Ving 和 to V 不是有時態的動詞。它們不會隨時間變，昨天簽、明天簽都是 <em>signing</em>；這組字裡也沒有自己的主詞：簽的人沒寫在這組字裡，要回頭看主要子句才知道。所以 <em>after signing the contract</em> 是<b>片語</b>。",
+        "比較 <em>after Mr. Brandt signed the contract</em>。主詞 <em>Mr. Brandt</em>，有時態的動詞 <em>signed</em>，是<b>子句</b>。",
+        "兩者意思一樣，結構不同。為什麼要分？因為帶頭的字會挑結構。<em>after</em> 兩種都能接，但 <em>during</em> 只接片語，<em>while</em> 接子句（<em>while</em> 後面省略主詞的寫法，第 8 章再談）。分不清楚，就會寫出 <em>during we were waiting</em> 這種句子。",
+        "檢查的方法：在那組字裡找有時態的動詞。只找到 Ving、to V，或過去分詞（<em>-ed</em> 的樣子。放在名詞後面時，像 <em>the contract signed by both parties</em> 裡的 <em>signed</em>，意思是「被雙方簽署的那份合約」；分詞第 6 章會講），就是片語。"
+      ],
+      "ex": [
+        {
+          "en": "<u>After signing the contract</u>, Mr. Brandt called his team.",
+          "zh": "簽完合約後，Brandt 先生打電話給他的團隊。",
+          "note": "<em>signing</em> 是 Ving，而且沒有主詞：片語。"
+        },
+        {
+          "en": "<u>After Mr. Brandt signed the contract</u>, he called his team.",
+          "zh": "Brandt 先生簽完合約後，打電話給他的團隊。",
+          "note": "<em>Mr. Brandt</em>（主詞）＋<em>signed</em>（有時態的動詞）：子句。"
+        },
+        {
+          "en": "We are hiring more staff <u>to shorten delivery times</u>.",
+          "zh": "我們正在增聘人手，以縮短交貨時間。",
+          "note": "<em>to shorten</em> 是 to V，不是有時態的動詞：片語。"
+        },
+        {
+          "en": "The contract <u>signed by both parties</u> is in the folder.",
+          "zh": "雙方簽署的合約放在資料夾裡。",
+          "note": "<em>signed</em> 是過去分詞，放在名詞 <em>contract</em> 後面，說明是哪一份合約，不是有時態的動詞：<em>signed by both parties</em> 是片語。這句有時態的動詞是 <em>is</em>。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "下面哪一組字是<b>子句</b>？",
+          "options": [
+            "before leaving the office",
+            "before you leave the office",
+            "before the end of the day"
+          ],
+          "answer": 1,
+          "why": "只有 <em>you leave</em> 有主詞（<em>you</em>）和有時態的動詞（<em>leave</em>）。<em>leaving</em> 是 Ving；<em>the end of the day</em> 只是名詞。"
+        }
+      ],
+      "takeaway": "一組字裡如果只有 Ving、to V 或過去分詞，沒有有時態的動詞，就是片語。"
+    },
+    {
+      "h": "主要子句和從屬子句",
+      "body": [
+        "子句分兩種。<b>主要子句</b>自己就能成為一句話：<em>The meeting started without the samples.</em>。<b>從屬子句</b>前面有 <em>because</em>、<em>although</em>、<em>when</em>、<em>if</em>、<em>who</em>、<em>which</em> 這類帶頭的字，它有主詞也有動詞，卻不能單獨成句：<em>Because the truck was late.</em> 讀完，讀的人會等：所以呢？",
+        "帶頭的字一加上去，子句就從「一句話」變成「另一句話的一部分」。<em>The truck was late.</em> 是完整的；<em>because the truck was late</em> 只是一個理由，要掛在主要子句上：<em>The meeting started without the samples because the truck was late.</em>",
+        "拿掉會怎樣：拿掉主要子句，只剩從屬子句，句子就殘缺了。拿掉從屬子句，主要子句還站得住，只是少了理由、時間或條件。",
+        "從屬子句可以放在主要子句前面，也可以放後面。放前面時，中間通常加逗號：<em>Because the truck was late, the meeting started without the samples.</em>",
+        "找主要子句的方法：把帶頭的字和它帶出的子句蓋住，剩下能獨立成句的，就是主要子句。",
+        "<em>and</em>、<em>but</em>、<em>or</em>、<em>so</em> 接起來的兩個子句，是兩個<b>主要子句</b>：<em>The truck was late, so the meeting started without the samples.</em> 拿掉 <em>so</em>，兩邊各自還是完整的一句話。這和 <em>because</em>、<em>although</em> 不一樣：<em>because the truck was late</em> 沒有主要子句就站不住。所以「把帶頭的字和它帶出的子句蓋住」這個方法，只用在從屬子句（<em>because</em>、<em>although</em>、<em>when</em>、<em>if</em>、<em>who</em>）。"
+      ],
+      "ex": [
+        {
+          "en": "<u>We moved the meeting to Thursday</u> because Ms. Grant is out of the office.",
+          "zh": "因為 Grant 女士不在辦公室，我們把會議改到週四。",
+          "note": "底線是主要子句，自己能成句。"
+        },
+        {
+          "en": "If the client approves the design, <u>we will start production in June</u>.",
+          "zh": "如果客戶核准設計，我們六月就開始生產。",
+          "note": "<em>If</em> 帶頭的是從屬子句；主要子句在逗號後面。"
+        },
+        {
+          "en": "<u>Our hotel is fully booked</u> until the conference ends.",
+          "zh": "到會議結束前，我們飯店都客滿。",
+          "note": "<em>until the conference ends</em> 是從屬子句。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出這句的主要子句（所有字）。",
+          "sentence": "When the new printer arrives, the IT team will install it.",
+          "answer": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "why": "<em>When the new printer arrives</em> 由 <em>when</em> 帶頭，不能單獨成句，是從屬子句。逗號後面的 <em>the IT team will install it</em> 自己就是一句話，是主要子句。"
+        },
+        {
+          "type": "choose",
+          "q": "哪一個可以單獨成為一句話？",
+          "options": [
+            "Although the hotel was full.",
+            "The hotel was full.",
+            "Because of the full hotel."
+          ],
+          "answer": 1,
+          "why": "<em>The hotel was full.</em> 是主要子句，自己能成句。第一個有 <em>although</em> 帶頭，是從屬子句，要掛在主要子句上。第三個是片語，連動詞都沒有。"
+        }
+      ],
+      "takeaway": "主要子句自己能成句；從屬子句前面有帶頭的字，要掛在主要子句上。"
+    },
+    {
+      "h": "數動詞，數子句：每多一個子句，就要多一個連接的字",
+      "body": [
+        "第 2 章說：一個子句只有一個有時態的動詞。把它反過來用：<b>一句話裡有幾個有時態的動詞，就有幾個子句</b>。例外是第 2 章看過的那種：兩個動詞用 <em>and</em>、<em>but</em> 接起來，共用同一個主詞。",
+        "每多一個子句，就要多一個把它接進來的字：<em>and</em>、<em>but</em>、<em>so</em>、<em>because</em>、<em>although</em>、<em>when</em>、<em>if</em>、<em>who</em>、<em>which</em>……。兩個子句之間什麼都沒有，或只有一個逗號，句子就壞了。（兩個主要子句之間也可以用分號，第 8 章會用到。<em>that</em> 這類字在某些位置可以省略，這一章後面和第 9 章會提到。）",
+        "<em>The truck was late the meeting started without the samples.</em>：兩個有時態的動詞（<em>was</em>、<em>started</em>），零個連接的字，錯。",
+        "<em>The truck was late, the meeting started without the samples.</em>：只有一個逗號，還是錯。逗號只是停頓，不能把兩個子句接成一句。",
+        "修法有兩種。加一個連接的字：<em>The truck was late, so the meeting started…</em>，或 <em>Because the truck was late, the meeting started…</em>。或者乾脆分成兩句：<em>The truck was late. The meeting started…</em>。",
+        "這條規則是後面兩章的基礎。第 8 章：<em>however</em>、<em>therefore</em> 雖然有連接的意思，文法上卻不能把兩個子句接成一句，所以前面要用句號或分號（這種字叫連接副詞）。第 9 章：<em>who</em>、<em>which</em> 就是把第二個子句接進來的那個字。"
+      ],
+      "ex": [
+        {
+          "en": "The truck was late, <u>so</u> the meeting started without the samples.",
+          "zh": "貨車晚到，所以會議在沒有樣品的情況下開始了。",
+          "note": "兩個子句，一個連接的字 <em>so</em>。"
+        },
+        {
+          "en": "<u>Because</u> the truck was late, the meeting started without the samples.",
+          "zh": "因為貨車晚到，會議在沒有樣品的情況下開始了。",
+          "note": "兩個子句，一個連接的字 <em>because</em>。"
+        },
+        {
+          "en": "The truck was late. <u>However</u>, the meeting started on time.",
+          "zh": "貨車晚到了。不過，會議還是準時開始。",
+          "note": "<em>however</em> 不能把子句接成一句，所以前面用句號，分成兩句。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一句是對的？",
+          "options": [
+            "Our flight landed early, we took a taxi to the hotel.",
+            "Our flight landed early, and we took a taxi to the hotel.",
+            "Our flight landed early we took a taxi to the hotel."
+          ],
+          "answer": 1,
+          "why": "有兩個有時態的動詞（<em>landed</em>、<em>took</em>），就是兩個子句，中間要有一個連接的字。只有逗號或什麼都沒有，都接不起來。"
+        }
+      ],
+      "takeaway": "數有時態的動詞就知道有幾個子句；每多一個子句，就要多一個連接的字，逗號不算。"
+    },
+    {
+      "h": "同一個意思，兩種結構：預告第 8 章",
+      "body": [
+        "英文常常有一對字，意思一樣，一個接子句，一個接片語。差別在詞性（第 1 章）：接子句的是<b>連接詞</b>，接名詞或 Ving 的是<b>介系詞</b>。",
+        "選哪一個，先看後面：找得到主詞＋有時態的動詞，用連接詞；只有名詞或 Ving，用介系詞。這一步不用考慮意思，因為兩邊意思本來就一樣。",
+        "<em>before</em>、<em>after</em>、<em>until</em>、<em>since</em> 兩種身分都有，後面接子句或片語都可以。完整的清單和其他用法在第 8 章。"
+      ],
+      "ex": [
+        {
+          "en": "<u>Although</u> the budget is tight, we can still hire one designer.",
+          "zh": "雖然預算很緊，我們還是可以僱一位設計師。",
+          "note": "<em>although</em>＋子句（<em>the budget is tight</em>）。"
+        },
+        {
+          "en": "<u>Despite</u> the tight budget, we can still hire one designer.",
+          "zh": "儘管預算很緊，我們還是可以僱一位設計師。",
+          "note": "<em>despite</em>＋名詞片語（<em>the tight budget</em>）。"
+        },
+        {
+          "en": "Please silence your phone <u>during</u> the presentation.",
+          "zh": "簡報期間請把手機調成靜音。",
+          "note": "<em>during</em>＋名詞。"
+        },
+        {
+          "en": "Please silence your phone <u>while</u> Ms. Bauer is presenting.",
+          "zh": "Bauer 女士報告時，請把手機調成靜音。",
+          "note": "<em>while</em>＋子句（<em>Ms. Bauer is presenting</em>）。"
+        }
+      ],
+      "table": {
+        "head": [
+          "意思",
+          "連接詞＋子句",
+          "介系詞＋名詞／Ving"
+        ],
+        "rows": [
+          [
+            "因為",
+            "<em>because the flight was canceled</em>",
+            "<em>because of the canceled flight</em>"
+          ],
+          [
+            "雖然、儘管",
+            "<em>although the budget is tight</em>",
+            "<em>despite the tight budget</em>"
+          ],
+          [
+            "在……的期間",
+            "<em>while the office is closed</em>",
+            "<em>during the office closure</em>"
+          ]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The store stayed open ___ the power outage.</em> 空格放哪一個？",
+          "options": [
+            "while",
+            "during"
+          ],
+          "answer": 1,
+          "why": "後面 <em>the power outage</em>（停電）只是名詞，沒有動詞，是片語。接片語的是介系詞 <em>during</em>。"
+        }
+      ],
+      "takeaway": "意思一樣的一對字，看後面是子句還是片語來挑：子句用連接詞，片語用介系詞。"
+    },
+    {
+      "h": "句子裡面的子句：預告第 9 章",
+      "body": [
+        "子句不一定掛在句子的前面或後面，也可以<b>夾在句子裡面</b>，描述一個名詞。",
+        "<em>The supplier raised its prices.</em> 是一句話。想說是哪一家供應商，可以把一個子句塞在 <em>supplier</em> 後面：<em>The supplier <b>that we chose last spring</b> raised its prices.</em>。<em>that we chose last spring</em> 有主詞 <em>we</em>、有動詞 <em>chose</em>，是子句；它不能單獨成句，是從屬子句。",
+        "這時一句話裡有兩個有時態的動詞：<em>chose</em> 屬於裡面的子句，<em>raised</em> 屬於主要子句。把它們接起來的字是 <em>that</em>，就是第 5 節說的「每多一個子句，多一個連接的字」。這種跟在名詞後面、用 <em>who</em>、<em>which</em>、<em>that</em> 帶頭、描述名詞的子句，叫<b>關係子句</b>，第 9 章完整講。",
+        "帶頭的字有時自己就是子句的主詞。<em>The client who called this morning wants a full refund.</em> 裡，<em>who called this morning</em> 問「誰打電話？」，答案就是 <em>who</em>。<em>who</em>、<em>which</em>、<em>that</em> 後面直接接動詞的時候，都是這樣。",
+        "讀長句的方法：看到 <em>who</em>、<em>which</em>、<em>that</em> 緊跟在名詞後面，先把它帶出的子句括起來，括號外面剩下的就是主要子句。括號到哪裡結束？括號裡的子句有自己的動詞（<em>called</em>），再往後出現的下一個有時態的動詞（<em>wants</em>），就是主要子句的動詞，括號在它前面結束；後面沒有別的有時態的動詞，括號就一直到句尾。主詞通常是括號前面那個名詞；但如果那個名詞在介系詞後面，主詞還是第 2 章找到的中心名詞：<em>The report on the branches [that opened last year] is late.</em> 裡，括號前面是 <em>branches</em>，主詞卻是 <em>report</em>。",
+        "這個 <em>that</em> 常常被省略：<em>The supplier we chose last spring raised its prices.</em>。連接的字看不見了，但子句還在：<em>we chose</em> 仍然是主詞＋有時態的動詞。什麼時候可以省，第 9 章再講。"
+      ],
+      "ex": [
+        {
+          "en": "The supplier <u>that we chose last spring</u> raised its prices.",
+          "zh": "我們去年春天選定的那家供應商漲價了。",
+          "note": "括起底線部分，剩下 <em>The supplier raised its prices.</em>"
+        },
+        {
+          "en": "The client <u>who called this morning</u> wants a full refund.",
+          "zh": "今天早上打電話來的那位客戶要求全額退款。",
+          "note": "主要子句的動詞是 <em>wants</em>，不是 <em>called</em>。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出主要子句的動詞。",
+          "sentence": "The engineer who designed the new layout works in our Dalton office.",
+          "answer": [
+            7
+          ],
+          "why": "把 <em>who designed the new layout</em> 括起來，剩下 <em>The engineer works in our Dalton office.</em>。<em>designed</em> 是括號裡那個子句的動詞，<em>works</em> 才是主要子句的。"
+        }
+      ],
+      "takeaway": "名詞後面的 <em>who</em>、<em>which</em>、<em>that</em> 帶出一個子句；把它括起來，剩下的就是主要子句。"
+    },
+    {
+      "h": "子句也可以當受詞：that 子句",
+      "body": [
+        "有些動詞後面接的對象，不是一個名詞，而是一整句話。<em>Ms. Moreau confirmed that the order shipped on Monday.</em>：確認了什麼？確認了 <em>that</em> 後面那一整個子句。它站在受詞的位置（第 2 章），所以整個 <em>that</em> 子句就是 <em>confirmed</em> 的受詞。",
+        "這句有兩個有時態的動詞：<em>confirmed</em> 屬於主要子句，<em>shipped</em> 屬於 <em>that</em> 子句，把它們接起來的就是 <em>that</em>（第 5 節的規則）。這個 <em>that</em> 沒有「那個」的意思，只是連接的字。它和前一節的關係子句不同：關係子句描述前面的名詞，<em>that</em> 子句本身就是動詞要的那個對象。第 4 章的 <em>We expect that the parts will arrive</em> 和第 16 章的「<em>that</em> 子句」，都是這一種。"
+      ],
+      "ex": [
+        {
+          "en": "Ms. Moreau confirmed <u>that the order shipped on Monday</u>.",
+          "zh": "Moreau 女士確認訂單已在週一出貨。",
+          "note": "整個 <em>that</em> 子句是 <em>confirmed</em> 的受詞。"
+        },
+        {
+          "en": "The auditors reported <u>that the records were complete</u>.",
+          "zh": "稽核人員回報，紀錄都很完整。",
+          "note": "<em>reported</em> 屬於主要子句；<em>were</em> 屬於 <em>that</em> 子句。"
+        }
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The manager said that the shipment left on Friday.</em> 這句有幾個子句？",
+          "options": [
+            "一個",
+            "兩個",
+            "三個"
+          ],
+          "answer": 1,
+          "why": "有兩個有時態的動詞（<em>said</em>、<em>left</em>），就是兩個子句：主要子句 <em>The manager said</em>，加上 <em>that</em> 帶出的 <em>that the shipment left on Friday</em>。"
+        }
+      ],
+      "takeaway": "<em>that</em> 帶出的子句可以整個當動詞的受詞；有幾個有時態的動詞，就有幾個子句。"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Despite the shipment was late, the store opened on schedule.",
+      "right": "Although the shipment was late, the store opened on schedule.",
+      "why": "<em>the shipment was late</em> 有主詞和有時態的動詞，是子句。子句前面要用連接詞 <em>although</em>；<em>despite</em> 是介系詞，只接名詞或 Ving。"
+    },
+    {
+      "wrong": "Mr. Ford canceled his trip because his illness.",
+      "right": "Mr. Ford canceled his trip because of his illness.",
+      "why": "<em>his illness</em> 只是名詞，沒有動詞，是片語。接片語要用介系詞 <em>because of</em>。"
+    },
+    {
+      "wrong": "During we were waiting for the elevator, the fire alarm went off.",
+      "right": "While we were waiting for the elevator, the fire alarm went off.",
+      "why": "<em>we were waiting</em> 是子句，前面要用連接詞 <em>while</em>。<em>during</em> 是介系詞，只接名詞。"
+    },
+    {
+      "wrong": "Sales rose in the third quarter, profits fell.",
+      "right": "Sales rose in the third quarter, but profits fell.",
+      "why": "<em>rose</em> 和 <em>fell</em> 是兩個有時態的動詞，也就是兩個子句。逗號接不起來，要加連接詞 <em>but</em>。"
+    },
+    {
+      "wrong": "Because the hotel was fully booked.",
+      "right": "Because the hotel was fully booked, we stayed at a guesthouse nearby.",
+      "why": "<em>because</em> 帶頭的是從屬子句，不能單獨成句，要掛在一個主要子句上。"
+    }
+  ],
+  "workbook": [
+    "connect",
+    "relative"
+  ]
+}

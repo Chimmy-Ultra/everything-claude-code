@@ -1,0 +1,309 @@
+{
+  "unit": "p7-triple",
+  "lead": [
+    "Three related documents, such as a notice, an e-mail and an order form, with five questions. Some answers need facts from two or three documents together, and a word question asks what a word means in its sentence.",
+    "三份相關文件，例如公告、e-mail 和訂單，搭配五題。有些答案要把兩三份文件的資訊合起來才拿得到；字義題則問某個字在句子裡的意思。"
+  ],
+  "steps": [
+    [
+      "Skim each document's type, date and writer first. Note what each one adds: a plan, a change, an order or a review.",
+      "先略讀每份文件的種類、日期和寄件人或作者，記下每份提供什麼：計畫、變更、訂單或評論。"
+    ],
+    [
+      "Read the question and decide where to look: one document, or two or three that share a name, date or product.",
+      "讀題目，決定去哪裡找：一份文件，或是有共同人名、日期、產品的兩三份。"
+    ],
+    [
+      "For a question that links documents, find the shared item first, then check it against the rule, price or date in the other.",
+      "跨文件題先找出共同的項目，再拿它去對照另一份文件裡的規定、價格或日期。"
+    ],
+    [
+      "Before you choose, check whether a later document changes the earlier information.",
+      "選之前，確認後面的文件有沒有更改前面的資訊。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Purpose: the main request or news",
+        "目的題：主要的請求或消息"
+      ],
+      "body": [
+        "Why was the e-mail sent? Find the main thing the writer is asking for or announcing. Thanks, background and small details are true but are not the purpose.",
+        "Why was the e-mail sent? 找出寫信的人主要在要求或宣布的事。致謝、背景和小細節雖然屬實，卻不是目的。"
+      ],
+      "ex": [
+        [
+          "We met at last week's trade fair in Lanmoor. <em>I am writing to ask for a quote</em> for fifty office chairs.",
+          "我們上週在 Lanmoor 的商展見過面。我寫信是想詢問五十張辦公椅的報價。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Linking documents: one fact from each",
+        "跨文件：每份各取一個事實"
+      ],
+      "body": [
+        "One document gives a date, name or choice; another gives the rule, price or feature that applies to it. Find the shared item, then put the two together.",
+        "一份文件給日期、人名或選擇，另一份給適用的規定、價格或特點。先找出共同的項目，再把兩者合起來。"
+      ],
+      "ex": [
+        [
+          "Notice: orders placed <em>by May 15</em> ship free. Order form: date <em>May 17</em>. So the customer pays for shipping.",
+          "公告：五月十五日前下單免運費。訂單：日期五月十七日。所以顧客要付運費。"
+        ],
+        [
+          "E-mail: 'We chose the <em>cheapest plan</em>.' Price list: Basic $20, Plus $35, weekend support only with Plus. So: <em>no weekend support</em>.",
+          "E-mail：我們選了最便宜的方案。價目表：Basic 20 美元，Plus 35 美元，只有 Plus 有週末支援。所以：沒有週末支援。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "A later document can change the plan",
+        "後面的文件可能更改計畫"
+      ],
+      "body": [
+        "A schedule or ad gives the plan. A later e-mail may move the date, change the room or replace a speaker. Questions about what actually happens need the latest version. Check the dates to see which is later.",
+        "時程表或廣告給的是原計畫。後來的 e-mail 可能改日期、換會議室或換講者。問實際情況的題目要用最新的版本，所以要看日期，確定哪一份比較晚。"
+      ],
+      "ex": [
+        [
+          "Flyer: the sale ends <em>March 8</em>. Store e-mail, March 5: 'The sale has been extended to <em>March 15</em>.'",
+          "傳單：特賣三月八日結束。三月五日店家的 e-mail：特賣已延長到三月十五日。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Tables: read across the right row",
+        "表格：讀對的那一列"
+      ],
+      "body": [
+        "In a timetable, price list or order form, the row next to the right one looks just as reasonable. Find the exact item the question names, then read across that row only.",
+        "在時刻表、價目表或訂單裡，相鄰那一列看起來同樣合理。找到題目指的那個項目，只讀那一列。"
+      ],
+      "ex": [
+        [
+          "Q: When does Ms. Abe's tour start? Form: Ms. Abe, <em>Group B</em>. Schedule: Group A 9:00, <em>Group B 10:30</em>.",
+          "Q：Abe 女士的導覽幾點開始？報名表：Abe 女士，B 組。時程表：A 組九點，B 組十點半。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Word questions: the meaning in this sentence",
+        "字義題：這個句子裡的意思"
+      ],
+      "body": [
+        "Find the word in the paragraph the question names. It may have several meanings, and the one you know best may be a trap. Put each option in place of the word and read the sentence again.",
+        "到題目指定的那一段找出這個字。它可能有好幾個意思，你最熟的那個可能就是陷阱。把每個選項換進句子裡，重讀一次。"
+      ],
+      "ex": [
+        [
+          "The bank will <em>extend</em> a loan to the firm. Here it means offer, not make longer.",
+          "銀行將提供這家公司一筆貸款。這裡的 extend 是「提供」，不是「延長」。"
+        ],
+        [
+          "Drivers must <em>observe</em> the speed limit in the parking lot. Here it means obey, not watch.",
+          "駕駛人在停車場內必須遵守速限。這裡的 observe 是「遵守」，不是「觀察」。"
+        ],
+        [
+          "The report <em>covers</em> sales in all three regions. Here it means include, not put something over.",
+          "這份報告涵蓋三個地區的銷售。這裡的 covers 是「涵蓋、包含」，不是「蓋住」。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "NOT questions: cross out three",
+        "NOT 題：刪掉三個"
+      ],
+      "body": [
+        "What is NOT mentioned? Check each option against the documents, looking for the idea, not the exact words. The three the documents confirm are wrong answers; the one they never confirm, or contradict, is the answer. The details may be spread over two documents.",
+        "What is NOT mentioned? 逐一拿每個選項去文件裡核對，找的是意思，不是一模一樣的字。文件有證實的三個是錯的；文件沒有證實、甚至說相反的那個才是答案。這些細節可能分散在兩份文件裡。"
+      ],
+      "ex": [
+        [
+          "Q: What is NOT listed as a hotel feature? Ad: free parking, a gym, an airport shuttle. Answer: <em>free breakfast</em>.",
+          "Q：哪一項沒有列為飯店的設施？廣告：免費停車、健身房、機場接駁。答案：免費早餐。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Indicated and suggested: it must follow from the text",
+        "indicated 與 suggested：要由文字推得出來"
+      ],
+      "body": [
+        "What is indicated or suggested about someone? The answer may be reworded but must follow from the text. An option that is only possible, or that is true of another person, is wrong.",
+        "What is indicated / suggested about…? 答案可能經過改寫，但必須由文字推得出來。只是「有可能」的選項，或其實是在講別人的選項，都是錯的。"
+      ],
+      "ex": [
+        [
+          "Text: 'Mr. Osei has headed our Brenton office since 2019.' Suggested: he <em>has management experience</em>. Not suggested: he plans to retire.",
+          "原文：Osei 先生自 2019 年起主管我們的 Brenton 辦公室。可推得：他有管理經驗。推不出：他打算退休。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Q: Where will the workshop be held? [Schedule: Room 2. Later e-mail: The workshop has been moved to Room 5.] / A: In Room 5.",
+      "wrong": "Q: Where will the workshop be held? [Schedule: Room 2. Later e-mail: The workshop has been moved to Room 5.] / A: In Room 2.",
+      "why": [
+        "Room 2 appears in the first document, but the later e-mail changes it.",
+        "二號會議室出現在第一份文件，但後來的 e-mail 改掉了。"
+      ]
+    },
+    {
+      "right": "Q: How much will Ms. Ferreira pay for two days? [E-mail: I'd like the mid-size van. Price list: small van $60 a day; mid-size van $80 a day; large van $95 a day.] / A: $160.",
+      "wrong": "Q: How much will Ms. Ferreira pay for two days? [E-mail: I'd like the mid-size van. Price list: small van $60 a day; mid-size van $80 a day; large van $95 a day.] / A: $120.",
+      "why": [
+        "The e-mail names the mid-size van. $120 comes from the small van, the first one listed.",
+        "e-mail 指定的是中型廂型車。120 美元是用最先列出的小型車價格算出來的。"
+      ]
+    },
+    {
+      "right": "Q: In the e-mail, the word \"settled\" in paragraph 1 is closest in meaning to [The two firms have settled the terms of the lease.] / A: agreed on",
+      "wrong": "Q: In the e-mail, the word \"settled\" in paragraph 1 is closest in meaning to [The two firms have settled the terms of the lease.] / A: moved into",
+      "why": [
+        "Settle can mean start living somewhere, but here two firms decide the terms of a lease, so agreed on fits the sentence.",
+        "settle 可以是「定居、搬進去」，但這裡是兩家公司談定租約條件，所以 agreed on 才合句意。"
+      ]
+    },
+    {
+      "right": "Q: Why did Mr. Lindgren write the e-mail? [Thank you for the quick delivery. However, one chair arrived damaged, and I would like a replacement.] / A: To request a new item.",
+      "wrong": "Q: Why did Mr. Lindgren write the e-mail? [Thank you for the quick delivery. However, one chair arrived damaged, and I would like a replacement.] / A: To praise a fast delivery.",
+      "why": [
+        "He does mention the fast delivery, but the reason he writes is the damaged chair.",
+        "他確實提到送貨很快，但他寫信的原因是那張損壞的椅子。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Typical question wordings",
+        "常見問法"
+      ],
+      "items": [
+        [
+          "Why was the e-mail sent?",
+          "這封 e-mail 為什麼寄出？"
+        ],
+        [
+          "In the e-mail, the word \"covers\" in paragraph 2 is closest in meaning to",
+          "在 e-mail 第二段，covers 這個字的意思最接近"
+        ],
+        [
+          "What is indicated about Ms. Tan?",
+          "關於 Tan 女士，文中指出什麼？"
+        ],
+        [
+          "What is suggested about the conference?",
+          "關於這場研討會，文中暗示了什麼？"
+        ],
+        [
+          "What is NOT mentioned as a benefit of membership?",
+          "文中沒有提到哪一項是會員的好處？"
+        ],
+        [
+          "How much will Mr. Ruiz most likely pay?",
+          "Ruiz 先生最可能付多少錢？"
+        ],
+        [
+          "Which session will Ms. Kato attend?",
+          "Kato 女士會參加哪一場？"
+        ],
+        [
+          "What will happen on June 4?",
+          "六月四日會發生什麼事？"
+        ],
+        [
+          "According to the notice, what must customers do?",
+          "根據公告，顧客必須做什麼？"
+        ],
+        [
+          "Who most likely is Mr. Osei?",
+          "Osei 先生最可能是什麼身分？"
+        ],
+        [
+          "What will Ms. Kato most likely do on Friday?",
+          "Kato 女士星期五最可能做什麼？"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Words that signal a change",
+        "表示變更的字詞"
+      ],
+      "items": [
+        [
+          "has been moved to",
+          "已改到"
+        ],
+        [
+          "has been rescheduled for",
+          "已改期到"
+        ],
+        [
+          "has been extended to",
+          "已延長到"
+        ],
+        [
+          "will now take place",
+          "現在改為舉行"
+        ],
+        [
+          "instead of",
+          "而不是、取代"
+        ],
+        [
+          "no longer",
+          "不再"
+        ],
+        [
+          "please disregard",
+          "請忽略"
+        ],
+        [
+          "replaces",
+          "取代、改為"
+        ],
+        [
+          "correction",
+          "更正"
+        ],
+        [
+          "has been postponed until",
+          "已延後到"
+        ],
+        [
+          "revised",
+          "修訂過的"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Choosing the original plan. When a later e-mail or notice moves a date, room or price, the earlier version becomes a wrong option.",
+      "選了原本的計畫。後來的 e-mail 或公告改了日期、會議室或價格時，舊版本就成了錯誤選項。"
+    ],
+    [
+      "Reading the row next to the right one. Find the exact name, date or model in the question, then read across that row.",
+      "讀到相鄰那一列。先找到題目裡確切的人名、日期或型號，再橫著讀那一列。"
+    ],
+    [
+      "Choosing a fact that is true but answers a different question, or belongs to another person. Check who and what the question asks about.",
+      "選了一個屬實、卻回答另一個問題或屬於另一個人的事實。確認題目問的是誰、什麼事。"
+    ],
+    [
+      "Picking the meaning you know best in a word question. Put the option into the sentence and check that the sentence still says the same thing.",
+      "字義題選了你最熟悉的意思。把選項放進句子，確認句意沒有改變。"
+    ]
+  ]
+}

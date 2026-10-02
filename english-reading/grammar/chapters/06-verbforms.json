@@ -1,0 +1,325 @@
+{
+  "id": "verbforms",
+  "n": 6,
+  "title": "動詞後面接什麼：to V、Ving、原形；分詞",
+  "en": "To V, Ving, Base Form and Participles",
+  "lead": "一個子句由一個有時態的動詞撐起來（第 2 章）。可是我們常常一口氣要講兩個動作：決定聘人、考慮開店、期待見面。第二個動作想進句子，就得換成 to V、Ving 或原形，換成哪一種由前面的字決定。這一章整理這些規則，最後兩節講 Ving 和 p.p. 當形容詞用時怎麼選，以及放在句首的分詞片語。",
+  "check": [
+    {
+      "type": "choose",
+      "q": "<em>We are considering ___ a second warehouse in Eastfield.</em> 空格要填哪一個？",
+      "options": ["open", "to open", "opening"],
+      "answer": 2,
+      "why": "<em>consider</em> 後面接 Ving。這是 <em>consider</em> 這個動詞自己的規定，從中文「考慮」看不出來，要一個一個認。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>I look forward to ___ you at the trade fair.</em> 空格要填哪一個？",
+      "options": ["meet", "meeting", "met"],
+      "answer": 1,
+      "why": "<em>look forward to</em> 的 <em>to</em> 是介系詞：後面放得進名詞（<em>look forward to the fair</em>），所以接動作時用 Ving。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>The manager let the interns ___ early on Friday.</em> 空格要填哪一個？",
+      "options": ["leave", "to leave", "leaving"],
+      "answer": 0,
+      "why": "<em>let</em> + 人 + 原形，中間沒有 <em>to</em>。換成意思相近的 <em>allow</em> 才要 to V：<em>allowed the interns to leave</em>。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>Many guests were ___ by the slow check-in process.</em> 空格要填哪一個？",
+      "options": ["frustrating", "frustrated"],
+      "answer": 1,
+      "why": "<em>frustrate</em> 是「讓人沮喪」。住客是被弄得沮喪的人，用 <em>-ed</em>；造成沮喪的流程才用 <em>-ing</em>（<em>a frustrating process</em>）。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>___ near the main station, the hotel is popular with business travelers.</em> 空格要填哪一個？",
+      "options": ["Locating", "Located"],
+      "answer": 1,
+      "why": "句首的片語借用逗號後面的主詞 <em>the hotel</em>。還原成一句：<em>The hotel is located near the main station.</em> 飯店「位於」那裡，英文把它看成被安置在那裡的一方，所以用 p.p.。"
+    }
+  ],
+  "sections": [
+    {
+      "h": "為什麼第二個動詞要變形",
+      "body": [
+        "一個子句（第 3 章）由一個有時態的動詞撐起來（第 2 章）。<em>We decided.</em> 的 <em>decided</em> 帶著過去式，整句的時間由它決定。",
+        "現在想說「我們決定聘兩位設計師」，句子裡有兩個動作：決定、聘請。第二個動作不能也帶著時態直接排上去：<em>We decided hired two designers.</em> 兩個過去式擠在一起，讀的人不知道哪一個才是核心，句子就壞了。",
+        "所以第二個動詞要<b>降一級</b>：拿掉時態，換成 to V、Ving 或原形。<em>We decided to hire two designers.</em> 時間只看 <em>decided</em>；<em>to hire</em> 不管過去、現在、未來，永遠長這樣。寫成 <em>to hired</em> 是錯的，因為時態已經在 <em>decided</em> 身上，to V 的 <em>to</em> 後面只能接原形。",
+        "換成哪一種，不是看意思隨便挑，是前面的字說了算：動詞本身有規定（<em>decide</em> 接 to V，<em>consider</em> 接 Ving）；前面是介系詞，接 Ving；前面是 <em>make、let、have</em>，接原形。接下來四節，一節講一種。"
+      ],
+      "ex": [
+        {"en": "We <u>decided</u> to hire two more designers.", "zh": "我們決定再聘兩位設計師。", "note": "有時態的只有 <em>decided</em>；<em>to hire</em> 沒有時態。"},
+        {"en": "Ms. Kao <u>finished</u> reviewing the contract at noon.", "zh": "Kao 女士中午看完了合約。", "note": "有時態的只有 <em>finished</em>；<em>reviewing</em> 照 <em>finish</em> 的規定用 Ving。"},
+        {"en": "The site supervisor <u>made</u> everyone wear a helmet.", "zh": "工地主任要求每個人都戴安全帽。", "note": "有時態的只有 <em>made</em>；<em>wear</em> 照 <em>make</em> 的規定用原形。"}
+      ],
+      "quiz": [
+        {
+          "type": "tap",
+          "q": "點出這句裡有時態的那個動詞。",
+          "sentence": "The team hopes to finish the report before Friday.",
+          "answer": [2],
+          "why": "<em>hopes</em> 是現在式，整句的時間由它決定。<em>to finish</em> 是降了一級的第二個動作，沒有時態。"
+        }
+      ],
+      "takeaway": "一個子句只有一個有時態的動詞；第二個動作如果沒有用 <em>and</em> 或連接詞接進來，就要換成 to V、Ving 或原形。"
+    },
+    {
+      "h": "接 to V 的動詞，接 Ving 的動詞",
+      "body": [
+        "大多數動詞後面只接一種：有的接 to V，有的接 Ving。這是每個動詞自己的習慣，不能從中文意思推出來，要一組一組認。",
+        "有一個幫助記憶的傾向，只是傾向，有例外：to V 常指向<b>還沒發生、打算要做</b>的事，像 <em>plan、decide、hope、expect、agree、offer、refuse</em>，都在講接下來要不要做。Ving 常把動作當成<b>一件事本身</b>來談，像 <em>consider</em>（考慮這件事）、<em>finish</em>（做完這件事），還有 <em>avoid、suggest、recommend、postpone、enjoy、keep</em>。",
+        "還有一種是先接人，再接 to V：<em>ask、allow、require、encourage、remind、invite</em>。<em>The manager asked Ms. Su to check the figures.</em> 意思是要誰去做什麼。變成被動（第 5 章）時，人搬到前面，<em>to</em> 留著：<em>Ms. Su was asked to check the figures.</em>、<em>All staff are required to attend.</em>",
+        "上面是代表，不是全部。接 to V 的還有 <em>want、need、intend、manage、afford、fail、promise、prepare、arrange</em>；接 Ving 的還有 <em>admit、deny、mind、delay、risk、imagine、involve、quit</em>。",
+        "<em>suggest</em> 中文是「建議」，很多人會順手寫成 <em>suggest to hire</em>。但 <em>suggest</em> 後面不接 to V，要接 Ving（或名詞、<em>that</em> 子句，第 16 章）。這種錯不會讓人看不懂，但在正式的商業文件裡是明顯的文法錯誤。"
+      ],
+      "ex": [
+        {"en": "The client <u>agreed to extend</u> the deadline by one week.", "zh": "客戶同意把期限延長一週。"},
+        {"en": "We should <u>avoid scheduling</u> meetings on Friday afternoons.", "zh": "我們應該避免把會議排在星期五下午。"},
+        {"en": "The new system <u>allows customers to track</u> their orders online.", "zh": "新系統讓顧客能在線上追蹤訂單。"},
+        {"en": "All staff <u>are required to attend</u> the safety briefing.", "zh": "所有員工都必須參加安全說明會。", "note": "被動也保留 <em>to</em>：<em>require someone to</em> → <em>be required to</em>。"}
+      ],
+      "table": {
+        "head": ["接 to V", "接 Ving", "接人 + to V"],
+        "rows": [
+          ["<em>plan to expand</em>", "<em>consider expanding</em>", "<em>ask Ms. Su to call</em>"],
+          ["<em>decide to hire</em>", "<em>avoid hiring</em>", "<em>allow staff to leave</em>"],
+          ["<em>hope to finish</em>", "<em>finish checking</em>", "<em>require visitors to sign in</em>"],
+          ["<em>agree to pay</em>", "<em>suggest changing</em>", "<em>remind clients to pay</em>"],
+          ["<em>refuse to sign</em>", "<em>postpone signing</em>", "<em>encourage staff to apply</em>"],
+          ["<em>expect to receive</em>", "<em>recommend using</em>", "<em>invite guests to stay</em>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The consultant suggested ___ the launch until March.</em> 空格要填哪一個？",
+          "options": ["to postpone", "postponing", "postpone"],
+          "answer": 1,
+          "why": "<em>suggest</em> 後面接 Ving（或 <em>that</em> 子句），不接 to V。<em>postpone</em> 原形放在 <em>suggested</em> 後面，等於兩個動詞直接排在一起，也不行。"
+        }
+      ],
+      "takeaway": "<em>decide、plan、hope</em> 接 to V，<em>consider、avoid、finish、suggest</em> 接 Ving；這是動詞自己的規定，要一個一個認。"
+    },
+    {
+      "h": "兩種都能接，意思不同：stop、remember、try",
+      "body": [
+        "有幾個動詞兩種都能接，但意思不一樣，選錯了意思就變了。",
+        "分辨的方法接著上一節的傾向：Ving 是<b>那件事本身</b>，通常已經在做或做過；to V 是<b>接下來要去做</b>的事。",
+        "<em>stop</em>：<em>stop using</em> 是停掉「使用」這件事，以後不用了；<em>stop to check</em> 是停下手上的事，<b>為了去</b>確認。司機開到一半停下來確認地址，是 <em>stopped to check</em>。",
+        "<em>remember</em>：<em>remember sending</em> 是記得自己寄過，事情已經發生；<em>remember to send</em> 是記得要去寄，事情還沒做。<em>forget to lock</em> 也是同一個方向：忘了去鎖。",
+        "<em>try</em>：<em>try restarting</em> 是換個方法試試看，做了看有沒有效；<em>try to reach</em> 是努力想做到，不一定做得到。<em>We tried to reach Mr. Bose all morning.</em> 是一整個早上都想聯絡上他，言下之意是沒聯絡到。",
+        "相對地，<em>begin、start、continue</em> 也兩種都能接，意思卻差不多：<em>start working</em> 和 <em>start to work</em> 都可以。所以不是每個兩種都能接的動詞都有陷阱，要注意的主要是上面這幾個。"
+      ],
+      "ex": [
+        {"en": "The driver <u>stopped to check</u> the delivery address.", "zh": "司機停下來確認送貨地址。"},
+        {"en": "Our team <u>stopped using</u> paper invoices last year.", "zh": "我們團隊去年起不再用紙本發票。"},
+        {"en": "Please <u>remember to lock</u> the storage room before you leave.", "zh": "離開前請記得鎖儲藏室。"},
+        {"en": "I <u>remember sending</u> the file, but the client says it never arrived.", "zh": "我記得寄過檔案，但客戶說沒收到。"},
+        {"en": "If the printer jams again, <u>try restarting</u> it.", "zh": "印表機如果又卡紙，試試重新開機。"}
+      ],
+      "table": {
+        "head": ["動詞", "+ Ving（那件事本身）", "+ to V（接下來要去做）"],
+        "rows": [
+          ["<em>stop</em>", "不再做（<em>stop using paper</em>）", "停下來去做（<em>stop to check</em>）"],
+          ["<em>remember</em>", "記得做過（<em>remember sending</em>）", "記得要去做（<em>remember to send</em>）"],
+          ["<em>try</em>", "試試這個方法（<em>try restarting</em>）", "努力想做到（<em>try to reach</em>）"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>Mr. Yoon remembers ___ the invoice last week, but it is not in the system.</em> 空格要填哪一個？",
+          "options": ["sending", "to send"],
+          "answer": 0,
+          "why": "<em>last week</em> 表示寄發票這件事已經發生，是「記得做過」，用 Ving。<em>remember to send</em> 是記得要去寄，事情還沒做，跟 <em>last week</em> 對不上。"
+        }
+      ],
+      "takeaway": "Ving 是那件事本身，to V 是接下來要去做；<em>stop、remember、try</em> 選錯，意思就變了。"
+    },
+    {
+      "h": "這個 to 是介系詞：look forward to + Ving",
+      "body": [
+        "<em>to</em> 有兩個身分。一個是 to V 的 <em>to</em>，後面接原形（<em>decide to hire</em>）。另一個是介系詞 <em>to</em>，跟 <em>go to the office</em> 的 <em>to</em> 一樣。介系詞（第 1 章）後面接名詞或 Ving，<b>不接原形</b>。",
+        "門檻在這裡：有些片語的最後一個字剛好是介系詞 <em>to</em>，後面又常接一個動作，看起來就像 to V。<em>look forward to</em> 就是這樣，所以很多人會寫出 <em>look forward to meet you</em>，這是錯的。",
+        "測試方法：在 <em>to</em> 後面放一個名詞試試。<em>look forward to the trip</em> 說得通，<em>to</em> 就是介系詞，接動作時用 Ving：<em>look forward to meeting you</em>。<em>plan to the trip</em> 說不通，<em>to</em> 就是 to V 的 <em>to</em>，接原形：<em>plan to visit</em>。",
+        "這樣的片語有：<em>look forward to、be committed to、be dedicated to、be used to</em>（習慣於）<em>、be accustomed to、contribute to、object to、in addition to</em>。",
+        "要特別分清楚的一組：<em>used to</em> + 原形，是「以前曾經」，現在不再這樣；<em>be used to</em> + Ving，是「習慣於」。只差一個 <em>be</em>，<em>to</em> 的身分就不同。另外還有一種 <em>be used to</em> 後面接原形，意思是「被用來做」：<em>This tool is used to measure humidity.</em> 這裡的 <em>used</em> 是 <em>use</em> 的 p.p.（第 5 章的被動），<em>to measure</em> 是「用來做什麼」的 to V。分辨方法：主詞是人，通常是「習慣於」，後面接 Ving；主詞是工具、系統、方法，通常是「被用來」，後面接原形。"
+      ],
+      "ex": [
+        {"en": "We <u>look forward to working</u> with your team.", "zh": "我們期待和貴團隊合作。"},
+        {"en": "Halden Foods <u>is committed to reducing</u> plastic packaging.", "zh": "Halden Foods 致力於減少塑膠包裝。"},
+        {"en": "Ms. Ruiz <u>is used to handling</u> difficult customers.", "zh": "Ruiz 女士已經習慣應付難搞的客戶。"},
+        {"en": "Mr. Holt <u>used to work</u> at our Dalton branch.", "zh": "Holt 先生以前在我們的 Dalton 分公司工作。", "note": "沒有 <em>be</em> 的 <em>used to</em> 是「以前曾經」，後面接原形。"},
+        {"en": "This software <u>is used to track</u> shipments.", "zh": "這套軟體是用來追蹤貨物的。", "note": "主詞是軟體，不是人。這個 <em>is used to</em> 是「被用來做」，後面接原形；和 <em>is used to handling</em>（習慣於）不同。"}
+      ],
+      "table": {
+        "head": ["片語", "放名詞試試", "接動作時"],
+        "rows": [
+          ["<em>look forward to</em>", "<em>look forward to the trip</em>，說得通", "<em>look forward to seeing you</em>"],
+          ["<em>be committed to</em>", "<em>be committed to quality</em>，說得通", "<em>be committed to improving</em>"],
+          ["<em>in addition to</em>", "<em>in addition to the fee</em>，說得通", "<em>in addition to paying the fee</em>"],
+          ["<em>plan to</em>", "<em>plan to the trip</em>，說不通", "<em>plan to visit</em>（to V，接原形）"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The company is dedicated to ___ high-quality service.</em> 空格要填哪一個？",
+          "options": ["provide", "providing"],
+          "answer": 1,
+          "why": "放名詞試試：<em>dedicated to its customers</em> 說得通，所以這個 <em>to</em> 是介系詞，接動作時用 Ving。"
+        }
+      ],
+      "takeaway": "<em>to</em> 後面放得進名詞，它就是介系詞，接動作時要用 Ving。"
+    },
+    {
+      "h": "make、let、have 後面接原形",
+      "body": [
+        "有一組動詞是「讓別人去做某件事」，句型是 動詞 + 人 + 原形，中間不加 <em>to</em>：<em>make</em>（要求、使得，對方不一定願意）、<em>let</em>（允許）、<em>have</em>（交代、安排別人去做，工作上很常用）。",
+        "意思相近的 <em>allow、ask、get</em> 卻要 to V。<em>let us leave</em> 和 <em>allowed us to leave</em> 意思一樣，形狀不同。<em>to</em> 該不該出現，看的是前面是哪個動詞，不是意思。",
+        "拿掉或加錯會怎樣：<em>The manager let us to leave early.</em> 多了 <em>to</em>，是錯的；<em>The manager allowed us leave early.</em> 少了 <em>to</em>，也是錯的。",
+        "<em>help</em> 比較寬：<em>help</em> + 人 + 原形或 to V 都可以（<em>help you set up</em>、<em>help you to set up</em>）。",
+        "<em>make</em> 變成被動時，<em>to</em> 會跑出來：<em>The director made us redo the sales forecast.</em> 的被動是 <em>We were made to redo the sales forecast.</em>，和 <em>ask → be asked to</em> 同一個道理（第 2 節）。<em>let</em> 和 <em>have</em>（人 + 原形）沒有這樣的被動；要說「被允許」，用 <em>be allowed to</em>。",
+        "<em>have</em> 還有一個相關的句型：<em>have</em> + 東西 + p.p.，意思是找人把東西處理好。<em>We had the meeting room painted.</em> 會議室是被漆的（第 5 章），所以用 p.p.。判斷方法：<em>have</em> 後面的受詞自己去做，用原形；受詞是被處理的東西，用 p.p.。"
+      ],
+      "ex": [
+        {"en": "The director <u>made us redo</u> the sales forecast.", "zh": "總監要我們重做銷售預測。"},
+        {"en": "Our manager <u>lets us work</u> from home on Fridays.", "zh": "我們經理准許大家星期五在家工作。"},
+        {"en": "Mr. Abe <u>had his assistant book</u> a table for six.", "zh": "Abe 先生交代助理訂了一張六人桌。"},
+        {"en": "Mr. Abe <u>asked his assistant to book</u> a table for six.", "zh": "Abe 先生請助理訂一張六人桌。", "note": "意思和上一句差不多，但 <em>ask</em> 要 to V，<em>have</em> 要原形。"},
+        {"en": "We <u>had the meeting room painted</u> last weekend.", "zh": "我們上週末找人把會議室漆過了。", "note": "受詞 <em>the meeting room</em> 是被漆的東西，所以用 p.p.。"}
+      ],
+      "table": {
+        "head": ["動詞", "後面接", "例子"],
+        "rows": [
+          ["<em>make</em>", "人 + 原形", "<em>made us redo the slides</em>"],
+          ["<em>let</em>", "人 + 原形", "<em>let staff work from home</em>"],
+          ["<em>have</em>", "人 + 原形", "<em>had his assistant book a table</em>"],
+          ["<em>allow</em>", "人 + to V", "<em>allowed staff to work from home</em>"],
+          ["<em>ask</em>", "人 + to V", "<em>asked his assistant to book a table</em>"],
+          ["<em>get</em>", "人 + to V", "<em>got the technician to fix the printer</em>"],
+          ["<em>make</em>（被動）", "<em>be made</em> + to V", "<em>We were made to redo the slides.</em>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "哪一句是對的？",
+          "options": ["The hotel let guests to check out at 2 p.m.", "The hotel let guests check out at 2 p.m.", "The hotel let guests checking out at 2 p.m."],
+          "answer": 1,
+          "why": "<em>let</em> + 人 + 原形：<em>let guests check out</em>。加了 <em>to</em> 或換成 Ving 都不合 <em>let</em> 的句型。"
+        }
+      ],
+      "takeaway": "<em>make、let、have</em> + 人 + 原形；意思相近的 <em>allow、ask、get</em> 要 to V。"
+    },
+    {
+      "h": "分詞當形容詞：-ing 還是 -ed",
+      "body": [
+        "Ving 和 p.p. 也可以放在名詞前面或 <em>be</em> 後面，當形容詞用。這時它們叫<b>分詞</b>：Ving 是現在分詞，p.p. 是過去分詞。",
+        "<em>be</em> 後面接 Ving，有時是進行式（第 4 章），有時是形容詞。<em>The results were surprising.</em> 的 <em>surprising</em> 是形容詞：前面放得進 <em>very</em>（<em>very surprising</em>），意思是「令人意外的」，不是「正在使人意外」。",
+        "選哪一個，問一個問題：被描述的名詞是<b>做</b>這個動作，還是<b>被做</b>。做，用 <em>-ing</em>；被做，用 <em>-ed</em>（p.p.）。這跟第 5 章的主動被動是同一個判斷。<em>the remaining tickets</em>：票自己剩下來，用 <em>-ing</em>。<em>the attached file</em>：檔案是被附上的，用 <em>-ed</em>。",
+        "分詞不像有時態的動詞那樣標出過去、現在、未來。<em>the attached file</em> 不會因為「明天才附」就換個樣子，它只表示檔案和「附上」之間是被動的關係。所以選 <em>-ing</em> 還是 <em>-ed</em>，先問主動還是被動，不問時間。只有一類要多想一步：不及物動詞（第 5 章）沒有被動，它們的 <em>-ed</em> 放在名詞前面，意思是「已經……了」，是名詞自己做完了這個動作：<em>an expired contract</em>（已經到期的合約）、<em>a retired manager</em>（已經退休的經理）。這類動詞的 <em>-ing</em> 則是「正在……、快要……」：<em>an expiring contract</em>（快要到期的合約）、<em>rising prices</em>（正在上漲的價格）。這類字不多，遇到時 <em>-ing</em> 和 <em>-ed</em> 都可能是對的，意思不同。",
+        "分詞也可以放在名詞後面，帶著自己後面的字一起說明這個名詞：<em>the contract signed by both parties</em>（被雙方簽署的合約）、<em>the staff attending the briefing</em>（出席說明會的員工）。選 <em>-ing</em> 還是 <em>-ed</em>，問題還是一樣：這個名詞是做，還是被做。這種寫法的作用和 <em>who</em>、<em>which</em> 帶頭的關係子句（第 9 章）一樣，只是沒有那個連接的字，也沒有有時態的動詞，所以是片語。",
+        "門檻在表達感覺的字：<em>interest、bore、surprise、disappoint、confuse、frustrate</em>。這些英文動詞的意思是<b>讓人</b>產生感覺：<em>interest</em> 是「讓人感興趣」，<em>bore</em> 是「讓人無聊」。所以造成感覺的事物，用 <em>-ing</em>（<em>an interesting proposal</em>，提案讓人感興趣）；有這種感覺的人是被影響的一方，用 <em>-ed</em>（<em>interested investors</em>，投資人被引起興趣）。",
+        "拿中文直翻就會出事：「我很無聊」寫成 <em>I was boring</em>，意思變成「我是個無聊的人」。要說自己覺得無聊，是 <em>I was bored</em>。"
+      ],
+      "ex": [
+        {"en": "The <u>remaining</u> tickets will be sold at the door.", "zh": "剩下的票會在門口販售。", "note": "票自己剩下來，是主動，用 <em>-ing</em>。"},
+        {"en": "Please read the <u>attached</u> file before the meeting.", "zh": "開會前請先讀附件。", "note": "檔案是被附上的，用 <em>-ed</em>。"},
+        {"en": "The results of the survey were <u>surprising</u>.", "zh": "調查結果很出人意料。"},
+        {"en": "Several investors were <u>interested</u> in the proposal.", "zh": "有幾位投資人對這個提案有興趣。"},
+        {"en": "The instructions were <u>confusing</u>, so many customers were <u>confused</u>.", "zh": "說明寫得讓人看不懂，所以很多顧客搞不清楚。", "note": "說明造成困惑，用 <em>-ing</em>；顧客感到困惑，用 <em>-ed</em>。"}
+      ],
+      "table": {
+        "head": ["動詞的意思", "<em>-ing</em>：造成感覺的事物", "<em>-ed</em>：有這種感覺的人"],
+        "rows": [
+          ["<em>interest</em> 讓人感興趣", "<em>an interesting proposal</em>", "<em>interested investors</em>"],
+          ["<em>disappoint</em> 讓人失望", "<em>disappointing sales</em>", "<em>disappointed shareholders</em>"],
+          ["<em>confuse</em> 讓人困惑", "<em>confusing instructions</em>", "<em>confused customers</em>"],
+          ["<em>surprise</em> 讓人意外", "<em>surprising results</em>", "<em>surprised managers</em>"]
+        ]
+      },
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>The new training program was very ___, and most employees enjoyed it.</em> 空格要填哪一個？",
+          "options": ["interesting", "interested"],
+          "answer": 0,
+          "why": "主詞是訓練課程，它是讓人感興趣的事物，用 <em>-ing</em>。<em>interested</em> 要用在有興趣的人身上。"
+        },
+        {
+          "type": "choose",
+          "q": "<em>Please sign the ___ form and return it to Human Resources.</em> 空格要填哪一個？",
+          "options": ["enclosing", "enclosed"],
+          "answer": 1,
+          "why": "表格是被附在信裡的東西，是被做的一方，用 <em>-ed</em>。<em>enclosing</em> 的意思是表格自己在附上別的東西。"
+        }
+      ],
+      "takeaway": "名詞自己正在做，用 <em>-ing</em>；被做，用 <em>-ed</em>；感覺的字，讓人有感覺的事物用 <em>-ing</em>，有感覺的人用 <em>-ed</em>。"
+    },
+    {
+      "h": "分詞片語放句首：Located near the station, …",
+      "body": [
+        "分詞帶著自己後面的字，就成了一個分詞片語，例如 <em>located near the station</em>。它是片語（第 3 章）：沒有自己的主詞，也找不到有時態的動詞。",
+        "分詞片語常放在句首，後面加逗號，再接主要子句（第 3 章）：<em>Located near the station, the hotel is popular with business travelers.</em> 它的作用是把兩句話併成一句：<em>The hotel is located near the station. It is popular with business travelers.</em>",
+        "門檻是：<b>片語沒有主詞，所以它借用逗號後面的主詞</b>。讀者會自動把逗號後面那個主詞，當成做（或承受）片語裡那個動作的人或東西。所以判斷 Ving 還是 p.p.，步驟是：找到逗號後面的主詞；用這個主詞開頭，把片語還原成一句話；還原後是主動，用 Ving；是被動，用 p.p.。",
+        "<em>Located near the station</em>：還原是 <em>The hotel is located near the station.</em>，被動，用 p.p.。<em>Looking for a larger office</em>：還原是 <em>The company was looking for a larger office.</em>，主動，用 Ving。",
+        "主詞放錯會怎樣：<em>Located near the station, many travelers choose the hotel.</em> 逗號後面的主詞變成 <em>many travelers</em>，意思就成了「旅客位於車站附近」。句子看起來完整，意思卻歪了。分詞片語後面的主詞，一定要是片語在講的那個人或東西。",
+        "分詞片語前面有時會加 <em>when、once、after</em> 這類字，例如 <em>Once approved, the request will be sent to Finance.</em>，判斷方法一樣：申請是被核准的，用 p.p.。這些字是什麼身分，第 8 章會講。"
+      ],
+      "ex": [
+        {"en": "<u>Located</u> near the main station, the Larkfield Hotel is popular with business travelers.", "zh": "Larkfield 飯店就在主要車站附近，很受商務旅客歡迎。", "note": "還原：<em>The Larkfield Hotel is located near the main station.</em> 被動，用 p.p.。"},
+        {"en": "<u>Founded</u> in 2004, Kestrel Logistics now has offices in nine countries.", "zh": "Kestrel 物流成立於 2004 年，現在在九個國家設有辦公室。", "note": "還原：<em>Kestrel Logistics was founded in 2004.</em> 公司是被創立的。"},
+        {"en": "<u>Looking</u> for a larger office, the company contacted three real estate agents.", "zh": "公司在找更大的辦公室，聯絡了三家房仲。", "note": "還原：<em>The company was looking for a larger office.</em> 公司自己在找，主動，用 Ving。"}
+      ],
+      "quiz": [
+        {
+          "type": "choose",
+          "q": "<em>___ by the strong sales figures, the manager decided to expand the program.</em> 空格要填哪一個？",
+          "options": ["Encouraging", "Encouraged"],
+          "answer": 1,
+          "why": "逗號後面的主詞是 <em>the manager</em>。還原：<em>The manager was encouraged by the strong sales figures.</em> 經理是被鼓舞的一方，用 p.p.；<em>by</em> 後面也帶出了造成鼓舞的東西。"
+        },
+        {
+          "type": "tap",
+          "q": "點出分詞片語 <em>Designed for small offices</em> 在描述的那個名詞，連同前面的 <em>the</em> 和形容詞一起點。",
+          "sentence": "Designed for small offices, the new printer is compact and quiet.",
+          "answer": [4, 5, 6],
+          "why": "分詞片語借用逗號後面的主詞，也就是 <em>the new printer</em>。還原：<em>The new printer is designed for small offices.</em> <em>offices</em> 雖然離 <em>Designed</em> 比較近，但它在片語裡面，不是被描述的對象。"
+        }
+      ],
+      "takeaway": "句首的分詞片語借用逗號後面的主詞；還原成一句話，主詞在做就用 Ving，被做就用 p.p.。"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "I look forward to hear from you.",
+      "right": "I look forward to hearing from you.",
+      "why": "<em>look forward to</em> 的 <em>to</em> 是介系詞（<em>look forward to your reply</em> 說得通），接動作時用 Ving。"
+    },
+    {
+      "wrong": "The consultant suggested to hire a second designer.",
+      "right": "The consultant suggested hiring a second designer.",
+      "why": "<em>suggest</em> 後面接 Ving 或 <em>that</em> 子句，不接 to V。"
+    },
+    {
+      "wrong": "The manager let us to leave early on Friday.",
+      "right": "The manager let us leave early on Friday.",
+      "why": "<em>let</em> + 人 + 原形，中間不加 <em>to</em>。要用 to V，就換成 <em>allowed us to leave</em>。"
+    },
+    {
+      "wrong": "I was very boring during the three-hour meeting.",
+      "right": "I was very bored during the three-hour meeting.",
+      "why": "<em>bore</em> 是「讓人無聊」。<em>boring</em> 是讓別人無聊的人或事，<em>I was boring</em> 變成「我這個人很無聊」。自己覺得無聊，是被影響的一方，用 <em>bored</em>。"
+    },
+    {
+      "wrong": "Locating near the airport, the hotel is convenient for travelers.",
+      "right": "Located near the airport, the hotel is convenient for travelers.",
+      "why": "片語借用逗號後面的主詞 <em>the hotel</em>。還原：<em>The hotel is located near the airport.</em> 飯店是被安置在那裡（也就是位於那裡），用 p.p.。"
+    }
+  ],
+  "workbook": ["toing", "participle"]
+}

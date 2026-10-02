@@ -1,0 +1,224 @@
+{
+  "id": "quantity", "n": 13,
+  "title": "數量詞與可數名詞",
+  "en": "Countable Nouns and Quantity Words",
+  "lead": "英文的名詞（第 1 章）分成兩種：可以一個一個數的，和不能數的。這個分類決定了前面能不能加 <em>a</em>、後面能不能加 <em>-s</em>、要用 <em>many</em> 還是 <em>much</em>、動詞用單數還是複數。這一章先教你判斷一個名詞屬於哪一種，再把 <em>each</em>、<em>few</em>、<em>most of</em>、<em>another</em> 這些放在名詞前面說明「多少」的數量詞，照「後面接什麼名詞」一個一個整理清楚。",
+  "check": [
+    {"type": "choose", "q": "哪一句對？", "options": ["We ordered new equipments for the lab.", "We ordered a new equipment for the lab.", "We ordered new equipment for the lab."], "answer": 2, "why": "<em>equipment</em> 是不可數名詞：<em>two equipments</em> 說不通，所以不加 <em>-s</em>，前面也不加 <em>a</em>。要一件一件數，就說 <em>a piece of equipment</em>。"},
+    {"type": "choose", "q": "<em>We don't have ___ information about the new supplier yet.</em>", "options": ["many", "much"], "answer": 1, "why": "<em>information</em> 不可數，「很多」要用 <em>much</em>。<em>many</em> 只接可以一個一個數的複數名詞，例如 <em>many suppliers</em>。"},
+    {"type": "choose", "q": "<em>Each of the new interns ___ a laptop.</em>", "options": ["has", "have"], "answer": 0, "why": "主詞是 <em>Each</em>（每一個），一次只看一個人，所以動詞用單數 <em>has</em>。<em>of</em> 後面的 <em>interns</em> 雖然是複數，但它不是主詞。"},
+    {"type": "choose", "q": "<em>There were ___ errors in this month's report than in last month's.</em>", "options": ["less", "fewer"], "answer": 1, "why": "<em>errors</em> 可數（<em>an error</em>、<em>two errors</em>），「比較少」要用 <em>fewer</em>。<em>less</em> 接不可數名詞，例如 <em>less paper</em>。"},
+    {"type": "choose", "q": "<em>We have two meeting rooms. Room A is booked, so please use ___ one.</em>", "options": ["another", "the other", "other"], "answer": 1, "why": "只有兩間，一間被訂走，剩下的就是確定的那一間：<em>the other</em>。<em>another</em> 是「再一個，而且還有別的可選」；<em>other</em> 單獨用時後面接複數名詞。"}
+  ],
+  "sections": [
+    {
+      "h": "可數還是不可數：先問能不能一個一個數",
+      "body": [
+        "名詞（第 1 章）在英文裡分成兩種。<b>可數名詞</b>是可以一個一個數的東西：<em>a chair</em>、<em>two chairs</em>、<em>three invoices</em>。<b>不可數名詞</b>是英文當成「一團」或「一整類」的東西，沒辦法說一個、兩個：<em>water</em>、<em>money</em>、<em>furniture</em>、<em>information</em>。",
+        "這個分類看起來像細節，其實是門檻，後面每一節都靠它。可數名詞有單數和複數兩種樣子；不可數名詞只有一種樣子：永遠不加 <em>-s</em>、前面不加 <em>a</em>，當主詞（第 2 章）時動詞用單數。",
+        "還有一個容易忽略的規則：<b>單數的可數名詞不能光溜溜地出現</b>，前面一定要有 <em>a</em>、<em>the</em>、<em>this</em>、<em>my</em>、<em>each</em> 這類字陪著。中文說「我們需要椅子」完全沒問題，英文寫 <em>We need chair.</em> 就壞了：讀者不知道你要一張（<em>a chair</em>）、說好的那一張（<em>the chair</em>），還是好幾張（<em>chairs</em>）。不可數名詞沒有這個問題，<em>We need furniture.</em> 是完整的句子。少數固定說法是例外，例如 <em>by car</em>、<em>at work</em>、<em>in person</em>，先當成整塊記。",
+        "判斷的方法：試著在名詞前面加 <em>two</em>。<em>two invoices</em> 可以，所以 <em>invoice</em> 可數；<em>two furnitures</em> 不行，所以 <em>furniture</em> 不可數。拿不準就查字典，字典會標 <em>[C]</em>（<em>countable</em>，可數）或 <em>[U]</em>（<em>uncountable</em>，不可數）。",
+        "有些名詞兩種都有，意思不一樣。<em>a room</em> 是一間房（可數），<em>room</em> 是空間（不可數）：<em>There is no room for another desk.</em> <em>a paper</em> 是一份報告或一份報紙，<em>paper</em> 是紙。所以「加 <em>two</em>」的測試，要問在這個句子的意思下能不能數。"
+      ],
+      "table": {"head": ["比較項目", "可數（<em>chair</em>）", "不可數（<em>furniture</em>）"], "rows": [
+        ["前面加 <em>a</em>", "<em>a chair</em>", "不行，沒有 <em>a furniture</em>"],
+        ["加 <em>-s</em> 變複數", "<em>chairs</em>", "不行，沒有 <em>furnitures</em>"],
+        ["前面加數字", "<em>three chairs</em>", "要借別的字：<em>three pieces of furniture</em>"],
+        ["單數單獨出現", "不行，要寫 <em>a chair</em>、<em>the chair</em>", "可以：<em>We need furniture.</em>"],
+        ["當主詞時的動詞", "看單複數：<em>The chair is</em>、<em>The chairs are</em>", "永遠單數：<em>The furniture is</em>"]
+      ]},
+      "ex": [
+        {"en": "The hotel added two <u>chairs</u> to each room.", "zh": "飯店在每間房多放了兩張椅子。", "note": "<em>chair</em> 可數，可以說 <em>two chairs</em>。"},
+        {"en": "The hotel replaced all the <u>furniture</u> in the lobby.", "zh": "飯店把大廳的家具全部換新了。", "note": "<em>furniture</em> 不可數，沒有 <em>-s</em>。"},
+        {"en": "We need <u>a</u> projector for Thursday's meeting.", "zh": "星期四的會議需要一台投影機。", "note": "<em>projector</em> 是單數可數名詞，前面一定要有 <em>a</em> 或 <em>the</em> 這類字。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "哪一句對？", "options": ["Ms. Patel is looking for new assistant.", "Ms. Patel is looking for a new assistant.", "Ms. Patel is looking for a new assistants."], "answer": 1, "why": "<em>assistant</em> 可數。單數的可數名詞前面一定要有 <em>a</em>、<em>the</em> 這類字，所以第一句錯；<em>a</em> 後面只能接單數，所以第三句也錯。"}
+      ],
+      "takeaway": "單數的可數名詞要有 <em>a</em>、<em>the</em> 這類字陪著；不可數名詞不加 <em>a</em>、不加 <em>-s</em>，動詞用單數。"
+    },
+    {
+      "h": "看起來能數、其實不能數的字",
+      "body": [
+        "最麻煩的是一群「中文覺得可以數、英文卻不能數」的名詞。商業英文裡天天看到的有：<em>equipment</em>（設備）、<em>information</em>（資訊）、<em>advice</em>（建議）、<em>furniture</em>（家具）、<em>luggage</em> 或 <em>baggage</em>（行李）、<em>feedback</em>（意見回饋）、<em>merchandise</em>（商品）、<em>machinery</em>（機器）、<em>clothing</em>（衣物）。",
+        "它們有一個共通點：都是<b>一整類東西的總稱</b>，不是單一個東西的名字。<em>furniture</em> 指的是「家具這一類」，裡面有椅子、桌子、櫃子；<em>luggage</em> 是「行李這一類」，裡面有箱子、袋子。總稱沒辦法一個一個數，加 <em>-s</em> 或 <em>a</em> 都不對。",
+        "真的要數的時候有兩個辦法。一是借一個可以數的單位：<em>a piece of advice</em>、<em>two pieces of furniture</em>、<em>three pieces of luggage</em>。二是換成意思接近、本來就可數的字：想說「兩件家具」，可以直接說 <em>two desks</em>；想說「幾個建議」，可以說 <em>a few suggestions</em>。",
+        "還有一個外表騙人的字：<em>news</em>。它結尾有 <em>s</em>，但它是不可數名詞，動詞用單數：<em>The news is good.</em>"
+      ],
+      "table": {"head": ["不可數（不加 <em>a</em>、不加 <em>-s</em>）", "要數的時候", "意思接近的可數名詞"], "rows": [
+        ["<em>equipment</em> 設備", "<em>a piece of equipment</em>", "<em>machines</em>、<em>tools</em>、<em>devices</em>"],
+        ["<em>information</em> 資訊", "<em>a piece of information</em>", "<em>details</em>、<em>facts</em>"],
+        ["<em>advice</em> 建議", "<em>a piece of advice</em>", "<em>suggestions</em>、<em>tips</em>"],
+        ["<em>furniture</em> 家具", "<em>a piece of furniture</em>", "<em>chairs</em>、<em>desks</em>"],
+        ["<em>luggage</em> 行李", "<em>a piece of luggage</em>", "<em>bags</em>、<em>suitcases</em>"],
+        ["<em>feedback</em> 意見回饋", "<em>a piece of feedback</em>", "<em>comments</em>"]
+      ]},
+      "ex": [
+        {"en": "The new <u>equipment</u> arrives on Monday.", "zh": "新設備星期一到。", "note": "<em>equipment</em> 不可數，動詞用單數 <em>arrives</em>。"},
+        {"en": "Ms. Odell gave me a useful piece of <u>advice</u> about pricing.", "zh": "Odell 女士給了我一個關於定價的實用建議。"},
+        {"en": "Each passenger may check two pieces of <u>luggage</u> free of charge.", "zh": "每位旅客可以免費託運兩件行李。"},
+        {"en": "We received a lot of positive <u>feedback</u> on the new menu.", "zh": "新菜單收到很多正面的意見。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "這句有一個字錯了。點出那個字。", "sentence": "The consultant gave us some useful advices on pricing.", "answer": [6], "why": "<em>advice</em> 是不可數名詞，沒有 <em>advices</em> 這個形式。可以寫 <em>some useful advice</em>，或換成可數的 <em>some useful suggestions</em>。<em>some</em> 不可數和複數都能接，所以它沒錯。"}
+      ],
+      "takeaway": "<em>equipment</em>、<em>information</em>、<em>advice</em>、<em>furniture</em>、<em>luggage</em> 是一整類東西的總稱，不加 <em>a</em>、不加 <em>-s</em>；要數就用 <em>a piece of</em>。"
+    },
+    {
+      "h": "many 和 much：看名詞，不看中文",
+      "body": [
+        "中文的「很多」只有一個說法，英文分成兩個：<em>many</em> 接複數可數名詞，<em>much</em> 接不可數名詞。選哪一個，看的是後面名詞的種類，跟「多」的程度、中文怎麼翻都沒有關係。",
+        "所以先判斷名詞。<em>boxes</em> 可數，用 <em>many boxes</em>；<em>equipment</em> 不可數，就算你心裡想的是一大堆機器，也只能說 <em>much equipment</em>。<em>many equipment</em> 壞在哪裡？<em>many</em> 告訴讀者「後面是一個一個分開的東西」，可是 <em>equipment</em> 沒辦法分開，兩個字互相矛盾。",
+        "問句也一樣：問數目用 <em>How many</em>，問份量用 <em>How much</em>。<em>How many rooms</em>、<em>How much time</em>。",
+        "<em>much</em> 比較常用在否定句和問句（<em>We don't have much time.</em>）；肯定句裡一般說 <em>a lot of</em>。<em>a lot of</em> 兩種名詞都能接，拿不準的時候用它最安全。"
+      ],
+      "ex": [
+        {"en": "How <u>many</u> boxes did the supplier send?", "zh": "供應商送了幾箱？"},
+        {"en": "We don't have <u>much</u> time before the product launch.", "zh": "離產品上市沒剩多少時間了。"},
+        {"en": "This month we received <u>a lot of</u> orders and <u>a lot of</u> feedback.", "zh": "這個月我們收到很多訂單，也收到很多意見。", "note": "<em>orders</em> 可數，<em>feedback</em> 不可數，<em>a lot of</em> 都能接。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>How ___ luggage are you bringing on the trip?</em>", "options": ["many", "much"], "answer": 1, "why": "<em>luggage</em> 是不可數名詞（沒有 <em>luggages</em>），所以用 <em>much</em>。如果想問箱子的數目，就換成可數名詞：<em>How many bags</em>。"}
+      ],
+      "takeaway": "<em>many</em> 配複數可數名詞，<em>much</em> 配不可數名詞；拿不準就用 <em>a lot of</em>。"
+    },
+    {
+      "h": "few、a few、little、a little：差一個 a，意思相反",
+      "body": [
+        "這四個字分成兩組。<em>few</em> 和 <em>a few</em> 接複數可數名詞（<em>a few seats</em>）；<em>little</em> 和 <em>a little</em> 接不可數名詞（<em>a little space</em>）。分組的方法跟 <em>many</em>、<em>much</em> 一樣，看名詞。",
+        "每一組裡，有沒有 <em>a</em> 決定意思的方向。有 <em>a</em>：「有一些」，重點在「有」，通常是夠用、正面的。沒有 <em>a</em>：「很少、幾乎沒有」，重點在「少」，通常是不夠、負面的。",
+        "拿掉 <em>a</em> 會怎樣？比較這兩句：<em>A few clients replied, so we can start the analysis.</em>（有幾位客戶回覆了，所以可以開始分析）；<em>Few clients replied, so we extended the deadline.</em>（幾乎沒有客戶回覆，所以延長了期限）。回覆的人數可能差不多，但一句在說「有」，一句在說「不夠」，後面接的結果也就相反。",
+        "讀句子時可以看後半當線索：結果是正面的（可以開始、還來得及），通常是有 <em>a</em> 的；結果是負面的（取消、延期、很難），通常是沒有 <em>a</em> 的。這只是線索，真正的差別是說話的人覺得夠不夠。"
+      ],
+      "table": {"head": ["名詞種類", "有一些（夠用）", "很少（不夠）"], "rows": [
+        ["複數可數名詞", "<em>a few seats</em>", "<em>few seats</em>"],
+        ["不可數名詞", "<em>a little space</em>", "<em>little space</em>"]
+      ]},
+      "ex": [
+        {"en": "<u>A few</u> applicants have more than ten years of experience.", "zh": "有幾位應徵者有十年以上的經驗。"},
+        {"en": "<u>Few</u> applicants met all the requirements, so we reopened the position.", "zh": "幾乎沒有應徵者符合所有條件，所以我們重新開缺。"},
+        {"en": "We still have <u>a little</u> money left in the training budget.", "zh": "訓練預算還剩一點錢。"},
+        {"en": "There is <u>little</u> demand for the older model.", "zh": "舊款幾乎沒什麼需求。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>___ people signed up for the workshop, so we can hold it as planned.</em>", "options": ["A few", "Few"], "answer": 0, "why": "後半句是正面的結果（照原訂計畫舉行），表示報名的人「有一些、夠了」，用有 <em>a</em> 的 <em>A few</em>。<em>Few</em> 是「很少、幾乎沒有」，不會導出「可以照計畫舉行」。"}
+      ],
+      "takeaway": "有 <em>a</em> 是「有一些、夠用」，沒有 <em>a</em> 是「很少、不夠」；<em>few</em> 配可數，<em>little</em> 配不可數。"
+    },
+    {
+      "h": "fewer 和 less：比較少，也分可數不可數",
+      "body": [
+        "「比較少」也分兩個字。<em>fewer</em> 接複數可數名詞（<em>fewer errors</em>、<em>fewer complaints</em>），<em>less</em> 接不可數名詞（<em>less paper</em>、<em>less time</em>）。<em>fewer</em> 是 <em>few</em> 的比較級，<em>less</em> 是 <em>little</em> 的比較級（比較級的觀念見第 12 章），所以分組跟上一節一模一樣。",
+        "日常口語裡常聽到有人把 <em>less</em> 放在可數名詞前面，但正式的書面英文分得很清楚。寫報告或信件時先判斷名詞：如果它是一個一個數的人或東西（<em>two errors</em>、<em>two clients</em>），就用 <em>fewer</em>。",
+        "有一個看起來像例外的地方：<em>than</em> 後面接數字的時候。數字後面是時間、金額、距離、重量，用 <em>less than</em>：<em>less than 30 minutes</em>、<em>less than $500</em>。這時英文把「30 分鐘」「500 元」看成一整個量，不是一分鐘一分鐘地數。數字後面是一個一個數的人或東西，還是用 <em>fewer than</em>：<em>fewer than 50 employees</em>、<em>fewer than ten complaints</em>。"
+      ],
+      "ex": [
+        {"en": "The new software makes <u>fewer</u> errors and uses <u>less</u> memory.", "zh": "新軟體出錯比較少，佔用的記憶體也比較少。"},
+        {"en": "We printed <u>fewer</u> brochures this year to save paper.", "zh": "今年我們少印了一些手冊，以節省紙張。"},
+        {"en": "The drive to the airport takes <u>less than</u> 40 minutes.", "zh": "開車到機場不到四十分鐘。", "note": "時間、金額的數字前面用 <em>less than</em>。"},
+        {"en": "<u>Fewer than</u> 50 employees attended the safety briefing.", "zh": "出席安全說明會的員工不到五十人。", "note": "員工是一個一個數的，數字前面用 <em>fewer than</em>；時間和金額的數字才用 <em>less than</em>。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>The new air conditioners use ___ electricity than the old ones.</em>", "options": ["fewer", "less"], "answer": 1, "why": "<em>electricity</em>（電）不可數，不能說 <em>two electricities</em>，所以「比較少」用 <em>less</em>。"}
+      ],
+      "takeaway": "能數的「比較少」用 <em>fewer</em>，不能數的用 <em>less</em>；數字前面，時間、金額這種一整個量用 <em>less than</em>，一個一個數的人或東西用 <em>fewer than</em>。"
+    },
+    {
+      "h": "a number of、the number of、a large amount of",
+      "body": [
+        "<em>a number of</em> 的意思是「好幾個、一些」，後面接複數可數名詞，動詞也用複數：<em>A number of guests have complained.</em> 這句真正的主詞是 <em>guests</em>，<em>a number of</em> 只是在說有多少。",
+        "把 <em>a</em> 換成 <em>the</em>，意思就變了。<em>the number of</em> 是「……的數目」，主詞變成 <em>number</em> 這個數字本身，所以動詞用單數：<em>The number of guests has doubled.</em>（住客的數目增加了一倍）。一個字的差別，讓主詞從「住客」變成「數目」，動詞也跟著從複數變單數。主詞和動詞要一致，第 7 章講過。",
+        "不可數名詞不能用 <em>number</em>（數目），要用 <em>amount</em>（份量）：<em>a large amount of money</em>、<em>the amount of paperwork</em>。<em>a large amount of</em>（也可以是 <em>a small amount of</em>）後面接不可數名詞，動詞用單數。",
+        "到這裡，數量詞可以照後面接的名詞分成三組，整理在下表。"
+      ],
+      "table": {"head": ["只接複數可數名詞", "只接不可數名詞", "兩種都可以"], "rows": [
+        ["<em>many</em>", "<em>much</em>", "<em>a lot of</em>、<em>lots of</em>"],
+        ["<em>a few</em>、<em>few</em>", "<em>a little</em>、<em>little</em>", "<em>some</em>、<em>any</em>"],
+        ["<em>fewer</em>", "<em>less</em>", "<em>more</em>、<em>most</em>"],
+        ["<em>a number of</em>、<em>several</em>", "<em>a large amount of</em>、<em>a great deal of</em>", "<em>all</em>、<em>no</em>、<em>plenty of</em>"]
+      ]},
+      "ex": [
+        {"en": "<u>A number of</u> guests <u>have</u> asked for a late checkout.", "zh": "有好幾位住客要求延後退房。"},
+        {"en": "<u>The number of</u> online orders <u>has</u> doubled since March.", "zh": "線上訂單的數量從三月以來增加了一倍。"},
+        {"en": "<u>A large amount of</u> money <u>was</u> spent on repairs last year.", "zh": "去年花了一大筆錢在維修上。"}
+      ],
+      "quiz": [
+        {"type": "tap", "q": "點出必須互相配合單複數的兩個字：這句主詞的中心名詞，和它的動詞。", "sentence": "The number of applicants is higher this year.", "answer": [1, 4], "why": "主詞的中心名詞是 <em>number</em>（數目）。一個數目是單數，所以動詞用 <em>is</em>。<em>applicants</em> 雖然是複數，但它在 <em>of</em> 後面，只是說明這是什麼的數目。"}
+      ],
+      "takeaway": "<em>a number of</em> 是「好幾個」，動詞跟著後面的複數名詞；<em>the number of</em> 是「數目」本身，動詞用單數；不可數的量用 <em>amount</em>。"
+    },
+    {
+      "h": "each 和 every：一次看一個，所以用單數",
+      "body": [
+        "第 7 章第 3 節講過 <em>each</em>、<em>every</em> 配單數動詞；這一節從後面接的名詞再看一次。<em>each</em> 和 <em>every</em> 都是「每一個」。它們把一群東西拆開，一次只看其中一個，所以後面接<b>單數</b>可數名詞，動詞也用<b>單數</b>：<em>Each room has a desk.</em>、<em>Every invoice needs a signature.</em>",
+        "<em>Every employees have …</em> 壞在哪裡？<em>every</em> 說「一個一個看」，<em>-s</em> 卻說「很多個一起」，兩個字在同一個名詞上打架。中文說「每位員工都有」，「每位」後面也不會加「們」，道理一樣。",
+        "<em>each</em> 還可以接 <em>of</em>：<em>each of the rooms</em>。這時 <em>of</em> 後面是複數（從一群裡挑），但主詞還是 <em>each</em>，動詞仍然用單數：<em>Each of the rooms has a balcony.</em> <em>every</em> 不能直接接 <em>of</em>，要寫成 <em>every one of the rooms</em>。",
+        "有一個例外是頻率：<em>every</em> 加數字表示「每隔多久」，名詞用複數，例如 <em>every three months</em>（每三個月）。"
+      ],
+      "ex": [
+        {"en": "<u>Each</u> room <u>has</u> a desk and a coffee maker.", "zh": "每間房都有一張書桌和一台咖啡機。"},
+        {"en": "<u>Every</u> invoice <u>needs</u> a signature from the finance team.", "zh": "每張發票都需要財務部簽名。"},
+        {"en": "<u>Each of</u> our branches <u>sends</u> a sales report every Friday.", "zh": "我們每家分店每週五都會交一份業績報告。"},
+        {"en": "The air filters are replaced <u>every</u> three <u>months</u>.", "zh": "空氣濾網每三個月換一次。", "note": "<em>every</em> 加數字表示頻率，名詞用複數。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Each of the new laptops ___ with a two-year warranty.</em>", "options": ["come", "comes"], "answer": 1, "why": "主詞是 <em>Each</em>，一次看一台，動詞用單數 <em>comes</em>。<em>laptops</em> 在 <em>of</em> 後面，只是說明從哪一群裡挑。"}
+      ],
+      "takeaway": "<em>each</em>、<em>every</em> 一次只看一個，名詞和動詞都用單數；<em>each of the</em> 後面的名詞是複數，動詞仍然單數。"
+    },
+    {
+      "h": "most、some、all 和 most of the",
+      "body": [
+        "<em>most</em>、<em>some</em>、<em>all</em> 有兩種用法。直接加名詞，是<b>泛指</b>：<em>Most hotels offer free Wi-Fi.</em>（大部分的飯店，不限哪些）。加 <em>of</em>，是從<b>特定的一群</b>裡面挑：<em>Most of the hotels on this street are full.</em>（這條街上的那些飯店）。",
+        "門檻在 <em>of</em> 後面：要先有 <em>the</em>、<em>these</em>、<em>our</em>、<em>Mr. Lee's</em> 這種把範圍指定好的字，或是 <em>them</em>、<em>us</em> 這類代名詞。<em>most of employees</em> 壞在哪裡？<em>of</em> 的意思是「從某一群裡面」，可是 <em>employees</em> 沒說是哪一群，讀者找不到範圍。要嘛拿掉 <em>of</em> 變泛指（<em>most employees</em>），要嘛補上範圍（<em>most of the employees</em>）。<em>all</em> 比較寬鬆，<em>all the employees</em> 和 <em>all of the employees</em> 都可以。",
+        "動詞跟著 <em>of</em> 後面的名詞走（第 7 章第 2 節的例外）：名詞是複數，動詞用複數（<em>Most of the rooms face the harbor.</em>）；名詞不可數，動詞用單數（<em>Some of the equipment is in storage.</em>）。這點跟上一節的 <em>each of</em> 不一樣：<em>each</em> 本身就是「一個」；<em>most</em>、<em>some</em> 是「一部分」，這一部分算單數還是複數，要看後面是什麼。",
+        "<em>most</em> 也別跟 <em>almost</em> 搞混。<em>almost</em> 是副詞（第 1 章），意思是「幾乎」，它要修飾別的字，不能拿來當「大部分」直接放在名詞前面：要說 <em>almost all employees</em> 或 <em>almost every employee</em>，不能說 <em>almost employees</em>。<em>almost</em> 後面接數字是另一回事：<em>almost 200 employees</em> 是「將近兩百位員工」。"
+      ],
+      "ex": [
+        {"en": "<u>Most</u> hotels in the area offer free parking.", "zh": "這一帶大部分的飯店都提供免費停車。"},
+        {"en": "<u>Most of the</u> rooms on this floor <u>face</u> the harbor.", "zh": "這層樓大部分的房間都面向港口。"},
+        {"en": "<u>Some of the</u> equipment <u>is</u> still in storage.", "zh": "有一部分設備還在倉庫裡。"},
+        {"en": "<u>Almost all</u> employees use the new expense app.", "zh": "幾乎所有員工都在用新的報帳 App。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "哪一句對？", "options": ["Most of employees work from home on Fridays.", "Most of the employees work from home on Fridays.", "Most of the employees works from home on Fridays."], "answer": 1, "why": "<em>most of</em> 後面要先有 <em>the</em> 這類指定範圍的字，所以第一句錯。動詞跟著 <em>of</em> 後面的 <em>employees</em>（複數），要用 <em>work</em>，所以第三句錯。"}
+      ],
+      "takeaway": "<em>most</em>、<em>some</em>、<em>all</em> 直接加名詞是泛指；加了 <em>of</em> 就要先有 <em>the</em>、<em>our</em> 這類字，動詞跟著 <em>of</em> 後面的名詞。"
+    },
+    {
+      "h": "another、other、the other、others",
+      "body": [
+        "這四個字都是「別的」，差別在兩件事：後面接什麼，以及是不是「剩下的全部」。",
+        "<em>another</em> 是 <em>an</em> 和 <em>other</em> 黏在一起，裡面已經有一個 <em>an</em>，所以後面接<b>單數</b>可數名詞：<em>another room</em>（再一間房，而且還有別間可選）。<em>another rooms</em> 壞在 <em>an</em> 和 <em>-s</em> 互相矛盾。只有加數字時例外：<em>another two weeks</em>（再兩週），把兩週當成一段。",
+        "<em>other</em> 單獨用時，後面接<b>複數</b>或不可數名詞，意思是「其他的一些」，不特定是哪些：<em>other options</em>、<em>other equipment</em>。",
+        "加上 <em>the</em>，就變成「<b>剩下的全部</b>」。<em>the other room</em>：只有兩間，除了這間，就是那一間。<em>the other rooms</em>：除了這間，剩下的每一間。<em>the</em> 表示範圍已經確定，讀者知道指的是哪些。",
+        "<em>others</em> 是代名詞（第 1 章），等於 <em>other</em> 加複數名詞，名詞已經包在裡面了，所以後面<b>不再接名詞</b>：<em>Some guests prefer tea; others prefer coffee.</em> 這裡的 <em>others</em> 就是 <em>other guests</em>。寫成 <em>others guests</em>，等於把名詞說了兩次。",
+        "<em>the other</em> 和 <em>others</em> 也可以單獨出現，後面不接名詞。<em>the other</em> 單獨用，指剩下的那一個：<em>one is near the port, and the other is next to the airport</em>。要指剩下的全部，用 <em>the others</em>：<em>Three of us went to the trade fair; the others stayed in the office.</em> <em>others</em> 沒有 <em>the</em>，是「其他的一些人或東西」，不特定；<em>the others</em> 有 <em>the</em>，是「剩下的全部」，範圍已經確定。"
+      ],
+      "table": {"head": ["字", "後面接", "意思", "例子"], "rows": [
+        ["<em>another</em>", "單數可數名詞", "再一個（還有別的可選）", "<em>another room</em>"],
+        ["<em>other</em>", "複數或不可數名詞", "其他的一些（不特定）", "<em>other options</em>"],
+        ["<em>the other</em>", "名詞，或不接名詞（<em>the other</em>、<em>the others</em>）", "剩下的那一個、那些（全部）", "<em>the other room</em>、<em>the other rooms</em>、<em>the others</em>"],
+        ["<em>others</em>", "不接名詞", "其他的人或東西", "<em>Others prefer coffee.</em>"]
+      ]},
+      "ex": [
+        {"en": "Could we book <u>another</u> room for the training session?", "zh": "我們可以再訂一間房給訓練課程用嗎？"},
+        {"en": "Are there any <u>other</u> questions before we finish?", "zh": "結束之前還有其他問題嗎？"},
+        {"en": "We have two warehouses: one is near the port, and <u>the other</u> is next to the airport.", "zh": "我們有兩座倉庫：一座在港口附近，另一座在機場旁邊。"},
+        {"en": "Some staff members drive to work; <u>others</u> take the train.", "zh": "有些員工開車上班，其他人搭火車。"}
+      ],
+      "quiz": [
+        {"type": "choose", "q": "<em>Some clients pay online; ___ pay by bank transfer.</em>", "options": ["other", "others", "another"], "answer": 1, "why": "空格後面直接是動詞 <em>pay</em>，沒有名詞，所以要用自己就是名詞的 <em>others</em>（等於 <em>other clients</em>）。<em>other</em> 後面要接名詞；<em>another</em> 是「再一個」，單數，也配不上 <em>pay</em>。"}
+      ],
+      "takeaway": "<em>another</em> 是「再一個」，接單數；<em>the other</em>、<em>the others</em> 是「剩下的全部」；<em>others</em> 自己就是名詞，後面不再接名詞。"
+    }
+  ],
+  "mistakes": [
+    {"wrong": "We need more informations about the shipping costs.", "right": "We need more information about the shipping costs.", "why": "<em>information</em> 是不可數名詞，沒有 <em>-s</em>。想強調一項一項，可以改說 <em>more details</em>。"},
+    {"wrong": "Every employees has to complete the survey.", "right": "Every employee has to complete the survey.", "why": "<em>every</em> 一次看一個，後面接單數名詞。"},
+    {"wrong": "There were less complaints this quarter.", "right": "There were fewer complaints this quarter.", "why": "<em>complaints</em> 可數，「比較少」用 <em>fewer</em>；<em>less</em> 接不可數名詞。"},
+    {"wrong": "Most of employees prefer the new schedule.", "right": "Most of the employees prefer the new schedule.", "why": "<em>most of</em> 後面要有 <em>the</em>、<em>our</em> 這類指定範圍的字；不然就拿掉 <em>of</em>，寫 <em>Most employees</em>。"},
+    {"wrong": "Some guests ordered tea, and others guests ordered coffee.", "right": "Some guests ordered tea, and other guests ordered coffee.", "why": "後面有名詞 <em>guests</em>，前面用 <em>other</em>。<em>others</em> 自己就是名詞，不再接名詞。"}
+  ],
+  "workbook": ["quantity"]
+}

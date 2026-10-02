@@ -1,4 +1,4 @@
-# Question bank for The Workbook (TOEIC Parts 2–5). Items live in the items_*.py files (schema in DESIGN.md section 5);
+# Question bank for The Workbook (TOEIC Parts 2–7). Items live in the items_*.py files (schema in DESIGN.md section 5);
 # this module collects them and names the units.
 from items_grammar_a import ITEMS as GRAMMAR_A
 from items_grammar_b import ITEMS as GRAMMAR_B
@@ -7,10 +7,11 @@ from items_listen import ITEMS as LISTEN
 
 ITEMS = GRAMMAR_A + GRAMMAR_B + VOCAB + LISTEN
 
-# Rounds 4–6 (written under WRITING_RULES.md) live in their own files; they join the bank once they exist.
+# Rounds 4–7 (written under WRITING_RULES.md) live in their own files; they join the bank once they exist.
 import importlib
 for _name in ("items_grammar_c", "items_vocab_b", "items_listen_b", "items_grammar_d", "items_vocab_c", "items_listen_c",
-              "items_listen_d", "items_listen_e", "items_listen_f", "items_grammar_e", "items_grammar_f", "items_grammar_g", "items_grammar_h"):
+              "items_listen_d", "items_listen_e", "items_listen_f", "items_grammar_e", "items_grammar_f", "items_grammar_g", "items_grammar_h",
+              "items_read_a", "items_read_b", "items_read_c"):
     try:
         ITEMS = ITEMS + importlib.import_module(_name).ITEMS
     except ModuleNotFoundError as _e:
@@ -47,4 +48,6 @@ UNITS = {
     "talk-topic": ("短講：主旨", "listen", "Talks: Topic"),
     "talk-detail": ("短講：細節", "listen", "Talks: Details"),
     "talk-next": ("短講：下一步", "listen", "Talks: What Happens Next"),
+    "p6": ("短文填空", "read", "Text Completion"),
+    "p7-triple": ("三篇閱讀", "read", "Three Documents"),
 }
