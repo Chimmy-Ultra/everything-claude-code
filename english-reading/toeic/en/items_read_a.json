@@ -17,8 +17,8 @@
           "找出代名詞代替的名詞。"
         ],
         "why": [
-          "Tenants on the lower floors are asked to <em>leave … free for residents of the upper floors</em>. What they leave free is the elevator in the sentence before: <em>The elevator that remains in service</em>. Paragraph 1 says only one elevator is shut down at a time, so just one is running. One elevator is singular: <em>it</em>.",
-          "低樓層住戶被要求 leave … free for residents of the upper floors。要留下來的，是前一句的 The elevator that remains in service。第一段說一次只停一部，所以施工期間只有一部在運轉。一部電梯是單數，用 it。"
+          "Tenants on the lower floors are asked to <em>leave … free for residents of the upper floors</em>. What they leave free is the elevator in the sentence before: <em>The elevator that remains in service</em>. Paragraph 1 says only one elevator is shut down at a time, so just one is running. That is one elevator, a singular noun, so the pronoun is <em>it</em>.",
+          "低樓層住戶被要求 leave … free for residents of the upper floors。他們要空出來給高樓層的，是前一句的 The elevator that remains in service。第一段說一次只停一部，所以施工期間只有一部在運轉。一部電梯是單數名詞，代名詞用 it。"
         ]
       },
       {
@@ -27,7 +27,7 @@
           "連接詞的線索在下一段。"
         ],
         "why": [
-          "The sentence itself does not decide; paragraph 3 does. It says the freight elevator is <em>open to tenants for these deliveries from 6 to 8 a.m. each weekday</em>. <em>these deliveries</em> are the furniture and large items in the blank's sentence, and 6 to 8 a.m. is its <em>early in the morning</em>. So large items may come in through the loading dock at that time; at any other time they are postponed: <em>unless</em>.",
+          "The sentence itself does not decide; paragraph 3 does. It says the freight elevator is <em>open to tenants for these deliveries from 6 to 8 a.m. each weekday</em>. <em>these deliveries</em> are the furniture and large items in the blank's sentence, and 6 to 8 a.m. is the time that sentence calls <em>early in the morning</em>. So large items may come in through the loading dock at that time, and at any other time they are postponed: <em>unless</em>.",
           "本句自己決定不了，要看第三段。第三段說貨梯 open to tenants for these deliveries from 6 to 8 a.m. each weekday。these deliveries 就是空格那句的家具和大型物品，6 點到 8 點就是那句的 early in the morning。所以大型物品在這個時段經卸貨區送進來是可以的，其他時間才要延後：用 unless（除非）。"
         ]
       },
@@ -88,8 +88,8 @@
           "先是好結果，再是因此採取的行動。"
         ],
         "why": [
-          "The sentence before says the sales staff <em>reported far fewer rejected claims than they had with the paper forms</em>. <em>rejected</em> sounds negative, but <em>far fewer</em> rejected claims is good news: the trial worked. Because of this, Tallyway will replace the paper forms for everyone. The blank's sentence is the result of the one before: <em>As a result</em>.",
-          "前一句說業務部同仁 reported far fewer rejected claims than they had with the paper forms。rejected 雖然是負面字，但 far fewer rejected claims（被退回的申請少很多）是好消息：試用很成功。因為這樣，全公司都改用 Tallyway。這一句是前一句的結果：As a result。"
+          "The sentence before says the sales staff <em>reported far fewer rejected claims than they had with the paper forms</em>. <em>rejected</em> sounds negative, but having <em>far fewer</em> of them is good news: the trial worked. Because of this, Tallyway will replace the paper forms for everyone. The blank's sentence is the result of the one before: <em>As a result</em>.",
+          "前一句說業務部同仁 reported far fewer rejected claims than they had with the paper forms。rejected 雖然是負面字，但被退回的申請 far fewer（少很多）是好消息：試用很成功。因為這樣，全公司都改用 Tallyway。這一句是前一句的結果：As a result。"
         ]
       },
       {
@@ -169,13 +169,13 @@
           "插入句：下一句在解釋它。"
         ],
         "why": [
-          "The sentence before says orders <em>have nearly doubled</em> and the ovens <em>now run around the clock</em>, so Mill Road is working at its limit. The sentence after says <em>The bakery sits on a narrow lot between a school and a row of houses</em>: there is no room to build more there. The missing sentence is the point that this explains: <em>Expanding the original bakery was never an option.</em> That is why the company is opening a second site.",
+          "The sentence before says orders <em>have nearly doubled</em> and the ovens <em>now run around the clock</em>, so Mill Road is working at its limit. The sentence after says <em>The bakery sits on a narrow lot between a school and a row of houses</em>: there is no room to build more there. So the blank states the conclusion that the narrow lot supports: <em>Expanding the original bakery was never an option.</em> That is why the company is opening a second site.",
           "前一句說訂單 have nearly doubled，烤爐 now run around the clock，磨坊路的廠已經滿載。後一句說 The bakery sits on a narrow lot between a school and a row of houses：原址沒有空間再蓋。空格要放的，就是這句話在解釋的事：Expanding the original bakery was never an option（擴建原本的烘焙廠從來不是選項）。所以公司才要另開第二座生產基地。"
         ]
       },
       {
         "point": [
-          "Tense: the dateline shows March is past.",
+          "Tense: the article's date shows that March is past.",
           "時態：報導日期顯示 3 月已經過去。"
         ],
         "why": [
@@ -253,12 +253,12 @@
     "q": [
       {
         "point": [
-          "Same or different? Check the first paragraph.",
-          "相同還是不同？看第一段。"
+          "Same or different? Check the start of the letter.",
+          "相同還是不同？看信的開頭。"
         ],
         "why": [
-          "The first paragraph says the printed copy <em>often arrives a week or more after the first of the month</em>. The blank's sentence says <em>the digital edition will reach you on the first of every month</em>. The two editions differ, so the answer is <em>Unlike</em>.",
-          "第一段說紙本 often arrives a week or more after the first of the month。空格這一句說 the digital edition will reach you on the first of every month。兩種版本不同，所以用 Unlike（和……不同）。"
+          "The first paragraph after <em>Dear Subscriber</em> says the printed copy <em>often arrives a week or more after the first of the month</em>. The blank's sentence says <em>the digital edition will reach you on the first of every month</em>. The two editions differ, so the answer is <em>Unlike</em>.",
+          "稱呼 Dear Subscriber 後面的第一段說紙本 often arrives a week or more after the first of the month。空格這一句說 the digital edition will reach you on the first of every month。兩種版本不同，所以用 Unlike（和……不同）。"
         ]
       },
       {
@@ -277,8 +277,8 @@
           "拿掉 our records show，再看空格的作用。"
         ],
         "why": [
-          "<em>our records show</em> is an extra phrase placed inside the clause. Without it, the sentence reads <em>Subscribers … have already paid for next year</em>. The blank comes right before the verb <em>have already paid</em>, so it is the subject of that verb. A subject that refers to people: <em>who</em>.",
-          "our records show 是插在關係子句中間的插入語。拿掉它，句子是 Subscribers … have already paid for next year。空格後面直接接動詞 have already paid，所以空格是這個動詞的主詞。指人的主詞用 who。"
+          "<em>our records show</em> is an extra phrase placed inside the clause. Without it, the sentence reads <em>Subscribers … have already paid for next year</em>, and the blank sits right before the verb <em>have already paid</em>. So the blank is the subject of that verb and stands for the people just named: <em>who</em>.",
+          "our records show 是插在關係子句中間的插入語。拿掉它，句子是 Subscribers … have already paid for next year，空格就緊接在動詞 have already paid 前面。所以空格是這個動詞的主詞，代表前面提到的人：who。"
         ]
       },
       {
@@ -287,8 +287,8 @@
           "Should you + 原形動詞 = If you + 動詞。"
         ],
         "why": [
-          "After the comma comes an instruction: <em>please check the box on the enclosed form</em>. So the first half must be a condition. <em>Should you prefer</em> is a formal way to say <em>If you prefer</em>: <em>if</em> is left out and <em>should</em> comes before the subject.",
-          "逗號後面是指示：please check the box on the enclosed form。所以前半要是一個條件。Should you prefer 是 If you prefer 的正式說法：省略 if，把 should 放到主詞前面。"
+          "After the comma comes what the reader should do: <em>please check the box on the enclosed form</em>. It applies only to readers who want the magazine by mail, so the first half sets that condition: <em>you prefer to keep receiving the magazine by mail</em>. <em>Should you prefer</em> is a formal way to say <em>If you prefer</em>: <em>if</em> is left out and <em>should</em> comes before the subject.",
+          "逗號後面是要讀者做的事：please check the box on the enclosed form。這件事只適用於想繼續收紙本的讀者，所以前半句是這個動作的條件：you prefer to keep receiving the magazine by mail。Should you prefer 是 If you prefer 的正式說法：省略 if，把 should 放到主詞前面。"
         ]
       }
     ],
