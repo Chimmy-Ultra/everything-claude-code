@@ -155,7 +155,7 @@ ITEMS = [
             {
                 "q": "What is suggested about the lunch Ms. Whitfield ordered?",
                 "options": [
-                    "It offered more main dishes than the January lunch.",
+                    "It had more main dishes than in January.",
                     "It was paid for in full in advance.",
                     "It was the same package as in January.",
                     "It was cooked at Coldharbor's new office.",
