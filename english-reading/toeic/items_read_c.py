@@ -8,7 +8,11 @@
 # S two steps) and its band; the blind reviewer sets the final band and `level`. `level` is 3 for now and will be set
 # from the blind review.
 # reviewed stays False until the items pass a blind review.
-# Self-test summary: easy 0, medium 4, hard 6. Answer positions over the 10 questions: A 3, B 2, C 2, D 3.
+# Revision after the first blind review (10/10 keys matched, no ambiguity): r-p7-05:0 distractor B now comes from the
+# e-mail's refund paragraph; r-p7-05:1 distractors C/D replaced with senses that fit the sentence locally;
+# r-p7-04:4 key reworded (preferred date, not "requested"); the r-p7-04 invoice now has Attn (Ms. Dana Whitfield)
+# and an Event line without a date.
+# Self-test summary: easy 0, medium 3, hard 7. Answer positions over the 10 questions: A 3, B 2, C 2, D 3.
 
 ITEMS = [
     # ------------------------------------------------------------------ r-p7-04  catering
@@ -75,6 +79,7 @@ ITEMS = [
             {
                 "kind": "Invoice",
                 "head": [["Invoice no.", "LT-2217"], ["Client", "Coldharbor Surveying, 14 Mill Lane, Ashby"],
+                         ["Attn", "Ms. Dana Whitfield, Office Manager"], ["Event", "Staff training day lunch"],
                          ["Issued", "March 24"]],
                 "title": "Larkspur Table Catering: Invoice",
                 "table": {
@@ -208,13 +213,13 @@ ITEMS = [
                     "It was held on March 20.",
                     "Its final guest count was under 30.",
                     "It was held on March 18.",
-                    "It took place two days later than requested.",
+                    "It was held two days after Ms. Whitfield's preferred date.",
                 ],
                 "answer": 3,
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "三份合併：發票上 $60 那一筆要回網頁對成「週末加價」，再用信裡的備案日期算出活動辦在哪天",
-                    "why": "發票第 3 行 Staffing，Service team surcharge，$60.00。網頁第 3 段：只有 Events held on a Saturday or Sunday 才 carry an additional $60 staffing charge，所以活動辦在週末。E-mail 第 3 段：她希望 Thursday, March 20；如果施工人員 run late，就 move the training to Saturday, March 22。發票有週末人員費 → 活動辦在 3 月 22 日星期六，比她要求的 20 日晚兩天（two days later than requested）。",
+                    "why": "發票第 3 行 Staffing，Service team surcharge，$60.00。網頁第 3 段：只有 Events held on a Saturday or Sunday 才 carry an additional $60 staffing charge，所以活動辦在週末。E-mail 第 3 段：她希望 Thursday, March 20；如果施工人員 run late，就 move the training to Saturday, March 22。發票有週末人員費 → 活動辦在 3 月 22 日星期六，比她原本希望（We would like）的 20 日晚兩天——two days after Ms. Whitfield's preferred date。發票的 Event 欄只寫活動名稱、沒有日期，所以只能從那筆 $60 推。",
                     "evidence": [[2, 2], [0, 2], [1, 2]],
                     "wrong": [
                         "被取代的資訊：3 月 20 日星期四是她希望的日子，但發票的 $60 週末人員費說明最後辦在週六。",
@@ -322,7 +327,7 @@ ITEMS = [
                 "q": "Why did Ms. Castell send the e-mail?",
                 "options": [
                     "To ask passengers to confirm bookings",
-                    "To promote a tour later in June",
+                    "To explain a refund policy",
                     "To announce changes to a planned trip",
                     "To apologize for a late departure",
                 ],
@@ -334,13 +339,13 @@ ITEMS = [
                     "evidence": [[1, 1], [1, 2], [1, 3]],
                     "wrong": [
                         "第 4 段只對「不想去的人」（If you would prefer not to travel）提供取消或改團；照原計畫去的人什麼都不用做，信沒有要每個人確認。",
-                        "提到但不是目的：6 月 28 日的 Lakeside Day Tour 是給不想去的人的替代方案，是補償措施的一部分，不是在推銷。",
+                        "提到但不是目的：退款在第 4 段，但那是因為第 2、3 段的變動才提供的補償，只給不想去的人；而且是一次性的方案（This offer stands until … June 12），不是一般的退款規定。",
                         None,
                         "時間錯置：晚了二十分鐘出發是評論（6 月 16 日）寫的週六當天的事；e-mail 是 6 月 9 日、出發前寄的，不可能為那件事道歉。",
                     ],
                     "wrongMore": [
                         "This offer stands until 5:00 p.m. on Thursday, June 12 有期限、有選項，看起來像在要求回覆；但對象只是 If you would prefer not to travel 的人，其他人 travel as planned 就好。",
-                        "信裡確實出現另一個行程的名稱、日期，還強調 at no extra cost，讀起來像廣告；但它出現在第 4 段，是給因為湖而報名、現在不想去的人的補償選項，信的主體是第 2、3 段的變動。",
+                        "第 4 段整段都在講取消、全額退款、改團和抵用券，篇幅不小，又是信的最後一段，看起來像重點；但它開頭是 We know that some of you chose this tour for the lake——先有船停駛這個變動，才有這個方案。信寫給所有旅客，主體是第 2、3 段告訴大家行程哪裡不一樣；退款只是給其中一部分人的選擇，而且只到 6 月 12 日，不是一套固定的退款規定。",
                         None,
                         "晚出發這件事確實發生過，而且就在評論裡，容易被當成這次通知的起因；但它發生在 6 月 14 日，e-mail 的日期是 6 月 9 日。",
                     ],
@@ -349,23 +354,23 @@ ITEMS = [
             },
             {
                 "q": "In the e-mail, the word \"stands\" in paragraph 4 is closest in meaning to",
-                "options": ["remains valid", "is located", "rises", "is tolerated"],
+                "options": ["remains valid", "is located", "is on hold", "is displayed"],
                 "answer": 0,
-                "ldbs": {"L": True, "D": False, "B": True, "S": False, "band": "medium"},
+                "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "字義題：an offer stands＝（提議、方案）仍然有效，不是「站立」",
-                    "why": "E-mail 第 4 段 This offer stands until 5:00 p.m. on Thursday, June 12：前一句講取消退款或改團的方案，這句說這個方案在 6 月 12 日下午五點前都有效，也就是 remains valid。後面接的 until … 是期限，正好配「維持有效」。",
+                    "why": "E-mail 第 4 段 This offer stands until 5:00 p.m. on Thursday, June 12：前一句講取消退款或改團的方案，這句說這個方案在 6 月 12 日下午五點前都有效，也就是 remains valid。後面接的 until … 是期限，正好配「維持有效」。要排除 is on hold（只看這一句也通），得回到前一句 you may cancel … or move …——方案現在就能用，不是被擱置到星期四。",
                     "evidence": [[1, 3]],
                     "wrong": [
                         None,
                         "stand 可以指建築物「坐落」（The inn stands by the river），但主詞是 offer，不是建築物；until … 是期限，不是地點。",
-                        "最常見義陷阱：stand 最常見是「站立、起立」，方案不會站起來。",
-                        "can't stand（受不了）的 stand 是「忍受」，要接受詞；這裡 stands 後面沒有受詞，而且主詞是方案。",
+                        "stand 有「擱著不動、靜置」的意思（Let the mixture stand for ten minutes），is on hold 放進這一句也通；但前一句 you may cancel … 是現在就能用的方案，until … June 12 是截止時間，不是暫停到那時。",
+                        "stand 可以指東西「立著、擺著」（A trophy stands on the shelf），像店裡的優惠展示到幾點；但這是 e-mail 裡給旅客的方案，沒有擺在哪裡展示，until … 講的是期限。",
                     ],
                     "wrongMore": [
                         None,
                         "行程表裡有修道院、旅店、莊園，stand 表「坐落於」的用法在旅遊文件裡很常見，容易往這裡想；但這一句的主詞是 This offer，後面的 until 5:00 p.m. on Thursday, June 12 是時間，不是位置。",
-                        "stand 最先學到的是 stand up；但 offer 不是人，後面接的是期限 until …，只有「維持有效」講得通。",
+                        "This offer is on hold until 5:00 p.m. on Thursday, June 12 單看這一句完全通順，而 stand 也真的有「放著不動」的用法；要讀前一句才排除：If you would prefer not to travel, you may cancel … or move … 是用 may 給的、現在就能行使的選項，所以這個方案從現在到 6 月 12 日下午五點都有效，不是到那時才恢復。",
                         None,
                     ],
                     "vocab": [["full refund", "全額退款"], ["at no extra cost", "不另收費"], ["as planned", "照原計畫"]],

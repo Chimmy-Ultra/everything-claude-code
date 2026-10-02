@@ -1,21 +1,21 @@
 {
   "unit": "p6",
   "lead": [
-    "One short business document with four blanks. Most take a word or phrase; one takes a whole sentence. The sentence with a blank may accept several options, so the deciding clue is often in another sentence or paragraph.",
-    "一份簡短的商業文件，有四個空格。大多填一個字或片語，其中一個要填整句。有空格的句子可能接受好幾個選項，所以決定答案的線索常在另一句或另一段。"
+    "One short business document with four blanks. A blank may need a word, a phrase or a whole sentence. The sentence with a blank may accept several options, so the deciding clue can be in another sentence or paragraph.",
+    "一份簡短的商業文件，有四個空格。空格可能要填一個字、一個片語或一整句。有空格的句子可能接受好幾個選項，所以決定答案的線索可能在另一句或另一段。"
   ],
   "steps": [
     [
-      "Read from the top, not just the sentence with the blank. Note the date, the writer and what is changing.",
-      "從頭讀，不要只讀有空格的那一句。注意日期、寫的人，以及什麼事情有變動。"
+      "Read from the top, not just the sentence with the blank. Note any date, who is writing and what is changing.",
+      "從頭讀，不要只讀有空格的那一句。注意文中有沒有日期，也注意是誰寫的、有什麼變動。"
     ],
     [
-      "For a word blank, try each option in its sentence. If two or more fit, look before and after for the clue.",
-      "字詞空格：把每個選項放進句子試試。若兩個以上都通，就往前後找線索。"
+      "For a word blank, try each option in its sentence. If only one fits, take it. If several fit, look before and after.",
+      "字詞空格：把每個選項放進句子試試。只有一個通就選它；好幾個都通，就往前後找線索。"
     ],
     [
-      "For the sentence blank, read the sentence before it and any sentence after it. The right option must connect to both.",
-      "句子空格：讀它前一句，後面若還有句子也要讀。正確的選項要和前後都接得上。"
+      "For the sentence blank, read the sentence before it and the one after it, if there is one. The right option must connect to each.",
+      "句子空格：讀它前一句；如果後面還有句子，也讀後一句。正確的選項要和讀到的每一句都接得上。"
     ],
     [
       "Check words like these, this, the same or such in each option. They must point to something already in the text.",
@@ -29,17 +29,17 @@
         "時態：時間在另一句"
       ],
       "body": [
-        "A sentence with no time word may accept several tenses. Check the date of the letter and words like last week or next month in nearby sentences.",
-        "沒有時間詞的句子可能好幾個時態都通。看信件日期，以及附近句子裡的 last week、next month 這類字。"
+        "A sentence with no time word may accept several tenses. Check the date line, if there is one, and words like last week or next month in nearby sentences.",
+        "沒有時間詞的句子可能好幾個時態都通。如果有日期欄就看日期，也看附近句子裡的 last week、next month 這類字。"
       ],
       "ex": [
         [
-          "Thank you for attending last Thursday's workshop. The slides we <em>presented</em> are now on the staff website.",
+          "Thank you for attending <em>last Thursday's</em> workshop. The slides we <em>presented</em> are now on the staff website.",
           "感謝您參加上週四的工作坊。我們當天展示的投影片已放在員工網站上。"
         ],
         [
-          "Memo, May 10: The new branch <em>will open</em> on Harbor Road. The ceremony is set for June 3.",
-          "五月十日的備忘錄：新分行將在 Harbor Road 開幕，開幕典禮定在六月三日。"
+          "Memo, <em>May 10</em>: The new branch <em>will open</em> on Harbor Road. Its first day of business is <em>June 3</em>.",
+          "五月十日的備忘錄：新分行將在 Harbor Road 開幕，第一天營業是六月三日。"
         ]
       ]
     },
@@ -69,13 +69,13 @@
         "連接副詞：兩句是什麼關係？"
       ],
       "body": [
-        "However, as a result, in addition, instead and otherwise can all follow a full stop. Decide the relation first: opposite, result, extra point, replacement, or what happens if not.",
-        "however、as a result、in addition、instead、otherwise 都能放在句號後。先判斷關係：相反、結果、補充、取代，或「不這樣做的話」。"
+        "Several linking adverbs can follow a full stop. Decide the relation first: opposite (however), result (as a result), extra point (in addition), replacement (instead) or 'if not' (otherwise).",
+        "好幾個連接副詞都能放在句號後。先判斷兩句的關係：相反（however）、結果（as a result）、補充（in addition）、取代（instead）、「不這樣做的話」（otherwise）。"
       ],
       "ex": [
         [
-          "The north entrance will be closed on Saturday. <em>Instead</em>, please use the door on Pine Street.",
-          "北側入口星期六關閉，請改走 Pine Street 那側的門。"
+          "The north entrance will be closed on Saturday. <em>Instead</em>, please use the door on Alder Street.",
+          "北側入口星期六關閉，請改走 Alder Street 那側的門。"
         ],
         [
           "Please confirm your booking by Friday. <em>Otherwise</em>, the room may be given to another guest.",
@@ -99,7 +99,7 @@
         ],
         [
           "Our lunch menu changes every week. Please check the board for the <em>current</em> dishes.",
-          "我們的午餐菜單每週更換，請看看板上目前的菜色。"
+          "我們的午餐菜單每週更換，請查看告示板上目前供應的菜色。"
         ]
       ]
     },
@@ -109,8 +109,8 @@
         "插入句：指回前文"
       ],
       "body": [
-        "The right sentence often refers to something already said: these changes, the same discount, this request. That thing must appear before the blank and match in number.",
-        "正確的句子常指回已提過的事：these changes、the same discount、this request。被指的東西必須在空格前出現，單複數也要一致。"
+        "If an option refers to something already said (these changes, the same discount, this request), that thing must appear before the blank and match in number.",
+        "如果選項指回已經提過的事（these changes、the same discount、this request），那件事必須在空格前出現，單複數也要一致。"
       ],
       "ex": [
         [
@@ -118,8 +118,8 @@
           "本店的營業時間和訂位系統將於三月一日變更。這些變更不影響既有的訂位。"
         ],
         [
-          "Members receive a discount on all classes. <em>The same discount applies to guests they bring.</em>",
-          "會員上所有課程都享有折扣，他們帶來的來賓也適用同樣的折扣。"
+          "Members receive a discount on all classes. <em>The same discount applies to any guests they bring.</em>",
+          "會員參加所有課程都享有折扣，他們帶來的來賓也適用同樣的折扣。"
         ]
       ]
     },
@@ -129,13 +129,13 @@
         "插入句：要帶出下一句"
       ],
       "body": [
-        "If a sentence follows the blank, read it too. If it opens with Until then, For this reason or To place an order, the inserted sentence must supply that time, reason or service.",
-        "空格後如果還有句子，也要讀。若它以 Until then、For this reason、To place an order 開頭，插入句就必須提供那個時間、理由或服務。"
+        "If a sentence follows the blank, read it too. If it opens with Until then, For this reason or To place an order, the inserted sentence must supply the time, the reason or the thing to order.",
+        "空格後如果還有句子，也要讀。若它以 Until then、For this reason、To place an order 開頭，插入句就必須交代那個時間、理由，或要訂的東西。"
       ],
       "ex": [
         [
-          "The cafeteria will be closed next month. <em>Staff may order lunch from Rosa's Kitchen instead.</em> To place an order, call extension 204.",
-          "員工餐廳下個月關閉，員工可以改向 Rosa's Kitchen 訂午餐。訂餐請撥分機 204。"
+          "The cafeteria will be closed next month. <em>Staff may order lunch from Marlowe's Kitchen instead.</em> To place an order, call extension 204.",
+          "員工餐廳下個月關閉，員工可以改向 Marlowe's Kitchen 訂午餐。訂餐請撥分機 204。"
         ],
         [
           "<em>Several customers have reported problems with our app.</em> For this reason, an update will be released on Monday.",
@@ -154,11 +154,11 @@
       ]
     },
     {
-      "right": "Thank you for attending last week's training session. The slides we presented are attached to this e-mail.",
-      "wrong": "Thank you for attending last week's training session. The slides we will present are attached to this e-mail.",
+      "right": "Renovation of the lobby begins on June 1. During the work, guests will enter through the side door.",
+      "wrong": "Renovation of the lobby begins on June 1. During the work, guests entered through the side door.",
       "why": [
-        "Last week in the first sentence puts the session in the past, so the slides have already been presented.",
-        "第一句的 last week 把課程放在過去，所以投影片已經展示過了。"
+        "Begins on June 1 puts the renovation in the future, so the guests' route is a future plan. Entered would describe something already done.",
+        "begins on June 1 把整修放在未來，所以房客走哪個門是未來的安排。entered 描述的是已經發生的事。"
       ]
     },
     {
@@ -211,7 +211,7 @@
         ],
         [
           "at that time",
-          "在那時"
+          "當時、屆時"
         ],
         [
           "in this case",
@@ -231,7 +231,7 @@
         ],
         [
           "For this reason,",
-          "因為這個原因"
+          "基於這個原因"
         ],
         [
           "In that case,",
@@ -262,20 +262,20 @@
   ],
   "traps": [
     [
-      "Choosing the linking adverb that sounds most natural in its own sentence. Many fit after a full stop; only the sentence before shows which relation is true.",
-      "選了在本句裡聽起來最自然的連接副詞。很多都能放在句號後，只有前一句能說明真正的關係。"
+      "Choosing the linking adverb that sounds most natural in its own sentence. Many fit after a full stop; only the two sentences read together show which relation is true.",
+      "選了在本句裡聽起來最自然的連接副詞。很多都能放在句號後，要把前後兩句合起來讀，才看得出真正的關係。"
     ],
     [
-      "Taking the nearest noun as the meaning of it or they. Check the noun against the verb: a request is forwarded, a policy takes effect.",
-      "把最近的名詞當成 it 或 they 指的東西。要用動詞檢查：被轉交的是申請，生效的是規定。"
+      "Assuming it or they refers to the nearest noun. Check the noun against the verb: a request is forwarded, a policy takes effect.",
+      "以為 it 或 they 指的是最近的名詞。要用動詞檢查：被轉交的是申請，生效的是規定。"
     ],
     [
-      "Picking an inserted sentence because it is on topic. A wrong option can match the topic but mention something not yet introduced, or clash with a date or name.",
-      "因為和主題相關就選了插入句。錯誤選項可能主題相同，卻提到還沒出現的東西，或和日期、人名衝突。"
+      "Picking an inserted sentence because it is on topic. A wrong option can match the topic but mention something not yet introduced, clash with a date or name, or break the link with the sentences around it.",
+      "因為和主題相關就選了插入句。錯誤選項可能主題相同，卻提到還沒出現的東西、和日期或人名衝突，或切斷了和前後句的銜接。"
     ],
     [
-      "Choosing a tense from the blank's sentence alone. Look at the date line and the time words in earlier paragraphs.",
-      "只看空格那一句就決定時態。要看日期欄和前面段落的時間詞。"
+      "Choosing a tense from the blank's sentence alone. Look at any date line and the time words in nearby sentences and paragraphs.",
+      "只看空格那一句就決定時態。要看有沒有日期欄，以及前後句、前後段裡的時間詞。"
     ]
   ]
 }

@@ -7,11 +7,11 @@
   "steps": [
     [
       "Skim each document's type, date and writer first. Note what each one adds: a plan, a change, an order or a review.",
-      "先略讀每份文件的種類、日期和寫的人，記下每份提供什麼：計畫、變更、訂單或評論。"
+      "先略讀每份文件的種類、日期和寄件人或作者，記下每份提供什麼：計畫、變更、訂單或評論。"
     ],
     [
-      "Read the question and decide where to look: one document, or two that share a name, date or product.",
-      "讀題目，決定去哪裡找：一份文件，或是有共同人名、日期、產品的兩份。"
+      "Read the question and decide where to look: one document, or two or three that share a name, date or product.",
+      "讀題目，決定去哪裡找：一份文件，或是有共同人名、日期、產品的兩三份。"
     ],
     [
       "For a question that links documents, find the shared item first, then check it against the rule, price or date in the other.",
@@ -29,13 +29,13 @@
         "目的題：主要的請求或消息"
       ],
       "body": [
-        "Why was the e-mail sent? Find the request or news the writer wants the reader to act on. Thanks, background and small details are true but are not the purpose.",
-        "Why was the e-mail sent? 找出寫信的人要讀者處理的請求或消息。致謝、背景和小細節雖然屬實，卻不是目的。"
+        "Why was the e-mail sent? Find the main thing the writer is asking for or announcing. Thanks, background and small details are true but are not the purpose.",
+        "Why was the e-mail sent? 找出寫信的人主要在要求或宣布的事。致謝、背景和小細節雖然屬實，卻不是目的。"
       ],
       "ex": [
         [
-          "We met at last week's trade fair in Corvale. <em>I am writing to ask for a quote</em> on fifty office chairs.",
-          "我們上週在 Corvale 的商展見過面。我寫信是想詢問五十張辦公椅的報價。"
+          "We met at last week's trade fair in Lanmoor. <em>I am writing to ask for a quote</em> for fifty office chairs.",
+          "我們上週在 Lanmoor 的商展見過面。我寫信是想詢問五十張辦公椅的報價。"
         ]
       ]
     },
@@ -65,8 +65,8 @@
         "後面的文件可能更改計畫"
       ],
       "body": [
-        "A schedule or ad gives the plan. A later e-mail may move the date, change the room or replace a speaker. Questions about what actually happens need the latest version.",
-        "時程表或廣告給的是原計畫。後來的 e-mail 可能改日期、換會議室或換講者。問實際情況的題目要用最新的版本。"
+        "A schedule or ad gives the plan. A later e-mail may move the date, change the room or replace a speaker. Questions about what actually happens need the latest version. Check the dates to see which is later.",
+        "時程表或廣告給的是原計畫。後來的 e-mail 可能改日期、換會議室或換講者。問實際情況的題目要用最新的版本，所以要看日期，確定哪一份比較晚。"
       ],
       "ex": [
         [
@@ -97,21 +97,21 @@
         "字義題：這個句子裡的意思"
       ],
       "body": [
-        "The word has several meanings, and the one you know best may be a trap. Put each option in place of the word and read the sentence again.",
-        "這個字有好幾個意思，你最熟的那個可能就是陷阱。把每個選項換進句子裡，重讀一次。"
+        "Find the word in the paragraph the question names. It may have several meanings, and the one you know best may be a trap. Put each option in place of the word and read the sentence again.",
+        "到題目指定的那一段找出這個字。它可能有好幾個意思，你最熟的那個可能就是陷阱。把每個選項換進句子裡，重讀一次。"
       ],
       "ex": [
         [
-          "Ms. Varga will <em>address</em> the staff at noon. Here it means speak to, not write an address on.",
-          "Varga 女士中午將對員工講話。這裡的 address 是「對……講話」，不是「寫地址」。"
+          "The bank will <em>extend</em> a loan to the firm. Here it means offer, not make longer.",
+          "銀行將提供這家公司一筆貸款。這裡的 extend 是「提供」，不是「延長」。"
         ],
         [
           "Drivers must <em>observe</em> the speed limit in the parking lot. Here it means obey, not watch.",
           "駕駛人在停車場內必須遵守速限。這裡的 observe 是「遵守」，不是「觀察」。"
         ],
         [
-          "The report <em>covers</em> sales in all three regions. Here it means deals with, not hides.",
-          "這份報告涵蓋三個地區的銷售。這裡的 covers 是「涵蓋、處理」，不是「遮住」。"
+          "The report <em>covers</em> sales in all three regions. Here it means include, not put something over.",
+          "這份報告涵蓋三個地區的銷售。這裡的 covers 是「涵蓋、包含」，不是「蓋住」。"
         ]
       ]
     },
@@ -121,8 +121,8 @@
         "NOT 題：刪掉三個"
       ],
       "body": [
-        "What is NOT mentioned? Look for each option in the documents. The three you find are wrong; the one you cannot find is the answer. The details may be spread over two documents.",
-        "What is NOT mentioned? 逐一在文件裡找每個選項。找得到的三個是錯的，找不到的那個才是答案。這些細節可能分散在兩份文件裡。"
+        "What is NOT mentioned? Check each option against the documents, looking for the idea, not the exact words. The three the documents confirm are wrong answers; the one they never confirm, or contradict, is the answer. The details may be spread over two documents.",
+        "What is NOT mentioned? 逐一拿每個選項去文件裡核對，找的是意思，不是一模一樣的字。文件有證實的三個是錯的；文件沒有證實、甚至說相反的那個才是答案。這些細節可能分散在兩份文件裡。"
       ],
       "ex": [
         [
@@ -137,13 +137,13 @@
         "indicated 與 suggested：要由文字推得出來"
       ],
       "body": [
-        "What is indicated or suggested about someone? The answer is reworded but must follow from the text. An option that is only possible, or that is true of another person, is wrong.",
-        "What is indicated / suggested about…? 答案經過改寫，但必須由文字推得出來。只是「有可能」的選項，或其實是在講別人的選項，都是錯的。"
+        "What is indicated or suggested about someone? The answer may be reworded but must follow from the text. An option that is only possible, or that is true of another person, is wrong.",
+        "What is indicated / suggested about…? 答案可能經過改寫，但必須由文字推得出來。只是「有可能」的選項，或其實是在講別人的選項，都是錯的。"
       ],
       "ex": [
         [
-          "Text: 'Mr. Osei has run our Brenton office since 2019.' Suggested: he <em>has management experience</em>. Not suggested: he plans to retire.",
-          "原文：Osei 先生自 2019 年起負責我們的 Brenton 辦公室。可推得：他有管理經驗。推不出：他打算退休。"
+          "Text: 'Mr. Osei has headed our Brenton office since 2019.' Suggested: he <em>has management experience</em>. Not suggested: he plans to retire.",
+          "原文：Osei 先生自 2019 年起主管我們的 Brenton 辦公室。可推得：他有管理經驗。推不出：他打算退休。"
         ]
       ]
     }
@@ -161,8 +161,8 @@
       "right": "Q: How much will Ms. Ferreira pay for two days? [E-mail: I'd like the mid-size van. Price list: small van $60 a day; mid-size van $80 a day; large van $95 a day.] / A: $160.",
       "wrong": "Q: How much will Ms. Ferreira pay for two days? [E-mail: I'd like the mid-size van. Price list: small van $60 a day; mid-size van $80 a day; large van $95 a day.] / A: $120.",
       "why": [
-        "The e-mail names the mid-size van. $120 comes from the small van, the row above it.",
-        "e-mail 指定的是中型廂型車。120 美元是用上一列小型車的價格算出來的。"
+        "The e-mail names the mid-size van. $120 comes from the small van, the first one listed.",
+        "e-mail 指定的是中型廂型車。120 美元是用最先列出的小型車價格算出來的。"
       ]
     },
     {
@@ -207,7 +207,7 @@
         ],
         [
           "What is NOT mentioned as a benefit of membership?",
-          "哪一項沒有被提到是會員的好處？"
+          "文中沒有提到哪一項是會員的好處？"
         ],
         [
           "How much will Mr. Ruiz most likely pay?",
@@ -220,6 +220,18 @@
         [
           "What will happen on June 4?",
           "六月四日會發生什麼事？"
+        ],
+        [
+          "According to the notice, what must customers do?",
+          "根據公告，顧客必須做什麼？"
+        ],
+        [
+          "Who most likely is Mr. Osei?",
+          "Osei 先生最可能是什麼身分？"
+        ],
+        [
+          "What will Ms. Kato most likely do on Friday?",
+          "Kato 女士星期五最可能做什麼？"
         ]
       ]
     },
@@ -259,11 +271,19 @@
         ],
         [
           "replaces",
-          "取代"
+          "取代、改為"
         ],
         [
           "correction",
           "更正"
+        ],
+        [
+          "has been postponed until",
+          "已延後到"
+        ],
+        [
+          "revised",
+          "修訂過的"
         ]
       ]
     }
