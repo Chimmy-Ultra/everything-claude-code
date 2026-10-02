@@ -12,6 +12,9 @@
 # e-mail's refund paragraph; r-p7-05:1 distractors C/D replaced with senses that fit the sentence locally;
 # r-p7-04:4 key reworded (preferred date, not "requested"); the r-p7-04 invoice now has Attn (Ms. Dana Whitfield)
 # and an Event line without a date.
+# Second revision (second blind pass): r-p7-04:0 now tests "secures" ("carry" is tested in another set); option
+# length and shape evened out in r-p7-04:1, r-p7-04:4, r-p7-05:0 and r-p7-05:3; r-p7-04:3 says "free-delivery area"
+# and its weekend lure was replaced (it gave away the inference r-p7-04:4 needs).
 # Self-test summary: easy 0, medium 3, hard 7. Answer positions over the 10 questions: A 3, B 2, C 2, D 3.
 
 ITEMS = [
@@ -21,7 +24,7 @@ ITEMS = [
     # (free only inside Corbridge; the e-mail says the firm has left Corbridge) and a $60 "Staffing" line (the policy's
     # weekend charge; the e-mail's fallback date is Saturday, March 22). 34 guests x $26 = $884; deposit 25% of
     # 30 x $26 = $195; 884 + 35 + 60 - 195 = 784.
-    # Q1 word (D) "carry" = involve. Q2 purpose (B). Q3 (A) dessert+coffee -> Banquet -> one more main than Harvest.
+    # Q1 word (D) "secures" = guarantees. Q2 purpose (B). Q3 (A) dessert+coffee -> Banquet -> one more main than Harvest.
     # Q4 (C) delivery fee. Q5 (D) weekend staffing line -> Saturday 22 -> two days after the hoped-for Thursday 20.
     {
         "id": "r-p7-04", "type": "read", "format": "p7t", "unit": "p7-triple", "level": 3,
@@ -97,42 +100,42 @@ ITEMS = [
         ],
         "questions": [
             {
-                "q": "In the Web page, the word \"carry\" in paragraph 3 is closest in meaning to",
-                "options": ["transport", "stock", "support", "involve"],
+                "q": "In the Web page, the word \"secures\" in paragraph 3 is closest in meaning to",
+                "options": ["fastens", "protects", "obtains", "guarantees"],
                 "answer": 3,
                 "ldbs": {"L": True, "D": False, "B": True, "S": False, "band": "medium"},
                 "explain": {
-                    "point": "字義題：carry a charge＝附帶、需要（付）一筆費用，不是「搬運」",
-                    "why": "網頁第 3 段 Events held on a Saturday or Sunday carry an additional $60 staffing charge：主詞是「活動」，受詞是「費用」，意思是週末舉行的活動會附帶一筆 60 美元的人員費用，也就是 involve（涉及、需要）。carry 最常見的「搬運」在這裡講不通——活動不會搬運費用。",
+                    "point": "字義題：a deposit secures your date＝確保這一天留給你（guarantees），不是「保護安全」",
+                    "why": "網頁第 3 段 Please book at least ten days in advance. A deposit of 25 percent of the estimated food cost secures your date：這是訂餐規定，付了訂金，這一天就確定是你的、不會再接別人的單——也就是 guarantees（確保、保證）。secure 最常見的「使安全、保護」（secure the building）放進來，「訂金保護你的日期」語意不通：日期沒有面臨什麼危險或傷害。",
                     "evidence": [[0, 2]],
                     "wrong": [
-                        "最常見義陷阱：carry 最常用的意思是搬運，但「活動搬運一筆費用」不通。",
-                        "carry 另一個真實意思是商店「有賣、有庫存」（The shop carries organic food），但這句的主詞是活動，不是商店。",
-                        "carry 也有「支撐（重量）」的意思（The beams carry the roof），放進這句沒有意思。",
+                        "secure 也有「固定、綁緊」的意思（secure the boxes with rope），但日期不是可以綁住的東西。",
+                        "最常見義陷阱：secure 最常用的是「保護、使安全」，protects your date 單看也像話；但這裡講的是預訂——付了訂金，日期就保證留給你。",
+                        "secure 另一個真實意思是「（努力）取得」（secure funding），但主詞是 A deposit——訂金不會去「取得」東西，取得東西的是人。",
                         None,
                     ],
                     "wrongMore": [
-                        "這家公司的工作確實包含運送（第 1 段 delivered ready to serve；同一段前一句也在講 Delivery），所以 transport 跟整篇的情境很搭，更容易被選；但這一句的主詞是 Events、受詞是 charge，carry 在這裡是「帶有（某種後果或條件）」，像 The offense carries a fine（這項違規要罰款）。",
                         None,
-                        None,
+                        "secure 最先學到的就是「安全」，而 protects your date 在這一句裡讀起來也說得通，像是「訂金替你守住這一天」；但 protect 是讓東西免於危險或傷害。這一段是訂餐規定（前一句 Please book at least ten days in advance），付訂金是為了讓這一天確定屬於你、不被別人訂走——是保證、確保，不是保護它不受傷害。",
+                        "secure a contract／secure funding 的 secure 確實是「取得」，而且跟訂位很像（取得一個日期）；但這種用法的主詞是做事的人（The firm secured a contract）。這一句的主詞是 A deposit，訂金是手段，不會自己去取得什麼；它的作用是讓日期確定下來。",
                         None,
                     ],
-                    "vocab": [["staffing", "人員配置、人力"], ["flat fee", "固定費用"], ["city limits", "市界、市區範圍"]],
+                    "vocab": [["estimated", "預估的"], ["in advance", "事先、提前"], ["city limits", "市界、市區範圍"]],
                 },
             },
             {
                 "q": "Why did Ms. Whitfield send the e-mail?",
                 "options": [
-                    "To report a change of address",
-                    "To book a meal for a company event",
-                    "To praise an earlier lunch",
-                    "To give a final guest count",
+                    "To report a change of office address",
+                    "To order catering for a staff event",
+                    "To praise a lunch served earlier",
+                    "To give a final number of guests",
                 ],
                 "answer": 1,
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "目的題：信裡提到很多事，要找出寫信要對方「做」的那件事",
-                    "why": "E-mail 第 1 段說 we are coming back to you for our spring training day，第 2 段 please put us down for the package…、We expect about 30 people，第 3 段談日期與送達時間——整封信都在為訓練日訂午餐。選項的 book a meal 對應 put us down for the package（登記訂購），a company event 對應 our spring training day。第 1 段的搬家與一月的午餐都只是背景。",
+                    "why": "E-mail 第 1 段說 we are coming back to you for our spring training day，第 2 段 please put us down for the package…、We expect about 30 people，第 3 段談日期與送達時間——整封信都在為訓練日訂午餐。選項的 order catering 對應 put us down for the package（登記訂購），a staff event 對應 our spring training day。第 1 段的搬家與一月的午餐都只是背景。",
                     "evidence": [[1, 0], [1, 1], [1, 2]],
                     "wrong": [
                         "提到但不是目的：搬到 Ashby 是第 1 段的附帶說明（Please note…），是讓外燴知道送到哪裡，不是寫信的理由。",
@@ -144,7 +147,7 @@ ITEMS = [
                         "Please note that we have since left our Corbridge premises 看起來像在通知地址變更，而且新地址寫得很清楚；但它只是一句附帶說明，整封信後面三段都在談這次要訂什麼、多少人、哪一天、幾點送到。目的題要選整封信要對方做的事。",
                         None,
                         "Our staff enjoyed the Harvest Package … 確實是稱讚，而且是第一句，很容易被當成主旨；但它後面接 so we are coming back to you——稱讚是再次訂購的理由，不是寫信的目的。",
-                        "信裡確實談到人數，所以 guest count 沾得上邊；但 about 30 people 是估計，而 will send you the exact number 說明最終人數還沒給。",
+                        "信裡確實談到人數，所以 number of guests 沾得上邊；但 about 30 people 是估計，而 will send you the exact number 說明最終人數還沒給。",
                     ],
                     "vocab": [["premises", "（公司的）營業處所、辦公處"], ["put … down for", "幫…登記（訂購）…"], ["retirement", "退休"]],
                 },
@@ -181,25 +184,25 @@ ITEMS = [
             {
                 "q": "Why was Coldharbor Surveying charged $35?",
                 "options": [
-                    "Its event was held on a weekend.",
+                    "It added coffee service to its order.",
                     "It wanted the food by a set time.",
-                    "Its office has moved beyond the no-charge zone.",
+                    "Its new office is outside the free-delivery area.",
                     "It booked less than ten days ahead.",
                 ],
                 "answer": 2,
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨文件：發票上的一筆費用，要回政策找對應的規定，再用信判斷為什麼適用",
-                    "why": "發票第 2 行 Delivery，Flat fee，$35.00。網頁第 3 段：Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses。E-mail 第 1 段：we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby。合起來：新辦公室已不在 Corbridge，也就不在免運範圍內，所以收 $35。選項的 moved beyond the no-charge zone 改述 left our Corbridge premises＋free anywhere within Corbridge city limits。",
+                    "why": "發票第 2 行 Delivery，Flat fee，$35.00。網頁第 3 段：Delivery is free anywhere within Corbridge city limits; a flat fee of $35 applies to all other addresses。E-mail 第 1 段：we have since left our Corbridge premises; our new office is at 14 Mill Lane in Ashby。合起來：新辦公室已不在 Corbridge，也就不在免運範圍內，所以收 $35。選項的 new office is outside the free-delivery area 改述 left our Corbridge premises; our new office is … in Ashby＋free anywhere within Corbridge city limits。",
                     "evidence": [[2, 1], [0, 2], [1, 0]],
                     "wrong": [
-                        "另一行陷阱：週末的費用是發票第 3 行的 $60（網頁第 3 段的 $60 staffing charge），不是 $35。",
+                        "咖啡是 Banquet Package 本來就有的內容（網頁第 2 段 coffee service），已含在發票第 1 行每人 $26 裡；$35 那一行寫的是 Delivery。",
                         "提到但不是問的：11:30 前送達是信第 3 段的請求，網頁的規定裡沒有任何「指定時間」的收費。",
                         None,
                         "信寫於 3 月 3 日，活動在 3 月 20 或 22 日，提前十七天以上，符合 at least ten days in advance；規定也沒有說晚訂要多收錢。",
                     ],
                     "wrongMore": [
-                        "這場活動確實辦在週六（見第 5 題），所以這句話本身是對的，而且週末加價就寫在運費那句的下一句，眼睛很容易一起掃到；但題目問的是 $35 那一筆，規定裡週末對應的是 $60，發票上也是另一行 Staffing。",
+                        "e-mail 第 2 段確實特別要求 dessert and coffee，聽起來像是在一月的套餐之外加購，加購收費也很合理；但網頁第 2 段寫明 coffee service 是 Banquet Package 的一部分，價錢就是每人 $26（發票第 1 行），沒有另外的咖啡費。$35 那一行的品項是 Delivery，對應的是網頁第 3 段的運費規定。",
                         None,
                         None,
                         None,
@@ -210,21 +213,21 @@ ITEMS = [
             {
                 "q": "What is most likely true about the training day?",
                 "options": [
-                    "It was held on March 20.",
-                    "Its final guest count was under 30.",
-                    "It was held on March 18.",
-                    "It was held two days after Ms. Whitfield's preferred date.",
+                    "It took place on the date first proposed.",
+                    "Its final guest count fell short of the estimate.",
+                    "It took place on the builders' promised finish date.",
+                    "It took place two days later than first proposed.",
                 ],
                 "answer": 3,
                 "ldbs": {"L": True, "D": True, "B": True, "S": True, "band": "hard"},
                 "explain": {
                     "point": "三份合併：發票上 $60 那一筆要回網頁對成「週末加價」，再用信裡的備案日期算出活動辦在哪天",
-                    "why": "發票第 3 行 Staffing，Service team surcharge，$60.00。網頁第 3 段：只有 Events held on a Saturday or Sunday 才 carry an additional $60 staffing charge，所以活動辦在週末。E-mail 第 3 段：她希望 Thursday, March 20；如果施工人員 run late，就 move the training to Saturday, March 22。發票有週末人員費 → 活動辦在 3 月 22 日星期六，比她原本希望（We would like）的 20 日晚兩天——two days after Ms. Whitfield's preferred date。發票的 Event 欄只寫活動名稱、沒有日期，所以只能從那筆 $60 推。",
+                    "why": "發票第 3 行 Staffing，Service team surcharge，$60.00。網頁第 3 段：只有 Events held on a Saturday or Sunday 才 carry an additional $60 staffing charge，所以活動辦在週末。E-mail 第 3 段：她希望 Thursday, March 20；如果施工人員 run late，就 move the training to Saturday, March 22。發票有週末人員費 → 活動辦在 3 月 22 日星期六，比她最先提出、也是她希望的日期（We would like Thursday, March 20）晚兩天——two days later than first proposed。發票的 Event 欄只寫活動名稱、沒有日期，所以只能從那筆 $60 推。",
                     "evidence": [[2, 2], [0, 2], [1, 2]],
                     "wrong": [
-                        "被取代的資訊：3 月 20 日星期四是她希望的日子，但發票的 $60 週末人員費說明最後辦在週六。",
+                        "被取代的資訊：最先提出的日期是 3 月 20 日星期四，但發票的 $60 週末人員費說明最後辦在週六。",
                         "方向相反：信估計 about 30 people；網頁說帳單依最終人數計算，發票收了 34 人——最終人數比估計多，不是少。",
-                        "鄰近日期：3 月 18 日是施工人員答應完工的期限，不是活動日；活動是 3 月 22 日。",
+                        "鄰近日期：施工人員答應的完工日是 3 月 18 日（finish by March 18），不是活動日；活動是 3 月 22 日。",
                         None,
                     ],
                     "wrongMore": [
@@ -328,14 +331,14 @@ ITEMS = [
                 "options": [
                     "To ask passengers to confirm bookings",
                     "To explain a refund policy",
-                    "To announce changes to a planned trip",
+                    "To announce changes to a trip",
                     "To apologize for a late departure",
                 ],
                 "answer": 2,
                 "ldbs": {"L": True, "D": True, "B": False, "S": False, "band": "medium"},
                 "explain": {
                     "point": "目的題：第一段沒有說明目的，要讀完各段才知道信在通知行程變動",
-                    "why": "E-mail 第 1 段只有道謝與 please take a moment to read the information below；第 2 段：船停駛，In its place 改去乳品場，午餐延到 1:30、回程延到約 6:15；第 3 段：上車處改到 Bay 2；第 4 段：不想去的人可以退費或改團。跟行程表對照，整封信都在說明這趟週六的行程哪裡跟原本不一樣——announce changes to a planned trip。",
+                    "why": "E-mail 第 1 段只有道謝與 please take a moment to read the information below；第 2 段：船停駛，In its place 改去乳品場，午餐延到 1:30、回程延到約 6:15；第 3 段：上車處改到 Bay 2；第 4 段：不想去的人可以退費或改團。跟行程表對照，整封信都在說明這趟週六的行程哪裡跟原本不一樣——announce changes to a trip。",
                     "evidence": [[1, 1], [1, 2], [1, 3]],
                     "wrong": [
                         "第 4 段只對「不想去的人」（If you would prefer not to travel）提供取消或改團；照原計畫去的人什麼都不用做，信沒有要每個人確認。",
@@ -408,7 +411,7 @@ ITEMS = [
             {
                 "q": "What had Ms. Quaye most looked forward to?",
                 "options": [
-                    "A ride by water to a café",
+                    "A trip on a lake",
                     "A cheese-making demonstration",
                     "A guided walk through ruins",
                     "A visit to walled gardens",
@@ -417,7 +420,7 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": False, "S": True, "band": "hard"},
                 "explain": {
                     "point": "跨文件：評論只說「被取消的那一站」，要用 e-mail 找出取消的是哪一站，再回行程表看那一站是什麼",
-                    "why": "評論第 1 段：她報名主要是為了 the stop I had been looking forward to for months，而 Thornfield 來信說 it had been dropped。E-mail 第 2 段：停駛的是 The boat that serves the island tea house on Lindell Water，In its place 改去乳品場。行程表第 3 行：Lindell Water，Forty-minute cruise to the island tea house。所以她最期待的是搭船過湖到島上的茶館——a ride by water to a café。e-mail 第 4 段 some of you chose this tour for the lake 也呼應。",
+                    "why": "評論第 1 段：她報名主要是為了 the stop I had been looking forward to for months，而 Thornfield 來信說 it had been dropped。E-mail 第 2 段：停駛的是 The boat that serves the island tea house on Lindell Water，In its place 改去乳品場。行程表第 3 行：Lindell Water，Forty-minute cruise to the island tea house。所以她最期待的是搭船遊湖到島上的茶館——a trip on a lake（Lindell Water 是一座湖：e-mail 第 4 段 some of you chose this tour for the lake）。",
                     "evidence": [[2, 0], [1, 1], [0, 2]],
                     "wrong": [
                         None,
