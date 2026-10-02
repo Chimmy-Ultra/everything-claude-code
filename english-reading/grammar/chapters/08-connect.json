@@ -115,7 +115,7 @@
           "q": "哪一句的標點是對的？",
           "options": ["Our office will be closed on Monday, therefore, orders will ship on Tuesday.", "Our office will be closed on Monday. Therefore, orders will ship on Tuesday.", "Our office will be closed on Monday, therefore orders will ship on Tuesday."],
           "answer": 1,
-          "why": "<em>therefore</em> 是連接詞副詞，前面要句號或分號。另外兩句只用逗號把兩個完整的句子接在一起，是錯的。"
+          "why": "<em>therefore</em> 是連接副詞，前面要句號或分號。另外兩句只用逗號把兩個完整的句子接在一起，是錯的。"
         }
       ],
       "takeaway": "連接副詞前面要句號或分號，後面通常加逗號；只用逗號接兩個句子是錯的。"
