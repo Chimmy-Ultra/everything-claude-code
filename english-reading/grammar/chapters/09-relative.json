@@ -81,7 +81,7 @@
         },
         {
           "en": "The <u>report</u> that Ms. Chen wrote is on your desk.",
-          "zh": "陳小姐寫的那份報告在你桌上。",
+          "zh": "Chen 女士寫的那份報告在你桌上。",
           "note": "主詞 <em>The report</em> 和動詞 <em>is</em> 中間夾著關係子句。"
         }
       ],
@@ -202,7 +202,7 @@
       "ex": [
         {
           "en": "The engineer <u>who designed the app</u> will train the staff.",
-          "zh": "設計這個 app 的工程師會訓練員工。",
+          "zh": "設計這個 App 的工程師會訓練員工。",
           "note": "<em>who</em> 後面直接是動詞 <em>designed</em>：缺主詞。"
         },
         {
@@ -212,17 +212,17 @@
         },
         {
           "en": "The app <u>that crashed yesterday</u> has been fixed.",
-          "zh": "昨天當機的那個 app 已經修好了。",
+          "zh": "昨天當機的那個 App 已經修好了。",
           "note": "事物當主詞：<em>that</em>（<em>which</em> 也可以）。"
         },
         {
           "en": "The app <u>that we launched last week</u> already has 2,000 users.",
-          "zh": "我們上週推出的 app 已經有兩千個使用者。",
+          "zh": "我們上週推出的 App 已經有兩千個使用者。",
           "note": "事物當受詞，還是 <em>that</em>（<em>which</em> 也可以）。"
         },
         {
           "en": "The <u>engineers</u> who design the app work in our Harlow Bay office.",
-          "zh": "設計這個 app 的工程師在我們的 Harlow Bay 辦公室上班。",
+          "zh": "設計這個 App 的工程師在我們的 Harlow Bay 辦公室上班。",
           "note": "先行詞 <em>engineers</em> 是複數：<em>who</em> 後面用 <em>design</em>，不是 <em>designs</em>。"
         }
       ],
@@ -282,7 +282,7 @@
             4,
             5
           ],
-          "why": "<em>the director said</em> 是插進來的「主管說」。劃掉之後是 <em>the engineer who would lead the project</em>：<em>who</em> 後面直接接動詞 <em>would lead</em>，缺主詞，所以用 <em>who</em> 是對的。整句的主要動詞是 <em>has resigned</em>。"
+          "why": "<em>the director said</em> 是插進來的「總監說」。劃掉之後是 <em>the engineer who would lead the project</em>：<em>who</em> 後面直接接動詞 <em>would lead</em>，缺主詞，所以用 <em>who</em> 是對的。整句的主要動詞是 <em>has resigned</em>。"
         }
       ],
       "takeaway": "空格後面是 <em>we think</em>、<em>we believe</em> 這類短語時，先劃掉短語再看：接著是動詞就缺主詞（<em>who</em>），接著是另一個主詞就缺受詞（<em>whom</em>）。"
@@ -331,7 +331,7 @@
     {
       "h": "介系詞後面：in which、to whom",
       "body": [
-        "有些動詞要帶介系詞才能接受詞：<em>speak to</em> someone、<em>work for</em> a company。地點、時間的介系詞也一樣，後面的名詞是它的受詞：<em>in</em> a room、<em>on</em> Friday。這時關係代名詞是<b>介系詞的受詞</b>。例如：<em>This is the manager.</em> <em>We spoke to the manager.</em>",
+        "有些動詞要帶介系詞才能接受詞：<em><b>speak to</b> someone</em>、<em><b>work for</b> a company</em>。地點、時間的介系詞也一樣，後面的名詞是它的受詞：<em><b>in</b> a room</em>、<em><b>on</b> Friday</em>。這時關係代名詞是<b>介系詞的受詞</b>。例如：<em>This is the manager.</em> <em>We spoke to the manager.</em>",
         "接成一句有兩種放法。第一種，介系詞留在原位，在子句最後：<em>This is the manager whom we spoke to.</em> 這種放法，關係代名詞也可以用 <em>that</em>，或乾脆省略（後面講省略的那一節）：<em>the manager that we spoke to</em>、<em>the manager we spoke to</em>。第二種比較正式，介系詞跟著關係代名詞一起移到前面：<em>This is the manager to whom we spoke.</em>",
         "第二種放法有一條硬規則：<b>介系詞後面只能接 <em>which</em>（事物）或 <em>whom</em>（人）</b>。不能接 <em>that</em>，也不能接 <em>who</em>。不能接 <em>who</em>，是因為介系詞後面要用受詞的形式，就像要說 <em>to him</em>，不說 <em>to he</em>。<em>that</em> 則是規定上不放在介系詞後面。",
         "介系詞移到前面之後，後面的子句看起來是<b>完整</b>的：<em>the room in which the interview will take place</em>，<em>the interview will take place</em> 主詞、動詞都有，不缺東西。這不是例外：缺的那一格是 <em>in</em> 的受詞，已經跟著 <em>in</em> 一起搬到前面了。",
@@ -344,13 +344,13 @@
           "note": "= <em>the interview will take place in the room</em>。"
         },
         {
-          "en": "Mr. Grant is the buyer <u>to whom</u> we sent the samples.",
-          "zh": "Grant 先生就是我們寄樣品過去的那位採購。",
+          "en": "Mr. Lowell is the buyer <u>to whom</u> we sent the samples.",
+          "zh": "Lowell 先生就是我們寄樣品過去的那位採購。",
           "note": "= <em>we sent the samples to the buyer</em>。"
         },
         {
-          "en": "Mr. Grant is the buyer <u>that</u> we sent the samples <u>to</u>.",
-          "zh": "Grant 先生就是我們寄樣品過去的那位採購。",
+          "en": "Mr. Lowell is the buyer <u>that</u> we sent the samples <u>to</u>.",
+          "zh": "Lowell 先生就是我們寄樣品過去的那位採購。",
           "note": "介系詞留在句尾，語氣比較口語，這時可以用 <em>that</em>。移到前面的 <em>to whom</em> 才不能用 <em>that</em>。"
         },
         {
@@ -379,7 +379,7 @@
         "比較這兩句：<em>The employees who work on weekends receive extra pay.</em> 和 <em>Our employees, who work on weekends, receive extra pay.</em> 只差兩個逗號，意思不同。",
         "第一句沒有逗號，關係子句的工作是<b>限定</b>：從所有員工裡挑出「週末上班的那些」，只有他們有加給。拿掉關係子句，變成 <em>The employees receive extra pay</em>，意思就變了，好像所有員工都有加給。所以限定的子句拿不掉。",
         "第二句有逗號，關係子句是<b>補充</b>：講的是我們全部的員工，順便補一句「他們週末都要上班」。拿掉它，<em>Our employees receive extra pay</em>，主要意思還在，只是少了一項資訊。逗號的作用像括號，告訴讀者：這段拿掉，你還是知道我在講誰。",
-        "所以人名、獨一無二的東西（<em>our CEO</em>、<em>the company's headquarters</em>）後面的關係子句，幾乎都加逗號：<em>Ms. Lin, who joined the firm in 2019, …</em> 名字已經說明是誰了，不需要再限定。",
+        "所以人名、獨一無二的東西（<em>our CEO</em>、<em>the company's headquarters</em>）後面的關係子句，幾乎都加逗號：<em>Ms. Rowan, who joined the firm in 2019, …</em> 名字已經說明是誰了，不需要再限定。",
         "規則是：<b>逗號後面不能用 <em>that</em></b>，只能用 <em>who</em>、<em>whom</em>、<em>which</em>、<em>whose</em>。<em>that</em> 只用在限定（沒有逗號）的子句。可以這樣理解：<em>that</em> 的工作是「挑出是哪一個」，而有逗號表示已經知道是哪一個，兩者衝突。沒有逗號時，事物用 <em>that</em> 或 <em>which</em> 都可以，美式書面比較常用 <em>that</em>。",
         "補充用法還有一個特別的地方：逗號後面的 <em>which</em> 可以指前面<b>一整件事</b>，不只一個名詞。<em>The shipment arrived two days late, which delayed production.</em> 造成生產延誤的是「貨晚到兩天」這件事。這時也只能用 <em>which</em>。"
       ],
@@ -424,8 +424,8 @@
           "note": "補充：講的是全部員工。"
         },
         {
-          "en": "Ms. Lin, <u>who</u> joined the firm in 2019, now leads the sales team.",
-          "zh": "林小姐 2019 年加入公司，現在帶業務團隊。"
+          "en": "Ms. Rowan, <u>who</u> joined the firm in 2019, now leads the sales team.",
+          "zh": "Rowan 女士 2019 年加入公司，現在帶業務團隊。"
         },
         {
           "en": "The new scheduling tool, <u>which</u> we introduced in May, saves each team several hours a week.",

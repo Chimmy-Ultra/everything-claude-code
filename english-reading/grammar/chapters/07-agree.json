@@ -91,7 +91,7 @@
         {"en": "The <u>list</u> of approved vendors <u>is</u> posted on the intranet.", "zh": "核准廠商的名單公告在內部網站上。", "note": "劃掉 <em>of approved vendors</em>，剩下 <em>The list is posted</em>。"},
         {"en": "The <u>quality</u> of our products <u>has</u> improved this year.", "zh": "我們產品的品質今年提升了。"},
         {"en": "The <u>report</u> that the consultants prepared <u>is</u> very detailed.", "zh": "顧問們準備的報告非常詳細。", "note": "<em>that the consultants prepared</em> 是插進來的子句，主詞還是 <em>the report</em>。"},
-        {"en": "<u>Ms. Chen</u>, along with her two assistants, <u>is</u> attending the trade fair.", "zh": "陳女士連同她的兩位助理，正在參加商展。", "note": "<em>along with</em> 那一段夾在逗號中間，劃掉後動詞跟 <em>Ms. Chen</em>。"}
+        {"en": "<u>Ms. Chen</u>, along with her two assistants, <u>is</u> attending the trade fair.", "zh": "Chen 女士連同她的兩位助理，正在參加商展。", "note": "<em>along with</em> 那一段夾在逗號中間，劃掉後動詞跟 <em>Ms. Chen</em>。"}
       ],
       "quiz": [
         {
@@ -203,7 +203,7 @@
         "對照第 2 節：<em>A as well as B</em>、<em>A along with B</em> 意思和 <em>and</em> 很像，文法上卻是插在中間的片語，動詞只跟 A。<em>The CEO and two board members are attending.</em> 用 <em>are</em>；<em>The CEO, as well as two board members, is attending.</em> 用 <em>is</em>。意思差不多，動詞卻不同，差別全在連接的那個字。"
       ],
       "ex": [
-        {"en": "The sales manager and her assistant <u>are</u> visiting clients in Westbrook.", "zh": "業務經理和她的助理正在 <em>Westbrook</em> 拜訪客戶。"},
+        {"en": "The sales manager and her assistant <u>are</u> visiting clients in Westbrook.", "zh": "業務經理和她的助理正在 Westbrook 拜訪客戶。"},
         {"en": "Neither the contract nor the invoices <u>were</u> signed.", "zh": "合約和發票都還沒簽。", "note": "離動詞近的是 <em>the invoices</em>，複數。"},
         {"en": "Neither the invoices nor the contract <u>was</u> signed.", "zh": "發票和合約都還沒簽。", "note": "對調以後，離動詞近的是 <em>the contract</em>，單數。"},
         {"en": "The CEO, as well as two board members, <u>is</u> attending the opening.", "zh": "執行長連同兩位董事，將出席開幕式。", "note": "<em>as well as</em> 那一段夾在逗號中間，動詞跟 <em>the CEO</em>。"}
@@ -234,13 +234,13 @@
       "body": [
         "前面都是先找主詞，再數它是一個還是好幾個。有幾類名詞，形狀會騙人。",
         "<b>集合名詞</b>是一個單數的字，指一群人：<em>team、committee、department、company、board</em>。把這群人當成一個團體來講時，動詞用單數：<em>The committee has approved the plan.</em> 英式英文有時把重點放在一個個成員身上，改用複數（<em>The committee have …</em>）；正式書面和商業文件用單數，英式、美式都能接受，本書的題目也以單數為準。",
-        "<b>字尾有 -s 的單數名詞</b>：<em>news</em> 看起來像複數，其實是單數名詞，動詞用 <em>is</em>：<em>The news is encouraging.</em>",
+        "<b>字尾有 <em>-s</em> 的單數名詞</b>：<em>news</em> 看起來像複數，其實是單數名詞，動詞用 <em>is</em>：<em>The news is encouraging.</em>",
         "<b>不可數名詞</b>（第 13 章）：<em>information、equipment、advice、furniture</em> 沒有複數形，當主詞時用單數：<em>The information on the website is out of date.</em> 中文的「資訊」「設備」常常指好幾樣東西，所以特別容易順手寫成 <em>are</em>。",
-        "反過來，<em>people</em> 和 <em>police</em> 沒有 -s，講的卻是好幾個人，用複數：<em>The police are investigating the theft.</em>"
+        "反過來，<em>people</em> 和 <em>police</em> 沒有 <em>-s</em>，講的卻是好幾個人，用複數：<em>The police are investigating the theft.</em>"
       ],
       "ex": [
         {"en": "The marketing <u>department</u> <u>has</u> moved to the fourth floor.", "zh": "行銷部已經搬到四樓了。", "note": "<em>department</em> 是一個單位，當成一個團體，用單數。"},
-        {"en": "The <u>news</u> from our Eastfield office <u>is</u> encouraging.", "zh": "我們 <em>Eastfield</em> 辦公室傳來的消息令人振奮。", "note": "<em>news</em> 是單數名詞；<em>from our Eastfield office</em> 劃掉。"},
+        {"en": "The <u>news</u> from our Eastfield office <u>is</u> encouraging.", "zh": "我們 Eastfield 辦公室傳來的消息令人振奮。", "note": "<em>news</em> 是單數名詞；<em>from our Eastfield office</em> 劃掉。"},
         {"en": "The <u>information</u> on the website <u>is</u> updated every Monday.", "zh": "網站上的資訊每週一更新。", "note": "<em>information</em> 不可數，沒有複數形，用單數。"}
       ],
       "quiz": [

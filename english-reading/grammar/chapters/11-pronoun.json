@@ -40,7 +40,7 @@
     },
     {
       "type": "tap",
-      "q": "點出 it 代替的那個名詞（一個字）。",
+      "q": "點出 <em>it</em> 代替的那個名詞（一個字）。",
       "sentence": "The price of the new laptops has gone up, so we will wait until it drops.",
       "answer": [
         1
@@ -173,12 +173,12 @@
         },
         {
           "en": "Ms. Diaz and <u>I</u> will lead the workshop.",
-          "zh": "Diaz 女士和我會主持研習。",
+          "zh": "Diaz 女士和我會主持工作坊。",
           "note": "拿掉 <em>Ms. Diaz and</em>：<em>I will lead</em>。"
         },
         {
           "en": "Please send the agenda to Mr. Lee and <u>me</u>.",
-          "zh": "請把議程寄給李先生和我。",
+          "zh": "請把議程寄給 Lee 先生和我。",
           "note": "拿掉 <em>Mr. Lee and</em>：<em>send the agenda to me</em>。"
         }
       ],
@@ -211,7 +211,7 @@
     {
       "h": "its、theirs 不加撇號",
       "body": [
-        "英文名詞表示「誰的」要加 <em>'s</em>：<em>the company's website</em>。但代名詞的所有格<b>不加撇號</b>：<em>its</em>、<em>yours</em>、<em>ours</em>、<em>theirs</em>、<em>hers</em>。",
+        "英文名詞表示「誰的」要加 <em>'s</em>：<em>the company's website</em>。但代名詞的所有格和所有代名詞<b>都不加撇號</b>：<em>its</em>、<em>yours</em>、<em>ours</em>、<em>theirs</em>、<em>hers</em>。",
         "最容易搞混的是 <em>its</em> 和 <em>it's</em>。<em>it's</em> 是 <em>it is</em> 或 <em>it has</em> 的縮寫：<em>It's late.</em>、<em>It's been a long week.</em> 判斷方法：把它換成 <em>it is</em> 或 <em>it has</em> 唸一次，有一個通順，就是 <em>it's</em>；兩個都不通，就是 <em>its</em>。<em>The hotel has renovated it is lobby</em> 不通，<em>it has lobby</em> 也不通，所以是 <em>its lobby</em>。",
         "同樣的配對還有 <em>their</em>／<em>they're</em>（= <em>they are</em>）、<em>your</em>／<em>you're</em>（= <em>you are</em>），以及第 9 章的 <em>whose</em>／<em>who's</em>。這幾組裡，帶撇號的都是縮寫，不是所有格；名詞的 <em>'s</em>（<em>the company's website</em>）才是所有格。"
       ],
@@ -244,7 +244,7 @@
           "why": "把 <em>it's</em> 換成 <em>it is</em> 或 <em>it has</em>：<em>lost it is connection</em>、<em>lost it has connection</em> 都不通。這裡要的是「它的連線」，所有格 <em>its</em>，不加撇號。"
         }
       ],
-      "takeaway": "代名詞的所有格不加撇號；有撇號的 <em>it's</em> 是 <em>it is</em> 或 <em>it has</em>。"
+      "takeaway": "代名詞的所有格和所有代名詞都不加撇號；有撇號的 <em>it's</em> 是 <em>it is</em> 或 <em>it has</em>。"
     },
     {
       "h": "反身代名詞：主詞和受詞是同一個人",
@@ -299,7 +299,7 @@
         "代名詞要和它代替的名詞在兩件事上一致：<b>單複數</b>，以及<b>人還是事物</b>。代替一個人，用 <em>he</em>／<em>she</em>；代替一件事物，用 <em>it</em>；代替兩個以上，不管是人是物，都用 <em>they</em>。",
         "代替 <em>each employee</em>、<em>everyone</em>、<em>someone</em> 這種不指定性別的單數時，書面英文有兩種寫法：<em>his or her</em>（比較保守），或 <em>their</em>（現代英文愈來愈常見，但比較保守的公文仍用 <em>his or her</em>）。最不會出問題的做法，是把句子改成複數：<em>All employees must submit their timesheets by Friday.</em>",
         "公司、飯店、部門是一個單位，美式英文用 <em>it</em> 和 <em>its</em>：<em>Brightline Foods has moved its headquarters.</em> 雖然公司裡有很多人，還是 <em>its</em>。英式英文有時用 <em>they</em>，但用 <em>it</em> 在兩邊都對。",
-        "名詞後面跟著片語時，要找的是核心名詞，不是離代名詞最近的那個字。<em>The list of new clients is ready; please send it to Mr. Abe.</em> 要寄出去的是名單（<em>list</em>，單數），所以用 <em>it</em>；<em>clients</em> 只是名單的內容。這和找主詞的方法一樣（第 7 章）。",
+        "名詞後面跟著片語時，要找的是中心名詞（第 2 章），不是離代名詞最近的那個字。<em>The list of new clients is ready; please send it to Mr. Abe.</em> 要寄出去的是名單（<em>list</em>，單數），所以用 <em>it</em>；<em>clients</em> 只是名單的內容。這和找主詞的方法一樣（第 7 章）。",
         "不一致會怎樣？<em>We received the samples and sent it to the lab.</em> 讀的人會往前找一個單數的東西，找不到，只好猜。代名詞的單複數，就是讀者往回找的線索。"
       ],
       "ex": [
@@ -362,7 +362,7 @@
       "quiz": [
         {
           "type": "tap",
-          "q": "點出 they 代替的那個名詞（一個字）。",
+          "q": "點出 <em>they</em> 代替的那個名詞（一個字）。",
           "sentence": "The hotel sent us two quotes for the banquet, but they were both over budget.",
           "answer": [
             5
@@ -455,15 +455,15 @@
     {
       "h": "each other 和 themselves：互相，還是自己",
       "body": [
-        "<em>each other</em>（也可以說 <em>one another</em>）表示<b>互相</b>：A 對 B 做，B 也對 A 做。<em>Ms. Ito and Mr. Park have known each other for ten years.</em> Ito 女士認識 Park 先生，Park 先生也認識 Ito 女士。",
+        "<em>each other</em>（也可以說 <em>one another</em>）表示<b>互相</b>：A 對 B 做，B 也對 A 做。<em>Ms. Ito and Mr. Sandoval have known each other for ten years.</em> Ito 女士認識 Sandoval 先生，Sandoval 先生也認識 Ito 女士。",
         "對照 <em>themselves</em>：<em>The two managers congratulated themselves.</em> 是各自恭喜自己；<em>The two managers congratulated each other.</em> 是彼此恭喜對方。一個指回自己，一個指向對方，意思不同。",
         "<em>each other</em> 只能當受詞，放在動詞或介系詞後面：<em>talk to each other</em>、<em>help each other</em>，不能當主詞。所有格是 <em>each other's</em>：<em>review each other's reports</em>。",
         "<em>each other</em> 和 <em>one another</em> 在現代英文裡意思一樣，兩個人或更多人都可以用。"
       ],
       "ex": [
         {
-          "en": "Ms. Ito and Mr. Park have known <u>each other</u> for ten years.",
-          "zh": "Ito 女士和 Park 先生認識十年了。"
+          "en": "Ms. Ito and Mr. Sandoval have known <u>each other</u> for ten years.",
+          "zh": "Ito 女士和 Sandoval 先生認識十年了。"
         },
         {
           "en": "The two managers congratulated <u>each other</u> after the launch.",
@@ -511,8 +511,8 @@
       "why": "<em>those</em> 是複數，子句裡的動詞用 <em>wish</em>。"
     },
     {
-      "wrong": "Ms. Ito and Mr. Park have known themselves for ten years.",
-      "right": "Ms. Ito and Mr. Park have known each other for ten years.",
+      "wrong": "Ms. Ito and Mr. Sandoval have known themselves for ten years.",
+      "right": "Ms. Ito and Mr. Sandoval have known each other for ten years.",
       "why": "認識是互相的，用 <em>each other</em>；<em>themselves</em> 是各自指回自己。"
     }
   ],

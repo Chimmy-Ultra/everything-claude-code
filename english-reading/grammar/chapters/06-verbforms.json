@@ -1,7 +1,7 @@
 {
   "id": "verbforms",
   "n": 6,
-  "title": "動詞後面接什麼",
+  "title": "動詞後面接什麼：to V、Ving、原形；分詞",
   "en": "To V, Ving, Base Form and Participles",
   "lead": "一個子句由一個有時態的動詞撐起來（第 2 章）。可是我們常常一口氣要講兩個動作：決定聘人、考慮開店、期待見面。第二個動作想進句子，就得換成 to V、Ving 或原形，換成哪一種由前面的字決定。這一章整理這些規則，最後兩節講 Ving 和 p.p. 當形容詞用時怎麼選，以及放在句首的分詞片語。",
   "check": [
@@ -31,7 +31,7 @@
       "q": "<em>Many guests were ___ by the slow check-in process.</em> 空格要填哪一個？",
       "options": ["frustrating", "frustrated"],
       "answer": 1,
-      "why": "<em>frustrate</em> 是「讓人沮喪」。房客是被弄得沮喪的人，用 <em>-ed</em>；造成沮喪的流程才用 <em>-ing</em>（<em>a frustrating process</em>）。"
+      "why": "<em>frustrate</em> 是「讓人沮喪」。住客是被弄得沮喪的人，用 <em>-ed</em>；造成沮喪的流程才用 <em>-ing</em>（<em>a frustrating process</em>）。"
     },
     {
       "type": "choose",
@@ -52,7 +52,7 @@
       ],
       "ex": [
         {"en": "We <u>decided</u> to hire two more designers.", "zh": "我們決定再聘兩位設計師。", "note": "有時態的只有 <em>decided</em>；<em>to hire</em> 沒有時態。"},
-        {"en": "Ms. Kao <u>finished</u> reviewing the contract at noon.", "zh": "高女士中午看完了合約。", "note": "有時態的只有 <em>finished</em>；<em>reviewing</em> 照 <em>finish</em> 的規定用 Ving。"},
+        {"en": "Ms. Kao <u>finished</u> reviewing the contract at noon.", "zh": "Kao 女士中午看完了合約。", "note": "有時態的只有 <em>finished</em>；<em>reviewing</em> 照 <em>finish</em> 的規定用 Ving。"},
         {"en": "The site supervisor <u>made</u> everyone wear a helmet.", "zh": "工地主任要求每個人都戴安全帽。", "note": "有時態的只有 <em>made</em>；<em>wear</em> 照 <em>make</em> 的規定用原形。"}
       ],
       "quiz": [
@@ -73,7 +73,7 @@
         "有一個幫助記憶的傾向，只是傾向，有例外：to V 常指向<b>還沒發生、打算要做</b>的事，像 <em>plan、decide、hope、expect、agree、offer、refuse</em>，都在講接下來要不要做。Ving 常把動作當成<b>一件事本身</b>來談，像 <em>consider</em>（考慮這件事）、<em>finish</em>（做完這件事），還有 <em>avoid、suggest、recommend、postpone、enjoy、keep</em>。",
         "還有一種是先接人，再接 to V：<em>ask、allow、require、encourage、remind、invite</em>。<em>The manager asked Ms. Su to check the figures.</em> 意思是要誰去做什麼。變成被動（第 5 章）時，人搬到前面，<em>to</em> 留著：<em>Ms. Su was asked to check the figures.</em>、<em>All staff are required to attend.</em>",
         "上面是代表，不是全部。接 to V 的還有 <em>want、need、intend、manage、afford、fail、promise、prepare、arrange</em>；接 Ving 的還有 <em>admit、deny、mind、delay、risk、imagine、involve、quit</em>。",
-        "<em>suggest</em> 中文是「建議」，很多人會順手寫成 <em>suggest to hire</em>。但 <em>suggest</em> 後面不接 to V，要接 Ving（或名詞、that 子句，第 16 章）。這種錯不會讓人看不懂，但在正式的商業文件裡是明顯的文法錯誤。"
+        "<em>suggest</em> 中文是「建議」，很多人會順手寫成 <em>suggest to hire</em>。但 <em>suggest</em> 後面不接 to V，要接 Ving（或名詞、<em>that</em> 子句，第 16 章）。這種錯不會讓人看不懂，但在正式的商業文件裡是明顯的文法錯誤。"
       ],
       "ex": [
         {"en": "The client <u>agreed to extend</u> the deadline by one week.", "zh": "客戶同意把期限延長一週。"},
@@ -98,7 +98,7 @@
           "q": "<em>The consultant suggested ___ the launch until March.</em> 空格要填哪一個？",
           "options": ["to postpone", "postponing", "postpone"],
           "answer": 1,
-          "why": "<em>suggest</em> 後面接 Ving（或 that 子句），不接 to V。<em>postpone</em> 原形放在 <em>suggested</em> 後面，等於兩個動詞直接排在一起，也不行。"
+          "why": "<em>suggest</em> 後面接 Ving（或 <em>that</em> 子句），不接 to V。<em>postpone</em> 原形放在 <em>suggested</em> 後面，等於兩個動詞直接排在一起，也不行。"
         }
       ],
       "takeaway": "<em>decide、plan、hope</em> 接 to V，<em>consider、avoid、finish、suggest</em> 接 Ving；這是動詞自己的規定，要一個一個認。"
@@ -150,9 +150,9 @@
       ],
       "ex": [
         {"en": "We <u>look forward to working</u> with your team.", "zh": "我們期待和貴團隊合作。"},
-        {"en": "Halden Foods <u>is committed to reducing</u> plastic packaging.", "zh": "<em>Halden Foods</em> 致力於減少塑膠包裝。"},
-        {"en": "Ms. Ruiz <u>is used to handling</u> difficult customers.", "zh": "<em>Ruiz</em> 女士已經習慣應付難搞的客戶。"},
-        {"en": "Mr. Holt <u>used to work</u> at our Dalton branch.", "zh": "<em>Holt</em> 先生以前在我們的 <em>Dalton</em> 分公司工作。", "note": "沒有 <em>be</em> 的 <em>used to</em> 是「以前曾經」，後面接原形。"},
+        {"en": "Halden Foods <u>is committed to reducing</u> plastic packaging.", "zh": "Halden Foods 致力於減少塑膠包裝。"},
+        {"en": "Ms. Ruiz <u>is used to handling</u> difficult customers.", "zh": "Ruiz 女士已經習慣應付難搞的客戶。"},
+        {"en": "Mr. Holt <u>used to work</u> at our Dalton branch.", "zh": "Holt 先生以前在我們的 Dalton 分公司工作。", "note": "沒有 <em>be</em> 的 <em>used to</em> 是「以前曾經」，後面接原形。"},
         {"en": "This software <u>is used to track</u> shipments.", "zh": "這套軟體是用來追蹤貨物的。", "note": "主詞是軟體，不是人。這個 <em>is used to</em> 是「被用來做」，後面接原形；和 <em>is used to handling</em>（習慣於）不同。"}
       ],
       "table": {
@@ -186,10 +186,10 @@
         "<em>have</em> 還有一個相關的句型：<em>have</em> + 東西 + p.p.，意思是找人把東西處理好。<em>We had the meeting room painted.</em> 會議室是被漆的（第 5 章），所以用 p.p.。判斷方法：<em>have</em> 後面的受詞自己去做，用原形；受詞是被處理的東西，用 p.p.。"
       ],
       "ex": [
-        {"en": "The director <u>made us redo</u> the sales forecast.", "zh": "主任要我們重做銷售預測。"},
+        {"en": "The director <u>made us redo</u> the sales forecast.", "zh": "總監要我們重做銷售預測。"},
         {"en": "Our manager <u>lets us work</u> from home on Fridays.", "zh": "我們經理准許大家星期五在家工作。"},
-        {"en": "Mr. Abe <u>had his assistant book</u> a table for six.", "zh": "阿部先生交代助理訂了一張六人桌。"},
-        {"en": "Mr. Abe <u>asked his assistant to book</u> a table for six.", "zh": "阿部先生請助理訂一張六人桌。", "note": "意思和上一句差不多，但 <em>ask</em> 要 to V，<em>have</em> 要原形。"},
+        {"en": "Mr. Abe <u>had his assistant book</u> a table for six.", "zh": "Abe 先生交代助理訂了一張六人桌。"},
+        {"en": "Mr. Abe <u>asked his assistant to book</u> a table for six.", "zh": "Abe 先生請助理訂一張六人桌。", "note": "意思和上一句差不多，但 <em>ask</em> 要 to V，<em>have</em> 要原形。"},
         {"en": "We <u>had the meeting room painted</u> last weekend.", "zh": "我們上週末找人把會議室漆過了。", "note": "受詞 <em>the meeting room</em> 是被漆的東西，所以用 p.p.。"}
       ],
       "table": {
@@ -222,6 +222,7 @@
         "<em>be</em> 後面接 Ving，有時是進行式（第 4 章），有時是形容詞。<em>The results were surprising.</em> 的 <em>surprising</em> 是形容詞：前面放得進 <em>very</em>（<em>very surprising</em>），意思是「令人意外的」，不是「正在使人意外」。",
         "選哪一個，問一個問題：被描述的名詞是<b>做</b>這個動作，還是<b>被做</b>。做，用 <em>-ing</em>；被做，用 <em>-ed</em>（p.p.）。這跟第 5 章的主動被動是同一個判斷。<em>the remaining tickets</em>：票自己剩下來，用 <em>-ing</em>。<em>the attached file</em>：檔案是被附上的，用 <em>-ed</em>。",
         "分詞不像有時態的動詞那樣標出過去、現在、未來。<em>the attached file</em> 不會因為「明天才附」就換個樣子，它只表示檔案和「附上」之間是被動的關係。所以選 <em>-ing</em> 還是 <em>-ed</em>，先問主動還是被動，不問時間。只有一類要多想一步：不及物動詞（第 5 章）沒有被動，它們的 <em>-ed</em> 放在名詞前面，意思是「已經……了」，是名詞自己做完了這個動作：<em>an expired contract</em>（已經到期的合約）、<em>a retired manager</em>（已經退休的經理）。這類動詞的 <em>-ing</em> 則是「正在……、快要……」：<em>an expiring contract</em>（快要到期的合約）、<em>rising prices</em>（正在上漲的價格）。這類字不多，遇到時 <em>-ing</em> 和 <em>-ed</em> 都可能是對的，意思不同。",
+        "分詞也可以放在名詞後面，帶著自己後面的字一起說明這個名詞：<em>the contract signed by both parties</em>（被雙方簽署的合約）、<em>the staff attending the briefing</em>（出席說明會的員工）。選 <em>-ing</em> 還是 <em>-ed</em>，問題還是一樣：這個名詞是做，還是被做。這種寫法的作用和 <em>who</em>、<em>which</em> 帶頭的關係子句（第 9 章）一樣，只是沒有那個連接的字，也沒有有時態的動詞，所以是片語。",
         "門檻在表達感覺的字：<em>interest、bore、surprise、disappoint、confuse、frustrate</em>。這些英文動詞的意思是<b>讓人</b>產生感覺：<em>interest</em> 是「讓人感興趣」，<em>bore</em> 是「讓人無聊」。所以造成感覺的事物，用 <em>-ing</em>（<em>an interesting proposal</em>，提案讓人感興趣）；有這種感覺的人是被影響的一方，用 <em>-ed</em>（<em>interested investors</em>，投資人被引起興趣）。",
         "拿中文直翻就會出事：「我很無聊」寫成 <em>I was boring</em>，意思變成「我是個無聊的人」。要說自己覺得無聊，是 <em>I was bored</em>。"
       ],
@@ -270,8 +271,8 @@
         "分詞片語前面有時會加 <em>when、once、after</em> 這類字，例如 <em>Once approved, the request will be sent to Finance.</em>，判斷方法一樣：申請是被核准的，用 p.p.。這些字是什麼身分，第 8 章會講。"
       ],
       "ex": [
-        {"en": "<u>Located</u> near the main station, the Larkfield Hotel is popular with business travelers.", "zh": "<em>Larkfield</em> 飯店就在主要車站附近，很受商務旅客歡迎。", "note": "還原：<em>The Larkfield Hotel is located near the main station.</em> 被動，用 p.p.。"},
-        {"en": "<u>Founded</u> in 2004, Kestrel Logistics now has offices in nine countries.", "zh": "<em>Kestrel</em> 物流成立於 2004 年，現在在九個國家設有辦公室。", "note": "還原：<em>Kestrel Logistics was founded in 2004.</em> 公司是被創立的。"},
+        {"en": "<u>Located</u> near the main station, the Larkfield Hotel is popular with business travelers.", "zh": "Larkfield 飯店就在主要車站附近，很受商務旅客歡迎。", "note": "還原：<em>The Larkfield Hotel is located near the main station.</em> 被動，用 p.p.。"},
+        {"en": "<u>Founded</u> in 2004, Kestrel Logistics now has offices in nine countries.", "zh": "Kestrel 物流成立於 2004 年，現在在九個國家設有辦公室。", "note": "還原：<em>Kestrel Logistics was founded in 2004.</em> 公司是被創立的。"},
         {"en": "<u>Looking</u> for a larger office, the company contacted three real estate agents.", "zh": "公司在找更大的辦公室，聯絡了三家房仲。", "note": "還原：<em>The company was looking for a larger office.</em> 公司自己在找，主動，用 Ving。"}
       ],
       "quiz": [
@@ -302,7 +303,7 @@
     {
       "wrong": "The consultant suggested to hire a second designer.",
       "right": "The consultant suggested hiring a second designer.",
-      "why": "<em>suggest</em> 後面接 Ving 或 that 子句，不接 to V。"
+      "why": "<em>suggest</em> 後面接 Ving 或 <em>that</em> 子句，不接 to V。"
     },
     {
       "wrong": "The manager let us to leave early on Friday.",

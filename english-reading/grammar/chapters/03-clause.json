@@ -163,20 +163,20 @@
       "body": [
         "這一節是整章的門檻。",
         "<em>after signing the contract</em> 裡有 <em>signing</em>，看起來像動作，很多人就把它當成子句。可是第 2 章說過：Ving 和 to V 不是有時態的動詞。它們不會隨時間變，昨天簽、明天簽都是 <em>signing</em>；這組字裡也沒有自己的主詞：簽的人沒寫在這組字裡，要回頭看主要子句才知道。所以 <em>after signing the contract</em> 是<b>片語</b>。",
-        "比較 <em>after Mr. Novak signed the contract</em>。主詞 <em>Mr. Novak</em>，有時態的動詞 <em>signed</em>，是<b>子句</b>。",
+        "比較 <em>after Mr. Brandt signed the contract</em>。主詞 <em>Mr. Brandt</em>，有時態的動詞 <em>signed</em>，是<b>子句</b>。",
         "兩者意思一樣，結構不同。為什麼要分？因為帶頭的字會挑結構。<em>after</em> 兩種都能接，但 <em>during</em> 只接片語，<em>while</em> 接子句（<em>while</em> 後面省略主詞的寫法，第 8 章再談）。分不清楚，就會寫出 <em>during we were waiting</em> 這種句子。",
-        "檢查的方法：在那組字裡找有時態的動詞。只找到 Ving、to V，或過去分詞（<em>-ed</em> 的樣子，例如 <em>the contract signed by both parties</em> 裡的 <em>signed</em>，第 6 章會講），就是片語。"
+        "檢查的方法：在那組字裡找有時態的動詞。只找到 Ving、to V，或過去分詞（<em>-ed</em> 的樣子。放在名詞後面時，像 <em>the contract signed by both parties</em> 裡的 <em>signed</em>，意思是「被雙方簽署的那份合約」；分詞第 6 章會講），就是片語。"
       ],
       "ex": [
         {
-          "en": "<u>After signing the contract</u>, Mr. Novak called his team.",
-          "zh": "簽完合約後，Novak 先生打電話給他的團隊。",
+          "en": "<u>After signing the contract</u>, Mr. Brandt called his team.",
+          "zh": "簽完合約後，Brandt 先生打電話給他的團隊。",
           "note": "<em>signing</em> 是 Ving，而且沒有主詞：片語。"
         },
         {
-          "en": "<u>After Mr. Novak signed the contract</u>, he called his team.",
-          "zh": "Novak 先生簽完合約後，打電話給他的團隊。",
-          "note": "<em>Mr. Novak</em>（主詞）＋<em>signed</em>（有時態的動詞）：子句。"
+          "en": "<u>After Mr. Brandt signed the contract</u>, he called his team.",
+          "zh": "Brandt 先生簽完合約後，打電話給他的團隊。",
+          "note": "<em>Mr. Brandt</em>（主詞）＋<em>signed</em>（有時態的動詞）：子句。"
         },
         {
           "en": "We are hiring more staff <u>to shorten delivery times</u>.",
@@ -186,7 +186,7 @@
         {
           "en": "The contract <u>signed by both parties</u> is in the folder.",
           "zh": "雙方簽署的合約放在資料夾裡。",
-          "note": "<em>signed</em> 是過去分詞，不是有時態的動詞：這組字是片語。這句有時態的動詞是 <em>is</em>。"
+          "note": "<em>signed</em> 是過去分詞，放在名詞 <em>contract</em> 後面，說明是哪一份合約，不是有時態的動詞：<em>signed by both parties</em> 是片語。這句有時態的動詞是 <em>is</em>。"
         }
       ],
       "quiz": [
@@ -408,7 +408,7 @@
       "h": "子句也可以當受詞：that 子句",
       "body": [
         "有些動詞後面接的對象，不是一個名詞，而是一整句話。<em>Ms. Moreau confirmed that the order shipped on Monday.</em>：確認了什麼？確認了 <em>that</em> 後面那一整個子句。它站在受詞的位置（第 2 章），所以整個 <em>that</em> 子句就是 <em>confirmed</em> 的受詞。",
-        "這句有兩個有時態的動詞：<em>confirmed</em> 屬於主要子句，<em>shipped</em> 屬於 <em>that</em> 子句，把它們接起來的就是 <em>that</em>（第 5 節的規則）。這個 <em>that</em> 沒有「那個」的意思，只是連接的字。它和前一節的關係子句不同：關係子句描述前面的名詞，<em>that</em> 子句本身就是動詞要的那個對象。第 4 章的 <em>We expect that the parts will arrive</em> 和第 16 章的「that 子句」，都是這一種。"
+        "這句有兩個有時態的動詞：<em>confirmed</em> 屬於主要子句，<em>shipped</em> 屬於 <em>that</em> 子句，把它們接起來的就是 <em>that</em>（第 5 節的規則）。這個 <em>that</em> 沒有「那個」的意思，只是連接的字。它和前一節的關係子句不同：關係子句描述前面的名詞，<em>that</em> 子句本身就是動詞要的那個對象。第 4 章的 <em>We expect that the parts will arrive</em> 和第 16 章的「<em>that</em> 子句」，都是這一種。"
       ],
       "ex": [
         {

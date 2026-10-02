@@ -277,11 +277,11 @@
           "type": "choose",
           "q": "下面哪一句比的是同一類東西？",
           "options": [
-            "The salaries at Norvel are higher than Kestra Logistics.",
-            "The salaries at Norvel are higher than those at Kestra Logistics."
+            "The salaries at Norvel are higher than Tessel Logistics.",
+            "The salaries at Norvel are higher than those at Tessel Logistics."
           ],
           "answer": 1,
-          "why": "要拿薪水比薪水。<em>those at Kestra Logistics</em> = <em>the salaries at Kestra Logistics</em>。第一句是拿薪水去比一家公司。"
+          "why": "要拿薪水比薪水。<em>those at Tessel Logistics</em> = <em>the salaries at Tessel Logistics</em>。第一句是拿薪水去比一家公司。"
         }
       ],
       "takeaway": "比較級配 <em>than</em>；比的兩邊要同一類，必要時用 <em>that of</em>／<em>those of</em>。"
@@ -341,7 +341,7 @@
         },
         {
           "en": "The updated app is <u>far more reliable</u> than the first version.",
-          "zh": "更新後的 app 比第一版穩定得多。"
+          "zh": "更新後的 App 比第一版穩定得多。"
         },
         {
           "en": "Last quarter was good, but this quarter was <u>even better</u>.",
@@ -424,7 +424,7 @@
         },
         {
           "en": "Ms. Tran is <u>one of the most experienced</u> engineers <u>in</u> the company.",
-          "zh": "Tran 小姐是公司裡最有經驗的工程師之一。",
+          "zh": "Tran 女士是公司裡最有經驗的工程師之一。",
           "note": "<em>one of the</em> + 最高級 + 複數名詞。"
         },
         {

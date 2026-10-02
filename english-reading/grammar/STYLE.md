@@ -98,7 +98,7 @@
 
 ```json
 {"type": "choose", "q": "題目（中文，可含英文句）", "options": ["…", "…", "…"], "answer": 1, "why": "為什麼（中文）"}
-{"type": "tap", "q": "點出這句的主詞（可以點好幾個字）", "sentence": "The new manager of our Tokyo office approved the budget.", "answer": [0, 1, 2], "why": "為什麼"}
+{"type": "tap", "q": "點出這句的主詞（可以點好幾個字）", "sentence": "The new manager of our Westbrook office approved the budget.", "answer": [0, 1, 2], "why": "為什麼"}
 ```
 
 - `choose`：2–4 個選項，只有一個對。這是**理解確認**，不是多益題：問「這句的動詞是哪個」「這裡要接名詞還是子句」「這兩句哪一句對」。

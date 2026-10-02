@@ -45,15 +45,15 @@
     {
       "h": "同一件事，兩種說法",
       "body": [
-        "先看兩句意思一樣的話：<em>Ms. Chou approved the budget.</em> 和 <em>The budget was approved by Ms. Chou.</em> 兩句講的都是周女士核准了預算，差別只在從誰開始說。",
+        "先看兩句意思一樣的話：<em>Ms. Chou approved the budget.</em> 和 <em>The budget was approved by Ms. Chou.</em> 兩句講的都是 Chou 女士核准了預算，差別只在從誰開始說。",
         "第一句從做動作的人說起：主詞 <em>Ms. Chou</em> 做了「核准」這個動作，<em>the budget</em> 是受詞（第 2 章），也就是動作的對象。這叫<b>主動</b>。",
         "第二句從承受動作的東西說起：原本的受詞 <em>the budget</em> 搬到句首當主詞，動詞改成 <em>was approved</em>，原本做動作的人退到 <em>by</em> 後面。這叫<b>被動</b>。",
         "這次搬家是整章的門檻：<b>被動句的主詞，就是主動句裡的受詞</b>。一個動詞要先有受詞，才有東西可以搬到前面，才會有被動。第 6 節講「沒有被動的動詞」，靠的就是這一點。",
         "做動作的人在被動句裡常常直接省略。<em>The budget was approved on Monday.</em> 沒說是誰核准的，因為讀的人只關心預算過了沒有。"
       ],
       "ex": [
-        {"en": "Ms. Chou <u>approved</u> the budget.", "zh": "周女士核准了預算。", "note": "主動：主詞 <em>Ms. Chou</em> 做「核准」這個動作，<em>the budget</em> 是受詞。"},
-        {"en": "The budget <u>was approved</u> by Ms. Chou.", "zh": "預算由周女士核准了。", "note": "被動：原本的受詞 <em>the budget</em> 搬到主詞的位置，做動作的人退到 <em>by</em> 後面。"},
+        {"en": "Ms. Chou <u>approved</u> the budget.", "zh": "Chou 女士核准了預算。", "note": "主動：主詞 <em>Ms. Chou</em> 做「核准」這個動作，<em>the budget</em> 是受詞。"},
+        {"en": "The budget <u>was approved</u> by Ms. Chou.", "zh": "預算由 Chou 女士核准了。", "note": "被動：原本的受詞 <em>the budget</em> 搬到主詞的位置，做動作的人退到 <em>by</em> 後面。"},
         {"en": "The budget <u>was approved</u> on Monday.", "zh": "預算在星期一獲得核准。", "note": "誰核准的不重要，<em>by</em> 整段省略。"}
       ],
       "table": {
@@ -108,12 +108,12 @@
       "body": [
         "判斷要用主動還是被動，問兩個問題。第一，找出主詞（第 2 章），問它<b>自己會不會做這個動作</b>。合約不會簽名，會議不會自己延期，貨不會自己寄出去；它們是被處理的一方。",
         "第二，看動詞後面有沒有受詞。像 <em>approve、send、review</em> 這種動詞，主動時後面一定要接一個對象：核准<b>什麼</b>、寄<b>什麼</b>。如果動詞後面直接接 <em>by</em>、時間、地點或句號，那個對象不見了，通常就是被動，因為對象已經搬到前面當主詞。",
-        "門檻是一個直覺上的誤會：<b>主詞是東西，不代表要用被動</b>。<em>The new policy affects all part-time staff.</em> 主詞是政策，但政策是「影響」別人的一方，後面也有受詞，所以是主動。反過來，主詞是人也可能是被動：<em>Mr. Lin was promoted.</em> 林先生是被升職的。判斷靠的是動作的方向，不是主詞是人還是東西。",
+        "門檻是一個直覺上的誤會：<b>主詞是東西，不代表要用被動</b>。<em>The new policy affects all part-time staff.</em> 主詞是政策，但政策是「影響」別人的一方，後面也有受詞，所以是主動。反過來，主詞是人也可能是被動：<em>Mr. Lin was promoted.</em> Lin 先生是被升職的。判斷靠的是動作的方向，不是主詞是人還是東西。",
         "還有一個容易看錯的線索：<em>by</em>。<em>by</em> 後面接做動作的人（<em>by the manager</em>），是被動的線索；<em>by</em> 後面接時間（<em>by Friday</em>），意思是「在星期五之前」，跟主動被動無關。"
       ],
       "ex": [
         {"en": "The new policy <u>affects</u> all part-time staff.", "zh": "新政策影響所有兼職員工。", "note": "主詞是東西，但它在影響別人，後面有受詞 <em>all part-time staff</em>，所以是主動。"},
-        {"en": "Mr. Lin <u>was promoted</u> to sales director last month.", "zh": "林先生上個月升為業務總監。", "note": "主詞是人，但他是被升職的一方，後面沒有受詞。"},
+        {"en": "Mr. Lin <u>was promoted</u> to sales director last month.", "zh": "Lin 先生上個月升為業務總監。", "note": "主詞是人，但他是被升職的一方，後面沒有受詞。"},
         {"en": "The form <u>must be submitted</u> by Friday.", "zh": "表格必須在星期五前繳交。", "note": "<em>by Friday</em> 是期限，不是做動作的人。判斷被動靠的是：表格不會自己繳交。<em>must be submitted</em> 裡的 <em>must be</em>，第 4 節會講。"}
       ],
       "quiz": [
@@ -182,10 +182,10 @@
         "反過來，做動作的人就是重點時，用主動。介紹新標誌時，大家想知道是誰設計的，就說 <em>Ms. Ho designed the new logo.</em>"
       ],
       "ex": [
-        {"en": "Breakfast <u>is served</u> from 6:30 to 10:00 in the lobby restaurant.", "zh": "早餐 6:30 到 10:00 在大廳餐廳供應。", "note": "誰端早餐不重要，房客要知道的是早餐。"},
+        {"en": "Breakfast <u>is served</u> from 6:30 to 10:00 in the lobby restaurant.", "zh": "早餐 6:30 到 10:00 在大廳餐廳供應。", "note": "誰端早餐不重要，住客要知道的是早餐。"},
         {"en": "The offices <u>are cleaned</u> every evening after 7 p.m.", "zh": "辦公室每天晚上七點以後打掃。"},
-        {"en": "Ms. Ho <u>designed</u> the new logo.", "zh": "何女士設計了新標誌。", "note": "重點是誰設計的，所以用主動。"},
-        {"en": "The wrong invoice <u>was sent</u> to Delmont Foods last week.", "zh": "上週有一張錯的發票寄給了 <em>Delmont Foods</em>。", "note": "先講發生了什麼，不點名是誰寄錯的。"}
+        {"en": "Ms. Ho <u>designed</u> the new logo.", "zh": "Ho 女士設計了新標誌。", "note": "重點是誰設計的，所以用主動。"},
+        {"en": "The wrong invoice <u>was sent</u> to Corvane Foods last week.", "zh": "上週有一張錯的發票寄給了 Corvane Foods。", "note": "先講發生了什麼，不點名是誰寄錯的。"}
       ],
       "takeaway": "做的人不重要、或主題是那件東西時，用被動；重點是誰做的，用主動。"
     },
@@ -235,15 +235,15 @@
     {
       "h": "被動後面還有名詞：give、offer、award",
       "body": [
-        "第 3 節說，動詞後面有受詞，通常是主動。這個「通常」有一個例外：<em>give、offer、send、award、grant、pay</em> 這類動詞可以有<b>兩個</b>受詞，一個是人，一個是東西。<em>The company offered Ms. Wu the position.</em> 公司給了吳女士（人）這個職位（東西）。",
+        "第 3 節說，動詞後面有受詞，通常是主動。這個「通常」有一個例外：<em>give、offer、send、award、grant、pay</em> 這類動詞可以有<b>兩個</b>受詞，一個是人，一個是東西。<em>The company offered Ms. Wu the position.</em> 公司給了 Wu 女士（人）這個職位（東西）。",
         "變成被動時，只有一個受詞搬去當主詞，另一個留在原地。把人搬到前面：<em>Ms. Wu was offered the position.</em> 所以這類動詞的被動後面還接著一個名詞，是正常的。",
-        "這時判斷靠第 3 節的第一個問題：主詞是給出去的一方，還是收到的一方。吳女士是收到職位的人，用 <em>was offered</em>。要是寫成 <em>Ms. Wu offered the position.</em>，文法沒錯，意思卻變成她把職位給了別人。"
+        "這時判斷靠第 3 節的第一個問題：主詞是給出去的一方，還是收到的一方。Wu 女士是收到職位的人，用 <em>was offered</em>。要是寫成 <em>Ms. Wu offered the position.</em>，文法沒錯，意思卻變成她把職位給了別人。"
       ],
       "ex": [
-        {"en": "The company <u>offered</u> Ms. Wu the position of store manager.", "zh": "公司提供吳女士店長的職位。", "note": "主動，兩個受詞：<em>Ms. Wu</em> 和 <em>the position</em>。"},
-        {"en": "Ms. Wu <u>was offered</u> the position of store manager.", "zh": "吳女士獲得了店長的職位。", "note": "被動，<em>Ms. Wu</em> 搬去當主詞，<em>the position</em> 留在動詞後面。"},
+        {"en": "The company <u>offered</u> Ms. Wu the position of store manager.", "zh": "公司提供 Wu 女士店長的職位。", "note": "主動，兩個受詞：<em>Ms. Wu</em> 和 <em>the position</em>。"},
+        {"en": "Ms. Wu <u>was offered</u> the position of store manager.", "zh": "Wu 女士獲得了店長的職位。", "note": "被動，<em>Ms. Wu</em> 搬去當主詞，<em>the position</em> 留在動詞後面。"},
         {"en": "All new employees <u>are given</u> a laptop on their first day.", "zh": "新進員工第一天都會拿到一台筆電。"},
-        {"en": "Mr. Diaz <u>was awarded</u> a bonus for his excellent sales results.", "zh": "<em>Diaz</em> 先生因為業績出色獲頒獎金。"}
+        {"en": "Mr. Caldwell <u>was awarded</u> a bonus for his excellent sales results.", "zh": "Caldwell 先生因為業績出色獲頒獎金。"}
       ],
       "quiz": [
         {
@@ -251,7 +251,7 @@
           "q": "<em>Ms. Tan ___ a free upgrade to business class by the airline.</em> 空格要填哪一個？",
           "options": ["gave", "was given", "has given"],
           "answer": 1,
-          "why": "<em>by the airline</em> 說出給的一方是航空公司，<em>Tan</em> 女士是收到升等的人，所以用被動 <em>was given</em>。後面的 <em>a free upgrade</em> 是留在原地的那個受詞。"
+          "why": "<em>by the airline</em> 說出給的一方是航空公司，Tan 女士是收到升等的人，所以用被動 <em>was given</em>。後面的 <em>a free upgrade</em> 是留在原地的那個受詞。"
         }
       ],
       "takeaway": "<em>give、offer、award</em> 這類動詞變成被動後，後面還會留一個名詞；判斷時問主詞是給的一方還是收到的一方。"

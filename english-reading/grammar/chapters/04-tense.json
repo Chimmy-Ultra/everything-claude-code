@@ -7,7 +7,7 @@
   "check": [
     {
       "type": "choose",
-      "q": "<em>Ms. Lee ___ the company in 2019.</em> 空格用哪一個？",
+      "q": "<em>Ms. Ellis ___ the company in 2019.</em> 空格用哪一個？",
       "options": [
         "has joined",
         "joined",
@@ -18,7 +18,7 @@
     },
     {
       "type": "choose",
-      "q": "<em>Ms. Lee ___ at this company since 2019.</em> 空格用哪一個？",
+      "q": "<em>Ms. Ellis ___ at this company since 2019.</em> 空格用哪一個？",
       "options": [
         "worked",
         "has worked",
@@ -39,9 +39,9 @@
     },
     {
       "type": "choose",
-      "q": "<em>When Mr. Diaz arrived at the airport, his flight had already left.</em> 哪一件事先發生？",
+      "q": "<em>When Mr. Caldwell arrived at the airport, his flight had already left.</em> 哪一件事先發生？",
       "options": [
-        "Diaz 先生到機場",
+        "Caldwell 先生到機場",
         "班機起飛",
         "兩件事同時發生"
       ],
@@ -417,7 +417,7 @@
       ],
       "table": {
         "head": [
-          "by the time 後面",
+          "<em>by the time</em> 後面",
           "主要子句（通常）",
           "例子"
         ],
@@ -437,7 +437,7 @@
       "quiz": [
         {
           "type": "choose",
-          "q": "<em>By the time the new manager starts next month, Ms. Abe ___ the handover notes.</em> 空格用哪一個？",
+          "q": "<em>By the time the new manager starts next month, Ms. Jansen ___ the handover notes.</em> 空格用哪一個？",
           "options": [
             "will have written",
             "had written",
@@ -571,8 +571,8 @@
       "why": "<em>last Monday</em> 是已經結束的時間，用過去式。現在完成式說「連到現在」，和它打架。"
     },
     {
-      "wrong": "I work at Halden Bank since 2018.",
-      "right": "I have worked at Halden Bank since 2018.",
+      "wrong": "I work at Tallis Bank since 2018.",
+      "right": "I have worked at Tallis Bank since 2018.",
       "why": "<em>since</em>＋時間點表示從那時一直到現在，要用現在完成式。現在式只說「一直都這樣」，沒有從過去連過來的意思。"
     },
     {

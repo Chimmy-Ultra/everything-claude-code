@@ -65,7 +65,7 @@
     {
       "h": "有可能的條件和假想的條件",
       "body": [
-        "<em>if</em> 帶頭的子句是從屬子句（第 3 章），說的是「條件」；另一半是主要子句，說的是「結果」。<em>If the client signs today, we will start on Monday.</em> 條件是客戶今天簽約，結果是我們星期一開工。",
+        "<em>if</em> 帶頭、交代條件的子句叫條件子句（第 4 章第 8 節），是從屬子句（第 3 章），說的是「條件」；另一半是主要子句，說的是「結果」。<em>If the client signs today, we will start on Monday.</em> 條件是客戶今天簽約，結果是我們星期一開工。",
         "條件分兩種，先分清楚再談文法。第一種是<b>有可能的條件</b>：說的人覺得這件事有可能發生，只是還不確定。客戶今天可能簽，也可能不簽，兩邊都有可能。",
         "第二種是<b>假想的條件</b>：說的人知道這件事不是真的，或者幾乎不可能。<em>If we had a bigger warehouse, we would keep more stock.</em> 說這句話的人其實知道：倉庫不夠大。這種句子要「反過來讀」，才是事實。",
         "中文兩種都可以說「如果」，再靠「要是」「早知道」這類字眼和語氣表達。英文則一定要在<b>動詞</b>上表現出來：看 <em>if</em> 子句和主要子句的動詞形式（<em>will</em>、<em>would</em>、<em>would have</em>……），就知道說話的人覺得這件事有可能，還是知道它不是真的。這也是為什麼讀錯動詞，就會把意思整個讀反。"
@@ -198,7 +198,7 @@
       "body": [
         "這一型不用退：說的人覺得事情可能發生。<em>if</em> 子句用現在式，主要子句用 <em>will</em>（或 <em>can</em>、<em>may</em>）加原形。",
         "規則和政策也常用 <em>if</em>：兩半都用現在式，說的是「只要……就會……」，每一次都這樣，不是某一次的事。<em>If an invoice is overdue, the system sends a reminder automatically.</em> 要說某一次、還沒發生的事，才用 <em>will</em>：<em>If the invoice is overdue next week, we will call the client.</em>",
-        "門檻在 <em>if</em> 子句：就算講的是明天、下週，<em>if</em> 子句也用<b>現在式</b>，不用 <em>will</em>。寫 <em>If the shipment arrives tomorrow</em>，不寫 <em>If the shipment will arrive tomorrow</em>。未來的意思已經由主要子句的 <em>will</em> 和 <em>tomorrow</em> 表達了，<em>if</em> 子句不用再說一次。<em>when</em>、<em>before</em>、<em>as soon as</em> 這些表示時間的連接詞，後面的子句也一樣用現在式（第 4 章）。",
+        "門檻在 <em>if</em> 子句：就算講的是明天、下週，<em>if</em> 子句也用<b>現在式</b>，不用 <em>will</em>。寫 <em>If the shipment arrives tomorrow</em>，不寫 <em>If the shipment will arrive tomorrow</em>。未來的意思已經由主要子句的 <em>will</em> 和 <em>tomorrow</em> 表達了，<em>if</em> 子句不用再說一次。<em>when</em>、<em>before</em>、<em>as soon as</em> 帶頭的時間子句也一樣，未來用現在式。<em>if</em> 放在 <em>ask</em>、<em>know</em> 這類動詞後面、當「是不是」用時，不是條件子句，未來照用 <em>will</em>。兩點都見第 4 章第 8 節。",
         "主要子句也可以是請求或指示，商業書信常這樣寫：<em>If you have any questions, please contact Ms. Ward.</em>",
         "<em>if</em> 子句可以放前面，也可以放後面。放前面時，兩個子句中間加逗號；放後面時，通常不加：<em>We will start on Monday if the client signs today.</em>"
       ],
@@ -254,7 +254,7 @@
         },
         {
           "en": "If Ms. Kato <u>were</u> here, she <u>would know</u> the answer.",
-          "zh": "要是 Kato 小姐在這裡，她就會知道答案。",
+          "zh": "要是 Kato 女士在這裡，她就會知道答案。",
           "note": "主詞是 <em>she</em>，還是用 <em>were</em>。"
         },
         {
@@ -336,7 +336,7 @@
         },
         {
           "en": "If Ms. Ruiz <u>had accepted</u> the offer, she <u>would be</u> our sales director today.",
-          "zh": "要是 Ruiz 小姐當初接受了這份工作，她今天就是我們的業務總監了。"
+          "zh": "要是 Ruiz 女士當初接受了這份工作，她今天就是我們的業務總監了。"
         }
       ],
       "quiz": [
@@ -358,14 +358,14 @@
       "h": "unless：大致等於 if … not",
       "body": [
         "<em>unless</em> 的意思是「除非」，大致等於 <em>if … not</em>。<em>Unless you register by Friday, you cannot attend.</em> = <em>If you do not register by Friday, you cannot attend.</em>",
-        "因為 <em>unless</em> 裡面已經有 <em>not</em> 的意思，後面就<b>不要再放 not</b>。<em>Unless you don't register</em> 等於「如果你沒有不報名」，意思反了。",
+        "因為 <em>unless</em> 裡面已經有 <em>not</em> 的意思，後面就<b>不要再放 <em>not</em></b>。<em>Unless you don't register</em> 等於「如果你沒有不報名」，意思反了。",
         "<em>unless</em> 是連接詞（第 8 章），後面接子句。它和有可能的條件用法一樣：講未來也用現在式，寫 <em>unless the client approves</em>，不寫 <em>will approve</em>。",
         "<em>unless</em> 說的是「照這樣進行，除非出現這個例外」。<em>We will ship the order on Monday unless the parts arrive late.</em> 零件沒晚到，就星期一出貨；零件晚到，就不一定是星期一。但 <em>unless</em> 不能完全取代 <em>if … not</em>：主要子句在說「這件事沒發生」會引起的反應（驚訝、失望）時，要用 <em>if … not</em>：<em>We will be surprised if the shipment does not arrive today.</em> 換成 <em>unless the shipment arrives today</em> 就不自然。"
       ],
       "ex": [
         {
           "en": "<u>Unless</u> you register by Friday, you cannot attend the workshop.",
-          "zh": "除非你在星期五前報名，否則不能參加研習。",
+          "zh": "除非您在星期五前報名，否則不能參加工作坊。",
           "note": "= <em>If you do not register by Friday</em>"
         },
         {
