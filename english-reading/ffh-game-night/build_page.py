@@ -12,8 +12,9 @@ def en_html(text):
 def phrase_rows(items):
     out = []
     for pid, en, zh, note in items:
+        label = E(re.sub(r"[\[\]]", "", en))
         out.append(
-            f'<li class="row"><button class="say" type="button" data-src="audio/p/{pid}.mp3" aria-label="Play: {E(re.sub(r"[\[\]]", "", en))}">{PLAY}</button>'
+            f'<li class="row"><button class="say" type="button" data-src="audio/p/{pid}.mp3" aria-label="Play: {label}">{PLAY}</button>'
             f'<p class="en">{en_html(en)}</p><button class="reveal" type="button">顯示英文</button>'
             f'<p class="zh">{E(zh)}</p>' + (f'<p class="note">{E(note)}</p>' if note else "") + "</li>")
     return f'<ul class="list">{"".join(out)}</ul>'
