@@ -10,19 +10,19 @@ These rules come from the learner's own feedback on a demo. Follow them exactly.
 1. `point`: the rule only, as short as possible. No qualifiers, no "however long…", no "remember", no "note that".
    - Good: `make + object + adjective.` / `The blank is the subject: use a noun.` / `forbid someone to do something.`
    - Bad: `make + object + adjective, however long the object is.`
-2. `why`: one to three short sentences on how to see it **in this sentence**. Quote the sentence's own words in `<em>…</em>`. Name the answer at the end. At most 50 words.
+2. `why`: how to see it **in this sentence**. Quote the sentence's own words in `<em>…</em>`. Name the answer at the end. No word limit: say as much as it takes.
    - Good: `The object of <em>makes</em> is the whole phrase <em>the items that customers order most often</em>. The blank says what those items become, so it needs an adjective: <em>accessible</em>.`
 3. **No lines about the wrong options.** Not one.
 
 **Vocabulary (`gap`, type vocab)**
 1. `point` and `why` as above.
-2. `usage`: for **each wrong option**, one line on how that word is really used: its pattern or meaning, then one short original example sentence in `<em>…</em>`. Put `null` at the answer's index. At most 32 words per line. Don't say "this is wrong because"; just show how the word is used.
+2. `usage`: for **each wrong option**, one line on how that word is really used: its pattern or meaning, then one short original example sentence in `<em>…</em>`. Put `null` at the answer's index. No word limit. Don't say "this is wrong because"; just show how the word is used.
    - Good: `<em>prohibit</em> someone <em>from</em> doing something. <em>The rules prohibit staff from eating at their desks.</em>`
    - Good: `<em>prevent</em> someone <em>from</em> doing something; it means stopping it from happening, not a rule. <em>The fence prevents visitors from entering the site.</em>`
 
 **Listening (`qr`, `conv`, `talk`)**: for each question, `point` and `why` only.
 - `point`: the skill in a few words (e.g. `An indirect answer: someone else will handle it.` / `Look for the reason given after "because".`).
-- `why`: quote the deciding words from the transcript in `<em>…</em>` and connect them to the answer. For graphic questions, say which row or cell and why. At most 50 words.
+- `why`: quote the deciding words from the transcript in `<em>…</em>` and connect them to the answer. For graphic questions, say which row or cell and why. No word limit.
 - No lines about the wrong options.
 
 ## Word cards (`gloss`)

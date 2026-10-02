@@ -7,24 +7,19 @@ POS = {"n.", "v.", "adj.", "adv.", "prep.", "phr."}
 BANNED = re.compile(r"\b(let's|remember|note that|tip:|great|well done|nice)\b|!|[\U0001F300-\U0001FAFF]", re.I)
 
 
-def words(html):
-    return len(re.sub(r"<[^>]+>", "", html).split())
-
-
 def check(name):
     items = importlib.import_module(name).ITEMS
     path = os.path.join(HERE, "en", name + ".json")
     data = json.load(open(path, encoding="utf-8"))
     errs = []
 
-    def pair(where, p, limit):
+    def pair(where, p):
         if not (isinstance(p, list) and len(p) == 2 and all(isinstance(x, str) and x.strip() for x in p)):
             errs.append(f"{where}: must be [English, Chinese]"); return
         en, zh = p
         if re.search(r"<(?!/?em>)[^>]*>", en): errs.append(f"{where}: only <em> is allowed")
         if en.count("<em>") != en.count("</em>"): errs.append(f"{where}: unbalanced <em>")
         if BANNED.search(re.sub(r"<em>.*?</em>", "", en)): errs.append(f"{where}: banned word or mark")
-        if words(en) > limit: errs.append(f"{where}: {words(en)} words (max {limit})")
         if not re.search(r"[一-鿿]", zh): errs.append(f"{where}: Chinese twin has no Chinese")
 
     for it in items:
@@ -32,7 +27,7 @@ def check(name):
         if e is None: errs.append(f"{i}: missing"); continue
         if it["format"] == "gap":
             text = it["stem"]
-            pair(f"{i} point", e.get("point"), 14); pair(f"{i} why", e.get("why"), 50)
+            pair(f"{i} point", e.get("point")); pair(f"{i} why", e.get("why"))
             if it["type"] == "vocab":
                 u = e.get("usage")
                 if not (isinstance(u, list) and len(u) == len(it["options"])): errs.append(f"{i} usage: need one entry per option")
@@ -40,7 +35,7 @@ def check(name):
                     for k, line in enumerate(u):
                         if k == it["answer"]:
                             if line is not None: errs.append(f"{i} usage[{k}]: the answer's slot must be null")
-                        else: pair(f"{i} usage[{k}]", line, 32)
+                        else: pair(f"{i} usage[{k}]", line)
             elif "usage" in e: errs.append(f"{i}: grammar items have no usage lines")
             lo, hi = 2, 4
         else:
@@ -49,7 +44,7 @@ def check(name):
             if not (isinstance(q, list) and len(q) == len(it["questions"])): errs.append(f"{i} q: need one entry per question")
             else:
                 for n, x in enumerate(q):
-                    pair(f"{i} q{n} point", x.get("point"), 14); pair(f"{i} q{n} why", x.get("why"), 50)
+                    pair(f"{i} q{n} point", x.get("point")); pair(f"{i} q{n} why", x.get("why"))
             lo, hi = (2, 4) if it["format"] == "qr" else (3, 5)
         g = e.get("gloss", [])
         if not lo <= len(g) <= hi: errs.append(f"{i} gloss: {len(g)} entries (want {lo}-{hi})")

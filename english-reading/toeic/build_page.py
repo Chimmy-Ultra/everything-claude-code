@@ -5,19 +5,16 @@ import json, os, sys
 from content import ITEMS, UNITS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LIMITS = {"point": 40, "why": 90, "wrong": 45}
 errors, warnings = [], []
 
 def check_explain(where, ex, n_opts, answer):
     for k in ("point", "why"):
         if not isinstance(ex.get(k), str) or not ex[k].strip(): errors.append(f"{where}: explain.{k} missing")
-        elif len(ex[k]) > LIMITS[k]: warnings.append(f"{where}: explain.{k} is {len(ex[k])} chars (limit {LIMITS[k]})")
     w = ex.get("wrong")
     if not isinstance(w, list) or len(w) != n_opts: errors.append(f"{where}: explain.wrong must have {n_opts} entries"); return
     for i, x in enumerate(w):
         if i == answer and x is not None: errors.append(f"{where}: wrong[{i}] must be None (it is the answer)")
         if i != answer and (not isinstance(x, str) or not x.strip()): errors.append(f"{where}: wrong[{i}] missing")
-        if isinstance(x, str) and len(x) > LIMITS["wrong"]: warnings.append(f"{where}: wrong[{i}] is {len(x)} chars")
     wm = ex.get("wrongMore")
     if wm is not None and (not isinstance(wm, list) or len(wm) != n_opts or wm[answer] is not None): errors.append(f"{where}: wrongMore must match options with None at the answer")
     for pair in ex.get("vocab") or []:
