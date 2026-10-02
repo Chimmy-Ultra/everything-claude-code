@@ -114,3 +114,19 @@ The learner named four grammar chapters and listening as weak spots. 126 new que
 - Audio: Kokoro, checked with Whisper. Part 2: four name or spelling differences (Lena/Lina, they're/they are, morning/mornings), and "Ms." read as letters, fixed with a spoken form. Conversations: two name/spelling differences. Talks: none flagged.
 - Bank now: 172 grammar, 61 vocabulary, 69 listening sets (127 questions), 360 questions.
 
+
+## Round 7: Part 6 and Part 7 reading (2026-10-02)
+The learner asked for Part 6 and Part 7, hard-leaning. Rules are in WRITING_RULES.md section 8; section 8.0 records what the public ETS sample test shows for these parts (directions, blank types, question stems, short options, question order in a three-document set) and what we changed to match it. Writers and blind reviewers were general models; every blind pass was solved without the key.
+
+| Batch | File | Questions | Blind bands, latest pass (easy / medium / hard) | Blind passes |
+|---|---|---|---|---|
+| Part 6 text completion (e-mail, memo, article, letter) | items_read_a | 4 texts, 16 | 1 / 7 / 8 | 2 |
+| Part 7 three documents (conference, furniture order, hiring) | items_read_b | 3 sets, 15 | 1 / 6 / 8 (pass 3 covered two sets) | 3 |
+| Part 7 three documents (catering, coach tour) | items_read_c | 2 sets, 10 | 0 / 4 / 6 | 3 |
+
+- Keys matched in every pass. No option was ever judged defensible; near-misses were closed anyway (r-p6-03 Once, r-p6-02 no longer, r-p7-02:0 two options readable two ways, r-p7-01:4 gathered up).
+- First pass found too many easy word and purpose questions and some option-length cues; these were rewritten, and later passes put the hard share at about half (22 of 41) with 2 easy.
+- The four Part 6 texts lean on connectors, tense from the date line and sentence insertion; one word-form blank (late / lately) and one collocation blank were added to match the official sample's mix. All four texts announce an operational change; a different genre next round would help.
+- The page shows the documents beside the questions, a "Questions 1–N refer to the following …" line, numbered blanks that fill in as answered, evidence highlighting and word cards (table cells included) after the set. Word questions give a paragraph but no line number, since the page reflows.
+- Chapter lessons for both units (lessons/p6.json, p7-triple.json) were reviewed; the review caught an example that gave away a bank item's distractors.
+- Bank now: 172 grammar, 61 vocabulary, 69 listening sets (127 questions), 9 reading sets (41 questions), 401 questions.
