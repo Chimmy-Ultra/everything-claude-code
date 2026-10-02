@@ -1,0 +1,102 @@
+{
+ "answers": {
+  "r-p7-04:0": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [], "reason": "",
+   "band": "medium",
+   "why": "L yes: transport (most common sense, and the page is about delivery) and stock (a real sense of carry, fits a catering page) are real senses of the word. B yes: the most common meaning is the trap. D no: the clue is in the same sentence (Saturday or Sunday ... an additional $60 staffing charge), so it fails D and S and stops at medium.",
+   "vsToeic": "similar", "style": 5,
+   "fix": "",
+   "editorNote": "Good distractor set. Substituting each into 'Events held on a Saturday or Sunday ___ an additional $60 staffing charge': only 'involve' reads as correct standard English; 'support an additional charge' is a stretch and needs an outside assumption, so it is not defensible."
+  },
+  "r-p7-04:1": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes: A (change of address, paragraph 1) and C (praise, first sentence) are true statements in the e-mail. B yes: C is the literal first-sentence reading. D no: all evidence is in one e-mail, and the e-mail is mostly about booking. S no.",
+   "vsToeic": "similar", "style": 5,
+   "fix": "",
+   "editorNote": "A (report a change of address) is a real sentence of the e-mail but secondary (one sentence against two paragraphs of booking); I judge it a legitimate 'mentioned but not the purpose' trap, not a second answer. D contradicts the e-mail (the exact number will be sent later)."
+  },
+  "r-p7-04:2": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L yes: C (same package) is true of January's order. D yes: needs the e-mail (January = Harvest; this time wants dessert and coffee), the web page (only the Banquet has dessert table and coffee, plus a second hot main) and the invoice ($26 per person confirms Banquet). B yes: 'coming back to you' makes C the belief students hold. S yes: two documents must be merged and then the package contents compared. Nothing failed.",
+   "vsToeic": "similar", "style": 4,
+   "fix": "",
+   "editorNote": "Paraphrase distance is 3 (second hot main course -> more main dishes). B is contradicted by the invoice (balance due within 14 days) and D by the web page (Fenwick Road kitchen), so both are clean distractors."
+  },
+  "r-p7-04:3": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L yes: A (weekend) is a real surcharge in the documents, and in fact applies to this event, but it is the $60 line, not the $35 line. D yes: the invoice line (Delivery, flat fee), the web page's delivery policy and the e-mail's move to Ashby are in three places. S yes: three hops. B weak: students will not firmly believe A, because the invoice labels the lines separately. This is the lower edge of hard because each hop is a direct keyword match.",
+   "vsToeic": "similar", "style": 4,
+   "fix": "",
+   "editorNote": "The option 'Its event was held on a weekend' is true by inference (see r-p7-04:4), which makes it a good 'true but not the question' trap. Ashby being outside Corbridge is not stated outright; it is inferred from 'left our Corbridge premises ... new office ... in Ashby', which I consider sufficient."
+  },
+  "r-p7-04:4": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L yes: A (March 20, the stated preference) and C (March 18, the builders' date) are in the e-mail. D yes: the answer needs the invoice (the $60 staffing line), the web page (the $60 applies to Saturday or Sunday) and the e-mail (the fallback is Saturday, March 22). B yes: A is the original, superseded plan. S yes: weekend surcharge -> Saturday -> March 22 -> two days after March 20, then compare with 'requested'. Nothing failed.",
+   "vsToeic": "harder", "style": 4,
+   "fix": "",
+   "editorNote": "Unique by elimination: A would carry no weekend surcharge, B is contradicted by 34 guests on the invoice, C (Tuesday) cannot be a weekend day. Weakness: 'later than requested' is slightly loose, since March 22 was also Ms. Whitfield's stated fallback; 'two days after the date Ms. Whitfield preferred' would be tighter (shouldFix, minor)."
+  },
+  "r-p7-05:0": {
+   "answer": "C", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "easy",
+   "why": "L marginal: only B (promote a tour later in June) draws on e-mail content (the June 28 Lakeside Day Tour and the voucher for a future tour), and it is an option offered as a remedy, not a promotion; A and D have no basis in the e-mail (D belongs to the review, which comes later). D no, B no, S no: the single e-mail announces the changes in its first two paragraphs.",
+   "vsToeic": "similar", "style": 5,
+   "fix": "Optional: replace B with a distractor that is a real paragraph of the e-mail, e.g. 'To explain a refund policy' (paragraph 4 is a genuine part of the e-mail), to bring the item up to medium. Keep it clear that the changes are the purpose of the e-mail; the cancellation offer follows from them.",
+   "editorNote": "Purpose questions about an announcement e-mail are normally easy in real tests too, so this matches the real test, but this is the only easy item of the 10 and sits at the 10 percent ceiling for the batch."
+  },
+  "r-p7-05:1": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes in the word-sense sense: 'is located' (the most common sense of stand) and 'is tolerated' (stand = put up with) are real senses of the word. B yes: the most common sense is the trap. D no: the clue is the same sentence (This offer ... until 5:00 p.m. on Thursday, June 12). S no.",
+   "vsToeic": "similar", "style": 5,
+   "fix": "",
+   "editorNote": "Distractors C ('rises') and D ('is tolerated') are weak; nobody would be tempted when the subject is 'This offer'. Optional: replace one of them with a more tempting sense."
+  },
+  "r-p7-05:2": {
+   "answer": "B", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L yes: A reuses the e-mail's 'Bay 2, beside the main ticket hall' and sounds right for a couple at 'the bay'. D yes: the e-mail (Bays 5 to 8 closed, new Bay 2), the itinerary (Bay 6) and the review (the couple waited at Bay 6) are in three places. B yes: A and D are what students believe. S yes: the e-mail and review must be merged, then the couple's reason inferred. Nothing failed.",
+   "vsToeic": "similar", "style": 4,
+   "fix": "",
+   "editorNote": "D (misread the time) has no support: the e-mail says 'at the usual time', and the review says they were at the wrong bay, not at the wrong time. 'Relied on outdated details' versus 'had not read the e-mail' is the same conclusion, and B is the closest paraphrase of both. A is refuted by Bay 6 versus Bay 2."
+  },
+  "r-p7-05:3": {
+   "answer": "A", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "hard",
+   "why": "L yes: C (abbey walk, praised in the review) and B (cheese, called 'the surprise of the day') are real parts of the review. D yes: the review says only 'the stop I had been looking forward to ... had been dropped'; the e-mail says which stop (the boat to the island tea house) and the itinerary describes it (a forty-minute cruise to the island tea house). B yes: students believe B or C because the review praises them. S yes: three documents, chained. Nothing failed.",
+   "vsToeic": "similar", "style": 5,
+   "fix": "",
+   "editorNote": "Only one stop was dropped (Lindell Water), so the answer is unique. A is a paraphrase of 'cruise to the island tea house' (distance 2-3)."
+  },
+  "r-p7-05:4": {
+   "answer": "D", "confidence": "high", "ambiguous": false, "alsoPossible": [],
+   "reason": "",
+   "band": "medium",
+   "why": "L yes: D (full refund) is a true statement in the e-mail, i.e. a mentioned-but-not-asked item. B yes: students who skim the three documents believe D has been mentioned. S yes: NOT questions require eliminating three options. D weak: the evidence for A, B and C is spread over one 174-word review, in three consecutive paragraphs, so I do not count the distance as met (by the literal wording, 'two or more places' would make it hard).",
+   "vsToeic": "similar", "style": 5,
+   "fix": "",
+   "editorNote": "A = 'My sister and I', B = 'bought two wedges', C = 'most of us were starving'; each has paraphrase distance 2, which is fair. Nothing in the review supports a refund (she traveled and used the voucher)."
+  }
+ },
+ "mustFix": [],
+ "shouldFix": [
+  "r-p7-04: 'Ms. Whitfield' (questions 2-3): the first name Dana does not show gender and the e-mail never gives a title; add a salutation or a clearly gendered first name so that 'Ms.' is supported.",
+  "r-p7-04: the invoice has no event date or event line. Every real invoice has one, and Q5 depends on the omission. Acceptable as a design choice; for realism add 'Event: Training day lunch' with no date.",
+  "r-p7-04:4: 'two days later than requested' is slightly loose, since March 22 was also Ms. Whitfield's stated fallback; suggest 'two days after the date Ms. Whitfield preferred'.",
+  "r-p7-05:0: the only easy item among these 10 questions; if the batch is near the easy ceiling, replace distractor B with a real e-mail paragraph topic, for example the refund policy.",
+  "r-p7-05:1: distractors C (rises) and D (is tolerated) are weak; use a more tempting real sense of the word."
+ ],
+ "overall": "Both sets are well made and close to the official format in 8.0: five questions in the official order (word meaning and purpose first, cross-document in the middle and later, the last question on the final document only); three documents of 399 and 495 words (inside 380-560); e-mail, web page, invoice, itinerary and review all have the expected header fields. Consistency checks pass: weekdays match 2025 (March 20 Thursday, March 22 Saturday, June 14 Saturday, June 12 Thursday); the invoice arithmetic is right (34 x 26 = 884; 884 + 35 + 60 - 195 = 784; the deposit is 25 percent of 30 x 26 = 195, received March 4, the day after the e-mail says it will be paid); the lunch and return times (+45 minutes each) agree; the review's complaints (late departure, late lunch, back after six) agree with the e-mail. No second defensible option in any of the 10 questions. Difficulty is above the usual real triple passage: 5 hard, 4 medium, 1 easy by 8.3; a typical real set has one cross-document inference, while 04 has three in a row (Q3-Q5) and 05 has two. The best items are 04:2 and 05:3 (cross-document chains with a believable corrected-information trap). The documents read like business writing (a small amount of British flavor: 'Water' for a lake, 'wedges'), and distractors are mostly of the kind in 8.2 (corrected information, adjacent facts, most common word sense). Weaknesses are small: the two word-meaning items have a couple of weak distractors, the one easy item is at the batch ceiling, and the invoice lacks an event date."
+}
