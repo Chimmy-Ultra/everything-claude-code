@@ -1,0 +1,281 @@
+{
+  "unit": "p6",
+  "lead": [
+    "One short business document with four blanks. Most take a word or phrase; one takes a whole sentence. The sentence with a blank may accept several options, so the deciding clue is often in another sentence or paragraph.",
+    "一份簡短的商業文件，有四個空格。大多填一個字或片語，其中一個要填整句。有空格的句子可能接受好幾個選項，所以決定答案的線索常在另一句或另一段。"
+  ],
+  "steps": [
+    [
+      "Read from the top, not just the sentence with the blank. Note the date, the writer and what is changing.",
+      "從頭讀，不要只讀有空格的那一句。注意日期、寫的人，以及什麼事情有變動。"
+    ],
+    [
+      "For a word blank, try each option in its sentence. If two or more fit, look before and after for the clue.",
+      "字詞空格：把每個選項放進句子試試。若兩個以上都通，就往前後找線索。"
+    ],
+    [
+      "For the sentence blank, read the sentence before it and any sentence after it. The right option must connect to both.",
+      "句子空格：讀它前一句，後面若還有句子也要讀。正確的選項要和前後都接得上。"
+    ],
+    [
+      "Check words like these, this, the same or such in each option. They must point to something already in the text.",
+      "檢查選項裡的 these、this、the same、such。它們指的東西必須已經在文中出現過。"
+    ]
+  ],
+  "rules": [
+    {
+      "head": [
+        "Tense: the time is in another sentence",
+        "時態：時間在另一句"
+      ],
+      "body": [
+        "A sentence with no time word may accept several tenses. Check the date of the letter and words like last week or next month in nearby sentences.",
+        "沒有時間詞的句子可能好幾個時態都通。看信件日期，以及附近句子裡的 last week、next month 這類字。"
+      ],
+      "ex": [
+        [
+          "Thank you for attending last Thursday's workshop. The slides we <em>presented</em> are now on the staff website.",
+          "感謝您參加上週四的工作坊。我們當天展示的投影片已放在員工網站上。"
+        ],
+        [
+          "Memo, May 10: The new branch <em>will open</em> on Harbor Road. The ceremony is set for June 3.",
+          "五月十日的備忘錄：新分行將在 Harbor Road 開幕，開幕典禮定在六月三日。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Pronouns: find the noun they replace",
+        "代名詞：找出它代替的名詞"
+      ],
+      "body": [
+        "It, they, this and these point back to a noun, but not always the nearest one. Check number, and check that the noun makes sense with the verb.",
+        "it、they、this、these 指回前面的名詞，但不一定是最近的那個。要檢查單複數，也要確認那個名詞和動詞搭得起來。"
+      ],
+      "ex": [
+        [
+          "The board approved the new travel policy on Monday. <em>It</em> takes effect on July 1.",
+          "董事會星期一通過了新的差旅規定，該規定七月一日生效。"
+        ],
+        [
+          "Several guests asked about late checkout. <em>This option</em> is now available for a small fee.",
+          "幾位房客詢問延後退房。這個選項現在只要付少許費用就能使用。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Linking adverbs: how do the two sentences relate?",
+        "連接副詞：兩句是什麼關係？"
+      ],
+      "body": [
+        "However, as a result, in addition, instead and otherwise can all follow a full stop. Decide the relation first: opposite, result, extra point, replacement, or what happens if not.",
+        "however、as a result、in addition、instead、otherwise 都能放在句號後。先判斷關係：相反、結果、補充、取代，或「不這樣做的話」。"
+      ],
+      "ex": [
+        [
+          "The north entrance will be closed on Saturday. <em>Instead</em>, please use the door on Pine Street.",
+          "北側入口星期六關閉，請改走 Pine Street 那側的門。"
+        ],
+        [
+          "Please confirm your booking by Friday. <em>Otherwise</em>, the room may be given to another guest.",
+          "請在星期五前確認訂房，否則房間可能會讓給其他房客。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Vocabulary: an earlier detail decides",
+        "字彙：前文的細節決定答案"
+      ],
+      "body": [
+        "Several words may fit the sentence on their own. A detail elsewhere in the text rules most of them out, such as a reopening date, a free service or a weekly change.",
+        "好幾個字單獨放進句子都可能通。文中其他地方的細節會排除大部分，例如重新開放的日期、免費服務或每週更換。"
+      ],
+      "ex": [
+        [
+          "The pool will reopen on May 2 after repairs. We apologize for this <em>temporary</em> closure.",
+          "泳池修繕後將於五月二日重新開放。造成這次暫時關閉的不便，我們深感抱歉。"
+        ],
+        [
+          "Our lunch menu changes every week. Please check the board for the <em>current</em> dishes.",
+          "我們的午餐菜單每週更換，請看看板上目前的菜色。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Inserted sentence: it points back",
+        "插入句：指回前文"
+      ],
+      "body": [
+        "The right sentence often refers to something already said: these changes, the same discount, this request. That thing must appear before the blank and match in number.",
+        "正確的句子常指回已提過的事：these changes、the same discount、this request。被指的東西必須在空格前出現，單複數也要一致。"
+      ],
+      "ex": [
+        [
+          "Our hours and booking system will change on March 1. <em>These changes will not affect existing reservations.</em>",
+          "本店的營業時間和訂位系統將於三月一日變更。這些變更不影響既有的訂位。"
+        ],
+        [
+          "Members receive a discount on all classes. <em>The same discount applies to guests they bring.</em>",
+          "會員上所有課程都享有折扣，他們帶來的來賓也適用同樣的折扣。"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Inserted sentence: it leads into the next",
+        "插入句：要帶出下一句"
+      ],
+      "body": [
+        "If a sentence follows the blank, read it too. If it opens with Until then, For this reason or To place an order, the inserted sentence must supply that time, reason or service.",
+        "空格後如果還有句子，也要讀。若它以 Until then、For this reason、To place an order 開頭，插入句就必須提供那個時間、理由或服務。"
+      ],
+      "ex": [
+        [
+          "The cafeteria will be closed next month. <em>Staff may order lunch from Rosa's Kitchen instead.</em> To place an order, call extension 204.",
+          "員工餐廳下個月關閉，員工可以改向 Rosa's Kitchen 訂午餐。訂餐請撥分機 204。"
+        ],
+        [
+          "<em>Several customers have reported problems with our app.</em> For this reason, an update will be released on Monday.",
+          "有幾位顧客回報我們的 app 有問題，因此星期一會推出更新。"
+        ]
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "right": "Sales of the new blender were higher than expected. As a result, the factory has increased production.",
+      "wrong": "Sales of the new blender were higher than expected. However, the factory has increased production.",
+      "why": [
+        "Higher sales lead to more production, so the second sentence is a result. However would signal a contrast that is not there.",
+        "銷量高帶來增產，所以第二句是結果。however 表示對比，但這兩句之間沒有對比。"
+      ]
+    },
+    {
+      "right": "Thank you for attending last week's training session. The slides we presented are attached to this e-mail.",
+      "wrong": "Thank you for attending last week's training session. The slides we will present are attached to this e-mail.",
+      "why": [
+        "Last week in the first sentence puts the session in the past, so the slides have already been presented.",
+        "第一句的 last week 把課程放在過去，所以投影片已經展示過了。"
+      ]
+    },
+    {
+      "right": "We received your request for two extra desks. It has been forwarded to the facilities team.",
+      "wrong": "We received your request for two extra desks. They have been forwarded to the facilities team.",
+      "why": [
+        "The request is what gets forwarded. They would point to the desks, the nearest noun, but no desks have been sent anywhere.",
+        "被轉交的是申請。they 會指向最近的名詞 desks，但桌子並沒有被送到任何地方。"
+      ]
+    },
+    {
+      "right": "Two printers on the second floor are out of order. A technician will repair them on Thursday. Until then, please use the copier on the third floor.",
+      "wrong": "Two printers on the second floor are out of order. A technician repaired them yesterday. Until then, please use the copier on the third floor.",
+      "why": [
+        "Until then needs a future time before it. A repair finished yesterday contradicts out of order and leaves nothing to wait for.",
+        "Until then 前面需要一個未來的時間點。昨天已修好和「故障中」矛盾，也沒有可以等的時間。"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "head": [
+        "Words in an inserted sentence that point back",
+        "插入句裡指回前文的字"
+      ],
+      "items": [
+        [
+          "these changes",
+          "這些變更"
+        ],
+        [
+          "this request",
+          "這項要求"
+        ],
+        [
+          "the same discount",
+          "同樣的折扣"
+        ],
+        [
+          "such delays",
+          "這類延誤"
+        ],
+        [
+          "both locations",
+          "兩個地點"
+        ],
+        [
+          "the latter",
+          "後者"
+        ],
+        [
+          "at that time",
+          "在那時"
+        ],
+        [
+          "in this case",
+          "在這種情況下"
+        ]
+      ]
+    },
+    {
+      "head": [
+        "Openings that need something before them",
+        "需要前文鋪墊的句首"
+      ],
+      "items": [
+        [
+          "Until then,",
+          "在那之前"
+        ],
+        [
+          "For this reason,",
+          "因為這個原因"
+        ],
+        [
+          "In that case,",
+          "那樣的話"
+        ],
+        [
+          "Otherwise,",
+          "否則"
+        ],
+        [
+          "Even so,",
+          "即使如此"
+        ],
+        [
+          "After that,",
+          "在那之後"
+        ],
+        [
+          "As a result,",
+          "因此"
+        ],
+        [
+          "Instead,",
+          "改為、取而代之"
+        ]
+      ]
+    }
+  ],
+  "traps": [
+    [
+      "Choosing the linking adverb that sounds most natural in its own sentence. Many fit after a full stop; only the sentence before shows which relation is true.",
+      "選了在本句裡聽起來最自然的連接副詞。很多都能放在句號後，只有前一句能說明真正的關係。"
+    ],
+    [
+      "Taking the nearest noun as the meaning of it or they. Check the noun against the verb: a request is forwarded, a policy takes effect.",
+      "把最近的名詞當成 it 或 they 指的東西。要用動詞檢查：被轉交的是申請，生效的是規定。"
+    ],
+    [
+      "Picking an inserted sentence because it is on topic. A wrong option can match the topic but mention something not yet introduced, or clash with a date or name.",
+      "因為和主題相關就選了插入句。錯誤選項可能主題相同，卻提到還沒出現的東西，或和日期、人名衝突。"
+    ],
+    [
+      "Choosing a tense from the blank's sentence alone. Look at the date line and the time words in earlier paragraphs.",
+      "只看空格那一句就決定時態。要看日期欄和前面段落的時間詞。"
+    ]
+  ]
+}
