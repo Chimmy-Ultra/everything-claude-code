@@ -31,7 +31,7 @@
       "q": "<em>The committee ___ the proposal next week.</em> 空格要填哪一個？",
       "options": ["will review", "will be reviewed"],
       "answer": 0,
-      "why": "空格後面有受詞 <em>the proposal</em>，委員會是審查的一方，用主動。被動的意思是委員會被審查，後面也就不會再有一個被審的提案。"
+      "why": "空格後面有受詞 <em>the proposal</em>，委員會是審查的一方，用主動。<em>will be reviewed</em> 的意思是委員會被審查，那後面就不該再有受詞 <em>the proposal</em>。"
     },
     {
       "type": "choose",
