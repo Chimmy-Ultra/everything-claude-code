@@ -296,13 +296,13 @@ ITEMS = [
                 "paras": [
                     "HADLEY CROSS (June 12) — Corvell Bakeries, which supplies more than sixty grocery stores in the region, will open a second production site in Southmere this autumn. Until now, everything the company sells has been baked at its original bakery on Mill Road in Hadley Cross.",
                     "Orders have nearly doubled since Corvell began supplying the Tolver Markets chain two years ago, and the Mill Road ovens now run around the clock. {1} The bakery sits on a narrow lot between a school and a row of houses.",
-                    "Conversion work on the new site, a former furniture warehouse, {2} in March, and the bakery is due to open in October. The building has room for all of Corvell's pastry production, so Mill Road will be left to concentrate on bread. {3} the new site is running at full capacity, however, Mill Road will continue to bake some pastries, said operations director Paula Brandt.",
+                    "Conversion work on the new site, a former furniture warehouse, {2} in March, and the bakery is due to open in October. The building has room for all of Corvell's pastry production, so Mill Road will eventually bake only bread. {3} the new site is running at full capacity, however, Mill Road will continue to bake some pastries, said operations director Paula Brandt.",
                     "Corvell expects to hire about forty bakers and drivers for Southmere. Brandt stressed that no current employee will be required to move. Mill Road staff will be given the {4} to transfer before the jobs are advertised.",
                 ],
                 "zh": [
                     "HADLEY CROSS（6 月 12 日）——為本地區六十多家雜貨店供貨的 Corvell 烘焙公司，今年秋天將在 Southmere 開設第二座生產基地。到目前為止，該公司販售的所有產品，都是在 Hadley Cross 磨坊路（Mill Road）的原始烘焙廠烘製的。",
                     "自從兩年前 Corvell 開始供貨給 Tolver Markets 連鎖超市以來，訂單幾乎翻倍，磨坊路的烤爐現在日夜不停地運轉。但擴建原本的烘焙廠從來就不是可行的選項。這座烘焙廠位在一所學校和一排住宅之間的狹長土地上。",
-                    "新廠址是一座舊家具倉庫，改建工程已於 3 月開工，新烘焙廠預定 10 月啟用。這棟建築容得下 Corvell 所有的糕點生產，磨坊路因此可以專心做麵包。不過，營運總監 Paula Brandt 表示，在新廠全面運轉之前，磨坊路仍會繼續烘焙一些糕點。",
+                    "新廠址是一座舊家具倉庫，改建工程已於 3 月開工，新烘焙廠預定 10 月啟用。這棟建築容得下 Corvell 所有的糕點生產，磨坊路最後只會做麵包。不過，營運總監 Paula Brandt 表示，在新廠全面運轉之前，磨坊路仍會繼續烘焙一些糕點。",
                     "Corvell 預計為 Southmere 新廠招募約四十名烘焙師傅和司機。Brandt 強調，現有員工都不會被要求調動。磨坊路的員工將在職缺公開招募之前，獲得調職的機會。",
                 ],
             }
@@ -319,16 +319,16 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "句子插入：插入句要能被下一句「夾在學校和住宅之間的狹長土地」解釋，也不能和第三、四段矛盾",
-                    "why": "前一句說訂單翻倍、烤爐日夜運轉；下一句說烘焙廠位在學校和住宅之間的狹長土地上——這是在解釋「為什麼不能在原址擴建」。B 正好接在中間：產能不夠，原址又沒辦法擴建，所以才要另開新廠（第一段）。A 說要關閉磨坊路的廠，要讀到第三、四段（磨坊路之後專做麵包、員工不必調動）才能排除。",
+                    "why": "前一句說訂單翻倍、烤爐日夜運轉；下一句說烘焙廠位在學校和住宅之間的狹長土地上——這是在解釋「為什麼不能在原址擴建」。B 正好接在中間：產能不夠，原址又沒辦法擴建，所以才要另開新廠（第一段）。A 說要關閉磨坊路的廠，要讀到第三、四段（磨坊路之後只做麵包、員工不必調動）才能排除。",
                     "evidence": [[0, 1], [0, 2], [0, 3]],
                     "wrong": [
-                        "接在「烤爐日夜運轉」和「土地狹小」之間也讀得通；但第三段說磨坊路之後要專做麵包，還會繼續烤一些糕點——它沒有要關",
+                        "接在「烤爐日夜運轉」和「土地狹小」之間也讀得通；但第三段說磨坊路之後只做麵包，還會繼續烤一些糕點——它沒有要關",
                         None,
                         "說一直分兩處生產；但第一段說到目前為止所有產品都在磨坊路的原始烘焙廠烘製",
                         "說烤爐每晚關掉；和前一句的 run around the clock（日夜運轉）矛盾",
                     ],
                     "wrongMore": [
-                        "A 是近乎正確誘答：放進空格後，下一句「烘焙廠夾在學校和住宅之間的狹長土地上」剛好像在說明為什麼要關廠，第二段自己讀起來很順。決定性線索在第三段：The building has room for all of Corvell's pastry production, so Mill Road will be left to concentrate on bread，以及 Mill Road will continue to bake some pastries；第四段也說現有員工不必調動。磨坊路會繼續營運，只是改成專做麵包。",
+                        "A 是近乎正確誘答：放進空格後，下一句「烘焙廠夾在學校和住宅之間的狹長土地上」剛好像在說明為什麼要關廠，第二段自己讀起來很順。決定性線索在第三段：The building has room for all of Corvell's pastry production, so Mill Road will eventually bake only bread，以及 Mill Road will continue to bake some pastries；第四段也說現有員工不必調動。磨坊路會繼續營運，只是最後改成只做麵包。",
                         None,
                         None,
                         None,
@@ -365,21 +365,21 @@ ITEMS = [
                 "ldbs": {"L": True, "D": True, "B": True, "S": False, "band": "hard"},
                 "explain": {
                     "point": "連接詞：Until（在…之前一直）——要和前一句「新廠容得下所有糕點生產」對得上",
-                    "why": "前一句說新廠的建築 has room for all of Corvell's pastry production，磨坊路因此可以專做麵包。本句說磨坊路會繼續烤一些糕點——這只能是過渡期：在新廠全面運轉「之前」，所以用 Until。用 Once 就變成新廠全面運轉「之後」磨坊路還在烤糕點；但新廠容得下全部糕點生產，全面運轉後沒有理由再讓磨坊路烤，和前一句矛盾。",
+                    "why": "前一句說新廠的建築 has room for all of Corvell's pastry production，磨坊路最後只會做麵包。本句說磨坊路會繼續烤一些糕點——這只能是過渡期：在新廠全面運轉「之前」，所以用 Until。用 Once 就變成新廠全面運轉「之後」磨坊路還在烤糕點；但新廠容得下全部糕點生產，全面運轉後沒有理由再讓磨坊路烤，和前一句矛盾。",
                     "evidence": [[0, 2]],
                     "wrong": [
-                        "Once … is running at full capacity 本句很順；但前一句說新廠容得下全部糕點生產、磨坊路專做麵包，全面運轉後磨坊路不會再烤糕點",
+                        "Once … is running at full capacity 本句很順；但前一句說新廠容得下全部糕點生產、磨坊路最後只做麵包，全面運轉後磨坊路不會再烤糕點",
                         "even though 把「新廠正在全面運轉」當成事實；但新廠 10 月才啟用",
                         None,
                         "in case 是「以防」，「以防新廠全面運轉，磨坊路繼續烤糕點」說不通",
                     ],
                     "wrongMore": [
-                        "Once 是近乎正確誘答：「新廠全面運轉之後怎樣」是這類報導最常見的說法，本句單看文法、語意都對；如果新廠容量不夠，「全面運轉後磨坊路仍要補烤一些糕點」也說得通。前一句把這條路關掉了：The building has room for all of Corvell's pastry production, so Mill Road will be left to concentrate on bread。新廠容得下全部糕點，全面運轉後就由新廠全包；磨坊路繼續烤糕點只可能發生在那之前，所以是 Until。",
+                        "Once 是近乎正確誘答：「新廠全面運轉之後怎樣」是這類報導最常見的說法，本句單看文法、語意都對；如果新廠容量不夠，「全面運轉後磨坊路仍要補烤一些糕點」也說得通。前一句把這條路關掉了：The building has room for all of Corvell's pastry production, so Mill Road will eventually bake only bread。新廠容得下全部糕點，全面運轉後就由新廠全包；磨坊路繼續烤糕點只可能發生在那之前，所以是 Until。",
                         None,
                         None,
                         None,
                     ],
-                    "vocab": [["full capacity", "全面運轉；滿載產能"], ["concentrate on", "專注於"], ["operations director", "營運總監"]],
+                    "vocab": [["full capacity", "全面運轉；滿載產能"], ["eventually", "最後、終究"], ["operations director", "營運總監"]],
                 },
             },
             {
