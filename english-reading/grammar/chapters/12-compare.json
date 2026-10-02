@@ -1,13 +1,65 @@
 {
-  "id": "compare", "n": 12,
-  "title": "比較", "en": "Comparisons",
+  "id": "compare",
+  "n": 12,
+  "title": "比較",
+  "en": "Comparisons",
   "lead": "比較的句子把兩樣以上的東西放在一起：一樣大、比較大、最大。英文用形容詞和副詞（第 1 章）的三種形式來表示，而且每一種都有固定的搭檔：<em>than</em>、<em>as … as</em>、<em>the …</em> 加範圍。這一章先教怎麼變形，再教每一種形式跟誰搭配，最後是加強比較級的字、「越……越……」和最高級。",
   "check": [
-    {"type": "choose", "q": "<em>The new printer is ___ than the old one.</em> 空格填哪一個？", "options": ["fast", "faster", "fastest"], "answer": 1, "why": "<em>than</em> 是比較級的搭檔，兩台印表機在比，用 <em>faster</em>。"},
-    {"type": "choose", "q": "<em>This hotel is ___ than the one we stayed at last year.</em> 空格填哪一個？", "options": ["more cheaper", "cheaper", "most cheap"], "answer": 1, "why": "<em>cheap</em> 是一個音節的短字，加 <em>-er</em>。<em>-er</em> 和 <em>more</em> 只能選一個，不能一起用。"},
-    {"type": "choose", "q": "<em>Our new office is as ___ as the old one.</em> 空格填哪一個？", "options": ["large", "larger", "largest"], "answer": 0, "why": "兩個 <em>as</em> 中間放原級，表示「一樣大」。"},
-    {"type": "choose", "q": "<em>This is ___ order we have ever received.</em> 空格填哪一個？", "options": ["the larger", "the largest", "larger than"], "answer": 1, "why": "從「我們收過的所有訂單」裡挑出最大的那一筆，是最高級 <em>the largest</em>。<em>we have ever received</em> 是最高級常見的範圍說法。"},
-    {"type": "choose", "q": "<em>The new model is ___ lighter than the old one.</em> 空格填哪一個？", "options": ["very", "much", "most"], "answer": 1, "why": "比較級前面要加強，用 <em>much</em>、<em>far</em>、<em>even</em>。<em>very</em> 只能修飾原級。"}
+    {
+      "type": "choose",
+      "q": "<em>Our response times are shorter than ___ of most competitors.</em> 空格填哪一個？",
+      "options": [
+        "those",
+        "that",
+        "them"
+      ],
+      "answer": 0,
+      "why": "比的是「我們的回覆時間」和「大多數競爭對手的回覆時間」，兩邊要同一類。<em>times</em> 是複數，用 <em>those</em> 代替 <em>the response times</em>；單數才用 <em>that</em>。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>This hotel is ___ than the one we stayed at last year.</em> 空格填哪一個？",
+      "options": [
+        "more cheaper",
+        "cheaper",
+        "most cheap"
+      ],
+      "answer": 1,
+      "why": "<em>cheap</em> 是一個音節的短字，加 <em>-er</em>。<em>-er</em> 和 <em>more</em> 只能選一個，不能一起用。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>Our new office is as ___ as the old one.</em> 空格填哪一個？",
+      "options": [
+        "large",
+        "larger",
+        "largest"
+      ],
+      "answer": 0,
+      "why": "兩個 <em>as</em> 中間放原級，表示「一樣大」。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>This is ___ order we have ever received.</em> 空格填哪一個？",
+      "options": [
+        "the larger",
+        "the largest",
+        "larger than"
+      ],
+      "answer": 1,
+      "why": "從「我們收過的所有訂單」裡挑出最大的那一筆，是最高級 <em>the largest</em>。<em>we have ever received</em> 是最高級常見的範圍說法。"
+    },
+    {
+      "type": "choose",
+      "q": "<em>The new model is ___ lighter than the old one.</em> 空格填哪一個？",
+      "options": [
+        "very",
+        "much",
+        "most"
+      ],
+      "answer": 1,
+      "why": "比較級前面要加強，用 <em>much</em>、<em>far</em>、<em>even</em>。<em>very</em> 修飾的是原級（<em>very light</em>），不放在比較級前面。"
+    }
   ],
   "sections": [
     {
@@ -17,19 +69,64 @@
         "選哪一級，看比的對象有幾個、怎麼比。說兩樣東西一樣，用原級（<em>as fast as</em>）；兩樣東西比出高下，用比較級（<em>faster than</em>）；從一群裡挑出第一名，用最高級（<em>the fastest in the company</em>）。",
         "中文的「比較」「最」是另外加上去的字，形容詞本身不變；英文則是形容詞本身變形，而且每一級都有固定的搭檔。在句子裡，搭檔（<em>than</em>、<em>as</em>、<em>the</em>、<em>in</em>、<em>of</em>）往往比形容詞本身更容易看見，所以後面幾節會一個一個講搭檔。"
       ],
-      "table": {"head": ["原級", "比較級", "最高級"], "rows": [
-        ["<em>fast</em>", "<em>faster</em>", "<em>fastest</em>"],
-        ["<em>cheap</em>", "<em>cheaper</em>", "<em>cheapest</em>"],
-        ["<em>expensive</em>", "<em>more expensive</em>", "<em>most expensive</em>"],
-        ["<em>good</em>", "<em>better</em>", "<em>best</em>"]
-      ]},
+      "table": {
+        "head": [
+          "原級",
+          "比較級",
+          "最高級"
+        ],
+        "rows": [
+          [
+            "<em>fast</em>",
+            "<em>faster</em>",
+            "<em>fastest</em>"
+          ],
+          [
+            "<em>cheap</em>",
+            "<em>cheaper</em>",
+            "<em>cheapest</em>"
+          ],
+          [
+            "<em>expensive</em>",
+            "<em>more expensive</em>",
+            "<em>most expensive</em>"
+          ],
+          [
+            "<em>good</em>",
+            "<em>better</em>",
+            "<em>best</em>"
+          ]
+        ]
+      },
       "ex": [
-        {"en": "Express shipping is <u>fast</u>.", "zh": "快遞寄送很快。", "note": "原級：只講一樣東西。"},
-        {"en": "Express shipping is <u>faster</u> than standard shipping.", "zh": "快遞寄送比一般寄送快。", "note": "比較級：兩樣東西比。"},
-        {"en": "Overnight delivery is the <u>fastest</u> option we offer.", "zh": "隔夜送達是我們提供的選項裡最快的。", "note": "最高級：一群裡的第一名。"}
+        {
+          "en": "Express shipping is <u>fast</u>.",
+          "zh": "快遞寄送很快。",
+          "note": "原級：只講一樣東西。"
+        },
+        {
+          "en": "Express shipping is <u>faster</u> than standard shipping.",
+          "zh": "快遞寄送比一般寄送快。",
+          "note": "比較級：兩樣東西比。"
+        },
+        {
+          "en": "Overnight delivery is the <u>fastest</u> option we offer.",
+          "zh": "隔夜送達是我們提供的選項裡最快的。",
+          "note": "最高級：一群裡的第一名。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "<em>Of all the branches in the region, the Eastgate branch has the ___ sales.</em> 空格填哪一個？", "options": ["high", "higher", "highest"], "answer": 2, "why": "<em>of all the branches</em> 表示從一群裡挑第一名，前面又有 <em>the</em>，用最高級 <em>highest</em>。"}
+        {
+          "type": "choose",
+          "q": "<em>Of all the branches in the region, the Eastgate branch has the ___ sales.</em> 空格填哪一個？",
+          "options": [
+            "high",
+            "higher",
+            "highest"
+          ],
+          "answer": 2,
+          "why": "<em>of all the branches</em> 表示從一群裡挑第一名，前面又有 <em>the</em>，用最高級 <em>highest</em>。"
+        }
       ],
       "takeaway": "一樣用原級，兩個比用比較級，一群裡的第一名用最高級。"
     },
@@ -37,18 +134,41 @@
       "h": "怎麼變：加 -er、-est，還是用 more、most",
       "body": [
         "原則是：短的字加字尾，長的字前面加字。一個音節的字（<em>fast</em>、<em>cheap</em>、<em>large</em>）加 <em>-er</em>、<em>-est</em>：<em>cheaper</em>、<em>cheapest</em>。三個音節以上的字（<em>expensive</em>、<em>reliable</em>、<em>efficient</em>）前面加 <em>more</em>、<em>most</em>：<em>more expensive</em>、<em>most reliable</em>。",
-        "兩個音節的字：以 <em>-y</em> 結尾的，把 <em>y</em> 改成 <em>i</em> 再加 <em>-er</em>、<em>-est</em>：<em>easy</em> → <em>easier</em>、<em>busy</em> → <em>busiest</em>。其他兩個音節的字大多用 <em>more</em>、<em>most</em>：<em>more modern</em>、<em>more careful</em>。以 <em>-ly</em> 結尾的副詞也用 <em>more</em>：<em>more quickly</em>、<em>more carefully</em>。",
+        "兩個音節的字：以 <em>-y</em> 結尾的形容詞，把 <em>y</em> 改成 <em>i</em> 再加 <em>-er</em>、<em>-est</em>：<em>easy</em> → <em>easier</em>、<em>busy</em> → <em>busiest</em>。其他兩個音節的字大多用 <em>more</em>、<em>most</em>：<em>more modern</em>、<em>more careful</em>。以 <em>-ly</em> 結尾的副詞也用 <em>more</em>：<em>more quickly</em>、<em>more carefully</em>。例外是 <em>early</em>（形容詞和副詞同一個字）：<em>earlier</em>、<em>earliest</em>，後面「越……越……」那一節的 <em>The earlier you register</em> 就是這個字。",
         "拼字的小變化：字尾已經是 <em>e</em> 的只加 <em>-r</em>，<em>large</em> → <em>larger</em>；短母音加一個子音結尾的，子音要重複，<em>big</em> → <em>bigger</em>、<em>hot</em> → <em>hotter</em>。",
         "<b><em>-er</em> 和 <em>more</em> 只能選一個</b>。<em>more cheaper</em>、<em>most easiest</em> 等於把「比較」說了兩次，是錯的。"
       ],
       "ex": [
-        {"en": "The new route is <u>shorter</u> and <u>cheaper</u>.", "zh": "新路線比較短，也比較便宜。"},
-        {"en": "The new software is <u>more reliable</u> than the old version.", "zh": "新軟體比舊版穩定。"},
-        {"en": "Friday is usually our <u>busiest</u> day.", "zh": "星期五通常是我們最忙的一天。", "note": "<em>busy</em> → <em>busiest</em>：<em>y</em> 改 <em>i</em>。"},
-        {"en": "Please drive <u>more carefully</u> in the loading area.", "zh": "在裝卸區開車請更小心。"}
+        {
+          "en": "The new route is <u>shorter</u> and <u>cheaper</u>.",
+          "zh": "新路線比較短，也比較便宜。"
+        },
+        {
+          "en": "The new software is <u>more reliable</u> than the old version.",
+          "zh": "新軟體比舊版穩定。"
+        },
+        {
+          "en": "Friday is usually our <u>busiest</u> day.",
+          "zh": "星期五通常是我們最忙的一天。",
+          "note": "<em>busy</em> → <em>busiest</em>：<em>y</em> 改 <em>i</em>。"
+        },
+        {
+          "en": "Please drive <u>more carefully</u> in the loading area.",
+          "zh": "在裝卸區開車請更小心。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "下面哪一個比較級是對的？", "options": ["more easier", "easier", "easyer"], "answer": 1, "why": "<em>easy</em> 是兩個音節、<em>-y</em> 結尾，<em>y</em> 改成 <em>i</em> 再加 <em>-er</em>：<em>easier</em>。<em>more easier</em> 把比較說了兩次。"}
+        {
+          "type": "choose",
+          "q": "下面哪一個比較級是對的？",
+          "options": [
+            "more easier",
+            "easier",
+            "easyer"
+          ],
+          "answer": 1,
+          "why": "<em>easy</em> 是兩個音節、<em>-y</em> 結尾，<em>y</em> 改成 <em>i</em> 再加 <em>-er</em>：<em>easier</em>。<em>more easier</em> 把比較說了兩次。"
+        }
       ],
       "takeaway": "短字加 <em>-er</em>／<em>-est</em>，長字用 <em>more</em>／<em>most</em>，兩個不能一起用。"
     },
@@ -61,21 +181,70 @@
         "<em>further</em> 除了講距離，也常用來表示「進一步的」：<em>for further information</em>。",
         "<em>gooder</em>、<em>more better</em>、<em>worser</em> 都不存在。"
       ],
-      "table": {"head": ["原級", "比較級", "最高級"], "rows": [
-        ["<em>good</em>／<em>well</em>", "<em>better</em>", "<em>best</em>"],
-        ["<em>bad</em>／<em>badly</em>", "<em>worse</em>", "<em>worst</em>"],
-        ["<em>many</em>／<em>much</em>", "<em>more</em>", "<em>most</em>"],
-        ["<em>little</em>", "<em>less</em>", "<em>least</em>"],
-        ["<em>far</em>", "<em>farther</em>／<em>further</em>", "<em>farthest</em>／<em>furthest</em>"]
-      ]},
+      "table": {
+        "head": [
+          "原級",
+          "比較級",
+          "最高級"
+        ],
+        "rows": [
+          [
+            "<em>good</em>／<em>well</em>",
+            "<em>better</em>",
+            "<em>best</em>"
+          ],
+          [
+            "<em>bad</em>／<em>badly</em>",
+            "<em>worse</em>",
+            "<em>worst</em>"
+          ],
+          [
+            "<em>many</em>／<em>much</em>",
+            "<em>more</em>",
+            "<em>most</em>"
+          ],
+          [
+            "<em>little</em>",
+            "<em>less</em>",
+            "<em>least</em>"
+          ],
+          [
+            "<em>far</em>",
+            "<em>farther</em>／<em>further</em>",
+            "<em>farthest</em>／<em>furthest</em>"
+          ]
+        ]
+      },
       "ex": [
-        {"en": "The second supplier made a <u>better</u> offer.", "zh": "第二家供應商開出更好的條件。"},
-        {"en": "Sales were <u>worse</u> in March than in February.", "zh": "三月的業績比二月差。"},
-        {"en": "The new process takes <u>less</u> time than the old one.", "zh": "新流程花的時間比舊的少。"},
-        {"en": "For <u>further</u> information, please visit our website.", "zh": "更多資訊請上我們的網站。"}
+        {
+          "en": "The second supplier made a <u>better</u> offer.",
+          "zh": "第二家供應商開出更好的條件。"
+        },
+        {
+          "en": "Sales were <u>worse</u> in March than in February.",
+          "zh": "三月的業績比二月差。"
+        },
+        {
+          "en": "The new process takes <u>less</u> time than the old one.",
+          "zh": "新流程花的時間比舊的少。"
+        },
+        {
+          "en": "For <u>further</u> information, please visit our website.",
+          "zh": "更多資訊請上我們的網站。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "<em>The product sold ___ in the second quarter than in the first.</em> 空格填哪一個？", "options": ["more good", "better", "gooder"], "answer": 1, "why": "<em>sold</em> 後面要副詞 <em>well</em>，比較級是不規則的 <em>better</em>。<em>more good</em> 和 <em>gooder</em> 都不存在。"}
+        {
+          "type": "choose",
+          "q": "<em>The product sold ___ in the second quarter than in the first.</em> 空格填哪一個？",
+          "options": [
+            "more good",
+            "better",
+            "gooder"
+          ],
+          "answer": 1,
+          "why": "<em>sold</em> 後面要副詞 <em>well</em>，比較級是不規則的 <em>better</em>。<em>more good</em> 和 <em>gooder</em> 都不存在。"
+        }
       ],
       "takeaway": "<em>good</em>／<em>well</em>、<em>bad</em>、<em>many</em>／<em>much</em>、<em>little</em>、<em>far</em> 不照規則變，要個別認。"
     },
@@ -84,15 +253,36 @@
       "body": [
         "比較級後面通常接 <em>than</em>，帶出比較的另一方：<em>faster than the old printer</em>。看到 <em>than</em>，前面就要是比較級；反過來，要說出跟誰比，就用 <em>than</em>。<em>than</em> 不是 <em>then</em>，<em>then</em> 是「然後、那時」，跟比較無關。",
         "<b>比的兩邊要是同一類</b>。<em>Our delivery fees are lower than other courier companies.</em> 字面上是拿「我們的運費」去比「其他快遞公司」，運費和公司不是同一類。要寫成 <em>lower than those of other courier companies</em>（<em>those</em> = <em>the delivery fees</em>，第 11 章），拿運費比運費。單數用 <em>that of</em>：<em>The battery life of this model is longer than that of the previous one.</em>",
-        "如果前面已經說清楚在跟什麼比，<em>than</em> 和後面那一半可以省略：<em>We moved to a new office. It is bigger.</em>（比舊的大）。"
+        "如果前面已經說清楚在跟什麼比，<em>than</em> 和後面那一半可以省略：<em>We moved to a new office. It is bigger.</em>（比舊的大）。",
+        "<em>than</em> 後面如果是代名詞，要把省略的動詞補回來再選格：<em>Ms. Diaz has worked here longer than I have.</em> 正式書面用主格 <em>I</em>，最穩當的是把動詞寫出來（第 11 章）。"
       ],
       "ex": [
-        {"en": "The new printer is <u>faster than</u> the old one.", "zh": "新印表機比舊的快。"},
-        {"en": "Our delivery fees are <u>lower than those of</u> other courier companies.", "zh": "我們的運費比其他快遞公司的低。", "note": "<em>those</em> = <em>the delivery fees</em>，拿運費比運費。"},
-        {"en": "The battery life of this model is <u>longer than that of</u> the previous one.", "zh": "這個型號的電池續航力比上一代長。", "note": "<em>that</em> = <em>the battery life</em>。"}
+        {
+          "en": "The new printer is <u>faster than</u> the old one.",
+          "zh": "新印表機比舊的快。"
+        },
+        {
+          "en": "Our delivery fees are <u>lower than those of</u> other courier companies.",
+          "zh": "我們的運費比其他快遞公司的低。",
+          "note": "<em>those</em> = <em>the delivery fees</em>，拿運費比運費。"
+        },
+        {
+          "en": "The battery life of this model is <u>longer than that of</u> the previous one.",
+          "zh": "這個型號的電池續航力比上一代長。",
+          "note": "<em>that</em> = <em>the battery life</em>。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "下面哪一句比的是同一類東西？", "options": ["The salaries at Norvel are higher than Kestra Logistics.", "The salaries at Norvel are higher than those at Kestra Logistics."], "answer": 1, "why": "要拿薪水比薪水。<em>those at Kestra Logistics</em> = <em>the salaries at Kestra Logistics</em>。第一句是拿薪水去比一家公司。"}
+        {
+          "type": "choose",
+          "q": "下面哪一句比的是同一類東西？",
+          "options": [
+            "The salaries at Norvel are higher than Kestra Logistics.",
+            "The salaries at Norvel are higher than those at Kestra Logistics."
+          ],
+          "answer": 1,
+          "why": "要拿薪水比薪水。<em>those at Kestra Logistics</em> = <em>the salaries at Kestra Logistics</em>。第一句是拿薪水去比一家公司。"
+        }
       ],
       "takeaway": "比較級配 <em>than</em>；比的兩邊要同一類，必要時用 <em>that of</em>／<em>those of</em>。"
     },
@@ -105,13 +295,35 @@
         "常用的 <em>as soon as possible</em>（盡快）也是同一個結構。"
       ],
       "ex": [
-        {"en": "The new office is <u>as large as</u> the old one.", "zh": "新辦公室和舊的一樣大。"},
-        {"en": "The train is <u>not as fast as</u> the plane, but it is cheaper.", "zh": "火車沒有飛機快，但比較便宜。"},
-        {"en": "This year's order is <u>twice as large as</u> last year's.", "zh": "今年的訂單是去年的兩倍大。"},
-        {"en": "Please reply <u>as soon as</u> possible.", "zh": "請盡快回覆。"}
+        {
+          "en": "The new office is <u>as large as</u> the old one.",
+          "zh": "新辦公室和舊的一樣大。"
+        },
+        {
+          "en": "The train is <u>not as fast as</u> the plane, but it is cheaper.",
+          "zh": "火車沒有飛機快，但比較便宜。"
+        },
+        {
+          "en": "This year's order is <u>twice as large as</u> last year's.",
+          "zh": "今年的訂單是去年的兩倍大。"
+        },
+        {
+          "en": "Please reply <u>as soon as</u> possible.",
+          "zh": "請盡快回覆。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "<em>The second warehouse is three times as ___ as the first one.</em> 空格填哪一個？", "options": ["big", "bigger", "biggest"], "answer": 0, "why": "倍數 <em>three times</em> 放在第一個 <em>as</em> 前面，兩個 <em>as</em> 中間還是原級 <em>big</em>。"}
+        {
+          "type": "choose",
+          "q": "<em>The second warehouse is three times as ___ as the first one.</em> 空格填哪一個？",
+          "options": [
+            "big",
+            "bigger",
+            "biggest"
+          ],
+          "answer": 0,
+          "why": "倍數 <em>three times</em> 放在第一個 <em>as</em> 前面，兩個 <em>as</em> 中間還是原級 <em>big</em>。"
+        }
       ],
       "takeaway": "<em>as … as</em> 中間只放原級；倍數放在第一個 <em>as</em> 前面。"
     },
@@ -123,13 +335,35 @@
         "<em>even</em> 帶著「本來就已經……了」的意思：<em>Last quarter was good, but this quarter was even better.</em> 上一季已經不錯，這一季更好。"
       ],
       "ex": [
-        {"en": "Shipping by sea is <u>much cheaper</u> than shipping by air.", "zh": "海運比空運便宜很多。"},
-        {"en": "The updated app is <u>far more reliable</u> than the first version.", "zh": "更新後的 app 比第一版穩定得多。"},
-        {"en": "Last quarter was good, but this quarter was <u>even better</u>.", "zh": "上一季不錯，這一季更好。"},
-        {"en": "The hotel's rates are <u>slightly higher</u> in December.", "zh": "這家飯店十二月的房價稍微高一點。"}
+        {
+          "en": "Shipping by sea is <u>much cheaper</u> than shipping by air.",
+          "zh": "海運比空運便宜很多。"
+        },
+        {
+          "en": "The updated app is <u>far more reliable</u> than the first version.",
+          "zh": "更新後的 app 比第一版穩定得多。"
+        },
+        {
+          "en": "Last quarter was good, but this quarter was <u>even better</u>.",
+          "zh": "上一季不錯，這一季更好。"
+        },
+        {
+          "en": "The hotel's rates are <u>slightly higher</u> in December.",
+          "zh": "這家飯店十二月的房價稍微高一點。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "下面哪一句是對的？", "options": ["The new model is very lighter than the old one.", "The new model is far lighter than the old one.", "The new model is far light than the old one."], "answer": 1, "why": "比較級 <em>lighter</em> 前面用 <em>far</em> 加強。<em>very</em> 不能修飾比較級；第三句 <em>light</em> 是原級，不能配 <em>than</em>。"}
+        {
+          "type": "choose",
+          "q": "下面哪一句是對的？",
+          "options": [
+            "The new model is very lighter than the old one.",
+            "The new model is far lighter than the old one.",
+            "The new model is far light than the old one."
+          ],
+          "answer": 1,
+          "why": "比較級 <em>lighter</em> 前面用 <em>far</em> 加強。<em>very</em> 不能修飾比較級；第三句 <em>light</em> 是原級，不能配 <em>than</em>。"
+        }
       ],
       "takeaway": "比較級前面用 <em>much</em>、<em>far</em>、<em>even</em> 加強，<em>very</em> 只配原級。"
     },
@@ -142,12 +376,31 @@
         "很短的固定說法：<em>The sooner, the better.</em>（越快越好）。"
       ],
       "ex": [
-        {"en": "<u>The earlier</u> you register, <u>the less</u> you pay.", "zh": "越早報名，付得越少。"},
-        {"en": "<u>The more orders</u> we receive, <u>the more staff</u> we need.", "zh": "接到的訂單越多，需要的人手就越多。"},
-        {"en": "<u>The longer</u> we wait, <u>the harder</u> it will be to find a venue.", "zh": "拖得越久，越難找到場地。"}
+        {
+          "en": "<u>The earlier</u> you register, <u>the less</u> you pay.",
+          "zh": "越早報名，付得越少。"
+        },
+        {
+          "en": "<u>The more orders</u> we receive, <u>the more staff</u> we need.",
+          "zh": "接到的訂單越多，需要的人手就越多。"
+        },
+        {
+          "en": "<u>The longer</u> we wait, <u>the harder</u> it will be to find a venue.",
+          "zh": "拖得越久，越難找到場地。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "<em>The more you order, ___ the price per unit.</em> 空格填哪一個？", "options": ["the lower", "lower", "the lowest"], "answer": 0, "why": "前半是 <em>the more</em>，後半也要「<em>the</em> + 比較級」：<em>the lower</em>。少了 <em>the</em> 或用最高級都不成句型。"}
+        {
+          "type": "choose",
+          "q": "<em>The more you order, ___ the price per unit gets.</em> 空格填哪一個？",
+          "options": [
+            "the lower",
+            "lower",
+            "the lowest"
+          ],
+          "answer": 0,
+          "why": "前半是 <em>the more</em>，後半也要「<em>the</em> + 比較級」放在最前面：<em>the lower</em>，後面再接主詞和動詞（<em>the price per unit gets</em>）。少了 <em>the</em> 或用最高級都不成句型。"
+        }
       ],
       "takeaway": "越……越……：兩半都用「<em>the</em> + 比較級」開頭。"
     },
@@ -156,29 +409,98 @@
       "body": [
         "最高級是從一群裡挑出第一名，前面通常有 <em>the</em>，或所有格（<em>our</em>、<em>the company's</em>），因為第一名只有一個，是特定的那一個。",
         "最高級常帶一個說明「在哪一群裡」的範圍。範圍是地方或團體，用 <em>in</em>：<em>the largest hotel in the city</em>、<em>the best salesperson in the company</em>。範圍是一群同類的東西，用 <em>of</em>：<em>the cheapest of the four plans</em>、<em>the busiest of all our branches</em>。",
+        "只有<b>兩個</b>東西在比的時候，正式書面不用最高級，用「<em>the</em> + 比較級 + <em>of the two</em>」：<em>Plan A is the cheaper of the two plans.</em>（兩個方案中比較便宜的那個）。三個以上才用最高級：<em>the cheapest of the four plans</em>。",
         "<em>one of the</em> + 最高級 + <b>複數名詞</b>：<em>one of the largest markets</em>（最大的市場之一）。意思是「最大的那幾個裡面的一個」，所以名詞要用複數。",
         "範圍也可以是時間。現在完成式（第 4 章）加 <em>ever</em>，表示「到目前為止」：<em>the largest order we have ever received</em>（我們收過最大的一筆訂單）。<em>yet</em> 放在名詞後面，也是「到目前為止」：<em>our best quarter yet</em>。"
       ],
       "ex": [
-        {"en": "This is <u>the largest</u> hotel <u>in</u> the city.", "zh": "這是市內最大的飯店。"},
-        {"en": "Plan B is <u>the cheapest of</u> the four plans.", "zh": "B 方案是四個方案中最便宜的。"},
-        {"en": "Ms. Tran is <u>one of the most experienced</u> engineers <u>in</u> the company.", "zh": "Tran 小姐是公司裡最有經驗的工程師之一。", "note": "<em>one of the</em> + 最高級 + 複數名詞。"},
-        {"en": "This is <u>the largest</u> order we have <u>ever</u> received.", "zh": "這是我們收過最大的一筆訂單。"},
-        {"en": "It was our <u>best</u> quarter <u>yet</u>.", "zh": "這是我們到目前為止最好的一季。"}
+        {
+          "en": "This is <u>the largest</u> hotel <u>in</u> the city.",
+          "zh": "這是市內最大的飯店。"
+        },
+        {
+          "en": "Plan B is <u>the cheapest of</u> the four plans.",
+          "zh": "B 方案是四個方案中最便宜的。"
+        },
+        {
+          "en": "Ms. Tran is <u>one of the most experienced</u> engineers <u>in</u> the company.",
+          "zh": "Tran 小姐是公司裡最有經驗的工程師之一。",
+          "note": "<em>one of the</em> + 最高級 + 複數名詞。"
+        },
+        {
+          "en": "This is <u>the largest</u> order we have <u>ever</u> received.",
+          "zh": "這是我們收過最大的一筆訂單。",
+          "note": "<em>we have ever received</em> 是省略了 <em>that</em> 的關係子句（第 9 章），說明 <em>order</em>。"
+        },
+        {
+          "en": "It was our <u>best</u> quarter <u>yet</u>.",
+          "zh": "這是我們到目前為止最好的一季。"
+        }
       ],
       "quiz": [
-        {"type": "choose", "q": "<em>Harbor Point is one of the busiest ___ in the region.</em> 空格填哪一個？", "options": ["port", "ports"], "answer": 1, "why": "<em>one of the</em> + 最高級後面接複數名詞：最忙的那幾個港口裡的一個。"},
-        {"type": "choose", "q": "<em>This is the most affordable ___ the three laptops we tested.</em> 空格填哪一個？", "options": ["in", "of", "than"], "answer": 1, "why": "範圍是一群同類的東西（我們測試的三台筆電），用 <em>of</em>。<em>in</em> 用在地方或團體；<em>than</em> 是比較級的搭檔。"}
+        {
+          "type": "choose",
+          "q": "<em>Harbor Point is one of the busiest ___ in the region.</em> 空格填哪一個？",
+          "options": [
+            "port",
+            "ports"
+          ],
+          "answer": 1,
+          "why": "<em>one of the</em> + 最高級後面接複數名詞：最忙的那幾個港口裡的一個。"
+        },
+        {
+          "type": "choose",
+          "q": "<em>This is the most affordable ___ the three laptops we tested.</em> 空格填哪一個？",
+          "options": [
+            "in",
+            "of",
+            "than"
+          ],
+          "answer": 1,
+          "why": "範圍是一群同類的東西（我們測試的三台筆電），用 <em>of</em>。<em>in</em> 用在地方或團體；<em>than</em> 是比較級的搭檔。"
+        },
+        {
+          "type": "choose",
+          "q": "<em>We compared two suppliers, and Norvel is the ___ of the two.</em> 空格填哪一個？",
+          "options": [
+            "more reliable",
+            "most reliable"
+          ],
+          "answer": 0,
+          "why": "只有兩個東西比，正式書面用「<em>the</em> + 比較級」：<em>the more reliable</em>。<em>most</em> 要三個以上才用。"
+        }
       ],
-      "takeaway": "最高級前面加 <em>the</em>，範圍用 <em>in</em>（地方、團體）或 <em>of</em>（一群同類），<em>one of the</em> 後面接複數。"
+      "takeaway": "最高級前面加 <em>the</em>，範圍用 <em>in</em>（地方、團體）或 <em>of</em>（一群同類），<em>one of the</em> 後面接複數；只有兩個時用 <em>the</em> + 比較級。"
     }
   ],
   "mistakes": [
-    {"wrong": "This hotel is more cheaper than the one near the station.", "right": "This hotel is cheaper than the one near the station.", "why": "<em>-er</em> 和 <em>more</em> 只能選一個。"},
-    {"wrong": "The new model is very lighter than the old one.", "right": "The new model is much lighter than the old one.", "why": "<em>very</em> 不能修飾比較級，用 <em>much</em>、<em>far</em>、<em>even</em>。"},
-    {"wrong": "The new office is as larger as the old one.", "right": "The new office is as large as the old one.", "why": "兩個 <em>as</em> 中間放原級。"},
-    {"wrong": "Ms. Tran is one of the most experienced engineer in the company.", "right": "Ms. Tran is one of the most experienced engineers in the company.", "why": "<em>one of the</em> + 最高級後面接複數名詞。"},
-    {"wrong": "The more you order, the cheap it gets.", "right": "The more you order, the cheaper it gets.", "why": "「越……越……」的兩半都要用 <em>the</em> + 比較級。"}
+    {
+      "wrong": "This hotel is more cheaper than the one near the station.",
+      "right": "This hotel is cheaper than the one near the station.",
+      "why": "<em>-er</em> 和 <em>more</em> 只能選一個。"
+    },
+    {
+      "wrong": "The new model is very lighter than the old one.",
+      "right": "The new model is much lighter than the old one.",
+      "why": "<em>very</em> 不能修飾比較級，用 <em>much</em>、<em>far</em>、<em>even</em>。"
+    },
+    {
+      "wrong": "The new office is as larger as the old one.",
+      "right": "The new office is as large as the old one.",
+      "why": "兩個 <em>as</em> 中間放原級。"
+    },
+    {
+      "wrong": "Ms. Tran is one of the most experienced engineer in the company.",
+      "right": "Ms. Tran is one of the most experienced engineers in the company.",
+      "why": "<em>one of the</em> + 最高級後面接複數名詞。"
+    },
+    {
+      "wrong": "The more you order, the cheap it gets.",
+      "right": "The more you order, the cheaper it gets.",
+      "why": "「越……越……」的兩半都要用 <em>the</em> + 比較級。"
+    }
   ],
-  "workbook": ["compare"]
+  "workbook": [
+    "compare"
+  ]
 }
