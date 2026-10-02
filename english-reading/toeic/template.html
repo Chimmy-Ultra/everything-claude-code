@@ -179,6 +179,7 @@ button.row:hover .t{color:var(--accent)}
 .doc .blank{min-width:3.4em;font-style:normal;color:var(--faint)}
 .doc .blank.filled{color:var(--accent);font-style:italic;border-bottom-style:dotted}
 @media (min-width:900px){.leftp.docs{position:sticky;top:10px;max-height:calc(100vh - var(--dockh,64px) - 1.5rem - 72px - 12px);overflow:auto;padding:0 .6em 0 .2em;margin-left:-.2em;overscroll-behavior:contain}}
+.refer{font-style:italic;color:var(--soft);margin:1.3em 0 -.3em;font-size:.95em}
 .rq{margin:0 0 .4em}
 .rq + .rq{margin-top:1.4em}
 .script{list-style:none;margin:0;padding:0;display:grid;gap:.2em}
@@ -1069,6 +1070,9 @@ function blankSentence(item, qi) {
 function readCard(left, right, item, card) {
   const qs = card.qs, done = {}, blocks = [], filled = new Set(), paras = [];
   left.classList.add("docs");
+  const kinds = []; for (const d of item.docs) { const k = String(d.kind || "document").toLowerCase(), f = kinds.find(x => x.k === k); if (f) f.n++; else kinds.push({ k, n: 1 }); }
+  const names = kinds.map(x => x.n > 1 ? x.k + "s" : x.k), nq = item.questions.length;
+  left.append(el("p", "refer", `Questions 1–${nq} refer to the following ${names.length > 1 ? names.slice(0, -1).join(", ") + (names.length > 2 ? "," : "") + " and " + names.at(-1) : names[0]}.`));
   item.questions.forEach((_, i) => { if (!qs.includes(i)) filled.add(i); });   // a review card asks only some blanks; the rest show their answers
   item.docs.forEach((d, di) => {
     const box = el("section", "doc");

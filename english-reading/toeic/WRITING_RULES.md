@@ -566,6 +566,24 @@ Q  When will the call most likely take place?    ✓ On Friday   ≈ On Thursday
 
 這一節是閱讀題的規則；第 0、3、4 節的原則（唯一答案的標準、出題順序、盲審程序）照樣適用，「整句」換成「整份文件」。本節對真題的描述都是我們的判斷，不是統計。
 
+### 8.0 對照官方範例（2026-10 查核）
+
+來源：ETS 公開的 *TOEIC Listening and Reading Sample Test*（https://www.ets.org/content/dam/ets-org/pdfs/toeic/toeic-listening-reading-sample-test.pdf）。只參考格式，不抄任何文句。從裡面直接看得到的事：
+
+- **Part 6 作答說明**：A word, phrase, or sentence is missing in parts of each text. 一篇文件四題，題組開頭寫 Questions 131-134 refer to the following e-mail.
+- **Part 6 範例**（e-mail，To / From / Subject，連稱呼與署名約 130 字）的四格依序是：詞性（interest / interests / interested / interesting）、字彙搭配（develop / raise / open / complete + a deep understanding）、句首連接副詞（After all / For / Even so / At the same time）、句子插入（放在內文最後一句，四個選項都是同主題的短句）。
+- **Part 7 作答說明**：texts such as magazine and newspaper articles, e-mails, and instant messages；Each text or set of texts is followed by several questions；有些題要選句子插入的位置（範例中出現在單篇文章，用 — [1] — 標記）。
+- **Part 7 三篇範例**：Questions 196-200 refer to the following advertisement, online shopping cart, and e-mail. 五題依序是：廣告裡的字義題、廣告建議顧客做什麼、跨文件推論（What is most likely true about order #3397?）、跨文件細節（Which color does Mr. Phan indicate that he likes?）、只看 e-mail 的問題題（What problem does Mr. Phan mention in his e-mail?）。
+- **題幹句型**：What is suggested about …? / What is indicated about …? / According to the advertisement, why …? / What is NOT a stated requirement …? / Who most likely is …? / What will … most likely do …? / In the advertisement, the word "top" in paragraph 1, line 2, is closest in meaning to
+- **選項**多半是 2–10 字的短語或短句，四個同形狀。
+
+由此調整的規則：
+- Part 7 題目大致**依文件順序**排：先問第一份，跨文件題在中後段，最後一題可以只問第三份。主旨題不必放第一題。
+- 字義題照官方句型，但**不寫行號**（頁面會依螢幕寬度重排，行號不存在）：In the e-mail, the word "X" in paragraph 2 is closest in meaning to
+- 選項寫短、四個同形狀。
+- 頁面在每組文件上方顯示 Questions 1–4 refer to the following e-mail. 這一行。
+- 範例沒有給的事（例如三篇合計多少字、各題型出現幾次），本文件的數字都是我們的設定，不是官方規格。
+
 ### 8.1 Part 6 型 `p6`：短文填空
 
 - 一份文件（e-mail、memo、notice、letter、article、advertisement、web page），120–200 字，2–4 段。
@@ -583,7 +601,7 @@ Q  When will the call most likely take place?    ✓ On Friday   ≈ On Thursday
 ### 8.2 Part 7 型 `p7t`：三篇閱讀
 
 - 三份相關文件，合計 380–560 字。常見組合：廣告／公告＋e-mail＋表單；行程表＋e-mail＋評論；文章＋信件＋發票。三份之中可以有一份是表格（時刻表、價目表、訂單）。
-- 五題，依下列配置（順序可調，但跨文件題放後半）：
+- 五題，依下列配置（順序依文件，見 8.0）：
   1. 一題**單篇**的主旨或目的（Why was the e-mail sent?），誘答用文中真的提到、但不是目的的事。
   2. 一題**字義題**：In the e-mail, the word "X" in paragraph 2 is closest in meaning to。X 是常用多義字，正解是它在這裡的意思，**最強的誘答是它最常見的意思**（例：the figures were *settled* → decided，誘答 moved into a home）。
   3. 一題 **NOT／true** 或推論題（What is indicated about…／What is NOT mentioned as…／What is suggested about…）。推論題的正解必須由文字推得出來，不能只是「有可能」。
