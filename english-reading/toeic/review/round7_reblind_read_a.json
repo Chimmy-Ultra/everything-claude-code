@@ -1,0 +1,261 @@
+[
+ {
+  "id": "r-p6-01",
+  "format": "p6",
+  "documents": [
+   {
+    "kind": "E-mail",
+    "head": [
+     [
+      "To",
+      "All tenants, Harlow Court"
+     ],
+     [
+      "From",
+      "Denise Okafor"
+     ],
+     [
+      "Date",
+      "March 9"
+     ],
+     [
+      "Subject",
+      "Elevator work, March 16-20"
+     ]
+    ],
+    "paras": [
+     "On Monday, March 16, technicians from Calloway Lift Services will begin replacing the control systems in Harlow Court's two passenger elevators. The work is expected to take five days. {1}",
+     "The elevator that remains in service will be busier than usual. Tenants on the second and third floors are therefore asked to use the stairs whenever possible and to leave {2} free for residents of the upper floors. Deliveries of furniture or other large items should be postponed {3} they are brought in through the loading dock early in the morning.",
+     "The freight elevator at the loading dock, which is normally used only by building staff, {4} open to tenants for these deliveries from 6 to 8 a.m. each weekday. If you have any questions, please call the management office at extension 210.",
+     "Denise Okafor, Property Manager, Harlow Court"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Blank (1)",
+    "options": {
+     "A": "Both elevators will therefore be out of service until March 20.",
+     "B": "We will let you know the dates once they have been confirmed.",
+     "C": "Only one elevator will be shut down at a time, starting with the east one.",
+     "D": "We apologize in advance for closing the loading dock that week."
+    }
+   },
+   {
+    "q": "Blank (2)",
+    "options": {
+     "A": "it",
+     "B": "them",
+     "C": "one",
+     "D": "theirs"
+    }
+   },
+   {
+    "q": "Blank (3)",
+    "options": {
+     "A": "even if",
+     "B": "unless",
+     "C": "because",
+     "D": "although"
+    }
+   },
+   {
+    "q": "Blank (4)",
+    "options": {
+     "A": "has been",
+     "B": "was",
+     "C": "had been",
+     "D": "will be"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p6-02",
+  "format": "p6",
+  "documents": [
+   {
+    "kind": "Memo",
+    "head": [
+     [
+      "To",
+      "All staff"
+     ],
+     [
+      "From",
+      "Graham Petrosyan, Finance Director"
+     ],
+     [
+      "Date",
+      "September 2"
+     ],
+     [
+      "Subject",
+      "Changes to expense claims"
+     ]
+    ],
+    "paras": [
+     "As many of you know, the finance department has spent the summer testing Tallyway, an online system for reporting business expenses. Staff in the sales department, who used the system throughout the trial, reported far fewer rejected claims than they had with the paper forms. {1}, Tallyway will replace the paper forms for all employees starting October 1.",
+     "With Tallyway, receipts are simply photographed with a phone and attached to the claim. You will {2} need to keep the original receipts for six months. Our auditors may ask to see the originals during the annual review.",
+     "The new system also brings a change to the monthly deadline. Claims are currently accepted until the 15th of the following month; from October, they need to be submitted by the 5th. {3} Claims submitted {4} will be repaid the following month instead."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Blank (1)",
+    "options": {
+     "A": "Nevertheless",
+     "B": "Otherwise",
+     "C": "For example",
+     "D": "As a result"
+    }
+   },
+   {
+    "q": "Blank (2)",
+    "options": {
+     "A": "no longer",
+     "B": "still",
+     "C": "not yet",
+     "D": "already"
+    }
+   },
+   {
+    "q": "Blank (3)",
+    "options": {
+     "A": "This earlier date lets us repay claims in the month they are submitted.",
+     "B": "This later date gives everyone more time to collect receipts.",
+     "C": "Claims that arrive after that date will no longer be accepted.",
+     "D": "Paper forms will continue to be accepted until the end of the year."
+    }
+   },
+   {
+    "q": "Blank (4)",
+    "options": {
+     "A": "lately",
+     "B": "lateness",
+     "C": "late",
+     "D": "latter"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p6-03",
+  "format": "p6",
+  "documents": [
+   {
+    "kind": "Article",
+    "title": "Corvell Bakeries to Open Second Production Site",
+    "paras": [
+     "HADLEY CROSS (June 12) — Corvell Bakeries, which supplies more than sixty grocery stores in the region, will open a second production site in Southmere this autumn. Until now, everything the company sells has been baked at its original bakery on Mill Road in Hadley Cross.",
+     "Orders have nearly doubled since Corvell began supplying the Tolver Markets chain two years ago, and the Mill Road ovens now run around the clock. {1} The bakery sits on a narrow lot between a school and a row of houses.",
+     "Conversion work on the new site, a former furniture warehouse, {2} in March, and the bakery is due to open in October. The building has room for all of Corvell's pastry production, so Mill Road will be left to concentrate on bread. {3} the new site is running at full capacity, however, Mill Road will continue to bake some pastries, said operations director Paula Brandt.",
+     "Corvell expects to hire about forty bakers and drivers for Southmere. Brandt stressed that no current employee will be required to move. Mill Road staff will be given the {4} to transfer before the jobs are advertised."
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Blank (1)",
+    "options": {
+     "A": "The company plans to close the Mill Road bakery once the new site opens.",
+     "B": "Expanding the original bakery was never an option.",
+     "C": "For years, the company has split its baking between two sites.",
+     "D": "The ovens are switched off every night."
+    }
+   },
+   {
+    "q": "Blank (2)",
+    "options": {
+     "A": "will begin",
+     "B": "has begun",
+     "C": "had begun",
+     "D": "began"
+    }
+   },
+   {
+    "q": "Blank (3)",
+    "options": {
+     "A": "Once",
+     "B": "Even though",
+     "C": "Until",
+     "D": "In case"
+    }
+   },
+   {
+    "q": "Blank (4)",
+    "options": {
+     "A": "opportunity",
+     "B": "obligation",
+     "C": "instruction",
+     "D": "necessity"
+    }
+   }
+  ]
+ },
+ {
+  "id": "r-p6-04",
+  "format": "p6",
+  "documents": [
+   {
+    "kind": "Letter",
+    "head": [
+     [
+      "From",
+      "The Packhouse Journal, Subscriber Services"
+     ],
+     [
+      "Date",
+      "September 15"
+     ]
+    ],
+    "paras": [
+     "Dear Subscriber,",
+     "Many readers have told us that their printed copy of The Packhouse Journal often arrives a week or more after the first of the month. Our printing and postage costs have also risen sharply. Beginning with the January issue, we will therefore make two changes to your subscription.",
+     "First, the Journal will become a digital publication. {1} the printed magazine, the digital edition will reach you on the first of every month. Because it costs far less to produce, the annual subscription price will fall from $96 to $72. {2} Subscribers {3} our records show have already paid for next year will receive a refund of the difference.",
+     "Second, printed copies will be mailed only to readers who request them. {4} you prefer to keep receiving the magazine by mail, please check the box on the enclosed form and return it by November 30. The print option costs an extra $30 a year.",
+     "Lena Marsh, Subscriber Services, The Packhouse Journal"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "q": "Blank (1)",
+    "options": {
+     "A": "Unlike",
+     "B": "Like",
+     "C": "Despite",
+     "D": "Except for"
+    }
+   },
+   {
+    "q": "Blank (2)",
+    "options": {
+     "A": "Readers who have already renewed, however, will keep paying the old rate.",
+     "B": "This is the first price increase in the magazine's history.",
+     "C": "The new rate will apply to all subscriptions, including renewals.",
+     "D": "The print edition will stay at its current price of $96."
+    }
+   },
+   {
+    "q": "Blank (3)",
+    "options": {
+     "A": "whom",
+     "B": "whose",
+     "C": "which",
+     "D": "who"
+    }
+   },
+   {
+    "q": "Blank (4)",
+    "options": {
+     "A": "Would",
+     "B": "Should",
+     "C": "Had",
+     "D": "Were"
+    }
+   }
+  ]
+ }
+]
