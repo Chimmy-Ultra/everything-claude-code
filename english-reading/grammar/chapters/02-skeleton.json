@@ -40,7 +40,7 @@
       "body": [
         "英文句子再短，也要有兩樣東西：<b>主詞</b>和<b>動詞</b>。",
         "<b>主詞</b>是這句話在講的人事物，回答「誰？」或「什麼？」。<b>動詞</b>說主詞做了什麼，或處在什麼狀態。<em>Prices rose.</em> 只有兩個字，卻是完整的句子。什麼？價格。怎麼了？漲了。",
-        "拿掉任何一個，句子就倒了。只剩 <em>Prices.</em>，讀的人會問「價格怎樣？」。只剩 <em>Rose.</em>，讀的人會問「什麼漲了？」。中文常常省略主詞（「到了，在樓下」），英文正式的句子不行。唯一的例外是請人做事的句子（<em>Please call me.</em>），主詞 <em>you</em> 省略了。",
+        "拿掉任何一個，句子就倒了。只剩 <em>Prices.</em>，讀的人會問「價格怎樣？」。只剩 <em>Rose.</em>，讀的人會問「什麼漲了？」。中文常常省略主詞（「到了，在樓下」），英文正式的句子不行。例外是請人做事的句子（<em>Please call me.</em>），主詞 <em>you</em> 省略了。",
         "這一章說的「句子」，嚴格來說叫「子句」：一組有自己主詞和動詞的字。一句話裡可以有好幾個子句，那是第 3 章的事。這一章先看只有一個子句的句子。"
       ],
       "ex": [
@@ -78,7 +78,7 @@
           ["現在式", "<em>She approves the plan.</em>", "算"],
           ["過去式", "<em>She approved the plan.</em>", "算"],
           ["<em>will</em>、<em>can</em>、<em>must</em>＋原形", "<em>She will approve the plan.</em>", "算（整組）"],
-          ["<em>is</em>＋Ving、<em>has</em>＋動詞", "<em>She is reviewing the plan.</em> <em>She has approved the plan.</em>", "算（整組）"],
+          ["<em>is</em>＋Ving、<em>has</em>＋p.p.（第 4 章）", "<em>She is reviewing the plan.</em> <em>She has approved the plan.</em>", "算（整組）"],
           ["to V", "<em>to approve the plan</em>", "不算"],
           ["Ving（前面沒有 <em>is</em>、<em>was</em>）", "<em>approving the plan</em>", "不算"]
         ]

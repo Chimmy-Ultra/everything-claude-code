@@ -151,10 +151,10 @@
       "quiz": [
         {
           "type": "choose",
-          "q": "<em>The new software ___ the time we spend on reports.</em> 這句缺的是哪一種詞性？",
+          "q": "<em>The new software ___ errors in our monthly reports.</em> 這句缺的是哪一種詞性？",
           "options": ["名詞", "動詞", "形容詞", "副詞"],
           "answer": 1,
-          "why": "前面有 <em>The new software</em>，後面有 <em>the time</em>，中間卻沒有任何動作。缺的是動詞，例如 <em>reduces</em>（減少）。"
+          "why": "前面有 <em>The new software</em>，後面有 <em>errors</em>，中間卻沒有任何動作。缺的是動詞，例如 <em>reduces</em>（減少）。"
         }
       ],
       "takeaway": "每一句都要有動詞；句子還缺動作，空位就是動詞。"
@@ -163,10 +163,11 @@
       "h": "字尾：一眼猜出詞性",
       "body": [
         "很多字的最後幾個字母會透露它的詞性。看到 <em>-tion</em>，通常是名詞；看到 <em>-ive</em>，多半是形容詞。下表是商業英文裡常見的字尾。",
-        "字尾只是線索。有三組例外要認得。",
+        "字尾只是線索。有四組例外要認得。",
         "一，有些 <em>-ly</em> 是形容詞，不是副詞：<em>friendly</em>、<em>timely</em>、<em>costly</em>、<em>likely</em>、<em>orderly</em>。它們放在名詞前面或 <em>be</em> 後面：<em>a timely reply</em>（及時的回覆）、<em>a costly mistake</em>（代價很高的錯誤）。",
         "二，有些 <em>-al</em> 是名詞，不是形容詞：<em>approval</em>、<em>arrival</em>、<em>proposal</em>、<em>renewal</em>、<em>rental</em>。<em>the approval of the budget</em> 裡，<em>approval</em> 在 <em>the</em> 後面，是名詞。",
         "三，有些 <em>-ive</em> 是名詞：<em>representative</em>（代表、業務代表）、<em>executive</em>（主管）、<em>initiative</em>（新計畫、新方案）。",
+        "四，<em>-ant</em>、<em>-ent</em> 兩邊都有：<em>applicant</em>、<em>consultant</em>、<em>resident</em> 是人，是名詞；<em>important</em>、<em>relevant</em>、<em>efficient</em> 是形容詞。",
         "所以順序是：先看位置，再用字尾確認。位置說要名詞，字尾又是 <em>-tion</em>，就很穩。位置說要形容詞，卻看到 <em>-ly</em>，先想想它是不是 <em>friendly</em> 這一類。"
       ],
       "ex": [
@@ -178,9 +179,9 @@
         "head": ["詞性", "常見字尾", "例子"],
         "rows": [
           ["名詞（事情）", "<em>-tion</em>、<em>-sion</em>、<em>-ment</em>、<em>-ness</em>、<em>-ity</em>、<em>-ance</em>、<em>-ence</em>", "<em>production</em>、<em>expansion</em>、<em>payment</em>、<em>awareness</em>、<em>security</em>、<em>attendance</em>、<em>reference</em>"],
-          ["名詞（人）", "<em>-er</em>、<em>-or</em>、<em>-ee</em>、<em>-ant</em>、<em>-ist</em>", "<em>employer</em>、<em>supervisor</em>、<em>trainee</em>、<em>applicant</em>、<em>specialist</em>"],
+          ["名詞（人）", "<em>-er</em>、<em>-or</em>、<em>-ee</em>、<em>-ist</em>", "<em>employer</em>、<em>supervisor</em>、<em>trainee</em>、<em>specialist</em>"],
           ["形容詞", "<em>-ive</em>、<em>-ful</em>、<em>-able</em>、<em>-ible</em>、<em>-ous</em>、<em>-al</em>、<em>-ic</em>", "<em>productive</em>、<em>successful</em>、<em>reliable</em>、<em>flexible</em>、<em>various</em>、<em>annual</em>、<em>economic</em>"],
-          ["動詞", "<em>-ize</em>、<em>-ify</em>、<em>-en</em>、<em>-ate</em>", "<em>organize</em>、<em>notify</em>、<em>strengthen</em>、<em>evaluate</em>"],
+          ["動詞", "<em>-ize</em>、<em>-ify</em>、<em>-en</em>", "<em>organize</em>、<em>finalize</em>、<em>notify</em>、<em>strengthen</em>"],
           ["副詞", "形容詞＋<em>-ly</em>", "<em>quickly</em>、<em>successfully</em>、<em>reliably</em>"]
         ]
       },
@@ -223,10 +224,10 @@
       "quiz": [
         {
           "type": "choose",
-          "q": "<em>Our team worked ___ to finish the project on time.</em> 空格放 <em>produce</em> 家族的哪一個？",
-          "options": ["production", "productive", "productively"],
+          "q": "<em>The team ___ completed the project on time.</em> 空格放 <em>succeed</em> 家族的哪一個？",
+          "options": ["success", "successful", "successfully"],
           "answer": 2,
-          "why": "空格描述動作 <em>worked</em>（怎麼工作），是副詞的工作。<em>worked</em> 在這裡後面不需要名詞，旁邊也沒有名詞讓形容詞描述。"
+          "why": "空格夾在主詞 <em>The team</em> 和動作 <em>completed</em> 中間，描述「怎麼完成」，是副詞的位置。拿掉它，<em>The team completed the project on time.</em> 仍然完整。"
         }
       ],
       "takeaway": "同一個字家族的字意思差不多，挑哪一個由位置決定。"

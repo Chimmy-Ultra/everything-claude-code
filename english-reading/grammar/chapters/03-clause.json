@@ -48,7 +48,7 @@
         "第 2 章說過，句子裡有很多「一串字」：<em>of our Westbrook branch</em>、<em>for next year</em>、<em>the new sales manager</em>。一組字合起來當一個單位用，但裡面<b>沒有自己的主詞＋有時態的動詞</b>，就叫<b>片語</b>。",
         "片語可以很短（<em>in May</em>），也可以很長（<em>because of the unexpected delay at the port</em>）。長短不是重點，重點是裡面找不到「誰＋有時態的動詞」。",
         "片語自己不能成為一句話。<em>In the morning.</em>、<em>Because of the delay.</em> 單獨寫出來，讀的人會等下文：早上怎樣？因為延誤，所以怎樣？",
-        "常見的片語有：名詞帶頭的（<em>the quarterly sales report</em>）、介系詞帶頭的（<em>after the meeting</em>、<em>despite the rain</em>）、to V 帶頭的（<em>to reduce costs</em>）、Ving 帶頭的（<em>reviewing the budget</em>）。名稱不用背，認得「沒有主詞＋有時態的動詞」就夠了。"
+        "常見的片語有：以名詞為中心的（<em>the quarterly sales report</em>）、介系詞帶頭的（<em>after the meeting</em>、<em>despite the rain</em>）、to V 帶頭的（<em>to reduce costs</em>）、Ving 帶頭的（<em>reviewing the budget</em>）。名稱不用背，認得「沒有主詞＋有時態的動詞」就夠了。"
       ],
       "ex": [
         {"en": "<u>Because of the delay</u>, the meeting started at ten.", "zh": "因為延誤，會議十點才開始。", "note": "<em>because of the delay</em>：沒有動詞，是片語。"},
@@ -133,7 +133,7 @@
         "找主要子句的方法：把帶頭的字和它帶出的子句蓋住，剩下能獨立成句的，就是主要子句。"
       ],
       "ex": [
-        {"en": "<u>The meeting started without the samples</u> because the truck was late.", "zh": "因為貨車晚到，會議在沒有樣品的情況下開始了。", "note": "底線是主要子句，自己能成句。"},
+        {"en": "<u>We moved the meeting to Thursday</u> because Ms. Grant is out of the office.", "zh": "因為 Grant 女士不在辦公室，我們把會議改到週四。", "note": "底線是主要子句，自己能成句。"},
         {"en": "If the client approves the design, <u>we will start production in June</u>.", "zh": "如果客戶核准設計，我們六月就開始生產。", "note": "<em>If</em> 帶頭的是從屬子句；主要子句在逗號後面。"},
         {"en": "<u>Our hotel is fully booked</u> until the conference ends.", "zh": "到會議結束前，我們飯店都客滿。", "note": "<em>until the conference ends</em> 是從屬子句。"}
       ],
@@ -158,8 +158,8 @@
     {
       "h": "數動詞，數子句：每多一個子句，就要多一個連接的字",
       "body": [
-        "第 2 章說：一個子句只有一個有時態的動詞。把它反過來用：<b>一句話裡有幾個有時態的動詞，就有幾個子句</b>。唯一的例外是第 2 章看過的那種：兩個動詞用 <em>and</em> 接起來、共用同一個主詞。",
-        "每多一個子句，就要多一個把它接進來的字：<em>and</em>、<em>but</em>、<em>so</em>、<em>because</em>、<em>although</em>、<em>when</em>、<em>if</em>、<em>who</em>、<em>which</em>……。兩個子句之間什麼都沒有，或只有一個逗號，句子就壞了。",
+        "第 2 章說：一個子句只有一個有時態的動詞。把它反過來用：<b>一句話裡有幾個有時態的動詞，就有幾個子句</b>。例外是第 2 章看過的那種：兩個動詞用 <em>and</em>、<em>but</em> 接起來，共用同一個主詞。",
+        "每多一個子句，就要多一個把它接進來的字：<em>and</em>、<em>but</em>、<em>so</em>、<em>because</em>、<em>although</em>、<em>when</em>、<em>if</em>、<em>who</em>、<em>which</em>……。兩個子句之間什麼都沒有，或只有一個逗號，句子就壞了。（只有 <em>that</em> 這類字在某些位置可以省略，這一章最後一節和第 9 章會提到。）",
         "<em>The truck was late the meeting started without the samples.</em>：兩個有時態的動詞（<em>was</em>、<em>started</em>），零個連接的字，錯。",
         "<em>The truck was late, the meeting started without the samples.</em>：只有一個逗號，還是錯。逗號只是停頓，不能把兩個子句接成一句。",
         "修法有兩種。加一個連接的字：<em>The truck was late, so the meeting started…</em>，或 <em>Because the truck was late, the meeting started…</em>。或者乾脆分成兩句：<em>The truck was late. The meeting started…</em>。",
@@ -218,8 +218,9 @@
       "body": [
         "子句不一定掛在句子的前面或後面，也可以<b>夾在句子裡面</b>，描述一個名詞。",
         "<em>The supplier raised its prices.</em> 是一句話。想說是哪一家供應商，可以把一個子句塞在 <em>supplier</em> 後面：<em>The supplier <b>that we hired last spring</b> raised its prices.</em>。<em>that we hired last spring</em> 有主詞 <em>we</em>、有動詞 <em>hired</em>，是子句；它不能單獨成句，是從屬子句。",
-        "這時一句話裡有兩個有時態的動詞：<em>hired</em> 屬於裡面的子句，<em>raised</em> 屬於主要子句。把它們接起來的字是 <em>that</em>，就是上一節說的「每多一個子句，多一個連接的字」。這種跟在名詞後面、用 <em>who</em>、<em>which</em>、<em>that</em> 帶頭、描述名詞的子句，叫<b>關係子句</b>，第 9 章完整講。",
+        "這時一句話裡有兩個有時態的動詞：<em>hired</em> 屬於裡面的子句，<em>raised</em> 屬於主要子句。把它們接起來的字是 <em>that</em>，就是第 5 節說的「每多一個子句，多一個連接的字」。這種跟在名詞後面、用 <em>who</em>、<em>which</em>、<em>that</em> 帶頭、描述名詞的子句，叫<b>關係子句</b>，第 9 章完整講。",
         "讀長句的方法：看到 <em>who</em>、<em>which</em>、<em>that</em> 緊跟在名詞後面，先把它帶出的子句括起來，括號外面剩下的就是主要子句。主要子句的主詞，就是括號前面那個名詞。",
+        "書信和口語裡，這個 <em>that</em> 有時會被省略：<em>The supplier we hired last spring raised its prices.</em>。連接的字看不見了，但子句還在：<em>we hired</em> 仍然是主詞＋有時態的動詞。什麼時候可以省，第 9 章再講。",
         "子句也可以整個當動詞的受詞：<em>Ms. Moreau confirmed that the order shipped on Monday.</em>。確認了什麼？確認了 <em>that</em> 後面那一整個子句。第 16 章的「that 子句」就是這一種。"
       ],
       "ex": [
