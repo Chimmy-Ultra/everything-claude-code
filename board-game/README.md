@@ -14,7 +14,7 @@
 - 6 回合後，錢最多的人贏。
 - 對手方是銀行（代表整個市場），不需要玩家之間配對多空，所以 3 人也能玩。
 
-時代背景的史實查核在 [`history.md`](history.md)。
+時代背景的史實查核在 [`history.md`](history.md)，第一次試玩紀錄在 [`playtest-1.md`](playtest-1.md)。
 
 消息卡在 [`sim/cards.py`](sim/cards.py)：13 組正反成對的事件，每組兩張，共 52 張。每種商品在整副牌裡漲跌總和為 0。
 
